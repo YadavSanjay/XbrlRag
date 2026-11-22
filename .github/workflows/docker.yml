@@ -1,0 +1,86 @@
+# WS-6 / B7 — packaging CI: build the container images and lint the Helm chart on
+# every push/PR that touches the deploy surface, so the Dockerfiles / chart can't
+# rot. Build-only (no registry push); add a tag-triggered push job when a registry
+# is chosen.
+name: docker
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "infra/docker/**"
+      - "requirements-serve.txt"
+      - "src/**"
+      - "prompts/**"
+      - "configs/**"
+      - "ui/**"
+      - "deploy/**"
+      - ".github/workflows/docker.yml"
+  pull_request:
+    paths:
+      - "infra/docker/**"
+      - "requirements-serve.txt"
+      - "src/**"
+      - "ui/**"
+      - "deploy/**"
+
+permissions:
+  contents: read
+
+jobs:
+  app-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: docker/setup-buildx-action@8d2750c68a42422c14e847fe6c8ac0403b4cbd6f # v3.12.0
+      - name: Build slim serving image
+        uses: docker/build-push-action@10e90e3645eae34f1e60eeb005ba3a3d33f178e8 # v6.19.2
+        with:
+          context: .
+          file: infra/docker/Dockerfile
+          push: false
+          load: true
+          tags: arag:ci
+      - name: Smoke test — API + MCP import without heavy ML libs
+        run: |
+          docker run --rm arag:ci python -c "
+          import importlib, sys
+          for m in ('src.api.main', 'src.mcp_server.server'):
+              importlib.import_module(m)
+          heavy = [h for h in ('torch','transformers','sentence_transformers','faiss','FlagEmbedding') if h in sys.modules]
+          assert not heavy, f'slim image unexpectedly loaded {heavy}'
+          print('OK: API+MCP import, no heavy libs')
+          "
+
+  ui-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: docker/setup-buildx-action@8d2750c68a42422c14e847fe6c8ac0403b4cbd6f # v3.12.0
+      - name: Build UI image
+        uses: docker/build-push-action@10e90e3645eae34f1e60eeb005ba3a3d33f178e8 # v6.19.2
+        with:
+          context: ./ui
+          push: false
+          tags: arag-ui:ci
+
+  compose-config:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - name: Validate docker-compose
+        run: docker compose -f infra/docker/docker-compose.yml config -q
+
+  helm-chart:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: azure/setup-helm@1a275c3b69536ee54be43f2070a358922e12c8d4 # v4.3.1
+      - name: Helm lint
+        run: helm lint deploy/helm/xbrlrag
+      - name: Helm template (default + toggled)
+        run: |
+          helm template xbrlrag deploy/helm/xbrlrag > /dev/null
+          helm template xbrlrag deploy/helm/xbrlrag \
+            --set mcp.enabled=false --set ui.enabled=false --set ingress.enabled=true \
+            --set externalServices.raginferenceUrl=http://raginference:8799 > /dev/null

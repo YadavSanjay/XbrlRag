@@ -1,0 +1,38 @@
+# Note concepts: the us-gaap elements that measure a family when the filer's statements
+# present no line for it. Spec: docs/specs/key-statement-witness.md (requirement 4). This is
+# the locked copy; configs/eval/v2/note_concepts.yaml must be byte-identical to it.
+#
+# Chosen from the elements' own taxonomy definitions (us-gaap 2025 documentation linkbase,
+# excerpted in taxonomy_excerpt.json), never from concept_mapping. An element is listed only
+# when its definition is the family's measure itself, not a broader total, a narrower part
+# or a neighbouring measure. The list may only shrink; an addition is a re-lock of this spec.
+version: 1
+families:
+  AccountsPayable:
+    - us-gaap:AccountsPayableCurrent        # payable to vendors for goods and services, current
+    - us-gaap:AccountsPayableTradeCurrent   # the same, trade, current
+  DeferredRevenue:
+    - us-gaap:ContractWithCustomerLiability         # obligation to transfer for consideration received
+    - us-gaap:DeferredRevenue
+  EffectiveTaxRate:
+    - us-gaap:EffectiveIncomeTaxRateContinuingOperations  # current and deferred tax expense / pretax, continuing ops
+  InterestIncome:
+    - us-gaap:InvestmentIncomeInterest             # interest income on nonoperating securities
+    - us-gaap:InvestmentIncomeInterestAndDividend  # interest and dividend income on nonoperating securities
+  Inventory:
+    - us-gaap:InventoryNet
+  NetIncomeToCommon:
+    - us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic
+  OperatingExpenses:
+    - us-gaap:OperatingExpenses   # recurring operating costs excluding cost of sales
+  ResearchAndDevelopment:
+    - us-gaap:ResearchAndDevelopmentExpense
+    - us-gaap:ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost
+  RestructuringCharges:
+    - us-gaap:RestructuringCharges
+  SellingAndMarketing:
+    - us-gaap:SellingAndMarketingExpense
+  SharesOutstanding:
+    - us-gaap:CommonStockSharesOutstanding
+  WeightedAverageSharesBasic:
+    - us-gaap:WeightedAverageNumberOfSharesOutstandingBasic

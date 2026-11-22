@@ -1,0 +1,50 @@
+{
+ "case_id": "int-bd7ee7bd1bce-0231b50a",
+ "question": "median total current assets, the semiconductor companies, fiscal 2023",
+ "expected": {
+  "value": 21244000000.0
+ },
+ "text": "The median total current assets among the 7 ranked semiconductor companies for fiscal 2023 was 21,244,000,000 USD. The median is the middle value of the ranked group, which is Micron's (MU) total current assets of 21,244,000,000 USD. The aggregate covers 7 of the 8 semiconductor universe members; TSM was excluded because it reports in TWD rather than USD. Note that the companies' fiscal year ends differ (for example, NVDA's period ended 2023-01-29 while INTC's and AMD's ended 2023-12-30). Universe: the semiconductors group (8 companies; 7 ranked for FY2023). Not ranked: TSM (reports in TWD, not USD). Fiscal years end on different dates: INTC 2023-12-30, NVDA 2023-01-29, QCOM 2023-09-24, MU 2023-08-31, AVGO 2023-10-29, AMD 2023-12-30, TXN 2023-12-31. Median of 7 companies: INTC, NVDA, QCOM, MU, AVGO, AMD, TXN (middle: MU).\nThe median total current assets across the 7 ranked semiconductor companies for fiscal 2023 was 21,244,000,000 USD.\nThe median value corresponds to Micron's (MU) total current assets of 21,244,000,000 USD at fiscal 2023 year end (period ended 2023-08-31).\nThe aggregate covers 7 of the 8 members of the semiconductor universe (INTC, NVDA, QCOM, MU, AVGO, AMD, TXN); TSM was excluded because it reports in TWD (currency).\nThe 7 ranked companies' total current assets for fiscal 2023 were: Intel (INTC) 43,269,000,000 USD, NVIDIA (NVDA) 23,073,000,000 USD, Qualcomm (QCOM) 22,464,000,000 USD, Micron (MU) 21,244,000,000 USD, Broadcom (AVGO) 20,847,000,000 USD, AMD 16,768,000,000 USD, and Texas Instruments (TXN) 15,122,000,000 USD.",
+ "rows": [
+  {
+   "value": 21244000000.0,
+   "ticker": "MU"
+  },
+  {
+   "value": 43269000000.0,
+   "ticker": "INTC"
+  },
+  {
+   "value": 23073000000.0,
+   "ticker": "NVDA"
+  },
+  {
+   "value": 22464000000.0,
+   "ticker": "QCOM"
+  },
+  {
+   "value": 20847000000.0,
+   "ticker": "AVGO"
+  },
+  {
+   "value": 16768000000.0,
+   "ticker": "AMD"
+  },
+  {
+   "value": 15122000000.0,
+   "ticker": "TXN"
+  }
+ ],
+ "hedged": true,
+ "refused": false,
+ "numeric_values_stored": [
+  7.0,
+  8.0,
+  7.0,
+  7.0,
+  7.0,
+  7.0,
+  8.0,
+  7.0
+ ]
+}

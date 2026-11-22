@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xbrl
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:dei="http://xbrl.sec.gov/dei/2026"
+  xmlns:ecd="http://xbrl.sec.gov/ecd/2026"
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:orcl="http://www.oracle.com/20260831"
+  xmlns:srt="http://fasb.org/srt/2026"
+  xmlns:us-gaap="http://fasb.org/us-gaap/2026"
+  xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <link:schemaRef xlink:href="orcl-20260831.xsd" xlink:type="simple"/>
+    <context id="C_862ff9fb-85ce-44dd-80aa-4a95282ed5c7">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001341439</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="us-gaap:StatementOfIncomeLocationBalanceAxis">
+                    <us-gaap:QName.domain>orcl:ServicesExpense</us-gaap:QName.domain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-06-01</startDate>
+            <endDate>2026-08-31</endDate>
+        </period>
+    </context>
+    <context id="C_9c92005b-0838-42aa-b17f-6494e56e98b9">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001341439</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="us-gaap:StatementOfIncomeLocationBalanceAxis">
+                    <us-gaap:QName.domain>orcl:HardwareExpenses</us-gaap:QName.domain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-06-01</startDate>
+            <endDate>2026-08-31</endDate>
+        </period>
+    </context>
+    <context id="C_9dcd0e06-bdf8-444f-b24e-0ff30f28f7ba">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001341439</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementClassOfStockAxis">us-gaap:CommonStockMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-06-01</startDate>
+            <endDate>2026-08-31</endDate>
+        </period>
+    </context>
+    <context id="C_a0bdcecc-b2bf-40f4-8106-f50197737571">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001341439</identifier>
+        </entity>
+        <period>
+            <startDate>2025-06-01</startDate>
+            <endDate>2025-08-31</endDate>
+        </period>
+    </context>
+    <context id="C_f2f9ad85-08df-4e59-8948-bfd9405570de">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001341439</identifier>
+        </entity>
+        <period>
+            <startDate>2026-06-01</startDate>
+            <endDate>2026-08-31</endDate>
+        </period>
+    </context>
+    <dei:AmendmentFlag
+      contextRef="C_f2f9ad85-08df-4e59-8948-bfd9405570de"
+      id="F_f9ac4361-1884-4327-b767-dd5c6b44a99f">false</dei:AmendmentFlag>
+    <dei:DocumentFiscalPeriodFocus
+      contextRef="C_f2f9ad85-08df-4e59-8948-bfd9405570de"
+      id="F_6e58d621-b878-42b3-a272-1cfea817c205">Q1</dei:DocumentFiscalPeriodFocus>
+    <dei:CurrentFiscalYearEndDate
+      contextRef="C_f2f9ad85-08df-4e59-8948-bfd9405570de"
+      id="F_8b394106-4846-4e1c-a89d-3a1c3c794aa8">--05-31</dei:CurrentFiscalYearEndDate>
+    <dei:DocumentType
+      contextRef="C_f2f9ad85-08df-4e59-8948-bfd9405570de"
+      id="F_14e06524-fc0a-47d3-84e8-b2916d6c846c">10-Q</dei:DocumentType>
+    <dei:DocumentPeriodEndDate
+      contextRef="C_f2f9ad85-08df-4e59-8948-bfd9405570de"
+      id="F_1e4525cd-393b-44e7-b593-27c7b1dfd52b">2026-08-31</dei:DocumentPeriodEndDate>
+    <dei:DocumentFiscalYearFocus
+      contextRef="C_f2f9ad85-08df-4e59-8948-bfd9405570de"
+      id="F_299308bd-2139-4cae-8fd2-8aa6dfdb8033">2026</dei:DocumentFiscalYearFocus>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="C_f2f9ad85-08df-4e59-8948-bfd9405570de"
+      decimals="-6"
+      id="F_9e745c96-2265-46b6-b29d-b54fa66160bd"
+      unitRef="U_USD">19345000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="C_a0bdcecc-b2bf-40f4-8106-f50197737571"
+      decimals="-6"
+      id="F_6435f1c9-f45b-4315-8e05-1f4e0c908ff0"
+      unitRef="U_USD">14926000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="C_f2f9ad85-08df-4e59-8948-bfd9405570de"
+      decimals="-6"
+      id="F_bc05b6cf-4d3e-44b6-877c-32e43a59f0d9"
+      unitRef="U_USD">19345000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="C_a0bdcecc-b2bf-40f4-8106-f50197737571"
+      decimals="-6"
+      id="F_19c36dc4-5331-4840-9e18-741e34396490"
+      unitRef="U_USD">14926000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+</xbrl>

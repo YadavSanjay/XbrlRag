@@ -1,0 +1,19 @@
+{
+ "note": "Recorded answers for C10, in the shape a run stores them (case_id, produced). Constructed for this spec, not copied from a stored run: each arm states one reading of the KO FY2025 accounts-payable question (the AP trade note figure 5,649M, or the balance-sheet line 'Accounts payable and accrued expenses' 14,813M, both hand-checked in KO's FY2025 10-K) and both state TSLA's FY2023 revenue 96,773M. Grades are derived by hand at rel_tol 1e-4.",
+ "cases": {
+  "ko-ap-fy2025": {"question": "What were Coca-Cola's accounts payable at the end of FY2025?",
+                    "old_expected": 5649000000, "new_expected": 14813000000, "unit": "USD"},
+  "tsla-rev-fy2023": {"question": "What was Tesla's revenue in FY2023?",
+                      "old_expected": 96773000000, "new_expected": 96773000000, "unit": "USD"}
+ },
+ "runs": {
+  "xbrlrag_full": [
+   {"case_id": "ko-ap-fy2025", "produced": {"text": "5,649 million", "numeric_values": [5649000000]}},
+   {"case_id": "tsla-rev-fy2023", "produced": {"text": "96,773 million", "numeric_values": [96773000000]}}
+  ],
+  "frontier_sec_tools": [
+   {"case_id": "ko-ap-fy2025", "produced": {"text": "14,813 million", "numeric_values": [14813000000]}},
+   {"case_id": "tsla-rev-fy2023", "produced": {"text": "96,773 million", "numeric_values": [96773000000]}}
+  ]
+ }
+}

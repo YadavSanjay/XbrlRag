@@ -1,0 +1,160 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-10",
+  "criteria": {
+    "C1": [
+      "test/spec/v2-grounding/test_c1_scope.py::test_out_of_scope_cases_are_not_v2_grounded",
+      "test/spec/v2-grounding/test_c1_scope.py::test_attach_leaves_a_v1_result_untouched",
+      "test/spec/v2-grounding/test_c1_scope.py::test_attach_never_moves_a_labelled_result"
+    ],
+    "C2": [
+      "test/spec/v2-grounding/test_c2_slots.py::test_lookup_with_a_cover_page_alternate",
+      "test/spec/v2-grounding/test_c2_slots.py::test_point_in_time_binds_its_accession",
+      "test/spec/v2-grounding/test_c2_slots.py::test_ratio_inputs_in_order_and_an_unattached_reading",
+      "test/spec/v2-grounding/test_c2_slots.py::test_trend_row_reading_serves_its_year_and_defined_inputs",
+      "test/spec/v2-grounding/test_c2_slots.py::test_permuting_inputs_permutes_key_slots"
+    ],
+    "C3": [
+      "test/spec/v2-grounding/test_c3_identity.py::test_the_key_fact_in_store_form_is_right",
+      "test/spec/v2-grounding/test_c3_identity.py::test_per_share_unit_normalises",
+      "test/spec/v2-grounding/test_c3_identity.py::test_one_wrong_field_makes_it_wrong[change0]",
+      "test/spec/v2-grounding/test_c3_identity.py::test_one_wrong_field_makes_it_wrong[change1]",
+      "test/spec/v2-grounding/test_c3_identity.py::test_one_wrong_field_makes_it_wrong[change2]",
+      "test/spec/v2-grounding/test_c3_identity.py::test_one_wrong_field_makes_it_wrong[change3]",
+      "test/spec/v2-grounding/test_c3_identity.py::test_one_wrong_field_makes_it_wrong[change4]",
+      "test/spec/v2-grounding/test_c3_identity.py::test_one_wrong_field_makes_it_wrong[change5]",
+      "test/spec/v2-grounding/test_c3_identity.py::test_one_wrong_field_makes_it_wrong[change6]",
+      "test/spec/v2-grounding/test_c3_identity.py::test_value_agreement_at_the_keys_decimals",
+      "test/spec/v2-grounding/test_c3_identity.py::test_any_single_perturbation_is_wrong"
+    ],
+    "C4": [
+      "test/spec/v2-grounding/test_c4_accession.py::test_same_value_in_another_filing_is_right",
+      "test/spec/v2-grounding/test_c4_accession.py::test_restated_original_value_is_wrong",
+      "test/spec/v2-grounding/test_c4_accession.py::test_point_in_time_binds_the_named_filing",
+      "test/spec/v2-grounding/test_c4_accession.py::test_relabelling_accessions_changes_nothing_outside_point_in_time"
+    ],
+    "C5": [
+      "test/spec/v2-grounding/test_c5_defined.py::test_a_single_fact_equal_to_the_total_is_right",
+      "test/spec/v2-grounding/test_c5_defined.py::test_lines_that_add_up_are_right",
+      "test/spec/v2-grounding/test_c5_defined.py::test_lines_short_of_the_total_are_wrong",
+      "test/spec/v2-grounding/test_c5_defined.py::test_an_ordinary_slot_claims_its_fact_first",
+      "test/spec/v2-grounding/test_c5_defined.py::test_any_split_adds_up_and_any_drop_does_not"
+    ],
+    "C6": [
+      "test/spec/v2-grounding/test_c6_readings.py::test_cover_page_reading_is_right",
+      "test/spec/v2-grounding/test_c6_readings.py::test_trend_row_reading_evidences_its_year",
+      "test/spec/v2-grounding/test_c6_readings.py::test_key_or_reading_or_both"
+    ],
+    "C7": [
+      "test/spec/v2-grounding/test_c7_arithmetic.py::test_ratio_counts",
+      "test/spec/v2-grounding/test_c7_arithmetic.py::test_screen_counts_and_an_unresolved_id",
+      "test/spec/v2-grounding/test_c7_arithmetic.py::test_compound_uses_the_top_level_key",
+      "test/spec/v2-grounding/test_c7_arithmetic.py::test_permuting_citations_changes_nothing",
+      "test/spec/v2-grounding/test_c7_arithmetic.py::test_unrelated_lowers_and_right_never_lowers"
+    ],
+    "C8": [
+      "test/spec/v2-grounding/test_c8_nothing_cited.py::test_refusal_has_no_precision",
+      "test/spec/v2-grounding/test_c8_nothing_cited.py::test_an_arm_that_cites_nothing_is_not_applicable"
+    ],
+    "C9": [
+      "test/spec/v2-grounding/test_c9_attach.py::test_attach_sets_hand_counted_values",
+      "test/spec/v2-grounding/test_c9_attach.py::test_a_stored_payload_grades_the_same",
+      "test/spec/v2-grounding/test_c9_attach.py::test_attaching_twice_is_attaching_once"
+    ]
+  },
+  "files": {
+    "test/spec/v2-grounding/conftest.py": "d876b932174acf772c90cc87fc6de6fa56c67fa64f78845e10dab7028f6bcfb3",
+    "test/spec/v2-grounding/test_c1_scope.py": "b4f3d2de71108392fa3d5ee026b7e6686d7f73d6d017fd36a479386b99d5e42a",
+    "test/spec/v2-grounding/test_c2_slots.py": "8a8dc707a250cb287bf56405320304fcd650636a7a22d160a7073ab3852280a7",
+    "test/spec/v2-grounding/test_c3_identity.py": "ba078a7926513a9194eeb8614bcd166a8a81166dea9a6856010d770384d8b956",
+    "test/spec/v2-grounding/test_c4_accession.py": "bcd3cd65c2b4b7f84e27337a8f9f033538a065986f4c247641a549d0606bd2b6",
+    "test/spec/v2-grounding/test_c5_defined.py": "6ae04d082d0de3c640f94e49313d6003b6b92dec4a3cf6e50775eaff4378ab17",
+    "test/spec/v2-grounding/test_c6_readings.py": "327d24595ddf2c0bec2566224f9ef144d67a15c553ca5f033545ad905bb6cb75",
+    "test/spec/v2-grounding/test_c7_arithmetic.py": "edb35ebd4478e53bf572b787560992339160cac78e9ce6b365128b051cb67b28",
+    "test/spec/v2-grounding/test_c8_nothing_cited.py": "f24481064a045c964d0eeca2b251cafb9eb080f512cd575c867835721022b5ca",
+    "test/spec/v2-grounding/test_c9_attach.py": "ec3835dff29626b7ece8367904701a166da31ff6da3344974dceccd25a178ad7"
+  },
+  "id": "v2-grounding",
+  "interface": [
+    {
+      "file": "src/eval/core/graders/grounding_v2.py",
+      "module": "eval.core.graders.grounding_v2",
+      "qualname": "v2_grounding_slots",
+      "signature": "def v2_grounding_slots(case: EvalCase) -> list[dict[str, Any]]"
+    },
+    {
+      "file": "src/eval/core/graders/grounding_v2.py",
+      "module": "eval.core.graders.grounding_v2",
+      "qualname": "grade_v2_grounding",
+      "signature": "def grade_v2_grounding(case: EvalCase, fact_ids: Sequence[int], facts: Mapping[int, FactRecord]) -> dict[str, Any] | None"
+    },
+    {
+      "file": "src/eval/core/graders/grounding_v2.py",
+      "module": "eval.core.graders.grounding_v2",
+      "qualname": "attach_v2_grounding",
+      "signature": "def attach_v2_grounding(results: Sequence[CaseResult], store: FactStore) -> int"
+    }
+  ],
+  "nodes": [
+    "test/spec/v2-grounding/test_c1_scope.py::test_attach_leaves_a_v1_result_untouched",
+    "test/spec/v2-grounding/test_c1_scope.py::test_attach_never_moves_a_labelled_result",
+    "test/spec/v2-grounding/test_c1_scope.py::test_out_of_scope_cases_are_not_v2_grounded",
+    "test/spec/v2-grounding/test_c2_slots.py::test_lookup_with_a_cover_page_alternate",
+    "test/spec/v2-grounding/test_c2_slots.py::test_permuting_inputs_permutes_key_slots",
+    "test/spec/v2-grounding/test_c2_slots.py::test_point_in_time_binds_its_accession",
+    "test/spec/v2-grounding/test_c2_slots.py::test_ratio_inputs_in_order_and_an_unattached_reading",
+    "test/spec/v2-grounding/test_c2_slots.py::test_trend_row_reading_serves_its_year_and_defined_inputs",
+    "test/spec/v2-grounding/test_c3_identity.py::test_any_single_perturbation_is_wrong",
+    "test/spec/v2-grounding/test_c3_identity.py::test_one_wrong_field_makes_it_wrong[change0]",
+    "test/spec/v2-grounding/test_c3_identity.py::test_one_wrong_field_makes_it_wrong[change1]",
+    "test/spec/v2-grounding/test_c3_identity.py::test_one_wrong_field_makes_it_wrong[change2]",
+    "test/spec/v2-grounding/test_c3_identity.py::test_one_wrong_field_makes_it_wrong[change3]",
+    "test/spec/v2-grounding/test_c3_identity.py::test_one_wrong_field_makes_it_wrong[change4]",
+    "test/spec/v2-grounding/test_c3_identity.py::test_one_wrong_field_makes_it_wrong[change5]",
+    "test/spec/v2-grounding/test_c3_identity.py::test_one_wrong_field_makes_it_wrong[change6]",
+    "test/spec/v2-grounding/test_c3_identity.py::test_per_share_unit_normalises",
+    "test/spec/v2-grounding/test_c3_identity.py::test_the_key_fact_in_store_form_is_right",
+    "test/spec/v2-grounding/test_c3_identity.py::test_value_agreement_at_the_keys_decimals",
+    "test/spec/v2-grounding/test_c4_accession.py::test_point_in_time_binds_the_named_filing",
+    "test/spec/v2-grounding/test_c4_accession.py::test_relabelling_accessions_changes_nothing_outside_point_in_time",
+    "test/spec/v2-grounding/test_c4_accession.py::test_restated_original_value_is_wrong",
+    "test/spec/v2-grounding/test_c4_accession.py::test_same_value_in_another_filing_is_right",
+    "test/spec/v2-grounding/test_c5_defined.py::test_a_single_fact_equal_to_the_total_is_right",
+    "test/spec/v2-grounding/test_c5_defined.py::test_an_ordinary_slot_claims_its_fact_first",
+    "test/spec/v2-grounding/test_c5_defined.py::test_any_split_adds_up_and_any_drop_does_not",
+    "test/spec/v2-grounding/test_c5_defined.py::test_lines_short_of_the_total_are_wrong",
+    "test/spec/v2-grounding/test_c5_defined.py::test_lines_that_add_up_are_right",
+    "test/spec/v2-grounding/test_c6_readings.py::test_cover_page_reading_is_right",
+    "test/spec/v2-grounding/test_c6_readings.py::test_key_or_reading_or_both",
+    "test/spec/v2-grounding/test_c6_readings.py::test_trend_row_reading_evidences_its_year",
+    "test/spec/v2-grounding/test_c7_arithmetic.py::test_compound_uses_the_top_level_key",
+    "test/spec/v2-grounding/test_c7_arithmetic.py::test_permuting_citations_changes_nothing",
+    "test/spec/v2-grounding/test_c7_arithmetic.py::test_ratio_counts",
+    "test/spec/v2-grounding/test_c7_arithmetic.py::test_screen_counts_and_an_unresolved_id",
+    "test/spec/v2-grounding/test_c7_arithmetic.py::test_unrelated_lowers_and_right_never_lowers",
+    "test/spec/v2-grounding/test_c8_nothing_cited.py::test_an_arm_that_cites_nothing_is_not_applicable",
+    "test/spec/v2-grounding/test_c8_nothing_cited.py::test_refusal_has_no_precision",
+    "test/spec/v2-grounding/test_c9_attach.py::test_a_stored_payload_grades_the_same",
+    "test/spec/v2-grounding/test_c9_attach.py::test_attach_sets_hand_counted_values",
+    "test/spec/v2-grounding/test_c9_attach.py::test_attaching_twice_is_attaching_once"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/v2-grounding.md",
+    "sha256": "3f8a9365ae811d39843deb838b13dff8bf072299c9600c2afc4aec7d619dda06"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

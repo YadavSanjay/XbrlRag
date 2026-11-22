@@ -1,0 +1,40 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0001628280-26-010047	5	5	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001628280-26-010047	5	6	BS	0	H	OtherShortTermInvestments	us-gaap/2025	Short-term investments	0
+0001628280-26-010047	5	7	BS	0	H	CashCashEquivalentsAndShortTermInvestments	us-gaap/2025	Total Cash, Cash Equivalents and Short-Term Investments	0
+0001628280-26-010047	5	8	BS	0	H	MarketableSecurities	us-gaap/2025	Marketable securities	0
+0001628280-26-010047	5	9	BS	0	H	AccountsReceivableNetCurrent	us-gaap/2025	Trade accounts receivable, less allowances of $495 and $506, respectively	0
+0001628280-26-010047	5	10	BS	0	H	InventoryNet	us-gaap/2025	Inventories	0
+0001628280-26-010047	5	11	BS	0	H	PrepaidExpenseAndOtherAssetsCurrent	us-gaap/2025	Prepaid expenses and other current assets	0
+0001628280-26-010047	5	12	BS	0	H	AssetsOfDisposalGroupIncludingDiscontinuedOperation	us-gaap/2025	Assets held for sale	0
+0001628280-26-010047	5	13	BS	0	H	AssetsCurrent	us-gaap/2025	Total Current Assets	0
+0001628280-26-010047	5	14	BS	0	H	EquityMethodInvestments	us-gaap/2025	Equity method investments	0
+0001628280-26-010047	5	15	BS	0	H	DeferredIncomeTaxAssetsNet	us-gaap/2025	Deferred income tax assets	0
+0001628280-26-010047	5	16	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2025	Property, plant and equipment  net	0
+0001628280-26-010047	5	17	BS	0	H	IndefiniteLivedTrademarks	us-gaap/2025	Trademarks with indefinite lives	0
+0001628280-26-010047	5	18	BS	0	H	Goodwill	us-gaap/2025	Goodwill	0
+0001628280-26-010047	5	19	BS	0	H	OtherAssetsNoncurrent	us-gaap/2025	Other noncurrent assets	0
+0001628280-26-010047	5	20	BS	0	H	Assets	us-gaap/2025	Total Assets	0
+0001628280-26-010047	5	23	BS	0	H	AccountsPayableAndAccruedLiabilitiesCurrent	us-gaap/2025	Accounts payable and accrued expenses	0
+0001628280-26-010047	5	24	BS	0	H	NotesAndLoansPayable	us-gaap/2025	Loans and notes payable	0
+0001628280-26-010047	5	25	BS	0	H	LongTermDebtAndCapitalLeaseObligationsCurrent	us-gaap/2025	Current maturities of long-term debt	0
+0001628280-26-010047	5	26	BS	0	H	AccruedIncomeTaxesCurrent	us-gaap/2025	Accrued income taxes	0
+0001628280-26-010047	5	27	BS	0	H	LiabilitiesOfDisposalGroupIncludingDiscontinuedOperation	us-gaap/2025	Liabilities held for sale	0
+0001628280-26-010047	5	28	BS	0	H	LiabilitiesCurrent	us-gaap/2025	Total Current Liabilities	0
+0001628280-26-010047	5	29	BS	0	H	LongTermDebtAndCapitalLeaseObligations	us-gaap/2025	Long-term debt	0
+0001628280-26-010047	5	30	BS	0	H	OtherLiabilitiesNoncurrent	us-gaap/2025	Other noncurrent liabilities	0
+0001628280-26-010047	5	31	BS	0	H	DeferredIncomeTaxLiabilitiesNet	us-gaap/2025	Deferred income tax liabilities	0
+0001628280-26-010047	5	33	BS	0	H	CommonStockValue	us-gaap/2025	Common stock, $0.25 par value; authorized  11,200 shares; issued  7,040 shares	0
+0001628280-26-010047	5	34	BS	0	H	AdditionalPaidInCapitalCommonStock	us-gaap/2025	Capital surplus	0
+0001628280-26-010047	5	35	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2025	Reinvested earnings	0
+0001628280-26-010047	5	36	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Accumulated other comprehensive income (loss)	0
+0001628280-26-010047	5	37	BS	0	H	TreasuryStockValue	us-gaap/2025	Treasury stock, at cost  2,738 and 2,738 shares, respectively	1
+0001628280-26-010047	5	38	BS	0	H	StockholdersEquity	us-gaap/2025	Equity Attributable to Shareowners of The Coca-Cola Company	0
+0001628280-26-010047	5	39	BS	0	H	MinorityInterest	us-gaap/2025	Equity Attributable to Noncontrolling Interests	0
+0001628280-26-010047	5	40	BS	0	H	StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Total Equity	0
+0001628280-26-010047	5	41	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2025	Total Liabilities and Equity	0
+0001628280-26-010047	6	1	BS	1	H	AllowanceForDoubtfulAccountsReceivableCurrent	us-gaap/2025	Accounts Receivable, Allowance for Credit Loss, Current	0
+0001628280-26-010047	6	2	BS	1	H	CommonStockParOrStatedValuePerShare	us-gaap/2025	Common Stock, Par or Stated Value Per Share	0
+0001628280-26-010047	6	3	BS	1	H	CommonStockSharesAuthorized	us-gaap/2025	Common Stock, Shares Authorized	0
+0001628280-26-010047	6	4	BS	1	H	CommonStockSharesIssued	us-gaap/2025	Common Stock, Shares, Issued	0
+0001628280-26-010047	6	5	BS	1	H	TreasuryStockCommonShares	us-gaap/2025	Treasury Stock, Common, Shares	0

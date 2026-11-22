@@ -1,0 +1,84 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/ingest-accession-identity/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-14",
+  "criteria": {
+    "C1": [
+      "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_accession_number_format",
+      "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_accession_number_format_for_any_value"
+    ],
+    "C2": [
+      "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_amd_10k_is_not_the_amendment",
+      "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_already_ingested_rule_for_any_rows"
+    ],
+    "C3": [
+      "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_entry_path_forms",
+      "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_entry_path_normalisation_for_any_path"
+    ],
+    "C4": [
+      "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_amd_patch_picks_the_unpatched_row",
+      "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_patch_disambiguates_by_path_or_gives_up",
+      "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_pick_rule_for_any_rows"
+    ]
+  },
+  "files": {
+    "test/spec/ingest-accession-identity/test_ingest_accession_identity.py": "ea9c95dd152129fab170c4ad571ee8c38af71aebe44aa4c4360799fa4524dafc"
+  },
+  "id": "ingest-accession-identity",
+  "interface": [
+    {
+      "file": "src/ingest/sec_edgar/ingest/arelle_xbrl_ingestor.py",
+      "module": "ingest.sec_edgar.ingest.arelle_xbrl_ingestor",
+      "qualname": "is_accession_number",
+      "signature": "def is_accession_number(value: str | None) -> bool"
+    },
+    {
+      "file": "src/ingest/sec_edgar/ingest/arelle_xbrl_ingestor.py",
+      "module": "ingest.sec_edgar.ingest.arelle_xbrl_ingestor",
+      "qualname": "already_ingested",
+      "signature": "def already_ingested(accession_no: str | None, rows: collections.abc.Sequence[tuple[str | None, str | None]]) -> bool"
+    },
+    {
+      "file": "src/ingest/sec_edgar/ingest/arelle_xbrl_ingestor.py",
+      "module": "ingest.sec_edgar.ingest.arelle_xbrl_ingestor",
+      "qualname": "same_entry_path",
+      "signature": "def same_entry_path(entry_url: str | None, path: str | None) -> bool"
+    },
+    {
+      "file": "src/ingest/sec_edgar/ingest/arelle_xbrl_ingestor.py",
+      "module": "ingest.sec_edgar.ingest.arelle_xbrl_ingestor",
+      "qualname": "pick_accession_row",
+      "signature": "def pick_accession_row(accession_no: str, path: str | None, rows: collections.abc.Sequence[tuple[int, str | None, str | None]]) -> int | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_accession_number_format",
+    "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_accession_number_format_for_any_value",
+    "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_already_ingested_rule_for_any_rows",
+    "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_amd_10k_is_not_the_amendment",
+    "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_amd_patch_picks_the_unpatched_row",
+    "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_entry_path_forms",
+    "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_entry_path_normalisation_for_any_path",
+    "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_patch_disambiguates_by_path_or_gives_up",
+    "test/spec/ingest-accession-identity/test_ingest_accession_identity.py::test_pick_rule_for_any_rows"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-04",
+    "record": "Implemented by PR 30 (merge 743b72f, 2026-10-14), merged from wip/ingest-accession-identity rather than impl/ingest-accession-identity, so tdd found no impl merge; the 9 locked tests pass on main 11d89d7."
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/ingest-accession-identity.md",
+    "sha256": "39d8b8747b0cba596ddc9110e7e5ec42de0c669cd0ca60c4ddb939c263df4b69"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

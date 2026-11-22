@@ -1,0 +1,37 @@
+# Reviewed exceptions of the companyfacts corpus check (test/corpus/test_companyfacts_corpus.py).
+# SHRINK-ONLY, like ruff-burndown.toml: the test fails on a disagreement missing here AND on an
+# entry here that no longer disagrees. Never add an entry to get green without reviewing the
+# fact against the filing; an ingest/scale/sign/period bug is fixed, not listed.
+#
+# Key fields (must match the fact exactly): accession_no, concept (taxonomy:local), unit (as our
+# store writes it), period_start / period_end (SEC's dates: our stored end minus one day),
+# decimals (null = INF), ours (our value). ticker, fact_id and sec are for the reader only
+# (fact ids change on a reload).
+#
+# Categories:
+#   sec_precision_loss  companyfacts prints the value with fewer digits than the filing states;
+#                       our value is the filed value (decimals INF). SEC-side, by design of the API.
+#
+# Reviewed 2026-11-07 against xbrl_db (23 filers with cached companyfacts).
+
+exceptions:
+  # MSFT par value is $0.00000625 per share, tagged with decimals="INF" on the cover page; SEC
+  # companyfacts prints 0.000006. Our stored value equals the filed fact_value.
+  - {ticker: MSFT, fact_id: 43261, accession_no: 0001564590-22-026876, concept: "dei:EntityListingParValuePerShare", unit: "shares*USD", period_start: "2021-07-01", period_end: "2022-06-30", decimals: null, ours: 0.00000625, sec: 0.000006, category: sec_precision_loss}
+  - {ticker: MSFT, fact_id: 45093, accession_no: 0000950170-23-035122, concept: "dei:EntityListingParValuePerShare", unit: "shares*USD", period_start: "2022-07-01", period_end: "2023-06-30", decimals: null, ours: 0.00000625, sec: 0.000006, category: sec_precision_loss}
+  - {ticker: MSFT, fact_id: 46929, accession_no: 0000950170-24-087843, concept: "dei:EntityListingParValuePerShare", unit: "shares*USD", period_start: "2023-07-01", period_end: "2024-06-30", decimals: null, ours: 0.00000625, sec: 0.000006, category: sec_precision_loss}
+  - {ticker: MSFT, fact_id: 48789, accession_no: 0000950170-25-100235, concept: "dei:EntityListingParValuePerShare", unit: "shares*USD", period_start: "2024-07-01", period_end: "2025-06-30", decimals: null, ours: 0.00000625, sec: 0.000006, category: sec_precision_loss}
+  - {ticker: MSFT, fact_id: 50630, accession_no: 0001193125-26-191507, concept: "dei:EntityListingParValuePerShare", unit: "shares*USD", period_start: "2025-07-01", period_end: "2026-03-31", decimals: null, ours: 0.00000625, sec: 0.000006, category: sec_precision_loss}
+  - {ticker: MSFT, fact_id: 104008, accession_no: 0001193125-26-323660, concept: "dei:EntityListingParValuePerShare", unit: "shares*USD", period_start: "2025-07-01", period_end: "2026-06-30", decimals: null, ours: 0.00000625, sec: 0.000006, category: sec_precision_loss}
+
+# Facts that could not be compared because companyfacts has no entry for their own accession,
+# counted per (ticker, accession, status). Also shrink-only: a count must match exactly; a
+# higher count is a new gap to review, a lower one means the list must be edited down.
+#   not_in_companyfacts   no entry for the concept, unit and period in any accession
+#   other_accession_only  the value is filed only under an earlier accession (SEC de-duplication)
+# TSM 0001628280-26-025362 (FY2025 20-F, filed 2026-04-16): the cached companyfacts carries only
+# 2 dei entries for this accession, so SEC had not extracted its IFRS facts when the cache was
+# taken. SEC-side/cache staleness; re-fetching companyfacts should clear it.
+uncovered:
+  - {ticker: TSM, accession_no: 0001628280-26-025362, status: not_in_companyfacts, count: 542}
+  - {ticker: TSM, accession_no: 0001628280-26-025362, status: other_accession_only, count: 388}

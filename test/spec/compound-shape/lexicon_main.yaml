@@ -1,0 +1,18 @@
+# The compound-shape fixture lexicon without the four ratio ids: the lexicon as it was
+# before the change (criterion C9).
+companies:
+  DEVA: {short: Deva, legal: Deva Holdings Inc.}
+  DEVB: {short: Devb, legal: Devb Corporation}
+  DEVC: {short: Devc, legal: Devc Inc.}
+  DEVD: {short: Devd, legal: Devd Ltd.}
+  DEVE: {short: Deve, legal: Deve SE}
+  DEVF: {short: Devf, legal: Devf Corp.}
+metrics:
+  Revenue: {label: revenue, synonyms: [net sales]}
+  OperatingIncome: {label: operating income, synonyms: [operating profit]}
+  NetIncome: {label: net income, synonyms: [net earnings]}
+universes:
+  big: [the covered companies]
+  small: [the pair]
+  tiny: [the lone filer]
+  extra: [the extended group]

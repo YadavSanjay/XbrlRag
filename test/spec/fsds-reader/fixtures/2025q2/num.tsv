@@ -1,0 +1,388 @@
+adsh	tag	version	ddate	qtrs	uom	segments	coreg	value	footnote
+0000950170-25-087926	AmortizationOfIntangibleAssets	us-gaap/2024	20230531	4	USD			3582000000.0000	
+0000950170-25-087926	BusinessCombinationAcquisitionRelatedCosts	us-gaap/2024	20230531	4	USD			190000000.0000	
+0000950170-25-087926	BusinessCombinationAcquisitionRelatedCosts	us-gaap/2024	20240531	4	USD			314000000.0000	
+0000950170-25-087926	CloudServicesAndLicenseSupportExpenses	0000950170-25-087926	20250531	4	USD	BusinessSegments=CloudAndLicenseBusiness;ConsolidationItems=OperatingSegments;		10827000000.0000	
+0000950170-25-087926	CloudServicesAndLicenseSupportRevenue	0000950170-25-087926	20240531	4	USD			39383000000.0000	
+0000950170-25-087926	CloudServicesAndLicenseSupportRevenue	0000950170-25-087926	20250531	4	USD			44029000000.0000	
+0000950170-25-087926	EarningsPerShareBasic	us-gaap/2024	20230531	4	USD			3.1500	
+0000950170-25-087926	EarningsPerShareDiluted	us-gaap/2024	20230531	4	USD			3.0700	
+0000950170-25-087926	HardwareExpenses	0000950170-25-087926	20250531	4	USD			782000000.0000	
+0000950170-25-087926	NetIncomeLoss	us-gaap/2024	20230531	4	USD			8503000000.0000	
+0000950170-25-087926	NetIncomeLoss	us-gaap/2024	20240531	4	USD			10467000000.0000	
+0000950170-25-087926	OperatingIncomeLoss	us-gaap/2024	20240531	4	USD	BusinessSegments=ServicesBusiness;ConsolidationItems=OperatingSegments;		916000000.0000	
+0000950170-25-087926	ResearchAndDevelopmentExpense	us-gaap/2024	20240531	4	USD			8915000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230531	4	USD	Geographical=AsiaPacific;		6619000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240531	4	USD	ProductOrService=InfrastructureCloudServicesAndLicenseSupport;		21211000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240531	4	USD	ProductOrService=LicenseSupport;		19609000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20250531	4	USD			57399000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20250531	4	USD	BusinessSegments=ServicesBusiness;ConsolidationItems=OperatingSegments;		5233000000.0000	
+0000950170-25-087926	SellingAndMarketingExpense	us-gaap/2024	20230531	4	USD	BusinessSegments=HardwareBusiness;ConsolidationItems=OperatingSegments;		331000000.0000	
+0000950170-25-087926	GeneralAndAdministrativeExpense	us-gaap/2024	20240531	4	USD			1548000000.0000	
+0000950170-25-087926	GeneralAndAdministrativeExpense	us-gaap/2024	20250531	4	USD			1602000000.0000	
+0000950170-25-087926	HardwareExpenses	0000950170-25-087926	20240531	4	USD			891000000.0000	
+0000950170-25-087926	InterestExpense	us-gaap/2024	20240531	4	USD			3514000000.0000	
+0000950170-25-087926	NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests	0000950170-25-087926	20240531	4	USD			-98000000.0000	
+0000950170-25-087926	NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests	0000950170-25-087926	20250531	4	USD			60000000.0000	
+0000950170-25-087926	OperatingIncomeLoss	us-gaap/2024	20230531	4	USD	BusinessSegments=HardwareBusiness;ConsolidationItems=OperatingSegments;		1932000000.0000	
+0000950170-25-087926	OperatingIncomeLoss	us-gaap/2024	20230531	4	USD	ConsolidationItems=OperatingSegments;		29162000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240531	4	USD	ProductOrService=CloudServices;		19774000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240531	4	USD	ProductOrService=CloudServicesAndLicenseSupport;		39383000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20250531	4	USD	BusinessSegments=HardwareBusiness;ConsolidationItems=OperatingSegments;		2936000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20250531	4	USD	ProductOrService=CloudServices;		24506000000.0000	
+0000950170-25-087926	SellingAndMarketingExpense	us-gaap/2024	20240531	4	USD	BusinessSegments=CloudAndLicenseBusiness;ConsolidationItems=OperatingSegments;		7167000000.0000	
+0000950170-25-087926	AmortizationOfIntangibleAssets	us-gaap/2024	20250531	4	USD	FiniteLivedIntangibleAssetsByMajorClass=OtherIntangibleAssets;		489000000.0000	
+0000950170-25-087926	BusinessCombinationAcquisitionRelatedCosts	us-gaap/2024	20250531	4	USD			75000000.0000	
+0000950170-25-087926	CloudLicenseAndOnPremiseLicenseRevenue	0000950170-25-087926	20240531	4	USD			5081000000.0000	
+0000950170-25-087926	CloudServicesAndLicenseSupportExpenses	0000950170-25-087926	20230531	4	USD	BusinessSegments=CloudAndLicenseBusiness;ConsolidationItems=OperatingSegments;		7222000000.0000	
+0000950170-25-087926	CostsAndExpenses	us-gaap/2024	20240531	4	USD			37608000000.0000	
+0000950170-25-087926	EarningsPerShareBasic	us-gaap/2024	20240531	4	USD			3.8200	
+0000950170-25-087926	IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems	0000950170-25-087926	20230531	4	USD			9126000000.0000	
+0000950170-25-087926	IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems	0000950170-25-087926	20240531	4	USD			11741000000.0000	
+0000950170-25-087926	InterestExpense	us-gaap/2024	20250531	4	USD			3578000000.0000	
+0000950170-25-087926	OperatingIncomeLoss	us-gaap/2024	20240531	4	USD	BusinessSegments=CloudAndLicenseBusiness;ConsolidationItems=OperatingSegments;		28514000000.0000	The margins reported reflect only the direct controllable costs of each line of business and do not include allocations of research and development, general and administrative and certain other allocable expenses, net. Additionally, the margins reported above do not reflect amortization of intangible assets, acquisition related and other expenses, restructuring expenses, stock-based compensation, interest expense or certain other non-operating income (expenses), net. Refer to the table below for a reconcili
+0000950170-25-087926	OperatingIncomeLoss	us-gaap/2024	20240531	4	USD	ConsolidationItems=OperatingSegments;		31345000000.0000	
+0000950170-25-087926	OperatingIncomeLoss	us-gaap/2024	20250531	4	USD	ConsolidationItems=OperatingSegments;		33841000000.0000	
+0000950170-25-087926	ResearchAndDevelopmentExpense	us-gaap/2024	20250531	4	USD			9860000000.0000	
+0000950170-25-087926	RestructuringCharges	us-gaap/2024	20230531	4	USD			490000000.0000	
+0000950170-25-087926	RestructuringCharges	us-gaap/2024	20230531	4	USD	RestructuringPlan=Fiscal2022OracleRestructuring;		493000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230531	4	USD	BusinessSegments=ServicesBusiness;ConsolidationItems=OperatingSegments;		5594000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230531	4	USD	ConsolidationItems=OperatingSegments;		49954000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20250531	4	USD	BusinessSegments=CloudAndLicenseBusiness;ConsolidationItems=OperatingSegments;		49230000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20250531	4	USD	Geographical=AsiaPacific;		7035000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20250531	4	USD	ProductOrService=LicenseSupport;		19523000000.0000	
+0000950170-25-087926	SellingAndMarketingExpense	us-gaap/2024	20250531	4	USD	BusinessSegments=HardwareBusiness;ConsolidationItems=OperatingSegments;		276000000.0000	
+0000950170-25-087926	ServicesExpense	0000950170-25-087926	20250531	4	USD			4576000000.0000	
+0000950170-25-087926	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2024	20250531	4	shares			2866000000.0000	
+0000950170-25-087926	AmortizationOfIntangibleAssets	us-gaap/2024	20250531	4	USD			2307000000.0000	
+0000950170-25-087926	AmortizationOfIntangibleAssets	us-gaap/2024	20250531	4	USD	FiniteLivedIntangibleAssetsByMajorClass=DevelopedTechnologyRights;		642000000.0000	
+0000950170-25-087926	EarningsPerShareDiluted	us-gaap/2024	20250531	4	USD			4.3400	
+0000950170-25-087926	IncomeTaxExpenseBenefit	us-gaap/2024	20230531	4	USD			623000000.0000	
+0000950170-25-087926	IncomeTaxExpenseBenefit	us-gaap/2024	20250531	4	USD			1717000000.0000	
+0000950170-25-087926	NetIncomeLoss	us-gaap/2024	20250531	4	USD			12443000000.0000	
+0000950170-25-087926	RestructuringCharges	us-gaap/2024	20250531	4	USD	RestructuringPlan=Fiscal2024OracleRestructuring;		314000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230531	4	USD			49954000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230531	4	USD	Geographical=Americas;		31226000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230531	4	USD	Geographical=EMEA;		12109000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240531	4	USD			52961000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20250531	4	USD	ProductOrService=CloudServicesAndLicenseSupport;		44029000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20250531	4	USD	ProductOrService=InfrastructureCloudServicesAndLicenseSupport;		24646000000.0000	
+0000950170-25-087926	SellingAndMarketingExpense	us-gaap/2024	20230531	4	USD	BusinessSegments=CloudAndLicenseBusiness;ConsolidationItems=OperatingSegments;		7738000000.0000	
+0000950170-25-087926	SellingAndMarketingExpense	us-gaap/2024	20240531	4	USD	BusinessSegments=HardwareBusiness;ConsolidationItems=OperatingSegments;		296000000.0000	
+0000950170-25-087926	SellingAndMarketingExpense	us-gaap/2024	20250531	4	USD			8651000000.0000	
+0000950170-25-087926	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2024	20240531	4	shares			2744000000.0000	
+0000950170-25-087926	AmortizationOfIntangibleAssets	us-gaap/2024	20240531	4	USD			3010000000.0000	
+0000950170-25-087926	CloudLicenseAndOnPremiseLicenseRevenue	0000950170-25-087926	20230531	4	USD			5779000000.0000	
+0000950170-25-087926	CostsAndExpenses	us-gaap/2024	20230531	4	USD			36861000000.0000	
+0000950170-25-087926	GeneralAndAdministrativeExpense	us-gaap/2024	20230531	4	USD			1579000000.0000	
+0000950170-25-087926	HardwareRevenues	0000950170-25-087926	20240531	4	USD			3066000000.0000	
+0000950170-25-087926	OperatingIncomeLoss	us-gaap/2024	20230531	4	USD			13093000000.0000	
+0000950170-25-087926	OperatingIncomeLoss	us-gaap/2024	20230531	4	USD	BusinessSegments=ServicesBusiness;ConsolidationItems=OperatingSegments;		1104000000.0000	
+0000950170-25-087926	OperatingIncomeLoss	us-gaap/2024	20250531	4	USD			17678000000.0000	
+0000950170-25-087926	OperatingIncomeLoss	us-gaap/2024	20250531	4	USD	BusinessSegments=HardwareBusiness;ConsolidationItems=OperatingSegments;		1918000000.0000	
+0000950170-25-087926	RestructuringCharges	us-gaap/2024	20240531	4	USD	RestructuringPlan=Fiscal2024OracleRestructuring;		432000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230531	4	USD	ProductOrService=LicenseSupport;		19426000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240531	4	USD	BusinessSegments=CloudAndLicenseBusiness;ConsolidationItems=OperatingSegments;		44464000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240531	4	USD	Geographical=AsiaPacific;		6809000000.0000	
+0000950170-25-087926	SalesRevenueServicesNet1	0000950170-25-087926	20250531	4	USD			5233000000.0000	
+0000950170-25-087926	SellingAndMarketingExpense	us-gaap/2024	20230531	4	USD			8833000000.0000	
+0000950170-25-087926	ServicesExpense	0000950170-25-087926	20240531	4	USD			4825000000.0000	
+0000950170-25-087926	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2024	20230531	4	shares			2766000000.0000	
+0000950170-25-087926	CloudServicesAndLicenseSupportExpenses	0000950170-25-087926	20230531	4	USD			7763000000.0000	
+0000950170-25-087926	HardwareExpenses	0000950170-25-087926	20230531	4	USD			1040000000.0000	
+0000950170-25-087926	HardwareRevenues	0000950170-25-087926	20250531	4	USD			2936000000.0000	
+0000950170-25-087926	InterestExpense	us-gaap/2024	20230531	4	USD			3505000000.0000	
+0000950170-25-087926	NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests	0000950170-25-087926	20230531	4	USD			-462000000.0000	
+0000950170-25-087926	OperatingIncomeLoss	us-gaap/2024	20240531	4	USD			15353000000.0000	
+0000950170-25-087926	OperatingIncomeLoss	us-gaap/2024	20240531	4	USD	BusinessSegments=HardwareBusiness;ConsolidationItems=OperatingSegments;		1915000000.0000	
+0000950170-25-087926	OperatingIncomeLoss	us-gaap/2024	20250531	4	USD	BusinessSegments=CloudAndLicenseBusiness;ConsolidationItems=OperatingSegments;		30930000000.0000	
+0000950170-25-087926	OperatingIncomeLoss	us-gaap/2024	20250531	4	USD	BusinessSegments=ServicesBusiness;ConsolidationItems=OperatingSegments;		993000000.0000	
+0000950170-25-087926	RestructuringCharges	us-gaap/2024	20240531	4	USD			404000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230531	4	USD	ProductOrService=ApplicationsCloudServicesAndLicenseSupport;		16651000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230531	4	USD	ProductOrService=CloudServicesAndLicenseSupport;		35307000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230531	4	USD	ProductOrService=InfrastructureCloudServicesAndLicenseSupport;		18656000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240531	4	USD	ConsolidationItems=OperatingSegments;		52961000000.0000	
+0000950170-25-087926	SalesRevenueServicesNet1	0000950170-25-087926	20240531	4	USD			5431000000.0000	
+0000950170-25-087926	SellingAndMarketingExpense	us-gaap/2024	20250531	4	USD	BusinessSegments=CloudAndLicenseBusiness;ConsolidationItems=OperatingSegments;		7473000000.0000	
+0000950170-25-087926	ServicesExpense	0000950170-25-087926	20230531	4	USD			4761000000.0000	
+0000950170-25-087926	AmortizationOfIntangibleAssets	us-gaap/2024	20250531	4	USD	FiniteLivedIntangibleAssetsByMajorClass=CloudServicesAndLicenseSupportAgreementsAndRelatedRelationships;		714000000.0000	
+0000950170-25-087926	CloudServicesAndLicenseSupportRevenue	0000950170-25-087926	20230531	4	USD			35307000000.0000	
+0000950170-25-087926	CostsAndExpenses	us-gaap/2024	20250531	4	USD			39721000000.0000	
+0000950170-25-087926	EarningsPerShareDiluted	us-gaap/2024	20240531	4	USD			3.7100	
+0000950170-25-087926	IncomeTaxExpenseBenefit	us-gaap/2024	20240531	4	USD			1274000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230531	4	USD	BusinessSegments=CloudAndLicenseBusiness;ConsolidationItems=OperatingSegments;		41086000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230531	4	USD	BusinessSegments=HardwareBusiness;ConsolidationItems=OperatingSegments;		3274000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240531	4	USD	BusinessSegments=HardwareBusiness;ConsolidationItems=OperatingSegments;		3066000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240531	4	USD	BusinessSegments=ServicesBusiness;ConsolidationItems=OperatingSegments;		5431000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240531	4	USD	Geographical=Americas;		33122000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240531	4	USD	ProductOrService=ApplicationsCloudServicesAndLicenseSupport;		18172000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20250531	4	USD	Geographical=EMEA;		14025000000.0000	Comprised of Europe, the Middle East and Africa
+0000950170-25-087926	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2024	20240531	4	shares			2823000000.0000	
+0000950170-25-087926	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2024	20230531	4	shares			2696000000.0000	
+0001193125-25-083423	BasicEarningsLossPerShare	ifrs/2024	20221231	4	TWD			38.2900	
+0001193125-25-083423	BasicEarningsLossPerShare	ifrs/2024	20241231	4	TWD			44.6800	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=EquityAttributableToOwnersOfParent;		1035518100000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=UnappropriatedEarnings;		992873900000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=EquityAttributableToOwnersOfParent;		1230949100000.0000	
+0001193125-25-083423	ComprehensiveIncomeAttributableToOwnersOfParent	ifrs/2024	20241231	4	USD			37540400000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20221231	4	TWD	HedgingInstruments=USTreasuryBondsInterestRateFuturesContracts;TypesOfHedges=FairValueHedges;		284000000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20241231	4	TWD	HedgedItems=ForecastTransactionCapitalExpenditures;TypesOfHedges=CashFlowHedges;		-5000000.0000	
+0001193125-25-083423	GrossProfit	ifrs/2024	20241231	4	USD			49538100000.0000	
+0001193125-25-083423	IncomeTaxExpenseContinuingOperations	ifrs/2024	20221231	4	TWD			150777500000.0000	
+0001193125-25-083423	IncomeTaxExpenseContinuingOperations	ifrs/2024	20241231	4	TWD			248316100000.0000	
+0001193125-25-083423	IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss	ifrs/2024	20241231	4	TWD			38900000.0000	
+0001193125-25-083423	InvestmentsIncomeInterest	0001193125-25-083423	20231231	4	TWD			60293900000.0000	
+0001193125-25-083423	NonOperatingIncomeExpense1	0001193125-25-083423	20221231	4	TWD			22793300000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=EquityAttributableToOwnersOfParent;		-7988200000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=NoncontrollingInterests;		-825500000.0000	
+0001193125-25-083423	OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax	ifrs/2024	20221231	4	TWD			-198300000.0000	
+0001193125-25-083423	OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax	ifrs/2024	20231231	4	TWD			1538300000.0000	
+0001193125-25-083423	ProfitLoss	ifrs/2024	20221231	4	TWD			993294700000.0000	
+0001193125-25-083423	ProfitLoss	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=UnappropriatedEarnings;		851740000000.0000	
+0001193125-25-083423	ProfitLoss	ifrs/2024	20241231	4	TWD			1157523900000.0000	
+0001193125-25-083423	Revenue	ifrs/2024	20241231	4	TWD	MajorCustomers=CustomerA;		624345500000.0000	
+0001193125-25-083423	SalesAndMarketingExpense	ifrs/2024	20241231	4	TWD			13143600000.0000	
+0001193125-25-083423	ShareOfOtherComprehensiveIncomeOfAssociatesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20231231	4	TWD			63900000.0000	
+0001193125-25-083423	ShareOfOtherComprehensiveIncomeOfAssociatesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20241231	4	TWD			283300000.0000	
+0001193125-25-083423	UnrealizedGainsOrLossesOnInvestmentsInDebtInstrumentsAtFairValueThroughOtherComprehensiveIncomeWillBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20241231	4	USD			59500000.0000	
+0001193125-25-083423	UnrealizedGainsOrLossesOnInvestmentsInEquityInstrumentsAtFairValueThroughOtherComprehensiveIncomeWillNotBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20221231	4	TWD			-263700000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome;		-10327400000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstruments;		1411600000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=ReserveOfExchangeDifferencesOnTranslation;		-13573500000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=RetainedEarnings;		851255100000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=OtherReserves;		72442900000.0000	
+0001193125-25-083423	DilutedEarningsLossPerShare	ifrs/2024	20241231	4	USD			1.3600	
+0001193125-25-083423	DilutedEarningsLossPerShare	ifrs/2024	20241231	4	USD	ClassesOfShareCapital=AmericanDepositaryShares;		6.8100	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20231231	4	TWD	HedgingInstruments=BankLoans;TypesOfHedges=HedgesOfNetInvestmentInForeignOperations;		618.2000	
+0001193125-25-083423	GainOnHedgingInstrumentsThatWillBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20231231	4	TWD			-74700000.0000	
+0001193125-25-083423	GeneralAndAdministrativeExpense	ifrs/2024	20231231	4	TWD			60872800000.0000	
+0001193125-25-083423	GeneralAndAdministrativeExpense	ifrs/2024	20241231	4	USD			2554000000.0000	
+0001193125-25-083423	IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss	ifrs/2024	20241231	4	TWD			0.0000	
+0001193125-25-083423	IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss	ifrs/2024	20231231	4	TWD			-124600000.0000	
+0001193125-25-083423	NetForeignExchangeGainLoss	0001193125-25-083423	20241231	4	USD			305000000.0000	
+0001193125-25-083423	OperatingExpenseExcludingCostOfSales	ifrs/2024	20241231	4	TWD			301070400000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=ReserveOfExchangeDifferencesOnTranslation;		51560000000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstruments;		1411600000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20231231	4	TWD			-8813700000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=ReserveOfExchangeDifferencesOnTranslation;		-13573500000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=OtherReserves;		72442900000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=RetainedEarnings;		126000000.0000	
+0001193125-25-083423	OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation	ifrs/2024	20231231	4	TWD			-14464400000.0000	
+0001193125-25-083423	OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans	ifrs/2024	20231231	4	TWD			-623400000.0000	
+0001193125-25-083423	OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans	ifrs/2024	20241231	4	TWD			144400000.0000	
+0001193125-25-083423	OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax	ifrs/2024	20231231	4	TWD			-10352000000.0000	
+0001193125-25-083423	OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax	ifrs/2024	20241231	4	TWD			66452700000.0000	
+0001193125-25-083423	OtherGainsLosses	ifrs/2024	20231231	4	TWD			6961600000.0000	
+0001193125-25-083423	OtherOperatingIncomeExpense	ifrs/2024	20221231	4	TWD	IncomeStatementLocation1=DepreciationOfPropertyPlantAndEquipmentAndRightOfUseAssets;		8900000.0000	
+0001193125-25-083423	OtherOperatingIncomeExpense	ifrs/2024	20231231	4	TWD	IncomeStatementLocation1=DepreciationOfPropertyPlantAndEquipmentAndRightOfUseAssets;		7500000.0000	
+0001193125-25-083423	ProfitLossAttributableToOwnersOfParent	ifrs/2024	20241231	4	TWD			1158380200000.0000	
+0001193125-25-083423	ProfitLossBeforeTax	ifrs/2024	20221231	4	TWD			1144072200000.0000	
+0001193125-25-083423	ResearchAndDevelopmentExpense	ifrs/2024	20231231	4	TWD			182370200000.0000	
+0001193125-25-083423	Revenue	ifrs/2024	20231231	4	TWD			2161735800000.0000	
+0001193125-25-083423	Revenue	ifrs/2024	20241231	4	USD			88268000000.0000	
+0001193125-25-083423	ShareOfOtherComprehensiveIncomeOfAssociatesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20241231	4	USD			8600000.0000	
+0001193125-25-083423	ShareOfOtherComprehensiveIncomeOfAssociatesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20221231	4	TWD			154500000.0000	
+0001193125-25-083423	ShareOfOtherComprehensiveIncomeOfAssociatesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20231231	4	TWD			42600000.0000	
+0001193125-25-083423	ShareOfOtherComprehensiveIncomeOfAssociatesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20241231	4	USD			-2100000.0000	
+0001193125-25-083423	BasicEarningsLossPerShare	ifrs/2024	20241231	4	USD			1.3600	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20221231	4	TWD			1035724800000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=ReserveOfExchangeDifferencesOnTranslation;		65579800000.0000	
+0001193125-25-083423	ComprehensiveIncomeAttributableToNoncontrollingInterests	ifrs/2024	20241231	4	USD			-56100000.0000	
+0001193125-25-083423	DilutedEarningsLossPerShare	ifrs/2024	20221231	4	TWD	ClassesOfShareCapital=AmericanDepositaryShares;		191.4600	
+0001193125-25-083423	DilutedEarningsLossPerShare	ifrs/2024	20231231	4	TWD	ClassesOfShareCapital=AmericanDepositaryShares;		164.2400	
+0001193125-25-083423	DilutedEarningsLossPerShare	ifrs/2024	20241231	4	TWD	ClassesOfShareCapital=AmericanDepositaryShares;		223.3700	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20231231	4	TWD	CategoriesOfFinancialAssets=FinancialAssetsAtFairValueThroughOtherComprehensiveIncomeCategory;TypesOfHedges=FairValueHedges;		-20500000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20241231	4	TWD	CategoriesOfFinancialAssets=FinancialAssetsAtFairValueThroughOtherComprehensiveIncomeCategory;TypesOfHedges=FairValueHedges;		-174100000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20241231	4	TWD	HedgingInstruments=BankLoans;TypesOfHedges=HedgesOfNetInvestmentInForeignOperations;		793800000.0000	
+0001193125-25-083423	GainOnHedgingInstrumentsThatWillBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20221231	4	TWD			1329200000.0000	
+0001193125-25-083423	IncomeTaxExpenseContinuingOperations	ifrs/2024	20231231	4	TWD			128288800000.0000	
+0001193125-25-083423	IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss	ifrs/2024	20221231	4	TWD			-6000000.0000	
+0001193125-25-083423	InvestmentsIncomeInterest	0001193125-25-083423	20221231	4	TWD			22422200000.0000	
+0001193125-25-083423	NetForeignExchangeGainLoss	0001193125-25-083423	20221231	4	TWD			4505800000.0000	
+0001193125-25-083423	OperatingExpenseExcludingCostOfSales	ifrs/2024	20241231	4	USD			9181800000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=RetainedEarnings;		-484900000.0000	
+0001193125-25-083423	OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans	ifrs/2024	20221231	4	TWD			-823100000.0000	
+0001193125-25-083423	OtherOperatingIncomeExpense	ifrs/2024	20221231	4	TWD			-368400000.0000	
+0001193125-25-083423	ProfitLoss	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=NoncontrollingInterests;		371300000.0000	
+0001193125-25-083423	ProfitLossAttributableToNoncontrollingInterests	ifrs/2024	20221231	4	TWD			371300000.0000	
+0001193125-25-083423	ProfitLossAttributableToOwnersOfParent	ifrs/2024	20241231	4	USD			35327200000.0000	
+0001193125-25-083423	ProfitLossBeforeTax	ifrs/2024	20241231	4	TWD			1405840000000.0000	
+0001193125-25-083423	ProfitLossFromOperatingActivities	ifrs/2024	20221231	4	TWD			1121278900000.0000	
+0001193125-25-083423	ProfitLossFromOperatingActivities	ifrs/2024	20241231	4	TWD			1322053000000.0000	
+0001193125-25-083423	ResearchAndDevelopmentExpense	ifrs/2024	20241231	4	TWD			204181800000.0000	
+0001193125-25-083423	Revenue	ifrs/2024	20221231	4	TWD	MajorCustomers=CustomerA;		529649200000.0000	
+0001193125-25-083423	Revenue	ifrs/2024	20241231	4	TWD			2894307700000.0000	
+0001193125-25-083423	Revenue	ifrs/2024	20241231	4	TWD	MajorCustomers=CustomerB;		352271200000.0000	
+0001193125-25-083423	ShareOfProfitLossOfAssociatesAccountedForUsingEquityMethod	ifrs/2024	20221231	4	TWD			7679800000.0000	
+0001193125-25-083423	UnrealizedGainsOrLossesOnInvestmentsInDebtInstrumentsAtFairValueThroughOtherComprehensiveIncomeWillBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20221231	4	TWD			-10102700000.0000	
+0001193125-25-083423	BasicEarningsLossPerShare	ifrs/2024	20231231	4	TWD			32.8500	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20241231	4	USD			37484300000.0000	
+0001193125-25-083423	ComprehensiveIncomeAttributableToNoncontrollingInterests	ifrs/2024	20231231	4	TWD			-1537900000.0000	
+0001193125-25-083423	ComprehensiveIncomeAttributableToNoncontrollingInterests	ifrs/2024	20241231	4	TWD			-1839500000.0000	
+0001193125-25-083423	DilutedEarningsLossPerShare	ifrs/2024	20241231	4	TWD			44.6700	
+0001193125-25-083423	FinanceCosts	ifrs/2024	20231231	4	TWD			11999400000.0000	
+0001193125-25-083423	FinanceCosts	ifrs/2024	20241231	4	USD			320100000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20221231	4	TWD	HedgedItems=ForecastTransactionRelatesToIssuanceOfDebts;TypesOfHedges=CashFlowHedges;		-1379100000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20231231	4	TWD	ClassesOfFinancialAssets=ForwardExchangeContracts;TypesOfHedges=CashFlowHedges;		39900000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20231231	4	TWD	HedgingInstruments=USTreasuryBondsInterestRateFuturesContracts;TypesOfHedges=FairValueHedges;		20500000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20241231	4	TWD	HedgingInstruments=USTreasuryBondsInterestRateFuturesContracts;TypesOfHedges=FairValueHedges;		174100000.0000	
+0001193125-25-083423	InvestmentsIncomeInterest	0001193125-25-083423	20241231	4	TWD			87213400000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=NoncontrollingInterests;		-164600000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=UnappropriatedEarnings;		-49500000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=UnappropriatedEarnings;		-484900000.0000	
+0001193125-25-083423	OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans	ifrs/2024	20241231	4	USD			4400000.0000	
+0001193125-25-083423	OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax	ifrs/2024	20241231	4	USD			2026700000.0000	
+0001193125-25-083423	OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax	ifrs/2024	20241231	4	TWD			5133000000.0000	
+0001193125-25-083423	OtherGainsLosses	ifrs/2024	20221231	4	TWD			-1012200000.0000	
+0001193125-25-083423	OtherGainsLosses	ifrs/2024	20241231	4	TWD			-8379400000.0000	
+0001193125-25-083423	ProfitLoss	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=RetainedEarnings;		992923400000.0000	
+0001193125-25-083423	ProfitLoss	ifrs/2024	20231231	4	TWD			851027700000.0000	
+0001193125-25-083423	ProfitLoss	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=EquityAttributableToOwnersOfParent;		851740000000.0000	
+0001193125-25-083423	ProfitLoss	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=NoncontrollingInterests;		-712300000.0000	
+0001193125-25-083423	ResearchAndDevelopmentExpense	ifrs/2024	20241231	4	USD			6227000000.0000	
+0001193125-25-083423	ShareOfProfitLossOfAssociatesAccountedForUsingEquityMethod	ifrs/2024	20231231	4	TWD			4800200000.0000	
+0001193125-25-083423	UnrealizedGainsOrLossesOnInvestmentsInEquityInstrumentsAtFairValueThroughOtherComprehensiveIncomeWillNotBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20241231	4	USD			155300000.0000	
+0001193125-25-083423	BasicEarningsLossPerShare	ifrs/2024	20221231	4	TWD	ClassesOfShareCapital=AmericanDepositaryShares;		191.4600	
+0001193125-25-083423	BasicEarningsLossPerShare	ifrs/2024	20241231	4	TWD	ClassesOfShareCapital=AmericanDepositaryShares;		223.3900	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=NoncontrollingInterests;		206700000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=EquityAttributableToOwnersOfParent;		843751800000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=NoncontrollingInterests;		-1537800000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome;		6108400000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstruments;		-38200000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=UnappropriatedEarnings;		851255100000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome;		6948800000.0000	
+0001193125-25-083423	ComprehensiveIncomeAttributableToNoncontrollingInterests	ifrs/2024	20221231	4	TWD			206700000.0000	
+0001193125-25-083423	FinanceCosts	ifrs/2024	20221231	4	TWD			11750000000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20231231	4	TWD	HedgedItems=ForecastTransactionCapitalExpenditures;TypesOfHedges=CashFlowHedges;		-39900000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20231231	4	TWD	HedgedItems=NetInvestmentsInForeignOperations;TypesOfHedges=HedgesOfNetInvestmentInForeignOperations;		-618.2000	
+0001193125-25-083423	GainOnHedgingInstrumentsThatWillBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20241231	4	TWD			-80200000.0000	
+0001193125-25-083423	GrossProfit	ifrs/2024	20231231	4	TWD			1175110600000.0000	
+0001193125-25-083423	GrossProfit	ifrs/2024	20241231	4	TWD			1624353600000.0000	
+0001193125-25-083423	IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss	ifrs/2024	20241231	4	USD			0.0000	
+0001193125-25-083423	NetForeignExchangeGainLoss	0001193125-25-083423	20241231	4	TWD			10000800000.0000	
+0001193125-25-083423	NonOperatingIncomeExpense1	0001193125-25-083423	20241231	4	USD			2555200000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=EquityAttributableToOwnersOfParent;		42594700000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome;		6108400000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstruments;		-38200000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=NoncontrollingInterests;		-983200000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome;		6948800000.0000	
+0001193125-25-083423	OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation	ifrs/2024	20221231	4	TWD			50845600000.0000	
+0001193125-25-083423	OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation	ifrs/2024	20241231	4	TWD			64299700000.0000	
+0001193125-25-083423	OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax	ifrs/2024	20221231	4	TWD			42628400000.0000	
+0001193125-25-083423	OtherOperatingIncomeExpense	ifrs/2024	20241231	4	TWD			-1230200000.0000	
+0001193125-25-083423	OtherOperatingIncomeExpense	ifrs/2024	20241231	4	TWD	IncomeStatementLocation1=DepreciationOfPropertyPlantAndEquipmentAndRightOfUseAssets;		29700000.0000	
+0001193125-25-083423	OtherOperatingIncomeExpense	ifrs/2024	20241231	4	USD			-37500000.0000	
+0001193125-25-083423	ProfitLossBeforeTax	ifrs/2024	20231231	4	TWD			979316500000.0000	
+0001193125-25-083423	ProfitLossFromOperatingActivities	ifrs/2024	20231231	4	TWD			921465600000.0000	
+0001193125-25-083423	SalesAndMarketingExpense	ifrs/2024	20221231	4	TWD			9920500000.0000	
+0001193125-25-083423	ShareOfOtherComprehensiveIncomeOfAssociatesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20221231	4	TWD			550300000.0000	
+0001193125-25-083423	ShareOfProfitLossOfAssociatesAccountedForUsingEquityMethod	ifrs/2024	20241231	4	TWD			4880700000.0000	
+0001193125-25-083423	UnrealizedGainsOrLossesOnInvestmentsInEquityInstrumentsAtFairValueThroughOtherComprehensiveIncomeWillNotBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20241231	4	TWD			5091900000.0000	
+0001193125-25-083423	BasicEarningsLossPerShare	ifrs/2024	20231231	4	TWD	ClassesOfShareCapital=AmericanDepositaryShares;		164.2400	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=OtherReserves;		42644200000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=RetainedEarnings;		992873900000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20231231	4	TWD			842214000000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20241231	4	TWD			1229109600000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=RetainedEarnings;		1158506200000.0000	
+0001193125-25-083423	ComprehensiveIncomeAttributableToOwnersOfParent	ifrs/2024	20241231	4	TWD			1230949100000.0000	
+0001193125-25-083423	CostOfSales	ifrs/2024	20241231	4	USD			38729900000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20221231	4	TWD	CategoriesOfFinancialAssets=FinancialAssetsAtFairValueThroughOtherComprehensiveIncomeCategory;TypesOfHedges=FairValueHedges;		-284000000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20241231	4	TWD			5000000.0000	
+0001193125-25-083423	GeneralAndAdministrativeExpense	ifrs/2024	20221231	4	TWD			53524800000.0000	
+0001193125-25-083423	IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss	ifrs/2024	20231231	4	TWD			0.0000	
+0001193125-25-083423	IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss	ifrs/2024	20241231	4	USD			1200000.0000	
+0001193125-25-083423	InvestmentsIncomeInterest	0001193125-25-083423	20241231	4	USD			2659800000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20221231	4	TWD			42430100000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=OtherReserves;		42644200000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=ReserveOfExchangeDifferencesOnTranslation;		65579800000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20241231	4	USD			2183200000.0000	
+0001193125-25-083423	OtherGainsLosses	ifrs/2024	20241231	4	USD			-255600000.0000	
+0001193125-25-083423	OtherOperatingIncomeExpense	ifrs/2024	20231231	4	TWD			188700000.0000	
+0001193125-25-083423	ProfitLoss	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=EquityAttributableToOwnersOfParent;		992923400000.0000	
+0001193125-25-083423	ProfitLoss	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=UnappropriatedEarnings;		992923400000.0000	
+0001193125-25-083423	ProfitLoss	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=RetainedEarnings;		851740000000.0000	
+0001193125-25-083423	ProfitLoss	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=RetainedEarnings;		1158380200000.0000	
+0001193125-25-083423	ProfitLossAttributableToNoncontrollingInterests	ifrs/2024	20241231	4	USD			-26100000.0000	
+0001193125-25-083423	SalesAndMarketingExpense	ifrs/2024	20231231	4	TWD			10590700000.0000	
+0001193125-25-083423	ShareOfOtherComprehensiveIncomeOfAssociatesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20241231	4	TWD			-69400000.0000	
+0001193125-25-083423	ShareOfProfitLossOfAssociatesAccountedForUsingEquityMethod	ifrs/2024	20241231	4	USD			148800000.0000	
+0001193125-25-083423	UnrealizedGainsOrLossesOnInvestmentsInDebtInstrumentsAtFairValueThroughOtherComprehensiveIncomeWillBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20241231	4	TWD			1949900000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=ReserveOfExchangeDifferencesOnTranslation;		51560000000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=OtherReserves;		-7503300000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=NoncontrollingInterests;		-1839500000.0000	
+0001193125-25-083423	ComprehensiveIncomeAttributableToOwnersOfParent	ifrs/2024	20221231	4	TWD			1035518100000.0000	
+0001193125-25-083423	CostOfSales	ifrs/2024	20231231	4	TWD			986625200000.0000	
+0001193125-25-083423	DilutedEarningsLossPerShare	ifrs/2024	20221231	4	TWD			38.2900	
+0001193125-25-083423	DilutedEarningsLossPerShare	ifrs/2024	20231231	4	TWD			32.8500	
+0001193125-25-083423	FinanceIncome	ifrs/2024	20221231	4	TWD			947700000.0000	
+0001193125-25-083423	FinanceIncome	ifrs/2024	20241231	4	USD			17300000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20221231	4	TWD			0.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20221231	4	TWD	ClassesOfFinancialAssets=ForwardInterestRateContracts;TypesOfHedges=CashFlowHedges;		1379100000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20241231	4	TWD	ClassesOfFinancialAssets=ForwardExchangeContracts;TypesOfHedges=CashFlowHedges;		5000000.0000	
+0001193125-25-083423	GainOnHedgingInstrumentsThatWillBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20241231	4	USD			-2400000.0000	
+0001193125-25-083423	GeneralAndAdministrativeExpense	ifrs/2024	20241231	4	TWD			83745000000.0000	
+0001193125-25-083423	GrossProfit	ifrs/2024	20221231	4	TWD			1348354800000.0000	
+0001193125-25-083423	NonOperatingIncomeExpense1	0001193125-25-083423	20231231	4	TWD			57850900000.0000	
+0001193125-25-083423	OperatingExpenseExcludingCostOfSales	ifrs/2024	20231231	4	TWD			253833700000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=RetainedEarnings;		-49500000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20231231	4	TWD	ComponentsOfEquity=OtherReserves;		-7503300000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20241231	4	TWD			71585700000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=EquityAttributableToOwnersOfParent;		72568900000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=UnappropriatedEarnings;		126000000.0000	
+0001193125-25-083423	OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation	ifrs/2024	20241231	4	USD			1961000000.0000	
+0001193125-25-083423	ProfitLoss	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=UnappropriatedEarnings;		1158380200000.0000	
+0001193125-25-083423	ProfitLoss	ifrs/2024	20241231	4	USD			35301100000.0000	
+0001193125-25-083423	ProfitLossAttributableToNoncontrollingInterests	ifrs/2024	20241231	4	TWD			-856300000.0000	
+0001193125-25-083423	ResearchAndDevelopmentExpense	ifrs/2024	20221231	4	TWD			163262200000.0000	
+0001193125-25-083423	Revenue	ifrs/2024	20231231	4	TWD	MajorCustomers=CustomerC;		241152400000.0000	
+0001193125-25-083423	UnrealizedGainsOrLossesOnInvestmentsInDebtInstrumentsAtFairValueThroughOtherComprehensiveIncomeWillBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20231231	4	TWD			4123200000.0000	
+0001193125-25-083423	UnrealizedGainsOrLossesOnInvestmentsInEquityInstrumentsAtFairValueThroughOtherComprehensiveIncomeWillNotBeReclassifiedToProfitOrLossBeforeTax	0001193125-25-083423	20231231	4	TWD			1954600000.0000	
+0000950170-25-087926	AmortizationOfIntangibleAssets	us-gaap/2024	20250531	4	USD	FiniteLivedIntangibleAssetsByMajorClass=CloudLicenseAndOnPremiseLicenseAgreementsAndRelatedRelationships;		462000000.0000	
+0000950170-25-087926	CloudLicenseAndOnPremiseLicenseRevenue	0000950170-25-087926	20250531	4	USD			5201000000.0000	
+0000950170-25-087926	CloudServicesAndLicenseSupportExpenses	0000950170-25-087926	20240531	4	USD			9427000000.0000	Exclusive of amortization of intangible assets, which is shown separately.
+0000950170-25-087926	CloudServicesAndLicenseSupportExpenses	0000950170-25-087926	20240531	4	USD	BusinessSegments=CloudAndLicenseBusiness;ConsolidationItems=OperatingSegments;		8783000000.0000	
+0000950170-25-087926	CloudServicesAndLicenseSupportExpenses	0000950170-25-087926	20250531	4	USD			11569000000.0000	
+0000950170-25-087926	EarningsPerShareBasic	us-gaap/2024	20250531	4	USD			4.4600	
+0000950170-25-087926	HardwareRevenues	0000950170-25-087926	20230531	4	USD			3274000000.0000	
+0000950170-25-087926	IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems	0000950170-25-087926	20250531	4	USD			14160000000.0000	
+0000950170-25-087926	OperatingIncomeLoss	us-gaap/2024	20230531	4	USD	BusinessSegments=CloudAndLicenseBusiness;ConsolidationItems=OperatingSegments;		26126000000.0000	
+0000950170-25-087926	ResearchAndDevelopmentExpense	us-gaap/2024	20230531	4	USD			8623000000.0000	
+0000950170-25-087926	RestructuringCharges	us-gaap/2024	20250531	4	USD			299000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230531	4	USD	ProductOrService=CloudServices;		15881000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240531	4	USD	Geographical=EMEA;		13030000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20250531	4	USD	ConsolidationItems=OperatingSegments;		57399000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20250531	4	USD	Geographical=Americas;		36339000000.0000	
+0000950170-25-087926	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20250531	4	USD	ProductOrService=ApplicationsCloudServicesAndLicenseSupport;		19383000000.0000	
+0000950170-25-087926	SalesRevenueServicesNet1	0000950170-25-087926	20230531	4	USD			5594000000.0000	
+0000950170-25-087926	SellingAndMarketingExpense	us-gaap/2024	20240531	4	USD			8274000000.0000	
+0000950170-25-087926	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2024	20250531	4	shares			2789000000.0000	
+0001193125-25-083423	BasicEarningsLossPerShare	ifrs/2024	20241231	4	USD	ClassesOfShareCapital=AmericanDepositaryShares;		6.8100	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstruments;		-85700000.0000	
+0001193125-25-083423	ComprehensiveIncome	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=UnappropriatedEarnings;		1158506200000.0000	
+0001193125-25-083423	ComprehensiveIncomeAttributableToOwnersOfParent	ifrs/2024	20231231	4	TWD			843751900000.0000	
+0001193125-25-083423	CostOfSales	ifrs/2024	20221231	4	TWD			915536500000.0000	
+0001193125-25-083423	CostOfSales	ifrs/2024	20241231	4	TWD			1269954100000.0000	
+0001193125-25-083423	FinanceCosts	ifrs/2024	20241231	4	TWD			10495400000.0000	
+0001193125-25-083423	FinanceIncome	ifrs/2024	20231231	4	TWD			480000000.0000	
+0001193125-25-083423	FinanceIncome	ifrs/2024	20241231	4	TWD			566900000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20231231	4	TWD			39900000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20241231	4	TWD	HedgedItems=NetInvestmentsInForeignOperations;TypesOfHedges=HedgesOfNetInvestmentInForeignOperations;		-793800000.0000	
+0001193125-25-083423	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2024	20241231	4	USD			100000.0000	
+0001193125-25-083423	IncomeTaxExpenseContinuingOperations	ifrs/2024	20241231	4	USD			7572900000.0000	
+0001193125-25-083423	IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss	ifrs/2024	20221231	4	TWD			-734000000.0000	
+0001193125-25-083423	NetForeignExchangeGainLoss	0001193125-25-083423	20231231	4	TWD			-2685400000.0000	
+0001193125-25-083423	NonOperatingIncomeExpense1	0001193125-25-083423	20241231	4	TWD			83787000000.0000	
+0001193125-25-083423	OperatingExpenseExcludingCostOfSales	ifrs/2024	20221231	4	TWD			226707500000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20221231	4	TWD	ComponentsOfEquity=ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome;		-10327400000.0000	
+0001193125-25-083423	OtherComprehensiveIncome	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstruments;		-85700000.0000	
+0001193125-25-083423	OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax	ifrs/2024	20241231	4	USD			156500000.0000	
+0001193125-25-083423	ProfitLoss	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=EquityAttributableToOwnersOfParent;		1158380200000.0000	
+0001193125-25-083423	ProfitLoss	ifrs/2024	20241231	4	TWD	ComponentsOfEquity=NoncontrollingInterests;		-856300000.0000	
+0001193125-25-083423	ProfitLossAttributableToNoncontrollingInterests	ifrs/2024	20231231	4	TWD			-712300000.0000	
+0001193125-25-083423	ProfitLossAttributableToOwnersOfParent	ifrs/2024	20221231	4	TWD			992923400000.0000	
+0001193125-25-083423	ProfitLossAttributableToOwnersOfParent	ifrs/2024	20231231	4	TWD			851740000000.0000	
+0001193125-25-083423	ProfitLossBeforeTax	ifrs/2024	20241231	4	USD			42874000000.0000	
+0001193125-25-083423	ProfitLossFromOperatingActivities	ifrs/2024	20241231	4	USD			40318800000.0000	
+0001193125-25-083423	Revenue	ifrs/2024	20221231	4	TWD			2263891300000.0000	
+0001193125-25-083423	Revenue	ifrs/2024	20231231	4	TWD	MajorCustomers=CustomerA;		546550900000.0000	
+0001193125-25-083423	SalesAndMarketingExpense	ifrs/2024	20241231	4	USD			400800000.0000	

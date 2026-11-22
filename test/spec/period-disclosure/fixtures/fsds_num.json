@@ -1,0 +1,151 @@
+{
+ "note": "Lines of SEC Financial Statement Data Sets num.txt (tab-separated, columns adsh tag version ddate qtrs uom segments coreg value footnote), copied unchanged from the local filtered copy data/cache/sec_fsds/filtered/<q>/num.tsv of the raw zip. ddate is the end rounded to a month end; qtrs is the count of quarters, rounded.",
+ "sources": {
+  "2026q2": {
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q2.zip",
+   "zip_sha256": "d7c815395cd420cfbe09b29dbae73a45406c5d0652d5ae1859ae11ea2e22df77",
+   "filtered_num_tsv_sha256": "0ad0fa490064cf5611aa22ddcbfce7800e7856795af520301b8f06178741f136",
+   "retrieved": "2026-11-07"
+  },
+  "2026q3": {
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q3.zip",
+   "zip_sha256": "b6ebdc56b78526a6423f5b99f6e355afcb0510e7264324300ee5f0d3bd1bad21",
+   "filtered_num_tsv_sha256": "323f6605fc8c32c17cb664872347b2fbefa9d0701b45ac481af65ce406c9ebd6",
+   "retrieved": "2026-11-07"
+  },
+  "2022q4": {
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2022q4.zip",
+   "zip_sha256": "83bdc7a9545479eb64d118688c888ba8e7554ebc774f3ab8a8b0cc1decb87f28",
+   "filtered_num_tsv_sha256": "d6535229fe05793ac415e3e8975f6c0315ce79ccdad9dcb378a9b793cfafa271",
+   "retrieved": "2026-11-07"
+  },
+  "2023q4": {
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2023q4.zip",
+   "zip_sha256": "ad23c5505e59b7305e16bfebb8bb839476689330b85a3e1ce216f809b18d1521",
+   "filtered_num_tsv_sha256": "f02ce02bf9df7a2c92c6e1f43dd22678ef508268ed38398e1f1dd9ef9e16513e",
+   "retrieved": "2026-11-07"
+  },
+  "2024q4": {
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q4.zip",
+   "zip_sha256": "9a2cbbaf39c94aa642b33d512f4def92b198d3bfd12d2267bcd27abe55b9902d",
+   "filtered_num_tsv_sha256": "b88b647a46cf6109675106c85f890dbec006b4e8d9c12edf50293891af4c1422",
+   "retrieved": "2026-11-07"
+  },
+  "2023q1": {
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2023q1.zip",
+   "zip_sha256": "479638c1be4088fa2ae42d2947468913eaff5ad0f093c412ba4340af8a8f791e",
+   "filtered_num_tsv_sha256": "ea8916de9672090ebc73b8a3babf5ec4c11dc6cad2305b9d8fa7fc6af71c0df6",
+   "retrieved": "2026-11-07"
+  }
+ },
+ "lines": [
+  {
+   "quarter": "2026q2",
+   "line": "0001730168-26-000054\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2026\t20260430\t1\tUSD\tGeographical=Americas;\t\t5202000000.0000\t"
+  },
+  {
+   "quarter": "2026q2",
+   "line": "0001730168-26-000054\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2026\t20260430\t1\tUSD\tGeographical=AsiaPacific;\t\t14535000000.0000\t"
+  },
+  {
+   "quarter": "2026q2",
+   "line": "0001730168-26-000054\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2026\t20260430\t1\tUSD\tGeographical=EMEA;\t\t2450000000.0000\t"
+  },
+  {
+   "quarter": "2026q2",
+   "line": "0001730168-26-000054\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2026\t20260430\t2\tUSD\tGeographical=Americas;\t\t10283000000.0000\t"
+  },
+  {
+   "quarter": "2026q2",
+   "line": "0001730168-26-000054\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2026\t20260430\t2\tUSD\tGeographical=AsiaPacific;\t\t26150000000.0000\t"
+  },
+  {
+   "quarter": "2026q2",
+   "line": "0001730168-26-000054\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2026\t20260430\t2\tUSD\tGeographical=EMEA;\t\t5065000000.0000\t"
+  },
+  {
+   "quarter": "2026q2",
+   "line": "0001193125-26-191507\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2025\t20260331\t1\tUSD\t\t\t82886000000.0000\t"
+  },
+  {
+   "quarter": "2026q2",
+   "line": "0001193125-26-191507\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2025\t20260331\t1\tUSD\tGeographical=US;\t\t42336000000.0000\tIncludes billings to OEMs and certain multinational organizations because of the nature of these businesses and the impracticability of determining the geographic source of the revenue."
+  },
+  {
+   "quarter": "2026q2",
+   "line": "0001193125-26-191507\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2025\t20260331\t3\tUSD\t\t\t241832000000.0000\t"
+  },
+  {
+   "quarter": "2026q2",
+   "line": "0001193125-26-191507\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2025\t20260331\t3\tUSD\tGeographical=US;\t\t123823000000.0000\t"
+  },
+  {
+   "quarter": "2026q3",
+   "line": "0001193125-26-323660\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2025\t20250630\t4\tUSD\t\t\t281724000000.0000\t"
+  },
+  {
+   "quarter": "2026q3",
+   "line": "0001193125-26-323660\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2025\t20260630\t4\tUSD\t\t\t331839000000.0000\t"
+  },
+  {
+   "quarter": "2022q4",
+   "line": "0000320193-22-000108\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2022\t20200930\t4\tUSD\t\t\t274515000000.0000\t"
+  },
+  {
+   "quarter": "2022q4",
+   "line": "0000320193-22-000108\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2022\t20210930\t4\tUSD\t\t\t365817000000.0000\t"
+  },
+  {
+   "quarter": "2022q4",
+   "line": "0000320193-22-000108\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2022\t20220930\t4\tUSD\t\t\t394328000000.0000\t"
+  },
+  {
+   "quarter": "2022q4",
+   "line": "0000320193-22-000108\tAssets\tus-gaap/2022\t20220930\t0\tUSD\t\t\t352755000000.0000\t"
+  },
+  {
+   "quarter": "2022q4",
+   "line": "0000320193-22-000108\tAssets\tus-gaap/2022\t20210930\t0\tUSD\t\t\t351002000000.0000\t"
+  },
+  {
+   "quarter": "2023q4",
+   "line": "0000320193-23-000106\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2023\t20220930\t4\tUSD\t\t\t394328000000.0000\t"
+  },
+  {
+   "quarter": "2023q4",
+   "line": "0000320193-23-000106\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2023\t20230930\t4\tUSD\t\t\t383285000000.0000\t"
+  },
+  {
+   "quarter": "2023q4",
+   "line": "0000320193-23-000106\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2023\t20210930\t4\tUSD\t\t\t365817000000.0000\t"
+  },
+  {
+   "quarter": "2024q4",
+   "line": "0000320193-24-000123\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2024\t20220930\t4\tUSD\t\t\t394328000000.0000\t"
+  },
+  {
+   "quarter": "2024q4",
+   "line": "0000320193-24-000123\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2024\t20240930\t4\tUSD\t\t\t391035000000.0000\t"
+  },
+  {
+   "quarter": "2024q4",
+   "line": "0000320193-24-000123\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2024\t20230930\t4\tUSD\t\t\t383285000000.0000\t"
+  },
+  {
+   "quarter": "2023q1",
+   "line": "0001868275-23-000014\tProfitLoss\tus-gaap/2022\t20211231\t4\tUSD\t\t\t-83000000.0000\t"
+  },
+  {
+   "quarter": "2023q1",
+   "line": "0001868275-23-000014\tProfitLoss\tus-gaap/2022\t20221231\t4\tUSD\t\t\t-167000000.0000\t"
+  },
+  {
+   "quarter": "2023q1",
+   "line": "0001868275-23-000014\tProfitLoss\tus-gaap/2022\t20220131\t0\tUSD\t\t\t151000000.0000\t"
+  },
+  {
+   "quarter": "2023q1",
+   "line": "0001868275-23-000014\tProfitLoss\tus-gaap/2022\t20201231\t4\tUSD\t\t\t579000000.0000\t"
+  }
+ ]
+}

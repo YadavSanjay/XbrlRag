@@ -1,0 +1,181 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-29",
+  "criteria": {
+    "C1": [
+      "test/spec/sec-keys/test_c1_latest_filed.py::test_fy2022_revenue_is_the_recast_value_with_full_provenance",
+      "test/spec/sec-keys/test_c1_latest_filed.py::test_instant_matches_only_entries_without_start",
+      "test/spec/sec-keys/test_c1_latest_filed.py::test_duration_period_queried_as_instant_is_not_found",
+      "test/spec/sec-keys/test_c1_latest_filed.py::test_nil_is_skipped_never_zero",
+      "test/spec/sec-keys/test_c1_latest_filed.py::test_same_day_ties",
+      "test/spec/sec-keys/test_c1_latest_filed.py::test_missing_concept_and_malformed_concept",
+      "test/spec/sec-keys/test_c1_latest_filed.py::test_order_and_earlier_filings_do_not_change_the_key"
+    ],
+    "C2": [
+      "test/spec/sec-keys/test_c2_as_reported.py::test_fy2022_as_originally_reported",
+      "test/spec/sec-keys/test_c2_as_reported.py::test_given_accession",
+      "test/spec/sec-keys/test_c2_as_reported.py::test_earliest_same_day_tie_takes_smallest_accession",
+      "test/spec/sec-keys/test_c2_as_reported.py::test_every_accession_reporting_the_period"
+    ],
+    "C3": [
+      "test/spec/sec-keys/test_c3_fiscal_year.py::test_sep_fy2023_is_the_53_week_year_with_the_recast_value",
+      "test/spec/sec-keys/test_c3_fiscal_year.py::test_sep_fy2022_ignores_the_quarter_tagged_fp_fy",
+      "test/spec/sec-keys/test_c3_fiscal_year.py::test_sep_fy2024_and_instant_year_end_balance",
+      "test/spec/sec-keys/test_c3_fiscal_year.py::test_june_filer_and_20f_filer",
+      "test/spec/sec-keys/test_c3_fiscal_year.py::test_years_without_an_annual_filing_labelled_n",
+      "test/spec/sec-keys/test_c3_fiscal_year.py::test_a_later_recast_moves_the_value_not_the_period"
+    ],
+    "C4": [
+      "test/spec/sec-keys/test_c4_calendar_year.py::test_june_filer_calendar_2024_is_its_fiscal_2025",
+      "test/spec/sec-keys/test_c4_calendar_year.py::test_sep_filer_row_and_unpadded_cik",
+      "test/spec/sec-keys/test_c4_calendar_year.py::test_instant_frame",
+      "test/spec/sec-keys/test_c4_calendar_year.py::test_absent_cik_bad_ccp_and_nil_row",
+      "test/spec/sec-keys/test_c4_calendar_year.py::test_generated_frames_each_cik_gets_its_row"
+    ],
+    "C5": [
+      "test/spec/sec-keys/test_c5_units_and_scale.py::test_full_value_in_reporting_unit",
+      "test/spec/sec-keys/test_c5_units_and_scale.py::test_unit_mismatch_in_each_builder",
+      "test/spec/sec-keys/test_c5_units_and_scale.py::test_any_missing_unit_raises"
+    ],
+    "C6": [
+      "test/spec/sec-keys/test_c6_cross_check.py::test_agreement_verifies_and_adopts_decimals",
+      "test/spec/sec-keys/test_c6_cross_check.py::test_inf_decimals_stay_inf",
+      "test/spec/sec-keys/test_c6_cross_check.py::test_value_disagreement_is_recorded_not_overwritten",
+      "test/spec/sec-keys/test_c6_cross_check.py::test_each_other_reason",
+      "test/spec/sec-keys/test_c6_cross_check.py::test_same_or_unknown_source_is_refused",
+      "test/spec/sec-keys/test_c6_cross_check.py::test_tolerance_boundary"
+    ],
+    "C7": [
+      "test/spec/sec-keys/test_c7_through_the_seam.py::test_fiscal_key_from_source",
+      "test/spec/sec-keys/test_c7_through_the_seam.py::test_calendar_key_from_source_duration_and_instant",
+      "test/spec/sec-keys/test_c7_through_the_seam.py::test_period_string_for_any_year"
+    ]
+  },
+  "files": {
+    "test/spec/sec-keys/conftest.py": "b3201c329966112d61e4db026117fc07d45976641e804a78f5cdbdde1d05f26c",
+    "test/spec/sec-keys/fixtures/companyfacts_CIK0000900001.json": "c472a0293ab7c48fb0c48e7d77f0924758f0bffa481b11f38ba94eba6ff5e4c7",
+    "test/spec/sec-keys/fixtures/companyfacts_CIK0000900002.json": "61000570ff402e8f7d074dc82b55779b8a5ea600e921c2c70aef474d20568a26",
+    "test/spec/sec-keys/fixtures/companyfacts_CIK0000900003.json": "6196aa431dcaceed6ec9add4d2ba13e1d1f6017cd3c032754bccd090bb50a3c3",
+    "test/spec/sec-keys/fixtures/frames_us-gaap_Assets_USD_CY2024Q4I.json": "499c8e808cf5f2cdc0774e6b7e4cbe1240baf0820b0c1f6380e0ade1607f54e1",
+    "test/spec/sec-keys/fixtures/frames_us-gaap_Revenues_USD_CY2024.json": "3ff739f39f6e4846f12539b811e300923d1141b4739d73d5ec230f26fc687c1e",
+    "test/spec/sec-keys/test_c1_latest_filed.py": "416879b15fb9992736c8d540697b9d9c6d435421fecb96f299b49aba56ba5aa2",
+    "test/spec/sec-keys/test_c2_as_reported.py": "cdb4b8abecd858a26f8b209da5db099688fa1036efdc8819f153ab6fafae049f",
+    "test/spec/sec-keys/test_c3_fiscal_year.py": "51bc9fa42f5192fcdd6251af700fcfc4b36d5a5376c9bc34f4f1d9c75d53282f",
+    "test/spec/sec-keys/test_c4_calendar_year.py": "ea32acac744942011214db4eb420025f2b95c1794c1039d942defbdb512dfc62",
+    "test/spec/sec-keys/test_c5_units_and_scale.py": "bc5bd93bb1b8ec09f78e89d6685ae262d7751aa515d270499fb0ade943c94b40",
+    "test/spec/sec-keys/test_c6_cross_check.py": "a3744fb950446f0876d3a917e8e65f9ee345ba698efaf8a0eb65381d3ba077a7",
+    "test/spec/sec-keys/test_c7_through_the_seam.py": "1424344d205c808afe0b80d72ea870f37557d134ef6ffd629e3691831c8f775a"
+  },
+  "id": "sec-keys",
+  "interface": [
+    {
+      "file": "src/eval/keys/base.py",
+      "module": "eval.keys.base",
+      "qualname": "SecSource.company_facts",
+      "signature": "@abstractmethod def company_facts(self, cik: str) -> dict"
+    },
+    {
+      "file": "src/eval/keys/base.py",
+      "module": "eval.keys.base",
+      "qualname": "SecSource.frames",
+      "signature": "@abstractmethod def frames(self, taxonomy: str, tag: str, unit: str, period: str) -> dict"
+    },
+    {
+      "file": "src/eval/keys/core.py",
+      "module": "eval.keys.core",
+      "qualname": "latest_filed_key",
+      "signature": "def latest_filed_key(company_facts: dict, concept: str, unit: str, period_start: str | None, period_end: str) -> AnswerKey"
+    },
+    {
+      "file": "src/eval/keys/core.py",
+      "module": "eval.keys.core",
+      "qualname": "as_reported_key",
+      "signature": "def as_reported_key(company_facts: dict, concept: str, unit: str, period_start: str | None, period_end: str, accession: str | None=None) -> AnswerKey"
+    },
+    {
+      "file": "src/eval/keys/core.py",
+      "module": "eval.keys.core",
+      "qualname": "fiscal_year_key",
+      "signature": "def fiscal_year_key(company_facts: dict, concept: str, unit: str, fiscal_year: int) -> AnswerKey"
+    },
+    {
+      "file": "src/eval/keys/core.py",
+      "module": "eval.keys.core",
+      "qualname": "calendar_year_key",
+      "signature": "def calendar_year_key(frames: dict, cik: str, unit: str) -> AnswerKey"
+    },
+    {
+      "file": "src/eval/keys/core.py",
+      "module": "eval.keys.core",
+      "qualname": "cross_check",
+      "signature": "def cross_check(key: AnswerKey, other: AnswerKey, rel_tol: float=1e-09) -> CrossCheck"
+    },
+    {
+      "file": "src/eval/keys/core.py",
+      "module": "eval.keys.core",
+      "qualname": "fiscal_key_from_source",
+      "signature": "def fiscal_key_from_source(source: SecSource, cik: str, concept: str, unit: str, fiscal_year: int) -> AnswerKey"
+    },
+    {
+      "file": "src/eval/keys/core.py",
+      "module": "eval.keys.core",
+      "qualname": "calendar_key_from_source",
+      "signature": "def calendar_key_from_source(source: SecSource, cik: str, concept: str, unit: str, calendar_year: int, instant: bool=False) -> AnswerKey"
+    }
+  ],
+  "nodes": [
+    "test/spec/sec-keys/test_c1_latest_filed.py::test_duration_period_queried_as_instant_is_not_found",
+    "test/spec/sec-keys/test_c1_latest_filed.py::test_fy2022_revenue_is_the_recast_value_with_full_provenance",
+    "test/spec/sec-keys/test_c1_latest_filed.py::test_instant_matches_only_entries_without_start",
+    "test/spec/sec-keys/test_c1_latest_filed.py::test_missing_concept_and_malformed_concept",
+    "test/spec/sec-keys/test_c1_latest_filed.py::test_nil_is_skipped_never_zero",
+    "test/spec/sec-keys/test_c1_latest_filed.py::test_order_and_earlier_filings_do_not_change_the_key",
+    "test/spec/sec-keys/test_c1_latest_filed.py::test_same_day_ties",
+    "test/spec/sec-keys/test_c2_as_reported.py::test_earliest_same_day_tie_takes_smallest_accession",
+    "test/spec/sec-keys/test_c2_as_reported.py::test_every_accession_reporting_the_period",
+    "test/spec/sec-keys/test_c2_as_reported.py::test_fy2022_as_originally_reported",
+    "test/spec/sec-keys/test_c2_as_reported.py::test_given_accession",
+    "test/spec/sec-keys/test_c3_fiscal_year.py::test_a_later_recast_moves_the_value_not_the_period",
+    "test/spec/sec-keys/test_c3_fiscal_year.py::test_june_filer_and_20f_filer",
+    "test/spec/sec-keys/test_c3_fiscal_year.py::test_sep_fy2022_ignores_the_quarter_tagged_fp_fy",
+    "test/spec/sec-keys/test_c3_fiscal_year.py::test_sep_fy2023_is_the_53_week_year_with_the_recast_value",
+    "test/spec/sec-keys/test_c3_fiscal_year.py::test_sep_fy2024_and_instant_year_end_balance",
+    "test/spec/sec-keys/test_c3_fiscal_year.py::test_years_without_an_annual_filing_labelled_n",
+    "test/spec/sec-keys/test_c4_calendar_year.py::test_absent_cik_bad_ccp_and_nil_row",
+    "test/spec/sec-keys/test_c4_calendar_year.py::test_generated_frames_each_cik_gets_its_row",
+    "test/spec/sec-keys/test_c4_calendar_year.py::test_instant_frame",
+    "test/spec/sec-keys/test_c4_calendar_year.py::test_june_filer_calendar_2024_is_its_fiscal_2025",
+    "test/spec/sec-keys/test_c4_calendar_year.py::test_sep_filer_row_and_unpadded_cik",
+    "test/spec/sec-keys/test_c5_units_and_scale.py::test_any_missing_unit_raises",
+    "test/spec/sec-keys/test_c5_units_and_scale.py::test_full_value_in_reporting_unit",
+    "test/spec/sec-keys/test_c5_units_and_scale.py::test_unit_mismatch_in_each_builder",
+    "test/spec/sec-keys/test_c6_cross_check.py::test_agreement_verifies_and_adopts_decimals",
+    "test/spec/sec-keys/test_c6_cross_check.py::test_each_other_reason",
+    "test/spec/sec-keys/test_c6_cross_check.py::test_inf_decimals_stay_inf",
+    "test/spec/sec-keys/test_c6_cross_check.py::test_same_or_unknown_source_is_refused",
+    "test/spec/sec-keys/test_c6_cross_check.py::test_tolerance_boundary",
+    "test/spec/sec-keys/test_c6_cross_check.py::test_value_disagreement_is_recorded_not_overwritten",
+    "test/spec/sec-keys/test_c7_through_the_seam.py::test_calendar_key_from_source_duration_and_instant",
+    "test/spec/sec-keys/test_c7_through_the_seam.py::test_fiscal_key_from_source",
+    "test/spec/sec-keys/test_c7_through_the_seam.py::test_period_string_for_any_year"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/sec-keys.md",
+    "sha256": "95a15f1078c9b4b916d08621ecbf699a52a92500bff885344940215010974108"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

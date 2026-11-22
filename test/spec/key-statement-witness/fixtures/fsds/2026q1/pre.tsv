@@ -1,0 +1,1224 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0000002488-26-000018	3	1	IS	0	H	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2025	Net revenue	0
+0000002488-26-000018	3	2	IS	0	H	CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortization	us-gaap/2025	Cost of sales	0
+0000002488-26-000018	3	3	IS	0	H	AmortizationOfAcquisitionRelatedIntangiblesCOGS	0000002488-26-000018	Amortization of acquisition-related intangibles- COGS	0
+0000002488-26-000018	3	4	IS	0	H	CostOfGoodsAndServicesSold	us-gaap/2025	Total cost of sales	0
+0000002488-26-000018	3	5	IS	0	H	GrossProfit	us-gaap/2025	Gross profit	0
+0000002488-26-000018	3	6	IS	0	H	ResearchAndDevelopmentExpense	us-gaap/2025	Research and development	0
+0000002488-26-000018	3	7	IS	0	H	SellingGeneralAndAdministrativeExpense	us-gaap/2025	Marketing, general and administrative	0
+0000002488-26-000018	3	8	IS	0	H	AmortizationOfAcquisitionRelatedIntangibles_Opex	0000002488-26-000018	Amortization of acquisition-related intangibles	0
+0000002488-26-000018	3	9	IS	0	H	RestructuringCharges	us-gaap/2025	Restructuring charges	0
+0000002488-26-000018	3	10	IS	0	H	OperatingExpenses	us-gaap/2025	Total operating expenses	0
+0000002488-26-000018	3	11	IS	0	H	OperatingIncomeLoss	us-gaap/2025	Operating income	0
+0000002488-26-000018	3	12	IS	0	H	InterestExpense	us-gaap/2025	Interest expense	1
+0000002488-26-000018	3	13	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2025	Other income (expense), net	0
+0000002488-26-000018	3	14	IS	0	H	IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments	us-gaap/2025	Income from continuing operations before income taxes and equity income	0
+0000002488-26-000018	3	15	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2025	Income tax provision (benefit)	0
+0000002488-26-000018	3	16	IS	0	H	IncomeLossFromEquityMethodInvestments	us-gaap/2025	Equity income in investee	0
+0000002488-26-000018	3	17	IS	0	H	IncomeLossFromContinuingOperations	us-gaap/2025	Income (Loss) from Continuing Operations, Net of Tax, Attributable to Parent	0
+0000002488-26-000018	3	18	IS	0	H	IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntity	us-gaap/2025	Income (Loss) from Discontinued Operations, Net of Tax, Attributable to Parent	0
+0000002488-26-000018	3	19	IS	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0000002488-26-000018	3	21	IS	0	H	IncomeLossFromContinuingOperationsPerBasicShare	us-gaap/2025	Income (Loss) from Continuing Operations, Per Basic Share	0
+0000002488-26-000018	3	22	IS	0	H	IncomeLossFromDiscontinuedOperationsNetOfTaxPerBasicShare	us-gaap/2025	Income (Loss) from Discontinued Operations and Disposal of Discontinued Operations, Net of Tax, Per Basic Share	0
+0000002488-26-000018	3	23	IS	0	H	EarningsPerShareBasic	us-gaap/2025	Basic (in usd per share)	0
+0000002488-26-000018	3	24	IS	0	H	IncomeLossFromContinuingOperationsPerDilutedShare	us-gaap/2025	Income (Loss) from Continuing Operations, Per Diluted Share	0
+0000002488-26-000018	3	25	IS	0	H	IncomeLossFromDiscontinuedOperationsNetOfTaxPerDilutedShare	us-gaap/2025	Income (Loss) from Discontinued Operations and Disposal of Discontinued Operations, Net of Tax, Per Diluted Share	0
+0000002488-26-000018	3	26	IS	0	H	EarningsPerShareDiluted	us-gaap/2025	Diluted (in usd per share)	0
+0000002488-26-000018	3	28	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2025	Basic (in shares)	0
+0000002488-26-000018	3	29	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2025	Diluted (in shares)	0
+0000002488-26-000018	4	6	CI	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0000002488-26-000018	4	7	CI	0	H	OtherComprehensiveIncomeLossCashFlowHedgeGainLossAfterReclassificationAndTax	us-gaap/2025	Net change in unrealized gains (losses) on cash flow hedges	0
+0000002488-26-000018	4	8	CI	0	H	ComprehensiveIncomeNetOfTax	us-gaap/2025	Total comprehensive income	0
+0000002488-26-000018	5	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0000002488-26-000018	5	4	BS	0	H	ShortTermInvestments	us-gaap/2025	Short-term investments	0
+0000002488-26-000018	5	5	BS	0	H	AccountsReceivableNetCurrent	us-gaap/2025	Accounts receivable, net	0
+0000002488-26-000018	5	6	BS	0	H	InventoryNet	us-gaap/2025	Inventories	0
+0000002488-26-000018	5	7	BS	0	H	PrepaidExpenseAndOtherAssetsCurrent	us-gaap/2025	Prepaid expenses and other current assets	0
+0000002488-26-000018	5	8	BS	0	H	AssetsCurrent	us-gaap/2025	Total current assets	0
+0000002488-26-000018	5	9	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2025	Property and equipment, net	0
+0000002488-26-000018	5	10	BS	0	H	Goodwill	us-gaap/2025	Goodwill	0
+0000002488-26-000018	5	11	BS	0	H	IntangibleAssetsNetExcludingGoodwill	us-gaap/2025	Acquisition-related intangibles, net	0
+0000002488-26-000018	5	12	BS	0	H	DeferredIncomeTaxAssetsNet	us-gaap/2025	Deferred tax assets, net	0
+0000002488-26-000018	5	13	BS	0	H	OtherAssetsNoncurrent	us-gaap/2025	Other non-current assets	0
+0000002488-26-000018	5	14	BS	0	H	Assets	us-gaap/2025	Total assets	0
+0000002488-26-000018	5	17	BS	0	H	AccountsPayableCurrent	us-gaap/2025	Accounts payable	0
+0000002488-26-000018	5	18	BS	0	H	AccruedLiabilitiesCurrent	us-gaap/2025	Accrued liabilities	0
+0000002488-26-000018	5	19	BS	0	H	ShortTermBorrowings	us-gaap/2025	Current portion of long-term debt, net	0
+0000002488-26-000018	5	20	BS	0	H	OtherLiabilitiesCurrent	us-gaap/2025	Other current liabilities	0
+0000002488-26-000018	5	21	BS	0	H	LiabilitiesCurrent	us-gaap/2025	Total current liabilities	0
+0000002488-26-000018	5	22	BS	0	H	LongTermDebtNoncurrent	us-gaap/2025	Long-term debt, net of current portion	0
+0000002488-26-000018	5	23	BS	0	H	OperatingLeaseLiabilityNoncurrent	us-gaap/2025	Long-term operating lease liabilities	0
+0000002488-26-000018	5	24	BS	0	H	DeferredIncomeTaxLiabilitiesNet	us-gaap/2025	Deferred tax liabilities	0
+0000002488-26-000018	5	25	BS	0	H	OtherLiabilitiesNoncurrent	us-gaap/2025	Other long-term liabilities	0
+0000002488-26-000018	5	26	BS	0	H	CommitmentsAndContingencies	us-gaap/2025	Commitments and contingencies (see Note 12)	0
+0000002488-26-000018	5	28	BS	0	H	CommonStockValue	us-gaap/2025	Common Stock, Value, Issued	0
+0000002488-26-000018	5	29	BS	0	H	AdditionalPaidInCapitalCommonStock	us-gaap/2025	Additional paid-in capital	0
+0000002488-26-000018	5	30	BS	0	H	TreasuryStockValue	us-gaap/2025	Treasury Stock, Value	1
+0000002488-26-000018	5	31	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2025	Retained earnings	0
+0000002488-26-000018	5	32	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Accumulated other comprehensive loss	0
+0000002488-26-000018	5	33	BS	0	H	StockholdersEquity	us-gaap/2025	Total stockholders equity	0
+0000002488-26-000018	5	34	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2025	Total liabilities and stockholders equity	0
+0000002488-26-000018	6	1	BS	1	H	CommonStockParOrStatedValuePerShare	us-gaap/2025	Common stock, par value (USD per share)	0
+0000002488-26-000018	6	2	BS	1	H	CommonStockSharesAuthorized	us-gaap/2025	Common stock, shares authorized (shares)	0
+0000002488-26-000018	6	3	BS	1	H	CommonStockSharesIssued	us-gaap/2025	Common stock, shares issued (shares)	0
+0000002488-26-000018	6	4	BS	1	H	CommonStockSharesOutstanding	us-gaap/2025	Common stock, shares outstanding (shares)	0
+0000002488-26-000018	6	5	BS	1	H	TreasuryStockCommonShares	us-gaap/2025	Treasury stock (shares)	0
+0000002488-26-000018	7	14	EQ	0	H	StockholdersEquity	us-gaap/2025	Beginning balance	0
+0000002488-26-000018	7	15	EQ	0	H	StockIssuedDuringPeriodValueShareBasedCompensation	us-gaap/2025	Shares Issued, Value, Share-Based Payment Arrangement, after Forfeiture	0
+0000002488-26-000018	7	16	EQ	0	H	AdjustmentsToAdditionalPaidInCapitalSharebasedCompensationRequisiteServicePeriodRecognitionValue	us-gaap/2025	Stock-based compensation	0
+0000002488-26-000018	7	17	EQ	0	H	StockIssuedDuringPeriodValueConversionOfConvertibleSecuritiesNetOfAdjustments	us-gaap/2025	Issuance of common stock to settle convertible debt	0
+0000002488-26-000018	7	18	EQ	0	H	StockRepurchasedDuringPeriodValue	us-gaap/2025	Repurchases of common stock	0
+0000002488-26-000018	7	19	EQ	0	H	BusinessCombinationConsiderationTransferredEquityInterestsIssuedAndIssuable	us-gaap/2025	Consideration transferred	0
+0000002488-26-000018	7	20	EQ	0	H	AdjustmentsToAdditionalPaidInCapitalWarrantIssued	us-gaap/2025	Issuance of common stock warrants	0
+0000002488-26-000018	7	21	EQ	0	H	PaymentsRelatedToTaxWithholdingForShareBasedCompensation	us-gaap/2025	Payment, Tax Withholding, Share-based Payment Arrangement	0
+0000002488-26-000018	7	22	EQ	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0000002488-26-000018	7	23	EQ	0	H	OtherComprehensiveIncomeLossNetOfTaxPortionAttributableToParent	us-gaap/2025	Other comprehensive income (loss)	0
+0000002488-26-000018	7	24	EQ	0	H	StockholdersEquity	us-gaap/2025	Ending balance	0
+0000002488-26-000018	8	2	CF	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0000002488-26-000018	8	3	CF	0	H	OtherAdjustmentsToIncomeDiscontinuedOperations	us-gaap/2025	Income from discontinued operations, net of tax	1
+0000002488-26-000018	8	5	CF	0	H	OtherDepreciationAndAmortization	us-gaap/2025	Depreciation and amortization	0
+0000002488-26-000018	8	6	CF	0	H	AdjustmentForAmortization	us-gaap/2025	Amortization	0
+0000002488-26-000018	8	7	CF	0	H	ShareBasedCompensation	us-gaap/2025	Stock-based compensation	0
+0000002488-26-000018	8	8	CF	0	H	GainLossOnSaleOfInvestments	us-gaap/2025	(Gains) losses on long-term investments, net	1
+0000002488-26-000018	8	9	CF	0	H	DeferredIncomeTaxesAndTaxCredits	us-gaap/2025	Deferred income taxes	0
+0000002488-26-000018	8	10	CF	0	H	InventoryLossAtRecoveryFromContractManufacturer	0000002488-26-000018	Inventory loss at (recovery from) contract manufacturer	0
+0000002488-26-000018	8	11	CF	0	H	OtherNoncashIncomeExpense	us-gaap/2025	Other	1
+0000002488-26-000018	8	13	CF	0	H	IncreaseDecreaseInAccountsReceivable	us-gaap/2025	Accounts receivable, net	1
+0000002488-26-000018	8	14	CF	0	H	IncreaseDecreaseInInventories	us-gaap/2025	Inventories	1
+0000002488-26-000018	8	15	CF	0	H	IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets	us-gaap/2025	Prepaid expenses and other assets	1
+0000002488-26-000018	8	16	CF	0	H	IncreaseDecreaseInAccountsPayable	us-gaap/2025	Accounts payable	0
+0000002488-26-000018	8	17	CF	0	H	IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities	us-gaap/2025	Accrued and other liabilities	0
+0000002488-26-000018	8	18	CF	0	H	NetCashProvidedByUsedInOperatingActivitiesContinuingOperations	us-gaap/2025	Cash Provided by (Used in) Operating Activity, Continuing Operation	0
+0000002488-26-000018	8	19	CF	0	H	CashProvidedByUsedInOperatingActivitiesDiscontinuedOperations	us-gaap/2025	Cash Provided by (Used in) Operating Activity, Discontinued Operation	0
+0000002488-26-000018	8	20	CF	0	H	NetCashProvidedByUsedInOperatingActivities	us-gaap/2025	Cash Provided by (Used in) Operating Activity, Including Discontinued Operation, Total	0
+0000002488-26-000018	8	22	CF	0	H	PaymentsToAcquirePropertyPlantAndEquipment	us-gaap/2025	Purchases of property and equipment	1
+0000002488-26-000018	8	23	CF	0	H	PaymentsToAcquireShortTermInvestments	us-gaap/2025	Purchases of short-term investments	1
+0000002488-26-000018	8	24	CF	0	H	ProceedsFromMaturitiesPrepaymentsAndCallsOfShorttermInvestments	us-gaap/2025	Proceeds from Maturities, Prepayments and Calls of Short-Term Investments	0
+0000002488-26-000018	8	25	CF	0	H	ProceedsFromSaleOfShortTermInvestments	us-gaap/2025	Proceeds from Sale of Short-Term Investments	0
+0000002488-26-000018	8	26	CF	0	H	AcquisitionsNetOfCashAcquiredAllOthers	0000002488-26-000018	Acquisitions, net of cash acquired, all others	1
+0000002488-26-000018	8	27	CF	0	H	PaymentsToAcquireInterestInSubsidiariesAndAffiliates	us-gaap/2025	Related party loan and equity method investment	1
+0000002488-26-000018	8	28	CF	0	H	PaymentsToAcquireOtherInvestments	us-gaap/2025	Purchases of long-term investments	1
+0000002488-26-000018	8	29	CF	0	H	PaymentsForProceedsFromOtherInvestingActivities	us-gaap/2025	Other	1
+0000002488-26-000018	8	30	CF	0	H	NetCashProvidedByUsedInInvestingActivitiesContinuingOperations	us-gaap/2025	Cash Provided by (Used in) Investing Activity, Continuing Operation	0
+0000002488-26-000018	8	31	CF	0	H	ProceedsFromDivestitureOfBusinessesNetOfCashDivested	us-gaap/2025	Proceeds from Divestiture of Businesses, Net of Cash Divested	0
+0000002488-26-000018	8	32	CF	0	H	PaymentsForProceedsFromProductiveAssets	us-gaap/2025	Payments for (Proceeds from) Productive Assets	1
+0000002488-26-000018	8	33	CF	0	H	CashProvidedByUsedInInvestingActivitiesDiscontinuedOperations	us-gaap/2025	Cash Provided by (Used in) Investing Activity, Discontinued Operation	0
+0000002488-26-000018	8	34	CF	0	H	NetCashProvidedByUsedInInvestingActivities	us-gaap/2025	Net cash used in investing activities	0
+0000002488-26-000018	8	36	CF	0	H	ProceedsFromShortTermDebt	us-gaap/2025	Proceeds from debt and commercial paper issuance, net of issuance costs	0
+0000002488-26-000018	8	37	CF	0	H	RepaymentsOfDebt	us-gaap/2025	Repayment of debt and commercial paper	1
+0000002488-26-000018	8	38	CF	0	H	ProceedsFromIssuanceOfSharesUnderIncentiveAndShareBasedCompensationPlansIncludingStockOptions	us-gaap/2025	Proceeds from sales of common stock through employee equity plans	0
+0000002488-26-000018	8	39	CF	0	H	PaymentsForRepurchaseOfCommonStock	us-gaap/2025	Repurchases of common stock	1
+0000002488-26-000018	8	40	CF	0	H	PaymentsRelatedToTaxWithholdingForShareBasedCompensation	us-gaap/2025	Stock repurchases for tax withholding on employee equity plans	1
+0000002488-26-000018	8	41	CF	0	H	PaymentForContingentConsiderationLiabilityFinancingActivities	us-gaap/2025	Settlement of contingent consideration liability	1
+0000002488-26-000018	8	42	CF	0	H	ProceedsFromPaymentsForOtherFinancingActivities	us-gaap/2025	Other	0
+0000002488-26-000018	8	43	CF	0	H	NetCashProvidedByUsedInFinancingActivities	us-gaap/2025	Net cash used in financing activities	0
+0000002488-26-000018	8	44	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	Net increase (decrease) in cash, cash equivalents and restricted cash	0
+0000002488-26-000018	8	45	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations	us-gaap/2025	Cash, Cash Equivalent, Restricted Cash, and Restricted Cash Equivalent, Including Discontinued Operation	0
+0000002488-26-000018	8	46	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash, cash equivalents and restricted cash at beginning of year	0
+0000002488-26-000018	8	47	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash, cash equivalents and restricted cash at end of year	0
+0000002488-26-000018	8	50	CF	0	H	InterestPaidNet	us-gaap/2025	Interest	0
+0000002488-26-000018	8	51	CF	0	H	IncomeTaxesPaidNet	us-gaap/2025	Income taxes, net of refund	0
+0000002488-26-000018	8	53	CF	0	H	CapitalExpendituresIncurredButNotYetPaid	us-gaap/2025	Purchases of property and equipment, accrued but not paid	0
+0000002488-26-000018	8	54	CF	0	H	StockIssuedDuringPeriodValueTreasuryStockReissued	us-gaap/2025	Reissuance of treasury stock for acquisition	0
+0000002488-26-000018	8	55	CF	0	H	NoncashOrPartNoncashAcquisitionNoncashFinancialOrEquityInstrumentConsiderationSharesIssued1	us-gaap/2025	Reissuance of treasury stock to settle contingent consideration liability from acquisition	0
+0000002488-26-000018	8	56	CF	0	H	NoncashOrPartNoncashDivestitureAmountOfConsiderationReceived1	us-gaap/2025	Non-cash consideration and earn-out receivable from divestiture	0
+0000002488-26-000018	8	58	CF	0	H	RightOfUseAssetObtainedInExchangeForOperatingLeaseLiability	us-gaap/2025	Operating lease right-of-use assets acquired by assuming related liabilities	0
+0000002488-26-000018	8	60	CF	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0000002488-26-000018	8	61	CF	0	H	RestrictedCashCurrent	us-gaap/2025	Restricted cash included in Prepaid expense and other current assets	0
+0000002488-26-000018	8	62	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Total cash, cash equivalents, and restricted cash	0
+0000050863-26-000011	3	1	IS	0	H	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2025	Net revenue	0
+0000050863-26-000011	3	2	IS	0	H	CostOfGoodsAndServicesSold	us-gaap/2025	Cost of sales	0
+0000050863-26-000011	3	3	IS	0	H	GrossProfit	us-gaap/2025	Gross profit	0
+0000050863-26-000011	3	4	IS	0	H	ResearchAndDevelopmentExpense	us-gaap/2025	Research and development	0
+0000050863-26-000011	3	5	IS	0	H	SellingGeneralAndAdministrativeExpense	us-gaap/2025	Marketing, general, and administrative	0
+0000050863-26-000011	3	6	IS	0	H	RestructuringSettlementAndImpairmentProvisions	us-gaap/2025	Restructuring and other charges	0
+0000050863-26-000011	3	7	IS	0	H	OperatingExpenses	us-gaap/2025	Operating expenses	0
+0000050863-26-000011	3	8	IS	0	H	OperatingIncomeLoss	us-gaap/2025	Operating income (loss)	0
+0000050863-26-000011	3	9	IS	0	H	GainsLossesOnEquityInvestments	0000050863-26-000011	Gains (losses) on equity investments, net	0
+0000050863-26-000011	3	10	IS	0	H	NonoperatingIncomeExpense	us-gaap/2025	Interest and other, net	0
+0000050863-26-000011	3	11	IS	0	H	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2025	Income (loss) before taxes	0
+0000050863-26-000011	3	12	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2025	Provision for (benefit from) taxes	0
+0000050863-26-000011	3	13	IS	0	H	ProfitLoss	us-gaap/2025	Net income (loss)	0
+0000050863-26-000011	3	14	IS	0	H	NetIncomeLossAttributableToNoncontrollingInterest	us-gaap/2025	Less: net income (loss) attributable to non-controlling interests	0
+0000050863-26-000011	3	15	IS	0	H	NetIncomeLoss	us-gaap/2025	Net income (loss) attributable to Intel	0
+0000050863-26-000011	3	16	IS	0	H	EarningsPerShareBasic	us-gaap/2025	Earnings (loss) per share attributable to Intelbasic (in dollars per share)	0
+0000050863-26-000011	3	17	IS	0	H	EarningsPerShareDiluted	us-gaap/2025	Earnings (loss) per share attributable to Inteldiluted (in dollars per share)	0
+0000050863-26-000011	3	19	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2025	Basic (shares)	0
+0000050863-26-000011	3	20	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2025	Diluted (shares)	0
+0000050863-26-000011	4	1	CI	0	H	ProfitLoss	us-gaap/2025	Net income (loss)	0
+0000050863-26-000011	4	3	CI	0	H	OtherComprehensiveIncomeLossCashFlowHedgeGainLossAfterReclassificationAndTaxParent	us-gaap/2025	Net unrealized holding gains (losses) on derivatives	0
+0000050863-26-000011	4	4	CI	0	H	OtherComprehensiveIncomeDefinedBenefitPlansNetUnamortizedGainLossArisingDuringPeriodNetOfTax	us-gaap/2025	Actuarial valuation and other pension benefits (expenses), net	0
+0000050863-26-000011	4	5	CI	0	H	OtherComprehensiveIncomeForeignCurrencyTransactionAndTranslationGainLossArisingDuringPeriodNetOfTax	us-gaap/2025	Translation adjustments and other	0
+0000050863-26-000011	4	6	CI	0	H	OtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Other comprehensive income (loss)	0
+0000050863-26-000011	4	7	CI	0	H	ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Total comprehensive income (loss)	0
+0000050863-26-000011	4	8	CI	0	H	ComprehensiveIncomeNetOfTaxAttributableToNoncontrollingInterest	us-gaap/2025	Less: comprehensive income (loss) attributable to non-controlling interests	0
+0000050863-26-000011	4	9	CI	0	H	ComprehensiveIncomeNetOfTax	us-gaap/2025	Total comprehensive income (loss) attributable to Intel	0
+0000050863-26-000011	5	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0000050863-26-000011	5	4	BS	0	H	AvailableForSaleSecuritiesDebtSecuritiesCurrent	us-gaap/2025	Short-term investments	0
+0000050863-26-000011	5	5	BS	0	H	AccountsReceivableNetCurrent	us-gaap/2025	Accounts receivable, net	0
+0000050863-26-000011	5	6	BS	0	H	InventoryNet	us-gaap/2025	Inventories	0
+0000050863-26-000011	5	7	BS	0	H	OtherAssetsCurrent	us-gaap/2025	Other current assets	0
+0000050863-26-000011	5	8	BS	0	H	AssetsCurrent	us-gaap/2025	Total current assets	0
+0000050863-26-000011	5	9	BS	0	H	PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization	us-gaap/2025	Property, plant and equipment, net	0
+0000050863-26-000011	5	10	BS	0	H	EquityInvestments	0000050863-26-000011	Equity investments	0
+0000050863-26-000011	5	11	BS	0	H	Goodwill	us-gaap/2025	Goodwill	0
+0000050863-26-000011	5	12	BS	0	H	IntangibleAssetsNetExcludingGoodwill	us-gaap/2025	Identified intangible assets, net	0
+0000050863-26-000011	5	13	BS	0	H	OtherAssetsNoncurrent	us-gaap/2025	Other long-term assets	0
+0000050863-26-000011	5	14	BS	0	H	Assets	us-gaap/2025	Total assets	0
+0000050863-26-000011	5	17	BS	0	H	DebtCurrent	us-gaap/2025	Short-term debt	0
+0000050863-26-000011	5	18	BS	0	H	AccountsPayableCurrent	us-gaap/2025	Accounts payable	0
+0000050863-26-000011	5	19	BS	0	H	EmployeeRelatedLiabilitiesCurrent	us-gaap/2025	Accrued compensation and benefits	0
+0000050863-26-000011	5	20	BS	0	H	AccruedIncomeTaxesCurrent	us-gaap/2025	Income taxes payable	0
+0000050863-26-000011	5	21	BS	0	H	OtherLiabilitiesCurrent	us-gaap/2025	Other accrued liabilities	0
+0000050863-26-000011	5	22	BS	0	H	LiabilitiesCurrent	us-gaap/2025	Total current liabilities	0
+0000050863-26-000011	5	23	BS	0	H	LongTermDebtNoncurrent	us-gaap/2025	Debt	0
+0000050863-26-000011	5	24	BS	0	H	OtherLiabilitiesNoncurrent	us-gaap/2025	Other long-term liabilities	0
+0000050863-26-000011	5	25	BS	0	H	CommitmentsAndContingencies	us-gaap/2025	Commitments and Contingencies (Note 19)	0
+0000050863-26-000011	5	27	BS	0	H	PreferredStockValue	us-gaap/2025	Preferred stock, $0.001 par value, 50 shares authorized; none issued	0
+0000050863-26-000011	5	28	BS	0	H	CommonStocksIncludingAdditionalPaidInCapital	us-gaap/2025	Common stock, $0.001 par value, 10,000 shares authorized; 4,994 shares issued and outstanding (4,330 issued and outstanding in 2024) and capital in excess of par value	0
+0000050863-26-000011	5	29	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Accumulated other comprehensive income (loss)	0
+0000050863-26-000011	5	30	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2025	Retained earnings	0
+0000050863-26-000011	5	31	BS	0	H	StockholdersEquity	us-gaap/2025	Total Intel stockholders' equity	0
+0000050863-26-000011	5	32	BS	0	H	MinorityInterest	us-gaap/2025	Non-controlling interests	0
+0000050863-26-000011	5	33	BS	0	H	StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Total stockholders' equity	0
+0000050863-26-000011	5	34	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2025	Total liabilities and stockholders' equity	0
+0000050863-26-000011	6	3	BS	1	H	PreferredStockParOrStatedValuePerShare	us-gaap/2025	Preferred stock, par value (in dollars per share)	0
+0000050863-26-000011	6	4	BS	1	H	PreferredStockSharesAuthorized	us-gaap/2025	Preferred stock, shares authorized	0
+0000050863-26-000011	6	5	BS	1	H	PreferredStockSharesIssued	us-gaap/2025	Preferred stock, shares issued	0
+0000050863-26-000011	6	6	BS	1	H	CommonStockParOrStatedValuePerShare	us-gaap/2025	Common stock, par value (in dollars per share)	0
+0000050863-26-000011	6	7	BS	1	H	CommonStockSharesAuthorized	us-gaap/2025	Common stock, shares authorized	0
+0000050863-26-000011	6	8	BS	1	H	CommonStockSharesIssued	us-gaap/2025	Common stock, shares issued	0
+0000050863-26-000011	6	9	BS	1	H	CommonStockSharesOutstanding	us-gaap/2025	Common stock, shares outstanding	0
+0000050863-26-000011	7	1	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash and cash equivalents, beginning of period	0
+0000050863-26-000011	7	3	CF	0	H	ProfitLoss	us-gaap/2025	Net income (loss)	0
+0000050863-26-000011	7	5	CF	0	H	Depreciation	us-gaap/2025	Depreciation	0
+0000050863-26-000011	7	6	CF	0	H	ShareBasedCompensation	us-gaap/2025	Share-based compensation	0
+0000050863-26-000011	7	7	CF	0	H	RestructuringCharges	us-gaap/2025	Restructuring and other charges	0
+0000050863-26-000011	7	8	CF	0	H	AmortizationOfIntangibleAssets	us-gaap/2025	Amortization of intangibles	0
+0000050863-26-000011	7	9	CF	0	H	IncreaseDecreaseInEquitySecuritiesFvNi	us-gaap/2025	(Gains) losses on equity investments, net	1
+0000050863-26-000011	7	10	CF	0	H	UnrealizedGainLossOnDerivatives	us-gaap/2025	Mark-to-market (gains) losses on Escrowed Shares	1
+0000050863-26-000011	7	11	CF	0	H	DisposalGroupNotDiscontinuedOperationGainLossOnDisposal	us-gaap/2025	(Gains) losses on divestitures	1
+0000050863-26-000011	7	12	CF	0	H	DeferredIncomeTaxesAndTaxCredits	us-gaap/2025	Deferred taxes	0
+0000050863-26-000011	7	13	CF	0	H	AssetImpairmentChargesAndGainLossOnDisposalOfPropertyPlantAndEquipment	0000050863-26-000011	Impairments and net (gain) loss on retirement of property, plant and equipment	0
+0000050863-26-000011	7	15	CF	0	H	IncreaseDecreaseInAccountsReceivable	us-gaap/2025	Accounts receivable	1
+0000050863-26-000011	7	16	CF	0	H	IncreaseDecreaseInInventories	us-gaap/2025	Inventories	1
+0000050863-26-000011	7	17	CF	0	H	IncreaseDecreaseInAccountsPayable	us-gaap/2025	Accounts payable	0
+0000050863-26-000011	7	18	CF	0	H	IncreaseDecreaseInEmployeeRelatedLiabilities	us-gaap/2025	Accrued compensation and benefits	0
+0000050863-26-000011	7	19	CF	0	H	IncreaseDecreaseInIncomeTaxesPayableNetOfIncomeTaxesReceivable	us-gaap/2025	Income taxes	0
+0000050863-26-000011	7	20	CF	0	H	IncreaseDecreaseInOtherOperatingCapitalNet	us-gaap/2025	Other assets and liabilities	1
+0000050863-26-000011	7	21	CF	0	H	AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivities	us-gaap/2025	Total adjustments	0
+0000050863-26-000011	7	22	CF	0	H	NetCashProvidedByUsedInOperatingActivities	us-gaap/2025	Net cash provided by (used for) operating activities	0
+0000050863-26-000011	7	24	CF	0	H	PaymentsToAcquirePropertyPlantAndEquipment	us-gaap/2025	Additions to property, plant and equipment	1
+0000050863-26-000011	7	25	CF	0	H	ProceedsFromCapitalGrants	0000050863-26-000011	Proceeds from capital-related government incentives	0
+0000050863-26-000011	7	26	CF	0	H	PaymentsToAcquireAvailableForSaleSecuritiesDebt	us-gaap/2025	Purchases of short-term investments	1
+0000050863-26-000011	7	27	CF	0	H	ProceedsFromSaleOfAvailableForSaleSecuritiesDebt	us-gaap/2025	Maturities and sales of short-term investments	0
+0000050863-26-000011	7	28	CF	0	H	ProceedsFromEquityMethodInvestmentDividendsOrDistributionsReturnOfCapital	us-gaap/2025	Sales of equity investments	0
+0000050863-26-000011	7	29	CF	0	H	ProceedsFromDivestitureOfBusinesses	us-gaap/2025	Proceeds from Divestiture of Businesses	0
+0000050863-26-000011	7	30	CF	0	H	PaymentsForProceedsFromOtherInvestingActivities	us-gaap/2025	Other investing	1
+0000050863-26-000011	7	31	CF	0	H	NetCashProvidedByUsedInInvestingActivities	us-gaap/2025	Net cash provided by (used for) investing activities	0
+0000050863-26-000011	7	33	CF	0	H	ProceedsFromIssuanceOfCommercialPaper	us-gaap/2025	Issuance of commercial paper, net of issuance costs	0
+0000050863-26-000011	7	34	CF	0	H	RepaymentsOfCommercialPaper	us-gaap/2025	Repayment of commercial paper	1
+0000050863-26-000011	7	35	CF	0	H	ProceedsFromMinorityShareholders	us-gaap/2025	Partner contributions	0
+0000050863-26-000011	7	36	CF	0	H	ProceedsFromIssuanceInitialPublicOffering	us-gaap/2025	Net proceeds from sales of subsidiary shares	0
+0000050863-26-000011	7	37	CF	0	H	PaymentsToAcquirePropertyPlantAndEquipmentFinancingActivities	0000050863-26-000011	Additions to property, plant and equipment	1
+0000050863-26-000011	7	38	CF	0	H	ProceedsFromIssuanceOfLongTermDebt	us-gaap/2025	Issuance of long-term debt, net of issuance costs	0
+0000050863-26-000011	7	39	CF	0	H	RepaymentsOfLongTermDebt	us-gaap/2025	Repayment of debt	1
+0000050863-26-000011	7	40	CF	0	H	ProceedsFromStockPlans	us-gaap/2025	Proceeds from sales of common stock through employee equity incentive plans	0
+0000050863-26-000011	7	41	CF	0	H	ProceedsFromIssuanceOfCommonStockWarrantsAndEscrowedShares	0000050863-26-000011	Net proceeds attributed to common stock and warrants issued, and Escrowed Shares	0
+0000050863-26-000011	7	42	CF	0	H	PaymentsRelatedToTaxWithholdingForShareBasedCompensation	us-gaap/2025	Restricted stock unit withholdings	1
+0000050863-26-000011	7	43	CF	0	H	PaymentsOfDividendsCommonStock	us-gaap/2025	Payment of dividends to stockholders	1
+0000050863-26-000011	7	44	CF	0	H	ProceedsFromPaymentsForOtherFinancingActivities	us-gaap/2025	Other financing	0
+0000050863-26-000011	7	45	CF	0	H	NetCashProvidedByUsedInFinancingActivities	us-gaap/2025	Net cash provided by (used for) financing activities	0
+0000050863-26-000011	7	46	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	Net increase (decrease) in cash and cash equivalents	0
+0000050863-26-000011	7	47	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash, cash equivalents, and restricted cash, end of period	0
+0000050863-26-000011	7	49	CF	0	H	CapitalExpendituresIncurredButNotYetPaid	us-gaap/2025	Acquisition of property, plant and equipment	0
+0000050863-26-000011	7	50	CF	0	H	InterestPaidNet	us-gaap/2025	Interest, net of capitalized interest	0
+0000050863-26-000011	8	13	EQ	0	H	CommonStockSharesOutstanding	us-gaap/2025	Beginning Balance, shares	0
+0000050863-26-000011	8	14	EQ	0	H	StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Beginning Balance	0
+0000050863-26-000011	8	15	EQ	0	H	ProfitLoss	us-gaap/2025	Net income (loss)	0
+0000050863-26-000011	8	16	EQ	0	H	OtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Other comprehensive income (loss)	0
+0000050863-26-000011	8	17	EQ	0	H	StockAndWarrantsIssuedDuringPeriodSharesNewIssues	0000050863-26-000011	Net proceeds from stock issuances and warrants (in shares)	0
+0000050863-26-000011	8	18	EQ	0	H	StockAndWarrantsIssuedDuringPeriodValueNewIssues	0000050863-26-000011	Net proceeds from stock issuances and warrants	0
+0000050863-26-000011	8	19	EQ	0	H	NoncontrollingInterestIncreaseFromSaleOfParentEquityInterestAndContributionsFromNoncontrollingInterestHolders	0000050863-26-000011	Net proceeds from sales of subsidiary shares and partner contributions	0
+0000050863-26-000011	8	20	EQ	0	H	MinorityInterestDecreaseFromDistributionsToNoncontrollingInterestHolders	us-gaap/2025	Partner distributions	1
+0000050863-26-000011	8	21	EQ	0	H	StockIssuedDuringPeriodSharesEmployeeStockPurchasePlans	us-gaap/2025	Employee equity incentive plans and other, shares	0
+0000050863-26-000011	8	22	EQ	0	H	AdjustmentsToAdditionalPaidInCapitalShareBasedCompensationEmployeeStockPurchaseProgramRequisiteServicePeriodRecognition	us-gaap/2025	Employee equity incentive plans and other	0
+0000050863-26-000011	8	23	EQ	0	H	AdjustmentsToAdditionalPaidInCapitalSharebasedCompensationRequisiteServicePeriodRecognitionValue	us-gaap/2025	Share-based compensation	0
+0000050863-26-000011	8	24	EQ	0	H	SharesPaidForTaxWithholdingForShareBasedCompensation	us-gaap/2025	Restricted stock unit withholdings, shares	1
+0000050863-26-000011	8	25	EQ	0	H	AdjustmentsRelatedToTaxWithholdingForShareBasedCompensation	us-gaap/2025	Restricted stock unit withholdings	1
+0000050863-26-000011	8	26	EQ	0	H	DividendsCommonStock	us-gaap/2025	Cash dividends declared	1
+0000050863-26-000011	8	27	EQ	0	H	CommonStockSharesOutstanding	us-gaap/2025	Ending Balance, shares	0
+0000050863-26-000011	8	28	EQ	0	H	StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Ending Balance	0
+0000050863-26-000011	9	1	EQ	1	H	CommonStockDividendsPerShareDeclared	us-gaap/2025	Cash dividends declared per common share (in dollars per share)	0
+0000050863-26-000011	9	3	EQ	1	H	WarrantsIssuedDuringPeriodValueNewIssues	0000050863-26-000011	Proceeds allocated to warrants	0
+0000063908-26-000035	3	2	IS	0	H	Revenuesfromfranchisedrestaurants	0000063908-26-000035	Revenues from franchised restaurants	0
+0000063908-26-000035	3	3	IS	0	H	SalesbyCompanyoperatedrestaurants	0000063908-26-000035	Sales by Company-owned and operated restaurants	0
+0000063908-26-000035	3	4	IS	0	H	OtherRevenues	0000063908-26-000035	Other revenues	0
+0000063908-26-000035	3	5	IS	0	H	Revenues	us-gaap/2025	Total revenues	0
+0000063908-26-000035	3	7	IS	0	H	Franchisedrestaurantsoccupancyexpenses	0000063908-26-000035	Franchised restaurants-occupancy expenses	0
+0000063908-26-000035	3	8	IS	0	H	FoodAndPaperCosts	0000063908-26-000035	Food & paper	0
+0000063908-26-000035	3	9	IS	0	H	PayrollAndEmployeeBenefits	0000063908-26-000035	Payroll & employee benefits	0
+0000063908-26-000035	3	10	IS	0	H	OccupancyAndOtherOperatingExpenses	0000063908-26-000035	Occupancy & other operating expenses	0
+0000063908-26-000035	3	11	IS	0	H	OtherExpenses	us-gaap/2025	Other restaurant expenses	0
+0000063908-26-000035	3	12	IS	0	H	DepreciationDepletionAndAmortization	us-gaap/2025	Depreciation and amortization	0
+0000063908-26-000035	3	13	IS	0	H	OtherSellingGeneralAndAdministrativeExpense	us-gaap/2025	Other	0
+0000063908-26-000035	3	14	IS	0	H	OtherOperatingIncomeExpenseNet	us-gaap/2025	Other operating (income) expense, net	1
+0000063908-26-000035	3	15	IS	0	H	CostsAndExpenses	us-gaap/2025	Total operating costs and expenses	0
+0000063908-26-000035	3	16	IS	0	H	OperatingIncomeLoss	us-gaap/2025	Operating income	0
+0000063908-26-000035	3	17	IS	0	H	InterestExpense	us-gaap/2025	Interest expense-net of capitalized interest of $29, $22 and $14	0
+0000063908-26-000035	3	18	IS	0	H	NonoperatingIncomeExpense	us-gaap/2025	Nonoperating (income) expense, net	1
+0000063908-26-000035	3	19	IS	0	H	IncomeLossFromContinuingOperationsBeforeIncomeTaxes	0000063908-26-000035	Income before provision for income taxes	0
+0000063908-26-000035	3	20	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2025	Provision for income taxes	0
+0000063908-26-000035	3	21	IS	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0000063908-26-000035	3	22	IS	0	H	EarningsPerShareBasic	us-gaap/2025	Earnings per common sharebasic	0
+0000063908-26-000035	3	23	IS	0	H	EarningsPerShareDiluted	us-gaap/2025	Earnings per common sharediluted	0
+0000063908-26-000035	3	24	IS	0	H	CommonStockDividendsPerShareDeclared	us-gaap/2025	Dividends declared per common share	0
+0000063908-26-000035	3	25	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2025	Weighted-average shares outstandingbasic	0
+0000063908-26-000035	3	26	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2025	Weighted-average shares outstandingdiluted	0
+0000063908-26-000035	4	1	IS	1	H	InterestPaidCapitalized	us-gaap/2025	Interest expense, capitalized interest	0
+0000063908-26-000035	5	1	CI	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0000063908-26-000035	5	3	CI	0	H	OtherComprehensiveIncomeForeignCurrencyTransactionAndTranslationGainLossArisingDuringPeriodNetOfTax	us-gaap/2025	Gain (loss) recognized in accumulated other comprehensive income (AOCI), including net investment hedges	0
+0000063908-26-000035	5	4	CI	0	H	OtherComprehensiveIncomeLossForeignCurrencyTransactionAndTranslationReclassificationAdjustmentFromAOCIRealizedUponSaleOrLiquidationNetOfTax	us-gaap/2025	Reclassification of (gain) loss to net income	1
+0000063908-26-000035	5	5	CI	0	H	OtherComprehensiveIncomeLossForeignCurrencyTransactionAndTranslationAdjustmentNetOfTax	us-gaap/2025	Foreign currency translation adjustments-net of tax benefit (expense) of $412, $(241), and $94	0
+0000063908-26-000035	5	7	CI	0	H	OtherComprehensiveIncomeLossCashFlowHedgeGainLossBeforeReclassificationAfterTax	us-gaap/2025	Gain (loss) recognized in AOCI	0
+0000063908-26-000035	5	8	CI	0	H	OtherComprehensiveIncomeLossCashFlowHedgeGainLossReclassificationAfterTax	us-gaap/2025	Reclassification of (gain) loss to net income	1
+0000063908-26-000035	5	9	CI	0	H	OtherComprehensiveIncomeLossCashFlowHedgeGainLossAfterReclassificationAndTax	us-gaap/2025	Cash flow hedges-net of tax benefit (expense) of $32, $(39), and $10	0
+0000063908-26-000035	5	11	CI	0	H	OtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansAdjustmentBeforeReclassificationAdjustmentsNetOfTax	us-gaap/2025	Gain (loss) recognized in AOCI	1
+0000063908-26-000035	5	12	CI	0	H	OtherComprehensiveIncomeLossReclassificationAdjustmentFromAOCIPensionAndOtherPostretirementBenefitPlansForNetGainLossNetOfTax	us-gaap/2025	Reclassification of (gain) loss to net income	1
+0000063908-26-000035	5	13	CI	0	H	OtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansAdjustmentNetOfTax	us-gaap/2025	Defined benefit pension plans-net of tax benefit (expense) of $(1), $1, and $22	1
+0000063908-26-000035	5	14	CI	0	H	OtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Total other comprehensive income (loss), net of tax	0
+0000063908-26-000035	5	15	CI	0	H	ComprehensiveIncomeNetOfTax	us-gaap/2025	Comprehensive income	0
+0000063908-26-000035	6	1	CI	1	H	OtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentTax	us-gaap/2025	Other comprehensive income (loss), foreign currency translation adjustment, tax	1
+0000063908-26-000035	6	2	CI	1	H	OtherComprehensiveIncomeLossCashFlowHedgeGainLossAfterReclassificationTax	us-gaap/2025	Other comprehensive income (loss), derivatives qualifying as hedges, tax	1
+0000063908-26-000035	6	3	CI	1	H	OtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansTax	us-gaap/2025	Other comprehensive income (loss), pension and other postretirement benefit plans, tax	0
+0000063908-26-000035	7	5	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and equivalents	0
+0000063908-26-000035	7	6	BS	0	H	AccountsNotesAndLoansReceivableNetCurrent	us-gaap/2025	Accounts and notes receivable	0
+0000063908-26-000035	7	7	BS	0	H	InventoryNet	us-gaap/2025	Inventories, at cost, not in excess of market	0
+0000063908-26-000035	7	8	BS	0	H	PrepaidExpenseAndOtherAssetsCurrent	us-gaap/2025	Prepaid expenses and other current assets	0
+0000063908-26-000035	7	9	BS	0	H	AssetsCurrent	us-gaap/2025	Total current assets	0
+0000063908-26-000035	7	11	BS	0	H	InvestmentsInAffiliatesSubsidiariesAssociatesAndJointVentures	us-gaap/2025	Investments in and advances to affiliates	0
+0000063908-26-000035	7	12	BS	0	H	Goodwill	us-gaap/2025	Goodwill	0
+0000063908-26-000035	7	13	BS	0	H	OtherAssetsNoncurrent	us-gaap/2025	Miscellaneous	0
+0000063908-26-000035	7	14	BS	0	H	TotalOtherAssets	0000063908-26-000035	Total other assets	0
+0000063908-26-000035	7	15	BS	0	H	LeaseRightOfUseAssetNet	0000063908-26-000035	Lease right-of use asset, net	0
+0000063908-26-000035	7	17	BS	0	H	PropertyPlantAndEquipmentGross	us-gaap/2025	Property and equipment, at cost	0
+0000063908-26-000035	7	18	BS	0	H	AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment	us-gaap/2025	Accumulated depreciation and amortization	1
+0000063908-26-000035	7	19	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2025	Net property and equipment	0
+0000063908-26-000035	7	20	BS	0	H	Assets	us-gaap/2025	Total assets	0
+0000063908-26-000035	7	23	BS	0	H	AccountsPayableCurrent	us-gaap/2025	Accounts payable	0
+0000063908-26-000035	7	24	BS	0	H	CurrentLeaseLiabilityNet	0000063908-26-000035	Current lease liability	0
+0000063908-26-000035	7	25	BS	0	H	AccruedIncomeTaxesCurrent	us-gaap/2025	Income taxes	0
+0000063908-26-000035	7	26	BS	0	H	AccrualForTaxesOtherThanIncomeTaxesCurrent	us-gaap/2025	Other taxes	0
+0000063908-26-000035	7	27	BS	0	H	InterestPayableCurrent	us-gaap/2025	Accrued interest	0
+0000063908-26-000035	7	28	BS	0	H	AccruedExpensesAndOtherCurrentLiabilities	0000063908-26-000035	Accrued payroll and other liabilities	0
+0000063908-26-000035	7	29	BS	0	H	LiabilitiesCurrent	us-gaap/2025	Total current liabilities	0
+0000063908-26-000035	7	30	BS	0	H	LongTermDebtNoncurrent	us-gaap/2025	Long-term debt	0
+0000063908-26-000035	7	31	BS	0	H	LongTermLeaseLiabilityNoncurrentNet	0000063908-26-000035	Long-term lease liability (noncurrent), net	0
+0000063908-26-000035	7	32	BS	0	H	AccruedIncomeTaxesNoncurrent	us-gaap/2025	Long-term income taxes	0
+0000063908-26-000035	7	33	BS	0	H	DeferredRevenueNoncurrent	us-gaap/2025	Deferred revenues - initial franchise fees	0
+0000063908-26-000035	7	34	BS	0	H	OtherLiabilitiesNoncurrent	us-gaap/2025	Other long-term liabilities	0
+0000063908-26-000035	7	35	BS	0	H	DeferredIncomeTaxLiabilitiesNet	us-gaap/2025	Deferred income taxes	0
+0000063908-26-000035	7	37	BS	0	H	PreferredStockValue	us-gaap/2025	Preferred stock, no par value; authorized  165.0 million shares; issued  none	0
+0000063908-26-000035	7	38	BS	0	H	CommonStockValue	us-gaap/2025	Common stock, $.01 par value; authorized  3.5 billion shares; issued  1,660.6 million shares	0
+0000063908-26-000035	7	39	BS	0	H	AdditionalPaidInCapital	us-gaap/2025	Additional paid-in capital	0
+0000063908-26-000035	7	40	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2025	Retained earnings	0
+0000063908-26-000035	7	41	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Accumulated other comprehensive income (loss)	0
+0000063908-26-000035	7	42	BS	0	H	TreasuryStockValue	us-gaap/2025	Common stock in treasury, at cost; 950.0 and 945.4 million shares	1
+0000063908-26-000035	7	43	BS	0	H	StockholdersEquity	us-gaap/2025	Total shareholders' equity (deficit)	0
+0000063908-26-000035	7	44	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2025	Total liabilities and shareholders' equity (deficit)	0
+0000063908-26-000035	8	3	BS	1	H	PreferredStockParOrStatedValuePerShare	us-gaap/2025	Preferred stock, par value	0
+0000063908-26-000035	8	4	BS	1	H	PreferredStockSharesAuthorized	us-gaap/2025	Preferred stock, authorized	0
+0000063908-26-000035	8	5	BS	1	H	PreferredStockSharesIssued	us-gaap/2025	Preferred stock, issued	0
+0000063908-26-000035	8	6	BS	1	H	CommonStockParOrStatedValuePerShare	us-gaap/2025	Common stock, par value	0
+0000063908-26-000035	8	7	BS	1	H	CommonStockSharesAuthorized	us-gaap/2025	Common stock, authorized	0
+0000063908-26-000035	8	8	BS	1	H	CommonStockSharesIssued	us-gaap/2025	Common stock, issued	0
+0000063908-26-000035	8	9	BS	1	H	TreasuryStockCommonShares	us-gaap/2025	Common stock in treasury, shares	0
+0000063908-26-000035	9	2	CF	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0000063908-26-000035	9	5	CF	0	H	DepreciationAndAmortization	us-gaap/2025	Depreciation and amortization	0
+0000063908-26-000035	9	6	CF	0	H	DeferredIncomeTaxExpenseBenefit	us-gaap/2025	Deferred income taxes	0
+0000063908-26-000035	9	7	CF	0	H	ShareBasedCompensation	us-gaap/2025	Share-based compensation expense	0
+0000063908-26-000035	9	8	CF	0	H	GainLossOnSaleOfBusiness	us-gaap/2025	Net (gain) loss on sale of restaurant and other businesses	1
+0000063908-26-000035	9	9	CF	0	H	OtherNoncashIncomeExpense	us-gaap/2025	Other	1
+0000063908-26-000035	9	11	CF	0	H	IncreaseDecreaseInReceivables	us-gaap/2025	Accounts receivable	1
+0000063908-26-000035	9	12	CF	0	H	IncreaseDecreaseInInventoriesPrepaidExpensesAndOtherCurrentAssets	0000063908-26-000035	Inventories, prepaid expenses and other current assets	1
+0000063908-26-000035	9	13	CF	0	H	IncreaseDecreaseInAccountsPayable	us-gaap/2025	Accounts payable	0
+0000063908-26-000035	9	14	CF	0	H	IncreaseDecreaseInAccruedIncomeTaxesPayable	us-gaap/2025	Income taxes	0
+0000063908-26-000035	9	15	CF	0	H	IncreaseDecreaseInOtherAccruedLiabilities	us-gaap/2025	Other accrued liabilities	0
+0000063908-26-000035	9	16	CF	0	H	NetCashProvidedByUsedInOperatingActivities	us-gaap/2025	Cash provided by operations	0
+0000063908-26-000035	9	18	CF	0	H	PaymentsToAcquirePropertyPlantAndEquipment	us-gaap/2025	Capital expenditures	1
+0000063908-26-000035	9	19	CF	0	H	PaymentsToAcquireOtherProductiveAssets	us-gaap/2025	Purchases of restaurant businesses	1
+0000063908-26-000035	9	20	CF	0	H	PaymentsToAcquireEquityMethodInvestments	us-gaap/2025	Payments to Acquire Equity Method Investments	0
+0000063908-26-000035	9	21	CF	0	H	ProceedsFromSaleOfOtherProductiveAssets	us-gaap/2025	Sales of restaurant and other businesses	0
+0000063908-26-000035	9	22	CF	0	H	ProceedsFromSaleOfPropertyPlantAndEquipment	us-gaap/2025	Sales of property	0
+0000063908-26-000035	9	23	CF	0	H	PaymentsForProceedsFromOtherInvestingActivities	us-gaap/2025	Other	1
+0000063908-26-000035	9	24	CF	0	H	NetCashProvidedByUsedInInvestingActivities	us-gaap/2025	Cash used for investing activities	0
+0000063908-26-000035	9	26	CF	0	H	ProceedsFromRepaymentsOfShortTermDebt	us-gaap/2025	Net short-term borrowings	0
+0000063908-26-000035	9	27	CF	0	H	ProceedsFromIssuanceOfLongTermDebt	us-gaap/2025	Long-term financing issuances	0
+0000063908-26-000035	9	28	CF	0	H	RepaymentsOfLongTermDebt	us-gaap/2025	Long-term financing repayments	1
+0000063908-26-000035	9	29	CF	0	H	PaymentsForRepurchaseOfCommonStock	us-gaap/2025	Treasury stock purchases	1
+0000063908-26-000035	9	30	CF	0	H	PaymentsOfDividendsCommonStock	us-gaap/2025	Common stock dividends	1
+0000063908-26-000035	9	31	CF	0	H	ProceedsFromStockOptionsExercised	us-gaap/2025	Proceeds from stock option exercises	0
+0000063908-26-000035	9	32	CF	0	H	ProceedsFromPaymentsForOtherFinancingActivities	us-gaap/2025	Other	0
+0000063908-26-000035	9	33	CF	0	H	NetCashProvidedByUsedInFinancingActivities	us-gaap/2025	Cash used for financing activities	0
+0000063908-26-000035	9	34	CF	0	H	EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Effect of exchange rates on cash and equivalents	0
+0000063908-26-000035	9	35	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	Cash and equivalents increase (decrease)	0
+0000063908-26-000035	9	36	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash and equivalents at beginning of year	0
+0000063908-26-000035	9	37	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash and equivalents at end of year	0
+0000063908-26-000035	9	39	CF	0	H	InterestPaidNet	us-gaap/2025	Interest Paid	0
+0000063908-26-000035	10	13	EQ	0	H	SharesIssued	us-gaap/2025	Beginning Balance (in shares)	0
+0000063908-26-000035	10	14	EQ	0	H	StockholdersEquity	us-gaap/2025	Beginning Balance	0
+0000063908-26-000035	10	15	EQ	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0000063908-26-000035	10	16	EQ	0	H	OtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Other comprehensive income (loss), net of tax	0
+0000063908-26-000035	10	17	EQ	0	H	ComprehensiveIncomeNetOfTax	us-gaap/2025	Comprehensive income	0
+0000063908-26-000035	10	18	EQ	0	H	DividendsCash	us-gaap/2025	Common stock cash dividends	1
+0000063908-26-000035	10	19	EQ	0	H	TreasuryStockSharesAcquired	us-gaap/2025	Treasury stock purchases (in shares)	1
+0000063908-26-000035	10	20	EQ	0	H	TreasuryStockValueAcquiredCostMethod	us-gaap/2025	Treasury stock purchases	1
+0000063908-26-000035	10	21	EQ	0	H	AdjustmentsToAdditionalPaidInCapitalSharebasedCompensationRequisiteServicePeriodRecognitionValue	us-gaap/2025	Share-based compensation	0
+0000063908-26-000035	10	22	EQ	0	H	StockIssuedDuringPeriodValueShareBasedCompensation	us-gaap/2025	Shares Issued, Value, Share-Based Payment Arrangement, after Forfeiture	0
+0000063908-26-000035	10	23	EQ	0	H	StockIssuedDuringPeriodSharesShareBasedCompensation	us-gaap/2025	Shares Issued, Shares, Share-Based Payment Arrangement, after Forfeiture	0
+0000063908-26-000035	10	24	EQ	0	H	SharesIssued	us-gaap/2025	Ending Balance (in shares)	0
+0000063908-26-000035	10	25	EQ	0	H	StockholdersEquity	us-gaap/2025	Ending Balance	0
+0000063908-26-000035	10	26	EQ	0	H	TreasuryStockCommonShares	us-gaap/2025	Common stock in treasury, shares	1
+0000063908-26-000035	11	1	EQ	1	H	CommonStockDividendsPerShareDeclared	us-gaap/2025	Common stock cash dividends (in dollars per share)	0
+0001018724-26-000004	3	1	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	CASH, CASH EQUIVALENTS, AND RESTRICTED CASH, BEGINNING OF PERIOD	0
+0001018724-26-000004	3	3	CF	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0001018724-26-000004	3	5	CF	0	H	DepreciationDepletionAndAmortization	us-gaap/2025	Depreciation and amortization of property and equipment and capitalized content costs, operating lease assets, and other	0
+0001018724-26-000004	3	6	CF	0	H	ShareBasedCompensation	us-gaap/2025	Stock-based compensation	0
+0001018724-26-000004	3	7	CF	0	H	OtherNoncashIncomeExpense	us-gaap/2025	Non-operating expense (income), net	1
+0001018724-26-000004	3	8	CF	0	H	DeferredIncomeTaxExpenseBenefit	us-gaap/2025	Deferred income taxes	0
+0001018724-26-000004	3	10	CF	0	H	IncreaseDecreaseInInventories	us-gaap/2025	Inventories	1
+0001018724-26-000004	3	11	CF	0	H	IncreaseDecreaseInAccountsReceivableAndOtherOperatingAssets	us-gaap/2025	Accounts receivable, net and other	1
+0001018724-26-000004	3	12	CF	0	H	IncreaseDecreaseInOtherNoncurrentAssets	us-gaap/2025	Other assets	1
+0001018724-26-000004	3	13	CF	0	H	IncreaseDecreaseInAccountsPayable	us-gaap/2025	Accounts payable	0
+0001018724-26-000004	3	14	CF	0	H	IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities	us-gaap/2025	Accrued expenses and other	0
+0001018724-26-000004	3	15	CF	0	H	IncreaseDecreaseInContractWithCustomerLiability	us-gaap/2025	Unearned revenue	0
+0001018724-26-000004	3	16	CF	0	H	NetCashProvidedByUsedInOperatingActivities	us-gaap/2025	Net cash provided by (used in) operating activities	0
+0001018724-26-000004	3	18	CF	0	H	PaymentsToAcquireProductiveAssets	us-gaap/2025	Purchases of property and equipment	1
+0001018724-26-000004	3	19	CF	0	H	ProceedsFromPropertyPlantAndEquipmentSalesAndIncentives	0001018724-26-000004	Proceeds from property and equipment sales and incentives	0
+0001018724-26-000004	3	20	CF	0	H	PaymentsToAcquireBusinessesNetOfCashAcquiredAndPaymentsToAcquireNonmarketableSecuritiesAndOther	0001018724-26-000004	Acquisitions, net of cash acquired, non-marketable investments, and other, net	1
+0001018724-26-000004	3	21	CF	0	H	ProceedsFromSaleAndMaturityOfMarketableSecurities	us-gaap/2025	Sales and maturities of marketable securities	0
+0001018724-26-000004	3	22	CF	0	H	PaymentsToAcquireMarketableSecurities	us-gaap/2025	Purchases of marketable securities	1
+0001018724-26-000004	3	23	CF	0	H	NetCashProvidedByUsedInInvestingActivities	us-gaap/2025	Net cash provided by (used in) investing activities	0
+0001018724-26-000004	3	25	CF	0	H	ProceedsFromShortTermDebt	us-gaap/2025	Proceeds from short-term debt, and other	0
+0001018724-26-000004	3	26	CF	0	H	RepaymentsOfShortTermDebt	us-gaap/2025	Repayments of short-term debt, and other	1
+0001018724-26-000004	3	27	CF	0	H	ProceedsFromIssuanceOfLongTermDebt	us-gaap/2025	Proceeds from long-term debt	0
+0001018724-26-000004	3	28	CF	0	H	RepaymentsOfLongTermDebt	us-gaap/2025	Repayments of long-term debt	1
+0001018724-26-000004	3	29	CF	0	H	FinanceLeasePrincipalPayments	us-gaap/2025	Principal repayments of finance leases	1
+0001018724-26-000004	3	30	CF	0	H	RepaymentsOfLongTermFinancingObligations	0001018724-26-000004	Principal repayments of financing obligations	1
+0001018724-26-000004	3	31	CF	0	H	NetCashProvidedByUsedInFinancingActivities	us-gaap/2025	Net cash provided by (used in) financing activities	0
+0001018724-26-000004	3	32	CF	0	H	EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations	us-gaap/2025	Foreign currency effect on cash, cash equivalents, and restricted cash	0
+0001018724-26-000004	3	33	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	Net increase (decrease) in cash, cash equivalents, and restricted cash	0
+0001018724-26-000004	3	34	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	CASH, CASH EQUIVALENTS, AND RESTRICTED CASH, END OF PERIOD	0
+0001018724-26-000004	4	7	IS	0	H	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2025	Total net sales	0
+0001018724-26-000004	4	9	IS	0	H	CostOfGoodsAndServicesSold	us-gaap/2025	Cost of sales	0
+0001018724-26-000004	4	10	IS	0	H	FulfillmentExpense	0001018724-26-000004	Fulfillment	0
+0001018724-26-000004	4	11	IS	0	H	TechnologyAndInfrastructureExpense	0001018724-26-000004	Technology and infrastructure	0
+0001018724-26-000004	4	12	IS	0	H	MarketingExpense	us-gaap/2025	Sales and marketing	0
+0001018724-26-000004	4	13	IS	0	H	GeneralAndAdministrativeExpense	us-gaap/2025	General and administrative	0
+0001018724-26-000004	4	14	IS	0	H	OtherOperatingIncomeExpenseNet	us-gaap/2025	Other operating expense (income), net	1
+0001018724-26-000004	4	15	IS	0	H	CostsAndExpenses	us-gaap/2025	Total operating expenses	0
+0001018724-26-000004	4	16	IS	0	H	OperatingIncomeLoss	us-gaap/2025	Operating income	0
+0001018724-26-000004	4	17	IS	0	H	InvestmentIncomeInterest	us-gaap/2025	Interest income	0
+0001018724-26-000004	4	18	IS	0	H	InterestExpenseNonoperating	us-gaap/2025	Interest expense	1
+0001018724-26-000004	4	19	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2025	Other income (expense), net	0
+0001018724-26-000004	4	20	IS	0	H	NonoperatingIncomeExpense	us-gaap/2025	Total non-operating income	0
+0001018724-26-000004	4	21	IS	0	H	IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments	us-gaap/2025	Income before income taxes	0
+0001018724-26-000004	4	22	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2025	Provision for income taxes	1
+0001018724-26-000004	4	23	IS	0	H	IncomeLossFromEquityMethodInvestments	us-gaap/2025	Equity-method investment activity, net of tax	0
+0001018724-26-000004	4	24	IS	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0001018724-26-000004	4	25	IS	0	H	EarningsPerShareBasic	us-gaap/2025	Basic earnings per share (in dollars per share)	0
+0001018724-26-000004	4	26	IS	0	H	EarningsPerShareDiluted	us-gaap/2025	Diluted earnings per share (in dollars per share)	0
+0001018724-26-000004	4	28	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2025	Basic (in shares)	0
+0001018724-26-000004	4	29	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2025	Diluted (in shares)	0
+0001018724-26-000004	5	1	CI	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0001018724-26-000004	5	3	CI	0	H	OtherComprehensiveIncomeForeignCurrencyTransactionAndTranslationGainLossArisingDuringPeriodNetOfTax	us-gaap/2025	Foreign currency translation adjustments, net of tax of $(55), $226, and $(194)	0
+0001018724-26-000004	5	5	CI	0	H	OtherComprehensiveIncomeUnrealizedHoldingGainLossOnSecuritiesArisingDuringPeriodNetOfTax	us-gaap/2025	Change in net unrealized gains (losses), net of tax of $(110), $(2,086), and $(8,754)	0
+0001018724-26-000004	5	6	CI	0	H	OtherComprehensiveIncomeLossReclassificationAdjustmentFromAOCINetOfTax	0001018724-26-000004	Less: reclassification adjustment for net losses (gains) included in Other income (expense), net, net of tax of $(15), $(2), and $1,327	1
+0001018724-26-000004	5	7	CI	0	H	OtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentNetOfTax	us-gaap/2025	Net change	0
+0001018724-26-000004	5	8	CI	0	H	OtherComprehensiveIncomeOtherNetOfTax	us-gaap/2025	Other, net of tax of $(1), $1, and $(1)	0
+0001018724-26-000004	5	9	CI	0	H	OtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Other comprehensive income (loss)	0
+0001018724-26-000004	5	10	CI	0	H	ComprehensiveIncomeNetOfTax	us-gaap/2025	Comprehensive income	0
+0001018724-26-000004	6	1	CI	1	H	OtherComprehensiveIncomeForeignCurrencyTranslationGainLossArisingDuringPeriodTax	us-gaap/2025	Foreign currency translation adjustments, tax	1
+0001018724-26-000004	6	2	CI	1	H	OtherComprehensiveIncomeUnrealizedHoldingGainLossOnSecuritiesArisingDuringPeriodTax	us-gaap/2025	Unrealized gains (losses), tax	1
+0001018724-26-000004	6	3	CI	1	H	OtherComprehensiveIncomeLossReclassificationAdjustmentFromAOCITax	0001018724-26-000004	Reclassification adjustment for losses (gains) included in Other income (expense), net, tax	1
+0001018724-26-000004	6	4	CI	1	H	OtherComprehensiveIncomeOtherTax	0001018724-26-000004	Other, tax	0
+0001018724-26-000004	7	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001018724-26-000004	7	4	BS	0	H	MarketableSecuritiesCurrent	us-gaap/2025	Marketable securities	0
+0001018724-26-000004	7	5	BS	0	H	InventoryNet	us-gaap/2025	Inventories	0
+0001018724-26-000004	7	6	BS	0	H	AccountsReceivableNetCurrent	us-gaap/2025	Accounts receivable, net and other	0
+0001018724-26-000004	7	7	BS	0	H	AssetsCurrent	us-gaap/2025	Total current assets	0
+0001018724-26-000004	7	8	BS	0	H	PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization	us-gaap/2025	Property and equipment, net	0
+0001018724-26-000004	7	9	BS	0	H	OperatingLeaseRightOfUseAsset	us-gaap/2025	Operating leases	0
+0001018724-26-000004	7	10	BS	0	H	Goodwill	us-gaap/2025	Goodwill	0
+0001018724-26-000004	7	11	BS	0	H	OtherAssetsNoncurrent	us-gaap/2025	Other assets	0
+0001018724-26-000004	7	12	BS	0	H	Assets	us-gaap/2025	Total assets	0
+0001018724-26-000004	7	15	BS	0	H	AccountsPayableCurrent	us-gaap/2025	Accounts payable	0
+0001018724-26-000004	7	16	BS	0	H	AccruedLiabilitiesCurrent	us-gaap/2025	Accrued expenses and other	0
+0001018724-26-000004	7	17	BS	0	H	ContractWithCustomerLiabilityCurrent	us-gaap/2025	Unearned revenue	0
+0001018724-26-000004	7	18	BS	0	H	LiabilitiesCurrent	us-gaap/2025	Total current liabilities	0
+0001018724-26-000004	7	19	BS	0	H	LeaseLiabilityNoncurrent	0001018724-26-000004	Long-term lease liabilities	0
+0001018724-26-000004	7	20	BS	0	H	LongTermDebtNoncurrent	us-gaap/2025	Long-term debt	0
+0001018724-26-000004	7	21	BS	0	H	OtherLiabilitiesNoncurrent	us-gaap/2025	Other long-term liabilities	0
+0001018724-26-000004	7	22	BS	0	H	CommitmentsAndContingencies	us-gaap/2025	Commitments and contingencies (Note 7)	0
+0001018724-26-000004	7	24	BS	0	H	PreferredStockValue	us-gaap/2025	Preferred stock ($0.01 par value; 500 shares authorized; no shares issued or outstanding)	0
+0001018724-26-000004	7	25	BS	0	H	CommonStockValue	us-gaap/2025	Common stock ($0.01 par value; 100,000 shares authorized; 11,108 and 11,246 shares issued; 10,593 and 10,731 shares outstanding)	0
+0001018724-26-000004	7	26	BS	0	H	TreasuryStockCommonValue	us-gaap/2025	Treasury stock, at cost	1
+0001018724-26-000004	7	27	BS	0	H	AdditionalPaidInCapital	us-gaap/2025	Additional paid-in capital	0
+0001018724-26-000004	7	28	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Accumulated other comprehensive income (loss)	0
+0001018724-26-000004	7	29	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2025	Retained earnings	0
+0001018724-26-000004	7	30	BS	0	H	StockholdersEquity	us-gaap/2025	Total stockholders equity	0
+0001018724-26-000004	7	31	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2025	Total liabilities and stockholders equity	0
+0001018724-26-000004	8	1	BS	1	H	PreferredStockParOrStatedValuePerShare	us-gaap/2025	Preferred stock, par value (in usd per share)	0
+0001018724-26-000004	8	2	BS	1	H	PreferredStockSharesAuthorized	us-gaap/2025	Preferred stock, authorized (in shares)	0
+0001018724-26-000004	8	3	BS	1	H	PreferredStockSharesIssued	us-gaap/2025	Preferred stock, issued (in shares)	0
+0001018724-26-000004	8	4	BS	1	H	PreferredStockSharesOutstanding	us-gaap/2025	Preferred stock, outstanding (in shares)	0
+0001018724-26-000004	8	5	BS	1	H	CommonStockParOrStatedValuePerShare	us-gaap/2025	Common stock, par value (in usd per share)	0
+0001018724-26-000004	8	6	BS	1	H	CommonStockSharesAuthorized	us-gaap/2025	Common stock, authorized (in shares)	0
+0001018724-26-000004	8	7	BS	1	H	CommonStockSharesIssued	us-gaap/2025	Common stock, issued (in shares)	0
+0001018724-26-000004	8	8	BS	1	H	CommonStockSharesOutstanding	us-gaap/2025	Common stock, outstanding (in shares)	0
+0001018724-26-000004	9	11	EQ	0	H	CommonStockSharesOutstanding	us-gaap/2025	Beginning Balance (in shares)	0
+0001018724-26-000004	9	12	EQ	0	H	StockholdersEquity	us-gaap/2025	Beginning Balance	0
+0001018724-26-000004	9	13	EQ	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0001018724-26-000004	9	14	EQ	0	H	OtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Other comprehensive income (loss)	0
+0001018724-26-000004	9	15	EQ	0	H	StockIssuedDuringPeriodSharesEmployeeBenefitPlan	us-gaap/2025	Stock-based compensation and issuance of employee benefit plan stock (in shares)	0
+0001018724-26-000004	9	16	EQ	0	H	StockIssuedDuringPeriodValueEmployeeBenefitPlan	us-gaap/2025	Stock-based compensation and issuance of employee benefit plan stock	0
+0001018724-26-000004	9	17	EQ	0	H	CommonStockSharesOutstanding	us-gaap/2025	Ending Balance (in shares)	0
+0001018724-26-000004	9	18	EQ	0	H	StockholdersEquity	us-gaap/2025	Ending Balance	0
+0001628280-26-003942	3	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001628280-26-003942	3	4	BS	0	H	MarketableSecuritiesCurrent	us-gaap/2025	Marketable securities	0
+0001628280-26-003942	3	5	BS	0	H	AccountsReceivableNetCurrent	us-gaap/2025	Accounts receivable, net	0
+0001628280-26-003942	3	6	BS	0	H	PrepaidExpenseAndOtherAssetsCurrent	us-gaap/2025	Prepaid expenses and other current assets	0
+0001628280-26-003942	3	7	BS	0	H	AssetsCurrent	us-gaap/2025	Total current assets	0
+0001628280-26-003942	3	8	BS	0	H	NonmarketableEquitySecuritiesCarryingValue	0001628280-26-003942	Non-marketable equity investments	0
+0001628280-26-003942	3	9	BS	0	H	PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization	us-gaap/2025	Property and equipment, net	0
+0001628280-26-003942	3	10	BS	0	H	OperatingLeaseRightOfUseAsset	us-gaap/2025	Operating lease right-of-use assets	0
+0001628280-26-003942	3	11	BS	0	H	Goodwill	us-gaap/2025	Goodwill	0
+0001628280-26-003942	3	12	BS	0	H	OtherAssetsNoncurrent	us-gaap/2025	Other assets	0
+0001628280-26-003942	3	13	BS	0	H	Assets	us-gaap/2025	Total assets	0
+0001628280-26-003942	3	16	BS	0	H	AccountsPayableTradeCurrent	us-gaap/2025	Accounts payable	0
+0001628280-26-003942	3	17	BS	0	H	OperatingLeaseLiabilityCurrent	us-gaap/2025	Operating lease liabilities, current	0
+0001628280-26-003942	3	18	BS	0	H	AccruedLiabilitiesCurrent	us-gaap/2025	Accrued expenses and other current liabilities	0
+0001628280-26-003942	3	19	BS	0	H	LiabilitiesCurrent	us-gaap/2025	Total current liabilities	0
+0001628280-26-003942	3	20	BS	0	H	OperatingLeaseLiabilityNoncurrent	us-gaap/2025	Operating lease liabilities, non-current	0
+0001628280-26-003942	3	21	BS	0	H	LongTermDebtNoncurrent	us-gaap/2025	Long-term debt	0
+0001628280-26-003942	3	22	BS	0	H	AccruedIncomeTaxesNoncurrent	us-gaap/2025	Long-term income taxes	0
+0001628280-26-003942	3	23	BS	0	H	OtherLiabilitiesNoncurrent	us-gaap/2025	Other liabilities	0
+0001628280-26-003942	3	24	BS	0	H	Liabilities	us-gaap/2025	Total liabilities	0
+0001628280-26-003942	3	25	BS	0	H	CommitmentsAndContingencies	us-gaap/2025	Commitments and contingencies	0
+0001628280-26-003942	3	27	BS	0	H	CommonStockValue	us-gaap/2025	Common stock, $0.000006 par value; 5,000 million Class A shares authorized, 2,187 million and 2,190 million shares issued and outstanding, as of December 31, 2025 and 2024, respectively; 4,141 million Class B shares authorized, 343 million and 344 million shares issued and outstanding, as of December 31, 2025 and 2024, respectively	0
+0001628280-26-003942	3	28	BS	0	H	AdditionalPaidInCapital	us-gaap/2025	Additional paid-in capital	0
+0001628280-26-003942	3	29	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Accumulated other comprehensive income (loss)	0
+0001628280-26-003942	3	30	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2025	Retained earnings	0
+0001628280-26-003942	3	31	BS	0	H	StockholdersEquity	us-gaap/2025	Total stockholders' equity	0
+0001628280-26-003942	3	32	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2025	Total liabilities and stockholders' equity	0
+0001628280-26-003942	4	8	BS	1	H	CommonStockParOrStatedValuePerShare	us-gaap/2025	Common stock, par value (in dollars per share)	0
+0001628280-26-003942	4	9	BS	1	H	CommonStockSharesAuthorized	us-gaap/2025	Common stock, shares authorized (in shares)	0
+0001628280-26-003942	4	10	BS	1	H	CommonStockSharesIssued	us-gaap/2025	Common stock, shares, issued (in shares)	0
+0001628280-26-003942	4	11	BS	1	H	CommonStockSharesOutstanding	us-gaap/2025	Common stock, shares, outstanding (in shares)	0
+0001628280-26-003942	5	1	IS	0	H	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2025	Revenue	0
+0001628280-26-003942	5	3	IS	0	H	CostOfRevenue	us-gaap/2025	Cost of revenue	0
+0001628280-26-003942	5	4	IS	0	H	ResearchAndDevelopmentExpense	us-gaap/2025	Research and development	0
+0001628280-26-003942	5	5	IS	0	H	SellingAndMarketingExpense	us-gaap/2025	Marketing and sales	0
+0001628280-26-003942	5	6	IS	0	H	GeneralAndAdministrativeExpense	us-gaap/2025	General and administrative	0
+0001628280-26-003942	5	7	IS	0	H	CostsAndExpenses	us-gaap/2025	Total costs and expenses	0
+0001628280-26-003942	5	8	IS	0	H	OperatingIncomeLoss	us-gaap/2025	Income (loss) from operations	0
+0001628280-26-003942	5	9	IS	0	H	NonoperatingIncomeExpense	us-gaap/2025	Interest and other income, net	0
+0001628280-26-003942	5	10	IS	0	H	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2025	Income before provision for income taxes	0
+0001628280-26-003942	5	11	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2025	Provision for income taxes	0
+0001628280-26-003942	5	12	IS	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0001628280-26-003942	5	14	IS	0	H	EarningsPerShareBasic	us-gaap/2025	Basic (in dollars per share)	0
+0001628280-26-003942	5	15	IS	0	H	EarningsPerShareDiluted	us-gaap/2025	Diluted (in dollars per share)	0
+0001628280-26-003942	5	17	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2025	Basic (in shares)	0
+0001628280-26-003942	5	18	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2025	Diluted (in shares)	0
+0001628280-26-003942	6	1	CI	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0001628280-26-003942	6	3	CI	0	H	OtherComprehensiveIncomeLossForeignCurrencyTransactionAndTranslationAdjustmentNetOfTax	us-gaap/2025	Change in foreign currency translation adjustment, net of tax	0
+0001628280-26-003942	6	4	CI	0	H	OtherComprehensiveIncomeUnrealizedHoldingGainLossOnSecuritiesArisingDuringPeriodNetOfTax	us-gaap/2025	Change in unrealized gain (loss) on available-for-sale investments and other, net of tax	0
+0001628280-26-003942	6	5	CI	0	H	ComprehensiveIncomeNetOfTax	us-gaap/2025	Comprehensive income	0
+0001628280-26-003942	7	10	EQ	0	H	CommonStockSharesOutstanding	us-gaap/2025	Balance at beginning of period (in shares)	0
+0001628280-26-003942	7	11	EQ	0	H	StockholdersEquity	us-gaap/2025	Balance at beginning of period	0
+0001628280-26-003942	7	12	EQ	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0001628280-26-003942	7	13	EQ	0	H	OtherComprehensiveIncomeLossNetOfTaxPortionAttributableToParent	us-gaap/2025	Other comprehensive income (loss)	0
+0001628280-26-003942	7	14	EQ	0	H	StockIssuedDuringPeriodValueNewIssues	us-gaap/2025	Issuance of common stock	0
+0001628280-26-003942	7	15	EQ	0	H	StockIssuedDuringPeriodSharesNewIssues	us-gaap/2025	Issuance of common stock (in shares)	0
+0001628280-26-003942	7	16	EQ	0	H	SharesPaidForTaxWithholdingForShareBasedCompensation	us-gaap/2025	Shares withheld related to net share settlement (in shares)	1
+0001628280-26-003942	7	17	EQ	0	H	AdjustmentsRelatedToTaxWithholdingForShareBasedCompensation	us-gaap/2025	Shares withheld related to net share settlement	1
+0001628280-26-003942	7	18	EQ	0	H	AdjustmentsToAdditionalPaidInCapitalSharebasedCompensationRequisiteServicePeriodRecognitionValue	us-gaap/2025	Share-based compensation	0
+0001628280-26-003942	7	19	EQ	0	H	StockRepurchasedAndRetiredDuringPeriodShares	us-gaap/2025	Share repurchases (in shares)	1
+0001628280-26-003942	7	20	EQ	0	H	StockRepurchasedAndRetiredDuringPeriodValue	us-gaap/2025	Share repurchases	1
+0001628280-26-003942	7	21	EQ	0	H	DividendsCommonStock	us-gaap/2025	Dividends and dividend equivalents declared	1
+0001628280-26-003942	7	22	EQ	0	H	StockholdersEquityOther	us-gaap/2025	Other	1
+0001628280-26-003942	7	23	EQ	0	H	CommonStockSharesOutstanding	us-gaap/2025	Balance at end of period (in shares)	0
+0001628280-26-003942	7	24	EQ	0	H	StockholdersEquity	us-gaap/2025	Balance at end of period	0
+0001628280-26-003942	8	1	EQ	1	H	CommonStockDividendsPerShareDeclared	us-gaap/2025	Dividends and dividend equivalents declared (in dollars per share)	0
+0001628280-26-003942	9	2	CF	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0001628280-26-003942	9	4	CF	0	H	DepreciationDepletionAndAmortization	us-gaap/2025	Depreciation and amortization	0
+0001628280-26-003942	9	5	CF	0	H	ShareBasedCompensation	us-gaap/2025	Share-based compensation	0
+0001628280-26-003942	9	6	CF	0	H	DeferredIncomeTaxesAndTaxCredits	us-gaap/2025	Deferred income taxes	0
+0001628280-26-003942	9	7	CF	0	H	UnrealizedGainLossOnMarketableAndNonmarketableEquityInvestments	0001628280-26-003942	Unrealized (gain) loss on equity investments	1
+0001628280-26-003942	9	8	CF	0	H	ImpairmentOfLongLivedAssetsHeldForUse	us-gaap/2025	Impairment charges for facilities consolidation	0
+0001628280-26-003942	9	9	CF	0	H	OtherNoncashIncomeExpense	us-gaap/2025	Other	1
+0001628280-26-003942	9	11	CF	0	H	IncreaseDecreaseInAccountsReceivable	us-gaap/2025	Accounts receivable	1
+0001628280-26-003942	9	12	CF	0	H	IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets	us-gaap/2025	Prepaid expenses and other current assets	1
+0001628280-26-003942	9	13	CF	0	H	IncreaseDecreaseInOtherOperatingAssets	us-gaap/2025	Other assets	1
+0001628280-26-003942	9	14	CF	0	H	IncreaseDecreaseInAccountsPayableTrade	us-gaap/2025	Accounts payable	0
+0001628280-26-003942	9	15	CF	0	H	IncreaseDecreaseInAccruedLiabilities	us-gaap/2025	Accrued expenses and other current liabilities	0
+0001628280-26-003942	9	16	CF	0	H	IncreaseDecreaseInOtherNoncurrentLiabilities	us-gaap/2025	Other liabilities	0
+0001628280-26-003942	9	17	CF	0	H	NetCashProvidedByUsedInOperatingActivities	us-gaap/2025	Net cash provided by operating activities	0
+0001628280-26-003942	9	19	CF	0	H	PaymentsToAcquirePropertyPlantAndEquipment	us-gaap/2025	Purchases of property and equipment	1
+0001628280-26-003942	9	20	CF	0	H	PaymentsToAcquireMarketableSecurities	us-gaap/2025	Purchases of marketable securities	1
+0001628280-26-003942	9	21	CF	0	H	ProceedsFromSaleAndMaturityOfMarketableSecurities	us-gaap/2025	Sales and maturities of marketable securities	0
+0001628280-26-003942	9	22	CF	0	H	PaymentsForHeldForSaleAssets	0001628280-26-003942	Payments for held-for-sale assets	1
+0001628280-26-003942	9	23	CF	0	H	ProceedsFromOneTimeVentureDistribution	0001628280-26-003942	Proceeds from Venture distribution	0
+0001628280-26-003942	9	24	CF	0	H	PaymentsForEquitySecuritiesWithoutReadilyDeterminableFairValue	0001628280-26-003942	Purchases of non-marketable equity investments	1
+0001628280-26-003942	9	25	CF	0	H	PaymentsToAcquireBusinessesNetOfCashAcquiredAndPurchasesOfIntangibleAndOtherAssets	0001628280-26-003942	Acquisitions of businesses and intangible assets	1
+0001628280-26-003942	9	26	CF	0	H	PaymentsForProceedsFromOtherInvestingActivities	us-gaap/2025	Other investing activities	1
+0001628280-26-003942	9	27	CF	0	H	NetCashProvidedByUsedInInvestingActivities	us-gaap/2025	Net cash used in investing activities	0
+0001628280-26-003942	9	29	CF	0	H	PaymentsRelatedToTaxWithholdingForShareBasedCompensation	us-gaap/2025	Taxes paid related to net share settlement of equity awards	1
+0001628280-26-003942	9	30	CF	0	H	PaymentsForRepurchaseOfCommonStock	us-gaap/2025	Repurchases of Class A common stock	1
+0001628280-26-003942	9	31	CF	0	H	PaymentsOfDividends	us-gaap/2025	Payments for dividends and dividend equivalents	1
+0001628280-26-003942	9	32	CF	0	H	ProceedsFromIssuanceOfLongTermDebt	us-gaap/2025	Proceeds from issuance of long-term debt, net	0
+0001628280-26-003942	9	33	CF	0	H	FinanceLeasePrincipalPayments	us-gaap/2025	Principal payments on finance leases	1
+0001628280-26-003942	9	34	CF	0	H	ProceedsFromPaymentsForOtherFinancingActivities	us-gaap/2025	Other financing activities	0
+0001628280-26-003942	9	35	CF	0	H	NetCashProvidedByUsedInFinancingActivities	us-gaap/2025	Net cash used in financing activities	0
+0001628280-26-003942	9	36	CF	0	H	EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Effect of exchange rate changes on cash, cash equivalents, and restricted cash equivalents	0
+0001628280-26-003942	9	37	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	Net increase (decrease) in cash, cash equivalents, and restricted cash equivalents	0
+0001628280-26-003942	9	38	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash, cash equivalents, and restricted cash equivalents at beginning of the period	0
+0001628280-26-003942	9	39	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash, cash equivalents, and restricted cash equivalents at end of the period	0
+0001628280-26-003942	9	41	CF	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001628280-26-003942	9	42	CF	0	H	RestrictedCashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Restricted cash equivalents, included in prepaid expenses and other current assets	0
+0001628280-26-003942	9	43	CF	0	H	RestrictedCashAndCashEquivalentsNoncurrent	us-gaap/2025	Restricted cash equivalents, included in other assets	0
+0001628280-26-003942	9	44	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Total cash, cash equivalents, and restricted cash equivalents	0
+0001628280-26-003942	9	46	CF	0	H	IncomeTaxesPaidNet	us-gaap/2025	Cash paid for income taxes, net	0
+0001628280-26-003942	9	47	CF	0	H	InterestPaidNet	us-gaap/2025	Cash paid for interest, net of amounts capitalized	0
+0001628280-26-003942	9	49	CF	0	H	CapitalExpendituresIncurredButNotYetPaid	us-gaap/2025	Property and equipment in accounts payable and accrued expenses and other current liabilities	0
+0001628280-26-003942	9	50	CF	0	H	AcquisitionOfBusinessAndIntangibleAssets	0001628280-26-003942	Acquisition of businesses and intangible assets in accounts payable, accrued expenses and other current liabilities, and other liabilities	0
+0001628280-26-003952	3	9	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001628280-26-003952	3	10	BS	0	H	ShortTermInvestments	us-gaap/2025	Short-term investments	0
+0001628280-26-003952	3	11	BS	0	H	AccountsReceivableNetCurrent	us-gaap/2025	Accounts receivable, net	0
+0001628280-26-003952	3	12	BS	0	H	InventoryNet	us-gaap/2025	Inventory	0
+0001628280-26-003952	3	13	BS	0	H	PrepaidExpenseAndOtherAssetsCurrent	us-gaap/2025	Prepaid expenses and other current assets	0
+0001628280-26-003952	3	14	BS	0	H	AssetsCurrent	us-gaap/2025	Total current assets	0
+0001628280-26-003952	3	15	BS	0	H	DeferredCostsLeasingNetNoncurrent	us-gaap/2025	Operating lease vehicles, net	0
+0001628280-26-003952	3	16	BS	0	H	LeasedAssetsNet	0001628280-26-003952	Energy generation and storage systems, net	0
+0001628280-26-003952	3	17	BS	0	H	PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization	us-gaap/2025	Property, plant and equipment, net	0
+0001628280-26-003952	3	18	BS	0	H	OperatingLeaseRightOfUseAsset	us-gaap/2025	Operating lease right-of-use assets	0
+0001628280-26-003952	3	19	BS	0	H	CryptoAssetFairValueNoncurrent	us-gaap/2025	Digital assets	0
+0001628280-26-003952	3	20	BS	0	H	DeferredIncomeTaxAssetsNet	us-gaap/2025	Deferred tax assets	0
+0001628280-26-003952	3	21	BS	0	H	OtherAssetsNoncurrent	us-gaap/2025	Other non-current assets	0
+0001628280-26-003952	3	22	BS	0	H	Assets	us-gaap/2025	Total assets	0
+0001628280-26-003952	3	25	BS	0	H	AccountsPayableCurrent	us-gaap/2025	Accounts payable	0
+0001628280-26-003952	3	26	BS	0	H	AccruedAndOtherCurrentLiabilities	0001628280-26-003952	Accrued liabilities and other	0
+0001628280-26-003952	3	27	BS	0	H	ContractWithCustomerLiabilityCurrent	us-gaap/2025	Deferred revenue	0
+0001628280-26-003952	3	28	BS	0	H	LongTermDebtAndFinanceLeasesCurrent	0001628280-26-003952	Current portion of debt and finance leases	0
+0001628280-26-003952	3	29	BS	0	H	LiabilitiesCurrent	us-gaap/2025	Total current liabilities	0
+0001628280-26-003952	3	30	BS	0	H	LongTermDebtAndFinanceLeasesNoncurrent	0001628280-26-003952	Debt and finance leases, net of current portion	0
+0001628280-26-003952	3	31	BS	0	H	ContractWithCustomerLiabilityNoncurrent	us-gaap/2025	Deferred revenue, net of current portion	0
+0001628280-26-003952	3	32	BS	0	H	OtherLiabilitiesNoncurrent	us-gaap/2025	Other long-term liabilities	0
+0001628280-26-003952	3	33	BS	0	H	Liabilities	us-gaap/2025	Total liabilities	0
+0001628280-26-003952	3	34	BS	0	H	CommitmentsAndContingencies	us-gaap/2025	Commitments and contingencies (Note 13)	0
+0001628280-26-003952	3	35	BS	0	H	RedeemableNoncontrollingInterestEquityCarryingAmount	us-gaap/2025	Redeemable noncontrolling interests in subsidiaries	0
+0001628280-26-003952	3	38	BS	0	H	PreferredStockValue	us-gaap/2025	Preferred stock; $0.001 par value; 100 shares authorized; no shares issued and outstanding	0
+0001628280-26-003952	3	39	BS	0	H	CommonStockValue	us-gaap/2025	Common stock; $0.001 par value; 6,000 shares authorized; 3,751 and 3,216 shares issued and outstanding as of December 31, 2025 and 2024, respectively	0
+0001628280-26-003952	3	40	BS	0	H	AdditionalPaidInCapitalCommonStock	us-gaap/2025	Additional paid-in capital	0
+0001628280-26-003952	3	41	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Accumulated other comprehensive income (loss)	0
+0001628280-26-003952	3	42	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2025	Retained earnings	0
+0001628280-26-003952	3	43	BS	0	H	StockholdersEquity	us-gaap/2025	Total stockholders equity	0
+0001628280-26-003952	3	44	BS	0	H	MinorityInterest	us-gaap/2025	Noncontrolling interests in subsidiaries	0
+0001628280-26-003952	3	45	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2025	Total liabilities and equity	0
+0001628280-26-003952	4	1	BS	1	H	PreferredStockParOrStatedValuePerShare	us-gaap/2025	Preferred stock, par value (in dollars per share)	0
+0001628280-26-003952	4	2	BS	1	H	PreferredStockSharesAuthorized	us-gaap/2025	Preferred stock, shares authorized (in shares)	0
+0001628280-26-003952	4	3	BS	1	H	PreferredStockSharesIssued	us-gaap/2025	Preferred stock, shares issued (in shares)	0
+0001628280-26-003952	4	4	BS	1	H	PreferredStockSharesOutstanding	us-gaap/2025	Preferred stock, shares outstanding (in shares)	0
+0001628280-26-003952	4	5	BS	1	H	CommonStockParOrStatedValuePerShare	us-gaap/2025	Common stock, par value (in dollars per share)	0
+0001628280-26-003952	4	6	BS	1	H	CommonStockSharesAuthorized	us-gaap/2025	Common stock, shares authorized (in shares)	0
+0001628280-26-003952	4	7	BS	1	H	CommonStockSharesIssued	us-gaap/2025	Common stock, shares issued (in shares)	0
+0001628280-26-003952	4	8	BS	1	H	CommonStockSharesOutstanding	us-gaap/2025	Common stock, shares outstanding (in shares)	0
+0001628280-26-003952	5	12	IS	0	H	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2025	Revenues	0
+0001628280-26-003952	5	14	IS	0	H	CostOfRevenue	us-gaap/2025	Total cost of revenues	0
+0001628280-26-003952	5	15	IS	0	H	GrossProfit	us-gaap/2025	Gross profit	0
+0001628280-26-003952	5	17	IS	0	H	ResearchAndDevelopmentExpense	us-gaap/2025	Research and development	0
+0001628280-26-003952	5	18	IS	0	H	SellingGeneralAndAdministrativeExpense	us-gaap/2025	Selling, general and administrative	0
+0001628280-26-003952	5	19	IS	0	H	RestructuringAndOtherExpenses	0001628280-26-003952	Restructuring and other	0
+0001628280-26-003952	5	20	IS	0	H	OperatingExpenses	us-gaap/2025	Total operating expenses	0
+0001628280-26-003952	5	21	IS	0	H	OperatingIncomeLoss	us-gaap/2025	Income from operations	0
+0001628280-26-003952	5	22	IS	0	H	InvestmentIncomeInterest	us-gaap/2025	Interest income	0
+0001628280-26-003952	5	23	IS	0	H	InterestExpenseNonoperating	us-gaap/2025	Interest expense	1
+0001628280-26-003952	5	24	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2025	Other (expense) income, net	0
+0001628280-26-003952	5	25	IS	0	H	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2025	Income before income taxes	0
+0001628280-26-003952	5	26	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2025	Provision for (benefit from) income taxes	0
+0001628280-26-003952	5	27	IS	0	H	ProfitLoss	us-gaap/2025	Net income	0
+0001628280-26-003952	5	28	IS	0	H	NetIncomeLossAttributableToNoncontrollingInterest	us-gaap/2025	Net income (loss) attributable to noncontrolling interests and redeemable noncontrolling interests in subsidiaries	0
+0001628280-26-003952	5	29	IS	0	H	NetIncomeLoss	us-gaap/2025	Net income attributable to common stockholders	0
+0001628280-26-003952	5	31	IS	0	H	EarningsPerShareBasic	us-gaap/2025	Basic (in dollars per share)	0
+0001628280-26-003952	5	32	IS	0	H	EarningsPerShareDiluted	us-gaap/2025	Diluted (in dollars per share)	0
+0001628280-26-003952	5	34	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2025	Basic (in shares)	0
+0001628280-26-003952	5	35	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2025	Diluted (in shares)	0
+0001628280-26-003952	6	1	CI	0	H	ProfitLoss	us-gaap/2025	Net income	0
+0001628280-26-003952	6	3	CI	0	H	OtherComprehensiveIncomeLossForeignCurrencyTransactionAndTranslationAdjustmentNetOfTax	us-gaap/2025	Foreign currency translation adjustment	0
+0001628280-26-003952	6	4	CI	0	H	UnrealizedGainLossOnInvestments	us-gaap/2025	Unrealized net (loss) gain on investments, net of tax	0
+0001628280-26-003952	6	5	CI	0	H	NetLossRealizedAndIncludedInNetIncome	0001628280-26-003952	Net loss realized and included in net income	0
+0001628280-26-003952	6	6	CI	0	H	OtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Total other comprehensive income (loss):	0
+0001628280-26-003952	6	7	CI	0	H	ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Comprehensive income	0
+0001628280-26-003952	6	8	CI	0	H	ComprehensiveIncomeNetOfTaxAttributableToNoncontrollingInterest	us-gaap/2025	Less: Comprehensive income (loss) attributable to noncontrolling interests and redeemable noncontrolling interests in subsidiaries	0
+0001628280-26-003952	6	9	CI	0	H	ComprehensiveIncomeNetOfTax	us-gaap/2025	Comprehensive income attributable to common stockholders	0
+0001628280-26-003952	7	15	EQ	0	H	TemporaryEquityCarryingAmountIncludingPortionAttributableToNoncontrollingInterests	us-gaap/2025	Beginning Balance	0
+0001628280-26-003952	7	16	EQ	0	H	TemporaryEquityDistributionsToNoncontrollingInterests	0001628280-26-003952	Distributions to noncontrolling interests	1
+0001628280-26-003952	7	17	EQ	0	H	TemporaryEquityBuyOutOfNoncontrollingInterests	0001628280-26-003952	Buy-outs of noncontrolling interests	1
+0001628280-26-003952	7	18	EQ	0	H	TemporaryEquityNetIncome	us-gaap/2025	Net income	0
+0001628280-26-003952	7	19	EQ	0	H	TemporaryEquityCarryingAmountIncludingPortionAttributableToNoncontrollingInterests	us-gaap/2025	Ending Balance	0
+0001628280-26-003952	7	21	EQ	0	H	SharesIssued	us-gaap/2025	Balance (in shares)	0
+0001628280-26-003952	7	22	EQ	0	H	StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Balance	0
+0001628280-26-003952	7	23	EQ	0	H	StockIssuedDuringPeriodSharesConversionOfConvertibleSecurities	us-gaap/2025	Settlement of warrants (in shares)	0
+0001628280-26-003952	7	24	EQ	0	H	StockIssuedDuringPeriodSharesEquityIncentiveAwards	0001628280-26-003952	Issuance of common stock for equity incentive awards, net of issuance costs (in shares)	0
+0001628280-26-003952	7	25	EQ	0	H	StockIssuedDuringPeriodValueEquityIncentiveAwardsNet	0001628280-26-003952	Issuance of common stock for equity incentive awards, net of issuance costs	0
+0001628280-26-003952	7	26	EQ	0	H	AdjustmentsToAdditionalPaidInCapitalSharebasedCompensationRequisiteServicePeriodRecognitionValue	us-gaap/2025	Stock-based compensation	0
+0001628280-26-003952	7	27	EQ	0	H	MinorityInterestDecreaseFromDistributionsToNoncontrollingInterestHolders	us-gaap/2025	Distributions to noncontrolling interests	1
+0001628280-26-003952	7	28	EQ	0	H	AdjustmentsToAdditionalPaidInCapitalShareholderSettlement	0001628280-26-003952	Shareholder settlement, net	0
+0001628280-26-003952	7	29	EQ	0	H	MinorityInterestDecreaseFromRedemptions	us-gaap/2025	Buy-outs of noncontrolling interests	1
+0001628280-26-003952	7	30	EQ	0	H	NetIncomeLossIncludingPortionAttributableToRedeemableNonControllingInterestAndNonControllingInterestInSubsidiaries	0001628280-26-003952	Net (loss) income	0
+0001628280-26-003952	7	31	EQ	0	H	OtherComprehensiveIncomeLossNetOfTaxPortionAttributableToParent	us-gaap/2025	Other comprehensive income (loss)	0
+0001628280-26-003952	7	32	EQ	0	H	SharesIssued	us-gaap/2025	Balance (in shares)	0
+0001628280-26-003952	7	33	EQ	0	H	StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Balance	0
+0001628280-26-003952	9	2	CF	0	H	ProfitLoss	us-gaap/2025	Net income	0
+0001628280-26-003952	9	4	CF	0	H	DepreciationAmortizationAndImpairment	0001628280-26-003952	Depreciation, amortization and impairment	0
+0001628280-26-003952	9	5	CF	0	H	ShareBasedCompensation	us-gaap/2025	Stock-based compensation	0
+0001628280-26-003952	9	6	CF	0	H	InventoryWriteDown	us-gaap/2025	Inventory and purchase commitments write-downs	0
+0001628280-26-003952	9	7	CF	0	H	ForeignCurrencyTransactionGainLossUnrealized	us-gaap/2025	Foreign currency transaction net unrealized loss (gain)	1
+0001628280-26-003952	9	8	CF	0	H	DeferredIncomeTaxExpenseBenefit	us-gaap/2025	Deferred income taxes	0
+0001628280-26-003952	9	9	CF	0	H	NoncashInterestIncomeExpenseAndOtherOperatingActivities	0001628280-26-003952	Non-cash interest and other operating activities	1
+0001628280-26-003952	9	10	CF	0	H	GainLossOnDigitalAssets	0001628280-26-003952	Digital assets loss (gain), net	1
+0001628280-26-003952	9	12	CF	0	H	IncreaseDecreaseInAccountsReceivable	us-gaap/2025	Accounts receivable	1
+0001628280-26-003952	9	13	CF	0	H	IncreaseDecreaseInInventories	us-gaap/2025	Inventory	1
+0001628280-26-003952	9	14	CF	0	H	IncreaseDecreaseInOperatingLeaseVehicles	0001628280-26-003952	Operating lease vehicles	1
+0001628280-26-003952	9	15	CF	0	H	IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets	us-gaap/2025	Prepaid expenses and other assets	1
+0001628280-26-003952	9	16	CF	0	H	IncreaseDecreaseInAccountsPayableAndAccruedLiabilities	us-gaap/2025	Accounts payable, accrued and other liabilities	0
+0001628280-26-003952	9	17	CF	0	H	IncreaseDecreaseInContractWithCustomerLiability	us-gaap/2025	Deferred revenue	0
+0001628280-26-003952	9	18	CF	0	H	NetCashProvidedByUsedInOperatingActivities	us-gaap/2025	Net cash provided by operating activities	0
+0001628280-26-003952	9	20	CF	0	H	PaymentsToAcquirePropertyPlantAndEquipment	us-gaap/2025	Purchases of property and equipment excluding finance leases, net of sales	1
+0001628280-26-003952	9	21	CF	0	H	PaymentsToAcquireInvestments	us-gaap/2025	Purchases of investments	1
+0001628280-26-003952	9	22	CF	0	H	ProceedsFromSaleMaturityAndCollectionsOfInvestments	us-gaap/2025	Proceeds from maturities of investments	0
+0001628280-26-003952	9	23	CF	0	H	ProceedsFromSaleOfShortTermInvestments	us-gaap/2025	Proceeds from sales of investments	0
+0001628280-26-003952	9	24	CF	0	H	PaymentsToAcquireBusinessesNetOfCashAcquired	us-gaap/2025	Business combinations, net of cash acquired	1
+0001628280-26-003952	9	25	CF	0	H	NetCashProvidedByUsedInInvestingActivities	us-gaap/2025	Net cash used in investing activities	0
+0001628280-26-003952	9	27	CF	0	H	ProceedsFromIssuanceOfDebt	us-gaap/2025	Proceeds from issuances of debt	0
+0001628280-26-003952	9	28	CF	0	H	RepaymentsOfConvertibleDebt	us-gaap/2025	Repayments of debt	1
+0001628280-26-003952	9	29	CF	0	H	ProceedsFromIssuanceOfSharesUnderIncentiveAndShareBasedCompensationPlansIncludingStockOptions	us-gaap/2025	Proceeds from exercises of stock options and other stock issuances, net of issuance costs	0
+0001628280-26-003952	9	30	CF	0	H	FinanceLeasePrincipalPayments	us-gaap/2025	Principal payments on finance leases	1
+0001628280-26-003952	9	31	CF	0	H	ProceedsReceivedFromDirectorsInShareholderSettlement	0001628280-26-003952	Proceeds received from directors in shareholder settlement	0
+0001628280-26-003952	9	32	CF	0	H	PaymentForLegalFees	0001628280-26-003952	Payment of legal fees associated with shareholder settlement	1
+0001628280-26-003952	9	33	CF	0	H	PaymentsOfDebtIssuanceCosts	us-gaap/2025	Debt issuance costs	1
+0001628280-26-003952	9	34	CF	0	H	PaymentsToMinorityShareholders	us-gaap/2025	Distributions paid to noncontrolling interests in subsidiaries	1
+0001628280-26-003952	9	35	CF	0	H	PaymentsForBuyOutsOfNoncontrollingInterestsInSubsidiaries	0001628280-26-003952	Payments for buy-outs of noncontrolling interests in subsidiaries	1
+0001628280-26-003952	9	36	CF	0	H	NetCashProvidedByUsedInFinancingActivities	us-gaap/2025	Net cash provided by financing activities	0
+0001628280-26-003952	9	37	CF	0	H	EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations	us-gaap/2025	Effect of exchange rate changes on cash and cash equivalents and restricted cash	0
+0001628280-26-003952	9	38	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	Net increase (decrease) in cash and cash equivalents and restricted cash	0
+0001628280-26-003952	9	39	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations	us-gaap/2025	Cash and cash equivalents and restricted cash, beginning of period	0
+0001628280-26-003952	9	40	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations	us-gaap/2025	Cash and cash equivalents and restricted cash, end of period	0
+0001628280-26-003952	9	42	CF	0	H	NoncashOrPartNoncashAcquisitionValueOfAssetsAcquired1	us-gaap/2025	Acquisitions of property and equipment included in liabilities	0
+0001628280-26-003952	9	44	CF	0	H	InterestPaidNet	us-gaap/2025	Cash paid during the period for interest	0
+0001628280-26-004195	3	8	IS	0	H	Revenues	us-gaap/2025	Total sales	0
+0001628280-26-004195	3	10	IS	0	H	CostOfGoodsAndServicesSold	us-gaap/2025	Total operating costs and expenses	1
+0001628280-26-004195	3	11	IS	0	H	RestructuringCostsAndAssetImpairmentCharges	us-gaap/2025	Impairment and other charges	1
+0001628280-26-004195	3	12	IS	0	H	OtherUnallocatedIncomeExpense	0001628280-26-004195	Other unallocated, net	1
+0001628280-26-004195	3	13	IS	0	H	CostOfRevenue	us-gaap/2025	Total operating costs and expenses	1
+0001628280-26-004195	3	14	IS	0	H	GrossProfit	us-gaap/2025	Gross profit	0
+0001628280-26-004195	3	15	IS	0	H	OtherOperatingIncomeExpenseNet	us-gaap/2025	Other income, net	0
+0001628280-26-004195	3	16	IS	0	H	OperatingIncomeLoss	us-gaap/2025	Operating profit	0
+0001628280-26-004195	3	17	IS	0	H	InterestExpenseNonoperating	us-gaap/2025	Interest expense	1
+0001628280-26-004195	3	18	IS	0	H	NetPeriodicDefinedBenefitsExpenseReversalOfExpenseExcludingServiceCostComponent	us-gaap/2025	Non-service FAS pension (expense) income	1
+0001628280-26-004195	3	19	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2025	Other non-operating income, net	0
+0001628280-26-004195	3	20	IS	0	H	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2025	Earnings before income taxes	0
+0001628280-26-004195	3	21	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2025	Income tax expense	1
+0001628280-26-004195	3	22	IS	0	H	NetIncomeLoss	us-gaap/2025	Net earnings	0
+0001628280-26-004195	3	24	IS	0	H	EarningsPerShareBasic	us-gaap/2025	Basic (in dollars per share)	0
+0001628280-26-004195	3	25	IS	0	H	EarningsPerShareDiluted	us-gaap/2025	Diluted (in dollars per share)	0
+0001628280-26-004195	4	1	CI	0	H	NetIncomeLoss	us-gaap/2025	Net earnings	0
+0001628280-26-004195	4	4	CI	0	H	OtherComprehensiveIncomeLossDefinedBenefitPlanGainLossArisingDuringPeriodAndPriorServiceCostCreditAfterTax	0001628280-26-004195	Net actuarial gain (loss) recognized due to plan remeasurements, net of tax of $28 million in 2025, $96 million in 2024 and $181 million in 2023	1
+0001628280-26-004195	4	5	CI	0	H	OtherComprehensiveIncomeLossReclassificationAdjustmentFromAOCIPensionAndOtherPostretirementBenefitPlansNetOfTax	us-gaap/2025	Amortization of actuarial losses and prior service credits, net of tax of $69 million in 2025, $21 million in 2024 and $40 million in 2023	0
+0001628280-26-004195	4	6	CI	0	H	OtherComprehensiveIncomeLossFinalizationOfPensionAndNonPensionPostretirementPlanValuationNetOfTax	us-gaap/2025	Pension settlement charge, net of tax of $102 million	0
+0001628280-26-004195	4	7	CI	0	H	OtherComprehensiveIncomeOtherNetOfTax	us-gaap/2025	Other, net of tax of $18 million in 2025, $4 million in 2024 and $6 million in 2023	0
+0001628280-26-004195	4	8	CI	0	H	OtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Other comprehensive income (loss), net of tax	0
+0001628280-26-004195	4	9	CI	0	H	ComprehensiveIncomeNetOfTax	us-gaap/2025	Comprehensive income	0
+0001628280-26-004195	5	1	CI	1	H	OtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansBeforeReclassificationAdjustmentsTax	us-gaap/2025	Net other comprehensive gain (loss) recognized during the period, tax	1
+0001628280-26-004195	5	2	CI	1	H	OtherComprehensiveIncomeLossReclassificationAdjustmentFromAOCIPensionAndOtherPostretirementBenefitPlansTax	us-gaap/2025	Amounts reclassified from accumulated other comprehensive loss, tax	0
+0001628280-26-004195	5	3	CI	1	H	OtherComprehensiveIncomeFinalizationOfPensionAndNonPensionPostretirementPlanValuationTax	us-gaap/2025	Pension settlement charge, tax	0
+0001628280-26-004195	5	4	CI	1	H	OtherComprehensiveIncomeLossTax	us-gaap/2025	Other, net, tax	0
+0001628280-26-004195	6	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001628280-26-004195	6	4	BS	0	H	ReceivablesNetCurrent	us-gaap/2025	Receivables, net	0
+0001628280-26-004195	6	5	BS	0	H	ContractWithCustomerAssetNetCurrent	us-gaap/2025	Contract assets	0
+0001628280-26-004195	6	6	BS	0	H	InventoryNetOfAllowancesCustomerAdvancesAndProgressBillings	us-gaap/2025	Inventories	0
+0001628280-26-004195	6	7	BS	0	H	OtherAssetsCurrent	us-gaap/2025	Other current assets	0
+0001628280-26-004195	6	8	BS	0	H	AssetsCurrent	us-gaap/2025	Total current assets	0
+0001628280-26-004195	6	9	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2025	Property, plant and equipment, net	0
+0001628280-26-004195	6	10	BS	0	H	Goodwill	us-gaap/2025	Goodwill	0
+0001628280-26-004195	6	11	BS	0	H	IntangibleAssetsNetExcludingGoodwill	us-gaap/2025	Intangible assets, net	0
+0001628280-26-004195	6	12	BS	0	H	DeferredIncomeTaxAssetsNet	us-gaap/2025	Deferred income taxes	0
+0001628280-26-004195	6	13	BS	0	H	CapitalizedComputerSoftwareNet	us-gaap/2025	Capitalized software	0
+0001628280-26-004195	6	14	BS	0	H	OtherAssetsNoncurrent	us-gaap/2025	Other noncurrent assets	0
+0001628280-26-004195	6	15	BS	0	H	Assets	us-gaap/2025	Total assets	0
+0001628280-26-004195	6	18	BS	0	H	AccountsPayableCurrent	us-gaap/2025	Accounts payable	0
+0001628280-26-004195	6	19	BS	0	H	EmployeeRelatedLiabilitiesCurrent	us-gaap/2025	Salaries, benefits and payroll taxes	0
+0001628280-26-004195	6	20	BS	0	H	ContractWithCustomerLiabilityCurrent	us-gaap/2025	Contract liabilities	0
+0001628280-26-004195	6	21	BS	0	H	LongTermDebtCurrent	us-gaap/2025	Current maturities of long-term debt	0
+0001628280-26-004195	6	22	BS	0	H	OtherLiabilitiesCurrent	us-gaap/2025	Other current liabilities	0
+0001628280-26-004195	6	23	BS	0	H	LiabilitiesCurrent	us-gaap/2025	Total current liabilities	0
+0001628280-26-004195	6	24	BS	0	H	LongTermDebtNoncurrent	us-gaap/2025	Long-term debt, net	0
+0001628280-26-004195	6	25	BS	0	H	DefinedBenefitPensionPlanLiabilitiesNoncurrent	us-gaap/2025	Accrued pension liabilities	0
+0001628280-26-004195	6	26	BS	0	H	OtherLiabilitiesNoncurrent	us-gaap/2025	Other noncurrent liabilities	0
+0001628280-26-004195	6	27	BS	0	H	Liabilities	us-gaap/2025	Total liabilities	0
+0001628280-26-004195	6	29	BS	0	H	CommonStockValue	us-gaap/2025	Common stock, $1 par value per share	0
+0001628280-26-004195	6	30	BS	0	H	AdditionalPaidInCapitalCommonStock	us-gaap/2025	Additional paid-in capital	0
+0001628280-26-004195	6	31	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2025	Retained earnings	0
+0001628280-26-004195	6	32	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Accumulated other comprehensive loss	0
+0001628280-26-004195	6	33	BS	0	H	StockholdersEquity	us-gaap/2025	Total stockholders equity	0
+0001628280-26-004195	6	34	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2025	Total liabilities and equity	0
+0001628280-26-004195	7	1	BS	1	H	CommonStockParOrStatedValuePerShare	us-gaap/2025	Common stock, par value (in dollars per share)	0
+0001628280-26-004195	8	2	CF	0	H	NetIncomeLoss	us-gaap/2025	Net earnings	0
+0001628280-26-004195	8	4	CF	0	H	DepreciationAmortizationAndAccretionNet	us-gaap/2025	Depreciation and amortization	0
+0001628280-26-004195	8	5	CF	0	H	ShareBasedCompensation	us-gaap/2025	Stock-based compensation	0
+0001628280-26-004195	8	6	CF	0	H	DeferredIncomeTaxExpenseBenefit	us-gaap/2025	Deferred income taxes	0
+0001628280-26-004195	8	7	CF	0	H	DefinedBenefitPlanRecognizedNetGainLossDueToSettlements1	us-gaap/2025	Pension settlement charge	1
+0001628280-26-004195	8	8	CF	0	H	RestructuringCostsAndAssetImpairmentCharges	us-gaap/2025	Impairment and other charges	0
+0001628280-26-004195	8	9	CF	0	H	ProgramGainsLosses	0001628280-26-004195	Reach-forward losses on select programs	0
+0001628280-26-004195	8	11	CF	0	H	IncreaseDecreaseInReceivables	us-gaap/2025	Receivables, net	1
+0001628280-26-004195	8	12	CF	0	H	IncreaseDecreaseInContractWithCustomerAsset	us-gaap/2025	Contract assets	1
+0001628280-26-004195	8	13	CF	0	H	IncreaseDecreaseInInventories	us-gaap/2025	Inventories	1
+0001628280-26-004195	8	14	CF	0	H	IncreaseDecreaseInAccountsPayable	us-gaap/2025	Accounts payable	0
+0001628280-26-004195	8	15	CF	0	H	IncreaseDecreaseInContractWithCustomerLiability	us-gaap/2025	Contract liabilities	0
+0001628280-26-004195	8	16	CF	0	H	IncreaseDecreaseInAccruedIncomeTaxesPayable	us-gaap/2025	Income taxes	0
+0001628280-26-004195	8	17	CF	0	H	IncreaseDecreaseInPensionAndPostretirementObligations	us-gaap/2025	Qualified defined benefit pension plans	0
+0001628280-26-004195	8	18	CF	0	H	IncreaseDecreaseInOtherOperatingCapitalNet	us-gaap/2025	Other, net	1
+0001628280-26-004195	8	19	CF	0	H	NetCashProvidedByUsedInOperatingActivities	us-gaap/2025	Net cash provided by operating activities	0
+0001628280-26-004195	8	21	CF	0	H	PaymentsToAcquireProductiveAssets	us-gaap/2025	Capital expenditures	1
+0001628280-26-004195	8	22	CF	0	H	PaymentsForProceedsFromOtherInvestingActivities	us-gaap/2025	Other, net	1
+0001628280-26-004195	8	23	CF	0	H	NetCashProvidedByUsedInInvestingActivities	us-gaap/2025	Net cash used for investing activities	0
+0001628280-26-004195	8	25	CF	0	H	ProceedsFromIssuanceOfDebt	us-gaap/2025	Issuance of long-term debt, net of related costs	0
+0001628280-26-004195	8	26	CF	0	H	RepaymentsOfDebt	us-gaap/2025	Repayments of long-term debt	1
+0001628280-26-004195	8	27	CF	0	H	PaymentsForRepurchaseOfCommonStock	us-gaap/2025	Repurchases of common stock	1
+0001628280-26-004195	8	28	CF	0	H	PaymentsOfDividendsCommonStock	us-gaap/2025	Dividends paid	1
+0001628280-26-004195	8	29	CF	0	H	ProceedsFromPaymentsForOtherFinancingActivities	us-gaap/2025	Other, net	0
+0001628280-26-004195	8	30	CF	0	H	NetCashProvidedByUsedInFinancingActivities	us-gaap/2025	Net cash used for financing activities	0
+0001628280-26-004195	8	31	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	Net change in cash and cash equivalents	0
+0001628280-26-004195	8	32	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash and cash equivalents at beginning of year	0
+0001628280-26-004195	8	33	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash and cash equivalents at end of year	0
+0001628280-26-004195	9	10	EQ	0	H	StockholdersEquity	us-gaap/2025	Beginning balance	0
+0001628280-26-004195	9	11	EQ	0	H	NetIncomeLoss	us-gaap/2025	Net earnings	0
+0001628280-26-004195	9	12	EQ	0	H	OtherComprehensiveIncomeLossNetOfTaxPortionAttributableToParent	us-gaap/2025	Other comprehensive (income) loss, net of tax	0
+0001628280-26-004195	9	13	EQ	0	H	StockRepurchasedAndRetiredDuringPeriodValue	us-gaap/2025	Repurchases of common stock	1
+0001628280-26-004195	9	14	EQ	0	H	DividendsCashTrueUp	0001628280-26-004195	Dividends declared	1
+0001628280-26-004195	9	15	EQ	0	H	StockBasedAwardsAndESOPActivity	0001628280-26-004195	Stock-based awards, ESOP activity and other	0
+0001628280-26-004195	9	16	EQ	0	H	StockholdersEquity	us-gaap/2025	Ending balance	0
+0001628280-26-004195	10	1	EQ	1	H	CommonStockDividendsPerShareDeclared	us-gaap/2025	Dividends declared, per share (in dollars per share)	0
+0001628280-26-010047	3	3	IS	0	H	Revenues	us-gaap/2025	Net Operating Revenues	0
+0001628280-26-010047	3	4	IS	0	H	CostOfGoodsAndServicesSold	us-gaap/2025	Cost of goods sold	0
+0001628280-26-010047	3	5	IS	0	H	GrossProfit	us-gaap/2025	Gross Profit	0
+0001628280-26-010047	3	6	IS	0	H	SellingGeneralAndAdministrativeExpense	us-gaap/2025	Selling, general and administrative expenses	0
+0001628280-26-010047	3	7	IS	0	H	OtherSellingGeneralAndAdministrativeExpense	us-gaap/2025	Other operating charges	0
+0001628280-26-010047	3	8	IS	0	H	OperatingIncomeLoss	us-gaap/2025	Operating Income	0
+0001628280-26-010047	3	9	IS	0	H	InvestmentIncomeInterest	us-gaap/2025	Interest income	0
+0001628280-26-010047	3	10	IS	0	H	InterestExpenseNonoperating	us-gaap/2025	Interest expense	0
+0001628280-26-010047	3	11	IS	0	H	IncomeLossFromEquityMethodInvestments	us-gaap/2025	Equity income (loss)  net	0
+0001628280-26-010047	3	12	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2025	Other income (loss)  net	0
+0001628280-26-010047	3	13	IS	0	H	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2025	Income Before Income Taxes	0
+0001628280-26-010047	3	14	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2025	Income taxes	0
+0001628280-26-010047	3	15	IS	0	H	ProfitLoss	us-gaap/2025	Consolidated Net Income	0
+0001628280-26-010047	3	16	IS	0	H	NetIncomeLossAttributableToNoncontrollingInterest	us-gaap/2025	Net Income (Loss) Attributable to Noncontrolling Interest	0
+0001628280-26-010047	3	17	IS	0	H	NetIncomeLoss	us-gaap/2025	Net Income Attributable to Shareowners of The Coca-Cola Company	0
+0001628280-26-010047	3	18	IS	0	H	EarningsPerShareBasic	us-gaap/2025	Basic Net Income Per Share1	0
+0001628280-26-010047	3	19	IS	0	H	EarningsPerShareDiluted	us-gaap/2025	Diluted Net Income Per Share1	0
+0001628280-26-010047	3	20	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2025	Average Shares Outstanding  Basic	0
+0001628280-26-010047	3	21	IS	0	H	WeightedAverageNumberDilutedSharesOutstandingAdjustment	us-gaap/2025	Effect of dilutive securities	0
+0001628280-26-010047	3	22	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2025	Average Shares Outstanding  Diluted	0
+0001628280-26-010047	4	3	CI	0	H	ProfitLoss	us-gaap/2025	Consolidated Net Income	0
+0001628280-26-010047	4	5	CI	0	H	OtherComprehensiveIncomeLossForeignCurrencyTransactionAndTranslationAdjustmentNetOfTax	us-gaap/2025	Net foreign currency translation adjustments	0
+0001628280-26-010047	4	6	CI	0	H	OtherComprehensiveIncomeLossCashFlowHedgeGainLossAfterReclassificationAndTax	us-gaap/2025	Net gains (losses) on derivatives	0
+0001628280-26-010047	4	7	CI	0	H	OtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentNetOfTax	us-gaap/2025	Net change in unrealized gains (losses) on available-for-sale debt securities	0
+0001628280-26-010047	4	8	CI	0	H	OtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansAdjustmentNetOfTax	us-gaap/2025	Net change in pension and other postretirement benefit liabilities	1
+0001628280-26-010047	4	9	CI	0	H	ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Total Comprehensive Income	0
+0001628280-26-010047	4	10	CI	0	H	ComprehensiveIncomeNetOfTaxAttributableToNoncontrollingInterest	us-gaap/2025	Less: Comprehensive income (loss) attributable to noncontrolling interests	0
+0001628280-26-010047	4	11	CI	0	H	ComprehensiveIncomeNetOfTax	us-gaap/2025	Total Comprehensive Income Attributable to Shareowners of The Coca-Cola Company	0
+0001628280-26-010047	5	5	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001628280-26-010047	5	6	BS	0	H	OtherShortTermInvestments	us-gaap/2025	Short-term investments	0
+0001628280-26-010047	5	7	BS	0	H	CashCashEquivalentsAndShortTermInvestments	us-gaap/2025	Total Cash, Cash Equivalents and Short-Term Investments	0
+0001628280-26-010047	5	8	BS	0	H	MarketableSecurities	us-gaap/2025	Marketable securities	0
+0001628280-26-010047	5	9	BS	0	H	AccountsReceivableNetCurrent	us-gaap/2025	Trade accounts receivable, less allowances of $495 and $506, respectively	0
+0001628280-26-010047	5	10	BS	0	H	InventoryNet	us-gaap/2025	Inventories	0
+0001628280-26-010047	5	11	BS	0	H	PrepaidExpenseAndOtherAssetsCurrent	us-gaap/2025	Prepaid expenses and other current assets	0
+0001628280-26-010047	5	12	BS	0	H	AssetsOfDisposalGroupIncludingDiscontinuedOperation	us-gaap/2025	Assets held for sale	0
+0001628280-26-010047	5	13	BS	0	H	AssetsCurrent	us-gaap/2025	Total Current Assets	0
+0001628280-26-010047	5	14	BS	0	H	EquityMethodInvestments	us-gaap/2025	Equity method investments	0
+0001628280-26-010047	5	15	BS	0	H	DeferredIncomeTaxAssetsNet	us-gaap/2025	Deferred income tax assets	0
+0001628280-26-010047	5	16	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2025	Property, plant and equipment  net	0
+0001628280-26-010047	5	17	BS	0	H	IndefiniteLivedTrademarks	us-gaap/2025	Trademarks with indefinite lives	0
+0001628280-26-010047	5	18	BS	0	H	Goodwill	us-gaap/2025	Goodwill	0
+0001628280-26-010047	5	19	BS	0	H	OtherAssetsNoncurrent	us-gaap/2025	Other noncurrent assets	0
+0001628280-26-010047	5	20	BS	0	H	Assets	us-gaap/2025	Total Assets	0
+0001628280-26-010047	5	23	BS	0	H	AccountsPayableAndAccruedLiabilitiesCurrent	us-gaap/2025	Accounts payable and accrued expenses	0
+0001628280-26-010047	5	24	BS	0	H	NotesAndLoansPayable	us-gaap/2025	Loans and notes payable	0
+0001628280-26-010047	5	25	BS	0	H	LongTermDebtAndCapitalLeaseObligationsCurrent	us-gaap/2025	Current maturities of long-term debt	0
+0001628280-26-010047	5	26	BS	0	H	AccruedIncomeTaxesCurrent	us-gaap/2025	Accrued income taxes	0
+0001628280-26-010047	5	27	BS	0	H	LiabilitiesOfDisposalGroupIncludingDiscontinuedOperation	us-gaap/2025	Liabilities held for sale	0
+0001628280-26-010047	5	28	BS	0	H	LiabilitiesCurrent	us-gaap/2025	Total Current Liabilities	0
+0001628280-26-010047	5	29	BS	0	H	LongTermDebtAndCapitalLeaseObligations	us-gaap/2025	Long-term debt	0
+0001628280-26-010047	5	30	BS	0	H	OtherLiabilitiesNoncurrent	us-gaap/2025	Other noncurrent liabilities	0
+0001628280-26-010047	5	31	BS	0	H	DeferredIncomeTaxLiabilitiesNet	us-gaap/2025	Deferred income tax liabilities	0
+0001628280-26-010047	5	33	BS	0	H	CommonStockValue	us-gaap/2025	Common stock, $0.25 par value; authorized  11,200 shares; issued  7,040 shares	0
+0001628280-26-010047	5	34	BS	0	H	AdditionalPaidInCapitalCommonStock	us-gaap/2025	Capital surplus	0
+0001628280-26-010047	5	35	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2025	Reinvested earnings	0
+0001628280-26-010047	5	36	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Accumulated other comprehensive income (loss)	0
+0001628280-26-010047	5	37	BS	0	H	TreasuryStockValue	us-gaap/2025	Treasury stock, at cost  2,738 and 2,738 shares, respectively	1
+0001628280-26-010047	5	38	BS	0	H	StockholdersEquity	us-gaap/2025	Equity Attributable to Shareowners of The Coca-Cola Company	0
+0001628280-26-010047	5	39	BS	0	H	MinorityInterest	us-gaap/2025	Equity Attributable to Noncontrolling Interests	0
+0001628280-26-010047	5	40	BS	0	H	StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Total Equity	0
+0001628280-26-010047	5	41	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2025	Total Liabilities and Equity	0
+0001628280-26-010047	6	1	BS	1	H	AllowanceForDoubtfulAccountsReceivableCurrent	us-gaap/2025	Accounts Receivable, Allowance for Credit Loss, Current	0
+0001628280-26-010047	6	2	BS	1	H	CommonStockParOrStatedValuePerShare	us-gaap/2025	Common Stock, Par or Stated Value Per Share	0
+0001628280-26-010047	6	3	BS	1	H	CommonStockSharesAuthorized	us-gaap/2025	Common Stock, Shares Authorized	0
+0001628280-26-010047	6	4	BS	1	H	CommonStockSharesIssued	us-gaap/2025	Common Stock, Shares, Issued	0
+0001628280-26-010047	6	5	BS	1	H	TreasuryStockCommonShares	us-gaap/2025	Treasury Stock, Common, Shares	0
+0001628280-26-010047	7	4	CF	0	H	ProfitLoss	us-gaap/2025	Consolidated Net Income	0
+0001628280-26-010047	7	5	CF	0	H	DepreciationDepletionAndAmortization	us-gaap/2025	Depreciation and amortization	0
+0001628280-26-010047	7	6	CF	0	H	ShareBasedCompensation	us-gaap/2025	Stock-based compensation expense	0
+0001628280-26-010047	7	7	CF	0	H	DeferredIncomeTaxExpenseBenefit	us-gaap/2025	Deferred income taxes	0
+0001628280-26-010047	7	8	CF	0	H	IncomeLossFromEquityMethodInvestmentsNetOfDividendsOrDistributions	us-gaap/2025	Equity (income) loss  net of dividends	1
+0001628280-26-010047	7	9	CF	0	H	ForeignCurrencyTransactionGainLossBeforeTax	us-gaap/2025	Foreign currency adjustments	1
+0001628280-26-010047	7	10	CF	0	H	GainLossOnSaleOfOtherAssets	us-gaap/2025	Significant (gains) losses  net	1
+0001628280-26-010047	7	11	CF	0	H	OtherOperatingActivitiesCashFlowStatement	us-gaap/2025	Other operating charges	0
+0001628280-26-010047	7	12	CF	0	H	OtherNoncashIncomeExpense	us-gaap/2025	Other items	1
+0001628280-26-010047	7	13	CF	0	H	IncreaseDecreaseInOperatingCapital	us-gaap/2025	Net change in operating assets and liabilities	1
+0001628280-26-010047	7	14	CF	0	H	NetCashProvidedByUsedInOperatingActivities	us-gaap/2025	Net Cash Provided by Operating Activities	0
+0001628280-26-010047	7	16	CF	0	H	PurchasesofInvestments	0001628280-26-010047	Purchases of investments	1
+0001628280-26-010047	7	17	CF	0	H	ProceedsFromDisposalsOfInvestments	0001628280-26-010047	Proceeds from disposals of investments	0
+0001628280-26-010047	7	18	CF	0	H	AcquisitionsOfBusinessesEquityMethodInvestmentsAndNonmarketableSecurities	0001628280-26-010047	Acquisitions of businesses, equity method investments and nonmarketable securities	1
+0001628280-26-010047	7	19	CF	0	H	ProceedsFromDisposalsOfBusinessesEquityMethodInvestmentsAndNonmarketableSecurities	0001628280-26-010047	Proceeds from disposals of businesses, equity method investments and nonmarketable securities	0
+0001628280-26-010047	7	20	CF	0	H	PaymentsToAcquirePropertyPlantAndEquipment	us-gaap/2025	Purchases of property, plant and equipment	1
+0001628280-26-010047	7	21	CF	0	H	ProceedsFromSaleOfPropertyPlantAndEquipment	us-gaap/2025	Proceeds from disposals of property, plant and equipment	0
+0001628280-26-010047	7	22	CF	0	H	CollateralPaidReceivedAssociatedWithHedgingActivitiesNet	0001628280-26-010047	Collateral (paid) received associated with hedging activities  net	1
+0001628280-26-010047	7	23	CF	0	H	PaymentsForProceedsFromOtherInvestingActivities	us-gaap/2025	Other investing activities	1
+0001628280-26-010047	7	24	CF	0	H	NetCashProvidedByUsedInInvestingActivities	us-gaap/2025	Net Cash Provided by (Used in) Investing Activities	0
+0001628280-26-010047	7	26	CF	0	H	ProceedsFromIssuanceOfDebt	us-gaap/2025	Issuances of loans, notes payable and long-term debt	0
+0001628280-26-010047	7	27	CF	0	H	RepaymentsOfDebtAndCapitalLeaseObligations	us-gaap/2025	Payments of loans, notes payable and long-term debt	1
+0001628280-26-010047	7	28	CF	0	H	ProceedsFromIssuanceOfCommonStock	us-gaap/2025	Issuances of stock	0
+0001628280-26-010047	7	29	CF	0	H	PaymentsForRepurchaseOfCommonStock	us-gaap/2025	Purchases of stock for treasury	1
+0001628280-26-010047	7	30	CF	0	H	PaymentsOfDividends	us-gaap/2025	Dividends	1
+0001628280-26-010047	7	31	CF	0	H	ProceedsFromMinorityShareholders	us-gaap/2025	Proceeds from Noncontrolling Interests	0
+0001628280-26-010047	7	32	CF	0	H	ProceedsFromPaymentsForOtherFinancingActivities	us-gaap/2025	Other financing activities	0
+0001628280-26-010047	7	33	CF	0	H	NetCashProvidedByUsedInFinancingActivities	us-gaap/2025	Net Cash Provided by (Used in) Financing Activities	0
+0001628280-26-010047	7	35	CF	0	H	EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Effect of Exchange Rate Changes on Cash, Cash Equivalents, Restricted Cash, and Restricted Cash Equivalents	0
+0001628280-26-010047	7	36	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	Net increase (decrease) in cash, cash equivalents, restricted cash and restricted cash equivalents during the year	0
+0001628280-26-010047	7	37	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash, cash equivalents, restricted cash and restricted cash equivalents at beginning of year	0
+0001628280-26-010047	7	38	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash, Cash Equivalents, Restricted Cash and Restricted Cash Equivalents at End of Year	0
+0001628280-26-010047	7	39	CF	0	H	RestrictedCashAndCashEquivalents	us-gaap/2025	Restricted Cash and Restricted Cash Equivalents	0
+0001628280-26-010047	7	40	CF	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001628280-26-010047	8	14	EQ	0	H	CommonStockSharesOutstanding	us-gaap/2025	Balance at beginning of year (in shares)	0
+0001628280-26-010047	8	15	EQ	0	H	StockIssuedDuringPeriodSharesShareBasedCompensation	us-gaap/2025	Treasury stock issued to employees related to stock-based compensation plans	0
+0001628280-26-010047	8	16	EQ	0	H	TreasuryStockSharesAcquired	us-gaap/2025	Purchases of stock for treasury	1
+0001628280-26-010047	8	17	EQ	0	H	CommonStockSharesOutstanding	us-gaap/2025	Balance at end of year (in shares)	0
+0001628280-26-010047	8	18	EQ	0	H	StockholdersEquity	us-gaap/2025	Common Stock	0
+0001628280-26-010047	8	20	EQ	0	H	StockholdersEquity	us-gaap/2025	Balance at beginning of year	0
+0001628280-26-010047	8	21	EQ	0	H	StockIssuedDuringPeriodValueShareBasedCompensation	us-gaap/2025	Stock issued to employees related to stock compensation plans	0
+0001628280-26-010047	8	22	EQ	0	H	AdjustmentsToAdditionalPaidInCapitalSharebasedCompensationRequisiteServicePeriodRecognitionValue	us-gaap/2025	Stock-based compensation expense	0
+0001628280-26-010047	8	23	EQ	0	H	AdjustmentsToAdditionalPaidInCapitalOther	us-gaap/2025	Sale of subsidiary shares	0
+0001628280-26-010047	8	24	EQ	0	H	MinorityInterestDecreaseFromRedemptions	us-gaap/2025	Acquisition of interests held by noncontrolling owners	1
+0001628280-26-010047	8	25	EQ	0	H	StockholdersEquityOther	us-gaap/2025	Other activities	0
+0001628280-26-010047	8	26	EQ	0	H	StockholdersEquity	us-gaap/2025	Balance at end of year	0
+0001628280-26-010047	8	28	EQ	0	H	StockholdersEquity	us-gaap/2025	Balance at beginning of year	0
+0001628280-26-010047	8	29	EQ	0	H	NetIncomeLoss	us-gaap/2025	Net Income Attributable to Shareowners of The Coca-Cola Company	0
+0001628280-26-010047	8	30	EQ	0	H	DividendsCommonStockCash	us-gaap/2025	Dividends (per share  $2.04, $1.94 and $1.84 in 2025, 2024 and 2023, respectively)	1
+0001628280-26-010047	8	31	EQ	0	H	StockholdersEquity	us-gaap/2025	Balance at end of year	0
+0001628280-26-010047	8	33	EQ	0	H	StockholdersEquity	us-gaap/2025	Balance at beginning of year	0
+0001628280-26-010047	8	34	EQ	0	H	OtherComprehensiveIncomeLossNetOfTaxPortionAttributableToParent	us-gaap/2025	Net other comprehensiveiIncome (loss)	0
+0001628280-26-010047	8	35	EQ	0	H	StockholdersEquity	us-gaap/2025	Balance at end of year	0
+0001628280-26-010047	8	37	EQ	0	H	StockholdersEquity	us-gaap/2025	Balance at beginning of year	0
+0001628280-26-010047	8	38	EQ	0	H	StockIssuedDuringPeriodValueShareBasedCompensation	us-gaap/2025	Treasury stock issued to employees related to stock-based compensation plans	0
+0001628280-26-010047	8	39	EQ	0	H	TreasuryStockValueAcquiredCostMethod	us-gaap/2025	Purchases of stock for treasury	1
+0001628280-26-010047	8	40	EQ	0	H	StockholdersEquity	us-gaap/2025	Balance at end of year	0
+0001628280-26-010047	8	42	EQ	0	H	MinorityInterest	us-gaap/2025	Balance at beginning of year	0
+0001628280-26-010047	8	43	EQ	0	H	NoncontrollingInterestIncreaseFromSaleOfParentEquityInterest	us-gaap/2025	Sale of subsidiary shares	0
+0001628280-26-010047	8	44	EQ	0	H	NetIncomeLossAttributableToNoncontrollingInterest	us-gaap/2025	Net Income (Loss) Attributable to Noncontrolling Interest	0
+0001628280-26-010047	8	45	EQ	0	H	OtherComprehensiveIncomeForeignCurrencyTransactionAndTranslationAdjustmentNetOfTaxPortionAttributableToNoncontrollingInterest	us-gaap/2025	Net foreign currency translation adjustments	0
+0001628280-26-010047	8	46	EQ	0	H	MinorityInterestDecreaseFromDistributionsToNoncontrollingInterestHolders	us-gaap/2025	Dividends paid to noncontrolling interests	1
+0001628280-26-010047	8	47	EQ	0	H	NoncontrollingInterestIncreaseFromSubsidiaryEquityIssuance	us-gaap/2025	Contributions by noncontrolling interests	0
+0001628280-26-010047	8	48	EQ	0	H	OtherComprehensiveIncomeDefinedBenefitPlansAdjustmentNetOfTaxPortionAttributableToNoncontrollingInterest	us-gaap/2025	Net change in pension and other postretirement benefit liabilities	1
+0001628280-26-010047	8	49	EQ	0	H	NoncontrollingInterestDecreaseFromDeconsolidation	us-gaap/2025	Divestitures	1
+0001628280-26-010047	8	50	EQ	0	H	MinorityInterestDecreaseFromRedemptions	us-gaap/2025	Acquisition of interests held by noncontrolling owners	1
+0001628280-26-010047	8	51	EQ	0	H	StockholdersEquityOther	us-gaap/2025	Other activities	0
+0001628280-26-010047	8	52	EQ	0	H	MinorityInterest	us-gaap/2025	Balance at end of year	0
+0001628280-26-010047	9	1	EQ	1	H	CommonStockDividendsPerShareCashPaid	us-gaap/2025	Common Stock, Dividends, Per Share, Cash Paid	0
+0001628280-26-010185	3	1	IS	0	H	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2025	Net Sales	0
+0001628280-26-010185	3	2	IS	0	H	CostOfGoodsAndServicesSold	us-gaap/2025	Cost of products sold, excluding amortization of intangible assets	0
+0001628280-26-010185	3	3	IS	0	H	AmortizationOfIntangibleAssets	us-gaap/2025	Amortization of intangible assets	0
+0001628280-26-010185	3	4	IS	0	H	ResearchAndDevelopmentExpense	us-gaap/2025	Research and development	0
+0001628280-26-010185	3	5	IS	0	H	SellingGeneralAndAdministrativeExpense	us-gaap/2025	Selling, general and administrative	0
+0001628280-26-010185	3	6	IS	0	H	CostsAndExpenses	us-gaap/2025	Total Operating Cost and Expenses	0
+0001628280-26-010185	3	7	IS	0	H	OperatingIncomeLoss	us-gaap/2025	Operating Earnings	0
+0001628280-26-010185	3	8	IS	0	H	InterestExpenseNonoperating	us-gaap/2025	Interest expense	0
+0001628280-26-010185	3	9	IS	0	H	InvestmentIncomeInterest	us-gaap/2025	Interest income	1
+0001628280-26-010185	3	10	IS	0	H	ForeignCurrencyTransactionGainLossBeforeTax	us-gaap/2025	Net foreign exchange (gain) loss	1
+0001628280-26-010185	3	11	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2025	Other (income) expense, net	1
+0001628280-26-010185	3	12	IS	0	H	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2025	Earnings before Taxes	0
+0001628280-26-010185	3	13	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2025	Taxes on Earnings	0
+0001628280-26-010185	3	14	IS	0	H	NetIncomeLoss	us-gaap/2025	Net Earnings	0
+0001628280-26-010185	3	15	IS	0	H	EarningsPerShareBasic	us-gaap/2025	Basic Earnings Per Common Share (in dollars per share)	0
+0001628280-26-010185	3	16	IS	0	H	EarningsPerShareDiluted	us-gaap/2025	Diluted Earnings Per Common Share (in dollars per share)	0
+0001628280-26-010185	3	17	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2025	Average Number of Common Shares Outstanding Used for Basic Earnings Per Common Share (in shares)	0
+0001628280-26-010185	3	18	IS	0	H	IncrementalCommonSharesAttributableToShareBasedPaymentArrangements	us-gaap/2025	Dilutive Common Stock Options (in shares)	0
+0001628280-26-010185	3	19	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2025	Average Number of Common Shares Outstanding Plus Dilutive Common Stock Options (in shares)	0
+0001628280-26-010185	3	20	IS	0	H	AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount	us-gaap/2025	Outstanding Common Stock Options Having No Dilutive Effect (in shares)	0
+0001628280-26-010185	4	1	CI	0	H	NetIncomeLoss	us-gaap/2025	Net Earnings	0
+0001628280-26-010185	4	2	CI	0	H	OtherComprehensiveIncomeForeignCurrencyTransactionAndTranslationAdjustmentNetOfTaxPortionAttributableToParent	us-gaap/2025	Foreign currency translation gain (loss) adjustments, net of taxes of $62 in 2025 and $ in 2024 and 2023	0
+0001628280-26-010185	4	3	CI	0	H	OtherComprehensiveIncomeDefinedBenefitPlansAdjustmentNetOfTaxPortionAttributableToParent	us-gaap/2025	Net actuarial gains (losses) and prior service cost and credits and amortization of net actuarial losses and prior service cost and credits, net of taxes of $149 in 2025, $228 in 2024, and $31 in 2023	1
+0001628280-26-010185	4	4	CI	0	H	OtherComprehensiveIncomeLossCashFlowHedgeGainLossAfterReclassificationAndTaxParent	us-gaap/2025	Net gains (losses) on derivative instruments designated as cash flow hedges, net of taxes of $(60) in 2025, $48 in 2024, and $(66) in 2023	0
+0001628280-26-010185	4	5	CI	0	H	OtherComprehensiveIncomeLossNetOfTaxPortionAttributableToParent	us-gaap/2025	Other Comprehensive Income (Loss)	0
+0001628280-26-010185	4	6	CI	0	H	ComprehensiveIncomeNetOfTax	us-gaap/2025	Comprehensive Income	0
+0001628280-26-010185	4	8	CI	0	H	AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentNetOfTax	us-gaap/2025	Cumulative foreign currency translation (loss) adjustments	0
+0001628280-26-010185	4	9	CI	0	H	AccumulatedOtherComprehensiveIncomeLossDefinedBenefitPensionAndOtherPostretirementPlansNetOfTax	us-gaap/2025	Net actuarial (losses) and prior service (cost) and credits	1
+0001628280-26-010185	4	10	CI	0	H	AociLossCashFlowHedgeCumulativeGainLossAfterTax	us-gaap/2025	Cumulative gains (losses) on derivative instruments designated as cash flow hedges	0
+0001628280-26-010185	4	11	CI	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Accumulated other comprehensive income (loss)	0
+0001628280-26-010185	5	1	CI	1	H	OtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentTax	us-gaap/2025	Other comprehensive income (loss), foreign currency translation adjustment, tax (benefit)	0
+0001628280-26-010185	5	2	CI	1	H	OtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansTax	us-gaap/2025	Other comprehensive (income) loss, defined benefit plan, after reclassification adjustment, tax (benefit)	0
+0001628280-26-010185	5	3	CI	1	H	OtherComprehensiveIncomeLossCashFlowHedgeGainLossAfterReclassificationTax	us-gaap/2025	Other comprehensive income (loss), cash flow hedge, gain (loss), after reclassification, tax (benefit)	0
+0001628280-26-010185	6	2	CF	0	H	NetIncomeLoss	us-gaap/2025	Net earnings	0
+0001628280-26-010185	6	4	CF	0	H	Depreciation	us-gaap/2025	Depreciation	0
+0001628280-26-010185	6	5	CF	0	H	AmortizationOfIntangibleAssets	us-gaap/2025	Amortization of intangible assets	0
+0001628280-26-010185	6	6	CF	0	H	ShareBasedCompensation	us-gaap/2025	Share-based compensation	0
+0001628280-26-010185	6	7	CF	0	H	InvestingAndFinancingGainsLossesNet	0001628280-26-010185	Investing and financing losses, net	1
+0001628280-26-010185	6	8	CF	0	H	IncreaseDecreaseInAccountsReceivable	us-gaap/2025	Trade receivables	1
+0001628280-26-010185	6	9	CF	0	H	IncreaseDecreaseInInventories	us-gaap/2025	Inventories	1
+0001628280-26-010185	6	10	CF	0	H	IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets	us-gaap/2025	Prepaid expenses and other assets	1
+0001628280-26-010185	6	11	CF	0	H	IncreaseDecreaseInAccountsPayableAndAccruedLiabilities	us-gaap/2025	Trade accounts payable and other liabilities	0
+0001628280-26-010185	6	12	CF	0	H	IncreaseDecreaseInAccruedIncomeTaxesPayable	us-gaap/2025	Income taxes	0
+0001628280-26-010185	6	13	CF	0	H	NetCashProvidedByUsedInOperatingActivities	us-gaap/2025	Net Cash From Operating Activities	0
+0001628280-26-010185	6	15	CF	0	H	PaymentsToAcquirePropertyPlantAndEquipment	us-gaap/2025	Acquisitions of property and equipment	1
+0001628280-26-010185	6	16	CF	0	H	PaymentsToAcquireBusinessesNetOfCashAcquiredAndResearchAndDevelopmentInProcess	0001628280-26-010185	Acquisitions of businesses and technologies, net of cash acquired	1
+0001628280-26-010185	6	17	CF	0	H	ProceedsFromSalesOfBusinessAffiliateAndProductiveAssets	us-gaap/2025	Proceeds from business dispositions	0
+0001628280-26-010185	6	18	CF	0	H	PaymentsToAcquireInvestments	us-gaap/2025	Purchases of investment securities	1
+0001628280-26-010185	6	19	CF	0	H	ProceedsFromSaleOfOtherInvestments	us-gaap/2025	Proceeds from sales of investment securities	0
+0001628280-26-010185	6	20	CF	0	H	PaymentsForProceedsFromOtherInvestingActivities	us-gaap/2025	Other	1
+0001628280-26-010185	6	21	CF	0	H	NetCashProvidedByUsedInInvestingActivities	us-gaap/2025	Net Cash From (Used in) Investing Activities	0
+0001628280-26-010185	6	23	CF	0	H	ProceedsFromRepaymentsOfShortTermDebt	us-gaap/2025	Proceeds from issuance of (repayments of) short-term debt, net and other	0
+0001628280-26-010185	6	24	CF	0	H	ProceedsFromLongTermDebtAndDebtMaturingInMoreThanThreeMonths	0001628280-26-010185	Proceeds from issuance of long-term debt and debt with maturities over 3 months	0
+0001628280-26-010185	6	25	CF	0	H	RepaymentsOfLongTermDebtAndDebtMaturingInMoreThanThreeMonths	0001628280-26-010185	Repayments of long-term debt and debt with maturities over 3 months	1
+0001628280-26-010185	6	26	CF	0	H	PaymentsForRepurchaseOfCommonStock	us-gaap/2025	Purchases of common shares	1
+0001628280-26-010185	6	27	CF	0	H	ProceedsFromStockOptionsExercised	us-gaap/2025	Proceeds from stock options exercised	0
+0001628280-26-010185	6	28	CF	0	H	PaymentsOfDividendsCommonStock	us-gaap/2025	Dividends paid	1
+0001628280-26-010185	6	29	CF	0	H	ProceedsFromPaymentsForOtherFinancingActivities	us-gaap/2025	Other	0
+0001628280-26-010185	6	30	CF	0	H	NetCashProvidedByUsedInFinancingActivities	us-gaap/2025	Net Cash From (Used in) Financing Activities	0
+0001628280-26-010185	6	31	CF	0	H	EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations	us-gaap/2025	Effect of exchange rate changes on cash and cash equivalents	0
+0001628280-26-010185	6	32	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	Net Increase (Decrease) in Cash and Cash Equivalents	0
+0001628280-26-010185	6	33	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash and Cash Equivalents, Beginning of Year	0
+0001628280-26-010185	6	34	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash and Cash Equivalents, End of Year	0
+0001628280-26-010185	6	36	CF	0	H	IncomeTaxesPaidNet	us-gaap/2025	Income taxes paid	0
+0001628280-26-010185	6	37	CF	0	H	InterestPaidNet	us-gaap/2025	Interest paid	0
+0001628280-26-010185	7	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001628280-26-010185	7	4	BS	0	H	ShortTermInvestments	us-gaap/2025	Investments, primarily bank time deposits and U.S. treasury bills	0
+0001628280-26-010185	7	5	BS	0	H	AccountsReceivableNetCurrent	us-gaap/2025	Trade receivables, less allowances of  2025: $490; 2024: $439	0
+0001628280-26-010185	7	7	BS	0	H	InventoryFinishedGoodsNetOfReserves	us-gaap/2025	Finished products	0
+0001628280-26-010185	7	8	BS	0	H	InventoryWorkInProcessNetOfReserves	us-gaap/2025	Work in process	0
+0001628280-26-010185	7	9	BS	0	H	InventoryRawMaterialsNetOfReserves	us-gaap/2025	Materials	0
+0001628280-26-010185	7	10	BS	0	H	InventoryNet	us-gaap/2025	Total inventories	0
+0001628280-26-010185	7	11	BS	0	H	PrepaidExpenseAndOtherReceivables	0001628280-26-010185	Other prepaid expenses and receivables	0
+0001628280-26-010185	7	12	BS	0	H	AssetsCurrent	us-gaap/2025	Total current assets	0
+0001628280-26-010185	7	13	BS	0	H	LongTermInvestments	us-gaap/2025	Investments	0
+0001628280-26-010185	7	15	BS	0	H	Land	us-gaap/2025	Land	0
+0001628280-26-010185	7	16	BS	0	H	BuildingsAndImprovementsGross	us-gaap/2025	Buildings	0
+0001628280-26-010185	7	17	BS	0	H	MachineryAndEquipmentGross	us-gaap/2025	Equipment	0
+0001628280-26-010185	7	18	BS	0	H	ConstructionInProgressGross	us-gaap/2025	Construction in progress	0
+0001628280-26-010185	7	19	BS	0	H	PropertyPlantAndEquipmentGross	us-gaap/2025	Property and equipment, at cost	0
+0001628280-26-010185	7	20	BS	0	H	AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment	us-gaap/2025	Less: accumulated depreciation and amortization	0
+0001628280-26-010185	7	21	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2025	Net property and equipment	0
+0001628280-26-010185	7	22	BS	0	H	IntangibleAssetsNetExcludingGoodwill	us-gaap/2025	Intangible assets, net of amortization	0
+0001628280-26-010185	7	23	BS	0	H	Goodwill	us-gaap/2025	Goodwill	0
+0001628280-26-010185	7	24	BS	0	H	DeferredIncomeTaxesAndOtherAssetsNoncurrent	us-gaap/2025	Deferred income taxes and other assets	0
+0001628280-26-010185	7	25	BS	0	H	Assets	us-gaap/2025	Total Assets	0
+0001628280-26-010185	7	28	BS	0	H	AccountsPayableTradeCurrent	us-gaap/2025	Trade accounts payable	0
+0001628280-26-010185	7	29	BS	0	H	EmployeeRelatedLiabilitiesCurrent	us-gaap/2025	Salaries, wages, and commissions	0
+0001628280-26-010185	7	30	BS	0	H	OtherAccruedLiabilitiesCurrent	us-gaap/2025	Other accrued liabilities	0
+0001628280-26-010185	7	31	BS	0	H	DividendsPayableCurrent	us-gaap/2025	Dividends payable	0
+0001628280-26-010185	7	32	BS	0	H	AccruedIncomeTaxesCurrent	us-gaap/2025	Income taxes payable	0
+0001628280-26-010185	7	33	BS	0	H	LongTermDebtCurrent	us-gaap/2025	Current portion of long-term debt	0
+0001628280-26-010185	7	34	BS	0	H	LiabilitiesCurrent	us-gaap/2025	Total current liabilities	0
+0001628280-26-010185	7	35	BS	0	H	LongTermDebtNoncurrent	us-gaap/2025	Long-term debt	0
+0001628280-26-010185	7	36	BS	0	H	PostEmploymentObligationsDeferredIncomeTaxesAndOtherLongTermLiabilities	0001628280-26-010185	Post-employment obligations and other long-term liabilities	0
+0001628280-26-010185	7	37	BS	0	H	CommitmentsAndContingencies	us-gaap/2025	Commitments and contingencies	0
+0001628280-26-010185	7	39	BS	0	H	PreferredStockValue	us-gaap/2025	Preferred shares, one dollar par value Authorized  1,000,000 shares, none issued	0
+0001628280-26-010185	7	40	BS	0	H	CommonStockValue	us-gaap/2025	Common shares, without par value Authorized  2,400,000,000 shares Issued at stated capital amount  Shares: 2025: 1,996,795,525; 2024: 1,991,472,630	0
+0001628280-26-010185	7	41	BS	0	H	TreasuryStockCommonValue	us-gaap/2025	Common shares held in treasury, at cost  Shares: 2025: 260,196,074; 2024: 259,774,639	1
+0001628280-26-010185	7	42	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2025	Earnings employed in the business	0
+0001628280-26-010185	7	43	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Accumulated other comprehensive income (loss)	0
+0001628280-26-010185	7	44	BS	0	H	StockholdersEquity	us-gaap/2025	Total Abbott Shareholders Investment	0
+0001628280-26-010185	7	45	BS	0	H	MinorityInterest	us-gaap/2025	Noncontrolling interests in subsidiaries	0
+0001628280-26-010185	7	46	BS	0	H	StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Total Shareholders Investment	0
+0001628280-26-010185	7	47	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2025	Total Liabilities and Shareholders' Investment	0
+0001628280-26-010185	8	1	BS	1	H	AllowanceForDoubtfulAccountsReceivableCurrent	us-gaap/2025	Trade receivables, allowances	0
+0001628280-26-010185	8	2	BS	1	H	PreferredStockParOrStatedValuePerShare	us-gaap/2025	Preferred shares, par value (in dollars per share)	0
+0001628280-26-010185	8	3	BS	1	H	PreferredStockSharesAuthorized	us-gaap/2025	Preferred shares, authorized (in shares)	0
+0001628280-26-010185	8	4	BS	1	H	PreferredStockSharesIssued	us-gaap/2025	Preferred shares, issued (in shares)	0
+0001628280-26-010185	8	5	BS	1	H	CommonStockSharesAuthorized	us-gaap/2025	Common shares, authorized (in shares)	0
+0001628280-26-010185	8	6	BS	1	H	CommonStockSharesIssued	us-gaap/2025	Common shares, issued (in shares)	0
+0001628280-26-010185	8	7	BS	1	H	TreasuryStockCommonShares	us-gaap/2025	Common shares held in treasury (in shares)	0
+0001692819-26-000006	3	1	IS	0	H	Revenues	us-gaap/2025	Operating revenues	0
+0001692819-26-000006	3	2	IS	0	H	CostOfFuelPurchasedPowerAndDelivery	0001692819-26-000006	Fuel, purchased power costs, and delivery fees	1
+0001692819-26-000006	3	3	IS	0	H	OtherCostAndExpenseOperating	us-gaap/2025	Operating costs	1
+0001692819-26-000006	3	4	IS	0	H	DepreciationDepletionAndAmortization	us-gaap/2025	Depreciation and amortization	1
+0001692819-26-000006	3	5	IS	0	H	SellingGeneralAndAdministrativeExpense	us-gaap/2025	Selling, general, and administrative expenses	1
+0001692819-26-000006	3	6	IS	0	H	ImpairmentOfLongLivedAssetsHeldForUse	us-gaap/2025	Impairment of long-lived assets	1
+0001692819-26-000006	3	7	IS	0	H	OperatingIncomeLoss	us-gaap/2025	Operating income	0
+0001692819-26-000006	3	8	IS	0	H	OtherNonoperatingIncome	us-gaap/2025	Other income, net	0
+0001692819-26-000006	3	9	IS	0	H	InterestExpenseNonoperating	us-gaap/2025	Interest expense and related charges	1
+0001692819-26-000006	3	10	IS	0	H	ImpactsOfTaxReceivableAgreement	0001692819-26-000006	Impacts of Tax Receivable Agreement	1
+0001692819-26-000006	3	11	IS	0	H	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2025	Net income before income taxes	0
+0001692819-26-000006	3	12	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2025	Income tax expense	1
+0001692819-26-000006	3	13	IS	0	H	ProfitLoss	us-gaap/2025	Net income	0
+0001692819-26-000006	3	14	IS	0	H	NetIncomeLossAttributableToNoncontrollingInterest	us-gaap/2025	Net (income) loss attributable to noncontrolling interest and redeemable noncontrolling interest	1
+0001692819-26-000006	3	15	IS	0	H	NetIncomeLoss	us-gaap/2025	Net income attributable to Vistra	0
+0001692819-26-000006	3	16	IS	0	H	PreferredStockDividendsIncomeStatementImpact	us-gaap/2025	Cumulative dividends attributable to preferred stock	1
+0001692819-26-000006	3	17	IS	0	H	NetIncomeLossAvailableToCommonStockholdersBasic	us-gaap/2025	Net income attributable to Vistra common stock	0
+0001692819-26-000006	3	19	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2025	Basic (in shares)	0
+0001692819-26-000006	3	20	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2025	Diluted (in shares)	0
+0001692819-26-000006	3	22	IS	0	H	EarningsPerShareBasic	us-gaap/2025	Basic (in dollars per share)	0
+0001692819-26-000006	3	23	IS	0	H	EarningsPerShareDiluted	us-gaap/2025	Diluted (in dollars per share)	0
+0001692819-26-000006	4	1	CI	0	H	NetIncomeLossIncludingPortionAttributableToNonredeemableNoncontrollingInterest	us-gaap/2025	Net income	0
+0001692819-26-000006	4	3	CI	0	H	OtherComprehensiveIncomeLossReclassificationAdjustmentFromAOCIPensionAndOtherPostretirementBenefitPlansForNetGainLossNetOfTax	us-gaap/2025	Effects related to pension and other retirement benefit obligations (net of tax expense of $, $4 and $)	1
+0001692819-26-000006	4	4	CI	0	H	OtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Total other comprehensive income (loss)	0
+0001692819-26-000006	4	5	CI	0	H	ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Comprehensive income	0
+0001692819-26-000006	4	6	CI	0	H	OtherComprehensiveIncomeLossNetOfTaxPortionAttributableToNoncontrollingInterest	us-gaap/2025	Comprehensive (income) loss attributable to noncontrolling interest and redeemable noncontrolling interest	1
+0001692819-26-000006	4	7	CI	0	H	OtherComprehensiveIncomeLossNetOfTaxPortionAttributableToParent	us-gaap/2025	Comprehensive income attributable to Vistra	0
+0001692819-26-000006	5	1	CI	1	H	OtherComprehensiveIncomeLossReclassificationAdjustmentFromAOCIPensionAndOtherPostretirementBenefitPlansForNetGainLossTax	us-gaap/2025	Effects related to pension and other retirement obligations (tax)	0
+0001692819-26-000006	6	9	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001692819-26-000006	6	10	BS	0	H	RestrictedCashCurrent	us-gaap/2025	Restricted cash	0
+0001692819-26-000006	6	11	BS	0	H	AccountsReceivableNetCurrent	us-gaap/2025	Trade accounts receivable  net	0
+0001692819-26-000006	6	12	BS	0	H	InventoryNet	us-gaap/2025	Inventories  net	0
+0001692819-26-000006	6	13	BS	0	H	DerivativeInstrumentsAndHedges	us-gaap/2025	Commodity and other derivative contractual assets	0
+0001692819-26-000006	6	14	BS	0	H	MarginDepositAssets	us-gaap/2025	Margin deposits related to commodity contracts	0
+0001692819-26-000006	6	15	BS	0	H	MarginDepositsPostedUnderAffiliateFinancingAgreementAsset	0001692819-26-000006	Margin deposits posted under affiliate financing agreement	0
+0001692819-26-000006	6	16	BS	0	H	PrepaidExpenseAndOtherAssetsCurrent	us-gaap/2025	Prepaid expense and other current assets	0
+0001692819-26-000006	6	17	BS	0	H	AssetsCurrent	us-gaap/2025	Total current assets	0
+0001692819-26-000006	6	18	BS	0	H	RestrictedCashNoncurrent	us-gaap/2025	Restricted cash	0
+0001692819-26-000006	6	19	BS	0	H	OtherLongTermInvestments	us-gaap/2025	Investments	0
+0001692819-26-000006	6	20	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2025	Property, plant, and equipment  net	0
+0001692819-26-000006	6	21	BS	0	H	Goodwill	us-gaap/2025	Goodwill	0
+0001692819-26-000006	6	22	BS	0	H	IntangibleAssetsNetExcludingGoodwill	us-gaap/2025	Identifiable intangible assets  net	0
+0001692819-26-000006	6	23	BS	0	H	DerivativeInstrumentsAndHedgesNoncurrent	us-gaap/2025	Commodity and other derivative contractual assets	0
+0001692819-26-000006	6	24	BS	0	H	DeferredIncomeTaxAssetsNet	us-gaap/2025	Accumulated deferred income taxes	0
+0001692819-26-000006	6	25	BS	0	H	OtherAssetsNoncurrent	us-gaap/2025	Other noncurrent assets	0
+0001692819-26-000006	6	26	BS	0	H	Assets	us-gaap/2025	Total assets	0
+0001692819-26-000006	6	29	BS	0	H	ShortTermBorrowings	us-gaap/2025	Short-term borrowings	0
+0001692819-26-000006	6	30	BS	0	H	AccountsReceivableSecuritizationProgramAmountsBorrowed	0001692819-26-000006	Accounts receivable financing	0
+0001692819-26-000006	6	31	BS	0	H	LongTermDebtAndCapitalLeaseObligationsCurrent	us-gaap/2025	Long-term debt due currently	0
+0001692819-26-000006	6	32	BS	0	H	ForwardRepurchaseObligationToBePaidCurrent	0001692819-26-000006	Forward repurchase obligation due currently	0
+0001692819-26-000006	6	33	BS	0	H	AccountsPayableCurrent	us-gaap/2025	Trade accounts payable	0
+0001692819-26-000006	6	34	BS	0	H	DerivativeInstrumentsAndHedgesLiabilities	us-gaap/2025	Commodity and other derivative contractual liabilities	0
+0001692819-26-000006	6	35	BS	0	H	MarginDepositLiabilities	0001692819-26-000006	Margin deposits related to commodity contracts	0
+0001692819-26-000006	6	36	BS	0	H	AccrualForTaxesOtherThanIncomeTaxesCurrent	us-gaap/2025	Accrued taxes other than income	0
+0001692819-26-000006	6	37	BS	0	H	InterestPayableCurrent	us-gaap/2025	Accrued interest	0
+0001692819-26-000006	6	38	BS	0	H	AssetRetirementObligationCurrent	us-gaap/2025	Asset retirement obligations	0
+0001692819-26-000006	6	39	BS	0	H	OtherLiabilitiesCurrent	us-gaap/2025	Other current liabilities	0
+0001692819-26-000006	6	40	BS	0	H	LiabilitiesCurrent	us-gaap/2025	Total current liabilities	0
+0001692819-26-000006	6	41	BS	0	H	MarginDepositFinancingWithAffiliate	0001692819-26-000006	Margin deposits financing with affiliate	0
+0001692819-26-000006	6	42	BS	0	H	LongTermDebtAndCapitalLeaseObligations	us-gaap/2025	Long-term debt, less amounts due currently	0
+0001692819-26-000006	6	43	BS	0	H	ForwardRepurchaseObligationToBePaidNoncurrent	0001692819-26-000006	Forward repurchase obligation, less amounts due currently	0
+0001692819-26-000006	6	44	BS	0	H	DerivativeAndHedgeLiabilitiesNoncurrent	0001692819-26-000006	Commodity and other derivative contractual liabilities	0
+0001692819-26-000006	6	45	BS	0	H	DeferredIncomeTaxLiabilitiesNet	us-gaap/2025	Accumulated deferred income taxes	0
+0001692819-26-000006	6	46	BS	0	H	AssetRetirementObligationsNoncurrent	us-gaap/2025	Asset retirement obligations	0
+0001692819-26-000006	6	47	BS	0	H	OtherLiabilitiesNoncurrent	us-gaap/2025	Other noncurrent liabilities and deferred credits	0
+0001692819-26-000006	6	48	BS	0	H	Liabilities	us-gaap/2025	Total liabilities	0
+0001692819-26-000006	6	49	BS	0	H	CommitmentsAndContingencies	us-gaap/2025	Commitments and Contingencies	0
+0001692819-26-000006	6	51	BS	0	H	PreferredStockValue	us-gaap/2025	Preferred stock (100,000,000 shares authorized, $1,000 liquidation preference per share, 2,476,066 shares outstanding at both December 31, 2025 and 2024, respectively)	0
+0001692819-26-000006	6	52	BS	0	H	CommonStockValue	us-gaap/2025	Common stock (par value $0.01 per share, 1,800,000,000 shares authorized, 338,059,635 and 339,754,307 shares outstanding at December 31, 2025 and 2024, respectively)	0
+0001692819-26-000006	6	53	BS	0	H	TreasuryStockCommonValue	us-gaap/2025	Treasury stock, at cost (215,599,525 and 208,998,299 shares at December 31, 2025 and 2024, respectively)	1
+0001692819-26-000006	6	54	BS	0	H	AdditionalPaidInCapitalCommonStock	us-gaap/2025	Additional paid-in-capital	0
+0001692819-26-000006	6	55	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2025	Accumulated deficit	0
+0001692819-26-000006	6	56	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Accumulated other comprehensive income	0
+0001692819-26-000006	6	57	BS	0	H	StockholdersEquity	us-gaap/2025	Stockholders' equity	0
+0001692819-26-000006	6	58	BS	0	H	MinorityInterest	us-gaap/2025	Noncontrolling interest in subsidiary	0
+0001692819-26-000006	6	59	BS	0	H	StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Total equity	0
+0001692819-26-000006	6	60	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2025	Total liabilities and equity	0
+0001692819-26-000006	7	1	BS	1	H	PreferredStockSharesAuthorized	us-gaap/2025	Preferred stock, shares authorized (in shares)	0
+0001692819-26-000006	7	2	BS	1	H	PreferredStockLiquidationPreference	us-gaap/2025	Preferred sock, liquidation preference (in dollars per share)	0
+0001692819-26-000006	7	3	BS	1	H	PreferredStockSharesOutstanding	us-gaap/2025	Preferred stock, shares outstanding (in shares)	0
+0001692819-26-000006	7	4	BS	1	H	CommonStockParOrStatedValuePerShare	us-gaap/2025	Common stock, par or stated value per share (in dollars per share)	0
+0001692819-26-000006	7	5	BS	1	H	CommonStockSharesAuthorized	us-gaap/2025	Common stock, shares authorized (in shares)	0
+0001692819-26-000006	7	6	BS	1	H	CommonStockSharesOutstanding	us-gaap/2025	Common stock, shares outstanding (in shares)	0
+0001692819-26-000006	7	8	BS	1	H	TreasuryStockCommonShares	us-gaap/2025	Treasury stock, common shares (in shares)	0
+0001692819-26-000006	8	8	CF	0	H	ProfitLoss	us-gaap/2025	Total reportable segment net income (loss)	0
+0001692819-26-000006	8	10	CF	0	H	DepreciationAmortizationAndAccretionNet	us-gaap/2025	Depreciation and amortization	0
+0001692819-26-000006	8	11	CF	0	H	DeferredIncomeTaxesAndTaxCredits	us-gaap/2025	Deferred income tax expense (benefit), net	0
+0001692819-26-000006	8	12	CF	0	H	GainLossOnSaleOfProperties	us-gaap/2025	Gain on sale of land	1
+0001692819-26-000006	8	13	CF	0	H	ImpairmentOfLongLivedAssetsHeldForUse	us-gaap/2025	Impairment of long-lived and other assets	0
+0001692819-26-000006	8	14	CF	0	H	UnrealizedGainLossOnCommodityRelatedDerivatives	0001692819-26-000006	Unrealized net (gain) loss from mark-to-market valuations of commodities	1
+0001692819-26-000006	8	15	CF	0	H	UnrealizedGainLossOnInterestRateSwapDerivatives	0001692819-26-000006	Unrealized net (gain) loss from mark-to-market valuations of interest rate swaps	1
+0001692819-26-000006	8	16	CF	0	H	UnrealizedGainLossFromNuclearDecommissioningTrusts	0001692819-26-000006	Unrealized net gain from nuclear decommissioning trusts	1
+0001692819-26-000006	8	17	CF	0	H	IncreaseDecreaseInAssetRetirementObligations	us-gaap/2025	Change in asset retirement obligation liability	0
+0001692819-26-000006	8	18	CF	0	H	AccretionExpense	us-gaap/2025	Asset retirement obligation accretion expense	0
+0001692819-26-000006	8	19	CF	0	H	TaxReceivableAgreementAccretionExpense	0001692819-26-000006	Impacts of Tax Receivable Agreement	0
+0001692819-26-000006	8	20	CF	0	H	GainLossOnTaxReceivableAgreementRepurchaseAndTenderOffers	0001692819-26-000006	Gain on TRA repurchase and tender offers	1
+0001692819-26-000006	8	21	CF	0	H	ProvisionForDoubtfulAccounts	us-gaap/2025	Bad debt expense	0
+0001692819-26-000006	8	22	CF	0	H	ShareBasedCompensation	us-gaap/2025	Stock-based compensation expense	0
+0001692819-26-000006	8	23	CF	0	H	GainOnInvoluntaryConversion	0001692819-26-000006	Involuntary conversion gain	1
+0001692819-26-000006	8	24	CF	0	H	OtherNoncashIncomeExpense	us-gaap/2025	Other, net	1
+0001692819-26-000006	8	26	CF	0	H	IncreaseDecreaseInAccountsReceivable	us-gaap/2025	Accounts receivable  trade	1
+0001692819-26-000006	8	27	CF	0	H	IncreaseDecreaseInInventories	us-gaap/2025	Inventories	1
+0001692819-26-000006	8	28	CF	0	H	IncreaseDecreaseInAccountsPayable	us-gaap/2025	Accounts payable  trade	0
+0001692819-26-000006	8	29	CF	0	H	IncreaseDecreaseInCommodityAndDerivativeAssetsAndLiabilities	0001692819-26-000006	Commodity and other derivative contractual assets and liabilities	1
+0001692819-26-000006	8	30	CF	0	H	IncreaseDecreaseInMarginDepositsNet	0001692819-26-000006	Margin deposits, net	1
+0001692819-26-000006	8	31	CF	0	H	IncreaseDecreaseInInterestPayableNet	us-gaap/2025	Accrued interest	0
+0001692819-26-000006	8	32	CF	0	H	IncreaseDecreaseInAccruedTaxesPayable	us-gaap/2025	Accrued taxes	0
+0001692819-26-000006	8	33	CF	0	H	IncreaseDecreaseInEmployeeRelatedLiabilities	us-gaap/2025	Accrued employee incentive	0
+0001692819-26-000006	8	34	CF	0	H	PaymentsForSettlementOfAssetRetirementObligation	0001692819-26-000006	Asset retirement obligation settlement	1
+0001692819-26-000006	8	35	CF	0	H	IncreaseDecreaseInDeferredCharges	us-gaap/2025	Major plant outage deferral	1
+0001692819-26-000006	8	36	CF	0	H	IncreaseDecreaseInOtherOperatingAssets	us-gaap/2025	Other  net assets	1
+0001692819-26-000006	8	37	CF	0	H	IncreaseDecreaseInOtherOperatingLiabilities	us-gaap/2025	Other  net liabilities	0
+0001692819-26-000006	8	38	CF	0	H	NetCashProvidedByUsedInOperatingActivities	us-gaap/2025	Cash provided by operating activities	0
+0001692819-26-000006	8	40	CF	0	H	PaymentsToAcquirePropertyPlantAndEquipment	us-gaap/2025	Capital expenditures, including nuclear fuel purchases and LTSA prepayments	1
+0001692819-26-000006	8	41	CF	0	H	PaymentsToAcquireBusinessesNetOfCashAcquired	us-gaap/2025	Acquisition (net of cash acquired)	1
+0001692819-26-000006	8	42	CF	0	H	ProceedsFromDecommissioningFund	us-gaap/2025	Proceeds from sales of nuclear decommissioning trust fund securities	0
+0001692819-26-000006	8	43	CF	0	H	PaymentsToInvestInDecommissioningFund	us-gaap/2025	Investments in nuclear decommissioning trust fund securities	1
+0001692819-26-000006	8	44	CF	0	H	ProceedsFromSaleOfIntangibleAssets	us-gaap/2025	Proceeds from sales of environmental allowances	0
+0001692819-26-000006	8	45	CF	0	H	PaymentsToAcquireIntangibleAssets	us-gaap/2025	Purchases of environmental allowances	1
+0001692819-26-000006	8	46	CF	0	H	ProceedsFromInsuranceSettlementInvestingActivities	us-gaap/2025	Insurance proceeds for recovery of damaged property, plant, and equipment	1
+0001692819-26-000006	8	47	CF	0	H	ProceedsFromSaleOfOtherProductiveAssets	us-gaap/2025	Proceeds from sales of property, plant, and equipment, including nuclear fuel	0
+0001692819-26-000006	8	48	CF	0	H	ProceedsFromSaleOfInvestmentTaxCreditSoldUnderAgreements	0001692819-26-000006	Proceeds from sales of transferable ITCs	0
+0001692819-26-000006	8	49	CF	0	H	PaymentsForProceedsFromOtherInvestingActivities	us-gaap/2025	Other, net	1
+0001692819-26-000006	8	50	CF	0	H	NetCashProvidedByUsedInInvestingActivities	us-gaap/2025	Cash used in investing activities	0
+0001692819-26-000006	8	52	CF	0	H	ProceedsFromIssuanceOfDebt	us-gaap/2025	Issuances of debt	0
+0001692819-26-000006	8	53	CF	0	H	RepaymentsOfLongTermDebt	us-gaap/2025	Repayments/repurchases of debt	1
+0001692819-26-000006	8	54	CF	0	H	ProceedsFromRepaymentsOfAccountsReceivableFinancing	0001692819-26-000006	Net borrowings (repayments) under accounts receivable financing	0
+0001692819-26-000006	8	55	CF	0	H	ProceedsFromLinesOfCredit	us-gaap/2025	Borrowings under Revolving Credit Facility	0
+0001692819-26-000006	8	56	CF	0	H	RepaymentsOfLinesOfCredit	us-gaap/2025	Repayments under Revolving Credit Facility	1
+0001692819-26-000006	8	57	CF	0	H	ProceedsFromShortTermDebt	us-gaap/2025	Borrowings under Commodity-Linked Facility	0
+0001692819-26-000006	8	58	CF	0	H	RepaymentsOfShortTermDebt	us-gaap/2025	Repayments under Commodity-Linked Facility	1
+0001692819-26-000006	8	59	CF	0	H	PaymentsOfFinancingCosts	us-gaap/2025	Debt issuance costs	1
+0001692819-26-000006	8	60	CF	0	H	PaymentsForRepurchaseOfCommonStock	us-gaap/2025	Stock repurchases	1
+0001692819-26-000006	8	61	CF	0	H	PaymentsOfDividendsCommonStock	us-gaap/2025	Dividends paid to common stockholders	1
+0001692819-26-000006	8	62	CF	0	H	PaymentsOfDividendsPreferredStockAndPreferenceStock	us-gaap/2025	Dividends paid to preferred stockholders	1
+0001692819-26-000006	8	63	CF	0	H	PaymentsOfOrdinaryDividendsNoncontrollingAndRedeemableNoncontrollingInterest	0001692819-26-000006	Dividends paid to noncontrolling and redeemable noncontrolling interest holders	1
+0001692819-26-000006	8	64	CF	0	H	PaymentsToMinorityShareholders	us-gaap/2025	Payment for acquisition of noncontrolling interest	1
+0001692819-26-000006	8	65	CF	0	H	PaymentsForForwardRepurchaseObligation	0001692819-26-000006	Principal payment on forward repurchase obligation	1
+0001692819-26-000006	8	66	CF	0	H	ReturnOfCapitalTaxReceivableAgreementAndTenderOffer	0001692819-26-000006	TRA Repurchase and tender offer  return of capital	1
+0001692819-26-000006	8	67	CF	0	H	ProceedsFromPaymentsForOtherFinancingActivities	us-gaap/2025	Other, net	0
+0001692819-26-000006	8	68	CF	0	H	NetCashProvidedByUsedInFinancingActivities	us-gaap/2025	Cash used in financing activities	0
+0001692819-26-000006	8	69	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	Net change in cash, cash equivalents, and restricted cash (current and noncurrent)	0
+0001692819-26-000006	8	70	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash, cash equivalents, and restricted cash (current and noncurrent)  beginning balance	0
+0001692819-26-000006	8	71	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash, cash equivalents, and restricted cash (current and noncurrent)  ending balance	0
+0001692819-26-000006	8	74	CF	0	H	InterestPaidNet	us-gaap/2025	Interest paid	0
+0001692819-26-000006	8	75	CF	0	H	InterestCostsCapitalized	us-gaap/2025	Capitalized interest	1
+0001692819-26-000006	8	76	CF	0	H	InterestPaid	us-gaap/2025	Interest paid (net of capitalized interest)	0
+0001692819-26-000006	8	78	CF	0	H	ConstructionInProgressExpendituresIncurredButNotYetPaid	us-gaap/2025	Accrued property, plant and equipment additions	0
+0001692819-26-000006	8	79	CF	0	H	TaxReceivableAgreementRepurchasedRightDuringThePeriod	0001692819-26-000006	Issuance of Series C Preferred Stock as consideration for the repurchase of TRA Rights with a carrying value of $506 million	0
+0001692819-26-000006	9	1	CF	1	H	GainLossTaxableReceivableAgreementRepurchaseRightsCarryingValueOfTheRepurchaseRights	0001692819-26-000006	Gain on taxable receivable agreement, repurchase rights, carrying value of the repurchase rights	0
+0001692819-26-000006	10	14	EQ	0	H	StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Beginning balance	0
+0001692819-26-000006	10	15	EQ	0	H	StockIssuedDuringPeriodValueNewIssues	us-gaap/2025	Series C Preferred Stock issued	0
+0001692819-26-000006	10	16	EQ	0	H	TreasuryStockValueAcquiredCostMethod	us-gaap/2025	Stock repurchases	1
+0001692819-26-000006	10	17	EQ	0	H	AdjustmentsToAdditionalPaidInCapitalSharebasedCompensationRequisiteServicePeriodRecognitionValue	us-gaap/2025	Effects of stock-based incentive compensation plans	0
+0001692819-26-000006	10	18	EQ	0	H	ProfitLoss	us-gaap/2025	Total reportable segment net income (loss)	0
+0001692819-26-000006	10	19	EQ	0	H	NetIncomeLossExcludingPortionAttributableToRedeemableNoncontrollingInterest	0001692819-26-000006	Net income	0
+0001692819-26-000006	10	20	EQ	0	H	DividendsCommonStock	us-gaap/2025	Dividends declared on common stock	1
+0001692819-26-000006	10	21	EQ	0	H	DividendsPreferredStock	us-gaap/2025	Dividends declared on preferred stock	1
+0001692819-26-000006	10	22	EQ	0	H	MinorityInterestDecreaseFromDistributionsToNoncontrollingInterestHolders	us-gaap/2025	Dividends to noncontrolling interest	1
+0001692819-26-000006	10	23	EQ	0	H	OtherComprehensiveIncomeDefinedBenefitPlansNetUnamortizedGainLossArisingDuringPeriodNetOfTax	us-gaap/2025	Change in accumulated other comprehensive income	0
+0001692819-26-000006	10	24	EQ	0	H	StockIssuedDuringPeriodValueAcquisitions	us-gaap/2025	Equity issued in subsidiary to acquire Energy Harbor	0
+0001692819-26-000006	10	25	EQ	0	H	MinorityInterestChangeInRedemptionValue	us-gaap/2025	Modification of noncontrolling interest to redeemable noncontrolling interest	0
+0001692819-26-000006	10	26	EQ	0	H	StockholdersEquityOther	us-gaap/2025	Other	1
+0001692819-26-000006	10	27	EQ	0	H	StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Ending balance	0
+0001692819-26-000006	11	1	EQ	1	H	AdjustmentsRelatedToTaxWithholdingForShareBasedCompensation	us-gaap/2025	Tax withholding obligation	0

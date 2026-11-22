@@ -1,0 +1,124 @@
+# LLM providers, models and profiles (docs/specs/llm-provider-profiles.md).
+#
+# Loaded and validated by src/llm/profiles.py: an unknown key, a missing key or a value of
+# the wrong type fails loud (LlmConfigError). Prices live beside this file in pricing.yaml;
+# every model a profile uses must have a row there.
+#
+# Which profile is active, first match wins:
+#   1. an explicit profile (scripts/eval/run_suite.py --llm-profile);
+#   2. active_profile below, i.e. XBRLRAG_LLM_PROFILE when set and non-empty;
+#   3. the legacy XBRLRAG_USE_REPLACEMENT_MODELS switch on -> openai-5.6;
+#   4. openai-6.1 (DEFAULT_PROFILE; docs/specs/arm-model-from-profile.md).
+#
+# Each XBRL stage keeps its tier (XBRL_STAGE_TIERS in src/llm/profiles.py); its model is the
+# active profile's model for that tier, and escalation climbs the same profile's tiers.
+
+active_profile: "${XBRLRAG_LLM_PROFILE:-}"
+
+providers:
+  openai:
+    api_key_env: OPENAI_API_KEY
+  anthropic:
+    api_key_env: ANTHROPIC_API_KEY
+  # OpenAI-compatible; the only provider with a base_url (docs/specs/deepseek-provider.md).
+  deepseek:
+    api_key_env: DEEPSEEK_API_KEY
+    base_url: "https://api.deepseek.com"
+
+# max_output_tokens is this project's per-call output ceiling, not the provider's limit.
+# The OpenAI rows match SEC_TABLE_MODEL_CONFIGS in src/llm/config.py, which still supplies
+# their per-call parameters (temperature 1, the reasoning models' fixed value).
+#
+# temperature: false means the model rejects sampling parameters, so no stage sends one.
+#
+# effort (Anthropic and DeepSeek only): Anthropic sends it as output_config.effort
+# (llm-anthropic-and-caching), DeepSeek as reasoning_effort (deepseek-provider), where
+# the API maps medium and xhigh to high.
+# Choice: haiku "medium" (small-tier triage and verification, where latency and cost
+# matter more than depth), sonnet and opus "high"
+# (planning and cited synthesis, where a wrong plan or an unsupported statement costs the
+# whole answer).
+models:
+  gpt-5-nano:
+    provider: openai
+    max_output_tokens: 4000
+  gpt-5-mini:
+    provider: openai
+    max_output_tokens: 8000
+  gpt-5:
+    provider: openai
+    max_output_tokens: 8000
+  gpt-5.6-luna:
+    provider: openai
+    max_output_tokens: 4000
+  gpt-5.6-terra:
+    provider: openai
+    max_output_tokens: 8000
+  gpt-5.6-sol:
+    provider: openai
+    max_output_tokens: 8000
+  # The openai-6.1 profile (docs/specs/openai-6-1-profile.md); ceilings as the gpt-5.6 rows.
+  gpt-6-luna:
+    provider: openai
+    max_output_tokens: 4000
+  gpt-6.1-terra:
+    provider: openai
+    max_output_tokens: 8000
+  gpt-6.1-sol:
+    provider: openai
+    max_output_tokens: 8000
+  claude-haiku-5-5:
+    provider: anthropic
+    max_output_tokens: 8000
+    temperature: false
+    effort: medium
+  claude-sonnet-5-5:
+    provider: anthropic
+    max_output_tokens: 16000
+    temperature: false
+    effort: high
+  claude-opus-5-5:
+    provider: anthropic
+    max_output_tokens: 16000
+    temperature: false
+    effort: high
+  # DeepSeek, the development profile (v2 plan section 7). Reasoning is on by default; flash
+  # runs at low effort for cost and latency, v4-pro (the escalation target) at high.
+  deepseek-flash:
+    provider: deepseek
+    max_output_tokens: 8000
+    effort: low
+  deepseek-v4-pro:
+    provider: deepseek
+    max_output_tokens: 16000
+    effort: high
+
+# openai keeps the v1 measured baseline's gpt-5 models; it is used only when named (the
+# gpt-5 family shuts down 2026-12-11), and the fallback profile is openai-6.1
+# (DEFAULT_PROFILE, docs/specs/arm-model-from-profile.md). openai-5.6 is OpenAI's named
+# replacement set. frontier is the escalation target and the default model of the
+# long-context and frontier_sec_tools arms.
+profiles:
+  openai:
+    small: gpt-5-nano
+    medium: gpt-5-mini
+    frontier: gpt-5
+  openai-5.6:
+    small: gpt-5.6-luna
+    medium: gpt-5.6-terra
+    frontier: gpt-5.6-sol
+  # The v2 looks' profile (docs/eval/heldout_v2/measurement_plan.md decision 1), run at
+  # OpenAI's Flex tier (scripts/eval/run_suite.py --service-tier flex). No gpt-6.1 luna exists.
+  openai-6.1:
+    small: gpt-6-luna
+    medium: gpt-6.1-terra
+    frontier: gpt-6.1-sol
+  anthropic:
+    small: claude-haiku-5-5
+    medium: claude-sonnet-5-5
+    frontier: claude-opus-5-5
+  # Development only: slices and dev runs. Decisions rest on openai-5.6 and anthropic runs.
+  deepseek:
+    small: deepseek-flash
+    medium: deepseek-flash
+    frontier: deepseek-v4-pro

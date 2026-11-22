@@ -1,0 +1,18 @@
+# Standard elements whose taxonomy definition is outside a family's measure (rule K-R2,
+# docs/specs/key-currency-and-definition.md requirement 4). A cross-filer screen member keyed
+# on a listed element is excluded as `element_outside_family`, whatever its presented label
+# says; single-filer keys are not affected.
+#
+# Review rule: every entry is reviewed one element at a time against its quoted taxonomy
+# definition, with a complete review record by a listed reviewer (configs/eval/v2/
+# reviewers.yaml; reviewed-resolutions requirement 1). K-R2 is never applied as a blanket
+# rule, and no entry is added without its review.
+#
+# Shape:
+#   families:
+#     <Family>:
+#       <standard element>:
+#         definition: <the taxonomy's definition, quoted>
+#         review: {by, date, bucket, evidence}
+version: 1
+families: {}

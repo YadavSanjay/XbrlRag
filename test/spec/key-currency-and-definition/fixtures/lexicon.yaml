@@ -1,0 +1,12 @@
+# Synthetic lexicon for the key-currency-and-definition build tests (screen questions name no
+# company, only the universe and the metric).
+companies:
+  USDA: {short: Usda, legal: Usda Inc.}
+  USDB: {short: Usdb, legal: Usdb Corp.}
+  TWDC: {short: Twdc, legal: Twdc Ltd.}
+  TWDK: {short: Twdk, legal: Twdk Ltd.}
+metrics:
+  DebtIssued: {label: debt issued, synonyms: [proceeds from debt issuance]}
+  Debt: {label: total debt, synonyms: [total borrowings]}
+universes:
+  semis: [the chip makers]

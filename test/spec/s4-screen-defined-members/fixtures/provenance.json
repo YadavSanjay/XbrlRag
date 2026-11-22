@@ -1,0 +1,80 @@
+{
+ "built": "2026-11-13",
+ "companyfacts": {
+  "21344": {
+   "cached_at": "2026-11-07T18:19:59.699187+00:00",
+   "sha256": "87a4173fcd3d662d18d19e0e885095aa5e3812b74c54d1ee55808ff1540a8081",
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000021344.json"
+  },
+  "80424": {
+   "cached_at": "2026-10-30T14:14:58.093402+00:00",
+   "sha256": "c6ae61e012a2b4aadeaa49400847842dd637a4a4a03cbdf4dfff27dffd78f8d1",
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000080424.json"
+  },
+  "804328": {
+   "cached_at": "2026-11-07T18:20:00.656316+00:00",
+   "sha256": "94dcddda02f3722dcdb325770eb0726c01a95bf304b47ba6255fbddceaca19f0",
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000804328.json"
+  }
+ },
+ "files": {
+  "companyfacts_excerpt.json": "211a260b375187aa6adb82966e0ddeccb3096dd8fd07dd3333f045b87fc3e6d2",
+  "fsds/2025q3/num.tsv": "52d718badd0b4fb04d65f9fbc342865144bd53a407c987f5bf5e709b9de97c79",
+  "fsds/2025q3/pre.tsv": "c68531bf6e1142a22738fcce1f1bf91fcb4c8057424e0ff6a3004d11a04cb2a3",
+  "fsds/2025q3/sub.tsv": "86829f1c331bc8081a3d483c30923ba1e7cd153ea1357581e72b73f767a0a14b",
+  "fsds/2025q3/tag.tsv": "2c26c92ac3105c3a52e3d95a0b9fe3bc397afc110e77083e77fee2860496a90b",
+  "fsds/2025q4/num.tsv": "964cddc5d49ef0f2f3546bf4a190bb40119c6981810f88f38ec32da55cc2dcee",
+  "fsds/2025q4/pre.tsv": "cafd4d65d57b2d226ede83d60a60e5867f5aea7a4d0f66b1cb4a61586bfcc77b",
+  "fsds/2025q4/sub.tsv": "0e6916927af5bbd357b140f605433bcb5d26a413b9880e64d9342547d949f0d0",
+  "fsds/2025q4/tag.tsv": "e20ea4489e24eb0b3b9cf0816ab62c06535a8fbdc1bbb6146e4aae446c1eafbb",
+  "fsds/2026q1/num.tsv": "5299bf2c60d8fec3cf38c3bc54ebc3dfcc1f10274ae9fe87584266b7fce66aff",
+  "fsds/2026q1/pre.tsv": "0cd697b3e54919b9ac461c584291c9b25ab4a24f6e8fe4f850543a5490cef2b5",
+  "fsds/2026q1/sub.tsv": "1be53d6f5743c1c2142f4d497b8809949bb6b8340797396675635eb9f1cd6e69",
+  "fsds/2026q1/tag.tsv": "c638353852d293a3688355235e7f1c0a0ff7df8e46434cbc1a45e222835285dd"
+ },
+ "filings": [
+  {
+   "accession": "0000080424-25-000076",
+   "balance_sheet_date": "2025-06-30",
+   "cik": 80424,
+   "fiscal_year_label": 2025,
+   "quarter": "2025q3",
+   "ticker": "PG"
+  },
+  {
+   "accession": "0001628280-26-010047",
+   "balance_sheet_date": "2025-12-31",
+   "cik": 21344,
+   "fiscal_year_label": 2025,
+   "quarter": "2026q1",
+   "ticker": "KO"
+  },
+  {
+   "accession": "0000804328-25-000085",
+   "balance_sheet_date": "2025-09-28",
+   "cik": 804328,
+   "fiscal_year_label": 2025,
+   "quarter": "2025q4",
+   "ticker": "QCOM"
+  }
+ ],
+ "filter": "fsds sub: the accessions below; pre: their BS lines; num: their undimensioned, non-coregistrant instant rows; tag: the tags their BS lines use. companyfacts: every us-gaap USD instant entry filed in the accessions below.",
+ "source": "SEC Financial Statement Data Sets (raw quarterly zips) and SEC companyfacts",
+ "zips": {
+  "2025q3": {
+   "retrieved_at": "2026-11-07T17:11:43.915902+00:00",
+   "sha256": "ebe25fa74c3655f4738ed9eb144af3953c3981c80f57d74829fb9ad68b114710",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q3.zip"
+  },
+  "2025q4": {
+   "retrieved_at": "2026-11-07T17:11:45.719880+00:00",
+   "sha256": "2b36ac3850c022cf19edd882e31c3c453c7666677b9fdd2e1f7748fdb5768c6e",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q4.zip"
+  },
+  "2026q1": {
+   "retrieved_at": "2026-11-07T17:11:48.301000+00:00",
+   "sha256": "d18c01c615da8f5cd46273b0dacaeee5b1163f4089171da0f84153a5f3c362f6",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q1.zip"
+  }
+ }
+}

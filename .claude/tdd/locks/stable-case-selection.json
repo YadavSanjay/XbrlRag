@@ -1,0 +1,88 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/stable-case-selection/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-14",
+  "criteria": {
+    "C1": [
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_keeps_lowest_digests_per_stratum_in_input_order",
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_no_quota_keeps_all_and_bad_quota_raises",
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_identical_keys_keep_the_earlier_combo",
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_matches_rule_for_any_combos"
+    ],
+    "C2": [
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_permuting_input_changes_order_only",
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_other_strata_do_not_affect_a_stratum",
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_one_new_combo_displaces_at_most_one",
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_concrete_reversal_and_growth_example"
+    ],
+    "C3": [
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_builder_keeps_k_per_stratum_across_every_ticker",
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_combos_without_a_case_use_no_quota_and_paraphrases_follow",
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_builder_quota_for_any_k"
+    ],
+    "C4": [
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_template_override_applies_to_that_template_only",
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_template_override_for_any_m"
+    ],
+    "C5": [
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_both_caps_in_one_tier_is_an_error",
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_both_caps_error_for_any_values"
+    ],
+    "C6": [
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_case_ids_with_an_added_ticker_match_the_rule",
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_reordering_corpus_lists_keeps_the_case_set",
+      "test/spec/stable-case-selection/test_stable_case_selection.py::test_adding_a_ticker_leaves_existing_cases_unchanged"
+    ]
+  },
+  "files": {
+    "test/spec/stable-case-selection/test_stable_case_selection.py": "10ec4ca866cf97daca7bfa88be199bfeaddd2af397924e7c93658f795e8a05be"
+  },
+  "id": "stable-case-selection",
+  "interface": [
+    {
+      "file": "src/eval/suites/sql_derived.py",
+      "module": "eval.suites.sql_derived",
+      "qualname": "select_stratified",
+      "signature": "def select_stratified(combos: Sequence[dict], per_stratum: int | None, *, ticker: str | None=None) -> list[dict]"
+    }
+  ],
+  "nodes": [
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_adding_a_ticker_leaves_existing_cases_unchanged",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_both_caps_error_for_any_values",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_both_caps_in_one_tier_is_an_error",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_builder_keeps_k_per_stratum_across_every_ticker",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_builder_quota_for_any_k",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_case_ids_with_an_added_ticker_match_the_rule",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_combos_without_a_case_use_no_quota_and_paraphrases_follow",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_concrete_reversal_and_growth_example",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_identical_keys_keep_the_earlier_combo",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_keeps_lowest_digests_per_stratum_in_input_order",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_matches_rule_for_any_combos",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_no_quota_keeps_all_and_bad_quota_raises",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_one_new_combo_displaces_at_most_one",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_other_strata_do_not_affect_a_stratum",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_permuting_input_changes_order_only",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_reordering_corpus_lists_keeps_the_case_set",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_template_override_applies_to_that_template_only",
+    "test/spec/stable-case-selection/test_stable_case_selection.py::test_template_override_for_any_m"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/stable-case-selection.md",
+    "sha256": "91212431f5570a2499d70397bbbe3c860394117f035a59fa1e1748ee980a2b99"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

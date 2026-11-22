@@ -1,0 +1,95 @@
+# Check-only surface forms for the paraphrase meaning check (docs/specs/paraphrase-shorthand.md).
+#
+# Read by src/eval/suites/paraphrase_forms.py (load_paraphrase_forms) for the paraphrase export
+# and import CLIs only. The suite build and the renderer never read it, so nothing here changes
+# a frozen suite. Every form must be a true synonym of its lexicon entry: a form that is only
+# close (SG&A vs G&A, "comp" for comprehensive) stays out, so its paraphrase stays in review.
+# A form may not contain a drift phrase (quarter, latest, last year, ...).
+
+# Ratio intents: forms that name both metrics of the pair (numerator first).
+ratios:
+  - metrics: [CurrentAssets, CurrentLiabilities]
+    forms: [current ratio]
+  - metrics: [NetIncome, Revenue]
+    forms: [net margin, net profit margin, net income margin]
+  - metrics: [OperatingIncome, Revenue]
+    forms: [operating margin, op margin, operating profit margin, OPM]
+  - metrics: [GrossProfit, Revenue]
+    forms: [gross margin, gross profit margin]
+  - metrics: [ResearchAndDevelopment, Revenue]
+    forms: [R&D intensity, research and development intensity]
+
+metrics:
+  OperatingIncome: [op profit, income from ops, op inc]
+  NetIncome: [net inc]
+  CurrentLiabilities: [current liabs, total current liabs, liabs current]
+  PretaxIncome: [pre-tax income, pretax profit, income before tax, income before taxes]
+  TaxExpense: [income tax provision, income tax provisions]
+  ResearchAndDevelopment: [research and development, R&D spending]
+  SellingAndMarketing: [sales and marketing, sales & marketing, selling and marketing]
+  GeneralAndAdministrative: [general and admin, general and admin expenses]
+  OtherNonOperatingIncome: [non-op income, other non-op income, other nonop income,
+                            other nonoperating income, other income and expense,
+                            other income or expense, other non-operating income or expense,
+                            other non-operating income and expense]
+  EarningsPerShareDiluted: [earnings per share]
+  WeightedAverageSharesBasic: [basic weighted average shares, basic weighted avg shares,
+                               basic shares, basic weighted shares,
+                               basic weighted average share count,
+                               weighted avg shares outstanding basic,
+                               weighted avg number of shares outstanding basic,
+                               weighted average shares outstanding basic]
+  WeightedAverageSharesDiluted: [diluted weighted average shares, diluted weighted avg shares,
+                                 diluted shares, diluted weighted shares,
+                                 diluted weighted average share count,
+                                 weighted avg shares outstanding diluted,
+                                 weighted avg number of shares outstanding diluted,
+                                 weighted average shares outstanding diluted]
+  DividendsPerShare: [dividends per share, declared dividends per share]
+  NetIncomeToCommon: [net income to common, net income available to common]
+  ShortTermInvestments: [ST investments, ST marketable securities,
+                         short-term marketable securities]
+  DeferredRevenue: [deferred rev, unearned rev, contract liability, contract liabs]
+  CashFromOperations: [net cash provided by operating activities, cash flow from operations]
+  CashFromInvesting: [net cash provided by investing activities,
+                      net cash used in investing activities]
+  CashFromFinancing: [net cash provided by financing activities,
+                      net cash provided by or used in financing activities,
+                      financing cash flows, fin cash flow]
+  Capex: [cap ex, capital expenditure, PP&E purchases, PPE purchases, PP&E additions,
+          PPE additions, property and equipment purchases]
+  ShareBasedCompensation: [stock-based comp, stock compensation, stock-based expense,
+                           share-based compensation]
+  StockRepurchases: [share buybacks, repurchase of common stock, repurchases of common stock,
+                     repurchasing common stock]
+  DividendsPaid: [dividend payments, divs paid, cash dividends]
+  # Debt is total debt (every borrowing line, docs/specs/key-definitions.md), so no Debt form
+  # names long-term. DebtIssued is debt issued of any term (D3, 2026-11-11), so its forms name
+  # debt or borrowings and no term. DebtRepaid stays long-term debt only (lexicon label), so each
+  # of its forms names long-term (or LT): "debt paydowns" is broader and stays in review.
+  Debt: [total borrowings]
+  DebtIssued: [debt issuance, debt issuance proceeds, proceeds from debt, debt proceeds,
+               proceeds from issuing debt, new debt issued, borrowings raised, new borrowings]
+  DebtRepaid: [LT debt repayments, long-term debt paydowns, LT debt paydowns, long-term debt repaid,
+               repayment of long-term debt, repayments of long-term debt,
+               long-term borrowings repayments, LT borrowings repayments]
+  CashAndEquivalents: [cash & equivalents, cash & cash equivalents]
+
+universes:
+  covered: [covered companies, covered cos, covered names, companies we cover, ones we cover,
+            our coverage universe, coverage universe, companies we're covering]
+  semiconductors: [semis, semi, semi cos, semiconductor company, semiconductor companies,
+                   semiconductor cos, semiconductor names,
+                   chip makers, chip companies]
+  retailers: [retailers, retailer, retail names, retail peers]
+
+companies:
+  GOOGL: [Google]
+  TSM: [Taiwan Semiconductor]
+  PG: [P&G]
+  LLY: [Lilly]
+  KO: [CocaCola]
+  UPS: [United Parcel Service]
+
+# Forms whose dropped-apostrophe plural is an ordinary word: "costs" is not Costco's.
+possessive_exempt: [COST]

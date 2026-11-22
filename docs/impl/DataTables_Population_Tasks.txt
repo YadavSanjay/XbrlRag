@@ -1,0 +1,30 @@
+
+accession
+	- filing_accession_number
+fact
+	- tuple_fact_id
+	- precision_value
+relationship
+	- calculation_weight
+	- preferred_label_role_uri_id
+=================================
+arelleCmdLine --plugins "xbrlDB" --store-to-XBRL-DB "localhost,5432,postgres,postgres,xbrl_db,20" --validate -f "<repo>\data\storage\sec_edgar\NVDA\2026\10-K\nvda-20260125_htm"
+
+Level0
+	- filing_registry			::
+			-- update accession_no in accession table post arelle ingestion
+	- fiscal_calendar			::
+	- geography_normalization	::
+	- concept_mapping			::
+			-- override filer specific rank/override post arelle ingestion.
+
+	- concept_labels 			:: populate after ingest -- needs xbrl model memory instance
+	- dimension_catalog			:: populate after ingest + (update member_label) needs xbrl model memory instance
+	- entity_master  			:: SQL script - run after ingest (post accession update)
+---------------------------------------	
+	- fact_dom_position 		:: 
+	- section_assignment		:: 
+	- chunk_cross_links			:: 
+	- chunk_metadata 			:: 
+	
+

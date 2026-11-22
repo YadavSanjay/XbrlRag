@@ -1,0 +1,82 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/annual-amendment-handling/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-14",
+  "criteria": {
+    "C1": [
+      "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_original_and_later_amendment_are_both_chosen",
+      "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_latest_of_each_kind_and_string_dates",
+      "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_choice_matches_rule_for_any_candidates"
+    ],
+    "C2": [
+      "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_primary_statements_definition",
+      "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_primary_statements_rule_and_monotonicity"
+    ],
+    "C3": [
+      "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_part_iii_amendment_does_not_replace_the_10k",
+      "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_full_restatement_replaces_and_lone_amendment_stays",
+      "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_supersession_rule_for_any_group",
+      "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_partial_amendment_never_moves_the_canonical"
+    ],
+    "C4": [
+      "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_canonical_filing_without_statements_is_held_back",
+      "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_only_canonical_without_statements_changes_the_decision"
+    ]
+  },
+  "files": {
+    "test/spec/annual-amendment-handling/test_annual_amendment_handling.py": "82bd80262eb816b12fe671ef89c178d0fefb10afdf9362dd0b7e5f7fbb268b3d"
+  },
+  "id": "annual-amendment-handling",
+  "interface": [
+    {
+      "file": "src/ingest/sec_edgar/downloader/sec_filing_downloader.py",
+      "module": "ingest.sec_edgar.downloader.sec_filing_downloader",
+      "qualname": "choose_filings",
+      "signature": "def choose_filings(candidates: Sequence[Any]) -> list[Any]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/ingest/layer0_populator.py",
+      "module": "ingest.sec_edgar.ingest.layer0_populator",
+      "qualname": "has_primary_statements",
+      "signature": "def has_primary_statements(concept_families: collections.abc.Iterable[str | None]) -> bool"
+    },
+    {
+      "file": "src/ingest/sec_edgar/ingest/layer0_populator.py",
+      "module": "ingest.sec_edgar.ingest.layer0_populator",
+      "qualname": "resolve_supersession",
+      "signature": "def resolve_supersession(group: collections.abc.Sequence[ManifestRecord], full_statement: collections.abc.Mapping[str, bool]) -> dict[str, str | None]"
+    }
+  ],
+  "nodes": [
+    "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_canonical_filing_without_statements_is_held_back",
+    "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_choice_matches_rule_for_any_candidates",
+    "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_full_restatement_replaces_and_lone_amendment_stays",
+    "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_latest_of_each_kind_and_string_dates",
+    "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_only_canonical_without_statements_changes_the_decision",
+    "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_original_and_later_amendment_are_both_chosen",
+    "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_part_iii_amendment_does_not_replace_the_10k",
+    "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_partial_amendment_never_moves_the_canonical",
+    "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_primary_statements_definition",
+    "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_primary_statements_rule_and_monotonicity",
+    "test/spec/annual-amendment-handling/test_annual_amendment_handling.py::test_supersession_rule_for_any_group"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/annual-amendment-handling.md",
+    "sha256": "f39026fe82d14f6ea3822b541cbb8d0805f8444a620a6712ede412f5a722f01c"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

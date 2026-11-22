@@ -1,0 +1,6 @@
+KNOWN_TICKERS (sample of filers covered by this system — use these to help resolve
+aliases like "Google" -> Alphabet, but do not limit company_mentions to only these):
+{known_tickers}
+
+USER_QUERY:
+{user_query}

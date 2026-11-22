@@ -1,0 +1,76 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/per-process-log-file/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-15",
+  "criteria": {
+    "C1": [
+      "test/spec/per-process-log-file/test_per_process_log_file.py::test_process_name_point_cases",
+      "test/spec/per-process-log-file/test_per_process_log_file.py::test_process_name_matches_the_rule"
+    ],
+    "C2": [
+      "test/spec/per-process-log-file/test_per_process_log_file.py::test_expand_point_cases",
+      "test/spec/per-process-log-file/test_per_process_log_file.py::test_expand_substitutes_both_placeholders"
+    ],
+    "C3": [
+      "test/spec/per-process-log-file/test_per_process_log_file.py::test_stale_point_case",
+      "test/spec/per-process-log-file/test_per_process_log_file.py::test_stale_matches_the_rule"
+    ],
+    "C4": [
+      "test/spec/per-process-log-file/test_per_process_log_file.py::test_properties",
+      "test/spec/per-process-log-file/test_per_process_log_file.py::test_properties_point_case"
+    ]
+  },
+  "files": {
+    "test/spec/per-process-log-file/test_per_process_log_file.py": "5ef34523e2744659d2a4853a8ee4e1c15c39246faabbe15c2af47f92940a530c"
+  },
+  "id": "per-process-log-file",
+  "interface": [
+    {
+      "file": "src/logging_config.py",
+      "module": "logging_config",
+      "qualname": "process_name",
+      "signature": "def process_name(argv: Sequence[str]) -> str"
+    },
+    {
+      "file": "src/logging_config.py",
+      "module": "logging_config",
+      "qualname": "expand_log_filename",
+      "signature": "def expand_log_filename(template: str, root: Path, process: str, pid: int) -> Path"
+    },
+    {
+      "file": "src/logging_config.py",
+      "module": "logging_config",
+      "qualname": "stale_log_files",
+      "signature": "def stale_log_files(entries: Iterable[tuple[Path, float]], now: float, max_age_seconds: float, pattern: str) -> list[Path]"
+    }
+  ],
+  "nodes": [
+    "test/spec/per-process-log-file/test_per_process_log_file.py::test_expand_point_cases",
+    "test/spec/per-process-log-file/test_per_process_log_file.py::test_expand_substitutes_both_placeholders",
+    "test/spec/per-process-log-file/test_per_process_log_file.py::test_process_name_matches_the_rule",
+    "test/spec/per-process-log-file/test_per_process_log_file.py::test_process_name_point_cases",
+    "test/spec/per-process-log-file/test_per_process_log_file.py::test_properties",
+    "test/spec/per-process-log-file/test_per_process_log_file.py::test_properties_point_case",
+    "test/spec/per-process-log-file/test_per_process_log_file.py::test_stale_matches_the_rule",
+    "test/spec/per-process-log-file/test_per_process_log_file.py::test_stale_point_case"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/per-process-log-file.md",
+    "sha256": "72c65923fbe3bef479d41e90091c65dc58d72c4ccb5d396af82391472ad39d8b"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

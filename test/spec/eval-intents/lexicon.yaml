@@ -1,0 +1,33 @@
+# Synthetic lexicon for the eval-intents spec tests (docs/specs/eval-intents.md).
+# The period ends are public 10-K cover-page dates, used only as rendering inputs.
+companies:
+  AAPL: {short: Apple, legal: Apple Inc.}
+  msft: {short: Microsoft, legal: Microsoft Corporation}
+  NVDA: {short: Nvidia, legal: NVIDIA Corporation}
+metrics:
+  revenue:
+    label: Revenues
+    synonyms: [net sales, total revenue]
+    shorthand: [top line]
+  operating_income:
+    label: Operating Income (Loss)
+    synonyms: [operating profit]
+    shorthand: [EBIT, op income]
+  gross_profit:
+    label: Gross Profit
+    synonyms: [gross margin dollars]
+  rd_expense:
+    label: Research and Development Expense
+dimensions:
+  data_center: [Data Center segment, data center business]
+  segment: [business segment]
+universes:
+  big_tech: [big tech, the large technology companies]
+  covered: [the covered companies]
+period_ends:
+  AAPL:
+    2022: "2022-09-24"
+    2023: "2023-09-30"
+    2024: "2024-09-28"
+  MSFT:
+    2024: "2024-06-30"

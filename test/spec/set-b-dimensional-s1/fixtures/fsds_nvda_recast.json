@@ -1,0 +1,813 @@
+{
+ "note": "FSDS sub and num rows (Revenues, annual durations qtrs 4, USD, no co-registrant, ddate 20240131 and 20250131) of NVIDIA's FY2024-FY2026 10-Ks, segments kept; field values byte-for-byte from the quarter archives below.",
+ "num": [
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "60922000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "BusinessSegments=ComputeAndNetworking;ConsolidationItems=OperatingSegments;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "47405000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "BusinessSegments=Graphics;ConsolidationItems=OperatingSegments;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "13517000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ConsolidationItems=CorporateNonSegment;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "0.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "Geographical=ChinaIncludingHongKong;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "10306000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "Geographical=OtherCountries;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "10245000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "Geographical=TW;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "13405000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "Geographical=US;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "26966000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Automotive;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "1091000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=DataCenter;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "47525000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Gaming;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "10447000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=OEMAndOther;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "306000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=ProfessionalVisualization;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "1553000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "60922000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "BusinessSegments=ComputeAndNetworkingSegment;ConsolidationItems=OperatingSegments;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "47405000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "BusinessSegments=GraphicsSegment;ConsolidationItems=OperatingSegments;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "13517000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ConsolidationItems=CorporateNonSegment;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "0.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "Geographical=ChinaIncludingHongKong;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "10306000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "Geographical=OtherCountries;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "3414000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "Geographical=SG;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "6831000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "Geographical=TW;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "13405000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "Geographical=US;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "26966000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Automotive;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "1091000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Compute;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "38950000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=DataCenter;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "47525000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Gaming;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "10447000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Networking;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "8575000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=OEMAndOther;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "306000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=ProfessionalVisualization;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "1553000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "130497000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "BusinessSegments=ComputeAndNetworkingSegment;ConsolidationItems=OperatingSegments;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "116193000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "BusinessSegments=GraphicsSegment;ConsolidationItems=OperatingSegments;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "14304000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "ConsolidationItems=CorporateNonSegment;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "0.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "Geographical=ChinaIncludingHongKong;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "17108000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "Geographical=OtherCountries;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "7875000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "Geographical=SG;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "23684000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "Geographical=TW;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "20573000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "Geographical=US;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "61257000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Automotive;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "1694000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Compute;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "102196000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "ProductOrService=DataCenter;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "115186000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Gaming;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "11350000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Networking;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "12990000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "ProductOrService=OEMAndOther;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "389000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "ProductOrService=ProfessionalVisualization;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "1878000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "60922000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "BusinessSegments=ComputeAndNetworkingSegment;ConsolidationItems=OperatingSegments;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "47405000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "BusinessSegments=GraphicsSegment;ConsolidationItems=OperatingSegments;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "13517000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ConsolidationItems=OperatingSegments;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "60922000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "Geographical=ChinaIncludingHongKong;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "12330000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "Geographical=OtherCountries;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "2147000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "Geographical=TW;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "14912000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "Geographical=US;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "31533000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Automotive;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "1091000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Compute;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "38950000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=DataCenter;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "47525000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Gaming;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "10447000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Networking;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "8575000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=OEMAndOther;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "306000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "segments": "ProductOrService=ProfessionalVisualization;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "1553000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "130497000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "BusinessSegments=ComputeAndNetworkingSegment;ConsolidationItems=OperatingSegments;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "116193000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "BusinessSegments=GraphicsSegment;ConsolidationItems=OperatingSegments;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "14304000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "ConsolidationItems=OperatingSegments;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "130497000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "Geographical=ChinaIncludingHongKong;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "25048000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "Geographical=OtherCountries;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "4367000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "Geographical=TW;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "23600000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "Geographical=US;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "77482000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Automotive;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "1694000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Compute;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "102196000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "ProductOrService=DataCenter;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "115186000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Gaming;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "11350000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "ProductOrService=Networking;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "12990000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "ProductOrService=OEMAndOther;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "389000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "segments": "ProductOrService=ProfessionalVisualization;",
+   "tag": "Revenues",
+   "uom": "USD",
+   "value": "1878000000.0000",
+   "version": "us-gaap/2025"
+  }
+ ],
+ "sources": {
+  "2024q1": {
+   "bytes": 124336804,
+   "retrieved": "2026-11-07",
+   "sha256": "94c7894b00903f8ff7186c4250ba1c1daa1bde8b3a0b26fae68f72608b2ffc9b",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q1.zip"
+  },
+  "2025q1": {
+   "bytes": 127765057,
+   "retrieved": "2026-11-07",
+   "sha256": "4386e7057cc216b6fc729d8f957998acb831d29be7b16f6d8ed0f6b1ab74eba5",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q1.zip"
+  },
+  "2026q1": {
+   "bytes": 85259424,
+   "retrieved": "2026-11-07",
+   "sha256": "d18c01c615da8f5cd46273b0dacaeee5b1163f4089171da0f84153a5f3c362f6",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q1.zip"
+  }
+ },
+ "sub": [
+  {
+   "adsh": "0001045810-24-000029",
+   "cik": "1045810",
+   "filed": "20240221",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2023",
+   "fye": "0131",
+   "name": "NVIDIA CORP",
+   "period": "20240131",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "cik": "1045810",
+   "filed": "20250226",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2024",
+   "fye": "0131",
+   "name": "NVIDIA CORP",
+   "period": "20250131",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "cik": "1045810",
+   "filed": "20260225",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2026",
+   "fye": "0131",
+   "name": "NVIDIA CORP",
+   "period": "20260131",
+   "prevrpt": "0"
+  }
+ ]
+}

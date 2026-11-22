@@ -1,0 +1,56 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/revenue-equivalent-concepts/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-16",
+  "criteria": {
+    "C1": [
+      "test/spec/revenue-equivalent-concepts/test_revenue_equivalent_concepts.py::test_rank_credit_point_cases",
+      "test/spec/revenue-equivalent-concepts/test_revenue_equivalent_concepts.py::test_rank_credit_matches_rule",
+      "test/spec/revenue-equivalent-concepts/test_revenue_equivalent_concepts.py::test_namespace_prefix_does_not_matter"
+    ],
+    "C2": [
+      "test/spec/revenue-equivalent-concepts/test_revenue_equivalent_concepts.py::test_alphabet_fy2025_revenue_resolves",
+      "test/spec/revenue-equivalent-concepts/test_revenue_equivalent_concepts.py::test_deferred_revenue_current_portion_stays_ambiguous",
+      "test/spec/revenue-equivalent-concepts/test_revenue_equivalent_concepts.py::test_either_equivalent_concept_gives_the_same_result"
+    ]
+  },
+  "files": {
+    "test/spec/revenue-equivalent-concepts/test_revenue_equivalent_concepts.py": "71f1966cbec5512ed4b40d83c358fd1d10af9f90651f63732ce809f6e908b228"
+  },
+  "id": "revenue-equivalent-concepts",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_lookup.py",
+      "module": "retriever.xbrl.xbrl_factstore_lookup",
+      "qualname": "rank_credit",
+      "signature": "def rank_credit(concept_family: str, concept: str, rank: int | None) -> bool"
+    }
+  ],
+  "nodes": [
+    "test/spec/revenue-equivalent-concepts/test_revenue_equivalent_concepts.py::test_alphabet_fy2025_revenue_resolves",
+    "test/spec/revenue-equivalent-concepts/test_revenue_equivalent_concepts.py::test_deferred_revenue_current_portion_stays_ambiguous",
+    "test/spec/revenue-equivalent-concepts/test_revenue_equivalent_concepts.py::test_either_equivalent_concept_gives_the_same_result",
+    "test/spec/revenue-equivalent-concepts/test_revenue_equivalent_concepts.py::test_namespace_prefix_does_not_matter",
+    "test/spec/revenue-equivalent-concepts/test_revenue_equivalent_concepts.py::test_rank_credit_matches_rule",
+    "test/spec/revenue-equivalent-concepts/test_revenue_equivalent_concepts.py::test_rank_credit_point_cases"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/revenue-equivalent-concepts.md",
+    "sha256": "6482df0df54671d89c5e1750aca303df1860e2c2de4a4d8cfe166d0a18c12252"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

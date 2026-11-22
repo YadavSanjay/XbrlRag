@@ -1,0 +1,11 @@
+tag	version	custom	abstract	datatype	iord	crdr	tlabel	doc
+Assets	us-gaap/2024	0	0	monetary	I		Assets	
+Revenues	us-gaap/2024	0	0	monetary	I		Revenues	
+NetIncomeLoss	us-gaap/2024	0	0	monetary	I		NetIncomeLoss	
+ProfitLoss	us-gaap/2024	0	0	monetary	I		ProfitLoss	
+RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	0	0	monetary	I		RevenueFromContractWithCustomerExcludingAssessedTax	
+ProductRevenue	0000000002-24-000002	1	0	monetary	D	credit	Product revenue	
+ServiceRevenue	0000000002-24-000002	1	0	monetary	D	credit	Service revenue	
+NetIncomeCustom	0000000003-24-000003	1	0	monetary	D	credit	Net income	
+Assets	0000000004-24-000004	1	0	monetary	I	debit	Assets	
+RevenueCustom	0000000004-24-000004	1	0	monetary	D	credit	Revenue	

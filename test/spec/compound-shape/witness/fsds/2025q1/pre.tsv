@@ -1,0 +1,26 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0000800001-24-000001	2	1	IS	0	H	Revenues	us-gaap/2024	Revenues	0
+0000800001-24-000001	2	2	IS	0	H	OperatingIncomeLoss	us-gaap/2024	Operating income	0
+0000800001-24-000001	2	3	IS	0	H	NetIncomeLoss	us-gaap/2024	Net income	0
+0000800001-25-000002	2	1	IS	0	H	Revenues	us-gaap/2024	Revenues	0
+0000800001-25-000002	2	2	IS	0	H	OperatingIncomeLoss	us-gaap/2024	Operating income	0
+0000800001-25-000002	2	3	IS	0	H	NetIncomeLoss	us-gaap/2024	Net income	0
+0000800001-25-000003	2	1	IS	0	H	Revenues	us-gaap/2024	Revenues	0
+0000800001-25-000003	2	2	IS	0	H	OperatingIncomeLoss	us-gaap/2024	Operating income	0
+0000800001-25-000003	2	3	IS	0	H	NetIncomeLoss	us-gaap/2024	Net income	0
+0000800002-24-000001	2	1	IS	0	H	Revenues	us-gaap/2024	Revenues	0
+0000800002-24-000001	2	2	IS	0	H	OperatingIncomeLoss	us-gaap/2024	Operating income	0
+0000800002-25-000002	2	1	IS	0	H	Revenues	us-gaap/2024	Revenues	0
+0000800002-25-000002	2	2	IS	0	H	OperatingIncomeLoss	us-gaap/2024	Operating income	0
+0000800003-24-000001	2	1	IS	0	H	Revenues	us-gaap/2024	Revenues	0
+0000800003-24-000001	2	2	IS	0	H	OperatingIncomeLoss	us-gaap/2024	Operating income	0
+0000800003-24-000001	2	3	IS	0	H	NetIncomeLoss	us-gaap/2024	Net income	0
+0000800003-25-000002	2	1	IS	0	H	Revenues	us-gaap/2024	Revenues	0
+0000800003-25-000002	2	2	IS	0	H	OperatingIncomeLoss	us-gaap/2024	Operating income	0
+0000800003-25-000002	2	3	IS	0	H	NetIncomeLoss	us-gaap/2024	Net income	0
+0000800004-24-000001	2	1	IS	0	H	Revenues	us-gaap/2024	Revenues	0
+0000800004-24-000001	2	2	IS	0	H	OperatingIncomeLoss	us-gaap/2024	Operating income	0
+0000800004-24-000001	2	3	IS	0	H	NetIncomeLoss	us-gaap/2024	Net income	0
+0000800004-25-000002	2	1	IS	0	H	Revenues	us-gaap/2024	Revenues	0
+0000800004-25-000002	2	2	IS	0	H	OperatingIncomeLoss	us-gaap/2024	Operating income	0
+0000800004-25-000002	2	3	IS	0	H	NetIncomeLoss	us-gaap/2024	Net income	0

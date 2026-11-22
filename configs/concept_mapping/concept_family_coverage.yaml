@@ -1,0 +1,374 @@
+# Roles, stated substitutions, IFRS rows and cik-scoped members of the concept families
+# (docs/specs/concept-family-coverage.md, ifrs-family-meaning.md; decisions D1-D50 of
+# docs/design/XbrlRag_Concept_Decisions.md, agreed by the maintainer 2026-11-07 and 2026-11-08).
+#
+# src/ingest/util/generate_concept_mapping.py reads this file after the declared families
+# and concept_family_overrides.yaml (load_family_coverage / apply_family_coverage), and
+# src/retriever/xbrl/family_resolution.family_member reads the same rows, so the CSV the
+# reload loads and the executable reading of the mapping cannot drift apart.
+#
+# - substitutions: code -> the exact note an answer states (spec R1).
+# - substitutes:   family -> {QName: code, or {code, note} where a code states another note}.
+#                  Each QName is already a component of the family
+#                  (rank 50-99); only its role changes, to `substitute`. An `ifrs-full:`
+#                  QName that is no member of the family joins it as a substitute only,
+#                  at the family's next component-band rank (source `ifrs`).
+# - parts:         family -> the families whose sum it is, when a filer reports the
+#                  parts and no total. The lookup does not add them: it refuses and
+#                  names each part's value and fact, for an audited compute step.
+# - fallback:      family -> primaries that answer only where the filer presents no
+#                  higher-ranked primary; the facts-count pass never ranks one first.
+# - ifrs:          family -> IFRS QNames, ranked from 100 in the order listed (the rows
+#                  loaded as source `ifrs`, committed here so the mapping is reproducible).
+# - filers:        cik-scoped members. `concept` is a standard QName or `ext:<LocalName>`
+#                  (a filer extension, matched under any namespace URI of that filer).
+#                  role `primary` takes `position`: `first` (rank 1, the filer's other
+#                  primaries shift down), `last` (after the filer's last primary below 50)
+#                  or `after: <QName>`; role `substitute` takes `substitution` and ranks
+#                  after the filer's last component-band row.
+#
+# Extensions not listed here may still enter the mapping: the reload's extension classifier
+# (docs/specs/extension-classification.md R7; `--extension-classifications`) writes cik-scoped
+# `ext:` rows with source `extension_classifier` when the filer's own statements prove the
+# family (an identity of its calculation trees, or an equal-valued same-label standard line).
+# An entry here always wins over it, and the reload report lists where the two agree or
+# disagree. They are not committed: re-run the step after any change to this file.
+version: 1
+
+substitutions:
+  depreciation_only: "Depreciation only; amortization is not included."
+  depreciation_and_impairment_only: >-
+    Depreciation and impairment of property and equipment only; amortization is not
+    included.
+  includes_impairment: "Depreciation and amortization including impairment charges."
+  includes_accretion: "Depreciation and amortization including accretion."
+  includes_cost_of_revenue: "Total costs and expenses, including cost of revenue."
+  excludes_current_portion: "Long-term debt excluding the current portion."
+  cover_page_count: >-
+    Shares outstanding on the cover-page date of the annual report, not at the
+    balance-sheet date.
+  one_of_several_lines: "One of several gross debt lines; the filer reports no total."
+  includes_investment_gains: >-
+    Net investment income, which can include gains and losses besides interest.
+  includes_impairment_or_other: >-
+    Restructuring combined with impairment or other charges on one line.
+  continuing_operations_only: >-
+    Continuing operations only; cash flows of discontinued operations are reported
+    separately.
+  includes_accrued_liabilities: "Accounts payable together with accrued and other liabilities."
+  includes_goodwill: "Intangible assets including goodwill."
+  includes_noncontrolling_interests: >-
+    Total including non-controlling interests; the amount attributable to owners of the
+    parent is not reported.
+  finance_income: >-
+    Finance income, which can include dividends and other financing income besides
+    interest.
+
+substitutes:
+  DepreciationAndAmortization:          # D2, D3, D6
+    us-gaap:Depreciation: depreciation_only
+    ifrs-full:DepreciationExpense: depreciation_only
+    us-gaap:DepreciationAmortizationAndAccretionNet: includes_accretion
+  OperatingExpenses:                    # D9
+    us-gaap:CostsAndExpenses: includes_cost_of_revenue
+  Debt:                                 # D11
+    us-gaap:LongTermDebtNoncurrent: excludes_current_portion
+    us-gaap:LongTermDebtAndCapitalLeaseObligations:
+      code: excludes_current_portion
+      note: "Long-term debt and lease obligations excluding the current portion."
+  SharesOutstanding:                    # D16
+    dei:EntityCommonStockSharesOutstanding: cover_page_count
+  DebtRepaid:                           # D21
+    ifrs-full:RepaymentsOfBondsNotesAndDebentures: one_of_several_lines
+    ifrs-full:RepaymentsOfNoncurrentBorrowings: one_of_several_lines
+    us-gaap:RepaymentsOfLinesOfCredit: one_of_several_lines
+  DebtIssued:                           # D21
+    ifrs-full:ProceedsFromIssueOfBondsNotesAndDebentures: one_of_several_lines
+  InterestIncome:                       # D25, D46
+    us-gaap:InvestmentIncomeNet: includes_investment_gains
+    ifrs-full:FinanceIncome: finance_income
+  NetIncome:                            # D48
+    ifrs-full:ProfitLoss: includes_noncontrolling_interests
+  StockholdersEquity:                   # D48
+    ifrs-full:Equity: includes_noncontrolling_interests
+  ComprehensiveIncome:                  # D48
+    ifrs-full:ComprehensiveIncome: includes_noncontrolling_interests
+  RestructuringCharges:                 # D26
+    us-gaap:RestructuringSettlementAndImpairmentProvisions: includes_impairment_or_other
+    us-gaap:RestructuringCostsAndAssetImpairmentCharges: includes_impairment_or_other
+  CashFromOperations:                   # D31
+    us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations: continuing_operations_only
+  CashFromInvesting:
+    us-gaap:NetCashProvidedByUsedInInvestingActivitiesContinuingOperations: continuing_operations_only
+  CashFromFinancing:
+    us-gaap:NetCashProvidedByUsedInFinancingActivitiesContinuingOperations: continuing_operations_only
+  AccountsPayable:                      # D33
+    us-gaap:AccountsPayableAndOtherAccruedLiabilitiesCurrent: includes_accrued_liabilities
+  IntangibleAssets:                     # D35
+    ifrs-full:IntangibleAssetsAndGoodwill: includes_goodwill
+
+# Primaries ranked 2+ that are the family's own measure, so a lookup answering with
+# one earns the preferred-concept credit (spec Notes, "Test rows and ranks"). Rank 1
+# and every cik-scoped primary below are the measure by
+# definition. Not listed, and so never credited at rank 2+: near-miss primaries such
+# as a current or noncurrent part (DeferredRevenue) or a total including
+# noncontrolling interests (NetIncome's ProfitLoss), as revenue-equivalent-concepts
+# decided.
+same_measure:
+  InterestExpense:                      # D1
+    - us-gaap:InterestExpenseNonoperating
+    - us-gaap:InterestAndDebtExpense
+    - us-gaap:InterestExpenseDebt
+  OtherNonOperatingIncome:              # D13 (the presented line decides), D14
+    - us-gaap:NonoperatingIncomeExpense
+    - us-gaap:InterestAndOtherIncome
+  DebtIssued:                           # D17, D20, D22
+    - us-gaap:ProceedsFromIssuanceOfDebt
+    - us-gaap:ProceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet
+    - us-gaap:ProceedsFromDebtMaturingInMoreThanThreeMonths
+    - us-gaap:ProceedsFromIssuanceOfMediumTermNotes
+    - us-gaap:ProceedsFromIssuanceOfSeniorLongTermDebt    # screen-candidate-order R2
+    - us-gaap:ProceedsFromShortTermDebt                   # screen-candidate-order R2 (D3)
+  DebtRepaid:                           # D18, D19, D20, D22
+    - us-gaap:RepaymentsOfLongTermDebtAndCapitalSecurities
+    - us-gaap:RepaymentsOfOtherLongTermDebt
+    - us-gaap:RepaymentsOfDebtAndCapitalLeaseObligations
+    - us-gaap:RepaymentsOfConvertibleDebt
+    - us-gaap:RepaymentsOfDebtMaturingInMoreThanThreeMonths
+    - us-gaap:RepaymentsOfAssumedDebt
+  InterestIncome:                       # D24, D34
+    - us-gaap:InvestmentIncomeInterestAndDividend
+    - ifrs-full:RevenueFromInterest
+  IncomeFromDiscontinuedOperations:     # D29
+    - us-gaap:IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntity
+  SellingAndMarketing:                  # D32, D47
+    - us-gaap:MarketingExpense
+    - ifrs-full:SalesAndMarketingExpense
+  NetIncome: [ifrs-full:ProfitLossAttributableToOwnersOfParent]                  # D48
+  StockholdersEquity: [ifrs-full:EquityAttributableToOwnersOfParent]             # D48
+  ComprehensiveIncome: [ifrs-full:ComprehensiveIncomeAttributableToOwnersOfParent]  # D48
+  OperatingExpenses: [ifrs-full:OperatingExpenseExcludingCostOfSales]            # D49
+  EarningsPerShareBasic: [ifrs-full:BasicEarningsLossPerShare]                    # D50
+  EarningsPerShareDiluted: [ifrs-full:DilutedEarningsLossPerShare]                # D50
+  ShortTermInvestments:                 # D39; the declared alternatives are the same measure
+    - us-gaap:AvailableForSaleSecuritiesCurrent
+    - us-gaap:MarketableSecuritiesCurrent
+    - us-gaap:OtherShortTermInvestments
+    - us-gaap:HeldToMaturitySecuritiesCurrent
+    - us-gaap:AvailableForSaleSecuritiesDebtSecuritiesCurrent   # screen-candidate-order R2
+  # screen-candidate-order R2: the presented lines of filers with no plain line.
+  PropertyPlantAndEquipment:
+    - us-gaap:PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization
+  CashAndEquivalents: [us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents]
+  Debt:                               # decided 2026-11-07 (C8); IFRS total D51
+    - us-gaap:DebtLongtermAndShorttermCombinedAmount
+    - ifrs-full:Borrowings
+  ShareBasedCompensation: [ifrs-full:AdjustmentsForSharebasedPayments]          # D34
+  AccountsReceivable: [ifrs-full:CurrentTradeReceivables]                        # D34
+  GeneralAndAdministrative: [ifrs-full:GeneralAndAdministrativeExpense]          # D34
+  AccountsPayable:                      # the trade line (concept-key-integrity C2); D34
+    - us-gaap:AccountsPayableTradeCurrent
+    - ifrs-full:TradeAndOtherCurrentPayablesToTradeSuppliers
+  Revenue: [ifrs-full:Revenue, ifrs-full:RevenueFromContractsWithCustomers]      # IFRS total; D34
+  # Declared alternatives that are the same total (the controls of the spec's tests):
+  CostOfRevenue: [us-gaap:CostOfGoodsAndServicesSold]       # goods and services; not goods-only
+  Capex: [us-gaap:PaymentsToAcquireProductiveAssets]        # NVIDIA's capex line (FY2024)
+
+# Fallback-only primaries (docs/specs/screen-candidate-order.md R3): they answer only where
+# the filer presents no higher-ranked primary. The reload's facts-count pass
+# (layer0_populator.facts_count_ranking) never makes one a filer's rank 1, even when it is
+# the QName the filer reports in the most fiscal years (both are on most filers' cash-flow
+# statements every year); it keeps its global rank. Each must be a primary of its family.
+fallback:
+  DebtIssued: [us-gaap:ProceedsFromShortTermDebt]
+  CashAndEquivalents: [us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents]
+
+# A family that is the sum of other families (D45): asked of a filer that reports the
+# parts and no total, the lookup refuses and names the parts.
+parts:
+  SellingGeneralAndAdministrative: [SellingAndMarketing, GeneralAndAdministrative]
+
+# The `ifrs` rows of concept_mapping as loaded on 2026-11-07 (read-only), plus D34's six
+# same-measure elements, each after its family's existing IFRS rows; D45-D49 changed
+# the rows of NetIncome, StockholdersEquity, ComprehensiveIncome, InterestIncome,
+# OperatingExpenses, SellingGeneralAndAdministrative and SellingAndMarketing.
+ifrs:
+  AccountsPayable:
+    - ifrs-full:TradeAndOtherCurrentPayables
+    - ifrs-full:TradeAndOtherCurrentPayablesToTradeSuppliers          # D34
+  AccountsReceivable:
+    - ifrs-full:TradeAndOtherCurrentReceivables
+    - ifrs-full:CurrentTradeReceivables                                # D34
+  # D52 (2026-11-11): ifrs-full:AcquisitionOfPropertyPlantAndEquipment dropped; it is
+  # declared in no IFRS taxonomy 2022-2025, so the row matched no fact.
+  Capex: [ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities]
+  CashAndEquivalents: [ifrs-full:CashAndCashEquivalents]
+  CashFromFinancing: [ifrs-full:CashFlowsFromUsedInFinancingActivities]
+  CashFromInvesting: [ifrs-full:CashFlowsFromUsedInInvestingActivities]
+  CashFromOperations: [ifrs-full:CashFlowsFromUsedInOperatingActivities]
+  ComprehensiveIncome: [ifrs-full:ComprehensiveIncomeAttributableToOwnersOfParent]  # D48
+  CostOfRevenue: [ifrs-full:CostOfSales]
+  CurrentAssets: [ifrs-full:CurrentAssets]
+  CurrentLiabilities: [ifrs-full:CurrentLiabilities]
+  # D51 (2026-11-11): the IFRS taxonomy's borrowing elements by definition, the list of
+  # docs/specs/debt-ifrs-elements.md (it replaced ifrs-full:NoncurrentBorrowings, declared
+  # in no IFRS taxonomy 2022-2025). Borrowings, the total, is the measure; the others are
+  # parts, ranked after it (non-current before current, each type's total before its
+  # parts) and never same_measure. Debt answers its S4 defined measure, the presented sum
+  # of these lines, so a part ranks only the filing and column; never a substitute here,
+  # since the statement-line rule lists them in `elements`.
+  Debt:
+    - ifrs-full:Borrowings
+    - ifrs-full:LongtermBorrowings
+    - ifrs-full:CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings
+    - ifrs-full:CurrentPortionOfLongtermBorrowings
+    - ifrs-full:ShorttermBorrowings
+    - ifrs-full:DebtSecurities
+    - ifrs-full:NoncurrentDebtInstrumentsIssued
+    - ifrs-full:CurrentDebtInstrumentsIssued
+    - ifrs-full:BondsIssued
+    - ifrs-full:NoncurrentPortionOfNoncurrentBondsIssued
+    - ifrs-full:CurrentBondsIssuedAndCurrentPortionOfNoncurrentBondsIssued
+    - ifrs-full:NotesAndDebenturesIssued
+    - ifrs-full:NoncurrentPortionOfNoncurrentNotesAndDebenturesIssued
+    - ifrs-full:CurrentNotesAndDebenturesIssuedAndCurrentPortionOfNoncurrentNotesAndDebenturesIssued
+    - ifrs-full:CommercialPapersIssued
+    - ifrs-full:NoncurrentPortionOfNoncurrentCommercialPapersIssued
+    - ifrs-full:CurrentCommercialPapersIssuedAndCurrentPortionOfNoncurrentCommercialPapersIssued
+    - ifrs-full:LoansReceived
+    - ifrs-full:NoncurrentPortionOfNoncurrentLoansReceived
+    - ifrs-full:CurrentLoansReceivedAndCurrentPortionOfNoncurrentLoansReceived
+    - ifrs-full:SecuredBankLoansReceived
+    - ifrs-full:NoncurrentPortionOfNoncurrentSecuredBankLoansReceived
+    - ifrs-full:CurrentSecuredBankLoansReceivedAndCurrentPortionOfNoncurrentSecuredBankLoansReceived
+    - ifrs-full:UnsecuredBankLoansReceived
+    - ifrs-full:NoncurrentPortionOfNoncurrentUnsecuredBankLoansReceived
+    - ifrs-full:CurrentUnsecuredBankLoansReceivedAndCurrentPortionOfNoncurrentUnsecuredBankLoansReceived
+    - ifrs-full:OtherBorrowings
+    - ifrs-full:NoncurrentPortionOfOtherNoncurrentBorrowings
+    - ifrs-full:OtherCurrentBorrowingsAndCurrentPortionOfOtherNoncurrentBorrowings
+  DebtIssued: [ifrs-full:ProceedsFromBorrowingsClassifiedAsFinancingActivities]
+  DebtRepaid: [ifrs-full:RepaymentsOfBorrowingsClassifiedAsFinancingActivities]
+  DeferredRevenue: [ifrs-full:ContractLiabilities, ifrs-full:CurrentContractLiabilities]
+  DepreciationAndAmortization: [ifrs-full:DepreciationAndAmortisationExpense]
+  DividendsPaid:
+    - ifrs-full:DividendsPaidClassifiedAsFinancingActivities
+    - ifrs-full:DividendsPaidToNoncontrollingInterestsClassifiedAsFinancingActivities
+  EarningsPerShareBasic: [ifrs-full:BasicEarningsLossPerShare]
+  EarningsPerShareDiluted: [ifrs-full:DilutedEarningsLossPerShare]
+  EffectiveTaxRate: [ifrs-full:ApplicableTaxRate]
+  EmployeeCount: [ifrs-full:NumberOfEmployees]
+  GeneralAndAdministrative:
+    - ifrs-full:AdministrativeExpense
+    - ifrs-full:GeneralAndAdministrativeExpense                        # D34
+  Goodwill: [ifrs-full:Goodwill]
+  GrossProfit: [ifrs-full:GrossProfit]
+  IntangibleAssets: [ifrs-full:IntangibleAssetsOtherThanGoodwill]
+  InterestExpense: [ifrs-full:FinanceCosts]
+  InterestIncome: [ifrs-full:RevenueFromInterest]                     # D34; D46
+  Inventory: [ifrs-full:Inventories]
+  NetIncome: [ifrs-full:ProfitLossAttributableToOwnersOfParent]       # D48
+  NetIncomeToCommon: [ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntity]
+  OperatingExpenses:
+    - ifrs-full:OperatingExpense
+    - ifrs-full:OperatingExpenseExcludingCostOfSales                   # D49
+  OperatingIncome: [ifrs-full:ProfitLossFromOperatingActivities]
+  PretaxIncome: [ifrs-full:ProfitLossBeforeTax]
+  PropertyPlantAndEquipment: [ifrs-full:PropertyPlantAndEquipment]
+  ResearchAndDevelopment: [ifrs-full:ResearchAndDevelopmentExpense]
+  RetainedEarnings: [ifrs-full:RetainedEarnings]
+  Revenue:
+    - ifrs-full:Revenue
+    - ifrs-full:RevenueFromContractsWithCustomers                      # D34
+  SellingAndMarketing: [ifrs-full:SalesAndMarketingExpense]           # D47 (was SG&A's)
+  ShareBasedCompensation:
+    - ifrs-full:ExpenseFromSharebasedPaymentTransactionsWithEmployees
+    - ifrs-full:AdjustmentsForSharebasedPayments                       # D34
+  ShortTermInvestments: [ifrs-full:CurrentInvestments]
+  StockholdersEquity: [ifrs-full:EquityAttributableToOwnersOfParent]  # D48
+  StockRepurchases: [ifrs-full:PaymentsToAcquireOrRedeemEntitysShares]
+  TaxExpense: [ifrs-full:IncomeTaxExpenseContinuingOperations]
+  TotalAssets: [ifrs-full:Assets]
+  TotalLiabilities: [ifrs-full:Liabilities]
+
+filers:
+  # ── same measure (role primary) ─────────────────────────────────────────────
+  - {cik: "0000789019", family: DepreciationAndAmortization,      # Microsoft
+     concept: "ext:DepreciationAmortizationAndOther", role: primary, position: last,
+     reason: "D4: Microsoft's cash-flow line 'Depreciation, amortization, and other' (FY2026 38,534M) is its own extension."}
+  - {cik: "0000002488", family: DepreciationAndAmortization,      # AMD
+     concept: "us-gaap:OtherDepreciationAndAmortization", role: primary, position: last,
+     reason: "D7: AMD tags its D&A line (FY2024 671M) with OtherDepreciationAndAmortization, which elsewhere means other D&A."}
+  - {cik: "0001341439", family: OtherNonOperatingIncome,          # Oracle
+     concept: "ext:NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests",
+     role: primary, position: last,
+     reason: "D14: Oracle's 'Non-operating income (expenses), net' line in every year (FY2022 -522M, FY2025 60M)."}
+  - {cik: "0001046179", family: OtherNonOperatingIncome,          # TSMC
+     concept: "ext:NonOperatingIncomeExpenseNet", role: primary, position: last,
+     reason: "D14: TSMC's 'Total non-operating income and expenses' (FY2025)."}
+  - {cik: "0001046179", family: OtherNonOperatingIncome,          # TSMC
+     concept: "ext:NonOperatingIncomeExpense1", role: primary, position: last,
+     reason: "D14: TSMC's 'Total non-operating income and expenses' (FY2023)."}
+  - {cik: "0000001800", family: DebtRepaid,                       # Abbott
+     concept: "ext:RepaymentsOfLongTermDebtAndDebtMaturingInMoreThanThreeMonths",
+     role: primary, position: last,
+     reason: "D20: Abbott's 'Repayments of long-term debt and debt with maturities over 3 months'."}
+  - {cik: "0000001800", family: DebtIssued,                       # Abbott
+     concept: "ext:ProceedsFromLongTermDebtAndDebtMaturingInMoreThanThreeMonths",
+     role: primary, position: last,
+     reason: "D20: Abbott's 'Proceeds from issuance of long-term debt and debt with maturities over 3 months'."}
+  - {cik: "0001318605", family: DebtRepaid,                       # Tesla
+     concept: "ext:RepaymentsOfConvertibleAndOtherDebt", role: primary, position: last,
+     reason: "D22: Tesla's 'Repayments of convertible and other debt' (FY2022 3,364M), after every global primary."}
+  - {cik: "0001341439", family: PretaxIncome,                     # Oracle
+     concept: "ext:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems",
+     role: primary, position: last,
+     reason: "D27: Oracle's 'Income before income taxes' (FY2025 14,160M)."}
+  - {cik: "0000063908", family: PretaxIncome,                     # McDonald's
+     concept: "ext:IncomeLossFromContinuingOperationsBeforeIncomeTaxes", role: primary,
+     position: last,
+     reason: "D27: McDonald's 'Income before provision for income taxes' (FY2025 10,897M)."}
+  - {cik: "0000080424", family: PretaxIncome,                     # Procter & Gamble
+     concept: "ext:IncomeLossFromContinuingOperationsBeforeIncomeTaxes", role: primary,
+     position: last,
+     reason: "D27: P&G's 'Earnings from continuing operations before income taxes' (FY2023 18,353M)."}
+  - {cik: "0001341439", family: ServiceRevenue,                   # Oracle
+     concept: "ext:SalesRevenueServicesNet1", role: primary, position: first,
+     reason: "D28: Oracle's 'Services' revenue line (FY2025 5,233M); an undimensioned services lookup must not answer total revenue."}
+  - {cik: "0001045810", family: ShortTermInvestments,             # NVIDIA
+     concept: "ext:MarketableSecuritiesAndEquitySecuritiesFVNI", role: primary,
+     position: last,
+     reason: "D39: NVIDIA's 'Marketable securities' line (FY2026 51,951M)."}
+  - {cik: "0001045810", family: Capex,                            # NVIDIA
+     concept: "ext:PurchasesOfPropertyAndEquipmentAndIntangibleAssets", role: primary,
+     position: last,
+     reason: "D41: NVIDIA's 'Purchases related to property and equipment and intangible assets' (FY2023 1,833M)."}
+  - {cik: "0001046179", family: InterestIncome,                   # TSMC
+     concept: "ext:InvestmentIncomeInterest", role: primary,
+     position: {after: "ifrs-full:RevenueFromInterest"},
+     reason: "Decided 2026-11-07 (spec C8): TSMC's 'Interest income' extension in its FY2022-23 20-Fs, equal to RevenueFromInterest, which it tags in every year and which ranks first."}
+  # ── stated substitutes ──────────────────────────────────────────────────────
+  - {cik: "0001652044", family: DepreciationAndAmortization,      # Alphabet
+     concept: "ext:DepreciationAndImpairmentOnDispositionOfPropertyAndEquipment",
+     role: substitute, substitution: depreciation_and_impairment_only,
+     reason: "D2: Alphabet's 'Depreciation and impairment of property and equipment' (FY2022 15,287M); no D&A total."}
+  - {cik: "0001318605", family: DepreciationAndAmortization,      # Tesla
+     concept: "ext:DepreciationAmortizationAndImpairment", role: substitute,
+     substitution: includes_impairment,
+     reason: "D5: Tesla's 'Depreciation, amortization and impairment' (FY2025 6,148M)."}
+  - {cik: "0001692819", family: DebtRepaid,                       # Vistra
+     concept: "ext:RepaymentsOfDebtShortTermInNature", role: substitute,
+     substitution: one_of_several_lines,
+     reason: "D21: one of Vistra's several gross repayment lines; it reports no total."}
+  - {cik: "0001318605", family: RestructuringCharges,             # Tesla
+     concept: "ext:RestructuringAndOtherExpenses", role: substitute,
+     substitution: includes_impairment_or_other,
+     reason: "D26: Tesla's 'Restructuring and other' (FY2024 684M)."}
+  - {cik: "0000097476", family: RestructuringCharges,             # Texas Instruments
+     concept: "ext:RestructuringChargesAndOtherNet", role: substitute,
+     substitution: includes_impairment_or_other,
+     reason: "D26: TI's 'Restructuring charges/other' (FY2024 -124M)."}
+  - {cik: "0000936468", family: RestructuringCharges,             # Lockheed Martin
+     concept: "ext:SeveranceAndRestructuringCosts", role: substitute,
+     substitution: includes_impairment_or_other,
+     reason: "D26: Lockheed Martin's severance and other charges line."}

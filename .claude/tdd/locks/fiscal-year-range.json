@@ -1,0 +1,79 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-05",
+  "criteria": {
+    "C1": [
+      "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_range_phrasings_give_every_year",
+      "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_a_range_inside_a_question_gives_every_year",
+      "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_any_range_phrasing_gives_every_year"
+    ],
+    "C2": [
+      "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_reversed_and_overlong_ranges",
+      "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_reversing_a_range_does_not_change_its_years",
+      "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_a_range_over_ten_years_gives_its_endpoints"
+    ],
+    "C3": [
+      "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_lists_keep_their_years_and_join_a_range",
+      "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_listed_years_plus_a_range_are_the_union"
+    ],
+    "C4": [
+      "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_a_multi_year_mention_skips_the_fast_path",
+      "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_no_range_takes_the_fast_path"
+    ],
+    "C5": [
+      "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_the_planner_gets_every_year_in_scope",
+      "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_any_range_puts_every_year_in_the_planner_scope"
+    ],
+    "C6": [
+      "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_html_rag_long_context_and_narrative_see_every_year",
+      "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_any_range_reaches_html_rag_and_long_context"
+    ],
+    "C7": [
+      "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_an_overlong_range_degrades_and_ten_years_does_not",
+      "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_any_overlong_range_degrades"
+    ]
+  },
+  "files": {
+    "test/spec/fiscal-year-range/conftest.py": "b64939d74d8a66d1be5d1ae62df08283fa4cab84bbe69755ec2a9661215d6233",
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py": "20588994a44089c8966506ce9d75f5717470c163fae430e551fc00aa00501b79"
+  },
+  "id": "fiscal-year-range",
+  "interface": [],
+  "nodes": [
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_a_multi_year_mention_skips_the_fast_path",
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_a_range_inside_a_question_gives_every_year",
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_a_range_over_ten_years_gives_its_endpoints",
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_an_overlong_range_degrades_and_ten_years_does_not",
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_any_overlong_range_degrades",
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_any_range_phrasing_gives_every_year",
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_any_range_puts_every_year_in_the_planner_scope",
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_any_range_reaches_html_rag_and_long_context",
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_html_rag_long_context_and_narrative_see_every_year",
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_listed_years_plus_a_range_are_the_union",
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_lists_keep_their_years_and_join_a_range",
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_no_range_takes_the_fast_path",
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_range_phrasings_give_every_year",
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_reversed_and_overlong_ranges",
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_reversing_a_range_does_not_change_its_years",
+    "test/spec/fiscal-year-range/test_fiscal_year_range.py::test_the_planner_gets_every_year_in_scope"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/fiscal-year-range.md",
+    "sha256": "fadb7f6c754e05369b3bf8da4495d0485686d6ffacc2c2bd1adfdeb99767ed5c"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

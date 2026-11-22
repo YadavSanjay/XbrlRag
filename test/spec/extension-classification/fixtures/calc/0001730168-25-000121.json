@@ -1,0 +1,146 @@
+{
+ "accession_no": "0001730168-25-000121",
+ "cik": "0001730168",
+ "ticker": "AVGO",
+ "extension_namespace": "http://www.broadcom.com/20251102",
+ "source_file": "avgo-20251102_cal.xml",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102_cal.xml",
+ "source_sha256": "bd662e8551c4dab5b44d9176b5feb6eac670146a95880a088481a93e4069e156",
+ "retrieved": "local copy under data/storage/sec_edgar (downloaded at ingest); hashed 2026-11-07",
+ "cross_check": "arcs equal to xbrl_db mv_calculation_network by local name (176 arcs)",
+ "selection": "every summation-item arc of every tree (link role, parent) whose parent or a child is an extension presented on IS/BS/CF",
+ "arcs": [
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:AmortizationOfFinancingCostsAndDiscounts",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:Depreciation",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:GainsLossesOnExtinguishmentOfDebt",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInAccountsPayable",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInAccountsReceivable",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInEmployeeRelatedLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInInventories",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInOtherCurrentAssetsAndLiabilitiesNet",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInOtherNoncurrentAssetsAndLiabilitiesNet",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:OtherNoncashIncomeExpense",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProfitLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ShareBasedCompensation",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://www.broadcom.com/20251102:Amortizationofintangibleandrightofuseassets",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://www.broadcom.com/20251102:DeferredIncomeTaxesandOtherNoncashTaxExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2024:CostOfRevenue",
+   "child": "http://www.broadcom.com/20251102:Amortizationofacquisitionrelatedintangibleassetscostofproductssold",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2024:CostOfRevenue",
+   "child": "http://www.broadcom.com/20251102:CostofProductsSold",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2024:CostOfRevenue",
+   "child": "http://www.broadcom.com/20251102:CostofSubscriptionsandServices",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2024:CostOfRevenue",
+   "child": "http://www.broadcom.com/20251102:RestructuringChargesCostOfProductsSold",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2024:OperatingExpenses",
+   "child": "http://fasb.org/us-gaap/2024:ResearchAndDevelopmentExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2024:OperatingExpenses",
+   "child": "http://fasb.org/us-gaap/2024:RestructuringSettlementAndImpairmentProvisions",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2024:OperatingExpenses",
+   "child": "http://fasb.org/us-gaap/2024:SellingGeneralAndAdministrativeExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.broadcom.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2024:OperatingExpenses",
+   "child": "http://www.broadcom.com/20251102:Amortizationofacquisitionrelatedintangibleassetsoperatingexpenses",
+   "weight": "1"
+  }
+ ]
+}

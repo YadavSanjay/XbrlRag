@@ -1,0 +1,10 @@
+AS_OF (today, for this run): {as_of}
+
+SCOPE (the companies the question may mean, as JSON: "covered" is every covered company with its
+CIK, "groups" maps a named group to its tickers, or "universe" lists the case's own companies):
+{scope}
+
+QUESTION:
+{question}
+
+Use the tools, then reply with the single JSON object described in the system instructions.

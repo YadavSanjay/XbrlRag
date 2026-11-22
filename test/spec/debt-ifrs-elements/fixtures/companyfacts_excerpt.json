@@ -1,0 +1,168 @@
+{
+ "cik": 1046179,
+ "entityName": "Taiwan Semiconductor Manufacturing Company Limited",
+ "facts": {
+  "ifrs-full": {
+   "CurrentPortionOfLongtermBorrowings": {
+    "label": null,
+    "description": null,
+    "units": {
+     "TWD": [
+      {
+       "end": "2023-12-31",
+       "val": 9293300000,
+       "accn": "0001193125-25-083423",
+       "fy": 2024,
+       "fp": "FY",
+       "form": "20-F",
+       "filed": "2025-04-17",
+       "frame": "CY2023Q4I"
+      },
+      {
+       "end": "2024-12-31",
+       "val": 59857900000,
+       "accn": "0001193125-25-083423",
+       "fy": 2024,
+       "fp": "FY",
+       "form": "20-F",
+       "filed": "2025-04-17",
+       "frame": "CY2024Q4I"
+      }
+     ],
+     "USD": [
+      {
+       "end": "2024-12-31",
+       "val": 1825500000,
+       "accn": "0001193125-25-083423",
+       "fy": 2024,
+       "fp": "FY",
+       "form": "20-F",
+       "filed": "2025-04-17",
+       "frame": "CY2024Q4I"
+      }
+     ]
+    }
+   },
+   "NoncurrentPortionOfNoncurrentBondsIssued": {
+    "label": null,
+    "description": null,
+    "units": {
+     "TWD": [
+      {
+       "end": "2023-12-31",
+       "val": 913899800000,
+       "accn": "0001193125-25-083423",
+       "fy": 2024,
+       "fp": "FY",
+       "form": "20-F",
+       "filed": "2025-04-17",
+       "frame": "CY2023Q4I"
+      },
+      {
+       "end": "2024-12-31",
+       "val": 926604500000,
+       "accn": "0001193125-25-083423",
+       "fy": 2024,
+       "fp": "FY",
+       "form": "20-F",
+       "filed": "2025-04-17",
+       "frame": "CY2024Q4I"
+      }
+     ],
+     "USD": [
+      {
+       "end": "2024-12-31",
+       "val": 28258700000,
+       "accn": "0001193125-25-083423",
+       "fy": 2024,
+       "fp": "FY",
+       "form": "20-F",
+       "filed": "2025-04-17",
+       "frame": "CY2024Q4I"
+      }
+     ]
+    }
+   },
+   "LongtermBorrowings": {
+    "label": null,
+    "description": null,
+    "units": {
+     "TWD": [
+      {
+       "end": "2023-12-31",
+       "val": 4383000000,
+       "accn": "0001193125-25-083423",
+       "fy": 2024,
+       "fp": "FY",
+       "form": "20-F",
+       "filed": "2025-04-17",
+       "frame": "CY2023Q4I"
+      },
+      {
+       "end": "2024-12-31",
+       "val": 31824400000,
+       "accn": "0001193125-25-083423",
+       "fy": 2024,
+       "fp": "FY",
+       "form": "20-F",
+       "filed": "2025-04-17",
+       "frame": "CY2024Q4I"
+      }
+     ],
+     "USD": [
+      {
+       "end": "2024-12-31",
+       "val": 970500000,
+       "accn": "0001193125-25-083423",
+       "fy": 2024,
+       "fp": "FY",
+       "form": "20-F",
+       "filed": "2025-04-17",
+       "frame": "CY2024Q4I"
+      }
+     ]
+    }
+   },
+   "NoncurrentLeaseLiabilities": {
+    "label": null,
+    "description": null,
+    "units": {
+     "TWD": [
+      {
+       "end": "2023-12-31",
+       "val": 28681800000,
+       "accn": "0001193125-25-083423",
+       "fy": 2024,
+       "fp": "FY",
+       "form": "20-F",
+       "filed": "2025-04-17",
+       "frame": "CY2023Q4I"
+      },
+      {
+       "end": "2024-12-31",
+       "val": 28755300000,
+       "accn": "0001193125-25-083423",
+       "fy": 2024,
+       "fp": "FY",
+       "form": "20-F",
+       "filed": "2025-04-17",
+       "frame": "CY2024Q4I"
+      }
+     ],
+     "USD": [
+      {
+       "end": "2024-12-31",
+       "val": 877000000,
+       "accn": "0001193125-25-083423",
+       "fy": 2024,
+       "fp": "FY",
+       "form": "20-F",
+       "filed": "2025-04-17",
+       "frame": "CY2024Q4I"
+      }
+     ]
+    }
+   }
+  }
+ }
+}

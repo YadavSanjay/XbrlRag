@@ -1,0 +1,11 @@
+"""
+
+User query:
+{query}
+
+Query Sections:
+{query_sections}
+
+Generate paraphrase.
+
+"""

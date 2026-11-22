@@ -1,0 +1,66 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/screen-metric-names/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-15",
+  "criteria": {
+    "C1": [
+      "test/spec/screen-metric-names/test_screen_metric_names.py::test_resolve_point_cases",
+      "test/spec/screen-metric-names/test_screen_metric_names.py::test_resolve_matches_the_rule",
+      "test/spec/screen-metric-names/test_screen_metric_names.py::test_ambiguous_normalised_form_is_unresolved"
+    ],
+    "C2": [
+      "test/spec/screen-metric-names/test_screen_metric_names.py::test_normalize_point_cases",
+      "test/spec/screen-metric-names/test_screen_metric_names.py::test_normalize_matches_the_rule"
+    ],
+    "C3": [
+      "test/spec/screen-metric-names/test_screen_metric_names.py::test_properties",
+      "test/spec/screen-metric-names/test_screen_metric_names.py::test_properties_point_case"
+    ]
+  },
+  "files": {
+    "test/spec/screen-metric-names/test_screen_metric_names.py": "a35a3db5ed510713967bac399bd49a76ae19dca8b2a7dc4f4ccc625e68e561e4"
+  },
+  "id": "screen-metric-names",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_screen.py",
+      "module": "retriever.xbrl.xbrl_factstore_screen",
+      "qualname": "normalize_metric_name",
+      "signature": "def normalize_metric_name(name: str) -> str"
+    },
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_screen.py",
+      "module": "retriever.xbrl.xbrl_factstore_screen",
+      "qualname": "resolve_derived_metric",
+      "signature": "def resolve_derived_metric(name: str, known: collections.abc.Collection[str], aliases: collections.abc.Mapping[str, str]) -> str | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/screen-metric-names/test_screen_metric_names.py::test_ambiguous_normalised_form_is_unresolved",
+    "test/spec/screen-metric-names/test_screen_metric_names.py::test_normalize_matches_the_rule",
+    "test/spec/screen-metric-names/test_screen_metric_names.py::test_normalize_point_cases",
+    "test/spec/screen-metric-names/test_screen_metric_names.py::test_properties",
+    "test/spec/screen-metric-names/test_screen_metric_names.py::test_properties_point_case",
+    "test/spec/screen-metric-names/test_screen_metric_names.py::test_resolve_matches_the_rule",
+    "test/spec/screen-metric-names/test_screen_metric_names.py::test_resolve_point_cases"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/screen-metric-names.md",
+    "sha256": "944fc13fc095123ea558c64e8447eb6fbd47b37ce3c37ce05b882c5869ecbb18"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='ASCII'?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2020-02-12" xmlns:us-gaap="http://fasb.org/us-gaap/2025" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head><title>Example Corp 10-K</title></head>
+<body>
+<ix:nonNumeric contextRef="ctx-a" name="us-gaap:DebtDisclosureTextBlock" id="fact-tb-1" escape="true" continuedAt="cont-1">
+<p>Note 7.  Debt</p>
+<ix:nonNumeric contextRef="ctx-a" name="us-gaap:DebtPolicyTextBlock" id="fact-tb-2" escape="true"><p>Long-term&#160;debt is carried at cost.</p></ix:nonNumeric>
+<table id="tbl-debt">
+<tr><td>&#160;</td><td colspan="2">2025</td><td colspan="2">2024</td></tr>
+<tr><td rowspan="2">Term loan</td><td>$</td><td><ix:nonFraction contextRef="ctx-a" unitRef="usd" name="us-gaap:LongTermDebt" id="fact-1" scale="6" decimals="-6" format="ixt:num-dot-decimal">1,234</ix:nonFraction></td><td>$</td><td><ix:nonFraction contextRef="ctx-b" unitRef="usd" name="us-gaap:LongTermDebt" id="fact-2" scale="6" decimals="-6" format="ixt:num-dot-decimal">987</ix:nonFraction></td></tr>
+<tr><td></td><td>(<ix:nonFraction contextRef="ctx-a" unitRef="usd" name="us-gaap:DebtInstrumentUnamortizedDiscount" id="fact-3" scale="6" decimals="-6" sign="-" format="ixt:num-dot-decimal">56</ix:nonFraction>)</td><td></td><td><ix:nonFraction contextRef="ctx-b" unitRef="usd" name="us-gaap:DebtInstrumentUnamortizedDiscount" id="fact-4" scale="6" decimals="-6" format="ixt:fixed-zero">&#8212;</ix:nonFraction></td></tr>
+<tr><td>Accrued</td><td></td><td><ix:nonFraction contextRef="ctx-a" unitRef="usd" name="us-gaap:InterestPayableCurrent" id="fact-5" xsi:nil="true"/></td><td></td><td></td></tr>
+</table>
+<p>Rate of <ix:fraction contextRef="ctx-a" unitRef="pure" name="us-gaap:DebtInstrumentInterestRate" id="fact-6"><ix:numerator>1</ix:numerator>/<ix:denominator>4</ix:denominator></ix:fraction> point.</p>
+</ix:nonNumeric>
+<ix:exclude><p>Page 12</p></ix:exclude>
+<ix:continuation id="cont-1"><p>The loan matures in 2031.</p></ix:continuation>
+<ix:footnote id="fn-1" footnoteRole="http://www.xbrl.org/2003/role/footnote"><p>(1) Excludes leases.</p></ix:footnote>
+<ix:relationship fromRefs="fact-1" toRefs="fn-1"/>
+</body>
+</html>

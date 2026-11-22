@@ -1,0 +1,53 @@
+# Prompt registry for the XBRL query flow.
+# Design: docs/design/XbrlRag_LLM_Harness.md.
+#
+# For each stage, resolution tries every pattern in `resolution` order with
+# {provider}/{series} substituted from the call's ModelRef; the first location
+# that contains both system.txt and user.txt for the requested version wins.
+# `_base` is the provider-neutral fallback and the single source of truth — a
+# provider/series override dir is added only where that model needs different
+# phrasing. `default` names the (provider, series, version) used when the caller
+# doesn't override; the common openai/gpt-5 path falls through to `_base/v1`.
+stages:
+  query_decomposer:
+    default: { provider: openai, series: gpt-5, version: v5 }  # v5: a <<TOP:id:N>> substitution for N >= 2 is ranked, "TICKER (#k)"; prefer <<TOP:id:1>> for one position (ranked-top-injection); v4: PLANNER_FEEDBACK "nested_ranking" splits a ranking within a ranking into two sub-queries (redecompose on a planner refusal); v2: one metric, several qualifiers = one need; v3: one ratio, difference or CAGR = one need (plan-cagr-and-ratios)
+    resolution: ["{provider}/{series}", "_base"]
+  intent_router:
+    default: { provider: openai, series: gpt-5, version: v5 }  # v5: a rank label "(#k)" is not part of a company mention; one asked position lifts one company (ranked-top-injection); v4: a range of years is one period mention, a list one per year (fiscal-year-range-split); v2: one metric, several qualifiers = one phrase; v3: a total/median over a named group is a screen, a group is never a company (screen-aggregates)
+    resolution: ["{provider}/{series}", "_base"]
+  plan_generator:
+    default: { provider: openai, series: gpt-5, version: v13 }  # v13: the (#k) label rule applies only to a question about one position; comparing labelled companies plans for all of them; v12: a "TICKER (#k)" label is a prior screen's rank; plan for the named position, never re-rank (ranked-top-injection); v11: a screen over named companies sets universe to their ticker list (named-company-screen); v10: error_code "nested_ranking" | "other" in the error contract; v9: an unqualified share count is shares outstanding; v8: cagr op, a ratio ends in a dividing compute, OPERATION hint (plan-cagr-and-ratios); v2: breakdown op; v3: several qualifiers = one lookup; v4: valid derived metric names; v5: only named members as hints; v6: screen universe; v7: aggregate op + UNIVERSE/AGGREGATE hints (screen-aggregates)
+    resolution: ["{provider}/{series}", "_base"]
+  synthesizer:
+    default: { provider: openai, series: gpt-5, version: v8 }  # v8: a Q4 lookup's filed/derived note stated with the value (q4-lookup); v7: a compute or cagr year_lengths note stated verbatim, a screen's appended (period-year-length-answers); v6: cagr steps stated by step id; a missing asked ratio or CAGR is unanswered (plan-cagr-and-ratios); v5: definition disclosures for total debt / deferred revenue, every part cited (s4-lookup-deferred-revenue-debt); v4: aggregate steps stated by step id, never summed by the LLM (screen-aggregates); v3: breakdown rows, reconciling line by name (breakdown-reconciling-items); v2: substitution notes
+    resolution: ["{provider}/{series}", "_base"]
+  faithfulness_verifier:
+    default: { provider: openai, series: gpt-5, version: v3 }  # v3: a lookup, compute or aggregate step's period is evidence (verifier-period-evidence); v2: a screen's rank, period_end and screen summary are evidence (verifier-derived-disclosures)
+    resolution: ["{provider}/{series}", "_base"]
+  # Eval baseline arms (docs/specs/baseline-arms.md), not part of the XbrlRag pipeline.
+  closed_book:
+    default: { provider: openai, series: gpt-5, version: v1 }
+    resolution: ["{provider}/{series}", "_base"]
+  naive_rag:
+    default: { provider: openai, series: gpt-5, version: v1 }
+    resolution: ["{provider}/{series}", "_base"]
+  # The long-context arm (docs/specs/long-context-arm.md): the model is explicit, so
+  # there is no XBRL_STAGE_TIERS entry; the prompt resolves for that model's provider.
+  long_context:
+    default: { provider: openai, series: gpt-5, version: v2 }  # v2: filing and question in separate user messages, the filing one a cache point
+    resolution: ["{provider}/{series}", "_base"]
+  # The multi-filing arm (docs/specs/long-context-arms.md): the k filings in one call. The
+  # resolved arm uses long_context. The model is explicit here too, so no tier entry.
+  long_context_multi:
+    default: { provider: openai, series: gpt-5, version: v1 }
+    resolution: ["{provider}/{series}", "_base"]
+  # The html_rag arm (docs/specs/html-rag-arm.md): the model is the synthesizer's, given
+  # explicitly, so there is no tier entry.
+  html_rag:
+    default: { provider: openai, series: gpt-5, version: v1 }
+    resolution: ["{provider}/{series}", "_base"]
+  # The frontier_sec_tools arm (docs/specs/frontier-sec-tools.md): a tool-calling loop over
+  # the public SEC APIs. The model is explicit, so there is no tier entry.
+  frontier_sec_tools:
+    default: { provider: openai, series: gpt-5, version: v2 }  # v2: fiscal-year rule, report forms, shares, multi-filer tools
+    resolution: ["{provider}/{series}", "_base"]

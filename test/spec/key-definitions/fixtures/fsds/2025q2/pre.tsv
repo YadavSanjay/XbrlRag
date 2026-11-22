@@ -1,0 +1,72 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0000950170-25-087926	2	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2024	Cash and cash equivalents	0
+0000950170-25-087926	2	4	BS	0	H	AvailableForSaleSecuritiesDebtSecuritiesCurrent	us-gaap/2024	Marketable securities	0
+0000950170-25-087926	2	5	BS	0	H	AccountsReceivableNetCurrent	us-gaap/2024	Trade receivables, net of allowances for credit losses of $557 and $485 as of May 31, 2025 and May 31, 2024, respectively	0
+0000950170-25-087926	2	6	BS	0	H	PrepaidExpenseAndOtherAssetsCurrent	us-gaap/2024	Prepaid expenses and other current assets	0
+0000950170-25-087926	2	7	BS	0	H	AssetsCurrent	us-gaap/2024	Total current assets	0
+0000950170-25-087926	2	9	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2024	Property, plant and equipment, net	0
+0000950170-25-087926	2	10	BS	0	H	FiniteLivedIntangibleAssetsNet	us-gaap/2024	Intangible assets, net	0
+0000950170-25-087926	2	11	BS	0	H	Goodwill	us-gaap/2024	Goodwill	0
+0000950170-25-087926	2	12	BS	0	H	DeferredIncomeTaxAssetsNet	us-gaap/2024	Deferred tax assets	0
+0000950170-25-087926	2	13	BS	0	H	OtherAssetsNoncurrent	us-gaap/2024	Other non-current assets	0
+0000950170-25-087926	2	14	BS	0	H	AssetsNoncurrent	us-gaap/2024	Total non-current assets	0
+0000950170-25-087926	2	15	BS	0	H	Assets	us-gaap/2024	Total assets	0
+0000950170-25-087926	2	18	BS	0	H	NotesPayableCurrent	us-gaap/2024	Notes payable and other borrowings, current	0
+0000950170-25-087926	2	19	BS	0	H	AccountsPayableCurrent	us-gaap/2024	Accounts payable	0
+0000950170-25-087926	2	20	BS	0	H	EmployeeRelatedLiabilitiesCurrent	us-gaap/2024	Accrued compensation and related benefits	0
+0000950170-25-087926	2	21	BS	0	H	ContractWithCustomerLiabilityCurrent	us-gaap/2024	Deferred revenues	0
+0000950170-25-087926	2	22	BS	0	H	OtherLiabilitiesCurrent	us-gaap/2024	Other current liabilities	0
+0000950170-25-087926	2	23	BS	0	H	LiabilitiesCurrent	us-gaap/2024	Total current liabilities	0
+0000950170-25-087926	2	25	BS	0	H	LongTermNotesAndLoans	us-gaap/2024	Notes payable and other borrowings, non-current	0
+0000950170-25-087926	2	26	BS	0	H	AccruedIncomeTaxesNoncurrent	us-gaap/2024	Income taxes payable	0
+0000950170-25-087926	2	27	BS	0	H	OperatingLeaseLiabilityNoncurrent	us-gaap/2024	Operating lease liabilities	0
+0000950170-25-087926	2	28	BS	0	H	OtherLiabilitiesNoncurrent	us-gaap/2024	Other non-current liabilities	0
+0000950170-25-087926	2	29	BS	0	H	LiabilitiesNoncurrent	us-gaap/2024	Total non-current liabilities	0
+0000950170-25-087926	2	30	BS	0	H	CommitmentsAndContingencies	us-gaap/2024	Commitments and contingencies	0
+0000950170-25-087926	2	32	BS	0	H	PreferredStockValue	us-gaap/2024	Preferred stock, $0.01 par value - authorized: 1.0 shares; outstanding: none	0
+0000950170-25-087926	2	33	BS	0	H	CommonStocksIncludingAdditionalPaidInCapital	us-gaap/2024	Common stock, $0.01 par value and additional paid in capital-authorized: 11,000 shares outstanding: 2,807 shares and 2,755 shares as of May 31, 2025 and 2024, respectively	0
+0000950170-25-087926	2	34	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2024	Accumulated deficit	0
+0000950170-25-087926	2	35	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2024	Accumulated other comprehensive loss	0
+0000950170-25-087926	2	36	BS	0	H	StockholdersEquity	us-gaap/2024	Total Oracle Corporation stockholders' equity	0
+0000950170-25-087926	2	37	BS	0	H	MinorityInterest	us-gaap/2024	Noncontrolling interests	0
+0000950170-25-087926	2	38	BS	0	H	StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2024	Total stockholders' equity	0
+0000950170-25-087926	2	39	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2024	Total liabilities and stockholders' equity	0
+0000950170-25-087926	3	1	BS	1	H	AllowanceForDoubtfulAccountsReceivableCurrent	us-gaap/2024	Allowance for credit losses	0
+0000950170-25-087926	3	2	BS	1	H	PreferredStockParOrStatedValuePerShare	us-gaap/2024	Preferred stock par value per share	0
+0000950170-25-087926	3	3	BS	1	H	PreferredStockSharesAuthorized	us-gaap/2024	Preferred stock shares authorized	0
+0000950170-25-087926	3	4	BS	1	H	PreferredStockSharesOutstanding	us-gaap/2024	Preferred stock shares outstanding	0
+0000950170-25-087926	3	5	BS	1	H	CommonStockParOrStatedValuePerShare	us-gaap/2024	Common stock par value per share	0
+0000950170-25-087926	3	6	BS	1	H	CommonStockSharesAuthorized	us-gaap/2024	Common stock shares authorized	0
+0000950170-25-087926	3	7	BS	1	H	CommonStockSharesOutstanding	us-gaap/2024	Common stock shares outstanding	0
+0000950170-25-087926	4	2	IS	0	H	CloudServicesAndLicenseSupportRevenue	0000950170-25-087926	Cloud services and license support	0
+0000950170-25-087926	4	3	IS	0	H	CloudLicenseAndOnPremiseLicenseRevenue	0000950170-25-087926	Cloud license and on-premise license	0
+0000950170-25-087926	4	4	IS	0	H	HardwareRevenues	0000950170-25-087926	Hardware	0
+0000950170-25-087926	4	5	IS	0	H	SalesRevenueServicesNet1	0000950170-25-087926	Services	0
+0000950170-25-087926	4	6	IS	0	H	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	Total revenues	0
+0000950170-25-087926	4	8	IS	0	H	CloudServicesAndLicenseSupportExpenses	0000950170-25-087926	Cloud services and license support	0
+0000950170-25-087926	4	9	IS	0	H	HardwareExpenses	0000950170-25-087926	Hardware	0
+0000950170-25-087926	4	10	IS	0	H	ServicesExpense	0000950170-25-087926	Services	0
+0000950170-25-087926	4	11	IS	0	H	SellingAndMarketingExpense	us-gaap/2024	Sales and marketing	0
+0000950170-25-087926	4	12	IS	0	H	ResearchAndDevelopmentExpense	us-gaap/2024	Research and development	0
+0000950170-25-087926	4	13	IS	0	H	GeneralAndAdministrativeExpense	us-gaap/2024	General and administrative	0
+0000950170-25-087926	4	14	IS	0	H	AmortizationOfIntangibleAssets	us-gaap/2024	Amortization of intangible assets	0
+0000950170-25-087926	4	15	IS	0	H	BusinessCombinationAcquisitionRelatedCosts	us-gaap/2024	Acquisition related and other	0
+0000950170-25-087926	4	16	IS	0	H	RestructuringCharges	us-gaap/2024	Restructuring	0
+0000950170-25-087926	4	17	IS	0	H	CostsAndExpenses	us-gaap/2024	Total operating expenses	0
+0000950170-25-087926	4	18	IS	0	H	OperatingIncomeLoss	us-gaap/2024	Operating income	0
+0000950170-25-087926	4	19	IS	0	H	InterestExpense	us-gaap/2024	Interest expense	1
+0000950170-25-087926	4	20	IS	0	H	NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests	0000950170-25-087926	Non-operating income (expenses), net	0
+0000950170-25-087926	4	21	IS	0	H	IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems	0000950170-25-087926	Income before income taxes	0
+0000950170-25-087926	4	22	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2024	Provision for income taxes	0
+0000950170-25-087926	4	23	IS	0	H	NetIncomeLoss	us-gaap/2024	Net income	0
+0000950170-25-087926	4	25	IS	0	H	EarningsPerShareBasic	us-gaap/2024	Basic	0
+0000950170-25-087926	4	26	IS	0	H	EarningsPerShareDiluted	us-gaap/2024	Diluted	0
+0000950170-25-087926	4	28	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2024	Basic	0
+0000950170-25-087926	4	29	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2024	Diluted	0
+0000950170-25-087926	5	1	CI	0	H	NetIncomeLoss	us-gaap/2024	Net income	0
+0000950170-25-087926	5	3	CI	0	H	OtherComprehensiveIncomeForeignCurrencyTransactionAndTranslationAdjustmentNetOfTaxPortionAttributableToParent	us-gaap/2024	Net foreign currency translation gains (losses)	0
+0000950170-25-087926	5	4	CI	0	H	OtherComprehensiveIncomeDefinedBenefitPlansAdjustmentNetOfTaxPortionAttributableToParent	us-gaap/2024	Net unrealized gains on defined benefit plans	1
+0000950170-25-087926	5	5	CI	0	H	OtherComprehensiveIncomeLossCashFlowHedgeGainLossAfterReclassificationAndTaxParent	us-gaap/2024	Net unrealized (losses) gains on cash flow hedges	0
+0000950170-25-087926	5	6	CI	0	H	OtherComprehensiveIncomeOtherNetOfTax	us-gaap/2024	Other, net	0
+0000950170-25-087926	5	7	CI	0	H	OtherComprehensiveIncomeLossNetOfTaxPortionAttributableToParent	us-gaap/2024	Total other comprehensive income, net	0
+0000950170-25-087926	5	8	CI	0	H	ComprehensiveIncomeNetOfTax	us-gaap/2024	Comprehensive income	0

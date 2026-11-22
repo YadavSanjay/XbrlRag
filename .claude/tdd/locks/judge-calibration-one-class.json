@@ -1,0 +1,98 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-13",
+  "criteria": {
+    "C1": [
+      "test/spec/judge-calibration-one-class/test_jcoc_c1_gate.py::test_majority_share_by_hand",
+      "test/spec/judge-calibration-one-class/test_jcoc_c1_gate.py::test_gate_at_the_cut_off",
+      "test/spec/judge-calibration-one-class/test_jcoc_c1_gate.py::test_gate_closed_form_and_invariance"
+    ],
+    "C2": [
+      "test/spec/judge-calibration-one-class/test_jcoc_c2_dimension_passed.py::test_agreement_gate_by_hand",
+      "test/spec/judge-calibration-one-class/test_jcoc_c2_dimension_passed.py::test_kappa_gate_by_hand",
+      "test/spec/judge-calibration-one-class/test_jcoc_c2_dimension_passed.py::test_closed_form"
+    ],
+    "C3": [
+      "test/spec/judge-calibration-one-class/test_jcoc_c3_calibrate.py::test_one_class_supported_passes_on_observed_agreement",
+      "test/spec/judge-calibration-one-class/test_jcoc_c3_calibrate.py::test_the_agreement_bound_and_the_extremes",
+      "test/spec/judge-calibration-one-class/test_jcoc_c3_calibrate.py::test_below_the_cut_off_kappa_still_gates",
+      "test/spec/judge-calibration-one-class/test_jcoc_c3_calibrate.py::test_min_items_and_parameter_checks",
+      "test/spec/judge-calibration-one-class/test_jcoc_c3_calibrate.py::test_pass_rule_closed_form"
+    ],
+    "C4": [
+      "test/spec/judge-calibration-one-class/test_jcoc_c4_human_only.py::test_judge_errors_do_not_move_the_gate",
+      "test/spec/judge-calibration-one-class/test_jcoc_c4_human_only.py::test_judge_labels_never_change_the_gate"
+    ],
+    "C5": [
+      "test/spec/judge-calibration-one-class/test_jcoc_c5_record.py::test_record_fields",
+      "test/spec/judge-calibration-one-class/test_jcoc_c5_record.py::test_file_round_trip_and_old_schema",
+      "test/spec/judge-calibration-one-class/test_jcoc_c5_record.py::test_hash_is_stable_and_carries_the_floors"
+    ]
+  },
+  "files": {
+    "test/spec/judge-calibration-one-class/conftest.py": "eed111966f5e4f9f0c4ca78b71c8b2f619657259704944b238c34ebabc9193d4",
+    "test/spec/judge-calibration-one-class/test_jcoc_c1_gate.py": "5110fa576a79941a174970d81fd73f5b1961fd27a4247c9183e5ab94ce36f081",
+    "test/spec/judge-calibration-one-class/test_jcoc_c2_dimension_passed.py": "407347784b83c1db03c285e7d75608741d957fe5450051c98f36c76c5af26bdf",
+    "test/spec/judge-calibration-one-class/test_jcoc_c3_calibrate.py": "2d382e7182386c31b4dc050f3b4117d22240fc9489cf261a64eebd2c8536d01a",
+    "test/spec/judge-calibration-one-class/test_jcoc_c4_human_only.py": "9914ee02faba70409206c9bea883b89f715b82947116d915ed634cd3a564f19c",
+    "test/spec/judge-calibration-one-class/test_jcoc_c5_record.py": "0e177f933bd599fb2349bdc44c67ae45942b11d09ba1d88acbed45b57a3e6c9a"
+  },
+  "id": "judge-calibration-one-class",
+  "interface": [
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "human_majority_share",
+      "signature": "def human_majority_share(human: Sequence[bool]) -> float | None"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "dimension_gate",
+      "signature": "def dimension_gate(human: Sequence[bool], *, one_class_share: float=0.99) -> str"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "dimension_passed",
+      "signature": "def dimension_passed(agreement: DimensionAgreement, gate: str, *, threshold: float, agreement_bound: float, min_items: int) -> bool"
+    }
+  ],
+  "nodes": [
+    "test/spec/judge-calibration-one-class/test_jcoc_c1_gate.py::test_gate_at_the_cut_off",
+    "test/spec/judge-calibration-one-class/test_jcoc_c1_gate.py::test_gate_closed_form_and_invariance",
+    "test/spec/judge-calibration-one-class/test_jcoc_c1_gate.py::test_majority_share_by_hand",
+    "test/spec/judge-calibration-one-class/test_jcoc_c2_dimension_passed.py::test_agreement_gate_by_hand",
+    "test/spec/judge-calibration-one-class/test_jcoc_c2_dimension_passed.py::test_closed_form",
+    "test/spec/judge-calibration-one-class/test_jcoc_c2_dimension_passed.py::test_kappa_gate_by_hand",
+    "test/spec/judge-calibration-one-class/test_jcoc_c3_calibrate.py::test_below_the_cut_off_kappa_still_gates",
+    "test/spec/judge-calibration-one-class/test_jcoc_c3_calibrate.py::test_min_items_and_parameter_checks",
+    "test/spec/judge-calibration-one-class/test_jcoc_c3_calibrate.py::test_one_class_supported_passes_on_observed_agreement",
+    "test/spec/judge-calibration-one-class/test_jcoc_c3_calibrate.py::test_pass_rule_closed_form",
+    "test/spec/judge-calibration-one-class/test_jcoc_c3_calibrate.py::test_the_agreement_bound_and_the_extremes",
+    "test/spec/judge-calibration-one-class/test_jcoc_c4_human_only.py::test_judge_errors_do_not_move_the_gate",
+    "test/spec/judge-calibration-one-class/test_jcoc_c4_human_only.py::test_judge_labels_never_change_the_gate",
+    "test/spec/judge-calibration-one-class/test_jcoc_c5_record.py::test_file_round_trip_and_old_schema",
+    "test/spec/judge-calibration-one-class/test_jcoc_c5_record.py::test_hash_is_stable_and_carries_the_floors",
+    "test/spec/judge-calibration-one-class/test_jcoc_c5_record.py::test_record_fields"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/judge-calibration-one-class.md",
+    "sha256": "993463aa4957b866036a0e0cc9164fc91b6f5191935ed10e36ea7a4bd480b149"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

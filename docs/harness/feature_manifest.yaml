@@ -1,0 +1,434 @@
+# XbrlRag feature / scope manifest — machine-checkable half of WS-8 / H5.
+#
+# Every material feature in the 8-workstream plan
+# (docs/design/README.md lists the design docs; this manifest is the status) as a per-item TESTABLE entry:
+# a `check` that proves the feature is really built. Each check STARTS FAILING
+# and only passes once the artifact exists — so "done" is externally verifiable,
+# not the agent's say-so.
+#
+# Run:  python scripts/harness/check_features.py            # report
+#       python scripts/harness/check_features.py --gate     # fail on scope drift
+#
+# Contract enforced by --gate:
+#   status: done  + check FAILS  -> gate fails (claimed feature is not real)
+#   status: todo  + check PASSES -> warning (flip it to done)
+#
+# status ∈ {done, partial, todo, deferred}.  check types: path | absent |
+# contains{file,pattern} | cmd.  `manual: <note>` = no automated check (excluded
+# from the gate).  VISION.md is the human-readable scope doc this pairs with.
+
+features:
+  # ===================== WS-1 · Data Integrity & Trust Gates =====================
+  - id: WS1-A1
+    title: Four data-integrity gate materialized views (anchor / calc-network / sum-of-parts / completeness)
+    workstream: WS-1
+    finding: A1
+    status: done
+    checks:
+      - path: scripts/ddl/mv/05_mv_anchor_coverage.sql
+      - path: scripts/ddl/mv/12_mv_calculation_network.sql
+      - path: scripts/ddl/mv/40_mv_sum_of_parts_checks.sql
+      - path: scripts/ddl/mv/41_mv_filing_completeness.sql
+
+  - id: WS1-B5
+    title: Gated staging→prod publish (publish_manifest + promotion.py + read-time deny-list)
+    workstream: WS-1
+    finding: B5
+    status: done
+    checks:
+      - path: src/ingest/sec_edgar/xbrl/promotion.py
+      - path: scripts/ddl/layer_0/publish_manifest.sql
+
+  - id: WS1-A4
+    title: Hierarchy-aware mv_segment_matrix pct_of_axis_total + duplicate-member dedupe
+    workstream: WS-1
+    finding: A4
+    status: todo
+    # Found 2026-08 while building the WS-9 SQL-derived suite: a filer tagging both an
+    # aggregate and its children on one axis double-counts the percentage denominator
+    # (AAPL Product renders 37.7% vs ~75% actual), and AAPL FY2024 duplicates
+    # `Service [Member]`. See docs/design/XbrlRag_Materialized_Views.md §8.
+    checks:
+      - contains:
+          file: scripts/ddl/mv/31_mv_segment_matrix.sql
+          pattern: "is_aggregate"
+
+  - id: WS1-A2
+    title: Namespace-insensitive YoY match + member-alias reclassification
+    workstream: WS-1
+    finding: A2
+    status: done
+    checks:
+      - path: src/ingest/sec_edgar/xbrl/member_alias_detector.py
+      - path: scripts/ddl/layer_0/member_aliases.sql
+
+  # ===================== WS-2 · Accuracy Measurement & Regression =====================
+  - id: WS2-A3
+    title: Static golden set + numeric-tolerance grader
+    workstream: WS-2
+    finding: A3
+    status: done
+    checks:
+      - path: test/eval/golden/xbrl_golden_v1.json
+      - path: src/eval/xbrl/numeric.py
+
+  - id: WS2-A4
+    title: Drift detection vs recorded baseline
+    workstream: WS-2
+    finding: A4
+    status: done
+    checks:
+      - path: src/eval/xbrl/drift.py
+      - path: test/eval/golden/baseline_v1.json
+
+  - id: WS2-B10
+    title: Regression matrix → CI
+    workstream: WS-2
+    finding: B10
+    status: done
+    checks:
+      - path: src/eval/xbrl/regression_runner.py
+      - path: .github/workflows
+
+  - id: WS2-H3
+    title: Dev-time doer≠judge evaluator subagent
+    workstream: WS-2
+    finding: H3
+    status: done
+    checks:
+      - path: .claude/agents/xbrl-answer-evaluator.md
+
+  # ===================== WS-3 · Query Understanding & Conversation =====================
+  - id: WS3-A7
+    title: plan_generator model escalation ladder
+    workstream: WS-3
+    finding: A7
+    status: done
+    checks:
+      - contains: { file: src/retriever/xbrl/plan_generator.py, pattern: "escalat" }
+
+  - id: WS3-A5
+    title: Conversational follow-up / multi-turn context
+    workstream: WS-3
+    finding: A5
+    status: todo
+    manual: "No multi-turn conversation memory in the XBRL pipeline yet; verify by design review."
+
+  - id: WS3-A6
+    title: Ambiguity clarification / query-repair loop
+    workstream: WS-3
+    finding: A6
+    status: todo
+    manual: "No clarification loop yet; verify by design review."
+
+  # ===================== WS-4 · LLM Cost & Call Governance =====================
+  - id: WS4-B1
+    title: Two-tier semantic query cache (L1 exact + opt-in L2 vector)
+    workstream: WS-4
+    finding: B1
+    status: done
+    checks:
+      - path: src/pipelines/xbrl/query_cache.py
+      - path: scripts/ddl/layer_0/query_cache_epoch.sql
+
+  - id: WS4-B2
+    title: Cached prompt-token capture + cheaper pricing
+    workstream: WS-4
+    finding: B2
+    status: done
+    checks:
+      - contains: { file: src/llm/cost_tracker.py, pattern: "cached_prompt_tokens" }
+
+  - id: WS4-B9
+    title: Process-wide LLM rate limiter via shared gateway factory
+    workstream: WS-4
+    finding: B9
+    status: done
+    checks:
+      - contains: { file: src/llm/xbrl_gateway.py, pattern: "build_xbrl_gateway" }
+
+  - id: WS4-H1
+    title: Per-run cost ceiling + circuit breaker
+    workstream: WS-4
+    finding: H1
+    status: done
+    checks:
+      - path: src/llm/run_budget.py
+
+  # ===================== WS-5 · Ingestion Automation & Orchestration =====================
+  - id: WS5-B3
+    title: DAG orchestrator for ingest (Prefect/Dagster) + in-pipeline MV refresh
+    workstream: WS-5
+    finding: B3
+    status: deferred
+    checks:
+      - path: src/ingest/sec_edgar/flows.py   # proposed target — flip to done when built
+
+  - id: WS5-B4
+    title: EDGAR feed polling / event-driven ingest trigger
+    workstream: WS-5
+    finding: B4
+    status: deferred
+    checks:
+      - path: src/ingest/sec_edgar/feed_poller.py   # proposed target
+
+  # ===================== WS-6 · Deployment, Security & Multi-tenancy =====================
+  - id: WS6-B6
+    title: Auth / SSO + per-user rate limiting + multi-tenancy
+    workstream: WS-6
+    finding: B6
+    status: deferred
+    checks:
+      - path: src/api/auth.py   # proposed target
+
+  - id: WS6-B7
+    title: Docker / compose / Helm / CI-CD packaging
+    workstream: WS-6
+    finding: B7
+    status: done
+    checks:
+      - path: infra/docker/Dockerfile
+      - path: infra/docker/docker-compose.yml
+      - path: deploy/helm/xbrlrag/Chart.yaml
+      - path: .github/workflows/docker.yml
+      - path: requirements-serve.txt
+
+  # ===================== WS-7 · Monitoring & Alerting =====================
+  - id: WS7-B8
+    title: Prometheus metrics exporter + dashboards/alerts over audit.v_*
+    workstream: WS-7
+    finding: B8
+    status: done
+    checks:
+      - path: src/observability/metrics_exporter.py
+      - path: configs/monitoring/prometheus.yml
+      - path: configs/monitoring/alerts.yml
+      - path: configs/monitoring/grafana_dashboard.json
+
+  # ===================== WS-8 · Harness Guardrails & Discipline =====================
+  - id: WS8-H2
+    title: Deterministic guardrail hooks (secret guard / auto-format / Stop-gate)
+    workstream: WS-8
+    finding: H2
+    status: done
+    checks:
+      - path: .claude/hooks/guard_protected_paths.py
+      - path: .claude/hooks/format_python.py
+      - path: .claude/hooks/stop_gate.py
+
+  - id: WS8-H5
+    title: VISION.md scope doc + machine-checkable feature manifest + gate runner
+    workstream: WS-8
+    finding: H5
+    status: done
+    checks:
+      - path: VISION.md
+      - path: docs/harness/feature_manifest.yaml
+      - path: scripts/harness/check_features.py
+
+  - id: WS8-H4
+    title: Runaway-process watchdog + unattended-run policy
+    workstream: WS-8
+    finding: H4
+    status: done
+    checks:
+      - path: scripts/harness/watchdog.py
+      - path: docs/harness/UNATTENDED_RUNS.md
+      - contains: { file: scripts/harness/watchdog.py, pattern: "def find_runaways" }
+
+  - id: WS8-H6
+    title: Dev-time subagent orchestration + worktree isolation
+    workstream: WS-8
+    finding: H6
+    status: done
+    checks:
+      - path: .claude/agents/xbrl-subsystem-explorer.md     # read-only fan-out summarizer
+      - path: .claude/agents/parallel-refactor-worker.md    # worktree-isolated editor
+      - path: docs/harness/SUBAGENTS.md                     # orchestration + worktree pattern
+      - contains: { file: docs/harness/SUBAGENTS.md, pattern: "isolation.*worktree" }
+
+  - id: WS8-H7
+    title: Dated harness re-audit cadence
+    workstream: WS-8
+    finding: H7
+    status: done
+    checks:
+      - path: docs/harness/REAUDIT.md
+      - path: scripts/harness/check_reaudit.py
+      - contains: { file: docs/harness/REAUDIT.md, pattern: "reaudit:next_due=" }
+
+  # ===================== WS-9 · Evaluation & Benchmarking =====================
+  # Design: docs/design/XbrlRag_Evaluation.md
+  # Extends WS-2's 13-case golden spine into a corpus-scale, durable, inspectable
+  # benchmark. E1-E4 are the approved plan (phases 0-2); E5/E6 are designed but
+  # deliberately unscheduled (system arms / external benchmarks).
+  - id: WS9-E1
+    title: Eval core framework (EvalCase / SystemUnderTest / runner / screen+citation graders)
+    workstream: WS-9
+    finding: E1
+    status: done
+    checks:
+      - path: src/eval/core/case.py
+      - path: src/eval/core/system.py
+      - path: src/eval/core/runner.py
+      - path: src/eval/core/graders/screen.py
+      - path: src/eval/core/graders/citation.py
+      - path: src/eval/systems/xbrlrag_full.py
+      # Narrative must stay serialized: the reranker is CPU-bound (90-145s/query)
+      # and has segfaulted under unbounded batching.
+      - contains: { file: src/eval/core/runner.py, pattern: "DEFAULT_KIND_CONCURRENCY" }
+      # WS-2 importers (golden grader, integration conftest) must keep working.
+      - contains: { file: src/eval/xbrl/numeric.py, pattern: "from src.eval.core.graders.numeric import" }
+
+  - id: WS9-E2
+    title: SQL-derived ground-truth suite generated from analyst_queries.sql
+    workstream: WS-9
+    finding: E2
+    status: done
+    checks:
+      - path: configs/eval/sql_derived_templates.yaml
+      - path: scripts/eval/build_sql_derived_suite.py
+      - path: scripts/eval/run_suite.py
+      - path: src/eval/suites/sql_derived.py
+      - path: test/eval/suites/sql_derived_v1.json
+      # Ambiguous or unlabelled ground truth must be dropped, never shipped.
+      - contains: { file: src/eval/suites/sql_derived.py, pattern: "skipped_ambiguous" }
+      - contains: { file: src/eval/suites/sql_derived.py, pattern: "skipped_no_facts" }
+      # Suite-content invariants (>=250 cases, fact ids on every case, no [Member]
+      # leakage, unique ids) are asserted by TestCommittedSuite in the normal suite.
+      # NB: no `cmd:` check here — it would shell out with a bare `python` (base env,
+      # no project deps) and run pytest recursively from inside pytest.
+      - path: test/unit/test_sql_derived_suite.py
+      - contains:
+          file: test/unit/test_sql_derived_suite.py
+          pattern: "ws9_e2_acceptance_size"
+
+  - id: WS9-E3
+    title: Eval result persistence (`eval` schema + store)
+    workstream: WS-9
+    finding: E3
+    status: done
+    checks:
+      - path: scripts/ddl/eval/eval_runs.sql
+      - path: src/eval/core/store.py
+      # Postgres rejects U+0000 in text and jsonb; because persistence is atomic and
+      # fail-soft, one stray byte silently discarded an entire 407-case run.
+      - contains: { file: src/eval/core/store.py, pattern: "def _scrub" }
+      - path: test/unit/test_eval_store_api.py
+      - contains:
+          file: test/unit/test_eval_store_api.py
+          pattern: "test_persisting_an_answer_containing_nul_succeeds"
+
+  - id: WS9-E4
+    title: Eval API + UI (run history, run detail with trace drill-down, run compare)
+    workstream: WS-9
+    finding: E4
+    status: done
+    checks:
+      - path: src/api/routes/eval.py
+      - path: ui/src/pages/technical/EvalPage.tsx
+      - path: ui/src/pages/technical/EvalRunPage.tsx
+      - path: ui/src/pages/technical/EvalComparePage.tsx
+      # A failing case must drill into its full existing trace.
+      - contains: { file: ui/src/pages/technical/EvalRunPage.tsx, pattern: "/tech/traces/" }
+      - contains: { file: ui/src/App.tsx, pattern: "/tech/eval" }
+
+  - id: WS9-E5
+    title: System-arm comparison (naive-RAG / long-context / closed-book baselines)
+    workstream: WS-9
+    finding: E5
+    status: done   # closed-book + naive-RAG (docs/specs/baseline-arms.md); long-context (docs/specs/long-context-arm.md, long-context-arms.md)
+    checks:
+      - path: src/eval/systems/naive_rag.py
+      - path: src/eval/systems/closed_book.py
+      - path: src/eval/systems/long_context.py
+      - contains: { file: src/eval/systems/__init__.py, pattern: "\"long_context\"" }
+      - path: prompts/templates/xbrl/_base/long_context/v1/user.txt
+
+  - id: WS9-E6
+    title: External benchmark adapters (FinanceBench / FinLoRA XBRL)
+    workstream: WS-9
+    finding: E6
+    status: deferred
+    checks:
+      - path: src/eval/suites/financebench.py   # proposed target
+
+  # ===================== WS-10 · v2: evaluation outside the loop, HTML flow, coverage =====================
+  # Scope added 2026-10-29 after external test v1 (docs/eval/external_test_v1/README.md).
+  # Every check below names a proposed target and fails until it is built.
+  - id: WS10-P1
+    title: DeepSeek provider and `deepseek` LLM profile (low-cost development model)
+    workstream: WS-10
+    status: done   # docs/specs/deepseek-provider.md
+    checks:
+      - contains: { file: configs/llm/llm.yaml, pattern: "deepseek" }
+      - contains: { file: configs/llm/pricing.yaml, pattern: "deepseek" }
+
+  - id: WS10-E1
+    title: Question intents rendered in several phrasing families; paraphrase stability reported
+    workstream: WS-10
+    status: done   # docs/specs/eval-intents.md; intent stability: eval-run-columns.md
+    checks:
+      - path: src/eval/suites/intents.py   # spec stub exists since spec/eval-intents
+      - path: configs/eval/v2               # the real phrasebook and lexicon (impl)
+
+  - id: WS10-E2
+    title: Answer keys independent of the system (SEC companyfacts/frames, hand-checked tables), with key provenance
+    workstream: WS-10
+    status: partial   # SEC keys (docs/specs/sec-keys.md); live SEC source, derived ratios, hand-checked table keys to come
+    checks:
+      - contains: { file: src/eval/keys/core.py, pattern: "def cross_check" }
+      - contains: { file: scripts/ddl/eval/eval_runs.sql, pattern: "key_source" }
+
+  - id: WS10-E3
+    title: Dev / validation / held-out splits recorded on every run
+    workstream: WS-10
+    status: done   # docs/specs/eval-run-columns.md
+    checks:
+      - contains: { file: scripts/ddl/eval/eval_runs.sql, pattern: "split" }
+
+  - id: WS10-E4
+    title: Text-answer judge (different model family), calibrated against human labels
+    workstream: WS-10
+    status: partial   # judge built (docs/specs/eval-judge.md); human-label calibration and runner wiring to come
+    checks:
+      - contains: { file: src/eval/core/graders/judge.py, pattern: "def cohen_kappa" }
+      - contains: { file: scripts/ddl/eval/eval_runs.sql, pattern: "judge_version" }
+
+  - id: WS10-E5
+    title: Held-out filers drawn by a pre-fixed seeded rule and ingested only into the quarantined environment
+    workstream: WS-10
+    status: todo
+    manual: "the draw record and the held-out ingest; checked at the first held-out milestone"
+
+  - id: WS10-H1
+    title: HTML 10-K flow ingest (ix-strip, sections without a ToC, structured table parsing)
+    workstream: WS-10
+    status: done
+    checks:
+      - path: src/ingest/html10k/tables.py   # proposed target
+
+  - id: WS10-H2
+    title: HTML 10-K flow as an eval arm (html_rag), plus long-context with resolved filing selection; built, retained in code, run on no set since 2026-11-06 (docs/design/XbrlRag_HtmlRag_Decision.md)
+    workstream: WS-10
+    status: done
+    checks:
+      - path: src/eval/systems/html_rag.py
+      - contains: { file: src/eval/systems/__init__.py, pattern: "\"html_rag\"" }
+      - path: src/pipelines/html10k/load_to_vectordb_pipeline.py
+      - contains: { file: src/eval/systems/__init__.py, pattern: "long_context_resolved" }
+
+  - id: WS10-U1
+    title: Coverage wave 1 (18 S&P 100 filers across sectors, FY2023-25 10-Ks)
+    workstream: WS-10
+    status: done
+    checks:
+      - contains: { file: configs/pipelines/sec_edgar_downloads.yaml, pattern: "ticker: \"CSCO\"" }
+      - contains: { file: configs/pipelines/sec_edgar_downloads.yaml, pattern: "ticker: \"UPS\"" }
+
+  - id: WS10-U2
+    title: Coverage wave 2 (XOM, V, TMUS, JNJ, PEP, BA, CAT, DIS)
+    workstream: WS-10
+    status: todo
+    checks:
+      - contains: { file: configs/pipelines/sec_edgar_downloads.yaml, pattern: "ticker: \"XOM\"" }

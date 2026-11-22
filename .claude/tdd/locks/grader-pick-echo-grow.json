@@ -1,0 +1,109 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-15",
+  "criteria": {
+    "C1": [
+      "test/spec/grader-pick-echo-grow/test_gpe_c1_echo_lines.py::test_echo_lines_are_deleted_with_their_newline",
+      "test/spec/grader-pick-echo-grow/test_gpe_c1_echo_lines.py::test_indented_and_multi_digit_labels_are_echoes",
+      "test/spec/grader-pick-echo-grow/test_gpe_c1_echo_lines.py::test_lines_that_are_not_echoes_are_kept",
+      "test/spec/grader-pick-echo-grow/test_gpe_c1_echo_lines.py::test_a_last_echo_line_leaves_the_newline_before_it",
+      "test/spec/grader-pick-echo-grow/test_gpe_c1_echo_lines.py::test_inserted_echo_lines_are_exactly_removed"
+    ],
+    "C2": [
+      "test/spec/grader-pick-echo-grow/test_gpe_c2_pick_sentence.py::test_the_real_shape_picks_the_answers_filer",
+      "test/spec/grader-pick-echo-grow/test_gpe_c2_pick_sentence.py::test_skipping_an_echo_never_favours_the_key",
+      "test/spec/grader-pick-echo-grow/test_gpe_c2_pick_sentence.py::test_echoes_as_the_only_superlative_sentences_give_no_pick",
+      "test/spec/grader-pick-echo-grow/test_gpe_c2_pick_sentence.py::test_echo_lines_never_change_a_declarative_pick"
+    ],
+    "C3": [
+      "test/spec/grader-pick-echo-grow/test_gpe_c3_pick_grading.py::test_the_real_shape_is_correct",
+      "test/spec/grader-pick-echo-grow/test_gpe_c3_pick_grading.py::test_an_answer_naming_another_filer_fails_the_pick",
+      "test/spec/grader-pick-echo-grow/test_gpe_c3_pick_grading.py::test_prefixed_echo_lines_never_change_the_grade"
+    ],
+    "C4": [
+      "test/spec/grader-pick-echo-grow/test_gpe_c4_amount_wording.py::test_how_much_movements_and_change_words_ask_for_an_amount",
+      "test/spec/grader-pick-echo-grow/test_gpe_c4_amount_wording.py::test_percent_cues_and_missing_amount_wording_block",
+      "test/spec/grader-pick-echo-grow/test_gpe_c4_amount_wording.py::test_random_how_much_questions"
+    ],
+    "C5": [
+      "test/spec/grader-pick-echo-grow/test_gpe_c5_grow_grading.py::test_how_much_did_it_grow_reads_the_signed_change",
+      "test/spec/grader-pick-echo-grow/test_gpe_c5_grow_grading.py::test_a_cue_or_the_growth_noun_gives_no_reading",
+      "test/spec/grader-pick-echo-grow/test_gpe_c5_grow_grading.py::test_compound_grow_question_accepts_the_absolute_change",
+      "test/spec/grader-pick-echo-grow/test_gpe_c5_grow_grading.py::test_the_growth_form_passes_under_either_question",
+      "test/spec/grader-pick-echo-grow/test_gpe_c5_grow_grading.py::test_non_compound_grow_case",
+      "test/spec/grader-pick-echo-grow/test_gpe_c5_grow_grading.py::test_change_accepted_exactly_under_amount_wording"
+    ],
+    "C6": [
+      "test/spec/grader-pick-echo-grow/test_gpe_c6_grader_version.py::test_grader_version_is_12",
+      "test/spec/grader-pick-echo-grow/test_gpe_c6_grader_version.py::test_version_does_not_depend_on_the_graded_cases"
+    ]
+  },
+  "files": {
+    "test/spec/grader-pick-echo-grow/conftest.py": "04e84816a3c30af4555b4c3ac3b896e6137b8eff073d045f60f2ae028e6174c4",
+    "test/spec/grader-pick-echo-grow/test_gpe_c1_echo_lines.py": "dc80f66cdd83b9dd282827b42cb7b34c7186788b9daa7402809f5d32153a91fe",
+    "test/spec/grader-pick-echo-grow/test_gpe_c2_pick_sentence.py": "7daa7201a5abe1aef340ba9578e4151e43a227b832a17647e7ff3788fa51073c",
+    "test/spec/grader-pick-echo-grow/test_gpe_c3_pick_grading.py": "1c0076a870d7c08eb57b2684168ea9c10ca9e14acb47895def90cea8e73b5e3f",
+    "test/spec/grader-pick-echo-grow/test_gpe_c4_amount_wording.py": "2a891e136bd9a8f800c5c138124bb89dca39146580f2b3b4e4f78a444210611a",
+    "test/spec/grader-pick-echo-grow/test_gpe_c5_grow_grading.py": "67a1aee0aee7d7c859c4a6c6eaa9f95a64af445805b7c7f9fe33d72573cddb3c",
+    "test/spec/grader-pick-echo-grow/test_gpe_c6_grader_version.py": "431d9bd09c6b8769adc7aa1848deaba1c68dcd09d0603aebea83dfa7404d026c"
+  },
+  "id": "grader-pick-echo-grow",
+  "interface": [
+    {
+      "file": "src/eval/core/graders/v2.py",
+      "module": "eval.core.graders.v2",
+      "qualname": "without_subquery_echoes",
+      "signature": "def without_subquery_echoes(text: str) -> str"
+    },
+    {
+      "file": "src/eval/core/graders/v2.py",
+      "module": "eval.core.graders.v2",
+      "qualname": "asks_for_amount",
+      "signature": "def asks_for_amount(question: str) -> bool"
+    }
+  ],
+  "nodes": [
+    "test/spec/grader-pick-echo-grow/test_gpe_c1_echo_lines.py::test_a_last_echo_line_leaves_the_newline_before_it",
+    "test/spec/grader-pick-echo-grow/test_gpe_c1_echo_lines.py::test_echo_lines_are_deleted_with_their_newline",
+    "test/spec/grader-pick-echo-grow/test_gpe_c1_echo_lines.py::test_indented_and_multi_digit_labels_are_echoes",
+    "test/spec/grader-pick-echo-grow/test_gpe_c1_echo_lines.py::test_inserted_echo_lines_are_exactly_removed",
+    "test/spec/grader-pick-echo-grow/test_gpe_c1_echo_lines.py::test_lines_that_are_not_echoes_are_kept",
+    "test/spec/grader-pick-echo-grow/test_gpe_c2_pick_sentence.py::test_echo_lines_never_change_a_declarative_pick",
+    "test/spec/grader-pick-echo-grow/test_gpe_c2_pick_sentence.py::test_echoes_as_the_only_superlative_sentences_give_no_pick",
+    "test/spec/grader-pick-echo-grow/test_gpe_c2_pick_sentence.py::test_skipping_an_echo_never_favours_the_key",
+    "test/spec/grader-pick-echo-grow/test_gpe_c2_pick_sentence.py::test_the_real_shape_picks_the_answers_filer",
+    "test/spec/grader-pick-echo-grow/test_gpe_c3_pick_grading.py::test_an_answer_naming_another_filer_fails_the_pick",
+    "test/spec/grader-pick-echo-grow/test_gpe_c3_pick_grading.py::test_prefixed_echo_lines_never_change_the_grade",
+    "test/spec/grader-pick-echo-grow/test_gpe_c3_pick_grading.py::test_the_real_shape_is_correct",
+    "test/spec/grader-pick-echo-grow/test_gpe_c4_amount_wording.py::test_how_much_movements_and_change_words_ask_for_an_amount",
+    "test/spec/grader-pick-echo-grow/test_gpe_c4_amount_wording.py::test_percent_cues_and_missing_amount_wording_block",
+    "test/spec/grader-pick-echo-grow/test_gpe_c4_amount_wording.py::test_random_how_much_questions",
+    "test/spec/grader-pick-echo-grow/test_gpe_c5_grow_grading.py::test_a_cue_or_the_growth_noun_gives_no_reading",
+    "test/spec/grader-pick-echo-grow/test_gpe_c5_grow_grading.py::test_change_accepted_exactly_under_amount_wording",
+    "test/spec/grader-pick-echo-grow/test_gpe_c5_grow_grading.py::test_compound_grow_question_accepts_the_absolute_change",
+    "test/spec/grader-pick-echo-grow/test_gpe_c5_grow_grading.py::test_how_much_did_it_grow_reads_the_signed_change",
+    "test/spec/grader-pick-echo-grow/test_gpe_c5_grow_grading.py::test_non_compound_grow_case",
+    "test/spec/grader-pick-echo-grow/test_gpe_c5_grow_grading.py::test_the_growth_form_passes_under_either_question",
+    "test/spec/grader-pick-echo-grow/test_gpe_c6_grader_version.py::test_grader_version_is_12",
+    "test/spec/grader-pick-echo-grow/test_gpe_c6_grader_version.py::test_version_does_not_depend_on_the_graded_cases"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/grader-pick-echo-grow.md",
+    "sha256": "2ff988574566627ad244a721c26aa8610fc8af2bcd09aff5993f569ddc7a1473"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

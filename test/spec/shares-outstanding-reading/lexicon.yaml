@@ -1,0 +1,9 @@
+# Synthetic lexicon for the shares-outstanding-reading spec tests (made-up filers).
+companies:
+  SSS: {short: Sigma, legal: Sigma Railways Inc.}
+  PPP: {short: Pi, legal: Pi Household Products Co.}
+metrics:
+  Revenue: {label: Revenues, synonyms: [net sales]}
+  SharesOutstanding: {label: "Common Stock, Shares, Outstanding", synonyms: [shares outstanding]}
+universes:
+  covered: [the covered companies]

@@ -1,0 +1,4 @@
+tag	version	custom	abstract	datatype	iord	crdr	tlabel	doc
+Assets	us-gaap/2023	0	0	monetary	I	D	Assets	Sum of the carrying amounts as of the balance sheet date of all assets that are recognized. Assets are probable future economic benefits obtained or controlled by an entity as a result of past transactions or events.
+OperatingIncomeLoss	us-gaap/2023	0	0	monetary	D	C	Operating Income (Loss)	The net result for the period of deducting operating expenses from operating revenues.
+Revenues	us-gaap/2023	0	0	monetary	D	C	Revenues	Amount of revenue recognized from goods sold, services rendered, insurance premiums, or other activities that constitute an earning process. Includes, but is not limited to, investment and interest income before deduction of interest expense when recognized as a component of revenue, and sales and trading gain (loss).

@@ -1,0 +1,112 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-09",
+  "criteria": {
+    "C1": [
+      "test/spec/suite-templates-s1/test_c1_restated_durations.py::test_the_latest_report_answers_a_restated_duration[INTC-CashFromFinancing-FY2022]",
+      "test/spec/suite-templates-s1/test_c1_restated_durations.py::test_the_latest_report_answers_a_restated_duration[INTC-CashFromInvesting-FY2022]",
+      "test/spec/suite-templates-s1/test_c1_restated_durations.py::test_the_latest_report_answers_a_restated_duration[META-Capex-FY2022]",
+      "test/spec/suite-templates-s1/test_c1_restated_durations.py::test_the_latest_report_answers_a_restated_duration[META-Capex-FY2023]",
+      "test/spec/suite-templates-s1/test_c1_restated_durations.py::test_the_latest_report_answers_a_restated_duration[INTC-CashFromFinancing-FY2025]",
+      "test/spec/suite-templates-s1/test_c1_restated_durations.py::test_row_order_and_unrelated_filings_never_change_the_pick",
+      "test/spec/suite-templates-s1/test_c1_restated_durations.py::test_a_later_restating_report_becomes_the_pick"
+    ],
+    "C2": [
+      "test/spec/suite-templates-s1/test_c2_balances_own_column.py::test_a_restated_balance_is_the_later_reports",
+      "test/spec/suite-templates-s1/test_c2_balances_own_column.py::test_no_own_column_means_no_pick",
+      "test/spec/suite-templates-s1/test_c2_balances_own_column.py::test_the_next_year_answers_on_its_own_end",
+      "test/spec/suite-templates-s1/test_c2_balances_own_column.py::test_every_pick_ends_on_the_fy_filings_own_end",
+      "test/spec/suite-templates-s1/test_c2_balances_own_column.py::test_removing_the_own_column_never_falls_back"
+    ],
+    "C3": [
+      "test/spec/suite-templates-s1/test_c3_reporting_currency.py::test_the_pick_is_the_twd_restatement[FY2022]",
+      "test/spec/suite-templates-s1/test_c3_reporting_currency.py::test_the_pick_is_the_twd_restatement[FY2023]",
+      "test/spec/suite-templates-s1/test_c3_reporting_currency.py::test_the_pick_is_the_twd_restatement[FY2024]",
+      "test/spec/suite-templates-s1/test_c3_reporting_currency.py::test_never_the_usd_convenience_translation",
+      "test/spec/suite-templates-s1/test_c3_reporting_currency.py::test_usd_rows_never_change_the_pick"
+    ],
+    "C4": [
+      "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-6a--INTC-FY2022-CashFromFinancing]",
+      "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-6a--INTC-FY2022-CashFromInvesting]",
+      "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-6a--META-FY2022-Capex]",
+      "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-6a--META-FY2023-Capex]",
+      "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-5a--LLY-FY2024-TotalAssets]",
+      "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-5a--COST-FY2026-Goodwill]",
+      "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-10a-TSM-FY2023-NetIncome]",
+      "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-1c--TSM-FY2023-NetIncome]",
+      "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-1a--INTC-FY2022-Revenue]",
+      "test/spec/suite-templates-s1/test_c4_templates.py::test_no_case_for_a_year_without_its_own_column",
+      "test/spec/suite-templates-s1/test_c4_templates.py::test_every_case_of_the_five_templates_obeys_s1",
+      "test/spec/suite-templates-s1/test_c4_templates.py::test_row_order_never_changes_a_case"
+    ]
+  },
+  "files": {
+    "test/spec/suite-templates-s1/conftest.py": "e503e4b642d083f03f4f51577c0089c137ca46524aaf8d7cd69eaff1f0dbaf14",
+    "test/spec/suite-templates-s1/fixtures/companyfacts.json": "3fd8d34dfd9656f878140367065c124279010fc36681be6366b12c7fc8487bac",
+    "test/spec/suite-templates-s1/fixtures/dei.json": "4d2cc9b03d88e86cc0b7ed693dafbed52c458a26258124aca0f20038b202561b",
+    "test/spec/suite-templates-s1/fixtures/fsds.json": "39c54f833a35af04750feb6b1c27b7d721c6f01262669ce3a0fef090171dbf7e",
+    "test/spec/suite-templates-s1/test_c1_restated_durations.py": "1164332bb03245f990c271a662283a087988e9824a9aae6183886b568c13c8b6",
+    "test/spec/suite-templates-s1/test_c2_balances_own_column.py": "1709dbc3b07e92a0dc141e62ab5cccdc0353528346ce931cdc8aeda02ab6347f",
+    "test/spec/suite-templates-s1/test_c3_reporting_currency.py": "a47cd0ee59bbf81ecd628f53cac38b6c88e6d538e5549a6aa8cfd5eb06a8acfa",
+    "test/spec/suite-templates-s1/test_c4_templates.py": "ba0e7fd8fab6cbd02ca281fb4b054d43ae72d2b6478380fbe1d289e4c655e1ad"
+  },
+  "id": "suite-templates-s1",
+  "interface": [
+    {
+      "file": "src/eval/suites/sql_derived.py",
+      "module": "eval.suites.sql_derived",
+      "qualname": "s1_lookup_pick",
+      "signature": "def s1_lookup_pick(rows: Sequence[collections.abc.Mapping[str, Any]], fy: int) -> dict | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/suite-templates-s1/test_c1_restated_durations.py::test_a_later_restating_report_becomes_the_pick",
+    "test/spec/suite-templates-s1/test_c1_restated_durations.py::test_row_order_and_unrelated_filings_never_change_the_pick",
+    "test/spec/suite-templates-s1/test_c1_restated_durations.py::test_the_latest_report_answers_a_restated_duration[INTC-CashFromFinancing-FY2022]",
+    "test/spec/suite-templates-s1/test_c1_restated_durations.py::test_the_latest_report_answers_a_restated_duration[INTC-CashFromFinancing-FY2025]",
+    "test/spec/suite-templates-s1/test_c1_restated_durations.py::test_the_latest_report_answers_a_restated_duration[INTC-CashFromInvesting-FY2022]",
+    "test/spec/suite-templates-s1/test_c1_restated_durations.py::test_the_latest_report_answers_a_restated_duration[META-Capex-FY2022]",
+    "test/spec/suite-templates-s1/test_c1_restated_durations.py::test_the_latest_report_answers_a_restated_duration[META-Capex-FY2023]",
+    "test/spec/suite-templates-s1/test_c2_balances_own_column.py::test_a_restated_balance_is_the_later_reports",
+    "test/spec/suite-templates-s1/test_c2_balances_own_column.py::test_every_pick_ends_on_the_fy_filings_own_end",
+    "test/spec/suite-templates-s1/test_c2_balances_own_column.py::test_no_own_column_means_no_pick",
+    "test/spec/suite-templates-s1/test_c2_balances_own_column.py::test_removing_the_own_column_never_falls_back",
+    "test/spec/suite-templates-s1/test_c2_balances_own_column.py::test_the_next_year_answers_on_its_own_end",
+    "test/spec/suite-templates-s1/test_c3_reporting_currency.py::test_never_the_usd_convenience_translation",
+    "test/spec/suite-templates-s1/test_c3_reporting_currency.py::test_the_pick_is_the_twd_restatement[FY2022]",
+    "test/spec/suite-templates-s1/test_c3_reporting_currency.py::test_the_pick_is_the_twd_restatement[FY2023]",
+    "test/spec/suite-templates-s1/test_c3_reporting_currency.py::test_the_pick_is_the_twd_restatement[FY2024]",
+    "test/spec/suite-templates-s1/test_c3_reporting_currency.py::test_usd_rows_never_change_the_pick",
+    "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-10a-TSM-FY2023-NetIncome]",
+    "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-1a--INTC-FY2022-Revenue]",
+    "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-1c--TSM-FY2023-NetIncome]",
+    "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-5a--COST-FY2026-Goodwill]",
+    "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-5a--LLY-FY2024-TotalAssets]",
+    "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-6a--INTC-FY2022-CashFromFinancing]",
+    "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-6a--INTC-FY2022-CashFromInvesting]",
+    "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-6a--META-FY2022-Capex]",
+    "test/spec/suite-templates-s1/test_c4_templates.py::test_each_template_keys_the_s1_fact[aq-6a--META-FY2023-Capex]",
+    "test/spec/suite-templates-s1/test_c4_templates.py::test_every_case_of_the_five_templates_obeys_s1",
+    "test/spec/suite-templates-s1/test_c4_templates.py::test_no_case_for_a_year_without_its_own_column",
+    "test/spec/suite-templates-s1/test_c4_templates.py::test_row_order_never_changes_a_case"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/suite-templates-s1.md",
+    "sha256": "aabc92ccdd2b7241d0a7bff402428659f2b034278558d5e2cd36190eb18f1091"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

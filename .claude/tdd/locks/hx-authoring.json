@@ -1,0 +1,176 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-29",
+  "criteria": {
+    "C1": [
+      "test/spec/hx-authoring/test_c1_validate_valid_and_mix.py::test_one_valid_case_of_every_shape_has_no_errors_and_the_hand_counted_mix",
+      "test/spec/hx-authoring/test_c1_validate_valid_and_mix.py::test_fifteen_of_each_kind_gives_no_warning",
+      "test/spec/hx-authoring/test_c1_validate_valid_and_mix.py::test_fourteen_of_one_kind_gives_exactly_one_warning_naming_kind_and_count",
+      "test/spec/hx-authoring/test_c1_validate_valid_and_mix.py::test_a_kind_with_no_cases_counts_zero_and_warns",
+      "test/spec/hx-authoring/test_c1_validate_valid_and_mix.py::test_overlapping_filer_sets_raise",
+      "test/spec/hx-authoring/test_c1_validate_valid_and_mix.py::test_random_valid_sets_have_no_errors_and_consistent_mix"
+    ],
+    "C2": [
+      "test/spec/hx-authoring/test_c2_validate_errors.py::test_each_broken_rule_gives_an_error_with_id_and_path",
+      "test/spec/hx-authoring/test_c2_validate_errors.py::test_missing_id_uses_the_index_and_duplicate_id_is_reported",
+      "test/spec/hx-authoring/test_c2_validate_errors.py::test_a_held_out_filer_is_an_error_in_every_ticker_position",
+      "test/spec/hx-authoring/test_c2_validate_errors.py::test_a_non_development_filer_is_an_error_except_in_an_out_of_corpus_decline",
+      "test/spec/hx-authoring/test_c2_validate_errors.py::test_no_message_carries_any_case_value_but_the_id"
+    ],
+    "C3": [
+      "test/spec/hx-authoring/test_c3_aggregate_and_cagr.py::test_sum_median_count_by_hand",
+      "test/spec/hx-authoring/test_c3_aggregate_and_cagr.py::test_rank_counts_strictly_greater_values_and_ties_share",
+      "test/spec/hx-authoring/test_c3_aggregate_and_cagr.py::test_empty_inputs_and_errors",
+      "test/spec/hx-authoring/test_c3_aggregate_and_cagr.py::test_cagr_by_hand_and_undefined_cases",
+      "test/spec/hx-authoring/test_c3_aggregate_and_cagr.py::test_rank_of_max_is_one_and_median_is_order_free",
+      "test/spec/hx-authoring/test_c3_aggregate_and_cagr.py::test_cagr_inverts_compounding"
+    ],
+    "C4": [
+      "test/spec/hx-authoring/test_c4_resolve_cross_filer.py::test_screen_rows_verified_each_reading_its_own_filer",
+      "test/spec/hx-authoring/test_c4_resolve_cross_filer.py::test_missing_and_duplicate_amounts",
+      "test/spec/hx-authoring/test_c4_resolve_cross_filer.py::test_sum_median_count_rank_verified_and_off",
+      "test/spec/hx-authoring/test_c4_resolve_cross_filer.py::test_unresolved_row_status_comes_before_the_arithmetic",
+      "test/spec/hx-authoring/test_c4_resolve_cross_filer.py::test_a_row_with_an_accession_reads_that_filing",
+      "test/spec/hx-authoring/test_c4_resolve_cross_filer.py::test_a_member_hint_restricts_to_dimensional_facts_with_that_label",
+      "test/spec/hx-authoring/test_c4_resolve_cross_filer.py::test_shuffling_candidates_does_not_change_the_result"
+    ],
+    "C5": [
+      "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_trend_reads_each_row_year",
+      "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_cagr_verified_and_off",
+      "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_point_in_time_reads_both_filings_for_the_case_year",
+      "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_point_in_time_value_only_in_the_other_filing_is_not_found",
+      "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_compound_items_are_prefixed_and_fetched_once",
+      "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_compound_ranking_failure_comes_first",
+      "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_compound_dependent_arithmetic_and_text_dependent",
+      "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_text_and_honesty_are_skipped_without_touching_the_store",
+      "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_results_never_carry_texts_amounts_accessions_or_tickers"
+    ],
+    "C6": [
+      "test/spec/hx-authoring/test_c6_report.py::test_layout_line_by_line",
+      "test/spec/hx-authoring/test_c6_report.py::test_status_order_puts_unknown_statuses_last_sorted",
+      "test/spec/hx-authoring/test_c6_report.py::test_line_count_matches_the_layout"
+    ],
+    "C7": [
+      "test/spec/hx-authoring/test_c7_build_and_seal.py::test_exact_case_dict_for_every_kind_and_subtype",
+      "test/spec/hx-authoring/test_c7_build_and_seal.py::test_every_built_case_loads_as_an_evalcase",
+      "test/spec/hx-authoring/test_c7_build_and_seal.py::test_unverified_raises_with_ids_only_or_is_excluded",
+      "test/spec/hx-authoring/test_c7_build_and_seal.py::test_shuffled_input_gives_identical_bytes_and_hash"
+    ]
+  },
+  "files": {
+    "test/spec/hx-authoring/conftest.py": "fcb8189c0e147f7cca3a5c6fdf897a7a1512fa1de758384c13b164151f14ef78",
+    "test/spec/hx-authoring/test_c1_validate_valid_and_mix.py": "8d0ed906a106a84021c90bfde6367691f97e79234a99057f543ad33c353d0f5e",
+    "test/spec/hx-authoring/test_c2_validate_errors.py": "8f26ccf3792ea5a3ad28c72dd775bfa38ae63180911510ccf359eb6911a197f5",
+    "test/spec/hx-authoring/test_c3_aggregate_and_cagr.py": "08dad365aa89c24ce888342151d127525323858980eb768009b954819dd85719",
+    "test/spec/hx-authoring/test_c4_resolve_cross_filer.py": "811c16d6a8b628c2853223fe4367f560860e20e824093c83b664c6b600e10f5c",
+    "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py": "bc55ceffcf9f9f12fbf6c0de187cf059c4913d592a8d0e53b8e7d6b46af642e5",
+    "test/spec/hx-authoring/test_c6_report.py": "fb5eba65c06d66f42519d7e7bf6bc13442f553963883d504bc571d8b742a22d1",
+    "test/spec/hx-authoring/test_c7_build_and_seal.py": "75eab152d79bb95a99b3c0935b2584edb2d719aa96cd1216015aab068b7a48af"
+  },
+  "id": "hx-authoring",
+  "interface": [
+    {
+      "file": "src/eval/set_b/hx.py",
+      "module": "eval.set_b.hx",
+      "qualname": "validate_hx",
+      "signature": "def validate_hx(cases: list[dict], dev_filers: frozenset[str], heldout_filers: frozenset[str]) -> dict"
+    },
+    {
+      "file": "src/eval/set_b/hx.py",
+      "module": "eval.set_b.hx",
+      "qualname": "aggregate",
+      "signature": "def aggregate(op: str, values: dict[str, float], subject: str | None=None) -> float | None"
+    },
+    {
+      "file": "src/eval/set_b/hx.py",
+      "module": "eval.set_b.hx",
+      "qualname": "cagr",
+      "signature": "def cagr(start: float, end: float, years: int) -> float | None"
+    },
+    {
+      "file": "src/eval/set_b/hx.py",
+      "module": "eval.set_b.hx",
+      "qualname": "resolve_hx_case",
+      "signature": "def resolve_hx_case(case: dict, store: HxKeyFactStore) -> dict"
+    },
+    {
+      "file": "src/eval/set_b/hx.py",
+      "module": "eval.set_b.hx",
+      "qualname": "render_hx_report",
+      "signature": "def render_hx_report(resolutions: list[dict]) -> str"
+    },
+    {
+      "file": "src/eval/set_b/hx.py",
+      "module": "eval.set_b.hx",
+      "qualname": "build_hx_suite",
+      "signature": "def build_hx_suite(cases: list[dict], resolutions: list[dict], allow_unverified: bool=False) -> dict"
+    },
+    {
+      "file": "src/eval/set_b/hx_base.py",
+      "module": "eval.set_b.hx_base",
+      "qualname": "HxKeyFactStore.facts_in_filing",
+      "signature": "@abstractmethod def facts_in_filing(self, ticker: str, accession: str, fiscal_year: int) -> list[dict]"
+    }
+  ],
+  "nodes": [
+    "test/spec/hx-authoring/test_c1_validate_valid_and_mix.py::test_a_kind_with_no_cases_counts_zero_and_warns",
+    "test/spec/hx-authoring/test_c1_validate_valid_and_mix.py::test_fifteen_of_each_kind_gives_no_warning",
+    "test/spec/hx-authoring/test_c1_validate_valid_and_mix.py::test_fourteen_of_one_kind_gives_exactly_one_warning_naming_kind_and_count",
+    "test/spec/hx-authoring/test_c1_validate_valid_and_mix.py::test_one_valid_case_of_every_shape_has_no_errors_and_the_hand_counted_mix",
+    "test/spec/hx-authoring/test_c1_validate_valid_and_mix.py::test_overlapping_filer_sets_raise",
+    "test/spec/hx-authoring/test_c1_validate_valid_and_mix.py::test_random_valid_sets_have_no_errors_and_consistent_mix",
+    "test/spec/hx-authoring/test_c2_validate_errors.py::test_a_held_out_filer_is_an_error_in_every_ticker_position",
+    "test/spec/hx-authoring/test_c2_validate_errors.py::test_a_non_development_filer_is_an_error_except_in_an_out_of_corpus_decline",
+    "test/spec/hx-authoring/test_c2_validate_errors.py::test_each_broken_rule_gives_an_error_with_id_and_path",
+    "test/spec/hx-authoring/test_c2_validate_errors.py::test_missing_id_uses_the_index_and_duplicate_id_is_reported",
+    "test/spec/hx-authoring/test_c2_validate_errors.py::test_no_message_carries_any_case_value_but_the_id",
+    "test/spec/hx-authoring/test_c3_aggregate_and_cagr.py::test_cagr_by_hand_and_undefined_cases",
+    "test/spec/hx-authoring/test_c3_aggregate_and_cagr.py::test_cagr_inverts_compounding",
+    "test/spec/hx-authoring/test_c3_aggregate_and_cagr.py::test_empty_inputs_and_errors",
+    "test/spec/hx-authoring/test_c3_aggregate_and_cagr.py::test_rank_counts_strictly_greater_values_and_ties_share",
+    "test/spec/hx-authoring/test_c3_aggregate_and_cagr.py::test_rank_of_max_is_one_and_median_is_order_free",
+    "test/spec/hx-authoring/test_c3_aggregate_and_cagr.py::test_sum_median_count_by_hand",
+    "test/spec/hx-authoring/test_c4_resolve_cross_filer.py::test_a_member_hint_restricts_to_dimensional_facts_with_that_label",
+    "test/spec/hx-authoring/test_c4_resolve_cross_filer.py::test_a_row_with_an_accession_reads_that_filing",
+    "test/spec/hx-authoring/test_c4_resolve_cross_filer.py::test_missing_and_duplicate_amounts",
+    "test/spec/hx-authoring/test_c4_resolve_cross_filer.py::test_screen_rows_verified_each_reading_its_own_filer",
+    "test/spec/hx-authoring/test_c4_resolve_cross_filer.py::test_shuffling_candidates_does_not_change_the_result",
+    "test/spec/hx-authoring/test_c4_resolve_cross_filer.py::test_sum_median_count_rank_verified_and_off",
+    "test/spec/hx-authoring/test_c4_resolve_cross_filer.py::test_unresolved_row_status_comes_before_the_arithmetic",
+    "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_cagr_verified_and_off",
+    "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_compound_dependent_arithmetic_and_text_dependent",
+    "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_compound_items_are_prefixed_and_fetched_once",
+    "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_compound_ranking_failure_comes_first",
+    "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_point_in_time_reads_both_filings_for_the_case_year",
+    "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_point_in_time_value_only_in_the_other_filing_is_not_found",
+    "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_results_never_carry_texts_amounts_accessions_or_tickers",
+    "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_text_and_honesty_are_skipped_without_touching_the_store",
+    "test/spec/hx-authoring/test_c5_resolve_period_compound_text.py::test_trend_reads_each_row_year",
+    "test/spec/hx-authoring/test_c6_report.py::test_layout_line_by_line",
+    "test/spec/hx-authoring/test_c6_report.py::test_line_count_matches_the_layout",
+    "test/spec/hx-authoring/test_c6_report.py::test_status_order_puts_unknown_statuses_last_sorted",
+    "test/spec/hx-authoring/test_c7_build_and_seal.py::test_every_built_case_loads_as_an_evalcase",
+    "test/spec/hx-authoring/test_c7_build_and_seal.py::test_exact_case_dict_for_every_kind_and_subtype",
+    "test/spec/hx-authoring/test_c7_build_and_seal.py::test_shuffled_input_gives_identical_bytes_and_hash",
+    "test/spec/hx-authoring/test_c7_build_and_seal.py::test_unverified_raises_with_ids_only_or_is_excluded"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/hx-authoring.md",
+    "sha256": "14beb612682b3b04969994b092ed4fd4b4917c9a56cbec9fc458860137b3f271"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

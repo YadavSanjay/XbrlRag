@@ -1,0 +1,6 @@
+# SHA-256 of each file as stored in git (LF line endings), pre-registration v1 amendment 1.
+# Verify:  git show <commit>:<path> | sha256sum
+# preregistration_v1.md and HASHES_v1.txt are listed to tie this amendment to the sealed v1.
+4377b9b81c519bccb467544550e906c26d3b821ec7f92cefc99d9080503c0b3f  docs/eval/blog_v1/preregistration_v1_amendment_1.md
+f393dee27c5889c5054e3c4502fba1bb48babe6dbf22e7eba6b7d1a26652f398  docs/eval/blog_v1/preregistration_v1.md
+8f7f8ca354207aa51b916427c21f5e2d26a5cde2646469e30857174f710aba6f  docs/eval/blog_v1/HASHES_v1.txt

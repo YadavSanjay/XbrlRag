@@ -1,0 +1,53 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/toc-page-number-links/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-17",
+  "criteria": {
+    "C1": [
+      "test/spec/toc-page-number-links/test_toc_page_number_links.py::test_intel_style_toc_labels_each_section_from_its_row",
+      "test/spec/toc-page-number-links/test_toc_page_number_links.py::test_page_number_toc_without_backlinks_still_labels_sections",
+      "test/spec/toc-page-number-links/test_toc_page_number_links.py::test_any_page_number_toc_yields_its_labels_in_order"
+    ],
+    "C2": [
+      "test/spec/toc-page-number-links/test_toc_page_number_links.py::test_cross_reference_index_adds_no_sections",
+      "test/spec/toc-page-number-links/test_toc_page_number_links.py::test_adding_an_index_leaves_any_page_number_tree_unchanged"
+    ],
+    "C3": [
+      "test/spec/toc-page-number-links/test_toc_page_number_links.py::test_text_labelled_toc_ignores_page_only_links_and_matches_its_twin",
+      "test/spec/toc-page-number-links/test_toc_page_number_links.py::test_page_only_links_never_change_a_text_labelled_tree"
+    ]
+  },
+  "files": {
+    "test/spec/toc-page-number-links/test_toc_page_number_links.py": "2d84a9459649edc038f9767972da3ee512400e602b0f436ff5409e4490a781e0"
+  },
+  "id": "toc-page-number-links",
+  "interface": [],
+  "nodes": [
+    "test/spec/toc-page-number-links/test_toc_page_number_links.py::test_adding_an_index_leaves_any_page_number_tree_unchanged",
+    "test/spec/toc-page-number-links/test_toc_page_number_links.py::test_any_page_number_toc_yields_its_labels_in_order",
+    "test/spec/toc-page-number-links/test_toc_page_number_links.py::test_cross_reference_index_adds_no_sections",
+    "test/spec/toc-page-number-links/test_toc_page_number_links.py::test_intel_style_toc_labels_each_section_from_its_row",
+    "test/spec/toc-page-number-links/test_toc_page_number_links.py::test_page_number_toc_without_backlinks_still_labels_sections",
+    "test/spec/toc-page-number-links/test_toc_page_number_links.py::test_page_only_links_never_change_a_text_labelled_tree",
+    "test/spec/toc-page-number-links/test_toc_page_number_links.py::test_text_labelled_toc_ignores_page_only_links_and_matches_its_twin"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/toc-page-number-links.md",
+    "sha256": "4fdd1a2ce7d5fa832eb81054546c757bab802a64fb6d267588c60239a9dc38f2"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

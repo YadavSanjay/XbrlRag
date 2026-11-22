@@ -1,0 +1,147 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-21",
+  "criteria": {
+    "C1": [
+      "test/spec/llm-anthropic-and-caching/test_c1_cache_points.py::test_cache_point_count_counts_marked_messages",
+      "test/spec/llm-anthropic-and-caching/test_c1_cache_points.py::test_four_cache_points_raise_before_any_provider_call",
+      "test/spec/llm-anthropic-and-caching/test_c1_cache_points.py::test_one_cache_point_reaches_the_adapter_unchanged",
+      "test/spec/llm-anthropic-and-caching/test_c1_cache_points.py::test_up_to_three_cache_points_pass_through"
+    ],
+    "C2": [
+      "test/spec/llm-anthropic-and-caching/test_c2_anthropic_request.py::test_opus_request_with_system_cache_point_and_question",
+      "test/spec/llm-anthropic-and-caching/test_c2_anthropic_request.py::test_each_committed_claude_model_uses_its_budget_and_effort",
+      "test/spec/llm-anthropic-and-caching/test_c2_anthropic_request.py::test_temperature_for_a_no_temperature_model_raises",
+      "test/spec/llm-anthropic-and-caching/test_c2_anthropic_request.py::test_unconfigured_model_keeps_the_callers_budget",
+      "test/spec/llm-anthropic-and-caching/test_c2_anthropic_request.py::test_only_cache_point_messages_carry_cache_control"
+    ],
+    "C3": [
+      "test/spec/llm-anthropic-and-caching/test_c3_anthropic_calls.py::test_invoke_streams_once_and_returns_the_final_message",
+      "test/spec/llm-anthropic-and-caching/test_c3_anthropic_calls.py::test_streamed_reply_parses_text_skips_thinking_and_maps_usage",
+      "test/spec/llm-anthropic-and-caching/test_c3_anthropic_calls.py::test_refusal_raises_llm_refusal_error_with_its_category",
+      "test/spec/llm-anthropic-and-caching/test_c3_anthropic_calls.py::test_reply_with_no_text_raises_value_error_not_refusal",
+      "test/spec/llm-anthropic-and-caching/test_c3_anthropic_calls.py::test_content_is_the_joined_text_blocks"
+    ],
+    "C4": [
+      "test/spec/llm-anthropic-and-caching/test_c4_refusals_and_transient.py::test_refusal_is_called_once_recorded_and_reraised",
+      "test/spec/llm-anthropic-and-caching/test_c4_refusals_and_transient.py::test_transient_table_for_both_adapters",
+      "test/spec/llm-anthropic-and-caching/test_c4_refusals_and_transient.py::test_both_adapters_classify_any_error_alike",
+      "test/spec/llm-anthropic-and-caching/test_c4_refusals_and_transient.py::test_transient_is_retried_but_refusal_is_not[1]",
+      "test/spec/llm-anthropic-and-caching/test_c4_refusals_and_transient.py::test_transient_is_retried_but_refusal_is_not[2]",
+      "test/spec/llm-anthropic-and-caching/test_c4_refusals_and_transient.py::test_transient_is_retried_but_refusal_is_not[3]",
+      "test/spec/llm-anthropic-and-caching/test_c4_refusals_and_transient.py::test_transient_is_retried_but_refusal_is_not[5]"
+    ],
+    "C5": [
+      "test/spec/llm-anthropic-and-caching/test_c5_openai_routing.py::test_no_cache_point_is_chat_completions_and_a_marker_moves_it_to_responses",
+      "test/spec/llm-anthropic-and-caching/test_c5_openai_routing.py::test_responses_request_with_a_cache_point",
+      "test/spec/llm-anthropic-and-caching/test_c5_openai_routing.py::test_responses_request_with_assistant_turn_and_temperature",
+      "test/spec/llm-anthropic-and-caching/test_c5_openai_routing.py::test_dict_response_format_with_a_cache_point_raises",
+      "test/spec/llm-anthropic-and-caching/test_c5_openai_routing.py::test_only_marked_parts_carry_a_breakpoint"
+    ],
+    "C6": [
+      "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py::test_completed_reply_maps_every_field",
+      "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py::test_missing_details_count_as_zero[present]",
+      "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py::test_missing_details_count_as_zero[none]",
+      "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py::test_missing_details_count_as_zero[absent]",
+      "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py::test_incomplete_reply_is_length",
+      "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py::test_emptying_output_text_turns_a_reply_into_value_error",
+      "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py::test_gateway_prices_a_cached_responses_call",
+      "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py::test_cost_over_any_usage_is_the_closed_form"
+    ],
+    "C7": [
+      "test/spec/llm-anthropic-and-caching/test_c7_long_context_cache_point.py::test_three_messages_with_the_filing_marked",
+      "test/spec/llm-anthropic-and-caching/test_c7_long_context_cache_point.py::test_registry_resolves_long_context_at_v2",
+      "test/spec/llm-anthropic-and-caching/test_c7_long_context_cache_point.py::test_two_questions_on_one_filing_share_the_cached_prefix"
+    ],
+    "C8": [
+      "test/spec/llm-anthropic-and-caching/test_c8_one_retry_layer.py::test_both_adapters_build_clients_without_sdk_retries",
+      "test/spec/llm-anthropic-and-caching/test_c8_one_retry_layer.py::test_no_sdk_retries_however_the_adapter_is_built[openai-param-key]",
+      "test/spec/llm-anthropic-and-caching/test_c8_one_retry_layer.py::test_no_sdk_retries_however_the_adapter_is_built[openai-base-url]",
+      "test/spec/llm-anthropic-and-caching/test_c8_one_retry_layer.py::test_no_sdk_retries_however_the_adapter_is_built[openai-compat]",
+      "test/spec/llm-anthropic-and-caching/test_c8_one_retry_layer.py::test_no_sdk_retries_however_the_adapter_is_built[anthropic-param-key]"
+    ]
+  },
+  "files": {
+    "test/spec/llm-anthropic-and-caching/conftest.py": "42a482bcdab6826e4de1f6be0758e2681014a0811f6bd3c29519c7a956dd664e",
+    "test/spec/llm-anthropic-and-caching/test_c1_cache_points.py": "880d7aa9cb844a6206b4267b520ceb694d7932c3b74a6edf56dc4c5aa1612aba",
+    "test/spec/llm-anthropic-and-caching/test_c2_anthropic_request.py": "7f5cbaf8207c211e600dafa64b21d87f87f6638c247ac82649fb4315acb4816a",
+    "test/spec/llm-anthropic-and-caching/test_c3_anthropic_calls.py": "a65614ee6b9c8ac44d59c7f4bd91c9fcbcc731ea00d992457d0de0b2d1640fa3",
+    "test/spec/llm-anthropic-and-caching/test_c4_refusals_and_transient.py": "e65c1fee72fd744ccbd90d22af0ee0a266088c1488856c9ca99d1d20764bece0",
+    "test/spec/llm-anthropic-and-caching/test_c5_openai_routing.py": "52c1f34b977784c47877be79f68fed73959659d966ed7be804a34905286ca756",
+    "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py": "7ec08f1866489fec77aac2fa44eb9917a0b490b96482027d18aff326ed96e686",
+    "test/spec/llm-anthropic-and-caching/test_c7_long_context_cache_point.py": "5c847ee5a87bae4e4697616dd586b0665e6d054d902057e5f50f7d0b40303d5f",
+    "test/spec/llm-anthropic-and-caching/test_c8_one_retry_layer.py": "949d2a6f7f8fce4b832db7bfe53ba79970f6af44647b206be407888b1e3ece58"
+  },
+  "id": "llm-anthropic-and-caching",
+  "interface": [
+    {
+      "file": "src/llm/gateway/adapters/base.py",
+      "module": "llm.gateway.adapters.base",
+      "qualname": "cache_point_count",
+      "signature": "def cache_point_count(messages: list[dict]) -> int"
+    }
+  ],
+  "nodes": [
+    "test/spec/llm-anthropic-and-caching/test_c1_cache_points.py::test_cache_point_count_counts_marked_messages",
+    "test/spec/llm-anthropic-and-caching/test_c1_cache_points.py::test_four_cache_points_raise_before_any_provider_call",
+    "test/spec/llm-anthropic-and-caching/test_c1_cache_points.py::test_one_cache_point_reaches_the_adapter_unchanged",
+    "test/spec/llm-anthropic-and-caching/test_c1_cache_points.py::test_up_to_three_cache_points_pass_through",
+    "test/spec/llm-anthropic-and-caching/test_c2_anthropic_request.py::test_each_committed_claude_model_uses_its_budget_and_effort",
+    "test/spec/llm-anthropic-and-caching/test_c2_anthropic_request.py::test_only_cache_point_messages_carry_cache_control",
+    "test/spec/llm-anthropic-and-caching/test_c2_anthropic_request.py::test_opus_request_with_system_cache_point_and_question",
+    "test/spec/llm-anthropic-and-caching/test_c2_anthropic_request.py::test_temperature_for_a_no_temperature_model_raises",
+    "test/spec/llm-anthropic-and-caching/test_c2_anthropic_request.py::test_unconfigured_model_keeps_the_callers_budget",
+    "test/spec/llm-anthropic-and-caching/test_c3_anthropic_calls.py::test_content_is_the_joined_text_blocks",
+    "test/spec/llm-anthropic-and-caching/test_c3_anthropic_calls.py::test_invoke_streams_once_and_returns_the_final_message",
+    "test/spec/llm-anthropic-and-caching/test_c3_anthropic_calls.py::test_refusal_raises_llm_refusal_error_with_its_category",
+    "test/spec/llm-anthropic-and-caching/test_c3_anthropic_calls.py::test_reply_with_no_text_raises_value_error_not_refusal",
+    "test/spec/llm-anthropic-and-caching/test_c3_anthropic_calls.py::test_streamed_reply_parses_text_skips_thinking_and_maps_usage",
+    "test/spec/llm-anthropic-and-caching/test_c4_refusals_and_transient.py::test_both_adapters_classify_any_error_alike",
+    "test/spec/llm-anthropic-and-caching/test_c4_refusals_and_transient.py::test_refusal_is_called_once_recorded_and_reraised",
+    "test/spec/llm-anthropic-and-caching/test_c4_refusals_and_transient.py::test_transient_is_retried_but_refusal_is_not[1]",
+    "test/spec/llm-anthropic-and-caching/test_c4_refusals_and_transient.py::test_transient_is_retried_but_refusal_is_not[2]",
+    "test/spec/llm-anthropic-and-caching/test_c4_refusals_and_transient.py::test_transient_is_retried_but_refusal_is_not[3]",
+    "test/spec/llm-anthropic-and-caching/test_c4_refusals_and_transient.py::test_transient_is_retried_but_refusal_is_not[5]",
+    "test/spec/llm-anthropic-and-caching/test_c4_refusals_and_transient.py::test_transient_table_for_both_adapters",
+    "test/spec/llm-anthropic-and-caching/test_c5_openai_routing.py::test_dict_response_format_with_a_cache_point_raises",
+    "test/spec/llm-anthropic-and-caching/test_c5_openai_routing.py::test_no_cache_point_is_chat_completions_and_a_marker_moves_it_to_responses",
+    "test/spec/llm-anthropic-and-caching/test_c5_openai_routing.py::test_only_marked_parts_carry_a_breakpoint",
+    "test/spec/llm-anthropic-and-caching/test_c5_openai_routing.py::test_responses_request_with_a_cache_point",
+    "test/spec/llm-anthropic-and-caching/test_c5_openai_routing.py::test_responses_request_with_assistant_turn_and_temperature",
+    "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py::test_completed_reply_maps_every_field",
+    "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py::test_cost_over_any_usage_is_the_closed_form",
+    "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py::test_emptying_output_text_turns_a_reply_into_value_error",
+    "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py::test_gateway_prices_a_cached_responses_call",
+    "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py::test_incomplete_reply_is_length",
+    "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py::test_missing_details_count_as_zero[absent]",
+    "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py::test_missing_details_count_as_zero[none]",
+    "test/spec/llm-anthropic-and-caching/test_c6_responses_replies.py::test_missing_details_count_as_zero[present]",
+    "test/spec/llm-anthropic-and-caching/test_c7_long_context_cache_point.py::test_registry_resolves_long_context_at_v2",
+    "test/spec/llm-anthropic-and-caching/test_c7_long_context_cache_point.py::test_three_messages_with_the_filing_marked",
+    "test/spec/llm-anthropic-and-caching/test_c7_long_context_cache_point.py::test_two_questions_on_one_filing_share_the_cached_prefix",
+    "test/spec/llm-anthropic-and-caching/test_c8_one_retry_layer.py::test_both_adapters_build_clients_without_sdk_retries",
+    "test/spec/llm-anthropic-and-caching/test_c8_one_retry_layer.py::test_no_sdk_retries_however_the_adapter_is_built[anthropic-param-key]",
+    "test/spec/llm-anthropic-and-caching/test_c8_one_retry_layer.py::test_no_sdk_retries_however_the_adapter_is_built[openai-base-url]",
+    "test/spec/llm-anthropic-and-caching/test_c8_one_retry_layer.py::test_no_sdk_retries_however_the_adapter_is_built[openai-compat]",
+    "test/spec/llm-anthropic-and-caching/test_c8_one_retry_layer.py::test_no_sdk_retries_however_the_adapter_is_built[openai-param-key]"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/llm-anthropic-and-caching.md",
+    "sha256": "9588efd933edeaab221a53bf87082e862e4f87e568ea0378759e6bf1fab020a3"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

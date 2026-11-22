@@ -1,0 +1,106 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-05",
+  "criteria": {
+    "C1": [
+      "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_a_call_cap_halt_propagates_from_each_stage[0]",
+      "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_a_call_cap_halt_propagates_from_each_stage[1]",
+      "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_a_call_cap_halt_propagates_from_each_stage[2]",
+      "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_a_call_cap_halt_propagates_from_each_stage[3]",
+      "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_a_stop_at_the_decomposer_is_not_swallowed",
+      "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_a_flex_cap_halt_at_the_verifier_is_not_swallowed",
+      "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_the_breaker_trips_after_the_decomposer_passes_a_failure_through",
+      "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_the_verifier_keeps_its_fallback_for_an_error_but_not_for_a_halt",
+      "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_generate_from_decision_lets_a_halt_through",
+      "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_the_raised_halt_keeps_its_class_and_message",
+      "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_any_halt_at_any_stage_propagates"
+    ],
+    "C2": [
+      "test/spec/xbrlrag-run-halt/test_c2_compound_query.py::test_a_halt_at_the_second_sub_query_discards_the_first_answer",
+      "test/spec/xbrlrag-run-halt/test_c2_compound_query.py::test_a_stop_at_the_second_synthesizer_propagates",
+      "test/spec/xbrlrag-run-halt/test_c2_compound_query.py::test_without_a_halt_the_merged_answer_has_both_parts_and_with_one_it_has_none",
+      "test/spec/xbrlrag-run-halt/test_c2_compound_query.py::test_any_call_cap_below_seven_halts_the_compound_query"
+    ],
+    "C3": [
+      "test/spec/xbrlrag-run-halt/test_c3_trace.py::test_the_persisted_trace_is_annotated_with_the_halt",
+      "test/spec/xbrlrag-run-halt/test_c3_trace.py::test_any_halt_is_recorded_on_its_trace"
+    ],
+    "C4": [
+      "test/spec/xbrlrag-run-halt/test_c4_eval_run.py::test_a_halt_in_case_b_ends_the_run_aborted_with_only_a_stored[decomposer]",
+      "test/spec/xbrlrag-run-halt/test_c4_eval_run.py::test_a_halt_in_case_b_ends_the_run_aborted_with_only_a_stored[verifier]",
+      "test/spec/xbrlrag-run-halt/test_c4_eval_run.py::test_the_resume_answers_exactly_the_halted_and_unanswered_cases",
+      "test/spec/xbrlrag-run-halt/test_c4_eval_run.py::test_the_cases_before_the_halt_are_kept_and_the_rest_resumed"
+    ],
+    "C5": [
+      "test/spec/xbrlrag-run-halt/test_c5_api_boundary.py::test_a_halted_query_gets_the_halted_body",
+      "test/spec/xbrlrag-run-halt/test_c5_api_boundary.py::test_an_answer_is_the_pipelines_answer_dumped",
+      "test/spec/xbrlrag-run-halt/test_c5_api_boundary.py::test_a_refusal_stays_the_pipelines_declined_answer",
+      "test/spec/xbrlrag-run-halt/test_c5_api_boundary.py::test_other_errors_propagate_and_user_id_reaches_generate",
+      "test/spec/xbrlrag-run-halt/test_c5_api_boundary.py::test_any_halt_gives_the_halted_body_with_its_class_and_message"
+    ]
+  },
+  "files": {
+    "test/spec/xbrlrag-run-halt/conftest.py": "ef98c7844d6fa9754389088c6ba89a5017b76f10574fddfdef7d8751925585fe",
+    "test/spec/xbrlrag-run-halt/test_c1_single_query.py": "e0ef17c14954114beefa9c08f2cea5707d605969b40a18b4a7ce21014fe9299c",
+    "test/spec/xbrlrag-run-halt/test_c2_compound_query.py": "7815f1073d08066131a9d186f28c0165ac199d3aa80f877301ba5e80b38db088",
+    "test/spec/xbrlrag-run-halt/test_c3_trace.py": "971252d9e26eb5fed948b731aa6ea5b66aedaade9c5a0d8beb5acfcbdb5c5350",
+    "test/spec/xbrlrag-run-halt/test_c4_eval_run.py": "79b5b4599c4964751545f4f7a53f5006f59b42f62469b12c240ed107f04dd6ab",
+    "test/spec/xbrlrag-run-halt/test_c5_api_boundary.py": "c8a49feef2bccca02d4edf3fc0afd4f0e3edf967736db1675f6536bf05017e86"
+  },
+  "id": "xbrlrag-run-halt",
+  "interface": [
+    {
+      "file": "src/api/pipelines.py",
+      "module": "api.pipelines",
+      "qualname": "xbrl_answer",
+      "signature": "def xbrl_answer(pipeline: Any, query: str, user_id: str | None=None) -> dict[str, Any]"
+    }
+  ],
+  "nodes": [
+    "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_a_call_cap_halt_propagates_from_each_stage[0]",
+    "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_a_call_cap_halt_propagates_from_each_stage[1]",
+    "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_a_call_cap_halt_propagates_from_each_stage[2]",
+    "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_a_call_cap_halt_propagates_from_each_stage[3]",
+    "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_a_flex_cap_halt_at_the_verifier_is_not_swallowed",
+    "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_a_stop_at_the_decomposer_is_not_swallowed",
+    "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_any_halt_at_any_stage_propagates",
+    "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_generate_from_decision_lets_a_halt_through",
+    "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_the_breaker_trips_after_the_decomposer_passes_a_failure_through",
+    "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_the_raised_halt_keeps_its_class_and_message",
+    "test/spec/xbrlrag-run-halt/test_c1_single_query.py::test_the_verifier_keeps_its_fallback_for_an_error_but_not_for_a_halt",
+    "test/spec/xbrlrag-run-halt/test_c2_compound_query.py::test_a_halt_at_the_second_sub_query_discards_the_first_answer",
+    "test/spec/xbrlrag-run-halt/test_c2_compound_query.py::test_a_stop_at_the_second_synthesizer_propagates",
+    "test/spec/xbrlrag-run-halt/test_c2_compound_query.py::test_any_call_cap_below_seven_halts_the_compound_query",
+    "test/spec/xbrlrag-run-halt/test_c2_compound_query.py::test_without_a_halt_the_merged_answer_has_both_parts_and_with_one_it_has_none",
+    "test/spec/xbrlrag-run-halt/test_c3_trace.py::test_any_halt_is_recorded_on_its_trace",
+    "test/spec/xbrlrag-run-halt/test_c3_trace.py::test_the_persisted_trace_is_annotated_with_the_halt",
+    "test/spec/xbrlrag-run-halt/test_c4_eval_run.py::test_a_halt_in_case_b_ends_the_run_aborted_with_only_a_stored[decomposer]",
+    "test/spec/xbrlrag-run-halt/test_c4_eval_run.py::test_a_halt_in_case_b_ends_the_run_aborted_with_only_a_stored[verifier]",
+    "test/spec/xbrlrag-run-halt/test_c4_eval_run.py::test_the_cases_before_the_halt_are_kept_and_the_rest_resumed",
+    "test/spec/xbrlrag-run-halt/test_c4_eval_run.py::test_the_resume_answers_exactly_the_halted_and_unanswered_cases",
+    "test/spec/xbrlrag-run-halt/test_c5_api_boundary.py::test_a_halted_query_gets_the_halted_body",
+    "test/spec/xbrlrag-run-halt/test_c5_api_boundary.py::test_a_refusal_stays_the_pipelines_declined_answer",
+    "test/spec/xbrlrag-run-halt/test_c5_api_boundary.py::test_an_answer_is_the_pipelines_answer_dumped",
+    "test/spec/xbrlrag-run-halt/test_c5_api_boundary.py::test_any_halt_gives_the_halted_body_with_its_class_and_message",
+    "test/spec/xbrlrag-run-halt/test_c5_api_boundary.py::test_other_errors_propagate_and_user_id_reaches_generate"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/xbrlrag-run-halt.md",
+    "sha256": "9a04c2662e51a2136abbb43abb7133f8fab4c6a6b6d7e88f6d84e06834e73e67"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

@@ -1,0 +1,10 @@
+# Prompt registry for the eval graders (not part of the XbrlRag query pipeline).
+# Same layout and resolution rules as prompts/templates/xbrl/registry.yaml:
+# <location>/<stage>/<version>/{system,user}.txt, `_base` the provider-neutral fallback
+# and the single source of truth.
+stages:
+  # The claim-by-claim judge (docs/specs/eval-judge.md). The judge model is explicit
+  # (configs/eval/judge.yaml), so the prompt resolves for that model's provider.
+  eval_judge:
+    default: { provider: anthropic, series: claude-5, version: v2 }
+    resolution: ["{provider}/{series}", "_base"]

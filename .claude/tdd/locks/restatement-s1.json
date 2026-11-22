@@ -1,0 +1,166 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-07",
+  "criteria": {
+    "C1": [
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_latest_report_answers_and_the_original_on_request[NVDA-FY2023]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_latest_report_answers_and_the_original_on_request[WMT-FY2023]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_latest_report_answers_and_the_original_on_request[AVGO-FY2022]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_latest_report_answers_and_the_original_on_request[INTC-FY2022]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_latest_report_answers_and_the_original_on_request[AMD-FY2023]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_latest_report_answers_and_the_original_on_request[HD-FY2023]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_lookup_answers_s1_and_the_original_on_request[NVDA-FY2023]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_lookup_answers_s1_and_the_original_on_request[WMT-FY2023]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_lookup_answers_s1_and_the_original_on_request[AVGO-FY2022]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_lookup_answers_s1_and_the_original_on_request[INTC-FY2022]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_lookup_answers_s1_and_the_original_on_request[AMD-FY2023]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_lookup_answers_s1_and_the_original_on_request[HD-FY2023]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_flat_screen_ranks_the_restated_value[INTC-FY2022]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_flat_screen_ranks_the_restated_value[AMD-FY2023]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_flat_screen_ranks_the_restated_value[HD-FY2023]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_older_filings_and_row_order_never_change_the_answer",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_product_and_the_key_agree_on_the_same_filings",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_screen_and_the_lookup_agree[INTC-FY2022]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_screen_and_the_lookup_agree[AMD-FY2023]",
+      "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_screen_and_the_lookup_agree[HD-FY2023]"
+    ],
+    "C2": [
+      "test/spec/restatement-s1/test_c2_yoy_basis.py::test_growth_is_computed_within_the_current_filing[NVDA-FY2025]",
+      "test/spec/restatement-s1/test_c2_yoy_basis.py::test_growth_is_computed_within_the_current_filing[WMT-FY2024]",
+      "test/spec/restatement-s1/test_c2_yoy_basis.py::test_growth_is_computed_within_the_current_filing[INTC-FY2023]",
+      "test/spec/restatement-s1/test_c2_yoy_basis.py::test_the_yoy_view_pairs_on_the_current_accession",
+      "test/spec/restatement-s1/test_c2_yoy_basis.py::test_other_filings_never_change_a_same_filing_pair",
+      "test/spec/restatement-s1/test_c2_yoy_basis.py::test_without_the_prior_column_the_prior_filing_is_used_and_flagged"
+    ],
+    "C3": [
+      "test/spec/restatement-s1/test_c3_amendments.py::test_only_full_statement_filings_carry_primary_statements",
+      "test/spec/restatement-s1/test_c3_amendments.py::test_one_non_cover_entry_makes_an_amendment_financial",
+      "test/spec/restatement-s1/test_c3_amendments.py::test_the_key_cites_the_10k_never_a_part_iii_amendment",
+      "test/spec/restatement-s1/test_c3_amendments.py::test_a_restating_amendment_wins_and_the_original_stays_available",
+      "test/spec/restatement-s1/test_c3_amendments.py::test_the_product_never_answers_from_a_part_iii_amendment[AMD-FY2025]",
+      "test/spec/restatement-s1/test_c3_amendments.py::test_the_product_never_answers_from_a_part_iii_amendment[MRK-FY2023]",
+      "test/spec/restatement-s1/test_c3_amendments.py::test_the_product_never_answers_from_a_part_iii_amendment[TSLA-FY2024]",
+      "test/spec/restatement-s1/test_c3_amendments.py::test_the_product_never_answers_from_a_part_iii_amendment[TSLA-FY2025]",
+      "test/spec/restatement-s1/test_c3_amendments.py::test_a_part_iii_amendment_filed_any_day_never_changes_a_key",
+      "test/spec/restatement-s1/test_c3_amendments.py::test_a_full_statement_amendment_filed_last_is_always_cited",
+      "test/spec/restatement-s1/test_c3_amendments.py::test_part_iii_rows_never_change_the_product_answer"
+    ],
+    "C4": [
+      "test/spec/restatement-s1/test_c4_stale_comparative.py::test_an_empty_year_has_no_own_column_and_a_full_one_does",
+      "test/spec/restatement-s1/test_c4_stale_comparative.py::test_the_lookup_refuses_an_empty_year[INTC-FY2025]",
+      "test/spec/restatement-s1/test_c4_stale_comparative.py::test_the_lookup_refuses_an_empty_year[COST-FY2025]",
+      "test/spec/restatement-s1/test_c4_stale_comparative.py::test_the_lookup_refuses_an_empty_year[KO-FY2025]",
+      "test/spec/restatement-s1/test_c4_stale_comparative.py::test_the_lookup_refuses_an_empty_year[QCOM-FY2024]",
+      "test/spec/restatement-s1/test_c4_stale_comparative.py::test_the_key_refuses_an_empty_year_and_keys_a_full_one_on_its_end",
+      "test/spec/restatement-s1/test_c4_stale_comparative.py::test_the_lookup_answers_a_full_year_and_refuses_its_empty_neighbour[INTC-FY2025]",
+      "test/spec/restatement-s1/test_c4_stale_comparative.py::test_the_lookup_answers_a_full_year_and_refuses_its_empty_neighbour[COST-FY2026]",
+      "test/spec/restatement-s1/test_c4_stale_comparative.py::test_every_own_column_row_ends_exactly_on_the_dei_date",
+      "test/spec/restatement-s1/test_c4_stale_comparative.py::test_removing_the_own_column_makes_product_and_key_refuse"
+    ]
+  },
+  "files": {
+    "test/spec/restatement-s1/conftest.py": "6f91a292e8e98a118a3f683777ff9b922d2f7d994549587deea1cbf542c5f93c",
+    "test/spec/restatement-s1/fixtures/companyfacts.json": "9ecd720efe49e1ae8af857003d3fc606499a69089c0c6af51528b9c9d42f5255",
+    "test/spec/restatement-s1/fixtures/dei.json": "2e261b57dd0843f2b4999df274ad4691bfd2d495972721f6c91a6552a8436a1f",
+    "test/spec/restatement-s1/fixtures/fsds.json": "15bfc9524dce3bb7f0e301742e8c2f5fb409adb76703c61db51490ec2491b536",
+    "test/spec/restatement-s1/test_c1_s1_selection.py": "51337a29f9fb1f93a4c554478235ab4029b53d78595781a5ada36eb4595c619b",
+    "test/spec/restatement-s1/test_c2_yoy_basis.py": "698aabe2cdad01fe01363ac8b50650b5aefe0244640b5207358b2dc1b1c225b2",
+    "test/spec/restatement-s1/test_c3_amendments.py": "b07df44ec3c2dc3e392567ae3e7136379eda3afb618acd4182ae3799cbf2c728",
+    "test/spec/restatement-s1/test_c4_stale_comparative.py": "567d16d8d97a6c7f839560f63a148ed1263f9c3846525b01bd054814e925105d"
+  },
+  "id": "restatement-s1",
+  "interface": [
+    {
+      "file": "src/eval/keys/core.py",
+      "module": "eval.keys.core",
+      "qualname": "carries_financial_data",
+      "signature": "def carries_financial_data(company_facts: dict, accession: str) -> bool"
+    },
+    {
+      "file": "src/retriever/xbrl/restatement.py",
+      "module": "retriever.xbrl.restatement",
+      "qualname": "current_column",
+      "signature": "def current_column(rows: Sequence[Mapping[str, Any]], fy: int, fiscal_period: str='FY', as_originally_reported: bool=False) -> list[dict]"
+    },
+    {
+      "file": "src/retriever/xbrl/restatement.py",
+      "module": "retriever.xbrl.restatement",
+      "qualname": "latest_restatement",
+      "signature": "def latest_restatement(current: Sequence[Mapping[str, Any]], rows: Sequence[Mapping[str, Any]]) -> list[dict]"
+    },
+    {
+      "file": "src/retriever/xbrl/restatement.py",
+      "module": "retriever.xbrl.restatement",
+      "qualname": "yoy_pairs",
+      "signature": "def yoy_pairs(rows: Sequence[Mapping[str, Any]], fy: int, fiscal_period: str='FY') -> list[dict]"
+    }
+  ],
+  "nodes": [
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_older_filings_and_row_order_never_change_the_answer",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_flat_screen_ranks_the_restated_value[AMD-FY2023]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_flat_screen_ranks_the_restated_value[HD-FY2023]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_flat_screen_ranks_the_restated_value[INTC-FY2022]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_latest_report_answers_and_the_original_on_request[AMD-FY2023]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_latest_report_answers_and_the_original_on_request[AVGO-FY2022]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_latest_report_answers_and_the_original_on_request[HD-FY2023]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_latest_report_answers_and_the_original_on_request[INTC-FY2022]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_latest_report_answers_and_the_original_on_request[NVDA-FY2023]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_latest_report_answers_and_the_original_on_request[WMT-FY2023]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_lookup_answers_s1_and_the_original_on_request[AMD-FY2023]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_lookup_answers_s1_and_the_original_on_request[AVGO-FY2022]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_lookup_answers_s1_and_the_original_on_request[HD-FY2023]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_lookup_answers_s1_and_the_original_on_request[INTC-FY2022]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_lookup_answers_s1_and_the_original_on_request[NVDA-FY2023]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_lookup_answers_s1_and_the_original_on_request[WMT-FY2023]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_product_and_the_key_agree_on_the_same_filings",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_screen_and_the_lookup_agree[AMD-FY2023]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_screen_and_the_lookup_agree[HD-FY2023]",
+    "test/spec/restatement-s1/test_c1_s1_selection.py::test_the_screen_and_the_lookup_agree[INTC-FY2022]",
+    "test/spec/restatement-s1/test_c2_yoy_basis.py::test_growth_is_computed_within_the_current_filing[INTC-FY2023]",
+    "test/spec/restatement-s1/test_c2_yoy_basis.py::test_growth_is_computed_within_the_current_filing[NVDA-FY2025]",
+    "test/spec/restatement-s1/test_c2_yoy_basis.py::test_growth_is_computed_within_the_current_filing[WMT-FY2024]",
+    "test/spec/restatement-s1/test_c2_yoy_basis.py::test_other_filings_never_change_a_same_filing_pair",
+    "test/spec/restatement-s1/test_c2_yoy_basis.py::test_the_yoy_view_pairs_on_the_current_accession",
+    "test/spec/restatement-s1/test_c2_yoy_basis.py::test_without_the_prior_column_the_prior_filing_is_used_and_flagged",
+    "test/spec/restatement-s1/test_c3_amendments.py::test_a_full_statement_amendment_filed_last_is_always_cited",
+    "test/spec/restatement-s1/test_c3_amendments.py::test_a_part_iii_amendment_filed_any_day_never_changes_a_key",
+    "test/spec/restatement-s1/test_c3_amendments.py::test_a_restating_amendment_wins_and_the_original_stays_available",
+    "test/spec/restatement-s1/test_c3_amendments.py::test_one_non_cover_entry_makes_an_amendment_financial",
+    "test/spec/restatement-s1/test_c3_amendments.py::test_only_full_statement_filings_carry_primary_statements",
+    "test/spec/restatement-s1/test_c3_amendments.py::test_part_iii_rows_never_change_the_product_answer",
+    "test/spec/restatement-s1/test_c3_amendments.py::test_the_key_cites_the_10k_never_a_part_iii_amendment",
+    "test/spec/restatement-s1/test_c3_amendments.py::test_the_product_never_answers_from_a_part_iii_amendment[AMD-FY2025]",
+    "test/spec/restatement-s1/test_c3_amendments.py::test_the_product_never_answers_from_a_part_iii_amendment[MRK-FY2023]",
+    "test/spec/restatement-s1/test_c3_amendments.py::test_the_product_never_answers_from_a_part_iii_amendment[TSLA-FY2024]",
+    "test/spec/restatement-s1/test_c3_amendments.py::test_the_product_never_answers_from_a_part_iii_amendment[TSLA-FY2025]",
+    "test/spec/restatement-s1/test_c4_stale_comparative.py::test_an_empty_year_has_no_own_column_and_a_full_one_does",
+    "test/spec/restatement-s1/test_c4_stale_comparative.py::test_every_own_column_row_ends_exactly_on_the_dei_date",
+    "test/spec/restatement-s1/test_c4_stale_comparative.py::test_removing_the_own_column_makes_product_and_key_refuse",
+    "test/spec/restatement-s1/test_c4_stale_comparative.py::test_the_key_refuses_an_empty_year_and_keys_a_full_one_on_its_end",
+    "test/spec/restatement-s1/test_c4_stale_comparative.py::test_the_lookup_answers_a_full_year_and_refuses_its_empty_neighbour[COST-FY2026]",
+    "test/spec/restatement-s1/test_c4_stale_comparative.py::test_the_lookup_answers_a_full_year_and_refuses_its_empty_neighbour[INTC-FY2025]",
+    "test/spec/restatement-s1/test_c4_stale_comparative.py::test_the_lookup_refuses_an_empty_year[COST-FY2025]",
+    "test/spec/restatement-s1/test_c4_stale_comparative.py::test_the_lookup_refuses_an_empty_year[INTC-FY2025]",
+    "test/spec/restatement-s1/test_c4_stale_comparative.py::test_the_lookup_refuses_an_empty_year[KO-FY2025]",
+    "test/spec/restatement-s1/test_c4_stale_comparative.py::test_the_lookup_refuses_an_empty_year[QCOM-FY2024]"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/restatement-s1.md",
+    "sha256": "32157e861e5f513bee97a8c45bda16bf76e28813f7f3061d13f72e88d6f221e1"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

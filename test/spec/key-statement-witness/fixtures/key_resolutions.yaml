@@ -1,0 +1,20 @@
+# Reviewed resolutions of statement disagreements. Spec: docs/specs/key-statement-witness.md
+# (requirement 3). This is the locked list: configs/eval/v2/key_resolutions.yaml may hold only
+# entries that appear here, field for field (it may shrink, never grow). A new entry is a
+# re-lock of this spec, reviewed by the maintainer.
+#
+# An entry covers exactly one key: its family, CIK, fiscal year, concept and value. A key the
+# mapping later moves to another concept or value is not covered and blocks again.
+#   reading  key: the key stands, for the stated reason; drop: the intent is not keyed.
+version: 1
+resolutions:
+  - family: DeferredRevenue
+    cik: '0001341439'
+    fiscal_year: 2024
+    concept: us-gaap:ContractWithCustomerLiability
+    value: 10546000000
+    reading: key
+    reason: >-
+      Total contract liability (current 9,313M plus non-current 1,233M in other non-current
+      liabilities, ORCL FY2025 10-K deferred revenue note). The balance sheet presents only
+      the current part.

@@ -1,0 +1,56 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/screen-concept-rank/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-16",
+  "criteria": {
+    "C1": [
+      "test/spec/screen-concept-rank/test_screen_concept_rank.py::test_oracle_revenue_picks_the_rank_1_fact",
+      "test/spec/screen-concept-rank/test_screen_concept_rank.py::test_component_only_filers_are_listed_not_ranked",
+      "test/spec/screen-concept-rank/test_screen_concept_rank.py::test_year_and_period_come_before_rank_and_none_ranks_last",
+      "test/spec/screen-concept-rank/test_screen_concept_rank.py::test_each_filer_gets_its_best_row_or_is_component_only"
+    ],
+    "C2": [
+      "test/spec/screen-concept-rank/test_screen_concept_rank.py::test_point_case_every_order_of_the_corpus_rows",
+      "test/spec/screen-concept-rank/test_screen_concept_rank.py::test_row_order_changes_nothing"
+    ]
+  },
+  "files": {
+    "test/spec/screen-concept-rank/test_screen_concept_rank.py": "44187322f7b99bd7d439f86b67e468a726abdd992946400b7b1cc726c9eecb4c"
+  },
+  "id": "screen-concept-rank",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_screen.py",
+      "module": "retriever.xbrl.xbrl_factstore_screen",
+      "qualname": "select_preferred_concept",
+      "signature": "def select_preferred_concept(rows: collections.abc.Sequence[dict]) -> tuple[list[dict], list[dict]]"
+    }
+  ],
+  "nodes": [
+    "test/spec/screen-concept-rank/test_screen_concept_rank.py::test_component_only_filers_are_listed_not_ranked",
+    "test/spec/screen-concept-rank/test_screen_concept_rank.py::test_each_filer_gets_its_best_row_or_is_component_only",
+    "test/spec/screen-concept-rank/test_screen_concept_rank.py::test_oracle_revenue_picks_the_rank_1_fact",
+    "test/spec/screen-concept-rank/test_screen_concept_rank.py::test_point_case_every_order_of_the_corpus_rows",
+    "test/spec/screen-concept-rank/test_screen_concept_rank.py::test_row_order_changes_nothing",
+    "test/spec/screen-concept-rank/test_screen_concept_rank.py::test_year_and_period_come_before_rank_and_none_ranks_last"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/screen-concept-rank.md",
+    "sha256": "29e859b8a668eb027f176393f47de95f62fa800920eeae3a62fcb1e0acd3d758"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

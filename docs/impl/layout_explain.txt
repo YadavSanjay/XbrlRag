@@ -1,0 +1,50 @@
+src/ — Main application code
+    src/ingest/ — Connectors and ingestion pipelines (PDF, HTML, S3, web scraping, DB connectors)
+    src/preprocess/ — Text cleaning, OCR post-processing, layout parsing, segmentation
+    src/chunking/ — Document chunkers/segmenters and related utils
+    src/embeddings/ — Embedding wrappers and batch embedding jobs (OpenAI, Hugging Face, on-prem)
+    src/vectorstores/ — Vector store adapters (FAISS, Milvus, Pinecone, Weaviate) + migration scripts
+    src/retriever/ — Retriever logic, hybrid retrieval (sparse + dense) and ranking
+    src/llm/ — LLM wrappers, prompt manager, retry/backoff, rate-limit handling
+    src/pipelines/ — End-to-end pipelines/chains (ingest → index → query → generate)
+    src/agents/ — Agent logic if using multi-step reasoning or tool-using agents
+    src/eval/ — Evaluation scripts, metrics (nDCG, MRR), test harnesses
+    src/api/ — REST/gRPC server, endpoints, request validation (fastapi/flask)
+    src/tasks/ — Background jobs (Celery/RQ/Prefect/APS) workers and scheduling
+    src/utils/ — Shared utilities, logging, error classes, common helpers
+
+data — Raw input data and sanitized copies (not for secrets)
+    data/raw/ — Original files (PDFs, HTML, JSON)
+    data/processed/ — Preprocessed/normalized artifacts
+    data/indexes/ — Vector store files, serialized indices (or pointer config)
+
+models/ — Local or packaged model artifacts (if storing fine-tuned models, re-rankers)
+    models/checkpoints/ — Checkpoints, tokenizer config
+
+configs/ — Configuration (YAML/JSON) and environment templates
+    configs/env.example or .env.example
+    configs/pipelines/*.yaml — Pipeline definitions, retriever settings
+
+notebooks — Exploratory/notebook experiments and reproducible demos
+
+scripts/ — Small scripts and CLIs (data importers, index rebuilders, maintenance)
+
+test/ — Unit and integration tests
+    tests/unit/
+    tests/integration/ — e.g., index + retriever + small LLM mock
+    tests/e2e/ — Fast smoke end-to-end runs against small dataset
+ci/ or .github/workflows/ — CI pipelines (lint, tests, build, publish artifacts)
+
+infra - 
+    infra/iac — IaC scripts (Terraform/CloudFormation) or Helm charts for deployments
+    infra/docker - Dockerfiles, compose fragments for local infra (vector db, redis, worker)
+
+docs — Architecture docs, runbooks, prompt docs, data governance
+    docs/ops/ — Monitoring, SLOs, alerting
+
+prompts/ — Prompt templates, versioning notes
+
+logs/ — Rotating runtime logs (or pointers to external logging)
+
+
+Plus the repo root common files: README.md, pyproject.toml or requirements.txt, LICENSE, .gitignore, Dockerfile, docker-compose.yml, .env.example, Makefile or invoke tasks.

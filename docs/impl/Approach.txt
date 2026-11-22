@@ -1,0 +1,175 @@
+
+bbox format : y increase downwards
+	- VLM image : 2 coords[top left, bottom right] 
+	- unstructed pdf elements : 4 coords[top left, counter clockwise]
+
+===============
+Ingest
+	- Have 10-K Structure outline in a json in Year range format.
+	- Read Metadata Information from first 1-3 pages
+		- ['Exact name of registrant as specified in its charter', ]
+		- ['Name of each exchange on which registered'] - ['Common Stock'*'Trading Symbol']
+		- ['State or other jurisdiction of incorporation or organization']
+		- ['For the Fiscal Year Ended']
+	- Find/read ToC [*Form*10-K*Index | TABLE OF CONTENTS] and doc page# listed on it
+		[Part I/II/III/IV]
+	- Find start of doc page by reading first few pages
+		Split large pdf pages into individual page and save them in a folder. Assign doc page to each pdf page
+
+	*- Pass through each pages and generate list of items/sections/sub-sections
+	
+	- Keep Frequently used terms in dictionary format for lookup
+	- Look for specific patterns for reference to other sections or where full details are present in pages further down.
+	
+Chunking [Layout-aware Semantic]
+	- 
+
+Embedding
+	-
+
+-----------------
+1. re-gen images post 0.7 threshold
+2. remove titles with length longer than sentence
+	- check for similarity against toc headers | chec
+	
+=================
+
+1. langchain llm wrappers - openai,huggingface
+	- retry/backoff, rate limiting handling
+	- credentials via system variables
+	- model specific prompts for specific tasks
+		- table image summarization
+		- page heading/summary/keyword extraction
+	- monitor/log llm invocation cost for calls
+
+2. Pre-processing
+	- sec10k_post_toc elements
+	- replace tables with table summary.
+		- add meta data fields e.g. image link, is table, page header, page number, etc.
+	<< explore converting table into json - token cost>>
+		
+	- pre-append page number, section tags to text chunks
+	- Add functions to get table summary / table image in binary encoding for table summary
+	
+3. Pipeline
+	- invoke flow steps
+		- table image summary extraction via LLM
+		- page header/summary/keyword extraction via LLM
+		- triggering chunking and save chunked section along with metadata
+		- Trigger vectorDB loads
+================
+Retrieval
+
+. Dense Embeddings - BGE-M3 / voyage-finance-2
+. Meta-data embedding - use section-subsection concat
+. Hyde - instruction fine-tuning on custom company dataset using InPars method
+. Chunk expansion - for retrieved chunks, include adjacent chunks (max 5) till they meet defined threshold 0.85
+. Doc ReRanker - BAAI/bge-reranker-v2-Gemma
+	- includes time bonus to select more recent data/chunks
+	- fine tune DRR using direct preference optimization
+	- eval DRR using Normalized Discounted Cummulative Gains (NDGC) and Mean Reciprocal Rank(MRR) 
+
+Evaluation
+
+. Eval dataset 
+	- FinanceBench
+	- Custom QA Dataset: 75 detailed questions which are cross filing/document/section questions on 12 filings (sec 6-K and F-1) from single company
+	
+	
+RAG benchmark(Apple-10K-2022)
+	: Questions about publicly traded companies and relevant public filings
+FinanceBench
+	: Questions about publicly traded companies and relevant public filings	
+
+------[voyage-finance-2 shines for these two]------
+ConvFinQA 
+	: Question-answer pairs over financial reports
+FinQA
+	: Question-answer pairs over financial reports
+	
+
+======= Eval Metrics ========
+ROUGE - text summarization - compares summary to one or more reference summaries
+BLEU  - text translation   - compares to human generated translation
+
+BenchMarks
+	- GLUE / SuperGLUE 
+	- MMLU
+	- BIG-bench
+	- HELM (Bias/Toxicity/Fairness) 
+	
+PEFT (parameter efficient fine tuning)
+ - LoRA (Low Rank Adaptation of LLM) - reparameterization
+ 
+==================
+1/ Retriever Module
+	a) baseline
+		- search text/metadata with time recency
+		- BAAI/bge-reranker-v2-gemma to merge text/metadata
+		- test with chunk size [5/10/15]
+	b) query_expansion
+		- With query paraphrasing/decomposition
+	c) hyde
+		- HyDE approaches - [ General / Cutom Trained - Fine Tuned ]
+		- test with chunk size [5/10/15]
+	d) drr
+		- DRR approaches - [ Default Cross Encoder / DPO-Fine-Tuned Cross Encoder]
+		- test with chunk size [5/10/15]
+
+2/ Eval
+	- Save actual output and retrieved chunks for each changeset and eval using RAG pipeline metrics from DeepEval
+	- plot the eval o/p on histrograms
+----------
+Updates
+1. Upload into vectorDB with correct year/timing
+2. Manually Eval these chunks for few questions
+3. Explore options on lighter / Efficient Re-rankers
+	. Jina Reranker (v2-base-multilingual)
+	. Mixedbread (mxbai-rerank-large/base)
+	. ZeroEntropy (zerank-2)
+	. Qwen3-Reranker (0.6B to 8B)
+	. Try with different version of BGE-Reranker-v2
+=================
+UI
+	- given chunk text, use internal API to generate same embedding (dense and sparse)as used by app
+		- useful for direct query into qdrant
+	- given chunk text (and/or) metadata generate embeddings and query vector db and show chunks retrieved.
+		- organize/group by year/section/company/score
+		
+		
+	1) Query decomposition has to done per year per data point - check also for just per year mutliple data points
+	2) Use time relevance only if latest is mentioned in query OR no year is mentioned.
+	3) Mutiple pass at re-ranker needed. Re-ranker should be able to take instructions.
+	4) Ideally slight higher weightage for chunks with table data
+	
+================
+	-- Router/Rule - which extracts year(s) in the query
+	-- Ensure year in metadata is in sync with Fiscal year
+	-- Break down multi year/multi data points query into single year/single data point query
+	-- For Single year queries use metadata filter to consider only that years chunks for semantic similarity
+	-- Optional - Use two Stage Cross Encoder Reranker which given emphasis to years
+	
+	
+	-- update prompts for decompose and hyde
+
+
+GOOGL - 2024(-1)
+NVDA  - 2022,2023,2024(+1)
+AMZN  -
+XOM   - 
+JPM   - 
+
+Prompt Optimizers	
+	https://dspy.ai/learn/optimization/optimizers/
+	
+	
+============== Papers ============
+https://arxiv.org/pdf/2512.04123	-	Measuring Agents in Production
+https://arxiv.org/pdf/2412.05299 	-	LLM Systems as Engineering Discipline
+https://arxiv.org/pdf/2503.22625	- 	Paths towards AI for Software Engineering
+https://arxiv.org/pdf/2504.09246	-	Type Constrained Code Gen with Language models
+
+https://arxiv.org/pdf/2510.06189	-	Impact of AI in Systems Research
+https://arxiv.org/pdf/2512.14806
+
+https://gso-bench.github.io/		-	Benchmark for evaluating LM for HP Software Dev

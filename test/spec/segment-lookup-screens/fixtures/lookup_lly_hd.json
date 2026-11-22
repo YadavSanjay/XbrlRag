@@ -1,0 +1,2453 @@
+{
+ "snapshot": {
+  "database": "xbrl_db",
+  "taken": "2026-11-07",
+  "read_only": true
+ },
+ "sources": [
+  {
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "form": "10-K",
+   "filing_date": "2024-02-21",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000065/lly-20231231.htm",
+   "primary_document": "lly-20231231.htm",
+   "sha256": "499b66eb8590ba2a6e419ced004c634596f66bdc358d035953b80894a8f01b78",
+   "retrieved": "2026-10-29"
+  },
+  {
+   "ticker": "HD",
+   "accession_no": "0001628280-26-019436",
+   "form": "10-K",
+   "filing_date": "2026-03-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/354950/000162828026019436/hd-20260201.htm",
+   "primary_document": "hd-20260201.htm",
+   "sha256": "8e66066f139493cac669aea73d1a4e52a5ce1e5e3fc39e150c2945a8be6a4dc5",
+   "retrieved": "2026-10-29"
+  }
+ ],
+ "fsds": [
+  {
+   "quarter": "2024q1",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q1.zip",
+   "zip_sha256": "94c7894b00903f8ff7186c4250ba1c1daa1bde8b3a0b26fae68f72608b2ffc9b",
+   "retrieved_at": "2026-11-07T17:11:24.917293+00:00",
+   "header": "adsh\ttag\tversion\tddate\tqtrs\tuom\tsegments\tcoreg\tvalue\tfootnote",
+   "lines": [
+    "0000059478-24-000065\tRevenues\tus-gaap/2023\t20231231\t4\tUSD\t\t\t34124100000.0000\t",
+    "0000059478-24-000065\tRevenues\tus-gaap/2023\t20231231\t4\tUSD\tGeographical=NonUs;\t\t12333100000.0000\t",
+    "0000059478-24-000065\tRevenues\tus-gaap/2023\t20231231\t4\tUSD\tGeographical=NonUs;ProductOrService=TrulicityMember;\t\t1699200000.0000\t",
+    "0000059478-24-000065\tRevenues\tus-gaap/2023\t20231231\t4\tUSD\tGeographical=US;\t\t21791000000.0000\t",
+    "0000059478-24-000065\tRevenues\tus-gaap/2023\t20231231\t4\tUSD\tGeographical=US;ProductOrService=TrulicityMember;\t\t5433300000.0000\t",
+    "0000059478-24-000065\tRevenues\tus-gaap/2023\t20231231\t4\tUSD\tProductOrService=Jardiance;\t\t2744700000.0000\t"
+   ]
+  },
+  {
+   "quarter": "2026q1",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q1.zip",
+   "zip_sha256": "d18c01c615da8f5cd46273b0dacaeee5b1163f4089171da0f84153a5f3c362f6",
+   "retrieved_at": "2026-11-07T17:11:48.301000+00:00",
+   "header": "adsh\ttag\tversion\tddate\tqtrs\tuom\tsegments\tcoreg\tvalue\tfootnote",
+   "lines": [
+    "0001628280-26-019436\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2025\t20260131\t4\tUSD\t\t\t164683000000.0000\t",
+    "0001628280-26-019436\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2025\t20260131\t4\tUSD\tBusinessSegments=AllOtherSegments;\t\t12717000000.0000\t",
+    "0001628280-26-019436\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2025\t20260131\t4\tUSD\tBusinessSegments=PrimarySegment;\t\t151966000000.0000\t",
+    "0001628280-26-019436\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2025\t20260131\t4\tUSD\tBusinessSegments=PrimarySegment;ConsolidationItems=OperatingSegments;\t\t151966000000.0000\t",
+    "0001628280-26-019436\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2025\t20260131\t4\tUSD\tBusinessSegments=PrimarySegment;ProductOrService=Appliances;\t\t13987000000.0000\t"
+   ]
+  }
+ ],
+ "concept_mapping": [
+  {
+   "qname": "http://fasb.org/us-gaap/2021-01-31:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "preference_rank": 1,
+   "cik_override": null,
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2021-01-31:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "preference_rank": 2,
+   "cik_override": "0000059478",
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2021-01-31:Revenues",
+   "preference_rank": 1,
+   "cik_override": "0000059478",
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2021-01-31:Revenues",
+   "preference_rank": 2,
+   "cik_override": null,
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2022:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "preference_rank": 1,
+   "cik_override": null,
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2022:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "preference_rank": 2,
+   "cik_override": "0000059478",
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2022:Revenues",
+   "preference_rank": 1,
+   "cik_override": "0000059478",
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2022:Revenues",
+   "preference_rank": 2,
+   "cik_override": null,
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "preference_rank": 1,
+   "cik_override": null,
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "preference_rank": 2,
+   "cik_override": "0000059478",
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2023:Revenues",
+   "preference_rank": 1,
+   "cik_override": "0000059478",
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2023:Revenues",
+   "preference_rank": 2,
+   "cik_override": null,
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "preference_rank": 1,
+   "cik_override": null,
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "preference_rank": 2,
+   "cik_override": "0000059478",
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2024:Revenues",
+   "preference_rank": 1,
+   "cik_override": "0000059478",
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2024:Revenues",
+   "preference_rank": 2,
+   "cik_override": null,
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2025:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "preference_rank": 1,
+   "cik_override": null,
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2025:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "preference_rank": 2,
+   "cik_override": "0000059478",
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2025:Revenues",
+   "preference_rank": 1,
+   "cik_override": "0000059478",
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2025:Revenues",
+   "preference_rank": 2,
+   "cik_override": null,
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "preference_rank": 1,
+   "cik_override": null,
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "preference_rank": 2,
+   "cik_override": "0000059478",
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2026:Revenues",
+   "preference_rank": 1,
+   "cik_override": "0000059478",
+   "is_deprecated": false
+  },
+  {
+   "qname": "http://fasb.org/us-gaap/2026:Revenues",
+   "preference_rank": 2,
+   "cik_override": null,
+   "is_deprecated": false
+  },
+  {
+   "qname": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "preference_rank": 1,
+   "cik_override": null,
+   "is_deprecated": false
+  },
+  {
+   "qname": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "preference_rank": 2,
+   "cik_override": "0000059478",
+   "is_deprecated": false
+  },
+  {
+   "qname": "us-gaap:Revenues",
+   "preference_rank": 1,
+   "cik_override": "0000059478",
+   "is_deprecated": false
+  },
+  {
+   "qname": "us-gaap:Revenues",
+   "preference_rank": 2,
+   "cik_override": null,
+   "is_deprecated": false
+  }
+ ],
+ "dimension_catalog": {
+  "0000059478": [
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://fasb.org/us-gaap/2023:ProductMember",
+    "member_label": "Product [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://fasb.org/us-gaap/2023:RoyaltyMember",
+    "member_label": "Royalty [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:AlimtaMember",
+    "member_label": "Alimta [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:BaqsimiMember",
+    "member_label": "Baqsimi [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:BasaglarMember",
+    "member_label": "Basaglar [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:CialisMember",
+    "member_label": "Cialis [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:CollaborationandOtherRevenueMember",
+    "member_label": "Collaboration and Other Revenue [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:COVID19AntibodiesMember",
+    "member_label": "COVID-19 Antibodies [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:CyramzaMember",
+    "member_label": "Cyramza [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:DiabetesAndObesityMember",
+    "member_label": "Diabetes And Obesity [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:EbglyssMember",
+    "member_label": "Ebglyss [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:EmgalityMember",
+    "member_label": "Emgality [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:ErbituxMember",
+    "member_label": "Erbitux [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:ForteoMember",
+    "member_label": "Forteo [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:HumalogHumulinAndForteoMember",
+    "member_label": "Humalog, Humulin, And Forteo [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:HumalogMember",
+    "member_label": "Humalog [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:HumulinMember",
+    "member_label": "Humulin [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:ImmunologyMember",
+    "member_label": "Immunology [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:JardianceMember",
+    "member_label": "Jardiance [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:LebrikizumabMember",
+    "member_label": "Lebrikizumab [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:MounjaroMember",
+    "member_label": "Mounjaro [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:NeuroscienceMember",
+    "member_label": "Neuroscience [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:OlumiantMember",
+    "member_label": "Olumiant [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:OncologyMember",
+    "member_label": "Oncology [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:OrforglipronMember",
+    "member_label": "Orforglipron [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:OtherDiabetesAndObesityMember",
+    "member_label": "Other Diabetes And Obesity [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:OtherImmunologyMember",
+    "member_label": "Other Immunology [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:OtherNeuroscienceMember",
+    "member_label": "Other Neuroscience [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:OtherOncologyMember",
+    "member_label": "Other Oncology [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:OtherProductMember",
+    "member_label": "Other Product [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:OtherProductTotalMember",
+    "member_label": "Other Product, Total [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:TaltzMember",
+    "member_label": "Taltz [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:TrajentaBIMember",
+    "member_label": "Trajenta (BI) [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:TrulicityMemberMember",
+    "member_label": "Trulicity [Member] [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:TYVYTMember",
+    "member_label": "TYVYT [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:VerzenioMember",
+    "member_label": "Verzenio [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:ZepboundMember",
+    "member_label": "Zepbound [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20231231:ZyprexaMember",
+    "member_label": "Zyprexa [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:StatementGeographicalAxis",
+    "member_qname": "http://fasb.org/srt/2023:EuropeMember",
+    "member_label": "Europe [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:StatementGeographicalAxis",
+    "member_qname": "http://fasb.org/us-gaap/2023:NonUsMember",
+    "member_label": "Non-US [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:StatementGeographicalAxis",
+    "member_qname": "http://www.lilly.com/20231231:OtherForeignCountriesMember",
+    "member_label": "Other Foreign Countries [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:StatementGeographicalAxis",
+    "member_qname": "http://www.lilly.com/20231231:UNITEDSTATESAndPUERTORICOMember",
+    "member_label": "UNITED STATES And PUERTO RICO [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:StatementGeographicalAxis",
+    "member_qname": "http://xbrl.sec.gov/country/2023:BR",
+    "member_label": "BRAZIL"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:StatementGeographicalAxis",
+    "member_qname": "http://xbrl.sec.gov/country/2023:CN",
+    "member_label": "CHINA"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:StatementGeographicalAxis",
+    "member_qname": "http://xbrl.sec.gov/country/2023:IE",
+    "member_label": "IRELAND"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:StatementGeographicalAxis",
+    "member_qname": "http://xbrl.sec.gov/country/2023:JP",
+    "member_label": "JAPAN"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:StatementGeographicalAxis",
+    "member_qname": "http://xbrl.sec.gov/country/2023:US",
+    "member_label": "UNITED STATES"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://fasb.org/us-gaap/2024:ProductMember",
+    "member_label": "Product [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:BaqsimiMember",
+    "member_label": "Baqsimi [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:BasaglarMember",
+    "member_label": "Basaglar [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:CardiometabolicHealthMember",
+    "member_label": "Cardiometabolic Health [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:CollaborationandOtherRevenueMember",
+    "member_label": "Collaboration and Other Revenue [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:COVID19AntibodiesMember",
+    "member_label": "COVID-19 Antibodies [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:CyramzaMember",
+    "member_label": "Cyramza [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:EarlyStageMember",
+    "member_label": "Early-Stage [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:EbglyssMember",
+    "member_label": "Ebglyss [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:EmgalityMember",
+    "member_label": "Emgality [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:ErbituxMember",
+    "member_label": "Erbitux [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:HumalogMember",
+    "member_label": "Humalog [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:HumulinMember",
+    "member_label": "Humulin [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:ImmunologyMember",
+    "member_label": "Immunology [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:JardianceMember",
+    "member_label": "Jardiance [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:LateStageMember",
+    "member_label": "Late-Stage [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:MounjaroMember",
+    "member_label": "Mounjaro [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:NeuroscienceMember",
+    "member_label": "Neuroscience [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:OlumiantMember",
+    "member_label": "Olumiant [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:OncologyMember",
+    "member_label": "Oncology [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:OrforglipronMember",
+    "member_label": "Orforglipron [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:OtherCardiometabolicHealthMember",
+    "member_label": "Other Cardiometabolic Health [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:OtherImmunologyMember",
+    "member_label": "Other Immunology [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:OtherNeuroscienceMember",
+    "member_label": "Other Neuroscience [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:OtherOncologyMember",
+    "member_label": "Other Oncology [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:OtherProductMember",
+    "member_label": "Other Product [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:OtherProductTotalMember",
+    "member_label": "Other Product, Total [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:TaltzMember",
+    "member_label": "Taltz [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:TrulicityMember",
+    "member_label": "Trulicity [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:TYVYTMember",
+    "member_label": "TYVYT [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:VerzenioMember",
+    "member_label": "Verzenio [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:ZepboundMember",
+    "member_label": "Zepbound [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20241231:ZyprexaMember",
+    "member_label": "Zyprexa [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:StatementGeographicalAxis",
+    "member_qname": "http://fasb.org/srt/2024:EuropeMember",
+    "member_label": "Europe [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:StatementGeographicalAxis",
+    "member_qname": "http://fasb.org/us-gaap/2024:NonUsMember",
+    "member_label": "Non-US [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:StatementGeographicalAxis",
+    "member_qname": "http://www.lilly.com/20241231:RestOfWorldMember",
+    "member_label": "Rest Of World [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:StatementGeographicalAxis",
+    "member_qname": "http://www.lilly.com/20241231:UNITEDSTATESAndPUERTORICOMember",
+    "member_label": "UNITED STATES And PUERTO RICO [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:StatementGeographicalAxis",
+    "member_qname": "http://xbrl.sec.gov/country/2024:BR",
+    "member_label": "BRAZIL"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:StatementGeographicalAxis",
+    "member_qname": "http://xbrl.sec.gov/country/2024:CN",
+    "member_label": "CHINA"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:StatementGeographicalAxis",
+    "member_qname": "http://xbrl.sec.gov/country/2024:IE",
+    "member_label": "IRELAND"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:StatementGeographicalAxis",
+    "member_qname": "http://xbrl.sec.gov/country/2024:JP",
+    "member_label": "JAPAN"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:StatementGeographicalAxis",
+    "member_qname": "http://xbrl.sec.gov/country/2024:US",
+    "member_label": "UNITED STATES"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://fasb.org/us-gaap/2025:ProductMember",
+    "member_label": "Product [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:CardiometabolicHealthMember",
+    "member_label": "Cardiometabolic Health [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:CollaborationandOtherRevenueMember",
+    "member_label": "Collaboration and Other Revenue [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:EarlyStageMember",
+    "member_label": "Early-Stage [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:EbglyssMember",
+    "member_label": "Ebglyss [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:ImmunologyMember",
+    "member_label": "Immunology [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:JardianceMember",
+    "member_label": "Jardiance [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:LateStageMember",
+    "member_label": "Late-Stage [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:MounjaroMember",
+    "member_label": "Mounjaro [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:NeuroscienceMember",
+    "member_label": "Neuroscience [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:OncologyMember",
+    "member_label": "Oncology [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:OtherCardiometabolicHealthMember",
+    "member_label": "Other Cardiometabolic Health [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:OtherImmunologyMember",
+    "member_label": "Other Immunology [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:OtherOncologyMember",
+    "member_label": "Other Oncology [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:OtherProductTotalMember",
+    "member_label": "Other Product, Total [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:TaltzMember",
+    "member_label": "Taltz [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:TrulicityMember",
+    "member_label": "Trulicity [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:VerzenioMember",
+    "member_label": "Verzenio [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.lilly.com/20251231:ZepboundMember",
+    "member_label": "Zepbound [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:StatementGeographicalAxis",
+    "member_qname": "http://fasb.org/srt/2025:EuropeMember",
+    "member_label": "Europe [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:StatementGeographicalAxis",
+    "member_qname": "http://fasb.org/us-gaap/2025:NonUsMember",
+    "member_label": "Non-US [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:StatementGeographicalAxis",
+    "member_qname": "http://www.lilly.com/20251231:RestOfWorldMember",
+    "member_label": "Rest Of World [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:StatementGeographicalAxis",
+    "member_qname": "http://www.lilly.com/20251231:UNITEDSTATESAndPUERTORICOMember",
+    "member_label": "UNITED STATES And PUERTO RICO [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:StatementGeographicalAxis",
+    "member_qname": "http://xbrl.sec.gov/country/2025:CN",
+    "member_label": "CHINA"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:StatementGeographicalAxis",
+    "member_qname": "http://xbrl.sec.gov/country/2025:IE",
+    "member_label": "IRELAND"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:StatementGeographicalAxis",
+    "member_qname": "http://xbrl.sec.gov/country/2025:IL",
+    "member_label": "ISRAEL"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:StatementGeographicalAxis",
+    "member_qname": "http://xbrl.sec.gov/country/2025:JP",
+    "member_label": "JAPAN"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:StatementGeographicalAxis",
+    "member_qname": "http://xbrl.sec.gov/country/2025:US",
+    "member_label": "UNITED STATES"
+   }
+  ],
+  "0000354950": [
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://fasb.org/us-gaap/2023:ProductMember",
+    "member_label": "Product [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://fasb.org/us-gaap/2023:ServiceMember",
+    "member_label": "Service [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:AppliancesMember",
+    "member_label": "Appliances [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:BuildingMaterialsMember",
+    "member_label": "Building Materials [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:DecorMember",
+    "member_label": "Decor [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:ElectricalLightingMember",
+    "member_label": "Electrical/Lighting [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:FlooringMember",
+    "member_label": "Flooring [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:HardwareMember",
+    "member_label": "Hardware [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:IndoorGardenMember",
+    "member_label": "Indoor Garden [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:KitchenAndBathMember",
+    "member_label": "Kitchen And Bath [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:LumberMember",
+    "member_label": "Lumber [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:MajorProductLineBuildingMaterialsMember",
+    "member_label": "Major Product Line - Building Materials [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:MajorProductLineDecorMember",
+    "member_label": "Major Product Line - Decor [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:MajorProductLineHardlinesMember",
+    "member_label": "Major Product Line - Hardlines [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:MillworkMember",
+    "member_label": "Millwork [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:OutdoorGardenMember",
+    "member_label": "Outdoor Garden [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:PaintMember",
+    "member_label": "Paint [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:PlumbingMember",
+    "member_label": "Plumbing [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2023:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20240128:ToolsMember",
+    "member_label": "Tools [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://fasb.org/us-gaap/2024:ProductMember",
+    "member_label": "Product [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://fasb.org/us-gaap/2024:ServiceMember",
+    "member_label": "Service [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:AppliancesMember",
+    "member_label": "Appliances [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:BathMember",
+    "member_label": "Bath [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:BuildingMaterialsMember",
+    "member_label": "Building Materials [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:ElectricalMember",
+    "member_label": "Electrical [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:FlooringMember",
+    "member_label": "Flooring [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:HardwareMember",
+    "member_label": "Hardware [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:IndoorGardenMember",
+    "member_label": "Indoor Garden [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:KitchenAndBlindsMember",
+    "member_label": "Kitchen And Blinds [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:LightingMember",
+    "member_label": "Lighting [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:LumberMember",
+    "member_label": "Lumber [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:MajorProductLineBuildingMaterialsMember",
+    "member_label": "Major Product Line - Building Materials [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:MajorProductLineDcorMember",
+    "member_label": "Major Product Line, D\u00e9cor [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:MajorProductLineHardlinesMember",
+    "member_label": "Major Product Line - Hardlines [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:MillworkMember",
+    "member_label": "Millwork [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:OutdoorGardenMember",
+    "member_label": "Outdoor Garden [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:PaintMember",
+    "member_label": "Paint [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:PlumbingMember",
+    "member_label": "Plumbing [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:PowerMember",
+    "member_label": "Power [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:RoofingProductsMember",
+    "member_label": "Roofing Products [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2024:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20250202:StorageOrganizationMember",
+    "member_label": "Storage & Organization [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://fasb.org/us-gaap/2025:ProductMember",
+    "member_label": "Product [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://fasb.org/us-gaap/2025:ServiceMember",
+    "member_label": "Service [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:AppliancesMember",
+    "member_label": "Appliances [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:BathMember",
+    "member_label": "Bath [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:BuildingMaterialsMember",
+    "member_label": "Building Materials [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:ElectricalMember",
+    "member_label": "Electrical [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:FlooringMember",
+    "member_label": "Flooring [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:HardwareMember",
+    "member_label": "Hardware [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:IndoorGardenMember",
+    "member_label": "Indoor Garden [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:KitchenAndBlindsMember",
+    "member_label": "Kitchen And Blinds [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:LightingMember",
+    "member_label": "Lighting [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:LumberMember",
+    "member_label": "Lumber [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:MajorProductLineBuildingMaterialsMember",
+    "member_label": "Major Product Line - Building Materials [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:MajorProductLineDcorMember",
+    "member_label": "Major Product Line, D\u00e9cor [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:MajorProductLineHardlinesMember",
+    "member_label": "Major Product Line - Hardlines [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:MillworkMember",
+    "member_label": "Millwork [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:OutdoorGardenMember",
+    "member_label": "Outdoor Garden [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:PaintMember",
+    "member_label": "Paint [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:PlumbingMember",
+    "member_label": "Plumbing [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:PowerMember",
+    "member_label": "Power [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:RoofingProductsMember",
+    "member_label": "Roofing Products [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/srt/2025:ProductOrServiceAxis",
+    "member_qname": "http://www.homedepot.com/20260201:StorageOrganizationMember",
+    "member_label": "Storage & Organization [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+    "member_qname": "http://fasb.org/us-gaap/2024:AllOtherSegmentsMember",
+    "member_label": "Other Operating Segment [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+    "member_qname": "http://fasb.org/us-gaap/2024:ReportableSegmentAggregationBeforeOtherOperatingSegmentMember",
+    "member_label": "Reportable Segment, Aggregation before Other Operating Segment [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis",
+    "member_qname": "http://fasb.org/us-gaap/2025:AllOtherSegmentsMember",
+    "member_label": "Other Operating Segment [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis",
+    "member_qname": "http://www.homedepot.com/20260201:OtherSegmentMember",
+    "member_label": "Other Segment [Member]"
+   },
+   {
+    "axis_qname": "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis",
+    "member_qname": "http://www.homedepot.com/20260201:PrimarySegmentMember",
+    "member_label": "Primary Segment [Member]"
+   }
+  ]
+ },
+ "records": [
+  {
+   "fact_id": 218920,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 34124100000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": null,
+   "segment_member": null,
+   "segment_label": null,
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": null,
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 218921,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 28541400000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": null,
+   "segment_member": null,
+   "segment_label": null,
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": null,
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 218922,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 28318400000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": null,
+   "segment_member": null,
+   "segment_label": null,
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": null,
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219333,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 5433300000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:US",
+   "segment_label": "UNITED STATES",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dimension_labels": {
+    "http://fasb.org/srt/2023:ProductOrServiceAxis": "Trulicity [Member] [Member]",
+    "http://fasb.org/srt/2023:StatementGeographicalAxis": "UNITED STATES"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2023:ProductOrServiceAxis": "http://www.lilly.com/20231231:TrulicityMemberMember",
+    "http://fasb.org/srt/2023:StatementGeographicalAxis": "http://xbrl.sec.gov/country/2023:US"
+   },
+   "geo_code": "US",
+   "geo_name": "UNITED STATES",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://xbrl.sec.gov/country/2023:US"
+    ],
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TrulicityMemberMember"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "country:US"
+  },
+  {
+   "fact_id": 219334,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 5688800000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:US",
+   "segment_label": "UNITED STATES",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dimension_labels": {
+    "http://fasb.org/srt/2023:ProductOrServiceAxis": "Trulicity [Member] [Member]",
+    "http://fasb.org/srt/2023:StatementGeographicalAxis": "UNITED STATES"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2023:ProductOrServiceAxis": "http://www.lilly.com/20231231:TrulicityMemberMember",
+    "http://fasb.org/srt/2023:StatementGeographicalAxis": "http://xbrl.sec.gov/country/2023:US"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://xbrl.sec.gov/country/2023:US"
+    ],
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TrulicityMemberMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219335,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 4914400000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:US",
+   "segment_label": "UNITED STATES",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dimension_labels": {
+    "http://fasb.org/srt/2023:ProductOrServiceAxis": "Trulicity [Member] [Member]",
+    "http://fasb.org/srt/2023:StatementGeographicalAxis": "UNITED STATES"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2023:ProductOrServiceAxis": "http://www.lilly.com/20231231:TrulicityMemberMember",
+    "http://fasb.org/srt/2023:StatementGeographicalAxis": "http://xbrl.sec.gov/country/2023:US"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://xbrl.sec.gov/country/2023:US"
+    ],
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TrulicityMemberMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219336,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 1699200000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.lilly.com/20231231:TrulicityMemberMember",
+   "segment_label": "Trulicity [Member] [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dimension_labels": {
+    "http://fasb.org/srt/2023:ProductOrServiceAxis": "Trulicity [Member] [Member]",
+    "http://fasb.org/srt/2023:StatementGeographicalAxis": "Non-US [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2023:ProductOrServiceAxis": "http://www.lilly.com/20231231:TrulicityMemberMember",
+    "http://fasb.org/srt/2023:StatementGeographicalAxis": "http://fasb.org/us-gaap/2023:NonUsMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TrulicityMemberMember"
+    ],
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://fasb.org/us-gaap/2023:NonUsMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219337,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 1750900000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.lilly.com/20231231:TrulicityMemberMember",
+   "segment_label": "Trulicity [Member] [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dimension_labels": {
+    "http://fasb.org/srt/2023:ProductOrServiceAxis": "Trulicity [Member] [Member]",
+    "http://fasb.org/srt/2023:StatementGeographicalAxis": "Non-US [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2023:ProductOrServiceAxis": "http://www.lilly.com/20231231:TrulicityMemberMember",
+    "http://fasb.org/srt/2023:StatementGeographicalAxis": "http://fasb.org/us-gaap/2023:NonUsMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TrulicityMemberMember"
+    ],
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://fasb.org/us-gaap/2023:NonUsMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219338,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 1557600000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.lilly.com/20231231:TrulicityMemberMember",
+   "segment_label": "Trulicity [Member] [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dimension_labels": {
+    "http://fasb.org/srt/2023:ProductOrServiceAxis": "Trulicity [Member] [Member]",
+    "http://fasb.org/srt/2023:StatementGeographicalAxis": "Non-US [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2023:ProductOrServiceAxis": "http://www.lilly.com/20231231:TrulicityMemberMember",
+    "http://fasb.org/srt/2023:StatementGeographicalAxis": "http://fasb.org/us-gaap/2023:NonUsMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TrulicityMemberMember"
+    ],
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://fasb.org/us-gaap/2023:NonUsMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219513,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 21791000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:US",
+   "segment_label": "UNITED STATES",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "geo_code": "US",
+   "geo_name": "UNITED STATES",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://xbrl.sec.gov/country/2023:US"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "country:US"
+  },
+  {
+   "fact_id": 219514,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 18190000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:US",
+   "segment_label": "UNITED STATES",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://xbrl.sec.gov/country/2023:US"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219515,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 16811000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:US",
+   "segment_label": "UNITED STATES",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://xbrl.sec.gov/country/2023:US"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219516,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 12333100000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "us-gaap:NonUsMember",
+   "segment_label": "Non-US [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "geo_code": "NonUsMember",
+   "geo_name": "Non-US [Member]",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://fasb.org/us-gaap/2023:NonUsMember"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "us-gaap:NonUsMember"
+  },
+  {
+   "fact_id": 219517,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 10351300000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "us-gaap:NonUsMember",
+   "segment_label": "Non-US [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://fasb.org/us-gaap/2023:NonUsMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219518,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 11507400000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "us-gaap:NonUsMember",
+   "segment_label": "Non-US [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://fasb.org/us-gaap/2023:NonUsMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219519,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 21791000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:US",
+   "segment_label": "UNITED STATES",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "geo_code": "US",
+   "geo_name": "UNITED STATES",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://xbrl.sec.gov/country/2023:US"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "country:US"
+  },
+  {
+   "fact_id": 219520,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 18190000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:US",
+   "segment_label": "UNITED STATES",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://xbrl.sec.gov/country/2023:US"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219521,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 16811000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:US",
+   "segment_label": "UNITED STATES",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://xbrl.sec.gov/country/2023:US"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219522,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 6174700000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "srt:EuropeMember",
+   "segment_label": "Europe [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "geo_code": "EuropeMember",
+   "geo_name": "Europe [Member]",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://fasb.org/srt/2023:EuropeMember"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "srt:EuropeMember"
+  },
+  {
+   "fact_id": 219523,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 4299200000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "srt:EuropeMember",
+   "segment_label": "Europe [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://fasb.org/srt/2023:EuropeMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219524,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 4776800000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "srt:EuropeMember",
+   "segment_label": "Europe [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://fasb.org/srt/2023:EuropeMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219525,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 1672600000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:JP",
+   "segment_label": "JAPAN",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "geo_code": "JP",
+   "geo_name": "JAPAN",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://xbrl.sec.gov/country/2023:JP"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "country:JP"
+  },
+  {
+   "fact_id": 219526,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 1747300000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:JP",
+   "segment_label": "JAPAN",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://xbrl.sec.gov/country/2023:JP"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219527,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 2367000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:JP",
+   "segment_label": "JAPAN",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://xbrl.sec.gov/country/2023:JP"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219528,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 1539700000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:CN",
+   "segment_label": "CHINA",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "geo_code": "CN",
+   "geo_name": "CHINA",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://xbrl.sec.gov/country/2023:CN"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "country:CN"
+  },
+  {
+   "fact_id": 219529,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 1452800000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:CN",
+   "segment_label": "CHINA",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://xbrl.sec.gov/country/2023:CN"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219530,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 1661400000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:CN",
+   "segment_label": "CHINA",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://xbrl.sec.gov/country/2023:CN"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219531,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 2946200000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.lilly.com/20231231:OtherForeignCountriesMember",
+   "segment_label": "Other Foreign Countries [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "geo_code": "//www.lilly.com/20231231",
+   "geo_name": "Other Foreign Countries [Member]",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://www.lilly.com/20231231:OtherForeignCountriesMember"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "http://www.lilly.com/20231231:OtherForeignCountriesMember"
+  },
+  {
+   "fact_id": 219532,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 2852000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.lilly.com/20231231:OtherForeignCountriesMember",
+   "segment_label": "Other Foreign Countries [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://www.lilly.com/20231231:OtherForeignCountriesMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219533,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 2702200000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.lilly.com/20231231:OtherForeignCountriesMember",
+   "segment_label": "Other Foreign Countries [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://www.lilly.com/20231231:OtherForeignCountriesMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219594,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 2744700000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.lilly.com/20231231:JardianceMember",
+   "segment_label": "Jardiance [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:JardianceMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219595,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 2066000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.lilly.com/20231231:JardianceMember",
+   "segment_label": "Jardiance [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:JardianceMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 219596,
+   "cik": "0000059478",
+   "ticker": "LLY",
+   "accession_no": "0000059478-24-000065",
+   "fiscal_year": 2023,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 1490800000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.lilly.com/20231231:JardianceMember",
+   "segment_label": "Jardiance [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:JardianceMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 213521,
+   "cik": "0000354950",
+   "ticker": "HD",
+   "accession_no": "0001628280-26-019436",
+   "fiscal_year": 2025,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2025:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 164683000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2025-02-03",
+   "period_end": "2026-02-02",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": null,
+   "segment_member": null,
+   "segment_label": null,
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF EARNINGS",
+   "dims": null,
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 213827,
+   "cik": "0000354950",
+   "ticker": "HD",
+   "accession_no": "0001628280-26-019436",
+   "fiscal_year": 2025,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2025:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 151966000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2025-02-03",
+   "period_end": "2026-02-02",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+   "segment_member": "http://www.homedepot.com/20260201:PrimarySegmentMember",
+   "segment_label": "Primary Segment [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF EARNINGS",
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis",
+     "http://www.homedepot.com/20260201:PrimarySegmentMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 213843,
+   "cik": "0000354950",
+   "ticker": "HD",
+   "accession_no": "0001628280-26-019436",
+   "fiscal_year": 2025,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2025:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 12717000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2025-02-03",
+   "period_end": "2026-02-02",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+   "segment_member": "us-gaap:AllOtherSegmentsMember",
+   "segment_label": "Other Operating Segment [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF EARNINGS",
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis",
+     "http://fasb.org/us-gaap/2025:AllOtherSegmentsMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 213903,
+   "cik": "0000354950",
+   "ticker": "HD",
+   "accession_no": "0001628280-26-019436",
+   "fiscal_year": 2025,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2025:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 13987000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2025-02-03",
+   "period_end": "2026-02-02",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.homedepot.com/20260201:AppliancesMember",
+   "segment_label": "Appliances [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF EARNINGS",
+   "dimension_labels": {
+    "http://fasb.org/srt/2025:ProductOrServiceAxis": "Appliances [Member]",
+    "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis": "Primary Segment [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2025:ProductOrServiceAxis": "http://www.homedepot.com/20260201:AppliancesMember",
+    "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis": "http://www.homedepot.com/20260201:PrimarySegmentMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2025:ProductOrServiceAxis",
+     "http://www.homedepot.com/20260201:AppliancesMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis",
+     "http://www.homedepot.com/20260201:PrimarySegmentMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 213905,
+   "cik": "0000354950",
+   "ticker": "HD",
+   "accession_no": "0001628280-26-019436",
+   "fiscal_year": 2025,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2025:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 14068000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-29",
+   "period_end": "2025-02-03",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.homedepot.com/20260201:AppliancesMember",
+   "segment_label": "Appliances [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF EARNINGS",
+   "dimension_labels": {
+    "http://fasb.org/srt/2025:ProductOrServiceAxis": "Appliances [Member]",
+    "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis": "Primary Segment [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2025:ProductOrServiceAxis": "http://www.homedepot.com/20260201:AppliancesMember",
+    "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis": "http://www.homedepot.com/20260201:PrimarySegmentMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2025:ProductOrServiceAxis",
+     "http://www.homedepot.com/20260201:AppliancesMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis",
+     "http://www.homedepot.com/20260201:PrimarySegmentMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 213907,
+   "cik": "0000354950",
+   "ticker": "HD",
+   "accession_no": "0001628280-26-019436",
+   "fiscal_year": 2025,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2025:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 13875000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-01-30",
+   "period_end": "2024-01-29",
+   "duration_kind": "annual",
+   "is_current_period": false,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.homedepot.com/20260201:AppliancesMember",
+   "segment_label": "Appliances [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF EARNINGS",
+   "dimension_labels": {
+    "http://fasb.org/srt/2025:ProductOrServiceAxis": "Appliances [Member]",
+    "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis": "Primary Segment [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2025:ProductOrServiceAxis": "http://www.homedepot.com/20260201:AppliancesMember",
+    "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis": "http://www.homedepot.com/20260201:PrimarySegmentMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2025:ProductOrServiceAxis",
+     "http://www.homedepot.com/20260201:AppliancesMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis",
+     "http://www.homedepot.com/20260201:PrimarySegmentMember"
+    ]
+   ],
+   "is_geographic_row": false
+  }
+ ]
+}

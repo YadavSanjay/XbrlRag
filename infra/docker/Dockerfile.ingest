@@ -1,0 +1,100 @@
+# syntax=docker/dockerfile:1
+#
+# XbrlRag INGEST image (CL #7) — the on-demand ingest runner for deploy_mode=aws.
+#
+# Torch-free, like the serving image: ingest embeds over HTTP via RAGINFER_URL
+# (RemoteEmbedder), so it does NOT load BGE-M3 in-process. It needs only the
+# ingest-only extras on top of the serving subset — EDGAR download (edgartools),
+# Arelle (iXBRL -> Postgres facts), lxml (canonicalization / DOM), boto3 (S3) —
+# all in requirements-ingest.txt. NOT a long-running service: an operator runs
+# the documented pipeline against S3 + RDS + the in-VPC Qdrant via SSM Session
+# Manager (or an ECS/Batch task). See docs/design/XbrlRag_AWS_Deployment.md.
+#
+# Build from the repo root (context = repo root):
+#   docker build -f infra/docker/Dockerfile.ingest -t arag-ingest:local .
+
+FROM python:3.12-slim
+
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PIP_NO_CACHE_DIR=1
+
+WORKDIR /app
+
+# Runtime libs for lxml/Arelle XBRL parsing (manylinux wheels usually suffice;
+# these cover a source build of lxml/psycopg2 if a wheel is unavailable).
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends libxml2-dev libxslt1-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Torch-free ingest deps (serving subset + edgartools + arelle-release==2.41.0 +
+# lxml + boto3). `arelle-release` is the cross-distro PyPI distribution of Arelle;
+# its `arelleCmdLine` console script replaces the Windows arelleCmdLine.exe the
+# local dev box uses, and it ships the same xbrlDB store-to-Postgres plugin.
+# Pinned to 2.41.0 to match the local frozen build (behavioral parity).
+# NOTE the pip distribution does NOT pull in a Postgres driver, and xbrlDB uses
+# pg8000 (not psycopg2) — requirements-ingest.txt adds it explicitly. Without it
+# every ingest dies at the DB-write step with xpgDB:MissingPostgresInterface.
+COPY requirements-ingest.txt .
+RUN pip install --no-cache-dir -r requirements-ingest.txt
+
+# The SEC's ixt-sec transforms: Arelle's EDGAR/transform plugin, which the frozen Windows
+# build bundles and arelle-release does not. The ingestor loads it by that name; without
+# it those facts store as (ixTransformValueError). Pinned to Arelle/EDGAR tag 26.3 and
+# checked file by file, so the build fails on any change (docs/specs/ixt-sec-transforms.md).
+ARG ARELLE_EDGAR_COMMIT=4891c4c9889c77af247428ceff4fa7cc52d534ea
+RUN set -e; \
+    dest="$(python -c 'import arelle, pathlib; print(pathlib.Path(arelle.__file__).parent / "plugin" / "EDGAR" / "transform")')"; \
+    mkdir -p "$dest"; \
+    for name in __init__.py text2num.py; do \
+        python -c 'import sys, urllib.request as u; u.urlretrieve(sys.argv[1], sys.argv[2])' \
+            "https://raw.githubusercontent.com/Arelle/EDGAR/${ARELLE_EDGAR_COMMIT}/transform/$name" "$dest/$name"; \
+    done; \
+    printf '%s  %s\n' \
+        2296586f945ffd95ab37d3d4147c4e45f42ce4e5f397f61143e053208adefbf1 "$dest/__init__.py" \
+        6c9b26354320a2fb34fe380cdc71ff7f8d1cc712811e6b10c661e512f0383409 "$dest/text2num.py" \
+        | sha256sum -c -
+
+# Application code + the scripts the ingest sequence runs (DDL apply, MV rebuild).
+COPY src/ ./src/
+COPY prompts/ ./prompts/
+COPY configs/ ./configs/
+COPY scripts/ ./scripts/
+
+# Non-root user with a scratch dir for S3FilingStore.localize_dir() temp
+# downloads handed to Arelle, plus Arelle's user app dir (see the cache note
+# below). uid 10001 is load-bearing: the host dir mounted over
+# /home/arag/.config/arelle must be chown'd to it or Arelle cannot write cache.
+RUN useradd --create-home --uid 10001 arag \
+    && mkdir -p /app/logs /tmp/arag /home/arag/.config/arelle/cache \
+    && chown -R arag:arag /app /tmp/arag /home/arag/.config
+USER arag
+
+# ---------------------------------------------------------------------------
+# MOUNT THE ARELLE WEB CACHE. Resolving a filing's DTS pulls the whole
+# us-gaap/dei/srt/country taxonomy plus the XBRL 2.1 core schemas over HTTP.
+# This image ships an EMPTY cache (baking it needs build-time internet and
+# adds ~hundreds of MB), so an unmounted, throwaway `docker run --rm` container
+# re-downloads everything on EVERY invocation and can never warm up. Worse, the
+# XBRL 2.1 core schemas live at http://www.xbrl.org over plain HTTP — if the
+# subnet only permits 443 egress, or has no IPv6 route, those fetches fail with
+# `[Errno 99] Cannot assign requested address` and the run stalls until the
+# per-filing timeout with no useful log.
+#
+#   -v /var/lib/arag-arelle-cache:/home/arag/.config/arelle
+#
+# Seed that host dir once from a known-good cache (a dev box that has ingested
+# these filings) and set ARELLE_INTERNET_CONNECTIVITY=offline to make a cache
+# miss fail fast instead of stalling. See
+# docs/guides/xbrl-flow/04-ingest-and-populate.md §4.13.2.
+# ---------------------------------------------------------------------------
+
+# On Linux the Arelle console script is on PATH; override if you vendor a build.
+# Connection endpoints (XBRL_DB_HOST=<rds>, QDRANT_HOST=<qdrant>, RAGINFER_URL,
+# XBRLRAG_S3_BUCKET, XBRLRAG_DEPLOY_MODE=aws) are supplied at run time, not baked here.
+ENV ARELLE_CMD=arelleCmdLine \
+    TMPDIR=/tmp/arag
+
+# No server. The operator (SSM) or task definition supplies the ingest command,
+# e.g. `python -m src.ingest.sec_edgar.downloader`. Default prints the runbook.
+CMD ["python", "-c", "print('XbrlRag ingest runner. Run the pipeline steps from docs/guides/xbrl-flow (downloader -> ingest -> rebuild_mvs.py -> chunking -> load_to_vectordb_pipeline). See docs/design/XbrlRag_AWS_Deployment.md.')"]

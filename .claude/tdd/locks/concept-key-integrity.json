@@ -1,0 +1,76 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/concept-key-integrity/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-02",
+  "criteria": {
+    "C1": [
+      "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_shares_outstanding_ranks_only_outstanding_shares_as_primary",
+      "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_shares_outstanding_ranking_holds_for_any_depth_and_cap"
+    ],
+    "C2": [
+      "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_accounts_payable_ranks_the_trade_line_and_not_accrued_liabilities",
+      "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_a_filer_ranking_never_promotes_accrued_liabilities"
+    ],
+    "C3": [
+      "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_other_nonoperating_income_ranks_the_other_line_first",
+      "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_other_nonoperating_ranking_holds_for_any_depth_and_cap"
+    ],
+    "C4": [
+      "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_drop_component_rows_point_cases",
+      "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_drop_component_rows_keeps_exactly_the_eligible_rows",
+      "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_adding_component_rows_changes_nothing",
+      "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_the_inventory_has_no_metric_keyed_from_a_component"
+    ],
+    "C5": [
+      "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_the_committed_file_holds_the_three_filer_entries",
+      "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_each_filer_ranks_its_preferred_concept_first",
+      "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_filer_entries_leave_the_generic_rankings_alone"
+    ]
+  },
+  "files": {
+    "test/spec/concept-key-integrity/test_concept_key_integrity.py": "5f2f442b8377515a4de7a21c7beca0545d5162a04f44eaa890fbfe365b80ad23"
+  },
+  "id": "concept-key-integrity",
+  "interface": [
+    {
+      "file": "src/eval/suites/v2_sources.py",
+      "module": "eval.suites.v2_sources",
+      "qualname": "drop_component_rows",
+      "signature": "def drop_component_rows(rows: Iterable[Sequence[Any]]) -> list[tuple[Any, ...]]"
+    }
+  ],
+  "nodes": [
+    "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_a_filer_ranking_never_promotes_accrued_liabilities",
+    "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_accounts_payable_ranks_the_trade_line_and_not_accrued_liabilities",
+    "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_adding_component_rows_changes_nothing",
+    "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_drop_component_rows_keeps_exactly_the_eligible_rows",
+    "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_drop_component_rows_point_cases",
+    "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_each_filer_ranks_its_preferred_concept_first",
+    "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_filer_entries_leave_the_generic_rankings_alone",
+    "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_other_nonoperating_income_ranks_the_other_line_first",
+    "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_other_nonoperating_ranking_holds_for_any_depth_and_cap",
+    "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_shares_outstanding_ranking_holds_for_any_depth_and_cap",
+    "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_shares_outstanding_ranks_only_outstanding_shares_as_primary",
+    "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_the_committed_file_holds_the_three_filer_entries",
+    "test/spec/concept-key-integrity/test_concept_key_integrity.py::test_the_inventory_has_no_metric_keyed_from_a_component"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/concept-key-integrity.md",
+    "sha256": "929004af30ec03a2bd37d4cf217d8faea19b3c7e798ab5c3747cd7ff320ccf36"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

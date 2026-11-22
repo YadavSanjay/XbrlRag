@@ -1,0 +1,273 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-27",
+  "criteria": {
+    "C1": [
+      "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_three_rows_with_extra_column_and_padding_parse_stripped_in_file_order",
+      "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_load_constituents_errors_raise[name,sector\\nAlpha Co,Energy\\n]",
+      "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_load_constituents_errors_raise[symbol,sector\\nAAQX,Energy\\n]",
+      "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_load_constituents_errors_raise[symbol,name\\nAAQX,Alpha Co\\n]",
+      "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_load_constituents_errors_raise[symbol,name,sector\\n  ,Alpha Co,Energy\\n]",
+      "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_load_constituents_errors_raise[symbol,name,sector\\nbrk.b,Beta A,Energy\\nBRK-B,Beta B,Energy\\n]",
+      "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_load_constituents_errors_raise[symbol,name,sector\\nBF/B,Gamma A,Energy\\nbf.b,Gamma B,Energy\\n]",
+      "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_load_constituents_errors_raise[symbol,name,sector\\n]",
+      "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_normalize_symbol_examples[ brk.b -BRK-B]",
+      "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_normalize_symbol_examples[BF/B-BF-B]",
+      "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_normalize_symbol_examples[msft-MSFT]",
+      "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_cik_map_pads_and_normalizes",
+      "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_cik_map_accepts_exact_repeat_and_rejects_two_ciks",
+      "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_normalize_symbol_is_idempotent"
+    ],
+    "C2": [
+      "test/spec/aprime-draw/test_c2_build_pool.py::test_one_constituent_per_reason_full_result",
+      "test/spec/aprime-draw/test_c2_build_pool.py::test_counts_add_up",
+      "test/spec/aprime-draw/test_c2_build_pool.py::test_precedence_sector_before_corpus_and_corpus_before_prospective",
+      "test/spec/aprime-draw/test_c2_build_pool.py::test_five_p_ciks_each_excluded_as_prospective",
+      "test/spec/aprime-draw/test_c2_build_pool.py::test_share_class_pair_keeps_symbol_that_sorts_first",
+      "test/spec/aprime-draw/test_c2_build_pool.py::test_strata_assigned_per_sector",
+      "test/spec/aprime-draw/test_c2_build_pool.py::test_unknown_sector_raises_naming_symbol[Tech]",
+      "test/spec/aprime-draw/test_c2_build_pool.py::test_unknown_sector_raises_naming_symbol[information technology]",
+      "test/spec/aprime-draw/test_c2_build_pool.py::test_unknown_sector_raises_naming_symbol[Healthcare]",
+      "test/spec/aprime-draw/test_c2_build_pool.py::test_unknown_sector_raises_naming_symbol[]",
+      "test/spec/aprime-draw/test_c2_build_pool.py::test_missing_ciks_raise_one_error_naming_each",
+      "test/spec/aprime-draw/test_c2_build_pool.py::test_unpadded_corpus_cik_still_matches",
+      "test/spec/aprime-draw/test_c2_build_pool.py::test_shuffled_constituents_give_identical_result"
+    ],
+    "C3": [
+      "test/spec/aprime-draw/test_c3_rank.py::test_rank_key_matches_hashlib_for_lowercase_ov_and_unpadded_cik",
+      "test/spec/aprime-draw/test_c3_rank.py::test_rank_orders_by_key_numbers_from_one_and_leaves_input_alone",
+      "test/spec/aprime-draw/test_c3_rank.py::test_adding_a_candidate_keeps_relative_order_and_shuffling_changes_nothing"
+    ],
+    "C4": [
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_examples[2025-01-03-2024]",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_examples[2025-01-07-2024]",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_examples[2025-01-08-2025]",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_examples[2025-09-27-2025]",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_examples[2024-01-01-2023]",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_examples[2024-12-31-2024]",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_malformed_raises[2025-13-01]",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_malformed_raises[2025-02-30]",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_malformed_raises[not-a-date]",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_malformed_raises[]",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_malformed_raises[2025/01/03]",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_all_three_years_inline_is_eligible",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_year_covered_only_by_amendment_is_missing",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_year_whose_only_10k_is_not_inline",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_year_with_one_inline_and_one_non_inline_is_fine",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_records_without_report_date_are_ignored",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_lists_sorted_and_custom_years",
+      "test/spec/aprime-draw/test_c4_eligibility.py::test_adding_non_10k_records_never_changes_result"
+    ],
+    "C5": [
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_matching_pulse_passes_and_mismatch_raises[2026-11-02T15:00:00Z]",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_matching_pulse_passes_and_mismatch_raises[2026-11-02T15:00:00+00:00]",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_one_minute_mismatch_raises",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_malformed_output_value_raises[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_malformed_output_value_raises[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_malformed_output_value_raises[gaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_malformed_output_value_raises[0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_malformed_output_value_raises[]",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_missing_or_non_string_field_raises[timeStamp-None]",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_missing_or_non_string_field_raises[outputValue-None]",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_missing_or_non_string_field_raises[timeStamp-1793718000000]",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_missing_or_non_string_field_raises[outputValue-12345]",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_request_not_utc_whole_minute_raises[2026-11-02T15:00:30.000Z-2026-11-02T15:00:30Z]",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_request_not_utc_whole_minute_raises[2026-11-02T15:00:00.500Z-2026-11-02T15:00:00.500Z]",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_request_not_utc_whole_minute_raises[2026-11-02T15:00:00.000Z-2026-11-02T16:00:00+01:00]",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_request_not_utc_whole_minute_raises[2026-11-02T15:00:00.000Z-2026-11-02T15:00:00]",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_request_not_utc_whole_minute_raises[2026-11-02T15:00:00.000Z-next tuesday]",
+      "test/spec/aprime-draw/test_c5_check_pulse.py::test_random_whole_minute_pulse_passes_against_same_instant"
+    ],
+    "C6": [
+      "test/spec/aprime-draw/test_c6_draw.py::test_hand_built_pool_gives_expected_draw",
+      "test/spec/aprime-draw/test_c6_draw.py::test_ineligible_skipped_but_checked",
+      "test/spec/aprime-draw/test_c6_draw.py::test_filings_not_called_after_both_lists_full",
+      "test/spec/aprime-draw/test_c6_draw.py::test_small_stratum_reports_shortfall_with_custom_sizes",
+      "test/spec/aprime-draw/test_c6_draw.py::test_malformed_output_value_raises[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+      "test/spec/aprime-draw/test_c6_draw.py::test_malformed_output_value_raises[zaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+      "test/spec/aprime-draw/test_c6_draw.py::test_malformed_output_value_raises[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+      "test/spec/aprime-draw/test_c6_draw.py::test_shuffled_candidates_give_identical_result",
+      "test/spec/aprime-draw/test_c6_draw.py::test_drawn_then_alternates_are_first_eligible_in_rank_order"
+    ]
+  },
+  "files": {
+    "test/spec/aprime-draw/conftest.py": "57af18ab7423cd8f796eabf1a42f4453ed1f9556715728c5fb439ded8168b833",
+    "test/spec/aprime-draw/test_c1_constituents_and_ciks.py": "d1add1d5d0e59be82be4392a7a8185e5b6059a0204d89e3dbfc7deab193bc57d",
+    "test/spec/aprime-draw/test_c2_build_pool.py": "2af6e7571c727d5ce9a0c9c72fc67aa3d444c4951089be29f4c3c9eb10e54e41",
+    "test/spec/aprime-draw/test_c3_rank.py": "ade26f424281db39af182d83ac1fc8d8db23679a77dcfeda9189c082977b9ad7",
+    "test/spec/aprime-draw/test_c4_eligibility.py": "41d5a29daacf77ef8ce0eb58d6e8342ac752d8a99e21f6f18d1e727c328d804c",
+    "test/spec/aprime-draw/test_c5_check_pulse.py": "701eadefd3b52c3d3b9e4157b29f1403e7cc740a03889799408a744bcd9a8d48",
+    "test/spec/aprime-draw/test_c6_draw.py": "6ec6df2e4e1496df6f65e636c2fc01a6cd17357f072662d5adb7e5fb8105698d"
+  },
+  "id": "aprime-draw",
+  "interface": [
+    {
+      "file": "src/eval/aprime/base.py",
+      "module": "eval.aprime.base",
+      "qualname": "FilingIndexSource.filings",
+      "signature": "@abstractmethod def filings(self, cik: str) -> list[dict]"
+    },
+    {
+      "file": "src/eval/aprime/base.py",
+      "module": "eval.aprime.base",
+      "qualname": "BeaconSource.pulse",
+      "signature": "@abstractmethod def pulse(self, timestamp_utc: str) -> dict"
+    },
+    {
+      "file": "src/eval/aprime/core.py",
+      "module": "eval.aprime.core",
+      "qualname": "load_constituents",
+      "signature": "def load_constituents(text: str) -> list[dict]"
+    },
+    {
+      "file": "src/eval/aprime/core.py",
+      "module": "eval.aprime.core",
+      "qualname": "normalize_symbol",
+      "signature": "def normalize_symbol(symbol: str) -> str"
+    },
+    {
+      "file": "src/eval/aprime/core.py",
+      "module": "eval.aprime.core",
+      "qualname": "cik_map",
+      "signature": "def cik_map(company_tickers: dict) -> dict[str, str]"
+    },
+    {
+      "file": "src/eval/aprime/core.py",
+      "module": "eval.aprime.core",
+      "qualname": "build_pool",
+      "signature": "def build_pool(constituents: list[dict], ciks: dict[str, str], corpus_ciks: set[str]) -> dict"
+    },
+    {
+      "file": "src/eval/aprime/core.py",
+      "module": "eval.aprime.core",
+      "qualname": "rank_key",
+      "signature": "def rank_key(output_value: str, cik: str) -> str"
+    },
+    {
+      "file": "src/eval/aprime/core.py",
+      "module": "eval.aprime.core",
+      "qualname": "rank",
+      "signature": "def rank(candidates: list[dict], output_value: str) -> list[dict]"
+    },
+    {
+      "file": "src/eval/aprime/core.py",
+      "module": "eval.aprime.core",
+      "qualname": "fiscal_year_of",
+      "signature": "def fiscal_year_of(report_date: str) -> int"
+    },
+    {
+      "file": "src/eval/aprime/core.py",
+      "module": "eval.aprime.core",
+      "qualname": "check_eligibility",
+      "signature": "def check_eligibility(filings: list[dict], years: tuple[int, ...]=(2023, 2024, 2025)) -> dict"
+    },
+    {
+      "file": "src/eval/aprime/core.py",
+      "module": "eval.aprime.core",
+      "qualname": "check_pulse",
+      "signature": "def check_pulse(pulse: dict, requested_utc: str) -> None"
+    },
+    {
+      "file": "src/eval/aprime/core.py",
+      "module": "eval.aprime.core",
+      "qualname": "draw",
+      "signature": "def draw(pool: dict, pulse: dict, source: FilingIndexSource, per_stratum: int=5, alternates: int=2) -> dict"
+    }
+  ],
+  "nodes": [
+    "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_cik_map_accepts_exact_repeat_and_rejects_two_ciks",
+    "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_cik_map_pads_and_normalizes",
+    "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_load_constituents_errors_raise[name,sector\\nAlpha Co,Energy\\n]",
+    "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_load_constituents_errors_raise[symbol,name,sector\\n  ,Alpha Co,Energy\\n]",
+    "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_load_constituents_errors_raise[symbol,name,sector\\nBF/B,Gamma A,Energy\\nbf.b,Gamma B,Energy\\n]",
+    "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_load_constituents_errors_raise[symbol,name,sector\\n]",
+    "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_load_constituents_errors_raise[symbol,name,sector\\nbrk.b,Beta A,Energy\\nBRK-B,Beta B,Energy\\n]",
+    "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_load_constituents_errors_raise[symbol,name\\nAAQX,Alpha Co\\n]",
+    "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_load_constituents_errors_raise[symbol,sector\\nAAQX,Energy\\n]",
+    "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_normalize_symbol_examples[ brk.b -BRK-B]",
+    "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_normalize_symbol_examples[BF/B-BF-B]",
+    "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_normalize_symbol_examples[msft-MSFT]",
+    "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_normalize_symbol_is_idempotent",
+    "test/spec/aprime-draw/test_c1_constituents_and_ciks.py::test_three_rows_with_extra_column_and_padding_parse_stripped_in_file_order",
+    "test/spec/aprime-draw/test_c2_build_pool.py::test_counts_add_up",
+    "test/spec/aprime-draw/test_c2_build_pool.py::test_five_p_ciks_each_excluded_as_prospective",
+    "test/spec/aprime-draw/test_c2_build_pool.py::test_missing_ciks_raise_one_error_naming_each",
+    "test/spec/aprime-draw/test_c2_build_pool.py::test_one_constituent_per_reason_full_result",
+    "test/spec/aprime-draw/test_c2_build_pool.py::test_precedence_sector_before_corpus_and_corpus_before_prospective",
+    "test/spec/aprime-draw/test_c2_build_pool.py::test_share_class_pair_keeps_symbol_that_sorts_first",
+    "test/spec/aprime-draw/test_c2_build_pool.py::test_shuffled_constituents_give_identical_result",
+    "test/spec/aprime-draw/test_c2_build_pool.py::test_strata_assigned_per_sector",
+    "test/spec/aprime-draw/test_c2_build_pool.py::test_unknown_sector_raises_naming_symbol[Healthcare]",
+    "test/spec/aprime-draw/test_c2_build_pool.py::test_unknown_sector_raises_naming_symbol[Tech]",
+    "test/spec/aprime-draw/test_c2_build_pool.py::test_unknown_sector_raises_naming_symbol[]",
+    "test/spec/aprime-draw/test_c2_build_pool.py::test_unknown_sector_raises_naming_symbol[information technology]",
+    "test/spec/aprime-draw/test_c2_build_pool.py::test_unpadded_corpus_cik_still_matches",
+    "test/spec/aprime-draw/test_c3_rank.py::test_adding_a_candidate_keeps_relative_order_and_shuffling_changes_nothing",
+    "test/spec/aprime-draw/test_c3_rank.py::test_rank_key_matches_hashlib_for_lowercase_ov_and_unpadded_cik",
+    "test/spec/aprime-draw/test_c3_rank.py::test_rank_orders_by_key_numbers_from_one_and_leaves_input_alone",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_adding_non_10k_records_never_changes_result",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_all_three_years_inline_is_eligible",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_examples[2024-01-01-2023]",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_examples[2024-12-31-2024]",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_examples[2025-01-03-2024]",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_examples[2025-01-07-2024]",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_examples[2025-01-08-2025]",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_examples[2025-09-27-2025]",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_malformed_raises[2025-02-30]",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_malformed_raises[2025-13-01]",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_malformed_raises[2025/01/03]",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_malformed_raises[]",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_fiscal_year_of_malformed_raises[not-a-date]",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_lists_sorted_and_custom_years",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_records_without_report_date_are_ignored",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_year_covered_only_by_amendment_is_missing",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_year_whose_only_10k_is_not_inline",
+    "test/spec/aprime-draw/test_c4_eligibility.py::test_year_with_one_inline_and_one_non_inline_is_fine",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_malformed_output_value_raises[0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_malformed_output_value_raises[]",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_malformed_output_value_raises[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_malformed_output_value_raises[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_malformed_output_value_raises[gaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_matching_pulse_passes_and_mismatch_raises[2026-11-02T15:00:00+00:00]",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_matching_pulse_passes_and_mismatch_raises[2026-11-02T15:00:00Z]",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_missing_or_non_string_field_raises[outputValue-12345]",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_missing_or_non_string_field_raises[outputValue-None]",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_missing_or_non_string_field_raises[timeStamp-1793718000000]",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_missing_or_non_string_field_raises[timeStamp-None]",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_one_minute_mismatch_raises",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_random_whole_minute_pulse_passes_against_same_instant",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_request_not_utc_whole_minute_raises[2026-11-02T15:00:00.000Z-2026-11-02T15:00:00]",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_request_not_utc_whole_minute_raises[2026-11-02T15:00:00.000Z-2026-11-02T16:00:00+01:00]",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_request_not_utc_whole_minute_raises[2026-11-02T15:00:00.000Z-next tuesday]",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_request_not_utc_whole_minute_raises[2026-11-02T15:00:00.500Z-2026-11-02T15:00:00.500Z]",
+    "test/spec/aprime-draw/test_c5_check_pulse.py::test_request_not_utc_whole_minute_raises[2026-11-02T15:00:30.000Z-2026-11-02T15:00:30Z]",
+    "test/spec/aprime-draw/test_c6_draw.py::test_drawn_then_alternates_are_first_eligible_in_rank_order",
+    "test/spec/aprime-draw/test_c6_draw.py::test_filings_not_called_after_both_lists_full",
+    "test/spec/aprime-draw/test_c6_draw.py::test_hand_built_pool_gives_expected_draw",
+    "test/spec/aprime-draw/test_c6_draw.py::test_ineligible_skipped_but_checked",
+    "test/spec/aprime-draw/test_c6_draw.py::test_malformed_output_value_raises[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+    "test/spec/aprime-draw/test_c6_draw.py::test_malformed_output_value_raises[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+    "test/spec/aprime-draw/test_c6_draw.py::test_malformed_output_value_raises[zaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+    "test/spec/aprime-draw/test_c6_draw.py::test_shuffled_candidates_give_identical_result",
+    "test/spec/aprime-draw/test_c6_draw.py::test_small_stratum_reports_shortfall_with_custom_sizes"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/aprime-draw.md",
+    "sha256": "80ed60370f4abc2f0911f0f9d7b48a653c2358b3186630f1934c61cb03f99f23"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

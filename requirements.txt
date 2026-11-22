@@ -1,0 +1,82 @@
+# Core dependencies for XbrlRag project
+
+# LangChain and LLM integrations
+langchain>=0.1.0
+langchain-openai>=0.0.5
+langchain-anthropic>=0.3.0
+langchain-huggingface>=0.0.1
+langchain-core>=0.1.0
+
+# Retry and backoff
+tenacity>=8.2.0
+
+# Configuration and utilities
+pyyaml>=6.0
+python-dotenv>=1.0.0
+
+# OpenAI SDK (used by langchain-openai)
+openai==2.14.0
+# Anthropic SDK, used directly by the gateway's AnthropicAdapter (pinned exactly)
+anthropic==0.109.1
+
+# HuggingFace
+huggingface-hub>=0.19.0
+transformers>=4.35.0
+datasets>=2.14.0           # HiFi-KPI and other HF dataset downloads
+
+# Optional: Vector stores (uncomment as needed)
+faiss-cpu>=1.7.4
+# pymilvus>=2.3.0
+# pinecone-client>=2.2.0
+
+# Sentence transformers for embeddings (used in RAG demo)
+sentence-transformers>=2.2.0
+
+# BGE-M3 embedder + BGE rerankers (src/embeddings/bge_embedding.py, src/retriever/bge_reranker.py).
+# Local/dev only — the serving and ingest images reach these over RAGINFER_URL instead.
+FlagEmbedding>=1.3.5,<2
+
+# Optional: Document processing (uncomment as needed)
+# unstructured>=0.10.0
+# pdf2image>=1.16.0
+# pytesseract>=0.3.10
+# pypdf>=3.17.0
+
+# SEC EDGAR access (XBRL / iXBRL for 10-K, 10-Q, 20-F ingest)
+edgartools>=2.0.0
+# HTTP client: RAGINFER_URL embedder/reranker and the SEC companyfacts check
+# (src/eval/sec_check/sec_client.py); previously only a transitive dependency here.
+httpx==0.28.1
+
+# PostgreSQL driver (used by RegistryPopulator and future Arelle xbrlDB ingest)
+psycopg2-binary>=2.9.0
+
+# AWS SDK — S3 filing storage on the ingest path when deploy_mode=aws
+# (src/ingest/sec_edgar/storage.py S3FilingStore). Ingest-side only; kept out of
+# requirements-serve.txt so the query/serving image stays slim and torch/boto-free.
+boto3>=1.34.0
+
+# Vector store client — Qdrant (src/vectorstores/, src/retriever/). Same range as
+# requirements-serve.txt / requirements-ingest.txt; the unit tests import it.
+qdrant-client>=1.17,<2
+
+# Development (lint tooling — ruff, pinned — lives in requirements-dev.txt; black, isort and
+# flake8 were retired in favour of ruff)
+pytest>=9.0.3
+mypy>=1.7.0
+moto[s3]>=5.0.0            # mock AWS S3 for the FilingStore S3-backend tests
+
+# API framework — BFF for the React UI (src/api/, see ui/).
+# Pinned together with starlette, pydantic and mcp, mirroring requirements-serve.txt: a clean
+# install otherwise pulls pydantic 2.12+, which breaks FastMCP's tool inspector
+# (issubclass on a non-class annotation) — test_mcp_server fails at collection.
+# starlette >= 1.3.1 and mcp >= 1.30 clear the published advisories against the old pins;
+# fastapi 0.162.0 is the last release before 0.164 raised its floor to starlette 1.6.
+fastapi==0.162.0
+starlette>=1.3.1,<2
+pydantic>=2.11,<2.12
+uvicorn[standard]>=0.31.1
+
+# MCP server — exposes the v1 Analyst API as Model Context Protocol tools
+# (src/mcp_server/). Stays on the 1.x API; 2.x is a major version.
+mcp>=1.30,<2

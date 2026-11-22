@@ -1,0 +1,797 @@
+{
+ "rank_by_ratio": {
+  "id": "int-18d1b4258352-01c6f70f",
+  "question": "Among the 3 members of the covered companies with the greatest revenue for fiscal year 2024, identify the one with the highest operating margin.",
+  "kind": "screen",
+  "suite": "xbrl_v2_dev_compound",
+  "expected_rows": [
+   {
+    "ticker": "DEVA",
+    "value": 500000000,
+    "fiscal_year": 2024,
+    "period_end": "2024-12-31"
+   },
+   {
+    "ticker": "DEVB",
+    "value": 400000000,
+    "fiscal_year": 2024,
+    "period_end": "2024-12-31"
+   },
+   {
+    "ticker": "DEVC",
+    "value": 300000000,
+    "fiscal_year": 2024,
+    "period_end": "2024-12-31"
+   }
+  ],
+  "top_n": 3,
+  "paraphrase_group": "int-18d1b4258352",
+  "fy": 2024,
+  "unit": "USD",
+  "tags": [
+   "split:dev",
+   "intent:int-18d1b4258352",
+   "family:formal",
+   "template:rbr-formal",
+   "key_source:sec_companyfacts",
+   "key_status:verified",
+   "shape:compound.rank_by_ratio",
+   "compound"
+  ],
+  "origin": "v2:compound.rank_by_ratio",
+  "rel_tol": 0.0001,
+  "parts": [
+   {
+    "part": "ranking",
+    "kind": "screen",
+    "expected_rows": [
+     {
+      "ticker": "DEVA",
+      "value": 500000000,
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31"
+     },
+     {
+      "ticker": "DEVB",
+      "value": 400000000,
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31"
+     },
+     {
+      "ticker": "DEVC",
+      "value": 300000000,
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31"
+     }
+    ],
+    "top_n": 3,
+    "order_sensitive": true,
+    "unit": "USD",
+    "disclosures": {
+     "universe": "big",
+     "members": 5,
+     "ranked": [
+      "DEVA",
+      "DEVB",
+      "DEVC",
+      "DEVD"
+     ],
+     "excluded": [
+      {
+       "ticker": "DEVE",
+       "reason": "currency"
+      }
+     ],
+     "period_ends": {
+      "DEVA": "2024-12-31",
+      "DEVB": "2024-12-31",
+      "DEVC": "2024-12-31",
+      "DEVD": "2024-12-31"
+     },
+     "disclose_period_ends": false
+    },
+    "tags": [
+     "shape:screen.top"
+    ],
+    "key": {
+     "inputs": [
+      {
+       "concept": "us-gaap:Revenues",
+       "unit": "USD",
+       "period_end": "2024-12-31",
+       "value": 500000000,
+       "decimals": -6
+      },
+      {
+       "concept": "us-gaap:Revenues",
+       "unit": "USD",
+       "period_end": "2024-12-31",
+       "value": 400000000,
+       "decimals": -6
+      },
+      {
+       "concept": "us-gaap:Revenues",
+       "unit": "USD",
+       "period_end": "2024-12-31",
+       "value": 300000000,
+       "decimals": -6
+      },
+      {
+       "concept": "us-gaap:Revenues",
+       "unit": "USD",
+       "period_end": "2024-12-31",
+       "value": 200000000,
+       "decimals": -6
+      }
+     ]
+    }
+   },
+   {
+    "part": "dependent",
+    "kind": "compute",
+    "ticker": "DEVB",
+    "expected_value": 0.3,
+    "tags": [
+     "shape:compute.ratio"
+    ],
+    "pick": {
+     "candidates": {
+      "DEVA": [
+       "Deva",
+       "Deva Holdings Inc."
+      ],
+      "DEVB": [
+       "Devb",
+       "Devb Corporation"
+      ],
+      "DEVC": [
+       "Devc",
+       "Devc Inc."
+      ]
+     },
+     "ratio": [
+      "operating margin",
+      "operating profit margin"
+     ]
+    }
+   }
+  ],
+  "key": {
+   "status": "verified",
+   "source": "sec_companyfacts",
+   "policies": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "definition": "operating_margin",
+   "same_filing": null,
+   "inputs": [
+    {
+     "value": 500000000,
+     "unit": "USD",
+     "decimals": -6,
+     "concept": "us-gaap:Revenues",
+     "cik": "0000800001",
+     "period_start": "2024-01-01",
+     "period_end": "2024-12-31",
+     "fiscal_year": 2024,
+     "calendar_year": null,
+     "accession": "0000800001-25-000002",
+     "filed": "2025-02-10",
+     "form": "10-K",
+     "key_source": "sec_companyfacts",
+     "selection": "latest_filed",
+     "policies": [
+      "S1",
+      "S2",
+      "S6"
+     ],
+     "status": "verified",
+     "verified_by": [
+      "fact_store"
+     ]
+    },
+    {
+     "value": 400000000,
+     "unit": "USD",
+     "decimals": -6,
+     "concept": "us-gaap:Revenues",
+     "cik": "0000800002",
+     "period_start": "2024-01-01",
+     "period_end": "2024-12-31",
+     "fiscal_year": 2024,
+     "calendar_year": null,
+     "accession": "0000800002-25-000002",
+     "filed": "2025-02-11",
+     "form": "10-K",
+     "key_source": "sec_companyfacts",
+     "selection": "latest_filed",
+     "policies": [
+      "S1",
+      "S2",
+      "S6"
+     ],
+     "status": "verified",
+     "verified_by": [
+      "fact_store"
+     ]
+    },
+    {
+     "value": 300000000,
+     "unit": "USD",
+     "decimals": -6,
+     "concept": "us-gaap:Revenues",
+     "cik": "0000800003",
+     "period_start": "2024-01-01",
+     "period_end": "2024-12-31",
+     "fiscal_year": 2024,
+     "calendar_year": null,
+     "accession": "0000800003-25-000002",
+     "filed": "2025-02-12",
+     "form": "10-K",
+     "key_source": "sec_companyfacts",
+     "selection": "latest_filed",
+     "policies": [
+      "S1",
+      "S2",
+      "S6"
+     ],
+     "status": "verified",
+     "verified_by": [
+      "fact_store"
+     ]
+    },
+    {
+     "value": 200000000,
+     "unit": "USD",
+     "decimals": -6,
+     "concept": "us-gaap:Revenues",
+     "cik": "0000800004",
+     "period_start": "2024-01-01",
+     "period_end": "2024-12-31",
+     "fiscal_year": 2024,
+     "calendar_year": null,
+     "accession": "0000800004-25-000002",
+     "filed": "2025-02-13",
+     "form": "10-K",
+     "key_source": "sec_companyfacts",
+     "selection": "latest_filed",
+     "policies": [
+      "S1",
+      "S2",
+      "S6"
+     ],
+     "status": "verified",
+     "verified_by": [
+      "fact_store"
+     ]
+    },
+    {
+     "value": 100000000,
+     "unit": "USD",
+     "decimals": -6,
+     "concept": "us-gaap:OperatingIncomeLoss",
+     "cik": "0000800001",
+     "period_start": "2024-01-01",
+     "period_end": "2024-12-31",
+     "fiscal_year": 2024,
+     "calendar_year": null,
+     "accession": "0000800001-25-000002",
+     "filed": "2025-02-10",
+     "form": "10-K",
+     "key_source": "sec_companyfacts",
+     "selection": "latest_filed",
+     "policies": [
+      "S1",
+      "S2",
+      "S6"
+     ],
+     "status": "verified",
+     "verified_by": [
+      "fact_store"
+     ]
+    },
+    {
+     "value": 500000000,
+     "unit": "USD",
+     "decimals": -6,
+     "concept": "us-gaap:Revenues",
+     "cik": "0000800001",
+     "period_start": "2024-01-01",
+     "period_end": "2024-12-31",
+     "fiscal_year": 2024,
+     "calendar_year": null,
+     "accession": "0000800001-25-000002",
+     "filed": "2025-02-10",
+     "form": "10-K",
+     "key_source": "sec_companyfacts",
+     "selection": "latest_filed",
+     "policies": [
+      "S1",
+      "S2",
+      "S6"
+     ],
+     "status": "verified",
+     "verified_by": [
+      "fact_store"
+     ]
+    },
+    {
+     "value": 120000000,
+     "unit": "USD",
+     "decimals": -6,
+     "concept": "us-gaap:OperatingIncomeLoss",
+     "cik": "0000800002",
+     "period_start": "2024-01-01",
+     "period_end": "2024-12-31",
+     "fiscal_year": 2024,
+     "calendar_year": null,
+     "accession": "0000800002-25-000002",
+     "filed": "2025-02-11",
+     "form": "10-K",
+     "key_source": "sec_companyfacts",
+     "selection": "latest_filed",
+     "policies": [
+      "S1",
+      "S2",
+      "S6"
+     ],
+     "status": "verified",
+     "verified_by": [
+      "fact_store"
+     ]
+    },
+    {
+     "value": 400000000,
+     "unit": "USD",
+     "decimals": -6,
+     "concept": "us-gaap:Revenues",
+     "cik": "0000800002",
+     "period_start": "2024-01-01",
+     "period_end": "2024-12-31",
+     "fiscal_year": 2024,
+     "calendar_year": null,
+     "accession": "0000800002-25-000002",
+     "filed": "2025-02-11",
+     "form": "10-K",
+     "key_source": "sec_companyfacts",
+     "selection": "latest_filed",
+     "policies": [
+      "S1",
+      "S2",
+      "S6"
+     ],
+     "status": "verified",
+     "verified_by": [
+      "fact_store"
+     ]
+    },
+    {
+     "value": 75000000,
+     "unit": "USD",
+     "decimals": -6,
+     "concept": "us-gaap:OperatingIncomeLoss",
+     "cik": "0000800003",
+     "period_start": "2024-01-01",
+     "period_end": "2024-12-31",
+     "fiscal_year": 2024,
+     "calendar_year": null,
+     "accession": "0000800003-25-000002",
+     "filed": "2025-02-12",
+     "form": "10-K",
+     "key_source": "sec_companyfacts",
+     "selection": "latest_filed",
+     "policies": [
+      "S1",
+      "S2",
+      "S6"
+     ],
+     "status": "verified",
+     "verified_by": [
+      "fact_store"
+     ]
+    },
+    {
+     "value": 300000000,
+     "unit": "USD",
+     "decimals": -6,
+     "concept": "us-gaap:Revenues",
+     "cik": "0000800003",
+     "period_start": "2024-01-01",
+     "period_end": "2024-12-31",
+     "fiscal_year": 2024,
+     "calendar_year": null,
+     "accession": "0000800003-25-000002",
+     "filed": "2025-02-12",
+     "form": "10-K",
+     "key_source": "sec_companyfacts",
+     "selection": "latest_filed",
+     "policies": [
+      "S1",
+      "S2",
+      "S6"
+     ],
+     "status": "verified",
+     "verified_by": [
+      "fact_store"
+     ]
+    }
+   ],
+   "disagreements": [],
+   "dependent": {
+    "ticker": "DEVB",
+    "value": 0.3,
+    "definition": "operating_margin",
+    "ratios": {
+     "DEVA": 0.2,
+     "DEVB": 0.3,
+     "DEVC": 0.25
+    }
+   }
+  },
+  "disclosures": {
+   "universe": "big",
+   "members": 5,
+   "ranked": [
+    "DEVA",
+    "DEVB",
+    "DEVC",
+    "DEVD"
+   ],
+   "excluded": [
+    {
+     "ticker": "DEVE",
+     "reason": "currency"
+    }
+   ],
+   "period_ends": {
+    "DEVA": "2024-12-31",
+    "DEVB": "2024-12-31",
+    "DEVC": "2024-12-31",
+    "DEVD": "2024-12-31"
+   },
+   "disclose_period_ends": false
+  }
+ },
+ "leader_growth": {
+  "id": "int-18778c830df2-0b4dde46",
+  "question": "Of the 3 largest of the covered companies by revenue in FY24, how much did the largest one's net income grow from FY23?",
+  "kind": "screen",
+  "suite": "xbrl_v2_dev_compound",
+  "expected_rows": [
+   {
+    "ticker": "DEVA",
+    "value": 500000000,
+    "fiscal_year": 2024,
+    "period_end": "2024-12-31"
+   },
+   {
+    "ticker": "DEVB",
+    "value": 400000000,
+    "fiscal_year": 2024,
+    "period_end": "2024-12-31"
+   },
+   {
+    "ticker": "DEVC",
+    "value": 300000000,
+    "fiscal_year": 2024,
+    "period_end": "2024-12-31"
+   }
+  ],
+  "top_n": 3,
+  "paraphrase_group": "int-18778c830df2",
+  "fy": 2024,
+  "unit": "USD",
+  "tags": [
+   "split:dev",
+   "intent:int-18778c830df2",
+   "family:conversational",
+   "template:lg-conv",
+   "key_source:sec_companyfacts",
+   "key_status:verified",
+   "shape:compound.leader_growth",
+   "compound"
+  ],
+  "origin": "v2:compound.leader_growth",
+  "rel_tol": 0.0001,
+  "parts": [
+   {
+    "part": "ranking",
+    "kind": "screen",
+    "expected_rows": [
+     {
+      "ticker": "DEVA",
+      "value": 500000000,
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31"
+     },
+     {
+      "ticker": "DEVB",
+      "value": 400000000,
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31"
+     },
+     {
+      "ticker": "DEVC",
+      "value": 300000000,
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31"
+     }
+    ],
+    "top_n": 3,
+    "order_sensitive": true,
+    "unit": "USD",
+    "disclosures": {
+     "universe": "big",
+     "members": 5,
+     "ranked": [
+      "DEVA",
+      "DEVB",
+      "DEVC",
+      "DEVD"
+     ],
+     "excluded": [
+      {
+       "ticker": "DEVE",
+       "reason": "currency"
+      }
+     ],
+     "period_ends": {
+      "DEVA": "2024-12-31",
+      "DEVB": "2024-12-31",
+      "DEVC": "2024-12-31",
+      "DEVD": "2024-12-31"
+     },
+     "disclose_period_ends": false
+    },
+    "tags": [
+     "shape:screen.top"
+    ],
+    "key": {
+     "inputs": [
+      {
+       "concept": "us-gaap:Revenues",
+       "unit": "USD",
+       "period_end": "2024-12-31",
+       "value": 500000000,
+       "decimals": -6
+      },
+      {
+       "concept": "us-gaap:Revenues",
+       "unit": "USD",
+       "period_end": "2024-12-31",
+       "value": 400000000,
+       "decimals": -6
+      },
+      {
+       "concept": "us-gaap:Revenues",
+       "unit": "USD",
+       "period_end": "2024-12-31",
+       "value": 300000000,
+       "decimals": -6
+      },
+      {
+       "concept": "us-gaap:Revenues",
+       "unit": "USD",
+       "period_end": "2024-12-31",
+       "value": 200000000,
+       "decimals": -6
+      }
+     ]
+    }
+   },
+   {
+    "part": "dependent",
+    "kind": "compute",
+    "ticker": "DEVA",
+    "expected_value": 0.2,
+    "alt_values": [
+     20.0
+    ],
+    "tags": [
+     "shape:compute.yoy_growth"
+    ]
+   }
+  ],
+  "key": {
+   "status": "verified",
+   "source": "sec_companyfacts",
+   "policies": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "definition": "growth",
+   "same_filing": true,
+   "inputs": [
+    {
+     "value": 500000000,
+     "unit": "USD",
+     "decimals": -6,
+     "concept": "us-gaap:Revenues",
+     "cik": "0000800001",
+     "period_start": "2024-01-01",
+     "period_end": "2024-12-31",
+     "fiscal_year": 2024,
+     "calendar_year": null,
+     "accession": "0000800001-25-000002",
+     "filed": "2025-02-10",
+     "form": "10-K",
+     "key_source": "sec_companyfacts",
+     "selection": "latest_filed",
+     "policies": [
+      "S1",
+      "S2",
+      "S6"
+     ],
+     "status": "verified",
+     "verified_by": [
+      "fact_store"
+     ]
+    },
+    {
+     "value": 400000000,
+     "unit": "USD",
+     "decimals": -6,
+     "concept": "us-gaap:Revenues",
+     "cik": "0000800002",
+     "period_start": "2024-01-01",
+     "period_end": "2024-12-31",
+     "fiscal_year": 2024,
+     "calendar_year": null,
+     "accession": "0000800002-25-000002",
+     "filed": "2025-02-11",
+     "form": "10-K",
+     "key_source": "sec_companyfacts",
+     "selection": "latest_filed",
+     "policies": [
+      "S1",
+      "S2",
+      "S6"
+     ],
+     "status": "verified",
+     "verified_by": [
+      "fact_store"
+     ]
+    },
+    {
+     "value": 300000000,
+     "unit": "USD",
+     "decimals": -6,
+     "concept": "us-gaap:Revenues",
+     "cik": "0000800003",
+     "period_start": "2024-01-01",
+     "period_end": "2024-12-31",
+     "fiscal_year": 2024,
+     "calendar_year": null,
+     "accession": "0000800003-25-000002",
+     "filed": "2025-02-12",
+     "form": "10-K",
+     "key_source": "sec_companyfacts",
+     "selection": "latest_filed",
+     "policies": [
+      "S1",
+      "S2",
+      "S6"
+     ],
+     "status": "verified",
+     "verified_by": [
+      "fact_store"
+     ]
+    },
+    {
+     "value": 200000000,
+     "unit": "USD",
+     "decimals": -6,
+     "concept": "us-gaap:Revenues",
+     "cik": "0000800004",
+     "period_start": "2024-01-01",
+     "period_end": "2024-12-31",
+     "fiscal_year": 2024,
+     "calendar_year": null,
+     "accession": "0000800004-25-000002",
+     "filed": "2025-02-13",
+     "form": "10-K",
+     "key_source": "sec_companyfacts",
+     "selection": "latest_filed",
+     "policies": [
+      "S1",
+      "S2",
+      "S6"
+     ],
+     "status": "verified",
+     "verified_by": [
+      "fact_store"
+     ]
+    },
+    {
+     "value": 50000000,
+     "unit": "USD",
+     "decimals": -6,
+     "concept": "us-gaap:NetIncomeLoss",
+     "cik": "0000800001",
+     "period_start": "2023-01-01",
+     "period_end": "2023-12-31",
+     "fiscal_year": 2023,
+     "calendar_year": null,
+     "accession": "0000800001-25-000002",
+     "filed": "2025-02-10",
+     "form": "10-K",
+     "key_source": "sec_companyfacts",
+     "selection": "as_reported",
+     "policies": [
+      "S1",
+      "S2",
+      "S6"
+     ],
+     "status": "verified",
+     "verified_by": [
+      "fact_store"
+     ]
+    },
+    {
+     "value": 60000000,
+     "unit": "USD",
+     "decimals": -6,
+     "concept": "us-gaap:NetIncomeLoss",
+     "cik": "0000800001",
+     "period_start": "2024-01-01",
+     "period_end": "2024-12-31",
+     "fiscal_year": 2024,
+     "calendar_year": null,
+     "accession": "0000800001-25-000002",
+     "filed": "2025-02-10",
+     "form": "10-K",
+     "key_source": "sec_companyfacts",
+     "selection": "as_reported",
+     "policies": [
+      "S1",
+      "S2",
+      "S6"
+     ],
+     "status": "verified",
+     "verified_by": [
+      "fact_store"
+     ]
+    }
+   ],
+   "disagreements": [],
+   "dependent": {
+    "ticker": "DEVA",
+    "value": 0.2,
+    "definition": "growth",
+    "same_filing": true
+   }
+  },
+  "disclosures": {
+   "universe": "big",
+   "members": 5,
+   "ranked": [
+    "DEVA",
+    "DEVB",
+    "DEVC",
+    "DEVD"
+   ],
+   "excluded": [
+    {
+     "ticker": "DEVE",
+     "reason": "currency"
+    }
+   ],
+   "period_ends": {
+    "DEVA": "2024-12-31",
+    "DEVB": "2024-12-31",
+    "DEVC": "2024-12-31",
+    "DEVD": "2024-12-31"
+   },
+   "disclose_period_ends": false
+  }
+ }
+}

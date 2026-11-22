@@ -1,0 +1,69 @@
+# Sector tags per filer: GICS sector and a reviewed short industry label
+# (docs/specs/sector-tags.md). Loaded and validated by
+# src/retriever/xbrl/entity_sectors.py (load_sector_tags); written into entity_master by
+# `python -m src.ingest.sec_edgar.ingest.sector_tags`.
+#
+# Scope: the development universe only — the corpus filers and the v2 wave-1 filers
+# (configs/eval/v2/heldout_exclusions.yaml). The held-out filers, their alternates and every
+# other candidate in docs/eval/heldout_v2/heldout_v2_pool.json are NEVER added here.
+#
+# Rules:
+#   - cik is the ten-digit SEC EDGAR CIK, quoted.
+#   - gics_sector is one of the eleven GICS sector names, exactly. For a filer on the
+#     committed S&P 100 list it is the list's sector; for any other filer it is set by hand
+#     and the entry carries a `note` saying where it comes from.
+#   - industry is a reviewed short label, not a GICS sub-industry name. Groups in
+#     configs/eval/v2/groups.yaml select on it, so a label change regroups filers:
+#     "Retail" spans GICS's Consumer Discretionary and Consumer Staples Distribution &
+#     Retail industry groups (AMZN, HD; WMT, COST); MCD is a restaurant, not a retailer.
+
+as_of: "2026-10-29"
+source: "S&P 100 constituents (docs/eval/heldout_v2/sp100_constituents.csv, GICS as of 2026-09-21), sectors reviewed; filers off the list tagged by hand (see each note)"
+filers:
+  # --- corpus filers
+  - {cik: "0000320193", ticker: AAPL, gics_sector: Information Technology, industry: Technology Hardware}
+  - {cik: "0000002488", ticker: AMD, gics_sector: Information Technology, industry: Semiconductors}
+  - {cik: "0001018724", ticker: AMZN, gics_sector: Consumer Discretionary, industry: Retail}
+  - {cik: "0001730168", ticker: AVGO, gics_sector: Information Technology, industry: Semiconductors}
+  - cik: "0001868275"
+    ticker: CEG
+    gics_sector: Utilities
+    industry: Power Generation
+    note: "Not an S&P 100 constituent; GICS Utilities (Independent Power and Renewable Electricity Producers), reviewed by hand"
+  - {cik: "0001652044", ticker: GOOGL, gics_sector: Communication Services, industry: Interactive Media}
+  - {cik: "0000050863", ticker: INTC, gics_sector: Information Technology, industry: Semiconductors}
+  - {cik: "0001326801", ticker: META, gics_sector: Communication Services, industry: Interactive Media}
+  - {cik: "0000789019", ticker: MSFT, gics_sector: Information Technology, industry: Software}
+  - {cik: "0000723125", ticker: MU, gics_sector: Information Technology, industry: Semiconductors}
+  - {cik: "0001045810", ticker: NVDA, gics_sector: Information Technology, industry: Semiconductors}
+  - {cik: "0001341439", ticker: ORCL, gics_sector: Information Technology, industry: Software}
+  - {cik: "0001318605", ticker: TSLA, gics_sector: Consumer Discretionary, industry: Automobiles}
+  - cik: "0001046179"
+    ticker: TSM
+    gics_sector: Information Technology
+    industry: Semiconductors
+    note: "Not an S&P 100 constituent (foreign private issuer); GICS Information Technology (Semiconductors & Semiconductor Equipment) from MSCI, reviewed by hand"
+  - cik: "0001692819"
+    ticker: VST
+    gics_sector: Utilities
+    industry: Power Generation
+    note: "Not an S&P 100 constituent; GICS Utilities (Independent Power and Renewable Electricity Producers), reviewed by hand"
+  # --- v2 wave 1
+  - {cik: "0000858877", ticker: CSCO, gics_sector: Information Technology, industry: Communications Equipment}
+  - {cik: "0000796343", ticker: ADBE, gics_sector: Information Technology, industry: Software}
+  - {cik: "0001108524", ticker: CRM, gics_sector: Information Technology, industry: Software}
+  - {cik: "0000804328", ticker: QCOM, gics_sector: Information Technology, industry: Semiconductors}
+  - {cik: "0000097476", ticker: TXN, gics_sector: Information Technology, industry: Semiconductors}
+  - {cik: "0001065280", ticker: NFLX, gics_sector: Communication Services, industry: Entertainment}
+  - {cik: "0000021344", ticker: KO, gics_sector: Consumer Staples, industry: Beverages}
+  - {cik: "0000080424", ticker: PG, gics_sector: Consumer Staples, industry: Household Products}
+  - {cik: "0000104169", ticker: WMT, gics_sector: Consumer Staples, industry: Retail}
+  - {cik: "0000909832", ticker: COST, gics_sector: Consumer Staples, industry: Retail}
+  - {cik: "0000354950", ticker: HD, gics_sector: Consumer Discretionary, industry: Retail}
+  - {cik: "0000063908", ticker: MCD, gics_sector: Consumer Discretionary, industry: Restaurants}
+  - {cik: "0000059478", ticker: LLY, gics_sector: Health Care, industry: Pharmaceuticals}
+  - {cik: "0000310158", ticker: MRK, gics_sector: Health Care, industry: Pharmaceuticals}
+  - {cik: "0000001800", ticker: ABT, gics_sector: Health Care, industry: Health Care Equipment}
+  - {cik: "0000100885", ticker: UNP, gics_sector: Industrials, industry: Railroads}
+  - {cik: "0000936468", ticker: LMT, gics_sector: Industrials, industry: Aerospace & Defense}
+  - {cik: "0001090727", ticker: UPS, gics_sector: Industrials, industry: Air Freight & Logistics}

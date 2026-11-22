@@ -1,0 +1,13 @@
+{
+  "taxonomy": "us-gaap",
+  "tag": "Assets",
+  "ccp": "CY2024Q4I",
+  "uom": "USD",
+  "label": "Assets",
+  "description": "Synthetic CY2024 year-end instant assets frame.",
+  "pts": 2,
+  "data": [
+    {"accn": "0000900001-25-000005", "cik": 900001, "entityName": "Synthetic Sep Corp", "loc": "US-CA", "end": "2024-12-28", "val": 344000000000},
+    {"accn": "0000900004-25-000007", "cik": 900004, "entityName": "Synthetic Cal Corp", "loc": "US-NY", "end": "2024-12-31", "val": 80000000000}
+  ]
+}

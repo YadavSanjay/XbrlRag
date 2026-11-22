@@ -1,0 +1,76 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/unit-aware-lookup/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-14",
+  "criteria": {
+    "C1": [
+      "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_requested_unit_wins_when_present_at_the_latest_period",
+      "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_requested_unit_is_returned_iff_the_latest_period_has_it"
+    ],
+    "C2": [
+      "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_reporting_currency_beats_a_convenience_translation",
+      "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_the_unit_with_comparatives_is_the_reporting_currency"
+    ],
+    "C3": [
+      "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_order_and_extra_comparatives_do_not_change_the_choice",
+      "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_permuting_and_adding_comparatives_is_invariant"
+    ],
+    "C4": [
+      "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_currency_mentions_are_extracted_point_cases",
+      "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_any_currency_form_in_any_case_is_extracted"
+    ],
+    "C5": [
+      "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_extraction_is_idempotent_and_feeds_the_fast_path",
+      "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_stripped_phrase_matches_like_the_bare_concept"
+    ]
+  },
+  "files": {
+    "test/spec/unit-aware-lookup/test_unit_aware_lookup.py": "229ba0c3ce3348f07c4649a03f619f05c2a2dd38483c70f91a5d844c635cdd2d"
+  },
+  "id": "unit-aware-lookup",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/intent_router.py",
+      "module": "retriever.xbrl.intent_router",
+      "qualname": "extract_currency_unit",
+      "signature": "def extract_currency_unit(phrase: str) -> tuple[str, str | None]"
+    },
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_lookup.py",
+      "module": "retriever.xbrl.xbrl_factstore_lookup",
+      "qualname": "choose_lookup_unit",
+      "signature": "def choose_lookup_unit(observations: Sequence[tuple[str | None, str | None]], requested_unit: str | None=None) -> str | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_any_currency_form_in_any_case_is_extracted",
+    "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_currency_mentions_are_extracted_point_cases",
+    "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_extraction_is_idempotent_and_feeds_the_fast_path",
+    "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_order_and_extra_comparatives_do_not_change_the_choice",
+    "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_permuting_and_adding_comparatives_is_invariant",
+    "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_reporting_currency_beats_a_convenience_translation",
+    "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_requested_unit_is_returned_iff_the_latest_period_has_it",
+    "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_requested_unit_wins_when_present_at_the_latest_period",
+    "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_stripped_phrase_matches_like_the_bare_concept",
+    "test/spec/unit-aware-lookup/test_unit_aware_lookup.py::test_the_unit_with_comparatives_is_the_reporting_currency"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/unit-aware-lookup.md",
+    "sha256": "61249b654db9c13ebd11d794511c284a542237e3b1cf41bd997bf337f27073d2"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

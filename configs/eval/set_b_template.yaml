@@ -1,0 +1,93 @@
+# Held-out set B — authoring template (docs/specs/set-b-tooling.md).
+#
+# Copy this file OUTSIDE the repo (e.g. <vault>\set_b\set_b.yaml) and
+# replace the examples with your own cases. Every example below is fictional: its ticker
+# EXAMPLE is not a suite filer, so `validate` rejects it on purpose.
+# Guide: docs/guides/xbrl-flow/12-heldout-set-b.md.
+#
+# Scope rules (checked by `validate`):
+#   ticker  one of AAPL AMD AMZN AVGO GOOGL META MSFT MU NVDA ORCL TSLA TSM
+#   fy      2024-2026 (a compute input's fy may be 2022-2026); never AAPL FY2026 (set P)
+#   unit    USD | TWD | pure | shares | USD/shares
+#   scale   units | thousands | millions | billions   (omit = units; never with a %)
+#
+# Amounts are written as you would read them in the filing: thousands separators,
+# a leading $, a leading - or (parentheses) for a negative, a trailing % for a rate.
+# The precision you write is the tolerance: "391,035" in millions matches +-0.5 million.
+# `note` is for you only: it is never printed and never copied into the built suite.
+
+cases:
+  # lookup: one flat (undimensioned) FY amount or FY-end balance.
+  - id: ex-lookup-1
+    question: "What was Example Corp's total revenue in fiscal 2025?"
+    kind: lookup
+    ticker: EXAMPLE
+    fy: 2025
+    expected: "$12,345.6"
+    scale: millions
+    unit: USD
+    concept: Revenue          # optional hint: a concept family, or part of the local name
+    note: "Fictional; income statement, first line."
+
+  # dimensional: one member's amount (a segment, product, region, ...).
+  - id: ex-dim-1
+    question: "How much revenue did Example Corp's Widgets segment bring in during FY2024?"
+    kind: dimensional
+    ticker: EXAMPLE
+    fy: 2024
+    expected: "4,321"
+    scale: millions
+    unit: USD
+    member: Widgets           # required hint: part of the member label (case-insensitive)
+    concept: Revenue
+
+  # compute: a value derived from inputs, each of which must itself be a fact.
+  # formula: yoy (current, prior) | ratio (numerator, denominator) | difference (a, b)
+  #          | sum (2 or more inputs, any names). An input's fy defaults to the case's fy.
+  - id: ex-yoy-1
+    question: "By how much did Example Corp's operating income change in FY2025 vs FY2024?"
+    kind: compute
+    ticker: EXAMPLE
+    fy: 2025
+    formula: yoy
+    expected: "(12.5%)"       # a decline, written in parentheses; a % takes no scale
+    inputs:
+      - {name: current, expected: "875", scale: millions, unit: USD, concept: OperatingIncome}
+      - {name: prior, expected: "1,000", scale: millions, unit: USD, fy: 2024,
+         concept: OperatingIncome}
+
+  - id: ex-ratio-1
+    question: "What was Example Corp's gross margin in fiscal 2026?"
+    kind: compute
+    ticker: EXAMPLE
+    fy: 2026
+    formula: ratio
+    expected: "0.42"
+    inputs:
+      - {name: numerator, expected: "4,200", scale: millions, unit: USD, concept: GrossProfit}
+      - {name: denominator, expected: "10,000", scale: millions, unit: USD, concept: Revenue}
+
+  - id: ex-diff-1
+    question: "How much more did Example Corp's Widgets segment earn than its Gadgets segment in FY2025?"
+    kind: compute
+    ticker: EXAMPLE
+    fy: 2025
+    formula: difference
+    expected: "-250"
+    scale: millions
+    inputs:
+      - {name: a, expected: "1,250", scale: millions, unit: USD, member: Widgets}
+      - {name: b, expected: "1,500", scale: millions, unit: USD, member: Gadgets}
+
+  # breakdown: the members that make up one total. List every row; the order is free.
+  - id: ex-breakdown-1
+    question: "Break down Example Corp's fiscal 2025 revenue by region."
+    kind: breakdown
+    ticker: EXAMPLE
+    fy: 2025
+    unit: USD
+    concept: Revenue          # optional hint applied to every row
+    rows:
+      - {member: Americas, expected: "6,000", scale: millions}
+      - {member: Europe, expected: "3,500", scale: millions}
+      - {member: Asia, expected: "2,845.6", scale: millions}

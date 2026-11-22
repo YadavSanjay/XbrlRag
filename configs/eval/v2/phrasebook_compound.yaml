@@ -1,0 +1,65 @@
+# v2 eval phrasebook for the compound shapes: a top-{n} ranking with a dependent ask.
+# Loaded and validated by src/eval/suites/intents.py (load_phrasebook), like
+# configs/eval/v2/phrasebook.yaml, whose writing rules apply here too; spec
+# docs/specs/compound-shape.md (requirement 2 has the placeholder table).
+#
+#   compound.rank_by_ratio  {metric} ranks, {metric_2} is the S4 ratio asked about; all of
+#                           {metric}, {metric_2}, {period}, {universe}, {n} are required.
+#   compound.leader_growth  {metric} ranks in {last_period}, {metric_2} is the growth metric
+#                           of the leader; {first_period} (the growth base) is optional.
+#
+# No {company}: a compound question names no filer. Ids are stable (the split hashes them);
+# add new templates rather than renaming or rewording existing ones.
+
+templates:
+  # ------------------------------------------------------------------ compound.rank_by_ratio
+  - id: rbr-terse-1
+    register: terse
+    shapes: [compound.rank_by_ratio]
+    text: "top {n} {universe} by {metric}, {period}: which has the highest {metric_2}?"
+  - id: rbr-terse-2
+    register: terse
+    shapes: [compound.rank_by_ratio]
+    text: "highest {metric_2} among the top {n} of {universe} by {metric}, {period}"
+  - id: rbr-conv-1
+    register: conversational
+    shapes: [compound.rank_by_ratio]
+    text: "Of the {n} largest of {universe} by {metric} in {period}, which had the highest {metric_2}?"
+  - id: rbr-conv-2
+    register: conversational
+    shapes: [compound.rank_by_ratio]
+    text: "Take the top {n} of {universe} by {metric} in {period}. Which of them had the best {metric_2}?"
+  - id: rbr-formal-1
+    register: formal
+    shapes: [compound.rank_by_ratio]
+    text: "Of the {n} companies among {universe} with the largest {metric} for {period}, identify the one with the highest {metric_2}."
+  - id: rbr-formal-2
+    register: formal
+    shapes: [compound.rank_by_ratio]
+    text: "Rank {universe} by {metric} for {period}; among the {n} highest, which reported the highest {metric_2}, and what was it?"
+
+  # ------------------------------------------------------------------ compound.leader_growth
+  - id: lg-terse-1
+    register: terse
+    shapes: [compound.leader_growth]
+    text: "top {n} {universe} by {metric}, {last_period}: #1's {metric_2} growth from {first_period}"
+  - id: lg-terse-2
+    register: terse
+    shapes: [compound.leader_growth]
+    text: "largest of the top {n} {universe} by {metric} {last_period}: {metric_2} growth?"
+  - id: lg-conv-1
+    register: conversational
+    shapes: [compound.leader_growth]
+    text: "Of the {n} largest of {universe} by {metric} in {last_period}, how much did the largest one's {metric_2} grow from {first_period}?"
+  - id: lg-conv-2
+    register: conversational
+    shapes: [compound.leader_growth]
+    text: "Looking at the top {n} of {universe} by {metric} in {last_period}, by how much did the leader's {metric_2} change from {first_period}?"
+  - id: lg-formal-1
+    register: formal
+    shapes: [compound.leader_growth]
+    text: "For the company ranked first among the top {n} of {universe} by {metric} for {last_period}, state the growth in its {metric_2} from {first_period}."
+  - id: lg-formal-2
+    register: formal
+    shapes: [compound.leader_growth]
+    text: "Identify the {n} members of {universe} with the largest {metric} for {last_period}, and give the percentage growth in {metric_2} of the first-ranked one."

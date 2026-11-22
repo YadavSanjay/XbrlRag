@@ -1,0 +1,137 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-11",
+  "criteria": {
+    "C1": [
+      "test/spec/period-year-length-answers/test_compared_years.py::test_aapl_fy2024_against_53_week_fy2023[current_first]",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_aapl_fy2024_against_53_week_fy2023[prior_first]",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_three_years_compare_consecutive_pairs",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_equal_msft_years_add_nothing_beside_aapl",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_entry_exactly_when_six_or_more_days_apart",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_permutation_and_shift"
+    ],
+    "C2": [
+      "test/spec/period-year-length-answers/test_compared_years.py::test_an_ineligible_input_compares_nothing[fy_bool]",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_an_ineligible_input_compares_nothing[fy_none]",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_an_ineligible_input_compares_nothing[fy_str]",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_an_ineligible_input_compares_nothing[instant]",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_an_ineligible_input_compares_nothing[no_end]",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_an_ineligible_input_compares_nothing[not_lookup]",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_an_ineligible_input_compares_nothing[not_ok]",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_different_groups_or_one_year_are_never_compared[cik]",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_different_groups_or_one_year_are_never_compared[family]",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_different_groups_or_one_year_are_never_compared[period]",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_different_groups_or_one_year_are_never_compared[same_year]",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_different_groups_or_one_year_are_never_compared[ytd]",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_fiscal_period_none_and_case_mean_fy",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_fourteen_week_quarter",
+      "test/spec/period-year-length-answers/test_compared_years.py::test_ineligible_or_lone_inputs_never_change_the_result"
+    ],
+    "C3": [
+      "test/spec/period-year-length-answers/test_one_definition.py::test_aapl_entry_is_period_disclosures_note",
+      "test/spec/period-year-length-answers/test_one_definition.py::test_every_entry_matches_year_length_disclosure"
+    ],
+    "C4": [
+      "test/spec/period-year-length-answers/test_screen_rows.py::test_only_aapl_is_named",
+      "test/spec/period-year-length-answers/test_screen_rows.py::test_digit_string_ids_read_the_same",
+      "test/spec/period-year-length-answers/test_screen_rows.py::test_entry_exactly_when_six_or_more_apart_in_row_order",
+      "test/spec/period-year-length-answers/test_screen_rows.py::test_rows_without_a_pair_never_change_the_result"
+    ],
+    "C5": [
+      "test/spec/period-year-length-answers/test_screen_sentence.py::test_aapl_sentence_exactly",
+      "test/spec/period-year-length-answers/test_screen_sentence.py::test_two_entries_and_a_quarter_part",
+      "test/spec/period-year-length-answers/test_screen_sentence.py::test_sentence_shape_and_no_stated_numbers",
+      "test/spec/period-year-length-answers/test_screen_sentence.py::test_append_once_after_the_summary",
+      "test/spec/period-year-length-answers/test_screen_sentence.py::test_append_only_screen_steps_in_step_order",
+      "test/spec/period-year-length-answers/test_screen_sentence.py::test_append_is_idempotent_and_keeps_the_summary"
+    ]
+  },
+  "files": {
+    "test/spec/period-year-length-answers/conftest.py": "532c3e7358ac547eb0c81f189eb6cb8bf5971fdf8cf57d9f87ebaa20da4803a3",
+    "test/spec/period-year-length-answers/test_compared_years.py": "b86e85dd89b8588ddd185593592ca21fb959e7464c49b82f5c9970061f0175e2",
+    "test/spec/period-year-length-answers/test_one_definition.py": "7e693f51c5b452f7e66cd7af9e5ee816b4c2e83462d53e9ec252f90584862f10",
+    "test/spec/period-year-length-answers/test_screen_rows.py": "6cbae457aaca9b1e291607eca499c7811bec02238ddca0fe23abd8018714c97f",
+    "test/spec/period-year-length-answers/test_screen_sentence.py": "7a8907fbff9093a496fa8f4fddfbeca0941b5d37361c95719b42ae4234685ad8"
+  },
+  "id": "period-year-length-answers",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/year_length_answers.py",
+      "module": "retriever.xbrl.year_length_answers",
+      "qualname": "compared_year_lengths",
+      "signature": "def compared_year_lengths(inputs: Sequence[Mapping[str, Any]]) -> list[dict[str, Any]]"
+    },
+    {
+      "file": "src/retriever/xbrl/year_length_answers.py",
+      "module": "retriever.xbrl.year_length_answers",
+      "qualname": "screen_year_lengths",
+      "signature": "def screen_year_lengths(rows: Sequence[Mapping[str, Any]], periods: Mapping[int, Mapping[str, Any]]) -> list[dict[str, Any]]"
+    },
+    {
+      "file": "src/retriever/xbrl/year_length_answers.py",
+      "module": "retriever.xbrl.year_length_answers",
+      "qualname": "screen_year_length_text",
+      "signature": "def screen_year_length_text(entries: Sequence[Mapping[str, Any]]) -> str"
+    },
+    {
+      "file": "src/retriever/xbrl/year_length_answers.py",
+      "module": "retriever.xbrl.year_length_answers",
+      "qualname": "append_year_length_disclosures",
+      "signature": "def append_year_length_disclosures(summary: str, steps: Sequence[Mapping[str, Any]]) -> str"
+    }
+  ],
+  "nodes": [
+    "test/spec/period-year-length-answers/test_compared_years.py::test_aapl_fy2024_against_53_week_fy2023[current_first]",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_aapl_fy2024_against_53_week_fy2023[prior_first]",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_an_ineligible_input_compares_nothing[fy_bool]",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_an_ineligible_input_compares_nothing[fy_none]",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_an_ineligible_input_compares_nothing[fy_str]",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_an_ineligible_input_compares_nothing[instant]",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_an_ineligible_input_compares_nothing[no_end]",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_an_ineligible_input_compares_nothing[not_lookup]",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_an_ineligible_input_compares_nothing[not_ok]",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_different_groups_or_one_year_are_never_compared[cik]",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_different_groups_or_one_year_are_never_compared[family]",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_different_groups_or_one_year_are_never_compared[period]",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_different_groups_or_one_year_are_never_compared[same_year]",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_different_groups_or_one_year_are_never_compared[ytd]",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_entry_exactly_when_six_or_more_days_apart",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_equal_msft_years_add_nothing_beside_aapl",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_fiscal_period_none_and_case_mean_fy",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_fourteen_week_quarter",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_ineligible_or_lone_inputs_never_change_the_result",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_permutation_and_shift",
+    "test/spec/period-year-length-answers/test_compared_years.py::test_three_years_compare_consecutive_pairs",
+    "test/spec/period-year-length-answers/test_one_definition.py::test_aapl_entry_is_period_disclosures_note",
+    "test/spec/period-year-length-answers/test_one_definition.py::test_every_entry_matches_year_length_disclosure",
+    "test/spec/period-year-length-answers/test_screen_rows.py::test_digit_string_ids_read_the_same",
+    "test/spec/period-year-length-answers/test_screen_rows.py::test_entry_exactly_when_six_or_more_apart_in_row_order",
+    "test/spec/period-year-length-answers/test_screen_rows.py::test_only_aapl_is_named",
+    "test/spec/period-year-length-answers/test_screen_rows.py::test_rows_without_a_pair_never_change_the_result",
+    "test/spec/period-year-length-answers/test_screen_sentence.py::test_aapl_sentence_exactly",
+    "test/spec/period-year-length-answers/test_screen_sentence.py::test_append_is_idempotent_and_keeps_the_summary",
+    "test/spec/period-year-length-answers/test_screen_sentence.py::test_append_once_after_the_summary",
+    "test/spec/period-year-length-answers/test_screen_sentence.py::test_append_only_screen_steps_in_step_order",
+    "test/spec/period-year-length-answers/test_screen_sentence.py::test_sentence_shape_and_no_stated_numbers",
+    "test/spec/period-year-length-answers/test_screen_sentence.py::test_two_entries_and_a_quarter_part"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/period-year-length-answers.md",
+    "sha256": "1ee9a5dc5ac524f9282cca9176f5e3fdad2d84312b5bf3570f262c13e9a26269"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

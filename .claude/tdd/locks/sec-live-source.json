@@ -1,0 +1,205 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-29",
+  "criteria": {
+    "C1": [
+      "test/spec/sec-live-source/test_c1_identity.py::test_explicit_identity_wins_over_environment",
+      "test/spec/sec-live-source/test_c1_identity.py::test_environment_identity_used_without_argument",
+      "test/spec/sec-live-source/test_c1_identity.py::test_missing_or_blank_identity_fails_at_construction[None-None]",
+      "test/spec/sec-live-source/test_c1_identity.py::test_missing_or_blank_identity_fails_at_construction[None-   ]",
+      "test/spec/sec-live-source/test_c1_identity.py::test_missing_or_blank_identity_fails_at_construction[   -None]",
+      "test/spec/sec-live-source/test_c1_identity.py::test_missing_or_blank_identity_fails_at_construction[-None]",
+      "test/spec/sec-live-source/test_c1_identity.py::test_any_identity_is_sent_stripped"
+    ],
+    "C2": [
+      "test/spec/sec-live-source/test_c2_urls.py::test_company_facts_url_and_document",
+      "test/spec/sec-live-source/test_c2_urls.py::test_frames_url_and_document",
+      "test/spec/sec-live-source/test_c2_urls.py::test_bad_cik_raises_without_request[12a4]",
+      "test/spec/sec-live-source/test_c2_urls.py::test_bad_cik_raises_without_request[]",
+      "test/spec/sec-live-source/test_c2_urls.py::test_bad_cik_raises_without_request[   ]",
+      "test/spec/sec-live-source/test_c2_urls.py::test_bad_cik_raises_without_request[-5]",
+      "test/spec/sec-live-source/test_c2_urls.py::test_bad_cik_raises_without_request[12345678901]",
+      "test/spec/sec-live-source/test_c2_urls.py::test_bad_cik_raises_without_request[1.0]",
+      "test/spec/sec-live-source/test_c2_urls.py::test_padded_and_unpadded_cik_request_the_same_url"
+    ],
+    "C3": [
+      "test/spec/sec-live-source/test_c3_rate_limit.py::test_default_ten_per_second",
+      "test/spec/sec-live-source/test_c3_rate_limit.py::test_two_per_second",
+      "test/spec/sec-live-source/test_c3_rate_limit.py::test_slow_transport_never_sleeps",
+      "test/spec/sec-live-source/test_c3_rate_limit.py::test_out_of_range_max_rps_raises[0]",
+      "test/spec/sec-live-source/test_c3_rate_limit.py::test_out_of_range_max_rps_raises[-1.0]",
+      "test/spec/sec-live-source/test_c3_rate_limit.py::test_out_of_range_max_rps_raises[10.5]",
+      "test/spec/sec-live-source/test_c3_rate_limit.py::test_out_of_range_max_rps_raises[100]",
+      "test/spec/sec-live-source/test_c3_rate_limit.py::test_starts_are_paced_exactly"
+    ],
+    "C4": [
+      "test/spec/sec-live-source/test_c4_retries.py::test_503_twice_then_success_with_backoff",
+      "test/spec/sec-live-source/test_c4_retries.py::test_429_is_retried",
+      "test/spec/sec-live-source/test_c4_retries.py::test_persistent_500_gives_up_after_bound",
+      "test/spec/sec-live-source/test_c4_retries.py::test_non_retryable_failures[403-forbidden]",
+      "test/spec/sec-live-source/test_c4_retries.py::test_non_retryable_failures[200-<html>not json]",
+      "test/spec/sec-live-source/test_c4_retries.py::test_404_is_typed_not_found_and_not_cached",
+      "test/spec/sec-live-source/test_c4_retries.py::test_negative_max_retries_raises",
+      "test/spec/sec-live-source/test_c4_retries.py::test_bounded_retries"
+    ],
+    "C5": [
+      "test/spec/sec-live-source/test_c5_cache.py::test_record_and_stored_payload",
+      "test/spec/sec-live-source/test_c5_cache.py::test_cache_hit_same_instance_makes_no_request",
+      "test/spec/sec-live-source/test_c5_cache.py::test_offline_rerun_from_local_store",
+      "test/spec/sec-live-source/test_c5_cache.py::test_tampered_payload_fails_loud",
+      "test/spec/sec-live-source/test_c5_cache.py::test_unknown_hash_is_key_error",
+      "test/spec/sec-live-source/test_c5_cache.py::test_equal_bodies_share_one_payload",
+      "test/spec/sec-live-source/test_c5_cache.py::test_any_body_hash_and_round_trip"
+    ],
+    "C6": [
+      "test/spec/sec-live-source/test_c6_refresh.py::test_refresh_replaces_record_and_keeps_old_payload",
+      "test/spec/sec-live-source/test_c6_refresh.py::test_refresh_requests_every_call",
+      "test/spec/sec-live-source/test_c6_refresh.py::test_refresh_with_same_bytes_keeps_hash"
+    ],
+    "C7": [
+      "test/spec/sec-live-source/test_c7_provenance.py::test_fiscal_key_with_payload",
+      "test/spec/sec-live-source/test_c7_provenance.py::test_calendar_key_with_payload_duration_and_instant",
+      "test/spec/sec-live-source/test_c7_provenance.py::test_missing_frame_is_key_not_found",
+      "test/spec/sec-live-source/test_c7_provenance.py::test_plain_methods_return_the_fetched_document",
+      "test/spec/sec-live-source/test_c7_provenance.py::test_reformatted_payload_changes_hash_not_key"
+    ]
+  },
+  "files": {
+    "test/spec/sec-live-source/conftest.py": "baa4515d578c274d48a33b0ef94d56a8c573a0a944ba46122712bec09cc9452c",
+    "test/spec/sec-live-source/fixtures/companyfacts_CIK0000900001.json": "4cf16ebd702004eb192ff3808581cbd89a45c7f358d956de8425d0b3f0290b05",
+    "test/spec/sec-live-source/fixtures/frames_us-gaap_Assets_USD_CY2024Q4I.json": "7c8095d701d9236bc69475587ddcfb2331a521d23d0449630154d83be833bee2",
+    "test/spec/sec-live-source/fixtures/frames_us-gaap_Revenues_USD_CY2024.json": "dd141c2f31496095e078139fe37c3732fa1781bc39269d61f7cddb8106e2538c",
+    "test/spec/sec-live-source/test_c1_identity.py": "2a1a41d178d2ed5e8ba71614783d20f06c92eb4e9bae78ab6aa9b55a72db2ea7",
+    "test/spec/sec-live-source/test_c2_urls.py": "ef2d20bdc33f2d060805ad18b050a7c830fd213cbb20d5b7cd24a012c4094956",
+    "test/spec/sec-live-source/test_c3_rate_limit.py": "1468fd65b8336ea4170c81e8b77dd0b00cfae20af5a1814febb924c6923642b4",
+    "test/spec/sec-live-source/test_c4_retries.py": "2930c22dae00b67af34d084b65627c721990333261d1d74f40f77fc29c61453e",
+    "test/spec/sec-live-source/test_c5_cache.py": "5a74edf18208286d771e784186fc897554c8d8df9360f4080cda2f18c5df5a9b",
+    "test/spec/sec-live-source/test_c6_refresh.py": "1ba1ff8aa7d7ca6a13e50ee720eb6b51f23299583220625d718829b65d04b88d",
+    "test/spec/sec-live-source/test_c7_provenance.py": "851972fc561ed0831f7e18af5215a615b20d9466d20e9cc698876e395c2839b9"
+  },
+  "id": "sec-live-source",
+  "interface": [
+    {
+      "file": "src/eval/keys/base.py",
+      "module": "eval.keys.base",
+      "qualname": "HttpTransport.get",
+      "signature": "@abstractmethod def get(self, url: str, headers: dict) -> tuple[int, bytes]"
+    },
+    {
+      "file": "src/eval/keys/sec_live.py",
+      "module": "eval.keys.sec_live",
+      "qualname": "LiveSecSource.__init__",
+      "signature": "def __init__(self, store: FilingStore, transport: HttpTransport | None=None, identity: str | None=None, max_rps: float=10.0, max_retries: int=4, backoff_s: float=1.0, refresh: bool=False, clock: Callable[[], float] | None=None, sleep: Callable[[float], None] | None=None, wall_clock: Callable[[], datetime] | None=None) -> None"
+    },
+    {
+      "file": "src/eval/keys/sec_live.py",
+      "module": "eval.keys.sec_live",
+      "qualname": "LiveSecSource.company_facts",
+      "signature": "def company_facts(self, cik: str) -> dict"
+    },
+    {
+      "file": "src/eval/keys/sec_live.py",
+      "module": "eval.keys.sec_live",
+      "qualname": "LiveSecSource.frames",
+      "signature": "def frames(self, taxonomy: str, tag: str, unit: str, period: str) -> dict"
+    },
+    {
+      "file": "src/eval/keys/sec_live.py",
+      "module": "eval.keys.sec_live",
+      "qualname": "LiveSecSource.fetch_company_facts",
+      "signature": "def fetch_company_facts(self, cik: str) -> Fetched"
+    },
+    {
+      "file": "src/eval/keys/sec_live.py",
+      "module": "eval.keys.sec_live",
+      "qualname": "LiveSecSource.fetch_frames",
+      "signature": "def fetch_frames(self, taxonomy: str, tag: str, unit: str, period: str) -> Fetched"
+    },
+    {
+      "file": "src/eval/keys/sec_live.py",
+      "module": "eval.keys.sec_live",
+      "qualname": "LiveSecSource.payload",
+      "signature": "def payload(self, sha256: str) -> bytes"
+    },
+    {
+      "file": "src/eval/keys/sec_live.py",
+      "module": "eval.keys.sec_live",
+      "qualname": "fiscal_key_with_payload",
+      "signature": "def fiscal_key_with_payload(source: LiveSecSource, cik: str, concept: str, unit: str, fiscal_year: int) -> SourcedKey"
+    },
+    {
+      "file": "src/eval/keys/sec_live.py",
+      "module": "eval.keys.sec_live",
+      "qualname": "calendar_key_with_payload",
+      "signature": "def calendar_key_with_payload(source: LiveSecSource, cik: str, concept: str, unit: str, calendar_year: int, instant: bool=False) -> SourcedKey"
+    }
+  ],
+  "nodes": [
+    "test/spec/sec-live-source/test_c1_identity.py::test_any_identity_is_sent_stripped",
+    "test/spec/sec-live-source/test_c1_identity.py::test_environment_identity_used_without_argument",
+    "test/spec/sec-live-source/test_c1_identity.py::test_explicit_identity_wins_over_environment",
+    "test/spec/sec-live-source/test_c1_identity.py::test_missing_or_blank_identity_fails_at_construction[   -None]",
+    "test/spec/sec-live-source/test_c1_identity.py::test_missing_or_blank_identity_fails_at_construction[-None]",
+    "test/spec/sec-live-source/test_c1_identity.py::test_missing_or_blank_identity_fails_at_construction[None-   ]",
+    "test/spec/sec-live-source/test_c1_identity.py::test_missing_or_blank_identity_fails_at_construction[None-None]",
+    "test/spec/sec-live-source/test_c2_urls.py::test_bad_cik_raises_without_request[   ]",
+    "test/spec/sec-live-source/test_c2_urls.py::test_bad_cik_raises_without_request[-5]",
+    "test/spec/sec-live-source/test_c2_urls.py::test_bad_cik_raises_without_request[1.0]",
+    "test/spec/sec-live-source/test_c2_urls.py::test_bad_cik_raises_without_request[12345678901]",
+    "test/spec/sec-live-source/test_c2_urls.py::test_bad_cik_raises_without_request[12a4]",
+    "test/spec/sec-live-source/test_c2_urls.py::test_bad_cik_raises_without_request[]",
+    "test/spec/sec-live-source/test_c2_urls.py::test_company_facts_url_and_document",
+    "test/spec/sec-live-source/test_c2_urls.py::test_frames_url_and_document",
+    "test/spec/sec-live-source/test_c2_urls.py::test_padded_and_unpadded_cik_request_the_same_url",
+    "test/spec/sec-live-source/test_c3_rate_limit.py::test_default_ten_per_second",
+    "test/spec/sec-live-source/test_c3_rate_limit.py::test_out_of_range_max_rps_raises[-1.0]",
+    "test/spec/sec-live-source/test_c3_rate_limit.py::test_out_of_range_max_rps_raises[0]",
+    "test/spec/sec-live-source/test_c3_rate_limit.py::test_out_of_range_max_rps_raises[10.5]",
+    "test/spec/sec-live-source/test_c3_rate_limit.py::test_out_of_range_max_rps_raises[100]",
+    "test/spec/sec-live-source/test_c3_rate_limit.py::test_slow_transport_never_sleeps",
+    "test/spec/sec-live-source/test_c3_rate_limit.py::test_starts_are_paced_exactly",
+    "test/spec/sec-live-source/test_c3_rate_limit.py::test_two_per_second",
+    "test/spec/sec-live-source/test_c4_retries.py::test_404_is_typed_not_found_and_not_cached",
+    "test/spec/sec-live-source/test_c4_retries.py::test_429_is_retried",
+    "test/spec/sec-live-source/test_c4_retries.py::test_503_twice_then_success_with_backoff",
+    "test/spec/sec-live-source/test_c4_retries.py::test_bounded_retries",
+    "test/spec/sec-live-source/test_c4_retries.py::test_negative_max_retries_raises",
+    "test/spec/sec-live-source/test_c4_retries.py::test_non_retryable_failures[200-<html>not json]",
+    "test/spec/sec-live-source/test_c4_retries.py::test_non_retryable_failures[403-forbidden]",
+    "test/spec/sec-live-source/test_c4_retries.py::test_persistent_500_gives_up_after_bound",
+    "test/spec/sec-live-source/test_c5_cache.py::test_any_body_hash_and_round_trip",
+    "test/spec/sec-live-source/test_c5_cache.py::test_cache_hit_same_instance_makes_no_request",
+    "test/spec/sec-live-source/test_c5_cache.py::test_equal_bodies_share_one_payload",
+    "test/spec/sec-live-source/test_c5_cache.py::test_offline_rerun_from_local_store",
+    "test/spec/sec-live-source/test_c5_cache.py::test_record_and_stored_payload",
+    "test/spec/sec-live-source/test_c5_cache.py::test_tampered_payload_fails_loud",
+    "test/spec/sec-live-source/test_c5_cache.py::test_unknown_hash_is_key_error",
+    "test/spec/sec-live-source/test_c6_refresh.py::test_refresh_replaces_record_and_keeps_old_payload",
+    "test/spec/sec-live-source/test_c6_refresh.py::test_refresh_requests_every_call",
+    "test/spec/sec-live-source/test_c6_refresh.py::test_refresh_with_same_bytes_keeps_hash",
+    "test/spec/sec-live-source/test_c7_provenance.py::test_calendar_key_with_payload_duration_and_instant",
+    "test/spec/sec-live-source/test_c7_provenance.py::test_fiscal_key_with_payload",
+    "test/spec/sec-live-source/test_c7_provenance.py::test_missing_frame_is_key_not_found",
+    "test/spec/sec-live-source/test_c7_provenance.py::test_plain_methods_return_the_fetched_document",
+    "test/spec/sec-live-source/test_c7_provenance.py::test_reformatted_payload_changes_hash_not_key"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/sec-live-source.md",
+    "sha256": "38d0e3724d09c9c7ac349f3e04f1924fd0320a731130060f3c6e671c8569c262"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

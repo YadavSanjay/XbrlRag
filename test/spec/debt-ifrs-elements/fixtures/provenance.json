@@ -1,0 +1,34 @@
+{
+ "built": "2026-11-11",
+ "files": {
+  "companyfacts_excerpt.json": "25ed28f7ecf83c1ffd1798bbbc5999dc04d0ac6c07044d269b8960b5276da17f",
+  "fsds/2025q2/num.tsv": "889d7afbf6ecac79eb0526deafa1617bf12d6d4ed3380c95cb434a5a2ef836c9",
+  "fsds/2025q2/pre.tsv": "3363babf3f767a84d74edafc979f2e4b7b8ad408187af74577d35bb80cbb649c",
+  "fsds/2025q2/sub.tsv": "ffcee05df23c9d86b5fad1a322a57ed982018ec3fbf317bb27ee09b30c5509cb",
+  "fsds/2025q2/tag.tsv": "f6dfeda17dceaaa806be0b8a5a48518363ca2fb456fcd434baada5911c3f8e19",
+  "statement_lines_debt.yaml": "10c53ebff5e1a8cb31170a1385bff346e3f8796fa95b8159f3bbe3e49058e277",
+  "taxonomy_excerpt_ifrs.json": "f9c4d0b5d39a3b83ec01ebd21999c14e626331f6e31b66525f9a467f86547b9e"
+ },
+ "fsds": "fsds/2025q2/*.tsv are byte copies of test/spec/statement-rules-by-element/fixtures/fsds/2025q2 (TSM rows only)",
+ "filings": [
+  {
+   "accession": "0001193125-25-083423",
+   "cik": 1046179,
+   "edgar_url": "https://www.sec.gov/Archives/edgar/data/1046179/000119312525083423/d896993d20f.htm",
+   "form": "20-F",
+   "primary_document_sha256": "38fadd39498c28cab2ecbbd7443dca0d1f9a30e4498e21a73922b02c988db9f0",
+   "quarter": "2025q2",
+   "ticker": "TSM",
+   "zip_bytes": 78973768,
+   "zip_retrieved_at": "2026-11-07T17:11:40.464909+00:00",
+   "zip_sha256": "81bf19bdb5606d5ee0164a8de8b7e96d5546170e42e59bcbf95b652ca83ac5d7",
+   "zip_url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q2.zip"
+  }
+ ],
+ "companyfacts": {
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
+  "local_copy_sha256": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
+  "cut": "ifrs-full CurrentPortionOfLongtermBorrowings, NoncurrentPortionOfNoncurrentBondsIssued, LongtermBorrowings, NoncurrentLeaseLiabilities; entries whose accn is 0001193125-25-083423 only"
+ },
+ "taxonomy": "taxonomy_excerpt_ifrs.json: IFRS Accounting Standards Taxonomy 2024-03-27 label (role label), documentation and core schema; sources and SHA-256 inside the file; taxonomies lists the 2022/2023/2024/2025 core schemas declaring the element"
+}

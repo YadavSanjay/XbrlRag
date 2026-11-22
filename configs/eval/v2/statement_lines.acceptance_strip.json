@@ -1,0 +1,915 @@
+{
+ "base": {
+  "ambiguity": 0.019575406672180867,
+  "evaluable": 3627,
+  "families": {
+   "AccountsPayable": {
+    "ambiguous": 0,
+    "hit": 66,
+    "no_oracle": 46,
+    "no_oracle_selected": 5,
+    "none": 3,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "AccountsReceivable": {
+    "ambiguous": 3,
+    "hit": 57,
+    "no_oracle": 41,
+    "no_oracle_selected": 15,
+    "none": 3,
+    "oracle_ambiguous": 0,
+    "wrong": 1
+   },
+   "Capex": {
+    "ambiguous": 2,
+    "hit": 90,
+    "no_oracle": 12,
+    "no_oracle_selected": 10,
+    "none": 6,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "CashAndEquivalents": {
+    "ambiguous": 0,
+    "hit": 105,
+    "no_oracle": 2,
+    "no_oracle_selected": 11,
+    "none": 2,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "CashFromFinancing": {
+    "ambiguous": 1,
+    "hit": 116,
+    "no_oracle": 3,
+    "no_oracle_selected": 0,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "CashFromInvesting": {
+    "ambiguous": 0,
+    "hit": 115,
+    "no_oracle": 5,
+    "no_oracle_selected": 0,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "CashFromOperations": {
+    "ambiguous": 2,
+    "hit": 116,
+    "no_oracle": 2,
+    "no_oracle_selected": 0,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "ComprehensiveIncome": {
+    "ambiguous": 2,
+    "hit": 96,
+    "no_oracle": 12,
+    "no_oracle_selected": 9,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "CostOfRevenue": {
+    "ambiguous": 0,
+    "hit": 51,
+    "no_oracle": 57,
+    "no_oracle_selected": 5,
+    "none": 7,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "CurrentAssets": {
+    "ambiguous": 0,
+    "hit": 81,
+    "no_oracle": 37,
+    "no_oracle_selected": 0,
+    "none": 2,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "CurrentLiabilities": {
+    "ambiguous": 0,
+    "hit": 81,
+    "no_oracle": 37,
+    "no_oracle_selected": 0,
+    "none": 2,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "DebtIssued": {
+    "ambiguous": 7,
+    "hit": 36,
+    "no_oracle": 41,
+    "no_oracle_selected": 31,
+    "none": 4,
+    "oracle_ambiguous": 0,
+    "wrong": 1
+   },
+   "DebtRepaid": {
+    "ambiguous": 8,
+    "hit": 29,
+    "no_oracle": 36,
+    "no_oracle_selected": 41,
+    "none": 4,
+    "oracle_ambiguous": 0,
+    "wrong": 2
+   },
+   "DepreciationAndAmortization": {
+    "ambiguous": 1,
+    "hit": 70,
+    "no_oracle": 8,
+    "no_oracle_selected": 30,
+    "none": 0,
+    "oracle_ambiguous": 3,
+    "wrong": 8
+   },
+   "DividendsPaid": {
+    "ambiguous": 3,
+    "hit": 59,
+    "no_oracle": 47,
+    "no_oracle_selected": 8,
+    "none": 1,
+    "oracle_ambiguous": 1,
+    "wrong": 1
+   },
+   "DividendsPerShare": {
+    "ambiguous": 1,
+    "hit": 44,
+    "no_oracle": 73,
+    "no_oracle_selected": 0,
+    "none": 2,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "EarningsPerShareBasic": {
+    "ambiguous": 2,
+    "hit": 103,
+    "no_oracle": 8,
+    "no_oracle_selected": 2,
+    "none": 5,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "EarningsPerShareDiluted": {
+    "ambiguous": 2,
+    "hit": 102,
+    "no_oracle": 8,
+    "no_oracle_selected": 3,
+    "none": 5,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "GeneralAndAdministrative": {
+    "ambiguous": 2,
+    "hit": 46,
+    "no_oracle": 69,
+    "no_oracle_selected": 2,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "Goodwill": {
+    "ambiguous": 0,
+    "hit": 90,
+    "no_oracle": 30,
+    "no_oracle_selected": 0,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "GrossProfit": {
+    "ambiguous": 0,
+    "hit": 36,
+    "no_oracle": 82,
+    "no_oracle_selected": 0,
+    "none": 2,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "IntangibleAssets": {
+    "ambiguous": 0,
+    "hit": 74,
+    "no_oracle": 34,
+    "no_oracle_selected": 11,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "InterestExpense": {
+    "ambiguous": 1,
+    "hit": 61,
+    "no_oracle": 21,
+    "no_oracle_selected": 35,
+    "none": 2,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "InterestIncome": {
+    "ambiguous": 0,
+    "hit": 13,
+    "no_oracle": 89,
+    "no_oracle_selected": 15,
+    "none": 3,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "Inventory": {
+    "ambiguous": 0,
+    "hit": 47,
+    "no_oracle": 69,
+    "no_oracle_selected": 0,
+    "none": 4,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "NetIncome": {
+    "ambiguous": 0,
+    "hit": 104,
+    "no_oracle": 3,
+    "no_oracle_selected": 11,
+    "none": 2,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "NetIncomeToCommon": {
+    "ambiguous": 1,
+    "hit": 8,
+    "no_oracle": 94,
+    "no_oracle_selected": 9,
+    "none": 8,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "OperatingExpenses": {
+    "ambiguous": 0,
+    "hit": 31,
+    "no_oracle": 50,
+    "no_oracle_selected": 34,
+    "none": 4,
+    "oracle_ambiguous": 0,
+    "wrong": 1
+   },
+   "OperatingIncome": {
+    "ambiguous": 0,
+    "hit": 80,
+    "no_oracle": 40,
+    "no_oracle_selected": 0,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "OtherNonOperatingIncome": {
+    "ambiguous": 3,
+    "hit": 56,
+    "no_oracle": 16,
+    "no_oracle_selected": 40,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 4
+   },
+   "PretaxIncome": {
+    "ambiguous": 3,
+    "hit": 103,
+    "no_oracle": 7,
+    "no_oracle_selected": 6,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "PropertyPlantAndEquipment": {
+    "ambiguous": 0,
+    "hit": 83,
+    "no_oracle": 18,
+    "no_oracle_selected": 16,
+    "none": 3,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "ResearchAndDevelopment": {
+    "ambiguous": 0,
+    "hit": 28,
+    "no_oracle": 87,
+    "no_oracle_selected": 3,
+    "none": 2,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "RestructuringCharges": {
+    "ambiguous": 0,
+    "hit": 11,
+    "no_oracle": 94,
+    "no_oracle_selected": 14,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "RetainedEarnings": {
+    "ambiguous": 1,
+    "hit": 108,
+    "no_oracle": 2,
+    "no_oracle_selected": 1,
+    "none": 8,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "Revenue": {
+    "ambiguous": 0,
+    "hit": 90,
+    "no_oracle": 18,
+    "no_oracle_selected": 5,
+    "none": 1,
+    "oracle_ambiguous": 6,
+    "wrong": 0
+   },
+   "SellingAndMarketing": {
+    "ambiguous": 0,
+    "hit": 22,
+    "no_oracle": 86,
+    "no_oracle_selected": 12,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "SellingGeneralAndAdministrative": {
+    "ambiguous": 0,
+    "hit": 36,
+    "no_oracle": 80,
+    "no_oracle_selected": 0,
+    "none": 4,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "ShareBasedCompensation": {
+    "ambiguous": 4,
+    "hit": 93,
+    "no_oracle": 9,
+    "no_oracle_selected": 5,
+    "none": 9,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "SharesOutstanding": {
+    "ambiguous": 0,
+    "hit": 85,
+    "no_oracle": 35,
+    "no_oracle_selected": 0,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "ShortTermInvestments": {
+    "ambiguous": 0,
+    "hit": 14,
+    "no_oracle": 100,
+    "no_oracle_selected": 3,
+    "none": 3,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "StockRepurchases": {
+    "ambiguous": 11,
+    "hit": 66,
+    "no_oracle": 29,
+    "no_oracle_selected": 10,
+    "none": 4,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "StockholdersEquity": {
+    "ambiguous": 3,
+    "hit": 104,
+    "no_oracle": 1,
+    "no_oracle_selected": 7,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 4
+   },
+   "TaxExpense": {
+    "ambiguous": 6,
+    "hit": 105,
+    "no_oracle": 6,
+    "no_oracle_selected": 2,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "TotalAssets": {
+    "ambiguous": 0,
+    "hit": 119,
+    "no_oracle": 0,
+    "no_oracle_selected": 0,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "TotalLiabilities": {
+    "ambiguous": 1,
+    "hit": 103,
+    "no_oracle": 15,
+    "no_oracle_selected": 1,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "WeightedAverageSharesBasic": {
+    "ambiguous": 1,
+    "hit": 93,
+    "no_oracle": 26,
+    "no_oracle_selected": 0,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "WeightedAverageSharesDiluted": {
+    "ambiguous": 0,
+    "hit": 93,
+    "no_oracle": 26,
+    "no_oracle_selected": 0,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   }
+  },
+  "precision": 0.993606509735542,
+  "recall": 0.942652329749104,
+  "totals": {
+   "ambiguous": 71,
+   "hit": 3419,
+   "no_oracle": 1711,
+   "no_oracle_selected": 412,
+   "none": 115,
+   "oracle_ambiguous": 10,
+   "wrong": 22
+  }
+ },
+ "base_rules_sha256": "1f4612bc4be62c95915ba8e1bc9c48290ac3d026541904ece0bfc35bcc493248",
+ "candidate": {
+  "ambiguity": 0.019575406672180867,
+  "evaluable": 3627,
+  "families": {
+   "AccountsPayable": {
+    "ambiguous": 0,
+    "hit": 66,
+    "no_oracle": 46,
+    "no_oracle_selected": 5,
+    "none": 3,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "AccountsReceivable": {
+    "ambiguous": 3,
+    "hit": 57,
+    "no_oracle": 41,
+    "no_oracle_selected": 15,
+    "none": 3,
+    "oracle_ambiguous": 0,
+    "wrong": 1
+   },
+   "Capex": {
+    "ambiguous": 2,
+    "hit": 91,
+    "no_oracle": 12,
+    "no_oracle_selected": 10,
+    "none": 5,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "CashAndEquivalents": {
+    "ambiguous": 0,
+    "hit": 105,
+    "no_oracle": 2,
+    "no_oracle_selected": 11,
+    "none": 2,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "CashFromFinancing": {
+    "ambiguous": 1,
+    "hit": 116,
+    "no_oracle": 3,
+    "no_oracle_selected": 0,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "CashFromInvesting": {
+    "ambiguous": 0,
+    "hit": 115,
+    "no_oracle": 5,
+    "no_oracle_selected": 0,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "CashFromOperations": {
+    "ambiguous": 2,
+    "hit": 116,
+    "no_oracle": 2,
+    "no_oracle_selected": 0,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "ComprehensiveIncome": {
+    "ambiguous": 2,
+    "hit": 96,
+    "no_oracle": 12,
+    "no_oracle_selected": 9,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "CostOfRevenue": {
+    "ambiguous": 0,
+    "hit": 51,
+    "no_oracle": 57,
+    "no_oracle_selected": 5,
+    "none": 7,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "CurrentAssets": {
+    "ambiguous": 0,
+    "hit": 81,
+    "no_oracle": 37,
+    "no_oracle_selected": 0,
+    "none": 2,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "CurrentLiabilities": {
+    "ambiguous": 0,
+    "hit": 81,
+    "no_oracle": 37,
+    "no_oracle_selected": 0,
+    "none": 2,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "DebtIssued": {
+    "ambiguous": 7,
+    "hit": 36,
+    "no_oracle": 41,
+    "no_oracle_selected": 31,
+    "none": 4,
+    "oracle_ambiguous": 0,
+    "wrong": 1
+   },
+   "DebtRepaid": {
+    "ambiguous": 8,
+    "hit": 29,
+    "no_oracle": 36,
+    "no_oracle_selected": 41,
+    "none": 4,
+    "oracle_ambiguous": 0,
+    "wrong": 2
+   },
+   "DepreciationAndAmortization": {
+    "ambiguous": 1,
+    "hit": 70,
+    "no_oracle": 8,
+    "no_oracle_selected": 30,
+    "none": 0,
+    "oracle_ambiguous": 3,
+    "wrong": 8
+   },
+   "DividendsPaid": {
+    "ambiguous": 3,
+    "hit": 59,
+    "no_oracle": 47,
+    "no_oracle_selected": 8,
+    "none": 1,
+    "oracle_ambiguous": 1,
+    "wrong": 1
+   },
+   "DividendsPerShare": {
+    "ambiguous": 1,
+    "hit": 44,
+    "no_oracle": 73,
+    "no_oracle_selected": 0,
+    "none": 2,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "EarningsPerShareBasic": {
+    "ambiguous": 2,
+    "hit": 103,
+    "no_oracle": 8,
+    "no_oracle_selected": 2,
+    "none": 5,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "EarningsPerShareDiluted": {
+    "ambiguous": 2,
+    "hit": 102,
+    "no_oracle": 8,
+    "no_oracle_selected": 3,
+    "none": 5,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "GeneralAndAdministrative": {
+    "ambiguous": 2,
+    "hit": 46,
+    "no_oracle": 69,
+    "no_oracle_selected": 2,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "Goodwill": {
+    "ambiguous": 0,
+    "hit": 90,
+    "no_oracle": 30,
+    "no_oracle_selected": 0,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "GrossProfit": {
+    "ambiguous": 0,
+    "hit": 36,
+    "no_oracle": 82,
+    "no_oracle_selected": 0,
+    "none": 2,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "IntangibleAssets": {
+    "ambiguous": 0,
+    "hit": 74,
+    "no_oracle": 34,
+    "no_oracle_selected": 11,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "InterestExpense": {
+    "ambiguous": 1,
+    "hit": 61,
+    "no_oracle": 21,
+    "no_oracle_selected": 35,
+    "none": 2,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "InterestIncome": {
+    "ambiguous": 0,
+    "hit": 13,
+    "no_oracle": 89,
+    "no_oracle_selected": 15,
+    "none": 3,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "Inventory": {
+    "ambiguous": 0,
+    "hit": 47,
+    "no_oracle": 69,
+    "no_oracle_selected": 0,
+    "none": 4,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "NetIncome": {
+    "ambiguous": 0,
+    "hit": 104,
+    "no_oracle": 3,
+    "no_oracle_selected": 11,
+    "none": 2,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "NetIncomeToCommon": {
+    "ambiguous": 1,
+    "hit": 8,
+    "no_oracle": 94,
+    "no_oracle_selected": 9,
+    "none": 8,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "OperatingExpenses": {
+    "ambiguous": 0,
+    "hit": 31,
+    "no_oracle": 50,
+    "no_oracle_selected": 34,
+    "none": 4,
+    "oracle_ambiguous": 0,
+    "wrong": 1
+   },
+   "OperatingIncome": {
+    "ambiguous": 0,
+    "hit": 80,
+    "no_oracle": 40,
+    "no_oracle_selected": 0,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "OtherNonOperatingIncome": {
+    "ambiguous": 3,
+    "hit": 56,
+    "no_oracle": 16,
+    "no_oracle_selected": 40,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 4
+   },
+   "PretaxIncome": {
+    "ambiguous": 3,
+    "hit": 103,
+    "no_oracle": 7,
+    "no_oracle_selected": 6,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "PropertyPlantAndEquipment": {
+    "ambiguous": 0,
+    "hit": 83,
+    "no_oracle": 18,
+    "no_oracle_selected": 16,
+    "none": 3,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "ResearchAndDevelopment": {
+    "ambiguous": 0,
+    "hit": 28,
+    "no_oracle": 87,
+    "no_oracle_selected": 3,
+    "none": 2,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "RestructuringCharges": {
+    "ambiguous": 0,
+    "hit": 11,
+    "no_oracle": 94,
+    "no_oracle_selected": 14,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "RetainedEarnings": {
+    "ambiguous": 1,
+    "hit": 108,
+    "no_oracle": 2,
+    "no_oracle_selected": 1,
+    "none": 8,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "Revenue": {
+    "ambiguous": 0,
+    "hit": 90,
+    "no_oracle": 18,
+    "no_oracle_selected": 5,
+    "none": 1,
+    "oracle_ambiguous": 6,
+    "wrong": 0
+   },
+   "SellingAndMarketing": {
+    "ambiguous": 0,
+    "hit": 22,
+    "no_oracle": 86,
+    "no_oracle_selected": 12,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "SellingGeneralAndAdministrative": {
+    "ambiguous": 0,
+    "hit": 36,
+    "no_oracle": 80,
+    "no_oracle_selected": 0,
+    "none": 4,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "ShareBasedCompensation": {
+    "ambiguous": 4,
+    "hit": 93,
+    "no_oracle": 9,
+    "no_oracle_selected": 5,
+    "none": 9,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "SharesOutstanding": {
+    "ambiguous": 0,
+    "hit": 85,
+    "no_oracle": 35,
+    "no_oracle_selected": 0,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "ShortTermInvestments": {
+    "ambiguous": 0,
+    "hit": 14,
+    "no_oracle": 100,
+    "no_oracle_selected": 3,
+    "none": 3,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "StockRepurchases": {
+    "ambiguous": 11,
+    "hit": 66,
+    "no_oracle": 29,
+    "no_oracle_selected": 10,
+    "none": 4,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "StockholdersEquity": {
+    "ambiguous": 3,
+    "hit": 104,
+    "no_oracle": 1,
+    "no_oracle_selected": 7,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 4
+   },
+   "TaxExpense": {
+    "ambiguous": 6,
+    "hit": 105,
+    "no_oracle": 6,
+    "no_oracle_selected": 2,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "TotalAssets": {
+    "ambiguous": 0,
+    "hit": 119,
+    "no_oracle": 0,
+    "no_oracle_selected": 0,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "TotalLiabilities": {
+    "ambiguous": 1,
+    "hit": 103,
+    "no_oracle": 15,
+    "no_oracle_selected": 1,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "WeightedAverageSharesBasic": {
+    "ambiguous": 1,
+    "hit": 93,
+    "no_oracle": 26,
+    "no_oracle_selected": 0,
+    "none": 0,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   },
+   "WeightedAverageSharesDiluted": {
+    "ambiguous": 0,
+    "hit": 93,
+    "no_oracle": 26,
+    "no_oracle_selected": 0,
+    "none": 1,
+    "oracle_ambiguous": 0,
+    "wrong": 0
+   }
+  },
+  "precision": 0.9936083672283557,
+  "recall": 0.9429280397022333,
+  "totals": {
+   "ambiguous": 71,
+   "hit": 3420,
+   "no_oracle": 1711,
+   "no_oracle_selected": 412,
+   "none": 114,
+   "oracle_ambiguous": 10,
+   "wrong": 22
+  }
+ },
+ "draw_sha256": {
+  "num": "221a3c800db46b2568e253736330827e5d2481540e41907469ccd3c794dcae99",
+  "pre": "0ff29edfb3c5fcb2e51b8ed48d4f9eb2ca6a1d3478a9f5098a8d2cfb2110b84a",
+  "sub": "d582e91a63539785cac828cbec470431f3c91f9bdc74f4ad10a2dfc710aa1c5c",
+  "tag": "87e616d50bbb5340d70ef1b68750c322275916a0c5ca6430957d547ddece5f15"
+ },
+ "oracle_sha256": "7cde3f087888f8e029ffd89d27bef452d0cf456a5e2002a77aca9968d76bf9ca",
+ "rules_sha256": "a71814e8cbbc8f2a9ec69556ddb78eeacc92c03ed8e7c98d84afc63ad4b5f143",
+ "spec": "capex-strip-qualifiers",
+ "verdict": {
+  "accept": true,
+  "failed": [],
+  "regressed_families": 0
+ }
+}

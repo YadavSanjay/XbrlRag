@@ -1,0 +1,18 @@
+Question
+--------
+As of December 31, 2024, what is Alphabet’s deferred tax asset balance related to capitalized research and development, and what are the approximate amounts of Federal and California research and development credit carryforwards for income tax purposes? Answer in USD billions.
+
+Decision - DECOMPOSE
+--------------------
+
+Breakdown questions
+-------------------
+1. As of December 31, 2024, what is the recorded balance, in U.S. dollars, of deferred tax assets attributable to capitalized research and development expenditures? (See Item 8—Notes to the Consolidated Financial Statements: Income Taxes—Deferred Tax Assets; Item 7—Management’s Discussion and Analysis: Income tax discussion.)
+
+2. As of December 31, 2024, what is the approximate U.S. federal research and development (R&D) tax credit carryforward available for income tax purposes, stated in U.S. dollars? (See Item 8 — Notes to the Financial Statements: Income Taxes/Tax Carryforwards; Item 7 — Management’s Discussion and Analysis: Income tax discussion.)
+
+3. As of December 31, 2024, what is the approximate amount, in U.S. dollars, of California research and development tax credit carryforwards available for income tax purposes? (See Item 8 — Notes to Consolidated Financial Statements: Income Taxes — Tax Carryforwards; Item 7 — Management’s Discussion and Analysis — Income Tax Discussion.)
+
+
+Issues - 1) missing company name, 2) missing amount in USD billions
+

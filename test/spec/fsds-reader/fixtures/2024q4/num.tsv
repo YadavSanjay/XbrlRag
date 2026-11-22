@@ -1,0 +1,266 @@
+adsh	tag	version	ddate	qtrs	uom	segments	coreg	value	footnote
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20220930	4	USD	BusinessSegments=RestOfAsiaPacificSegment;		29375000000.0000	
+0001730168-24-000139	OperatingIncomeLoss	us-gaap/2024	20241031	4	USD	BusinessSegments=SemiconductorSolutions;		16759000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230930	4	USD	ProductOrService=Mac;		29357000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	Geographical=EMEA;ProductOrService=SubscriptionsandServices;		1593000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240930	4	USD	Geographical=OtherCountries;		181887000000.0000	
+0001730168-24-000139	Amortizationofacquisitionrelatedintangibleassetscostofproductssold	0001730168-24-000139	20231031	4	USD			1853000000.0000	
+0001730168-24-000139	OperatingIncomeLoss	us-gaap/2024	20231031	4	USD	BusinessSegments=SemiconductorSolutions;		16486000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20220930	4	USD	BusinessSegments=AmericasSegment;		169658000000.0000	
+0001730168-24-000139	CostofSubscriptionsandServices	0001730168-24-000139	20231031	4	USD			636000000.0000	
+0001730168-24-000139	ResearchAndDevelopmentExpense	us-gaap/2024	20221031	4	USD			4919000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	Geographical=ChinaincludingHongKong;		11533000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	Geographical=AsiaPacific;		22505000000.0000	
+0000320193-24-000123	SellingGeneralAndAdministrativeExpense	us-gaap/2024	20240930	4	USD			26097000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240930	4	USD	ProductOrService=IPad;		26694000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240930	4	USD	BusinessSegments=RestOfAsiaPacificSegment;		30658000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	BusinessSegments=SemiconductorSolutions;		25818000000.0000	
+0001730168-24-000139	NetIncomeLossAvailableToCommonStockholdersBasic	us-gaap/2024	20241031	4	USD			5895000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	Geographical=EMEA;ProductOrService=Product;		1896000000.0000	
+0001730168-24-000139	Amortizationofacquisitionrelatedintangibleassetscostofproductssold	0001730168-24-000139	20241031	4	USD			6023000000.0000	
+0000320193-24-000123	NonoperatingIncomeExpense	us-gaap/2024	20220930	4	USD			-334000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20220930	4	USD			394328000000.0000	
+0000320193-24-000123	GrossProfit	us-gaap/2024	20220930	4	USD			170782000000.0000	
+0001730168-24-000139	OperatingIncomeLoss	us-gaap/2024	20221031	4	USD	BusinessSegments=InfrastructureSoftware;		5219000000.0000	
+0000320193-24-000123	EarningsPerShareBasic	us-gaap/2024	20240930	4	USD			6.1100	
+0001730168-24-000139	IncomeTaxExpenseBenefit	us-gaap/2024	20231031	4	USD			1015000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	Geographical=Americas;		14970000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	BusinessSegments=InfrastructureSoftware;		21478000000.0000	
+0000320193-24-000123	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2024	20240930	4	shares			15408095000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240930	4	USD	BusinessSegments=JapanSegment;		25052000000.0000	
+0000320193-24-000123	CostOfGoodsAndServicesSold	us-gaap/2024	20220930	4	USD			223546000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20240930	4	USD	BusinessSegments=GreaterChinaSegment;		27082000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20220930	4	USD	BusinessSegments=JapanSegment;		25977000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20240930	4	USD	BusinessSegments=AmericasSegment;		67656000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20240930	4	USD			123216000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240930	4	USD	BusinessSegments=GreaterChinaSegment;		66952000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20220930	4	USD	BusinessSegments=RestOfAsiaPacificSegment;		11569000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20220930	4	USD	BusinessSegments=EuropeSegment;		35233000000.0000	
+0001730168-24-000139	OperatingIncomeLoss	us-gaap/2024	20241031	4	USD	BusinessSegments=UnallocatedExpenses;		-17273000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230930	4	USD	ProductOrService=Service;		85200000000.0000	
+0000320193-24-000123	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2024	20240930	4	shares			15343783000.0000	
+0000320193-24-000123	ResearchAndDevelopmentExpense	us-gaap/2024	20220930	4	USD	ConsolidationItems=MaterialReconcilingItems;		26251000000.0000	
+0001730168-24-000139	EarningsPerShareBasic	us-gaap/2024	20231031	4	USD			3.3900	
+0000320193-24-000123	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2024	20230930	4	shares			15744231000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240930	4	USD	ProductOrService=Service;		96169000000.0000	
+0001730168-24-000139	OperatingExpenses	us-gaap/2024	20221031	4	USD			7870000000.0000	
+0000320193-24-000123	PaymentsToAcquirePropertyPlantAndEquipment	us-gaap/2024	20230930	4	USD			10959000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	Geographical=ChinaincludingHongKong;		11637000000.0000	
+0001730168-24-000139	InterestExpense	us-gaap/2024	20221031	4	USD			1737000000.0000	
+0001730168-24-000139	InterestExpense	us-gaap/2024	20241031	4	USD			3953000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	Geographical=Americas;ProductOrService=Product;		2601000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	Geographical=ChinaincludingHongKong;		10483000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	Geographical=AllOtherGeographiesMember;		18645000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	Geographical=US;		6975000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240930	4	USD	Geographical=CN;		66952000000.0000	
+0001730168-24-000139	ProfitLoss	us-gaap/2024	20221031	4	USD			11495000000.0000	
+0001730168-24-000139	IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2024	20221031	4	USD			11495000000.0000	
+0000320193-24-000123	IncomeTaxExpenseBenefit	us-gaap/2024	20230930	4	USD			16741000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	Geographical=AsiaPacific;ProductOrService=Product;		23263000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	Geographical=AllOtherGeographiesMember;		12832000000.0000	
+0000320193-24-000123	SellingGeneralAndAdministrativeExpense	us-gaap/2024	20220930	4	USD			25094000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20230930	4	USD	BusinessSegments=AmericasSegment;		60508000000.0000	
+0001730168-24-000139	CostOfRevenue	us-gaap/2024	20241031	4	USD			19065000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240930	4	USD			391035000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230930	4	USD	Geographical=CN;		72559000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	ProductOrService=Product;		26277000000.0000	
+0000320193-24-000123	NetIncomeLoss	us-gaap/2024	20230930	4	USD	EquityComponents=RetainedEarnings;		96995000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240930	4	USD	ProductOrService=Mac;		29984000000.0000	
+0000320193-24-000123	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2024	20230930	4	shares			15812547000.0000	
+0001730168-24-000139	SellingGeneralAndAdministrativeExpense	us-gaap/2024	20221031	4	USD			1382000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	Geographical=AsiaPacific;ProductOrService=SubscriptionsandServices;		657000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	ProductOrService=Product;		27891000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230930	4	USD	ProductOrService=IPad;		28300000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	Geographical=AsiaPacific;ProductOrService=SubscriptionsandServices;		744000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	Geographical=EMEA;ProductOrService=SubscriptionsandServices;		6286000000.0000	
+0001730168-24-000139	RestructuringChargesCostOfProductsSold	0001730168-24-000139	20221031	4	USD			5000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240930	4	USD	BusinessSegments=EuropeSegment;		101328000000.0000	
+0000320193-24-000123	CostOfGoodsAndServicesSold	us-gaap/2024	20220930	4	USD	ProductOrService=Product;		201471000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20230930	4	USD	BusinessSegments=GreaterChinaSegment;		30328000000.0000	
+0001730168-24-000139	GrossProfit	us-gaap/2024	20231031	4	USD			24690000000.0000	
+0000320193-24-000123	EarningsPerShareDiluted	us-gaap/2024	20230930	4	USD			6.1300	
+0001730168-24-000139	EarningsPerShareBasic	us-gaap/2024	20221031	4	USD			2.7400	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230930	4	USD	BusinessSegments=EuropeSegment;		94294000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20220930	4	USD	ProductOrService=IPhone;		205489000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	BusinessAcquisition=VMwareAcquisition;		12384000000.0000	
+0000320193-24-000123	GrossProfit	us-gaap/2024	20240930	4	USD			180683000000.0000	
+0000320193-24-000123	ResearchAndDevelopmentExpense	us-gaap/2024	20230930	4	USD			29915000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	Geographical=EMEA;ProductOrService=Product;		2027000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	Geographical=Americas;		8279000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	Geographical=AllOtherGeographiesMember;		11648000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20220930	4	USD	BusinessSegments=JapanSegment;		12257000000.0000	
+0001730168-24-000139	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2024	20231031	4	USD			15097000000.0000	
+0000320193-24-000123	OtherNoncashIncomeExpense	us-gaap/2024	20220930	4	USD			-1006000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240930	4	USD	Geographical=US;		142196000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	ProductOrService=SubscriptionsandServices;		21215000000.0000	
+0001730168-24-000139	OtherNonoperatingIncomeExpense	us-gaap/2024	20241031	4	USD			406000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	Geographical=EMEA;ProductOrService=SubscriptionsandServices;		1609000000.0000	
+0001730168-24-000139	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2024	20231031	4	shares			4149000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	Geographical=EMEA;		8182000000.0000	
+0000320193-24-000123	PaymentsToAcquirePropertyPlantAndEquipment	us-gaap/2024	20240930	4	USD			9447000000.0000	
+0001730168-24-000139	NetIncomeLossAvailableToCommonStockholdersBasic	us-gaap/2024	20221031	4	USD			11223000000.0000	
+0000320193-24-000123	CostOfGoodsAndServicesSold	us-gaap/2024	20220930	4	USD	ProductOrService=Service;		22075000000.0000	
+0000320193-24-000123	NetIncomeLoss	us-gaap/2024	20240930	4	USD			93736000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	BusinessSegments=SemiconductorSolutions;		28182000000.0000	
+0001730168-24-000139	OtherNonoperatingIncomeExpense	us-gaap/2024	20231031	4	USD			512000000.0000	
+0000320193-24-000123	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2024	20240930	4	USD			123485000000.0000	
+0001730168-24-000139	CostOfRevenue	us-gaap/2024	20221031	4	USD			11108000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	BusinessSegments=SemiconductorSolutions;		30096000000.0000	
+0000320193-24-000123	CostOfGoodsAndServicesSold	us-gaap/2024	20230930	4	USD			214137000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20240930	4	USD	BusinessSegments=EuropeSegment;		41790000000.0000	
+0001730168-24-000139	CostofSubscriptionsandServices	0001730168-24-000139	20241031	4	USD			2991000000.0000	
+0001730168-24-000139	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2024	20221031	4	shares			4089000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20220930	4	USD	ProductOrService=Mac;		40177000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240930	4	USD	BusinessSegments=AmericasSegment;		167045000000.0000	
+0001730168-24-000139	OperatingIncomeLoss	us-gaap/2024	20231031	4	USD			16207000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD			33203000000.0000	
+0001730168-24-000139	CostofProductsSold	0001730168-24-000139	20221031	4	USD			7629000000.0000	
+0001730168-24-000139	Amortizationofacquisitionrelatedintangibleassetsoperatingexpenses	0001730168-24-000139	20241031	4	USD			3244000000.0000	
+0000320193-24-000123	SellingGeneralAndAdministrativeExpense	us-gaap/2024	20230930	4	USD			24932000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20220930	4	USD	BusinessSegments=GreaterChinaSegment;		31153000000.0000	
+0000320193-24-000123	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2024	20230930	4	USD			113736000000.0000	
+0000320193-24-000123	ResearchAndDevelopmentExpense	us-gaap/2024	20240930	4	USD	ConsolidationItems=MaterialReconcilingItems;		31370000000.0000	
+0000320193-24-000123	PaymentsToAcquirePropertyPlantAndEquipment	us-gaap/2024	20220930	4	USD			10708000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	ProductOrService=SubscriptionsandServices;		6926000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230930	4	USD	ProductOrService=WearablesHomeandAccessories;		39845000000.0000	
+0001730168-24-000139	EarningsPerShareDiluted	us-gaap/2024	20231031	4	USD			3.3000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230930	4	USD	BusinessSegments=RestOfAsiaPacificSegment;		29615000000.0000	
+0000320193-24-000123	CostOfGoodsAndServicesSold	us-gaap/2024	20230930	4	USD	ProductOrService=Product;		189282000000.0000	
+0001730168-24-000139	IncomeLossFromDiscontinuedOperationsNetOfTax	us-gaap/2024	20231031	4	USD			0.0000	
+0001730168-24-000139	InterestExpense	us-gaap/2024	20231031	4	USD			1622000000.0000	
+0001730168-24-000139	ProfitLoss	us-gaap/2024	20221031	4	USD	EquityComponents=RetainedEarnings;		11495000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20220930	4	USD	BusinessSegments=GreaterChinaSegment;		74200000000.0000	
+0000320193-24-000123	NetIncomeLoss	us-gaap/2024	20220930	4	USD			99803000000.0000	
+0000320193-24-000123	NonoperatingIncomeExpense	us-gaap/2024	20230930	4	USD			-565000000.0000	
+0001730168-24-000139	IncomeLossFromDiscontinuedOperationsNetOfTax	us-gaap/2024	20221031	4	USD			0.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	BusinessSegments=InfrastructureSoftware;		7385000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20230930	4	USD	BusinessSegments=RestOfAsiaPacificSegment;		12066000000.0000	
+0000320193-24-000123	IncomeTaxExpenseBenefit	us-gaap/2024	20240930	4	USD			29749000000.0000	
+0000320193-24-000123	ResearchAndDevelopmentExpense	us-gaap/2024	20220930	4	USD			26251000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20240930	4	USD	BusinessSegments=JapanSegment;		12454000000.0000	
+0001730168-24-000139	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2024	20241031	4	shares			4624000000.0000	
+0001730168-24-000139	RestructuringChargesCostOfProductsSold	0001730168-24-000139	20241031	4	USD			254000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	Geographical=Americas;ProductOrService=SubscriptionsandServices;		4573000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20220930	4	USD	Geographical=OtherCountries;		172269000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230930	4	USD	Geographical=OtherCountries;		172153000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD			51574000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20240930	4	USD	ConsolidationItems=OperatingSegments;		162044000000.0000	
+0000320193-24-000123	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2024	20220930	4	shares			16325819000.0000	
+0001730168-24-000139	OtherNonoperatingIncomeExpense	us-gaap/2024	20221031	4	USD			-54000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	Geographical=US;		5915000000.0000	
+0000320193-24-000123	NetIncomeLoss	us-gaap/2024	20230930	4	USD			96995000000.0000	
+0000320193-24-000123	ResearchAndDevelopmentExpense	us-gaap/2024	20240930	4	USD			31370000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	Geographical=AsiaPacific;ProductOrService=Product;		21761000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	Geographical=EMEA;		3620000000.0000	
+0001730168-24-000139	IncomeTaxExpenseBenefit	us-gaap/2024	20241031	4	USD			3748000000.0000	
+0000320193-24-000123	OtherNoncashIncomeExpense	us-gaap/2024	20240930	4	USD			2266000000.0000	
+0001730168-24-000139	OperatingIncomeLoss	us-gaap/2024	20221031	4	USD			14225000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	Geographical=SG;		9559000000.0000	
+0001730168-24-000139	ProfitLoss	us-gaap/2024	20231031	4	USD			14082000000.0000	
+0000320193-24-000123	EarningsPerShareBasic	us-gaap/2024	20220930	4	USD			6.1500	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240930	4	USD	ProductOrService=IPhone;		201183000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	Geographical=AsiaPacific;		28422000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	Geographical=SG;		4479000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230930	4	USD	BusinessSegments=JapanSegment;		24257000000.0000	
+0000320193-24-000123	NetIncomeLoss	us-gaap/2024	20240930	4	USD	EquityComponents=RetainedEarnings;		93736000000.0000	
+0000320193-24-000123	GrossProfit	us-gaap/2024	20230930	4	USD			169148000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20240930	4	USD	BusinessSegments=RestOfAsiaPacificSegment;		13062000000.0000	
+0000320193-24-000123	OperatingExpenses	us-gaap/2024	20220930	4	USD			51345000000.0000	
+0001730168-24-000139	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2024	20231031	4	shares			4272000000.0000	
+0000320193-24-000123	CostOfGoodsAndServicesSold	us-gaap/2024	20240930	4	USD			210352000000.0000	
+0001730168-24-000139	IncomeTaxExpenseBenefit	us-gaap/2024	20221031	4	USD			939000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240930	4	USD	ProductOrService=Product;		294866000000.0000	
+0000320193-24-000123	EarningsPerShareDiluted	us-gaap/2024	20240930	4	USD			6.0800	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	ProductOrService=SubscriptionsandServices;		7928000000.0000	
+0001730168-24-000139	CostOfRevenue	us-gaap/2024	20231031	4	USD			11129000000.0000	
+0001730168-24-000139	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2024	20241031	4	USD			9916000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD			35819000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	Geographical=Americas;ProductOrService=Product;		2371000000.0000	
+0001730168-24-000139	OperatingExpenses	us-gaap/2024	20241031	4	USD			19046000000.0000	
+0001730168-24-000139	ResearchAndDevelopmentExpense	us-gaap/2024	20241031	4	USD			9310000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	Geographical=Americas;ProductOrService=Product;		2244000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	Geographical=AsiaPacific;ProductOrService=Product;		26219000000.0000	
+0001730168-24-000139	Amortizationofacquisitionrelatedintangibleassetsoperatingexpenses	0001730168-24-000139	20221031	4	USD			1512000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20220930	4	USD			119437000000.0000	
+0001730168-24-000139	RestructuringSettlementAndImpairmentProvisions	us-gaap/2024	20221031	4	USD			57000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	Geographical=Americas;ProductOrService=SubscriptionsandServices;		5678000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20220930	4	USD	ProductOrService=WearablesHomeandAccessories;		41241000000.0000	
+0000320193-24-000123	EarningsPerShareDiluted	us-gaap/2024	20220930	4	USD			6.1100	
+0000320193-24-000123	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2024	20220930	4	shares			16215963000.0000	
+0001730168-24-000139	CostofProductsSold	0001730168-24-000139	20241031	4	USD			9797000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20220930	4	USD	Geographical=US;		147859000000.0000	
+0001730168-24-000139	CostofProductsSold	0001730168-24-000139	20231031	4	USD			8636000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	Geographical=Americas;		6944000000.0000	
+0001730168-24-000139	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2024	20241031	4	shares			4778000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230930	4	USD	ProductOrService=IPhone;		200583000000.0000	
+0000320193-24-000123	NetIncomeLoss	us-gaap/2024	20220930	4	USD	EquityComponents=RetainedEarnings;		99803000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20230930	4	USD	ConsolidationItems=OperatingSegments;		150888000000.0000	
+0001730168-24-000139	OperatingIncomeLoss	us-gaap/2024	20231031	4	USD	BusinessSegments=UnallocatedExpenses;		-5918000000.0000	
+0000320193-24-000123	EarningsPerShareBasic	us-gaap/2024	20230930	4	USD			6.1600	
+0001730168-24-000139	EarningsPerShareBasic	us-gaap/2024	20241031	4	USD			1.2700	
+0001730168-24-000139	ProfitLoss	us-gaap/2024	20241031	4	USD			5895000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230930	4	USD	Geographical=US;		138573000000.0000	
+0001730168-24-000139	ResearchAndDevelopmentExpense	us-gaap/2024	20231031	4	USD			5253000000.0000	
+0000320193-24-000123	NonoperatingIncomeExpense	us-gaap/2024	20240930	4	USD			269000000.0000	
+0000320193-24-000123	ResearchAndDevelopmentExpense	us-gaap/2024	20230930	4	USD	ConsolidationItems=MaterialReconcilingItems;		29915000000.0000	
+0000320193-24-000123	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2024	20220930	4	USD			119103000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	Geographical=EMEA;		3754000000.0000	
+0001730168-24-000139	RestructuringChargesCostOfProductsSold	0001730168-24-000139	20231031	4	USD			4000000.0000	
+0001730168-24-000139	OperatingIncomeLoss	us-gaap/2024	20241031	4	USD			13463000000.0000	
+0001730168-24-000139	ProfitLoss	us-gaap/2024	20231031	4	USD	EquityComponents=RetainedEarnings;		14082000000.0000	
+0000320193-24-000123	IncomeTaxExpenseBenefit	us-gaap/2024	20220930	4	USD			19300000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230930	4	USD	BusinessSegments=AmericasSegment;		162560000000.0000	
+0000320193-24-000123	CostOfGoodsAndServicesSold	us-gaap/2024	20240930	4	USD	ProductOrService=Service;		25119000000.0000	
+0001730168-24-000139	OperatingIncomeLoss	us-gaap/2024	20241031	4	USD	BusinessSegments=InfrastructureSoftware;		13977000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	Geographical=SG;		4003000000.0000	
+0001730168-24-000139	OperatingExpenses	us-gaap/2024	20231031	4	USD			8483000000.0000	
+0001730168-24-000139	RestructuringSettlementAndImpairmentProvisions	us-gaap/2024	20231031	4	USD			244000000.0000	
+0001730168-24-000139	NetIncomeLossAvailableToCommonStockholdersBasic	us-gaap/2024	20231031	4	USD			14082000000.0000	
+0000320193-24-000123	OperatingExpenses	us-gaap/2024	20240930	4	USD			57467000000.0000	
+0001730168-24-000139	Amortizationofacquisitionrelatedintangibleassetscostofproductssold	0001730168-24-000139	20221031	4	USD			2847000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230930	4	USD	BusinessSegments=GreaterChinaSegment;		72559000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20220930	4	USD	Geographical=CN;		74200000000.0000	
+0001730168-24-000139	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2024	20221031	4	USD			12434000000.0000	
+0001730168-24-000139	PreferredStockDividendsIncomeStatementImpact	us-gaap/2024	20231031	4	USD			0.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	Geographical=Americas;ProductOrService=SubscriptionsandServices;		12726000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20220930	4	USD	BusinessSegments=EuropeSegment;		95118000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20220930	4	USD	ProductOrService=Service;		78129000000.0000	
+0001730168-24-000139	IncomeLossFromDiscontinuedOperationsNetOfTax	us-gaap/2024	20241031	4	USD			-273000000.0000	
+0000320193-24-000123	OperatingExpenses	us-gaap/2024	20230930	4	USD			54847000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20220930	4	USD	ProductOrService=Product;		316199000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20220930	4	USD	ConsolidationItems=OperatingSegments;		152895000000.0000	
+0001730168-24-000139	ProfitLoss	us-gaap/2024	20241031	4	USD	EquityComponents=RetainedEarnings;		5895000000.0000	
+0001730168-24-000139	SellingGeneralAndAdministrativeExpense	us-gaap/2024	20231031	4	USD			1592000000.0000	
+0001730168-24-000139	CostofSubscriptionsandServices	0001730168-24-000139	20221031	4	USD			627000000.0000	
+0000320193-24-000123	OtherNoncashIncomeExpense	us-gaap/2024	20230930	4	USD			2227000000.0000	
+0001730168-24-000139	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2024	20221031	4	shares			4232000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230930	4	USD	ProductOrService=Product;		298085000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	BusinessSegments=InfrastructureSoftware;		7637000000.0000	
+0001730168-24-000139	GrossProfit	us-gaap/2024	20241031	4	USD			32509000000.0000	
+0001730168-24-000139	RestructuringSettlementAndImpairmentProvisions	us-gaap/2024	20241031	4	USD			1533000000.0000	
+0000320193-24-000123	CostOfGoodsAndServicesSold	us-gaap/2024	20240930	4	USD	ProductOrService=Product;		185233000000.0000	
+0001730168-24-000139	GrossProfit	us-gaap/2024	20221031	4	USD			22095000000.0000	
+0001730168-24-000139	OperatingIncomeLoss	us-gaap/2024	20221031	4	USD	BusinessSegments=SemiconductorSolutions;		15075000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20230930	4	USD			114301000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20231031	4	USD	Geographical=AsiaPacific;		23920000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20230930	4	USD	BusinessSegments=JapanSegment;		11888000000.0000	
+0001730168-24-000139	SellingGeneralAndAdministrativeExpense	us-gaap/2024	20241031	4	USD			4959000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20220930	4	USD	BusinessSegments=AmericasSegment;		62683000000.0000	
+0001730168-24-000139	Amortizationofacquisitionrelatedintangibleassetsoperatingexpenses	0001730168-24-000139	20231031	4	USD			1394000000.0000	
+0001730168-24-000139	IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2024	20241031	4	USD			6168000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	Geographical=US;		12887000000.0000	
+0001730168-24-000139	OperatingIncomeLoss	us-gaap/2024	20231031	4	USD	BusinessSegments=InfrastructureSoftware;		5639000000.0000	
+0000320193-24-000123	OperatingIncomeLoss	us-gaap/2024	20230930	4	USD	BusinessSegments=EuropeSegment;		36098000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20220930	4	USD	ProductOrService=IPad;		29292000000.0000	
+0001730168-24-000139	EarningsPerShareDiluted	us-gaap/2024	20221031	4	USD			2.6500	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20230930	4	USD			383285000000.0000	
+0001730168-24-000139	OperatingIncomeLoss	us-gaap/2024	20221031	4	USD	BusinessSegments=UnallocatedExpenses;		-6069000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	Geographical=AsiaPacific;ProductOrService=SubscriptionsandServices;		2203000000.0000	
+0001730168-24-000139	PreferredStockDividendsIncomeStatementImpact	us-gaap/2024	20221031	4	USD			272000000.0000	
+0001730168-24-000139	PreferredStockDividendsIncomeStatementImpact	us-gaap/2024	20241031	4	USD			0.0000	
+0000320193-24-000123	CostOfGoodsAndServicesSold	us-gaap/2024	20230930	4	USD	ProductOrService=Service;		24855000000.0000	
+0000320193-24-000123	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20240930	4	USD	ProductOrService=WearablesHomeandAccessories;		37005000000.0000	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20221031	4	USD	Geographical=EMEA;ProductOrService=Product;		2145000000.0000	
+0001730168-24-000139	EarningsPerShareDiluted	us-gaap/2024	20241031	4	USD			1.2300	
+0001730168-24-000139	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	20241031	4	USD	ProductOrService=Product;		30359000000.0000	
+0001730168-24-000139	IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2024	20231031	4	USD			14082000000.0000	

@@ -1,0 +1,207 @@
+# Model prices in USD per 1,000 tokens (provider list price per 1M tokens / 1000).
+#
+# Loaded and validated by src/llm/profiles.py and exposed as MODEL_PRICING in
+# src/llm/config.py. A model with no row here cannot be called through the gateway: the
+# cost tracker raises rather than record a $0 call that the run's cost cap would miss.
+#
+# Keys per row:
+#   input, output   required.
+#   cached_input    prompt tokens read from the provider's cache; absent -> input.
+#   cache_write     prompt tokens written to the cache; absent -> input. Omitted for
+#                   providers that do not bill cache writes (OpenAI's gpt-5 family reports
+#                   0 written tokens anyway).
+#   tiers           optional list of {above_prompt_tokens, input, output, cached_input?,
+#                   cache_write?}: the tier with the largest threshold strictly below the
+#                   prompt's token count replaces the base rates.
+#
+# Sources: provider pricing pages, re-verify periodically. Rows captured June 2026 unless
+# noted; the gpt-5.6 and Claude 5.5 rows 2026-10.
+
+# --- OpenAI: the openai profile. The gpt-5 / -mini / -nano snapshots shut down 2026-12-11.
+gpt-5:
+  input: 0.00125
+  output: 0.01
+  cached_input: 0.000125
+gpt-5-mini:
+  input: 0.00025
+  output: 0.002
+  cached_input: 0.000025
+gpt-5-nano:
+  input: 0.00005
+  output: 0.0004
+  cached_input: 0.000005
+
+# --- OpenAI: the openai-5.6 profile (Standard, short-context list pricing, 2026-10; cache
+# writes at 1.25x input). gpt-5.6-sol's price is promotional through at least 2026-11-21.
+# gpt-5.6-sol's long-context tier: OpenAI pricing page (developers.openai.com/api/docs/pricing),
+# Standard, "Long context: >272K input tokens", read 2026-10-31: $8.00 input, $0.80 cached,
+# $10.00 30-minute cache write, $30.00 output per 1M. A prompt over the threshold pays these
+# rates on the whole call (docs/specs/frontier-sec-tools.md, requirement 36).
+gpt-5.6-sol:
+  input: 0.004
+  output: 0.02
+  cached_input: 0.0004
+  cache_write: 0.005
+  tiers:
+    - above_prompt_tokens: 272000
+      input: 0.008
+      output: 0.03
+      cached_input: 0.0008
+      cache_write: 0.01
+gpt-5.6-terra:
+  input: 0.002
+  output: 0.012
+  cached_input: 0.0002
+  cache_write: 0.0025
+gpt-5.6-luna:
+  input: 0.0002
+  output: 0.0012
+  cached_input: 0.00002
+  cache_write: 0.00025
+
+# --- OpenAI: the openai-6.1 profile (docs/specs/openai-6-1-profile.md). OpenAI pricing page
+# (developers.openai.com/api/docs/pricing), Standard, read 2026-11-03; cache writes are the
+# default 30-minute write. Runs go on Flex (half of every class), but the rows stay at
+# Standard so costs and caps are list-price and never understated
+# (docs/eval/heldout_v2/measurement_plan.md section 5). Long-context tier: "Long context:
+# >272K input tokens", applied to the whole call, as for gpt-5.6-sol.
+gpt-6.1-sol:
+  input: 0.002
+  output: 0.01
+  cached_input: 0.0001
+  cache_write: 0.0025
+  tiers:
+    - above_prompt_tokens: 272000
+      input: 0.004
+      output: 0.015
+      cached_input: 0.0002
+      cache_write: 0.005
+gpt-6.1-terra:
+  input: 0.001
+  output: 0.005
+  cached_input: 0.00005
+  cache_write: 0.00125
+  tiers:
+    - above_prompt_tokens: 272000
+      input: 0.002
+      output: 0.0075
+      cached_input: 0.0001
+      cache_write: 0.0025
+# No gpt-6.1 luna exists; the profile's small tier is gpt-6-luna. Its long-context tier
+# (over 272K input tokens, whole call): OpenAI pricing page, Standard, read 2026-11-14
+# (docs/specs/llm-pricing-refresh.md).
+gpt-6-luna:
+  input: 0.0001
+  output: 0.0005
+  cached_input: 0.00001
+  cache_write: 0.000125
+  tiers:
+    - above_prompt_tokens: 272000
+      input: 0.0002
+      output: 0.00075
+      cached_input: 0.00002
+      cache_write: 0.00025
+
+# --- OpenAI: other candidates and older models still accepted by callers.
+gpt-6-sol:
+  input: 0.002
+  output: 0.01
+  cached_input: 0.0002
+gpt-4o:
+  input: 0.0025
+  output: 0.01
+  cached_input: 0.00125
+gpt-4o-mini:
+  input: 0.00015
+  output: 0.0006
+  cached_input: 0.000075
+
+# --- Anthropic: the anthropic profile (2026-10). Cache reads 0.05x input for Opus and Sonnet
+# 5.5, 0.1x for Haiku 5.5 (Anthropic pricing page, read 2026-11-14;
+# docs/specs/llm-pricing-refresh.md); 5-minute cache writes 1.25x input. claude-haiku-5-5
+# bills prompts above 100K tokens at 5x its base rates.
+claude-opus-5-5:
+  input: 0.004
+  output: 0.02
+  cached_input: 0.0002
+  cache_write: 0.005
+claude-sonnet-5-5:
+  input: 0.002
+  output: 0.01
+  cached_input: 0.0001
+  cache_write: 0.0025
+claude-haiku-5-5:
+  input: 0.0001
+  output: 0.0005
+  cached_input: 0.00001
+  cache_write: 0.000125
+  tiers:
+    - above_prompt_tokens: 100000
+      input: 0.0005
+      output: 0.0025
+      cached_input: 0.00005
+      cache_write: 0.000625
+
+# --- DeepSeek: the deepseek profile. Official USD list prices (Models & Pricing page,
+# retrieved 2026-10-29), PEAK rates (01:00-04:00 and 06:00-10:00 UTC on weekdays). Off-peak
+# is half; it is not modelled, so the tracked cost is an upper bound and a cost cap is never
+# understated. Cache hits are billed at cached_input; DeepSeek bills no cache writes.
+deepseek-flash:      # $0.006 hit / $0.30 miss / $1.20 out per 1M
+  input: 0.0003
+  cached_input: 0.000006
+  output: 0.0012
+deepseek-v4-pro:     # $0.044 hit / $1.32 miss / $3.96 out per 1M
+  input: 0.00132
+  cached_input: 0.000044
+  output: 0.00396
+
+# --- Anthropic: the legacy PDF flow's aliases (ANTHROPIC_MODEL_ALIASES), June 2026 list
+# pricing; cache writes 1.25x input.
+claude-opus-4-8:
+  input: 0.005
+  output: 0.025
+  cached_input: 0.0005
+  cache_write: 0.00625
+claude-opus-4-7:
+  input: 0.005
+  output: 0.025
+  cached_input: 0.0005
+  cache_write: 0.00625
+claude-opus-4-6:
+  input: 0.005
+  output: 0.025
+  cached_input: 0.0005
+  cache_write: 0.00625
+claude-sonnet-4-6:
+  input: 0.003
+  output: 0.015
+  cached_input: 0.0003
+  cache_write: 0.00375
+claude-haiku-4-5-20251001:
+  input: 0.001
+  output: 0.005
+  cached_input: 0.0001
+  cache_write: 0.00125
+
+# --- HuggingFace: serverless / free tier.
+meta-llama/Llama-2-7b-chat-hf:
+  input: 0.0
+  output: 0.0
+mistralai/Mistral-7B-Instruct-v0.1:
+  input: 0.0
+  output: 0.0
+
+# --- Deprecated: kept so old cost-log entries still resolve to a price. Do not reference
+# these in new configs.
+gpt-4:
+  input: 0.03
+  output: 0.06
+gpt-4-32k:
+  input: 0.06
+  output: 0.12
+gpt-3.5-turbo:
+  input: 0.0015
+  output: 0.002
+gpt-3.5-turbo-16k:
+  input: 0.003
+  output: 0.004

@@ -1,0 +1,7 @@
+tag	version	custom	abstract	datatype	iord	crdr	tlabel	doc
+MarketableSecuritiesAndEquitySecuritiesFVNI	0001045810-26-000021	1	0	monetary	I	D	Marketable Securities And Equity Securities, FV-NI	Marketable Securities And Equity Securities, FV-NI
+PaymentsForFinancedPropertyPlantAndEquipmentAndIntangibleAssetsFinancingActivities	0001045810-26-000021	1	0	monetary	D	C	Payments For Financed Property, Plant And Equipment And Intangible Assets, Financing Activities	Payments For Financed Property, Plant And Equipment And Intangible Assets, Financing Activities
+OtherUnallocatedIncomeExpense	0001628280-26-004195	1	0	monetary	D	D	Other Unallocated (Income) Expense	Other Unallocated (Income) Expense
+ProgramGainsLosses	0001628280-26-004195	1	0	monetary	D	D	Program (Gains) Losses	Program (Gains) Losses
+CostOfSalesOperatingExpensesAndOtherNet	0000059478-26-000013	1	0	monetary	D	D	Cost of sales, operating expenses, and other-net	Cost of sales, operating expenses, and other-net
+SalesRebatesAndDiscounts	0000059478-26-000013	1	0	monetary	I	C	Sales rebates and discounts	Sales rebates and discounts

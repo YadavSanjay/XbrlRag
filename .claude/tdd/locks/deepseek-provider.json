@@ -1,0 +1,126 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-28",
+  "criteria": {
+    "C1": [
+      "test/spec/deepseek-provider/test_c1_committed_config.py::test_deepseek_profile_tiers_and_provider",
+      "test/spec/deepseek-provider/test_c1_committed_config.py::test_base_url_and_key_env_of_each_provider",
+      "test/spec/deepseek-provider/test_c1_committed_config.py::test_deepseek_model_rows",
+      "test/spec/deepseek-provider/test_c1_committed_config.py::test_deepseek_prices[deepseek-flash]",
+      "test/spec/deepseek-provider/test_c1_committed_config.py::test_deepseek_prices[deepseek-v4-pro]",
+      "test/spec/deepseek-provider/test_c1_committed_config.py::test_any_deepseek_rate_is_the_pages_peak_rate",
+      "test/spec/deepseek-provider/test_c1_committed_config.py::test_adding_deepseek_leaves_the_other_profiles_unchanged"
+    ],
+    "C2": [
+      "test/spec/deepseek-provider/test_c2_validation.py::test_invalid_deepseek_configuration_raises[base_url on anthropic]",
+      "test/spec/deepseek-provider/test_c2_validation.py::test_invalid_deepseek_configuration_raises[base_url on openai]",
+      "test/spec/deepseek-provider/test_c2_validation.py::test_invalid_deepseek_configuration_raises[deepseek with an http base_url]",
+      "test/spec/deepseek-provider/test_c2_validation.py::test_invalid_deepseek_configuration_raises[deepseek without base_url]",
+      "test/spec/deepseek-provider/test_c2_validation.py::test_invalid_deepseek_configuration_raises[effort on an openai model]",
+      "test/spec/deepseek-provider/test_c2_validation.py::test_invalid_deepseek_configuration_raises[model on mistral]",
+      "test/spec/deepseek-provider/test_c2_validation.py::test_invalid_deepseek_configuration_raises[provider named mistral]",
+      "test/spec/deepseek-provider/test_c2_validation.py::test_effort_on_a_deepseek_model_loads[low]",
+      "test/spec/deepseek-provider/test_c2_validation.py::test_effort_on_a_deepseek_model_loads[medium]",
+      "test/spec/deepseek-provider/test_c2_validation.py::test_effort_on_a_deepseek_model_loads[high]",
+      "test/spec/deepseek-provider/test_c2_validation.py::test_effort_on_a_deepseek_model_loads[xhigh]",
+      "test/spec/deepseek-provider/test_c2_validation.py::test_effort_on_a_deepseek_model_loads[max]",
+      "test/spec/deepseek-provider/test_c2_validation.py::test_any_provider_base_url_loads_exactly_when_allowed",
+      "test/spec/deepseek-provider/test_c2_validation.py::test_renaming_deepseek_to_an_unknown_provider_fails"
+    ],
+    "C3": [
+      "test/spec/deepseek-provider/test_c3_routing.py::test_resolve_model_ref_routes_by_configured_provider",
+      "test/spec/deepseek-provider/test_c3_routing.py::test_deepseek_key_env_and_missing_keys",
+      "test/spec/deepseek-provider/test_c3_routing.py::test_gateway_default_adapter_for_deepseek",
+      "test/spec/deepseek-provider/test_c3_routing.py::test_any_committed_model_resolves_to_its_rows_provider",
+      "test/spec/deepseek-provider/test_c3_routing.py::test_explicit_provider_or_base_url_wins"
+    ],
+    "C4": [
+      "test/spec/deepseek-provider/test_c4_request_params.py::test_spec_point_case_is_exactly_the_chat_request",
+      "test/spec/deepseek-provider/test_c4_request_params.py::test_callers_effort_temperature_and_format_pass_through",
+      "test/spec/deepseek-provider/test_c4_request_params.py::test_any_messages_and_budget_give_a_chat_request",
+      "test/spec/deepseek-provider/test_c4_request_params.py::test_adding_a_cache_point_changes_nothing_but_the_flag"
+    ],
+    "C5": [
+      "test/spec/deepseek-provider/test_c5_usage_cost.py::test_spec_point_reply_is_parsed_and_costed",
+      "test/spec/deepseek-provider/test_c5_usage_cost.py::test_any_counts_cost_the_closed_form",
+      "test/spec/deepseek-provider/test_c5_usage_cost.py::test_moving_prompt_tokens_into_the_cache_saves_the_rate_difference"
+    ]
+  },
+  "files": {
+    "test/spec/deepseek-provider/conftest.py": "8542e8e5a1522606acd0a9f34e2637f39cdb5654d0aa9a4957fa3dcc0ac21936",
+    "test/spec/deepseek-provider/test_c1_committed_config.py": "2f31cb264bd414a079e5fed0741d6259a829149cb8b148e0f74912a5828bafbd",
+    "test/spec/deepseek-provider/test_c2_validation.py": "7aa44126c8b88bdd0c9775adea0f055d9d93322ba4a9ae45dd6bf9e1a5715c0e",
+    "test/spec/deepseek-provider/test_c3_routing.py": "73ee1cd96b5767ff351da22e1a7f76811011a66d52e390a431e6800060103b41",
+    "test/spec/deepseek-provider/test_c4_request_params.py": "338f8d60d35dbf0e255f268eb061cbea135f9388f5c2a32f3766b9e2a643acc0",
+    "test/spec/deepseek-provider/test_c5_usage_cost.py": "a699f56c26acae68618215b2d4497d564255c45f79c39b919a8349e54e510c8c"
+  },
+  "id": "deepseek-provider",
+  "interface": [
+    {
+      "file": "src/llm/gateway/adapters/deepseek_adapter.py",
+      "module": "llm.gateway.adapters.deepseek_adapter",
+      "qualname": "DeepSeekAdapter.build_params",
+      "signature": "def build_params(self, *, messages: list[dict], model: str, max_completion_tokens: int | None=None, temperature: float | None=None, response_format: str | dict | None=None, reasoning_effort: str | None=None, extra: dict | None=None) -> dict"
+    },
+    {
+      "file": "src/llm/profiles.py",
+      "module": "llm.profiles",
+      "qualname": "LlmSettings.base_url_for",
+      "signature": "def base_url_for(self, provider: str) -> str | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/deepseek-provider/test_c1_committed_config.py::test_adding_deepseek_leaves_the_other_profiles_unchanged",
+    "test/spec/deepseek-provider/test_c1_committed_config.py::test_any_deepseek_rate_is_the_pages_peak_rate",
+    "test/spec/deepseek-provider/test_c1_committed_config.py::test_base_url_and_key_env_of_each_provider",
+    "test/spec/deepseek-provider/test_c1_committed_config.py::test_deepseek_model_rows",
+    "test/spec/deepseek-provider/test_c1_committed_config.py::test_deepseek_prices[deepseek-flash]",
+    "test/spec/deepseek-provider/test_c1_committed_config.py::test_deepseek_prices[deepseek-v4-pro]",
+    "test/spec/deepseek-provider/test_c1_committed_config.py::test_deepseek_profile_tiers_and_provider",
+    "test/spec/deepseek-provider/test_c2_validation.py::test_any_provider_base_url_loads_exactly_when_allowed",
+    "test/spec/deepseek-provider/test_c2_validation.py::test_effort_on_a_deepseek_model_loads[high]",
+    "test/spec/deepseek-provider/test_c2_validation.py::test_effort_on_a_deepseek_model_loads[low]",
+    "test/spec/deepseek-provider/test_c2_validation.py::test_effort_on_a_deepseek_model_loads[max]",
+    "test/spec/deepseek-provider/test_c2_validation.py::test_effort_on_a_deepseek_model_loads[medium]",
+    "test/spec/deepseek-provider/test_c2_validation.py::test_effort_on_a_deepseek_model_loads[xhigh]",
+    "test/spec/deepseek-provider/test_c2_validation.py::test_invalid_deepseek_configuration_raises[base_url on anthropic]",
+    "test/spec/deepseek-provider/test_c2_validation.py::test_invalid_deepseek_configuration_raises[base_url on openai]",
+    "test/spec/deepseek-provider/test_c2_validation.py::test_invalid_deepseek_configuration_raises[deepseek with an http base_url]",
+    "test/spec/deepseek-provider/test_c2_validation.py::test_invalid_deepseek_configuration_raises[deepseek without base_url]",
+    "test/spec/deepseek-provider/test_c2_validation.py::test_invalid_deepseek_configuration_raises[effort on an openai model]",
+    "test/spec/deepseek-provider/test_c2_validation.py::test_invalid_deepseek_configuration_raises[model on mistral]",
+    "test/spec/deepseek-provider/test_c2_validation.py::test_invalid_deepseek_configuration_raises[provider named mistral]",
+    "test/spec/deepseek-provider/test_c2_validation.py::test_renaming_deepseek_to_an_unknown_provider_fails",
+    "test/spec/deepseek-provider/test_c3_routing.py::test_any_committed_model_resolves_to_its_rows_provider",
+    "test/spec/deepseek-provider/test_c3_routing.py::test_deepseek_key_env_and_missing_keys",
+    "test/spec/deepseek-provider/test_c3_routing.py::test_explicit_provider_or_base_url_wins",
+    "test/spec/deepseek-provider/test_c3_routing.py::test_gateway_default_adapter_for_deepseek",
+    "test/spec/deepseek-provider/test_c3_routing.py::test_resolve_model_ref_routes_by_configured_provider",
+    "test/spec/deepseek-provider/test_c4_request_params.py::test_adding_a_cache_point_changes_nothing_but_the_flag",
+    "test/spec/deepseek-provider/test_c4_request_params.py::test_any_messages_and_budget_give_a_chat_request",
+    "test/spec/deepseek-provider/test_c4_request_params.py::test_callers_effort_temperature_and_format_pass_through",
+    "test/spec/deepseek-provider/test_c4_request_params.py::test_spec_point_case_is_exactly_the_chat_request",
+    "test/spec/deepseek-provider/test_c5_usage_cost.py::test_any_counts_cost_the_closed_form",
+    "test/spec/deepseek-provider/test_c5_usage_cost.py::test_moving_prompt_tokens_into_the_cache_saves_the_rate_difference",
+    "test/spec/deepseek-provider/test_c5_usage_cost.py::test_spec_point_reply_is_parsed_and_costed"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/deepseek-provider.md",
+    "sha256": "06334b0f42c8c200b92002116e0bedc5acad059d778bef271a878bda1d9c039b"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

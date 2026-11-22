@@ -1,0 +1,163 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-11",
+  "criteria": {
+    "C1": [
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c1_debt_sum.py::test_filer_h_debt_is_the_presented_borrowing_lines",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c1_debt_sum.py::test_extension_lines_are_summed",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c1_debt_sum.py::test_a_total_debt_line_narrows_to_itself",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c1_debt_sum.py::test_no_borrowing_line_is_not_presented",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c1_debt_sum.py::test_distractors_order_and_scale_change_only_the_value"
+    ],
+    "C2": [
+      "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c2_debt_reading.py::test_filer_g_presented_sum_with_note_total_reading",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c2_debt_reading.py::test_no_reading_when_a_current_line_is_presented",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c2_debt_reading.py::test_no_reading_when_the_note_is_not_larger[46500]",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c2_debt_reading.py::test_no_reading_when_the_note_is_not_larger[45000]",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c2_debt_reading.py::test_long_term_debt_when_no_combined_amount",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c2_debt_reading.py::test_reading_exactly_when_no_current_part_and_note_larger"
+    ],
+    "C3": [
+      "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_lines_in_both_sections_are_the_total",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_current_line_with_note_total",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_current_line_plus_note_noncurrent",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_deferred_revenue_total_tag_when_no_contract_liability_total",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_total_below_the_current_line_is_ignored",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_noncurrent_only_line",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_no_line_note_total_else_not_presented",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_two_sections_win_over_any_note",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_a_total_below_the_current_line_is_never_the_value"
+    ],
+    "C4": [
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_fixture_filers_agree_with_the_key_and_the_hand_sum[G-Debt]",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_fixture_filers_agree_with_the_key_and_the_hand_sum[G-DeferredRevenue]",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_fixture_filers_agree_with_the_key_and_the_hand_sum[H-Debt]",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_fixture_filers_agree_with_the_key_and_the_hand_sum[H-DeferredRevenue]",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_fixture_filers_agree_with_the_key_and_the_hand_sum[O-Debt]",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_fixture_filers_agree_with_the_key_and_the_hand_sum[O-DeferredRevenue]",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_fixture_filers_agree_with_the_key_and_the_hand_sum[T-Debt]",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_fixture_filers_agree_with_the_key_and_the_hand_sum[T-DeferredRevenue]",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_any_filing_gives_the_key_sides_answer"
+    ],
+    "C5": [
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_a_selected_line_in_another_unit_refuses",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_a_note_in_another_unit_or_nil_is_absent",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_nil_lines_are_no_part_and_never_zero",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_decimals_is_the_coarsest_finite_part",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_conflicting_facts_refuse_only_where_read",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_equal_duplicates_count_once_with_the_first_fact_id",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_a_valued_line_without_a_fact_id_raises",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_nil_lines_never_change_the_result",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_decimals_is_the_minimum_finite_part_decimals"
+    ],
+    "C6": [
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c6_precedence_screen.py::test_precedence_by_status",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c6_precedence_screen.py::test_screen_member_by_status",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c6_precedence_screen.py::test_defined_debt_answers_over_the_candidate_order_winner",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c6_precedence_screen.py::test_disclosures_carry_the_definition_and_basis",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c6_precedence_screen.py::test_precedence_and_screen_follow_the_status"
+    ],
+    "C7": [
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c7_other_families.py::test_other_families_get_no_measure",
+      "test/spec/s4-lookup-deferred-revenue-debt/test_c7_other_families.py::test_any_other_family_name_gets_none"
+    ]
+  },
+  "files": {
+    "test/spec/s4-lookup-deferred-revenue-debt/conftest.py": "58eb405e3ad5d03b55dfe936a34665e03bbe1d5ea17f91153ffaebaa3956844f",
+    "test/spec/s4-lookup-deferred-revenue-debt/fixtures/statement_lines_s4.yaml": "fd520cc8382bfcd9740183dd4b3c0ad6f0ae2b08bfb115b48b92b10cd076634d",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c1_debt_sum.py": "a0366f671c04d6de8a21f2af3b38a2c842bead6d8446f85160212b1bc78967c3",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py": "7375af0d217c690e9b26e8eb5390366a8f1e5d6a10b90b988e707b229cefac03",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py": "b617ef8f637413ddd6bc520aa9bb1488d43df8ad34a594ee85a385ace3674c63",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c6_precedence_screen.py": "abc34b8f3d43f6388b0aec834f81b829a2c83537abc15ce3b24a81a93d5c244f",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c7_other_families.py": "4dfb74e963438b1cd0af98ed56cff2855c708d0608291269c79c3c1f0970a4e4",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c2_debt_reading.py": "615b01821c73965e9580226c7f886db197fc6547ca172837ac3532c22ce36670",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py": "e69c5cfb708fff7c11f31cb72b7af62703453647507db90dd0713031f8420691"
+  },
+  "id": "s4-lookup-deferred-revenue-debt",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/defined_measure.py",
+      "module": "retriever.xbrl.defined_measure",
+      "qualname": "defined_measure",
+      "signature": "def defined_measure(family: str, lines: Sequence[MeasureLine], notes: Sequence[NoteFact], rule: StatementRule, unit: str) -> DefinedMeasure | None"
+    },
+    {
+      "file": "src/retriever/xbrl/defined_measure.py",
+      "module": "retriever.xbrl.defined_measure",
+      "qualname": "defined_precedence",
+      "signature": "def defined_precedence(defined: DefinedMeasure | None) -> str"
+    },
+    {
+      "file": "src/retriever/xbrl/defined_measure.py",
+      "module": "retriever.xbrl.defined_measure",
+      "qualname": "screen_member",
+      "signature": "def screen_member(defined: DefinedMeasure) -> dict[str, Any]"
+    }
+  ],
+  "nodes": [
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c1_debt_sum.py::test_a_total_debt_line_narrows_to_itself",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c1_debt_sum.py::test_distractors_order_and_scale_change_only_the_value",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c1_debt_sum.py::test_extension_lines_are_summed",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c1_debt_sum.py::test_filer_h_debt_is_the_presented_borrowing_lines",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c1_debt_sum.py::test_no_borrowing_line_is_not_presented",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_any_filing_gives_the_key_sides_answer",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_fixture_filers_agree_with_the_key_and_the_hand_sum[G-Debt]",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_fixture_filers_agree_with_the_key_and_the_hand_sum[G-DeferredRevenue]",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_fixture_filers_agree_with_the_key_and_the_hand_sum[H-Debt]",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_fixture_filers_agree_with_the_key_and_the_hand_sum[H-DeferredRevenue]",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_fixture_filers_agree_with_the_key_and_the_hand_sum[O-Debt]",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_fixture_filers_agree_with_the_key_and_the_hand_sum[O-DeferredRevenue]",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_fixture_filers_agree_with_the_key_and_the_hand_sum[T-Debt]",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c4_key_equivalence.py::test_fixture_filers_agree_with_the_key_and_the_hand_sum[T-DeferredRevenue]",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_a_note_in_another_unit_or_nil_is_absent",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_a_selected_line_in_another_unit_refuses",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_a_valued_line_without_a_fact_id_raises",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_conflicting_facts_refuse_only_where_read",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_decimals_is_the_coarsest_finite_part",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_decimals_is_the_minimum_finite_part_decimals",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_equal_duplicates_count_once_with_the_first_fact_id",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_nil_lines_are_no_part_and_never_zero",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c5_units_nil_precision.py::test_nil_lines_never_change_the_result",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c6_precedence_screen.py::test_defined_debt_answers_over_the_candidate_order_winner",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c6_precedence_screen.py::test_disclosures_carry_the_definition_and_basis",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c6_precedence_screen.py::test_precedence_and_screen_follow_the_status",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c6_precedence_screen.py::test_precedence_by_status",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c6_precedence_screen.py::test_screen_member_by_status",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c7_other_families.py::test_any_other_family_name_gets_none",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_c7_other_families.py::test_other_families_get_no_measure",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c2_debt_reading.py::test_filer_g_presented_sum_with_note_total_reading",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c2_debt_reading.py::test_long_term_debt_when_no_combined_amount",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c2_debt_reading.py::test_no_reading_when_a_current_line_is_presented",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c2_debt_reading.py::test_no_reading_when_the_note_is_not_larger[45000]",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c2_debt_reading.py::test_no_reading_when_the_note_is_not_larger[46500]",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c2_debt_reading.py::test_reading_exactly_when_no_current_part_and_note_larger",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_a_total_below_the_current_line_is_never_the_value",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_current_line_plus_note_noncurrent",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_current_line_with_note_total",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_deferred_revenue_total_tag_when_no_contract_liability_total",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_lines_in_both_sections_are_the_total",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_no_line_note_total_else_not_presented",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_noncurrent_only_line",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_total_below_the_current_line_is_ignored",
+    "test/spec/s4-lookup-deferred-revenue-debt/test_s4_c3_deferred_revenue.py::test_two_sections_win_over_any_note"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/s4-lookup-deferred-revenue-debt.md",
+    "sha256": "277e7696d84881ecab4db3d933f7eb7833d5a23cd4661cfb0f8ef948e5781634"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

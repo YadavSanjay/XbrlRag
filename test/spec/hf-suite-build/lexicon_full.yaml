@@ -1,0 +1,24 @@
+# The hf-suite-build oracle lexicon, written by hand: lexicon_base.yaml with overlay.yaml's
+# two filers added (docs/specs/hf-suite-build.md criterion C2).
+companies:
+  DEVA: {short: Deva, legal: Deva Holdings Inc.}
+  DEVC: {short: Devc, legal: Devc Inc.}
+  DEVE: {short: Deve, legal: Deve SE}
+  DEVB: {short: Devb, legal: Devb Corporation}
+  DEVD: {short: Devd, legal: Devd Ltd.}
+metrics:
+  Revenue: {label: revenue, synonyms: [net sales]}
+  OperatingIncome: {label: operating income, synonyms: [operating profit]}
+  NetIncome: {label: net income, synonyms: [net earnings]}
+  operating_margin: {label: operating margin, synonyms: [operating profit margin]}
+  net_margin: {label: net margin, synonyms: [net profit margin]}
+  rd_intensity: {label: R&D intensity, synonyms: [research intensity]}
+  current_ratio: {label: current ratio, synonyms: [liquidity ratio]}
+universes:
+  covered: [the covered companies]
+  pair: [the pair]
+  retailers: [the retailers]
+period_ends:
+  DEVA: {2023: "2023-12-31", 2024: "2024-12-31"}
+  DEVB: {2023: "2023-12-31", 2024: "2024-12-31"}
+  DEVD: {2023: "2023-12-30", 2024: "2024-12-28"}

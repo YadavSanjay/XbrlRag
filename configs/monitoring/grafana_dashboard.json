@@ -1,0 +1,164 @@
+{
+  "__comment": "XbrlRag XBRL observability dashboard (WS-7 / B8). Import into Grafana (Dashboards -> Import) with a Prometheus data source scraping the XbrlRag exporter (configs/monitoring/prometheus.yml). Panels read the arag_* metrics from src/observability/metrics_exporter.py over the audit.v_* views.",
+  "title": "XbrlRag XBRL — Observability",
+  "uid": "arag-xbrl-obs",
+  "schemaVersion": 39,
+  "version": 1,
+  "editable": true,
+  "tags": ["arag", "xbrl", "observability"],
+  "time": { "from": "now-6h", "to": "now" },
+  "refresh": "30s",
+  "templating": {
+    "list": [
+      {
+        "name": "datasource",
+        "type": "datasource",
+        "query": "prometheus",
+        "current": {}
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": 1,
+      "title": "Audit DB up",
+      "type": "stat",
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "gridPos": { "h": 4, "w": 4, "x": 0, "y": 0 },
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [
+            { "type": "value", "options": { "0": { "text": "DOWN", "color": "red" }, "1": { "text": "UP", "color": "green" } } }
+          ],
+          "thresholds": { "mode": "absolute", "steps": [ { "color": "red", "value": null }, { "color": "green", "value": 1 } ] }
+        }
+      },
+      "targets": [ { "expr": "arag_audit_db_up", "refId": "A" } ]
+    },
+    {
+      "id": 2,
+      "title": "Queries (recent day)",
+      "type": "stat",
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "gridPos": { "h": 4, "w": 4, "x": 4, "y": 0 },
+      "targets": [ { "expr": "arag_query_daily_queries", "refId": "A" } ]
+    },
+    {
+      "id": 3,
+      "title": "Error rate (recent day)",
+      "type": "stat",
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "gridPos": { "h": 4, "w": 4, "x": 8, "y": 0 },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "yellow", "value": 0.05 }, { "color": "red", "value": 0.1 } ] }
+        }
+      },
+      "targets": [ { "expr": "arag_query_error_rate", "refId": "A" } ]
+    },
+    {
+      "id": 4,
+      "title": "Degradation rate (recent day)",
+      "type": "stat",
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "gridPos": { "h": 4, "w": 4, "x": 12, "y": 0 },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "yellow", "value": 0.15 }, { "color": "red", "value": 0.25 } ] }
+        }
+      },
+      "targets": [ { "expr": "arag_query_degradation_rate", "refId": "A" } ]
+    },
+    {
+      "id": 5,
+      "title": "Daily LLM cost (USD)",
+      "type": "stat",
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "gridPos": { "h": 4, "w": 4, "x": 16, "y": 0 },
+      "fieldConfig": { "defaults": { "unit": "currencyUSD" } },
+      "targets": [ { "expr": "arag_query_daily_cost_usd", "refId": "A" } ]
+    },
+    {
+      "id": 6,
+      "title": "Verifier failures",
+      "type": "stat",
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "gridPos": { "h": 4, "w": 4, "x": 20, "y": 0 },
+      "fieldConfig": {
+        "defaults": {
+          "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "red", "value": 1 } ] }
+        }
+      },
+      "targets": [ { "expr": "arag_verifier_failures_total", "refId": "A" } ]
+    },
+    {
+      "id": 7,
+      "title": "End-to-end query latency percentiles (ms)",
+      "type": "timeseries",
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 4 },
+      "fieldConfig": { "defaults": { "unit": "ms" } },
+      "targets": [
+        { "expr": "arag_query_latency_milliseconds{quantile=\"0.5\"}", "legendFormat": "p50", "refId": "A" },
+        { "expr": "arag_query_latency_milliseconds{quantile=\"0.95\"}", "legendFormat": "p95", "refId": "B" },
+        { "expr": "arag_query_latency_milliseconds{quantile=\"0.99\"}", "legendFormat": "p99", "refId": "C" }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Stage p95 latency (ms)",
+      "type": "timeseries",
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 4 },
+      "fieldConfig": { "defaults": { "unit": "ms" } },
+      "targets": [
+        { "expr": "arag_stage_latency_milliseconds{quantile=\"0.95\"}", "legendFormat": "{{stage}}", "refId": "A" }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Query mix by branch/intent",
+      "type": "timeseries",
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 12 },
+      "targets": [
+        { "expr": "arag_branch_queries", "legendFormat": "{{branch}} / {{intent}}", "refId": "A" }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "LLM cost by model (USD, cumulative)",
+      "type": "timeseries",
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 12 },
+      "fieldConfig": { "defaults": { "unit": "currencyUSD" } },
+      "targets": [
+        { "expr": "arag_model_cost_usd", "legendFormat": "{{model}}", "refId": "A" }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "LLM calls & errors by stage/model",
+      "type": "timeseries",
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 20 },
+      "targets": [
+        { "expr": "arag_llm_calls_total", "legendFormat": "calls {{stage}}/{{model}}", "refId": "A" },
+        { "expr": "arag_llm_errors_total", "legendFormat": "errors {{stage}}/{{model}}", "refId": "B" }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Ingestion outcomes (recent day)",
+      "type": "timeseries",
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 20 },
+      "targets": [
+        { "expr": "arag_ingestion_succeeded", "legendFormat": "succeeded {{pipeline}}", "refId": "A" },
+        { "expr": "arag_ingestion_failed", "legendFormat": "failed {{pipeline}}", "refId": "B" }
+      ]
+    }
+  ]
+}

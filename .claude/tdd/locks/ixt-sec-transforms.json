@@ -1,0 +1,106 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/ixt-sec-transforms/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-01",
+  "criteria": {
+    "C1": [
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_the_plugins_load_in_order",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_any_filing_loads_the_same_plugins"
+    ],
+    "C2": [
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_the_image_pins_the_plugin",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_each_hash_names_one_file"
+    ],
+    "C3": [
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_a_transform_error_holds_the_filing_back[False]",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_a_transform_error_holds_the_filing_back[True]",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_no_count_passes_as_before[extra0]",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_no_count_passes_as_before[extra1]",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_no_count_passes_as_before[extra2]",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_published_exactly_at_zero",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_the_candidate_sql_supplies_the_count"
+    ],
+    "C4": [
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_only_the_marker_rows_are_planned",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_a_numeric_value_is_exact",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_one_update_per_marker_row"
+    ],
+    "C5": [
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_any_doubt_stops_the_filing[marker_row_missing]",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_any_doubt_stops_the_filing[still_the_marker]",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_any_doubt_stops_the_filing[another_value_differs]",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_any_doubt_stops_the_filing[unknown_id]",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_removing_any_marker_row_raises",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_repeating_plans_nothing"
+    ],
+    "C6": [
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_each_update_is_one_guarded_statement",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_another_row_count_raises[0]",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_another_row_count_raises[2]",
+      "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_any_updates_reach_the_parameters"
+    ]
+  },
+  "files": {
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py": "31a156498154318a085498ca5cdfbbd1608b7e715069cdbe9add6f351b7d39ff"
+  },
+  "id": "ixt-sec-transforms",
+  "interface": [
+    {
+      "file": "src/ingest/sec_edgar/ingest/transform_backfill.py",
+      "module": "ingest.sec_edgar.ingest.transform_backfill",
+      "qualname": "plan_fact_updates",
+      "signature": "def plan_fact_updates(stored: Sequence[Mapping[str, Any]], exported: Mapping[str, Mapping[str, Any]]) -> list[tuple[int, str, Decimal | None]]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/ingest/transform_backfill.py",
+      "module": "ingest.sec_edgar.ingest.transform_backfill",
+      "qualname": "apply_fact_updates",
+      "signature": "def apply_fact_updates(cursor: Any, updates: Sequence[tuple[int, str, Decimal | None]]) -> None"
+    }
+  ],
+  "nodes": [
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_a_numeric_value_is_exact",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_a_transform_error_holds_the_filing_back[False]",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_a_transform_error_holds_the_filing_back[True]",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_another_row_count_raises[0]",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_another_row_count_raises[2]",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_any_doubt_stops_the_filing[another_value_differs]",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_any_doubt_stops_the_filing[marker_row_missing]",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_any_doubt_stops_the_filing[still_the_marker]",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_any_doubt_stops_the_filing[unknown_id]",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_any_filing_loads_the_same_plugins",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_any_updates_reach_the_parameters",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_each_hash_names_one_file",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_each_update_is_one_guarded_statement",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_no_count_passes_as_before[extra0]",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_no_count_passes_as_before[extra1]",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_no_count_passes_as_before[extra2]",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_one_update_per_marker_row",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_only_the_marker_rows_are_planned",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_published_exactly_at_zero",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_removing_any_marker_row_raises",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_repeating_plans_nothing",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_the_candidate_sql_supplies_the_count",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_the_image_pins_the_plugin",
+    "test/spec/ixt-sec-transforms/test_ixt_transforms.py::test_the_plugins_load_in_order"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/ixt-sec-transforms.md",
+    "sha256": "eb3ceebd25bdee9f20cc85d0064b81c9f43f66e2006a4a80b32b3c137e604df8"
+  },
+  "status": "retired",
+  "tool_version": "0.4.1"
+}

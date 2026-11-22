@@ -1,0 +1,866 @@
+{
+ "accession_no": "0001193125-25-083423",
+ "cik": "0001046179",
+ "ticker": "TSM",
+ "extension_namespace": "http://www.tsmc.com/20241231",
+ "source_file": "tsm-20241231_cal.xml",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1046179/000119312525083423/tsm-20241231_cal.xml",
+ "source_sha256": "5cfda267b61d03f8ab03d41702f445b9460152fbee6c8760014ed2c6574c1fca",
+ "retrieved": "local copy under data/storage/sec_edgar (downloaded at ingest); hashed 2026-11-07",
+ "cross_check": "arcs equal to xbrl_db mv_calculation_network by local name (261 arcs)",
+ "selection": "every summation-item arc of every tree (link role, parent) whose parent or a child is an extension presented on IS/BS/CF",
+ "arcs": [
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "child": "http://www.tsmc.com/20241231:DonationFromShareholderClassifiedAsFinancingActivities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "child": "http://www.tsmc.com/20241231:GuaranteeDepositsReceivedClassifiedAsFinancingActivities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "child": "http://www.tsmc.com/20241231:GuaranteeDepositsRefundedClassifiedAsFinancingActivities",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "child": "http://www.tsmc.com/20241231:PaymentForAcquireOfTreasuryShares",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "child": "http://www.tsmc.com/20241231:PaymentsProceedsFromChangesInNoncontrollingInterests",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "child": "http://www.tsmc.com/20241231:ProceedsFromPaymentsToHedgingFinancialLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInIncreaseDecreaseInCurrentBorrowings",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:DividendsPaidClassifiedAsFinancingActivities",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:InterestPaidClassifiedAsFinancingActivities",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:PaymentsForDebtIssueCosts",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:ProceedsFromChangesInOwnershipInterestsInSubsidiaries",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:ProceedsFromIssueOfBondsNotesAndDebentures",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:ProceedsFromNoncurrentBorrowings",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:RepaymentsOfBondsNotesAndDebentures",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:RepaymentsOfNoncurrentBorrowings",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "http://www.tsmc.com/20241231:AdjustmentsForPrepaymentsOfLeases",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "http://www.tsmc.com/20241231:DerecognitionOfHedgingFinancialInstruments",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "http://www.tsmc.com/20241231:ProceedsFromFinancialAssetsAtAmortizedCostsClassifiedAsInvestingActivities",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "http://www.tsmc.com/20241231:ProceedsFromFinancialAssetsAtFairValueThroughOtherComprehensiveIncomeClassifiedAsInvestingActivities",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "http://www.tsmc.com/20241231:ProceedsFromIntangibleAssets",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "http://www.tsmc.com/20241231:ProceedsFromReturnOfCapitalOfInvestmentsInEquityInstrumentsAtFairValueThroughOtherComprehensiveIncome",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "http://www.tsmc.com/20241231:PurchaseOfFinancialAssetsAtAmortisedCost",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "http://www.tsmc.com/20241231:PurchaseOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "http://www.tsmc.com/20241231:PurchaseOfFinancialAssetsAtFairValueThroughProfitOrLossDebtInstruments",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashReceiptsFromRepaymentOfAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:DividendsReceivedClassifiedAsInvestingActivities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:DividendsReceivedFromInvestmentsAccountedForUsingEquityMethodClassifiedAsInvestingActivities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:InterestReceivedClassifiedAsInvestingActivities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:PurchaseOfInvestmentsOtherThanInvestmentsAccountedForUsingEquityMethod",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "http://www.tsmc.com/20241231:AdjustmentsForDecreaseIncreaseInFinancialAssetsAndLiabilitiesAtFairValueThroughProfitOrLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "http://www.tsmc.com/20241231:AdjustmentsForDecreaseIncreaseInOtherNonCurrentAssets",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "http://www.tsmc.com/20241231:AdjustmentsForDecreaseIncreaseInOtherReceivablesRelatedParties",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "http://www.tsmc.com/20241231:AdjustmentsForDecreaseIncreaseInReceivablesFromRelatedParties",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "http://www.tsmc.com/20241231:AdjustmentsForGainOnDisposalOfIntangibleAssetsNet",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "http://www.tsmc.com/20241231:AdjustmentsForGainsLossesOndisposalOfInvestmentsInDebtInstrumentsAtFairValueThroughOtherComprehensiveIncomeNet",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "http://www.tsmc.com/20241231:AdjustmentsForGainsLossesOnfinancialInstrumentsAtFairValueThroughProfitOrLossNet",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "http://www.tsmc.com/20241231:AdjustmentsForIncreaseDecreaseInAccruedExpensesAndOtherCurrentLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "http://www.tsmc.com/20241231:AdjustmentsForIncreaseDecreaseInAccruedProfitSharingBonusToEmployeesAndCompensationToDirectorsAndSupervisors",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "http://www.tsmc.com/20241231:AdjustmentsForIncreaseDecreaseInOtherLiabilitiesNoncurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "http://www.tsmc.com/20241231:AdjustmentsForIncreaseDecreaseInPayablesToRelatedParties",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "http://www.tsmc.com/20241231:AdjustmentsForIncreaseDecreaseInSalaryAndBonusPayables",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "http://www.tsmc.com/20241231:AdjustmentsForRecognitionOfExpectedCreditLossAndReversalOnInvestmentsInDebtInstruments",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:AdjustmentsForDecreaseIncreaseInInventories",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:AdjustmentsForDecreaseIncreaseInOtherCurrentAssets",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:AdjustmentsForDecreaseIncreaseInOtherFinancialAssets",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:AdjustmentsForDecreaseIncreaseInTradeAccountReceivable",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:AdjustmentsForGainLossOnDisposalOfInvestmentsInSubsidiariesJointVenturesAndAssociates",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:AdjustmentsForIncreaseDecreaseInEmployeeBenefitLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:AdjustmentsForIncreaseDecreaseInTradeAccountPayable",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:AdjustmentsForSharebasedPayments",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:AmortisationExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:DepreciationExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:FinanceCosts",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:GainsLossesOnDisposalsOfPropertyPlantAndEquipment",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationRecognisedInProfitOrLoss",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherAdjustmentsToReconcileProfitLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:ProfitLossBeforeTax",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:RevenueFromDividends",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:RevenueFromInterest",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:ShareOfProfitLossOfAssociatesAccountedForUsingEquityMethod",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfCashFlows",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashFlowsFromUsedInOperations",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:WritedownsReversalsOfPropertyPlantAndEquipment",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentAssets",
+   "child": "http://www.tsmc.com/20241231:CurrentReceivablesFromRelatedPartiesRelatedToCoreBusiness",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentAssets",
+   "child": "http://www.tsmc.com/20241231:FinancialAssetsHeldForHedging",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentAssets",
+   "child": "http://www.tsmc.com/20241231:OtherCurrentReceivablesFromRelatedParties",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentAssets",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CashAndCashEquivalents",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentAssets",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentFinancialAssetsAtAmortisedCost",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentAssets",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentFinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentAssets",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentFinancialAssetsAtFairValueThroughProfitOrLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentAssets",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentTradeReceivables",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentAssets",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:Inventories",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentAssets",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherCurrentAssets",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentAssets",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherCurrentFinancialAssets",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentLiabilities",
+   "child": "http://www.tsmc.com/20241231:AccruedProfitSharingBonusToEmployeesAndCompensationToDirectorsAndSupervisors",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentLiabilities",
+   "child": "http://www.tsmc.com/20241231:FinancialLiabilitiesHeldForHedging",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentLiabilities",
+   "child": "http://www.tsmc.com/20241231:SalaryAndBonusPayableEmployeeBenefitsAccruals",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentLiabilities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentAccruedExpensesAndOtherCurrentLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentLiabilities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentDividendPayables",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentLiabilities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentFinancialLiabilitiesAtFairValueThroughProfitOrLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentLiabilities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentPayablesForPurchaseOfNoncurrentAssets",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentLiabilities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentPortionOfLongtermBorrowings",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentLiabilities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentTaxLiabilitiesCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentLiabilities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:TradeAndOtherCurrentPayablesToRelatedParties",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentLiabilities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:TradeAndOtherCurrentPayablesToTradeSuppliers",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:EquityAttributableToOwnersOfParent",
+   "child": "http://www.tsmc.com/20241231:CapitalSurplus",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:EquityAttributableToOwnersOfParent",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:IssuedCapital",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:EquityAttributableToOwnersOfParent",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherReserves",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:EquityAttributableToOwnersOfParent",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:RetainedEarnings",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:NoncurrentLiabilities",
+   "child": "http://www.tsmc.com/20241231:NoncurrentGuaranteeDeposits",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:NoncurrentLiabilities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:DeferredTaxLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:NoncurrentLiabilities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:LongtermBorrowings",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:NoncurrentLiabilities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:NoncurrentLeaseLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:NoncurrentLiabilities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:NoncurrentPortionOfNoncurrentBondsIssued",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:NoncurrentLiabilities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:NoncurrentRecognisedLiabilitiesDefinedBenefitPlan",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:NoncurrentLiabilities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherNoncurrentLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:RetainedEarnings",
+   "child": "http://www.tsmc.com/20241231:UnappropriatedEarnings",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfFinancialPosition",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:RetainedEarnings",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CapitalReserve",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "http://www.tsmc.com/20241231:NonOperatingIncomeExpense1",
+   "child": "http://www.tsmc.com/20241231:InvestmentsIncomeInterest",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "http://www.tsmc.com/20241231:NonOperatingIncomeExpense1",
+   "child": "http://www.tsmc.com/20241231:NetForeignExchangeGainLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "http://www.tsmc.com/20241231:NonOperatingIncomeExpense1",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:FinanceCosts",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "http://www.tsmc.com/20241231:NonOperatingIncomeExpense1",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:FinanceIncome",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "http://www.tsmc.com/20241231:NonOperatingIncomeExpense1",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherGainsLosses",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "http://www.tsmc.com/20241231:NonOperatingIncomeExpense1",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:ShareOfProfitLossOfAssociatesAccountedForUsingEquityMethod",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax",
+   "child": "http://www.tsmc.com/20241231:GainOnHedgingInstrumentsThatWillBeReclassifiedToProfitOrLossBeforeTax",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax",
+   "child": "http://www.tsmc.com/20241231:ShareOfOtherComprehensiveIncomeOfAssociatesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossBeforeTax",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax",
+   "child": "http://www.tsmc.com/20241231:UnrealizedGainsOrLossesOnInvestmentsInDebtInstrumentsAtFairValueThroughOtherComprehensiveIncomeWillBeReclassifiedToProfitOrLossBeforeTax",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax",
+   "child": "http://www.tsmc.com/20241231:ShareOfOtherComprehensiveIncomeOfAssociatesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossBeforeTax",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax",
+   "child": "http://www.tsmc.com/20241231:UnrealizedGainsOrLossesOnInvestmentsInEquityInstrumentsAtFairValueThroughOtherComprehensiveIncomeWillNotBeReclassifiedToProfitOrLossBeforeTax",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:ProfitLossBeforeTax",
+   "child": "http://www.tsmc.com/20241231:NonOperatingIncomeExpense1",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/ConsolidatedStatementsOfProfitOrLossAndOtherComprehensiveIncome",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:ProfitLossBeforeTax",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:ProfitLossFromOperatingActivities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/EquitySummaryOfCapitalSurplusDetail",
+   "parent": "http://www.tsmc.com/20241231:CapitalSurplus",
+   "child": "http://www.tsmc.com/20241231:ReserveFromDifferenceBetweenConsiderationReceivedAndCarryingAmountOfTheSubsidiariesNetAssetsDuringActualDisposal",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/EquitySummaryOfCapitalSurplusDetail",
+   "parent": "http://www.tsmc.com/20241231:CapitalSurplus",
+   "child": "http://www.tsmc.com/20241231:ReserveFromDonationsByShareholders",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/EquitySummaryOfCapitalSurplusDetail",
+   "parent": "http://www.tsmc.com/20241231:CapitalSurplus",
+   "child": "http://www.tsmc.com/20241231:ReserveFromDonationsByUnclaimedDividend",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/EquitySummaryOfCapitalSurplusDetail",
+   "parent": "http://www.tsmc.com/20241231:CapitalSurplus",
+   "child": "http://www.tsmc.com/20241231:ReserveFromEmployeeRestrictedShares",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/EquitySummaryOfCapitalSurplusDetail",
+   "parent": "http://www.tsmc.com/20241231:CapitalSurplus",
+   "child": "http://www.tsmc.com/20241231:ReserveFromShareOfChangesInEquitiesOfAssociates",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/EquitySummaryOfCapitalSurplusDetail",
+   "parent": "http://www.tsmc.com/20241231:CapitalSurplus",
+   "child": "http://www.tsmc.com/20241231:ReserveFromShareOfChangesInEquitiesOfSubsidiaries",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/EquitySummaryOfCapitalSurplusDetail",
+   "parent": "http://www.tsmc.com/20241231:CapitalSurplus",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:AdditionalPaidinCapital",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/EquitySummaryOfCapitalSurplusDetail",
+   "parent": "http://www.tsmc.com/20241231:CapitalSurplus",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:MergerReserve",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/EquitySummaryOfCapitalSurplusDetail",
+   "parent": "http://www.tsmc.com/20241231:CapitalSurplus",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:ReserveOfEquityComponentOfConvertibleInstruments",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/FinancialInstrumentsCategoriesOfFinancialInstrumentsDetail",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:FinancialAssets",
+   "child": "http://www.tsmc.com/20241231:FinancialAssetsHeldForHedging",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/FinancialInstrumentsCategoriesOfFinancialInstrumentsDetail",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:FinancialAssets",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:FinancialAssetsAtAmortisedCost",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/FinancialInstrumentsCategoriesOfFinancialInstrumentsDetail",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:FinancialAssets",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:FinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/FinancialInstrumentsCategoriesOfFinancialInstrumentsDetail",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:FinancialAssets",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:FinancialAssetsAtFairValueThroughProfitOrLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/FinancialInstrumentsCategoriesOfFinancialInstrumentsDetail",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:FinancialLiabilities",
+   "child": "http://www.tsmc.com/20241231:FinancialLiabilitiesHeldForHedging",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/FinancialInstrumentsCategoriesOfFinancialInstrumentsDetail",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:FinancialLiabilities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:CurrentFinancialLiabilitiesAtFairValueThroughProfitOrLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/FinancialInstrumentsCategoriesOfFinancialInstrumentsDetail",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:FinancialLiabilities",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:FinancialLiabilitiesAtAmortisedCost",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/OtherGainsAndLossesSummaryOfOtherGainsAndLossesNetDetail",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherGainsLosses",
+   "child": "http://www.tsmc.com/20241231:AdjustmentsForGainsLossesOndisposalOfInvestmentsInDebtInstrumentsAtFairValueThroughOtherComprehensiveIncomeNet",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/OtherGainsAndLossesSummaryOfOtherGainsAndLossesNetDetail",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherGainsLosses",
+   "child": "http://www.tsmc.com/20241231:OtherGainsLossesNet",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/OtherGainsAndLossesSummaryOfOtherGainsAndLossesNetDetail",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherGainsLosses",
+   "child": "http://www.tsmc.com/20241231:ReversalAllowanceAccountForCreditLossesOfFinancialAssetsAtAmortizedCost",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/OtherGainsAndLossesSummaryOfOtherGainsAndLossesNetDetail",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherGainsLosses",
+   "child": "http://www.tsmc.com/20241231:ReversalAllowanceAccountForCreditLossesOfFinancialAssetsInvestmentsInDebtInstrumentsAtFairValueThroughOtherComprehensiveIncome",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/OtherGainsAndLossesSummaryOfOtherGainsAndLossesNetDetail",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherGainsLosses",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:GainsLossesOnDisposalsOfInvestments",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tsmc.com/role/OtherGainsAndLossesSummaryOfOtherGainsAndLossesNetDetail",
+   "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:OtherGainsLosses",
+   "child": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full:GainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+   "weight": "1"
+  }
+ ]
+}

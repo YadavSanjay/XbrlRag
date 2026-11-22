@@ -1,0 +1,186 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-21",
+  "criteria": {
+    "C1": [
+      "test/spec/baseline-arms/test_ba_c1_closed_book.py::test_one_call_question_verbatim_and_reply_fields",
+      "test/spec/baseline-arms/test_ba_c1_closed_book.py::test_refusal_reply_is_a_refusal",
+      "test/spec/baseline-arms/test_ba_c1_closed_book.py::test_no_retrieved_or_ground_truth_text_reaches_the_model",
+      "test/spec/baseline-arms/test_ba_c1_closed_book.py::test_any_reply_round_trips_without_citations"
+    ],
+    "C2": [
+      "test/spec/baseline-arms/test_ba_c2_naive_retrieval.py::test_plain_retrieval_and_context",
+      "test/spec/baseline-arms/test_ba_c2_naive_retrieval.py::test_chunk_text_is_not_in_the_system_prompt",
+      "test/spec/baseline-arms/test_ba_c2_naive_retrieval.py::test_no_points_means_no_call_and_a_refusal",
+      "test/spec/baseline-arms/test_ba_c2_naive_retrieval.py::test_any_retrieval_order_is_preserved"
+    ],
+    "C3": [
+      "test/spec/baseline-arms/test_ba_c3_filter.py::test_filtered_scalar_case",
+      "test/spec/baseline-arms/test_ba_c3_filter.py::test_filtered_cross_filer_screen_uses_year_only",
+      "test/spec/baseline-arms/test_ba_c3_filter.py::test_plain_ignores_ticker_and_year",
+      "test/spec/baseline-arms/test_ba_c3_filter.py::test_filters_follow_the_case"
+    ],
+    "C4": [
+      "test/spec/baseline-arms/test_ba_c4_citations.py::test_hand_built_citation_list",
+      "test/spec/baseline-arms/test_ba_c4_citations.py::test_only_unretrieved_citations_give_none",
+      "test/spec/baseline-arms/test_ba_c4_citations.py::test_random_citation_lists"
+    ],
+    "C5": [
+      "test/spec/baseline-arms/test_ba_c5_accounting.py::test_answer_carries_trace_cost_and_latency[closed_book]",
+      "test/spec/baseline-arms/test_ba_c5_accounting.py::test_answer_carries_trace_cost_and_latency[naive_rag_plain]",
+      "test/spec/baseline-arms/test_ba_c5_accounting.py::test_answer_carries_trace_cost_and_latency[naive_rag_filtered]",
+      "test/spec/baseline-arms/test_ba_c5_accounting.py::test_cost_is_per_answer_not_cumulative[closed_book]",
+      "test/spec/baseline-arms/test_ba_c5_accounting.py::test_cost_is_per_answer_not_cumulative[naive_rag_plain]",
+      "test/spec/baseline-arms/test_ba_c5_accounting.py::test_cost_is_per_answer_not_cumulative[naive_rag_filtered]",
+      "test/spec/baseline-arms/test_ba_c5_accounting.py::test_doubling_tokens_doubles_cost"
+    ],
+    "C6": [
+      "test/spec/baseline-arms/test_ba_c6_failures.py::test_provider_error_becomes_error_answer[closed_book]",
+      "test/spec/baseline-arms/test_ba_c6_failures.py::test_provider_error_becomes_error_answer[naive_rag_plain]",
+      "test/spec/baseline-arms/test_ba_c6_failures.py::test_provider_error_becomes_error_answer[naive_rag_filtered]",
+      "test/spec/baseline-arms/test_ba_c6_failures.py::test_embedder_error_becomes_error_answer[naive_rag_plain]",
+      "test/spec/baseline-arms/test_ba_c6_failures.py::test_embedder_error_becomes_error_answer[naive_rag_filtered]",
+      "test/spec/baseline-arms/test_ba_c6_failures.py::test_qdrant_error_becomes_error_answer[naive_rag_plain]",
+      "test/spec/baseline-arms/test_ba_c6_failures.py::test_qdrant_error_becomes_error_answer[naive_rag_filtered]",
+      "test/spec/baseline-arms/test_ba_c6_failures.py::test_zero_call_budget_raises_run_halt[closed_book]",
+      "test/spec/baseline-arms/test_ba_c6_failures.py::test_zero_call_budget_raises_run_halt[naive_rag_plain]",
+      "test/spec/baseline-arms/test_ba_c6_failures.py::test_zero_call_budget_raises_run_halt[naive_rag_filtered]",
+      "test/spec/baseline-arms/test_ba_c6_failures.py::test_any_boundary_error_is_contained",
+      "test/spec/baseline-arms/test_ba_c6_failures.py::test_any_tripped_budget_propagates"
+    ],
+    "C7": [
+      "test/spec/baseline-arms/test_ba_c7_selection.py::test_system_names_exact",
+      "test/spec/baseline-arms/test_ba_c7_selection.py::test_build_system_by_name_offline[xbrlrag_full]",
+      "test/spec/baseline-arms/test_ba_c7_selection.py::test_build_system_by_name_offline[closed_book]",
+      "test/spec/baseline-arms/test_ba_c7_selection.py::test_build_system_by_name_offline[naive_rag_plain]",
+      "test/spec/baseline-arms/test_ba_c7_selection.py::test_build_system_by_name_offline[naive_rag_filtered]",
+      "test/spec/baseline-arms/test_ba_c7_selection.py::test_unknown_name_raises",
+      "test/spec/baseline-arms/test_ba_c7_selection.py::test_any_other_name_raises",
+      "test/spec/baseline-arms/test_ba_c7_selection.py::test_arm_names_from_constructors",
+      "test/spec/baseline-arms/test_ba_c7_selection.py::test_stages_on_the_synthesizer_medium_tier",
+      "test/spec/baseline-arms/test_ba_c7_selection.py::test_stage_models_match_synthesizer_in_either_model_set[False]",
+      "test/spec/baseline-arms/test_ba_c7_selection.py::test_stage_models_match_synthesizer_in_either_model_set[True]",
+      "test/spec/baseline-arms/test_ba_c7_selection.py::test_prompt_registry_resolves_both_stages_at_v1",
+      "test/spec/baseline-arms/test_ba_c7_selection.py::test_calls_use_the_stage_and_the_synthesizer_model[closed_book-closed_book]",
+      "test/spec/baseline-arms/test_ba_c7_selection.py::test_calls_use_the_stage_and_the_synthesizer_model[naive_rag-naive_rag]"
+    ]
+  },
+  "files": {
+    "test/spec/baseline-arms/conftest.py": "703c26f6342509ed6f8b243d677b71e273584320c795d9f4d976ea1b9867caad",
+    "test/spec/baseline-arms/test_ba_c1_closed_book.py": "b63ba83f384cb94fbfb0087f4e97d088037b7c4e385cf0b6c847899a7a45277d",
+    "test/spec/baseline-arms/test_ba_c2_naive_retrieval.py": "04a3c286a245f8a1b1555714b110e42edf3b1934f3daa219c69a2cd2dcaa0ef1",
+    "test/spec/baseline-arms/test_ba_c3_filter.py": "f4b1276c578db0c645362d3c8a4423a7f7512e2a3038789e6256c8121fb7d438",
+    "test/spec/baseline-arms/test_ba_c4_citations.py": "ecfa863a0aba72ed4860a3362982e2fe454dc9c68ec3c48d371c96cbf7278192",
+    "test/spec/baseline-arms/test_ba_c5_accounting.py": "9eecaf930d779796294a012192296f05f50a7d379c0170e9b62e073678609f9d",
+    "test/spec/baseline-arms/test_ba_c6_failures.py": "faf4d8791ac6418bb0d3fcf780be8100dd7437a90e09aabfdcc746d4803d6429",
+    "test/spec/baseline-arms/test_ba_c7_selection.py": "6c6fbecb8e1e4305ffe41c05f405455f9f2c4b6abbadcfb811bef1f4edc84ed1"
+  },
+  "id": "baseline-arms",
+  "interface": [
+    {
+      "file": "src/eval/systems/__init__.py",
+      "module": "eval.systems",
+      "qualname": "system_names",
+      "signature": "def system_names() -> tuple[str, ...]"
+    },
+    {
+      "file": "src/eval/systems/__init__.py",
+      "module": "eval.systems",
+      "qualname": "build_system",
+      "signature": "def build_system(name: str, *, persist_audit: bool=False) -> SystemUnderTest"
+    },
+    {
+      "file": "src/eval/systems/closed_book.py",
+      "module": "eval.systems.closed_book",
+      "qualname": "ClosedBookSystem.__init__",
+      "signature": "def __init__(self, gateway: LLMGateway | None=None) -> None"
+    },
+    {
+      "file": "src/eval/systems/closed_book.py",
+      "module": "eval.systems.closed_book",
+      "qualname": "ClosedBookSystem.answer",
+      "signature": "def answer(self, case: EvalCase) -> SystemAnswer"
+    },
+    {
+      "file": "src/eval/systems/naive_rag.py",
+      "module": "eval.systems.naive_rag",
+      "qualname": "NaiveRagSystem.__init__",
+      "signature": "def __init__(self, *, filtered: bool=False, gateway: LLMGateway | None=None, embedder: BaseEmbeddingGenerator | None=None, vector_db_client: Any=None) -> None"
+    },
+    {
+      "file": "src/eval/systems/naive_rag.py",
+      "module": "eval.systems.naive_rag",
+      "qualname": "NaiveRagSystem.answer",
+      "signature": "def answer(self, case: EvalCase) -> SystemAnswer"
+    }
+  ],
+  "nodes": [
+    "test/spec/baseline-arms/test_ba_c1_closed_book.py::test_any_reply_round_trips_without_citations",
+    "test/spec/baseline-arms/test_ba_c1_closed_book.py::test_no_retrieved_or_ground_truth_text_reaches_the_model",
+    "test/spec/baseline-arms/test_ba_c1_closed_book.py::test_one_call_question_verbatim_and_reply_fields",
+    "test/spec/baseline-arms/test_ba_c1_closed_book.py::test_refusal_reply_is_a_refusal",
+    "test/spec/baseline-arms/test_ba_c2_naive_retrieval.py::test_any_retrieval_order_is_preserved",
+    "test/spec/baseline-arms/test_ba_c2_naive_retrieval.py::test_chunk_text_is_not_in_the_system_prompt",
+    "test/spec/baseline-arms/test_ba_c2_naive_retrieval.py::test_no_points_means_no_call_and_a_refusal",
+    "test/spec/baseline-arms/test_ba_c2_naive_retrieval.py::test_plain_retrieval_and_context",
+    "test/spec/baseline-arms/test_ba_c3_filter.py::test_filtered_cross_filer_screen_uses_year_only",
+    "test/spec/baseline-arms/test_ba_c3_filter.py::test_filtered_scalar_case",
+    "test/spec/baseline-arms/test_ba_c3_filter.py::test_filters_follow_the_case",
+    "test/spec/baseline-arms/test_ba_c3_filter.py::test_plain_ignores_ticker_and_year",
+    "test/spec/baseline-arms/test_ba_c4_citations.py::test_hand_built_citation_list",
+    "test/spec/baseline-arms/test_ba_c4_citations.py::test_only_unretrieved_citations_give_none",
+    "test/spec/baseline-arms/test_ba_c4_citations.py::test_random_citation_lists",
+    "test/spec/baseline-arms/test_ba_c5_accounting.py::test_answer_carries_trace_cost_and_latency[closed_book]",
+    "test/spec/baseline-arms/test_ba_c5_accounting.py::test_answer_carries_trace_cost_and_latency[naive_rag_filtered]",
+    "test/spec/baseline-arms/test_ba_c5_accounting.py::test_answer_carries_trace_cost_and_latency[naive_rag_plain]",
+    "test/spec/baseline-arms/test_ba_c5_accounting.py::test_cost_is_per_answer_not_cumulative[closed_book]",
+    "test/spec/baseline-arms/test_ba_c5_accounting.py::test_cost_is_per_answer_not_cumulative[naive_rag_filtered]",
+    "test/spec/baseline-arms/test_ba_c5_accounting.py::test_cost_is_per_answer_not_cumulative[naive_rag_plain]",
+    "test/spec/baseline-arms/test_ba_c5_accounting.py::test_doubling_tokens_doubles_cost",
+    "test/spec/baseline-arms/test_ba_c6_failures.py::test_any_boundary_error_is_contained",
+    "test/spec/baseline-arms/test_ba_c6_failures.py::test_any_tripped_budget_propagates",
+    "test/spec/baseline-arms/test_ba_c6_failures.py::test_embedder_error_becomes_error_answer[naive_rag_filtered]",
+    "test/spec/baseline-arms/test_ba_c6_failures.py::test_embedder_error_becomes_error_answer[naive_rag_plain]",
+    "test/spec/baseline-arms/test_ba_c6_failures.py::test_provider_error_becomes_error_answer[closed_book]",
+    "test/spec/baseline-arms/test_ba_c6_failures.py::test_provider_error_becomes_error_answer[naive_rag_filtered]",
+    "test/spec/baseline-arms/test_ba_c6_failures.py::test_provider_error_becomes_error_answer[naive_rag_plain]",
+    "test/spec/baseline-arms/test_ba_c6_failures.py::test_qdrant_error_becomes_error_answer[naive_rag_filtered]",
+    "test/spec/baseline-arms/test_ba_c6_failures.py::test_qdrant_error_becomes_error_answer[naive_rag_plain]",
+    "test/spec/baseline-arms/test_ba_c6_failures.py::test_zero_call_budget_raises_run_halt[closed_book]",
+    "test/spec/baseline-arms/test_ba_c6_failures.py::test_zero_call_budget_raises_run_halt[naive_rag_filtered]",
+    "test/spec/baseline-arms/test_ba_c6_failures.py::test_zero_call_budget_raises_run_halt[naive_rag_plain]",
+    "test/spec/baseline-arms/test_ba_c7_selection.py::test_any_other_name_raises",
+    "test/spec/baseline-arms/test_ba_c7_selection.py::test_arm_names_from_constructors",
+    "test/spec/baseline-arms/test_ba_c7_selection.py::test_build_system_by_name_offline[closed_book]",
+    "test/spec/baseline-arms/test_ba_c7_selection.py::test_build_system_by_name_offline[naive_rag_filtered]",
+    "test/spec/baseline-arms/test_ba_c7_selection.py::test_build_system_by_name_offline[naive_rag_plain]",
+    "test/spec/baseline-arms/test_ba_c7_selection.py::test_build_system_by_name_offline[xbrlrag_full]",
+    "test/spec/baseline-arms/test_ba_c7_selection.py::test_calls_use_the_stage_and_the_synthesizer_model[closed_book-closed_book]",
+    "test/spec/baseline-arms/test_ba_c7_selection.py::test_calls_use_the_stage_and_the_synthesizer_model[naive_rag-naive_rag]",
+    "test/spec/baseline-arms/test_ba_c7_selection.py::test_prompt_registry_resolves_both_stages_at_v1",
+    "test/spec/baseline-arms/test_ba_c7_selection.py::test_stage_models_match_synthesizer_in_either_model_set[False]",
+    "test/spec/baseline-arms/test_ba_c7_selection.py::test_stage_models_match_synthesizer_in_either_model_set[True]",
+    "test/spec/baseline-arms/test_ba_c7_selection.py::test_stages_on_the_synthesizer_medium_tier",
+    "test/spec/baseline-arms/test_ba_c7_selection.py::test_system_names_exact",
+    "test/spec/baseline-arms/test_ba_c7_selection.py::test_unknown_name_raises"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/baseline-arms.md",
+    "sha256": "146d77621aee63e41fb2eb92b0600c7e89fff20b2377d4a50a4b4e2ceac2c2e2"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

@@ -1,0 +1,29 @@
+# The Debt and DeferredRevenue statement-line rules of docs/specs/key-definitions.md
+# (requirement 7). Locked copy: the live configs/eval/v2/statement_lines.yaml must carry these
+# two entries with the same loaded content; every other family of the live file is r2's.
+#
+# Written from accounting vocabulary only (the us-gaap names of borrowings and contract
+# liabilities), never from one filer's wording. Fields as in the live file's header comment.
+version: 1
+families:
+  Debt:
+    # Every borrowing line of the balance sheet: short-term borrowings, commercial paper,
+    # current maturities and long-term debt. A lease line counts only when its label also
+    # names debt or borrowings (a debt line that includes finance leases); operating leases,
+    # assets, investments, issuance costs, interest and equity lines never count.
+    statements: [BS]
+    include: ['\bdebt\b', 'borrowings', 'commercial paper', 'notes payable', 'loans payable',
+              'bonds payable', 'bank loans', 'short-term loans', 'senior notes', '\bterm loans?\b']
+    exclude: ['issuance costs', 'securities', 'held for sale', 'deferred', 'interest',
+              'related part', '\besop\b', 'reserve', 'investment', 'receivable', '\bassets?\b',
+              'operating lease', 'right-of-use', '^(?!.*(debt|borrowing|loan|notes|bonds)).*lease',
+              'guarantee', 'equity']
+    prefer: ['^total (debt|borrowings)']
+    combine: sum
+  DeferredRevenue:
+    # Every deferred-revenue / unearned-revenue / contract-liability line, current and
+    # non-current; never a deferred tax or government-incentive line.
+    statements: [BS]
+    include: ['deferred revenue', 'contract liabilit', 'unearned revenue', 'deferred income']
+    exclude: ['tax', 'government', 'incentive']
+    combine: sum

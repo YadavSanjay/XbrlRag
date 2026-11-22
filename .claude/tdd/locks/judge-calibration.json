@@ -1,0 +1,233 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-10",
+  "criteria": {
+    "C1": [
+      "test/spec/judge-calibration/test_jc_c1_answers.py::test_dev_text_case_builds_an_answer",
+      "test/spec/judge-calibration/test_jc_c1_answers.py::test_non_dev_and_ungradable_inputs_are_refused",
+      "test/spec/judge-calibration/test_jc_c1_answers.py::test_constructor_checks",
+      "test/spec/judge-calibration/test_jc_c1_answers.py::test_every_other_split_is_refused"
+    ],
+    "C2": [
+      "test/spec/judge-calibration/test_jc_c2_export.py::test_sheet_rows_in_order",
+      "test/spec/judge-calibration/test_jc_c2_export.py::test_duplicate_answer_ids_raise",
+      "test/spec/judge-calibration/test_jc_c2_export.py::test_context_holds_every_text",
+      "test/spec/judge-calibration/test_jc_c2_export.py::test_row_count_and_keys"
+    ],
+    "C3": [
+      "test/spec/judge-calibration/test_jc_c3_import.py::test_filled_sheet_reads_back",
+      "test/spec/judge-calibration/test_jc_c3_import.py::test_bad_sheets_raise",
+      "test/spec/judge-calibration/test_jc_c3_import.py::test_row_order_and_text_column_do_not_matter",
+      "test/spec/judge-calibration/test_jc_c3_import.py::test_export_fill_import_round_trip"
+    ],
+    "C4": [
+      "test/spec/judge-calibration/test_jc_c4_judge_labels.py::test_labels_from_one_call",
+      "test/spec/judge-calibration/test_jc_c4_judge_labels.py::test_malformed_reply_and_family_rule",
+      "test/spec/judge-calibration/test_jc_c4_judge_labels.py::test_run_halt_propagates",
+      "test/spec/judge-calibration/test_jc_c4_judge_labels.py::test_labels_aggregate_to_the_judge_scores"
+    ],
+    "C5": [
+      "test/spec/judge-calibration/test_jc_c5_agreement.py::test_wikipedia_worked_example",
+      "test/spec/judge-calibration/test_jc_c5_agreement.py::test_hand_computed_tables",
+      "test/spec/judge-calibration/test_jc_c5_agreement.py::test_empty_and_mismatch",
+      "test/spec/judge-calibration/test_jc_c5_agreement.py::test_closed_form_and_invariances"
+    ],
+    "C6": [
+      "test/spec/judge-calibration/test_jc_c6_calibrate.py::test_kappas_and_the_pass_rule",
+      "test/spec/judge-calibration/test_jc_c6_calibrate.py::test_dimension_item_floor_and_judge_errors",
+      "test/spec/judge-calibration/test_jc_c6_calibrate.py::test_inconsistent_inputs_raise",
+      "test/spec/judge-calibration/test_jc_c6_calibrate.py::test_pass_rule_closed_form_and_order"
+    ],
+    "C7": [
+      "test/spec/judge-calibration/test_jc_c7_choose.py::test_point_choices",
+      "test/spec/judge-calibration/test_jc_c7_choose.py::test_inconsistent_candidates_raise",
+      "test/spec/judge-calibration/test_jc_c7_choose.py::test_minimum_cost_eligible"
+    ],
+    "C8": [
+      "test/spec/judge-calibration/test_jc_c8_record.py::test_hashes",
+      "test/spec/judge-calibration/test_jc_c8_record.py::test_record_and_file",
+      "test/spec/judge-calibration/test_jc_c8_record.py::test_tampering_and_mismatch_raise",
+      "test/spec/judge-calibration/test_jc_c8_record.py::test_label_change_and_order"
+    ]
+  },
+  "files": {
+    "test/spec/judge-calibration/conftest.py": "4630501d8bbc560285348641b53748c80f5143b93684364c4eecc910343c7acc",
+    "test/spec/judge-calibration/test_jc_c1_answers.py": "6f7a13b3ded69836c5e9c75592b95a86a21df8deb98cb5f8fc9fee55ea0d3581",
+    "test/spec/judge-calibration/test_jc_c2_export.py": "c2baf27591e0e8348ad7257360ee3c8529dd472881fcd6fe7c771ce0d122b020",
+    "test/spec/judge-calibration/test_jc_c3_import.py": "ec343a331d81400ec6fd76f3b06d9a20521c46141ce714ed5097ce9eecd23d8e",
+    "test/spec/judge-calibration/test_jc_c4_judge_labels.py": "18b55ff793687c11fa3517042b5b31522b49b9123e1e957525758efad894b99c",
+    "test/spec/judge-calibration/test_jc_c5_agreement.py": "3be1d81ef5e40a3f078f4fedfcc505e2379ad590cd5df6f0f821cd54a1f3a548",
+    "test/spec/judge-calibration/test_jc_c6_calibrate.py": "46614ef84a26ea810ba9800f74ce170e46090d679c14ece3a6ed08d97b6c1926",
+    "test/spec/judge-calibration/test_jc_c7_choose.py": "ddf8e1639ff6f4be676dcad7dd0b37daea71d485df552c2bbb829df484e22f74",
+    "test/spec/judge-calibration/test_jc_c8_record.py": "a930b3571b2fc46944d8d11ce50787d09799d69986d8d808811df672c54e4f73"
+  },
+  "id": "judge-calibration",
+  "interface": [
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "CalibrationAnswer.__init__",
+      "signature": "def __init__(self, *, answer_id: str, case_id: str, split: str, generator_model: str, question: str, reference_answer: str, key_points: Sequence[str], claims: Sequence[Claim]) -> None"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "calibration_answer",
+      "signature": "def calibration_answer(case: EvalCase, answer: SystemAnswer, *, answer_id: str, generator_model: str) -> CalibrationAnswer"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "build_label_sheet",
+      "signature": "def build_label_sheet(answers: Sequence[CalibrationAnswer]) -> str"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "render_label_context",
+      "signature": "def render_label_context(answers: Sequence[CalibrationAnswer]) -> str"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "parse_label_sheet",
+      "signature": "def parse_label_sheet(text: str, answers: Sequence[CalibrationAnswer]) -> dict[tuple[str, str, str], bool]"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "JudgeLabels.__init__",
+      "signature": "def __init__(self, *, answer_id: str, judge_version: str, labels: Mapping[tuple[str, str, str], bool], error: str | None, cost_usd: float) -> None"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "judge_answer_labels",
+      "signature": "def judge_answer_labels(judge: ClaimJudge, answer: CalibrationAnswer) -> JudgeLabels"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "DimensionAgreement.__init__",
+      "signature": "def __init__(self, *, n: int, p_o: float | None, p_e: float | None, kappa: float | None, ci_low: float | None, ci_high: float | None) -> None"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "dimension_agreement",
+      "signature": "def dimension_agreement(judge: Sequence[bool], human: Sequence[bool]) -> DimensionAgreement"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "CalibrationResult.__init__",
+      "signature": "def __init__(self, *, judge_version: str, model: str, family: str, n_answers: int, n_judge_errors: int, dimensions: Mapping[str, DimensionAgreement], threshold: float, min_answers: int, passed: bool, cost_usd: float, answer_set_sha256: str, label_set_sha256: str) -> None"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "calibrate",
+      "signature": "def calibrate(answers: Sequence[CalibrationAnswer], human_labels: Mapping[tuple[str, str, str], bool], judge_labels: Sequence[JudgeLabels], *, threshold: float=0.7, min_answers: int=100) -> CalibrationResult"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "as_report",
+      "signature": "def as_report(result: CalibrationResult) -> CalibrationReport"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "choose_judge",
+      "signature": "def choose_judge(results: Sequence[CalibrationResult], *, generator_profile: str) -> CalibrationResult | None"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "label_set_sha256",
+      "signature": "def label_set_sha256(labels: Mapping[tuple[str, str, str], bool]) -> str"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "answer_set_sha256",
+      "signature": "def answer_set_sha256(answers: Sequence[CalibrationAnswer]) -> str"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "record_sha256",
+      "signature": "def record_sha256(record: Mapping[str, Any]) -> str"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "calibration_record",
+      "signature": "def calibration_record(results: Sequence[CalibrationResult], *, answers: Sequence[CalibrationAnswer], human_labels: Mapping[tuple[str, str, str], bool]) -> dict"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "calibration_file_text",
+      "signature": "def calibration_file_text(record: Mapping[str, Any]) -> str"
+    },
+    {
+      "file": "src/eval/core/graders/judge_calibration.py",
+      "module": "eval.core.graders.judge_calibration",
+      "qualname": "load_calibration_reports",
+      "signature": "def load_calibration_reports(text: str) -> list[CalibrationReport]"
+    }
+  ],
+  "nodes": [
+    "test/spec/judge-calibration/test_jc_c1_answers.py::test_constructor_checks",
+    "test/spec/judge-calibration/test_jc_c1_answers.py::test_dev_text_case_builds_an_answer",
+    "test/spec/judge-calibration/test_jc_c1_answers.py::test_every_other_split_is_refused",
+    "test/spec/judge-calibration/test_jc_c1_answers.py::test_non_dev_and_ungradable_inputs_are_refused",
+    "test/spec/judge-calibration/test_jc_c2_export.py::test_context_holds_every_text",
+    "test/spec/judge-calibration/test_jc_c2_export.py::test_duplicate_answer_ids_raise",
+    "test/spec/judge-calibration/test_jc_c2_export.py::test_row_count_and_keys",
+    "test/spec/judge-calibration/test_jc_c2_export.py::test_sheet_rows_in_order",
+    "test/spec/judge-calibration/test_jc_c3_import.py::test_bad_sheets_raise",
+    "test/spec/judge-calibration/test_jc_c3_import.py::test_export_fill_import_round_trip",
+    "test/spec/judge-calibration/test_jc_c3_import.py::test_filled_sheet_reads_back",
+    "test/spec/judge-calibration/test_jc_c3_import.py::test_row_order_and_text_column_do_not_matter",
+    "test/spec/judge-calibration/test_jc_c4_judge_labels.py::test_labels_aggregate_to_the_judge_scores",
+    "test/spec/judge-calibration/test_jc_c4_judge_labels.py::test_labels_from_one_call",
+    "test/spec/judge-calibration/test_jc_c4_judge_labels.py::test_malformed_reply_and_family_rule",
+    "test/spec/judge-calibration/test_jc_c4_judge_labels.py::test_run_halt_propagates",
+    "test/spec/judge-calibration/test_jc_c5_agreement.py::test_closed_form_and_invariances",
+    "test/spec/judge-calibration/test_jc_c5_agreement.py::test_empty_and_mismatch",
+    "test/spec/judge-calibration/test_jc_c5_agreement.py::test_hand_computed_tables",
+    "test/spec/judge-calibration/test_jc_c5_agreement.py::test_wikipedia_worked_example",
+    "test/spec/judge-calibration/test_jc_c6_calibrate.py::test_dimension_item_floor_and_judge_errors",
+    "test/spec/judge-calibration/test_jc_c6_calibrate.py::test_inconsistent_inputs_raise",
+    "test/spec/judge-calibration/test_jc_c6_calibrate.py::test_kappas_and_the_pass_rule",
+    "test/spec/judge-calibration/test_jc_c6_calibrate.py::test_pass_rule_closed_form_and_order",
+    "test/spec/judge-calibration/test_jc_c7_choose.py::test_inconsistent_candidates_raise",
+    "test/spec/judge-calibration/test_jc_c7_choose.py::test_minimum_cost_eligible",
+    "test/spec/judge-calibration/test_jc_c7_choose.py::test_point_choices",
+    "test/spec/judge-calibration/test_jc_c8_record.py::test_hashes",
+    "test/spec/judge-calibration/test_jc_c8_record.py::test_label_change_and_order",
+    "test/spec/judge-calibration/test_jc_c8_record.py::test_record_and_file",
+    "test/spec/judge-calibration/test_jc_c8_record.py::test_tampering_and_mismatch_raise"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/judge-calibration.md",
+    "sha256": "f0c0ac92ef32225f3d167f066f0b60c531476ec1f03b716c540bde4f37c76364"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

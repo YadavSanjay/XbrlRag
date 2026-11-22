@@ -1,0 +1,28 @@
+data/
+**/*.ipynb_checkpoints/
+logs/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.env
+.env.*
+!.env.example
+# Tool state (deepeval writes a per-machine telemetry id here)
+.deepeval/
+# Keep local Claude Code config out of git, but DO share team dev-time agents, the H2
+# guardrail hooks and their registration (settings.json, no personal permissions — those go
+# in settings.local.json), and the coding-standards rule files. .claude/state/ (hook run
+# state) stays ignored.
+.claude/*
+!.claude/agents/
+!.claude/hooks/
+!.claude/review/
+!.claude/rules/
+!.claude/settings.json
+.claude/review/out/
+.claude/settings.local.json
+# Test-first pack (tdd-spec) is versioned; its local gate cache is not
+!.claude/tdd/
+.claude/tdd/state/
+.VSCodeCounter/*

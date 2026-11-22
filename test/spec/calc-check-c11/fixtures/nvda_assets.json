@@ -1,0 +1,644 @@
+{
+ "case": "nvda_assets",
+ "accession_no": "0001045810-26-000021",
+ "filing": "NVIDIA 10-K FY2026 (period ending 2026-01-25)",
+ "local_source": "data/storage/sec_edgar/NVDA/2026/10-K/nvda-20260125.htm",
+ "extracted": "xbrl_db (read-only), 2026-11-07: network/relationship arcs of one link role and parent; every fact of those concepts in the filing (all contexts)",
+ "dates": "xbrl_db stores an instant and a duration end as the next day (end-of-day convention): 2025-01-01 is the 2024-12-31 balance sheet date",
+ "arelle_c11r": {
+  "version": "Arelle 2.41.0, arelleCmdLine --calc c11r --internetConnectivity offline, run 2026-11-07 on local_source",
+  "inconsistent_in_this_tree": []
+ },
+ "arcs": [
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:AssetsCurrent",
+   "weight": "1.0"
+  },
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:PropertyPlantAndEquipmentNet",
+   "weight": "1.0"
+  },
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:OperatingLeaseRightOfUseAsset",
+   "weight": "1.0"
+  },
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:Goodwill",
+   "weight": "1.0"
+  },
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:IntangibleAssetsNetExcludingGoodwill",
+   "weight": "1.0"
+  },
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:DeferredIncomeTaxAssetsNet",
+   "weight": "1.0"
+  },
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:EquitySecuritiesFVNINoncurrent",
+   "weight": "1.0"
+  },
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:OtherAssetsNoncurrent",
+   "weight": "1.0"
+  }
+ ],
+ "facts": [
+  {
+   "fact_id": 173,
+   "concept": "http://fasb.org/us-gaap/2025:Assets",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2025-01-27",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "111601000000",
+   "decimals": -6,
+   "xml_id": "f-168",
+   "context": "c-12"
+  },
+  {
+   "fact_id": 172,
+   "concept": "http://fasb.org/us-gaap/2025:Assets",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2026-01-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "206803000000",
+   "decimals": -6,
+   "xml_id": "f-167",
+   "context": "c-11"
+  },
+  {
+   "fact_id": 157,
+   "concept": "http://fasb.org/us-gaap/2025:AssetsCurrent",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2025-01-27",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "80126000000",
+   "decimals": -6,
+   "xml_id": "f-152",
+   "context": "c-12"
+  },
+  {
+   "fact_id": 156,
+   "concept": "http://fasb.org/us-gaap/2025:AssetsCurrent",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2026-01-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "125605000000",
+   "decimals": -6,
+   "xml_id": "f-151",
+   "context": "c-11"
+  },
+  {
+   "fact_id": 167,
+   "concept": "http://fasb.org/us-gaap/2025:DeferredIncomeTaxAssetsNet",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2025-01-27",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "10979000000",
+   "decimals": -6,
+   "xml_id": "f-162",
+   "context": "c-12"
+  },
+  {
+   "fact_id": 1058,
+   "concept": "http://fasb.org/us-gaap/2025:DeferredIncomeTaxAssetsNet",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2025-01-27",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "11000000000.0",
+   "decimals": -8,
+   "xml_id": "f-1057",
+   "context": "c-12"
+  },
+  {
+   "fact_id": 166,
+   "concept": "http://fasb.org/us-gaap/2025:DeferredIncomeTaxAssetsNet",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2026-01-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "13258000000",
+   "decimals": -6,
+   "xml_id": "f-161",
+   "context": "c-11"
+  },
+  {
+   "fact_id": 1057,
+   "concept": "http://fasb.org/us-gaap/2025:DeferredIncomeTaxAssetsNet",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2026-01-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "13300000000",
+   "decimals": -8,
+   "xml_id": "f-1056",
+   "context": "c-11"
+  },
+  {
+   "fact_id": 169,
+   "concept": "http://fasb.org/us-gaap/2025:EquitySecuritiesFVNINoncurrent",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2025-01-27",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "3387000000",
+   "decimals": -6,
+   "xml_id": "f-164",
+   "context": "c-12"
+  },
+  {
+   "fact_id": 168,
+   "concept": "http://fasb.org/us-gaap/2025:EquitySecuritiesFVNINoncurrent",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2026-01-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "22251000000",
+   "decimals": -6,
+   "xml_id": "f-163",
+   "context": "c-11"
+  },
+  {
+   "fact_id": 163,
+   "concept": "http://fasb.org/us-gaap/2025:Goodwill",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2025-01-27",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "5188000000",
+   "decimals": -6,
+   "xml_id": "f-158",
+   "context": "c-12"
+  },
+  {
+   "fact_id": 558,
+   "concept": "http://fasb.org/us-gaap/2025:Goodwill",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2025-01-27",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "5200000000",
+   "decimals": -8,
+   "xml_id": "f-557",
+   "context": "c-12"
+  },
+  {
+   "fact_id": 559,
+   "concept": "http://fasb.org/us-gaap/2025:Goodwill",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2025-01-27",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis",
+     "http://www.nvidia.com/20260125:ComputeAndNetworkingSegmentMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "4800000000",
+   "decimals": -8,
+   "xml_id": "f-558",
+   "context": "c-81"
+  },
+  {
+   "fact_id": 560,
+   "concept": "http://fasb.org/us-gaap/2025:Goodwill",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2025-01-27",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis",
+     "http://www.nvidia.com/20260125:GraphicsSegmentMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "370000000",
+   "decimals": -6,
+   "xml_id": "f-559",
+   "context": "c-82"
+  },
+  {
+   "fact_id": 439,
+   "concept": "http://fasb.org/us-gaap/2025:Goodwill",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2026-01-01",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2025:BusinessAcquisitionAxis",
+     "http://www.nvidia.com/20260125:GroqInc.NonExclusiveLicenseAgreementMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "14400000000",
+   "decimals": -8,
+   "xml_id": "f-437",
+   "context": "c-48"
+  },
+  {
+   "fact_id": 162,
+   "concept": "http://fasb.org/us-gaap/2025:Goodwill",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2026-01-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "20832000000",
+   "decimals": -6,
+   "xml_id": "f-157",
+   "context": "c-11"
+  },
+  {
+   "fact_id": 555,
+   "concept": "http://fasb.org/us-gaap/2025:Goodwill",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2026-01-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "20800000000",
+   "decimals": -8,
+   "xml_id": "f-554",
+   "context": "c-11"
+  },
+  {
+   "fact_id": 556,
+   "concept": "http://fasb.org/us-gaap/2025:Goodwill",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2026-01-26",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis",
+     "http://www.nvidia.com/20260125:ComputeAndNetworkingSegmentMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "20500000000",
+   "decimals": -8,
+   "xml_id": "f-555",
+   "context": "c-79"
+  },
+  {
+   "fact_id": 557,
+   "concept": "http://fasb.org/us-gaap/2025:Goodwill",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2026-01-26",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2025:StatementBusinessSegmentsAxis",
+     "http://www.nvidia.com/20260125:GraphicsSegmentMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "370000000",
+   "decimals": -6,
+   "xml_id": "f-556",
+   "context": "c-80"
+  },
+  {
+   "fact_id": 165,
+   "concept": "http://fasb.org/us-gaap/2025:IntangibleAssetsNetExcludingGoodwill",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2025-01-27",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "807000000",
+   "decimals": -6,
+   "xml_id": "f-160",
+   "context": "c-12"
+  },
+  {
+   "fact_id": 164,
+   "concept": "http://fasb.org/us-gaap/2025:IntangibleAssetsNetExcludingGoodwill",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2026-01-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "3306000000",
+   "decimals": -6,
+   "xml_id": "f-159",
+   "context": "c-11"
+  },
+  {
+   "fact_id": 161,
+   "concept": "http://fasb.org/us-gaap/2025:OperatingLeaseRightOfUseAsset",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2025-01-27",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "1793000000",
+   "decimals": -6,
+   "xml_id": "f-156",
+   "context": "c-12"
+  },
+  {
+   "fact_id": 160,
+   "concept": "http://fasb.org/us-gaap/2025:OperatingLeaseRightOfUseAsset",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2026-01-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "2867000000",
+   "decimals": -6,
+   "xml_id": "f-155",
+   "context": "c-11"
+  },
+  {
+   "fact_id": 171,
+   "concept": "http://fasb.org/us-gaap/2025:OtherAssetsNoncurrent",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2025-01-27",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "3038000000",
+   "decimals": -6,
+   "xml_id": "f-166",
+   "context": "c-12"
+  },
+  {
+   "fact_id": 170,
+   "concept": "http://fasb.org/us-gaap/2025:OtherAssetsNoncurrent",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2026-01-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "8301000000",
+   "decimals": -6,
+   "xml_id": "f-165",
+   "context": "c-11"
+  },
+  {
+   "fact_id": 159,
+   "concept": "http://fasb.org/us-gaap/2025:PropertyPlantAndEquipmentNet",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2025-01-27",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "6283000000",
+   "decimals": -6,
+   "xml_id": "f-154",
+   "context": "c-12"
+  },
+  {
+   "fact_id": 769,
+   "concept": "http://fasb.org/us-gaap/2025:PropertyPlantAndEquipmentNet",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2025-01-27",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "6283000000",
+   "decimals": -6,
+   "xml_id": "f-768",
+   "context": "c-12"
+  },
+  {
+   "fact_id": 158,
+   "concept": "http://fasb.org/us-gaap/2025:PropertyPlantAndEquipmentNet",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2026-01-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "10383000000",
+   "decimals": -6,
+   "xml_id": "f-153",
+   "context": "c-11"
+  },
+  {
+   "fact_id": 768,
+   "concept": "http://fasb.org/us-gaap/2025:PropertyPlantAndEquipmentNet",
+   "entity": "0001045810",
+   "period_start": null,
+   "period_end": "2026-01-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "10383000000",
+   "decimals": -6,
+   "xml_id": "f-767",
+   "context": "c-11"
+  }
+ ],
+ "mv_calculation_network_rows": [
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:AssetsCurrent",
+   "weight": "1.0",
+   "definition": "0000005 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:AssetsCurrent",
+   "weight": "1.0",
+   "definition": "9952153 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:AssetsCurrent",
+   "weight": "1.0",
+   "definition": "9952153 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:PropertyPlantAndEquipmentNet",
+   "weight": "1.0",
+   "definition": "0000005 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:PropertyPlantAndEquipmentNet",
+   "weight": "1.0",
+   "definition": "9952153 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:PropertyPlantAndEquipmentNet",
+   "weight": "1.0",
+   "definition": "9952153 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:OperatingLeaseRightOfUseAsset",
+   "weight": "1.0",
+   "definition": "0000005 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:OperatingLeaseRightOfUseAsset",
+   "weight": "1.0",
+   "definition": "9952153 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:OperatingLeaseRightOfUseAsset",
+   "weight": "1.0",
+   "definition": "9952153 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:Goodwill",
+   "weight": "1.0",
+   "definition": "0000005 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:Goodwill",
+   "weight": "1.0",
+   "definition": "9952153 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:Goodwill",
+   "weight": "1.0",
+   "definition": "9952153 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:IntangibleAssetsNetExcludingGoodwill",
+   "weight": "1.0",
+   "definition": "0000005 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:IntangibleAssetsNetExcludingGoodwill",
+   "weight": "1.0",
+   "definition": "9952153 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:IntangibleAssetsNetExcludingGoodwill",
+   "weight": "1.0",
+   "definition": "9952153 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:DeferredIncomeTaxAssetsNet",
+   "weight": "1.0",
+   "definition": "0000005 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:DeferredIncomeTaxAssetsNet",
+   "weight": "1.0",
+   "definition": "9952153 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:DeferredIncomeTaxAssetsNet",
+   "weight": "1.0",
+   "definition": "9952153 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:EquitySecuritiesFVNINoncurrent",
+   "weight": "1.0",
+   "definition": "0000005 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:EquitySecuritiesFVNINoncurrent",
+   "weight": "1.0",
+   "definition": "9952153 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:EquitySecuritiesFVNINoncurrent",
+   "weight": "1.0",
+   "definition": "9952153 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:OtherAssetsNoncurrent",
+   "weight": "1.0",
+   "definition": "0000005 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:OtherAssetsNoncurrent",
+   "weight": "1.0",
+   "definition": "9952153 - Statement - Consolidated Balance Sheets"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:OtherAssetsNoncurrent",
+   "weight": "1.0",
+   "definition": "9952153 - Statement - Consolidated Balance Sheets"
+  }
+ ]
+}

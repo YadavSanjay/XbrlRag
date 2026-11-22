@@ -1,0 +1,110 @@
+{
+  "record": {
+    "answer_set_sha256": "6bdd7aec8aaa4ee853c06f761f9408c8327a6d1b4af56c77ae0c7e4e95b3dc99",
+    "candidates": [
+      {
+        "agreement_bound": 0.95,
+        "cost_usd": 0.03026631,
+        "dimensions": {
+          "correct": {
+            "ci_high": 0.7794959088639728,
+            "ci_low": 0.1975654674534481,
+            "gate": "kappa",
+            "human_majority_share": 0.9533333333333334,
+            "kappa": 0.4885306881587105,
+            "n": 150,
+            "p_e": 0.8566222222222222,
+            "p_o": 0.9266666666666666,
+            "passed": false
+          },
+          "covered": {
+            "ci_high": 0.8830042537076249,
+            "ci_low": 0.7230203202123117,
+            "gate": "kappa",
+            "human_majority_share": 0.5117370892018779,
+            "kappa": 0.8030122869599683,
+            "n": 213,
+            "p_e": 0.49950406665344177,
+            "p_o": 0.9014084507042254,
+            "passed": true
+          },
+          "supported": {
+            "ci_high": null,
+            "ci_low": null,
+            "gate": "agreement",
+            "human_majority_share": 1.0,
+            "kappa": null,
+            "n": 103,
+            "p_e": 1.0,
+            "p_o": 1.0,
+            "passed": true
+          }
+        },
+        "family": "anthropic",
+        "judge_version": "v2:claude-haiku-5-5",
+        "min_answers": 68,
+        "min_items": 100,
+        "model": "claude-haiku-5-5",
+        "n_answers": 68,
+        "n_judge_errors": 0,
+        "one_class_share": 0.99,
+        "passed": false,
+        "threshold": 0.7
+      },
+      {
+        "agreement_bound": 0.95,
+        "cost_usd": 0.030980325,
+        "dimensions": {
+          "correct": {
+            "ci_high": 0.6506549157760348,
+            "ci_low": -0.10479361823688493,
+            "gate": "kappa",
+            "human_majority_share": 0.9533333333333334,
+            "kappa": 0.27293064876957496,
+            "n": 150,
+            "p_e": 0.8808,
+            "p_o": 0.9133333333333333,
+            "passed": false
+          },
+          "covered": {
+            "ci_high": 0.8678780033494748,
+            "ci_low": 0.701762265460645,
+            "gate": "kappa",
+            "human_majority_share": 0.5117370892018779,
+            "kappa": 0.7848201344050599,
+            "n": 213,
+            "p_e": 0.4981815777292865,
+            "p_o": 0.892018779342723,
+            "passed": true
+          },
+          "supported": {
+            "ci_high": 1.0,
+            "ci_low": -1.0,
+            "gate": "agreement",
+            "human_majority_share": 1.0,
+            "kappa": 0.0,
+            "n": 103,
+            "p_e": 0.9902912621359223,
+            "p_o": 0.9902912621359223,
+            "passed": true
+          }
+        },
+        "family": "openai",
+        "judge_version": "v2:gpt-6-luna",
+        "min_answers": 68,
+        "min_items": 100,
+        "model": "gpt-6-luna",
+        "n_answers": 68,
+        "n_judge_errors": 0,
+        "one_class_share": 0.99,
+        "passed": false,
+        "threshold": 0.7
+      }
+    ],
+    "label_set_sha256": "f907f5bafaa9540acbb123615cb25ce2baad7c4e31ce6f09ca76554c398b0171",
+    "n_answers": 68,
+    "n_labels": 466,
+    "schema": "judge-calibration/2"
+  },
+  "record_sha256": "51fe9b90faed3f168ef8e4d912fe70b875d238b88413b8dbdf765b8566032096"
+}

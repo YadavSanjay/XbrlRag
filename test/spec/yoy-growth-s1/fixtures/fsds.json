@@ -1,0 +1,854 @@
+{
+ "num": [
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20201231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "-12669000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001326801-23-000013",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "uom": "USD",
+   "value": "31431000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInInvestingActivities",
+   "uom": "USD",
+   "value": "-10477000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20211231",
+   "qtrs": "4",
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "uom": "USD",
+   "value": "79024000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "uom": "USD",
+   "value": "63054000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001326801-23-000013",
+   "ddate": "20211231",
+   "qtrs": "4",
+   "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "uom": "USD",
+   "value": "18690000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001326801-23-000013",
+   "ddate": "20201231",
+   "qtrs": "4",
+   "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "uom": "USD",
+   "value": "15163000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20211231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "-6045000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "1361000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20201231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInInvestingActivities",
+   "uom": "USD",
+   "value": "-21524000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20211231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInInvestingActivities",
+   "uom": "USD",
+   "value": "-24449000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20201231",
+   "qtrs": "4",
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "uom": "USD",
+   "value": "77867000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001193125-23-107214",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "ProfitLoss",
+   "uom": "USD",
+   "value": "32323300000.0000",
+   "version": "ifrs/2022"
+  },
+  {
+   "adsh": "0001193125-23-107214",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "ProfitLoss",
+   "uom": "TWD",
+   "value": "993294700000.0000",
+   "version": "ifrs/2022"
+  },
+  {
+   "adsh": "0001193125-23-107214",
+   "ddate": "20211231",
+   "qtrs": "4",
+   "tag": "ProfitLoss",
+   "uom": "TWD",
+   "value": "592880600000.0000",
+   "version": "ifrs/2022"
+  },
+  {
+   "adsh": "0001193125-23-107214",
+   "ddate": "20201231",
+   "qtrs": "4",
+   "tag": "ProfitLoss",
+   "uom": "TWD",
+   "value": "511008000000.0000",
+   "version": "ifrs/2022"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "1115000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001326801-24-000012",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "uom": "USD",
+   "value": "31431000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001326801-24-000012",
+   "ddate": "20211231",
+   "qtrs": "4",
+   "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "uom": "USD",
+   "value": "18690000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "8505000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20211231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInInvestingActivities",
+   "uom": "USD",
+   "value": "-24283000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "uom": "USD",
+   "value": "63054000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20211231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "-6211000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInInvestingActivities",
+   "uom": "USD",
+   "value": "-24041000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "uom": "USD",
+   "value": "54228000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20211231",
+   "qtrs": "4",
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "uom": "USD",
+   "value": "79024000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInInvestingActivities",
+   "uom": "USD",
+   "value": "-10231000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001326801-24-000012",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "uom": "USD",
+   "value": "27266000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001193125-24-099840",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "ProfitLoss",
+   "uom": "TWD",
+   "value": "851027700000.0000",
+   "version": "ifrs/2023"
+  },
+  {
+   "adsh": "0001193125-24-099840",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "ProfitLoss",
+   "uom": "TWD",
+   "value": "993294700000.0000",
+   "version": "ifrs/2023"
+  },
+  {
+   "adsh": "0001193125-24-099840",
+   "ddate": "20211231",
+   "qtrs": "4",
+   "tag": "ProfitLoss",
+   "uom": "TWD",
+   "value": "592880600000.0000",
+   "version": "ifrs/2023"
+  },
+  {
+   "adsh": "0001193125-24-099840",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "ProfitLoss",
+   "uom": "USD",
+   "value": "27793200000.0000",
+   "version": "ifrs/2023"
+  },
+  {
+   "adsh": "0000059478-25-000067",
+   "ddate": "20231231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "64006300000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInInvestingActivities",
+   "uom": "USD",
+   "value": "-10231000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001326801-25-000017",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "uom": "USD",
+   "value": "27045000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "uom": "USD",
+   "value": "54228000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001326801-25-000017",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "uom": "USD",
+   "value": "37256000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInInvestingActivities",
+   "uom": "USD",
+   "value": "-24041000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "1115000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "uom": "USD",
+   "value": "53101000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "8505000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "uom": "USD",
+   "value": "63054000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInInvestingActivities",
+   "uom": "USD",
+   "value": "-18256000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000059478-25-000067",
+   "ddate": "20241231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "78714900000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "11138000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001326801-25-000017",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "uom": "USD",
+   "value": "31186000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001193125-25-083423",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "ProfitLoss",
+   "uom": "TWD",
+   "value": "993294700000.0000",
+   "version": "ifrs/2024"
+  },
+  {
+   "adsh": "0001193125-25-083423",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "ProfitLoss",
+   "uom": "TWD",
+   "value": "1157523900000.0000",
+   "version": "ifrs/2024"
+  },
+  {
+   "adsh": "0001193125-25-083423",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "ProfitLoss",
+   "uom": "TWD",
+   "value": "851027700000.0000",
+   "version": "ifrs/2024"
+  },
+  {
+   "adsh": "0001193125-25-083423",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "ProfitLoss",
+   "uom": "USD",
+   "value": "35301100000.0000",
+   "version": "ifrs/2024"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20251231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "11587000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "uom": "USD",
+   "value": "54228000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000059478-26-000013",
+   "ddate": "20241231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "78715000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "11138000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInInvestingActivities",
+   "uom": "USD",
+   "value": "-24041000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000059478-26-000013",
+   "ddate": "20251231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "112476000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "8505000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInInvestingActivities",
+   "uom": "USD",
+   "value": "-18256000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20251231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInInvestingActivities",
+   "uom": "USD",
+   "value": "-14821000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "uom": "USD",
+   "value": "53101000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20251231",
+   "qtrs": "4",
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "uom": "USD",
+   "value": "52853000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-003942",
+   "ddate": "20251231",
+   "qtrs": "4",
+   "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "uom": "USD",
+   "value": "69691000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-003942",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "uom": "USD",
+   "value": "27045000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-003942",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "uom": "USD",
+   "value": "37256000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-025362",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "ProfitLoss",
+   "uom": "TWD",
+   "value": "851027700000.0000",
+   "version": "ifrs/2025"
+  },
+  {
+   "adsh": "0001628280-26-025362",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "ProfitLoss",
+   "uom": "TWD",
+   "value": "1157523900000.0000",
+   "version": "ifrs/2025"
+  },
+  {
+   "adsh": "0001628280-26-025362",
+   "ddate": "20251231",
+   "qtrs": "4",
+   "tag": "ProfitLoss",
+   "uom": "TWD",
+   "value": "1695124900000.0000",
+   "version": "ifrs/2025"
+  },
+  {
+   "adsh": "0001628280-26-025362",
+   "ddate": "20251231",
+   "qtrs": "4",
+   "tag": "ProfitLoss",
+   "uom": "USD",
+   "value": "54036500000.0000",
+   "version": "ifrs/2025"
+  }
+ ],
+ "sources": {
+  "2023q1": {
+   "bytes": 113974946,
+   "retrieved": "2026-11-07",
+   "sha256": "479638c1be4088fa2ae42d2947468913eaff5ad0f093c412ba4340af8a8f791e",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2023q1.zip"
+  },
+  "2023q2": {
+   "bytes": 116914392,
+   "retrieved": "2026-11-07",
+   "sha256": "f028f1e8d24313e7619aa87c7c683a459452e7e81a8e5ba72d7ce39ddf62bda9",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2023q2.zip"
+  },
+  "2024q1": {
+   "bytes": 124336804,
+   "retrieved": "2026-11-07",
+   "sha256": "94c7894b00903f8ff7186c4250ba1c1daa1bde8b3a0b26fae68f72608b2ffc9b",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q1.zip"
+  },
+  "2024q2": {
+   "bytes": 119119954,
+   "retrieved": "2026-11-07",
+   "sha256": "698796e9f0946501d3dc74e7696a6c8c71cf32b66026e053722a784236b37761",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q2.zip"
+  },
+  "2025q1": {
+   "bytes": 127765057,
+   "retrieved": "2026-11-07",
+   "sha256": "4386e7057cc216b6fc729d8f957998acb831d29be7b16f6d8ed0f6b1ab74eba5",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q1.zip"
+  },
+  "2025q2": {
+   "bytes": 78973768,
+   "retrieved": "2026-11-07",
+   "sha256": "81bf19bdb5606d5ee0164a8de8b7e96d5546170e42e59bcbf95b652ca83ac5d7",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q2.zip"
+  },
+  "2025q4": {
+   "bytes": 65830170,
+   "retrieved": "2026-11-07",
+   "sha256": "2b36ac3850c022cf19edd882e31c3c453c7666677b9fdd2e1f7748fdb5768c6e",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q4.zip"
+  },
+  "2026q1": {
+   "bytes": 85259424,
+   "retrieved": "2026-11-07",
+   "sha256": "d18c01c615da8f5cd46273b0dacaeee5b1163f4089171da0f84153a5f3c362f6",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q1.zip"
+  },
+  "2026q2": {
+   "bytes": 60419016,
+   "retrieved": "2026-11-07",
+   "sha256": "d7c815395cd420cfbe09b29dbae73a45406c5d0652d5ae1859ae11ea2e22df77",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q2.zip"
+  }
+ },
+ "sub": [
+  {
+   "adsh": "0000050863-23-000006",
+   "cik": "50863",
+   "filed": "20230127",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2022",
+   "fye": "1231",
+   "name": "INTEL CORP",
+   "period": "20221231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001326801-23-000013",
+   "cik": "1326801",
+   "filed": "20230202",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2022",
+   "fye": "1231",
+   "name": "META PLATFORMS, INC.",
+   "period": "20221231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001193125-23-107214",
+   "cik": "1046179",
+   "filed": "20230420",
+   "form": "20-F",
+   "fp": "FY",
+   "fy": "2022",
+   "fye": "1231",
+   "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+   "period": "20221231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001326801-24-000012",
+   "cik": "1326801",
+   "filed": "20240202",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2023",
+   "fye": "1231",
+   "name": "META PLATFORMS, INC.",
+   "period": "20231231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "cik": "50863",
+   "filed": "20240126",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2023",
+   "fye": "1231",
+   "name": "INTEL CORP",
+   "period": "20231231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001193125-24-099840",
+   "cik": "1046179",
+   "filed": "20240418",
+   "form": "20-F",
+   "fp": "FY",
+   "fy": "2023",
+   "fye": "1231",
+   "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+   "period": "20231231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "cik": "50863",
+   "filed": "20250131",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2024",
+   "fye": "1231",
+   "name": "INTEL CORP",
+   "period": "20241231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000059478-25-000067",
+   "cik": "59478",
+   "filed": "20250219",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2024",
+   "fye": "1231",
+   "name": "ELI LILLY & CO",
+   "period": "20241231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001326801-25-000017",
+   "cik": "1326801",
+   "filed": "20250130",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2024",
+   "fye": "1231",
+   "name": "META PLATFORMS, INC.",
+   "period": "20241231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001193125-25-083423",
+   "cik": "1046179",
+   "filed": "20250417",
+   "form": "20-F",
+   "fp": "FY",
+   "fy": "2024",
+   "fye": "1231",
+   "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+   "period": "20241231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000909832-25-000101",
+   "cik": "909832",
+   "filed": "20251008",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2025",
+   "fye": "0831",
+   "name": "COSTCO WHOLESALE CORP /NEW",
+   "period": "20250831",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "cik": "50863",
+   "filed": "20260123",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2025",
+   "fye": "1231",
+   "name": "INTEL CORP",
+   "period": "20251231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000059478-26-000013",
+   "cik": "59478",
+   "filed": "20260212",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2025",
+   "fye": "1231",
+   "name": "ELI LILLY & CO",
+   "period": "20251231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001628280-26-003942",
+   "cik": "1326801",
+   "filed": "20260129",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2025",
+   "fye": "1231",
+   "name": "META PLATFORMS, INC.",
+   "period": "20251231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001628280-26-025362",
+   "cik": "1046179",
+   "filed": "20260416",
+   "form": "20-F",
+   "fp": "FY",
+   "fy": "2025",
+   "fye": "1231",
+   "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+   "period": "20251231",
+   "prevrpt": "0"
+  }
+ ]
+}

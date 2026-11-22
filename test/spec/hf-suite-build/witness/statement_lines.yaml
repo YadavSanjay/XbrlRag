@@ -1,0 +1,13 @@
+# Synthetic statement-line rules for compound-shape C10: one plain line per family.
+version: 1
+families:
+  Revenue:
+    statements: [IS]
+    include: ['revenue']
+    exclude: ['cost']
+  OperatingIncome:
+    statements: [IS]
+    include: ['operating income']
+  NetIncome:
+    statements: [IS]
+    include: ['^net income']

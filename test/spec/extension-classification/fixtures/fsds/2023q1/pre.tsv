@@ -1,0 +1,84 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0001045810-23-000017	3	1	IS	0	H	Revenues	us-gaap/2022	Revenue	0
+0001045810-23-000017	3	2	IS	0	H	CostOfRevenue	us-gaap/2022	Cost of revenue	0
+0001045810-23-000017	3	3	IS	0	H	GrossProfit	us-gaap/2022	Gross profit	0
+0001045810-23-000017	3	5	IS	0	H	ResearchAndDevelopmentExpense	us-gaap/2022	Research and development	0
+0001045810-23-000017	3	6	IS	0	H	SellingGeneralAndAdministrativeExpense	us-gaap/2022	Sales, general and administrative	0
+0001045810-23-000017	3	7	IS	0	H	BusinessCombinationAdvancedConsiderationWrittenOff	0001045810-23-000017	Acquisition termination cost	0
+0001045810-23-000017	3	8	IS	0	H	OperatingExpenses	us-gaap/2022	Total operating expenses	0
+0001045810-23-000017	3	9	IS	0	H	OperatingIncomeLoss	us-gaap/2022	Income from operations	0
+0001045810-23-000017	3	10	IS	0	H	InvestmentIncomeInterest	us-gaap/2022	Interest income	0
+0001045810-23-000017	3	11	IS	0	H	InterestExpense	us-gaap/2022	Interest expense	1
+0001045810-23-000017	3	12	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2022	Other, net	0
+0001045810-23-000017	3	13	IS	0	H	NonoperatingIncomeExpense	us-gaap/2022	Other income (expense), net	0
+0001045810-23-000017	3	14	IS	0	H	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2022	Income before income tax	0
+0001045810-23-000017	3	15	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2022	Income tax expense (benefit)	0
+0001045810-23-000017	3	16	IS	0	H	NetIncomeLoss	us-gaap/2022	Net income	0
+0001045810-23-000017	3	18	IS	0	H	EarningsPerShareBasic	us-gaap/2022	Basic (in USD per share)	0
+0001045810-23-000017	3	19	IS	0	H	EarningsPerShareDiluted	us-gaap/2022	Diluted (in USD per share)	0
+0001045810-23-000017	3	21	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2022	Basic (in shares)	0
+0001045810-23-000017	3	22	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2022	Diluted (in shares)	0
+0001045810-23-000017	5	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2022	Cash and cash equivalents	0
+0001045810-23-000017	5	4	BS	0	H	MarketableSecuritiesCurrent	us-gaap/2022	Marketable securities	0
+0001045810-23-000017	5	5	BS	0	H	AccountsReceivableNetCurrent	us-gaap/2022	Accounts receivable, net	0
+0001045810-23-000017	5	6	BS	0	H	InventoryNet	us-gaap/2022	Inventories	0
+0001045810-23-000017	5	7	BS	0	H	PrepaidExpenseAndOtherAssetsCurrent	us-gaap/2022	Prepaid expenses and other current assets	0
+0001045810-23-000017	5	8	BS	0	H	AssetsCurrent	us-gaap/2022	Total current assets	0
+0001045810-23-000017	5	9	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2022	Property and equipment, net	0
+0001045810-23-000017	5	10	BS	0	H	OperatingLeaseRightOfUseAsset	us-gaap/2022	Operating lease assets	0
+0001045810-23-000017	5	11	BS	0	H	Goodwill	us-gaap/2022	Goodwill	0
+0001045810-23-000017	5	12	BS	0	H	IntangibleAssetsNetExcludingGoodwill	us-gaap/2022	Intangible assets, net	0
+0001045810-23-000017	5	13	BS	0	H	DeferredIncomeTaxAssetsNet	us-gaap/2022	Deferred income tax assets	0
+0001045810-23-000017	5	14	BS	0	H	OtherAssetsNoncurrent	us-gaap/2022	Other assets	0
+0001045810-23-000017	5	15	BS	0	H	Assets	us-gaap/2022	Total assets	0
+0001045810-23-000017	5	18	BS	0	H	AccountsPayableCurrent	us-gaap/2022	Accounts payable	0
+0001045810-23-000017	5	19	BS	0	H	AccruedLiabilitiesCurrent	us-gaap/2022	Accrued and other current liabilities	0
+0001045810-23-000017	5	20	BS	0	H	DebtCurrent	us-gaap/2022	Short-term debt	0
+0001045810-23-000017	5	21	BS	0	H	LiabilitiesCurrent	us-gaap/2022	Total current liabilities	0
+0001045810-23-000017	5	22	BS	0	H	LongTermDebtNoncurrent	us-gaap/2022	Long-term debt	0
+0001045810-23-000017	5	23	BS	0	H	OperatingLeaseLiabilityNoncurrent	us-gaap/2022	Long-term operating lease liabilities	0
+0001045810-23-000017	5	24	BS	0	H	OtherLiabilitiesNoncurrent	us-gaap/2022	Other long-term liabilities	0
+0001045810-23-000017	5	25	BS	0	H	Liabilities	us-gaap/2022	Total liabilities	0
+0001045810-23-000017	5	26	BS	0	H	CommitmentsAndContingencies	us-gaap/2022	Commitments and contingencies - see Note 13	0
+0001045810-23-000017	5	28	BS	0	H	PreferredStockValueOutstanding	us-gaap/2022	Preferred stock, $0.001 par value; 2 shares authorized; none issued	0
+0001045810-23-000017	5	29	BS	0	H	CommonStockValue	us-gaap/2022	Common stock, $0.001 par value; 8,000 shares authorized; 2,466 shares issued and outstanding as of January 29, 2023; 2,506 shares issued and outstanding as of January 30, 2022	0
+0001045810-23-000017	5	30	BS	0	H	AdditionalPaidInCapital	us-gaap/2022	Additional paid-in capital	0
+0001045810-23-000017	5	31	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2022	Accumulated other comprehensive loss	0
+0001045810-23-000017	5	32	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2022	Retained earnings	0
+0001045810-23-000017	5	33	BS	0	H	StockholdersEquity	us-gaap/2022	Total shareholders' equity	0
+0001045810-23-000017	5	34	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2022	Total liabilities and shareholders' equity	0
+0001045810-23-000017	9	2	CF	0	H	NetIncomeLoss	us-gaap/2022	Net income	0
+0001045810-23-000017	9	4	CF	0	H	ShareBasedCompensation	us-gaap/2022	Stock-based compensation expense	0
+0001045810-23-000017	9	5	CF	0	H	DepreciationDepletionAndAmortization	us-gaap/2022	Depreciation and amortization	0
+0001045810-23-000017	9	6	CF	0	H	BusinessCombinationAdvancedConsiderationWrittenOff	0001045810-23-000017	Acquisition termination cost	0
+0001045810-23-000017	9	7	CF	0	H	GainLossOnInvestments	us-gaap/2022	Losses (gains) on investments in non-affiliates, net	1
+0001045810-23-000017	9	8	CF	0	H	DeferredIncomeTaxExpenseBenefit	us-gaap/2022	Deferred income taxes	0
+0001045810-23-000017	9	9	CF	0	H	OtherNoncashIncomeExpense	us-gaap/2022	Other	1
+0001045810-23-000017	9	11	CF	0	H	IncreaseDecreaseInAccountsReceivable	us-gaap/2022	Accounts receivable	1
+0001045810-23-000017	9	12	CF	0	H	IncreaseDecreaseInInventories	us-gaap/2022	Inventories	1
+0001045810-23-000017	9	13	CF	0	H	IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets	us-gaap/2022	Prepaid expenses and other assets	1
+0001045810-23-000017	9	14	CF	0	H	IncreaseDecreaseInAccountsPayable	us-gaap/2022	Accounts payable	0
+0001045810-23-000017	9	15	CF	0	H	IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities	us-gaap/2022	Accrued and other current liabilities	0
+0001045810-23-000017	9	16	CF	0	H	IncreaseDecreaseInOtherNoncurrentLiabilities	us-gaap/2022	Other long-term liabilities	0
+0001045810-23-000017	9	17	CF	0	H	NetCashProvidedByUsedInOperatingActivities	us-gaap/2022	Net cash provided by operating activities	0
+0001045810-23-000017	9	19	CF	0	H	ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities	us-gaap/2022	Proceeds from maturities of marketable securities	0
+0001045810-23-000017	9	20	CF	0	H	ProceedsFromSaleOfAvailableForSaleSecuritiesDebt	us-gaap/2022	Proceeds from sales of marketable securities	0
+0001045810-23-000017	9	21	CF	0	H	PaymentsToAcquireAvailableForSaleSecuritiesDebt	us-gaap/2022	Purchases of marketable securities	1
+0001045810-23-000017	9	22	CF	0	H	PurchasesOfPropertyAndEquipmentAndIntangibleAssets	0001045810-23-000017	Purchases related to property and equipment and intangible assets	1
+0001045810-23-000017	9	23	CF	0	H	PaymentsToAcquireBusinessesNetOfCashAcquired	us-gaap/2022	Acquisitions, net of cash acquired	1
+0001045810-23-000017	9	24	CF	0	H	PaymentsForProceedsFromOtherInvestingActivities	us-gaap/2022	Investments and other, net	1
+0001045810-23-000017	9	25	CF	0	H	NetCashProvidedByUsedInInvestingActivities	us-gaap/2022	Net cash provided by (used in) investing activities	0
+0001045810-23-000017	9	27	CF	0	H	Netproceedspaymentsrelatedtoemployeestockplans	0001045810-23-000017	Proceeds related to employee stock plans	0
+0001045810-23-000017	9	28	CF	0	H	PaymentsForRepurchaseOfCommonStock	us-gaap/2022	Payments related to repurchases of common stock	1
+0001045810-23-000017	9	29	CF	0	H	PaymentsRelatedToTaxWithholdingForShareBasedCompensation	us-gaap/2022	Payments related to tax on restricted stock units	1
+0001045810-23-000017	9	30	CF	0	H	PaymentsOfDividends	us-gaap/2022	Dividends paid	1
+0001045810-23-000017	9	31	CF	0	H	PaymentsForFinancedPropertyPlantAndEquipmentFinancingActivities	0001045810-23-000017	Principal payments on property and equipment	1
+0001045810-23-000017	9	32	CF	0	H	ProceedsFromDebtNetOfIssuanceCosts	us-gaap/2022	Issuance of debt, net of issuance costs	0
+0001045810-23-000017	9	33	CF	0	H	RepaymentsOfDebt	us-gaap/2022	Repayment of debt	1
+0001045810-23-000017	9	34	CF	0	H	ProceedsFromPaymentsForOtherFinancingActivities	us-gaap/2022	Other	0
+0001045810-23-000017	9	35	CF	0	H	NetCashProvidedByUsedInFinancingActivities	us-gaap/2022	Net cash provided by (used in) financing activities	0
+0001045810-23-000017	9	36	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2022	Change in cash and cash equivalents	0
+0001045810-23-000017	9	37	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2022	Cash and cash equivalents at beginning of period	0
+0001045810-23-000017	9	38	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2022	Cash and cash equivalents at end of period	0
+0001045810-23-000017	9	40	CF	0	H	IncomeTaxesPaidNet	us-gaap/2022	Cash paid for income taxes, net	0
+0001045810-23-000017	9	41	CF	0	H	InterestPaidNet	us-gaap/2022	Cash paid for interest	0

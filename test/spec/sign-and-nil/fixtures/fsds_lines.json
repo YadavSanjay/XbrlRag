@@ -1,0 +1,429 @@
+[
+ {
+  "adsh": "0000320193-24-000123",
+  "cik": "0000320193",
+  "num": [
+   {
+    "adsh": "0000320193-24-000123",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2023-09-30",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "PaymentsForRepurchaseOfCommonStock",
+    "uom": "USD",
+    "value": 77550000000.0,
+    "version": "us-gaap/2024"
+   },
+   {
+    "adsh": "0000320193-24-000123",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2022-09-30",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "PaymentsForRepurchaseOfCommonStock",
+    "uom": "USD",
+    "value": 89402000000.0,
+    "version": "us-gaap/2024"
+   },
+   {
+    "adsh": "0000320193-24-000123",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2024-09-30",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "PaymentsForRepurchaseOfCommonStock",
+    "uom": "USD",
+    "value": 94949000000.0,
+    "version": "us-gaap/2024"
+   }
+  ],
+  "num_sha256": "b88b647a46cf6109675106c85f890dbec006b4e8d9c12edf50293891af4c1422",
+  "pre": [
+   {
+    "adsh": "0000320193-24-000123",
+    "custom": false,
+    "inpth": false,
+    "line": 26,
+    "negating": true,
+    "plabel": "Repurchases of common stock",
+    "report": 8,
+    "stmt": "CF",
+    "tag": "PaymentsForRepurchaseOfCommonStock",
+    "version": "us-gaap/2024"
+   }
+  ],
+  "pre_sha256": "0eaf963a9759574a064bb685470b2ee4c429e11e01d89399fa4396fca2d98c6d",
+  "source": "SEC Financial Statement Data Sets 2024q4 (https://www.sec.gov/dera/data/financial-statement-data-sets), filtered local copy data/cache/sec_fsds/filtered/2024q4",
+  "tag": "PaymentsForRepurchaseOfCommonStock",
+  "ticker": "AAPL"
+ },
+ {
+  "adsh": "0000320193-24-000123",
+  "cik": "0000320193",
+  "num": [
+   {
+    "adsh": "0000320193-24-000123",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2023-09-30",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "IncreaseDecreaseInAccountsReceivable",
+    "uom": "USD",
+    "value": 1688000000.0,
+    "version": "us-gaap/2024"
+   },
+   {
+    "adsh": "0000320193-24-000123",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2022-09-30",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "IncreaseDecreaseInAccountsReceivable",
+    "uom": "USD",
+    "value": 1823000000.0,
+    "version": "us-gaap/2024"
+   },
+   {
+    "adsh": "0000320193-24-000123",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2024-09-30",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "IncreaseDecreaseInAccountsReceivable",
+    "uom": "USD",
+    "value": 3788000000.0,
+    "version": "us-gaap/2024"
+   }
+  ],
+  "num_sha256": "b88b647a46cf6109675106c85f890dbec006b4e8d9c12edf50293891af4c1422",
+  "pre": [
+   {
+    "adsh": "0000320193-24-000123",
+    "custom": false,
+    "inpth": false,
+    "line": 9,
+    "negating": true,
+    "plabel": "Accounts receivable, net",
+    "report": 8,
+    "stmt": "CF",
+    "tag": "IncreaseDecreaseInAccountsReceivable",
+    "version": "us-gaap/2024"
+   }
+  ],
+  "pre_sha256": "0eaf963a9759574a064bb685470b2ee4c429e11e01d89399fa4396fca2d98c6d",
+  "source": "SEC Financial Statement Data Sets 2024q4 (https://www.sec.gov/dera/data/financial-statement-data-sets), filtered local copy data/cache/sec_fsds/filtered/2024q4",
+  "tag": "IncreaseDecreaseInAccountsReceivable",
+  "ticker": "AAPL"
+ },
+ {
+  "adsh": "0000320193-24-000123",
+  "cik": "0000320193",
+  "num": [
+   {
+    "adsh": "0000320193-24-000123",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2024-09-30",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "IncreaseDecreaseInInventories",
+    "uom": "USD",
+    "value": 1046000000.0,
+    "version": "us-gaap/2024"
+   },
+   {
+    "adsh": "0000320193-24-000123",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2023-09-30",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "IncreaseDecreaseInInventories",
+    "uom": "USD",
+    "value": 1618000000.0,
+    "version": "us-gaap/2024"
+   },
+   {
+    "adsh": "0000320193-24-000123",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2022-09-30",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "IncreaseDecreaseInInventories",
+    "uom": "USD",
+    "value": -1484000000.0,
+    "version": "us-gaap/2024"
+   }
+  ],
+  "num_sha256": "b88b647a46cf6109675106c85f890dbec006b4e8d9c12edf50293891af4c1422",
+  "pre": [
+   {
+    "adsh": "0000320193-24-000123",
+    "custom": false,
+    "inpth": false,
+    "line": 11,
+    "negating": true,
+    "plabel": "Inventories",
+    "report": 8,
+    "stmt": "CF",
+    "tag": "IncreaseDecreaseInInventories",
+    "version": "us-gaap/2024"
+   }
+  ],
+  "pre_sha256": "0eaf963a9759574a064bb685470b2ee4c429e11e01d89399fa4396fca2d98c6d",
+  "source": "SEC Financial Statement Data Sets 2024q4 (https://www.sec.gov/dera/data/financial-statement-data-sets), filtered local copy data/cache/sec_fsds/filtered/2024q4",
+  "tag": "IncreaseDecreaseInInventories",
+  "ticker": "AAPL"
+ },
+ {
+  "adsh": "0000320193-24-000123",
+  "cik": "0000320193",
+  "num": [
+   {
+    "adsh": "0000320193-24-000123",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2023-09-30",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "uom": "USD",
+    "value": 10959000000.0,
+    "version": "us-gaap/2024"
+   },
+   {
+    "adsh": "0000320193-24-000123",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2024-09-30",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "uom": "USD",
+    "value": 9447000000.0,
+    "version": "us-gaap/2024"
+   },
+   {
+    "adsh": "0000320193-24-000123",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2022-09-30",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "uom": "USD",
+    "value": 10708000000.0,
+    "version": "us-gaap/2024"
+   }
+  ],
+  "num_sha256": "b88b647a46cf6109675106c85f890dbec006b4e8d9c12edf50293891af4c1422",
+  "pre": [
+   {
+    "adsh": "0000320193-24-000123",
+    "custom": false,
+    "inpth": false,
+    "line": 20,
+    "negating": true,
+    "plabel": "Payments for acquisition of property, plant and equipment",
+    "report": 8,
+    "stmt": "CF",
+    "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "version": "us-gaap/2024"
+   }
+  ],
+  "pre_sha256": "0eaf963a9759574a064bb685470b2ee4c429e11e01d89399fa4396fca2d98c6d",
+  "source": "SEC Financial Statement Data Sets 2024q4 (https://www.sec.gov/dera/data/financial-statement-data-sets), filtered local copy data/cache/sec_fsds/filtered/2024q4",
+  "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+  "ticker": "AAPL"
+ },
+ {
+  "adsh": "0000050863-25-000009",
+  "cik": "0000050863",
+  "num": [
+   {
+    "adsh": "0000050863-25-000009",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2023-12-31",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "NetIncomeLoss",
+    "uom": "USD",
+    "value": 1689000000.0,
+    "version": "us-gaap/2024"
+   },
+   {
+    "adsh": "0000050863-25-000009",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2022-12-31",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "NetIncomeLoss",
+    "uom": "USD",
+    "value": 8014000000.0,
+    "version": "us-gaap/2024"
+   },
+   {
+    "adsh": "0000050863-25-000009",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2024-12-31",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "NetIncomeLoss",
+    "uom": "USD",
+    "value": -18756000000.0,
+    "version": "us-gaap/2024"
+   }
+  ],
+  "num_sha256": "55b77c783195a12d899a8e7afc23a77bcbeb7ff47e8aa61fdb3656898395aa69",
+  "pre": [
+   {
+    "adsh": "0000050863-25-000009",
+    "custom": false,
+    "inpth": false,
+    "line": 15,
+    "negating": false,
+    "plabel": "Net income (loss) attributable to Intel",
+    "report": 3,
+    "stmt": "IS",
+    "tag": "NetIncomeLoss",
+    "version": "us-gaap/2024"
+   }
+  ],
+  "pre_sha256": "7b6196cd380e98d904e8d3980cf045be4dc763b87071e48ea7ee7708243e7bac",
+  "source": "SEC Financial Statement Data Sets 2025q1 (https://www.sec.gov/dera/data/financial-statement-data-sets), filtered local copy data/cache/sec_fsds/filtered/2025q1",
+  "tag": "NetIncomeLoss",
+  "ticker": "INTC"
+ },
+ {
+  "adsh": "0001692819-26-000006",
+  "cik": "0001692819",
+  "num": [
+   {
+    "adsh": "0001692819-26-000006",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2023-12-31",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "InterestExpenseNonoperating",
+    "uom": "USD",
+    "value": 740000000.0,
+    "version": "us-gaap/2025"
+   },
+   {
+    "adsh": "0001692819-26-000006",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2024-12-31",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "InterestExpenseNonoperating",
+    "uom": "USD",
+    "value": 900000000.0,
+    "version": "us-gaap/2025"
+   },
+   {
+    "adsh": "0001692819-26-000006",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2025-12-31",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "InterestExpenseNonoperating",
+    "uom": "USD",
+    "value": 1179000000.0,
+    "version": "us-gaap/2025"
+   }
+  ],
+  "num_sha256": "b697b4f89728944afd0e18ae8e64e638fdbe2f45a583276d61a744880f725c7f",
+  "pre": [
+   {
+    "adsh": "0001692819-26-000006",
+    "custom": false,
+    "inpth": false,
+    "line": 9,
+    "negating": true,
+    "plabel": "Interest expense and related charges",
+    "report": 3,
+    "stmt": "IS",
+    "tag": "InterestExpenseNonoperating",
+    "version": "us-gaap/2025"
+   }
+  ],
+  "pre_sha256": "52c5ca3f669c4b01e747ff207cf4f0d9c496a9804449f60ed9c8687decb04109",
+  "source": "SEC Financial Statement Data Sets 2026q1 (https://www.sec.gov/dera/data/financial-statement-data-sets), filtered local copy data/cache/sec_fsds/filtered/2026q1",
+  "tag": "InterestExpenseNonoperating",
+  "ticker": "VST"
+ },
+ {
+  "adsh": "0000002488-24-000012",
+  "cik": "0000002488",
+  "num": [
+   {
+    "adsh": "0000002488-24-000012",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2022-12-31",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "NetCashProvidedByUsedInFinancingActivities",
+    "uom": "USD",
+    "value": -3264000000.0,
+    "version": "us-gaap/2023"
+   },
+   {
+    "adsh": "0000002488-24-000012",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2021-12-31",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "NetCashProvidedByUsedInFinancingActivities",
+    "uom": "USD",
+    "value": 1895000000.0,
+    "version": "us-gaap/2023"
+   },
+   {
+    "adsh": "0000002488-24-000012",
+    "coreg": null,
+    "custom": false,
+    "ddate": "2023-12-31",
+    "qtrs": 4,
+    "segments": null,
+    "tag": "NetCashProvidedByUsedInFinancingActivities",
+    "uom": "USD",
+    "value": -1146000000.0,
+    "version": "us-gaap/2023"
+   }
+  ],
+  "num_sha256": "aaea105bc575403116721f765aae6eb12c73c19ae5d0611c49414af0d9e06658",
+  "pre": [
+   {
+    "adsh": "0000002488-24-000012",
+    "custom": false,
+    "inpth": false,
+    "line": 38,
+    "negating": true,
+    "plabel": "Net cash used in financing activities",
+    "report": 8,
+    "stmt": "CF",
+    "tag": "NetCashProvidedByUsedInFinancingActivities",
+    "version": "us-gaap/2023"
+   }
+  ],
+  "pre_sha256": "ee54044cdf19dabeaef80b468e4f9033a27ca90216e21821fffde834f853cacf",
+  "source": "SEC Financial Statement Data Sets 2024q1 (https://www.sec.gov/dera/data/financial-statement-data-sets), filtered local copy data/cache/sec_fsds/filtered/2024q1",
+  "tag": "NetCashProvidedByUsedInFinancingActivities",
+  "ticker": "AMD"
+ }
+]

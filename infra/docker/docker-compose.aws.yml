@@ -1,0 +1,79 @@
+# XbrlRag AWS deployment stack — api + mcp + ui only.
+#
+# Unlike docker-compose.yml (local), this brings up NO postgres / qdrant /
+# raginference: on AWS those are managed or shared services reached over the VPC —
+#   - Postgres     -> RDS          (XBRL_DB_HOST/PORT/NAME + XBRL_DB_USER/PASSWORD)
+#   - Qdrant       -> shared EC2   (QDRANT_HOST/PORT; TLS self-signed => QDRANT_VERIFY=false)
+#   - RagInference -> shared ECS   (RAGINFER_URL)
+#
+# The aws-genai-iac ec2-app bootstrap runs this via, roughly:
+#   docker compose --env-file /opt/app/.env --env-file <bundle>/deploy.env -f <this> up -d
+# and supplies env through two files, by design:
+#   - /opt/app/.env   (compose --env-file): NON-secret config + the ${XBRLRAG_IMAGE} /
+#     ${XBRLRAG_UI_IMAGE} tags (from deploy.env). Available for ${VAR} interpolation here.
+#   - /opt/arag/.env  (each service's env_file:, mode 600): the SECRETS — OPENAI /
+#     JINA keys (verbatim) + XBRL_DB_USER / XBRL_DB_PASSWORD (from the RDS-managed
+#     secret). Injected straight into the container env, re-fetched every boot, so a
+#     rotated DB password needs only `systemctl restart app.service` — no rebuild.
+#
+# Image tags come from deploy.env (${XBRLRAG_IMAGE} / ${XBRLRAG_UI_IMAGE}); never :latest.
+# The DB serves real queries only after the one-time DDL + an ingest run.
+
+# Non-secret env, interpolated from /opt/app/.env; the secrets arrive via env_file.
+x-app-env: &app-env
+  # ${NEW:-${LEGACY...}}: /opt/app/.env and deploy.env are rendered by aws-genai-iac
+  # and may still carry the pre-rename ARAG_* names.
+  XBRLRAG_DEPLOY_MODE: ${XBRLRAG_DEPLOY_MODE:-${ARAG_DEPLOY_MODE:-aws}}
+  XBRL_DB_HOST: ${XBRL_DB_HOST}
+  XBRL_DB_PORT: ${XBRL_DB_PORT:-5432}
+  XBRL_DB_NAME: ${XBRL_DB_NAME:-xbrl_db}
+  # sslmode=require on RDS. Belt-and-suspenders with XBRLRAG_DEPLOY_MODE=aws, which
+  # would derive the same default in src/db/conn.py.
+  XBRL_DB_SSLMODE: ${XBRL_DB_SSLMODE:-require}
+  QDRANT_HOST: ${QDRANT_HOST}
+  QDRANT_PORT: ${QDRANT_PORT:-6333}
+  QDRANT_HTTPS: ${QDRANT_HTTPS:-true}
+  # The shared Qdrant fronts a self-signed cert, so skip verification (TLS stays on).
+  QDRANT_VERIFY: ${QDRANT_VERIFY:-false}
+  RAGINFER_URL: ${RAGINFER_URL}
+  RAGINFER_TIMEOUT_S: ${RAGINFER_TIMEOUT_S:-300}
+  XBRLRAG_QUERY_CACHE: ${XBRLRAG_QUERY_CACHE:-${ARAG_QUERY_CACHE:-0}}
+
+services:
+  api:
+    image: ${XBRLRAG_IMAGE:-${ARAG_IMAGE}}
+    restart: unless-stopped
+    command: ["uvicorn", "src.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    environment: *app-env
+    env_file:
+      - /opt/arag/.env          # OPENAI / JINA keys + XBRL_DB_USER / XBRL_DB_PASSWORD
+    ports:
+      - "8000:8000"
+
+  mcp:
+    image: ${XBRLRAG_IMAGE:-${ARAG_IMAGE}}
+    restart: unless-stopped
+    command: ["python", "-m", "src.mcp_server.server"]
+    environment:
+      <<: *app-env
+      XBRLRAG_MCP_TRANSPORT: streamable-http
+      XBRLRAG_MCP_PORT: "8765"
+    env_file:
+      - /opt/arag/.env
+    ports:
+      - "8765:8765"
+
+  ui:
+    image: ${XBRLRAG_UI_IMAGE:-${ARAG_UI_IMAGE}}
+    restart: unless-stopped
+    environment:
+      # nginx reverse-proxies /api to the api container over the compose network.
+      XBRLRAG_API_UPSTREAM: api:8000
+      # Must stay ABOVE RAGINFER_TIMEOUT_S (set host-side in /opt/app/.env), or
+      # nginx 504s while the API is still reranking. Image default is 600.
+      XBRLRAG_PROXY_READ_TIMEOUT: ${XBRLRAG_PROXY_READ_TIMEOUT:-${ARAG_PROXY_READ_TIMEOUT:-600}}
+    ports:
+      # Front door. Reached from a laptop by an SSM port-forward to this host port.
+      - "8080:80"
+    depends_on:
+      - api

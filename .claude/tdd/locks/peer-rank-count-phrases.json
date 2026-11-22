@@ -1,0 +1,139 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-10",
+  "criteria": {
+    "C1": [
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_first_person_subjects_are_count_phrases[I ranked 32 of the 33 covered companies.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_first_person_subjects_are_count_phrases[We rank 30 filers by revenue.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_first_person_subjects_are_count_phrases[I've ranked 24 companies.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_first_person_subjects_are_count_phrases[Here we\\u2019ve ranked 12 peers.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_first_person_subjects_are_count_phrases[So I have ranked 40 companies.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_first_person_subjects_are_count_phrases[WE HAVE RANKED 14 FILERS.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_first_person_subjects_are_count_phrases[i ranked 9 of 10.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_first_person_subjects_are_count_phrases[In the table, we ranking 5 of them.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[Intel ranked 14 of 14.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[Walmart ranks 2 of 4.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[It ranks 20 of 24.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[That figure, which ranks 3 of 9.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[They ranked 3 of 4.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[The screen ranked 32 companies.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[AI ranked 5 of 6.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[Wwe ranked 5 of 6.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[I  ranked 32 of 33.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[I\\nranked 32 of 33.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[I also ranked 32 of 33.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[Ranked 3 of 4.]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_start_must_be_a_rank_word[I rated 32 of 33.-2]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_start_must_be_a_rank_word[I rankled 32 of 33.-2]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_start_must_be_a_rank_word[I ranked 32 of 33.-3]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_start_must_be_a_rank_word[I ranked 32 of 33.-1]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_start_must_be_a_rank_word[I ranked 32 of 33.-0]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_start_must_be_a_rank_word[I ranked 32 of 33.--6]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_start_must_be_a_rank_word[I ranked 32 of 33.-18]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_start_must_be_a_rank_word[I ranked 32 of 33.-400]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_every_listed_subject_and_rank_word",
+      "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_unlisted_subjects_are_never_count_phrases"
+    ],
+    "C2": [
+      "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_mcdonalds_answer_reads_17",
+      "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_we_ranked_count_then_apple_third",
+      "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_other_forms_keep_their_meaning_after_a_count[Intel ranked 14 of 14.-INTC-expected0]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_other_forms_keep_their_meaning_after_a_count[Netflix holds rank 19.-NFLX-expected1]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_other_forms_keep_their_meaning_after_a_count[Meta is #2.-META-expected2]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_other_forms_keep_their_meaning_after_a_count[Merck ranks 17th.-MRK-expected3]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_other_forms_keep_their_meaning_after_a_count[It ranks 20th of the 33.-MCD-expected4]",
+      "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_only_count_phrases_give_no_rank",
+      "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_a_count_prefix_never_changes_the_ranks"
+    ],
+    "C3": [
+      "test/spec/peer-rank-count-phrases/test_prcp_c3_grading.py::test_count_then_right_rank_is_right",
+      "test/spec/peer-rank-count-phrases/test_prcp_c3_grading.py::test_count_then_wrong_rank_is_wrong",
+      "test/spec/peer-rank-count-phrases/test_prcp_c3_grading.py::test_count_prefix_never_changes_the_grade"
+    ],
+    "C4": [
+      "test/spec/peer-rank-count-phrases/test_prcp_c4_grader_version.py::test_grader_version_is_6",
+      "test/spec/peer-rank-count-phrases/test_prcp_c4_grader_version.py::test_every_scorecard_carries_version_6"
+    ]
+  },
+  "files": {
+    "test/spec/peer-rank-count-phrases/conftest.py": "caf4d846749474318aa9467ba9412c44f24dc5a116e79919d1338c97426e04a4",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py": "dc1c9006dd237ca46d977e005d9e6d7388b8394785560981f191386de51682d3",
+    "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py": "f89d13b66d9b1e3e0c927b9e783db09ddd9f09622845e007f165a40a6913a9d5",
+    "test/spec/peer-rank-count-phrases/test_prcp_c3_grading.py": "9c5a7aae3d91dda0601572477e9adf9a5796a1213afcf224ca0b67ab992d3d35",
+    "test/spec/peer-rank-count-phrases/test_prcp_c4_grader_version.py": "3805b89d05e1cd5811aa21dd65810d2aa968a7fc8c2627af9d89ca4d04a2ff2a"
+  },
+  "id": "peer-rank-count-phrases",
+  "interface": [
+    {
+      "file": "src/eval/core/graders/v2.py",
+      "module": "eval.core.graders.v2",
+      "qualname": "is_count_phrase",
+      "signature": "def is_count_phrase(text: str, start: int) -> bool"
+    }
+  ],
+  "nodes": [
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_every_listed_subject_and_rank_word",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_first_person_subjects_are_count_phrases[Here we\\u2019ve ranked 12 peers.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_first_person_subjects_are_count_phrases[I ranked 32 of the 33 covered companies.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_first_person_subjects_are_count_phrases[I've ranked 24 companies.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_first_person_subjects_are_count_phrases[In the table, we ranking 5 of them.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_first_person_subjects_are_count_phrases[So I have ranked 40 companies.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_first_person_subjects_are_count_phrases[WE HAVE RANKED 14 FILERS.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_first_person_subjects_are_count_phrases[We rank 30 filers by revenue.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_first_person_subjects_are_count_phrases[i ranked 9 of 10.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[AI ranked 5 of 6.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[I  ranked 32 of 33.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[I also ranked 32 of 33.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[I\\nranked 32 of 33.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[Intel ranked 14 of 14.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[It ranks 20 of 24.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[Ranked 3 of 4.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[That figure, which ranks 3 of 9.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[The screen ranked 32 companies.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[They ranked 3 of 4.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[Walmart ranks 2 of 4.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_other_subjects_are_not_count_phrases[Wwe ranked 5 of 6.]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_start_must_be_a_rank_word[I ranked 32 of 33.--6]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_start_must_be_a_rank_word[I ranked 32 of 33.-0]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_start_must_be_a_rank_word[I ranked 32 of 33.-18]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_start_must_be_a_rank_word[I ranked 32 of 33.-1]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_start_must_be_a_rank_word[I ranked 32 of 33.-3]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_start_must_be_a_rank_word[I ranked 32 of 33.-400]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_start_must_be_a_rank_word[I rankled 32 of 33.-2]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_start_must_be_a_rank_word[I rated 32 of 33.-2]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c1_count_phrase.py::test_unlisted_subjects_are_never_count_phrases",
+    "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_a_count_prefix_never_changes_the_ranks",
+    "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_mcdonalds_answer_reads_17",
+    "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_only_count_phrases_give_no_rank",
+    "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_other_forms_keep_their_meaning_after_a_count[Intel ranked 14 of 14.-INTC-expected0]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_other_forms_keep_their_meaning_after_a_count[It ranks 20th of the 33.-MCD-expected4]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_other_forms_keep_their_meaning_after_a_count[Merck ranks 17th.-MRK-expected3]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_other_forms_keep_their_meaning_after_a_count[Meta is #2.-META-expected2]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_other_forms_keep_their_meaning_after_a_count[Netflix holds rank 19.-NFLX-expected1]",
+    "test/spec/peer-rank-count-phrases/test_prcp_c2_stated_ranks.py::test_we_ranked_count_then_apple_third",
+    "test/spec/peer-rank-count-phrases/test_prcp_c3_grading.py::test_count_prefix_never_changes_the_grade",
+    "test/spec/peer-rank-count-phrases/test_prcp_c3_grading.py::test_count_then_right_rank_is_right",
+    "test/spec/peer-rank-count-phrases/test_prcp_c3_grading.py::test_count_then_wrong_rank_is_wrong",
+    "test/spec/peer-rank-count-phrases/test_prcp_c4_grader_version.py::test_every_scorecard_carries_version_6",
+    "test/spec/peer-rank-count-phrases/test_prcp_c4_grader_version.py::test_grader_version_is_6"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/peer-rank-count-phrases.md",
+    "sha256": "f0fecec9fe86d1be8dde6e9820964476b2cacaac8e09aa5c67814e94c2f86209"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

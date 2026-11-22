@@ -1,0 +1,146 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-04",
+  "criteria": {
+    "C1": [
+      "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c1_dev_build_cases",
+      "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c1_validation_build_cases",
+      "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c1_inputs_record_every_suite_and_set",
+      "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c1_persona_validation_paraphrase_stays_out_of_dev",
+      "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c1_review_and_duplicates_never_used",
+      "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c1_property_split_follows_axes"
+    ],
+    "C2": [
+      "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c2_paraphrase_case_is_its_source_but_five_keys",
+      "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c2_tags_and_provenance_by_hand",
+      "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c2_template_cases_unchanged_but_suite",
+      "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c2_paraphrase_graded_against_its_own_key",
+      "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c2_metamorphic_source_value_change_moves_only_its_paraphrases"
+    ],
+    "C3": [
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[bad_split_heldout]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[bad_split_unknown]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[no_suites]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[no_sets]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[suite_split_unknown]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[suite_names_clash]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[suite_hash_wrong]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[case_split_tag_wrong]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[case_id_twice]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[no_suite_of_split]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[set_schema_wrong]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[set_hash_missing]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[set_hash_wrong]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[sets_same_hash]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[paraphrase_id_in_two_sets]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[paraphrase_id_not_case_persona]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[persona_unknown]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[axis_unknown]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[split_disagrees_with_axes]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[validation_split_without_validation_axis]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[case_in_no_suite]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[intent_differs_from_tag]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[intent_differs_from_group]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[dev_record_of_validation_case]",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_valid_inputs_do_not_raise",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_other_split_records_not_checked",
+      "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_property_no_text_in_errors"
+    ],
+    "C4": [
+      "test/spec/paraphrase-suite-wiring/test_c4_c5_file_stability.py::test_c4_content_hash_is_the_case_list_hash",
+      "test/spec/paraphrase-suite-wiring/test_c4_c5_file_stability.py::test_c4_property_input_order_irrelevant",
+      "test/spec/paraphrase-suite-wiring/test_c4_c5_file_stability.py::test_c4_write_and_load",
+      "test/spec/paraphrase-suite-wiring/test_c4_c5_file_stability.py::test_c4_metamorphic_tampered_doc_refused"
+    ],
+    "C5": [
+      "test/spec/paraphrase-suite-wiring/test_c4_c5_file_stability.py::test_c5_stability_spans_template_and_paraphrase",
+      "test/spec/paraphrase-suite-wiring/test_c4_c5_file_stability.py::test_c5_metamorphic_one_flip_one_unstable_intent"
+    ]
+  },
+  "files": {
+    "test/spec/paraphrase-suite-wiring/conftest.py": "8ccd8276f77e46051797eebcdeef4a18d33f615fe2306a25db270a1d8eeca55f",
+    "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py": "dfb9dcee56134e1bf73fb0177f583b743210556af3b7ae570228a3924711a8fb",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py": "f25bd47d34fd3bf82ef35e9299a12319eab97d9646cd5507871ed7c1f6664747",
+    "test/spec/paraphrase-suite-wiring/test_c4_c5_file_stability.py": "d8b72b038dae134fad53e179dc786b4c9517a4131b164961694a9b4604380634"
+  },
+  "id": "paraphrase-suite-wiring",
+  "interface": [
+    {
+      "file": "src/eval/suites/paraphrase_suite.py",
+      "module": "eval.suites.paraphrase_suite",
+      "qualname": "build_paraphrase_suite",
+      "signature": "def build_paraphrase_suite(split: str, suites: Sequence[Mapping[str, Any]], paraphrase_sets: Sequence[Mapping[str, Any]]) -> dict[str, Any]"
+    },
+    {
+      "file": "src/eval/suites/paraphrase_suite.py",
+      "module": "eval.suites.paraphrase_suite",
+      "qualname": "write_paraphrase_suite",
+      "signature": "def write_paraphrase_suite(doc: Mapping[str, Any], path: str | Path) -> Path"
+    }
+  ],
+  "nodes": [
+    "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c1_dev_build_cases",
+    "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c1_inputs_record_every_suite_and_set",
+    "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c1_persona_validation_paraphrase_stays_out_of_dev",
+    "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c1_property_split_follows_axes",
+    "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c1_review_and_duplicates_never_used",
+    "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c1_validation_build_cases",
+    "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c2_metamorphic_source_value_change_moves_only_its_paraphrases",
+    "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c2_paraphrase_case_is_its_source_but_five_keys",
+    "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c2_paraphrase_graded_against_its_own_key",
+    "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c2_tags_and_provenance_by_hand",
+    "test/spec/paraphrase-suite-wiring/test_c1_c2_cases.py::test_c2_template_cases_unchanged_but_suite",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[axis_unknown]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[bad_split_heldout]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[bad_split_unknown]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[case_id_twice]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[case_in_no_suite]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[case_split_tag_wrong]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[dev_record_of_validation_case]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[intent_differs_from_group]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[intent_differs_from_tag]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[no_sets]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[no_suite_of_split]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[no_suites]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[paraphrase_id_in_two_sets]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[paraphrase_id_not_case_persona]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[persona_unknown]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[set_hash_missing]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[set_hash_wrong]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[set_schema_wrong]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[sets_same_hash]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[split_disagrees_with_axes]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[suite_hash_wrong]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[suite_names_clash]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[suite_split_unknown]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_each_error_raises_without_text[validation_split_without_validation_axis]",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_other_split_records_not_checked",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_property_no_text_in_errors",
+    "test/spec/paraphrase-suite-wiring/test_c3_errors.py::test_c3_valid_inputs_do_not_raise",
+    "test/spec/paraphrase-suite-wiring/test_c4_c5_file_stability.py::test_c4_content_hash_is_the_case_list_hash",
+    "test/spec/paraphrase-suite-wiring/test_c4_c5_file_stability.py::test_c4_metamorphic_tampered_doc_refused",
+    "test/spec/paraphrase-suite-wiring/test_c4_c5_file_stability.py::test_c4_property_input_order_irrelevant",
+    "test/spec/paraphrase-suite-wiring/test_c4_c5_file_stability.py::test_c4_write_and_load",
+    "test/spec/paraphrase-suite-wiring/test_c4_c5_file_stability.py::test_c5_metamorphic_one_flip_one_unstable_intent",
+    "test/spec/paraphrase-suite-wiring/test_c4_c5_file_stability.py::test_c5_stability_spans_template_and_paraphrase"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/paraphrase-suite-wiring.md",
+    "sha256": "c5bf441347369d9f99cb3faed0fd2d2c54e62f71fe4445d61ae1fccb55d63414"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

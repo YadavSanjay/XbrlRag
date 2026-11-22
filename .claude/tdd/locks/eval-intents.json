@@ -1,0 +1,186 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-29",
+  "criteria": {
+    "C1": [
+      "test/spec/eval-intents/test_c1_c3_intent.py::test_c1_normalisation_point",
+      "test/spec/eval-intents/test_c1_c3_intent.py::test_c1_shape_point",
+      "test/spec/eval-intents/test_c1_c3_intent.py::test_c1_equality_point",
+      "test/spec/eval-intents/test_c1_c3_intent.py::test_c1_equality_property"
+    ],
+    "C10": [
+      "test/spec/eval-intents/test_c9_c11_split_build.py::test_c10_selection_point",
+      "test/spec/eval-intents/test_c9_c11_split_build.py::test_c10_errors_point",
+      "test/spec/eval-intents/test_c9_c11_split_build.py::test_c10_selection_property"
+    ],
+    "C11": [
+      "test/spec/eval-intents/test_c9_c11_split_build.py::test_c11_stability_point",
+      "test/spec/eval-intents/test_c9_c11_split_build.py::test_c11_order_and_additivity_property"
+    ],
+    "C12": [
+      "test/spec/eval-intents/test_c12_config.py::test_c12_config_covers_every_shape",
+      "test/spec/eval-intents/test_c12_config.py::test_c12_config_templates_respect_placeholder_table"
+    ],
+    "C2": [
+      "test/spec/eval-intents/test_c1_c3_intent.py::test_c2_invalid_intents_raise",
+      "test/spec/eval-intents/test_c1_c3_intent.py::test_c2_valid_examples_construct",
+      "test/spec/eval-intents/test_c1_c3_intent.py::test_c2_point_in_time_filing_year_property",
+      "test/spec/eval-intents/test_c1_c3_intent.py::test_c2_forbidden_field_property"
+    ],
+    "C3": [
+      "test/spec/eval-intents/test_c1_c3_intent.py::test_c3_intent_id_point",
+      "test/spec/eval-intents/test_c1_c3_intent.py::test_c3_every_example_point",
+      "test/spec/eval-intents/test_c1_c3_intent.py::test_c3_intent_id_property"
+    ],
+    "C4": [
+      "test/spec/eval-intents/test_c4_c5_loaders.py::test_c4_fixture_loads_point",
+      "test/spec/eval-intents/test_c4_c5_loaders.py::test_c4_bad_phrasebooks_raise",
+      "test/spec/eval-intents/test_c4_c5_loaders.py::test_c4_fillable_property"
+    ],
+    "C5": [
+      "test/spec/eval-intents/test_c4_c5_loaders.py::test_c5_fixture_loads_point",
+      "test/spec/eval-intents/test_c4_c5_loaders.py::test_c5_bad_lexicons_raise",
+      "test/spec/eval-intents/test_c4_c5_loaders.py::test_c5_period_end_property"
+    ],
+    "C6": [
+      "test/spec/eval-intents/test_c6_c8_render.py::test_c6_render_points",
+      "test/spec/eval-intents/test_c6_c8_render.py::test_c6_lookup_property"
+    ],
+    "C7": [
+      "test/spec/eval-intents/test_c6_c8_render.py::test_c7_render_failures_point",
+      "test/spec/eval-intents/test_c6_c8_render.py::test_c7_index_and_period_end_property"
+    ],
+    "C8": [
+      "test/spec/eval-intents/test_c6_c8_render.py::test_c8_company_swap_point",
+      "test/spec/eval-intents/test_c6_c8_render.py::test_c8_no_braces_and_form_swaps_metamorphic"
+    ],
+    "C9": [
+      "test/spec/eval-intents/test_c9_c11_split_build.py::test_c9_axis_point",
+      "test/spec/eval-intents/test_c9_c11_split_build.py::test_c9_axis_property",
+      "test/spec/eval-intents/test_c9_c11_split_build.py::test_c9_split_invariant_property",
+      "test/spec/eval-intents/test_c9_c11_split_build.py::test_c9_split_point"
+    ]
+  },
+  "files": {
+    "test/spec/eval-intents/conftest.py": "8743171342e7555f3daae9bce19aebb5acc5ca299b9ce96f991214c0d39e1b4a",
+    "test/spec/eval-intents/lexicon.yaml": "0df93e6720c884b9028267006815e3cb539f88f2c70f0aba2b90b0800353c448",
+    "test/spec/eval-intents/phrasebook.yaml": "075b4ed31eec740d3b932a10eab93c3cf7a4ad852691cbadc810dcf55a2a33af",
+    "test/spec/eval-intents/test_c12_config.py": "830087a657a0123416ad98681f61e05b8f3f85a68ed5369b8d66e04568942ae6",
+    "test/spec/eval-intents/test_c1_c3_intent.py": "b62f1a9224c3cb86e14f881911ddae7e433c679fd2e130f41b6589d89d3b8a06",
+    "test/spec/eval-intents/test_c4_c5_loaders.py": "68e200e325e8ee477e8c64595f58f088f80b614f320948b50b6cf4f94a9d8e13",
+    "test/spec/eval-intents/test_c6_c8_render.py": "13e5c28ee27abfa5a639916b75c16a2b86d2780987811b3a8d2a13558a12f628",
+    "test/spec/eval-intents/test_c9_c11_split_build.py": "0967f1d6a63e4b7d9cb6ce6a2df5a759da5a90e72ea7d4863354bdcca6b79112"
+  },
+  "id": "eval-intents",
+  "interface": [
+    {
+      "file": "src/eval/suites/intents.py",
+      "module": "eval.suites.intents",
+      "qualname": "Intent.__init__",
+      "signature": "def __init__(self, kind: str, *, tickers: Sequence[str]=(), fiscal_years: Sequence[int]=(), metrics: Sequence[str]=(), dimension: str | None=None, operation: str | None=None, universe: str | None=None, n: int | None=None, filing_year: int | None=None) -> None"
+    },
+    {
+      "file": "src/eval/suites/intents.py",
+      "module": "eval.suites.intents",
+      "qualname": "intent_shape",
+      "signature": "def intent_shape(intent: Intent) -> str"
+    },
+    {
+      "file": "src/eval/suites/intents.py",
+      "module": "eval.suites.intents",
+      "qualname": "intent_id",
+      "signature": "def intent_id(intent: Intent) -> str"
+    },
+    {
+      "file": "src/eval/suites/intents.py",
+      "module": "eval.suites.intents",
+      "qualname": "load_phrasebook",
+      "signature": "def load_phrasebook(path: str | Path) -> Phrasebook"
+    },
+    {
+      "file": "src/eval/suites/intents.py",
+      "module": "eval.suites.intents",
+      "qualname": "load_lexicon",
+      "signature": "def load_lexicon(path: str | Path) -> Lexicon"
+    },
+    {
+      "file": "src/eval/suites/intents.py",
+      "module": "eval.suites.intents",
+      "qualname": "Phrasing.__init__",
+      "signature": "def __init__(self, template_id: str, *, company_form: str='ticker', metric_form: str='label', period_form: str='fiscal') -> None"
+    },
+    {
+      "file": "src/eval/suites/intents.py",
+      "module": "eval.suites.intents",
+      "qualname": "render",
+      "signature": "def render(intent: Intent, phrasing: Phrasing, lexicon: Lexicon, phrasebook: Phrasebook) -> str"
+    },
+    {
+      "file": "src/eval/suites/intents.py",
+      "module": "eval.suites.intents",
+      "qualname": "axis_is_validation",
+      "signature": "def axis_is_validation(key: str, *, share: float, salt: str) -> bool"
+    },
+    {
+      "file": "src/eval/suites/intents.py",
+      "module": "eval.suites.intents",
+      "qualname": "build_phrased_cases",
+      "signature": "def build_phrased_cases(intents: Sequence[Intent], phrasebook: Phrasebook, lexicon: Lexicon, *, per_intent: int, share: float, salt: str) -> list[PhrasedCase]"
+    }
+  ],
+  "nodes": [
+    "test/spec/eval-intents/test_c12_config.py::test_c12_config_covers_every_shape",
+    "test/spec/eval-intents/test_c12_config.py::test_c12_config_templates_respect_placeholder_table",
+    "test/spec/eval-intents/test_c1_c3_intent.py::test_c1_equality_point",
+    "test/spec/eval-intents/test_c1_c3_intent.py::test_c1_equality_property",
+    "test/spec/eval-intents/test_c1_c3_intent.py::test_c1_normalisation_point",
+    "test/spec/eval-intents/test_c1_c3_intent.py::test_c1_shape_point",
+    "test/spec/eval-intents/test_c1_c3_intent.py::test_c2_forbidden_field_property",
+    "test/spec/eval-intents/test_c1_c3_intent.py::test_c2_invalid_intents_raise",
+    "test/spec/eval-intents/test_c1_c3_intent.py::test_c2_point_in_time_filing_year_property",
+    "test/spec/eval-intents/test_c1_c3_intent.py::test_c2_valid_examples_construct",
+    "test/spec/eval-intents/test_c1_c3_intent.py::test_c3_every_example_point",
+    "test/spec/eval-intents/test_c1_c3_intent.py::test_c3_intent_id_point",
+    "test/spec/eval-intents/test_c1_c3_intent.py::test_c3_intent_id_property",
+    "test/spec/eval-intents/test_c4_c5_loaders.py::test_c4_bad_phrasebooks_raise",
+    "test/spec/eval-intents/test_c4_c5_loaders.py::test_c4_fillable_property",
+    "test/spec/eval-intents/test_c4_c5_loaders.py::test_c4_fixture_loads_point",
+    "test/spec/eval-intents/test_c4_c5_loaders.py::test_c5_bad_lexicons_raise",
+    "test/spec/eval-intents/test_c4_c5_loaders.py::test_c5_fixture_loads_point",
+    "test/spec/eval-intents/test_c4_c5_loaders.py::test_c5_period_end_property",
+    "test/spec/eval-intents/test_c6_c8_render.py::test_c6_lookup_property",
+    "test/spec/eval-intents/test_c6_c8_render.py::test_c6_render_points",
+    "test/spec/eval-intents/test_c6_c8_render.py::test_c7_index_and_period_end_property",
+    "test/spec/eval-intents/test_c6_c8_render.py::test_c7_render_failures_point",
+    "test/spec/eval-intents/test_c6_c8_render.py::test_c8_company_swap_point",
+    "test/spec/eval-intents/test_c6_c8_render.py::test_c8_no_braces_and_form_swaps_metamorphic",
+    "test/spec/eval-intents/test_c9_c11_split_build.py::test_c10_errors_point",
+    "test/spec/eval-intents/test_c9_c11_split_build.py::test_c10_selection_point",
+    "test/spec/eval-intents/test_c9_c11_split_build.py::test_c10_selection_property",
+    "test/spec/eval-intents/test_c9_c11_split_build.py::test_c11_order_and_additivity_property",
+    "test/spec/eval-intents/test_c9_c11_split_build.py::test_c11_stability_point",
+    "test/spec/eval-intents/test_c9_c11_split_build.py::test_c9_axis_point",
+    "test/spec/eval-intents/test_c9_c11_split_build.py::test_c9_axis_property",
+    "test/spec/eval-intents/test_c9_c11_split_build.py::test_c9_split_invariant_property",
+    "test/spec/eval-intents/test_c9_c11_split_build.py::test_c9_split_point"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/eval-intents.md",
+    "sha256": "bd036750ac426420f77eedbd7510269884104fe8eeebecb3a2e60e6762b67ac5"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

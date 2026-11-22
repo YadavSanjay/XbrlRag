@@ -1,0 +1,173 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-30",
+  "criteria": {
+    "C1": [
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_note_row_under_title_rows",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_note_in_the_year_row_under_several_title_rows",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_note_row_scopes_no_group",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_title_rows_above_the_note_change_nothing"
+    ],
+    "C10": [
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_figure_per_stock_award",
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_figure_per_any_award"
+    ],
+    "C11": [
+      "test/spec/html10k-tables-scale/test_hs_percent.py::test_percent_in_words_in_a_label",
+      "test/spec/html10k-tables-scale/test_hs_percent.py::test_the_word_form_in_any_label"
+    ],
+    "C12": [
+      "test/spec/html10k-tables-scale/test_hs_percent.py::test_a_row_prints_percent_in_its_first_cell_only",
+      "test/spec/html10k-tables-scale/test_hs_percent.py::test_rows_between_two_percent_rows",
+      "test/spec/html10k-tables-scale/test_hs_percent.py::test_amounts_beside_a_percent_stay_money",
+      "test/spec/html10k-tables-scale/test_hs_percent.py::test_every_number_of_a_percent_row_is_a_rate"
+    ],
+    "C13": [
+      "test/spec/html10k-tables-scale/test_hs_percent.py::test_a_rate_at_the_foot_of_a_column_of_dollars",
+      "test/spec/html10k-tables-scale/test_hs_percent.py::test_a_true_rate_column_is_untouched",
+      "test/spec/html10k-tables-scale/test_hs_percent.py::test_a_number_of_a_thousand_or_more_is_no_rate"
+    ],
+    "C2": [
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_table_over_a_page_keeps_the_note_of_the_table_before_it",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_the_note_of_the_table_before_outranks_a_standing_note",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_furniture_is_not_a_caption",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_repeated_note_is_not_furniture",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_only_prose_ends_a_run_of_tables"
+    ],
+    "C3": [
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_note_with_a_second_sentence_stands_for_nothing",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_numbered_footnote_is_not_a_standing_note",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_lone_note_stands_and_the_same_note_with_a_sentence_does_not"
+    ],
+    "C4": [
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_marked_column_takes_the_scale_of_its_footnote",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_marked_row_takes_the_scale_of_its_footnote",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_footnote_above_the_table_of_values_in_billions",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_footnote_that_ends_in_a_statement_of_amounts",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_footnote_reaches_only_its_own_marker",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_footnote_does_not_outlive_its_table"
+    ],
+    "C5": [
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_any_short_lead_before_dollars_in_a_scale",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_shares_and_a_scale_in_one_clause",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_the_lead_words_are_not_a_list",
+      "test/spec/html10k-tables-scale/test_hs_notes.py::test_prose_stays_prose_when_the_lead_is_free"
+    ],
+    "C6": [
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_except_shares_reaches_rows_under_a_share_group",
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_dilution_row_counts_shares",
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_except_list_with_a_singular_term",
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_an_except_list_in_a_column_level_note",
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_share_word_that_is_no_count",
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_an_except_term_matches_singular_and_plural"
+    ],
+    "C7": [
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_equity_columns_decide_over_row_labels",
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_the_lowest_header_decides",
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_an_upper_header_about_money_does_not_decide",
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_money_column_is_never_a_share_column"
+    ],
+    "C8": [
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_label_that_prints_the_count_holds_dollars",
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_printed_count_of_any_size"
+    ],
+    "C9": [
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_share_column_of_full_numbers_is_in_units",
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_group_of_units_is_a_count",
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_share_row_beside_big_dollars_stays_in_millions",
+      "test/spec/html10k-tables-scale/test_hs_counts.py::test_the_largest_count_in_the_column_decides"
+    ]
+  },
+  "files": {
+    "test/spec/html10k-tables-scale/conftest.py": "bd64ad739f4d74ecb5404058d0b5ffd7ff9eddb25f5f70fd1331ab97f0b2b0ec",
+    "test/spec/html10k-tables-scale/fixtures/ba_options.html": "1e709bff15242e6767e9ceb79a9d5b32123e1a52c837673c1293033d3522fc8f",
+    "test/spec/html10k-tables-scale/fixtures/ba_rsus.html": "d1f75cc393326626c76a40469a5ae43b66cb3db27a16de36ba8402ec2cf49f51",
+    "test/spec/html10k-tables-scale/fixtures/cat_geography.html": "7b3b213f2f259258ce4c81c697bdc70a12ca0fe844521fafbfbfe53862c34021",
+    "test/spec/html10k-tables-scale/fixtures/cat_statement.html": "e6e717214ac356f8054e35fb660c9eb90adfd1bf9d0dd3d8b9f66204a3e03cd2",
+    "test/spec/html10k-tables-scale/fixtures/cat_stock_awards.html": "e562e91f092c29415d5ed196df5a820e104efc12a5259c8b2e56d678662e7aa7",
+    "test/spec/html10k-tables-scale/fixtures/jnj_assumptions.html": "024dd721a383bc927e27991b75ef3910f7df38f24ecd5f6c68a7f3bd6be4830b",
+    "test/spec/html10k-tables-scale/fixtures/jnj_pages.html": "6a8ee64d2a17db815e18405f49ed61aca950ab30eb2f0588832356b4bdc140e2",
+    "test/spec/html10k-tables-scale/fixtures/jnj_tax_rates.html": "af9ffd11a2e85d3bc24aa8b2982516f977e72cc3b01767199daf3dc947a989fa",
+    "test/spec/html10k-tables-scale/fixtures/jnj_treasury.html": "27efacca262f72878a25c1c646b3156479ff01688cf23ddaf3add3572884e935",
+    "test/spec/html10k-tables-scale/fixtures/pep_options.html": "d9af65532699a2c68438f0025fe9c0038b9698ee51c6ca9908678fb9d1b20176",
+    "test/spec/html10k-tables-scale/fixtures/tmus_eps.html": "a4254133b44457deadee5bae8b29b1b2100c4257e2ba115194bc8f49557c5811",
+    "test/spec/html10k-tables-scale/fixtures/tmus_equity.html": "1b7ff228891cfcbc718d8a846886b0adc655cd08291005087892c5ba6b7f0f4b",
+    "test/spec/html10k-tables-scale/fixtures/tmus_pages.html": "0835806c01eed7b0f328bec2aaa8451192a0bf52d8cc67eea172cb420a562a35",
+    "test/spec/html10k-tables-scale/fixtures/xom_tax.html": "9cfb2a49570706b0e5a42766da73f3eb070f3c906c8c25f2cdc5b3220a7a8138",
+    "test/spec/html10k-tables-scale/test_hs_counts.py": "b90d0f629a8a761e1c602a90b083fa4e8e7d74d3d1635f91e09dea2a14afcdc5",
+    "test/spec/html10k-tables-scale/test_hs_notes.py": "d3b3609c969b96af20db6f27103047fefb1fcb1853a547a311becc27a8974e69",
+    "test/spec/html10k-tables-scale/test_hs_percent.py": "45d33b052a466cfa7f8166a13555d00a4a65d1f8d4fb0a7dc8e1898d68a7c4fc"
+  },
+  "id": "html10k-tables-scale",
+  "interface": [],
+  "nodes": [
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_dilution_row_counts_shares",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_figure_per_any_award",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_figure_per_stock_award",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_group_of_units_is_a_count",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_label_that_prints_the_count_holds_dollars",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_money_column_is_never_a_share_column",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_printed_count_of_any_size",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_share_column_of_full_numbers_is_in_units",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_share_row_beside_big_dollars_stays_in_millions",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_a_share_word_that_is_no_count",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_an_except_list_in_a_column_level_note",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_an_except_term_matches_singular_and_plural",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_an_upper_header_about_money_does_not_decide",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_equity_columns_decide_over_row_labels",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_except_list_with_a_singular_term",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_except_shares_reaches_rows_under_a_share_group",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_the_largest_count_in_the_column_decides",
+    "test/spec/html10k-tables-scale/test_hs_counts.py::test_the_lowest_header_decides",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_footnote_above_the_table_of_values_in_billions",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_footnote_does_not_outlive_its_table",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_footnote_reaches_only_its_own_marker",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_footnote_that_ends_in_a_statement_of_amounts",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_lone_note_stands_and_the_same_note_with_a_sentence_does_not",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_marked_column_takes_the_scale_of_its_footnote",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_marked_row_takes_the_scale_of_its_footnote",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_note_row_scopes_no_group",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_note_with_a_second_sentence_stands_for_nothing",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_numbered_footnote_is_not_a_standing_note",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_repeated_note_is_not_furniture",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_a_table_over_a_page_keeps_the_note_of_the_table_before_it",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_any_short_lead_before_dollars_in_a_scale",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_furniture_is_not_a_caption",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_note_in_the_year_row_under_several_title_rows",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_note_row_under_title_rows",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_only_prose_ends_a_run_of_tables",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_prose_stays_prose_when_the_lead_is_free",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_shares_and_a_scale_in_one_clause",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_the_lead_words_are_not_a_list",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_the_note_of_the_table_before_outranks_a_standing_note",
+    "test/spec/html10k-tables-scale/test_hs_notes.py::test_title_rows_above_the_note_change_nothing",
+    "test/spec/html10k-tables-scale/test_hs_percent.py::test_a_number_of_a_thousand_or_more_is_no_rate",
+    "test/spec/html10k-tables-scale/test_hs_percent.py::test_a_rate_at_the_foot_of_a_column_of_dollars",
+    "test/spec/html10k-tables-scale/test_hs_percent.py::test_a_row_prints_percent_in_its_first_cell_only",
+    "test/spec/html10k-tables-scale/test_hs_percent.py::test_a_true_rate_column_is_untouched",
+    "test/spec/html10k-tables-scale/test_hs_percent.py::test_amounts_beside_a_percent_stay_money",
+    "test/spec/html10k-tables-scale/test_hs_percent.py::test_every_number_of_a_percent_row_is_a_rate",
+    "test/spec/html10k-tables-scale/test_hs_percent.py::test_percent_in_words_in_a_label",
+    "test/spec/html10k-tables-scale/test_hs_percent.py::test_rows_between_two_percent_rows",
+    "test/spec/html10k-tables-scale/test_hs_percent.py::test_the_word_form_in_any_label"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/html10k-tables-scale.md",
+    "sha256": "401ad2d6ca94481bce540b2c8e1eef98eba116336b4a8917dfa465d1c8967abe"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

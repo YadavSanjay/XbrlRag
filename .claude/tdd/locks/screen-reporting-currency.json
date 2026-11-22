@@ -1,0 +1,62 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-04",
+  "criteria": {
+    "C1": [
+      "test/spec/screen-reporting-currency/test_screen_reporting_currency.py::test_point_cases",
+      "test/spec/screen-reporting-currency/test_screen_reporting_currency.py::test_shape_of_the_result_for_any_input"
+    ],
+    "C2": [
+      "test/spec/screen-reporting-currency/test_screen_reporting_currency.py::test_rule_point_cases",
+      "test/spec/screen-reporting-currency/test_screen_reporting_currency.py::test_agrees_with_the_rule_and_partitions_tickers",
+      "test/spec/screen-reporting-currency/test_screen_reporting_currency.py::test_order_repeats_and_earlier_periods_do_not_matter"
+    ],
+    "C3": [
+      "test/spec/screen-reporting-currency/test_screen_reporting_currency.py::test_fy2022_capex_screen_does_not_rank_tsm",
+      "test/spec/screen-reporting-currency/test_screen_reporting_currency.py::test_removing_tsm_twd_ranks_tsm_on_usd",
+      "test/spec/screen-reporting-currency/test_screen_reporting_currency.py::test_screen_equals_the_usd_only_store_without_foreign_filers"
+    ]
+  },
+  "files": {
+    "test/spec/screen-reporting-currency/conftest.py": "835f6c7b064422d4f335ba9d38857a18ceb87ce9b2f546945a29d079866a49f0",
+    "test/spec/screen-reporting-currency/test_screen_reporting_currency.py": "f5d1b36362b53aece183544a777c968acfabd5a06a0fd5b1cef4c74b182aa880"
+  },
+  "id": "screen-reporting-currency",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_screen.py",
+      "module": "retriever.xbrl.xbrl_factstore_screen",
+      "qualname": "select_reporting_currency",
+      "signature": "def select_reporting_currency(rows: Sequence[dict], observations: Mapping[str, Sequence[tuple[str | None, str | None]]]) -> tuple[list[dict], list[dict]]"
+    }
+  ],
+  "nodes": [
+    "test/spec/screen-reporting-currency/test_screen_reporting_currency.py::test_agrees_with_the_rule_and_partitions_tickers",
+    "test/spec/screen-reporting-currency/test_screen_reporting_currency.py::test_fy2022_capex_screen_does_not_rank_tsm",
+    "test/spec/screen-reporting-currency/test_screen_reporting_currency.py::test_order_repeats_and_earlier_periods_do_not_matter",
+    "test/spec/screen-reporting-currency/test_screen_reporting_currency.py::test_point_cases",
+    "test/spec/screen-reporting-currency/test_screen_reporting_currency.py::test_removing_tsm_twd_ranks_tsm_on_usd",
+    "test/spec/screen-reporting-currency/test_screen_reporting_currency.py::test_rule_point_cases",
+    "test/spec/screen-reporting-currency/test_screen_reporting_currency.py::test_screen_equals_the_usd_only_store_without_foreign_filers",
+    "test/spec/screen-reporting-currency/test_screen_reporting_currency.py::test_shape_of_the_result_for_any_input"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/screen-reporting-currency.md",
+    "sha256": "637a179804fd1384d69005636c2cde0dd28a205aabab65fe5d0bd73a82b61e4d"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

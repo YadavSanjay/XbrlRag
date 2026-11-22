@@ -1,0 +1,57 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/stage-llm-output-cap/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-01",
+  "criteria": {
+    "C1": [
+      "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_a_model_without_a_budget_gets_room_for_reasoning[deepseek-flash]",
+      "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_a_model_without_a_budget_gets_room_for_reasoning[deepseek-v4-pro]",
+      "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_a_model_without_a_budget_gets_room_for_reasoning[claude-sonnet-5-5]",
+      "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_a_model_without_a_budget_gets_room_for_reasoning[claude-opus-5-5]",
+      "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_every_arm_takes_the_same_budget"
+    ],
+    "C2": [
+      "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_ceilings_and_own_budgets_hold[gpt-5.6-luna]",
+      "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_ceilings_and_own_budgets_hold[gpt-5.6-terra]",
+      "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_ceilings_and_own_budgets_hold[gpt-5.6-sol]",
+      "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_ceilings_and_own_budgets_hold[gpt-5-mini]",
+      "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_any_model_gets_its_own_limit"
+    ]
+  },
+  "files": {
+    "test/spec/stage-llm-output-cap/test_sloc_budget.py": "a21bbeddfe0df220dba79f2fd95c9e98aa83dcf7371b0ce6cf90dfecda7a2e99"
+  },
+  "id": "stage-llm-output-cap",
+  "interface": [],
+  "nodes": [
+    "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_a_model_without_a_budget_gets_room_for_reasoning[claude-opus-5-5]",
+    "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_a_model_without_a_budget_gets_room_for_reasoning[claude-sonnet-5-5]",
+    "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_a_model_without_a_budget_gets_room_for_reasoning[deepseek-flash]",
+    "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_a_model_without_a_budget_gets_room_for_reasoning[deepseek-v4-pro]",
+    "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_any_model_gets_its_own_limit",
+    "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_ceilings_and_own_budgets_hold[gpt-5-mini]",
+    "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_ceilings_and_own_budgets_hold[gpt-5.6-luna]",
+    "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_ceilings_and_own_budgets_hold[gpt-5.6-sol]",
+    "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_ceilings_and_own_budgets_hold[gpt-5.6-terra]",
+    "test/spec/stage-llm-output-cap/test_sloc_budget.py::test_every_arm_takes_the_same_budget"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/stage-llm-output-cap.md",
+    "sha256": "06f35922819ab776ae3031352050457a1538e513b006ef7a98f1ce07eec09ccd"
+  },
+  "status": "retired",
+  "tool_version": "0.4.1"
+}

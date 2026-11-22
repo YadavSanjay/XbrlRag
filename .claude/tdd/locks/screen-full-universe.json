@@ -1,0 +1,123 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-07",
+  "criteria": {
+    "C1": [
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_every_filer_past_the_fiftieth_is_ranked[flat]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_every_filer_past_the_fiftieth_is_ranked[derived]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_every_filer_past_the_fiftieth_is_ranked[geographic]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_every_filer_past_the_fiftieth_is_ranked[segment]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_ranking_is_the_full_sort_for_any_universe[flat]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_ranking_is_the_full_sort_for_any_universe[derived]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_ranking_is_the_full_sort_for_any_universe[geographic]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_ranking_is_the_full_sort_for_any_universe[segment]"
+    ],
+    "C2": [
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_count_sum_median_over_120_filers[flat]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_count_sum_median_over_120_filers[derived]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_count_sum_median_over_120_filers[geographic]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_count_sum_median_over_120_filers[segment]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_aggregates_match_the_full_universe[flat]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_aggregates_match_the_full_universe[derived]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_aggregates_match_the_full_universe[geographic]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_aggregates_match_the_full_universe[segment]"
+    ],
+    "C3": [
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_top_and_bottom_five_past_the_fiftieth[flat]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_top_and_bottom_five_past_the_fiftieth[derived]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_top_and_bottom_five_past_the_fiftieth[geographic]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_top_and_bottom_five_past_the_fiftieth[segment]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_top_n_is_cut_from_the_full_ranking[flat]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_top_n_is_cut_from_the_full_ranking[derived]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_top_n_is_cut_from_the_full_ranking[geographic]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_top_n_is_cut_from_the_full_ranking[segment]"
+    ],
+    "C4": [
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_reversed_assignment_ranks_the_same_values[flat]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_reversed_assignment_ranks_the_same_values[derived]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_reversed_assignment_ranks_the_same_values[geographic]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_reversed_assignment_ranks_the_same_values[segment]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_permuting_filers_leaves_the_ranked_values[flat]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_permuting_filers_leaves_the_ranked_values[derived]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_permuting_filers_leaves_the_ranked_values[geographic]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_permuting_filers_leaves_the_ranked_values[segment]"
+    ],
+    "C5": [
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_row_limit_caps_after_ranking_and_reports[flat]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_row_limit_caps_after_ranking_and_reports[derived]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_row_limit_caps_after_ranking_and_reports[geographic]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_row_limit_caps_after_ranking_and_reports[segment]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_row_limit_is_an_explicit_post_ranking_cut[flat]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_row_limit_is_an_explicit_post_ranking_cut[derived]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_row_limit_is_an_explicit_post_ranking_cut[geographic]",
+      "test/spec/screen-full-universe/test_screen_full_universe.py::test_row_limit_is_an_explicit_post_ranking_cut[segment]"
+    ]
+  },
+  "files": {
+    "test/spec/screen-full-universe/conftest.py": "861272c80da1395727236a40ea736cb7e216ee59296e0f55e8ba1d427f05416c",
+    "test/spec/screen-full-universe/test_screen_full_universe.py": "ec53cd946e4d0d7310df0eec7937c3f4bb8a444013f3c265ff0a4f2233a32b07"
+  },
+  "id": "screen-full-universe",
+  "interface": [],
+  "nodes": [
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_aggregates_match_the_full_universe[derived]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_aggregates_match_the_full_universe[flat]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_aggregates_match_the_full_universe[geographic]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_aggregates_match_the_full_universe[segment]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_count_sum_median_over_120_filers[derived]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_count_sum_median_over_120_filers[flat]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_count_sum_median_over_120_filers[geographic]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_count_sum_median_over_120_filers[segment]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_every_filer_past_the_fiftieth_is_ranked[derived]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_every_filer_past_the_fiftieth_is_ranked[flat]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_every_filer_past_the_fiftieth_is_ranked[geographic]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_every_filer_past_the_fiftieth_is_ranked[segment]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_permuting_filers_leaves_the_ranked_values[derived]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_permuting_filers_leaves_the_ranked_values[flat]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_permuting_filers_leaves_the_ranked_values[geographic]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_permuting_filers_leaves_the_ranked_values[segment]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_ranking_is_the_full_sort_for_any_universe[derived]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_ranking_is_the_full_sort_for_any_universe[flat]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_ranking_is_the_full_sort_for_any_universe[geographic]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_ranking_is_the_full_sort_for_any_universe[segment]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_reversed_assignment_ranks_the_same_values[derived]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_reversed_assignment_ranks_the_same_values[flat]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_reversed_assignment_ranks_the_same_values[geographic]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_reversed_assignment_ranks_the_same_values[segment]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_row_limit_caps_after_ranking_and_reports[derived]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_row_limit_caps_after_ranking_and_reports[flat]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_row_limit_caps_after_ranking_and_reports[geographic]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_row_limit_caps_after_ranking_and_reports[segment]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_row_limit_is_an_explicit_post_ranking_cut[derived]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_row_limit_is_an_explicit_post_ranking_cut[flat]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_row_limit_is_an_explicit_post_ranking_cut[geographic]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_row_limit_is_an_explicit_post_ranking_cut[segment]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_top_and_bottom_five_past_the_fiftieth[derived]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_top_and_bottom_five_past_the_fiftieth[flat]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_top_and_bottom_five_past_the_fiftieth[geographic]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_top_and_bottom_five_past_the_fiftieth[segment]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_top_n_is_cut_from_the_full_ranking[derived]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_top_n_is_cut_from_the_full_ranking[flat]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_top_n_is_cut_from_the_full_ranking[geographic]",
+    "test/spec/screen-full-universe/test_screen_full_universe.py::test_top_n_is_cut_from_the_full_ranking[segment]"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/screen-full-universe.md",
+    "sha256": "f00ded8135a7affc16d5946b455e177b09c0cce8998303fb3483d814f423e934"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

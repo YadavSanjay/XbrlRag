@@ -1,0 +1,111 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-12",
+  "criteria": {
+    "C1": [
+      "test/spec/verifier-period-evidence/test_c1_lookup_period.py::test_apple_fy2025_current_assets_instant",
+      "test/spec/verifier-period-evidence/test_c1_lookup_period.py::test_duration_keeps_start_and_states_end",
+      "test/spec/verifier-period-evidence/test_c1_lookup_period.py::test_q2_ytd_keeps_fiscal_period_and_ytd",
+      "test/spec/verifier-period-evidence/test_c1_lookup_period.py::test_odd_plan_values_fall_back",
+      "test/spec/verifier-period-evidence/test_c1_lookup_period.py::test_none_only_when_nothing_is_known",
+      "test/spec/verifier-period-evidence/test_c1_lookup_period.py::test_date_objects_are_accepted",
+      "test/spec/verifier-period-evidence/test_c1_lookup_period.py::test_end_is_one_day_before_and_plan_is_untouched"
+    ],
+    "C2": [
+      "test/spec/verifier-period-evidence/test_c2_compute_period.py::test_current_ratio_lists_both_lookups",
+      "test/spec/verifier-period-evidence/test_c2_compute_period.py::test_growth_over_two_years_sorts_fiscal_years",
+      "test/spec/verifier-period-evidence/test_c2_compute_period.py::test_inputs_without_period_are_left_out",
+      "test/spec/verifier-period-evidence/test_c2_compute_period.py::test_bool_fiscal_year_is_listed_but_not_a_year",
+      "test/spec/verifier-period-evidence/test_c2_compute_period.py::test_compute_over_compute_is_flattened_and_deduplicated",
+      "test/spec/verifier-period-evidence/test_c2_compute_period.py::test_flattening_is_recursive",
+      "test/spec/verifier-period-evidence/test_c2_compute_period.py::test_repeats_and_permutations"
+    ],
+    "C3": [
+      "test/spec/verifier-period-evidence/test_c3_aggregate_period.py::test_semiconductor_median_fiscal_2023",
+      "test/spec/verifier-period-evidence/test_c3_aggregate_period.py::test_fiscal_year_from_rows_without_disclosure",
+      "test/spec/verifier-period-evidence/test_c3_aggregate_period.py::test_bool_disclosure_year_falls_back_to_rows",
+      "test/spec/verifier-period-evidence/test_c3_aggregate_period.py::test_mixed_row_years_give_no_fiscal_year",
+      "test/spec/verifier-period-evidence/test_c3_aggregate_period.py::test_missing_period_ends_and_non_screens",
+      "test/spec/verifier-period-evidence/test_c3_aggregate_period.py::test_result_never_aliases_its_inputs"
+    ],
+    "C4": [
+      "test/spec/verifier-period-evidence/test_c4_llm_sees_period.py::test_each_value_step_shows_its_period_and_verdicts_apply",
+      "test/spec/verifier-period-evidence/test_c4_llm_sees_period.py::test_other_keys_are_unchanged",
+      "test/spec/verifier-period-evidence/test_c4_llm_sees_period.py::test_a_step_without_a_mapping_period_shows_none",
+      "test/spec/verifier-period-evidence/test_c4_llm_sees_period.py::test_pairs_follow_the_cited_steps_only"
+    ]
+  },
+  "files": {
+    "test/spec/verifier-period-evidence/conftest.py": "6286acd94bc4061864df019fb2452a776a094283a365cb62555e3bbe31185374",
+    "test/spec/verifier-period-evidence/test_c1_lookup_period.py": "6017f56783b11d22c90b3cb00e99f765a9354bffde1af23aa63d6f4f3e809817",
+    "test/spec/verifier-period-evidence/test_c2_compute_period.py": "ceece5fe30ad397da3858517d142a8a65e4638c5d915e23ec73fce4f232d66c9",
+    "test/spec/verifier-period-evidence/test_c3_aggregate_period.py": "2bc8d0ae32db7edf10ae80ae6c732c54e74151a8fafc6bde39a940dd44d4bf2f",
+    "test/spec/verifier-period-evidence/test_c4_llm_sees_period.py": "b0ae8745fa0ec06b9ca56b52a23a5c51d303082e945237d5000db99b53fb6e20"
+  },
+  "id": "verifier-period-evidence",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/step_period.py",
+      "module": "retriever.xbrl.step_period",
+      "qualname": "lookup_period",
+      "signature": "def lookup_period(plan_step: Mapping[str, Any], period_start: dt.date | str | None, period_end: dt.date | str | None) -> dict[str, Any] | None"
+    },
+    {
+      "file": "src/retriever/xbrl/step_period.py",
+      "module": "retriever.xbrl.step_period",
+      "qualname": "compute_period",
+      "signature": "def compute_period(inputs: Sequence[tuple[str, Mapping[str, Any] | None]]) -> dict[str, Any] | None"
+    },
+    {
+      "file": "src/retriever/xbrl/step_period.py",
+      "module": "retriever.xbrl.step_period",
+      "qualname": "aggregate_period",
+      "signature": "def aggregate_period(screen_step: Mapping[str, Any] | None, aggregate: Mapping[str, Any]) -> dict[str, Any] | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/verifier-period-evidence/test_c1_lookup_period.py::test_apple_fy2025_current_assets_instant",
+    "test/spec/verifier-period-evidence/test_c1_lookup_period.py::test_date_objects_are_accepted",
+    "test/spec/verifier-period-evidence/test_c1_lookup_period.py::test_duration_keeps_start_and_states_end",
+    "test/spec/verifier-period-evidence/test_c1_lookup_period.py::test_end_is_one_day_before_and_plan_is_untouched",
+    "test/spec/verifier-period-evidence/test_c1_lookup_period.py::test_none_only_when_nothing_is_known",
+    "test/spec/verifier-period-evidence/test_c1_lookup_period.py::test_odd_plan_values_fall_back",
+    "test/spec/verifier-period-evidence/test_c1_lookup_period.py::test_q2_ytd_keeps_fiscal_period_and_ytd",
+    "test/spec/verifier-period-evidence/test_c2_compute_period.py::test_bool_fiscal_year_is_listed_but_not_a_year",
+    "test/spec/verifier-period-evidence/test_c2_compute_period.py::test_compute_over_compute_is_flattened_and_deduplicated",
+    "test/spec/verifier-period-evidence/test_c2_compute_period.py::test_current_ratio_lists_both_lookups",
+    "test/spec/verifier-period-evidence/test_c2_compute_period.py::test_flattening_is_recursive",
+    "test/spec/verifier-period-evidence/test_c2_compute_period.py::test_growth_over_two_years_sorts_fiscal_years",
+    "test/spec/verifier-period-evidence/test_c2_compute_period.py::test_inputs_without_period_are_left_out",
+    "test/spec/verifier-period-evidence/test_c2_compute_period.py::test_repeats_and_permutations",
+    "test/spec/verifier-period-evidence/test_c3_aggregate_period.py::test_bool_disclosure_year_falls_back_to_rows",
+    "test/spec/verifier-period-evidence/test_c3_aggregate_period.py::test_fiscal_year_from_rows_without_disclosure",
+    "test/spec/verifier-period-evidence/test_c3_aggregate_period.py::test_missing_period_ends_and_non_screens",
+    "test/spec/verifier-period-evidence/test_c3_aggregate_period.py::test_mixed_row_years_give_no_fiscal_year",
+    "test/spec/verifier-period-evidence/test_c3_aggregate_period.py::test_result_never_aliases_its_inputs",
+    "test/spec/verifier-period-evidence/test_c3_aggregate_period.py::test_semiconductor_median_fiscal_2023",
+    "test/spec/verifier-period-evidence/test_c4_llm_sees_period.py::test_a_step_without_a_mapping_period_shows_none",
+    "test/spec/verifier-period-evidence/test_c4_llm_sees_period.py::test_each_value_step_shows_its_period_and_verdicts_apply",
+    "test/spec/verifier-period-evidence/test_c4_llm_sees_period.py::test_other_keys_are_unchanged",
+    "test/spec/verifier-period-evidence/test_c4_llm_sees_period.py::test_pairs_follow_the_cited_steps_only"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/verifier-period-evidence.md",
+    "sha256": "680bf13caabb6e9712d2298da5e8d217a86dda6f39f618db13752ac78e3f37e6"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

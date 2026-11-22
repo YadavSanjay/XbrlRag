@@ -1,0 +1,85 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-12",
+  "criteria": {
+    "C1": [
+      "test/spec/regrade-raw-values/test_rrv_c1_raw_values_stored.py::test_the_real_answer_stores_the_values_its_text_states",
+      "test/spec/regrade-raw-values/test_rrv_c1_raw_values_stored.py::test_a_declined_listing_keeps_the_row_values_raw_and_drops_them_graded",
+      "test/spec/regrade-raw-values/test_rrv_c1_raw_values_stored.py::test_an_error_grade_stores_raw_values_too",
+      "test/spec/regrade-raw-values/test_rrv_c1_raw_values_stored.py::test_raw_values_are_a_copy_of_the_received_values"
+    ],
+    "C2": [
+      "test/spec/regrade-raw-values/test_rrv_c2_regrade_values.py::test_a_stored_raw_list_wins_over_the_text_for_every_system",
+      "test/spec/regrade-raw-values/test_rrv_c2_regrade_values.py::test_xbrlrag_arms_rebuild_with_extract_stated_numbers",
+      "test/spec/regrade-raw-values/test_rrv_c2_regrade_values.py::test_baseline_arms_rebuild_with_parse_structured_answer",
+      "test/spec/regrade-raw-values/test_rrv_c2_regrade_values.py::test_other_systems_and_empty_text_return_the_stored_values",
+      "test/spec/regrade-raw-values/test_rrv_c2_regrade_values.py::test_the_real_filtered_payload_rebuilds_the_median",
+      "test/spec/regrade-raw-values/test_rrv_c2_regrade_values.py::test_the_rebuild_is_the_systems_own_parser",
+      "test/spec/regrade-raw-values/test_rrv_c2_regrade_values.py::test_produced_is_never_mutated"
+    ],
+    "C3": [
+      "test/spec/regrade-raw-values/test_rrv_c3_answer_for_regrade.py::test_the_real_stored_payload_regrades_correct_from_its_text",
+      "test/spec/regrade-raw-values/test_rrv_c3_answer_for_regrade.py::test_every_other_field_is_answer_from_payloads",
+      "test/spec/regrade-raw-values/test_rrv_c3_answer_for_regrade.py::test_regrading_a_grades_own_produced_reproduces_it",
+      "test/spec/regrade-raw-values/test_rrv_c3_answer_for_regrade.py::test_answers_no_filter_touches_grade_alike"
+    ]
+  },
+  "files": {
+    "test/spec/regrade-raw-values/conftest.py": "a51a0ca3b2a95e492c6bd93a695263447d2a06bb8c0b1e59159dc7938b299a1f",
+    "test/spec/regrade-raw-values/fixtures/int_bd7ee7bd1bce_0231b50a.json": "4fd544a644cd3fabf3aff84a5753d4165702aece9102b1cc2a34ef03b91c5324",
+    "test/spec/regrade-raw-values/test_rrv_c1_raw_values_stored.py": "23f1cf388f8b2a7fdaf71862e605552c2edba9a86a3478a34855e16006491a2a",
+    "test/spec/regrade-raw-values/test_rrv_c2_regrade_values.py": "f46d28ee0ac6d1f474c76cf486f6038b3f8c42a1bf7f2973df40c719ea13bda1",
+    "test/spec/regrade-raw-values/test_rrv_c3_answer_for_regrade.py": "88e388958e08af9e42920b07b9d659d8f2b55e366410d0240b22371fca4cadc1"
+  },
+  "id": "regrade-raw-values",
+  "interface": [
+    {
+      "file": "src/eval/core/regrade.py",
+      "module": "eval.core.regrade",
+      "qualname": "regrade_values",
+      "signature": "def regrade_values(produced: Mapping[str, Any], system: str | None) -> list[float]"
+    },
+    {
+      "file": "src/eval/core/regrade.py",
+      "module": "eval.core.regrade",
+      "qualname": "answer_for_regrade",
+      "signature": "def answer_for_regrade(produced: Mapping[str, Any], system: str | None) -> SystemAnswer"
+    }
+  ],
+  "nodes": [
+    "test/spec/regrade-raw-values/test_rrv_c1_raw_values_stored.py::test_a_declined_listing_keeps_the_row_values_raw_and_drops_them_graded",
+    "test/spec/regrade-raw-values/test_rrv_c1_raw_values_stored.py::test_an_error_grade_stores_raw_values_too",
+    "test/spec/regrade-raw-values/test_rrv_c1_raw_values_stored.py::test_raw_values_are_a_copy_of_the_received_values",
+    "test/spec/regrade-raw-values/test_rrv_c1_raw_values_stored.py::test_the_real_answer_stores_the_values_its_text_states",
+    "test/spec/regrade-raw-values/test_rrv_c2_regrade_values.py::test_a_stored_raw_list_wins_over_the_text_for_every_system",
+    "test/spec/regrade-raw-values/test_rrv_c2_regrade_values.py::test_baseline_arms_rebuild_with_parse_structured_answer",
+    "test/spec/regrade-raw-values/test_rrv_c2_regrade_values.py::test_other_systems_and_empty_text_return_the_stored_values",
+    "test/spec/regrade-raw-values/test_rrv_c2_regrade_values.py::test_produced_is_never_mutated",
+    "test/spec/regrade-raw-values/test_rrv_c2_regrade_values.py::test_the_real_filtered_payload_rebuilds_the_median",
+    "test/spec/regrade-raw-values/test_rrv_c2_regrade_values.py::test_the_rebuild_is_the_systems_own_parser",
+    "test/spec/regrade-raw-values/test_rrv_c2_regrade_values.py::test_xbrlrag_arms_rebuild_with_extract_stated_numbers",
+    "test/spec/regrade-raw-values/test_rrv_c3_answer_for_regrade.py::test_answers_no_filter_touches_grade_alike",
+    "test/spec/regrade-raw-values/test_rrv_c3_answer_for_regrade.py::test_every_other_field_is_answer_from_payloads",
+    "test/spec/regrade-raw-values/test_rrv_c3_answer_for_regrade.py::test_regrading_a_grades_own_produced_reproduces_it",
+    "test/spec/regrade-raw-values/test_rrv_c3_answer_for_regrade.py::test_the_real_stored_payload_regrades_correct_from_its_text"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/regrade-raw-values.md",
+    "sha256": "72af5dcfbca0b5f93bce2950f9872deefb7339b9fbc658686f27764e972df84a"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

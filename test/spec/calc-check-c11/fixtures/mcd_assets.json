@@ -1,0 +1,472 @@
+{
+ "case": "mcd_assets",
+ "accession_no": "0000063908-25-000012",
+ "filing": "McDonald's 10-K FY2024",
+ "local_source": "data/storage/sec_edgar/MCD/2024/10-K/mcd-20241231.htm",
+ "extracted": "xbrl_db (read-only), 2026-11-07: network/relationship arcs of one link role and parent; every fact of those concepts in the filing (all contexts)",
+ "dates": "xbrl_db stores an instant and a duration end as the next day (end-of-day convention): 2025-01-01 is the 2024-12-31 balance sheet date",
+ "arelle_c11r": {
+  "version": "Arelle 2.41.0, arelleCmdLine --calc c11r --internetConnectivity offline, run 2026-11-07 on local_source",
+  "inconsistent_in_this_tree": [
+   {
+    "context": "c-6",
+    "period_start": null,
+    "period_end": "2025-01-01",
+    "reported": [
+     "55181950000",
+     "55182050000"
+    ],
+    "computed": [
+     "55182800000",
+     "55183200000"
+    ]
+   },
+   {
+    "context": "c-7",
+    "period_start": null,
+    "period_end": "2024-01-01",
+    "reported": [
+     "56146950000",
+     "56147050000"
+    ],
+    "computed": [
+     "56145350000",
+     "56146650000"
+    ]
+   }
+  ]
+ },
+ "arcs": [
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:AssetsCurrent",
+   "weight": "1.0"
+  },
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://www.mcdonalds.com/20241231:TotalOtherAssets",
+   "weight": "1.0"
+  },
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://www.mcdonalds.com/20241231:LeaseRightOfUseAssetNet",
+   "weight": "1.0"
+  },
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:PropertyPlantAndEquipmentNet",
+   "weight": "1.0"
+  }
+ ],
+ "facts": [
+  {
+   "fact_id": 216898,
+   "concept": "http://fasb.org/us-gaap/2024:Assets",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2023-01-01",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.mcdonalds.com/20241231:USMarketMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "21793000000",
+   "decimals": -6,
+   "xml_id": "f-703",
+   "context": "c-154"
+  },
+  {
+   "fact_id": 216901,
+   "concept": "http://fasb.org/us-gaap/2024:Assets",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2023-01-01",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.mcdonalds.com/20241231:InternationalOperatedMarketsMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "21979000000",
+   "decimals": -6,
+   "xml_id": "f-706",
+   "context": "c-155"
+  },
+  {
+   "fact_id": 216904,
+   "concept": "http://fasb.org/us-gaap/2024:Assets",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2023-01-01",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.mcdonalds.com/20241231:InternationalDevelopmentalLicensedMarketsandCorporateMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "6663000000",
+   "decimals": -6,
+   "xml_id": "f-709",
+   "context": "c-156"
+  },
+  {
+   "fact_id": 216907,
+   "concept": "http://fasb.org/us-gaap/2024:Assets",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2023-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "50436000000",
+   "decimals": -6,
+   "xml_id": "f-712",
+   "context": "c-8"
+  },
+  {
+   "fact_id": 216380,
+   "concept": "http://fasb.org/us-gaap/2024:Assets",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2024-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "56147000000",
+   "decimals": -5,
+   "xml_id": "f-185",
+   "context": "c-7"
+  },
+  {
+   "fact_id": 216897,
+   "concept": "http://fasb.org/us-gaap/2024:Assets",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2024-01-01",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.mcdonalds.com/20241231:USMarketMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "22477000000",
+   "decimals": -6,
+   "xml_id": "f-702",
+   "context": "c-78"
+  },
+  {
+   "fact_id": 216900,
+   "concept": "http://fasb.org/us-gaap/2024:Assets",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2024-01-01",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.mcdonalds.com/20241231:InternationalOperatedMarketsMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "23947000000",
+   "decimals": -6,
+   "xml_id": "f-705",
+   "context": "c-79"
+  },
+  {
+   "fact_id": 216903,
+   "concept": "http://fasb.org/us-gaap/2024:Assets",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2024-01-01",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.mcdonalds.com/20241231:InternationalDevelopmentalLicensedMarketsandCorporateMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "9723000000",
+   "decimals": -6,
+   "xml_id": "f-708",
+   "context": "c-80"
+  },
+  {
+   "fact_id": 216906,
+   "concept": "http://fasb.org/us-gaap/2024:Assets",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2024-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "56147000000",
+   "decimals": -6,
+   "xml_id": "f-711",
+   "context": "c-7"
+  },
+  {
+   "fact_id": 216379,
+   "concept": "http://fasb.org/us-gaap/2024:Assets",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2025-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "55182000000",
+   "decimals": -5,
+   "xml_id": "f-184",
+   "context": "c-6"
+  },
+  {
+   "fact_id": 216896,
+   "concept": "http://fasb.org/us-gaap/2024:Assets",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2025-01-01",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.mcdonalds.com/20241231:USMarketMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "22547000000",
+   "decimals": -6,
+   "xml_id": "f-701",
+   "context": "c-84"
+  },
+  {
+   "fact_id": 216899,
+   "concept": "http://fasb.org/us-gaap/2024:Assets",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2025-01-01",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.mcdonalds.com/20241231:InternationalOperatedMarketsMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "23491000000",
+   "decimals": -6,
+   "xml_id": "f-704",
+   "context": "c-85"
+  },
+  {
+   "fact_id": 216902,
+   "concept": "http://fasb.org/us-gaap/2024:Assets",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2025-01-01",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.mcdonalds.com/20241231:InternationalDevelopmentalLicensedMarketsandCorporateMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "9143000000",
+   "decimals": -6,
+   "xml_id": "f-707",
+   "context": "c-86"
+  },
+  {
+   "fact_id": 216905,
+   "concept": "http://fasb.org/us-gaap/2024:Assets",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2025-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "55182000000",
+   "decimals": -6,
+   "xml_id": "f-710",
+   "context": "c-6"
+  },
+  {
+   "fact_id": 216362,
+   "concept": "http://fasb.org/us-gaap/2024:AssetsCurrent",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2024-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "7986000000",
+   "decimals": -5,
+   "xml_id": "f-167",
+   "context": "c-7"
+  },
+  {
+   "fact_id": 216361,
+   "concept": "http://fasb.org/us-gaap/2024:AssetsCurrent",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2025-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "4599000000",
+   "decimals": -5,
+   "xml_id": "f-166",
+   "context": "c-6"
+  },
+  {
+   "fact_id": 216378,
+   "concept": "http://fasb.org/us-gaap/2024:PropertyPlantAndEquipmentNet",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2024-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "24908000000",
+   "decimals": -5,
+   "xml_id": "f-183",
+   "context": "c-7"
+  },
+  {
+   "fact_id": 216953,
+   "concept": "http://fasb.org/us-gaap/2024:PropertyPlantAndEquipmentNet",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2024-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "24908000000",
+   "decimals": -5,
+   "xml_id": "f-758",
+   "context": "c-7"
+  },
+  {
+   "fact_id": 216377,
+   "concept": "http://fasb.org/us-gaap/2024:PropertyPlantAndEquipmentNet",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2025-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "25295000000",
+   "decimals": -5,
+   "xml_id": "f-182",
+   "context": "c-6"
+  },
+  {
+   "fact_id": 216952,
+   "concept": "http://fasb.org/us-gaap/2024:PropertyPlantAndEquipmentNet",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2025-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "25295000000",
+   "decimals": -5,
+   "xml_id": "f-757",
+   "context": "c-6"
+  },
+  {
+   "fact_id": 216994,
+   "concept": "http://fasb.org/us-gaap/2024:PropertyPlantAndEquipmentNet",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2025-01-01",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2024:FiniteLivedIntangibleAssetsByMajorClassAxis",
+     "http://fasb.org/us-gaap/2024:FranchiseRightsMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "20600000000",
+   "decimals": -8,
+   "xml_id": "f-799",
+   "context": "c-159"
+  },
+  {
+   "fact_id": 216372,
+   "concept": "http://www.mcdonalds.com/20241231:LeaseRightOfUseAssetNet",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2024-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "13514000000",
+   "decimals": -6,
+   "xml_id": "f-177",
+   "context": "c-7"
+  },
+  {
+   "fact_id": 217027,
+   "concept": "http://www.mcdonalds.com/20241231:LeaseRightOfUseAssetNet",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2024-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "13514000000",
+   "decimals": -6,
+   "xml_id": "f-832",
+   "context": "c-7"
+  },
+  {
+   "fact_id": 216371,
+   "concept": "http://www.mcdonalds.com/20241231:LeaseRightOfUseAssetNet",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2025-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "13339000000",
+   "decimals": -5,
+   "xml_id": "f-176",
+   "context": "c-6"
+  },
+  {
+   "fact_id": 217018,
+   "concept": "http://www.mcdonalds.com/20241231:LeaseRightOfUseAssetNet",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2025-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "13339000000",
+   "decimals": -6,
+   "xml_id": "f-823",
+   "context": "c-6"
+  },
+  {
+   "fact_id": 216370,
+   "concept": "http://www.mcdonalds.com/20241231:TotalOtherAssets",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2024-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "9738000000",
+   "decimals": -5,
+   "xml_id": "f-175",
+   "context": "c-7"
+  },
+  {
+   "fact_id": 216369,
+   "concept": "http://www.mcdonalds.com/20241231:TotalOtherAssets",
+   "entity": "0000063908",
+   "period_start": null,
+   "period_end": "2025-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "11950000000",
+   "decimals": -5,
+   "xml_id": "f-174",
+   "context": "c-6"
+  }
+ ]
+}

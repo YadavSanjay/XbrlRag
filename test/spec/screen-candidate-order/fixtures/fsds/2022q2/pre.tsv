@@ -1,0 +1,5 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0001564590-22-023675	2	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2021	Cash and cash equivalents	0
+0001564590-22-023675	2	4	BS	0	H	AvailableForSaleSecuritiesDebtSecuritiesCurrent	us-gaap/2021	Marketable securities	0
+0001564590-22-023675	2	9	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2021	Property, plant and equipment, net	0
+0001564590-22-023675	8	28	CF	0	H	ProceedsFromDebtNetOfIssuanceCosts	us-gaap/2021	Proceeds from borrowings, net of issuance costs	0

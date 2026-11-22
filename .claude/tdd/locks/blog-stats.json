@@ -1,0 +1,120 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/blog-stats/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-28",
+  "criteria": {
+    "C1": [
+      "test/spec/blog-stats/test_blog_stats.py::test_wilson_matches_newcombe[81-263-0.2553-0.3662]",
+      "test/spec/blog-stats/test_blog_stats.py::test_wilson_matches_newcombe[15-148-0.0624-0.1605]",
+      "test/spec/blog-stats/test_blog_stats.py::test_wilson_matches_newcombe[0-20-0.0-0.1611]",
+      "test/spec/blog-stats/test_blog_stats.py::test_wilson_matches_newcombe[1-29-0.0061-0.1718]",
+      "test/spec/blog-stats/test_blog_stats.py::test_wilson_matches_closed_form"
+    ],
+    "C2": [
+      "test/spec/blog-stats/test_blog_stats.py::test_wilson_point_bounds_and_symmetry",
+      "test/spec/blog-stats/test_blog_stats.py::test_wilson_invariants",
+      "test/spec/blog-stats/test_blog_stats.py::test_wilson_narrows_with_more_trials",
+      "test/spec/blog-stats/test_blog_stats.py::test_wilson_rejects_invalid[0-0]",
+      "test/spec/blog-stats/test_blog_stats.py::test_wilson_rejects_invalid[1-0]",
+      "test/spec/blog-stats/test_blog_stats.py::test_wilson_rejects_invalid[-1-5]",
+      "test/spec/blog-stats/test_blog_stats.py::test_wilson_rejects_invalid[6-5]"
+    ],
+    "C3": [
+      "test/spec/blog-stats/test_blog_stats.py::test_majority_point_case",
+      "test/spec/blog-stats/test_blog_stats.py::test_majority_single_run_is_unchanged",
+      "test/spec/blog-stats/test_blog_stats.py::test_majority_matches_pass_count"
+    ],
+    "C4": [
+      "test/spec/blog-stats/test_blog_stats.py::test_majority_order_and_negation",
+      "test/spec/blog-stats/test_blog_stats.py::test_majority_rejects_bad_runs[runs0]",
+      "test/spec/blog-stats/test_blog_stats.py::test_majority_rejects_bad_runs[runs1]",
+      "test/spec/blog-stats/test_blog_stats.py::test_majority_rejects_bad_runs[runs2]",
+      "test/spec/blog-stats/test_blog_stats.py::test_majority_rejects_bad_runs[runs3]"
+    ],
+    "C5": [
+      "test/spec/blog-stats/test_blog_stats.py::test_mcnemar_point_cases[3-1-6-2-0.125]",
+      "test/spec/blog-stats/test_blog_stats.py::test_mcnemar_point_cases[0-0-5-0-0.0625]",
+      "test/spec/blog-stats/test_blog_stats.py::test_mcnemar_point_cases[4-3-3-1-1.0]",
+      "test/spec/blog-stats/test_blog_stats.py::test_mcnemar_point_cases[5-0-0-5-1.0]",
+      "test/spec/blog-stats/test_blog_stats.py::test_mcnemar_counts_only_shared_cases",
+      "test/spec/blog-stats/test_blog_stats.py::test_mcnemar_matches_binomial_definition"
+    ],
+    "C6": [
+      "test/spec/blog-stats/test_blog_stats.py::test_mcnemar_invariants",
+      "test/spec/blog-stats/test_blog_stats.py::test_mcnemar_rejects_no_shared_case"
+    ]
+  },
+  "files": {
+    "test/spec/blog-stats/test_blog_stats.py": "8f1df43f8e9059ab04c88e10e5a4bc68a97503b2804061be05ae24dac978ec94"
+  },
+  "id": "blog-stats",
+  "interface": [
+    {
+      "file": "src/eval/core/stats.py",
+      "module": "eval.core.stats",
+      "qualname": "wilson_interval",
+      "signature": "def wilson_interval(k: int, n: int) -> tuple[float, float]"
+    },
+    {
+      "file": "src/eval/core/stats.py",
+      "module": "eval.core.stats",
+      "qualname": "majority_outcomes",
+      "signature": "def majority_outcomes(runs: Sequence[Mapping[str, bool]]) -> dict[str, bool]"
+    },
+    {
+      "file": "src/eval/core/stats.py",
+      "module": "eval.core.stats",
+      "qualname": "mcnemar_exact",
+      "signature": "def mcnemar_exact(a: Mapping[str, bool], b: Mapping[str, bool]) -> dict[str, Any]"
+    }
+  ],
+  "nodes": [
+    "test/spec/blog-stats/test_blog_stats.py::test_majority_matches_pass_count",
+    "test/spec/blog-stats/test_blog_stats.py::test_majority_order_and_negation",
+    "test/spec/blog-stats/test_blog_stats.py::test_majority_point_case",
+    "test/spec/blog-stats/test_blog_stats.py::test_majority_rejects_bad_runs[runs0]",
+    "test/spec/blog-stats/test_blog_stats.py::test_majority_rejects_bad_runs[runs1]",
+    "test/spec/blog-stats/test_blog_stats.py::test_majority_rejects_bad_runs[runs2]",
+    "test/spec/blog-stats/test_blog_stats.py::test_majority_rejects_bad_runs[runs3]",
+    "test/spec/blog-stats/test_blog_stats.py::test_majority_single_run_is_unchanged",
+    "test/spec/blog-stats/test_blog_stats.py::test_mcnemar_counts_only_shared_cases",
+    "test/spec/blog-stats/test_blog_stats.py::test_mcnemar_invariants",
+    "test/spec/blog-stats/test_blog_stats.py::test_mcnemar_matches_binomial_definition",
+    "test/spec/blog-stats/test_blog_stats.py::test_mcnemar_point_cases[0-0-5-0-0.0625]",
+    "test/spec/blog-stats/test_blog_stats.py::test_mcnemar_point_cases[3-1-6-2-0.125]",
+    "test/spec/blog-stats/test_blog_stats.py::test_mcnemar_point_cases[4-3-3-1-1.0]",
+    "test/spec/blog-stats/test_blog_stats.py::test_mcnemar_point_cases[5-0-0-5-1.0]",
+    "test/spec/blog-stats/test_blog_stats.py::test_mcnemar_rejects_no_shared_case",
+    "test/spec/blog-stats/test_blog_stats.py::test_wilson_invariants",
+    "test/spec/blog-stats/test_blog_stats.py::test_wilson_matches_closed_form",
+    "test/spec/blog-stats/test_blog_stats.py::test_wilson_matches_newcombe[0-20-0.0-0.1611]",
+    "test/spec/blog-stats/test_blog_stats.py::test_wilson_matches_newcombe[1-29-0.0061-0.1718]",
+    "test/spec/blog-stats/test_blog_stats.py::test_wilson_matches_newcombe[15-148-0.0624-0.1605]",
+    "test/spec/blog-stats/test_blog_stats.py::test_wilson_matches_newcombe[81-263-0.2553-0.3662]",
+    "test/spec/blog-stats/test_blog_stats.py::test_wilson_narrows_with_more_trials",
+    "test/spec/blog-stats/test_blog_stats.py::test_wilson_point_bounds_and_symmetry",
+    "test/spec/blog-stats/test_blog_stats.py::test_wilson_rejects_invalid[-1-5]",
+    "test/spec/blog-stats/test_blog_stats.py::test_wilson_rejects_invalid[0-0]",
+    "test/spec/blog-stats/test_blog_stats.py::test_wilson_rejects_invalid[1-0]",
+    "test/spec/blog-stats/test_blog_stats.py::test_wilson_rejects_invalid[6-5]"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/blog-stats.md",
+    "sha256": "b8da68fd89469c1486cc3b229308ef17be5ea6d5961aae6bfe169524fae5c992"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

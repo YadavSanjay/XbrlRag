@@ -1,0 +1,61 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/rerank-service-name/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-01",
+  "criteria": {
+    "C1": [
+      "test/spec/rerank-service-name/test_rsn_payload.py::test_the_full_name_is_translated[jinaai/jina-reranker-v3-jina]",
+      "test/spec/rerank-service-name/test_rsn_payload.py::test_the_full_name_is_translated[BAAI/bge-reranker-v2-m3-bge]",
+      "test/spec/rerank-service-name/test_rsn_payload.py::test_any_payload_keeps_its_text"
+    ],
+    "C2": [
+      "test/spec/rerank-service-name/test_rsn_payload.py::test_other_names_go_as_given[jina]",
+      "test/spec/rerank-service-name/test_rsn_payload.py::test_other_names_go_as_given[bge]",
+      "test/spec/rerank-service-name/test_rsn_payload.py::test_other_names_go_as_given[not-a-reranker]",
+      "test/spec/rerank-service-name/test_rsn_payload.py::test_other_names_go_as_given[JINA]",
+      "test/spec/rerank-service-name/test_rsn_payload.py::test_no_model_means_no_field",
+      "test/spec/rerank-service-name/test_rsn_payload.py::test_the_attribute_keeps_the_given_name[jinaai/jina-reranker-v3]",
+      "test/spec/rerank-service-name/test_rsn_payload.py::test_the_attribute_keeps_the_given_name[BAAI/bge-reranker-v2-m3]",
+      "test/spec/rerank-service-name/test_rsn_payload.py::test_the_attribute_keeps_the_given_name[jina]",
+      "test/spec/rerank-service-name/test_rsn_payload.py::test_any_other_name_is_sent_as_given"
+    ]
+  },
+  "files": {
+    "test/spec/rerank-service-name/test_rsn_payload.py": "54f7c74713bd42dc212a69a828f84d334581e44643345478cf4f071960cbd058"
+  },
+  "id": "rerank-service-name",
+  "interface": [],
+  "nodes": [
+    "test/spec/rerank-service-name/test_rsn_payload.py::test_any_other_name_is_sent_as_given",
+    "test/spec/rerank-service-name/test_rsn_payload.py::test_any_payload_keeps_its_text",
+    "test/spec/rerank-service-name/test_rsn_payload.py::test_no_model_means_no_field",
+    "test/spec/rerank-service-name/test_rsn_payload.py::test_other_names_go_as_given[JINA]",
+    "test/spec/rerank-service-name/test_rsn_payload.py::test_other_names_go_as_given[bge]",
+    "test/spec/rerank-service-name/test_rsn_payload.py::test_other_names_go_as_given[jina]",
+    "test/spec/rerank-service-name/test_rsn_payload.py::test_other_names_go_as_given[not-a-reranker]",
+    "test/spec/rerank-service-name/test_rsn_payload.py::test_the_attribute_keeps_the_given_name[BAAI/bge-reranker-v2-m3]",
+    "test/spec/rerank-service-name/test_rsn_payload.py::test_the_attribute_keeps_the_given_name[jina]",
+    "test/spec/rerank-service-name/test_rsn_payload.py::test_the_attribute_keeps_the_given_name[jinaai/jina-reranker-v3]",
+    "test/spec/rerank-service-name/test_rsn_payload.py::test_the_full_name_is_translated[BAAI/bge-reranker-v2-m3-bge]",
+    "test/spec/rerank-service-name/test_rsn_payload.py::test_the_full_name_is_translated[jinaai/jina-reranker-v3-jina]"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/rerank-service-name.md",
+    "sha256": "ede6b3cbaad8d4677ad26188c40da40f66bc7e4b0bc62224cf5e0bbd546325f7"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

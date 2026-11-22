@@ -1,0 +1,633 @@
+{
+ "taxonomy": "IFRS Accounting Standards Taxonomy 2024-03-27",
+ "sources": {
+  "lab_full_ifrs-en_2024-03-27.xml": {
+   "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/labels/lab_full_ifrs-en_2024-03-27.xml",
+   "sha256": "c43bb860e64d7a9fbb9995c34c7926be80b213dedcef17c11620c006dbe05ae1"
+  },
+  "doc_full_ifrs-en_2024-03-27.xml": {
+   "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/labels/doc_full_ifrs-en_2024-03-27.xml",
+   "sha256": "a825ded2c3daccd523e54d0272c6f42da13da449668127dbf235b82bd5ba3d6b"
+  },
+  "full_ifrs-cor_2024-03-27.xsd": {
+   "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/full_ifrs-cor_2024-03-27.xsd",
+   "sha256": "50f853021fd4268e4944ef01bc21aad84cb5f8e69d85fcb2b0ceec3951fe384c"
+  }
+ },
+ "listed": {
+  "Borrowings": {
+   "label": "Borrowings",
+   "documentation": "The amount of outstanding funds that the entity is obligated to repay.",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "ShorttermBorrowings": {
+   "label": "Current borrowings",
+   "documentation": "The amount of current borrowings. [Refer: Borrowings]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings": {
+   "label": "Current borrowings and current portion of non-current borrowings",
+   "documentation": "The amount of current borrowings and current portion of non-current borrowings. [Refer: Borrowings]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "CurrentPortionOfLongtermBorrowings": {
+   "label": "Current portion of non-current borrowings",
+   "documentation": "The current portion of non-current borrowings. [Refer: Borrowings]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "LongtermBorrowings": {
+   "label": "Non-current portion of non-current borrowings",
+   "documentation": "The non-current portion of non-current borrowings. [Refer: Borrowings]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "OtherBorrowings": {
+   "label": "Other borrowings",
+   "documentation": "The amount of borrowings that the entity does not separately disclose in the same statement or note. [Refer: Borrowings]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "OtherCurrentBorrowingsAndCurrentPortionOfOtherNoncurrentBorrowings": {
+   "label": "Other current borrowings and current portion of other non-current borrowings",
+   "documentation": "The amount of current other borrowings and the current portion of non-current other borrowings. [Refer: Other borrowings]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "NoncurrentPortionOfOtherNoncurrentBorrowings": {
+   "label": "Non-current portion of other non-current borrowings",
+   "documentation": "The non-current portion of non-current other borrowings. [Refer: Other borrowings]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "LoansReceived": {
+   "label": "Loans received",
+   "documentation": "The amount of loans received.",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "CurrentLoansReceivedAndCurrentPortionOfNoncurrentLoansReceived": {
+   "label": "Current loans received and current portion of non-current loans received",
+   "documentation": "The amount of current loans received and the current portion of non-current loans received. [Refer: Loans received]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "NoncurrentPortionOfNoncurrentLoansReceived": {
+   "label": "Non-current portion of non-current loans received",
+   "documentation": "The non-current portion of non-current loans received. [Refer: Loans received]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "SecuredBankLoansReceived": {
+   "label": "Secured bank loans received",
+   "documentation": "The amount of loans received from banks that have been secured by collateral. [Refer: Loans received]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "CurrentSecuredBankLoansReceivedAndCurrentPortionOfNoncurrentSecuredBankLoansReceived": {
+   "label": "Current secured bank loans received and current portion of non-current secured bank loans received",
+   "documentation": "The amount of current secured bank loans received and the current portion of non-current secured bank loans received. [Refer: Secured bank loans received]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "NoncurrentPortionOfNoncurrentSecuredBankLoansReceived": {
+   "label": "Non-current portion of non-current secured bank loans received",
+   "documentation": "The non-current portion of non-current secured bank loans received. [Refer: Secured bank loans received]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "UnsecuredBankLoansReceived": {
+   "label": "Unsecured bank loans received",
+   "documentation": "The amount of loans received from banks that have not been secured by collateral. [Refer: Loans received]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "CurrentUnsecuredBankLoansReceivedAndCurrentPortionOfNoncurrentUnsecuredBankLoansReceived": {
+   "label": "Current unsecured bank loans received and current portion of non-current unsecured bank loans received",
+   "documentation": "The amount of current unsecured bank loans received and the current portion of non-current unsecured bank loans received. [Refer: Unsecured bank loans received]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "NoncurrentPortionOfNoncurrentUnsecuredBankLoansReceived": {
+   "label": "Non-current portion of non-current unsecured bank loans received",
+   "documentation": "The non-current portion of non-current unsecured bank loans received. [Refer: Unsecured bank loans received]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "BondsIssued": {
+   "label": "Bonds issued",
+   "documentation": "The amount of bonds issued by the entity.",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "CurrentBondsIssuedAndCurrentPortionOfNoncurrentBondsIssued": {
+   "label": "Current bonds issued and current portion of non-current bonds issued",
+   "documentation": "The amount of current bonds issued and the current portion of non-current bonds issued. [Refer: Bonds issued]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "NoncurrentPortionOfNoncurrentBondsIssued": {
+   "label": "Non-current portion of non-current bonds issued",
+   "documentation": "The non-current portion of non-current bonds issued. [Refer: Bonds issued]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "NotesAndDebenturesIssued": {
+   "label": "Notes and debentures issued",
+   "documentation": "The amount of notes and debentures issued by the entity.",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "CurrentNotesAndDebenturesIssuedAndCurrentPortionOfNoncurrentNotesAndDebenturesIssued": {
+   "label": "Current notes and debentures issued and current portion of non-current notes and debentures issued",
+   "documentation": "The amount of current notes and debentures issued and the current portion of non-current notes and debentures issued. [Refer: Notes and debentures issued]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "NoncurrentPortionOfNoncurrentNotesAndDebenturesIssued": {
+   "label": "Non-current portion of non-current notes and debentures issued",
+   "documentation": "The non-current portion of non-current notes and debentures issued. [Refer: Notes and debentures issued]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "CommercialPapersIssued": {
+   "label": "Commercial papers issued",
+   "documentation": "The amount of commercial paper issued by the entity.",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "CurrentCommercialPapersIssuedAndCurrentPortionOfNoncurrentCommercialPapersIssued": {
+   "label": "Current commercial papers issued and current portion of non-current commercial papers issued",
+   "documentation": "The amount of current commercial paper issued and the current portion of non-current commercial paper issued. [Refer: Commercial papers issued]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "NoncurrentPortionOfNoncurrentCommercialPapersIssued": {
+   "label": "Non-current portion of non-current commercial papers issued",
+   "documentation": "The non-current portion of non-current commercial paper issued. [Refer: Commercial papers issued]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "DebtSecurities": {
+   "label": "Debt instruments issued",
+   "documentation": "The amount of instruments issued by the entity that represent indebtedness.",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "CurrentDebtInstrumentsIssued": {
+   "label": "Current debt instruments issued",
+   "documentation": "The amount of current debt instruments issued. [Refer: Debt instruments issued]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  "NoncurrentDebtInstrumentsIssued": {
+   "label": "Non-current debt instruments issued",
+   "documentation": "The amount of non-current debt instruments issued. [Refer: Debt instruments issued]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  }
+ },
+ "excluded": {
+  "BankOverdraftsClassifiedAsCashEquivalents": {
+   "label": "Bank overdrafts",
+   "documentation": "The amount that has been withdrawn from an account in excess of existing cash balances. This is considered a short-term extension of credit by the bank. [Refer: Cash and cash equivalents]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "reason": "cash_component"
+  },
+  "LeaseLiabilities": {
+   "label": "Lease liabilities",
+   "documentation": "The amount of liabilities related to the entity's leases. Lease is a contract, or part of a contract, that conveys the right to use an underlying asset for a period of time in exchange for consideration.",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "reason": "lease"
+  },
+  "CurrentLeaseLiabilities": {
+   "label": "Current lease liabilities",
+   "documentation": "The amount of current lease liabilities. [Refer: Lease liabilities]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "reason": "lease"
+  },
+  "NoncurrentLeaseLiabilities": {
+   "label": "Non-current lease liabilities",
+   "documentation": "The amount of non-current lease liabilities. [Refer: Lease liabilities]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "reason": "lease"
+  },
+  "NetDebt": {
+   "label": "Net debt",
+   "documentation": "The amount of net debt of the entity.",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "reason": "net_of_assets"
+  },
+  "DebtInstrumentsIssuedAtAmortisedCost": {
+   "label": "Debt instruments issued at amortised cost",
+   "documentation": "The amount of instruments issued by the entity that represent indebtedness at amortised cost. [Refer: Financial liabilities at amortised cost]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2024",
+    "2025"
+   ],
+   "reason": "measurement_category"
+  },
+  "DebtInstrumentsIssuedAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently": {
+   "label": "Debt instruments issued at fair value through profit or loss, designated upon initial recognition or subsequently",
+   "documentation": "The amount of instruments issued by the entity that represent indebtedness at fair value through profit or loss that were designated as such upon initial recognition or subsequently. [Refer: Financial liabilities at fair value through profit or loss, designated upon initial recognition or subsequently]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2024",
+    "2025"
+   ],
+   "reason": "measurement_category"
+  },
+  "BondsIssuedUndiscountedCashFlows": {
+   "label": "Bonds issued, undiscounted cash flows",
+   "documentation": "The amount of contractual undiscounted cash flows in relation to bonds issued. [Refer: Bonds issued]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "reason": "undiscounted_cash_flows"
+  },
+  "BankBorrowingsUndiscountedCashFlows": {
+   "label": "Bank borrowings, undiscounted cash flows",
+   "documentation": "The amount of contractual undiscounted cash flows in relation to bank borrowings. [Refer: Borrowings]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "reason": "undiscounted_cash_flows"
+  },
+  "BorrowingsRecognisedAsOfAcquisitionDate": {
+   "label": "Borrowings recognised as of acquisition date",
+   "documentation": "The amount recognised as of the acquisition date for borrowings assumed in a business combination. [Refer: Borrowings; Total for all business combinations [member]]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "reason": "business_combination"
+  },
+  "UndrawnBorrowingFacilities": {
+   "label": "Undrawn borrowing facilities",
+   "documentation": "The amount of undrawn borrowing facilities that may be available for future operating activities and to settle capital commitments. [Refer: Capital commitments]",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "reason": "not_drawn"
+  },
+  "GrossLoanCommitments": {
+   "label": "Gross loan commitments",
+   "documentation": "The amount of contractual undiscounted cash flows for gross commitments to receive a loan.",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "reason": "not_drawn"
+  },
+  "LoansPayableInDefault": {
+   "label": "Loans payable in default",
+   "documentation": "The amount of loans payable in default.",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "reason": "subset_disclosure"
+  },
+  "LoansPayableInBreachWhichPermittedLenderToDemandAcceleratedRepayment": {
+   "label": "Loans payable in breach which permitted lender to demand accelerated repayment",
+   "documentation": "The amount of loans payable in breach of the terms that permitted the lender to demand accelerated repayment.",
+   "period_type": "instant",
+   "balance": "credit",
+   "type": "xbrli:monetaryItemType",
+   "abstract": false,
+   "taxonomies": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "reason": "subset_disclosure"
+  }
+ }
+}

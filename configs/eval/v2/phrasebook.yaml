@@ -1,0 +1,358 @@
+# v2 eval phrasebook: hand-written question templates, keyed by intent shape. Loaded and
+# validated by src/eval/suites/intents.py (load_phrasebook); spec docs/specs/eval-intents.md
+# (placeholder table there). Surface forms come from configs/eval/v2/lexicon.yaml.
+#
+# Writing rules:
+#   - Every shape has templates in all three registers (terse, conversational, formal), and
+#     several in all, so the template hash split leaves templates on both sides.
+#   - Periods appear only through the period placeholders. Never write "calendar", a bare
+#     year, or relative wording ("last year"): they change the period's meaning under
+#     docs/design/XbrlRag_Eval_Semantics.md S2 and are later, separate phrasing axes.
+#   - The universe appears only through {universe} (S3), so the scope a question states is
+#     exactly the intent's universe.
+#   - Growth templates say "change" or "grow" without presupposing a direction beyond what
+#     analysts routinely ask; false premises are a separate (honesty) intent class.
+#   - Ids are stable: the split hashes them, so renaming one moves its cases between dev and
+#     validation. Add new templates; do not rename or reword existing ones in place.
+
+templates:
+  # ------------------------------------------------------------------ lookup
+  - id: lookup-terse-1
+    register: terse
+    shapes: [lookup]
+    text: "{company} {metric} {period}"
+  - id: lookup-terse-2
+    register: terse
+    shapes: [lookup]
+    text: "{company} {metric}, {period}?"
+  - id: lookup-conv-1
+    register: conversational
+    shapes: [lookup]
+    text: "What was {company}'s {metric} in {period}?"
+  - id: lookup-conv-2
+    register: conversational
+    shapes: [lookup]
+    text: "How much {metric} did {company} report for {period}?"
+  - id: lookup-conv-3
+    register: conversational
+    shapes: [lookup]
+    text: "Can you pull {company}'s {metric} for {period}?"
+  - id: lookup-formal-1
+    register: formal
+    shapes: [lookup]
+    text: "Please state the {metric} reported by {company} for {period}."
+  - id: lookup-formal-2
+    register: formal
+    shapes: [lookup]
+    text: "What amount of {metric} did {company} report in its annual filing for {period}?"
+
+  # ------------------------------------------------------------------ dimensional (a member)
+  - id: dimensional-terse-1
+    register: terse
+    shapes: [dimensional]
+    text: "{company} {dimension} {metric} {period}"
+  - id: dimensional-terse-2
+    register: terse
+    shapes: [dimensional]
+    text: "{company} {metric} from {dimension}, {period}"
+  - id: dimensional-conv-1
+    register: conversational
+    shapes: [dimensional]
+    text: "What was {company}'s {metric} from {dimension} in {period}?"
+  - id: dimensional-conv-2
+    register: conversational
+    shapes: [dimensional]
+    text: "How much {metric} did {dimension} bring in for {company} in {period}?"
+  - id: dimensional-formal-1
+    register: formal
+    shapes: [dimensional]
+    text: "Please state {company}'s {metric} attributable to {dimension} for {period}."
+
+  # ------------------------------------------------------------------ breakdown (an axis)
+  - id: breakdown-terse-1
+    register: terse
+    shapes: [breakdown]
+    text: "{company} {metric} by {dimension}, {period}"
+  - id: breakdown-conv-1
+    register: conversational
+    shapes: [breakdown]
+    text: "How did {company}'s {metric} split by {dimension} in {period}?"
+  - id: breakdown-conv-2
+    register: conversational
+    shapes: [breakdown]
+    text: "Can you break down {company}'s {metric} by {dimension} for {period}?"
+  - id: breakdown-formal-1
+    register: formal
+    shapes: [breakdown]
+    text: "Break down {company}'s {metric} by {dimension} for {period}."
+  - id: breakdown-formal-2
+    register: formal
+    shapes: [breakdown]
+    text: "Please provide the composition of {company}'s {metric} by {dimension} for {period}."
+  - id: breakdown-terse-2
+    register: terse
+    shapes: [breakdown]
+    text: "{dimension} split of {company} {metric}, {period}"
+
+  # ------------------------------------------------------------------ compute.yoy_growth
+  - id: yoy-terse-1
+    register: terse
+    shapes: [compute.yoy_growth]
+    text: "{company} {metric} YoY growth {last_period}"
+  - id: yoy-terse-2
+    register: terse
+    shapes: [compute.yoy_growth]
+    text: "{company} {metric} growth, {first_period} to {last_period}, %"
+  - id: yoy-conv-1
+    register: conversational
+    shapes: [compute.yoy_growth]
+    text: "How much did {company}'s {metric} grow in {last_period}?"
+  - id: yoy-conv-2
+    register: conversational
+    shapes: [compute.yoy_growth]
+    text: "By what percentage did {company}'s {metric} change from {first_period} to {last_period}?"
+  - id: yoy-formal-1
+    register: formal
+    shapes: [compute.yoy_growth]
+    text: "What was the year-over-year percentage change in {company}'s {metric} for {last_period}?"
+  - id: yoy-formal-2
+    register: formal
+    shapes: [compute.yoy_growth]
+    text: "Please calculate the growth rate of {company}'s {metric} in {last_period} relative to {first_period}."
+
+  # ------------------------------------------------------------------ compute.difference
+  - id: diff-terse-1
+    register: terse
+    shapes: [compute.difference]
+    text: "{company} {metric} change, {first_period} vs {last_period}"
+  - id: diff-conv-1
+    register: conversational
+    shapes: [compute.difference]
+    text: "By how much did {company}'s {metric} change between {first_period} and {last_period}?"
+  - id: diff-conv-2
+    register: conversational
+    shapes: [compute.difference]
+    text: "How far did {company}'s {metric} move from {first_period} to {last_period}, in absolute terms?"
+  - id: diff-formal-1
+    register: formal
+    shapes: [compute.difference]
+    text: "What was the absolute change in {company}'s {metric} from {first_period} to {last_period}?"
+  - id: diff-formal-2
+    register: formal
+    shapes: [compute.difference]
+    text: "Please state the difference between {company}'s {metric} for {last_period} and for {first_period}."
+
+  - id: diff-terse-2
+    register: terse
+    shapes: [compute.difference]
+    text: "{company} {metric}: {last_period} minus {first_period}"
+
+  # ------------------------------------------------------------------ compute.cagr
+  - id: cagr-terse-1
+    register: terse
+    shapes: [compute.cagr]
+    text: "{company} {metric} CAGR, {first_period} to {last_period}"
+  - id: cagr-conv-1
+    register: conversational
+    shapes: [compute.cagr]
+    text: "What's {company}'s {metric} CAGR from {first_period} to {last_period}?"
+  - id: cagr-conv-2
+    register: conversational
+    shapes: [compute.cagr]
+    text: "How fast did {company}'s {metric} compound per year between {first_period} and {last_period}?"
+  - id: cagr-formal-1
+    register: formal
+    shapes: [compute.cagr]
+    text: "What was the compound annual growth rate of {company}'s {metric} from {first_period} to {last_period}?"
+  - id: cagr-formal-2
+    register: formal
+    shapes: [compute.cagr]
+    text: "Please calculate the compound annual growth rate of {metric} for {company} between {first_period} and {last_period}."
+
+  # ------------------------------------------------------------------ compute.ratio
+  - id: ratio-terse-1
+    register: terse
+    shapes: [compute.ratio]
+    text: "{company} {metric} / {metric_2}, {period}"
+  - id: ratio-terse-2
+    register: terse
+    shapes: [compute.ratio]
+    text: "{company} {metric} as % of {metric_2} {period}"
+  - id: ratio-conv-1
+    register: conversational
+    shapes: [compute.ratio]
+    text: "What was {company}'s {metric} as a share of its {metric_2} in {period}?"
+  - id: ratio-conv-2
+    register: conversational
+    shapes: [compute.ratio]
+    text: "What was the ratio of {metric} to {metric_2} at {company} for {period}?"
+  - id: ratio-formal-1
+    register: formal
+    shapes: [compute.ratio]
+    text: "State {company}'s {metric} as a percentage of {metric_2} for {period}."
+  - id: ratio-formal-2
+    register: formal
+    shapes: [compute.ratio]
+    text: "Please compute the ratio of {company}'s {metric} to its {metric_2} for {period}."
+
+  # ------------------------------------------------------------------ trend
+  - id: trend-terse-1
+    register: terse
+    shapes: [trend]
+    text: "{company} {metric} trend, {first_period} through {last_period}"
+  - id: trend-terse-2
+    register: terse
+    shapes: [trend]
+    text: "{company} {metric} by year, {first_period} to {last_period}"
+  - id: trend-conv-1
+    register: conversational
+    shapes: [trend]
+    text: "How has {company}'s {metric} trended from {first_period} through {last_period}?"
+  - id: trend-conv-2
+    register: conversational
+    shapes: [trend]
+    text: "Can you walk me through {company}'s {metric} year by year from {first_period} to {last_period}?"
+  - id: trend-formal-1
+    register: formal
+    shapes: [trend]
+    text: "Please present {company}'s {metric} for each year from {first_period} through {last_period}."
+
+  # ------------------------------------------------------------------ point_in_time
+  - id: pit-terse-1
+    register: terse
+    shapes: [point_in_time]
+    text: "{company} {metric} {period}, as reported in the annual report for {filing_period}"
+  - id: pit-conv-1
+    register: conversational
+    shapes: [point_in_time]
+    text: "In the annual report for {filing_period}, what did {company} show as its {metric} for {period}?"
+  - id: pit-conv-2
+    register: conversational
+    shapes: [point_in_time]
+    text: "What {metric} did {company}'s annual report for {filing_period} give for {period}?"
+  - id: pit-formal-1
+    register: formal
+    shapes: [point_in_time]
+    text: "As reported in its annual report for {filing_period}, what was {company}'s {metric} for {period}?"
+  - id: pit-formal-2
+    register: formal
+    shapes: [point_in_time]
+    text: "Please state the {metric} for {period} that {company} presented as a comparative figure in its annual report for {filing_period}."
+
+  # ------------------------------------------------------------------ screen.top
+  - id: top-terse-1
+    register: terse
+    shapes: [screen.top]
+    text: "top {n} by {metric} among {universe}, {period}"
+  - id: top-conv-1
+    register: conversational
+    shapes: [screen.top]
+    text: "Which {n} of {universe} had the highest {metric} in {period}?"
+  - id: top-conv-2
+    register: conversational
+    shapes: [screen.top]
+    text: "Who were the top {n} among {universe} by {metric} in {period}?"
+  - id: top-formal-1
+    register: formal
+    shapes: [screen.top]
+    text: "Rank {universe} by {metric} for {period} and list the {n} highest."
+  - id: top-formal-2
+    register: formal
+    shapes: [screen.top]
+    text: "Identify the {n} companies among {universe} that reported the largest {metric} for {period}."
+
+  # ------------------------------------------------------------------ screen.bottom
+  - id: bottom-terse-1
+    register: terse
+    shapes: [screen.bottom]
+    text: "bottom {n} by {metric} among {universe}, {period}"
+  - id: bottom-conv-1
+    register: conversational
+    shapes: [screen.bottom]
+    text: "Which {n} of {universe} had the lowest {metric} in {period}?"
+  - id: bottom-conv-2
+    register: conversational
+    shapes: [screen.bottom]
+    text: "Who were the {n} smallest among {universe} by {metric} in {period}?"
+  - id: bottom-formal-1
+    register: formal
+    shapes: [screen.bottom]
+    text: "Rank {universe} by {metric} for {period} and list the {n} lowest."
+  - id: bottom-formal-2
+    register: formal
+    shapes: [screen.bottom]
+    text: "Identify the {n} companies among {universe} that reported the smallest {metric} for {period}."
+
+  # ------------------------------------------------------------------ screen.sum
+  - id: sum-terse-1
+    register: terse
+    shapes: [screen.sum]
+    text: "total {metric}, {universe}, {period}"
+  - id: sum-terse-2
+    register: terse
+    shapes: [screen.sum]
+    text: "combined {period} {metric} of {universe}"
+  - id: sum-conv-1
+    register: conversational
+    shapes: [screen.sum]
+    text: "What was the combined {metric} of {universe} in {period}?"
+  - id: sum-conv-2
+    register: conversational
+    shapes: [screen.sum]
+    text: "If you add up {universe}, how much {metric} did they report for {period}?"
+  - id: sum-formal-1
+    register: formal
+    shapes: [screen.sum]
+    text: "Please state the aggregate {metric} reported by {universe} for {period}."
+
+  # ------------------------------------------------------------------ screen.median
+  - id: median-terse-1
+    register: terse
+    shapes: [screen.median]
+    text: "median {metric}, {universe}, {period}"
+  - id: median-conv-1
+    register: conversational
+    shapes: [screen.median]
+    text: "What was the median {metric} across {universe} in {period}?"
+  - id: median-conv-2
+    register: conversational
+    shapes: [screen.median]
+    text: "For a typical company among {universe}, what was the median {metric} in {period}?"
+  - id: median-formal-1
+    register: formal
+    shapes: [screen.median]
+    text: "State the median {metric} of {universe} for {period}."
+  - id: median-formal-2
+    register: formal
+    shapes: [screen.median]
+    text: "Please determine the median {metric} reported by {universe} for {period}."
+  - id: median-terse-2
+    register: terse
+    shapes: [screen.median]
+    text: "{period} {metric}: median across {universe}"
+
+  # ------------------------------------------------------------------ peer_relative
+  - id: peer-terse-1
+    register: terse
+    shapes: [peer_relative]
+    text: "{company} {metric} vs {universe}, {period}"
+  - id: peer-terse-2
+    register: terse
+    shapes: [peer_relative]
+    text: "{company} rank on {metric} among {universe}, {period}"
+  - id: peer-conv-1
+    register: conversational
+    shapes: [peer_relative]
+    text: "How does {company}'s {metric} in {period} compare with {universe}?"
+  - id: peer-conv-2
+    register: conversational
+    shapes: [peer_relative]
+    text: "Where did {company} rank among {universe} on {metric} in {period}?"
+  - id: peer-formal-1
+    register: formal
+    shapes: [peer_relative]
+    text: "Please compare {company}'s {metric} for {period} with the median of {universe} and state its rank."
+  - id: peer-formal-2
+    register: formal
+    shapes: [peer_relative]
+    text: "How did {company}'s {metric} for {period} rank relative to {universe}?"

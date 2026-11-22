@@ -1,0 +1,176 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-11",
+  "criteria": {
+    "C1": [
+      "test/spec/plan-cagr-and-ratios/test_cagr.py::test_cagr_point_values",
+      "test/spec/plan-cagr-and-ratios/test_cagr.py::test_cagr_not_meaningful_and_errors",
+      "test/spec/plan-cagr-and-ratios/test_cagr.py::test_cagr_round_trips_and_matches_the_closed_form",
+      "test/spec/plan-cagr-and-ratios/test_cagr.py::test_cagr_is_scale_invariant",
+      "test/spec/plan-cagr-and-ratios/test_cagr.py::test_consecutive_spans_compound_to_the_whole",
+      "test/spec/plan-cagr-and-ratios/test_cagr.py::test_cagr_sign_follows_the_change_and_stays_above_minus_one",
+      "test/spec/plan-cagr-and-ratios/test_cagr.py::test_any_non_positive_input_is_not_meaningful"
+    ],
+    "C10": [
+      "test/spec/plan-cagr-and-ratios/test_citation_cagr.py::test_cagr_statement_with_its_inputs_is_supported",
+      "test/spec/plan-cagr-and-ratios/test_citation_cagr.py::test_any_rounded_cagr_and_inputs_are_supported"
+    ],
+    "C2": [
+      "test/spec/plan-cagr-and-ratios/test_cagr.py::test_cagr_years_points",
+      "test/spec/plan-cagr-and-ratios/test_cagr.py::test_cagr_years_is_the_label_difference"
+    ],
+    "C3": [
+      "test/spec/plan-cagr-and-ratios/test_validator_cagr.py::test_cagr_plan_is_accepted_and_a_compute_may_use_it",
+      "test/spec/plan-cagr-and-ratios/test_validator_cagr.py::test_bad_start_or_end_is_one_error_naming_the_field",
+      "test/spec/plan-cagr-and-ratios/test_validator_cagr.py::test_years_cik_family_and_a_years_key",
+      "test/spec/plan-cagr-and-ratios/test_validator_cagr.py::test_any_planned_years_is_exactly_one_error"
+    ],
+    "C4": [
+      "test/spec/plan-cagr-and-ratios/test_executor_cagr.py::test_cagr_step_value_record_and_binding",
+      "test/spec/plan-cagr-and-ratios/test_executor_cagr.py::test_cagr_step_refusals",
+      "test/spec/plan-cagr-and-ratios/test_executor_cagr.py::test_cagr_step_equals_the_closed_form"
+    ],
+    "C5": [
+      "test/spec/plan-cagr-and-ratios/test_operation_cues.py::test_every_listed_cue_and_non_cue",
+      "test/spec/plan-cagr-and-ratios/test_operation_cues.py::test_cagr_takes_precedence_over_ratio",
+      "test/spec/plan-cagr-and-ratios/test_operation_cues.py::test_kinds_ignore_case_and_added_non_cue_words"
+    ],
+    "C6": [
+      "test/spec/plan-cagr-and-ratios/test_operation_cues.py::test_operation_intent_table",
+      "test/spec/plan-cagr-and-ratios/test_operation_cues.py::test_operation_intent_only_widens_a_lookup"
+    ],
+    "C7": [
+      "test/spec/plan-cagr-and-ratios/test_operation_plan_errors.py::test_is_ratio_expr_points",
+      "test/spec/plan-cagr-and-ratios/test_operation_plan_errors.py::test_operation_plan_errors_points",
+      "test/spec/plan-cagr-and-ratios/test_operation_plan_errors.py::test_at_most_one_error_and_none_without_a_cue"
+    ],
+    "C8": [
+      "test/spec/plan-cagr-and-ratios/test_operation_cues.py::test_split_loses_operation_points",
+      "test/spec/plan-cagr-and-ratios/test_operation_cues.py::test_keeping_the_query_as_a_sub_query_never_loses_it"
+    ],
+    "C9": [
+      "test/spec/plan-cagr-and-ratios/test_missing_operation.py::test_components_answer_is_marked_and_a_cited_ratio_is_not",
+      "test/spec/plan-cagr-and-ratios/test_missing_operation.py::test_cagr_errors_exemptions_and_created_fields",
+      "test/spec/plan-cagr-and-ratios/test_missing_operation.py::test_marking_is_idempotent_and_touches_only_the_two_fields"
+    ]
+  },
+  "files": {
+    "test/spec/plan-cagr-and-ratios/conftest.py": "91abfee089d5d3b9070a4694648996a67403b902e402db427ef88513967c3fda",
+    "test/spec/plan-cagr-and-ratios/test_cagr.py": "7ef88152989e07b6ee45e24bba161fca2e7ab79bb2345c3e0b5e92383c66ac76",
+    "test/spec/plan-cagr-and-ratios/test_citation_cagr.py": "441767bfcbb5d4fcff0ae7d1a41d7db488931f5d66603dfe63420e5233dba8ed",
+    "test/spec/plan-cagr-and-ratios/test_executor_cagr.py": "8621f7e552a8557951bfa607896c267742fa9df1495fc838aaa3b0789be1d57e",
+    "test/spec/plan-cagr-and-ratios/test_missing_operation.py": "ea9abe0975ee49ff908d7e07617764fdb6708ce1554c1483d6ff26e97e3ccf5a",
+    "test/spec/plan-cagr-and-ratios/test_operation_cues.py": "7d2edf3eb734733ab31c3fe6a07aac4a2b2ebac23e23f83a5e83aba8b8f62fb3",
+    "test/spec/plan-cagr-and-ratios/test_operation_plan_errors.py": "cafadacd541747f78f15c108116183854bb5ebb77e60577bb509073b5d9e0fc0",
+    "test/spec/plan-cagr-and-ratios/test_validator_cagr.py": "86e695348097817facf781e3b6f8d4811ef9e5a58812a01bf14bc5043274521d"
+  },
+  "id": "plan-cagr-and-ratios",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/cagr.py",
+      "module": "retriever.xbrl.cagr",
+      "qualname": "cagr_value",
+      "signature": "def cagr_value(end: float | None, start: float | None, years: int | None) -> dict[str, Any]"
+    },
+    {
+      "file": "src/retriever/xbrl/cagr.py",
+      "module": "retriever.xbrl.cagr",
+      "qualname": "cagr_years",
+      "signature": "def cagr_years(start_step: Mapping[str, Any], end_step: Mapping[str, Any]) -> int | None"
+    },
+    {
+      "file": "src/retriever/xbrl/operation_cues.py",
+      "module": "retriever.xbrl.operation_cues",
+      "qualname": "operation_kinds",
+      "signature": "def operation_kinds(text: str) -> frozenset[str]"
+    },
+    {
+      "file": "src/retriever/xbrl/operation_cues.py",
+      "module": "retriever.xbrl.operation_cues",
+      "qualname": "operation_cue",
+      "signature": "def operation_cue(query: str) -> str | None"
+    },
+    {
+      "file": "src/retriever/xbrl/operation_cues.py",
+      "module": "retriever.xbrl.operation_cues",
+      "qualname": "operation_intent",
+      "signature": "def operation_intent(intent: str, operation: str | None) -> str"
+    },
+    {
+      "file": "src/retriever/xbrl/operation_cues.py",
+      "module": "retriever.xbrl.operation_cues",
+      "qualname": "is_ratio_expr",
+      "signature": "def is_ratio_expr(expr: Any) -> bool"
+    },
+    {
+      "file": "src/retriever/xbrl/operation_cues.py",
+      "module": "retriever.xbrl.operation_cues",
+      "qualname": "operation_plan_errors",
+      "signature": "def operation_plan_errors(plan: Any, operation: str | None) -> list[str]"
+    },
+    {
+      "file": "src/retriever/xbrl/operation_cues.py",
+      "module": "retriever.xbrl.operation_cues",
+      "qualname": "split_loses_operation",
+      "signature": "def split_loses_operation(query: str, subqueries: Sequence[str]) -> bool"
+    },
+    {
+      "file": "src/retriever/xbrl/operation_cues.py",
+      "module": "retriever.xbrl.operation_cues",
+      "qualname": "mark_missing_operation",
+      "signature": "def mark_missing_operation(response: Mapping[str, Any], query: str, operation: str | None) -> dict[str, Any]"
+    }
+  ],
+  "nodes": [
+    "test/spec/plan-cagr-and-ratios/test_cagr.py::test_any_non_positive_input_is_not_meaningful",
+    "test/spec/plan-cagr-and-ratios/test_cagr.py::test_cagr_is_scale_invariant",
+    "test/spec/plan-cagr-and-ratios/test_cagr.py::test_cagr_not_meaningful_and_errors",
+    "test/spec/plan-cagr-and-ratios/test_cagr.py::test_cagr_point_values",
+    "test/spec/plan-cagr-and-ratios/test_cagr.py::test_cagr_round_trips_and_matches_the_closed_form",
+    "test/spec/plan-cagr-and-ratios/test_cagr.py::test_cagr_sign_follows_the_change_and_stays_above_minus_one",
+    "test/spec/plan-cagr-and-ratios/test_cagr.py::test_cagr_years_is_the_label_difference",
+    "test/spec/plan-cagr-and-ratios/test_cagr.py::test_cagr_years_points",
+    "test/spec/plan-cagr-and-ratios/test_cagr.py::test_consecutive_spans_compound_to_the_whole",
+    "test/spec/plan-cagr-and-ratios/test_citation_cagr.py::test_any_rounded_cagr_and_inputs_are_supported",
+    "test/spec/plan-cagr-and-ratios/test_citation_cagr.py::test_cagr_statement_with_its_inputs_is_supported",
+    "test/spec/plan-cagr-and-ratios/test_executor_cagr.py::test_cagr_step_equals_the_closed_form",
+    "test/spec/plan-cagr-and-ratios/test_executor_cagr.py::test_cagr_step_refusals",
+    "test/spec/plan-cagr-and-ratios/test_executor_cagr.py::test_cagr_step_value_record_and_binding",
+    "test/spec/plan-cagr-and-ratios/test_missing_operation.py::test_cagr_errors_exemptions_and_created_fields",
+    "test/spec/plan-cagr-and-ratios/test_missing_operation.py::test_components_answer_is_marked_and_a_cited_ratio_is_not",
+    "test/spec/plan-cagr-and-ratios/test_missing_operation.py::test_marking_is_idempotent_and_touches_only_the_two_fields",
+    "test/spec/plan-cagr-and-ratios/test_operation_cues.py::test_cagr_takes_precedence_over_ratio",
+    "test/spec/plan-cagr-and-ratios/test_operation_cues.py::test_every_listed_cue_and_non_cue",
+    "test/spec/plan-cagr-and-ratios/test_operation_cues.py::test_keeping_the_query_as_a_sub_query_never_loses_it",
+    "test/spec/plan-cagr-and-ratios/test_operation_cues.py::test_kinds_ignore_case_and_added_non_cue_words",
+    "test/spec/plan-cagr-and-ratios/test_operation_cues.py::test_operation_intent_only_widens_a_lookup",
+    "test/spec/plan-cagr-and-ratios/test_operation_cues.py::test_operation_intent_table",
+    "test/spec/plan-cagr-and-ratios/test_operation_cues.py::test_split_loses_operation_points",
+    "test/spec/plan-cagr-and-ratios/test_operation_plan_errors.py::test_at_most_one_error_and_none_without_a_cue",
+    "test/spec/plan-cagr-and-ratios/test_operation_plan_errors.py::test_is_ratio_expr_points",
+    "test/spec/plan-cagr-and-ratios/test_operation_plan_errors.py::test_operation_plan_errors_points",
+    "test/spec/plan-cagr-and-ratios/test_validator_cagr.py::test_any_planned_years_is_exactly_one_error",
+    "test/spec/plan-cagr-and-ratios/test_validator_cagr.py::test_bad_start_or_end_is_one_error_naming_the_field",
+    "test/spec/plan-cagr-and-ratios/test_validator_cagr.py::test_cagr_plan_is_accepted_and_a_compute_may_use_it",
+    "test/spec/plan-cagr-and-ratios/test_validator_cagr.py::test_years_cik_family_and_a_years_key"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/plan-cagr-and-ratios.md",
+    "sha256": "932b29de28d1c2104047cf8b0638126902254c1a7b6446158db46530886ec35b"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

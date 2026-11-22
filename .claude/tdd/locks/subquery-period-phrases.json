@@ -1,0 +1,198 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-15",
+  "criteria": {
+    "C1": [
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_excused_or_no_phrase_is_false[by Assets, Current fiscal year 2024]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_excused_or_no_phrase_is_false[the latest fiscal year 2023]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_excused_or_no_phrase_is_false[the most recent fiscal 2024]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_excused_or_no_phrase_is_false[this year FY25]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_excused_or_no_phrase_is_false[current year 2024]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_excused_or_no_phrase_is_false[current fiscal year FY'24]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_excused_or_no_phrase_is_false[Current Ratio]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_excused_or_no_phrase_is_false[]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_unexcused_phrase_is_true[the current fiscal year]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_unexcused_phrase_is_true[the latest fiscal year]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_unexcused_phrase_is_true[the latest fiscal year, 2024]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_unexcused_phrase_is_true[the current fiscal year ended June 30, 2024]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_unexcused_phrase_is_true[current quarter 2024]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_unexcused_phrase_is_true[prior year 2023]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_unexcused_phrase_is_true[Q3 2024]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_unexcused_phrase_is_true[current fiscal year 2024 versus the prior year]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_property_a_year_after_a_year_relative_phrase_excuses_it"
+    ],
+    "C2": [
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c2_a_year_after_a_relative_phrase_is_the_stated_year",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c2_unexcused_or_two_years_still_none[the latest fiscal year]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c2_unexcused_or_two_years_still_none[the current fiscal year 2024 versus the prior year]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c2_unexcused_or_two_years_still_none[the current quarter 2024]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c2_unexcused_or_two_years_still_none[Current fiscal year 2024 compared from FY23]",
+      "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c2_property_relative_phrase_with_year"
+    ],
+    "C3": [
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_a_lone_from_year_is_the_base[For <<TOP:sq1:1>>, what was the accumulated earnings growth from FY24?-2024]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_a_lone_from_year_is_the_base[For <<TOP:sq1:1>>, how did revenue grow from fiscal 2024?-2024]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_a_lone_from_year_is_the_base[For <<TOP:sq1:1>>, how did revenue grow from fiscal year 2024?-2024]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_a_lone_from_year_is_the_base[For <<TOP:sq1:1>>, how did revenue grow from 2024?-2024]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_a_lone_from_year_is_the_base[From FY2024, how did revenue change for <<TOP:sq1:1>>?-2024]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_a_lone_from_year_is_the_base[For <<TOP:sq1:1>>, how did revenue grow from FY 2024?-2024]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_a_lone_from_year_is_the_base[For <<TOP:sq1:1>>, how did revenue grow from FY'23?-2023]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from FY24 to FY25?]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from FY24 through FY25?]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow between FY24 and FY25?]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from FY24 to date?]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from Q3 FY24?]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from FY24 to the latest fiscal year?]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, what was revenue in FY24?]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from the prior year?]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from FY2040?]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from the fiscal year ended June 30, 2024?]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from 24?]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from <<TOP:fy2024:1>>?]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, what was revenue from FY24?]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, what was the total debt from fiscal 2024?]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_property_lone_from_and_what_breaks_it",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_property_the_growth_word_gates_the_base"
+    ],
+    "C4": [
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c4_the_end_year[Which 3 covered companies had the largest Net Income in FY25, and what was the accumulated earnings growth of the first-ranked one from FY24?-2024-2025]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c4_the_end_year[Which 3 covered companies had the largest Net Income in FY24, and how did the leader's earnings grow?-2024-2025]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c4_the_end_year[Which 3 covered companies had the largest Net Income in FY23, and how did the leader's earnings grow from FY21?-2021-2023]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c4_the_end_year[Compare the top 3 by Net Income in FY25 and in FY26 on earnings growth.-2024-2025]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c4_the_end_year[Which 3 covered companies had the largest Net Income in FY23?-2024-2025]",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c4_property_one_later_year_or_base_plus_one"
+    ],
+    "C5": [
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c5_the_rewrite",
+      "test/spec/subquery-period-phrases/test_spp_from.py::test_c5_property_rewrite_states_both_years"
+    ],
+    "C6": [
+      "test/spec/subquery-period-phrases/test_spp_inherit.py::test_c6_the_two_defect_decompositions",
+      "test/spec/subquery-period-phrases/test_spp_inherit.py::test_c6_other_period_texts_are_unchanged[subqueries0]",
+      "test/spec/subquery-period-phrases/test_spp_inherit.py::test_c6_other_period_texts_are_unchanged[subqueries1]",
+      "test/spec/subquery-period-phrases/test_spp_inherit.py::test_c6_other_period_texts_are_unchanged[subqueries2]",
+      "test/spec/subquery-period-phrases/test_spp_inherit.py::test_c6_a_dependent_of_a_rewritten_sub_query_gets_no_year",
+      "test/spec/subquery-period-phrases/test_spp_inherit.py::test_c6_property_lone_from_dependents_rewritten_others_as_before"
+    ],
+    "C7": [
+      "test/spec/subquery-period-phrases/test_spp_inherit.py::test_c7_decompose_rewrites_and_logs",
+      "test/spec/subquery-period-phrases/test_spp_inherit.py::test_c7_property_any_base_and_later_screen_year"
+    ]
+  },
+  "files": {
+    "test/spec/subquery-period-phrases/conftest.py": "02bd8bb99232a76a4b4a03b0102dd5d364991ade354d103ca6d3b49d4c7e5d2b",
+    "test/spec/subquery-period-phrases/test_spp_from.py": "916f281f7867ab74a9178fa0856e9ac02726c6ac93ba3655a555005e58137f54",
+    "test/spec/subquery-period-phrases/test_spp_inherit.py": "076bb4ecc06a526bc098070eebd48bb37e01b7882c8dff4745fa65f632edb881",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py": "f737f2b60817b45da0ecde0f44fa4bf29c054311e2151c10690b5f4108fdaabe"
+  },
+  "id": "subquery-period-phrases",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/subquery_period.py",
+      "module": "retriever.xbrl.subquery_period",
+      "qualname": "states_period_phrase",
+      "signature": "def states_period_phrase(text: str) -> bool"
+    },
+    {
+      "file": "src/retriever/xbrl/subquery_period.py",
+      "module": "retriever.xbrl.subquery_period",
+      "qualname": "from_base_year",
+      "signature": "def from_base_year(text: str) -> int | None"
+    },
+    {
+      "file": "src/retriever/xbrl/subquery_period.py",
+      "module": "retriever.xbrl.subquery_period",
+      "qualname": "from_end_year",
+      "signature": "def from_end_year(query: str, base_year: int) -> int"
+    },
+    {
+      "file": "src/retriever/xbrl/subquery_period.py",
+      "module": "retriever.xbrl.subquery_period",
+      "qualname": "with_from_end_year",
+      "signature": "def with_from_end_year(query: str, text: str) -> str"
+    }
+  ],
+  "nodes": [
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_a_lone_from_year_is_the_base[For <<TOP:sq1:1>>, how did revenue grow from 2024?-2024]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_a_lone_from_year_is_the_base[For <<TOP:sq1:1>>, how did revenue grow from FY 2024?-2024]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_a_lone_from_year_is_the_base[For <<TOP:sq1:1>>, how did revenue grow from FY'23?-2023]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_a_lone_from_year_is_the_base[For <<TOP:sq1:1>>, how did revenue grow from fiscal 2024?-2024]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_a_lone_from_year_is_the_base[For <<TOP:sq1:1>>, how did revenue grow from fiscal year 2024?-2024]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_a_lone_from_year_is_the_base[For <<TOP:sq1:1>>, what was the accumulated earnings growth from FY24?-2024]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_a_lone_from_year_is_the_base[From FY2024, how did revenue change for <<TOP:sq1:1>>?-2024]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow between FY24 and FY25?]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from 24?]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from <<TOP:fy2024:1>>?]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from FY2040?]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from FY24 through FY25?]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from FY24 to FY25?]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from FY24 to date?]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from FY24 to the latest fiscal year?]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from Q3 FY24?]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from the fiscal year ended June 30, 2024?]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, how did revenue grow from the prior year?]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, what was revenue from FY24?]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, what was revenue in FY24?]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_no_lone_from_year_is_none[For <<TOP:sq1:1>>, what was the total debt from fiscal 2024?]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_property_lone_from_and_what_breaks_it",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c3_property_the_growth_word_gates_the_base",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c4_property_one_later_year_or_base_plus_one",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c4_the_end_year[Compare the top 3 by Net Income in FY25 and in FY26 on earnings growth.-2024-2025]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c4_the_end_year[Which 3 covered companies had the largest Net Income in FY23, and how did the leader's earnings grow from FY21?-2021-2023]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c4_the_end_year[Which 3 covered companies had the largest Net Income in FY23?-2024-2025]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c4_the_end_year[Which 3 covered companies had the largest Net Income in FY24, and how did the leader's earnings grow?-2024-2025]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c4_the_end_year[Which 3 covered companies had the largest Net Income in FY25, and what was the accumulated earnings growth of the first-ranked one from FY24?-2024-2025]",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c5_property_rewrite_states_both_years",
+    "test/spec/subquery-period-phrases/test_spp_from.py::test_c5_the_rewrite",
+    "test/spec/subquery-period-phrases/test_spp_inherit.py::test_c6_a_dependent_of_a_rewritten_sub_query_gets_no_year",
+    "test/spec/subquery-period-phrases/test_spp_inherit.py::test_c6_other_period_texts_are_unchanged[subqueries0]",
+    "test/spec/subquery-period-phrases/test_spp_inherit.py::test_c6_other_period_texts_are_unchanged[subqueries1]",
+    "test/spec/subquery-period-phrases/test_spp_inherit.py::test_c6_other_period_texts_are_unchanged[subqueries2]",
+    "test/spec/subquery-period-phrases/test_spp_inherit.py::test_c6_property_lone_from_dependents_rewritten_others_as_before",
+    "test/spec/subquery-period-phrases/test_spp_inherit.py::test_c6_the_two_defect_decompositions",
+    "test/spec/subquery-period-phrases/test_spp_inherit.py::test_c7_decompose_rewrites_and_logs",
+    "test/spec/subquery-period-phrases/test_spp_inherit.py::test_c7_property_any_base_and_later_screen_year",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_excused_or_no_phrase_is_false[Current Ratio]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_excused_or_no_phrase_is_false[]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_excused_or_no_phrase_is_false[by Assets, Current fiscal year 2024]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_excused_or_no_phrase_is_false[current fiscal year FY'24]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_excused_or_no_phrase_is_false[current year 2024]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_excused_or_no_phrase_is_false[the latest fiscal year 2023]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_excused_or_no_phrase_is_false[the most recent fiscal 2024]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_excused_or_no_phrase_is_false[this year FY25]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_property_a_year_after_a_year_relative_phrase_excuses_it",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_unexcused_phrase_is_true[Q3 2024]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_unexcused_phrase_is_true[current fiscal year 2024 versus the prior year]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_unexcused_phrase_is_true[current quarter 2024]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_unexcused_phrase_is_true[prior year 2023]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_unexcused_phrase_is_true[the current fiscal year ended June 30, 2024]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_unexcused_phrase_is_true[the current fiscal year]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_unexcused_phrase_is_true[the latest fiscal year, 2024]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c1_unexcused_phrase_is_true[the latest fiscal year]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c2_a_year_after_a_relative_phrase_is_the_stated_year",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c2_property_relative_phrase_with_year",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c2_unexcused_or_two_years_still_none[Current fiscal year 2024 compared from FY23]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c2_unexcused_or_two_years_still_none[the current fiscal year 2024 versus the prior year]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c2_unexcused_or_two_years_still_none[the current quarter 2024]",
+    "test/spec/subquery-period-phrases/test_spp_phrases.py::test_c2_unexcused_or_two_years_still_none[the latest fiscal year]"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/subquery-period-phrases.md",
+    "sha256": "41e84e62ad9dfa1d262713764300b2fbed86d8a7b6dd0450addf3d0514053886"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

@@ -1,0 +1,72 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/segment-label-match/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-16",
+  "criteria": {
+    "C1": [
+      "test/spec/segment-label-match/test_segment_label_match.py::test_key_point_cases",
+      "test/spec/segment-label-match/test_segment_label_match.py::test_key_matches_rule",
+      "test/spec/segment-label-match/test_segment_label_match.py::test_key_ignores_case_spacing_punctuation_and_member_suffix"
+    ],
+    "C2": [
+      "test/spec/segment-label-match/test_segment_label_match.py::test_contains_point_cases",
+      "test/spec/segment-label-match/test_segment_label_match.py::test_contains_matches_rule",
+      "test/spec/segment-label-match/test_segment_label_match.py::test_label_contains_its_own_key"
+    ],
+    "C3": [
+      "test/spec/segment-label-match/test_segment_label_match.py::test_oracle_license_support_picks_the_exact_member",
+      "test/spec/segment-label-match/test_segment_label_match.py::test_apple_europe_and_amd_datacenter_earn_the_exact_credit",
+      "test/spec/segment-label-match/test_segment_label_match.py::test_no_exact_member_stays_ambiguous",
+      "test/spec/segment-label-match/test_segment_label_match.py::test_containing_rivals_never_displace_the_exact_member"
+    ]
+  },
+  "files": {
+    "test/spec/segment-label-match/test_segment_label_match.py": "af311ecbd711a5f610416a97a2dacac9a49a1509384e2a70297f261748e1dd67"
+  },
+  "id": "segment-label-match",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_lookup.py",
+      "module": "retriever.xbrl.xbrl_factstore_lookup",
+      "qualname": "member_label_key",
+      "signature": "def member_label_key(text: str) -> str"
+    },
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_lookup.py",
+      "module": "retriever.xbrl.xbrl_factstore_lookup",
+      "qualname": "label_contains_hint",
+      "signature": "def label_contains_hint(label: str, hint: str) -> bool"
+    }
+  ],
+  "nodes": [
+    "test/spec/segment-label-match/test_segment_label_match.py::test_apple_europe_and_amd_datacenter_earn_the_exact_credit",
+    "test/spec/segment-label-match/test_segment_label_match.py::test_containing_rivals_never_displace_the_exact_member",
+    "test/spec/segment-label-match/test_segment_label_match.py::test_contains_matches_rule",
+    "test/spec/segment-label-match/test_segment_label_match.py::test_contains_point_cases",
+    "test/spec/segment-label-match/test_segment_label_match.py::test_key_ignores_case_spacing_punctuation_and_member_suffix",
+    "test/spec/segment-label-match/test_segment_label_match.py::test_key_matches_rule",
+    "test/spec/segment-label-match/test_segment_label_match.py::test_key_point_cases",
+    "test/spec/segment-label-match/test_segment_label_match.py::test_label_contains_its_own_key",
+    "test/spec/segment-label-match/test_segment_label_match.py::test_no_exact_member_stays_ambiguous",
+    "test/spec/segment-label-match/test_segment_label_match.py::test_oracle_license_support_picks_the_exact_member"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/segment-label-match.md",
+    "sha256": "4a855666ff7cf27bac7eda6d3794e1da5640127bf957e0bdd8194ab648790e60"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

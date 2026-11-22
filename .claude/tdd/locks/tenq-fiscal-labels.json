@@ -1,0 +1,138 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-07",
+  "criteria": {
+    "C1": [
+      "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_orcl_sixteen_quarters_are_placed",
+      "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_label_filings_files_orcl_q1_fy2027_under_2027",
+      "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_orcl_label_needs_only_the_annual_filings"
+    ],
+    "C2": [
+      "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_a_december_filer_by_hand",
+      "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_start_year_labels_and_a_14_week_quarter_by_hand",
+      "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_label_filings_takes_the_calendar_over_dei_and_dei_when_unplaceable",
+      "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_every_built_quarter_is_placed_as_built",
+      "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_shifting_by_whole_years_shifts_the_label",
+      "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_past_the_last_annual_end_is_the_next_label",
+      "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_a_placeable_10q_label_never_depends_on_its_dei"
+    ],
+    "C3": [
+      "test/spec/tenq-fiscal-labels/test_c3_c4_registry.py::test_the_nine_mismatched_10qs_take_the_fsds_quarter",
+      "test/spec/tenq-fiscal-labels/test_c3_c4_registry.py::test_each_10q_named_by_hand",
+      "test/spec/tenq-fiscal-labels/test_c3_c4_registry.py::test_orcl_first_quarters_of_two_years_key_apart",
+      "test/spec/tenq-fiscal-labels/test_c3_c4_registry.py::test_10q_labels_do_not_depend_on_the_manifest_quarter_or_year"
+    ],
+    "C4": [
+      "test/spec/tenq-fiscal-labels/test_c3_c4_registry.py::test_the_flat_mv_reads_the_registry_quarter",
+      "test/spec/tenq-fiscal-labels/test_c3_c4_registry.py::test_both_fact_mvs_select_one_quarter_expression"
+    ],
+    "C5": [
+      "test/spec/tenq-fiscal-labels/test_c5_requests.py::test_six_fiscal_quarter_requests",
+      "test/spec/tenq-fiscal-labels/test_c5_requests.py::test_a_calendar_quarter_no_longer_selects_the_wrong_filing",
+      "test/spec/tenq-fiscal-labels/test_c5_requests.py::test_a_10q_floor_is_a_year_earlier",
+      "test/spec/tenq-fiscal-labels/test_c5_requests.py::test_every_10q_is_selected_by_its_own_fiscal_quarter"
+    ],
+    "C6": [
+      "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_bounds_equal_the_statement_period[0000050863-23-000006]",
+      "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_bounds_equal_the_statement_period[0000320193-23-000106]",
+      "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_bounds_equal_the_statement_period[0001018724-26-000026]",
+      "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_bounds_equal_the_statement_period[0001193125-26-101045]",
+      "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_bounds_equal_the_statement_period[0001193125-26-389274]",
+      "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_the_five_periods_by_hand",
+      "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_no_statement_length_context_is_none",
+      "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_context_order_does_not_matter",
+      "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_synthetic_instances"
+    ],
+    "C7": [
+      "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_the_registries_read_the_bounds_from_the_saved_instance",
+      "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_the_downloader_writes_the_bounds_from_the_instance",
+      "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_the_manifest_start_does_not_matter_when_the_instance_is_there"
+    ]
+  },
+  "files": {
+    "test/spec/tenq-fiscal-labels/conftest.py": "6ac17332453f42e79e6bd50d2b5d980777d0a3d9b618fb053e6f364d298712c9",
+    "test/spec/tenq-fiscal-labels/fixtures/companyfacts_filings.json": "ef79775f692e2597e6269f3b0f1c46b64854c2d24c63ad20ae12bb2d519dc5fa",
+    "test/spec/tenq-fiscal-labels/fixtures/companyfacts_periods.json": "a13e5542931941152e3d3dffc782f27965473d2ac3c4d30fa205ecf046b7fcc1",
+    "test/spec/tenq-fiscal-labels/fixtures/fsds_sub.json": "91381e65c4d0fb680d767df4ad741ac7145469af9aa298cad76ffce818514c21",
+    "test/spec/tenq-fiscal-labels/fixtures/instances.json": "1a8181ad35c21a9c8d440452844eb47274a470be08d43a1221b56aecf45f915e",
+    "test/spec/tenq-fiscal-labels/fixtures/instances/0000050863-23-000006_htm.xml": "931776fffd6067d5dc2c5e9844257323f0e0693b04674fe6032512bbf5bd337d",
+    "test/spec/tenq-fiscal-labels/fixtures/instances/0000320193-23-000106_htm.xml": "eec4087cc2bdebc526b0123890ea1d2643a4902419ae4d767c1fe308e3ddb689",
+    "test/spec/tenq-fiscal-labels/fixtures/instances/0001018724-26-000026_htm.xml": "133f23a609a0ee92c50060eefd8dd4d7f2561aefe44ff0ade2493a988af61497",
+    "test/spec/tenq-fiscal-labels/fixtures/instances/0001193125-26-101045_htm.xml": "c6e2025eea923a84effb2fa233dc8b4cc8aebf8e601f78ba81e911efa0b6a55b",
+    "test/spec/tenq-fiscal-labels/fixtures/instances/0001193125-26-389274_htm.xml": "e5315f4c4bb76e34e9af47cca98759d548dc89cab0c9c30efff6d1e2023873d6",
+    "test/spec/tenq-fiscal-labels/fixtures/manifests.json": "9451f3fdbc5d74b731d69d9ecfa2cd5f365e031ff13a484fa847332661ce2b1b",
+    "test/spec/tenq-fiscal-labels/fixtures/orcl_q1_fy2027_text.json": "b4996d5611ea653f14c46c81b2fdd733ce94df81fc00228524544fc9461a6aab",
+    "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py": "1d4b62c349d59e39d406da93b5fea3bd9e9e2ff23b83f4b94bec05a21750c324",
+    "test/spec/tenq-fiscal-labels/test_c3_c4_registry.py": "1dd348c093b4742a863ea050550486c6f87096420d2380af0a62196a6020356b",
+    "test/spec/tenq-fiscal-labels/test_c5_requests.py": "60989085e07176f5519cfaa700dcfb7a3d4fea212535cd89759744f0503470d5",
+    "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py": "232dcc3599e462ce78f52c3aea29df092263bba8d7db28d44a77ba78b267e1dd"
+  },
+  "id": "tenq-fiscal-labels",
+  "interface": [
+    {
+      "file": "src/ingest/sec_edgar/fiscal_labels.py",
+      "module": "ingest.sec_edgar.fiscal_labels",
+      "qualname": "place_quarter",
+      "signature": "def place_quarter(period_end: date, annual_periods: Mapping[date, int]) -> tuple[int, int] | None"
+    },
+    {
+      "file": "src/ingest/sec_edgar/report_period.py",
+      "module": "ingest.sec_edgar.report_period",
+      "qualname": "report_period_bounds",
+      "signature": "def report_period_bounds(instance: bytes, form_type: str) -> tuple[date, date] | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_a_december_filer_by_hand",
+    "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_a_placeable_10q_label_never_depends_on_its_dei",
+    "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_every_built_quarter_is_placed_as_built",
+    "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_label_filings_files_orcl_q1_fy2027_under_2027",
+    "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_label_filings_takes_the_calendar_over_dei_and_dei_when_unplaceable",
+    "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_orcl_label_needs_only_the_annual_filings",
+    "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_orcl_sixteen_quarters_are_placed",
+    "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_past_the_last_annual_end_is_the_next_label",
+    "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_shifting_by_whole_years_shifts_the_label",
+    "test/spec/tenq-fiscal-labels/test_c1_c2_place_quarter.py::test_start_year_labels_and_a_14_week_quarter_by_hand",
+    "test/spec/tenq-fiscal-labels/test_c3_c4_registry.py::test_10q_labels_do_not_depend_on_the_manifest_quarter_or_year",
+    "test/spec/tenq-fiscal-labels/test_c3_c4_registry.py::test_both_fact_mvs_select_one_quarter_expression",
+    "test/spec/tenq-fiscal-labels/test_c3_c4_registry.py::test_each_10q_named_by_hand",
+    "test/spec/tenq-fiscal-labels/test_c3_c4_registry.py::test_orcl_first_quarters_of_two_years_key_apart",
+    "test/spec/tenq-fiscal-labels/test_c3_c4_registry.py::test_the_flat_mv_reads_the_registry_quarter",
+    "test/spec/tenq-fiscal-labels/test_c3_c4_registry.py::test_the_nine_mismatched_10qs_take_the_fsds_quarter",
+    "test/spec/tenq-fiscal-labels/test_c5_requests.py::test_a_10q_floor_is_a_year_earlier",
+    "test/spec/tenq-fiscal-labels/test_c5_requests.py::test_a_calendar_quarter_no_longer_selects_the_wrong_filing",
+    "test/spec/tenq-fiscal-labels/test_c5_requests.py::test_every_10q_is_selected_by_its_own_fiscal_quarter",
+    "test/spec/tenq-fiscal-labels/test_c5_requests.py::test_six_fiscal_quarter_requests",
+    "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_bounds_equal_the_statement_period[0000050863-23-000006]",
+    "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_bounds_equal_the_statement_period[0000320193-23-000106]",
+    "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_bounds_equal_the_statement_period[0001018724-26-000026]",
+    "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_bounds_equal_the_statement_period[0001193125-26-101045]",
+    "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_bounds_equal_the_statement_period[0001193125-26-389274]",
+    "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_context_order_does_not_matter",
+    "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_no_statement_length_context_is_none",
+    "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_synthetic_instances",
+    "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_the_downloader_writes_the_bounds_from_the_instance",
+    "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_the_five_periods_by_hand",
+    "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_the_manifest_start_does_not_matter_when_the_instance_is_there",
+    "test/spec/tenq-fiscal-labels/test_c6_c7_bounds.py::test_the_registries_read_the_bounds_from_the_saved_instance"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/tenq-fiscal-labels.md",
+    "sha256": "8fa67c7840b81072182aa6ec90d2efedba85f9b520168363b37968e18b54cf32"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

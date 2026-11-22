@@ -1,0 +1,16 @@
+# model: gemini-2.5-pro
+# date: 2026-10-20
+# prompt: v1
+```json
+{"case_id": "int-aaaaaaaaaaaa-11111111", "persona": "sell_side_shorthand", "paraphrase": "AAPL FY24 top line?"}
+{"case_id": "int-aaaaaaaaaaaa-11111111", "persona": "terse_pm", "paraphrase": "Apple net sales, fiscal 2024."}
+{"case_id": "int-aaaaaaaaaaaa-11111111", "persona": "conversational_retail", "paraphrase": "Hey, how much did Apple sell in calendar 2024?"}
+
+{"case_id": "int-aaaaaaaaaaaa-22222222", "persona": "typo_prone", "paraphrase": "aapl revenue fy24"}
+{"case_id": "int-aaaaaaaaaaaa-22222222", "persona": "buried_ask", "paraphrase": "I'm updating my model before earnings. What was Apple Inc.'s revenue for the fiscal year ended September 28, 2024?"}
+{"case_id": "int-bbbbbbbbbbbb-33333333", "persona": "sell_side_shorthand", "paraphrase": "MSFT top line FY22 vs FY24"}
+{"case_id": "int-bbbbbbbbbbbb-33333333", "persona": "terse_pm", "paraphrase": "Microsoft revenue trend, last year vs fiscal 2022"}
+{"case_id": "int-cccccccccccc-44444444", "persona": "terse_pm", "paraphrase": "Top 3 big tech names by revenue, FY2024."}
+{"case_id": "int-cccccccccccc-44444444", "persona": "conversational_retail", "paraphrase": "Which three of the S&P 100 sold the most in fiscal 2024?"}
+{"case_id": "int-cccccccccccc-44444444", "persona": "typo_prone", "paraphrase": "Top 3 big tech companes by revenu in 2024"}
+```

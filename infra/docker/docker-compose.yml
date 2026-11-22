@@ -1,0 +1,137 @@
+# XbrlRag packaged stack (WS-6 / B7).
+#
+# Run from the repo root (paths below are relative to this file's dir, infra/docker/;
+# --env-file points Compose at the repo-root .env, which it would otherwise miss):
+#
+#   docker compose --env-file .env -f infra/docker/docker-compose.yml up -d                        # postgres, qdrant, api, mcp, ui
+#   docker compose --env-file .env -f infra/docker/docker-compose.yml --profile monitoring up -d   # + prometheus + grafana (B8)
+#   docker compose --env-file .env -f infra/docker/docker-compose.yml --profile raginference up -d # + embed/rerank service (sibling repo image)
+#
+# Copy .env.example -> .env first (OPENAI_API_KEY, XBRL_DB_PASSWORD, RAGINFER_URL, …).
+# NOTE: this brings up the *services*; the fact store still needs schema + an ingest
+# run (see docs/guides/xbrl-flow/) — packaging is separate from data loading.
+# Every host port binds to 127.0.0.1: the API and MCP have no auth (trusted-network
+# model), so exposing them beyond this machine needs a gateway in front.
+
+x-app-env: &app-env
+  XBRL_DB_HOST: postgres
+  XBRL_DB_PORT: "5432"
+  XBRL_DB_NAME: ${XBRL_DB_NAME:-xbrl_db}
+  XBRL_DB_USER: ${XBRL_DB_USER:-postgres}
+  XBRL_DB_PASSWORD: ${XBRL_DB_PASSWORD:-postgres}
+  QDRANT_HOST: qdrant
+  QDRANT_PORT: "6333"
+  OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+  JINA_API_KEY: ${JINA_API_KEY:-}
+  # Serving mode: reach BGE-M3 / Jina over HTTP so the app image stays torch-free.
+  RAGINFER_URL: ${RAGINFER_URL:-}
+  XBRLRAG_QUERY_CACHE: ${XBRLRAG_QUERY_CACHE:-0}
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${XBRL_DB_NAME:-xbrl_db}
+      POSTGRES_USER: ${XBRL_DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${XBRL_DB_PASSWORD:-postgres}
+    ports:
+      - "127.0.0.1:${XBRL_DB_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # Applied only on first init of an empty data dir. Layer-0 DDL + audit schema.
+      - ../../scripts/ddl:/docker-entrypoint-initdb.d/ddl:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${XBRL_DB_USER:-postgres} -d ${XBRL_DB_NAME:-xbrl_db}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  qdrant:
+    # Pinned: a Qdrant upgrade can change the on-disk format. Keep storage on a named
+    # volume — a Windows-host bind mount can corrupt it on an unclean stop (guide 8).
+    image: qdrant/qdrant:v1.18.2
+    ports:
+      - "127.0.0.1:6333:6333"
+    volumes:
+      - qdrantdata:/qdrant/storage
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c ':> /dev/tcp/127.0.0.1/6333' || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: ../..                       # repo root — the image COPYs src/ prompts/ configs/
+      dockerfile: infra/docker/Dockerfile  # (+ its infra/docker/Dockerfile.dockerignore)
+    image: arag:local
+    command: ["uvicorn", "src.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    environment: *app-env
+    ports:
+      - "127.0.0.1:8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+
+  mcp:
+    image: arag:local
+    command: ["python", "-m", "src.mcp_server.server"]
+    environment:
+      <<: *app-env
+      XBRLRAG_MCP_TRANSPORT: streamable-http
+      XBRLRAG_MCP_PORT: "8765"
+    ports:
+      - "127.0.0.1:8765:8765"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+
+  ui:
+    build: ../../ui
+    image: arag-ui:local
+    environment:
+      XBRLRAG_API_UPSTREAM: api:8000
+    ports:
+      - "127.0.0.1:8080:80"
+    depends_on:
+      - api
+
+  # ---- opt-in: monitoring (WS-7 / B8) — `--profile monitoring` ----
+  prometheus:
+    image: prom/prometheus:latest
+    profiles: ["monitoring"]
+    volumes:
+      - ../../deploy/monitoring/prometheus.compose.yml:/etc/prometheus/prometheus.yml:ro
+      - ../../configs/monitoring/alerts.yml:/etc/prometheus/alerts.yml:ro
+    ports:
+      - "127.0.0.1:9090:9090"
+    depends_on:
+      - api
+
+  grafana:
+    image: grafana/grafana:latest
+    profiles: ["monitoring"]
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:-admin}
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      - prometheus
+
+  # ---- opt-in: shared inference (sibling repo image) — `--profile raginference` ----
+  raginference:
+    image: ${RAGINFER_IMAGE:-raginference:local}
+    profiles: ["raginference"]
+    ports:
+      - "127.0.0.1:8799:8799"
+    # Build/publish this image from the RagInference sibling repo; then set
+    # RAGINFER_URL=http://raginference:8799 in .env so api/mcp use it.
+
+volumes:
+  pgdata:
+  qdrantdata:

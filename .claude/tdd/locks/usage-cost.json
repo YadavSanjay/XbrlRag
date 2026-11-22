@@ -1,0 +1,89 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-18",
+  "criteria": {
+    "C1": [
+      "test/spec/usage-cost/test_usage_cost.py::test_meter_sums_recorded_calls",
+      "test/spec/usage-cost/test_usage_cost.py::test_meter_with_no_calls_is_exactly_free",
+      "test/spec/usage-cost/test_usage_cost.py::test_meter_matches_sum_property",
+      "test/spec/usage-cost/test_usage_cost.py::test_meter_split_is_additive"
+    ],
+    "C2": [
+      "test/spec/usage-cost/test_usage_cost.py::test_meter_persists_nothing_and_restores_no_trace",
+      "test/spec/usage-cost/test_usage_cost.py::test_meter_credits_enclosing_trace",
+      "test/spec/usage-cost/test_usage_cost.py::test_meter_restores_and_credits_on_exception",
+      "test/spec/usage-cost/test_usage_cost.py::test_enclosing_trace_grows_by_metered_usage"
+    ],
+    "C3": [
+      "test/spec/usage-cost/test_usage_cost.py::test_usage_model_accepts_valid_and_rejects_broken_costs",
+      "test/spec/usage-cost/test_usage_cost.py::test_usage_model_sign_property"
+    ],
+    "C4": [
+      "test/spec/usage-cost/test_usage_cost.py::test_responses_require_usage_block",
+      "test/spec/usage-cost/test_usage_cost.py::test_responses_serialize_usage_at_top_level",
+      "test/spec/usage-cost/test_usage_cost.py::test_response_usage_round_trip_property"
+    ]
+  },
+  "files": {
+    "test/spec/usage-cost/conftest.py": "cdda3b90349d8cfa7c90cf68f215e8f812413ba6048f68fd92d1a97cc4985a3a",
+    "test/spec/usage-cost/test_usage_cost.py": "f37049693fe2f0ba301a7ab0b1103339dc4769cf9fe67ba53208127458616d48"
+  },
+  "id": "usage-cost",
+  "interface": [
+    {
+      "file": "src/observability/usage_meter.py",
+      "module": "observability.usage_meter",
+      "qualname": "UsageMeter.__enter__",
+      "signature": "def __enter__(self) -> UsageMeter"
+    },
+    {
+      "file": "src/observability/usage_meter.py",
+      "module": "observability.usage_meter",
+      "qualname": "UsageMeter.__exit__",
+      "signature": "def __exit__(self, exc_type: type[BaseException] | None, exc: BaseException | None, tb: TracebackType | None) -> None"
+    },
+    {
+      "file": "src/observability/usage_meter.py",
+      "module": "observability.usage_meter",
+      "qualname": "UsageMeter.usage",
+      "signature": "def usage(self) -> dict[str, float | int]"
+    }
+  ],
+  "nodes": [
+    "test/spec/usage-cost/test_usage_cost.py::test_enclosing_trace_grows_by_metered_usage",
+    "test/spec/usage-cost/test_usage_cost.py::test_meter_credits_enclosing_trace",
+    "test/spec/usage-cost/test_usage_cost.py::test_meter_matches_sum_property",
+    "test/spec/usage-cost/test_usage_cost.py::test_meter_persists_nothing_and_restores_no_trace",
+    "test/spec/usage-cost/test_usage_cost.py::test_meter_restores_and_credits_on_exception",
+    "test/spec/usage-cost/test_usage_cost.py::test_meter_split_is_additive",
+    "test/spec/usage-cost/test_usage_cost.py::test_meter_sums_recorded_calls",
+    "test/spec/usage-cost/test_usage_cost.py::test_meter_with_no_calls_is_exactly_free",
+    "test/spec/usage-cost/test_usage_cost.py::test_response_usage_round_trip_property",
+    "test/spec/usage-cost/test_usage_cost.py::test_responses_require_usage_block",
+    "test/spec/usage-cost/test_usage_cost.py::test_responses_serialize_usage_at_top_level",
+    "test/spec/usage-cost/test_usage_cost.py::test_usage_model_accepts_valid_and_rejects_broken_costs",
+    "test/spec/usage-cost/test_usage_cost.py::test_usage_model_sign_property"
+  ],
+  "red_exempt": [
+    "test/spec/usage-cost/test_usage_cost.py::test_meter_with_no_calls_is_exactly_free: zero the correct cost is 0.0; llm_calls and the float type still differ",
+    "test/spec/usage-cost/test_usage_cost.py::test_responses_serialize_usage_at_top_level: zero 0.0 is the correct cost of a database-only lookup"
+  ],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/usage-cost.md",
+    "sha256": "76255fa5c1c8fc66046915b825761a4b2bfed8094c5139fec0a387bab06e521b"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

@@ -1,0 +1,124 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-11",
+  "criteria": {
+    "C1": [
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_the_union_pacific_range",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue FY2023 through FY2025-expected0]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue FY 2022 thru FY 2024-expected1]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue fiscal 2021 to fiscal 2024-expected2]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue from fiscal year 2022 to fiscal year 2025-expected3]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue from FY'21 through FY'23-expected4]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue FY\\u201921-FY\\u201924-expected5]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue 2020 \\u2013 2023-expected6]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue 2020\\u20132022-expected7]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue FY22 -> FY25-expected8]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue FY22 \\u2192 FY24-expected9]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[the change in AAA revenue between FY23 and FY25-expected10]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue for fiscal years 2023 through 2025-expected11]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue FY2023 through December 31, 2025-expected12]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue Dec. 31, 2022 to Dec 31 2024-expected13]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue from FY2025 to FY2023-expected14]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue FY2019 through FY2021 and FY2023 through FY2025-expected15]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue fiscal 2018 through fiscal 2030-expected16]",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_lists_split_years_and_quarters_state_no_range",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_any_two_endpoints_joined_as_a_range_give_that_range",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_the_same_endpoints_joined_as_a_list_give_no_range"
+    ],
+    "C2": [
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_dated_endpoints_read_through_a_december_filer",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_dated_endpoints_take_the_filers_labels",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_a_date_that_ends_no_fiscal_year_drops_the_range",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_generated_calendars_map_end_dates_to_labels",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_a_date_8_or_more_days_from_every_end_drops_the_range"
+    ],
+    "C3": [
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_the_evidence_cases_get_their_middle_year",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_fills_by_the_filers_labels",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_fills_every_gap_and_only_inside_ranges",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_resolved_plus_filled_is_exactly_the_range"
+    ],
+    "C4": [
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_lists_add_nothing",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_one_endpoint_long_ranges_quarters_and_unmatched_dates_add_nothing",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_a_list_connector_in_place_of_the_range_adds_nothing",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_resolved_years_without_an_endpoint_add_nothing",
+      "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_ranges_over_ten_years_add_nothing"
+    ]
+  },
+  "files": {
+    "test/spec/fiscal-year-range-split/conftest.py": "f775f3d78e79d7a0b11bc3b0d4f03029048039540b88519fa71761736bb5987b",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py": "913db4505cd65b36450951164438dbf4ced7c31c237de4417f23ed796fd3132a"
+  },
+  "id": "fiscal-year-range-split",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/fiscal_date.py",
+      "module": "retriever.xbrl.fiscal_date",
+      "qualname": "stated_fiscal_year_ranges",
+      "signature": "def stated_fiscal_year_ranges(question: str, calendar: Sequence[Mapping[str, Any]]=(), year_range: tuple[int, int]=(2018, 2035)) -> list[tuple[int, int]]"
+    },
+    {
+      "file": "src/retriever/xbrl/fiscal_date.py",
+      "module": "retriever.xbrl.fiscal_date",
+      "qualname": "missing_range_years",
+      "signature": "def missing_range_years(question: str, resolved_years: Sequence[int], calendar: Sequence[Mapping[str, Any]]=(), year_range: tuple[int, int]=(2018, 2035)) -> list[int]"
+    }
+  ],
+  "nodes": [
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_a_date_8_or_more_days_from_every_end_drops_the_range",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_a_date_that_ends_no_fiscal_year_drops_the_range",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_a_list_connector_in_place_of_the_range_adds_nothing",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_any_two_endpoints_joined_as_a_range_give_that_range",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_dated_endpoints_read_through_a_december_filer",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_dated_endpoints_take_the_filers_labels",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue 2020 \\u2013 2023-expected6]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue 2020\\u20132022-expected7]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue Dec. 31, 2022 to Dec 31 2024-expected13]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue FY 2022 thru FY 2024-expected1]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue FY2019 through FY2021 and FY2023 through FY2025-expected15]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue FY2023 through December 31, 2025-expected12]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue FY2023 through FY2025-expected0]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue FY22 -> FY25-expected8]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue FY22 \\u2192 FY24-expected9]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue FY\\u201921-FY\\u201924-expected5]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue fiscal 2018 through fiscal 2030-expected16]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue fiscal 2021 to fiscal 2024-expected2]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue for fiscal years 2023 through 2025-expected11]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue from FY'21 through FY'23-expected4]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue from FY2025 to FY2023-expected14]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[AAA revenue from fiscal year 2022 to fiscal year 2025-expected3]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_each_separator_and_form[the change in AAA revenue between FY23 and FY25-expected10]",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_fills_by_the_filers_labels",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_fills_every_gap_and_only_inside_ranges",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_generated_calendars_map_end_dates_to_labels",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_lists_add_nothing",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_lists_split_years_and_quarters_state_no_range",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_one_endpoint_long_ranges_quarters_and_unmatched_dates_add_nothing",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_ranges_over_ten_years_add_nothing",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_resolved_plus_filled_is_exactly_the_range",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_resolved_years_without_an_endpoint_add_nothing",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_the_evidence_cases_get_their_middle_year",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_the_same_endpoints_joined_as_a_list_give_no_range",
+    "test/spec/fiscal-year-range-split/test_fiscal_year_range_split.py::test_the_union_pacific_range"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/fiscal-year-range-split.md",
+    "sha256": "5336a6eaaf23cb52004dba149ea75351085cd481d7f5c1b1295a35b9c4ba3797"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

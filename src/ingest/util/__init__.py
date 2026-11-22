@@ -1,0 +1,1 @@
+"""Ingest utilities for XbrlRag."""

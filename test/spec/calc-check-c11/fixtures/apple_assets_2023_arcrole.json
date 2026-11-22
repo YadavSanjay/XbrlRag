@@ -1,0 +1,108 @@
+{
+ "case": "apple_assets_2023_arcrole",
+ "accession_no": "0000320193-26-000013",
+ "filing": "Apple 10-Q (quarter ending 2026-03-28)",
+ "local_source": "data/storage/sec_edgar/AAPL/2026/10-Q/Q1/aapl-20260328.htm",
+ "extracted": "xbrl_db (read-only), 2026-11-07: network/relationship arcs of one link role and parent; every fact of those concepts in the filing (all contexts)",
+ "dates": "xbrl_db stores an instant and a duration end as the next day (end-of-day convention): 2025-01-01 is the 2024-12-31 balance sheet date",
+ "arelle_c11r": {
+  "version": "Arelle 2.41.0, arelleCmdLine --calc c11r --internetConnectivity offline, run 2026-11-07 on local_source",
+  "inconsistent_in_this_tree": []
+ },
+ "arcs": [
+  {
+   "arcrole": "https://xbrl.org/2023/arcrole/summation-item",
+   "link_role": "http://www.apple.com/role/CONDENSEDCONSOLIDATEDBALANCESHEETSUnaudited",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:AssetsCurrent",
+   "weight": "1.0"
+  },
+  {
+   "arcrole": "https://xbrl.org/2023/arcrole/summation-item",
+   "link_role": "http://www.apple.com/role/CONDENSEDCONSOLIDATEDBALANCESHEETSUnaudited",
+   "parent": "http://fasb.org/us-gaap/2025:Assets",
+   "child": "http://fasb.org/us-gaap/2025:AssetsNoncurrent",
+   "weight": "1.0"
+  }
+ ],
+ "facts": [
+  {
+   "fact_id": 15619,
+   "concept": "http://fasb.org/us-gaap/2025:Assets",
+   "entity": "0000320193",
+   "period_start": null,
+   "period_end": "2025-09-28",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "359241000000",
+   "decimals": -6,
+   "xml_id": "f-189",
+   "context": "c-22"
+  },
+  {
+   "fact_id": 15618,
+   "concept": "http://fasb.org/us-gaap/2025:Assets",
+   "entity": "0000320193",
+   "period_start": null,
+   "period_end": "2026-03-29",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "371082000000",
+   "decimals": -6,
+   "xml_id": "f-188",
+   "context": "c-21"
+  },
+  {
+   "fact_id": 15607,
+   "concept": "http://fasb.org/us-gaap/2025:AssetsCurrent",
+   "entity": "0000320193",
+   "period_start": null,
+   "period_end": "2025-09-28",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "147957000000",
+   "decimals": -6,
+   "xml_id": "f-177",
+   "context": "c-22"
+  },
+  {
+   "fact_id": 15606,
+   "concept": "http://fasb.org/us-gaap/2025:AssetsCurrent",
+   "entity": "0000320193",
+   "period_start": null,
+   "period_end": "2026-03-29",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "144114000000",
+   "decimals": -6,
+   "xml_id": "f-176",
+   "context": "c-21"
+  },
+  {
+   "fact_id": 15617,
+   "concept": "http://fasb.org/us-gaap/2025:AssetsNoncurrent",
+   "entity": "0000320193",
+   "period_start": null,
+   "period_end": "2025-09-28",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "211284000000",
+   "decimals": -6,
+   "xml_id": "f-187",
+   "context": "c-22"
+  },
+  {
+   "fact_id": 15616,
+   "concept": "http://fasb.org/us-gaap/2025:AssetsNoncurrent",
+   "entity": "0000320193",
+   "period_start": null,
+   "period_end": "2026-03-29",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "226968000000",
+   "decimals": -6,
+   "xml_id": "f-186",
+   "context": "c-21"
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-14",
+  "criteria": {
+    "C1": [
+      "test/spec/pick-skips-questions/test_psq_c1_pick_sentence.py::test_the_three_real_shapes_pick_the_answers_filer",
+      "test/spec/pick-skips-questions/test_psq_c1_pick_sentence.py::test_only_questions_hold_a_superlative_gives_no_pick",
+      "test/spec/pick-skips-questions/test_psq_c1_pick_sentence.py::test_fallback_takes_the_last_declarative_superlative_sentence",
+      "test/spec/pick-skips-questions/test_psq_c1_pick_sentence.py::test_a_question_mark_that_is_not_a_split_is_declarative",
+      "test/spec/pick-skips-questions/test_psq_c1_pick_sentence.py::test_skipping_a_question_never_favours_the_key",
+      "test/spec/pick-skips-questions/test_psq_c1_pick_sentence.py::test_question_lines_never_change_a_declarative_pick"
+    ],
+    "C2": [
+      "test/spec/pick-skips-questions/test_psq_c2_pick_grading.py::test_the_three_real_shapes_are_correct",
+      "test/spec/pick-skips-questions/test_psq_c2_pick_grading.py::test_an_answer_naming_another_filer_fails_the_pick",
+      "test/spec/pick-skips-questions/test_psq_c2_pick_grading.py::test_prefixed_question_lines_never_change_the_grade"
+    ],
+    "C3": [
+      "test/spec/pick-skips-questions/test_psq_c3_grader_version.py::test_grader_version_is_11",
+      "test/spec/pick-skips-questions/test_psq_c3_grader_version.py::test_version_does_not_depend_on_the_graded_cases"
+    ],
+    "C4": [
+      "test/spec/pick-skips-questions/test_psq_c4_absolute_change.py::test_the_real_shape_reads_the_absolute_change",
+      "test/spec/pick-skips-questions/test_psq_c4_absolute_change.py::test_each_percent_cue_blocks_the_reading",
+      "test/spec/pick-skips-questions/test_psq_c4_absolute_change.py::test_words_are_matched_whole_and_in_any_case",
+      "test/spec/pick-skips-questions/test_psq_c4_absolute_change.py::test_no_reading_without_a_growth_key_or_a_single_pair",
+      "test/spec/pick-skips-questions/test_psq_c4_absolute_change.py::test_random_legs"
+    ],
+    "C5": [
+      "test/spec/pick-skips-questions/test_psq_c5_change_grading.py::test_compound_change_question_accepts_the_absolute_change",
+      "test/spec/pick-skips-questions/test_psq_c5_change_grading.py::test_a_percent_cue_or_a_wrong_change_still_fails",
+      "test/spec/pick-skips-questions/test_psq_c5_change_grading.py::test_the_growth_form_passes_under_either_question",
+      "test/spec/pick-skips-questions/test_psq_c5_change_grading.py::test_non_compound_growth_case",
+      "test/spec/pick-skips-questions/test_psq_c5_change_grading.py::test_change_accepted_exactly_without_a_cue"
+    ]
+  },
+  "files": {
+    "test/spec/pick-skips-questions/conftest.py": "b603f81eae255855c40b38d4ceb749c057f42572c4dcdf863cc34731f95bebc5",
+    "test/spec/pick-skips-questions/test_psq_c1_pick_sentence.py": "2fa6c42c6dbcec216dd09b74834655e96d9ef845a47acb0d47d7e44c2931b41a",
+    "test/spec/pick-skips-questions/test_psq_c2_pick_grading.py": "d38c21f003d1873e81220cdff18c5fb14e13cbd1b45f6e785c32af6e174a5634",
+    "test/spec/pick-skips-questions/test_psq_c3_grader_version.py": "88e97c8deb5919b5bfcc16ccc93de688cb159c8896f8a57c035b64f1cfaddfda",
+    "test/spec/pick-skips-questions/test_psq_c4_absolute_change.py": "40ce8e96f552d4b4196e61e489070b2a257730104424c711135e649439b9e70c",
+    "test/spec/pick-skips-questions/test_psq_c5_change_grading.py": "536d2fb8d4a13acdcc76774665794b5d55cc1475018d4c26bde8e9d0a0450450"
+  },
+  "id": "pick-skips-questions",
+  "interface": [
+    {
+      "file": "src/eval/core/graders/v2.py",
+      "module": "eval.core.graders.v2",
+      "qualname": "absolute_change_reading",
+      "signature": "def absolute_change_reading(question: str, key: Mapping[str, Any] | None, growth: float | None) -> float | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/pick-skips-questions/test_psq_c1_pick_sentence.py::test_a_question_mark_that_is_not_a_split_is_declarative",
+    "test/spec/pick-skips-questions/test_psq_c1_pick_sentence.py::test_fallback_takes_the_last_declarative_superlative_sentence",
+    "test/spec/pick-skips-questions/test_psq_c1_pick_sentence.py::test_only_questions_hold_a_superlative_gives_no_pick",
+    "test/spec/pick-skips-questions/test_psq_c1_pick_sentence.py::test_question_lines_never_change_a_declarative_pick",
+    "test/spec/pick-skips-questions/test_psq_c1_pick_sentence.py::test_skipping_a_question_never_favours_the_key",
+    "test/spec/pick-skips-questions/test_psq_c1_pick_sentence.py::test_the_three_real_shapes_pick_the_answers_filer",
+    "test/spec/pick-skips-questions/test_psq_c2_pick_grading.py::test_an_answer_naming_another_filer_fails_the_pick",
+    "test/spec/pick-skips-questions/test_psq_c2_pick_grading.py::test_prefixed_question_lines_never_change_the_grade",
+    "test/spec/pick-skips-questions/test_psq_c2_pick_grading.py::test_the_three_real_shapes_are_correct",
+    "test/spec/pick-skips-questions/test_psq_c3_grader_version.py::test_grader_version_is_11",
+    "test/spec/pick-skips-questions/test_psq_c3_grader_version.py::test_version_does_not_depend_on_the_graded_cases",
+    "test/spec/pick-skips-questions/test_psq_c4_absolute_change.py::test_each_percent_cue_blocks_the_reading",
+    "test/spec/pick-skips-questions/test_psq_c4_absolute_change.py::test_no_reading_without_a_growth_key_or_a_single_pair",
+    "test/spec/pick-skips-questions/test_psq_c4_absolute_change.py::test_random_legs",
+    "test/spec/pick-skips-questions/test_psq_c4_absolute_change.py::test_the_real_shape_reads_the_absolute_change",
+    "test/spec/pick-skips-questions/test_psq_c4_absolute_change.py::test_words_are_matched_whole_and_in_any_case",
+    "test/spec/pick-skips-questions/test_psq_c5_change_grading.py::test_a_percent_cue_or_a_wrong_change_still_fails",
+    "test/spec/pick-skips-questions/test_psq_c5_change_grading.py::test_change_accepted_exactly_without_a_cue",
+    "test/spec/pick-skips-questions/test_psq_c5_change_grading.py::test_compound_change_question_accepts_the_absolute_change",
+    "test/spec/pick-skips-questions/test_psq_c5_change_grading.py::test_non_compound_growth_case",
+    "test/spec/pick-skips-questions/test_psq_c5_change_grading.py::test_the_growth_form_passes_under_either_question"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/pick-skips-questions.md",
+    "sha256": "1daf8bfcf642b71a234450e00f8871350b7a619d5ea36fde4d301fe0982749bf"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

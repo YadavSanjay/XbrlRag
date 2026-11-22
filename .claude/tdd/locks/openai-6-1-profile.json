@@ -1,0 +1,156 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-03",
+  "criteria": {
+    "C1": [
+      "test/spec/openai-6-1-profile/test_c1_prices.py::test_new_rows_and_their_long_context_tier[gpt-6.1-sol]",
+      "test/spec/openai-6-1-profile/test_c1_prices.py::test_new_rows_and_their_long_context_tier[gpt-6.1-terra]",
+      "test/spec/openai-6-1-profile/test_c1_prices.py::test_luna_gains_its_cache_write_and_keeps_the_rest",
+      "test/spec/openai-6-1-profile/test_c1_prices.py::test_model_pricing_exposes_the_same_rates[gpt-6.1-sol]",
+      "test/spec/openai-6-1-profile/test_c1_prices.py::test_model_pricing_exposes_the_same_rates[gpt-6.1-terra]",
+      "test/spec/openai-6-1-profile/test_c1_prices.py::test_model_pricing_exposes_the_same_rates[gpt-6-luna]",
+      "test/spec/openai-6-1-profile/test_c1_prices.py::test_sol_point_costs",
+      "test/spec/openai-6-1-profile/test_c1_prices.py::test_tier_boundary_is_strictly_above_272k[gpt-6.1-sol]",
+      "test/spec/openai-6-1-profile/test_c1_prices.py::test_tier_boundary_is_strictly_above_272k[gpt-6.1-terra]",
+      "test/spec/openai-6-1-profile/test_c1_prices.py::test_any_call_costs_the_tables_rates",
+      "test/spec/openai-6-1-profile/test_c1_prices.py::test_doubling_counts_within_a_tier_doubles_the_cost"
+    ],
+    "C2": [
+      "test/spec/openai-6-1-profile/test_c2_profile.py::test_profile_tiers_rows_and_provider",
+      "test/spec/openai-6-1-profile/test_c2_profile.py::test_other_profiles_and_the_default_are_unchanged",
+      "test/spec/openai-6-1-profile/test_c2_profile.py::test_call_params_give_each_model_its_ceiling_and_temperature_one",
+      "test/spec/openai-6-1-profile/test_c2_profile.py::test_every_stage_gets_the_profiles_model_for_its_tier",
+      "test/spec/openai-6-1-profile/test_c2_profile.py::test_any_caller_default_gives_the_models_own_parameters"
+    ],
+    "C3": [
+      "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_unset_or_blank_is_none_and_a_value_is_returned",
+      "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_each_valid_tier_and_surrounding_whitespace",
+      "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_any_other_value_raises[FLEX]",
+      "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_any_other_value_raises[batch]",
+      "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_any_other_value_raises[scale]",
+      "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_any_other_value_raises[standard]",
+      "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_any_other_value_raises[flex,auto]",
+      "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_any_other_value_raises[0]",
+      "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_reads_os_environ_when_no_mapping_is_given",
+      "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_any_string_maps_by_the_rule"
+    ],
+    "C4": [
+      "test/spec/openai-6-1-profile/test_c4_adapter_tier.py::test_flex_is_on_every_openai_request_and_absent_when_unset",
+      "test/spec/openai-6-1-profile/test_c4_adapter_tier.py::test_other_adapters_never_send_a_tier",
+      "test/spec/openai-6-1-profile/test_c4_adapter_tier.py::test_an_invalid_tier_fails_the_build",
+      "test/spec/openai-6-1-profile/test_c4_adapter_tier.py::test_the_tier_reaches_the_sdk_call_and_is_read_per_call",
+      "test/spec/openai-6-1-profile/test_c4_adapter_tier.py::test_any_tier_on_any_path"
+    ],
+    "C5": [
+      "test/spec/openai-6-1-profile/test_c5_timeout.py::test_long_context_stages_get_900_seconds_and_others_none",
+      "test/spec/openai-6-1-profile/test_c5_timeout.py::test_the_gateway_passes_the_timeout_to_invoke",
+      "test/spec/openai-6-1-profile/test_c5_timeout.py::test_any_stage_gets_the_timeout_exactly_when_it_is_long_context"
+    ],
+    "C6": [
+      "test/spec/openai-6-1-profile/test_c6_run_records.py::test_the_tier_is_recorded_and_none_when_unset",
+      "test/spec/openai-6-1-profile/test_c6_run_records.py::test_every_report_of_a_shared_schedule_records_it",
+      "test/spec/openai-6-1-profile/test_c6_run_records.py::test_an_invalid_tier_fails_before_any_case",
+      "test/spec/openai-6-1-profile/test_c6_run_records.py::test_any_tier_is_recorded_as_read",
+      "test/spec/openai-6-1-profile/test_c6_run_records.py::test_run_suite_flag_sets_the_tier_for_the_run_and_restores_it",
+      "test/spec/openai-6-1-profile/test_c6_run_records.py::test_run_suite_rejects_an_unknown_tier_before_running[bogus]",
+      "test/spec/openai-6-1-profile/test_c6_run_records.py::test_run_suite_rejects_an_unknown_tier_before_running[FLEX]",
+      "test/spec/openai-6-1-profile/test_c6_run_records.py::test_run_suite_rejects_an_unknown_tier_before_running[batch]"
+    ],
+    "C7": [
+      "test/spec/openai-6-1-profile/test_c7_judge.py::test_judge_config_names_gpt_6_luna_as_the_milestone_judge",
+      "test/spec/openai-6-1-profile/test_c7_judge.py::test_family_rule_for_the_new_judge",
+      "test/spec/openai-6-1-profile/test_c7_judge.py::test_any_profile_and_judge_follow_the_family_rule"
+    ]
+  },
+  "files": {
+    "test/spec/openai-6-1-profile/conftest.py": "e978f834c1893d20b24aae99bea3b1f4461eff7b080dbd0c3b12c375370979e0",
+    "test/spec/openai-6-1-profile/test_c1_prices.py": "609611e579144c3095780078b9069ca2a706f6eb72a6b3b7c993ac25ff0635c6",
+    "test/spec/openai-6-1-profile/test_c2_profile.py": "231137604d405a5e9aa904296d46aaa7a50bb8a50112fcd91ddefeee8ede675c",
+    "test/spec/openai-6-1-profile/test_c3_service_tier.py": "eda803cbd2f7bfd0a80a20b49746556f166a9b34a2ebc327c79061aa639e7c16",
+    "test/spec/openai-6-1-profile/test_c4_adapter_tier.py": "c9e1f4514946021b8212f8cf249a604ec81c1421d07ea9795263104ae88b1b69",
+    "test/spec/openai-6-1-profile/test_c5_timeout.py": "0e321d727ac92ba4faa1aa52f1f01c4526a272038db05e06be24842e274b396b",
+    "test/spec/openai-6-1-profile/test_c6_run_records.py": "5d568a2fa7e129bfa335731a7b23057be142b656fd054d7c66300ad58dfe1a16",
+    "test/spec/openai-6-1-profile/test_c7_judge.py": "b8cb45fda57ed54389bf349769e12348f3479422f408ac0016e0fa93512caa2b"
+  },
+  "id": "openai-6-1-profile",
+  "interface": [
+    {
+      "file": "src/llm/request_options.py",
+      "module": "llm.request_options",
+      "qualname": "openai_service_tier",
+      "signature": "def openai_service_tier(environ: Mapping[str, str] | None=None) -> str | None"
+    },
+    {
+      "file": "src/llm/request_options.py",
+      "module": "llm.request_options",
+      "qualname": "request_timeout_s",
+      "signature": "def request_timeout_s(stage: str) -> float | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/openai-6-1-profile/test_c1_prices.py::test_any_call_costs_the_tables_rates",
+    "test/spec/openai-6-1-profile/test_c1_prices.py::test_doubling_counts_within_a_tier_doubles_the_cost",
+    "test/spec/openai-6-1-profile/test_c1_prices.py::test_luna_gains_its_cache_write_and_keeps_the_rest",
+    "test/spec/openai-6-1-profile/test_c1_prices.py::test_model_pricing_exposes_the_same_rates[gpt-6-luna]",
+    "test/spec/openai-6-1-profile/test_c1_prices.py::test_model_pricing_exposes_the_same_rates[gpt-6.1-sol]",
+    "test/spec/openai-6-1-profile/test_c1_prices.py::test_model_pricing_exposes_the_same_rates[gpt-6.1-terra]",
+    "test/spec/openai-6-1-profile/test_c1_prices.py::test_new_rows_and_their_long_context_tier[gpt-6.1-sol]",
+    "test/spec/openai-6-1-profile/test_c1_prices.py::test_new_rows_and_their_long_context_tier[gpt-6.1-terra]",
+    "test/spec/openai-6-1-profile/test_c1_prices.py::test_sol_point_costs",
+    "test/spec/openai-6-1-profile/test_c1_prices.py::test_tier_boundary_is_strictly_above_272k[gpt-6.1-sol]",
+    "test/spec/openai-6-1-profile/test_c1_prices.py::test_tier_boundary_is_strictly_above_272k[gpt-6.1-terra]",
+    "test/spec/openai-6-1-profile/test_c2_profile.py::test_any_caller_default_gives_the_models_own_parameters",
+    "test/spec/openai-6-1-profile/test_c2_profile.py::test_call_params_give_each_model_its_ceiling_and_temperature_one",
+    "test/spec/openai-6-1-profile/test_c2_profile.py::test_every_stage_gets_the_profiles_model_for_its_tier",
+    "test/spec/openai-6-1-profile/test_c2_profile.py::test_other_profiles_and_the_default_are_unchanged",
+    "test/spec/openai-6-1-profile/test_c2_profile.py::test_profile_tiers_rows_and_provider",
+    "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_any_other_value_raises[0]",
+    "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_any_other_value_raises[FLEX]",
+    "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_any_other_value_raises[batch]",
+    "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_any_other_value_raises[flex,auto]",
+    "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_any_other_value_raises[scale]",
+    "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_any_other_value_raises[standard]",
+    "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_any_string_maps_by_the_rule",
+    "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_each_valid_tier_and_surrounding_whitespace",
+    "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_reads_os_environ_when_no_mapping_is_given",
+    "test/spec/openai-6-1-profile/test_c3_service_tier.py::test_unset_or_blank_is_none_and_a_value_is_returned",
+    "test/spec/openai-6-1-profile/test_c4_adapter_tier.py::test_an_invalid_tier_fails_the_build",
+    "test/spec/openai-6-1-profile/test_c4_adapter_tier.py::test_any_tier_on_any_path",
+    "test/spec/openai-6-1-profile/test_c4_adapter_tier.py::test_flex_is_on_every_openai_request_and_absent_when_unset",
+    "test/spec/openai-6-1-profile/test_c4_adapter_tier.py::test_other_adapters_never_send_a_tier",
+    "test/spec/openai-6-1-profile/test_c4_adapter_tier.py::test_the_tier_reaches_the_sdk_call_and_is_read_per_call",
+    "test/spec/openai-6-1-profile/test_c5_timeout.py::test_any_stage_gets_the_timeout_exactly_when_it_is_long_context",
+    "test/spec/openai-6-1-profile/test_c5_timeout.py::test_long_context_stages_get_900_seconds_and_others_none",
+    "test/spec/openai-6-1-profile/test_c5_timeout.py::test_the_gateway_passes_the_timeout_to_invoke",
+    "test/spec/openai-6-1-profile/test_c6_run_records.py::test_an_invalid_tier_fails_before_any_case",
+    "test/spec/openai-6-1-profile/test_c6_run_records.py::test_any_tier_is_recorded_as_read",
+    "test/spec/openai-6-1-profile/test_c6_run_records.py::test_every_report_of_a_shared_schedule_records_it",
+    "test/spec/openai-6-1-profile/test_c6_run_records.py::test_run_suite_flag_sets_the_tier_for_the_run_and_restores_it",
+    "test/spec/openai-6-1-profile/test_c6_run_records.py::test_run_suite_rejects_an_unknown_tier_before_running[FLEX]",
+    "test/spec/openai-6-1-profile/test_c6_run_records.py::test_run_suite_rejects_an_unknown_tier_before_running[batch]",
+    "test/spec/openai-6-1-profile/test_c6_run_records.py::test_run_suite_rejects_an_unknown_tier_before_running[bogus]",
+    "test/spec/openai-6-1-profile/test_c6_run_records.py::test_the_tier_is_recorded_and_none_when_unset",
+    "test/spec/openai-6-1-profile/test_c7_judge.py::test_any_profile_and_judge_follow_the_family_rule",
+    "test/spec/openai-6-1-profile/test_c7_judge.py::test_family_rule_for_the_new_judge",
+    "test/spec/openai-6-1-profile/test_c7_judge.py::test_judge_config_names_gpt_6_luna_as_the_milestone_judge"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/openai-6-1-profile.md",
+    "sha256": "33e973d55cc015337cf04acd5df502d20084360a6e737872475f8ad936780d74"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

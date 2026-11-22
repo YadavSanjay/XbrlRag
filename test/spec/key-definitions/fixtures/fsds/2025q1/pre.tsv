@@ -1,0 +1,66 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0000104169-25-000021	3	2	IS	0	H	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	Net sales	0
+0000104169-25-000021	3	3	IS	0	H	OtherIncome	us-gaap/2024	Membership and other income	0
+0000104169-25-000021	3	4	IS	0	H	Revenues	us-gaap/2024	Total revenues	0
+0000104169-25-000021	3	6	IS	0	H	CostOfRevenue	us-gaap/2024	Cost of sales	0
+0000104169-25-000021	3	7	IS	0	H	SellingGeneralAndAdministrativeExpense	us-gaap/2024	Operating, selling, general and administrative expenses	0
+0000104169-25-000021	3	8	IS	0	H	OperatingIncomeLoss	us-gaap/2024	Operating income	0
+0000104169-25-000021	3	10	IS	0	H	InterestExpenseDebt	us-gaap/2024	Debt	0
+0000104169-25-000021	3	11	IS	0	H	FinanceLeaseAndFinancingObligationInterestExpense	0000104169-25-000021	Finance lease	0
+0000104169-25-000021	3	12	IS	0	H	InvestmentIncomeInterest	us-gaap/2024	Interest income	1
+0000104169-25-000021	3	13	IS	0	H	InterestIncomeExpenseNonoperatingNet	us-gaap/2024	Interest, net	1
+0000104169-25-000021	3	14	IS	0	H	NonoperatingIncomeExpense	us-gaap/2024	Other (gains) and losses	1
+0000104169-25-000021	3	15	IS	0	H	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2024	Income before income taxes	0
+0000104169-25-000021	3	16	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2024	Provision for income taxes	0
+0000104169-25-000021	3	17	IS	0	H	ProfitLoss	us-gaap/2024	Consolidated net income	0
+0000104169-25-000021	3	18	IS	0	H	NetIncomeLossAttributableToNoncontrollingInterest	us-gaap/2024	Consolidated net (income) loss attributable to noncontrolling interest	1
+0000104169-25-000021	3	19	IS	0	H	NetIncomeLoss	us-gaap/2024	Consolidated net income attributable to Walmart	0
+0000104169-25-000021	3	21	IS	0	H	EarningsPerShareBasic	us-gaap/2024	Basic net income per common share attributable to Walmart (in USD per share)	0
+0000104169-25-000021	3	22	IS	0	H	EarningsPerShareDiluted	us-gaap/2024	Diluted net income per common share attributable to Walmart (in USD per share)	0
+0000104169-25-000021	3	24	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2024	Basic (in shares)	0
+0000104169-25-000021	3	25	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2024	Diluted (in shares)	0
+0000104169-25-000021	3	26	IS	0	H	CommonStockDividendsPerShareDeclared	us-gaap/2024	Dividends declared per common share (in USD per share)	0
+0000104169-25-000021	4	1	CI	0	H	ProfitLoss	us-gaap/2024	Consolidated net income	0
+0000104169-25-000021	4	2	CI	0	H	NetIncomeLossAttributableToNoncontrollingInterest	us-gaap/2024	Consolidated net (income) loss attributable to noncontrolling interest	1
+0000104169-25-000021	4	3	CI	0	H	NetIncomeLoss	us-gaap/2024	Consolidated net income attributable to Walmart	0
+0000104169-25-000021	4	5	CI	0	H	OtherComprehensiveIncomeLossForeignCurrencyTransactionAndTranslationAdjustmentNetOfTax	us-gaap/2024	Currency translation and other	0
+0000104169-25-000021	4	6	CI	0	H	OtherComprehensiveIncomeLossCashFlowHedgeGainLossAfterReclassificationAndTax	us-gaap/2024	Cash flow hedges	0
+0000104169-25-000021	4	7	CI	0	H	OtherComprehensiveIncomeLossNetOfTax	us-gaap/2024	Other comprehensive income (loss), net of income taxes	0
+0000104169-25-000021	4	8	CI	0	H	OtherComprehensiveIncomeLossNetOfTaxPortionAttributableToNoncontrollingInterest	us-gaap/2024	Other comprehensive (income) loss attributable to noncontrolling interest	1
+0000104169-25-000021	4	9	CI	0	H	OtherComprehensiveIncomeLossNetOfTaxPortionAttributableToParent	us-gaap/2024	Other comprehensive income (loss) attributable to Walmart	0
+0000104169-25-000021	4	10	CI	0	H	ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2024	Comprehensive income, net of income taxes	0
+0000104169-25-000021	4	11	CI	0	H	ComprehensiveIncomeNetOfTaxAttributableToNoncontrollingInterest	us-gaap/2024	Comprehensive (income) loss attributable to noncontrolling interest	1
+0000104169-25-000021	4	12	CI	0	H	ComprehensiveIncomeNetOfTax	us-gaap/2024	Comprehensive income attributable to Walmart	0
+0000104169-25-000021	5	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2024	Cash and cash equivalents	0
+0000104169-25-000021	5	4	BS	0	H	ReceivablesNetCurrent	us-gaap/2024	Receivables, net	0
+0000104169-25-000021	5	5	BS	0	H	InventoryNet	us-gaap/2024	Inventories	0
+0000104169-25-000021	5	6	BS	0	H	PrepaidExpenseAndOtherAssetsCurrent	us-gaap/2024	Prepaid expenses and other	0
+0000104169-25-000021	5	7	BS	0	H	AssetsCurrent	us-gaap/2024	Total current assets	0
+0000104169-25-000021	5	8	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2024	Property and equipment, net	0
+0000104169-25-000021	5	9	BS	0	H	OperatingLeaseRightOfUseAsset	us-gaap/2024	Operating lease right-of-use assets	0
+0000104169-25-000021	5	10	BS	0	H	FinanceLeaseRightOfUseAsset	us-gaap/2024	Finance lease right-of-use assets, net	0
+0000104169-25-000021	5	11	BS	0	H	Goodwill	us-gaap/2024	Goodwill	0
+0000104169-25-000021	5	12	BS	0	H	OtherAssetsNoncurrent	us-gaap/2024	Other long-term assets	0
+0000104169-25-000021	5	13	BS	0	H	Assets	us-gaap/2024	Total assets	0
+0000104169-25-000021	5	16	BS	0	H	ShortTermBorrowings	us-gaap/2024	Short-term borrowings	0
+0000104169-25-000021	5	17	BS	0	H	AccountsPayableCurrent	us-gaap/2024	Accounts payable	0
+0000104169-25-000021	5	18	BS	0	H	AccruedLiabilitiesCurrent	us-gaap/2024	Accrued liabilities	0
+0000104169-25-000021	5	19	BS	0	H	AccruedIncomeTaxesCurrent	us-gaap/2024	Accrued income taxes	0
+0000104169-25-000021	5	20	BS	0	H	LongTermDebtCurrent	us-gaap/2024	Long-term debt due within one year	0
+0000104169-25-000021	5	21	BS	0	H	OperatingLeaseLiabilityCurrent	us-gaap/2024	Operating lease obligations due within one year	0
+0000104169-25-000021	5	22	BS	0	H	FinanceLeaseLiabilityCurrent	us-gaap/2024	Finance lease obligations due within one year	0
+0000104169-25-000021	5	23	BS	0	H	LiabilitiesCurrent	us-gaap/2024	Total current liabilities	0
+0000104169-25-000021	5	24	BS	0	H	LongTermDebtNoncurrent	us-gaap/2024	Long-term debt	0
+0000104169-25-000021	5	25	BS	0	H	OperatingLeaseLiabilityNoncurrent	us-gaap/2024	Long-term operating lease obligations	0
+0000104169-25-000021	5	26	BS	0	H	FinanceLeaseLiabilityNoncurrent	us-gaap/2024	Long-term finance lease obligations	0
+0000104169-25-000021	5	27	BS	0	H	DeferredIncomeTaxesAndOtherLiabilitiesNoncurrent	us-gaap/2024	Deferred income taxes and other	0
+0000104169-25-000021	5	28	BS	0	H	CommitmentsAndContingencies	us-gaap/2024	Commitments and contingencies	0
+0000104169-25-000021	5	29	BS	0	H	RedeemableNoncontrollingInterestEquityCarryingAmount	us-gaap/2024	Redeemable noncontrolling interest	0
+0000104169-25-000021	5	31	BS	0	H	CommonStockValue	us-gaap/2024	Common stock	0
+0000104169-25-000021	5	32	BS	0	H	AdditionalPaidInCapital	us-gaap/2024	Capital in excess of par value	0
+0000104169-25-000021	5	33	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2024	Retained earnings	0
+0000104169-25-000021	5	34	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2024	Accumulated other comprehensive loss	0
+0000104169-25-000021	5	35	BS	0	H	StockholdersEquity	us-gaap/2024	Total Walmart shareholders' equity	0
+0000104169-25-000021	5	36	BS	0	H	MinorityInterest	us-gaap/2024	Nonredeemable noncontrolling interest	0
+0000104169-25-000021	5	37	BS	0	H	StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2024	Total shareholders' equity	0
+0000104169-25-000021	5	38	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2024	Total liabilities, redeemable noncontrolling interest, and shareholders' equity	0

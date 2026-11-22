@@ -1,0 +1,18 @@
+# Synthetic lexicon for the v2-suite-build spec tests (made-up filers).
+companies:
+  AAA: {short: Alpha, legal: Alpha Holdings Inc.}
+  BBB: {short: Beta, legal: Beta Corporation}
+  CCC: {short: Gamma, legal: Gamma SE}
+  TWX: {short: Twix, legal: "Twix Manufacturing Co., Ltd."}
+  EEE: {short: Epsilon, legal: Epsilon Ltd.}
+metrics:
+  Revenue: {label: Revenues, synonyms: [net sales], shorthand: [top line]}
+  NetIncome: {label: Net Income, synonyms: [net earnings], shorthand: [bottom line]}
+  TotalAssets: {label: Total Assets, synonyms: [assets]}
+  OperatingIncome: {label: Operating Income, synonyms: [operating profit]}
+  CurrentAssets: {label: Current Assets}
+  CurrentLiabilities: {label: Current Liabilities}
+  ResearchAndDevelopment: {label: Research and Development Expense, shorthand: [R&D]}
+universes:
+  covered: [the covered companies]
+  peers: [its peers]

@@ -1,0 +1,72 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/grader-nested-results/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-15",
+  "criteria": {
+    "C1": [
+      "test/spec/grader-nested-results/test_grader_nested_results.py::test_steps_point_cases",
+      "test/spec/grader-nested-results/test_grader_nested_results.py::test_steps_match_the_rule"
+    ],
+    "C2": [
+      "test/spec/grader-nested-results/test_grader_nested_results.py::test_component_ids_point_cases",
+      "test/spec/grader-nested-results/test_grader_nested_results.py::test_component_ids_match_the_rule"
+    ],
+    "C3": [
+      "test/spec/grader-nested-results/test_grader_nested_results.py::test_decomposed_and_nested_responses_are_graded",
+      "test/spec/grader-nested-results/test_grader_nested_results.py::test_decomposed_values_are_the_ok_sub_steps"
+    ],
+    "C4": [
+      "test/spec/grader-nested-results/test_grader_nested_results.py::test_wrapping_and_order_do_not_matter",
+      "test/spec/grader-nested-results/test_grader_nested_results.py::test_scalar_objects_keep_the_old_behaviour",
+      "test/spec/grader-nested-results/test_grader_nested_results.py::test_properties_point_case"
+    ]
+  },
+  "files": {
+    "test/spec/grader-nested-results/test_grader_nested_results.py": "0eb63a12032be22b00df94cf1dd4d1446169a080bc49243795e914df741e0409"
+  },
+  "id": "grader-nested-results",
+  "interface": [
+    {
+      "file": "src/eval/core/graders/numeric.py",
+      "module": "eval.core.graders.numeric",
+      "qualname": "execution_steps",
+      "signature": "def execution_steps(execution_result: Any) -> list[dict]"
+    },
+    {
+      "file": "src/eval/core/graders/numeric.py",
+      "module": "eval.core.graders.numeric",
+      "qualname": "component_fact_ids",
+      "signature": "def component_fact_ids(value: Any) -> list[Any]"
+    }
+  ],
+  "nodes": [
+    "test/spec/grader-nested-results/test_grader_nested_results.py::test_component_ids_match_the_rule",
+    "test/spec/grader-nested-results/test_grader_nested_results.py::test_component_ids_point_cases",
+    "test/spec/grader-nested-results/test_grader_nested_results.py::test_decomposed_and_nested_responses_are_graded",
+    "test/spec/grader-nested-results/test_grader_nested_results.py::test_decomposed_values_are_the_ok_sub_steps",
+    "test/spec/grader-nested-results/test_grader_nested_results.py::test_properties_point_case",
+    "test/spec/grader-nested-results/test_grader_nested_results.py::test_scalar_objects_keep_the_old_behaviour",
+    "test/spec/grader-nested-results/test_grader_nested_results.py::test_steps_match_the_rule",
+    "test/spec/grader-nested-results/test_grader_nested_results.py::test_steps_point_cases",
+    "test/spec/grader-nested-results/test_grader_nested_results.py::test_wrapping_and_order_do_not_matter"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/grader-nested-results.md",
+    "sha256": "c5a75af5fb4a80ceefd4b5591d7c6a8eefe00bfe1ed9d85f6ecb7fb141bccec7"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

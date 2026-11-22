@@ -1,0 +1,114 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-27",
+  "criteria": {
+    "C1": [
+      "test/spec/served-model-id/test_c1_adapters.py::test_openai_chat_served_model_is_the_raw_model",
+      "test/spec/served-model-id/test_c1_adapters.py::test_openai_responses_served_model_is_the_raw_model",
+      "test/spec/served-model-id/test_c1_adapters.py::test_anthropic_success_served_model_is_the_raw_model",
+      "test/spec/served-model-id/test_c1_adapters.py::test_anthropic_refusal_usage_carries_the_raw_model",
+      "test/spec/served-model-id/test_c1_adapters.py::test_non_empty_value_is_kept_exactly_without_trimming_or_lowercasing",
+      "test/spec/served-model-id/test_c1_adapters.py::test_missing_none_empty_or_blank_model_gives_none[absent]",
+      "test/spec/served-model-id/test_c1_adapters.py::test_missing_none_empty_or_blank_model_gives_none[None]",
+      "test/spec/served-model-id/test_c1_adapters.py::test_missing_none_empty_or_blank_model_gives_none[]",
+      "test/spec/served-model-id/test_c1_adapters.py::test_missing_none_empty_or_blank_model_gives_none[   ]",
+      "test/spec/served-model-id/test_c1_adapters.py::test_missing_none_empty_or_blank_model_gives_none[\\t\\n]",
+      "test/spec/served-model-id/test_c1_adapters.py::test_served_model_equals_raw_model_for_any_non_empty_string",
+      "test/spec/served-model-id/test_c1_adapters.py::test_blank_model_gives_none_and_leaves_other_fields_unchanged"
+    ],
+    "C2": [
+      "test/spec/served-model-id/test_c2_gateway.py::test_result_keeps_requested_model_and_carries_served_model",
+      "test/spec/served-model-id/test_c2_gateway.py::test_refusal_event_carries_the_refusal_usage_served_model",
+      "test/spec/served-model-id/test_c2_gateway.py::test_error_event_carries_served_model_none",
+      "test/spec/served-model-id/test_c2_gateway.py::test_cost_uses_requested_id_even_when_served_id_is_unpriced",
+      "test/spec/served-model-id/test_c2_gateway.py::test_any_served_id_is_carried_and_never_changes_cost",
+      "test/spec/served-model-id/test_c2_gateway.py::test_every_outcome_event_carries_served_model"
+    ],
+    "C3": [
+      "test/spec/served-model-id/test_c3_trace_and_arms.py::test_trace_collects_sorted_distinct_served_ids",
+      "test/spec/served-model-id/test_c3_trace_and_arms.py::test_trace_records_a_refusal_usage_served_id_but_not_an_error",
+      "test/spec/served-model-id/test_c3_trace_and_arms.py::test_trace_served_models_is_the_per_requested_union",
+      "test/spec/served-model-id/test_c3_trace_and_arms.py::test_answer_in_trace_copies_served_models[ok]",
+      "test/spec/served-model-id/test_c3_trace_and_arms.py::test_answer_in_trace_copies_served_models[refusal]",
+      "test/spec/served-model-id/test_c3_trace_and_arms.py::test_answer_in_trace_copies_served_models[error]",
+      "test/spec/served-model-id/test_c3_trace_and_arms.py::test_answer_in_trace_carries_the_union_of_its_calls",
+      "test/spec/served-model-id/test_c3_trace_and_arms.py::test_full_system_copies_the_captured_trace_served_models[ok]",
+      "test/spec/served-model-id/test_c3_trace_and_arms.py::test_full_system_copies_the_captured_trace_served_models[refusal]",
+      "test/spec/served-model-id/test_c3_trace_and_arms.py::test_full_system_copies_the_captured_trace_served_models[error]",
+      "test/spec/served-model-id/test_c3_trace_and_arms.py::test_full_system_answers_carry_only_their_own_trace"
+    ],
+    "C4": [
+      "test/spec/served-model-id/test_c4_run_record.py::test_config_served_models_is_the_union_of_the_answers",
+      "test/spec/served-model-id/test_c4_run_record.py::test_config_served_models_is_an_empty_dict_when_no_case_reported",
+      "test/spec/served-model-id/test_c4_run_record.py::test_resume_merges_prior_served_models",
+      "test/spec/served-model-id/test_c4_run_record.py::test_aborted_run_carries_the_union_of_the_cases_that_ran",
+      "test/spec/served-model-id/test_c4_run_record.py::test_union_over_any_answers_and_prior",
+      "test/spec/served-model-id/test_c4_run_record.py::test_union_does_not_depend_on_case_order"
+    ]
+  },
+  "files": {
+    "test/spec/served-model-id/conftest.py": "222834c5f387a896720926cdca4867df97a9f3964985799692492cec52784c13",
+    "test/spec/served-model-id/test_c1_adapters.py": "2aefd3362389d764e1cbd58bfd15a6edf3c76b87ee29039a2fb0e7334f47844b",
+    "test/spec/served-model-id/test_c2_gateway.py": "38abc83c9c257c6a72ad02deb428d3291bf5c3c0dd9ae11d77b088d9a80b33d0",
+    "test/spec/served-model-id/test_c3_trace_and_arms.py": "b186d5796cfcdc353ae71d651849ced1735f7d0960784f7ec69b816aca757127",
+    "test/spec/served-model-id/test_c4_run_record.py": "5be1453b94c9171a26ea0f59f0ddb7562900281e6f20ee331fc20797844f351e"
+  },
+  "id": "served-model-id",
+  "interface": [],
+  "nodes": [
+    "test/spec/served-model-id/test_c1_adapters.py::test_anthropic_refusal_usage_carries_the_raw_model",
+    "test/spec/served-model-id/test_c1_adapters.py::test_anthropic_success_served_model_is_the_raw_model",
+    "test/spec/served-model-id/test_c1_adapters.py::test_blank_model_gives_none_and_leaves_other_fields_unchanged",
+    "test/spec/served-model-id/test_c1_adapters.py::test_missing_none_empty_or_blank_model_gives_none[   ]",
+    "test/spec/served-model-id/test_c1_adapters.py::test_missing_none_empty_or_blank_model_gives_none[None]",
+    "test/spec/served-model-id/test_c1_adapters.py::test_missing_none_empty_or_blank_model_gives_none[\\t\\n]",
+    "test/spec/served-model-id/test_c1_adapters.py::test_missing_none_empty_or_blank_model_gives_none[]",
+    "test/spec/served-model-id/test_c1_adapters.py::test_missing_none_empty_or_blank_model_gives_none[absent]",
+    "test/spec/served-model-id/test_c1_adapters.py::test_non_empty_value_is_kept_exactly_without_trimming_or_lowercasing",
+    "test/spec/served-model-id/test_c1_adapters.py::test_openai_chat_served_model_is_the_raw_model",
+    "test/spec/served-model-id/test_c1_adapters.py::test_openai_responses_served_model_is_the_raw_model",
+    "test/spec/served-model-id/test_c1_adapters.py::test_served_model_equals_raw_model_for_any_non_empty_string",
+    "test/spec/served-model-id/test_c2_gateway.py::test_any_served_id_is_carried_and_never_changes_cost",
+    "test/spec/served-model-id/test_c2_gateway.py::test_cost_uses_requested_id_even_when_served_id_is_unpriced",
+    "test/spec/served-model-id/test_c2_gateway.py::test_error_event_carries_served_model_none",
+    "test/spec/served-model-id/test_c2_gateway.py::test_every_outcome_event_carries_served_model",
+    "test/spec/served-model-id/test_c2_gateway.py::test_refusal_event_carries_the_refusal_usage_served_model",
+    "test/spec/served-model-id/test_c2_gateway.py::test_result_keeps_requested_model_and_carries_served_model",
+    "test/spec/served-model-id/test_c3_trace_and_arms.py::test_answer_in_trace_carries_the_union_of_its_calls",
+    "test/spec/served-model-id/test_c3_trace_and_arms.py::test_answer_in_trace_copies_served_models[error]",
+    "test/spec/served-model-id/test_c3_trace_and_arms.py::test_answer_in_trace_copies_served_models[ok]",
+    "test/spec/served-model-id/test_c3_trace_and_arms.py::test_answer_in_trace_copies_served_models[refusal]",
+    "test/spec/served-model-id/test_c3_trace_and_arms.py::test_full_system_answers_carry_only_their_own_trace",
+    "test/spec/served-model-id/test_c3_trace_and_arms.py::test_full_system_copies_the_captured_trace_served_models[error]",
+    "test/spec/served-model-id/test_c3_trace_and_arms.py::test_full_system_copies_the_captured_trace_served_models[ok]",
+    "test/spec/served-model-id/test_c3_trace_and_arms.py::test_full_system_copies_the_captured_trace_served_models[refusal]",
+    "test/spec/served-model-id/test_c3_trace_and_arms.py::test_trace_collects_sorted_distinct_served_ids",
+    "test/spec/served-model-id/test_c3_trace_and_arms.py::test_trace_records_a_refusal_usage_served_id_but_not_an_error",
+    "test/spec/served-model-id/test_c3_trace_and_arms.py::test_trace_served_models_is_the_per_requested_union",
+    "test/spec/served-model-id/test_c4_run_record.py::test_aborted_run_carries_the_union_of_the_cases_that_ran",
+    "test/spec/served-model-id/test_c4_run_record.py::test_config_served_models_is_an_empty_dict_when_no_case_reported",
+    "test/spec/served-model-id/test_c4_run_record.py::test_config_served_models_is_the_union_of_the_answers",
+    "test/spec/served-model-id/test_c4_run_record.py::test_resume_merges_prior_served_models",
+    "test/spec/served-model-id/test_c4_run_record.py::test_union_does_not_depend_on_case_order",
+    "test/spec/served-model-id/test_c4_run_record.py::test_union_over_any_answers_and_prior"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/served-model-id.md",
+    "sha256": "76fd444f58180a0e05de7a12dcd5c4b3da2eb5b9178b6c226f4d7a4986576a1a"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

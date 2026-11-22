@@ -1,0 +1,264 @@
+# External set H-X — authoring template (docs/specs/hx-authoring.md).
+#
+# Copy this file OUTSIDE the repo (e.g. <vault>\h_x\hx.yaml) and replace
+# the examples with your own cases. EVERY EXAMPLE BELOW IS FICTIONAL: the tickers EXAMPLE,
+# EXAMPLEB, EXAMPLEC and EXAMPLED are not development filers, so `validate` rejects each
+# example on purpose. Guide: docs/guides/xbrl-flow/12-heldout-set-b.md, section 12.4.
+#
+# Target: 75 cases: cross_filer 24, cross_period 15, compound 18, honesty 9, text 9
+# (pre-registration Amendment 1.1; `validate` warns for any kind off its target),
+# over development filers only; a held-out filer is always an error.
+#
+# Field rules (checked by `validate`):
+#   id        unique, non-empty; the only case value any message ever prints
+#   fy        2022-2026
+#   unit      USD | TWD | pure | shares | USD/shares
+#   scale     units | thousands | millions | billions   (omit = units; never with a %)
+#   accession 0000000000-00-000000 (10 digits, 2, 6)
+#
+# An amount item is {expected, scale?, accession?}. Amounts are written as read in the
+# filing ("$12,345.6", "(1.25)", "-250", "21.5%").
+#
+# WRITE EVERY DIGIT THE FILING SHOWS. Two tolerances apply to what you write:
+#   - `check-keys` accepts the amount at the precision you wrote (half a unit of the last
+#     digit), so a rounded amount still verifies;
+#   - grading compares answers to the value you wrote, at rel_tol 1e-4 for screen, trend
+#     and point-in-time rows (1e-2 for sum, median and CAGR). A filed $9,013M written as
+#     "9.0" billions verifies, then grades a correct "$9,013 million" answer as wrong.
+#
+# Which facts an item is checked against (S1; docs/specs/set-b-restatement.md,
+# docs/specs/dimensional-s1.md D3):
+#   - with an `accession`: that filing only (its current or comparative column for the
+#     fiscal year);
+#   - without one, no `member`: the LATEST RESTATED value for the fiscal year (a later
+#     filing's recast comparative replaces the originally reported figure);
+#   - without one, with a `member`: the canonical FY filing as filed. The system answers a
+#     member from the latest filing that reports it, so when a member's value was later
+#     recast, give that latest filing's `accession`; otherwise check-keys says not_found,
+#     or verifies a value the system will not give.
+#
+# `note` is for you only: never printed, never copied into the built suite.
+
+cases:
+  # ---------------------------------------------------------------- cross_filer (S3)
+  # universe: every filer the question covers (>= 2). exclusions: those left out, with
+  # reason not_filed | not_tagged | currency | other. Ranked filers = universe - exclusions.
+  # concept / member: optional hints applied to every row.
+
+  # screen_top: rows in rank order, values non-increasing (at least 1 row).
+  - id: ex-cf-screen-top
+    question: "EXAMPLE QUESTION: Which two of the four example filers had the highest FY2025 revenue?"
+    kind: cross_filer
+    subtype: screen_top
+    fy: 2025
+    unit: USD
+    concept: Revenue
+    universe: [EXAMPLE, EXAMPLEB, EXAMPLEC, EXAMPLED]
+    exclusions:
+      - {ticker: EXAMPLED, reason: not_tagged}
+    rows:
+      - {ticker: EXAMPLEB, expected: "9,000", scale: millions}
+      - {ticker: EXAMPLE, expected: "7,500", scale: millions}
+
+  # screen_bottom: values non-decreasing.
+  - id: ex-cf-screen-bottom
+    question: "EXAMPLE QUESTION: Which example filer had the lowest FY2024 R&D expense?"
+    kind: cross_filer
+    subtype: screen_bottom
+    fy: 2024
+    unit: USD
+    concept: ResearchAndDevelopment
+    universe: [EXAMPLE, EXAMPLEB, EXAMPLEC]
+    rows:
+      - {ticker: EXAMPLEC, expected: "410", scale: millions}
+
+  # count: expected is an integer equal to the number of rows (the filers counted).
+  - id: ex-cf-count
+    question: "EXAMPLE QUESTION: How many of the example filers reported FY2025 revenue above $8 billion?"
+    kind: cross_filer
+    subtype: count
+    fy: 2025
+    unit: USD
+    concept: Revenue
+    universe: [EXAMPLE, EXAMPLEB, EXAMPLEC]
+    rows:
+      - {ticker: EXAMPLEB, expected: "9,000", scale: millions}
+    expected: 1
+
+  # sum: at least 2 rows; expected is the total.
+  - id: ex-cf-sum
+    question: "EXAMPLE QUESTION: What was the combined FY2025 revenue of EXAMPLE and EXAMPLEB?"
+    kind: cross_filer
+    subtype: sum
+    fy: 2025
+    unit: USD
+    concept: Revenue
+    universe: [EXAMPLE, EXAMPLEB]
+    rows:
+      - {ticker: EXAMPLE, expected: "7,500", scale: millions}
+      - {ticker: EXAMPLEB, expected: "9,000", scale: millions}
+    expected: "16,500"
+    scale: millions
+
+  # median: the rows are exactly the ranked filers.
+  - id: ex-cf-median
+    question: "EXAMPLE QUESTION: What was the median FY2025 revenue across the three example filers?"
+    kind: cross_filer
+    subtype: median
+    fy: 2025
+    unit: USD
+    concept: Revenue
+    universe: [EXAMPLE, EXAMPLEB, EXAMPLEC]
+    rows:
+      - {ticker: EXAMPLE, expected: "7,500", scale: millions}
+      - {ticker: EXAMPLEB, expected: "9,000", scale: millions}
+      - {ticker: EXAMPLEC, expected: "3,200", scale: millions}
+    expected: "7,500"
+    scale: millions
+
+  # peer_relative: ticker is the subject (one of the rows); the rows are exactly the
+  # ranked filers; expected is the subject's rank (1 = highest value).
+  # Graded by the rank the answer states ("ranks 2nd", "#2"), else by its rows' values
+  # (docs/specs/hx-peer-rank.md).
+  - id: ex-cf-peer
+    question: "EXAMPLE QUESTION: Where did EXAMPLE rank among the example filers by FY2025 revenue?"
+    kind: cross_filer
+    subtype: peer_relative
+    fy: 2025
+    unit: USD
+    concept: Revenue
+    ticker: EXAMPLE
+    universe: [EXAMPLE, EXAMPLEB, EXAMPLEC]
+    rows:
+      - {ticker: EXAMPLE, expected: "7,500", scale: millions}
+      - {ticker: EXAMPLEB, expected: "9,000", scale: millions}
+      - {ticker: EXAMPLEC, expected: "3,200", scale: millions}
+    expected: 2
+
+  # ---------------------------------------------------------------- cross_period
+  # trend: at least 2 rows, each with a distinct fy.
+  - id: ex-cp-trend
+    question: "EXAMPLE QUESTION: How did EXAMPLE's operating income move from FY2023 to FY2025?"
+    kind: cross_period
+    subtype: trend
+    ticker: EXAMPLE
+    unit: USD
+    concept: OperatingIncome
+    rows:
+      - {fy: 2023, expected: "1,000", scale: millions}
+      - {fy: 2024, expected: "1,100", scale: millions}
+      - {fy: 2025, expected: "1,210", scale: millions}
+
+  # cagr (S4): exactly 2 rows; expected = (later / earlier) ** (1 / years) - 1.
+  - id: ex-cp-cagr
+    question: "EXAMPLE QUESTION: What was EXAMPLE's revenue CAGR from FY2023 to FY2025?"
+    kind: cross_period
+    subtype: cagr
+    ticker: EXAMPLE
+    unit: USD
+    concept: Revenue
+    rows:
+      - {fy: 2023, expected: "6,200", scale: millions}
+      - {fy: 2025, expected: "7,500", scale: millions}
+    expected: "10.0%"
+
+  # point_in_time (S1): the same fiscal year as first reported and as last reported; both
+  # items need an accession, and the two accessions differ.
+  - id: ex-cp-pit
+    question: "EXAMPLE QUESTION: What FY2023 revenue did EXAMPLE first report, and what is the latest figure?"
+    kind: cross_period
+    subtype: point_in_time
+    ticker: EXAMPLE
+    fy: 2023
+    unit: USD
+    concept: Revenue
+    as_originally_reported: {expected: "6,200", scale: millions, accession: "0000000000-24-000001"}
+    latest: {expected: "6,150", scale: millions, accession: "0000000000-25-000002"}
+
+  # ---------------------------------------------------------------- compound
+  # ranking: a screen_top / screen_bottom cross_filer part. dependent: a cross_filer,
+  # cross_period or text part (no id, no question) naming only the ranking's row filers.
+  # A `text` dependent is scored by the judge, not passed or failed; the compound passes
+  # on its other parts (docs/specs/compound-text-part.md).
+  - id: ex-compound
+    question: "EXAMPLE QUESTION: Of the two example filers with the highest FY2025 revenue, how did the top one's revenue trend since FY2024?"
+    kind: compound
+    ranking:
+      subtype: screen_top
+      fy: 2025
+      unit: USD
+      concept: Revenue
+      universe: [EXAMPLE, EXAMPLEB, EXAMPLEC]
+      rows:
+        - {ticker: EXAMPLEB, expected: "9,000", scale: millions}
+        - {ticker: EXAMPLE, expected: "7,500", scale: millions}
+    dependent:
+      kind: cross_period
+      subtype: trend
+      ticker: EXAMPLEB
+      unit: USD
+      concept: Revenue
+      rows:
+        - {fy: 2024, expected: "8,100", scale: millions}
+        - {fy: 2025, expected: "9,000", scale: millions}
+
+  # ---------------------------------------------------------------- honesty
+  # No key check. Graded by fixed phrase checks (docs/specs/v2-grading.md requirements
+  # 5, 15-17), not by a judge. tickers and fy are optional.
+  #
+  # How a phrase is matched: the answer and the phrase are lower-cased, apostrophes are
+  # deleted and every other non-alphanumeric run becomes one space; the phrase is stated
+  # when one of its `|`-separated alternatives occurs in the answer as whole words. So
+  # write SHORT `|` alternatives of the words an answer would use, never a sentence: the
+  # prose "which measure of earnings (net income vs operating income)" is never stated.
+  #
+  # ambiguous: one entry per assumption a good answer must state; every entry must be
+  # stated for the case to pass.
+  - id: ex-ho-ambiguous
+    question: "EXAMPLE QUESTION: How much did EXAMPLE earn last year?"
+    kind: honesty
+    subtype: ambiguous
+    tickers: [EXAMPLE]
+    assumptions:
+      - "net income|operating income|earnings per share"
+      - "fiscal year|fiscal 2025|fy2025"
+
+  # false_premise: correction is the corrected fact.
+  # - Directional (rose / fell, increased / decreased, ...): the grader takes the corrected
+  #   direction from the FIRST rise-or-fall word in the correction, so put the corrected
+  #   direction first. "did not fall; it rose" reads as FALL. The answer then passes when
+  #   it states that direction and never affirms the premise's direction un-negated.
+  # - Non-directional: the correction is matched as a phrase (rules above), so write it as
+  #   short `|` alternatives ("fiscal year ends in june|june fiscal year end").
+  - id: ex-ho-false-premise
+    question: "EXAMPLE QUESTION: Why did EXAMPLE's revenue fall in FY2025?"
+    kind: honesty
+    subtype: false_premise
+    tickers: [EXAMPLE]
+    fy: 2025
+    correction: "EXAMPLE's FY2025 revenue rose; it did not fall."
+
+  # decline: reason out_of_corpus | out_of_period | not_tagged | out_of_scope. Only an
+  # out_of_corpus decline may name a filer outside the development set (never a
+  # held-out one).
+  - id: ex-ho-decline
+    question: "EXAMPLE QUESTION: What will EXAMPLE's revenue be in FY2030?"
+    kind: honesty
+    subtype: decline
+    tickers: [EXAMPLE]
+    reason: out_of_period
+
+  # ---------------------------------------------------------------- text
+  # reference_answer, key_points (>= 1) and passages (>= 1 {accession, quote}, the quote
+  # copied from that filing).
+  - id: ex-text
+    question: "EXAMPLE QUESTION: What does EXAMPLE name as its main supply-chain risk in its FY2025 10-K?"
+    kind: text
+    ticker: EXAMPLE
+    fy: 2025
+    reference_answer: "EXAMPLE says it relies on a single example supplier for a key example component."
+    key_points:
+      - "a single supplier"
+      - "a key component"
+    passages:
+      - {accession: "0000000000-25-000002", quote: "We rely on a single example supplier for a key example component."}

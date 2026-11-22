@@ -1,0 +1,496 @@
+{
+  "code_outside_docs_equals_frozen_commit": true,
+  "configs_sha256": {
+    "configs/eval/judge.yaml": "f5ada831789d6e2fb7b9fdf2d9271c3d9535097e9969dacf8856c582ff47107a",
+    "configs/eval/v2/groups.yaml": "8f17215aefa2569a477889509c9514b40c370b5def4d4bdf2988ce3b4c86335f",
+    "configs/eval/v2/key_resolutions.yaml": "4b468e626d450d82f15b6549dd81b4c8ce3c1ca5cdda765ec366317d599be16d",
+    "configs/eval/v2/lexicon.yaml": "8f107c15b360e14ac62d576818cc8fbb3092c4ed10b979243308aa6e40aa2230",
+    "configs/eval/v2/note_concepts.yaml": "dd1a32beda6491cabaccb23dd34764c582a59fe1819ce5944ac394187202444f",
+    "configs/eval/v2/phrasebook.yaml": "e44842a95a0c25389984b0b00dd83cfab64516e35b10ee9cffa093dff929a0c7",
+    "configs/eval/v2/phrasebook_compound.yaml": "30240e81e6f9dd8aec9f8ebf3101f91a8ba36f0e3281cf79a6375e78c31aecb0",
+    "configs/eval/v2/reviewers.yaml": "490b4f924057c83f17c2accd9e5d1bee0afd4895df12d0abb4558aacb59c968f",
+    "configs/eval/v2/statement_lines.yaml": "ea5c72b2731e86b5099c87972e4379197a78536ed297511b63270efcc5d7d78d",
+    "configs/llm/llm.yaml": "d858d5c0dd187b0f224e6e3024217f3fc107f395653738789181a7f0d5036273",
+    "configs/llm/pricing.yaml": "21d1129bb93822d187ff2087b1b4093fda08cfea877939ca1bcfb1d26728c557",
+    "prompts/templates/xbrl/registry.yaml": "b1733441d0042477aa7752e2dced042838b86b3212165e607b0fc4d99c297a95"
+  },
+  "frontier_sec_tools": {
+    "budgets": {
+      "max_cost_usd": 0.23,
+      "max_steps": 13,
+      "max_tool_calls": 22,
+      "source": "Amendment 2 item 2 (run flags)"
+    },
+    "tools_fingerprint": "cd4d26db07f666dd0874be9422da6589975ca63e8d95c1a663a9e957db76249d"
+  },
+  "frozen_commit": "66d5575e239bbe870b7e27a5c7c6a3e7a1f8161e",
+  "grader_version": "12",
+  "packages": {
+    "anthropic": "0.109.1",
+    "arelle-release": "2.41.0",
+    "httpx": "0.28.1",
+    "hypothesis": "6.168.5",
+    "openai": "2.14.0",
+    "psycopg2": "2.9.12",
+    "pydantic": "2.11.9",
+    "pytest": "9.0.1",
+    "qdrant-client": "1.18.0"
+  },
+  "profiles": {
+    "anthropic": {
+      "stages": {
+        "closed_book": {
+          "model": "claude-opus-5-5",
+          "prompt_ref": "_base/closed_book/v1",
+          "prompt_version": "b0bba826ffad",
+          "provider": "anthropic",
+          "series": "claude-5"
+        },
+        "faithfulness_verifier": {
+          "model": "claude-haiku-5-5",
+          "prompt_ref": "_base/faithfulness_verifier/v3",
+          "prompt_version": "3eac94d01492",
+          "provider": "anthropic",
+          "series": "claude-5"
+        },
+        "frontier_sec_tools": {
+          "model": "claude-opus-5-5",
+          "prompt_ref": "_base/frontier_sec_tools/v2",
+          "prompt_version": "ae51a0f389da",
+          "provider": "anthropic",
+          "series": "claude-5"
+        },
+        "intent_router": {
+          "model": "claude-sonnet-5-5",
+          "prompt_ref": "_base/intent_router/v5",
+          "prompt_version": "77756cbd4538",
+          "provider": "anthropic",
+          "series": "claude-5"
+        },
+        "long_context": {
+          "model": "claude-opus-5-5",
+          "prompt_ref": "_base/long_context/v2",
+          "prompt_version": "c3ae010ed5f9",
+          "provider": "anthropic",
+          "series": "claude-5"
+        },
+        "naive_rag": {
+          "model": "claude-sonnet-5-5",
+          "prompt_ref": "_base/naive_rag/v1",
+          "prompt_version": "c39d433049e3",
+          "provider": "anthropic",
+          "series": "claude-5"
+        },
+        "plan_generator": {
+          "model": "claude-sonnet-5-5",
+          "prompt_ref": "_base/plan_generator/v13",
+          "prompt_version": "d40bfff201f6",
+          "provider": "anthropic",
+          "series": "claude-5"
+        },
+        "query_decomposer": {
+          "model": "claude-sonnet-5-5",
+          "prompt_ref": "_base/query_decomposer/v5",
+          "prompt_version": "5f39dd83a728",
+          "provider": "anthropic",
+          "series": "claude-5"
+        },
+        "synthesizer": {
+          "model": "claude-sonnet-5-5",
+          "prompt_ref": "_base/synthesizer/v8",
+          "prompt_version": "b93792c87079",
+          "provider": "anthropic",
+          "series": "claude-5"
+        }
+      },
+      "tiers": {
+        "frontier": "claude-opus-5-5",
+        "medium": "claude-sonnet-5-5",
+        "small": "claude-haiku-5-5"
+      }
+    },
+    "deepseek": {
+      "stages": {
+        "closed_book": {
+          "model": "deepseek-v4-pro",
+          "prompt_ref": "_base/closed_book/v1",
+          "prompt_version": "b0bba826ffad",
+          "provider": "deepseek",
+          "series": "deepseek-v4-pro"
+        },
+        "faithfulness_verifier": {
+          "model": "deepseek-flash",
+          "prompt_ref": "_base/faithfulness_verifier/v3",
+          "prompt_version": "3eac94d01492",
+          "provider": "deepseek",
+          "series": "deepseek-flash"
+        },
+        "frontier_sec_tools": {
+          "model": "deepseek-v4-pro",
+          "prompt_ref": "_base/frontier_sec_tools/v2",
+          "prompt_version": "ae51a0f389da",
+          "provider": "deepseek",
+          "series": "deepseek-v4-pro"
+        },
+        "intent_router": {
+          "model": "deepseek-flash",
+          "prompt_ref": "_base/intent_router/v5",
+          "prompt_version": "77756cbd4538",
+          "provider": "deepseek",
+          "series": "deepseek-flash"
+        },
+        "long_context": {
+          "model": "deepseek-v4-pro",
+          "prompt_ref": "_base/long_context/v2",
+          "prompt_version": "c3ae010ed5f9",
+          "provider": "deepseek",
+          "series": "deepseek-v4-pro"
+        },
+        "naive_rag": {
+          "model": "deepseek-flash",
+          "prompt_ref": "_base/naive_rag/v1",
+          "prompt_version": "c39d433049e3",
+          "provider": "deepseek",
+          "series": "deepseek-flash"
+        },
+        "plan_generator": {
+          "model": "deepseek-flash",
+          "prompt_ref": "_base/plan_generator/v13",
+          "prompt_version": "d40bfff201f6",
+          "provider": "deepseek",
+          "series": "deepseek-flash"
+        },
+        "query_decomposer": {
+          "model": "deepseek-flash",
+          "prompt_ref": "_base/query_decomposer/v5",
+          "prompt_version": "5f39dd83a728",
+          "provider": "deepseek",
+          "series": "deepseek-flash"
+        },
+        "synthesizer": {
+          "model": "deepseek-flash",
+          "prompt_ref": "_base/synthesizer/v8",
+          "prompt_version": "b93792c87079",
+          "provider": "deepseek",
+          "series": "deepseek-flash"
+        }
+      },
+      "tiers": {
+        "frontier": "deepseek-v4-pro",
+        "medium": "deepseek-flash",
+        "small": "deepseek-flash"
+      }
+    },
+    "openai": {
+      "stages": {
+        "closed_book": {
+          "model": "gpt-5",
+          "prompt_ref": "_base/closed_book/v1",
+          "prompt_version": "b0bba826ffad",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "faithfulness_verifier": {
+          "model": "gpt-5-nano",
+          "prompt_ref": "_base/faithfulness_verifier/v3",
+          "prompt_version": "3eac94d01492",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "frontier_sec_tools": {
+          "model": "gpt-5",
+          "prompt_ref": "_base/frontier_sec_tools/v2",
+          "prompt_version": "ae51a0f389da",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "intent_router": {
+          "model": "gpt-5-mini",
+          "prompt_ref": "_base/intent_router/v5",
+          "prompt_version": "77756cbd4538",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "long_context": {
+          "model": "gpt-5",
+          "prompt_ref": "_base/long_context/v2",
+          "prompt_version": "c3ae010ed5f9",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "naive_rag": {
+          "model": "gpt-5-mini",
+          "prompt_ref": "_base/naive_rag/v1",
+          "prompt_version": "c39d433049e3",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "plan_generator": {
+          "model": "gpt-5-mini",
+          "prompt_ref": "_base/plan_generator/v13",
+          "prompt_version": "d40bfff201f6",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "query_decomposer": {
+          "model": "gpt-5-mini",
+          "prompt_ref": "_base/query_decomposer/v5",
+          "prompt_version": "5f39dd83a728",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "synthesizer": {
+          "model": "gpt-5-mini",
+          "prompt_ref": "_base/synthesizer/v8",
+          "prompt_version": "b93792c87079",
+          "provider": "openai",
+          "series": "gpt-5"
+        }
+      },
+      "tiers": {
+        "frontier": "gpt-5",
+        "medium": "gpt-5-mini",
+        "small": "gpt-5-nano"
+      }
+    },
+    "openai-5.6": {
+      "stages": {
+        "closed_book": {
+          "model": "gpt-5.6-sol",
+          "prompt_ref": "_base/closed_book/v1",
+          "prompt_version": "b0bba826ffad",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "faithfulness_verifier": {
+          "model": "gpt-5.6-luna",
+          "prompt_ref": "_base/faithfulness_verifier/v3",
+          "prompt_version": "3eac94d01492",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "frontier_sec_tools": {
+          "model": "gpt-5.6-sol",
+          "prompt_ref": "_base/frontier_sec_tools/v2",
+          "prompt_version": "ae51a0f389da",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "intent_router": {
+          "model": "gpt-5.6-terra",
+          "prompt_ref": "_base/intent_router/v5",
+          "prompt_version": "77756cbd4538",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "long_context": {
+          "model": "gpt-5.6-sol",
+          "prompt_ref": "_base/long_context/v2",
+          "prompt_version": "c3ae010ed5f9",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "naive_rag": {
+          "model": "gpt-5.6-terra",
+          "prompt_ref": "_base/naive_rag/v1",
+          "prompt_version": "c39d433049e3",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "plan_generator": {
+          "model": "gpt-5.6-terra",
+          "prompt_ref": "_base/plan_generator/v13",
+          "prompt_version": "d40bfff201f6",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "query_decomposer": {
+          "model": "gpt-5.6-terra",
+          "prompt_ref": "_base/query_decomposer/v5",
+          "prompt_version": "5f39dd83a728",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "synthesizer": {
+          "model": "gpt-5.6-terra",
+          "prompt_ref": "_base/synthesizer/v8",
+          "prompt_version": "b93792c87079",
+          "provider": "openai",
+          "series": "gpt-5"
+        }
+      },
+      "tiers": {
+        "frontier": "gpt-5.6-sol",
+        "medium": "gpt-5.6-terra",
+        "small": "gpt-5.6-luna"
+      }
+    },
+    "openai-6.1": {
+      "stages": {
+        "closed_book": {
+          "model": "gpt-6.1-sol",
+          "prompt_ref": "_base/closed_book/v1",
+          "prompt_version": "b0bba826ffad",
+          "provider": "openai",
+          "series": "gpt-6"
+        },
+        "faithfulness_verifier": {
+          "model": "gpt-6-luna",
+          "prompt_ref": "_base/faithfulness_verifier/v3",
+          "prompt_version": "3eac94d01492",
+          "provider": "openai",
+          "series": "gpt-6"
+        },
+        "frontier_sec_tools": {
+          "model": "gpt-6.1-sol",
+          "prompt_ref": "_base/frontier_sec_tools/v2",
+          "prompt_version": "ae51a0f389da",
+          "provider": "openai",
+          "series": "gpt-6"
+        },
+        "intent_router": {
+          "model": "gpt-6.1-terra",
+          "prompt_ref": "_base/intent_router/v5",
+          "prompt_version": "77756cbd4538",
+          "provider": "openai",
+          "series": "gpt-6"
+        },
+        "long_context": {
+          "model": "gpt-6.1-sol",
+          "prompt_ref": "_base/long_context/v2",
+          "prompt_version": "c3ae010ed5f9",
+          "provider": "openai",
+          "series": "gpt-6"
+        },
+        "naive_rag": {
+          "model": "gpt-6.1-terra",
+          "prompt_ref": "_base/naive_rag/v1",
+          "prompt_version": "c39d433049e3",
+          "provider": "openai",
+          "series": "gpt-6"
+        },
+        "plan_generator": {
+          "model": "gpt-6.1-terra",
+          "prompt_ref": "_base/plan_generator/v13",
+          "prompt_version": "d40bfff201f6",
+          "provider": "openai",
+          "series": "gpt-6"
+        },
+        "query_decomposer": {
+          "model": "gpt-6.1-terra",
+          "prompt_ref": "_base/query_decomposer/v5",
+          "prompt_version": "5f39dd83a728",
+          "provider": "openai",
+          "series": "gpt-6"
+        },
+        "synthesizer": {
+          "model": "gpt-6.1-terra",
+          "prompt_ref": "_base/synthesizer/v8",
+          "prompt_version": "b93792c87079",
+          "provider": "openai",
+          "series": "gpt-6"
+        }
+      },
+      "tiers": {
+        "frontier": "gpt-6.1-sol",
+        "medium": "gpt-6.1-terra",
+        "small": "gpt-6-luna"
+      }
+    }
+  },
+  "python": "3.12.11",
+  "record_commit": "ff9747baeb46a7c361654ae3380bb60be3fd6524",
+  "recorded_at": "2026-11-16T00:19:00Z",
+  "served_models": {
+    "claude-haiku-5-5": {
+      "cost_usd": 0.00016,
+      "served": [
+        "claude-haiku-5-5"
+      ]
+    },
+    "claude-opus-5-5": {
+      "cost_usd": 0.006365,
+      "served": [
+        "claude-opus-5-5"
+      ]
+    },
+    "claude-sonnet-5-5": {
+      "cost_usd": 0.002832,
+      "served": [
+        "claude-sonnet-5-5"
+      ]
+    },
+    "deepseek-v4-pro": {
+      "cost_usd": 0.000848,
+      "served": [
+        "deepseek-v4-pro"
+      ]
+    },
+    "gpt-6-luna": {
+      "cost_usd": 0.000102,
+      "served": [
+        "gpt-6-luna"
+      ]
+    },
+    "gpt-6.1-sol": {
+      "cost_usd": 0.002004,
+      "served": [
+        "gpt-6.1-sol"
+      ]
+    },
+    "gpt-6.1-terra": {
+      "cost_usd": 0.001047,
+      "served": [
+        "gpt-6.1-terra"
+      ]
+    }
+  },
+  "services": {
+    "corpus_fingerprint": "pm:ca0f8f27e42d39d9",
+    "database": "xbrl_db",
+    "postgres": "PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35226, 64-bit",
+    "qdrant": {
+      "commit": "44ad62f8cd69642be5afa6441612525e24a0d063",
+      "version": "1.18.2"
+    },
+    "raginference": {
+      "embedder": "BAAI/bge-m3",
+      "git_commit": "2ced24281b997fb658d21ddee93f3e68f04593b3",
+      "reranker": "jinaai/jina-reranker-v3"
+    }
+  },
+  "stage_tiers": {
+    "closed_book": "medium",
+    "faithfulness_verifier": "small",
+    "intent_router": "medium",
+    "naive_rag": "medium",
+    "plan_generator": "medium",
+    "query_decomposer": "medium",
+    "synthesizer": "medium"
+  },
+  "suites": {
+    "content_hashes": {
+      "xbrl_v2_compound_manifest.json": {
+        "dev": "sha256:3a42be6dce194de6f0f3c26d93451911ab0f76aeb8ca48ca51b5cf632c06f6e3",
+        "validation": "sha256:00d5ee9fa2d720e4b3f451b92989bf320ebced0464410283d620926809d091e1"
+      },
+      "xbrl_v2_dev_sample.json": "sha256:4af3caf4fb210c2e95b87e09941a4f03232cf2188c6f837ec0ac322a6e297263",
+      "xbrl_v2_manifest.json": {
+        "dev": "sha256:3cb8ff82de69e0a5248b0cafbd331d139c2a87a149af482cff60d8d224947b0d",
+        "validation": "sha256:b39361616e53cf7d59153a47dbc0d28a40993ee456a1ed1a7047419e8b029c26"
+      }
+    },
+    "dir": "data/eval/v2_frozen (K7, Amendment 2)",
+    "file_sha256": {
+      "intents.json": "60552704fd08cff656334e3790abee72b49c97a050ab8738944d042e858d8d0d",
+      "intents_compound.json": "7964f4cb8bed85a63b4a258cbdf479ff30aa2fdf10ebbe3adace28bbe4f683a0",
+      "xbrl_v2_compound_manifest.json": "c92aa878142f3260bda0d1e19123bde45a2774dc6fc17209e8f061dc4379e47c",
+      "xbrl_v2_dev.json": "57d3a984ab5b5655408c3fdd9f4da2bdf8b7faf96b7162d6e81adca7b943a09f",
+      "xbrl_v2_dev_compound.json": "f570d0bcc5460eb1ff915bfedaf074e090432479971849d54709251e09f8c67d",
+      "xbrl_v2_dev_sample.json": "7c563b6ddb2d90b5e9d0de61dc9f96722228204a5b466a209089c3e14dcb0492",
+      "xbrl_v2_manifest.json": "e77cdafb8a5faa6fb710ae5fa726655836ccb85b8a3b99069e4a02c093344941",
+      "xbrl_v2_validation.json": "a769167780294c61ccfdfce566ccd775fa1e92bcfa6414b80c1dbfc9fe64d2a4",
+      "xbrl_v2_validation_compound.json": "9f8df1ff154f41e7af9d05941a16b53a3303a2b56907571e35dfa9747c68f0de"
+    }
+  }
+}

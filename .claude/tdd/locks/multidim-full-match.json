@@ -1,0 +1,60 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/multidim-full-match/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-14",
+  "criteria": {
+    "C1": [
+      "test/spec/multidim-full-match/test_multidim_full_match.py::test_point_cases",
+      "test/spec/multidim-full-match/test_multidim_full_match.py::test_rule_for_any_labels_and_hints",
+      "test/spec/multidim-full-match/test_multidim_full_match.py::test_full_labels_as_hints_always_match"
+    ],
+    "C2": [
+      "test/spec/multidim-full-match/test_multidim_full_match.py::test_one_to_one_match_resolves_and_partial_does_not",
+      "test/spec/multidim-full-match/test_multidim_full_match.py::test_hint_wording_does_not_matter_but_extra_dimensions_do"
+    ],
+    "C3": [
+      "test/spec/multidim-full-match/test_multidim_full_match.py::test_order_and_extra_dimension",
+      "test/spec/multidim-full-match/test_multidim_full_match.py::test_metamorphic_point_case"
+    ]
+  },
+  "files": {
+    "test/spec/multidim-full-match/test_multidim_full_match.py": "3448652221f44dd5e0e5b1f36824bfcda188c759793d98905e786f6724cbc32f"
+  },
+  "id": "multidim-full-match",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_lookup.py",
+      "module": "retriever.xbrl.xbrl_factstore_lookup",
+      "qualname": "dimensions_fully_matched",
+      "signature": "def dimensions_fully_matched(dimension_labels: collections.abc.Mapping[str, str] | None, member_hints: Sequence[str]) -> bool"
+    }
+  ],
+  "nodes": [
+    "test/spec/multidim-full-match/test_multidim_full_match.py::test_full_labels_as_hints_always_match",
+    "test/spec/multidim-full-match/test_multidim_full_match.py::test_hint_wording_does_not_matter_but_extra_dimensions_do",
+    "test/spec/multidim-full-match/test_multidim_full_match.py::test_metamorphic_point_case",
+    "test/spec/multidim-full-match/test_multidim_full_match.py::test_one_to_one_match_resolves_and_partial_does_not",
+    "test/spec/multidim-full-match/test_multidim_full_match.py::test_order_and_extra_dimension",
+    "test/spec/multidim-full-match/test_multidim_full_match.py::test_point_cases",
+    "test/spec/multidim-full-match/test_multidim_full_match.py::test_rule_for_any_labels_and_hints"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/multidim-full-match.md",
+    "sha256": "4a5e9003038f400e285e72000ee71bdaed30ca8e299b25d5d1a14b23a650da5b"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

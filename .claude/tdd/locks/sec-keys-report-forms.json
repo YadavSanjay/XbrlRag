@@ -1,0 +1,140 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-29",
+  "criteria": {
+    "C1": [
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_each_report_form_is_admitted[10-K]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_each_report_form_is_admitted[10-K/A]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_each_report_form_is_admitted[20-F]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_each_report_form_is_admitted[20-F/A]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_each_report_form_is_admitted[40-F]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_each_report_form_is_admitted[40-F/A]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_each_report_form_is_admitted[10-Q]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_each_report_form_is_admitted[10-Q/A]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[10-KT]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[10-QT]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[8-K]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[8-K/A]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[DEF 14A]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[DEFA14A]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[PRE 14C]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[6-K]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[S-1]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[10-k]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[ 10-K]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[None]",
+      "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_membership_in_the_eight_literal_forms"
+    ],
+    "C2": [
+      "test/spec/sec-keys-report-forms/test_c2_latest_filed.py::test_later_proxies_do_not_replace_the_10k",
+      "test/spec/sec-keys-report-forms/test_c2_latest_filed.py::test_proxy_information_statement_and_formless_entries_are_ignored",
+      "test/spec/sec-keys-report-forms/test_c2_latest_filed.py::test_later_8k_does_not_replace_the_10k",
+      "test/spec/sec-keys-report-forms/test_c2_latest_filed.py::test_same_day_8k_is_no_tie",
+      "test/spec/sec-keys-report-forms/test_c2_latest_filed.py::test_later_transition_report_is_ignored_and_10q_still_counts",
+      "test/spec/sec-keys-report-forms/test_c2_latest_filed.py::test_period_concept_or_unit_only_in_non_reports_has_no_key",
+      "test/spec/sec-keys-report-forms/test_c2_latest_filed.py::test_adding_non_report_entries_changes_no_key"
+    ],
+    "C3": [
+      "test/spec/sec-keys-report-forms/test_c3_as_reported.py::test_earlier_earnings_release_is_not_the_original",
+      "test/spec/sec-keys-report-forms/test_c3_as_reported.py::test_accession_of_a_non_report_is_not_found",
+      "test/spec/sec-keys-report-forms/test_c3_as_reported.py::test_proxy_only_period_has_no_original",
+      "test/spec/sec-keys-report-forms/test_c3_as_reported.py::test_adding_non_report_entries_changes_no_original"
+    ],
+    "C4": [
+      "test/spec/sec-keys-report-forms/test_c4_fiscal_year.py::test_net_income_years_come_from_the_10k_not_the_proxies",
+      "test/spec/sec-keys-report-forms/test_c4_fiscal_year.py::test_same_day_8k_does_not_make_the_year_ambiguous",
+      "test/spec/sec-keys-report-forms/test_c4_fiscal_year.py::test_an_8k_duration_does_not_make_an_instant_concept_a_duration",
+      "test/spec/sec-keys-report-forms/test_c4_fiscal_year.py::test_nil_in_the_report_and_value_only_in_a_proxy_has_no_key",
+      "test/spec/sec-keys-report-forms/test_c4_fiscal_year.py::test_adding_non_report_entries_changes_no_fiscal_key"
+    ],
+    "C5": [
+      "test/spec/sec-keys-report-forms/test_c5_callers.py::test_fiscal_key_from_source_reads_the_10k",
+      "test/spec/sec-keys-report-forms/test_c5_callers.py::test_fiscal_key_with_payload_reads_the_10k",
+      "test/spec/sec-keys-report-forms/test_c5_callers.py::test_v2_lookup_and_drop",
+      "test/spec/sec-keys-report-forms/test_c5_callers.py::test_v2_growth_uses_one_report_not_a_proxy",
+      "test/spec/sec-keys-report-forms/test_c5_callers.py::test_adding_non_report_entries_changes_no_keyed_lookup"
+    ]
+  },
+  "files": {
+    "test/spec/sec-keys-report-forms/conftest.py": "314e8112832af578f3ff35a03e127b7b59dad085890f0ef2abcdefc2fec4b1bf",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py": "7efe4220c99e43a26f4153920a3d58823428e813d66d38e418d8db41459e277f",
+    "test/spec/sec-keys-report-forms/test_c2_latest_filed.py": "b5ff74fa3f81989896062de63761752088c5da67115f93fc131d8fc52ab595c4",
+    "test/spec/sec-keys-report-forms/test_c3_as_reported.py": "d75e5bca98ab7b09f1d6beeab34a4566f99b25606c7791cdcef6751de29de02c",
+    "test/spec/sec-keys-report-forms/test_c4_fiscal_year.py": "3ff35588650c195036a3b74485c1684b4befc9f3a274120bea540bc7c417deda",
+    "test/spec/sec-keys-report-forms/test_c5_callers.py": "4395c59c7ba908d900af34afbf6e16f588b10b1ff8a1ee39bab0b7a34658e3c0"
+  },
+  "id": "sec-keys-report-forms",
+  "interface": [
+    {
+      "file": "src/eval/keys/core.py",
+      "module": "eval.keys.core",
+      "qualname": "is_report_form",
+      "signature": "def is_report_form(form: str | None) -> bool"
+    }
+  ],
+  "nodes": [
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_each_report_form_is_admitted[10-K/A]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_each_report_form_is_admitted[10-K]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_each_report_form_is_admitted[10-Q/A]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_each_report_form_is_admitted[10-Q]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_each_report_form_is_admitted[20-F/A]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_each_report_form_is_admitted[20-F]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_each_report_form_is_admitted[40-F/A]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_each_report_form_is_admitted[40-F]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_membership_in_the_eight_literal_forms",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[ 10-K]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[10-KT]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[10-QT]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[10-k]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[6-K]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[8-K/A]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[8-K]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[DEF 14A]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[DEFA14A]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[None]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[PRE 14C]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[S-1]",
+    "test/spec/sec-keys-report-forms/test_c1_report_forms.py::test_other_forms_and_none_are_not[]",
+    "test/spec/sec-keys-report-forms/test_c2_latest_filed.py::test_adding_non_report_entries_changes_no_key",
+    "test/spec/sec-keys-report-forms/test_c2_latest_filed.py::test_later_8k_does_not_replace_the_10k",
+    "test/spec/sec-keys-report-forms/test_c2_latest_filed.py::test_later_proxies_do_not_replace_the_10k",
+    "test/spec/sec-keys-report-forms/test_c2_latest_filed.py::test_later_transition_report_is_ignored_and_10q_still_counts",
+    "test/spec/sec-keys-report-forms/test_c2_latest_filed.py::test_period_concept_or_unit_only_in_non_reports_has_no_key",
+    "test/spec/sec-keys-report-forms/test_c2_latest_filed.py::test_proxy_information_statement_and_formless_entries_are_ignored",
+    "test/spec/sec-keys-report-forms/test_c2_latest_filed.py::test_same_day_8k_is_no_tie",
+    "test/spec/sec-keys-report-forms/test_c3_as_reported.py::test_accession_of_a_non_report_is_not_found",
+    "test/spec/sec-keys-report-forms/test_c3_as_reported.py::test_adding_non_report_entries_changes_no_original",
+    "test/spec/sec-keys-report-forms/test_c3_as_reported.py::test_earlier_earnings_release_is_not_the_original",
+    "test/spec/sec-keys-report-forms/test_c3_as_reported.py::test_proxy_only_period_has_no_original",
+    "test/spec/sec-keys-report-forms/test_c4_fiscal_year.py::test_adding_non_report_entries_changes_no_fiscal_key",
+    "test/spec/sec-keys-report-forms/test_c4_fiscal_year.py::test_an_8k_duration_does_not_make_an_instant_concept_a_duration",
+    "test/spec/sec-keys-report-forms/test_c4_fiscal_year.py::test_net_income_years_come_from_the_10k_not_the_proxies",
+    "test/spec/sec-keys-report-forms/test_c4_fiscal_year.py::test_nil_in_the_report_and_value_only_in_a_proxy_has_no_key",
+    "test/spec/sec-keys-report-forms/test_c4_fiscal_year.py::test_same_day_8k_does_not_make_the_year_ambiguous",
+    "test/spec/sec-keys-report-forms/test_c5_callers.py::test_adding_non_report_entries_changes_no_keyed_lookup",
+    "test/spec/sec-keys-report-forms/test_c5_callers.py::test_fiscal_key_from_source_reads_the_10k",
+    "test/spec/sec-keys-report-forms/test_c5_callers.py::test_fiscal_key_with_payload_reads_the_10k",
+    "test/spec/sec-keys-report-forms/test_c5_callers.py::test_v2_growth_uses_one_report_not_a_proxy",
+    "test/spec/sec-keys-report-forms/test_c5_callers.py::test_v2_lookup_and_drop"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/sec-keys-report-forms.md",
+    "sha256": "88c01357f2acedf3e44a79983dfd500ff7fd0cfe7beb7599cae1f3d94a13fbc3"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

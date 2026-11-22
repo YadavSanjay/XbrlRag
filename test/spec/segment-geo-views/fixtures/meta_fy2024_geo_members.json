@@ -1,0 +1,63 @@
+{
+ "case": "meta_fy2024_geo_members",
+ "ticker": "META",
+ "cik": "0001326801",
+ "accession_no": "0001326801-25-000017",
+ "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/",
+ "document_url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/meta-20241231.htm",
+ "local_source": "data/storage/sec_edgar/META/2024/10-K/meta-20241231.htm",
+ "local_source_sha256": "aea8de0a5a41477b1e6c296be347b448b25d2f90d3d74dea3b7a54ca1e448b4b",
+ "retrieved": "2026-11-07",
+ "extracted": "xbrl_db (read-only), 2026-11-07: every distinct member on a geographic axis (srt:StatementGeographicalAxis, ifrs-full:GeographicalAreasAxis) of the filing in mv_financial_facts, with its label and one example fact",
+ "members": [
+  {
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:CN",
+   "segment_label": "CHINA",
+   "n_facts": 3,
+   "example_fact_id": 40385
+  },
+  {
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:US",
+   "segment_label": "UNITED STATES",
+   "n_facts": 8,
+   "example_fact_id": 40346
+  },
+  {
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.facebook.com/20241231:RestOfWorldMember",
+   "segment_label": "Rest Of World [Member]",
+   "n_facts": 3,
+   "example_fact_id": 40376
+  },
+  {
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.facebook.com/20241231:USCanadaMember",
+   "segment_label": "US & Canada [Member]",
+   "n_facts": 3,
+   "example_fact_id": 40367
+  },
+  {
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "srt:AsiaPacificMember",
+   "segment_label": "Asia Pacific [Member]",
+   "n_facts": 3,
+   "example_fact_id": 40373
+  },
+  {
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "srt:EuropeMember",
+   "segment_label": "Europe [Member]",
+   "n_facts": 3,
+   "example_fact_id": 40370
+  },
+  {
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "us-gaap:NonUsMember",
+   "segment_label": "Non-US [Member]",
+   "n_facts": 2,
+   "example_fact_id": 41171
+  }
+ ]
+}

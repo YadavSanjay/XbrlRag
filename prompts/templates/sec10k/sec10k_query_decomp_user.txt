@@ -1,0 +1,29 @@
+"""
+
+User Query:
+{user_query}
+
+TASK:
+Decompose the user query into STRICTLY ATOMIC retrieval sub-questions for an SEC-10K RAG pipeline.
+
+DECOMPOSITION REQUIREMENTS:
+• Each sub-question MUST:
+  – Reference exactly ONE fiscal year
+  – Retrieve exactly ONE raw data point (no ratios, no comparisons)
+• If a percentage or ratio is required, decompose it into its underlying components as separate sub-questions.
+• Use wording aligned with SEC-10K financial statement and cash flow disclosures.
+• Assign a relative importance weight (fraction of 1) per sub-question (within the same fiscal year).
+• Attach the most likely SEC-10K section where the answer is found.
+
+IMPORTANT:
+Do NOT include:
+• Calculations
+• Percentages
+• Cross-year comparisons
+• “Highest / lowest” determinations
+
+Those steps occur AFTER retrieval.
+
+Return JSON ONLY following the provided schema.
+
+"""

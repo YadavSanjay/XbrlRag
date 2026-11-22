@@ -1,0 +1,192 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-30",
+  "criteria": {
+    "C1": [
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_no_xbrl_survives_a_workiva_shaped_document",
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_no_xbrl_survives_the_recovery_parser",
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_link_to_a_fact_id_loses_its_href_and_keeps_its_text",
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_other_attributes_stay_and_handlers_go",
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_property_no_xbrl_survives_any_nesting"
+    ],
+    "C10": [
+      "test/spec/html10k-strip-sections/test_sections.py::test_notes_in_item_15_with_a_stub_item_8",
+      "test/spec/html10k-strip-sections/test_sections.py::test_notes_inside_item_8_from_the_toc",
+      "test/spec/html10k-strip-sections/test_sections.py::test_property_any_notes_title"
+    ],
+    "C11": [
+      "test/spec/html10k-strip-sections/test_sections.py::test_items_end_at_items_that_are_not_keys",
+      "test/spec/html10k-strip-sections/test_sections.py::test_dangling_toc_link_falls_back_to_the_heading_for_that_key_only",
+      "test/spec/html10k-strip-sections/test_sections.py::test_missing_item_is_absent_and_last_section_runs_to_the_end",
+      "test/spec/html10k-strip-sections/test_sections.py::test_part_iii_amendment_gives_no_sections",
+      "test/spec/html10k-strip-sections/test_sections.py::test_property_section_invariants"
+    ],
+    "C2": [
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_paragraphs_of_nested_text_blocks",
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_table_grid_and_spans_under_nested_tags",
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_text_adjoining_a_fact_merges_before_normalising",
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_property_tagging_never_changes_the_output"
+    ],
+    "C3": [
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_hidden_content_is_gone_and_the_wrapper_stays_empty",
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_hidden_layout_cell_stays",
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_prose_that_looks_like_xbrl_is_kept",
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_property_hidden_tokens_never_appear"
+    ],
+    "C4": [
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_values_render_as_the_filing_displays_them",
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_metamorphic_fact_attributes_never_change_the_output"
+    ],
+    "C5": [
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_older_filing_text_and_punctuation",
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_older_filing_table_and_anchors",
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_property_cp1252_bytes_and_references_read_the_same"
+    ],
+    "C6": [
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_xbrl_canonical_bytes_are_unchanged_and_the_modes_differ",
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_xbrl_section_tree_offsets_are_unchanged",
+      "test/spec/html10k-strip-sections/test_ix_strip.py::test_metamorphic_only_the_new_mode_normalises_fact_text"
+    ],
+    "C7": [
+      "test/spec/html10k-strip-sections/test_sections.py::test_toc_ranges_from_a_workiva_shaped_filing",
+      "test/spec/html10k-strip-sections/test_sections.py::test_toc_labels_are_the_row_without_its_page_reference",
+      "test/spec/html10k-strip-sections/test_sections.py::test_summary_row_and_body_links_do_not_move_a_section",
+      "test/spec/html10k-strip-sections/test_sections.py::test_page_number_toc_in_a_topic_ordered_filing",
+      "test/spec/html10k-strip-sections/test_sections.py::test_short_item_8_titles_in_a_title_only_toc[Financial Statements]",
+      "test/spec/html10k-strip-sections/test_sections.py::test_short_item_8_titles_in_a_title_only_toc[Consolidated Financial Statements]",
+      "test/spec/html10k-strip-sections/test_sections.py::test_older_href_and_name_toc",
+      "test/spec/html10k-strip-sections/test_sections.py::test_property_toc_any_subset_and_row_shape"
+    ],
+    "C8": [
+      "test/spec/html10k-strip-sections/test_sections.py::test_heading_ranges_without_a_toc",
+      "test/spec/html10k-strip-sections/test_sections.py::test_offsets_are_utf8_bytes_and_labels_are_the_block_text",
+      "test/spec/html10k-strip-sections/test_sections.py::test_heading_variants[Items 1 and 2. Business and Properties-item_1]",
+      "test/spec/html10k-strip-sections/test_sections.py::test_heading_variants[Item 1 &#8212; Business-item_1]",
+      "test/spec/html10k-strip-sections/test_sections.py::test_heading_variants[ITEM&#160;1A: RISK FACTORS-item_1a]",
+      "test/spec/html10k-strip-sections/test_sections.py::test_heading_variants[Item 7. Management's Discussion and Analysis-item_7]",
+      "test/spec/html10k-strip-sections/test_sections.py::test_heading_variants[Item 8. Consolidated Financial Statements and Supplementary Data-item_8]",
+      "test/spec/html10k-strip-sections/test_sections.py::test_heading_variants[PART II ITEM 7A QUANTITATIVE AND QUALITATIVE DISCLOSURE ABOUT MARKET RISKS-item_7a]",
+      "test/spec/html10k-strip-sections/test_sections.py::test_older_filing_without_a_toc",
+      "test/spec/html10k-strip-sections/test_sections.py::test_property_headings_any_subset_and_shape"
+    ],
+    "C9": [
+      "test/spec/html10k-strip-sections/test_sections.py::test_noise_does_not_move_a_section[front-<table><tr><td>Item 1.</td><td>Business</td><td>3</td></tr><tr><td>Item 1A.</td><td>Risk Factors</td><td>9</td></tr><tr><td>Item 7.</td><td>Management\\u2019s Discussion and Analysis</td><td>25</td></tr><tr><td>Item 8.</td><td>Financial Statements and Supplementary Data</td><td>F-1</td></tr></table>]",
+      "test/spec/html10k-strip-sections/test_sections.py::test_noise_does_not_move_a_section[front-<div>Item 1. Business</div><div>Item 1A. Risk Factors</div><div>Item 1B. Unresolved Staff Comments</div><div>Item 7. Management\\u2019s Discussion and Analysis</div><div>Item 7A. Quantitative and Qualitative Disclosures About Market Risk</div><div>Item 8. Financial Statements and Supplementary Data</div>]",
+      "test/spec/html10k-strip-sections/test_sections.py::test_noise_does_not_move_a_section[in_item_1-<p>Item 7 of this report discusses liquidity.</p><p>Item 1A. Risk Factors describes these matters in more detail.</p><p>Item 8, Financial Statements, has the numbers.</p><p>See Item 7. Management\\u2019s Discussion and Analysis for more.</p>]",
+      "test/spec/html10k-strip-sections/test_sections.py::test_noise_does_not_move_a_section[in_item_7-<div>PART II Item 7</div><p>TOPUP</p><div>Item 7. Management\\u2019s Discussion and Analysis (continued)</div>]",
+      "test/spec/html10k-strip-sections/test_sections.py::test_noise_does_not_move_a_section[in_item_8-<div>Notes to Consolidated Financial Statements (continued)</div>]",
+      "test/spec/html10k-strip-sections/test_sections.py::test_noise_does_not_move_a_section[back-<div>Form 10-K Cross-Reference Index</div><table><tr><td>Item 7A</td><td>Quantitative and Qualitative Disclosures About Market Risk</td><td>Page 22</td></tr><tr><td>Item 1C</td><td>Cybersecurity</td><td>Pages 34-35</td></tr><tr><td>Item 6</td><td>[Reserved]</td><td>Not applicable</td></tr></table>]",
+      "test/spec/html10k-strip-sections/test_sections.py::test_clean_filing_finds_the_five_items",
+      "test/spec/html10k-strip-sections/test_sections.py::test_index_rows_alone_create_no_section[<div>Form 10-K Cross-Reference Index</div><table><tr><td>Item 7A</td><td>Quantitative and Qualitative Disclosures About Market Risk</td><td>Page 22</td></tr><tr><td>Item 1C</td><td>Cybersecurity</td><td>Pages 34-35</td></tr><tr><td>Item 6</td><td>[Reserved]</td><td>Not applicable</td></tr></table>]",
+      "test/spec/html10k-strip-sections/test_sections.py::test_index_rows_alone_create_no_section[<table><tr><td>Item 1.</td><td>Business:</td></tr><tr><td>General development of business</td><td>Pages 3-5, 18</td></tr><tr><td>Item 7.</td><td>Management's Discussion and Analysis of Financial Condition and Results of Operations:</td></tr><tr><td>Results of operations</td><td>Pages 18-29</td></tr><tr><td>Notes to Consolidated Financial Statements</td></tr></table>]",
+      "test/spec/html10k-strip-sections/test_sections.py::test_index_row_for_the_notes_is_not_the_notes_heading",
+      "test/spec/html10k-strip-sections/test_sections.py::test_metamorphic_any_mix_of_noise"
+    ]
+  },
+  "files": {
+    "test/spec/html10k-strip-sections/conftest.py": "ed2d5196cd9529d1058465a4c0b5f916567c403cbe09099a041517a2824898ea",
+    "test/spec/html10k-strip-sections/fixtures/ix_header.htm": "c09f61b403b289004dc5767a39f8b6fe3427f9bc77923f37050fdf409da6d1a6",
+    "test/spec/html10k-strip-sections/fixtures/nested_ix_tables.htm": "63d0a2dce96b67eff1aab426010a98115c794f69e51f091605b4c8c626f52ff1",
+    "test/spec/html10k-strip-sections/fixtures/no_toc.htm": "a664e7838dd4091b4ee5b3900cf3e5b07dcfe26b5bfb39da10b997c0e2c77718",
+    "test/spec/html10k-strip-sections/fixtures/older_plain.htm": "e42416baacf898c018d84292923b281dbf3c22faba12e68d90ca5fb0cc8eabba",
+    "test/spec/html10k-strip-sections/fixtures/toc_anchors.htm": "4b50ad2aac872e34656cbb9de1f16f41b16787a9bb335a451cd15bb26f215e04",
+    "test/spec/html10k-strip-sections/test_ix_strip.py": "4219572533027c8fb8a68295b4e294b72baa73684a342b1adf00d9768eab2c42",
+    "test/spec/html10k-strip-sections/test_sections.py": "43abca0421ddb63892f2a81412f777d92cc2b80405a77a632455d8731a3ae056"
+  },
+  "id": "html10k-strip-sections",
+  "interface": [
+    {
+      "file": "src/ingest/html10k/ix_strip.py",
+      "module": "ingest.html10k.ix_strip",
+      "qualname": "ix_strip_html",
+      "signature": "def ix_strip_html(source_bytes: bytes, name: str='document') -> bytes"
+    },
+    {
+      "file": "src/ingest/html10k/sections.py",
+      "module": "ingest.html10k.sections",
+      "qualname": "detect_sections",
+      "signature": "def detect_sections(stripped_html: bytes) -> list[Html10kSection]"
+    }
+  ],
+  "nodes": [
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_hidden_content_is_gone_and_the_wrapper_stays_empty",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_hidden_layout_cell_stays",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_link_to_a_fact_id_loses_its_href_and_keeps_its_text",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_metamorphic_fact_attributes_never_change_the_output",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_metamorphic_only_the_new_mode_normalises_fact_text",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_no_xbrl_survives_a_workiva_shaped_document",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_no_xbrl_survives_the_recovery_parser",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_older_filing_table_and_anchors",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_older_filing_text_and_punctuation",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_other_attributes_stay_and_handlers_go",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_paragraphs_of_nested_text_blocks",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_property_cp1252_bytes_and_references_read_the_same",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_property_hidden_tokens_never_appear",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_property_no_xbrl_survives_any_nesting",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_property_tagging_never_changes_the_output",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_prose_that_looks_like_xbrl_is_kept",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_table_grid_and_spans_under_nested_tags",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_text_adjoining_a_fact_merges_before_normalising",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_values_render_as_the_filing_displays_them",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_xbrl_canonical_bytes_are_unchanged_and_the_modes_differ",
+    "test/spec/html10k-strip-sections/test_ix_strip.py::test_xbrl_section_tree_offsets_are_unchanged",
+    "test/spec/html10k-strip-sections/test_sections.py::test_clean_filing_finds_the_five_items",
+    "test/spec/html10k-strip-sections/test_sections.py::test_dangling_toc_link_falls_back_to_the_heading_for_that_key_only",
+    "test/spec/html10k-strip-sections/test_sections.py::test_heading_ranges_without_a_toc",
+    "test/spec/html10k-strip-sections/test_sections.py::test_heading_variants[ITEM&#160;1A: RISK FACTORS-item_1a]",
+    "test/spec/html10k-strip-sections/test_sections.py::test_heading_variants[Item 1 &#8212; Business-item_1]",
+    "test/spec/html10k-strip-sections/test_sections.py::test_heading_variants[Item 7. Management's Discussion and Analysis-item_7]",
+    "test/spec/html10k-strip-sections/test_sections.py::test_heading_variants[Item 8. Consolidated Financial Statements and Supplementary Data-item_8]",
+    "test/spec/html10k-strip-sections/test_sections.py::test_heading_variants[Items 1 and 2. Business and Properties-item_1]",
+    "test/spec/html10k-strip-sections/test_sections.py::test_heading_variants[PART II ITEM 7A QUANTITATIVE AND QUALITATIVE DISCLOSURE ABOUT MARKET RISKS-item_7a]",
+    "test/spec/html10k-strip-sections/test_sections.py::test_index_row_for_the_notes_is_not_the_notes_heading",
+    "test/spec/html10k-strip-sections/test_sections.py::test_index_rows_alone_create_no_section[<div>Form 10-K Cross-Reference Index</div><table><tr><td>Item 7A</td><td>Quantitative and Qualitative Disclosures About Market Risk</td><td>Page 22</td></tr><tr><td>Item 1C</td><td>Cybersecurity</td><td>Pages 34-35</td></tr><tr><td>Item 6</td><td>[Reserved]</td><td>Not applicable</td></tr></table>]",
+    "test/spec/html10k-strip-sections/test_sections.py::test_index_rows_alone_create_no_section[<table><tr><td>Item 1.</td><td>Business:</td></tr><tr><td>General development of business</td><td>Pages 3-5, 18</td></tr><tr><td>Item 7.</td><td>Management's Discussion and Analysis of Financial Condition and Results of Operations:</td></tr><tr><td>Results of operations</td><td>Pages 18-29</td></tr><tr><td>Notes to Consolidated Financial Statements</td></tr></table>]",
+    "test/spec/html10k-strip-sections/test_sections.py::test_items_end_at_items_that_are_not_keys",
+    "test/spec/html10k-strip-sections/test_sections.py::test_metamorphic_any_mix_of_noise",
+    "test/spec/html10k-strip-sections/test_sections.py::test_missing_item_is_absent_and_last_section_runs_to_the_end",
+    "test/spec/html10k-strip-sections/test_sections.py::test_noise_does_not_move_a_section[back-<div>Form 10-K Cross-Reference Index</div><table><tr><td>Item 7A</td><td>Quantitative and Qualitative Disclosures About Market Risk</td><td>Page 22</td></tr><tr><td>Item 1C</td><td>Cybersecurity</td><td>Pages 34-35</td></tr><tr><td>Item 6</td><td>[Reserved]</td><td>Not applicable</td></tr></table>]",
+    "test/spec/html10k-strip-sections/test_sections.py::test_noise_does_not_move_a_section[front-<div>Item 1. Business</div><div>Item 1A. Risk Factors</div><div>Item 1B. Unresolved Staff Comments</div><div>Item 7. Management\\u2019s Discussion and Analysis</div><div>Item 7A. Quantitative and Qualitative Disclosures About Market Risk</div><div>Item 8. Financial Statements and Supplementary Data</div>]",
+    "test/spec/html10k-strip-sections/test_sections.py::test_noise_does_not_move_a_section[front-<table><tr><td>Item 1.</td><td>Business</td><td>3</td></tr><tr><td>Item 1A.</td><td>Risk Factors</td><td>9</td></tr><tr><td>Item 7.</td><td>Management\\u2019s Discussion and Analysis</td><td>25</td></tr><tr><td>Item 8.</td><td>Financial Statements and Supplementary Data</td><td>F-1</td></tr></table>]",
+    "test/spec/html10k-strip-sections/test_sections.py::test_noise_does_not_move_a_section[in_item_1-<p>Item 7 of this report discusses liquidity.</p><p>Item 1A. Risk Factors describes these matters in more detail.</p><p>Item 8, Financial Statements, has the numbers.</p><p>See Item 7. Management\\u2019s Discussion and Analysis for more.</p>]",
+    "test/spec/html10k-strip-sections/test_sections.py::test_noise_does_not_move_a_section[in_item_7-<div>PART II Item 7</div><p>TOPUP</p><div>Item 7. Management\\u2019s Discussion and Analysis (continued)</div>]",
+    "test/spec/html10k-strip-sections/test_sections.py::test_noise_does_not_move_a_section[in_item_8-<div>Notes to Consolidated Financial Statements (continued)</div>]",
+    "test/spec/html10k-strip-sections/test_sections.py::test_notes_in_item_15_with_a_stub_item_8",
+    "test/spec/html10k-strip-sections/test_sections.py::test_notes_inside_item_8_from_the_toc",
+    "test/spec/html10k-strip-sections/test_sections.py::test_offsets_are_utf8_bytes_and_labels_are_the_block_text",
+    "test/spec/html10k-strip-sections/test_sections.py::test_older_filing_without_a_toc",
+    "test/spec/html10k-strip-sections/test_sections.py::test_older_href_and_name_toc",
+    "test/spec/html10k-strip-sections/test_sections.py::test_page_number_toc_in_a_topic_ordered_filing",
+    "test/spec/html10k-strip-sections/test_sections.py::test_part_iii_amendment_gives_no_sections",
+    "test/spec/html10k-strip-sections/test_sections.py::test_property_any_notes_title",
+    "test/spec/html10k-strip-sections/test_sections.py::test_property_headings_any_subset_and_shape",
+    "test/spec/html10k-strip-sections/test_sections.py::test_property_section_invariants",
+    "test/spec/html10k-strip-sections/test_sections.py::test_property_toc_any_subset_and_row_shape",
+    "test/spec/html10k-strip-sections/test_sections.py::test_short_item_8_titles_in_a_title_only_toc[Consolidated Financial Statements]",
+    "test/spec/html10k-strip-sections/test_sections.py::test_short_item_8_titles_in_a_title_only_toc[Financial Statements]",
+    "test/spec/html10k-strip-sections/test_sections.py::test_summary_row_and_body_links_do_not_move_a_section",
+    "test/spec/html10k-strip-sections/test_sections.py::test_toc_labels_are_the_row_without_its_page_reference",
+    "test/spec/html10k-strip-sections/test_sections.py::test_toc_ranges_from_a_workiva_shaped_filing"
+  ],
+  "red_exempt": [
+    "test/spec/html10k-strip-sections/test_sections.py::test_part_iii_amendment_gives_no_sections: empty the correct answer for this document is the empty list"
+  ],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/html10k-strip-sections.md",
+    "sha256": "3c36d0678a0e5aef5236a0ac9de077f434b66338ddc458a6c264d54f4e5b99f1"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

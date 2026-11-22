@@ -1,0 +1,41 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/html-rag-candidates/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-01",
+  "criteria": {
+    "C1": [
+      "test/spec/html-rag-candidates/test_hrc_candidates.py::test_the_committed_settings",
+      "test/spec/html-rag-candidates/test_hrc_candidates.py::test_the_last_candidate_reaches_the_reranker",
+      "test/spec/html-rag-candidates/test_hrc_candidates.py::test_a_table_past_the_old_cut_is_returned_first"
+    ]
+  },
+  "files": {
+    "test/spec/html-rag-candidates/test_hrc_candidates.py": "0baee5ae15159bd8b6de16c16183bb6870acda8dd3e6aba6497d5b419af1c980"
+  },
+  "id": "html-rag-candidates",
+  "interface": [],
+  "nodes": [
+    "test/spec/html-rag-candidates/test_hrc_candidates.py::test_a_table_past_the_old_cut_is_returned_first",
+    "test/spec/html-rag-candidates/test_hrc_candidates.py::test_the_committed_settings",
+    "test/spec/html-rag-candidates/test_hrc_candidates.py::test_the_last_candidate_reaches_the_reranker"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/html-rag-candidates.md",
+    "sha256": "8ebf94257d1b9987caca72314a8cede65fb7cb8ce40c554618f28950b677185a"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

@@ -1,0 +1,76 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/pct-change-nm/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-13",
+  "criteria": {
+    "C1": [
+      "test/spec/pct-change-nm/test_pct_change_nm.py::test_recognizes_percentage_change_forms",
+      "test/spec/pct-change-nm/test_pct_change_nm.py::test_any_pct_form_over_any_step_ids_returns_the_base"
+    ],
+    "C2": [
+      "test/spec/pct-change-nm/test_pct_change_nm.py::test_micron_negative_base_is_not_meaningful",
+      "test/spec/pct-change-nm/test_pct_change_nm.py::test_any_non_positive_base_has_a_reason"
+    ],
+    "C3": [
+      "test/spec/pct-change-nm/test_pct_change_nm.py::test_positive_base_evaluates_unchanged",
+      "test/spec/pct-change-nm/test_pct_change_nm.py::test_any_positive_base_keeps_the_closed_form"
+    ],
+    "C4": [
+      "test/spec/pct-change-nm/test_pct_change_nm.py::test_scaling_and_sign_flip_point_case",
+      "test/spec/pct-change-nm/test_pct_change_nm.py::test_scaling_preserves_and_sign_flip_triggers_the_reason"
+    ],
+    "C5": [
+      "test/spec/pct-change-nm/test_pct_change_nm.py::test_grading_an_n_m_case",
+      "test/spec/pct-change-nm/test_pct_change_nm.py::test_hedged_answers_pass_unless_they_state_the_ratio"
+    ]
+  },
+  "files": {
+    "test/spec/pct-change-nm/test_pct_change_nm.py": "29ef571f5ef8dbdbd1b58f04ffea73bbb6d1b5970bbb74a593937bcef6442e48"
+  },
+  "id": "pct-change-nm",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/xbrl_calculator_tool.py",
+      "module": "retriever.xbrl.xbrl_calculator_tool",
+      "qualname": "XbrlCalculatorTool.pct_change_base",
+      "signature": "@staticmethod def pct_change_base(expr: str) -> str | None"
+    },
+    {
+      "file": "src/retriever/xbrl/xbrl_calculator_tool.py",
+      "module": "retriever.xbrl.xbrl_calculator_tool",
+      "qualname": "XbrlCalculatorTool.not_meaningful_reason",
+      "signature": "def not_meaningful_reason(self, expr: str, bindings: dict[str, float | None]) -> str | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/pct-change-nm/test_pct_change_nm.py::test_any_non_positive_base_has_a_reason",
+    "test/spec/pct-change-nm/test_pct_change_nm.py::test_any_pct_form_over_any_step_ids_returns_the_base",
+    "test/spec/pct-change-nm/test_pct_change_nm.py::test_any_positive_base_keeps_the_closed_form",
+    "test/spec/pct-change-nm/test_pct_change_nm.py::test_grading_an_n_m_case",
+    "test/spec/pct-change-nm/test_pct_change_nm.py::test_hedged_answers_pass_unless_they_state_the_ratio",
+    "test/spec/pct-change-nm/test_pct_change_nm.py::test_micron_negative_base_is_not_meaningful",
+    "test/spec/pct-change-nm/test_pct_change_nm.py::test_positive_base_evaluates_unchanged",
+    "test/spec/pct-change-nm/test_pct_change_nm.py::test_recognizes_percentage_change_forms",
+    "test/spec/pct-change-nm/test_pct_change_nm.py::test_scaling_and_sign_flip_point_case",
+    "test/spec/pct-change-nm/test_pct_change_nm.py::test_scaling_preserves_and_sign_flip_triggers_the_reason"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/pct-change-nm.md",
+    "sha256": "b460d5ae4559e3c516a18a3d67993aed28c3f9f9541844d09a22d9aeb12185f7"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

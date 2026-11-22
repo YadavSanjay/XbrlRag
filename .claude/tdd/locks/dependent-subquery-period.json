@@ -1,0 +1,129 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-14",
+  "criteria": {
+    "C1": [
+      "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_stored_shapes_state_no_period_until_one_is_appended[For <<TOP:sq1:1>>, what is the percentage growth in Payments to Acquire Property, Plant, and Equipment?]",
+      "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_stored_shapes_state_no_period_until_one_is_appended[Among <<TOP:sq1:3>>, which has the highest Current Ratio?]",
+      "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_stored_shapes_state_no_period_until_one_is_appended[For <<TOP:sq1:1>>, what was the change in total current assets?]",
+      "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_stored_shapes_state_no_period_until_one_is_appended[What are Amazon's main logistics-related risk factors?]",
+      "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_stored_shapes_state_no_period_until_one_is_appended[For <<TOP:fy2024:1>>, what is the year-over-year growth in revenue?]",
+      "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_stored_shapes_state_no_period_until_one_is_appended[Which is first-ranked by 10-K revenue?]",
+      "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_a_year_like_sub_query_id_never_counts",
+      "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_free_text_states_none_and_a_phrase_makes_it_state_one",
+      "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_appending_any_year_form_makes_it_state_one"
+    ],
+    "C2": [
+      "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_one_year_is_stated",
+      "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Looking at the top 3 of the covered companies by total debt in FY24, by how much did the leader's capital expenditures change from FY23?]",
+      "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Of the 3 largest of the retailers by Assets for FY2022 through FY2024, which had the highest Current Ratio?]",
+      "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Of the 3 largest of the retailers by Assets in Q3 FY24, which had the highest Current Ratio?]",
+      "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Of the 3 largest of the retailers by Assets in the latest fiscal year, which had the highest Current Ratio?]",
+      "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Of the 3 largest of the retailers by Assets in calendar 2024, which had the highest Current Ratio?]",
+      "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Of the 3 largest of the retailers by Assets for the fiscal year ended February 2, 2025, which had the highest Current Ratio?]",
+      "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Of the 3 largest of the retailers by Assets in FY2040, which had the highest Current Ratio?]",
+      "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Of the 3 largest of the retailers by Assets in fiscal 2015, which had the highest Current Ratio?]",
+      "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Of the 3 largest of the retailers by Assets, which had the highest Current Ratio?]",
+      "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_one_year_in_any_form_and_what_breaks_it"
+    ],
+    "C3": [
+      "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_the_094b_decomposition",
+      "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_either_dependency_marker_is_enough",
+      "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_a_chain_and_the_ending_forms",
+      "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_nothing_is_inherited[Looking at the top 3 of the covered companies by total debt in FY24, by how much did the leader's capital expenditures change from FY23?-subqueries0]",
+      "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_nothing_is_inherited[Which companies have significant China revenue exposure, and what are the top 3 such companies' supply-chain risks?-subqueries1]",
+      "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_nothing_is_inherited[Of the 3 largest of the covered companies by Total Debt in FY24, which had the highest operating margin?-subqueries2]",
+      "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_nothing_is_inherited[Of the 3 largest of the covered companies by Total Debt in FY24, which had the highest operating margin?-subqueries3]",
+      "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_nothing_is_inherited[Of the 3 largest of the covered companies by Total Debt in FY24, which had the highest operating margin?-subqueries4]",
+      "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_nothing_is_inherited[Of the 3 largest of the covered companies by Total Debt in FY24, which had the highest operating margin?-subqueries5]",
+      "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_one_sub_query_is_never_changed",
+      "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_property_only_yearless_dependents_change_and_idempotent"
+    ],
+    "C4": [
+      "test/spec/dependent-subquery-period/test_dsp_decompose.py::test_c4_the_094b_reply_inherits_and_a_two_year_reply_does_not",
+      "test/spec/dependent-subquery-period/test_dsp_decompose.py::test_c4_any_single_year_question_reaches_the_dropped_sub_query"
+    ]
+  },
+  "files": {
+    "test/spec/dependent-subquery-period/conftest.py": "37697e0152acfa6f6ab4ac1dca9b778a043c2e24ae3f1ff8b6b0fb911ea82303",
+    "test/spec/dependent-subquery-period/test_dsp_decompose.py": "ddab1971700d2d6b2b53181adb95a6f525001fa6c148839849b009e247a9e683",
+    "test/spec/dependent-subquery-period/test_dsp_inherit.py": "4f6fff9a2382513f535f517a2e5b35b1fe34fe3df4bf31f448983d58f4b90aa2",
+    "test/spec/dependent-subquery-period/test_dsp_own_period.py": "93606e36ba28fbf1c6678fd914e7c31ff65b6e8bfaf9ca989ee9a6ad6ef12505",
+    "test/spec/dependent-subquery-period/test_dsp_parent_year.py": "e1a2a1de67643edc13185ea9c3bd9848e711e30cd8b08a0ece40b1341f04fc21"
+  },
+  "id": "dependent-subquery-period",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/subquery_period.py",
+      "module": "retriever.xbrl.subquery_period",
+      "qualname": "has_own_period",
+      "signature": "def has_own_period(text: str) -> bool"
+    },
+    {
+      "file": "src/retriever/xbrl/subquery_period.py",
+      "module": "retriever.xbrl.subquery_period",
+      "qualname": "stated_fiscal_year",
+      "signature": "def stated_fiscal_year(query: str) -> int | None"
+    },
+    {
+      "file": "src/retriever/xbrl/subquery_period.py",
+      "module": "retriever.xbrl.subquery_period",
+      "qualname": "inherit_dependent_periods",
+      "signature": "def inherit_dependent_periods(query: str, subqueries: list[SubQuery]) -> list[SubQuery]"
+    }
+  ],
+  "nodes": [
+    "test/spec/dependent-subquery-period/test_dsp_decompose.py::test_c4_any_single_year_question_reaches_the_dropped_sub_query",
+    "test/spec/dependent-subquery-period/test_dsp_decompose.py::test_c4_the_094b_reply_inherits_and_a_two_year_reply_does_not",
+    "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_a_chain_and_the_ending_forms",
+    "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_either_dependency_marker_is_enough",
+    "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_nothing_is_inherited[Looking at the top 3 of the covered companies by total debt in FY24, by how much did the leader's capital expenditures change from FY23?-subqueries0]",
+    "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_nothing_is_inherited[Of the 3 largest of the covered companies by Total Debt in FY24, which had the highest operating margin?-subqueries2]",
+    "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_nothing_is_inherited[Of the 3 largest of the covered companies by Total Debt in FY24, which had the highest operating margin?-subqueries3]",
+    "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_nothing_is_inherited[Of the 3 largest of the covered companies by Total Debt in FY24, which had the highest operating margin?-subqueries4]",
+    "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_nothing_is_inherited[Of the 3 largest of the covered companies by Total Debt in FY24, which had the highest operating margin?-subqueries5]",
+    "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_nothing_is_inherited[Which companies have significant China revenue exposure, and what are the top 3 such companies' supply-chain risks?-subqueries1]",
+    "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_one_sub_query_is_never_changed",
+    "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_property_only_yearless_dependents_change_and_idempotent",
+    "test/spec/dependent-subquery-period/test_dsp_inherit.py::test_c3_the_094b_decomposition",
+    "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_a_year_like_sub_query_id_never_counts",
+    "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_appending_any_year_form_makes_it_state_one",
+    "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_free_text_states_none_and_a_phrase_makes_it_state_one",
+    "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_stored_shapes_state_no_period_until_one_is_appended[Among <<TOP:sq1:3>>, which has the highest Current Ratio?]",
+    "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_stored_shapes_state_no_period_until_one_is_appended[For <<TOP:fy2024:1>>, what is the year-over-year growth in revenue?]",
+    "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_stored_shapes_state_no_period_until_one_is_appended[For <<TOP:sq1:1>>, what is the percentage growth in Payments to Acquire Property, Plant, and Equipment?]",
+    "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_stored_shapes_state_no_period_until_one_is_appended[For <<TOP:sq1:1>>, what was the change in total current assets?]",
+    "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_stored_shapes_state_no_period_until_one_is_appended[What are Amazon's main logistics-related risk factors?]",
+    "test/spec/dependent-subquery-period/test_dsp_own_period.py::test_c1_stored_shapes_state_no_period_until_one_is_appended[Which is first-ranked by 10-K revenue?]",
+    "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Looking at the top 3 of the covered companies by total debt in FY24, by how much did the leader's capital expenditures change from FY23?]",
+    "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Of the 3 largest of the retailers by Assets for FY2022 through FY2024, which had the highest Current Ratio?]",
+    "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Of the 3 largest of the retailers by Assets for the fiscal year ended February 2, 2025, which had the highest Current Ratio?]",
+    "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Of the 3 largest of the retailers by Assets in FY2040, which had the highest Current Ratio?]",
+    "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Of the 3 largest of the retailers by Assets in Q3 FY24, which had the highest Current Ratio?]",
+    "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Of the 3 largest of the retailers by Assets in calendar 2024, which had the highest Current Ratio?]",
+    "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Of the 3 largest of the retailers by Assets in fiscal 2015, which had the highest Current Ratio?]",
+    "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Of the 3 largest of the retailers by Assets in the latest fiscal year, which had the highest Current Ratio?]",
+    "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_anything_but_one_annual_year_states_none[Of the 3 largest of the retailers by Assets, which had the highest Current Ratio?]",
+    "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_one_year_in_any_form_and_what_breaks_it",
+    "test/spec/dependent-subquery-period/test_dsp_parent_year.py::test_c2_one_year_is_stated"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/dependent-subquery-period.md",
+    "sha256": "bb44113d7f55f4075304bb34ca0887c9748670ab894f4b3aa206c80c01b4d68c"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

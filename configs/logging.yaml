@@ -1,0 +1,52 @@
+version: 1
+disable_existing_loggers: false
+filters:
+  context:
+    (): src.logging_config.LogContextFilter
+formatters:
+  simple:
+    format: "%(asctime)s %(levelname)s [%(name)s] %(message)s"
+  detailed:
+    format: "%(asctime)s %(levelname)s [%(name)s] [qid=%(query_id)s] %(message)s"
+  json:
+    (): src.logging_config.JsonFormatter
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: detailed
+    filters: [context]
+    # stderr, not stdout: under the stdio MCP transport
+    # (src/mcp_server/server.py) stdout is the JSON-RPC framing channel, so any
+    # log line on stdout corrupts the protocol and deadlocks the host. stderr is
+    # also the conventional stream for diagnostics and is harmless for the REST
+    # (uvicorn) and CLI entrypoints, which use stdout for their own output.
+    stream: ext://sys.stderr
+  file:
+    class: logging.handlers.RotatingFileHandler
+    level: INFO
+    formatter: json
+    filters: [context]
+    # One file per process, relative to the project root
+    # (docs/specs/per-process-log-file.md): a single shared file could not rotate on
+    # Windows while another process held it open. Files older than 7 days are pruned.
+    filename: logs/xbrlrag_{process}_{pid}.log
+    maxBytes: 10485760
+    backupCount: 5
+    encoding: utf8
+loggers:
+  src:
+    level: INFO
+    handlers: [console, file]
+    propagate: false
+  src.preprocess:
+    level: INFO
+    handlers: [console, file]
+    propagate: false
+  xbrlrag.events:
+    level: INFO
+    handlers: [console, file]
+    propagate: false
+root:
+  level: INFO
+  handlers: [console, file]

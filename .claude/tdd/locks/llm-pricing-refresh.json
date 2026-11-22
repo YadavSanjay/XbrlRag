@@ -1,0 +1,58 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-14",
+  "criteria": {
+    "C1": [
+      "test/spec/llm-pricing-refresh/test_lpr_c1_sonnet_cache_read.py::test_sonnet_row_matches_the_published_rates",
+      "test/spec/llm-pricing-refresh/test_lpr_c1_sonnet_cache_read.py::test_sonnet_cache_read_is_a_twentieth_of_input",
+      "test/spec/llm-pricing-refresh/test_lpr_c1_sonnet_cache_read.py::test_sonnet_point_cost",
+      "test/spec/llm-pricing-refresh/test_lpr_c1_sonnet_cache_read.py::test_any_cached_sonnet_call_costs_the_published_rates",
+      "test/spec/llm-pricing-refresh/test_lpr_c1_sonnet_cache_read.py::test_reading_tokens_from_cache_saves_ninety_five_percent_of_input"
+    ],
+    "C2": [
+      "test/spec/llm-pricing-refresh/test_lpr_c2_luna_long_context.py::test_luna_has_its_published_long_context_tier",
+      "test/spec/llm-pricing-refresh/test_lpr_c2_luna_long_context.py::test_luna_keeps_its_base_rates_beside_the_tier",
+      "test/spec/llm-pricing-refresh/test_lpr_c2_luna_long_context.py::test_luna_tier_starts_strictly_above_272k",
+      "test/spec/llm-pricing-refresh/test_lpr_c2_luna_long_context.py::test_any_long_luna_call_costs_the_long_rates",
+      "test/spec/llm-pricing-refresh/test_lpr_c2_luna_long_context.py::test_a_long_call_costs_twice_the_input_and_one_and_a_half_the_output"
+    ]
+  },
+  "files": {
+    "test/spec/llm-pricing-refresh/conftest.py": "5887c2210eb5971f4f85c5fc371515e8f9e8539386acfcb54265346cacc67d10",
+    "test/spec/llm-pricing-refresh/test_lpr_c1_sonnet_cache_read.py": "4c48ba3e30d4bdee7e9cf726e0b403daa4de916da3d2f7281dce8ad895603949",
+    "test/spec/llm-pricing-refresh/test_lpr_c2_luna_long_context.py": "c2c7bedac3f611f09237755a5d63625e8915ad576ada02dec0e813f28d0776f0"
+  },
+  "id": "llm-pricing-refresh",
+  "interface": [],
+  "nodes": [
+    "test/spec/llm-pricing-refresh/test_lpr_c1_sonnet_cache_read.py::test_any_cached_sonnet_call_costs_the_published_rates",
+    "test/spec/llm-pricing-refresh/test_lpr_c1_sonnet_cache_read.py::test_reading_tokens_from_cache_saves_ninety_five_percent_of_input",
+    "test/spec/llm-pricing-refresh/test_lpr_c1_sonnet_cache_read.py::test_sonnet_cache_read_is_a_twentieth_of_input",
+    "test/spec/llm-pricing-refresh/test_lpr_c1_sonnet_cache_read.py::test_sonnet_point_cost",
+    "test/spec/llm-pricing-refresh/test_lpr_c1_sonnet_cache_read.py::test_sonnet_row_matches_the_published_rates",
+    "test/spec/llm-pricing-refresh/test_lpr_c2_luna_long_context.py::test_a_long_call_costs_twice_the_input_and_one_and_a_half_the_output",
+    "test/spec/llm-pricing-refresh/test_lpr_c2_luna_long_context.py::test_any_long_luna_call_costs_the_long_rates",
+    "test/spec/llm-pricing-refresh/test_lpr_c2_luna_long_context.py::test_luna_has_its_published_long_context_tier",
+    "test/spec/llm-pricing-refresh/test_lpr_c2_luna_long_context.py::test_luna_keeps_its_base_rates_beside_the_tier",
+    "test/spec/llm-pricing-refresh/test_lpr_c2_luna_long_context.py::test_luna_tier_starts_strictly_above_272k"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/llm-pricing-refresh.md",
+    "sha256": "6379d7b2dab9a2f5b9c542f52c7dc589149441ed1e242165afabf0816e43df13"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

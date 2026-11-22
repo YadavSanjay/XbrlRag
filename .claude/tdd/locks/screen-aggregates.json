@@ -1,0 +1,176 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/screen-aggregates/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-10",
+  "criteria": {
+    "C1": [
+      "test/spec/screen-aggregates/test_universe_routing.py::test_find_universe_mentions_points",
+      "test/spec/screen-aggregates/test_universe_routing.py::test_longest_phrase_wins_and_ignore_masks",
+      "test/spec/screen-aggregates/test_universe_routing.py::test_bad_alias_tables_raise",
+      "test/spec/screen-aggregates/test_universe_routing.py::test_find_universe_mentions_matches_the_rule"
+    ],
+    "C10": [
+      "test/spec/screen-aggregates/test_screen_aggregate.py::test_aggregate_disclosure_text_points",
+      "test/spec/screen-aggregates/test_screen_aggregate.py::test_append_aggregate_disclosures_points",
+      "test/spec/screen-aggregates/test_screen_aggregate.py::test_text_names_every_member_and_append_is_idempotent"
+    ],
+    "C11": [
+      "test/spec/screen-aggregates/test_citation_counts.py::test_aggregate_counts_are_supported",
+      "test/spec/screen-aggregates/test_citation_counts.py::test_any_count_of_the_aggregate_is_supported_and_others_are_not"
+    ],
+    "C2": [
+      "test/spec/screen-aggregates/test_universe_routing.py::test_committed_alias_table_shape",
+      "test/spec/screen-aggregates/test_universe_routing.py::test_every_committed_phrase_resolves_to_its_own_universe"
+    ],
+    "C3": [
+      "test/spec/screen-aggregates/test_universe_routing.py::test_split_company_mentions_points",
+      "test/spec/screen-aggregates/test_universe_routing.py::test_split_company_mentions_partitions"
+    ],
+    "C4": [
+      "test/spec/screen-aggregates/test_universe_routing.py::test_aggregate_cue_points",
+      "test/spec/screen-aggregates/test_universe_routing.py::test_aggregate_cue_ignores_case_punctuation_and_filler"
+    ],
+    "C5": [
+      "test/spec/screen-aggregates/test_universe_routing.py::test_universe_intent_table",
+      "test/spec/screen-aggregates/test_universe_routing.py::test_universe_intent_only_ever_widens_to_screen"
+    ],
+    "C6": [
+      "test/spec/screen-aggregates/test_validator_aggregate.py::test_valid_aggregate_plans",
+      "test/spec/screen-aggregates/test_validator_aggregate.py::test_bad_of_is_one_error",
+      "test/spec/screen-aggregates/test_validator_aggregate.py::test_any_unknown_fn_is_one_error"
+    ],
+    "C7": [
+      "test/spec/screen-aggregates/test_universe_routing.py::test_group_plan_errors_points",
+      "test/spec/screen-aggregates/test_universe_routing.py::test_group_plan_errors_one_per_mismatched_screen"
+    ],
+    "C8": [
+      "test/spec/screen-aggregates/test_screen_aggregate.py::test_sum_of_the_fixture",
+      "test/spec/screen-aggregates/test_screen_aggregate.py::test_mean_count_and_medians_of_the_fixture",
+      "test/spec/screen-aggregates/test_screen_aggregate.py::test_error_and_not_found_rules",
+      "test/spec/screen-aggregates/test_screen_aggregate.py::test_without_a_disclosure_or_period_ends",
+      "test/spec/screen-aggregates/test_screen_aggregate.py::test_aggregates_match_hand_arithmetic_in_any_row_order",
+      "test/spec/screen-aggregates/test_screen_aggregate.py::test_an_extra_exclusion_changes_no_value_and_is_named"
+    ],
+    "C9": [
+      "test/spec/screen-aggregates/test_executor_aggregate.py::test_aggregate_steps_and_a_compute_over_them",
+      "test/spec/screen-aggregates/test_executor_aggregate.py::test_unknown_of_is_an_error_step",
+      "test/spec/screen-aggregates/test_executor_aggregate.py::test_executor_value_is_the_hand_aggregate"
+    ]
+  },
+  "files": {
+    "test/spec/screen-aggregates/test_citation_counts.py": "43556de50ac4d2a35bfeb929103d848b94352150b1a69c07c0dffd039b855408",
+    "test/spec/screen-aggregates/test_executor_aggregate.py": "e4f6243f2c28e82902f88c25e3cc928f02395b9aa8321a0b293f9ef9ffa5c41c",
+    "test/spec/screen-aggregates/test_screen_aggregate.py": "1c26adc273626c4726fb25b790ade6144f3594bbd674c1efe38162599856e13b",
+    "test/spec/screen-aggregates/test_universe_routing.py": "67712a334cd07ffa6629045d3e85f5d885cdd14e4a1386842f1b1d201d7780ca",
+    "test/spec/screen-aggregates/test_validator_aggregate.py": "3722eace50ac0b85c68f200f0b9f0753687a577aeb652241892e0c77f8600b23"
+  },
+  "id": "screen-aggregates",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/screen_aggregate.py",
+      "module": "retriever.xbrl.screen_aggregate",
+      "qualname": "aggregate_screen_rows",
+      "signature": "def aggregate_screen_rows(fn: str, screen: Mapping[str, Any]) -> dict[str, Any]"
+    },
+    {
+      "file": "src/retriever/xbrl/screen_aggregate.py",
+      "module": "retriever.xbrl.screen_aggregate",
+      "qualname": "aggregate_disclosure_text",
+      "signature": "def aggregate_disclosure_text(aggregate: Mapping[str, Any]) -> str"
+    },
+    {
+      "file": "src/retriever/xbrl/screen_aggregate.py",
+      "module": "retriever.xbrl.screen_aggregate",
+      "qualname": "append_aggregate_disclosures",
+      "signature": "def append_aggregate_disclosures(summary: str, steps: Sequence[Mapping[str, Any]]) -> str"
+    },
+    {
+      "file": "src/retriever/xbrl/universe_routing.py",
+      "module": "retriever.xbrl.universe_routing",
+      "qualname": "universe_aliases",
+      "signature": "def universe_aliases() -> dict[str, list[str]]"
+    },
+    {
+      "file": "src/retriever/xbrl/universe_routing.py",
+      "module": "retriever.xbrl.universe_routing",
+      "qualname": "find_universe_mentions",
+      "signature": "def find_universe_mentions(text: str, groups: Mapping[str, Sequence[str]], aliases: Mapping[str, Sequence[str]], ignore: Sequence[str]=()) -> list[str]"
+    },
+    {
+      "file": "src/retriever/xbrl/universe_routing.py",
+      "module": "retriever.xbrl.universe_routing",
+      "qualname": "split_company_mentions",
+      "signature": "def split_company_mentions(mentions: Sequence[str], groups: Mapping[str, Sequence[str]], aliases: Mapping[str, Sequence[str]]) -> tuple[list[str], list[str]]"
+    },
+    {
+      "file": "src/retriever/xbrl/universe_routing.py",
+      "module": "retriever.xbrl.universe_routing",
+      "qualname": "aggregate_cue",
+      "signature": "def aggregate_cue(query: str) -> str | None"
+    },
+    {
+      "file": "src/retriever/xbrl/universe_routing.py",
+      "module": "retriever.xbrl.universe_routing",
+      "qualname": "universe_intent",
+      "signature": "def universe_intent(intent: str, universes: Sequence[str], resolved_companies: int, aggregate: str | None) -> str"
+    },
+    {
+      "file": "src/retriever/xbrl/universe_routing.py",
+      "module": "retriever.xbrl.universe_routing",
+      "qualname": "group_plan_errors",
+      "signature": "def group_plan_errors(plan: Any, universe: str | None, aggregate: str | None) -> list[str]"
+    }
+  ],
+  "nodes": [
+    "test/spec/screen-aggregates/test_citation_counts.py::test_aggregate_counts_are_supported",
+    "test/spec/screen-aggregates/test_citation_counts.py::test_any_count_of_the_aggregate_is_supported_and_others_are_not",
+    "test/spec/screen-aggregates/test_executor_aggregate.py::test_aggregate_steps_and_a_compute_over_them",
+    "test/spec/screen-aggregates/test_executor_aggregate.py::test_executor_value_is_the_hand_aggregate",
+    "test/spec/screen-aggregates/test_executor_aggregate.py::test_unknown_of_is_an_error_step",
+    "test/spec/screen-aggregates/test_screen_aggregate.py::test_aggregate_disclosure_text_points",
+    "test/spec/screen-aggregates/test_screen_aggregate.py::test_aggregates_match_hand_arithmetic_in_any_row_order",
+    "test/spec/screen-aggregates/test_screen_aggregate.py::test_an_extra_exclusion_changes_no_value_and_is_named",
+    "test/spec/screen-aggregates/test_screen_aggregate.py::test_append_aggregate_disclosures_points",
+    "test/spec/screen-aggregates/test_screen_aggregate.py::test_error_and_not_found_rules",
+    "test/spec/screen-aggregates/test_screen_aggregate.py::test_mean_count_and_medians_of_the_fixture",
+    "test/spec/screen-aggregates/test_screen_aggregate.py::test_sum_of_the_fixture",
+    "test/spec/screen-aggregates/test_screen_aggregate.py::test_text_names_every_member_and_append_is_idempotent",
+    "test/spec/screen-aggregates/test_screen_aggregate.py::test_without_a_disclosure_or_period_ends",
+    "test/spec/screen-aggregates/test_universe_routing.py::test_aggregate_cue_ignores_case_punctuation_and_filler",
+    "test/spec/screen-aggregates/test_universe_routing.py::test_aggregate_cue_points",
+    "test/spec/screen-aggregates/test_universe_routing.py::test_bad_alias_tables_raise",
+    "test/spec/screen-aggregates/test_universe_routing.py::test_committed_alias_table_shape",
+    "test/spec/screen-aggregates/test_universe_routing.py::test_every_committed_phrase_resolves_to_its_own_universe",
+    "test/spec/screen-aggregates/test_universe_routing.py::test_find_universe_mentions_matches_the_rule",
+    "test/spec/screen-aggregates/test_universe_routing.py::test_find_universe_mentions_points",
+    "test/spec/screen-aggregates/test_universe_routing.py::test_group_plan_errors_one_per_mismatched_screen",
+    "test/spec/screen-aggregates/test_universe_routing.py::test_group_plan_errors_points",
+    "test/spec/screen-aggregates/test_universe_routing.py::test_longest_phrase_wins_and_ignore_masks",
+    "test/spec/screen-aggregates/test_universe_routing.py::test_split_company_mentions_partitions",
+    "test/spec/screen-aggregates/test_universe_routing.py::test_split_company_mentions_points",
+    "test/spec/screen-aggregates/test_universe_routing.py::test_universe_intent_only_ever_widens_to_screen",
+    "test/spec/screen-aggregates/test_universe_routing.py::test_universe_intent_table",
+    "test/spec/screen-aggregates/test_validator_aggregate.py::test_any_unknown_fn_is_one_error",
+    "test/spec/screen-aggregates/test_validator_aggregate.py::test_bad_of_is_one_error",
+    "test/spec/screen-aggregates/test_validator_aggregate.py::test_valid_aggregate_plans"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/screen-aggregates.md",
+    "sha256": "b70f518b2aa8bc88ee6ef25f7a237e1598e11ef7c8eb939423be4e060be2f6ca"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

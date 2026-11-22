@@ -1,0 +1,218 @@
+# SEC EDGAR download configuration
+#
+# Run:  python -m src.ingest.sec_edgar.downloader --config configs/pipelines/sec_edgar_downloads.yaml
+#
+# Supported filing_type values: "10-K", "10-Q", "20-F"
+#   10-K / 20-F  — annual filings; no quarter field.
+#   10-Q         — quarterly filings; quarter: 1 | 2 | 3 required (the FISCAL quarter).
+#   fiscal_year is the calendar year in which the filer's fiscal year ends, for every form.
+#
+# Files land under:
+#   <output_root>/<TICKER>/<FY>/10-K/<files>            # 10-K (original)
+#   <output_root>/<TICKER>/<FY>/10-K_A/<files>          # 10-K/A (amendment; "/" -> "_")
+#   <output_root>/<TICKER>/<FY>/20-F/<files>            # 20-F (original; FPI annual)
+#   <output_root>/<TICKER>/<FY>/20-F_A/<files>          # 20-F/A (amendment)
+#   <output_root>/<TICKER>/<FY>/10-Q/Q<n>/<files>       # 10-Q (original)
+#   <output_root>/<TICKER>/<FY>/10-Q_A/Q<n>/<files>     # 10-Q/A (amendment)
+#
+# If the latest matching filing on EDGAR is an amendment, it is downloaded
+# automatically with is_amendment: true recorded in manifest.yaml.
+#
+# 20-F notes:
+#   - TSM (TSMC) is a Foreign Private Issuer; it files a 20-F under IFRS.
+#   - IFRS taxonomy uses ifrs-full:* concept QNames instead of us-gaap:*.
+#   - The concept_mapping table must have IFRS rows (source='ifrs') for the
+#     resolver to find facts from 20-F filings.
+#   - See docs/design/XbrlRag_Materialized_Views.md §7 (IFRS / 20-F).
+
+# SEC EDGAR requires a contactable "Name email@domain" User-Agent. Intentionally EMPTY:
+# set SEC_EDGAR_IDENTITY in .env (it wins over this key, as does --identity). With none
+# of the three set, the downloader fails at startup.
+identity:
+# Intentionally EMPTY — SEC_EDGAR_ROOT wins over this key, and with neither set
+# the local-dev default in src/ingest/sec_edgar/storage.py applies. Do not put an
+# absolute Windows path here: it is a *relative* path on POSIX, so in a container
+# it writes to /app/D:/... instead of the mounted root.
+output_root:
+
+downloads:
+  # ----- 10-K filings: target universe (fiscal years 2022-2025) -----
+  - {ticker: "NVDA",  filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "GOOGL", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "MSFT",  filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "META",  filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "AAPL",  filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "TSLA",  filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "AMZN",  filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "ORCL",  filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "AVGO",  filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "AMD",   filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "MU",    filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "CEG",   filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "VST",   filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "INTC",  filing_type: "10-K", fiscal_year: 2025}
+
+  - {ticker: "NVDA",  filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "GOOGL", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "MSFT",  filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "META",  filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "AAPL",  filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "TSLA",  filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "AMZN",  filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "ORCL",  filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "AVGO",  filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "AMD",   filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "MU",    filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "CEG",   filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "VST",   filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "INTC",  filing_type: "10-K", fiscal_year: 2024}
+
+  - {ticker: "NVDA",  filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "GOOGL", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "MSFT",  filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "META",  filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "AAPL",  filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "TSLA",  filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "AMZN",  filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "ORCL",  filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "AVGO",  filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "AMD",   filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "MU",    filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "CEG",   filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "VST",   filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "INTC",  filing_type: "10-K", fiscal_year: 2023}
+
+  - {ticker: "NVDA",  filing_type: "10-K", fiscal_year: 2022}
+  - {ticker: "GOOGL", filing_type: "10-K", fiscal_year: 2022}
+  - {ticker: "MSFT",  filing_type: "10-K", fiscal_year: 2022}
+  - {ticker: "META",  filing_type: "10-K", fiscal_year: 2022}
+  - {ticker: "AAPL",  filing_type: "10-K", fiscal_year: 2022}
+  - {ticker: "TSLA",  filing_type: "10-K", fiscal_year: 2022}
+  - {ticker: "AMZN",  filing_type: "10-K", fiscal_year: 2022}
+  - {ticker: "ORCL",  filing_type: "10-K", fiscal_year: 2022}
+  - {ticker: "AVGO",  filing_type: "10-K", fiscal_year: 2022}
+  - {ticker: "AMD",   filing_type: "10-K", fiscal_year: 2022}
+  - {ticker: "MU",    filing_type: "10-K", fiscal_year: 2022}
+  - {ticker: "CEG",   filing_type: "10-K", fiscal_year: 2022}
+  - {ticker: "VST",   filing_type: "10-K", fiscal_year: 2022}
+  - {ticker: "INTC",  filing_type: "10-K", fiscal_year: 2022}
+
+  # ----- 20-F filings: TSM (TSMC) — Foreign Private Issuer, IFRS -----
+  # TSM's FY ends December 31; fiscal_year matches the calendar year.
+  # Prerequisite: run the IFRS concept_mapping INSERT before Arelle ingest.
+  - {ticker: "TSM",   filing_type: "20-F", fiscal_year: 2025}
+  - {ticker: "TSM",   filing_type: "20-F", fiscal_year: 2024}
+  - {ticker: "TSM",   filing_type: "20-F", fiscal_year: 2023}
+  - {ticker: "TSM",   filing_type: "20-F", fiscal_year: 2022}
+
+  # ----- 10-K filings: calendar-2026 period ends (MSFT FYE Jun, ORCL FYE May) -----
+  - {ticker: "MSFT",  filing_type: "10-K", fiscal_year: 2026}
+  - {ticker: "ORCL",  filing_type: "10-K", fiscal_year: 2026}
+
+  # ----- 10-Q filings (add as needed) -----
+  # NOTE: for 10-Q, fiscal_year/quarter are the FISCAL year and quarter
+  # (docs/specs/tenq-fiscal-labels.md, requirement 5): fiscal_year is the calendar
+  # year the fiscal year ends in (as for 10-K), quarter its fiscal quarter 1-3,
+  # placed on the filer's 10-K report dates (_period_matches). Q4 is the 10-K.
+  # Until 2026-11-08 these entries named CALENDAR quarters; they were converted so
+  # the same filings are selected. The {TICKER}/{YEAR}/10-Q/Q{n} folders of existing
+  # downloads keep their old calendar names; the registries relabel from the filer's
+  # calendar, whatever the folder or manifest says. Converted entries, old -> new:
+  #   NVDA (2026,2)->(2027,1)  NVDA (2026,3)->(2027,2)  MSFT (2026,1)->(2026,3)
+  #   AAPL (2026,1)->(2026,2)  AAPL (2026,2)->(2026,3)  MU   (2026,1)->(2026,2)
+  #   MU   (2026,2)->(2026,3)  ORCL (2026,1)->(2026,3)  ORCL (2026,3)->(2027,1)
+  # Calendar-year filers and AVGO (FY ends early November) are unchanged.
+  - {ticker: "NVDA",  filing_type: "10-Q", fiscal_year: 2027, quarter: 1}
+  - {ticker: "GOOGL",  filing_type: "10-Q", fiscal_year: 2026, quarter: 1}
+  - {ticker: "GOOGL",  filing_type: "10-Q", fiscal_year: 2026, quarter: 2}
+  - {ticker: "MSFT",  filing_type: "10-Q", fiscal_year: 2026, quarter: 3}
+  - {ticker: "META",  filing_type: "10-Q", fiscal_year: 2026, quarter: 1}
+  - {ticker: "META",  filing_type: "10-Q", fiscal_year: 2026, quarter: 2}
+  - {ticker: "AAPL",  filing_type: "10-Q", fiscal_year: 2026, quarter: 2}
+  - {ticker: "AAPL",  filing_type: "10-Q", fiscal_year: 2026, quarter: 3}
+  - {ticker: "TSLA",  filing_type: "10-Q", fiscal_year: 2026, quarter: 1}
+  - {ticker: "TSLA",  filing_type: "10-Q", fiscal_year: 2026, quarter: 2}
+  - {ticker: "AMZN",  filing_type: "10-Q", fiscal_year: 2026, quarter: 1}
+  - {ticker: "AMZN",  filing_type: "10-Q", fiscal_year: 2026, quarter: 2}
+  - {ticker: "ORCL",  filing_type: "10-Q", fiscal_year: 2026, quarter: 3}
+  - {ticker: "AVGO",  filing_type: "10-Q", fiscal_year: 2026, quarter: 1}
+  - {ticker: "AVGO",  filing_type: "10-Q", fiscal_year: 2026, quarter: 2}
+  - {ticker: "AMD",  filing_type: "10-Q", fiscal_year: 2026, quarter: 1}
+  - {ticker: "AMD",  filing_type: "10-Q", fiscal_year: 2026, quarter: 2}
+  - {ticker: "MU",  filing_type: "10-Q", fiscal_year: 2026, quarter: 2}
+  - {ticker: "MU",  filing_type: "10-Q", fiscal_year: 2026, quarter: 3}
+  - {ticker: "NVDA",  filing_type: "10-Q", fiscal_year: 2027, quarter: 2}
+  - {ticker: "ORCL",  filing_type: "10-Q", fiscal_year: 2027, quarter: 1}
+  - {ticker: "AVGO",  filing_type: "10-Q", fiscal_year: 2026, quarter: 3}
+  - {ticker: "CEG",  filing_type: "10-Q", fiscal_year: 2026, quarter: 1}
+  - {ticker: "CEG",  filing_type: "10-Q", fiscal_year: 2026, quarter: 2}
+  - {ticker: "VST",  filing_type: "10-Q", fiscal_year: 2026, quarter: 1}
+  - {ticker: "VST",  filing_type: "10-Q", fiscal_year: 2026, quarter: 2}
+  - {ticker: "INTC",  filing_type: "10-Q", fiscal_year: 2026, quarter: 1}
+  - {ticker: "INTC",  filing_type: "10-Q", fiscal_year: 2026, quarter: 2}
+
+  # ----- 10-K filings: v2 wave 1 (docs/design/XbrlRag_v2_Plan.md §4.2), FY2023-25 -----
+  # fiscal_year here is the calendar year of the period end. HD labels its fiscal
+  # year by the year it starts (FY2024 ended 2025-02-02), so HD takes 2024-2026.
+  - {ticker: "CSCO", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "CSCO", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "CSCO", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "ADBE", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "ADBE", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "ADBE", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "CRM", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "CRM", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "CRM", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "QCOM", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "QCOM", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "QCOM", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "TXN", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "TXN", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "TXN", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "NFLX", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "NFLX", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "NFLX", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "KO", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "KO", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "KO", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "PG", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "PG", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "PG", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "WMT", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "WMT", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "WMT", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "COST", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "COST", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "COST", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "MCD", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "MCD", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "MCD", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "LLY", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "LLY", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "LLY", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "MRK", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "MRK", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "MRK", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "ABT", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "ABT", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "ABT", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "UNP", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "UNP", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "UNP", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "LMT", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "LMT", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "LMT", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "UPS", filing_type: "10-K", fiscal_year: 2023}
+  - {ticker: "UPS", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "UPS", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "HD", filing_type: "10-K", fiscal_year: 2024}
+  - {ticker: "HD", filing_type: "10-K", fiscal_year: 2025}
+  - {ticker: "HD", filing_type: "10-K", fiscal_year: 2026}
+
+  # ----- 10-K filings: calendar-2026 period ends for the wave 1 and MU filers -----
+  - {ticker: "WMT", filing_type: "10-K", fiscal_year: 2026}
+  - {ticker: "CRM", filing_type: "10-K", fiscal_year: 2026}
+  - {ticker: "PG", filing_type: "10-K", fiscal_year: 2026}
+  - {ticker: "CSCO", filing_type: "10-K", fiscal_year: 2026}
+  - {ticker: "COST", filing_type: "10-K", fiscal_year: 2026}
+  - {ticker: "MU", filing_type: "10-K", fiscal_year: 2026}

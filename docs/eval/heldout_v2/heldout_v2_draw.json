@@ -1,0 +1,234 @@
+{
+  "output_value": "C550B6DACDCAAD9F4A0820CF0AD4972485F30241C87A096BF99B0AB7DAF6BB23BEF7DD59184428FB3328E997ACB6E1C2EB292E44035D056DC50AB51A6D9AD03A",
+  "pool_sha256": "61e9297a725188c4dac7c4469b575a516008f74950e6fc0dbed56463f405c1d7",
+  "pulse_timestamp": "seed-from-pool",
+  "scheme": "xbrlrag-heldout-v2",
+  "seed": {
+    "source": "sha512 of the pool file's bytes",
+    "value": "C550B6DACDCAAD9F4A0820CF0AD4972485F30241C87A096BF99B0AB7DAF6BB23BEF7DD59184428FB3328E997ACB6E1C2EB292E44035D056DC50AB51A6D9AD03A"
+  },
+  "strata": {
+    "D": {
+      "alternates": [
+        {
+          "cik": "0000097745",
+          "key": "41a372073a1b8be396f47d9d940f0272d657f8373217a13c11af7ede79b60dda",
+          "name": "Thermo Fisher Scientific",
+          "rank": 5,
+          "sector": "Health Care",
+          "symbol": "TMO"
+        },
+        {
+          "cik": "0001075531",
+          "key": "59560abeebc6ee2efa8906a05b265e6a2d751764a97079e001b44f31a7c8b546",
+          "name": "Booking Holdings",
+          "rank": 6,
+          "sector": "Consumer Discretionary",
+          "symbol": "BKNG"
+        }
+      ],
+      "checked": [
+        {
+          "cik": "0000060667",
+          "eligible": true,
+          "key": "1bb39418f99c5377eee3b724146c700644dcfb3f873d9a79ae9c088e6a725cd1",
+          "missing_years": [],
+          "not_inline_years": [],
+          "rank": 1,
+          "symbol": "LOW"
+        },
+        {
+          "cik": "0001543151",
+          "eligible": true,
+          "key": "209497e393b02ccd5c1dd565e9aa913122318d20c9e89676402b60432ffdab31",
+          "missing_years": [],
+          "not_inline_years": [],
+          "rank": 2,
+          "symbol": "UBER"
+        },
+        {
+          "cik": "0001103982",
+          "eligible": true,
+          "key": "23e215f06996fd8e3ffd52a7d4774d915d6a0d3b9eb5c7354e73afc674c22f26",
+          "missing_years": [],
+          "not_inline_years": [],
+          "rank": 3,
+          "symbol": "MDLZ"
+        },
+        {
+          "cik": "0001035267",
+          "eligible": true,
+          "key": "40c843794bcdb75a915018217bf550ebb9eb1b1dd06b923978e2c6ec209bdfb2",
+          "missing_years": [],
+          "not_inline_years": [],
+          "rank": 4,
+          "symbol": "ISRG"
+        },
+        {
+          "cik": "0000097745",
+          "eligible": true,
+          "key": "41a372073a1b8be396f47d9d940f0272d657f8373217a13c11af7ede79b60dda",
+          "missing_years": [],
+          "not_inline_years": [],
+          "rank": 5,
+          "symbol": "TMO"
+        },
+        {
+          "cik": "0001075531",
+          "eligible": true,
+          "key": "59560abeebc6ee2efa8906a05b265e6a2d751764a97079e001b44f31a7c8b546",
+          "missing_years": [],
+          "not_inline_years": [],
+          "rank": 6,
+          "symbol": "BKNG"
+        }
+      ],
+      "drawn": [
+        {
+          "cik": "0000060667",
+          "key": "1bb39418f99c5377eee3b724146c700644dcfb3f873d9a79ae9c088e6a725cd1",
+          "name": "Lowe's",
+          "rank": 1,
+          "sector": "Consumer Discretionary",
+          "symbol": "LOW"
+        },
+        {
+          "cik": "0001543151",
+          "key": "209497e393b02ccd5c1dd565e9aa913122318d20c9e89676402b60432ffdab31",
+          "name": "Uber",
+          "rank": 2,
+          "sector": "Industrials",
+          "symbol": "UBER"
+        },
+        {
+          "cik": "0001103982",
+          "key": "23e215f06996fd8e3ffd52a7d4774d915d6a0d3b9eb5c7354e73afc674c22f26",
+          "name": "Mondelēz International",
+          "rank": 3,
+          "sector": "Consumer Staples",
+          "symbol": "MDLZ"
+        },
+        {
+          "cik": "0001035267",
+          "key": "40c843794bcdb75a915018217bf550ebb9eb1b1dd06b923978e2c6ec209bdfb2",
+          "name": "Intuitive Surgical",
+          "rank": 4,
+          "sector": "Health Care",
+          "symbol": "ISRG"
+        }
+      ],
+      "shortfall": 0
+    },
+    "S": {
+      "alternates": [
+        {
+          "cik": "0000707549",
+          "key": "3dbc1d63202815ba4763934657cc97c289fa9fd474b9a9ed893c8073b81e1efb",
+          "name": "Lam Research",
+          "rank": 5,
+          "sector": "Information Technology",
+          "symbol": "LRCX"
+        },
+        {
+          "cik": "0000006951",
+          "key": "442fe21742a2045d02279a9ab424672921e302d4b4ca8b4fced2fd6cac9ed3af",
+          "name": "Applied Materials",
+          "rank": 6,
+          "sector": "Information Technology",
+          "symbol": "AMAT"
+        }
+      ],
+      "checked": [
+        {
+          "cik": "0001596532",
+          "eligible": true,
+          "key": "10210a5af2dc318e6e6c8a176af1e2f92f0ba1750e7b2209e4b1b850603b7772",
+          "missing_years": [],
+          "not_inline_years": [],
+          "rank": 1,
+          "symbol": "ANET"
+        },
+        {
+          "cik": "0001327567",
+          "eligible": true,
+          "key": "16b0f760814cc1b1edcd72a8ecbfa62fd0d0eec93e2889a1da32a82d9dc6124d",
+          "missing_years": [],
+          "not_inline_years": [],
+          "rank": 2,
+          "symbol": "PANW"
+        },
+        {
+          "cik": "0001166691",
+          "eligible": true,
+          "key": "319ad5878ec25b011535ec3925c8eab9f6013705ec4c1dbb3f1292e4a371eda9",
+          "missing_years": [],
+          "not_inline_years": [],
+          "rank": 3,
+          "symbol": "CMCSA"
+        },
+        {
+          "cik": "0000051143",
+          "eligible": true,
+          "key": "35b895944b9448ac6a56859f47aed73688609a97a325d2b6d0645835d8dad872",
+          "missing_years": [],
+          "not_inline_years": [],
+          "rank": 4,
+          "symbol": "IBM"
+        },
+        {
+          "cik": "0000707549",
+          "eligible": true,
+          "key": "3dbc1d63202815ba4763934657cc97c289fa9fd474b9a9ed893c8073b81e1efb",
+          "missing_years": [],
+          "not_inline_years": [],
+          "rank": 5,
+          "symbol": "LRCX"
+        },
+        {
+          "cik": "0000006951",
+          "eligible": true,
+          "key": "442fe21742a2045d02279a9ab424672921e302d4b4ca8b4fced2fd6cac9ed3af",
+          "missing_years": [],
+          "not_inline_years": [],
+          "rank": 6,
+          "symbol": "AMAT"
+        }
+      ],
+      "drawn": [
+        {
+          "cik": "0001596532",
+          "key": "10210a5af2dc318e6e6c8a176af1e2f92f0ba1750e7b2209e4b1b850603b7772",
+          "name": "Arista Networks",
+          "rank": 1,
+          "sector": "Information Technology",
+          "symbol": "ANET"
+        },
+        {
+          "cik": "0001327567",
+          "key": "16b0f760814cc1b1edcd72a8ecbfa62fd0d0eec93e2889a1da32a82d9dc6124d",
+          "name": "Palo Alto Networks",
+          "rank": 2,
+          "sector": "Information Technology",
+          "symbol": "PANW"
+        },
+        {
+          "cik": "0001166691",
+          "key": "319ad5878ec25b011535ec3925c8eab9f6013705ec4c1dbb3f1292e4a371eda9",
+          "name": "Comcast",
+          "rank": 3,
+          "sector": "Communication Services",
+          "symbol": "CMCSA"
+        },
+        {
+          "cik": "0000051143",
+          "key": "35b895944b9448ac6a56859f47aed73688609a97a325d2b6d0645835d8dad872",
+          "name": "IBM",
+          "rank": 4,
+          "sector": "Information Technology",
+          "symbol": "IBM"
+        }
+      ],
+      "shortfall": 0
+    }
+  }
+}

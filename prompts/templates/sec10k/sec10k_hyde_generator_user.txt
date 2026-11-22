@@ -1,0 +1,61 @@
+"""
+
+You are helping retrieve relevant sections from SEC Form 10-K filings.
+
+You will be given:
+- A public company
+- An optional fiscal year or year range
+- A single focused sub-question derived from a broader user query
+
+Your job is to generate multiple alternative HYPOTHETICAL 10-K style answer variants
+to this sub-question. These variants will NOT be shown to end users. They will be
+embedded and used only for semantic retrieval.
+
+Company: MUST Use the company or ticker mentioned in the user query.
+Year or year range (if known): use 2024 if no year is specified in user query, otherwise use the year or years or year range mentioned in user query
+
+Sub-question:
+{subquestion_text}
+
+IMPORTANT BREAKDOWN INSTRUCTION:
+If there are multiple years present in question then generate {n_variants} per year. 
+Breaking down variant generation per year level is critical for searching matching chunks for that year in vector store.
+
+Number of variants to generate: {n_variants}  (usually 2 or 3)
+
+General guidelines for EACH variant:
+- Assume relevant content may come from Item 1, Item 1A, Item 7, Item 7A, or Item 8.
+- Use typical SEC 10-K language: formal, precise, risk-aware, and conservative.
+- Focus ONLY on the scope of this sub-question (do not answer other possible questions).
+- Prefer qualitative descriptions over exact figures.
+- Use terminology likely to appear in filings (e.g., “material adverse effect”,  “macroeconomic conditions”, “liquidity and capital resources”,  “operating segments”, “competitive pressures”, “regulatory environment”).
+
+Constraints for ALL variants:
+- Do NOT fabricate specific dollar amounts, percentages, or exact dates.
+- Do NOT mention that the content is hypothetical or generated.
+- Do NOT mention retrieval, embeddings, questions, or models.
+- Do NOT add any explanation of your process.
+
+Length of EACH variant:
+- One to Two paragraphs ONLY.
+
+Diversity requirement:
+- All variants must answer the same sub-question but use different phrasing and slightly different angles of emphasis (e.g., one more risk-focused,  one more operational-focused, one more macro-focused).
+- Avoid copying sentences across variants.
+
+OUTPUT FORMAT (VERY IMPORTANT):
+You MUST return a single valid JSON object, with no extra text before or after it, in exactly this structure:
+
+{answer_response_json}
+
+Formatting rules:
+- Ensure the JSON is strictly valid:
+  - Use double quotes for all keys and string values.
+  - Do NOT include trailing commas.
+- The "variants" array MUST contain exactly {n_variants} strings.
+- Each string in "variants" is the full text of one 10-K-style answer variant and may contain newlines.
+- Do NOT include any keys other than: "subquestion", "variants".
+- Do NOT wrap the JSON in Markdown code fences.
+
+
+"""

@@ -1,0 +1,89 @@
+{
+ "source": "configs/concept_mapping/concept_family_coverage.yaml `filers:` entries with an ext: concept, for the fixture filers, at origin/main d5efac8 (2026-11-07)",
+ "listed": [
+  {
+   "cik": "0000063908",
+   "family": "PretaxIncome",
+   "qname": "ext:IncomeLossFromContinuingOperationsBeforeIncomeTaxes",
+   "role": "primary"
+  },
+  {
+   "cik": "0000080424",
+   "family": "PretaxIncome",
+   "qname": "ext:IncomeLossFromContinuingOperationsBeforeIncomeTaxes",
+   "role": "primary"
+  },
+  {
+   "cik": "0000936468",
+   "family": "RestructuringCharges",
+   "qname": "ext:SeveranceAndRestructuringCosts",
+   "role": "substitute"
+  },
+  {
+   "cik": "0001045810",
+   "family": "ShortTermInvestments",
+   "qname": "ext:MarketableSecuritiesAndEquitySecuritiesFVNI",
+   "role": "primary"
+  },
+  {
+   "cik": "0001045810",
+   "family": "Capex",
+   "qname": "ext:PurchasesOfPropertyAndEquipmentAndIntangibleAssets",
+   "role": "primary"
+  },
+  {
+   "cik": "0001046179",
+   "family": "InterestIncome",
+   "qname": "ext:InvestmentIncomeInterest",
+   "role": "primary"
+  },
+  {
+   "cik": "0001046179",
+   "family": "OtherNonOperatingIncome",
+   "qname": "ext:NonOperatingIncomeExpense1",
+   "role": "primary"
+  },
+  {
+   "cik": "0001046179",
+   "family": "OtherNonOperatingIncome",
+   "qname": "ext:NonOperatingIncomeExpenseNet",
+   "role": "primary"
+  },
+  {
+   "cik": "0001318605",
+   "family": "DepreciationAndAmortization",
+   "qname": "ext:DepreciationAmortizationAndImpairment",
+   "role": "substitute"
+  },
+  {
+   "cik": "0001318605",
+   "family": "DebtRepaid",
+   "qname": "ext:RepaymentsOfConvertibleAndOtherDebt",
+   "role": "primary"
+  },
+  {
+   "cik": "0001318605",
+   "family": "RestructuringCharges",
+   "qname": "ext:RestructuringAndOtherExpenses",
+   "role": "substitute"
+  },
+  {
+   "cik": "0001341439",
+   "family": "PretaxIncome",
+   "qname": "ext:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems",
+   "role": "primary"
+  },
+  {
+   "cik": "0001341439",
+   "family": "OtherNonOperatingIncome",
+   "qname": "ext:NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests",
+   "role": "primary"
+  },
+  {
+   "cik": "0001341439",
+   "family": "ServiceRevenue",
+   "qname": "ext:SalesRevenueServicesNet1",
+   "role": "primary"
+  }
+ ]
+}

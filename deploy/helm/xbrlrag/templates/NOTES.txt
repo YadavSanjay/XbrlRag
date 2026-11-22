@@ -1,0 +1,26 @@
+XbrlRag {{ .Chart.AppVersion }} deployed as release "{{ .Release.Name }}".
+
+Components:
+  - api  ({{ include "xbrlrag.fullname" . }}-api,  port {{ .Values.api.service.port }})
+{{- if .Values.mcp.enabled }}
+  - mcp  ({{ include "xbrlrag.fullname" . }}-mcp,  port {{ .Values.mcp.service.port }})
+{{- end }}
+{{- if .Values.ui.enabled }}
+  - ui   ({{ include "xbrlrag.fullname" . }}-ui,   port {{ .Values.ui.service.port }})
+{{- end }}
+
+External services this release expects (set in values):
+  - Postgres : {{ .Values.externalServices.postgres.host }}:{{ .Values.externalServices.postgres.port }}/{{ .Values.externalServices.postgres.name }}
+  - Qdrant   : {{ .Values.externalServices.qdrant.host }}:{{ .Values.externalServices.qdrant.port }}
+  - RagInfer : {{ .Values.externalServices.raginferenceUrl | default "(unset — REQUIRED for the slim image; it cannot load models locally)" }}
+
+Try the API:
+  kubectl port-forward svc/{{ include "xbrlrag.fullname" . }}-api {{ .Values.api.service.port }}:{{ .Values.api.service.port }}
+  curl localhost:{{ .Values.api.service.port }}/api/health
+
+{{- if not .Values.externalServices.raginferenceUrl }}
+
+WARNING: externalServices.raginferenceUrl is empty. The slim serving image reaches
+BGE-M3 / Jina over HTTP and cannot load them in-process — set it before running
+narrative queries.
+{{- end }}

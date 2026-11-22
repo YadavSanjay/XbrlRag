@@ -1,0 +1,142 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-03",
+  "criteria": {
+    "C1": [
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_latest_annual_label_of_each_filer[AAPL-2025]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_latest_annual_label_of_each_filer[NVDA-2026]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_latest_annual_label_of_each_filer[CRM-2026]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_latest_annual_label_of_each_filer[TSLA-2025]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_latest_annual_label_of_each_filer[HD-2025]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_latest_annual_label_of_each_filer[TSM-2025]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_latest_annual_label_of_each_filer[MSFT-2026]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_equals_the_greatest_annual_label",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_agrees_with_the_label_rule_on_the_latest_period"
+    ],
+    "C2": [
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_every_annual_form_counts[10-K]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_every_annual_form_counts[10-K/A]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_every_annual_form_counts[20-F]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_every_annual_form_counts[20-F/A]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_every_annual_form_counts[40-F]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_every_annual_form_counts[40-F/A]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_no_other_form_counts[10-Q]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_no_other_form_counts[10-Q/A]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_no_other_form_counts[10-KT]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_no_other_form_counts[10-KT/A]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_no_other_form_counts[8-K]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_no_other_form_counts[20-FR]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_no_other_form_counts[NT 10-K]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_a_filing_of_another_form_changes_nothing"
+    ],
+    "C3": [
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_stored_value_is_no_floor[2027-2026]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_stored_value_is_no_floor[2025-2026]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_stored_value_is_no_floor[None-2026]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_stored_value_never_matters_and_a_rerun_is_identical"
+    ],
+    "C4": [
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_a_filer_with_no_annual_filing_gets_null[2026]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_a_filer_with_no_annual_filing_gets_null[None]",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_no_annual_filing_is_null_whatever_else_is_stored"
+    ],
+    "C5": [
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_only_last_seen_fy_moves",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_a_filer_reads_only_its_own_filings",
+      "test/spec/last-seen-fy/test_c1_c5_label.py::test_another_filers_filings_change_nothing_here"
+    ],
+    "C6": [
+      "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_the_file_is_the_insert_then_the_update",
+      "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_comments_hold_no_semicolon",
+      "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_the_insert_leaves_last_seen_fy_alone",
+      "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_the_other_columns_keep_their_source",
+      "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_the_update_reads_the_registry_and_no_dei",
+      "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_labels_exist_before_the_file_runs"
+    ],
+    "C7": [
+      "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_most_recent_year_is_the_annual_label[AAPL-2025]",
+      "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_most_recent_year_is_the_annual_label[NVDA-2026]",
+      "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_most_recent_year_is_the_annual_label[CRM-2026]",
+      "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_a_long_context_arm_with_no_period_names_the_annual_filing[AAPL-2025]",
+      "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_a_long_context_arm_with_no_period_names_the_annual_filing[NVDA-2026]",
+      "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_a_long_context_arm_with_no_period_names_the_annual_filing[CRM-2026]",
+      "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_a_filer_with_no_annual_filing_stays_ambiguous",
+      "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_the_anchor_follows_the_annual_label_for_any_year"
+    ]
+  },
+  "files": {
+    "test/spec/last-seen-fy/conftest.py": "b7fd5d6316a450ac542b93e574609dd4c1377d1b0451bc10ce7b518cc38bf7dd",
+    "test/spec/last-seen-fy/test_c1_c5_label.py": "5fd4a40b666abfca80feeacac18503b5bf8de9c9759db9fcd0f8dd615e811889",
+    "test/spec/last-seen-fy/test_c6_c7_wiring.py": "c354e170736fa73a969ebb3e4e01a51a962627a8ea0468751a28bec4658cf6a4"
+  },
+  "id": "last-seen-fy",
+  "interface": [],
+  "nodes": [
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_a_filer_reads_only_its_own_filings",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_a_filer_with_no_annual_filing_gets_null[2026]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_a_filer_with_no_annual_filing_gets_null[None]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_a_filing_of_another_form_changes_nothing",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_agrees_with_the_label_rule_on_the_latest_period",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_another_filers_filings_change_nothing_here",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_equals_the_greatest_annual_label",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_every_annual_form_counts[10-K/A]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_every_annual_form_counts[10-K]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_every_annual_form_counts[20-F/A]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_every_annual_form_counts[20-F]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_every_annual_form_counts[40-F/A]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_every_annual_form_counts[40-F]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_no_annual_filing_is_null_whatever_else_is_stored",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_no_other_form_counts[10-KT/A]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_no_other_form_counts[10-KT]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_no_other_form_counts[10-Q/A]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_no_other_form_counts[10-Q]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_no_other_form_counts[20-FR]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_no_other_form_counts[8-K]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_no_other_form_counts[NT 10-K]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_only_last_seen_fy_moves",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_latest_annual_label_of_each_filer[AAPL-2025]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_latest_annual_label_of_each_filer[CRM-2026]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_latest_annual_label_of_each_filer[HD-2025]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_latest_annual_label_of_each_filer[MSFT-2026]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_latest_annual_label_of_each_filer[NVDA-2026]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_latest_annual_label_of_each_filer[TSLA-2025]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_latest_annual_label_of_each_filer[TSM-2025]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_stored_value_is_no_floor[2025-2026]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_stored_value_is_no_floor[2027-2026]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_stored_value_is_no_floor[None-2026]",
+    "test/spec/last-seen-fy/test_c1_c5_label.py::test_the_stored_value_never_matters_and_a_rerun_is_identical",
+    "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_a_filer_with_no_annual_filing_stays_ambiguous",
+    "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_a_long_context_arm_with_no_period_names_the_annual_filing[AAPL-2025]",
+    "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_a_long_context_arm_with_no_period_names_the_annual_filing[CRM-2026]",
+    "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_a_long_context_arm_with_no_period_names_the_annual_filing[NVDA-2026]",
+    "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_comments_hold_no_semicolon",
+    "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_labels_exist_before_the_file_runs",
+    "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_most_recent_year_is_the_annual_label[AAPL-2025]",
+    "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_most_recent_year_is_the_annual_label[CRM-2026]",
+    "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_most_recent_year_is_the_annual_label[NVDA-2026]",
+    "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_the_anchor_follows_the_annual_label_for_any_year",
+    "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_the_file_is_the_insert_then_the_update",
+    "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_the_insert_leaves_last_seen_fy_alone",
+    "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_the_other_columns_keep_their_source",
+    "test/spec/last-seen-fy/test_c6_c7_wiring.py::test_the_update_reads_the_registry_and_no_dei"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/last-seen-fy.md",
+    "sha256": "a7083e98c3651a333515dafb90c883a57ed3faf5d909947c06114a10a2ee6eeb"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

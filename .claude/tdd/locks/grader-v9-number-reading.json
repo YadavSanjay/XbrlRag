@@ -1,0 +1,165 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-11",
+  "criteria": {
+    "C1": [
+      "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_the_year_length_note_reads_no_number",
+      "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_the_screen_sentence_reads_no_number",
+      "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_free_standing_period_lengths_read_nothing[Fiscal 2024 had 53 weeks.]",
+      "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_free_standing_period_lengths_read_nothing[The company has a 52- or 53-week fiscal year.]",
+      "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_free_standing_period_lengths_read_nothing[Its fiscal year has 52/53 weeks.]",
+      "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_free_standing_period_lengths_read_nothing[The quarter had 13 or 14 weeks.]",
+      "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_free_standing_period_lengths_read_nothing[The three years span 1,092 days.]",
+      "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_free_standing_period_lengths_read_nothing[The note is due in 1 day.]",
+      "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_free_standing_period_lengths_read_nothing[FY2023 (371 days) against FY2022 (364 days).]",
+      "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_amounts_and_other_counts_still_read[Days sales outstanding were 45.5 days.-expected0]",
+      "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_amounts_and_other_counts_still_read[The plan pays out after 5 months.-expected1]",
+      "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_amounts_and_other_counts_still_read[A fee of $5 days later.-expected2]",
+      "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_amounts_and_other_counts_still_read[It closed on day 5 of the quarter.-expected3]",
+      "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_period_length_spans_are_the_digit_spans",
+      "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_a_dated_period_length_reads_nothing",
+      "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_inserting_a_period_length_changes_nothing_else"
+    ],
+    "C2": [
+      "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_forms_read_nothing[DEVA ranked 3rd.]",
+      "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_forms_read_nothing[DEVB is #2.]",
+      "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_forms_read_nothing[DEVC is No. 4 among the retailers.]",
+      "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_forms_read_nothing[Rank 1: DEVA.]",
+      "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_forms_read_nothing[DEVS ranked 2 of 32.]",
+      "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_forms_read_nothing[DEVS ranked 3rd out of 15 companies.]",
+      "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_forms_read_nothing[DEVA is #1 of 33 companies.]",
+      "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_forms_read_nothing[DEVD ranks at 5 and was 21st last year.]",
+      "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_amounts_beside_ranks_still_read",
+      "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_counts_and_decimals_are_not_ranks[I ranked 32 of 33 companies; DEVA is 3rd.-expected0]",
+      "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_counts_and_decimals_are_not_ranks[14 of 33 companies reported; DEVA ranked 1st.-expected1]",
+      "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_counts_and_decimals_are_not_ranks[DEVA ranked 2.5 points ahead; DEVB is #2.-expected2]",
+      "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_spans_are_the_digit_spans",
+      "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_any_rank_form_beside_an_amount_reads_only_the_amount",
+      "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_a_numeric_ordinal_never_reads"
+    ],
+    "C3": [
+      "test/spec/grader-v9-number-reading/test_g9_c3_unexempt_values.py::test_the_note_day_counts_are_dropped",
+      "test/spec/grader-v9-number-reading/test_g9_c3_unexempt_values.py::test_a_value_also_stated_as_an_amount_is_kept",
+      "test/spec/grader-v9-number-reading/test_g9_c3_unexempt_values.py::test_a_signed_rank_and_order",
+      "test/spec/grader-v9-number-reading/test_g9_c3_unexempt_values.py::test_only_removes_in_order_and_is_idempotent"
+    ],
+    "C4": [
+      "test/spec/grader-v9-number-reading/test_g9_c4_grades.py::test_a_declined_sum_listing_ranked_rows_is_refused",
+      "test/spec/grader-v9-number-reading/test_g9_c4_grades.py::test_a_day_count_never_credits_a_wrong_amount",
+      "test/spec/grader-v9-number-reading/test_g9_c4_grades.py::test_another_companys_rank_never_credits_the_subject",
+      "test/spec/grader-v9-number-reading/test_g9_c4_grades.py::test_appending_a_period_length_note_changes_no_grade"
+    ],
+    "C5": [
+      "test/spec/grader-v9-number-reading/test_g9_c5_judge_skip.py::test_reasons_in_order_of_precedence",
+      "test/spec/grader-v9-number-reading/test_g9_c5_judge_skip.py::test_judge_case_makes_no_call_on_a_fallback",
+      "test/spec/grader-v9-number-reading/test_g9_c5_judge_skip.py::test_run_graded_skips_and_records",
+      "test/spec/grader-v9-number-reading/test_g9_c5_judge_skip.py::test_calls_equal_the_plain_answers"
+    ],
+    "C6": [
+      "test/spec/grader-v9-number-reading/test_g9_c6_version.py::test_grader_version_is_9",
+      "test/spec/grader-v9-number-reading/test_g9_c6_version.py::test_version_does_not_depend_on_the_graded_cases"
+    ]
+  },
+  "files": {
+    "test/spec/grader-v9-number-reading/conftest.py": "ecabade156e25f33d66f04eb5df6b5bb7e31785d27a92a971c2ab4cd74e42d8d",
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py": "614729a84ecec5d69179a0354b7bdd57a4df05709e322df743176065e3753943",
+    "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py": "5dbb1a4e08d761d6c2e1d85984a53a70ddf746f5e6e000002187fc3913025de2",
+    "test/spec/grader-v9-number-reading/test_g9_c3_unexempt_values.py": "20a36670e6c21bc8a375907dbcc38ff462dc04e1a54b2166e482cbfc45a4f77f",
+    "test/spec/grader-v9-number-reading/test_g9_c4_grades.py": "0a75a7e135298a7e15c2c4332fbb515e5e7cd4aeb0c008a41ddcf9258111d0f3",
+    "test/spec/grader-v9-number-reading/test_g9_c5_judge_skip.py": "f6e3a6e9761e278bfbfb2102f09cbb122b197eeaeea72fcd369e0cce093635d2",
+    "test/spec/grader-v9-number-reading/test_g9_c6_version.py": "c32e7f7676a396d018c078069aa31c96e9cc5cfbc01297784adc205c208fe7c4"
+  },
+  "id": "grader-v9-number-reading",
+  "interface": [
+    {
+      "file": "src/eval/core/answer_parsing.py",
+      "module": "eval.core.answer_parsing",
+      "qualname": "period_length_spans",
+      "signature": "def period_length_spans(text: str) -> list[tuple[int, int]]"
+    },
+    {
+      "file": "src/eval/core/answer_parsing.py",
+      "module": "eval.core.answer_parsing",
+      "qualname": "rank_spans",
+      "signature": "def rank_spans(text: str) -> list[tuple[int, int]]"
+    },
+    {
+      "file": "src/eval/core/answer_parsing.py",
+      "module": "eval.core.answer_parsing",
+      "qualname": "unexempt_values",
+      "signature": "def unexempt_values(text: str, values: typing.Sequence[float]) -> list[float]"
+    },
+    {
+      "file": "src/eval/core/judge_wiring.py",
+      "module": "eval.core.judge_wiring",
+      "qualname": "judge_skip_reason",
+      "signature": "def judge_skip_reason(case: EvalCase, answer: SystemAnswer) -> str | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_a_dated_period_length_reads_nothing",
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_amounts_and_other_counts_still_read[A fee of $5 days later.-expected2]",
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_amounts_and_other_counts_still_read[Days sales outstanding were 45.5 days.-expected0]",
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_amounts_and_other_counts_still_read[It closed on day 5 of the quarter.-expected3]",
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_amounts_and_other_counts_still_read[The plan pays out after 5 months.-expected1]",
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_free_standing_period_lengths_read_nothing[FY2023 (371 days) against FY2022 (364 days).]",
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_free_standing_period_lengths_read_nothing[Fiscal 2024 had 53 weeks.]",
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_free_standing_period_lengths_read_nothing[Its fiscal year has 52/53 weeks.]",
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_free_standing_period_lengths_read_nothing[The company has a 52- or 53-week fiscal year.]",
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_free_standing_period_lengths_read_nothing[The note is due in 1 day.]",
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_free_standing_period_lengths_read_nothing[The quarter had 13 or 14 weeks.]",
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_free_standing_period_lengths_read_nothing[The three years span 1,092 days.]",
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_inserting_a_period_length_changes_nothing_else",
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_period_length_spans_are_the_digit_spans",
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_the_screen_sentence_reads_no_number",
+    "test/spec/grader-v9-number-reading/test_g9_c1_period_lengths.py::test_the_year_length_note_reads_no_number",
+    "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_a_numeric_ordinal_never_reads",
+    "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_amounts_beside_ranks_still_read",
+    "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_any_rank_form_beside_an_amount_reads_only_the_amount",
+    "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_counts_and_decimals_are_not_ranks[14 of 33 companies reported; DEVA ranked 1st.-expected1]",
+    "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_counts_and_decimals_are_not_ranks[DEVA ranked 2.5 points ahead; DEVB is #2.-expected2]",
+    "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_counts_and_decimals_are_not_ranks[I ranked 32 of 33 companies; DEVA is 3rd.-expected0]",
+    "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_forms_read_nothing[DEVA is #1 of 33 companies.]",
+    "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_forms_read_nothing[DEVA ranked 3rd.]",
+    "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_forms_read_nothing[DEVB is #2.]",
+    "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_forms_read_nothing[DEVC is No. 4 among the retailers.]",
+    "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_forms_read_nothing[DEVD ranks at 5 and was 21st last year.]",
+    "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_forms_read_nothing[DEVS ranked 2 of 32.]",
+    "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_forms_read_nothing[DEVS ranked 3rd out of 15 companies.]",
+    "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_forms_read_nothing[Rank 1: DEVA.]",
+    "test/spec/grader-v9-number-reading/test_g9_c2_ranks.py::test_rank_spans_are_the_digit_spans",
+    "test/spec/grader-v9-number-reading/test_g9_c3_unexempt_values.py::test_a_signed_rank_and_order",
+    "test/spec/grader-v9-number-reading/test_g9_c3_unexempt_values.py::test_a_value_also_stated_as_an_amount_is_kept",
+    "test/spec/grader-v9-number-reading/test_g9_c3_unexempt_values.py::test_only_removes_in_order_and_is_idempotent",
+    "test/spec/grader-v9-number-reading/test_g9_c3_unexempt_values.py::test_the_note_day_counts_are_dropped",
+    "test/spec/grader-v9-number-reading/test_g9_c4_grades.py::test_a_day_count_never_credits_a_wrong_amount",
+    "test/spec/grader-v9-number-reading/test_g9_c4_grades.py::test_a_declined_sum_listing_ranked_rows_is_refused",
+    "test/spec/grader-v9-number-reading/test_g9_c4_grades.py::test_another_companys_rank_never_credits_the_subject",
+    "test/spec/grader-v9-number-reading/test_g9_c4_grades.py::test_appending_a_period_length_note_changes_no_grade",
+    "test/spec/grader-v9-number-reading/test_g9_c5_judge_skip.py::test_calls_equal_the_plain_answers",
+    "test/spec/grader-v9-number-reading/test_g9_c5_judge_skip.py::test_judge_case_makes_no_call_on_a_fallback",
+    "test/spec/grader-v9-number-reading/test_g9_c5_judge_skip.py::test_reasons_in_order_of_precedence",
+    "test/spec/grader-v9-number-reading/test_g9_c5_judge_skip.py::test_run_graded_skips_and_records",
+    "test/spec/grader-v9-number-reading/test_g9_c6_version.py::test_grader_version_is_9",
+    "test/spec/grader-v9-number-reading/test_g9_c6_version.py::test_version_does_not_depend_on_the_graded_cases"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/grader-v9-number-reading.md",
+    "sha256": "abe633048f6cd6dc43fb4bea2350cc8911fd9794cbcdda8bcdbaf1541d488b57"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

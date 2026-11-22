@@ -1,0 +1,45 @@
+# Slim SERVING dependencies for the XbrlRag container image (WS-6 / B7).
+#
+# The serving path (BFF `src.api.main:app` + the MCP server) talks to the shared
+# RagInference service over HTTP via RAGINFER_URL (src/embeddings/remote_embedder.py,
+# src/retriever/remote_reranker.py), so it does NOT load BGE-M3 / Jina locally — this
+# set deliberately omits torch / transformers / sentence-transformers / faiss /
+# datasets / edgartools (ingest-only). Verified: `import src.api.main` and
+# `import src.mcp_server.server` pull none of those heavy libs.
+#
+# For local dev, ingest, or running models in-process, use the full requirements.txt.
+# Keep this in sync with the serving subset of requirements.txt.
+
+# LangChain + LLM providers (query path uses OpenAI gpt-5*; anthropic adapter present)
+langchain>=1.0.0
+langchain-core>=0.1.0
+langchain-openai>=0.0.5
+langchain-anthropic>=0.3.0
+openai==2.14.0
+# Anthropic SDK, used directly by the gateway's AnthropicAdapter (pinned exactly)
+anthropic==0.109.1
+
+# Retry / config / utilities
+tenacity>=8.2.0
+pyyaml>=6.0
+python-dotenv>=1.0.0
+
+# Data stores: Postgres fact store + Qdrant narrative vectors
+psycopg2-binary>=2.9.0
+qdrant-client>=1.17,<2
+
+# RagInference HTTP client
+httpx>=0.25
+
+# Serving surfaces: BFF + MCP.
+# These three are pinned together on purpose — a clean install otherwise pulls
+# fastapi 0.139 / starlette 1.3 / pydantic 2.13, which breaks FastMCP's tool
+# inspector (issubclass on a non-class annotation) and re-triggers the
+# starlette<0.49 vs mcp>=starlette-1.0 tension documented in requirements.txt.
+# This set matches the known-good dev (py312) resolution.
+# starlette >= 1.3.1 and mcp >= 1.30 clear the published advisories against the old pins.
+fastapi==0.162.0
+starlette>=1.3.1,<2
+pydantic>=2.11,<2.12   # 2.12+ breaks FastMCP's tool inspector; matches dev (2.11.9)
+uvicorn[standard]>=0.31.1
+mcp>=1.30,<2

@@ -1,0 +1,6 @@
+# Synthetic r1 rules for the witness-rules-r2 spec tests (three families).
+version: 1
+families:
+  TotalAssets: {statements: [BS], include: ['^total assets']}
+  Revenue: {statements: [IS], include: ['revenue'], exclude: ['cost']}
+  NetIncome: {statements: [IS], include: ['^net income']}

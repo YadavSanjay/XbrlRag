@@ -1,0 +1,134 @@
+{
+ "accession_no": "0000002488-26-000123",
+ "cik": "0000002488",
+ "ticker": "AMD",
+ "extension_namespace": "http://www.amd.com/20260627",
+ "source_file": "amd-20260627_cal.xml",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627_cal.xml",
+ "source_sha256": "dcc3db2ffe53c7ba2e6ffdb51b0140277f7117d0d0eeea9b1b7f9e7490f94e2b",
+ "retrieved": "local copy under data/storage/sec_edgar (downloaded at ingest); hashed 2026-11-07",
+ "cross_check": "arcs equal to xbrl_db mv_calculation_network by local name (98 arcs)",
+ "selection": "every summation-item arc of every tree (link role, parent) whose parent or a child is an extension presented on IS/BS/CF",
+ "arcs": [
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2026:CashProvidedByUsedInInvestingActivitiesDiscontinuedOperations",
+   "child": "http://fasb.org/us-gaap/2026:PaymentsForProceedsFromBusinessesAndInterestInAffiliates",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2026:CashProvidedByUsedInInvestingActivitiesDiscontinuedOperations",
+   "child": "http://www.amd.com/20260627:PaymentsToAcquirePropertyPlantAndEquipmentFromDiscontinuedOperation",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2026:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+   "child": "http://fasb.org/us-gaap/2026:AmortizationOfIntangibleAssets",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2026:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+   "child": "http://fasb.org/us-gaap/2026:DeferredIncomeTaxesAndTaxCredits",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2026:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+   "child": "http://fasb.org/us-gaap/2026:IncreaseDecreaseInAccountsPayable",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2026:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+   "child": "http://fasb.org/us-gaap/2026:IncreaseDecreaseInAccountsReceivable",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2026:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+   "child": "http://fasb.org/us-gaap/2026:IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2026:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+   "child": "http://fasb.org/us-gaap/2026:IncreaseDecreaseInInventories",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2026:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+   "child": "http://fasb.org/us-gaap/2026:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2026:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+   "child": "http://fasb.org/us-gaap/2026:NetIncomeLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2026:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+   "child": "http://fasb.org/us-gaap/2026:OtherAdjustmentsToIncomeDiscontinuedOperations",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2026:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+   "child": "http://fasb.org/us-gaap/2026:OtherDepreciationAndAmortization",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2026:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+   "child": "http://fasb.org/us-gaap/2026:OtherNoncashIncomeExpense",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2026:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+   "child": "http://fasb.org/us-gaap/2026:ShareBasedCompensation",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2026:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+   "child": "http://www.amd.com/20260627:GainsLossesOnLongTermInvestmetnsNet",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2026:CostOfGoodsAndServicesSold",
+   "child": "http://fasb.org/us-gaap/2026:CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortization",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2026:CostOfGoodsAndServicesSold",
+   "child": "http://www.amd.com/20260627:AmortizationOfAcquisitionRelatedIntangiblesCOGS",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2026:OperatingExpenses",
+   "child": "http://fasb.org/us-gaap/2026:ResearchAndDevelopmentExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2026:OperatingExpenses",
+   "child": "http://fasb.org/us-gaap/2026:SellingGeneralAndAdministrativeExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.amd.com/role/CondensedConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2026:OperatingExpenses",
+   "child": "http://www.amd.com/20260627:AmortizationOfAcquisitionRelatedIntangiblesOpex",
+   "weight": "1"
+  }
+ ]
+}

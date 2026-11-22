@@ -1,0 +1,177 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-10",
+  "criteria": {
+    "C1": [
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA ranks 2nd of the 4 peers.-expected0]",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA ranks second of the 4 peers.-expected1]",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA is #2 among the peers.-expected2]",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA is No. 2 among the peers.-expected3]",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA holds rank 2 among the peers.-expected4]",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA ranked 2 of 4.-expected5]",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA had the second-highest revenue.-expected6]",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA ranks twenty-first.-expected7]",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA ranks 21st of 33.-expected8]",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA had the highest revenue of the 4 peers.-expected9]",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[Deva Corp ranked 14th of the 14 covered companies.-expected10]",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_not_ranks_beside_a_rank",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_each_non_rank_reads_nothing_but_a_rank_after_it_does[DEVA had the second-lowest margin.]",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_each_non_rank_reads_nothing_but_a_rank_after_it_does[DEVA grew in the first quarter.]",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_each_non_rank_reads_nothing_but_a_rank_after_it_does[DEVA's year ended October 30th.]",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_each_non_rank_reads_nothing_but_a_rank_after_it_does[DEVA ranked last on cash.]",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_each_non_rank_reads_nothing_but_a_rank_after_it_does[The next-highest was DEVA.]",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_ordinal_forms_agree",
+      "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_filler_sentences_change_nothing"
+    ],
+    "C2": [
+      "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_nearest_mention_owns_the_rank",
+      "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_forward_binding_ordinal",
+      "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_parenthetical_binds_back",
+      "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_carry_over_and_default",
+      "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_ticker_case_sensitive_names_case_insensitive",
+      "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_overlapping_mentions_longest_wins",
+      "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_real_answers_first_rank_is_the_keys",
+      "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_sentence_order_never_moves_a_rank",
+      "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_consistent_renaming_is_invariant"
+    ],
+    "C3": [
+      "test/spec/peer-rank-grading/test_prg_c3_value_rank.py::test_descending_with_negative_values",
+      "test/spec/peer-rank-grading/test_prg_c3_value_rank.py::test_tie_broken_by_ticker",
+      "test/spec/peer-rank-grading/test_prg_c3_value_rank.py::test_rows_named_by_a_name_map_to_their_ticker",
+      "test/spec/peer-rank-grading/test_prg_c3_value_rank.py::test_first_row_of_an_entity_wins",
+      "test/spec/peer-rank-grading/test_prg_c3_value_rank.py::test_no_rank_from_a_partial_list",
+      "test/spec/peer-rank-grading/test_prg_c3_value_rank.py::test_any_row_order_gives_the_sorted_position",
+      "test/spec/peer-rank-grading/test_prg_c3_value_rank.py::test_positive_scaling_keeps_the_rank"
+    ],
+    "C4": [
+      "test/spec/peer-rank-grading/test_prg_c4_peer_names.py::test_lexicon_names_for_a_real_case",
+      "test/spec/peer-rank-grading/test_prg_c4_peer_names.py::test_case_names_come_first",
+      "test/spec/peer-rank-grading/test_prg_c4_peer_names.py::test_fictional_members_and_exclusions",
+      "test/spec/peer-rank-grading/test_prg_c4_peer_names.py::test_keys_are_the_union_of_the_sources"
+    ],
+    "C5": [
+      "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_c3_class_subject_listed_first_is_correct",
+      "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_alphabetical_rows_or_no_rows_is_correct[alphabetical]",
+      "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_alphabetical_rows_or_no_rows_is_correct[none]",
+      "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_wrong_stated_rank_beats_right_rows",
+      "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_no_stated_rank_complete_rows_decide_by_value",
+      "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_partial_rows_fall_to_values_or_nothing",
+      "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_unchanged_downgrades_with_the_new_reading",
+      "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_frontier_style_json_reply",
+      "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_permuting_rows_never_changes_the_grade",
+      "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_consistent_renaming_keeps_the_grade",
+      "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_same_text_same_grade_for_every_arm_shape[statement]",
+      "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_same_text_same_grade_for_every_arm_shape[alphabetical]",
+      "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_same_text_same_grade_for_every_arm_shape[none]"
+    ],
+    "C6": [
+      "test/spec/peer-rank-grading/test_prg_c6_grader_version.py::test_grader_version_is_5",
+      "test/spec/peer-rank-grading/test_prg_c6_grader_version.py::test_every_scorecard_carries_version_5"
+    ]
+  },
+  "files": {
+    "test/spec/peer-rank-grading/conftest.py": "f19d521ed82c5289dd4c4693cf2bb51f7df42a24cf9ce429881d8a35dc9fb8cd",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py": "c788ecab6faa0c37fde2bdc74989e9a88719ec3d521cab6e009792aae46132a2",
+    "test/spec/peer-rank-grading/test_prg_c2_attribution.py": "703a8bc34a212baa44c02bc815880039c7ac6972923a4da7e9266e89b9a6b57f",
+    "test/spec/peer-rank-grading/test_prg_c3_value_rank.py": "a67b9f1eae1a9845d8cdc074c8ea1eee6897c333e17e22ce63333acf90b166d7",
+    "test/spec/peer-rank-grading/test_prg_c4_peer_names.py": "98f7f1f2a79f3453a6e55380f9946acbfc8bc3a9782e6214a463d65caf3f1c54",
+    "test/spec/peer-rank-grading/test_prg_c5_grading.py": "39ce824fdd871ce1796ef2f7ed0482dd4f399edee50dc9289ef805050ac0b2fb",
+    "test/spec/peer-rank-grading/test_prg_c6_grader_version.py": "db3bbf12b31222a1e9f367b56e9f40a9409d4eb03c065a82d885653057822d33"
+  },
+  "id": "peer-rank-grading",
+  "interface": [
+    {
+      "file": "src/eval/core/graders/v2.py",
+      "module": "eval.core.graders.v2",
+      "qualname": "stated_ranks",
+      "signature": "def stated_ranks(text: str, ticker: str, names: Mapping[str, Sequence[str]]) -> list[int]"
+    },
+    {
+      "file": "src/eval/core/graders/v2.py",
+      "module": "eval.core.graders.v2",
+      "qualname": "value_rank",
+      "signature": "def value_rank(rows: Sequence[Any], ticker: str, names: Mapping[str, Sequence[str]], n_ranked: int) -> int | None"
+    },
+    {
+      "file": "src/eval/core/graders/v2.py",
+      "module": "eval.core.graders.v2",
+      "qualname": "peer_names",
+      "signature": "def peer_names(case: EvalCase) -> dict[str, list[str]]"
+    }
+  ],
+  "nodes": [
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_each_non_rank_reads_nothing_but_a_rank_after_it_does[DEVA grew in the first quarter.]",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_each_non_rank_reads_nothing_but_a_rank_after_it_does[DEVA had the second-lowest margin.]",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_each_non_rank_reads_nothing_but_a_rank_after_it_does[DEVA ranked last on cash.]",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_each_non_rank_reads_nothing_but_a_rank_after_it_does[DEVA's year ended October 30th.]",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_each_non_rank_reads_nothing_but_a_rank_after_it_does[The next-highest was DEVA.]",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_filler_sentences_change_nothing",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_not_ranks_beside_a_rank",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_ordinal_forms_agree",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA had the highest revenue of the 4 peers.-expected9]",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA had the second-highest revenue.-expected6]",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA holds rank 2 among the peers.-expected4]",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA is #2 among the peers.-expected2]",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA is No. 2 among the peers.-expected3]",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA ranked 2 of 4.-expected5]",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA ranks 21st of 33.-expected8]",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA ranks 2nd of the 4 peers.-expected0]",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA ranks second of the 4 peers.-expected1]",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[DEVA ranks twenty-first.-expected7]",
+    "test/spec/peer-rank-grading/test_prg_c1_rank_forms.py::test_rank_forms[Deva Corp ranked 14th of the 14 covered companies.-expected10]",
+    "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_carry_over_and_default",
+    "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_consistent_renaming_is_invariant",
+    "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_forward_binding_ordinal",
+    "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_nearest_mention_owns_the_rank",
+    "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_overlapping_mentions_longest_wins",
+    "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_parenthetical_binds_back",
+    "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_real_answers_first_rank_is_the_keys",
+    "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_sentence_order_never_moves_a_rank",
+    "test/spec/peer-rank-grading/test_prg_c2_attribution.py::test_ticker_case_sensitive_names_case_insensitive",
+    "test/spec/peer-rank-grading/test_prg_c3_value_rank.py::test_any_row_order_gives_the_sorted_position",
+    "test/spec/peer-rank-grading/test_prg_c3_value_rank.py::test_descending_with_negative_values",
+    "test/spec/peer-rank-grading/test_prg_c3_value_rank.py::test_first_row_of_an_entity_wins",
+    "test/spec/peer-rank-grading/test_prg_c3_value_rank.py::test_no_rank_from_a_partial_list",
+    "test/spec/peer-rank-grading/test_prg_c3_value_rank.py::test_positive_scaling_keeps_the_rank",
+    "test/spec/peer-rank-grading/test_prg_c3_value_rank.py::test_rows_named_by_a_name_map_to_their_ticker",
+    "test/spec/peer-rank-grading/test_prg_c3_value_rank.py::test_tie_broken_by_ticker",
+    "test/spec/peer-rank-grading/test_prg_c4_peer_names.py::test_case_names_come_first",
+    "test/spec/peer-rank-grading/test_prg_c4_peer_names.py::test_fictional_members_and_exclusions",
+    "test/spec/peer-rank-grading/test_prg_c4_peer_names.py::test_keys_are_the_union_of_the_sources",
+    "test/spec/peer-rank-grading/test_prg_c4_peer_names.py::test_lexicon_names_for_a_real_case",
+    "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_alphabetical_rows_or_no_rows_is_correct[alphabetical]",
+    "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_alphabetical_rows_or_no_rows_is_correct[none]",
+    "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_c3_class_subject_listed_first_is_correct",
+    "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_consistent_renaming_keeps_the_grade",
+    "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_frontier_style_json_reply",
+    "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_no_stated_rank_complete_rows_decide_by_value",
+    "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_partial_rows_fall_to_values_or_nothing",
+    "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_permuting_rows_never_changes_the_grade",
+    "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_same_text_same_grade_for_every_arm_shape[alphabetical]",
+    "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_same_text_same_grade_for_every_arm_shape[none]",
+    "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_same_text_same_grade_for_every_arm_shape[statement]",
+    "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_unchanged_downgrades_with_the_new_reading",
+    "test/spec/peer-rank-grading/test_prg_c5_grading.py::test_wrong_stated_rank_beats_right_rows",
+    "test/spec/peer-rank-grading/test_prg_c6_grader_version.py::test_every_scorecard_carries_version_5",
+    "test/spec/peer-rank-grading/test_prg_c6_grader_version.py::test_grader_version_is_5"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/peer-rank-grading.md",
+    "sha256": "4340ba7c7def187d080d416efa5cabaeadcd6563bf4d161b92da341667381d53"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

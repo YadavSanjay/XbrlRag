@@ -1,0 +1,16 @@
+{
+  "accuracy": 1.0,
+  "cited_rate": 1.0,
+  "per_tag": {
+    "revenue": 1.0,
+    "net-income": 1.0,
+    "balance-sheet": 1.0,
+    "rd": 1.0,
+    "dimensional": 1.0,
+    "compute": 1.0,
+    "yoy": 1.0,
+    "margin": 1.0
+  },
+  "generated_at": null,
+  "n_cases": 13
+}

@@ -1,0 +1,4 @@
+tag	version	custom	abstract	datatype	iord	crdr	tlabel	doc
+IncomeLossFromContinuingOperationsBeforeIncomeTaxes	0000080424-23-000073	1	0	monetary	D	C	Income Loss From Continuing Operations Before Income Taxes	Income from continuing operations before income taxes.
+ProceedsFromStockOptionsExercisedAndOtherFinancingActivities	0000080424-23-000073	1	0	monetary	D	D	Proceeds From Stock Options Exercised And Other Financing Activities	The cash inflow associated with the amount received from holders exercising their stock options. Also includes, the net cash inflow (outflow) from other financing activities.
+ReserveForEsopDebtRetirement	0000080424-23-000073	1	0	monetary	I	D	Reserve For ESOP Debt Retirement	Amount corresponds to the amount of leveraged ESOP debt guaranteed by the company. When the debt is recorded on the company's books, the equity reserve for the ESOP debt retirement is also recorded.

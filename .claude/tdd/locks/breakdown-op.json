@@ -1,0 +1,86 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/breakdown-op/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-14",
+  "criteria": {
+    "C1": [
+      "test/spec/breakdown-op/test_breakdown_op.py::test_finest_partition_point_cases",
+      "test/spec/breakdown-op/test_breakdown_op.py::test_partition_edge_rules",
+      "test/spec/breakdown-op/test_breakdown_op.py::test_partition_rule_for_any_members"
+    ],
+    "C2": [
+      "test/spec/breakdown-op/test_breakdown_op.py::test_breakdown_returns_the_finest_partition",
+      "test/spec/breakdown-op/test_breakdown_op.py::test_breakdown_not_found_and_errors",
+      "test/spec/breakdown-op/test_breakdown_op.py::test_breakdown_rows_match_the_rule"
+    ],
+    "C3": [
+      "test/spec/breakdown-op/test_breakdown_op.py::test_validator_accepts_a_breakdown_step",
+      "test/spec/breakdown-op/test_breakdown_op.py::test_validator_axis_rule_for_any_value"
+    ],
+    "C4": [
+      "test/spec/breakdown-op/test_breakdown_op.py::test_breakdown_rows_are_produced_values_and_facts",
+      "test/spec/breakdown-op/test_breakdown_op.py::test_breakdown_values_for_any_rows"
+    ],
+    "C5": [
+      "test/spec/breakdown-op/test_breakdown_op.py::test_builder_expects_the_whole_partition",
+      "test/spec/breakdown-op/test_breakdown_op.py::test_builder_partition_for_any_members"
+    ]
+  },
+  "files": {
+    "test/spec/breakdown-op/test_breakdown_op.py": "a92d5be71276cc2dffe8e8abb139f9c0b379c6fce84dc5c87df3a08fb8129c40"
+  },
+  "id": "breakdown-op",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_breakdown.py",
+      "module": "retriever.xbrl.xbrl_factstore_breakdown",
+      "qualname": "choose_partition",
+      "signature": "def choose_partition(members: Sequence[tuple[str, float]], total: float | None, rel_tol: float=0.0001) -> list[int] | None"
+    },
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_breakdown.py",
+      "module": "retriever.xbrl.xbrl_factstore_breakdown",
+      "qualname": "XbrlFactstoreBreakdown.__init__",
+      "signature": "def __init__(self, db_conn_params: dict | None=None) -> None"
+    },
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_breakdown.py",
+      "module": "retriever.xbrl.xbrl_factstore_breakdown",
+      "qualname": "XbrlFactstoreBreakdown.breakdown",
+      "signature": "def breakdown(self, step: dict) -> ScreenResult"
+    }
+  ],
+  "nodes": [
+    "test/spec/breakdown-op/test_breakdown_op.py::test_breakdown_not_found_and_errors",
+    "test/spec/breakdown-op/test_breakdown_op.py::test_breakdown_returns_the_finest_partition",
+    "test/spec/breakdown-op/test_breakdown_op.py::test_breakdown_rows_are_produced_values_and_facts",
+    "test/spec/breakdown-op/test_breakdown_op.py::test_breakdown_rows_match_the_rule",
+    "test/spec/breakdown-op/test_breakdown_op.py::test_breakdown_values_for_any_rows",
+    "test/spec/breakdown-op/test_breakdown_op.py::test_builder_expects_the_whole_partition",
+    "test/spec/breakdown-op/test_breakdown_op.py::test_builder_partition_for_any_members",
+    "test/spec/breakdown-op/test_breakdown_op.py::test_finest_partition_point_cases",
+    "test/spec/breakdown-op/test_breakdown_op.py::test_partition_edge_rules",
+    "test/spec/breakdown-op/test_breakdown_op.py::test_partition_rule_for_any_members",
+    "test/spec/breakdown-op/test_breakdown_op.py::test_validator_accepts_a_breakdown_step",
+    "test/spec/breakdown-op/test_breakdown_op.py::test_validator_axis_rule_for_any_value"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/breakdown-op.md",
+    "sha256": "1c8f2e4a92eb0ab0214ba24c1540a491b71dc8f1524273b525e7b9a195b0c7c6"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

@@ -1,0 +1,14 @@
+"""
+
+You generate retrieval queries for a RAG system over SEC 10-K filings.
+Create paraphrase for given single user query ( with sec-10K section ) that preserve all hard constraints:
+
+1. company/entity names,
+2. fiscal years / periods,
+3. required metrics,
+4. compare/contrast intent, if present.
+
+Generate paraphrase for the user query that match SEC-10K language. 
+Return only single paraphrased query for given input query.
+
+"""

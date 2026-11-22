@@ -1,0 +1,113 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-13",
+  "criteria": {
+    "C1": [
+      "test/spec/s4-screen-defined-members/test_s4sdm_c1_measure_column.py::test_points_on_the_sec_filings",
+      "test/spec/s4-screen-defined-members/test_s4sdm_c1_measure_column.py::test_components_only_take_the_latest_lowest_rank_larger_id",
+      "test/spec/s4-screen-defined-members/test_s4sdm_c1_measure_column.py::test_any_rows_follow_the_definition_in_any_order",
+      "test/spec/s4-screen-defined-members/test_s4sdm_c1_measure_column.py::test_in_the_lookups_query_order_it_is_todays_defined_column"
+    ],
+    "C2": [
+      "test/spec/s4-screen-defined-members/test_s4sdm_c2_screen_picks.py::test_a_debt_screen_keeps_every_filer",
+      "test/spec/s4-screen-defined-members/test_s4sdm_c2_screen_picks.py::test_another_family_is_select_preferred_concept",
+      "test/spec/s4-screen-defined-members/test_s4sdm_c2_screen_picks.py::test_any_rows_any_order"
+    ],
+    "C3": [
+      "test/spec/s4-screen-defined-members/test_s4sdm_c3_ranked_by_measure.py::test_the_covered_debt_screen_ranks_each_filers_sum",
+      "test/spec/s4-screen-defined-members/test_s4sdm_c3_ranked_by_measure.py::test_esop_reserve_is_no_part_and_components_alone_give_the_same_sum",
+      "test/spec/s4-screen-defined-members/test_s4sdm_c3_ranked_by_measure.py::test_order_other_filers_and_row_subsets_never_change_a_member"
+    ],
+    "C4": [
+      "test/spec/s4-screen-defined-members/test_s4sdm_c4_not_ranked.py::test_no_presented_line_is_metric_not_tagged",
+      "test/spec/s4-screen-defined-members/test_s4sdm_c4_not_ranked.py::test_a_line_in_another_unit_is_unit_mismatch",
+      "test/spec/s4-screen-defined-members/test_s4sdm_c4_not_ranked.py::test_no_filing_to_read_is_component_only_and_an_older_year_is_not_filed",
+      "test/spec/s4-screen-defined-members/test_s4sdm_c4_not_ranked.py::test_exactly_the_filers_without_lines_are_not_ranked"
+    ],
+    "C5": [
+      "test/spec/s4-screen-defined-members/test_s4sdm_c5_other_families.py::test_the_same_rows_under_another_family_list_substitutes_apart",
+      "test/spec/s4-screen-defined-members/test_s4sdm_c5_other_families.py::test_any_rows_rank_as_select_preferred_concept_keeps_them"
+    ],
+    "C6": [
+      "test/spec/s4-screen-defined-members/test_s4sdm_c6_key_members.py::test_each_member_is_the_keys",
+      "test/spec/s4-screen-defined-members/test_s4sdm_c6_key_members.py::test_any_filers_lines_and_rows_give_the_keys_members"
+    ]
+  },
+  "files": {
+    "test/spec/s4-screen-defined-members/conftest.py": "03c011d0808c2a473273162b5a3dc8b8983f7bf51172ebfe9eedaf2544037b9d",
+    "test/spec/s4-screen-defined-members/fixtures/companyfacts_excerpt.json": "211a260b375187aa6adb82966e0ddeccb3096dd8fd07dd3333f045b87fc3e6d2",
+    "test/spec/s4-screen-defined-members/fixtures/fsds/2025q3/num.tsv": "52d718badd0b4fb04d65f9fbc342865144bd53a407c987f5bf5e709b9de97c79",
+    "test/spec/s4-screen-defined-members/fixtures/fsds/2025q3/pre.tsv": "c68531bf6e1142a22738fcce1f1bf91fcb4c8057424e0ff6a3004d11a04cb2a3",
+    "test/spec/s4-screen-defined-members/fixtures/fsds/2025q3/sub.tsv": "86829f1c331bc8081a3d483c30923ba1e7cd153ea1357581e72b73f767a0a14b",
+    "test/spec/s4-screen-defined-members/fixtures/fsds/2025q3/tag.tsv": "2c26c92ac3105c3a52e3d95a0b9fe3bc397afc110e77083e77fee2860496a90b",
+    "test/spec/s4-screen-defined-members/fixtures/fsds/2025q4/num.tsv": "964cddc5d49ef0f2f3546bf4a190bb40119c6981810f88f38ec32da55cc2dcee",
+    "test/spec/s4-screen-defined-members/fixtures/fsds/2025q4/pre.tsv": "cafd4d65d57b2d226ede83d60a60e5867f5aea7a4d0f66b1cb4a61586bfcc77b",
+    "test/spec/s4-screen-defined-members/fixtures/fsds/2025q4/sub.tsv": "0e6916927af5bbd357b140f605433bcb5d26a413b9880e64d9342547d949f0d0",
+    "test/spec/s4-screen-defined-members/fixtures/fsds/2025q4/tag.tsv": "e20ea4489e24eb0b3b9cf0816ab62c06535a8fbdc1bbb6146e4aae446c1eafbb",
+    "test/spec/s4-screen-defined-members/fixtures/fsds/2026q1/num.tsv": "5299bf2c60d8fec3cf38c3bc54ebc3dfcc1f10274ae9fe87584266b7fce66aff",
+    "test/spec/s4-screen-defined-members/fixtures/fsds/2026q1/pre.tsv": "0cd697b3e54919b9ac461c584291c9b25ab4a24f6e8fe4f850543a5490cef2b5",
+    "test/spec/s4-screen-defined-members/fixtures/fsds/2026q1/sub.tsv": "1be53d6f5743c1c2142f4d497b8809949bb6b8340797396675635eb9f1cd6e69",
+    "test/spec/s4-screen-defined-members/fixtures/fsds/2026q1/tag.tsv": "c638353852d293a3688355235e7f1c0a0ff7df8e46434cbc1a45e222835285dd",
+    "test/spec/s4-screen-defined-members/fixtures/provenance.json": "49d263ac7127291fe952a1666e1314104d02ae378b79c3866e112af11f941354",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c1_measure_column.py": "f4e149437dae27015934c878fc917751ef6d985ec8d8ba44909a1c64f433078e",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c2_screen_picks.py": "24bb51031960b4b61c73957149a284c7b5d866170f44639d498f564512f6d8f1",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c3_ranked_by_measure.py": "1963e1b6618c6a05ecea7259d603b0f1f034f4a5987638fefe22b49427671531",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c4_not_ranked.py": "6352b908c28d5ab61832e1edb7c23817b9d08727f00968f3ea9d9b0d4f9f8a79",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c5_other_families.py": "c89ebb3b57562f8edb3e522286588392a6b2cb63a900d14173e41bd04ffbc933",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c6_key_members.py": "06f0de3e818b8c4ff7644938283a97d23583f6e442304421cb0b775c59fb00fe"
+  },
+  "id": "s4-screen-defined-members",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/family_resolution.py",
+      "module": "retriever.xbrl.family_resolution",
+      "qualname": "measure_column",
+      "signature": "def measure_column(rows: Sequence[Mapping[str, Any]]) -> int | None"
+    },
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_screen.py",
+      "module": "retriever.xbrl.xbrl_factstore_screen",
+      "qualname": "select_screen_picks",
+      "signature": "def select_screen_picks(rows: collections.abc.Sequence[dict], concept_family: str) -> tuple[list[dict], list[dict]]"
+    }
+  ],
+  "nodes": [
+    "test/spec/s4-screen-defined-members/test_s4sdm_c1_measure_column.py::test_any_rows_follow_the_definition_in_any_order",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c1_measure_column.py::test_components_only_take_the_latest_lowest_rank_larger_id",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c1_measure_column.py::test_in_the_lookups_query_order_it_is_todays_defined_column",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c1_measure_column.py::test_points_on_the_sec_filings",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c2_screen_picks.py::test_a_debt_screen_keeps_every_filer",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c2_screen_picks.py::test_another_family_is_select_preferred_concept",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c2_screen_picks.py::test_any_rows_any_order",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c3_ranked_by_measure.py::test_esop_reserve_is_no_part_and_components_alone_give_the_same_sum",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c3_ranked_by_measure.py::test_order_other_filers_and_row_subsets_never_change_a_member",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c3_ranked_by_measure.py::test_the_covered_debt_screen_ranks_each_filers_sum",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c4_not_ranked.py::test_a_line_in_another_unit_is_unit_mismatch",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c4_not_ranked.py::test_exactly_the_filers_without_lines_are_not_ranked",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c4_not_ranked.py::test_no_filing_to_read_is_component_only_and_an_older_year_is_not_filed",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c4_not_ranked.py::test_no_presented_line_is_metric_not_tagged",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c5_other_families.py::test_any_rows_rank_as_select_preferred_concept_keeps_them",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c5_other_families.py::test_the_same_rows_under_another_family_list_substitutes_apart",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c6_key_members.py::test_any_filers_lines_and_rows_give_the_keys_members",
+    "test/spec/s4-screen-defined-members/test_s4sdm_c6_key_members.py::test_each_member_is_the_keys"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/s4-screen-defined-members.md",
+    "sha256": "769f6d634373657403040242020665c6320e1fa709807b4a6c9176824edc5e39"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

@@ -1,0 +1,83 @@
+# Constructed resolution list for docs/specs/reviewed-resolutions.md (Notes, "Fixtures").
+# The first entry is copied verbatim from the original list
+# (test/spec/key-statement-witness/fixtures/key_resolutions.yaml); the four reviewed entries
+# are on fictitious filers and name no corpus filing. The AAA date is a YAML date, the BBB
+# date a quoted ISO string: both load as "2026-11-10".
+version: 1
+resolutions:
+  - family: DeferredRevenue
+    cik: '0001341439'
+    fiscal_year: 2024
+    concept: us-gaap:ContractWithCustomerLiability
+    value: 10546000000
+    reading: key
+    reason: >-
+      Total contract liability (current 9,313M plus non-current 1,233M in other non-current
+      liabilities, ORCL FY2025 10-K deferred revenue note). The balance sheet presents only
+      the current part.
+  - family: AccountsPayable
+    cik: '0000900201'
+    fiscal_year: 2025
+    concept: us-gaap:AccountsPayableAndAccruedLiabilitiesCurrent
+    value: 1500
+    reading: drop
+    reason: The balance sheet presents payables only together with accrued expenses.
+    review:
+      by: Sanjay
+      date: 2026-11-10
+      bucket: combined_line
+      evidence:
+        kind: statement
+        adsh: 0000900201-26-000001
+        report: 2
+        line: 14
+        plabel: Accounts payable and accrued expenses
+  - family: DebtRepaid
+    cik: '0000900202'
+    fiscal_year: 2024
+    concept: us-gaap:RepaymentsOfLongTermDebt
+    value: 750
+    reading: key
+    reason: The cash-flow line is the repayment of long-term debt; the rule rejects it.
+    review:
+      by: Sanjay
+      date: '2026-11-10'
+      bucket: rule_gap
+      evidence:
+        kind: statement
+        adsh: 0000900202-26-000001
+        report: 6
+        line: 22
+        plabel: Repayments of senior notes and term loan credit agreements
+  - family: InterestIncome
+    cik: '0000900203'
+    fiscal_year: 2025
+    concept: us-gaap:InvestmentIncomeInterest
+    value: 120
+    reading: key
+    reason: Interest income is disclosed only in the other-income note.
+    review:
+      by: Sanjay
+      date: 2026-11-10
+      bucket: note_unlisted
+      evidence:
+        kind: note
+        adsh: 0000900203-26-000001
+        label: Interest income
+  - family: Debt
+    cik: '0000900205'
+    fiscal_year: 2025
+    concept: us-gaap:LongTermDebt
+    value: 2000
+    reading: key
+    reason: The key includes current maturities; the line is the non-current part.
+    review:
+      by: Sanjay
+      date: 2026-11-10
+      bucket: definition
+      evidence:
+        kind: statement
+        adsh: 0000900205-26-000001
+        report: 4
+        line: 30
+        plabel: Long-term debt

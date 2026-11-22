@@ -1,0 +1,67 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-07",
+  "criteria": {
+    "C1": [
+      "test/spec/sign-and-nil/test_lookup_nil.py::test_vst_filed_nil_is_not_found[tax]",
+      "test/spec/sign-and-nil/test_lookup_nil.py::test_vst_filed_nil_is_not_found[interest]",
+      "test/spec/sign-and-nil/test_lookup_nil.py::test_vst_filed_nil_is_not_found[interest_with_valued_prior]",
+      "test/spec/sign-and-nil/test_lookup_nil.py::test_a_nil_copy_never_displaces_the_value",
+      "test/spec/sign-and-nil/test_lookup_nil.py::test_nil_only_column_is_not_found_and_nils_never_change_an_answer"
+    ],
+    "C2": [
+      "test/spec/sign-and-nil/test_screen_nil.py::test_vst_nil_segment_fact_is_not_ranked[InterestExpense-asc]",
+      "test/spec/sign-and-nil/test_screen_nil.py::test_vst_nil_segment_fact_is_not_ranked[InterestExpense-desc]",
+      "test/spec/sign-and-nil/test_screen_nil.py::test_vst_nil_segment_fact_is_not_ranked[TaxExpense-asc]",
+      "test/spec/sign-and-nil/test_screen_nil.py::test_vst_nil_segment_fact_is_not_ranked[TaxExpense-desc]",
+      "test/spec/sign-and-nil/test_screen_nil.py::test_nil_rows_are_never_ranked_and_sign_symmetry_holds"
+    ],
+    "C3": [
+      "test/spec/sign-and-nil/test_key_sign.py::test_keys_keep_the_tagged_sign_and_refuse_amds_sign_flip",
+      "test/spec/sign-and-nil/test_key_sign.py::test_any_sign_flip_is_ambiguous_and_keys_negate_with_their_entries"
+    ]
+  },
+  "files": {
+    "test/spec/sign-and-nil/conftest.py": "7ffac7a1313794cfc07034bdf0d5fe1cb07ea8137b40ea9f5f50536c301cd11c",
+    "test/spec/sign-and-nil/fixtures/companyfacts_excerpts.json": "994a105ab3c892dd400713f6d4822534c338ff3cf16b6f9f15bc4be222f3e25e",
+    "test/spec/sign-and-nil/fixtures/fsds_lines.json": "aff5eb3ab0d01f763a6deb69e9c02acec4a0f7a12ed8da6bf80504086a64fa2f",
+    "test/spec/sign-and-nil/test_key_sign.py": "f51e1c7c598f4959cfde85090b7b4efa9fa3a91e13eef39b1baca591d08f5ca0",
+    "test/spec/sign-and-nil/test_lookup_nil.py": "18b910b97d064d004f729d5b9205ba90d63e3e0bdbf21ec3547189c56a307f74",
+    "test/spec/sign-and-nil/test_screen_nil.py": "0475f42a586f00d98e635f944bb0e5a327987d06b8f6aa2b8f957f9c9eed8ec5"
+  },
+  "id": "sign-and-nil",
+  "interface": [],
+  "nodes": [
+    "test/spec/sign-and-nil/test_key_sign.py::test_any_sign_flip_is_ambiguous_and_keys_negate_with_their_entries",
+    "test/spec/sign-and-nil/test_key_sign.py::test_keys_keep_the_tagged_sign_and_refuse_amds_sign_flip",
+    "test/spec/sign-and-nil/test_lookup_nil.py::test_a_nil_copy_never_displaces_the_value",
+    "test/spec/sign-and-nil/test_lookup_nil.py::test_nil_only_column_is_not_found_and_nils_never_change_an_answer",
+    "test/spec/sign-and-nil/test_lookup_nil.py::test_vst_filed_nil_is_not_found[interest]",
+    "test/spec/sign-and-nil/test_lookup_nil.py::test_vst_filed_nil_is_not_found[interest_with_valued_prior]",
+    "test/spec/sign-and-nil/test_lookup_nil.py::test_vst_filed_nil_is_not_found[tax]",
+    "test/spec/sign-and-nil/test_screen_nil.py::test_nil_rows_are_never_ranked_and_sign_symmetry_holds",
+    "test/spec/sign-and-nil/test_screen_nil.py::test_vst_nil_segment_fact_is_not_ranked[InterestExpense-asc]",
+    "test/spec/sign-and-nil/test_screen_nil.py::test_vst_nil_segment_fact_is_not_ranked[InterestExpense-desc]",
+    "test/spec/sign-and-nil/test_screen_nil.py::test_vst_nil_segment_fact_is_not_ranked[TaxExpense-asc]",
+    "test/spec/sign-and-nil/test_screen_nil.py::test_vst_nil_segment_fact_is_not_ranked[TaxExpense-desc]"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/sign-and-nil.md",
+    "sha256": "c95b7f848be297603fe3d3fcd7c1b932f785f89117640dab06b5d5e7a682558d"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

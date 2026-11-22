@@ -1,0 +1,1126 @@
+{
+ "note": "The manifest.yaml the downloader wrote for each corpus filing of these five filers (`manifests`) and for the INTC and AMZN filings of the bounds tests (`others`), as parsed YAML. `quarter` is today's calendar-quarter request; `period_start` is today's approximation where DEI has no start date.",
+ "manifests": [
+  {
+   "source": {
+    "path": "ORCL/2022/10-K/manifest.yaml",
+    "sha256": "6cd578f3c6f629ffb868eb4cf495cc66dcbac4cfa9c1062553bd52b075ec85e8",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1341439/000156459022023675/"
+   },
+   "manifest": {
+    "ticker": "ORCL",
+    "cik": 1341439,
+    "accession_no": "0001564590-22-023675",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2022,
+    "quarter": null,
+    "filing_date": "2022-06-21",
+    "period_start": "2021-06-01",
+    "period_end": "2022-05-31",
+    "fye_month": 5,
+    "fye_day": 31,
+    "primary_document": "orcl-10k_20220531.htm",
+    "files": [
+     "orcl-10k_20220531.htm",
+     "orcl-10k_20220531_htm.xml",
+     "orcl-20220531.xsd",
+     "orcl-20220531_cal.xml",
+     "orcl-20220531_def.xml",
+     "orcl-20220531_lab.xml",
+     "orcl-20220531_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "ORCL/2023/10-K/manifest.yaml",
+    "sha256": "07d3acde6a54c5cc4ce8bf4be31184409a3e928ce67e1d018d24b95cf8b99cb1",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1341439/000095017023028914/"
+   },
+   "manifest": {
+    "ticker": "ORCL",
+    "cik": 1341439,
+    "accession_no": "0000950170-23-028914",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2023,
+    "quarter": null,
+    "filing_date": "2023-06-20",
+    "period_start": "2022-06-01",
+    "period_end": "2023-05-31",
+    "fye_month": 5,
+    "fye_day": 31,
+    "primary_document": "orcl-20230531.htm",
+    "files": [
+     "orcl-20230531.htm",
+     "orcl-20230531.xsd",
+     "orcl-20230531_cal.xml",
+     "orcl-20230531_def.xml",
+     "orcl-20230531_htm.xml",
+     "orcl-20230531_lab.xml",
+     "orcl-20230531_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "ORCL/2024/10-K/manifest.yaml",
+    "sha256": "e796445356fa11333388a7f9d2c3f67c70f267f77bf67f7f136a024ee8ec8965",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024075605/"
+   },
+   "manifest": {
+    "ticker": "ORCL",
+    "cik": 1341439,
+    "accession_no": "0000950170-24-075605",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2024,
+    "quarter": null,
+    "filing_date": "2024-06-20",
+    "period_start": "2023-06-01",
+    "period_end": "2024-05-31",
+    "fye_month": 5,
+    "fye_day": 31,
+    "primary_document": "orcl-20240531.htm",
+    "files": [
+     "orcl-20240531.htm",
+     "orcl-20240531.xsd",
+     "orcl-20240531_htm.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "ORCL/2025/10-K/manifest.yaml",
+    "sha256": "e79c34d761f22af5e0dea0776457ecbd59ca5c96cfdd93e0ae47fdd63a86b265",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/"
+   },
+   "manifest": {
+    "ticker": "ORCL",
+    "cik": 1341439,
+    "accession_no": "0000950170-25-087926",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2025,
+    "quarter": null,
+    "filing_date": "2025-06-18",
+    "period_start": "2024-06-01",
+    "period_end": "2025-05-31",
+    "fye_month": 5,
+    "fye_day": 31,
+    "primary_document": "orcl-20250531.htm",
+    "files": [
+     "orcl-20250531.htm",
+     "orcl-20250531.xsd",
+     "orcl-20250531_htm.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "ORCL/2026/10-K/manifest.yaml",
+    "sha256": "f433a65d40f908d7860d087f0b7eb6af335cae03015bfea4727007fdb6740b5c",
+    "written": "2026-10-06",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/"
+   },
+   "manifest": {
+    "ticker": "ORCL",
+    "cik": 1341439,
+    "accession_no": "0001193125-26-277521",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2026,
+    "quarter": null,
+    "filing_date": "2026-06-22",
+    "period_start": "2025-06-01",
+    "period_end": "2026-05-31",
+    "fye_month": 5,
+    "fye_day": 31,
+    "primary_document": "orcl-20260531.htm",
+    "files": [
+     "orcl-20260531.htm",
+     "orcl-20260531.xsd",
+     "orcl-20260531_htm.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "ORCL/2026/10-Q/Q1/manifest.yaml",
+    "sha256": "c1a37fc22a0f5d007d912c8d7f80a86dd2ba57cfcd2b8a0cc3fc4dbdc55a6665",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526101045/"
+   },
+   "manifest": {
+    "ticker": "ORCL",
+    "cik": 1341439,
+    "accession_no": "0001193125-26-101045",
+    "form": "10-Q",
+    "filing_type": "10-Q",
+    "is_amendment": false,
+    "fiscal_year": 2026,
+    "quarter": 1,
+    "filing_date": "2026-03-11",
+    "period_start": "2025-11-29",
+    "period_end": "2026-02-28",
+    "fye_month": 5,
+    "fye_day": 31,
+    "primary_document": "orcl-20260228.htm",
+    "files": [
+     "orcl-20260228.htm",
+     "orcl-20260228.xsd",
+     "orcl-20260228_htm.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "ORCL/2026/10-Q/Q3/manifest.yaml",
+    "sha256": "b4d625afcb012cc4d026a53da97fa9570da6d868b6bda92e26d6266c82ad13e6",
+    "written": "2026-10-06",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/"
+   },
+   "manifest": {
+    "ticker": "ORCL",
+    "cik": 1341439,
+    "accession_no": "0001193125-26-389274",
+    "form": "10-Q",
+    "filing_type": "10-Q",
+    "is_amendment": false,
+    "fiscal_year": 2026,
+    "quarter": 3,
+    "filing_date": "2026-09-11",
+    "period_start": "2026-06-01",
+    "period_end": "2026-08-31",
+    "fye_month": 5,
+    "fye_day": 31,
+    "primary_document": "orcl-20260831.htm",
+    "files": [
+     "orcl-20260831.htm",
+     "orcl-20260831.xsd",
+     "orcl-20260831_htm.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "AAPL/2022/10-K/manifest.yaml",
+    "sha256": "da470dc52ab0b36bf36eab0fb76d246160654ad7f35eb7ac2165db3e62bbbcbe",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/320193/000032019322000108/"
+   },
+   "manifest": {
+    "ticker": "AAPL",
+    "cik": 320193,
+    "accession_no": "0000320193-22-000108",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2022,
+    "quarter": null,
+    "filing_date": "2022-10-28",
+    "period_start": "2021-09-25",
+    "period_end": "2022-09-24",
+    "fye_month": 9,
+    "fye_day": 24,
+    "primary_document": "aapl-20220924.htm",
+    "files": [
+     "aapl-20220924.htm",
+     "aapl-20220924.xsd",
+     "aapl-20220924_cal.xml",
+     "aapl-20220924_def.xml",
+     "aapl-20220924_htm.xml",
+     "aapl-20220924_lab.xml",
+     "aapl-20220924_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "AAPL/2023/10-K/manifest.yaml",
+    "sha256": "30fae69c0a793e0259e09e20daf094a49374ff5fda4567de387b88c1e7bbcaae",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/"
+   },
+   "manifest": {
+    "ticker": "AAPL",
+    "cik": 320193,
+    "accession_no": "0000320193-23-000106",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2023,
+    "quarter": null,
+    "filing_date": "2023-11-03",
+    "period_start": "2022-10-01",
+    "period_end": "2023-09-30",
+    "fye_month": 9,
+    "fye_day": 30,
+    "primary_document": "aapl-20230930.htm",
+    "files": [
+     "aapl-20230930.htm",
+     "aapl-20230930.xsd",
+     "aapl-20230930_cal.xml",
+     "aapl-20230930_def.xml",
+     "aapl-20230930_htm.xml",
+     "aapl-20230930_lab.xml",
+     "aapl-20230930_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "AAPL/2024/10-K/manifest.yaml",
+    "sha256": "fcd1d0162ed44ad390d35817752a22202dbd6ff46915f4d60e65703cc3ed62b3",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/"
+   },
+   "manifest": {
+    "ticker": "AAPL",
+    "cik": 320193,
+    "accession_no": "0000320193-24-000123",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2024,
+    "quarter": null,
+    "filing_date": "2024-11-01",
+    "period_start": "2023-09-29",
+    "period_end": "2024-09-28",
+    "fye_month": 9,
+    "fye_day": 28,
+    "primary_document": "aapl-20240928.htm",
+    "files": [
+     "aapl-20240928.htm",
+     "aapl-20240928.xsd",
+     "aapl-20240928_cal.xml",
+     "aapl-20240928_def.xml",
+     "aapl-20240928_htm.xml",
+     "aapl-20240928_lab.xml",
+     "aapl-20240928_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "AAPL/2025/10-K/manifest.yaml",
+    "sha256": "964ceb0fe05ffcf19920b055a2a723c9845aef2b39973e650fbde31f697c5897",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/"
+   },
+   "manifest": {
+    "ticker": "AAPL",
+    "cik": 320193,
+    "accession_no": "0000320193-25-000079",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2025,
+    "quarter": null,
+    "filing_date": "2025-10-31",
+    "period_start": "2024-09-28",
+    "period_end": "2025-09-27",
+    "fye_month": 9,
+    "fye_day": 27,
+    "primary_document": "aapl-20250927.htm",
+    "files": [
+     "aapl-20250927.htm",
+     "aapl-20250927.xsd",
+     "aapl-20250927_cal.xml",
+     "aapl-20250927_def.xml",
+     "aapl-20250927_htm.xml",
+     "aapl-20250927_lab.xml",
+     "aapl-20250927_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "AAPL/2026/10-Q/Q1/manifest.yaml",
+    "sha256": "542efadd548cf2efcaf776d0d5d633bab205f0314bf5c2004a9676ec639f585b",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000013/"
+   },
+   "manifest": {
+    "ticker": "AAPL",
+    "cik": 320193,
+    "accession_no": "0000320193-26-000013",
+    "form": "10-Q",
+    "filing_type": "10-Q",
+    "is_amendment": false,
+    "fiscal_year": 2026,
+    "quarter": 1,
+    "filing_date": "2026-05-01",
+    "period_start": "2025-12-29",
+    "period_end": "2026-03-28",
+    "fye_month": 9,
+    "fye_day": 26,
+    "primary_document": "aapl-20260328.htm",
+    "files": [
+     "aapl-20260328.htm",
+     "aapl-20260328.xsd",
+     "aapl-20260328_cal.xml",
+     "aapl-20260328_def.xml",
+     "aapl-20260328_htm.xml",
+     "aapl-20260328_lab.xml",
+     "aapl-20260328_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "AAPL/2026/10-Q/Q2/manifest.yaml",
+    "sha256": "5d2f4cfad491a399fe6a8400724982e56b28e55cc0b0384924341a3753cd5ce4",
+    "written": "2026-10-06",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/"
+   },
+   "manifest": {
+    "ticker": "AAPL",
+    "cik": 320193,
+    "accession_no": "0000320193-26-000020",
+    "form": "10-Q",
+    "filing_type": "10-Q",
+    "is_amendment": false,
+    "fiscal_year": 2026,
+    "quarter": 2,
+    "filing_date": "2026-07-31",
+    "period_start": "2026-03-28",
+    "period_end": "2026-06-27",
+    "fye_month": 9,
+    "fye_day": 26,
+    "primary_document": "aapl-20260627.htm",
+    "files": [
+     "aapl-20260627.htm",
+     "aapl-20260627.xsd",
+     "aapl-20260627_cal.xml",
+     "aapl-20260627_def.xml",
+     "aapl-20260627_htm.xml",
+     "aapl-20260627_lab.xml",
+     "aapl-20260627_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "MSFT/2022/10-K/manifest.yaml",
+    "sha256": "635c1a3de507c12ad895f7e91acc69211b59950ccccd0edb5641762aeef12cf1",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/789019/000156459022026876/"
+   },
+   "manifest": {
+    "ticker": "MSFT",
+    "cik": 789019,
+    "accession_no": "0001564590-22-026876",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2022,
+    "quarter": null,
+    "filing_date": "2022-07-28",
+    "period_start": "2021-07-01",
+    "period_end": "2022-06-30",
+    "fye_month": 6,
+    "fye_day": 30,
+    "primary_document": "msft-10k_20220630.htm",
+    "files": [
+     "msft-10k_20220630.htm",
+     "msft-10k_20220630_htm.xml",
+     "msft-20220630.xsd",
+     "msft-20220630_cal.xml",
+     "msft-20220630_def.xml",
+     "msft-20220630_lab.xml",
+     "msft-20220630_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "MSFT/2023/10-K/manifest.yaml",
+    "sha256": "c33aba5236f895b55c3bfacdc04f25b40812a577afe00c52e94f4b5e82aa5486",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/789019/000095017023035122/"
+   },
+   "manifest": {
+    "ticker": "MSFT",
+    "cik": 789019,
+    "accession_no": "0000950170-23-035122",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2023,
+    "quarter": null,
+    "filing_date": "2023-07-27",
+    "period_start": "2022-07-01",
+    "period_end": "2023-06-30",
+    "fye_month": 6,
+    "fye_day": 30,
+    "primary_document": "msft-20230630.htm",
+    "files": [
+     "msft-20230630.htm",
+     "msft-20230630.xsd",
+     "msft-20230630_cal.xml",
+     "msft-20230630_def.xml",
+     "msft-20230630_htm.xml",
+     "msft-20230630_lab.xml",
+     "msft-20230630_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "MSFT/2024/10-K/manifest.yaml",
+    "sha256": "204e555f515ac7c9460c2b21d6a22ea3afb9e3b23a167a1a3dd43a488e5c292d",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/"
+   },
+   "manifest": {
+    "ticker": "MSFT",
+    "cik": 789019,
+    "accession_no": "0000950170-24-087843",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2024,
+    "quarter": null,
+    "filing_date": "2024-07-30",
+    "period_start": "2023-07-01",
+    "period_end": "2024-06-30",
+    "fye_month": 6,
+    "fye_day": 30,
+    "primary_document": "msft-20240630.htm",
+    "files": [
+     "msft-20240630.htm",
+     "msft-20240630.xsd",
+     "msft-20240630_htm.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "MSFT/2025/10-K/manifest.yaml",
+    "sha256": "6bf6ce109809d921beaf8e8b24b81249784dad502e6f44f3fe2cfd908a5c3bdd",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/"
+   },
+   "manifest": {
+    "ticker": "MSFT",
+    "cik": 789019,
+    "accession_no": "0000950170-25-100235",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2025,
+    "quarter": null,
+    "filing_date": "2025-07-30",
+    "period_start": "2024-07-01",
+    "period_end": "2025-06-30",
+    "fye_month": 6,
+    "fye_day": 30,
+    "primary_document": "msft-20250630.htm",
+    "files": [
+     "msft-20250630.htm",
+     "msft-20250630.xsd",
+     "msft-20250630_htm.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "MSFT/2026/10-K/manifest.yaml",
+    "sha256": "3ed7e37ba3808c71640b566d2559f1e73f1fba642aab1369f0ae9cb1d7161c40",
+    "written": "2026-10-06",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/"
+   },
+   "manifest": {
+    "ticker": "MSFT",
+    "cik": 789019,
+    "accession_no": "0001193125-26-323660",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2026,
+    "quarter": null,
+    "filing_date": "2026-07-29",
+    "period_start": "2025-07-01",
+    "period_end": "2026-06-30",
+    "fye_month": 6,
+    "fye_day": 30,
+    "primary_document": "msft-20260630.htm",
+    "files": [
+     "msft-20260630.htm",
+     "msft-20260630.xsd",
+     "msft-20260630_htm.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "MSFT/2026/10-Q/Q1/manifest.yaml",
+    "sha256": "db87558b6be42fde48808ce27f15f81ba8fc83d7888a1f8427aeb0daf16bde8a",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/"
+   },
+   "manifest": {
+    "ticker": "MSFT",
+    "cik": 789019,
+    "accession_no": "0001193125-26-191507",
+    "form": "10-Q",
+    "filing_type": "10-Q",
+    "is_amendment": false,
+    "fiscal_year": 2026,
+    "quarter": 1,
+    "filing_date": "2026-04-29",
+    "period_start": "2026-01-01",
+    "period_end": "2026-03-31",
+    "fye_month": 6,
+    "fye_day": 30,
+    "primary_document": "msft-20260331.htm",
+    "files": [
+     "msft-20260331.htm",
+     "msft-20260331.xsd",
+     "msft-20260331_htm.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "MU/2022/10-K/manifest.yaml",
+    "sha256": "2b2fad306f422fb81a5f5fc3127d52cdd6775730a229e9aa31bd9d6b33ee641d",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/723125/000072312522000048/"
+   },
+   "manifest": {
+    "ticker": "MU",
+    "cik": 723125,
+    "accession_no": "0000723125-22-000048",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2022,
+    "quarter": null,
+    "filing_date": "2022-10-07",
+    "period_start": "2021-09-02",
+    "period_end": "2022-09-01",
+    "fye_month": 9,
+    "fye_day": 1,
+    "primary_document": "mu-20220901.htm",
+    "files": [
+     "mu-20220901.htm",
+     "mu-20220901.xsd",
+     "mu-20220901_cal.xml",
+     "mu-20220901_def.xml",
+     "mu-20220901_htm.xml",
+     "mu-20220901_lab.xml",
+     "mu-20220901_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "MU/2023/10-K/manifest.yaml",
+    "sha256": "f5d70e20a089e32291955fce4ce2c38ca37040c359723224550344c1e11f5022",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/723125/000072312523000054/"
+   },
+   "manifest": {
+    "ticker": "MU",
+    "cik": 723125,
+    "accession_no": "0000723125-23-000054",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2023,
+    "quarter": null,
+    "filing_date": "2023-10-06",
+    "period_start": "2022-09-01",
+    "period_end": "2023-08-31",
+    "fye_month": 8,
+    "fye_day": 31,
+    "primary_document": "mu-20230831.htm",
+    "files": [
+     "mu-20230831.htm",
+     "mu-20230831.xsd",
+     "mu-20230831_cal.xml",
+     "mu-20230831_def.xml",
+     "mu-20230831_htm.xml",
+     "mu-20230831_lab.xml",
+     "mu-20230831_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "MU/2024/10-K/manifest.yaml",
+    "sha256": "6cca56b0cd3d3a5dfbe350976eb212678f1a77757ceb89e472ebc10ea934d504",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/723125/000072312524000027/"
+   },
+   "manifest": {
+    "ticker": "MU",
+    "cik": 723125,
+    "accession_no": "0000723125-24-000027",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2024,
+    "quarter": null,
+    "filing_date": "2024-10-04",
+    "period_start": "2023-08-30",
+    "period_end": "2024-08-29",
+    "fye_month": 8,
+    "fye_day": 29,
+    "primary_document": "mu-20240829.htm",
+    "files": [
+     "mu-20240829.htm",
+     "mu-20240829.xsd",
+     "mu-20240829_cal.xml",
+     "mu-20240829_def.xml",
+     "mu-20240829_htm.xml",
+     "mu-20240829_lab.xml",
+     "mu-20240829_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "MU/2025/10-K/manifest.yaml",
+    "sha256": "1fbea7361b204b4b14cbe70cf9813149d02597da502e1f99d3ebd155f9a67b4f",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/"
+   },
+   "manifest": {
+    "ticker": "MU",
+    "cik": 723125,
+    "accession_no": "0000723125-25-000028",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2025,
+    "quarter": null,
+    "filing_date": "2025-10-03",
+    "period_start": "2024-08-29",
+    "period_end": "2025-08-28",
+    "fye_month": 8,
+    "fye_day": 28,
+    "primary_document": "mu-20250828.htm",
+    "files": [
+     "mu-20250828.htm",
+     "mu-20250828.xsd",
+     "mu-20250828_cal.xml",
+     "mu-20250828_def.xml",
+     "mu-20250828_htm.xml",
+     "mu-20250828_lab.xml",
+     "mu-20250828_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "MU/2026/10-K/manifest.yaml",
+    "sha256": "e81e6ff88200a09be7573a9444586c66e06d31bf60630df64cb8f2b8abb692bd",
+    "written": "2026-10-30",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/"
+   },
+   "manifest": {
+    "ticker": "MU",
+    "cik": 723125,
+    "accession_no": "0000723125-26-000023",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2026,
+    "quarter": null,
+    "filing_date": "2026-10-09",
+    "period_start": "2025-09-04",
+    "period_end": "2026-09-03",
+    "fye_month": 9,
+    "fye_day": 3,
+    "primary_document": "mu-20260903.htm",
+    "files": [
+     "mu-20260903.htm",
+     "mu-20260903.xsd",
+     "mu-20260903_cal.xml",
+     "mu-20260903_def.xml",
+     "mu-20260903_htm.xml",
+     "mu-20260903_lab.xml",
+     "mu-20260903_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "MU/2026/10-Q/Q1/manifest.yaml",
+    "sha256": "5b52610901c379d6de857cfd8b698553fe6a41a6fc5883225910c9fedb738ac0",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000006/"
+   },
+   "manifest": {
+    "ticker": "MU",
+    "cik": 723125,
+    "accession_no": "0000723125-26-000006",
+    "form": "10-Q",
+    "filing_type": "10-Q",
+    "is_amendment": false,
+    "fiscal_year": 2026,
+    "quarter": 1,
+    "filing_date": "2026-03-19",
+    "period_start": "2025-11-27",
+    "period_end": "2026-02-26",
+    "fye_month": 9,
+    "fye_day": 3,
+    "primary_document": "mu-20260226.htm",
+    "files": [
+     "mu-20260226.htm",
+     "mu-20260226.xsd",
+     "mu-20260226_cal.xml",
+     "mu-20260226_def.xml",
+     "mu-20260226_htm.xml",
+     "mu-20260226_lab.xml",
+     "mu-20260226_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "MU/2026/10-Q/Q2/manifest.yaml",
+    "sha256": "c3742d02d5068116ce450567c24b5ac1cf80177710dd3eb6b2086137bc54acbd",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/"
+   },
+   "manifest": {
+    "ticker": "MU",
+    "cik": 723125,
+    "accession_no": "0000723125-26-000015",
+    "form": "10-Q",
+    "filing_type": "10-Q",
+    "is_amendment": false,
+    "fiscal_year": 2026,
+    "quarter": 2,
+    "filing_date": "2026-06-25",
+    "period_start": "2026-03-01",
+    "period_end": "2026-05-28",
+    "fye_month": 9,
+    "fye_day": 3,
+    "primary_document": "mu-20260528.htm",
+    "files": [
+     "mu-20260528.htm",
+     "mu-20260528.xsd",
+     "mu-20260528_cal.xml",
+     "mu-20260528_def.xml",
+     "mu-20260528_htm.xml",
+     "mu-20260528_lab.xml",
+     "mu-20260528_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "NVDA/2022/10-K/manifest.yaml",
+    "sha256": "d21454feeccdb0caf70a85e453ebd1270a69fea92d069115640f354e97890453",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000036/"
+   },
+   "manifest": {
+    "ticker": "NVDA",
+    "cik": 1045810,
+    "accession_no": "0001045810-22-000036",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2022,
+    "quarter": null,
+    "filing_date": "2022-03-18",
+    "period_start": "2021-01-31",
+    "period_end": "2022-01-30",
+    "fye_month": 1,
+    "fye_day": 30,
+    "primary_document": "nvda-20220130.htm",
+    "files": [
+     "nvda-20220130.htm",
+     "nvda-20220130.xsd",
+     "nvda-20220130_cal.xml",
+     "nvda-20220130_def.xml",
+     "nvda-20220130_htm.xml",
+     "nvda-20220130_lab.xml",
+     "nvda-20220130_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "NVDA/2023/10-K/manifest.yaml",
+    "sha256": "5fb4836d1bc50ef30ff1433c7f58479ec3f89820f3f24c83b60d36f102e6ef4f",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000017/"
+   },
+   "manifest": {
+    "ticker": "NVDA",
+    "cik": 1045810,
+    "accession_no": "0001045810-23-000017",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2023,
+    "quarter": null,
+    "filing_date": "2023-02-24",
+    "period_start": "2022-01-30",
+    "period_end": "2023-01-29",
+    "fye_month": 1,
+    "fye_day": 29,
+    "primary_document": "nvda-20230129.htm",
+    "files": [
+     "nvda-20230129.htm",
+     "nvda-20230129.xsd",
+     "nvda-20230129_cal.xml",
+     "nvda-20230129_def.xml",
+     "nvda-20230129_htm.xml",
+     "nvda-20230129_lab.xml",
+     "nvda-20230129_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "NVDA/2024/10-K/manifest.yaml",
+    "sha256": "640e9e64ac22506d7c8b30030c5662c9ac0a69db43af67364659fd48f875b00c",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/"
+   },
+   "manifest": {
+    "ticker": "NVDA",
+    "cik": 1045810,
+    "accession_no": "0001045810-24-000029",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2024,
+    "quarter": null,
+    "filing_date": "2024-02-21",
+    "period_start": "2023-01-29",
+    "period_end": "2024-01-28",
+    "fye_month": 1,
+    "fye_day": 28,
+    "primary_document": "nvda-20240128.htm",
+    "files": [
+     "nvda-20240128.htm",
+     "nvda-20240128.xsd",
+     "nvda-20240128_cal.xml",
+     "nvda-20240128_def.xml",
+     "nvda-20240128_htm.xml",
+     "nvda-20240128_lab.xml",
+     "nvda-20240128_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "NVDA/2025/10-K/manifest.yaml",
+    "sha256": "a3713257dc97ab8cc87efaa491c63cfa56a95666aae0a9c0227b9321c4a1cace",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/"
+   },
+   "manifest": {
+    "ticker": "NVDA",
+    "cik": 1045810,
+    "accession_no": "0001045810-25-000023",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2025,
+    "quarter": null,
+    "filing_date": "2025-02-26",
+    "period_start": "2024-01-27",
+    "period_end": "2025-01-26",
+    "fye_month": 1,
+    "fye_day": 26,
+    "primary_document": "nvda-20250126.htm",
+    "files": [
+     "nvda-20250126.htm",
+     "nvda-20250126.xsd",
+     "nvda-20250126_cal.xml",
+     "nvda-20250126_def.xml",
+     "nvda-20250126_htm.xml",
+     "nvda-20250126_lab.xml",
+     "nvda-20250126_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "NVDA/2026/10-K/manifest.yaml",
+    "sha256": "3fcf267259ee34780f293bd3cf1b95050ef6d5f52773691d4df6340b4b9e92f1",
+    "written": "2026-05-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/"
+   },
+   "manifest": {
+    "ticker": "NVDA",
+    "cik": 1045810,
+    "accession_no": "0001045810-26-000021",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2026,
+    "quarter": null,
+    "filing_date": "2026-02-25",
+    "period_start": "2025-01-26",
+    "period_end": "2026-01-25",
+    "fye_month": 1,
+    "fye_day": 25,
+    "primary_document": "nvda-20260125.htm",
+    "files": [
+     "nvda-20260125.htm",
+     "nvda-20260125.xsd",
+     "nvda-20260125_cal.xml",
+     "nvda-20260125_def.xml",
+     "nvda-20260125_htm.xml",
+     "nvda-20260125_lab.xml",
+     "nvda-20260125_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "NVDA/2026/10-Q/Q2/manifest.yaml",
+    "sha256": "5f4a98cc2b0d73f45fdc4d92894676ae6924086bcf8dc8b04a7a4d285a521090",
+    "written": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/"
+   },
+   "manifest": {
+    "ticker": "NVDA",
+    "cik": 1045810,
+    "accession_no": "0001045810-26-000052",
+    "form": "10-Q",
+    "filing_type": "10-Q",
+    "is_amendment": false,
+    "fiscal_year": 2026,
+    "quarter": 2,
+    "filing_date": "2026-05-20",
+    "period_start": "2026-01-27",
+    "period_end": "2026-04-26",
+    "fye_month": 1,
+    "fye_day": 31,
+    "primary_document": "nvda-20260426.htm",
+    "files": [
+     "nvda-20260426.htm",
+     "nvda-20260426.xsd",
+     "nvda-20260426_cal.xml",
+     "nvda-20260426_def.xml",
+     "nvda-20260426_htm.xml",
+     "nvda-20260426_lab.xml",
+     "nvda-20260426_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "NVDA/2026/10-Q/Q3/manifest.yaml",
+    "sha256": "04a2ca52005b0cd4130dd2060dcedd18d33cd7c35cbb23bc01101cad660949a1",
+    "written": "2026-10-06",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/"
+   },
+   "manifest": {
+    "ticker": "NVDA",
+    "cik": 1045810,
+    "accession_no": "0001045810-26-000075",
+    "form": "10-Q",
+    "filing_type": "10-Q",
+    "is_amendment": false,
+    "fiscal_year": 2026,
+    "quarter": 3,
+    "filing_date": "2026-08-26",
+    "period_start": "2026-04-27",
+    "period_end": "2026-07-26",
+    "fye_month": 1,
+    "fye_day": 31,
+    "primary_document": "nvda-20260726.htm",
+    "files": [
+     "nvda-20260726.htm",
+     "nvda-20260726.xsd",
+     "nvda-20260726_cal.xml",
+     "nvda-20260726_def.xml",
+     "nvda-20260726_htm.xml",
+     "nvda-20260726_lab.xml",
+     "nvda-20260726_pre.xml"
+    ]
+   }
+  }
+ ],
+ "others": [
+  {
+   "source": {
+    "path": "INTC/2022/10-K/manifest.yaml",
+    "sha256": "01b5a590eb5414f8561e48fdc6a9ac8aee637b2178249078077ec0a0e21bb943",
+    "written": "2026-10-17",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/50863/000005086323000006/"
+   },
+   "manifest": {
+    "ticker": "INTC",
+    "cik": 50863,
+    "accession_no": "0000050863-23-000006",
+    "form": "10-K",
+    "filing_type": "10-K",
+    "is_amendment": false,
+    "fiscal_year": 2022,
+    "quarter": null,
+    "filing_date": "2023-01-27",
+    "period_start": "2022-01-01",
+    "period_end": "2022-12-31",
+    "fye_month": 12,
+    "fye_day": 31,
+    "primary_document": "intc-20221231.htm",
+    "files": [
+     "intc-20221231.htm",
+     "intc-20221231.xsd",
+     "intc-20221231_cal.xml",
+     "intc-20221231_def.xml",
+     "intc-20221231_htm.xml",
+     "intc-20221231_lab.xml",
+     "intc-20221231_pre.xml"
+    ]
+   }
+  },
+  {
+   "source": {
+    "path": "AMZN/2026/10-Q/Q2/manifest.yaml",
+    "sha256": "b55cc7d010ec846c52a4816442746cbde3260810c7d6bc37a2ec12b4710da59d",
+    "written": "2026-10-06",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/"
+   },
+   "manifest": {
+    "ticker": "AMZN",
+    "cik": 1018724,
+    "accession_no": "0001018724-26-000026",
+    "form": "10-Q",
+    "filing_type": "10-Q",
+    "is_amendment": false,
+    "fiscal_year": 2026,
+    "quarter": 2,
+    "filing_date": "2026-07-31",
+    "period_start": "2026-03-31",
+    "period_end": "2026-06-30",
+    "fye_month": 12,
+    "fye_day": 31,
+    "primary_document": "amzn-20260630.htm",
+    "files": [
+     "amzn-20260630.htm",
+     "amzn-20260630.xsd",
+     "amzn-20260630_cal.xml",
+     "amzn-20260630_def.xml",
+     "amzn-20260630_htm.xml",
+     "amzn-20260630_lab.xml",
+     "amzn-20260630_pre.xml"
+    ]
+   }
+  }
+ ]
+}

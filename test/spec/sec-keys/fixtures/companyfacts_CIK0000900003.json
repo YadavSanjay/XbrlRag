@@ -1,0 +1,18 @@
+{
+  "cik": 900003,
+  "entityName": "Synthetic TWD Corp",
+  "facts": {
+    "ifrs-full": {
+      "Revenue": {
+        "label": "Revenue",
+        "description": "Synthetic revenue of a December 20-F filer reporting in TWD.",
+        "units": {
+          "TWD": [
+            {"start": "2024-01-01", "end": "2024-12-31", "val": 2894307699000, "accn": "0000900003-25-000002", "fy": 2024, "fp": "FY", "form": "20-F", "filed": "2025-04-15"},
+            {"start": "2023-01-01", "end": "2023-12-31", "val": 2161735841000, "accn": "0000900003-25-000002", "fy": 2024, "fp": "FY", "form": "20-F", "filed": "2025-04-15"}
+          ]
+        }
+      }
+    }
+  }
+}

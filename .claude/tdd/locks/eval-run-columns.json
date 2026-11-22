@@ -1,0 +1,215 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-29",
+  "criteria": {
+    "C1": [
+      "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_all_six_fields_are_read",
+      "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_untagged_fields_are_none_and_other_tags_ignored",
+      "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_a_repeated_identical_tag_is_fine",
+      "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_malformed_tags_raise_value_error[tags0]",
+      "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_malformed_tags_raise_value_error[tags1]",
+      "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_malformed_tags_raise_value_error[tags2]",
+      "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_malformed_tags_raise_value_error[tags3]",
+      "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_malformed_tags_raise_value_error[tags4]",
+      "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_malformed_tags_raise_value_error[tags5]",
+      "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_malformed_tags_raise_value_error[tags6]",
+      "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_rendered_tags_parse_back"
+    ],
+    "C2": [
+      "test/spec/eval-run-columns/test_c2_run_split.py::test_single_split_is_returned",
+      "test/spec/eval-run-columns/test_c2_run_split.py::test_untagged_and_empty_runs_are_legacy",
+      "test/spec/eval-run-columns/test_c2_run_split.py::test_mixed_splits_raise_naming_them[splits0-named0]",
+      "test/spec/eval-run-columns/test_c2_run_split.py::test_mixed_splits_raise_naming_them[splits1-named1]",
+      "test/spec/eval-run-columns/test_c2_run_split.py::test_mixed_splits_raise_naming_them[splits2-named2]",
+      "test/spec/eval-run-columns/test_c2_run_split.py::test_a_malformed_tag_raises",
+      "test/spec/eval-run-columns/test_c2_run_split.py::test_one_split_or_mixed"
+    ],
+    "C3": [
+      "test/spec/eval-run-columns/test_c3_runner.py::test_mixed_run_raises_before_any_case_is_answered",
+      "test/spec/eval-run-columns/test_c3_runner.py::test_single_split_run_records_it_in_config",
+      "test/spec/eval-run-columns/test_c3_runner.py::test_outcome_does_not_depend_on_case_order"
+    ],
+    "C4": [
+      "test/spec/eval-run-columns/test_c4_judge_columns.py::test_full_scores_map_to_the_four_columns",
+      "test/spec/eval-run-columns/test_c4_judge_columns.py::test_no_judge_and_partial_scores_give_none",
+      "test/spec/eval-run-columns/test_c4_judge_columns.py::test_integral_float_claim_count_becomes_int",
+      "test/spec/eval-run-columns/test_c4_judge_columns.py::test_invalid_scores_raise_value_error[scores0]",
+      "test/spec/eval-run-columns/test_c4_judge_columns.py::test_invalid_scores_raise_value_error[scores1]",
+      "test/spec/eval-run-columns/test_c4_judge_columns.py::test_invalid_scores_raise_value_error[scores2]",
+      "test/spec/eval-run-columns/test_c4_judge_columns.py::test_invalid_scores_raise_value_error[scores3]",
+      "test/spec/eval-run-columns/test_c4_judge_columns.py::test_invalid_scores_raise_value_error[scores4]",
+      "test/spec/eval-run-columns/test_c4_judge_columns.py::test_invalid_scores_raise_value_error[scores5]",
+      "test/spec/eval-run-columns/test_c4_judge_columns.py::test_invalid_scores_raise_value_error[scores6]",
+      "test/spec/eval-run-columns/test_c4_judge_columns.py::test_in_range_scores_map_one_to_one"
+    ],
+    "C5": [
+      "test/spec/eval-run-columns/test_c5_case_and_run_columns.py::test_case_columns_merge_tags_and_judge_scores",
+      "test/spec/eval-run-columns/test_c5_case_and_run_columns.py::test_case_columns_without_judge_scores",
+      "test/spec/eval-run-columns/test_c5_case_and_run_columns.py::test_run_columns_split_sources",
+      "test/spec/eval-run-columns/test_c5_case_and_run_columns.py::test_run_columns_judge_version",
+      "test/spec/eval-run-columns/test_c5_case_and_run_columns.py::test_run_columns_rejects_bad_config_split",
+      "test/spec/eval-run-columns/test_c5_case_and_run_columns.py::test_case_columns_property"
+    ],
+    "C6": [
+      "test/spec/eval-run-columns/test_c6_ddl.py::test_run_columns_are_added",
+      "test/spec/eval-run-columns/test_c6_ddl.py::test_case_columns_are_added",
+      "test/spec/eval-run-columns/test_c6_ddl.py::test_every_add_column_is_idempotent",
+      "test/spec/eval-run-columns/test_c6_ddl.py::test_checks_ignore_whitespace_and_case"
+    ],
+    "C7": [
+      "test/spec/eval-run-columns/test_c7_store.py::test_persist_run_writes_run_columns",
+      "test/spec/eval-run-columns/test_c7_store.py::test_persist_run_writes_case_columns",
+      "test/spec/eval-run-columns/test_c7_store.py::test_legacy_run_keeps_paraphrase_group_stability",
+      "test/spec/eval-run-columns/test_c7_store.py::test_old_report_json_imports_as_legacy",
+      "test/spec/eval-run-columns/test_c7_store.py::test_report_json_with_split_and_bad_split",
+      "test/spec/eval-run-columns/test_c7_store.py::test_reimported_json_writes_the_same_new_columns"
+    ],
+    "C8": [
+      "test/spec/eval-run-columns/test_c8_slices.py::test_slice_metrics_by_family_and_key_source",
+      "test/spec/eval-run-columns/test_c8_slices.py::test_slice_metrics_rejects_unknown_field",
+      "test/spec/eval-run-columns/test_c8_slices.py::test_intent_stability_hand_count",
+      "test/spec/eval-run-columns/test_c8_slices.py::test_slice_report_shape_and_values",
+      "test/spec/eval-run-columns/test_c8_slices.py::test_report_to_dict_carries_slices_and_columns",
+      "test/spec/eval-run-columns/test_c8_slices.py::test_intent_stability_closed_form_and_order_free",
+      "test/spec/eval-run-columns/test_c8_slices.py::test_slice_bucket_sizes_sum_to_n"
+    ]
+  },
+  "files": {
+    "test/spec/eval-run-columns/conftest.py": "bf878f3f67c75cc8a45106925fb987357babbcd0a4315680ad9daf6e3f05a7a2",
+    "test/spec/eval-run-columns/test_c1_tag_mapping.py": "8ce574300378094a9234f0128abdfa60ee86e89c5ac5a2c5e5681b9a6115d998",
+    "test/spec/eval-run-columns/test_c2_run_split.py": "8133e4f2a1c9c7c81e3a48bcceeb90529df286b1af2dbf4f19a5b2ae354e70f8",
+    "test/spec/eval-run-columns/test_c3_runner.py": "df3b828233a5e2e83c9e64fb40db4bfee3a5a1cd7e999daa310033437fcd6738",
+    "test/spec/eval-run-columns/test_c4_judge_columns.py": "7ebf2f55e99705e0095e8cebb6fec4c9cee4985d3e916f40792d4afe23662b81",
+    "test/spec/eval-run-columns/test_c5_case_and_run_columns.py": "b9e5b178fd7a447ca0007463d1d36ab3657012686563677f1bd162f847e6eeae",
+    "test/spec/eval-run-columns/test_c6_ddl.py": "640fa5eab74f1700338578627cc770047971eba2b9a35d4fa35818e018fd90fa",
+    "test/spec/eval-run-columns/test_c7_store.py": "1a65b871e7db5231fc0fc87acf3d7958001fcc9f150ba4d0ee25af9d2e2601ef",
+    "test/spec/eval-run-columns/test_c8_slices.py": "85dc0f8d22e954008fbfdc9a66500c7c0c4cfd904a3daed964821c904c1ebf2d"
+  },
+  "id": "eval-run-columns",
+  "interface": [
+    {
+      "file": "src/eval/core/run_columns.py",
+      "module": "eval.core.run_columns",
+      "qualname": "slice_fields_from_tags",
+      "signature": "def slice_fields_from_tags(tags: Iterable[str]) -> dict[str, str | None]"
+    },
+    {
+      "file": "src/eval/core/run_columns.py",
+      "module": "eval.core.run_columns",
+      "qualname": "run_split",
+      "signature": "def run_split(cases: Iterable[EvalCase]) -> str"
+    },
+    {
+      "file": "src/eval/core/run_columns.py",
+      "module": "eval.core.run_columns",
+      "qualname": "judge_columns",
+      "signature": "def judge_columns(scores: Mapping[str, Any] | None) -> dict[str, float | int | None]"
+    },
+    {
+      "file": "src/eval/core/run_columns.py",
+      "module": "eval.core.run_columns",
+      "qualname": "case_columns",
+      "signature": "def case_columns(result: CaseResult) -> dict[str, Any]"
+    },
+    {
+      "file": "src/eval/core/run_columns.py",
+      "module": "eval.core.run_columns",
+      "qualname": "run_columns",
+      "signature": "def run_columns(report: RunReport) -> dict[str, Any]"
+    },
+    {
+      "file": "src/eval/core/run_columns.py",
+      "module": "eval.core.run_columns",
+      "qualname": "slice_metrics",
+      "signature": "def slice_metrics(results: Sequence[CaseResult], field: str) -> dict[str, Metrics]"
+    },
+    {
+      "file": "src/eval/core/run_columns.py",
+      "module": "eval.core.run_columns",
+      "qualname": "intent_stability",
+      "signature": "def intent_stability(results: Sequence[CaseResult]) -> float | None"
+    },
+    {
+      "file": "src/eval/core/run_columns.py",
+      "module": "eval.core.run_columns",
+      "qualname": "slice_report",
+      "signature": "def slice_report(results: Sequence[CaseResult]) -> dict[str, Any]"
+    }
+  ],
+  "nodes": [
+    "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_a_repeated_identical_tag_is_fine",
+    "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_all_six_fields_are_read",
+    "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_malformed_tags_raise_value_error[tags0]",
+    "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_malformed_tags_raise_value_error[tags1]",
+    "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_malformed_tags_raise_value_error[tags2]",
+    "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_malformed_tags_raise_value_error[tags3]",
+    "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_malformed_tags_raise_value_error[tags4]",
+    "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_malformed_tags_raise_value_error[tags5]",
+    "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_malformed_tags_raise_value_error[tags6]",
+    "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_rendered_tags_parse_back",
+    "test/spec/eval-run-columns/test_c1_tag_mapping.py::test_untagged_fields_are_none_and_other_tags_ignored",
+    "test/spec/eval-run-columns/test_c2_run_split.py::test_a_malformed_tag_raises",
+    "test/spec/eval-run-columns/test_c2_run_split.py::test_mixed_splits_raise_naming_them[splits0-named0]",
+    "test/spec/eval-run-columns/test_c2_run_split.py::test_mixed_splits_raise_naming_them[splits1-named1]",
+    "test/spec/eval-run-columns/test_c2_run_split.py::test_mixed_splits_raise_naming_them[splits2-named2]",
+    "test/spec/eval-run-columns/test_c2_run_split.py::test_one_split_or_mixed",
+    "test/spec/eval-run-columns/test_c2_run_split.py::test_single_split_is_returned",
+    "test/spec/eval-run-columns/test_c2_run_split.py::test_untagged_and_empty_runs_are_legacy",
+    "test/spec/eval-run-columns/test_c3_runner.py::test_mixed_run_raises_before_any_case_is_answered",
+    "test/spec/eval-run-columns/test_c3_runner.py::test_outcome_does_not_depend_on_case_order",
+    "test/spec/eval-run-columns/test_c3_runner.py::test_single_split_run_records_it_in_config",
+    "test/spec/eval-run-columns/test_c4_judge_columns.py::test_full_scores_map_to_the_four_columns",
+    "test/spec/eval-run-columns/test_c4_judge_columns.py::test_in_range_scores_map_one_to_one",
+    "test/spec/eval-run-columns/test_c4_judge_columns.py::test_integral_float_claim_count_becomes_int",
+    "test/spec/eval-run-columns/test_c4_judge_columns.py::test_invalid_scores_raise_value_error[scores0]",
+    "test/spec/eval-run-columns/test_c4_judge_columns.py::test_invalid_scores_raise_value_error[scores1]",
+    "test/spec/eval-run-columns/test_c4_judge_columns.py::test_invalid_scores_raise_value_error[scores2]",
+    "test/spec/eval-run-columns/test_c4_judge_columns.py::test_invalid_scores_raise_value_error[scores3]",
+    "test/spec/eval-run-columns/test_c4_judge_columns.py::test_invalid_scores_raise_value_error[scores4]",
+    "test/spec/eval-run-columns/test_c4_judge_columns.py::test_invalid_scores_raise_value_error[scores5]",
+    "test/spec/eval-run-columns/test_c4_judge_columns.py::test_invalid_scores_raise_value_error[scores6]",
+    "test/spec/eval-run-columns/test_c4_judge_columns.py::test_no_judge_and_partial_scores_give_none",
+    "test/spec/eval-run-columns/test_c5_case_and_run_columns.py::test_case_columns_merge_tags_and_judge_scores",
+    "test/spec/eval-run-columns/test_c5_case_and_run_columns.py::test_case_columns_property",
+    "test/spec/eval-run-columns/test_c5_case_and_run_columns.py::test_case_columns_without_judge_scores",
+    "test/spec/eval-run-columns/test_c5_case_and_run_columns.py::test_run_columns_judge_version",
+    "test/spec/eval-run-columns/test_c5_case_and_run_columns.py::test_run_columns_rejects_bad_config_split",
+    "test/spec/eval-run-columns/test_c5_case_and_run_columns.py::test_run_columns_split_sources",
+    "test/spec/eval-run-columns/test_c6_ddl.py::test_case_columns_are_added",
+    "test/spec/eval-run-columns/test_c6_ddl.py::test_checks_ignore_whitespace_and_case",
+    "test/spec/eval-run-columns/test_c6_ddl.py::test_every_add_column_is_idempotent",
+    "test/spec/eval-run-columns/test_c6_ddl.py::test_run_columns_are_added",
+    "test/spec/eval-run-columns/test_c7_store.py::test_legacy_run_keeps_paraphrase_group_stability",
+    "test/spec/eval-run-columns/test_c7_store.py::test_old_report_json_imports_as_legacy",
+    "test/spec/eval-run-columns/test_c7_store.py::test_persist_run_writes_case_columns",
+    "test/spec/eval-run-columns/test_c7_store.py::test_persist_run_writes_run_columns",
+    "test/spec/eval-run-columns/test_c7_store.py::test_reimported_json_writes_the_same_new_columns",
+    "test/spec/eval-run-columns/test_c7_store.py::test_report_json_with_split_and_bad_split",
+    "test/spec/eval-run-columns/test_c8_slices.py::test_intent_stability_closed_form_and_order_free",
+    "test/spec/eval-run-columns/test_c8_slices.py::test_intent_stability_hand_count",
+    "test/spec/eval-run-columns/test_c8_slices.py::test_report_to_dict_carries_slices_and_columns",
+    "test/spec/eval-run-columns/test_c8_slices.py::test_slice_bucket_sizes_sum_to_n",
+    "test/spec/eval-run-columns/test_c8_slices.py::test_slice_metrics_by_family_and_key_source",
+    "test/spec/eval-run-columns/test_c8_slices.py::test_slice_metrics_rejects_unknown_field",
+    "test/spec/eval-run-columns/test_c8_slices.py::test_slice_report_shape_and_values"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/eval-run-columns.md",
+    "sha256": "ea581d5abde23ab333520053d97ac11ba24c285f9693fe5f0e5c3ab226aa884a"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

@@ -1,0 +1,7 @@
+# The maintainer reviewers who may mark a resolution reviewed (docs/specs/reviewed-resolutions.md,
+# requirement 1). This is the locked list: configs/eval/v2/reviewers.yaml must load equal to it.
+# Adding a reviewer is a re-lock of the spec by the maintainer; an agent may prepare an entry
+# but cannot mark it reviewed.
+version: 1
+reviewers:
+  - Sanjay

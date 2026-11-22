@@ -1,0 +1,104 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-14",
+  "criteria": {
+    "C1": [
+      "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_a_plain_run_plans_every_case_in_suite_order",
+      "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_a_narrowed_run_plans_only_the_cases_passed",
+      "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_a_resume_from_a_prior_report_plans_the_outstanding_cases",
+      "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_a_single_system_checkpointed_resume_plans_the_outstanding_cases",
+      "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_a_joint_schedule_plans_no_system_and_keeps_every_mark[run_many]",
+      "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_a_joint_schedule_plans_no_system_and_keeps_every_mark[run_checkpointed]",
+      "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_a_raising_hook_does_not_abort_the_run",
+      "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_a_run_halt_from_the_hook_propagates_before_any_answer",
+      "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_the_plan_is_the_outstanding_set_in_suite_order"
+    ],
+    "C2": [
+      "test/spec/long-context-cache-reuse/test_lccr_c2_anthropic_reuse.py::test_reused_filings_are_marked_and_single_use_filings_are_not",
+      "test/spec/long-context-cache-reuse/test_lccr_c2_anthropic_reuse.py::test_through_the_runner_with_filing_cache_groups",
+      "test/spec/long-context-cache-reuse/test_lccr_c2_anthropic_reuse.py::test_reuse_is_counted_over_document_keys",
+      "test/spec/long-context-cache-reuse/test_lccr_c2_anthropic_reuse.py::test_cases_without_a_filing_are_ignored_by_the_plan",
+      "test/spec/long-context-cache-reuse/test_lccr_c2_anthropic_reuse.py::test_marked_exactly_when_the_filing_is_planned_twice_or_more"
+    ],
+    "C3": [
+      "test/spec/long-context-cache-reuse/test_lccr_c3_other_providers.py::test_non_anthropic_marks_every_filing_whatever_the_plan[OPENAI_MODEL]",
+      "test/spec/long-context-cache-reuse/test_lccr_c3_other_providers.py::test_non_anthropic_marks_every_filing_whatever_the_plan[DEEPSEEK_MODEL]",
+      "test/spec/long-context-cache-reuse/test_lccr_c3_other_providers.py::test_non_anthropic_marks_all_for_any_multiplicities"
+    ],
+    "C4": [
+      "test/spec/long-context-cache-reuse/test_lccr_c4_no_plan.py::test_without_a_plan_every_filing_is_marked",
+      "test/spec/long-context-cache-reuse/test_lccr_c4_no_plan.py::test_a_case_outside_the_plan_is_marked",
+      "test/spec/long-context-cache-reuse/test_lccr_c4_no_plan.py::test_a_failed_plan_leaves_no_partial_plan",
+      "test/spec/long-context-cache-reuse/test_lccr_c4_no_plan.py::test_a_failed_plan_after_a_good_one_drops_the_good_one",
+      "test/spec/long-context-cache-reuse/test_lccr_c4_no_plan.py::test_a_later_plan_replaces_the_earlier_one",
+      "test/spec/long-context-cache-reuse/test_lccr_c4_no_plan.py::test_marked_unless_planned_and_single_use"
+    ],
+    "C5": [
+      "test/spec/long-context-cache-reuse/test_lccr_c5_byte_identity.py::test_unmarked_request_equals_the_marked_one_but_for_the_flag",
+      "test/spec/long-context-cache-reuse/test_lccr_c5_byte_identity.py::test_for_any_case_only_the_flag_differs"
+    ]
+  },
+  "files": {
+    "test/spec/long-context-cache-reuse/conftest.py": "00d6234f97c182d1caa16b8087ac0011f1a571961488154a99e8518f4a79691e",
+    "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py": "f5d87c506c6764597bb6a4668b3a50465c9d2a7e76e702f267a6b382619c5dbe",
+    "test/spec/long-context-cache-reuse/test_lccr_c2_anthropic_reuse.py": "4e3bfc3852a74e3f72133d8957ef7b4687caa3b61bb5a288048bb0244685f8d2",
+    "test/spec/long-context-cache-reuse/test_lccr_c3_other_providers.py": "bb72771285570463427256ee13246b3636c4cab3d303b491254458863d658aee",
+    "test/spec/long-context-cache-reuse/test_lccr_c4_no_plan.py": "3aeebdbc0e0c4c35d85573123cbea46f7418b2b51d66fb40bc2fd4162553f786",
+    "test/spec/long-context-cache-reuse/test_lccr_c5_byte_identity.py": "913f44cd8d5d7c8bd11ec2fd93515105e10325c7d66c63b00cb4238a0694c0c5"
+  },
+  "id": "long-context-cache-reuse",
+  "interface": [
+    {
+      "file": "src/eval/systems/long_context.py",
+      "module": "eval.systems.long_context",
+      "qualname": "LongContextSystem.plan_cases",
+      "signature": "def plan_cases(self, cases: Sequence[EvalCase]) -> None"
+    }
+  ],
+  "nodes": [
+    "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_a_joint_schedule_plans_no_system_and_keeps_every_mark[run_checkpointed]",
+    "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_a_joint_schedule_plans_no_system_and_keeps_every_mark[run_many]",
+    "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_a_narrowed_run_plans_only_the_cases_passed",
+    "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_a_plain_run_plans_every_case_in_suite_order",
+    "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_a_raising_hook_does_not_abort_the_run",
+    "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_a_resume_from_a_prior_report_plans_the_outstanding_cases",
+    "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_a_run_halt_from_the_hook_propagates_before_any_answer",
+    "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_a_single_system_checkpointed_resume_plans_the_outstanding_cases",
+    "test/spec/long-context-cache-reuse/test_lccr_c1_runner_hook.py::test_the_plan_is_the_outstanding_set_in_suite_order",
+    "test/spec/long-context-cache-reuse/test_lccr_c2_anthropic_reuse.py::test_cases_without_a_filing_are_ignored_by_the_plan",
+    "test/spec/long-context-cache-reuse/test_lccr_c2_anthropic_reuse.py::test_marked_exactly_when_the_filing_is_planned_twice_or_more",
+    "test/spec/long-context-cache-reuse/test_lccr_c2_anthropic_reuse.py::test_reuse_is_counted_over_document_keys",
+    "test/spec/long-context-cache-reuse/test_lccr_c2_anthropic_reuse.py::test_reused_filings_are_marked_and_single_use_filings_are_not",
+    "test/spec/long-context-cache-reuse/test_lccr_c2_anthropic_reuse.py::test_through_the_runner_with_filing_cache_groups",
+    "test/spec/long-context-cache-reuse/test_lccr_c3_other_providers.py::test_non_anthropic_marks_all_for_any_multiplicities",
+    "test/spec/long-context-cache-reuse/test_lccr_c3_other_providers.py::test_non_anthropic_marks_every_filing_whatever_the_plan[DEEPSEEK_MODEL]",
+    "test/spec/long-context-cache-reuse/test_lccr_c3_other_providers.py::test_non_anthropic_marks_every_filing_whatever_the_plan[OPENAI_MODEL]",
+    "test/spec/long-context-cache-reuse/test_lccr_c4_no_plan.py::test_a_case_outside_the_plan_is_marked",
+    "test/spec/long-context-cache-reuse/test_lccr_c4_no_plan.py::test_a_failed_plan_after_a_good_one_drops_the_good_one",
+    "test/spec/long-context-cache-reuse/test_lccr_c4_no_plan.py::test_a_failed_plan_leaves_no_partial_plan",
+    "test/spec/long-context-cache-reuse/test_lccr_c4_no_plan.py::test_a_later_plan_replaces_the_earlier_one",
+    "test/spec/long-context-cache-reuse/test_lccr_c4_no_plan.py::test_marked_unless_planned_and_single_use",
+    "test/spec/long-context-cache-reuse/test_lccr_c4_no_plan.py::test_without_a_plan_every_filing_is_marked",
+    "test/spec/long-context-cache-reuse/test_lccr_c5_byte_identity.py::test_for_any_case_only_the_flag_differs",
+    "test/spec/long-context-cache-reuse/test_lccr_c5_byte_identity.py::test_unmarked_request_equals_the_marked_one_but_for_the_flag"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/long-context-cache-reuse.md",
+    "sha256": "84a95d2edbfa46070d0389222dadcf5242118ba4d495d1855247704d133199dc"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

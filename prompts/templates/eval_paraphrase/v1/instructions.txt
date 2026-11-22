@@ -1,0 +1,53 @@
+# paraphrase-instructions v1
+You are helping build a test set for a question-answering system over company annual reports
+(SEC 10-K and 20-F filings). Below this block is a batch of questions, one JSON object per line:
+{"case_id": "...", "personas": ["...", ...], "question": "..."}
+
+For every question, write one paraphrase for each persona listed in its "personas" field: the
+same question, worded the way that kind of person would really type it to a research assistant
+or a chat tool. Make the wording genuinely different from the original (word order, vocabulary,
+sentence shape, abbreviations), not a light edit, and keep it something a real person would send.
+
+PERSONAS
+- sell_side_shorthand: a sell-side analyst writing a quick note: tickers, FY24-style periods,
+  street shorthand ("top line", "opex", "GM", "y/y", "vs"), no full sentences.
+- terse_pm: a busy portfolio manager: very short, clipped, a few words, often no verb.
+- conversational_retail: a retail investor chatting: casual full sentences, plain words, may
+  open with "hey" or "so", may use the company's everyday name.
+- typo_prone: someone typing fast on a phone: a few typos, missing capitals or punctuation,
+  "pls" / "thx" style abbreviations.
+- buried_ask: the question sits inside one or two sentences of context about why the person
+  is asking (a model update, a meeting, a client call), with the actual ask at the end.
+
+MEANING RULES (most important: a paraphrase that changes the meaning is useless)
+1. Keep the company. Name it with its ticker, its short name or its legal name; never swap
+   in a different company, a parent, a subsidiary or a competitor.
+2. Keep the period exactly. These are fiscal years: write them as "FY24", "FY 2024",
+   "fiscal 2024", "fiscal year 2024" or "the fiscal year ended <date>" when the date is in
+   the question. Never turn a fiscal period into a calendar one: do not write "calendar",
+   "CY24", "2024 calendar year", and do not write a bare "in 2024" when the question covers
+   several companies. Never add or change a quarter, "TTM", "LTM", "YTD", "trailing",
+   "last year", "this year", "latest" or "most recent". If the question names two years,
+   keep both.
+3. Keep the metric. Use its name or a common synonym or analyst shorthand for the very same
+   figure ("revenue", "net sales", "top line"); never swap it for a nearby figure (revenue is
+   not profit, operating income is not net income, gross margin is not gross profit).
+4. Keep the operation: a lookup stays a lookup, a growth rate stays a growth rate, a
+   difference stays a difference, a ratio stays the same ratio in the same direction, a
+   "top 3" stays a top 3 (same number, same direction: highest stays highest).
+5. Keep the scope: for a question about a group of companies, name the same group in the same
+   words or a clear equivalent; never widen or narrow the group (do not turn "big tech" into
+   "the S&P 100", "all companies" or "tech stocks"). Do not add a segment, region or product
+   the question does not name, and do not drop one it does name.
+6. Typos (typo_prone persona) go only in ordinary words. Never misspell the company, the
+   metric or the period: write them exactly as in a correct form.
+7. Do not answer the question, add facts or numbers, or ask for anything extra.
+
+REPLY FORMAT (exact)
+Reply with one JSON object per line, one line per requested persona of every question, and
+nothing else: no introduction, no numbering, no commentary, no blank lines between lines. Each
+object has exactly the keys "case_id", "persona" and "paraphrase":
+{"case_id": "<the case_id, copied exactly>", "persona": "<one requested persona id>", "paraphrase": "<your paraphrase>"}
+Copy each case_id and persona id exactly as given. Use standard JSON (double quotes; escape a
+double quote inside the paraphrase as \"). Keep each paraphrase on one line. Cover every
+question in the batch, in the order given, before you stop.

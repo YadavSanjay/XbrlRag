@@ -1,0 +1,62 @@
+{
+ "source": "SEC Financial Statement Data Sets, https://www.sec.gov/dera/data/financial-statement-data-sets",
+ "note": "Header + selected rows copied byte-for-byte from the quarter zip's sub.txt/num.txt/pre.txt/tag.txt (via the filtered cache data/cache/sec_fsds/filtered/<quarter>/*.tsv).",
+ "selection": {
+  "sub": "the filing's row",
+  "num": "every row of the filing with empty segments and coreg",
+  "pre": "every row of the filing",
+  "tag": "the (tag, version) pairs the selected num rows use; in 2025q2 also the us-gaap/2024 rows of NetIncomeLoss, ProfitLoss, StockholdersEquity, StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest, ComprehensiveIncomeNetOfTax, SellingGeneralAndAdministrativeExpense, OperatingExpenses, InvestmentIncomeInterest (the definitions of the us-gaap families' elements)"
+ },
+ "filings": [
+  {
+   "accession": "0001193125-24-099840",
+   "ticker": "TSM",
+   "cik": 1046179,
+   "form": "20-F",
+   "fiscal_year": 2023,
+   "quarter": "2024q2",
+   "zip_url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q2.zip",
+   "zip_sha256": "698796e9f0946501d3dc74e7696a6c8c71cf32b66026e053722a784236b37761",
+   "zip_bytes": 119119954,
+   "retrieved_at": "2026-11-07T17:11:28.129984+00:00"
+  },
+  {
+   "accession": "0001193125-25-083423",
+   "ticker": "TSM",
+   "cik": 1046179,
+   "form": "20-F",
+   "fiscal_year": 2024,
+   "quarter": "2025q2",
+   "zip_url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q2.zip",
+   "zip_sha256": "81bf19bdb5606d5ee0164a8de8b7e96d5546170e42e59bcbf95b652ca83ac5d7",
+   "zip_bytes": 78973768,
+   "retrieved_at": "2026-11-07T17:11:40.464909+00:00"
+  },
+  {
+   "accession": "0001628280-26-025362",
+   "ticker": "TSM",
+   "cik": 1046179,
+   "form": "20-F",
+   "fiscal_year": 2025,
+   "quarter": "2026q2",
+   "zip_url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q2.zip",
+   "zip_sha256": "d7c815395cd420cfbe09b29dbae73a45406c5d0652d5ae1859ae11ea2e22df77",
+   "zip_bytes": 60419016,
+   "retrieved_at": "2026-11-07T17:11:50.311130+00:00"
+  }
+ ],
+ "row_counts": {
+  "2024q2/sub": 1,
+  "2024q2/num": 614,
+  "2024q2/pre": 199,
+  "2024q2/tag": 178,
+  "2025q2/sub": 1,
+  "2025q2/num": 626,
+  "2025q2/pre": 198,
+  "2025q2/tag": 184,
+  "2026q2/sub": 1,
+  "2026q2/num": 669,
+  "2026q2/pre": 200,
+  "2026q2/tag": 185
+ }
+}

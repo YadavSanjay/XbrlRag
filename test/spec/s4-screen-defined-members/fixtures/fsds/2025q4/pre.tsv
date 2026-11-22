@@ -1,0 +1,37 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0000804328-25-000085	3	24	BS	0	H	DeferredRevenueNoncurrent	us-gaap/2025	Unearned revenues	0
+0000804328-25-000085	3	34	BS	0	H	CommonStocksIncludingAdditionalPaidInCapital	us-gaap/2025	Common stock and paid-in capital, $0.0001 par value; 6,000 shares authorized; 1,074 and 1,113 shares issued and outstanding, respectively	0
+0000804328-25-000085	3	39	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Accumulated other comprehensive income	0
+0000804328-25-000085	3	11	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2025	Property, plant and equipment, net	0
+0000804328-25-000085	3	35	BS	0	H	CommonStockParOrStatedValuePerShare	us-gaap/2025	Common Stock, Par or Stated Value Per Share	0
+0000804328-25-000085	3	37	BS	0	H	CommonStockSharesIssued	us-gaap/2025	Common Stock, Shares, Issued	0
+0000804328-25-000085	3	32	BS	0	H	PreferredStockSharesAuthorized	us-gaap/2025	Preferred Stock, Shares Authorized	0
+0000804328-25-000085	3	38	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2025	Retained earnings	0
+0000804328-25-000085	3	7	BS	0	H	InventoryNet	us-gaap/2025	Inventories	0
+0000804328-25-000085	3	13	BS	0	H	IntangibleAssetsNetExcludingGoodwill	us-gaap/2025	Other intangible assets, net	0
+0000804328-25-000085	3	6	BS	0	H	AccountsAndOtherReceivablesNetCurrent	us-gaap/2025	Accounts receivable, net	0
+0000804328-25-000085	3	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0000804328-25-000085	3	20	BS	0	H	DeferredRevenueCurrent	us-gaap/2025	Unearned revenues	0
+0000804328-25-000085	3	5	BS	0	H	MarketableSecuritiesCurrent	us-gaap/2025	Marketable securities	0
+0000804328-25-000085	3	28	BS	0	H	CommitmentsAndContingencies	us-gaap/2025	Commitments and contingencies (Note 7)	0
+0000804328-25-000085	3	9	BS	0	H	AssetsCurrent	us-gaap/2025	Total current assets	0
+0000804328-25-000085	3	8	BS	0	H	OtherAssetsCurrent	us-gaap/2025	Other current assets	0
+0000804328-25-000085	3	25	BS	0	H	LongTermDebt	us-gaap/2025	Long-term debt	0
+0000804328-25-000085	3	12	BS	0	H	Goodwill	us-gaap/2025	Goodwill	0
+0000804328-25-000085	3	33	BS	0	H	PreferredStockSharesOutstanding	us-gaap/2025	Preferred Stock, Shares Outstanding	0
+0000804328-25-000085	3	21	BS	0	H	DebtCurrent	us-gaap/2025	Short-term debt	0
+0000804328-25-000085	3	26	BS	0	H	OtherLiabilities	us-gaap/2025	Other liabilities	0
+0000804328-25-000085	3	22	BS	0	H	OtherLiabilitiesCurrent	us-gaap/2025	Other current liabilities	0
+0000804328-25-000085	3	4	BS	0	H	RestrictedCashCurrent	us-gaap/2025	Restricted cash	0
+0000804328-25-000085	3	40	BS	0	H	StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Total stockholders equity	0
+0000804328-25-000085	3	30	BS	0	H	PreferredStockValue	us-gaap/2025	Preferred stock, $0.0001 par value; 8 shares authorized; none outstanding	0
+0000804328-25-000085	3	15	BS	0	H	Assets	us-gaap/2025	Total assets	0
+0000804328-25-000085	3	31	BS	0	H	PreferredStockParOrStatedValuePerShare	us-gaap/2025	Preferred Stock, Par or Stated Value Per Share	0
+0000804328-25-000085	3	41	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2025	Total liabilities and stockholders equity	0
+0000804328-25-000085	3	19	BS	0	H	EmployeeRelatedLiabilitiesCurrent	us-gaap/2025	Payroll and other benefits related liabilities	0
+0000804328-25-000085	3	14	BS	0	H	OtherAssetsNoncurrent	us-gaap/2025	Other assets	0
+0000804328-25-000085	3	18	BS	0	H	AccountsPayableCurrent	us-gaap/2025	Trade accounts payable	0
+0000804328-25-000085	3	23	BS	0	H	LiabilitiesCurrent	us-gaap/2025	Total current liabilities	0
+0000804328-25-000085	3	27	BS	0	H	Liabilities	us-gaap/2025	Total liabilities	0
+0000804328-25-000085	3	10	BS	0	H	DeferredIncomeTaxAssetsNet	us-gaap/2025	Deferred tax assets	0
+0000804328-25-000085	3	36	BS	0	H	CommonStockSharesAuthorized	us-gaap/2025	Common Stock, Shares Authorized	0

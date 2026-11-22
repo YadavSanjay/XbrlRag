@@ -1,0 +1,1584 @@
+{
+ "case": "meta_fy2024_revenue",
+ "ticker": "META",
+ "cik": "0001326801",
+ "accession_no": "0001326801-25-000017",
+ "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/",
+ "document_url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/meta-20241231.htm",
+ "local_source": "data/storage/sec_edgar/META/2024/10-K/meta-20241231.htm",
+ "local_source_sha256": "aea8de0a5a41477b1e6c296be347b448b25d2f90d3d74dea3b7a54ca1e448b4b",
+ "retrieved": "2026-11-07",
+ "extracted": "xbrl_db (read-only), 2026-11-07: every fact of the concept in the filing, all contexts; dimensions from context_dimension in the views' QName form (standard namespaces as prefix:local, extension namespaces as uri:local); `view` is the fact's mv_financial_facts row",
+ "dimensions": "explicit_dimensions are the context's is_default=FALSE rows as [axis, member, typed_value] (member null for a typed dimension); default_set names the context's is_default=TRUE rows, listed once in default_sets as [axis, member]",
+ "dates": "xbrl_db stores a duration end as the next day (end-of-day convention): 2025-01-01 ends fiscal 2024",
+ "default_sets": {
+  "d0": [
+   [
+    "us-gaap:StatementClassOfStockAxis",
+    "us-gaap:ClassOfStockDomain"
+   ],
+   [
+    "us-gaap:RestructuringCostAndReserveAxis",
+    "us-gaap:TypeOfRestructuringDomain"
+   ],
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:LitigationCaseAxis",
+    "srt:LitigationCaseTypeDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:CashAndCashEquivalentsAxis",
+    "us-gaap:RestrictedCashAndCashEquivalentsCashAndCashEquivalentsMember"
+   ],
+   [
+    "us-gaap:StatementBusinessSegmentsAxis",
+    "us-gaap:SegmentDomain"
+   ],
+   [
+    "us-gaap:FiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:FiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:TaxPeriodAxis",
+    "us-gaap:TaxPeriodDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityNameAxis",
+    "us-gaap:IncomeTaxAuthorityNameDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:RestructuringPlanAxis",
+    "us-gaap:RestructuringPlanDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:FairValueByMeasurementBasisAxis",
+    "us-gaap:PortionAtFairValueFairValueDisclosureMember"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementLocationAxis",
+    "us-gaap:IncomeStatementLocationDomain"
+   ],
+   [
+    "srt:ProductOrServiceAxis",
+    "srt:ProductsAndServicesDomain"
+   ],
+   [
+    "srt:StatementGeographicalAxis",
+    "srt:SegmentGeographicalDomain"
+   ],
+   [
+    "us-gaap:PlanNameAxis",
+    "us-gaap:PlanNameDomain"
+   ],
+   [
+    "us-gaap:SubsequentEventTypeAxis",
+    "us-gaap:SubsequentEventTypeDomain"
+   ],
+   [
+    "us-gaap:ConcentrationRiskByBenchmarkAxis",
+    "us-gaap:ConcentrationRiskBenchmarkDomain"
+   ],
+   [
+    "us-gaap:ConcentrationRiskByTypeAxis",
+    "us-gaap:ConcentrationRiskTypeDomain"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ],
+  "d1": [
+   [
+    "us-gaap:StatementClassOfStockAxis",
+    "us-gaap:ClassOfStockDomain"
+   ],
+   [
+    "us-gaap:RestructuringCostAndReserveAxis",
+    "us-gaap:TypeOfRestructuringDomain"
+   ],
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:LitigationCaseAxis",
+    "srt:LitigationCaseTypeDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:CashAndCashEquivalentsAxis",
+    "us-gaap:RestrictedCashAndCashEquivalentsCashAndCashEquivalentsMember"
+   ],
+   [
+    "us-gaap:FiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:FiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:TaxPeriodAxis",
+    "us-gaap:TaxPeriodDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityNameAxis",
+    "us-gaap:IncomeTaxAuthorityNameDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:RestructuringPlanAxis",
+    "us-gaap:RestructuringPlanDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:FairValueByMeasurementBasisAxis",
+    "us-gaap:PortionAtFairValueFairValueDisclosureMember"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementLocationAxis",
+    "us-gaap:IncomeStatementLocationDomain"
+   ],
+   [
+    "srt:StatementGeographicalAxis",
+    "srt:SegmentGeographicalDomain"
+   ],
+   [
+    "us-gaap:PlanNameAxis",
+    "us-gaap:PlanNameDomain"
+   ],
+   [
+    "us-gaap:SubsequentEventTypeAxis",
+    "us-gaap:SubsequentEventTypeDomain"
+   ],
+   [
+    "us-gaap:ConcentrationRiskByBenchmarkAxis",
+    "us-gaap:ConcentrationRiskBenchmarkDomain"
+   ],
+   [
+    "us-gaap:ConcentrationRiskByTypeAxis",
+    "us-gaap:ConcentrationRiskTypeDomain"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ],
+  "d2": [
+   [
+    "us-gaap:StatementClassOfStockAxis",
+    "us-gaap:ClassOfStockDomain"
+   ],
+   [
+    "us-gaap:RestructuringCostAndReserveAxis",
+    "us-gaap:TypeOfRestructuringDomain"
+   ],
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:LitigationCaseAxis",
+    "srt:LitigationCaseTypeDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:CashAndCashEquivalentsAxis",
+    "us-gaap:RestrictedCashAndCashEquivalentsCashAndCashEquivalentsMember"
+   ],
+   [
+    "us-gaap:FiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:FiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:TaxPeriodAxis",
+    "us-gaap:TaxPeriodDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityNameAxis",
+    "us-gaap:IncomeTaxAuthorityNameDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:RestructuringPlanAxis",
+    "us-gaap:RestructuringPlanDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:FairValueByMeasurementBasisAxis",
+    "us-gaap:PortionAtFairValueFairValueDisclosureMember"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementLocationAxis",
+    "us-gaap:IncomeStatementLocationDomain"
+   ],
+   [
+    "srt:ProductOrServiceAxis",
+    "srt:ProductsAndServicesDomain"
+   ],
+   [
+    "srt:StatementGeographicalAxis",
+    "srt:SegmentGeographicalDomain"
+   ],
+   [
+    "us-gaap:PlanNameAxis",
+    "us-gaap:PlanNameDomain"
+   ],
+   [
+    "us-gaap:SubsequentEventTypeAxis",
+    "us-gaap:SubsequentEventTypeDomain"
+   ],
+   [
+    "us-gaap:ConcentrationRiskByBenchmarkAxis",
+    "us-gaap:ConcentrationRiskBenchmarkDomain"
+   ],
+   [
+    "us-gaap:ConcentrationRiskByTypeAxis",
+    "us-gaap:ConcentrationRiskTypeDomain"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ],
+  "d3": [
+   [
+    "us-gaap:StatementClassOfStockAxis",
+    "us-gaap:ClassOfStockDomain"
+   ],
+   [
+    "us-gaap:RestructuringCostAndReserveAxis",
+    "us-gaap:TypeOfRestructuringDomain"
+   ],
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:LitigationCaseAxis",
+    "srt:LitigationCaseTypeDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:CashAndCashEquivalentsAxis",
+    "us-gaap:RestrictedCashAndCashEquivalentsCashAndCashEquivalentsMember"
+   ],
+   [
+    "us-gaap:StatementBusinessSegmentsAxis",
+    "us-gaap:SegmentDomain"
+   ],
+   [
+    "us-gaap:FiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:FiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:TaxPeriodAxis",
+    "us-gaap:TaxPeriodDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityNameAxis",
+    "us-gaap:IncomeTaxAuthorityNameDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:RestructuringPlanAxis",
+    "us-gaap:RestructuringPlanDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:FairValueByMeasurementBasisAxis",
+    "us-gaap:PortionAtFairValueFairValueDisclosureMember"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementLocationAxis",
+    "us-gaap:IncomeStatementLocationDomain"
+   ],
+   [
+    "srt:ProductOrServiceAxis",
+    "srt:ProductsAndServicesDomain"
+   ],
+   [
+    "us-gaap:PlanNameAxis",
+    "us-gaap:PlanNameDomain"
+   ],
+   [
+    "us-gaap:SubsequentEventTypeAxis",
+    "us-gaap:SubsequentEventTypeDomain"
+   ],
+   [
+    "us-gaap:ConcentrationRiskByBenchmarkAxis",
+    "us-gaap:ConcentrationRiskBenchmarkDomain"
+   ],
+   [
+    "us-gaap:ConcentrationRiskByTypeAxis",
+    "us-gaap:ConcentrationRiskTypeDomain"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ]
+ },
+ "facts": [
+  {
+   "fact_id": 40054,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "value": "164501000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 40055,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "134902000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40056,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "116609000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40352,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "value": "160633000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:AdvertisingMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:FamilyOfAppsMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:AdvertisingMember",
+    "segment_label": "Advertising [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 40353,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "131948000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:AdvertisingMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:FamilyOfAppsMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:AdvertisingMember",
+    "segment_label": "Advertising [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40354,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "113642000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:AdvertisingMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:FamilyOfAppsMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:AdvertisingMember",
+    "segment_label": "Advertising [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40355,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "value": "1722000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:ServiceOtherMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:FamilyOfAppsMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:ServiceOtherMember",
+    "segment_label": "Service, Other [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 40356,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "1058000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:ServiceOtherMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:FamilyOfAppsMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:ServiceOtherMember",
+    "segment_label": "Service, Other [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40357,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "808000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:ServiceOtherMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:FamilyOfAppsMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:ServiceOtherMember",
+    "segment_label": "Service, Other [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40358,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "value": "162355000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:FamilyOfAppsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.facebook.com/20241231:FamilyOfAppsMember",
+    "segment_label": "Family of Apps [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 40359,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "133006000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:FamilyOfAppsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.facebook.com/20241231:FamilyOfAppsMember",
+    "segment_label": "Family of Apps [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40360,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "114450000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:FamilyOfAppsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.facebook.com/20241231:FamilyOfAppsMember",
+    "segment_label": "Family of Apps [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40361,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "value": "2146000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:RealityLabsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.facebook.com/20241231:RealityLabsMember",
+    "segment_label": "Reality Labs [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 40362,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "1896000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:RealityLabsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.facebook.com/20241231:RealityLabsMember",
+    "segment_label": "Reality Labs [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40363,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "2159000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:RealityLabsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.facebook.com/20241231:RealityLabsMember",
+    "segment_label": "Reality Labs [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40364,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "value": "164501000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 40365,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "134902000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40366,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "116609000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40367,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "value": "63207000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "http://www.facebook.com/20241231:USCanadaMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "http://www.facebook.com/20241231:USCanadaMember",
+    "segment_label": "US & Canada [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 40368,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "52888000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "http://www.facebook.com/20241231:USCanadaMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "http://www.facebook.com/20241231:USCanadaMember",
+    "segment_label": "US & Canada [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40369,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "50150000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "http://www.facebook.com/20241231:USCanadaMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "http://www.facebook.com/20241231:USCanadaMember",
+    "segment_label": "US & Canada [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40370,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "value": "38361000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "srt:EuropeMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "srt:EuropeMember",
+    "segment_label": "Europe [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 40371,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "31210000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "srt:EuropeMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "srt:EuropeMember",
+    "segment_label": "Europe [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40372,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "26681000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "srt:EuropeMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "srt:EuropeMember",
+    "segment_label": "Europe [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40373,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "value": "45009000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "srt:AsiaPacificMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "srt:AsiaPacificMember",
+    "segment_label": "Asia Pacific [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 40374,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "36154000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "srt:AsiaPacificMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "srt:AsiaPacificMember",
+    "segment_label": "Asia Pacific [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40375,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "27760000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "srt:AsiaPacificMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "srt:AsiaPacificMember",
+    "segment_label": "Asia Pacific [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40376,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "value": "17924000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "http://www.facebook.com/20241231:RestOfWorldMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "http://www.facebook.com/20241231:RestOfWorldMember",
+    "segment_label": "Rest Of World [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 40377,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "14650000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "http://www.facebook.com/20241231:RestOfWorldMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "http://www.facebook.com/20241231:RestOfWorldMember",
+    "segment_label": "Rest Of World [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40378,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "12018000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "http://www.facebook.com/20241231:RestOfWorldMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "http://www.facebook.com/20241231:RestOfWorldMember",
+    "segment_label": "Rest Of World [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40379,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "value": "164501000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 40380,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "134902000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40381,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "116609000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40382,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "value": "59730000000",
+   "decimals": -7,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 40383,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "49780000000",
+   "decimals": -7,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40384,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "47200000000",
+   "decimals": -7,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40385,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "value": "18350000000",
+   "decimals": -7,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:CN",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:CN",
+    "segment_label": "CHINA",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 40386,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "13690000000",
+   "decimals": -7,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:CN",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:CN",
+    "segment_label": "CHINA",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 40387,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "7400000000",
+   "decimals": -7,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:CN",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:CN",
+    "segment_label": "CHINA",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 41132,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "value": "162355000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:FamilyOfAppsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.facebook.com/20241231:FamilyOfAppsMember",
+    "segment_label": "Family of Apps [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 41133,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "133006000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:FamilyOfAppsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.facebook.com/20241231:FamilyOfAppsMember",
+    "segment_label": "Family of Apps [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 41134,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "114450000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:FamilyOfAppsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.facebook.com/20241231:FamilyOfAppsMember",
+    "segment_label": "Family of Apps [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 41144,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "value": "2146000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:RealityLabsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.facebook.com/20241231:RealityLabsMember",
+    "segment_label": "Reality Labs [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 41145,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "1896000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:RealityLabsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.facebook.com/20241231:RealityLabsMember",
+    "segment_label": "Reality Labs [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 41146,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "2159000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.facebook.com/20241231:RealityLabsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.facebook.com/20241231:RealityLabsMember",
+    "segment_label": "Reality Labs [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 41156,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "value": "164501000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 41157,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "134902000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 41158,
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "116609000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  }
+ ]
+}

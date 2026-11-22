@@ -1,0 +1,152 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/sector-tags/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-29",
+  "criteria": {
+    "C1": [
+      "test/spec/sector-tags/test_sector_tags.py::test_valid_file_loads_to_the_documented_shape",
+      "test/spec/sector-tags/test_sector_tags.py::test_entry_order_does_not_change_the_result"
+    ],
+    "C2": [
+      "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[unpadded cik]",
+      "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[letter in cik]",
+      "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[wrong-case sector]",
+      "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[unknown sector]",
+      "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[duplicate cik]",
+      "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[duplicate ticker]",
+      "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[blank industry]",
+      "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[empty industry]",
+      "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[missing source]",
+      "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[empty source]",
+      "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[missing as_of]",
+      "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[impossible as_of]",
+      "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[non-ISO as_of]",
+      "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[unknown top-level key]",
+      "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[unknown entry key]",
+      "test/spec/sector-tags/test_sector_tags.py::test_any_malformed_cik_or_sector_is_rejected"
+    ],
+    "C3": [
+      "test/spec/sector-tags/test_sector_tags.py::test_rules_resolve_to_sorted_tickers_and_bad_rules_raise",
+      "test/spec/sector-tags/test_sector_tags.py::test_build_groups_matches_an_independent_selection"
+    ],
+    "C4": [
+      "test/spec/sector-tags/test_sector_tags.py::test_groups_file_loads_and_malformed_files_raise",
+      "test/spec/sector-tags/test_sector_tags.py::test_any_id_outside_the_pattern_is_rejected"
+    ],
+    "C5": [
+      "test/spec/sector-tags/test_sector_tags.py::test_check_groups_reports_each_fault_by_name",
+      "test/spec/sector-tags/test_sector_tags.py::test_dropping_a_member_or_a_phrase_is_reported"
+    ],
+    "C6": [
+      "test/spec/sector-tags/test_sector_tags.py::test_group_resolves_to_sorted_ciks",
+      "test/spec/sector-tags/test_sector_tags.py::test_resolved_ciks_are_exactly_the_members"
+    ],
+    "C7": [
+      "test/spec/sector-tags/test_sector_tags.py::test_plan_updates_only_what_differs",
+      "test/spec/sector-tags/test_sector_tags.py::test_plan_is_complete_idempotent_and_order_free"
+    ],
+    "C8": [
+      "test/spec/sector-tags/test_sector_tags.py::test_committed_sectors_pin_the_corpus_and_reviewed_labels",
+      "test/spec/sector-tags/test_sector_tags.py::test_every_committed_tag_agrees_with_the_committed_sources"
+    ],
+    "C9": [
+      "test/spec/sector-tags/test_sector_tags.py::test_committed_groups_hold_the_named_universes",
+      "test/spec/sector-tags/test_sector_tags.py::test_committed_groups_are_regenerable_and_consistent"
+    ]
+  },
+  "files": {
+    "test/spec/sector-tags/test_sector_tags.py": "5220e667b3c4f951998b502f6831e3223372ddbfb7c52e9febb6b7a08d570bbd"
+  },
+  "id": "sector-tags",
+  "interface": [
+    {
+      "file": "src/ingest/sec_edgar/ingest/sector_tags.py",
+      "module": "ingest.sec_edgar.ingest.sector_tags",
+      "qualname": "plan_sector_tag_updates",
+      "signature": "def plan_sector_tag_updates(tags: dict[str, Any], rows: list[dict[str, Any]]) -> list[tuple[str, str | None, str | None]]"
+    },
+    {
+      "file": "src/retriever/xbrl/entity_sectors.py",
+      "module": "retriever.xbrl.entity_sectors",
+      "qualname": "load_sector_tags",
+      "signature": "def load_sector_tags(path: Path | None=None) -> dict[str, Any]"
+    },
+    {
+      "file": "src/retriever/xbrl/entity_sectors.py",
+      "module": "retriever.xbrl.entity_sectors",
+      "qualname": "build_groups",
+      "signature": "def build_groups(tags: dict[str, Any], definitions: dict[str, dict[str, list[str]]]) -> dict[str, list[str]]"
+    },
+    {
+      "file": "src/retriever/xbrl/entity_sectors.py",
+      "module": "retriever.xbrl.entity_sectors",
+      "qualname": "load_universe_groups",
+      "signature": "def load_universe_groups(path: Path | None=None) -> dict[str, Any]"
+    },
+    {
+      "file": "src/retriever/xbrl/entity_sectors.py",
+      "module": "retriever.xbrl.entity_sectors",
+      "qualname": "check_groups",
+      "signature": "def check_groups(groups_doc: dict[str, Any], tags: dict[str, Any], corpus_tickers: set[str], lexicon_universes: Mapping[str, Sequence[str]]) -> list[str]"
+    },
+    {
+      "file": "src/retriever/xbrl/entity_sectors.py",
+      "module": "retriever.xbrl.entity_sectors",
+      "qualname": "resolve_group_ciks",
+      "signature": "def resolve_group_ciks(group_id: str, groups: dict[str, list[str]], tags: dict[str, Any]) -> list[str]"
+    }
+  ],
+  "nodes": [
+    "test/spec/sector-tags/test_sector_tags.py::test_any_id_outside_the_pattern_is_rejected",
+    "test/spec/sector-tags/test_sector_tags.py::test_any_malformed_cik_or_sector_is_rejected",
+    "test/spec/sector-tags/test_sector_tags.py::test_build_groups_matches_an_independent_selection",
+    "test/spec/sector-tags/test_sector_tags.py::test_check_groups_reports_each_fault_by_name",
+    "test/spec/sector-tags/test_sector_tags.py::test_committed_groups_are_regenerable_and_consistent",
+    "test/spec/sector-tags/test_sector_tags.py::test_committed_groups_hold_the_named_universes",
+    "test/spec/sector-tags/test_sector_tags.py::test_committed_sectors_pin_the_corpus_and_reviewed_labels",
+    "test/spec/sector-tags/test_sector_tags.py::test_dropping_a_member_or_a_phrase_is_reported",
+    "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[blank industry]",
+    "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[duplicate cik]",
+    "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[duplicate ticker]",
+    "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[empty industry]",
+    "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[empty source]",
+    "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[impossible as_of]",
+    "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[letter in cik]",
+    "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[missing as_of]",
+    "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[missing source]",
+    "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[non-ISO as_of]",
+    "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[unknown entry key]",
+    "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[unknown sector]",
+    "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[unknown top-level key]",
+    "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[unpadded cik]",
+    "test/spec/sector-tags/test_sector_tags.py::test_each_config_error_raises[wrong-case sector]",
+    "test/spec/sector-tags/test_sector_tags.py::test_entry_order_does_not_change_the_result",
+    "test/spec/sector-tags/test_sector_tags.py::test_every_committed_tag_agrees_with_the_committed_sources",
+    "test/spec/sector-tags/test_sector_tags.py::test_group_resolves_to_sorted_ciks",
+    "test/spec/sector-tags/test_sector_tags.py::test_groups_file_loads_and_malformed_files_raise",
+    "test/spec/sector-tags/test_sector_tags.py::test_plan_is_complete_idempotent_and_order_free",
+    "test/spec/sector-tags/test_sector_tags.py::test_plan_updates_only_what_differs",
+    "test/spec/sector-tags/test_sector_tags.py::test_resolved_ciks_are_exactly_the_members",
+    "test/spec/sector-tags/test_sector_tags.py::test_rules_resolve_to_sorted_tickers_and_bad_rules_raise",
+    "test/spec/sector-tags/test_sector_tags.py::test_valid_file_loads_to_the_documented_shape"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/sector-tags.md",
+    "sha256": "6729e676522c5dd59f5b0a1ebc2fffb023489501347cb22e83ec264ad3b06fd1"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

@@ -1,0 +1,176 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-07",
+  "criteria": {
+    "C1": [
+      "test/spec/extension-classification/test_extension_classification.py::test_c1_subjects_are_the_custom_pre_rows",
+      "test/spec/extension-classification/test_extension_classification.py::test_c1_ext_member_row_raises",
+      "test/spec/extension-classification/test_extension_classification.py::test_c1_input_order_never_matters",
+      "test/spec/extension-classification/test_extension_classification.py::test_c1_namespace_and_local_name_renaming"
+    ],
+    "C2": [
+      "test/spec/extension-classification/test_extension_classification.py::test_c2_identity_rule_classifies_pretax_and_nonoperating",
+      "test/spec/extension-classification/test_extension_classification.py::test_c2_identity_term_needs_an_exact_tree",
+      "test/spec/extension-classification/test_extension_classification.py::test_c2_identity_total_needs_every_required_term"
+    ],
+    "C3": [
+      "test/spec/extension-classification/test_extension_classification.py::test_c3_intel_gains_on_equity_investments_fill_no_optional_term",
+      "test/spec/extension-classification/test_extension_classification.py::test_c3_optional_terms_are_never_filled"
+    ],
+    "C4": [
+      "test/spec/extension-classification/test_extension_classification.py::test_c4_label_and_value_rule",
+      "test/spec/extension-classification/test_extension_classification.py::test_c4_same_label_different_value_is_label_only",
+      "test/spec/extension-classification/test_extension_classification.py::test_c4_scaling_a_filers_values_changes_nothing",
+      "test/spec/extension-classification/test_extension_classification.py::test_c4_value_pair_must_match_period_unit_and_be_non_zero"
+    ],
+    "C5": [
+      "test/spec/extension-classification/test_extension_classification.py::test_c5_components_and_totals",
+      "test/spec/extension-classification/test_extension_classification.py::test_c5_component_with_label_evidence_is_a_conflict",
+      "test/spec/extension-classification/test_extension_classification.py::test_c5_own_family_in_a_guard_is_a_conflict"
+    ],
+    "C6": [
+      "test/spec/extension-classification/test_extension_classification.py::test_c6_two_families_are_ambiguous",
+      "test/spec/extension-classification/test_extension_classification.py::test_c6_second_family_evidence_never_picks"
+    ],
+    "C7": [
+      "test/spec/extension-classification/test_extension_classification.py::test_c7_same_name_two_filers",
+      "test/spec/extension-classification/test_extension_classification.py::test_c7_other_filers_never_change_a_result",
+      "test/spec/extension-classification/test_extension_classification.py::test_c7_borrowed_namespace_changes_nothing"
+    ],
+    "C8": [
+      "test/spec/extension-classification/test_extension_classification.py::test_c8_mapping_rows_next_to_the_hand_list",
+      "test/spec/extension-classification/test_extension_classification.py::test_c8_listed_rows_only_remove_rows"
+    ],
+    "C9": [
+      "test/spec/extension-classification/test_extension_classification.py::test_c9_default_identities_table",
+      "test/spec/extension-classification/test_extension_classification.py::test_c9_identities_parameter"
+    ]
+  },
+  "files": {
+    "test/spec/extension-classification/conftest.py": "fc3dc32f11e825420ae9289b294cdcd18d31e00e15d6633b1facf2b4e03b82e6",
+    "test/spec/extension-classification/fixtures/.gitattributes": "3daebdece2beff8aeae68e20166186b4a26211c69d47fe609dfc0716c1872d61",
+    "test/spec/extension-classification/fixtures/calc/0000002488-26-000123.json": "642f63ba2f54d61b363fa1492769a0badbb88b2eb641206379ab5403cf1749ac",
+    "test/spec/extension-classification/fixtures/calc/0000050863-25-000009.json": "9953486a0f29adb85806493176cbbf45a6097fed288111896a3b4f3d9a0cf063",
+    "test/spec/extension-classification/fixtures/calc/0000059478-26-000013.json": "95e9368f7ac8aa6e68e3749d9d0ca5c3089e57661a544c8fa0d85dd488c39686",
+    "test/spec/extension-classification/fixtures/calc/0000063908-25-000012.json": "b32503df98cd92a75134614c132b28989411f2d9cfd1b0daecf55ae0d6b8184d",
+    "test/spec/extension-classification/fixtures/calc/0000080424-23-000073.json": "c0ccefaf067a01d86c60f5ea572fe1cdefa95fe49b34cd818434d655bf07dea6",
+    "test/spec/extension-classification/fixtures/calc/0000936468-25-000009.json": "2a3ad62b8fb94502d648fcdf26c0b7a0fbf20a92e5feb6ed7985366ba43c421d",
+    "test/spec/extension-classification/fixtures/calc/0001045810-23-000017.json": "017e3720bca36f803e57224fa57fef3943805fabc28018479cb320ed5c04ee71",
+    "test/spec/extension-classification/fixtures/calc/0001045810-25-000023.json": "d8b66f93132e7197ccd8367620617a60a03a22c135b4c94251f578095f807161",
+    "test/spec/extension-classification/fixtures/calc/0001045810-26-000021.json": "c1dd4c1b5da2f1eea53d0efc32e0189edd29aef3585263dad8bf4e7f2d440254",
+    "test/spec/extension-classification/fixtures/calc/0001193125-24-099840.json": "1fc04969eecc10e05d91a48e5bf26eb4f7f3e495714680a7f8bd7aeef96c4416",
+    "test/spec/extension-classification/fixtures/calc/0001193125-25-083423.json": "559ccc98179917b725285546133d5c227431cb582d7e973da71c3a33b599c473",
+    "test/spec/extension-classification/fixtures/calc/0001193125-26-277521.json": "0dd225183d17ce57dd4829122820439a9c9148031c9a167af3ded36adf29e98f",
+    "test/spec/extension-classification/fixtures/calc/0001628280-25-003063.json": "a47f976abd53a05a1c81485a01eaa851ee4e7a94f33a5d1ad415604253e53514",
+    "test/spec/extension-classification/fixtures/calc/0001628280-26-004195.json": "e68ba6309b881a02c658b0d7e2095a3b6b9713987c40c25f019d6412fef832ef",
+    "test/spec/extension-classification/fixtures/calc/0001628280-26-025362.json": "03b34bb5f6cfd30d01ac99aa4908b5ae46979351e3000222af0a9ea321a64bdc",
+    "test/spec/extension-classification/fixtures/calc/0001730168-25-000121.json": "55dec48b90604dd522b8312612bb34fe3473bb2830bfe7ff06b2903551fb7104",
+    "test/spec/extension-classification/fixtures/fsds/2023q1/num.tsv": "7661de2e53c861c9f38c6b3f0a2da071665ce1de060c25d54a9cef5c0806ed82",
+    "test/spec/extension-classification/fixtures/fsds/2023q1/pre.tsv": "e4aa51fe0d597662d9f45d49b98dc7c0b2d539d412c669435143aa61b3b56c20",
+    "test/spec/extension-classification/fixtures/fsds/2023q1/sub.tsv": "438bf0503b8296823e376092522d73e8135d47222d6c83c5790e17fe41a812bf",
+    "test/spec/extension-classification/fixtures/fsds/2023q1/tag.tsv": "db7ba3c0455239d576cc69d79b97f8b3f389bff5bc3a72a0ee600083c5d52eeb",
+    "test/spec/extension-classification/fixtures/fsds/2023q3/num.tsv": "74f6e4842218e660b76366cdd9fa98e92718bb4eecab36aef86edb76d6418f2f",
+    "test/spec/extension-classification/fixtures/fsds/2023q3/pre.tsv": "582e2e275450da7d98d8241d2274e6ced03e4b15f7c0976f4715edc8fc7819e7",
+    "test/spec/extension-classification/fixtures/fsds/2023q3/sub.tsv": "35900bebf79513574be516ba2d6e77067be5793590292a15ee605ac30884d1f8",
+    "test/spec/extension-classification/fixtures/fsds/2023q3/tag.tsv": "df8487ab5e8a5e66082c8efdb8b7643f4a59c1b10ea5d856a3ac7526ece69f51",
+    "test/spec/extension-classification/fixtures/fsds/2024q2/num.tsv": "63e1fd4bbc169f797f5585fb6ce9f7b0eff3112ec25e964909b90f5b91fc41c2",
+    "test/spec/extension-classification/fixtures/fsds/2024q2/pre.tsv": "2a1775d285649aca962cdbeb4dfe2151a6fec0ae4405a74a0ffe4d27d2fe5c66",
+    "test/spec/extension-classification/fixtures/fsds/2024q2/sub.tsv": "029ebdefb41c5d31ba6b0395d70638e6a4d6f6869b2e8a2fe2f3518aa80090ca",
+    "test/spec/extension-classification/fixtures/fsds/2024q2/tag.tsv": "09b6fc491b32b5724c617bc8cf10d3340b39fd8e9eddb9735e0ec71431123efb",
+    "test/spec/extension-classification/fixtures/fsds/2025q1/num.tsv": "48268ca2a9a1aea78d322c760a1808c1a73034e07b29205f96d71ba1a94fb617",
+    "test/spec/extension-classification/fixtures/fsds/2025q1/pre.tsv": "44e34abad061b85b5b3e8e23c00d3879a2ba458560c98bc31b53148675fda4ac",
+    "test/spec/extension-classification/fixtures/fsds/2025q1/sub.tsv": "081194893fa094274d017149ccd52b8c606993e4ea20d358df2a839cc057cada",
+    "test/spec/extension-classification/fixtures/fsds/2025q1/tag.tsv": "dc17b5413bae92f4c749fda45cc1834d76827c430698159e56b794013412c217",
+    "test/spec/extension-classification/fixtures/fsds/2025q2/num.tsv": "11347e542baa474e191646702ada6da431c8aa749dd457c3ec6eba9e4fc24b92",
+    "test/spec/extension-classification/fixtures/fsds/2025q2/pre.tsv": "a4e0aeee066e6f0aa9845f6a342ffb84ce16a68b65972835a49f9146396514d8",
+    "test/spec/extension-classification/fixtures/fsds/2025q2/sub.tsv": "ffcee05df23c9d86b5fad1a322a57ed982018ec3fbf317bb27ee09b30c5509cb",
+    "test/spec/extension-classification/fixtures/fsds/2025q2/tag.tsv": "6fa321cbbf2221f434b0778ba0474327e7a7df1d59499065680ea117d2814534",
+    "test/spec/extension-classification/fixtures/fsds/2025q4/num.tsv": "25f496e38eb69422a284a83b7de7615f8fa6abe1ceb1f060e6e71114b37ea53c",
+    "test/spec/extension-classification/fixtures/fsds/2025q4/pre.tsv": "da55013163bac4eb7f576510b6985f849c388ff05d0f26316472c7ab0a103527",
+    "test/spec/extension-classification/fixtures/fsds/2025q4/sub.tsv": "852052771c91854c4ee280cee044cc54f75229827017a024abc31924539ac68b",
+    "test/spec/extension-classification/fixtures/fsds/2025q4/tag.tsv": "4b0a00a7f8bde960d78770e67a0feaa905ba2c144a122e1277b1a2b18be95775",
+    "test/spec/extension-classification/fixtures/fsds/2026q1/num.tsv": "e9adf3ffdffa9f671aa481ce23932702da988371111aac8f52c5f7bf77a61f99",
+    "test/spec/extension-classification/fixtures/fsds/2026q1/pre.tsv": "330107205663a47c8de5007be8b600225705df7041e1aeed2ac050c7aa97850c",
+    "test/spec/extension-classification/fixtures/fsds/2026q1/sub.tsv": "e88b9b2fb3e7d87ca1522074bc6b9322ed939f141eacca0863d440d1ccb15d6d",
+    "test/spec/extension-classification/fixtures/fsds/2026q1/tag.tsv": "f07b8b33edd446d2bb8a75f5c0c253028440d6e374f98f9a84e03029bc10f439",
+    "test/spec/extension-classification/fixtures/fsds/2026q2/num.tsv": "6c9e3446aa0b19f32d6702728ac18d4ab10483b56b3a360712ce3584b4bcbd86",
+    "test/spec/extension-classification/fixtures/fsds/2026q2/pre.tsv": "5bddf9ecacac660b41de5ffeee3a17cf6bcca7206f17bdd9057604a0597029a0",
+    "test/spec/extension-classification/fixtures/fsds/2026q2/sub.tsv": "8d5da6ac0aa68e06e83a7b164a1b6095464e244cf59eb18bb43185a1a5b0b430",
+    "test/spec/extension-classification/fixtures/fsds/2026q2/tag.tsv": "8e3396152c7db199d6005f274d6f7c8d4e447f7154c8e66038a90904cae8e007",
+    "test/spec/extension-classification/fixtures/fsds/2026q3/num.tsv": "1b1abfe55f7f1414cc2ac11015f2137bfa59954b023880709243c5abb33aaf73",
+    "test/spec/extension-classification/fixtures/fsds/2026q3/pre.tsv": "b53c5665957c5ad71b03c35a8b67a99ca89d2490dacc00d2675a08de77a65c8c",
+    "test/spec/extension-classification/fixtures/fsds/2026q3/sub.tsv": "f176de5e69480251019483a729af8df390fd1bbeb0475c8f43d4ad555903d6f2",
+    "test/spec/extension-classification/fixtures/fsds/2026q3/tag.tsv": "6048a021c51ea0ea4ebca156df9bf0a3ce13f6931818ea3e217458c3889158f7",
+    "test/spec/extension-classification/fixtures/listed.json": "3b78c55ee10127a8af759af8dff92cae49ee2af2e446d83bdd43f86d39394329",
+    "test/spec/extension-classification/fixtures/members.json": "374c1d1bee414bf4d084ba5c33adf4ff5a2ae4bf4f812744ddc5654a9ef568ff",
+    "test/spec/extension-classification/fixtures/provenance.json": "bc1da058056c6140bc9966e9f8a65c6b659856438d7fd3acb96ee3b250e9f4af",
+    "test/spec/extension-classification/test_extension_classification.py": "cbbcebc6b7023777154b8989ae1f6822f4cdaf3068bdea69ce3cf4eb8b4217ca"
+  },
+  "id": "extension-classification",
+  "interface": [
+    {
+      "file": "src/ingest/sec_edgar/xbrl/extension_classifier.py",
+      "module": "ingest.sec_edgar.xbrl.extension_classifier",
+      "qualname": "default_identities",
+      "signature": "def default_identities() -> tuple[dict[str, Any], ...]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/xbrl/extension_classifier.py",
+      "module": "ingest.sec_edgar.xbrl.extension_classifier",
+      "qualname": "classify_extensions",
+      "signature": "def classify_extensions(filings: Iterable[Mapping[str, Any]], members: Iterable[Mapping[str, Any]], identities: Iterable[Mapping[str, Any]] | None=None) -> list[dict[str, Any]]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/xbrl/extension_classifier.py",
+      "module": "ingest.sec_edgar.xbrl.extension_classifier",
+      "qualname": "extension_mapping_rows",
+      "signature": "def extension_mapping_rows(results: Iterable[Mapping[str, Any]], listed: Iterable[Mapping[str, Any]]) -> dict[str, Any]"
+    }
+  ],
+  "nodes": [
+    "test/spec/extension-classification/test_extension_classification.py::test_c1_ext_member_row_raises",
+    "test/spec/extension-classification/test_extension_classification.py::test_c1_input_order_never_matters",
+    "test/spec/extension-classification/test_extension_classification.py::test_c1_namespace_and_local_name_renaming",
+    "test/spec/extension-classification/test_extension_classification.py::test_c1_subjects_are_the_custom_pre_rows",
+    "test/spec/extension-classification/test_extension_classification.py::test_c2_identity_rule_classifies_pretax_and_nonoperating",
+    "test/spec/extension-classification/test_extension_classification.py::test_c2_identity_term_needs_an_exact_tree",
+    "test/spec/extension-classification/test_extension_classification.py::test_c2_identity_total_needs_every_required_term",
+    "test/spec/extension-classification/test_extension_classification.py::test_c3_intel_gains_on_equity_investments_fill_no_optional_term",
+    "test/spec/extension-classification/test_extension_classification.py::test_c3_optional_terms_are_never_filled",
+    "test/spec/extension-classification/test_extension_classification.py::test_c4_label_and_value_rule",
+    "test/spec/extension-classification/test_extension_classification.py::test_c4_same_label_different_value_is_label_only",
+    "test/spec/extension-classification/test_extension_classification.py::test_c4_scaling_a_filers_values_changes_nothing",
+    "test/spec/extension-classification/test_extension_classification.py::test_c4_value_pair_must_match_period_unit_and_be_non_zero",
+    "test/spec/extension-classification/test_extension_classification.py::test_c5_component_with_label_evidence_is_a_conflict",
+    "test/spec/extension-classification/test_extension_classification.py::test_c5_components_and_totals",
+    "test/spec/extension-classification/test_extension_classification.py::test_c5_own_family_in_a_guard_is_a_conflict",
+    "test/spec/extension-classification/test_extension_classification.py::test_c6_second_family_evidence_never_picks",
+    "test/spec/extension-classification/test_extension_classification.py::test_c6_two_families_are_ambiguous",
+    "test/spec/extension-classification/test_extension_classification.py::test_c7_borrowed_namespace_changes_nothing",
+    "test/spec/extension-classification/test_extension_classification.py::test_c7_other_filers_never_change_a_result",
+    "test/spec/extension-classification/test_extension_classification.py::test_c7_same_name_two_filers",
+    "test/spec/extension-classification/test_extension_classification.py::test_c8_listed_rows_only_remove_rows",
+    "test/spec/extension-classification/test_extension_classification.py::test_c8_mapping_rows_next_to_the_hand_list",
+    "test/spec/extension-classification/test_extension_classification.py::test_c9_default_identities_table",
+    "test/spec/extension-classification/test_extension_classification.py::test_c9_identities_parameter"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/extension-classification.md",
+    "sha256": "21022f8b8c2c0cbbdef78d06cafb68dd35a7585e5c8a871b5902425aaeabded6"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

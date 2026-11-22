@@ -1,0 +1,21 @@
+# Prometheus config for the docker-compose `monitoring` profile (WS-6/B7 × WS-7/B8).
+# Same rules as configs/monitoring/alerts.yml, but the scrape target is the compose
+# service DNS name `api:8000` (the standalone configs/monitoring/prometheus.yml
+# targets localhost:8000 for a non-containerized run).
+
+global:
+  scrape_interval: 30s
+  evaluation_interval: 30s
+  external_labels:
+    service: arag-xbrl
+
+rule_files:
+  - /etc/prometheus/alerts.yml
+
+scrape_configs:
+  - job_name: arag-xbrl
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["api:8000"]
+        labels:
+          env: compose

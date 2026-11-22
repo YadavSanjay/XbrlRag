@@ -1,0 +1,84 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-11",
+  "criteria": {
+    "C1": [
+      "test/spec/debt-ifrs-elements/test_c1_element_list.py::test_live_debt_rule_lists_exactly_the_borrowing_elements",
+      "test/spec/debt-ifrs-elements/test_c1_element_list.py::test_live_debt_rule_loads_equal_to_the_locked_copy",
+      "test/spec/debt-ifrs-elements/test_c1_element_list.py::test_every_listed_element_is_a_borrowing_balance_by_definition",
+      "test/spec/debt-ifrs-elements/test_c1_element_list.py::test_every_left_out_element_is_out_for_its_stated_reason",
+      "test/spec/debt-ifrs-elements/test_c1_element_list.py::test_no_listed_element_is_a_stated_substitute"
+    ],
+    "C2": [
+      "test/spec/debt-ifrs-elements/test_c2_tsm.py::test_live_debt_rule_selects_tsm_three_borrowing_lines",
+      "test/spec/debt-ifrs-elements/test_c2_tsm.py::test_tsm_debt_key_is_defined_with_the_current_portion",
+      "test/spec/debt-ifrs-elements/test_c2_tsm.py::test_without_the_elements_tsm_debt_omits_the_current_portion",
+      "test/spec/debt-ifrs-elements/test_c2_tsm.py::test_tsm_key_is_invariant_to_line_labels_of_listed_elements",
+      "test/spec/debt-ifrs-elements/test_c2_tsm.py::test_tsm_lease_line_never_joins_by_element[Others]",
+      "test/spec/debt-ifrs-elements/test_c2_tsm.py::test_tsm_lease_line_never_joins_by_element[Long-term borrowings]",
+      "test/spec/debt-ifrs-elements/test_c2_tsm.py::test_tsm_lease_line_never_joins_by_element[Lease liabilities]"
+    ],
+    "C3": [
+      "test/spec/debt-ifrs-elements/test_c3_generality.py::test_each_listed_element_counts_on_a_neutral_label",
+      "test/spec/debt-ifrs-elements/test_c3_generality.py::test_the_same_local_name_outside_ifrs_full_never_counts_by_element[ext]",
+      "test/spec/debt-ifrs-elements/test_c3_generality.py::test_the_same_local_name_outside_ifrs_full_never_counts_by_element[us-gaap/2024]",
+      "test/spec/debt-ifrs-elements/test_c3_generality.py::test_any_mix_of_listed_and_left_out_elements_sums_the_listed_ones",
+      "test/spec/debt-ifrs-elements/test_c3_generality.py::test_us_gaap_filings_do_not_move"
+    ]
+  },
+  "files": {
+    "test/spec/debt-ifrs-elements/conftest.py": "27a736aa8a7a2c659fecebdbf0cc7556ba637e3ea17b9aa5cc331d1d05a116d9",
+    "test/spec/debt-ifrs-elements/fixtures/.gitattributes": "3daebdece2beff8aeae68e20166186b4a26211c69d47fe609dfc0716c1872d61",
+    "test/spec/debt-ifrs-elements/fixtures/companyfacts_excerpt.json": "25ed28f7ecf83c1ffd1798bbbc5999dc04d0ac6c07044d269b8960b5276da17f",
+    "test/spec/debt-ifrs-elements/fixtures/fsds/2025q2/num.tsv": "889d7afbf6ecac79eb0526deafa1617bf12d6d4ed3380c95cb434a5a2ef836c9",
+    "test/spec/debt-ifrs-elements/fixtures/fsds/2025q2/pre.tsv": "3363babf3f767a84d74edafc979f2e4b7b8ad408187af74577d35bb80cbb649c",
+    "test/spec/debt-ifrs-elements/fixtures/fsds/2025q2/sub.tsv": "ffcee05df23c9d86b5fad1a322a57ed982018ec3fbf317bb27ee09b30c5509cb",
+    "test/spec/debt-ifrs-elements/fixtures/fsds/2025q2/tag.tsv": "f6dfeda17dceaaa806be0b8a5a48518363ca2fb456fcd434baada5911c3f8e19",
+    "test/spec/debt-ifrs-elements/fixtures/provenance.json": "14600418d7c67ee1ef76d567cf2cee01adfb0b2a390084e950d42237d9190bae",
+    "test/spec/debt-ifrs-elements/fixtures/statement_lines_debt.yaml": "10c53ebff5e1a8cb31170a1385bff346e3f8796fa95b8159f3bbe3e49058e277",
+    "test/spec/debt-ifrs-elements/fixtures/taxonomy_excerpt_ifrs.json": "f9c4d0b5d39a3b83ec01ebd21999c14e626331f6e31b66525f9a467f86547b9e",
+    "test/spec/debt-ifrs-elements/test_c1_element_list.py": "38b8a666fe506d2f448fbb4c9de55fec0aafc03619e6e95e2ee0ca7bc58945a9",
+    "test/spec/debt-ifrs-elements/test_c2_tsm.py": "f6f3560cf029d71c9cf60b78c538c6d725b25d0d8401f8692b334d46c99efc68",
+    "test/spec/debt-ifrs-elements/test_c3_generality.py": "c015621b955480412a76b1acc60d94f6d0a3d326fe644e3d23a54c8f9c1ea931"
+  },
+  "id": "debt-ifrs-elements",
+  "interface": [],
+  "nodes": [
+    "test/spec/debt-ifrs-elements/test_c1_element_list.py::test_every_left_out_element_is_out_for_its_stated_reason",
+    "test/spec/debt-ifrs-elements/test_c1_element_list.py::test_every_listed_element_is_a_borrowing_balance_by_definition",
+    "test/spec/debt-ifrs-elements/test_c1_element_list.py::test_live_debt_rule_lists_exactly_the_borrowing_elements",
+    "test/spec/debt-ifrs-elements/test_c1_element_list.py::test_live_debt_rule_loads_equal_to_the_locked_copy",
+    "test/spec/debt-ifrs-elements/test_c1_element_list.py::test_no_listed_element_is_a_stated_substitute",
+    "test/spec/debt-ifrs-elements/test_c2_tsm.py::test_live_debt_rule_selects_tsm_three_borrowing_lines",
+    "test/spec/debt-ifrs-elements/test_c2_tsm.py::test_tsm_debt_key_is_defined_with_the_current_portion",
+    "test/spec/debt-ifrs-elements/test_c2_tsm.py::test_tsm_key_is_invariant_to_line_labels_of_listed_elements",
+    "test/spec/debt-ifrs-elements/test_c2_tsm.py::test_tsm_lease_line_never_joins_by_element[Lease liabilities]",
+    "test/spec/debt-ifrs-elements/test_c2_tsm.py::test_tsm_lease_line_never_joins_by_element[Long-term borrowings]",
+    "test/spec/debt-ifrs-elements/test_c2_tsm.py::test_tsm_lease_line_never_joins_by_element[Others]",
+    "test/spec/debt-ifrs-elements/test_c2_tsm.py::test_without_the_elements_tsm_debt_omits_the_current_portion",
+    "test/spec/debt-ifrs-elements/test_c3_generality.py::test_any_mix_of_listed_and_left_out_elements_sums_the_listed_ones",
+    "test/spec/debt-ifrs-elements/test_c3_generality.py::test_each_listed_element_counts_on_a_neutral_label",
+    "test/spec/debt-ifrs-elements/test_c3_generality.py::test_the_same_local_name_outside_ifrs_full_never_counts_by_element[ext]",
+    "test/spec/debt-ifrs-elements/test_c3_generality.py::test_the_same_local_name_outside_ifrs_full_never_counts_by_element[us-gaap/2024]",
+    "test/spec/debt-ifrs-elements/test_c3_generality.py::test_us_gaap_filings_do_not_move"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/debt-ifrs-elements.md",
+    "sha256": "354a0c29790c07e75419c75e6c65ab523f8c8036ee05119bc968a8e9e66b49fd"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

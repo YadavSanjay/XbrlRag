@@ -1,0 +1,297 @@
+{
+  "code_commit": "8c41daa2a247995be60c7af5f2bda1b037fb766a",
+  "code_dirty": false,
+  "grader_version": "3",
+  "packages": {
+    "anthropic": "0.109.1",
+    "arelle-release": "2.41.0",
+    "httpx": "0.28.1",
+    "hypothesis": "6.168.5",
+    "openai": "2.14.0",
+    "psycopg2": "2.9.12",
+    "pydantic": "2.11.9",
+    "pytest": "9.0.1",
+    "qdrant-client": "1.18.0"
+  },
+  "profiles": {
+    "anthropic": {
+      "stages": {
+        "closed_book": {
+          "model": "claude-sonnet-5-5",
+          "prompt_ref": "_base/closed_book/v1",
+          "prompt_version": "b0bba826ffad",
+          "provider": "anthropic",
+          "series": "claude-5"
+        },
+        "faithfulness_verifier": {
+          "model": "claude-haiku-5-5",
+          "prompt_ref": "_base/faithfulness_verifier/v1",
+          "prompt_version": "9b69b79e057b",
+          "provider": "anthropic",
+          "series": "claude-5"
+        },
+        "intent_router": {
+          "model": "claude-sonnet-5-5",
+          "prompt_ref": "_base/intent_router/v2",
+          "prompt_version": "2057d0231f76",
+          "provider": "anthropic",
+          "series": "claude-5"
+        },
+        "naive_rag": {
+          "model": "claude-sonnet-5-5",
+          "prompt_ref": "_base/naive_rag/v1",
+          "prompt_version": "c39d433049e3",
+          "provider": "anthropic",
+          "series": "claude-5"
+        },
+        "plan_generator": {
+          "model": "claude-sonnet-5-5",
+          "prompt_ref": "_base/plan_generator/v5",
+          "prompt_version": "9581363054a8",
+          "provider": "anthropic",
+          "series": "claude-5"
+        },
+        "query_decomposer": {
+          "model": "claude-sonnet-5-5",
+          "prompt_ref": "_base/query_decomposer/v2",
+          "prompt_version": "39061e246475",
+          "provider": "anthropic",
+          "series": "claude-5"
+        },
+        "synthesizer": {
+          "model": "claude-sonnet-5-5",
+          "prompt_ref": "_base/synthesizer/v1",
+          "prompt_version": "5de898829904",
+          "provider": "anthropic",
+          "series": "claude-5"
+        }
+      },
+      "tiers": {
+        "frontier": "claude-opus-5-5",
+        "medium": "claude-sonnet-5-5",
+        "small": "claude-haiku-5-5"
+      }
+    },
+    "long_context": {
+      "stages": {
+        "claude-opus-5-5": {
+          "model": "claude-opus-5-5",
+          "prompt_ref": "_base/long_context/v2",
+          "prompt_version": "c3ae010ed5f9",
+          "provider": "anthropic",
+          "series": "claude-5"
+        },
+        "gpt-5.6-sol": {
+          "model": "gpt-5.6-sol",
+          "prompt_ref": "_base/long_context/v2",
+          "prompt_version": "c3ae010ed5f9",
+          "provider": "openai",
+          "series": "gpt-5"
+        }
+      }
+    },
+    "openai": {
+      "stages": {
+        "closed_book": {
+          "model": "gpt-5-mini",
+          "prompt_ref": "_base/closed_book/v1",
+          "prompt_version": "b0bba826ffad",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "faithfulness_verifier": {
+          "model": "gpt-5-nano",
+          "prompt_ref": "_base/faithfulness_verifier/v1",
+          "prompt_version": "9b69b79e057b",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "intent_router": {
+          "model": "gpt-5-mini",
+          "prompt_ref": "_base/intent_router/v2",
+          "prompt_version": "2057d0231f76",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "naive_rag": {
+          "model": "gpt-5-mini",
+          "prompt_ref": "_base/naive_rag/v1",
+          "prompt_version": "c39d433049e3",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "plan_generator": {
+          "model": "gpt-5-mini",
+          "prompt_ref": "_base/plan_generator/v5",
+          "prompt_version": "9581363054a8",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "query_decomposer": {
+          "model": "gpt-5-mini",
+          "prompt_ref": "_base/query_decomposer/v2",
+          "prompt_version": "39061e246475",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "synthesizer": {
+          "model": "gpt-5-mini",
+          "prompt_ref": "_base/synthesizer/v1",
+          "prompt_version": "5de898829904",
+          "provider": "openai",
+          "series": "gpt-5"
+        }
+      },
+      "tiers": {
+        "frontier": "gpt-5",
+        "medium": "gpt-5-mini",
+        "small": "gpt-5-nano"
+      }
+    },
+    "openai-5.6": {
+      "stages": {
+        "closed_book": {
+          "model": "gpt-5.6-terra",
+          "prompt_ref": "_base/closed_book/v1",
+          "prompt_version": "b0bba826ffad",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "faithfulness_verifier": {
+          "model": "gpt-5.6-luna",
+          "prompt_ref": "_base/faithfulness_verifier/v1",
+          "prompt_version": "9b69b79e057b",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "intent_router": {
+          "model": "gpt-5.6-terra",
+          "prompt_ref": "_base/intent_router/v2",
+          "prompt_version": "2057d0231f76",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "naive_rag": {
+          "model": "gpt-5.6-terra",
+          "prompt_ref": "_base/naive_rag/v1",
+          "prompt_version": "c39d433049e3",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "plan_generator": {
+          "model": "gpt-5.6-terra",
+          "prompt_ref": "_base/plan_generator/v5",
+          "prompt_version": "9581363054a8",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "query_decomposer": {
+          "model": "gpt-5.6-terra",
+          "prompt_ref": "_base/query_decomposer/v2",
+          "prompt_version": "39061e246475",
+          "provider": "openai",
+          "series": "gpt-5"
+        },
+        "synthesizer": {
+          "model": "gpt-5.6-terra",
+          "prompt_ref": "_base/synthesizer/v1",
+          "prompt_version": "5de898829904",
+          "provider": "openai",
+          "series": "gpt-5"
+        }
+      },
+      "tiers": {
+        "frontier": "gpt-5.6-sol",
+        "medium": "gpt-5.6-terra",
+        "small": "gpt-5.6-luna"
+      }
+    }
+  },
+  "python": "3.12.11",
+  "recorded_at": "2026-10-27T22:50:15Z",
+  "served_models": {
+    "claude-haiku-5-5": {
+      "cost_usd": 8.4e-05,
+      "served": [
+        "claude-haiku-5-5"
+      ]
+    },
+    "claude-opus-5-5": {
+      "cost_usd": 0.002864,
+      "served": [
+        "claude-opus-5-5"
+      ]
+    },
+    "claude-sonnet-5-5": {
+      "cost_usd": 0.001174,
+      "served": [
+        "claude-sonnet-5-5"
+      ]
+    },
+    "gpt-5": {
+      "cost_usd": 0.025697,
+      "served": [
+        "gpt-5-2025-08-07"
+      ]
+    },
+    "gpt-5-mini": {
+      "cost_usd": 0.001195,
+      "served": [
+        "gpt-5-mini-2025-08-07"
+      ]
+    },
+    "gpt-5-nano": {
+      "cost_usd": 0.000359,
+      "served": [
+        "gpt-5-nano-2025-08-07"
+      ]
+    },
+    "gpt-5.6-luna": {
+      "cost_usd": 0.000227,
+      "served": [
+        "gpt-5.6-luna"
+      ]
+    },
+    "gpt-5.6-sol": {
+      "cost_usd": 0.003248,
+      "served": [
+        "gpt-5.6-sol"
+      ]
+    },
+    "gpt-5.6-terra": {
+      "cost_usd": 0.00178,
+      "served": [
+        "gpt-5.6-terra"
+      ]
+    }
+  },
+  "services": {
+    "corpus_fingerprint": "pm:3bf0c14a2f4afad3",
+    "postgres": "PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35226, 64-bit",
+    "qdrant": {
+      "commit": "44ad62f8cd69642be5afa6441612525e24a0d063",
+      "version": "1.18.2"
+    },
+    "raginference": {
+      "embedder": "BAAI/bge-m3",
+      "git_commit": "7cc6abd0c3d202b40228865e581f4bdadbb3284f",
+      "git_dirty": false,
+      "reranker": "jinaai/jina-reranker-v3"
+    }
+  },
+  "stage_tiers": {
+    "closed_book": "medium",
+    "faithfulness_verifier": "small",
+    "intent_router": "medium",
+    "naive_rag": "medium",
+    "plan_generator": "medium",
+    "query_decomposer": "medium",
+    "synthesizer": "medium"
+  },
+  "suite": {
+    "corpus_fingerprint": "pm:3bf0c14a2f4afad3",
+    "n_cases": 482,
+    "path": "test/eval/suites/sql_derived_v1.json",
+    "sha256": "e3f61016b32a20df153d02d80b04a3c31bff90d77b2c89ff8e5a07408697aa3c"
+  }
+}

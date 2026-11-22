@@ -1,0 +1,196 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-10",
+  "criteria": {
+    "C1": [
+      "test/spec/compound-shape/test_c1_intent.py::test_valid_compound_intents_and_their_shapes",
+      "test/spec/compound-shape/test_c1_intent.py::test_single_field_violations_raise",
+      "test/spec/compound-shape/test_c1_intent.py::test_compound_id_follows_the_c3_rule_and_old_ids_do_not_move",
+      "test/spec/compound-shape/test_c1_intent.py::test_n_and_years_property"
+    ],
+    "C10": [
+      "test/spec/compound-shape/test_c10_witness_blocks.py::test_blocked_candidates_are_left_out_and_the_others_kept",
+      "test/spec/compound-shape/test_c10_witness_blocks.py::test_no_raise_and_no_blocking_witness_record",
+      "test/spec/compound-shape/test_c10_witness_blocks.py::test_quota_is_met_in_candidate_order_past_blocked_candidates",
+      "test/spec/compound-shape/test_c10_witness_blocks.py::test_shared_witness_main_build_without_blocks_passes_before_and_after",
+      "test/spec/compound-shape/test_c10_witness_blocks.py::test_main_build_after_the_compound_build_raises_as_on_a_fresh_witness",
+      "test/spec/compound-shape/test_c10_witness_blocks.py::test_a_key_resolved_key_is_used",
+      "test/spec/compound-shape/test_c10_witness_blocks.py::test_a_key_resolved_drop_follows_the_main_build"
+    ],
+    "C2": [
+      "test/spec/compound-shape/test_c2_phrasebook.py::test_loader_accepts_the_table_and_rejects_its_violations",
+      "test/spec/compound-shape/test_c2_phrasebook.py::test_render_rank_by_ratio",
+      "test/spec/compound-shape/test_c2_phrasebook.py::test_render_leader_growth",
+      "test/spec/compound-shape/test_c2_phrasebook.py::test_render_is_exact_substitution",
+      "test/spec/compound-shape/test_c2_phrasebook.py::test_committed_compound_phrasebook_and_lexicon",
+      "test/spec/compound-shape/test_c2_phrasebook.py::test_committed_templates_respect_the_table"
+    ],
+    "C3": [
+      "test/spec/compound-shape/test_c3_ranking.py::test_ranking_part_of_revenue_2024",
+      "test/spec/compound-shape/test_c3_ranking.py::test_ranking_by_operating_income_names_the_untagged_member",
+      "test/spec/compound-shape/test_c3_ranking.py::test_fewer_than_n_ranked_drops_as_too_few_ranked_for_n",
+      "test/spec/compound-shape/test_c3_ranking.py::test_screen_drop_reason_carries_over",
+      "test/spec/compound-shape/test_c3_ranking.py::test_every_ranking_equals_its_screen_key"
+    ],
+    "C4": [
+      "test/spec/compound-shape/test_c4_rank_by_ratio.py::test_winner_and_ratio_point",
+      "test/spec/compound-shape/test_c4_rank_by_ratio.py::test_ratios_are_the_compute_ratio_keys",
+      "test/spec/compound-shape/test_c4_rank_by_ratio.py::test_missing_input_drops_as_dependent_reason",
+      "test/spec/compound-shape/test_c4_rank_by_ratio.py::test_mixed_units_drop_as_unit_mismatch",
+      "test/spec/compound-shape/test_c4_rank_by_ratio.py::test_tie_at_three_significant_figures",
+      "test/spec/compound-shape/test_c4_rank_by_ratio.py::test_tie_band_property",
+      "test/spec/compound-shape/test_c4_rank_by_ratio.py::test_order_of_members_and_filers_never_changes_the_winner"
+    ],
+    "C5": [
+      "test/spec/compound-shape/test_c5_leader_growth.py::test_leader_and_growth_point",
+      "test/spec/compound-shape/test_c5_leader_growth.py::test_growth_reads_both_years_from_the_later_filing",
+      "test/spec/compound-shape/test_c5_leader_growth.py::test_growth_is_the_compute_yoy_growth_key",
+      "test/spec/compound-shape/test_c5_leader_growth.py::test_drop_reasons",
+      "test/spec/compound-shape/test_c5_leader_growth.py::test_prior_sign_property"
+    ],
+    "C6": [
+      "test/spec/compound-shape/test_c6_cases.py::test_rank_by_ratio_case",
+      "test/spec/compound-shape/test_c6_cases.py::test_leader_growth_case",
+      "test/spec/compound-shape/test_c6_cases.py::test_status_is_verified_only_when_every_input_is",
+      "test/spec/compound-shape/test_c6_cases.py::test_every_record_is_well_formed"
+    ],
+    "C7": [
+      "test/spec/compound-shape/test_c7_grading.py::test_correct_answers_pass_in_either_form",
+      "test/spec/compound-shape/test_c7_grading.py::test_wrong_dependent_fails_the_case",
+      "test/spec/compound-shape/test_c7_grading.py::test_ranking_restated_with_a_superlative_is_not_the_pick",
+      "test/spec/compound-shape/test_c7_grading.py::test_pick_falls_back_to_the_last_superlative_sentence",
+      "test/spec/compound-shape/test_c7_grading.py::test_missing_universe_statement_fails_the_ranking",
+      "test/spec/compound-shape/test_c7_grading.py::test_correct_exactly_when_both_parts_are"
+    ],
+    "C8": [
+      "test/spec/compound-shape/test_c8_build_and_write.py::test_suites_and_manifest",
+      "test/spec/compound-shape/test_c8_build_and_write.py::test_quotas_are_met_in_candidate_order",
+      "test/spec/compound-shape/test_c8_build_and_write.py::test_split_follows_both_axes",
+      "test/spec/compound-shape/test_c8_build_and_write.py::test_written_files",
+      "test/spec/compound-shape/test_c8_build_and_write.py::test_builds_are_deterministic",
+      "test/spec/compound-shape/test_c8_build_and_write.py::test_adding_a_filer_never_changes_a_kept_intents_cases"
+    ],
+    "C9": [
+      "test/spec/compound-shape/test_c9_nothing_else_moves.py::test_main_build_unchanged_by_ratio_lexicon_and_compound_build",
+      "test/spec/compound-shape/test_c9_nothing_else_moves.py::test_shape_lists_and_quotas_unchanged",
+      "test/spec/compound-shape/test_c9_nothing_else_moves.py::test_compound_files_leave_the_main_files_untouched"
+    ]
+  },
+  "files": {
+    "test/spec/compound-shape/conftest.py": "c81ae6091a6fee7d63e6929eefa4826c56ad5c4d7ec7a42f7bb6d9f357aaeb5a",
+    "test/spec/compound-shape/lexicon.yaml": "4c1ba3416bc52c0bbc9e0c372a22702b5565642d0afe060dba29825d447d870e",
+    "test/spec/compound-shape/lexicon_main.yaml": "dc12f90a08d38db99f0cccabc420f3527aca73a7467d28fe358cb3187f9c6807",
+    "test/spec/compound-shape/phrasebook_compound.yaml": "dc79f2bc77241c1cd8567e391fab86f7d3df7d4499d5d920a3c37a28451da316",
+    "test/spec/compound-shape/phrasebook_main.yaml": "a2e1300af81b875e48f2c70abf84be59b660df10bf3fd52c5cff5fc36ca7a77d",
+    "test/spec/compound-shape/test_c10_witness_blocks.py": "4a563dbc058e4a9a7d9a5b5ebb3efaa43768ad05d0bc3cec19dbd24857cc5e91",
+    "test/spec/compound-shape/test_c1_intent.py": "bce9f7a83aacb9dc82e2ce8ab2bab3d966d34380eff5746bb57d9a714966c46f",
+    "test/spec/compound-shape/test_c2_phrasebook.py": "729922be9efb8f22abecbca264e871ca4f1a2387b58ddaf8fa14cb98079771b9",
+    "test/spec/compound-shape/test_c3_ranking.py": "d92d1281c3f771bcf02446ab05c3adb3a03dc10851c95005790d39302902f047",
+    "test/spec/compound-shape/test_c4_rank_by_ratio.py": "bc7a82dc5cd44c21da06c3217429fee69c93fd283a73b5b418882cb912315159",
+    "test/spec/compound-shape/test_c5_leader_growth.py": "6d8110fd29d1e268b9572900e48961aaee31a854d3a28a4490a0c0f8a8fc9327",
+    "test/spec/compound-shape/test_c6_cases.py": "c7d0ddff5e3c9c437b4e353eaca6dd04e7a8d152172c84cf12bcfb194e96a9f7",
+    "test/spec/compound-shape/test_c7_grading.py": "2434f666e78195a027dd587d0d469ed3b0ca2474e3785778a12fb91a9e6d55f9",
+    "test/spec/compound-shape/test_c8_build_and_write.py": "00391d6ec1b04a7ef6785cb039036280261e6981a98064a3ceeeb911f764aa66",
+    "test/spec/compound-shape/test_c9_nothing_else_moves.py": "c88c47fc301b43f6f6f2b0218f8713bf1caff9b5d8d70a39a688dc73dc7d9623",
+    "test/spec/compound-shape/witness/.gitattributes": "0683acf03486ac35353535e1eb9c6a0b2f499cca47e404130a725743c8381b77",
+    "test/spec/compound-shape/witness/README.txt": "e3e3bdd45519176e93b992df16bc610a8c5ec4e3fddd6950cf5299a83f4e76c3",
+    "test/spec/compound-shape/witness/fsds/2025q1/num.tsv": "89fc8c3b39c8a0775d2d0eb004904d190b5abbd6e3731b54e444ca33ab28a3f2",
+    "test/spec/compound-shape/witness/fsds/2025q1/pre.tsv": "13292765a2713da474ee6fa12d160a4f5adb4be3442afce81baa4cddb7aeaacc",
+    "test/spec/compound-shape/witness/fsds/2025q1/sub.tsv": "c2378712dec5e5bee8d2db46baa2d99768c8371b977fadb3923a695d7f172185",
+    "test/spec/compound-shape/witness/fsds/2025q1/tag.tsv": "c4543be6ee356c744a312b620f5770cfe38ef28dcbe3335def81a4b48fe2fd2b",
+    "test/spec/compound-shape/witness/key_resolutions_drop.yaml": "e44c812e533e36ebcab487998000439d7a1dfb405c3f7b2779872962780c5c3f",
+    "test/spec/compound-shape/witness/key_resolutions_key.yaml": "bfc7d01cbf5a93b5fe36ff7aaadc3491f5f77f2fba76a501d000d26d53db7d47",
+    "test/spec/compound-shape/witness/key_resolutions_none.yaml": "df4b1792c18300d5b1fd5149d9662da27f0f0fad6e6eee16b067da6779592ec0",
+    "test/spec/compound-shape/witness/note_concepts.yaml": "5be5c267a77214577de7f3304eaa4706617494e1b7aea61080e6e10fd82bba91",
+    "test/spec/compound-shape/witness/statement_lines.yaml": "02aac77f53c8e364ef65efa682cadb527e741cb9ceab626423a69036367c69a8"
+  },
+  "id": "compound-shape",
+  "interface": [
+    {
+      "file": "src/eval/suites/v2_suite.py",
+      "module": "eval.suites.v2_suite",
+      "qualname": "build_compound_suites",
+      "signature": "def build_compound_suites(inventory: Mapping[str, Any], universes: Mapping[str, Sequence[str]], sec: SecSource, fact_store: FactStoreSource, phrasebook: Phrasebook, lexicon: Lexicon, *, quotas: Mapping[str, int], per_intent: int, share: float, salt: str, witness: KeyWitness | None=None) -> dict[str, Any]"
+    },
+    {
+      "file": "src/eval/suites/v2_suite.py",
+      "module": "eval.suites.v2_suite",
+      "qualname": "write_compound_suites",
+      "signature": "def write_compound_suites(build: Mapping[str, Any], out_dir: str | Path) -> dict[str, Path]"
+    }
+  ],
+  "nodes": [
+    "test/spec/compound-shape/test_c10_witness_blocks.py::test_a_key_resolved_drop_follows_the_main_build",
+    "test/spec/compound-shape/test_c10_witness_blocks.py::test_a_key_resolved_key_is_used",
+    "test/spec/compound-shape/test_c10_witness_blocks.py::test_blocked_candidates_are_left_out_and_the_others_kept",
+    "test/spec/compound-shape/test_c10_witness_blocks.py::test_main_build_after_the_compound_build_raises_as_on_a_fresh_witness",
+    "test/spec/compound-shape/test_c10_witness_blocks.py::test_no_raise_and_no_blocking_witness_record",
+    "test/spec/compound-shape/test_c10_witness_blocks.py::test_quota_is_met_in_candidate_order_past_blocked_candidates",
+    "test/spec/compound-shape/test_c10_witness_blocks.py::test_shared_witness_main_build_without_blocks_passes_before_and_after",
+    "test/spec/compound-shape/test_c1_intent.py::test_compound_id_follows_the_c3_rule_and_old_ids_do_not_move",
+    "test/spec/compound-shape/test_c1_intent.py::test_n_and_years_property",
+    "test/spec/compound-shape/test_c1_intent.py::test_single_field_violations_raise",
+    "test/spec/compound-shape/test_c1_intent.py::test_valid_compound_intents_and_their_shapes",
+    "test/spec/compound-shape/test_c2_phrasebook.py::test_committed_compound_phrasebook_and_lexicon",
+    "test/spec/compound-shape/test_c2_phrasebook.py::test_committed_templates_respect_the_table",
+    "test/spec/compound-shape/test_c2_phrasebook.py::test_loader_accepts_the_table_and_rejects_its_violations",
+    "test/spec/compound-shape/test_c2_phrasebook.py::test_render_is_exact_substitution",
+    "test/spec/compound-shape/test_c2_phrasebook.py::test_render_leader_growth",
+    "test/spec/compound-shape/test_c2_phrasebook.py::test_render_rank_by_ratio",
+    "test/spec/compound-shape/test_c3_ranking.py::test_every_ranking_equals_its_screen_key",
+    "test/spec/compound-shape/test_c3_ranking.py::test_fewer_than_n_ranked_drops_as_too_few_ranked_for_n",
+    "test/spec/compound-shape/test_c3_ranking.py::test_ranking_by_operating_income_names_the_untagged_member",
+    "test/spec/compound-shape/test_c3_ranking.py::test_ranking_part_of_revenue_2024",
+    "test/spec/compound-shape/test_c3_ranking.py::test_screen_drop_reason_carries_over",
+    "test/spec/compound-shape/test_c4_rank_by_ratio.py::test_missing_input_drops_as_dependent_reason",
+    "test/spec/compound-shape/test_c4_rank_by_ratio.py::test_mixed_units_drop_as_unit_mismatch",
+    "test/spec/compound-shape/test_c4_rank_by_ratio.py::test_order_of_members_and_filers_never_changes_the_winner",
+    "test/spec/compound-shape/test_c4_rank_by_ratio.py::test_ratios_are_the_compute_ratio_keys",
+    "test/spec/compound-shape/test_c4_rank_by_ratio.py::test_tie_at_three_significant_figures",
+    "test/spec/compound-shape/test_c4_rank_by_ratio.py::test_tie_band_property",
+    "test/spec/compound-shape/test_c4_rank_by_ratio.py::test_winner_and_ratio_point",
+    "test/spec/compound-shape/test_c5_leader_growth.py::test_drop_reasons",
+    "test/spec/compound-shape/test_c5_leader_growth.py::test_growth_is_the_compute_yoy_growth_key",
+    "test/spec/compound-shape/test_c5_leader_growth.py::test_growth_reads_both_years_from_the_later_filing",
+    "test/spec/compound-shape/test_c5_leader_growth.py::test_leader_and_growth_point",
+    "test/spec/compound-shape/test_c5_leader_growth.py::test_prior_sign_property",
+    "test/spec/compound-shape/test_c6_cases.py::test_every_record_is_well_formed",
+    "test/spec/compound-shape/test_c6_cases.py::test_leader_growth_case",
+    "test/spec/compound-shape/test_c6_cases.py::test_rank_by_ratio_case",
+    "test/spec/compound-shape/test_c6_cases.py::test_status_is_verified_only_when_every_input_is",
+    "test/spec/compound-shape/test_c7_grading.py::test_correct_answers_pass_in_either_form",
+    "test/spec/compound-shape/test_c7_grading.py::test_correct_exactly_when_both_parts_are",
+    "test/spec/compound-shape/test_c7_grading.py::test_missing_universe_statement_fails_the_ranking",
+    "test/spec/compound-shape/test_c7_grading.py::test_pick_falls_back_to_the_last_superlative_sentence",
+    "test/spec/compound-shape/test_c7_grading.py::test_ranking_restated_with_a_superlative_is_not_the_pick",
+    "test/spec/compound-shape/test_c7_grading.py::test_wrong_dependent_fails_the_case",
+    "test/spec/compound-shape/test_c8_build_and_write.py::test_adding_a_filer_never_changes_a_kept_intents_cases",
+    "test/spec/compound-shape/test_c8_build_and_write.py::test_builds_are_deterministic",
+    "test/spec/compound-shape/test_c8_build_and_write.py::test_quotas_are_met_in_candidate_order",
+    "test/spec/compound-shape/test_c8_build_and_write.py::test_split_follows_both_axes",
+    "test/spec/compound-shape/test_c8_build_and_write.py::test_suites_and_manifest",
+    "test/spec/compound-shape/test_c8_build_and_write.py::test_written_files",
+    "test/spec/compound-shape/test_c9_nothing_else_moves.py::test_compound_files_leave_the_main_files_untouched",
+    "test/spec/compound-shape/test_c9_nothing_else_moves.py::test_main_build_unchanged_by_ratio_lexicon_and_compound_build",
+    "test/spec/compound-shape/test_c9_nothing_else_moves.py::test_shape_lists_and_quotas_unchanged"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/compound-shape.md",
+    "sha256": "a86e55fd9809e58c38c9832e9a45cb8853f414d4cef27b48074a0f324963b0bf"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

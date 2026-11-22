@@ -1,0 +1,162 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-10",
+  "criteria": {
+    "C1": [
+      "test/spec/statement-rules-by-element/test_c1_schema.py::test_new_fields_load_sparse",
+      "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [BS], include: ['a'], elements: us-gaap:LongTermDebtNoncurrent}\\n]",
+      "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [BS], include: ['a'], elements: []}\\n]",
+      "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [BS], include: ['a'], elements: [LongTermDebtNoncurrent]}\\n]",
+      "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [BS], include: ['a'], elements: ['ext:TermDebt']}\\n]",
+      "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [BS], include: ['a'], elements: ['aapl:TermDebt']}\\n]",
+      "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [BS], include: ['a'], elements: [us-gaap:DebtCurrent, us-gaap:DebtCurrent]}\\n]",
+      "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [BS], include: ['a'], elements: [7]}\\n]",
+      "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X:\\n    statements: [IS]\\n    include: ['a']\\n    elements: [us-gaap:CostsAndExpenses]\\n    substitutes:\\n      us-gaap:CostsAndExpenses: {code: c, note: n}\\n]",
+      "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [IS], include: ['a'], strip_qualifiers: 'yes'}\\n]",
+      "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [IS], include: ['a'], strip_qualifiers: 1}\\n]",
+      "test/spec/statement-rules-by-element/test_c1_schema.py::test_adding_fields_to_a_live_rule_adds_exactly_them"
+    ],
+    "C2": [
+      "test/spec/statement-rules-by-element/test_c2_elements.py::test_element_match_is_label_independent_point",
+      "test/spec/statement-rules-by-element/test_c2_elements.py::test_element_match_is_invariant_to_the_label",
+      "test/spec/statement-rules-by-element/test_c2_elements.py::test_tsm_debt_gains_the_current_portion_by_element",
+      "test/spec/statement-rules-by-element/test_c2_elements.py::test_relabelling_the_element_line_changes_nothing[Accrued interest on guarantee deposits]",
+      "test/spec/statement-rules-by-element/test_c2_elements.py::test_relabelling_the_element_line_changes_nothing[]",
+      "test/spec/statement-rules-by-element/test_c2_elements.py::test_relabelling_the_element_line_changes_nothing[TOTAL]",
+      "test/spec/statement-rules-by-element/test_c2_elements.py::test_relabelling_the_element_line_changes_nothing[Lease liabilities - operating]",
+      "test/spec/statement-rules-by-element/test_c2_elements.py::test_element_lines_still_obey_statement_and_section"
+    ],
+    "C3": [
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Purchases of property and equipment excluding finance leases, net of sales-Purchases of property and equipment]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Intangible assets, net (excluding goodwill)-Intangible assets, net]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Research and Development Expense (Excluding Acquired in Process Cost)-Research and Development Expense]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Total debt, excluding finance leases-Total debt]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Cost of revenue (exclusive of depreciation and amortization shown separately below)-Cost of revenue]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Taxes other than income taxes-Taxes]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Proceeds from issuance of debt, net of issuance costs-Proceeds from issuance of debt]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Long-term debt, net of current portion; excluding finance leases-Long-term debt]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Long-term debt (net of current portion)-Long-term debt]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Senior notes, not including current maturities-Senior notes]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Total revenues, except for leasing-Total revenues]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Accounts receivable, net of allowance for credit losses of $5 and $4-Accounts receivable]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[OTHER THAN TEMPORARY IMPAIRMENT LOSSES-]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Revenues, net-Revenues, net]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Net income-Net income]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Total  debt -Total debt]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Cost excludingdepreciation-Cost excludingdepreciation]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Net offset of hedges-Net offset of hedges]",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_an_appended_qualifier_is_removed",
+      "test/spec/statement-rules-by-element/test_c3_label_head.py::test_a_qualifier_ends_at_its_terminator"
+    ],
+    "C4": [
+      "test/spec/statement-rules-by-element/test_c4_qualifiers.py::test_tsla_capex_line_is_witnessed_once_qualifiers_are_stripped",
+      "test/spec/statement-rules-by-element/test_c4_qualifiers.py::test_a_borrowing_named_only_in_a_qualifier_is_not_debt",
+      "test/spec/statement-rules-by-element/test_c4_qualifiers.py::test_a_term_only_in_a_qualifier_neither_includes_nor_rejects",
+      "test/spec/statement-rules-by-element/test_c4_qualifiers.py::test_require_is_tested_on_the_head_too"
+    ],
+    "C5": [
+      "test/spec/statement-rules-by-element/test_c5_compatibility.py::test_live_rules_on_every_fixture_line_match_the_legacy_test",
+      "test/spec/statement-rules-by-element/test_c5_compatibility.py::test_a_rule_without_new_fields_ignores_qualifiers_and_elements"
+    ]
+  },
+  "files": {
+    "test/spec/statement-rules-by-element/conftest.py": "f0286699cb57c465037e695aa249351618ace89b5d3a33e69f20d14f7d0b9d21",
+    "test/spec/statement-rules-by-element/fixtures/.gitattributes": "15d58e14d560b41a5a1fcb3e819dbb2799b032130bf6a7e3c04c1657f7a1cc3d",
+    "test/spec/statement-rules-by-element/fixtures/fsds/2025q2/num.tsv": "889d7afbf6ecac79eb0526deafa1617bf12d6d4ed3380c95cb434a5a2ef836c9",
+    "test/spec/statement-rules-by-element/fixtures/fsds/2025q2/pre.tsv": "3363babf3f767a84d74edafc979f2e4b7b8ad408187af74577d35bb80cbb649c",
+    "test/spec/statement-rules-by-element/fixtures/fsds/2025q2/sub.tsv": "ffcee05df23c9d86b5fad1a322a57ed982018ec3fbf317bb27ee09b30c5509cb",
+    "test/spec/statement-rules-by-element/fixtures/fsds/2025q2/tag.tsv": "f6dfeda17dceaaa806be0b8a5a48518363ca2fb456fcd434baada5911c3f8e19",
+    "test/spec/statement-rules-by-element/fixtures/fsds/2026q1/num.tsv": "8cdd8e648f8343a32bca40f20742b45332ba820cfabb9a214c65f0293c2e844f",
+    "test/spec/statement-rules-by-element/fixtures/fsds/2026q1/pre.tsv": "c75e6b5c3ffe5975509cbf2be97cfc8f1ff57bd0fb78c209d3edbcbbc93e5386",
+    "test/spec/statement-rules-by-element/fixtures/fsds/2026q1/sub.tsv": "e4504c54855cac9277809d71e135a75de0aa1b78a1678c9a6496bcecee54009e",
+    "test/spec/statement-rules-by-element/fixtures/fsds/2026q1/tag.tsv": "e4b6bb74b7654062bc3bca52ca2d28a48daee06201b33974286e32c5aeacbd7c",
+    "test/spec/statement-rules-by-element/fixtures/provenance.json": "a52845c3b47fde7f24e7963da4ccce296e858005859f906526a5a3e3c9f706df",
+    "test/spec/statement-rules-by-element/test_c1_schema.py": "9bfc784c761c44eb0c2c618b5420073eab54a523cf424f4eaf5acc94e5fe3e86",
+    "test/spec/statement-rules-by-element/test_c2_elements.py": "8fc1aec4e60aa9f77d4194b190125f1940af026b05b1153ec1ca03122cae5513",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py": "c3a2e2c75102e0cd68050868670f3671d09c6e84122b27b3a5283ec2b1655f43",
+    "test/spec/statement-rules-by-element/test_c4_qualifiers.py": "e4a22ad52a49596a9eed76c43ddb5f75a78313ba400dede93a6a74552fcb7033",
+    "test/spec/statement-rules-by-element/test_c5_compatibility.py": "c7853ae6065b271a098a31f0f03ca3c1917ac19c3efed394f1561f3f5646b7be"
+  },
+  "id": "statement-rules-by-element",
+  "interface": [
+    {
+      "file": "src/eval/keys/statement_witness.py",
+      "module": "eval.keys.statement_witness",
+      "qualname": "label_head",
+      "signature": "def label_head(plabel: str) -> str"
+    },
+    {
+      "file": "src/eval/keys/statement_witness.py",
+      "module": "eval.keys.statement_witness",
+      "qualname": "line_is_candidate",
+      "signature": "def line_is_candidate(rule: StatementRule, plabel: str, concept: str) -> bool"
+    }
+  ],
+  "nodes": [
+    "test/spec/statement-rules-by-element/test_c1_schema.py::test_adding_fields_to_a_live_rule_adds_exactly_them",
+    "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [BS], include: ['a'], elements: ['aapl:TermDebt']}\\n]",
+    "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [BS], include: ['a'], elements: ['ext:TermDebt']}\\n]",
+    "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [BS], include: ['a'], elements: [7]}\\n]",
+    "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [BS], include: ['a'], elements: [LongTermDebtNoncurrent]}\\n]",
+    "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [BS], include: ['a'], elements: []}\\n]",
+    "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [BS], include: ['a'], elements: [us-gaap:DebtCurrent, us-gaap:DebtCurrent]}\\n]",
+    "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [BS], include: ['a'], elements: us-gaap:LongTermDebtNoncurrent}\\n]",
+    "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [IS], include: ['a'], strip_qualifiers: 'yes'}\\n]",
+    "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X: {statements: [IS], include: ['a'], strip_qualifiers: 1}\\n]",
+    "test/spec/statement-rules-by-element/test_c1_schema.py::test_malformed_new_fields_are_refused[  X:\\n    statements: [IS]\\n    include: ['a']\\n    elements: [us-gaap:CostsAndExpenses]\\n    substitutes:\\n      us-gaap:CostsAndExpenses: {code: c, note: n}\\n]",
+    "test/spec/statement-rules-by-element/test_c1_schema.py::test_new_fields_load_sparse",
+    "test/spec/statement-rules-by-element/test_c2_elements.py::test_element_lines_still_obey_statement_and_section",
+    "test/spec/statement-rules-by-element/test_c2_elements.py::test_element_match_is_invariant_to_the_label",
+    "test/spec/statement-rules-by-element/test_c2_elements.py::test_element_match_is_label_independent_point",
+    "test/spec/statement-rules-by-element/test_c2_elements.py::test_relabelling_the_element_line_changes_nothing[Accrued interest on guarantee deposits]",
+    "test/spec/statement-rules-by-element/test_c2_elements.py::test_relabelling_the_element_line_changes_nothing[Lease liabilities - operating]",
+    "test/spec/statement-rules-by-element/test_c2_elements.py::test_relabelling_the_element_line_changes_nothing[TOTAL]",
+    "test/spec/statement-rules-by-element/test_c2_elements.py::test_relabelling_the_element_line_changes_nothing[]",
+    "test/spec/statement-rules-by-element/test_c2_elements.py::test_tsm_debt_gains_the_current_portion_by_element",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_a_qualifier_ends_at_its_terminator",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_an_appended_qualifier_is_removed",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Accounts receivable, net of allowance for credit losses of $5 and $4-Accounts receivable]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Cost excludingdepreciation-Cost excludingdepreciation]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Cost of revenue (exclusive of depreciation and amortization shown separately below)-Cost of revenue]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Intangible assets, net (excluding goodwill)-Intangible assets, net]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Long-term debt (net of current portion)-Long-term debt]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Long-term debt, net of current portion; excluding finance leases-Long-term debt]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Net income-Net income]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Net offset of hedges-Net offset of hedges]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[OTHER THAN TEMPORARY IMPAIRMENT LOSSES-]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Proceeds from issuance of debt, net of issuance costs-Proceeds from issuance of debt]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Purchases of property and equipment excluding finance leases, net of sales-Purchases of property and equipment]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Research and Development Expense (Excluding Acquired in Process Cost)-Research and Development Expense]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Revenues, net-Revenues, net]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Senior notes, not including current maturities-Senior notes]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Taxes other than income taxes-Taxes]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Total  debt -Total debt]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Total debt, excluding finance leases-Total debt]",
+    "test/spec/statement-rules-by-element/test_c3_label_head.py::test_label_head_hand_cases[Total revenues, except for leasing-Total revenues]",
+    "test/spec/statement-rules-by-element/test_c4_qualifiers.py::test_a_borrowing_named_only_in_a_qualifier_is_not_debt",
+    "test/spec/statement-rules-by-element/test_c4_qualifiers.py::test_a_term_only_in_a_qualifier_neither_includes_nor_rejects",
+    "test/spec/statement-rules-by-element/test_c4_qualifiers.py::test_require_is_tested_on_the_head_too",
+    "test/spec/statement-rules-by-element/test_c4_qualifiers.py::test_tsla_capex_line_is_witnessed_once_qualifiers_are_stripped",
+    "test/spec/statement-rules-by-element/test_c5_compatibility.py::test_a_rule_without_new_fields_ignores_qualifiers_and_elements",
+    "test/spec/statement-rules-by-element/test_c5_compatibility.py::test_live_rules_on_every_fixture_line_match_the_legacy_test"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/statement-rules-by-element.md",
+    "sha256": "6b4d566c9ac5d0c896ef0c91e11635756694b65eb1734ed82a8733d493d09e45"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

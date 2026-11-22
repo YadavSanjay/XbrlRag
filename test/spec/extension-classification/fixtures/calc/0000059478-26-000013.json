@@ -1,0 +1,92 @@
+{
+ "accession_no": "0000059478-26-000013",
+ "cik": "0000059478",
+ "ticker": "LLY",
+ "extension_namespace": "http://www.lilly.com/20251231",
+ "source_file": "lly-20251231_cal.xml",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231_cal.xml",
+ "source_sha256": "ae3e127d3669387955d275c6584c175446d454b5057a127e1affd23a35fccd2e",
+ "retrieved": "local copy under data/storage/sec_edgar (downloaded at ingest); hashed 2026-11-07",
+ "cross_check": "arcs equal to xbrl_db mv_calculation_network by local name (152 arcs)",
+ "selection": "every summation-item arc of every tree (link role, parent) whose parent or a child is an extension presented on IS/BS/CF",
+ "arcs": [
+  {
+   "link_role": "http://www.lilly.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:LiabilitiesCurrent",
+   "child": "http://fasb.org/us-gaap/2025:AccountsPayableCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lilly.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:LiabilitiesCurrent",
+   "child": "http://fasb.org/us-gaap/2025:DebtCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lilly.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:LiabilitiesCurrent",
+   "child": "http://fasb.org/us-gaap/2025:EmployeeRelatedLiabilitiesCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lilly.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:LiabilitiesCurrent",
+   "child": "http://fasb.org/us-gaap/2025:OtherLiabilitiesCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lilly.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:LiabilitiesCurrent",
+   "child": "http://www.lilly.com/20251231:SalesRebatesAndDiscounts",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lilly.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2025:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "child": "http://fasb.org/us-gaap/2025:Revenues",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lilly.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2025:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "child": "http://www.lilly.com/20251231:CostOfSalesOperatingExpensesAndOtherNet",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.lilly.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://www.lilly.com/20251231:CostOfSalesOperatingExpensesAndOtherNet",
+   "child": "http://fasb.org/us-gaap/2025:CostOfGoodsAndServicesSold",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lilly.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://www.lilly.com/20251231:CostOfSalesOperatingExpensesAndOtherNet",
+   "child": "http://fasb.org/us-gaap/2025:NonoperatingIncomeExpense",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.lilly.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://www.lilly.com/20251231:CostOfSalesOperatingExpensesAndOtherNet",
+   "child": "http://fasb.org/us-gaap/2025:ResearchAndDevelopmentAssetAcquiredOtherThanThroughBusinessCombinationWrittenOff",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lilly.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://www.lilly.com/20251231:CostOfSalesOperatingExpensesAndOtherNet",
+   "child": "http://fasb.org/us-gaap/2025:ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lilly.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://www.lilly.com/20251231:CostOfSalesOperatingExpensesAndOtherNet",
+   "child": "http://fasb.org/us-gaap/2025:RestructuringSettlementAndImpairmentProvisions",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lilly.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://www.lilly.com/20251231:CostOfSalesOperatingExpensesAndOtherNet",
+   "child": "http://fasb.org/us-gaap/2025:SellingGeneralAndAdministrativeExpense",
+   "weight": "1"
+  }
+ ]
+}

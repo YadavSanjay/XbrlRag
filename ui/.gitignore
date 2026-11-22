@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-ssr
+*.local
+.env
+.env.*
+.vite
+*.tsbuildinfo
+# tsc -b emit artifacts from the composite node project
+vite.config.js
+vite.config.d.ts

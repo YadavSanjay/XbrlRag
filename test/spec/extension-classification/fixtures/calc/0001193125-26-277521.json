@@ -1,0 +1,410 @@
+{
+ "accession_no": "0001193125-26-277521",
+ "cik": "0001341439",
+ "ticker": "ORCL",
+ "extension_namespace": "http://www.oracle.com/20260531",
+ "source_file": "orcl-20260531.xsd",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.xsd",
+ "source_sha256": "c23fca3af446fd573f59232b3e1fb828baec5c78e667fa68853b72b695279c45",
+ "retrieved": "local copy under data/storage/sec_edgar (downloaded at ingest); hashed 2026-11-07",
+ "cross_check": "arcs equal to xbrl_db mv_calculation_network by local name (255 arcs)",
+ "selection": "every summation-item arc of every tree (link role, parent) whose parent or a child is an extension presented on IS/BS/CF",
+ "arcs": [
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/DisclosureRestructuringAndOtherExpensesScheduleOfRestructuringAndOtherExpensesDetails",
+   "parent": "http://www.oracle.com/20260531:RestructuringAndOtherExpenses",
+   "child": "http://fasb.org/us-gaap/2025:RestructuringCharges",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/DisclosureRestructuringAndOtherExpensesScheduleOfRestructuringAndOtherExpensesDetails",
+   "parent": "http://www.oracle.com/20260531:RestructuringAndOtherExpenses",
+   "child": "http://www.oracle.com/20260531:OtherOperatingExpensesNet",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureORGANIZATIONANDSIGNIFICANTACCOUNTINGPOLICIESDetails",
+   "parent": "http://www.oracle.com/20260531:NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests",
+   "child": "http://fasb.org/us-gaap/2025:ForeignCurrencyTransactionGainLossBeforeTax",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureORGANIZATIONANDSIGNIFICANTACCOUNTINGPOLICIESDetails",
+   "parent": "http://www.oracle.com/20260531:NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests",
+   "child": "http://fasb.org/us-gaap/2025:GainLossOnInvestments",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureORGANIZATIONANDSIGNIFICANTACCOUNTINGPOLICIESDetails",
+   "parent": "http://www.oracle.com/20260531:NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests",
+   "child": "http://fasb.org/us-gaap/2025:InvestmentIncomeInterest",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureORGANIZATIONANDSIGNIFICANTACCOUNTINGPOLICIESDetails",
+   "parent": "http://www.oracle.com/20260531:NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests",
+   "child": "http://fasb.org/us-gaap/2025:OtherNonoperatingIncomeExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureORGANIZATIONANDSIGNIFICANTACCOUNTINGPOLICIESDetails",
+   "parent": "http://www.oracle.com/20260531:NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests",
+   "child": "http://www.oracle.com/20260531:NonOperatingIncomeExpenseAttributableToMinorityInterest",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureSEGMENTINFORMATIONDetails",
+   "parent": "http://fasb.org/us-gaap/2025:OperatingIncomeLoss",
+   "child": "http://fasb.org/us-gaap/2025:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureSEGMENTINFORMATIONDetails",
+   "parent": "http://fasb.org/us-gaap/2025:OperatingIncomeLoss",
+   "child": "http://fasb.org/us-gaap/2025:SellingAndMarketingExpense",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureSEGMENTINFORMATIONDetails",
+   "parent": "http://fasb.org/us-gaap/2025:OperatingIncomeLoss",
+   "child": "http://www.oracle.com/20260531:CloudAndSoftwareExpenses",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureSEGMENTINFORMATIONDetails",
+   "parent": "http://fasb.org/us-gaap/2025:OperatingIncomeLoss",
+   "child": "http://www.oracle.com/20260531:DirectExpenses",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureSEGMENTINFORMATIONDetails",
+   "parent": "http://fasb.org/us-gaap/2025:OperatingIncomeLoss",
+   "child": "http://www.oracle.com/20260531:HardwareProductsAndSupportExpenses",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureSEGMENTINFORMATIONRECONCILIATIONDetails",
+   "parent": "http://www.oracle.com/20260531:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems",
+   "child": "http://fasb.org/us-gaap/2025:AmortizationOfIntangibleAssets",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureSEGMENTINFORMATIONRECONCILIATIONDetails",
+   "parent": "http://www.oracle.com/20260531:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems",
+   "child": "http://fasb.org/us-gaap/2025:GeneralAndAdministrativeExpense",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureSEGMENTINFORMATIONRECONCILIATIONDetails",
+   "parent": "http://www.oracle.com/20260531:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems",
+   "child": "http://fasb.org/us-gaap/2025:InterestExpense",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureSEGMENTINFORMATIONRECONCILIATIONDetails",
+   "parent": "http://www.oracle.com/20260531:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems",
+   "child": "http://fasb.org/us-gaap/2025:OperatingIncomeLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureSEGMENTINFORMATIONRECONCILIATIONDetails",
+   "parent": "http://www.oracle.com/20260531:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems",
+   "child": "http://fasb.org/us-gaap/2025:ResearchAndDevelopmentExpense",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureSEGMENTINFORMATIONRECONCILIATIONDetails",
+   "parent": "http://www.oracle.com/20260531:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems",
+   "child": "http://www.oracle.com/20260531:ExpenseAllocationsAndOtherNet",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureSEGMENTINFORMATIONRECONCILIATIONDetails",
+   "parent": "http://www.oracle.com/20260531:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems",
+   "child": "http://www.oracle.com/20260531:NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureSEGMENTINFORMATIONRECONCILIATIONDetails",
+   "parent": "http://www.oracle.com/20260531:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems",
+   "child": "http://www.oracle.com/20260531:RestructuringAndOtherExpenses",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_DisclosureSEGMENTINFORMATIONRECONCILIATIONDetails",
+   "parent": "http://www.oracle.com/20260531:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems",
+   "child": "http://www.oracle.com/20260531:StockBasedCompensationSegment",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2025:PaymentsForRepurchaseOfCommonStock",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2025:PaymentsOfDividendsCommonStock",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2025:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2025:ProceedsFromIssuanceOfCommonStock",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2025:ProceedsFromIssuanceOfConvertiblePreferredStock",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2025:ProceedsFromIssuanceOfSeniorLongTermDebt",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2025:ProceedsFromPaymentsForOtherFinancingActivities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2025:ProceedsFromRepaymentsOfCommercialPaper",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2025:RepaymentsOfDebt",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://www.oracle.com/20260531:ProceedsFromRepaymentsOfCommercialPaperAndOtherShort-TermFinancing",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://www.oracle.com/20260531:ProceedsFromShort-TermFinancingRelatedToCapitalExpendituresNet",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2025:AmortizationOfIntangibleAssets",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2025:DeferredIncomeTaxExpenseBenefit",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2025:Depreciation",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2025:IncreaseDecreaseInAccountsPayableAndOtherOperatingLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2025:IncreaseDecreaseInAccountsReceivable",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2025:IncreaseDecreaseInAccruedIncomeTaxesPayable",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2025:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2025:NetIncomeLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2025:OtherNoncashIncomeExpense",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2025:ShareBasedCompensation",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://www.oracle.com/20260531:GainsFromInvestmentsAndOtherNet",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://www.oracle.com/20260531:IncreaseDecreaseInDeferredRevenuesFromCustomerPrepaymentsWithSignificantFinancingComponent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://www.oracle.com/20260531:IncreaseDecreaseInOtherDeferredRevenues",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:CostsAndExpenses",
+   "child": "http://fasb.org/us-gaap/2025:AmortizationOfIntangibleAssets",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:CostsAndExpenses",
+   "child": "http://fasb.org/us-gaap/2025:BusinessCombinationAcquisitionRelatedCosts",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:CostsAndExpenses",
+   "child": "http://fasb.org/us-gaap/2025:GeneralAndAdministrativeExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:CostsAndExpenses",
+   "child": "http://fasb.org/us-gaap/2025:ResearchAndDevelopmentExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:CostsAndExpenses",
+   "child": "http://fasb.org/us-gaap/2025:SellingAndMarketingExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:CostsAndExpenses",
+   "child": "http://www.oracle.com/20260531:CloudAndSoftwareExpenses",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:CostsAndExpenses",
+   "child": "http://www.oracle.com/20260531:CloudServicesAndLicenseSupportExpenses",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:CostsAndExpenses",
+   "child": "http://www.oracle.com/20260531:HardwareExpenses",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:CostsAndExpenses",
+   "child": "http://www.oracle.com/20260531:RestructuringAndOtherExpenses",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:CostsAndExpenses",
+   "child": "http://www.oracle.com/20260531:ServicesExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:NetIncomeLoss",
+   "child": "http://fasb.org/us-gaap/2025:IncomeTaxExpenseBenefit",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:NetIncomeLoss",
+   "child": "http://www.oracle.com/20260531:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "child": "http://www.oracle.com/20260531:CloudLicenseAndOnPremiseLicenseRevenue",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "child": "http://www.oracle.com/20260531:CloudRevenues",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "child": "http://www.oracle.com/20260531:CloudServicesAndLicenseSupportRevenue",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "child": "http://www.oracle.com/20260531:HardwareRevenues",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "child": "http://www.oracle.com/20260531:SalesRevenueServicesNet1",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://fasb.org/us-gaap/2025:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "child": "http://www.oracle.com/20260531:SoftwareRevenues",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://www.oracle.com/20260531:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems",
+   "child": "http://fasb.org/us-gaap/2025:InterestExpense",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://www.oracle.com/20260531:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems",
+   "child": "http://fasb.org/us-gaap/2025:OperatingIncomeLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.oracle.com/20260531/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS",
+   "parent": "http://www.oracle.com/20260531:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems",
+   "child": "http://www.oracle.com/20260531:NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests",
+   "weight": "1"
+  }
+ ]
+}

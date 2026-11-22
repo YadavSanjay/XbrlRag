@@ -1,0 +1,60 @@
+# Company aliases — names a filer is commonly called by that neither its ticker nor its
+# normalized legal name matches exactly (an acronym, a short name, a second share class).
+# Loaded and validated by src/retriever/xbrl/entity_aliases.py;
+# spec: docs/specs/company-aliases.md.
+#
+# Rules: one entry per filer, CIK zero-padded to 10 digits exactly as entity_master stores
+# it (CIKs from SEC EDGAR). An alias must name the whole filer — never a segment or brand
+# (e.g. "AWS" is Amazon's segment; mapping it would answer a segment question with the
+# consolidated filer). Matching is exact after normalization: case, spacing, a possessive
+# and surrounding punctuation do not matter. Keep this list short; tickers and names
+# matching the legal name after normalization (entity_resolution.company_name_key)
+# already resolve without it.
+#
+# Variants and misspellings: a former or hyphenated name ("Wal-Mart") and a frequent typo
+# of a large filer's name ("Nvida") are allowed, so they resolve instead of drawing a
+# "did you mean" refusal; the fuzzy threshold and margin stay as they are. Each must be
+# unambiguous: not another company's real name or ticker, and no other filer's name
+# after normalization (checked by test/unit/test_company_alias_variants.py). Hyphen and
+# "&" are not normalized away, so "Wal-Mart" and "Wal Mart" are separate entries.
+companies:
+  - cik: "0001046179"  # TSM — Taiwan Semiconductor Manufacturing Company Limited
+    aliases: ["TSMC", "Taiwan Semiconductor", "Taiwan Semi", "Taiwan Semiconductor Manufacturing"]
+  - cik: "0001652044"  # GOOGL — Alphabet Inc.
+    aliases: ["Google", "GOOG"]  # GOOG: the class C shares; entity_master keeps GOOGL
+  - cik: "0001326801"  # META — Meta Platforms, Inc.
+    aliases: ["Facebook"]
+  - cik: "0000909832"  # COST — Costco Wholesale Corporation
+    aliases: ["Costco"]
+  - cik: "0000059478"  # LLY — Eli Lilly and Company
+    aliases: ["Lilly", "Eli Lily"]  # Eli Lily: common misspelling
+  - cik: "0000080424"  # PG — The Procter & Gamble Company
+    aliases: ["P&G", "Proctor & Gamble", "Proctor and Gamble"]  # Proctor: common misspelling
+  - cik: "0000021344"  # KO — The Coca-Cola Company
+    aliases: ["Coke"]
+  - cik: "0000097476"  # TXN — Texas Instruments Incorporated
+    aliases: ["TI"]
+  - cik: "0000001800"  # ABT — Abbott Laboratories
+    aliases: ["Abbott"]
+  - cik: "0001018724"  # AMZN — Amazon.com, Inc.
+    aliases: ["Amazon", "Amazom"]  # Amazom: typo
+  - cik: "0000858877"  # CSCO — Cisco Systems, Inc.
+    aliases: ["Cisco"]
+  - cik: "0000936468"  # LMT — Lockheed Martin Corporation
+    aliases: ["Lockheed"]
+  - cik: "0000723125"  # MU — Micron Technology, Inc.
+    aliases: ["Micron"]
+  - cik: "0000104169"  # WMT — Walmart Inc.
+    aliases: ["Wal-Mart", "Wal Mart", "Wal-Mart Stores"]  # legal name Wal-Mart Stores, Inc. until 2018
+  - cik: "0001045810"  # NVDA — NVIDIA Corporation
+    aliases: ["Nvida", "Nvidea", "Nividia", "Nvdia"]  # typos
+  - cik: "0000789019"  # MSFT — Microsoft Corporation
+    aliases: ["Mircosoft", "Microsft", "Micorsoft"]  # typos
+  - cik: "0001318605"  # TSLA — Tesla, Inc.
+    aliases: ["Telsa"]  # typo
+  - cik: "0000804328"  # QCOM — QUALCOMM Incorporated
+    aliases: ["Qualcom"]  # typo
+  - cik: "0001730168"  # AVGO — Broadcom Inc.
+    aliases: ["Broadcomm"]  # typo
+  - cik: "0001108524"  # CRM — Salesforce, Inc.
+    aliases: ["Salesforce.com"]  # legal name salesforce.com, inc. until 2022

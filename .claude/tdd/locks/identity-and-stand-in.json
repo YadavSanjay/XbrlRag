@@ -1,0 +1,64 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/identity-and-stand-in/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-17",
+  "criteria": {
+    "C1": [
+      "test/spec/identity-and-stand-in/test_identity_and_stand_in.py::test_ceg_is_named_for_itself_not_its_co_registrant",
+      "test/spec/identity-and-stand-in/test_identity_and_stand_in.py::test_co_registrant_facts_never_change_the_result"
+    ],
+    "C2": [
+      "test/spec/identity-and-stand-in/test_identity_and_stand_in.py::test_primary_listing_wins_and_a_listed_stored_symbol_survives",
+      "test/spec/identity-and-stand-in/test_identity_and_stand_in.py::test_symbol_choice_matches_the_rule_for_any_cover"
+    ],
+    "C3": [
+      "test/spec/identity-and-stand-in/test_identity_and_stand_in.py::test_intel_combined_member_does_not_stand_in_for_network_and_edge",
+      "test/spec/identity-and-stand-in/test_identity_and_stand_in.py::test_refusal_follows_the_rule_and_an_exact_match_always_clears_it"
+    ]
+  },
+  "files": {
+    "test/spec/identity-and-stand-in/test_identity_and_stand_in.py": "701d5edf0b47622fe6b674160b3ebb68be1d96c97e03456d4a7039b30ea61ef8"
+  },
+  "id": "identity-and-stand-in",
+  "interface": [
+    {
+      "file": "src/ingest/sec_edgar/ingest/entity_identity.py",
+      "module": "ingest.sec_edgar.ingest.entity_identity",
+      "qualname": "select_entity_identity",
+      "signature": "def select_entity_identity(facts: list[dict], existing: dict | None) -> dict"
+    },
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_lookup.py",
+      "module": "retriever.xbrl.xbrl_factstore_lookup",
+      "qualname": "refuse_stand_in",
+      "signature": "def refuse_stand_in(hint: str, matched_labels: list[str], catalog_labels: list[str]) -> bool"
+    }
+  ],
+  "nodes": [
+    "test/spec/identity-and-stand-in/test_identity_and_stand_in.py::test_ceg_is_named_for_itself_not_its_co_registrant",
+    "test/spec/identity-and-stand-in/test_identity_and_stand_in.py::test_co_registrant_facts_never_change_the_result",
+    "test/spec/identity-and-stand-in/test_identity_and_stand_in.py::test_intel_combined_member_does_not_stand_in_for_network_and_edge",
+    "test/spec/identity-and-stand-in/test_identity_and_stand_in.py::test_primary_listing_wins_and_a_listed_stored_symbol_survives",
+    "test/spec/identity-and-stand-in/test_identity_and_stand_in.py::test_refusal_follows_the_rule_and_an_exact_match_always_clears_it",
+    "test/spec/identity-and-stand-in/test_identity_and_stand_in.py::test_symbol_choice_matches_the_rule_for_any_cover"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/identity-and-stand-in.md",
+    "sha256": "e8dcba8f441af570fa04f8a3f3bf1c4381c1e095a6991d078fec2c978be93ccb"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

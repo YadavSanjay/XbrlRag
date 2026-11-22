@@ -1,0 +1,54 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+
+    
+        
+        {
+            "name": "Python Debugger: bge_embedding",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.embeddings.bge_embedding"
+        },
+        {
+            "name": "Python Debugger: page_llm_summary_pipeline",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.pipelines.sec10k.page_llm_summary_pipeline"
+        },
+        {
+            "name": "Python Debugger: sec10k_table_head_foot",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.preprocess.sec10k.sec10k_table_head_foot",
+        },
+        {
+            "name": "Python Debugger: sec10k_toc",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.preprocess.sec10k.sec10k_toc"
+        },
+        {
+            "name": "Python Debugger: load_to_vectordb_pipeline",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.pipelines.sec10k.load_to_vectordb_pipeline"
+        },
+        {
+            "name": "Python Debugger: base_retriever",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.retriever.base_retriever"
+        },
+        {
+            "name": "Python Debugger: deepeval_standard",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.eval.deepeval.sec10k_rag_standard_eval"
+        },
+    ]
+}

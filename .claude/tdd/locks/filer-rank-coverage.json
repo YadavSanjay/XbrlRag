@@ -1,0 +1,58 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/filer-rank-coverage/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-15",
+  "criteria": {
+    "C1": [
+      "test/spec/filer-rank-coverage/test_filer_rank_coverage.py::test_point_cases",
+      "test/spec/filer-rank-coverage/test_filer_rank_coverage.py::test_matches_the_rule"
+    ],
+    "C2": [
+      "test/spec/filer-rank-coverage/test_filer_rank_coverage.py::test_composed_with_filer_ranking",
+      "test/spec/filer-rank-coverage/test_filer_rank_coverage.py::test_more_years_wins_regardless_of_rank"
+    ],
+    "C3": [
+      "test/spec/filer-rank-coverage/test_filer_rank_coverage.py::test_properties",
+      "test/spec/filer-rank-coverage/test_filer_rank_coverage.py::test_properties_point_case"
+    ]
+  },
+  "files": {
+    "test/spec/filer-rank-coverage/test_filer_rank_coverage.py": "724b0255ec7eee643f399ee2266b9d09e83c7f926255bcff90bc87182678cff2"
+  },
+  "id": "filer-rank-coverage",
+  "interface": [
+    {
+      "file": "src/ingest/sec_edgar/ingest/layer0_populator.py",
+      "module": "ingest.sec_edgar.ingest.layer0_populator",
+      "qualname": "consistent_concepts",
+      "signature": "def consistent_concepts(years_reported: collections.abc.Mapping[str, collections.abc.Collection[int]], eligible: collections.abc.Collection[str]) -> set[str]"
+    }
+  ],
+  "nodes": [
+    "test/spec/filer-rank-coverage/test_filer_rank_coverage.py::test_composed_with_filer_ranking",
+    "test/spec/filer-rank-coverage/test_filer_rank_coverage.py::test_matches_the_rule",
+    "test/spec/filer-rank-coverage/test_filer_rank_coverage.py::test_more_years_wins_regardless_of_rank",
+    "test/spec/filer-rank-coverage/test_filer_rank_coverage.py::test_point_cases",
+    "test/spec/filer-rank-coverage/test_filer_rank_coverage.py::test_properties",
+    "test/spec/filer-rank-coverage/test_filer_rank_coverage.py::test_properties_point_case"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/filer-rank-coverage.md",
+    "sha256": "acbee1e940a31f19c2d45116788ad09eca1de3291b4235d274f4b7d845ac0aa2"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

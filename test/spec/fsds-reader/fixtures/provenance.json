@@ -1,0 +1,170 @@
+{
+ "source": "SEC Financial Statement Data Sets, https://www.sec.gov/dera/data/financial-statement-data-sets",
+ "note": "Header + selected rows copied byte-for-byte from the quarter zip's sub.txt/num.txt/pre.txt/tag.txt.",
+ "filings": [
+  {
+   "accession": "0000320193-24-000123",
+   "ticker": "AAPL",
+   "cik": 320193,
+   "quarter": "2024q4",
+   "zip_url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q4.zip",
+   "zip_sha256": "9a2cbbaf39c94aa642b33d512f4def92b198d3bfd12d2267bcd27abe55b9902d",
+   "zip_bytes": 122932548,
+   "retrieved_at": "2026-11-07T17:11:34.777861+00:00",
+   "selection": {
+    "IS": "all lines",
+    "CF": [
+     "OtherNoncashIncomeExpense",
+     "PaymentsToAcquirePropertyPlantAndEquipment"
+    ]
+   }
+  },
+  {
+   "accession": "0000320193-23-000106",
+   "ticker": "AAPL",
+   "cik": 320193,
+   "quarter": "2023q4",
+   "zip_url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2023q4.zip",
+   "zip_sha256": "ad23c5505e59b7305e16bfebb8bb839476689330b85a3e1ce216f809b18d1521",
+   "zip_bytes": 120272357,
+   "retrieved_at": "2026-11-07T17:11:21.008936+00:00",
+   "selection": {
+    "IS": [
+     "RevenueFromContractWithCustomerExcludingAssessedTax"
+    ],
+    "CF": [
+     "OtherNoncashIncomeExpense"
+    ]
+   }
+  },
+  {
+   "accession": "0000320193-22-000108",
+   "ticker": "AAPL",
+   "cik": 320193,
+   "quarter": "2022q4",
+   "zip_url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2022q4.zip",
+   "zip_sha256": "83bdc7a9545479eb64d118688c888ba8e7554ebc774f3ab8a8b0cc1decb87f28",
+   "zip_bytes": 111091525,
+   "retrieved_at": "2026-11-07T17:11:08.340858+00:00",
+   "selection": {
+    "CF": [
+     "OtherNoncashIncomeExpense"
+    ]
+   }
+  },
+  {
+   "accession": "0000950170-24-087843",
+   "ticker": "MSFT",
+   "cik": 789019,
+   "quarter": "2024q3",
+   "zip_url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q3.zip",
+   "zip_sha256": "b1823f2d65189f0d5ecbb1968d683c59df762129ae1b23bda0394093a69e0da9",
+   "zip_bytes": 118280418,
+   "retrieved_at": "2026-11-07T17:11:31.667649+00:00",
+   "selection": {
+    "IS": "all lines",
+    "CF": [
+     "DepreciationAmortizationAndOther",
+     "GainLossOnInvestmentsAndDerivativeInstruments"
+    ]
+   }
+  },
+  {
+   "accession": "0000950170-25-087926",
+   "ticker": "ORCL",
+   "cik": 1341439,
+   "quarter": "2025q2",
+   "zip_url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q2.zip",
+   "zip_sha256": "81bf19bdb5606d5ee0164a8de8b7e96d5546170e42e59bcbf95b652ca83ac5d7",
+   "zip_bytes": 78973768,
+   "retrieved_at": "2026-11-07T17:11:40.464909+00:00",
+   "selection": {
+    "IS": "all lines"
+   }
+  },
+  {
+   "accession": "0001193125-25-083423",
+   "ticker": "TSM",
+   "cik": 1046179,
+   "quarter": "2025q2",
+   "zip_url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q2.zip",
+   "zip_sha256": "81bf19bdb5606d5ee0164a8de8b7e96d5546170e42e59bcbf95b652ca83ac5d7",
+   "zip_bytes": 78973768,
+   "retrieved_at": "2026-11-07T17:11:40.464909+00:00",
+   "selection": {
+    "IS": "all lines"
+   }
+  },
+  {
+   "accession": "0001730168-24-000139",
+   "ticker": "AVGO",
+   "cik": 1730168,
+   "quarter": "2024q4",
+   "zip_url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q4.zip",
+   "zip_sha256": "9a2cbbaf39c94aa642b33d512f4def92b198d3bfd12d2267bcd27abe55b9902d",
+   "zip_bytes": 122932548,
+   "retrieved_at": "2026-11-07T17:11:34.777861+00:00",
+   "selection": {
+    "IS": "all lines"
+   }
+  },
+  {
+   "accession": "0000909832-23-000042",
+   "ticker": "COST",
+   "cik": 909832,
+   "quarter": "2023q4",
+   "zip_url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2023q4.zip",
+   "zip_sha256": "ad23c5505e59b7305e16bfebb8bb839476689330b85a3e1ce216f809b18d1521",
+   "zip_bytes": 120272357,
+   "retrieved_at": "2026-11-07T17:11:21.008936+00:00",
+   "selection": {
+    "IS": "all lines"
+   }
+  },
+  {
+   "accession": "0001868275-24-000014",
+   "ticker": "CEG",
+   "cik": 1868275,
+   "quarter": "2024q1",
+   "zip_url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q1.zip",
+   "zip_sha256": "94c7894b00903f8ff7186c4250ba1c1daa1bde8b3a0b26fae68f72608b2ffc9b",
+   "zip_bytes": 124336804,
+   "retrieved_at": "2026-11-07T17:11:24.917293+00:00",
+   "selection": {
+    "IS": [
+     "OperatingIncomeLoss",
+     "Revenues"
+    ],
+    "BS": [
+     "Assets"
+    ]
+   }
+  }
+ ],
+ "row_counts": {
+  "2022q4/num": 3,
+  "2022q4/pre": 1,
+  "2022q4/sub": 1,
+  "2022q4/tag": 1,
+  "2023q4/num": 133,
+  "2023q4/pre": 17,
+  "2023q4/sub": 2,
+  "2023q4/tag": 16,
+  "2024q1/num": 88,
+  "2024q1/pre": 4,
+  "2024q1/sub": 1,
+  "2024q1/tag": 3,
+  "2024q3/num": 124,
+  "2024q3/pre": 17,
+  "2024q3/sub": 1,
+  "2024q3/tag": 17,
+  "2024q4/num": 265,
+  "2024q4/pre": 43,
+  "2024q4/sub": 2,
+  "2024q4/tag": 31,
+  "2025q2/num": 387,
+  "2025q2/pre": 66,
+  "2025q2/sub": 2,
+  "2025q2/tag": 64
+ }
+}

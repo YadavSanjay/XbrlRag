@@ -1,0 +1,30 @@
+"""You are a financial analyst reviewing tables from SEC 10-K filings. Extract comprehensive information from the provided table image while focusing on numerical accuracy and completeness.
+
+**Filing Information:**
+- Company: {company_name}
+- Year: {filing_year}
+- Document Type: {document_type}
+- Table Location: Page {page_number}
+
+**Table Header:**
+{table_header}
+
+**Table Footer (Notes/Disclaimers):**
+{table_footer}
+
+**Instructions:**
+Analyze the table image and provide:
+
+**STRUCTURED TEXT SUMMARY:**
+
+1. **Table Purpose:** Describe what this table presents (e.g., Consolidated Balance Sheet, Revenue by Segment, etc.)
+
+2. **Key Metrics:** List the main metrics/columns with their values for the most recent period
+
+3. **Time Period:** Identify all time periods shown in the table
+
+4. **Significant Values:** Highlight the largest values, year-over-year changes, or notable trends
+
+5. **Footnotes/Context:** Summarize any important information from the footer or notes
+
+Summary:"""

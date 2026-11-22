@@ -1,0 +1,70 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/concept-rank-integrity/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-15",
+  "criteria": {
+    "C1": [
+      "test/spec/concept-rank-integrity/test_concept_rank_integrity.py::test_family_ranking_point_cases",
+      "test/spec/concept-rank-integrity/test_concept_rank_integrity.py::test_family_ranking_matches_the_rule"
+    ],
+    "C2": [
+      "test/spec/concept-rank-integrity/test_concept_rank_integrity.py::test_filer_ranking_point_cases",
+      "test/spec/concept-rank-integrity/test_concept_rank_integrity.py::test_filer_ranking_matches_the_rule"
+    ],
+    "C3": [
+      "test/spec/concept-rank-integrity/test_concept_rank_integrity.py::test_filer_ranking_properties",
+      "test/spec/concept-rank-integrity/test_concept_rank_integrity.py::test_filer_ranking_properties_point_case"
+    ],
+    "C4": [
+      "test/spec/concept-rank-integrity/test_concept_rank_integrity.py::test_family_ranking_properties",
+      "test/spec/concept-rank-integrity/test_concept_rank_integrity.py::test_family_ranking_properties_point_case"
+    ]
+  },
+  "files": {
+    "test/spec/concept-rank-integrity/test_concept_rank_integrity.py": "f4a574e0bac6f3486fd869be90de6ac684b56d0d03f008533b317591811b49fd"
+  },
+  "id": "concept-rank-integrity",
+  "interface": [
+    {
+      "file": "src/ingest/sec_edgar/ingest/layer0_populator.py",
+      "module": "ingest.sec_edgar.ingest.layer0_populator",
+      "qualname": "filer_ranking",
+      "signature": "def filer_ranking(global_ranking: collections.abc.Sequence[tuple[str, int]], reported: collections.abc.Collection[str]) -> list[tuple[str, int]] | None"
+    },
+    {
+      "file": "src/ingest/util/generate_concept_mapping.py",
+      "module": "ingest.util.generate_concept_mapping",
+      "qualname": "family_ranking",
+      "signature": "def family_ranking(primaries: Sequence[str], components: Sequence[str], descendants: Sequence[str]) -> list[tuple[str, int]]"
+    }
+  ],
+  "nodes": [
+    "test/spec/concept-rank-integrity/test_concept_rank_integrity.py::test_family_ranking_matches_the_rule",
+    "test/spec/concept-rank-integrity/test_concept_rank_integrity.py::test_family_ranking_point_cases",
+    "test/spec/concept-rank-integrity/test_concept_rank_integrity.py::test_family_ranking_properties",
+    "test/spec/concept-rank-integrity/test_concept_rank_integrity.py::test_family_ranking_properties_point_case",
+    "test/spec/concept-rank-integrity/test_concept_rank_integrity.py::test_filer_ranking_matches_the_rule",
+    "test/spec/concept-rank-integrity/test_concept_rank_integrity.py::test_filer_ranking_point_cases",
+    "test/spec/concept-rank-integrity/test_concept_rank_integrity.py::test_filer_ranking_properties",
+    "test/spec/concept-rank-integrity/test_concept_rank_integrity.py::test_filer_ranking_properties_point_case"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/concept-rank-integrity.md",
+    "sha256": "9676065eae1e449e0f5667f00c146c7940a02d7f6967e19429dff114de18717e"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

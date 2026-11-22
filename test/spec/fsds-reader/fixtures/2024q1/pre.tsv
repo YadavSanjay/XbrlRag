@@ -1,0 +1,5 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0001868275-24-000014	3	9	IS	0	H	Revenues	us-gaap/2023	Total operating revenues	0
+0001868275-24-000014	3	19	IS	0	H	OperatingIncomeLoss	us-gaap/2023	Gain (loss) on sales of assets and businesses	0
+0001868275-24-000014	5	24	BS	0	H	Assets	us-gaap/2023	Total assets	0
+0001868275-24-000014	6	18	BS	1	H	Assets	us-gaap/2023	Total assets	0

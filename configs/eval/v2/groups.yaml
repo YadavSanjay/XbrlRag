@@ -1,0 +1,19 @@
+# Named universe groups for cross-filer questions (S3; docs/specs/sector-tags.md).
+# Loaded and validated by src/retriever/xbrl/entity_sectors.py (load_universe_groups).
+#
+# `definitions` is the source of truth: group id -> exactly one rule (sectors, industries
+# or tickers) over the tags in `sectors_file`. `groups` is GENERATED from it by
+#     conda run -n py312 python scripts/eval/build_universe_groups.py
+# never edit it by hand. Each group id needs phrases in configs/eval/v2/lexicon.yaml
+# `universes`; `covered` is the corpus-wide universe and never a group here.
+
+as_of: "2026-10-29"
+sectors_file: configs/entities/sectors.yaml
+definitions:
+  semiconductors: {industries: [Semiconductors]}
+  retailers: {industries: [Retail]}
+  big_tech: {tickers: [AAPL, AMZN, GOOGL, META, MSFT, NVDA, TSLA]}
+groups:
+  semiconductors: [AMD, AVGO, INTC, MU, NVDA, QCOM, TSM, TXN]
+  retailers: [AMZN, COST, HD, WMT]
+  big_tech: [AAPL, AMZN, GOOGL, META, MSFT, NVDA, TSLA]

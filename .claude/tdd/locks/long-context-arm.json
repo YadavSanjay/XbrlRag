@@ -1,0 +1,179 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-21",
+  "criteria": {
+    "C1": [
+      "test/spec/long-context-arm/test_lc_c1_filing_text.py::test_hidden_header_script_and_style_are_dropped",
+      "test/spec/long-context-arm/test_lc_c1_filing_text.py::test_two_paragraphs_give_two_lines",
+      "test/spec/long-context-arm/test_lc_c1_filing_text.py::test_table_row_cells_joined_by_pipe",
+      "test/spec/long-context-arm/test_lc_c1_filing_text.py::test_whitespace_collapses_and_no_empty_lines",
+      "test/spec/long-context-arm/test_lc_c1_filing_text.py::test_each_listed_block_starts_a_line",
+      "test/spec/long-context-arm/test_lc_c1_filing_text.py::test_random_paragraphs_one_line_each_in_order",
+      "test/spec/long-context-arm/test_lc_c1_filing_text.py::test_adding_an_ix_header_never_changes_the_output",
+      "test/spec/long-context-arm/test_lc_c1_filing_text.py::test_random_table_rows_join_cells_with_pipe"
+    ],
+    "C2": [
+      "test/spec/long-context-arm/test_lc_c2_one_call.py::test_resolves_reads_and_sends_the_filing_once",
+      "test/spec/long-context-arm/test_lc_c2_one_call.py::test_year_over_year_case_uses_only_its_own_year",
+      "test/spec/long-context-arm/test_lc_c2_one_call.py::test_refusal_reply_is_a_refusal",
+      "test/spec/long-context-arm/test_lc_c2_one_call.py::test_any_filing_and_reply_round_trip",
+      "test/spec/long-context-arm/test_lc_c2_one_call.py::test_system_message_does_not_depend_on_the_case",
+      "test/spec/long-context-arm/test_lc_c2_one_call.py::test_same_filing_calls_share_a_prefix"
+    ],
+    "C3": [
+      "test/spec/long-context-arm/test_lc_c3_exclusions.py::test_no_ticker_is_excluded_without_resolving",
+      "test/spec/long-context-arm/test_lc_c3_exclusions.py::test_no_fiscal_year_is_excluded_without_resolving",
+      "test/spec/long-context-arm/test_lc_c3_exclusions.py::test_unresolved_filing_is_excluded",
+      "test/spec/long-context-arm/test_lc_c3_exclusions.py::test_key_missing_from_store_is_excluded",
+      "test/spec/long-context-arm/test_lc_c3_exclusions.py::test_text_over_the_limit_is_excluded",
+      "test/spec/long-context-arm/test_lc_c3_exclusions.py::test_default_limit_is_250k_tokens",
+      "test/spec/long-context-arm/test_lc_c3_exclusions.py::test_boundary_is_exact",
+      "test/spec/long-context-arm/test_lc_c3_exclusions.py::test_every_exclusion_makes_no_call"
+    ],
+    "C4": [
+      "test/spec/long-context-arm/test_lc_c4_serialization.py::test_same_filing_never_has_two_calls_in_flight",
+      "test/spec/long-context-arm/test_lc_c4_serialization.py::test_different_filings_are_in_flight_together",
+      "test/spec/long-context-arm/test_lc_c4_serialization.py::test_spreading_answers_over_filings_only_adds_cross_filing_overlap[2]",
+      "test/spec/long-context-arm/test_lc_c4_serialization.py::test_spreading_answers_over_filings_only_adds_cross_filing_overlap[3]"
+    ],
+    "C5": [
+      "test/spec/long-context-arm/test_lc_c5_accounting.py::test_answers_carry_own_trace_cost_and_latency",
+      "test/spec/long-context-arm/test_lc_c5_accounting.py::test_doubling_tokens_doubles_cost",
+      "test/spec/long-context-arm/test_lc_c5_accounting.py::test_resolver_error_is_a_real_error",
+      "test/spec/long-context-arm/test_lc_c5_accounting.py::test_store_error_is_a_real_error",
+      "test/spec/long-context-arm/test_lc_c5_accounting.py::test_provider_error_is_a_real_error",
+      "test/spec/long-context-arm/test_lc_c5_accounting.py::test_zero_call_budget_raises_run_halt",
+      "test/spec/long-context-arm/test_lc_c5_accounting.py::test_any_boundary_error_is_contained",
+      "test/spec/long-context-arm/test_lc_c5_accounting.py::test_any_tripped_budget_propagates"
+    ],
+    "C6": [
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_system_names_exact",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_build_long_context_offline",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_constructor_name_offline",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_default_call_is_gpt_5_6_sol_on_the_stage",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_explicit_model_passes_through",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_any_priced_model_passes_through",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_unpriced_model_is_rejected_at_construction[claude-opus-5-5]",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_unpriced_model_is_rejected_at_construction[gpt-zz-invented-9]",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_any_unpriced_id_is_rejected",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_model_does_not_follow_the_tier_mappings[false-False]",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_model_does_not_follow_the_tier_mappings[true-True]",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_model_for_another_system_raises[xbrlrag_full]",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_model_for_another_system_raises[closed_book]",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_model_for_another_system_raises[naive_rag_plain]",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_model_for_another_system_raises[naive_rag_filtered]",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_any_model_for_any_other_system_raises",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_prompt_registry_resolves_stage_at_v1_for_the_default_model",
+      "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_any_other_name_still_raises"
+    ]
+  },
+  "files": {
+    "test/spec/long-context-arm/conftest.py": "efb560f8722d396af7ce4c731c61ef504348d4368b85c53cafb662514f3544d6",
+    "test/spec/long-context-arm/test_lc_c1_filing_text.py": "cb640a63f8730d82ca6aee0b3cf32520ebc6d6034e6fa897cd53b4700993cba5",
+    "test/spec/long-context-arm/test_lc_c2_one_call.py": "45f54d1e0f80995dbe820d3f06567f17fa97d7cf93238d8094574d244c9ce4d5",
+    "test/spec/long-context-arm/test_lc_c3_exclusions.py": "3a5b3259787b2c2c028d832318076999bd67c62627c005a37609ac770bf4d0c0",
+    "test/spec/long-context-arm/test_lc_c4_serialization.py": "65119674cbb4c366547b16a156a54016291fc1e5f9213fbcbff01a3e591ed983",
+    "test/spec/long-context-arm/test_lc_c5_accounting.py": "c43c133c08edda83faac247eda275331184a3ebb22a1069be11bf5f6ecdf0d0d",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py": "80537b5c6beead0f7d9d2ce1d323b668e50c71d635b8314f4055e1549c5ca989"
+  },
+  "id": "long-context-arm",
+  "interface": [
+    {
+      "file": "src/eval/systems/base.py",
+      "module": "eval.systems.base",
+      "qualname": "FilingResolver.canonical_key",
+      "signature": "@abstractmethod def canonical_key(self, ticker: str, fiscal_year: int) -> str | None"
+    },
+    {
+      "file": "src/eval/systems/long_context.py",
+      "module": "eval.systems.long_context",
+      "qualname": "filing_text",
+      "signature": "def filing_text(html: str) -> str"
+    },
+    {
+      "file": "src/eval/systems/long_context.py",
+      "module": "eval.systems.long_context",
+      "qualname": "LongContextSystem.__init__",
+      "signature": "def __init__(self, *, model: str='gpt-5.6-sol', gateway: LLMGateway | None=None, resolver: FilingResolver | None=None, store: FilingStore | None=None, max_input_tokens: int=250000) -> None"
+    },
+    {
+      "file": "src/eval/systems/long_context.py",
+      "module": "eval.systems.long_context",
+      "qualname": "LongContextSystem.answer",
+      "signature": "def answer(self, case: EvalCase) -> SystemAnswer"
+    }
+  ],
+  "nodes": [
+    "test/spec/long-context-arm/test_lc_c1_filing_text.py::test_adding_an_ix_header_never_changes_the_output",
+    "test/spec/long-context-arm/test_lc_c1_filing_text.py::test_each_listed_block_starts_a_line",
+    "test/spec/long-context-arm/test_lc_c1_filing_text.py::test_hidden_header_script_and_style_are_dropped",
+    "test/spec/long-context-arm/test_lc_c1_filing_text.py::test_random_paragraphs_one_line_each_in_order",
+    "test/spec/long-context-arm/test_lc_c1_filing_text.py::test_random_table_rows_join_cells_with_pipe",
+    "test/spec/long-context-arm/test_lc_c1_filing_text.py::test_table_row_cells_joined_by_pipe",
+    "test/spec/long-context-arm/test_lc_c1_filing_text.py::test_two_paragraphs_give_two_lines",
+    "test/spec/long-context-arm/test_lc_c1_filing_text.py::test_whitespace_collapses_and_no_empty_lines",
+    "test/spec/long-context-arm/test_lc_c2_one_call.py::test_any_filing_and_reply_round_trip",
+    "test/spec/long-context-arm/test_lc_c2_one_call.py::test_refusal_reply_is_a_refusal",
+    "test/spec/long-context-arm/test_lc_c2_one_call.py::test_resolves_reads_and_sends_the_filing_once",
+    "test/spec/long-context-arm/test_lc_c2_one_call.py::test_same_filing_calls_share_a_prefix",
+    "test/spec/long-context-arm/test_lc_c2_one_call.py::test_system_message_does_not_depend_on_the_case",
+    "test/spec/long-context-arm/test_lc_c2_one_call.py::test_year_over_year_case_uses_only_its_own_year",
+    "test/spec/long-context-arm/test_lc_c3_exclusions.py::test_boundary_is_exact",
+    "test/spec/long-context-arm/test_lc_c3_exclusions.py::test_default_limit_is_250k_tokens",
+    "test/spec/long-context-arm/test_lc_c3_exclusions.py::test_every_exclusion_makes_no_call",
+    "test/spec/long-context-arm/test_lc_c3_exclusions.py::test_key_missing_from_store_is_excluded",
+    "test/spec/long-context-arm/test_lc_c3_exclusions.py::test_no_fiscal_year_is_excluded_without_resolving",
+    "test/spec/long-context-arm/test_lc_c3_exclusions.py::test_no_ticker_is_excluded_without_resolving",
+    "test/spec/long-context-arm/test_lc_c3_exclusions.py::test_text_over_the_limit_is_excluded",
+    "test/spec/long-context-arm/test_lc_c3_exclusions.py::test_unresolved_filing_is_excluded",
+    "test/spec/long-context-arm/test_lc_c4_serialization.py::test_different_filings_are_in_flight_together",
+    "test/spec/long-context-arm/test_lc_c4_serialization.py::test_same_filing_never_has_two_calls_in_flight",
+    "test/spec/long-context-arm/test_lc_c4_serialization.py::test_spreading_answers_over_filings_only_adds_cross_filing_overlap[2]",
+    "test/spec/long-context-arm/test_lc_c4_serialization.py::test_spreading_answers_over_filings_only_adds_cross_filing_overlap[3]",
+    "test/spec/long-context-arm/test_lc_c5_accounting.py::test_answers_carry_own_trace_cost_and_latency",
+    "test/spec/long-context-arm/test_lc_c5_accounting.py::test_any_boundary_error_is_contained",
+    "test/spec/long-context-arm/test_lc_c5_accounting.py::test_any_tripped_budget_propagates",
+    "test/spec/long-context-arm/test_lc_c5_accounting.py::test_doubling_tokens_doubles_cost",
+    "test/spec/long-context-arm/test_lc_c5_accounting.py::test_provider_error_is_a_real_error",
+    "test/spec/long-context-arm/test_lc_c5_accounting.py::test_resolver_error_is_a_real_error",
+    "test/spec/long-context-arm/test_lc_c5_accounting.py::test_store_error_is_a_real_error",
+    "test/spec/long-context-arm/test_lc_c5_accounting.py::test_zero_call_budget_raises_run_halt",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_any_model_for_any_other_system_raises",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_any_other_name_still_raises",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_any_priced_model_passes_through",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_any_unpriced_id_is_rejected",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_build_long_context_offline",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_constructor_name_offline",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_default_call_is_gpt_5_6_sol_on_the_stage",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_explicit_model_passes_through",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_model_does_not_follow_the_tier_mappings[false-False]",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_model_does_not_follow_the_tier_mappings[true-True]",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_model_for_another_system_raises[closed_book]",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_model_for_another_system_raises[naive_rag_filtered]",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_model_for_another_system_raises[naive_rag_plain]",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_model_for_another_system_raises[xbrlrag_full]",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_prompt_registry_resolves_stage_at_v1_for_the_default_model",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_system_names_exact",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_unpriced_model_is_rejected_at_construction[claude-opus-5-5]",
+    "test/spec/long-context-arm/test_lc_c6_model_selection.py::test_unpriced_model_is_rejected_at_construction[gpt-zz-invented-9]"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/long-context-arm.md",
+    "sha256": "3571f7499a0768ff74daebbfd68e450eff90b29cf821603fb4b2e87dbf9949da"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

@@ -1,0 +1,78 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-10",
+  "criteria": {
+    "C1": [
+      "test/spec/compound-text-part/test_ctp_c1_text_part.py::test_text_dependent_is_the_text_part",
+      "test/spec/compound-text-part/test_ctp_c1_text_part.py::test_no_text_part[trend]",
+      "test/spec/compound-text-part/test_ctp_c1_text_part.py::test_no_text_part[no_key_points]",
+      "test/spec/compound-text-part/test_ctp_c1_text_part.py::test_no_text_part[blank_reference]",
+      "test/spec/compound-text-part/test_ctp_c1_text_part.py::test_no_text_part[standalone_text]",
+      "test/spec/compound-text-part/test_ctp_c1_text_part.py::test_no_text_part[screen]",
+      "test/spec/compound-text-part/test_ctp_c1_text_part.py::test_first_of_two_text_parts",
+      "test/spec/compound-text-part/test_ctp_c1_text_part.py::test_part_order_does_not_change_the_part"
+    ],
+    "C2": [
+      "test/spec/compound-text-part/test_ctp_c2_grading.py::test_correct_ranking_passes",
+      "test/spec/compound-text-part/test_ctp_c2_grading.py::test_ranking_decides_wrong_silent_refused",
+      "test/spec/compound-text-part/test_ctp_c2_grading.py::test_only_a_text_part",
+      "test/spec/compound-text-part/test_ctp_c2_grading.py::test_text_part_content_never_changes_the_grade"
+    ],
+    "C3": [
+      "test/spec/compound-text-part/test_ctp_c3_judging.py::test_is_text_graded",
+      "test/spec/compound-text-part/test_ctp_c3_judging.py::test_runner_judges_the_text_part_once",
+      "test/spec/compound-text-part/test_ctp_c3_judging.py::test_payload_lists_exactly_the_key_points"
+    ]
+  },
+  "files": {
+    "test/spec/compound-text-part/conftest.py": "fc9aa75bb23125fcfd17eb4a5717537dbdfb1106895ed6234e9607f412101b0b",
+    "test/spec/compound-text-part/test_ctp_c1_text_part.py": "db7a5b51ef426c89eab2d14048b0178748036977eb25cd89a1b7c7b02331f94d",
+    "test/spec/compound-text-part/test_ctp_c2_grading.py": "cc5c28adecdf93533bb894cdfd70e559563712153ef3587af698764ea50f5ff4",
+    "test/spec/compound-text-part/test_ctp_c3_judging.py": "7de66fd3f21bdc6636a1f3a4dcc2b1e5111a28d4a722cefc4c40c66eb207c877"
+  },
+  "id": "compound-text-part",
+  "interface": [
+    {
+      "file": "src/eval/core/graders/v2.py",
+      "module": "eval.core.graders.v2",
+      "qualname": "text_part",
+      "signature": "def text_part(case: EvalCase) -> EvalCase | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/compound-text-part/test_ctp_c1_text_part.py::test_first_of_two_text_parts",
+    "test/spec/compound-text-part/test_ctp_c1_text_part.py::test_no_text_part[blank_reference]",
+    "test/spec/compound-text-part/test_ctp_c1_text_part.py::test_no_text_part[no_key_points]",
+    "test/spec/compound-text-part/test_ctp_c1_text_part.py::test_no_text_part[screen]",
+    "test/spec/compound-text-part/test_ctp_c1_text_part.py::test_no_text_part[standalone_text]",
+    "test/spec/compound-text-part/test_ctp_c1_text_part.py::test_no_text_part[trend]",
+    "test/spec/compound-text-part/test_ctp_c1_text_part.py::test_part_order_does_not_change_the_part",
+    "test/spec/compound-text-part/test_ctp_c1_text_part.py::test_text_dependent_is_the_text_part",
+    "test/spec/compound-text-part/test_ctp_c2_grading.py::test_correct_ranking_passes",
+    "test/spec/compound-text-part/test_ctp_c2_grading.py::test_only_a_text_part",
+    "test/spec/compound-text-part/test_ctp_c2_grading.py::test_ranking_decides_wrong_silent_refused",
+    "test/spec/compound-text-part/test_ctp_c2_grading.py::test_text_part_content_never_changes_the_grade",
+    "test/spec/compound-text-part/test_ctp_c3_judging.py::test_is_text_graded",
+    "test/spec/compound-text-part/test_ctp_c3_judging.py::test_payload_lists_exactly_the_key_points",
+    "test/spec/compound-text-part/test_ctp_c3_judging.py::test_runner_judges_the_text_part_once"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/compound-text-part.md",
+    "sha256": "0ed2e6177196f202be4f6bbac35d792e70181d57ee367ef2592d84c33c7ea0eb"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

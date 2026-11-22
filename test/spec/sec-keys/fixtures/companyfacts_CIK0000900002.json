@@ -1,0 +1,20 @@
+{
+  "cik": 900002,
+  "entityName": "Synthetic Jun Corp",
+  "facts": {
+    "us-gaap": {
+      "Revenues": {
+        "label": "Revenues",
+        "description": "Synthetic revenue of a June year-end filer.",
+        "units": {
+          "USD": [
+            {"start": "2023-07-01", "end": "2024-06-30", "val": 245000000000, "accn": "0000900002-24-000040", "fy": 2024, "fp": "FY", "form": "10-K", "filed": "2024-07-30"},
+            {"start": "2022-07-01", "end": "2023-06-30", "val": 211000000000, "accn": "0000900002-24-000040", "fy": 2024, "fp": "FY", "form": "10-K", "filed": "2024-07-30"},
+            {"start": "2024-07-01", "end": "2025-06-30", "val": 281724000000, "accn": "0000900002-25-000050", "fy": 2025, "fp": "FY", "form": "10-K", "filed": "2025-07-30"},
+            {"start": "2023-07-01", "end": "2024-06-30", "val": 245000000000, "accn": "0000900002-25-000050", "fy": 2025, "fp": "FY", "form": "10-K", "filed": "2025-07-30"}
+          ]
+        }
+      }
+    }
+  }
+}

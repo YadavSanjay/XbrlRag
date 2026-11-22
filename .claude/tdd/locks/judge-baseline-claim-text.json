@@ -1,0 +1,92 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/judge-baseline-claim-text/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-12",
+  "criteria": {
+    "C1": [
+      "test/spec/judge-baseline-claim-text/test_jbct_c1_prose_of_json.py::test_bare_reply",
+      "test/spec/judge-baseline-claim-text/test_jbct_c1_prose_of_json.py::test_fenced_reply",
+      "test/spec/judge-baseline-claim-text/test_jbct_c1_prose_of_json.py::test_reply_after_prose",
+      "test/spec/judge-baseline-claim-text/test_jbct_c1_prose_of_json.py::test_text_is_returned_unchanged",
+      "test/spec/judge-baseline-claim-text/test_jbct_c1_prose_of_json.py::test_any_text_round_trips",
+      "test/spec/judge-baseline-claim-text/test_jbct_c1_prose_of_json.py::test_fence_or_lead_in_changes_nothing"
+    ],
+    "C2": [
+      "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_prose_is_unchanged",
+      "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_object_without_text_is_unchanged",
+      "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_non_string_text_is_unchanged[42]",
+      "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_non_string_text_is_unchanged[1.5]",
+      "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_non_string_text_is_unchanged[None]",
+      "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_non_string_text_is_unchanged[value3]",
+      "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_non_string_text_is_unchanged[value4]",
+      "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_non_string_text_is_unchanged[True]",
+      "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_text_without_an_object_is_identity",
+      "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_any_non_string_text_is_identity"
+    ],
+    "C3": [
+      "test/spec/judge-baseline-claim-text/test_jbct_c3_claims.py::test_baseline_reply_gives_its_text",
+      "test/spec/judge-baseline-claim-text/test_jbct_c3_claims.py::test_fenced_baseline_reply_gives_its_text",
+      "test/spec/judge-baseline-claim-text/test_jbct_c3_claims.py::test_blank_text_gives_no_claims[]",
+      "test/spec/judge-baseline-claim-text/test_jbct_c3_claims.py::test_blank_text_gives_no_claims[   ]",
+      "test/spec/judge-baseline-claim-text/test_jbct_c3_claims.py::test_blank_text_gives_no_claims[\\n\\t]",
+      "test/spec/judge-baseline-claim-text/test_jbct_c3_claims.py::test_json_reply_and_its_text_give_the_same_claims"
+    ]
+  },
+  "files": {
+    "test/spec/judge-baseline-claim-text/test_jbct_c1_prose_of_json.py": "b2476817827c1e9cf98f0828a9ea6012959f1ec3a4bbc4bb6da35e8da600cefe",
+    "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py": "635c6ec89887fbe2f4c6ade036a6dc940409fe1fcd55c8a75f148d2b1c818e07",
+    "test/spec/judge-baseline-claim-text/test_jbct_c3_claims.py": "ad42d1ae0917aa49c17837b8654af8b816a5b5c0a0d7ab2de4a125d4a522b6f8"
+  },
+  "id": "judge-baseline-claim-text",
+  "interface": [
+    {
+      "file": "src/eval/core/answer_parsing.py",
+      "module": "eval.core.answer_parsing",
+      "qualname": "answer_prose",
+      "signature": "def answer_prose(text: str) -> str"
+    }
+  ],
+  "nodes": [
+    "test/spec/judge-baseline-claim-text/test_jbct_c1_prose_of_json.py::test_any_text_round_trips",
+    "test/spec/judge-baseline-claim-text/test_jbct_c1_prose_of_json.py::test_bare_reply",
+    "test/spec/judge-baseline-claim-text/test_jbct_c1_prose_of_json.py::test_fence_or_lead_in_changes_nothing",
+    "test/spec/judge-baseline-claim-text/test_jbct_c1_prose_of_json.py::test_fenced_reply",
+    "test/spec/judge-baseline-claim-text/test_jbct_c1_prose_of_json.py::test_reply_after_prose",
+    "test/spec/judge-baseline-claim-text/test_jbct_c1_prose_of_json.py::test_text_is_returned_unchanged",
+    "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_any_non_string_text_is_identity",
+    "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_non_string_text_is_unchanged[1.5]",
+    "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_non_string_text_is_unchanged[42]",
+    "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_non_string_text_is_unchanged[None]",
+    "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_non_string_text_is_unchanged[True]",
+    "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_non_string_text_is_unchanged[value3]",
+    "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_non_string_text_is_unchanged[value4]",
+    "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_object_without_text_is_unchanged",
+    "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_prose_is_unchanged",
+    "test/spec/judge-baseline-claim-text/test_jbct_c2_unchanged.py::test_text_without_an_object_is_identity",
+    "test/spec/judge-baseline-claim-text/test_jbct_c3_claims.py::test_baseline_reply_gives_its_text",
+    "test/spec/judge-baseline-claim-text/test_jbct_c3_claims.py::test_blank_text_gives_no_claims[   ]",
+    "test/spec/judge-baseline-claim-text/test_jbct_c3_claims.py::test_blank_text_gives_no_claims[\\n\\t]",
+    "test/spec/judge-baseline-claim-text/test_jbct_c3_claims.py::test_blank_text_gives_no_claims[]",
+    "test/spec/judge-baseline-claim-text/test_jbct_c3_claims.py::test_fenced_baseline_reply_gives_its_text",
+    "test/spec/judge-baseline-claim-text/test_jbct_c3_claims.py::test_json_reply_and_its_text_give_the_same_claims"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/judge-baseline-claim-text.md",
+    "sha256": "f28f34c2079fc6aa3f13a9e56216554fceb3d84c54e0d46feff6ba5e1b3d3caa"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

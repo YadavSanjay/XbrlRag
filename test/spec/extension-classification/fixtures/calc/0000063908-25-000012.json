@@ -1,0 +1,308 @@
+{
+ "accession_no": "0000063908-25-000012",
+ "cik": "0000063908",
+ "ticker": "MCD",
+ "extension_namespace": "http://www.mcdonalds.com/20241231",
+ "source_file": "mcd-20241231_cal.xml",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/63908/000006390825000012/mcd-20241231_cal.xml",
+ "source_sha256": "0a2ef0c5fbeac45584633cd3c3ab5e0c46c74533c9fe8dea9787cd5a73e9e952",
+ "retrieved": "local copy under data/storage/sec_edgar (downloaded at ingest); hashed 2026-11-07",
+ "cross_check": "arcs equal to xbrl_db mv_calculation_network by local name (150 arcs)",
+ "selection": "every summation-item arc of every tree (link role, parent) whose parent or a child is an extension presented on IS/BS/CF",
+ "arcs": [
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:AssetsCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:PropertyPlantAndEquipmentNet",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://www.mcdonalds.com/20241231:LeaseRightOfUseAssetNet",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://www.mcdonalds.com/20241231:TotalOtherAssets",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesAndStockholdersEquity",
+   "child": "http://fasb.org/us-gaap/2024:AccruedIncomeTaxesNoncurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesAndStockholdersEquity",
+   "child": "http://fasb.org/us-gaap/2024:DeferredIncomeTaxLiabilitiesNet",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesAndStockholdersEquity",
+   "child": "http://fasb.org/us-gaap/2024:DeferredRevenueNoncurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesAndStockholdersEquity",
+   "child": "http://fasb.org/us-gaap/2024:LiabilitiesCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesAndStockholdersEquity",
+   "child": "http://fasb.org/us-gaap/2024:LongTermDebtNoncurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesAndStockholdersEquity",
+   "child": "http://fasb.org/us-gaap/2024:OtherLiabilitiesNoncurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesAndStockholdersEquity",
+   "child": "http://fasb.org/us-gaap/2024:StockholdersEquity",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesAndStockholdersEquity",
+   "child": "http://www.mcdonalds.com/20241231:LongTermLeaseLiabilityNoncurrentNet",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesCurrent",
+   "child": "http://fasb.org/us-gaap/2024:AccountsPayableCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesCurrent",
+   "child": "http://fasb.org/us-gaap/2024:AccrualForTaxesOtherThanIncomeTaxesCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesCurrent",
+   "child": "http://fasb.org/us-gaap/2024:AccruedIncomeTaxesCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesCurrent",
+   "child": "http://fasb.org/us-gaap/2024:DebtCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesCurrent",
+   "child": "http://fasb.org/us-gaap/2024:InterestPayableCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesCurrent",
+   "child": "http://www.mcdonalds.com/20241231:AccruedExpensesAndOtherCurrentLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesCurrent",
+   "child": "http://www.mcdonalds.com/20241231:CurrentLeaseLiabilityNet",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://www.mcdonalds.com/20241231:TotalOtherAssets",
+   "child": "http://fasb.org/us-gaap/2024:Goodwill",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://www.mcdonalds.com/20241231:TotalOtherAssets",
+   "child": "http://fasb.org/us-gaap/2024:InvestmentsInAffiliatesSubsidiariesAssociatesAndJointVentures",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedBalanceSheet",
+   "parent": "http://www.mcdonalds.com/20241231:TotalOtherAssets",
+   "child": "http://fasb.org/us-gaap/2024:OtherAssetsNoncurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:DeferredIncomeTaxExpenseBenefit",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:DepreciationAndAmortization",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:GainLossOnSaleOfBusiness",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInAccountsPayable",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInAccruedIncomeTaxesPayable",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInOtherAccruedLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInReceivables",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:NetIncomeLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:OtherNoncashIncomeExpense",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ShareBasedCompensation",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://www.mcdonalds.com/20241231:IncreaseDecreaseInInventoriesPrepaidExpensesAndOtherCurrentAssets",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:CostsAndExpenses",
+   "child": "http://fasb.org/us-gaap/2024:DepreciationDepletionAndAmortization",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:CostsAndExpenses",
+   "child": "http://fasb.org/us-gaap/2024:OtherExpenses",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:CostsAndExpenses",
+   "child": "http://fasb.org/us-gaap/2024:OtherOperatingIncomeExpenseNet",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:CostsAndExpenses",
+   "child": "http://fasb.org/us-gaap/2024:OtherSellingGeneralAndAdministrativeExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:CostsAndExpenses",
+   "child": "http://www.mcdonalds.com/20241231:FoodAndPaperCosts",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:CostsAndExpenses",
+   "child": "http://www.mcdonalds.com/20241231:Franchisedrestaurantsoccupancyexpenses",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:CostsAndExpenses",
+   "child": "http://www.mcdonalds.com/20241231:OccupancyAndOtherOperatingExpenses",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:CostsAndExpenses",
+   "child": "http://www.mcdonalds.com/20241231:PayrollAndEmployeeBenefits",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:NetIncomeLoss",
+   "child": "http://fasb.org/us-gaap/2024:IncomeTaxExpenseBenefit",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:NetIncomeLoss",
+   "child": "http://www.mcdonalds.com/20241231:IncomeLossFromContinuingOperationsBeforeIncomeTaxes",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:Revenues",
+   "child": "http://www.mcdonalds.com/20241231:OtherRevenues",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:Revenues",
+   "child": "http://www.mcdonalds.com/20241231:Revenuesfromfranchisedrestaurants",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:Revenues",
+   "child": "http://www.mcdonalds.com/20241231:SalesbyCompanyoperatedrestaurants",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofIncome",
+   "parent": "http://www.mcdonalds.com/20241231:IncomeLossFromContinuingOperationsBeforeIncomeTaxes",
+   "child": "http://fasb.org/us-gaap/2024:InterestExpense",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofIncome",
+   "parent": "http://www.mcdonalds.com/20241231:IncomeLossFromContinuingOperationsBeforeIncomeTaxes",
+   "child": "http://fasb.org/us-gaap/2024:NonoperatingIncomeExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.mcdonalds.com/role/ConsolidatedStatementofIncome",
+   "parent": "http://www.mcdonalds.com/20241231:IncomeLossFromContinuingOperationsBeforeIncomeTaxes",
+   "child": "http://fasb.org/us-gaap/2024:OperatingIncomeLoss",
+   "weight": "1"
+  }
+ ]
+}

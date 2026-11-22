@@ -1,0 +1,1173 @@
+# WS-9 / E2 — SQL-derived ground-truth template spec.
+#
+# scripts/xbrl/analyst_queries.sql is the authoritative, human-validated map from
+# analyst question -> canonical SQL. It is a *reference document*: its queries are
+# hardcoded to one filer and year ("ticker = 'NVDA'", "fiscal_year = 2024").
+#
+# This file is the machine-readable, *parameterised* form of those same queries.
+# Running the SQL produces the ground truth; the `nl` phrasings are what XbrlRag is
+# actually asked. Every template carries a `source:` back-pointer so provenance to
+# the reference document stays explicit and checkable.
+#
+#   Build:  python scripts/eval/build_sql_derived_suite.py --tier standard
+#   Design: docs/design/XbrlRag_Evaluation.md
+#
+# ---------------------------------------------------------------------------
+# Grammar
+# ---------------------------------------------------------------------------
+# kind         lookup | compute | dimensional | screen | breakdown  (grading path)
+#              screen    = CROSS-FILER ranking. The planner emits one `screen` step
+#                          with ranked rows; order is graded. The question must state
+#                          the shape it expects ("top 5, ranked") — "which is highest?"
+#                          legitimately returns one row and would fail a 5-row expectation.
+#              breakdown = ONE filer split by segment/geography. The planner emits one
+#                          `breakdown` step whose rows partition the total (choose_partition,
+#                          shared with this ground truth); graded on component value + fact
+#                          coverage, order-free (docs/specs/breakdown-op.md).
+# params       name -> `corpus.tickers` | `corpus.fiscal_years` | [explicit, list]
+#                      | {from_sql: "...", label: "..."}   (enumerated per combo)
+# sql          pyformat placeholders (%(ticker)s) over the bound params, plus two macros
+#              expanded at load (src/eval/suites/sql_derived.py, expand_sql_macros):
+#                @LOOKUP_ORDER(f)  ORDER BY terms of the lookup's candidate order
+#                                  (family_resolution.candidate_order: role, latest
+#                                  period, reporting currency, presented, rank, valued,
+#                                  precision, fact_id) over the mv_financial_facts alias f
+#                @ANSWERABLE(f)    a predicate leaving out component rows
+#              aq-2c's current-year pick uses both, so a case cites what the lookup cites.
+# pick         s1_lookup: the SQL returns the filer's rows of the measure from EVERY filing
+#              (no fiscal_year / fiscal_period predicate: a later filing's comparative
+#              restates the year), with the columns S1 reads, and
+#              sql_derived.s1_lookup_pick selects the year's row: the own column of the
+#              filing labelled fy, as the latest later-labelled canonical filing restates
+#              it, in the lookup's candidate order (docs/specs/suite-templates-s1.md).
+#              No pick, no case. The five single-fact lookups use it.
+#              s1_dimensional: the same for a member or multidim fact
+#              (docs/specs/dimensional-s1.md R2-R3): the SQL returns the filer's
+#              dimensional rows of the measure from every filing with a boolean `matches`
+#              (the fact asked for); sql_derived.s1_dimensional_pick keys the own column's
+#              matching facts as the latest later report with the same dimensions
+#              restates them. aq-3d and aq-8b use it.
+#              s1_breakdown: one filing's split (dimensional-s1 R5). `axes` names the axis
+#              local names; the builder tries breakdown_filings latest first, runs the SQL
+#              with that filing's total (`total_fact_id`, from breakdown_total) and
+#              `axes`, and keys the first filing whose rows make a breakdown. aq-3a, aq-3b,
+#              aq-4a and aq-10b use it.
+# expect
+#   value        column holding the scalar answer (raw store value, NOT display-scaled)
+#   rows         {entity: <col>, value: <col>} for a ranked list
+#   fact_ids     column (or list of columns) of integer fact ids
+#   fact_ids_json  JSONB column holding fact ids (object values or array items)
+#   unit         column carrying the unit, for the case record
+# alt_scale    extra accepted forms of the value (e.g. [100] accepts a fraction
+#              reported as a percentage) -- see `mv_derived_metrics.value`, a fraction
+# require_unique  emit only when the SQL returns exactly one row; guards against
+#              shipping ambiguous ground truth (see §15 risk register)
+# min_rows     a ranked case needs at least this many rows to be gradable
+# max_per_stratum  per-(ticker, fiscal year) case quota for this template, overriding
+#              the tier's max_cases_per_stratum (docs/specs/stable-case-selection.md)
+#
+# IMPORTANT: expected values are the RAW store values. analyst_queries.sql divides
+# by 1e9 for human display; the eval must compare against what a `lookup` step
+# actually resolves, so no display scaling appears below.
+
+version: v1
+suite_name: sql_derived
+
+corpus:
+  tickers: [AAPL, AMD, AMZN, AVGO, GOOGL, META, MSFT, MU, NVDA, ORCL, TSLA, TSM]
+  fiscal_years: [2022, 2023, 2024, 2025, 2026]
+
+  # How a question names each filer. entity_master holds the EDGAR *legal* name
+  # ("ADVANCED MICRO DEVICES, INC", "MICROSOFT CORPORATION"), which no analyst would
+  # type; asking with it tests string matching rather than entity resolution. These
+  # are the names a user actually uses. Anything not listed falls back to
+  # entity_master.
+  company_names:
+    AAPL:  Apple
+    AMD:   AMD
+    AMZN:  Amazon
+    AVGO:  Broadcom
+    GOOGL: Alphabet
+    META:  Meta Platforms
+    MSFT:  Microsoft
+    MU:    Micron Technology
+    NVDA:  NVIDIA
+    ORCL:  Oracle
+    TSLA:  Tesla
+    TSM:   TSMC
+
+# Tier = how much of the cartesian product to realise. Cost/runtime scale with this;
+# the runner additionally enforces a hard --max-cost-usd budget.
+tiers:
+  smoke:
+    tickers: [NVDA, AAPL]
+    fiscal_years: [2024, 2026]
+    paraphrases: 1
+    max_cases_per_template: 8
+  standard:
+    fiscal_years: [2024, 2025, 2026]
+    paraphrases: 1
+    # Per (ticker, fiscal year), chosen by a fixed hash so the case set is stable as
+    # the corpus grows (docs/specs/stable-case-selection.md). A template may override.
+    max_cases_per_stratum: 2
+  full:
+    paraphrases: 3
+    max_cases_per_template: 200
+
+templates:
+
+  # =========================================================================
+  # SECTION 1 — INCOME STATEMENT
+  # =========================================================================
+  - id: aq-1a-revenue-lookup
+    source: "analyst_queries.sql#1a"
+    concept: Revenue
+    kind: lookup
+    tags: [revenue, income-statement, metrics-generated]
+    nl:
+      - "What was {company}'s revenue in fiscal {fy}?"
+      - "How much total revenue did {company} report for FY{fy}?"
+      - "{company} FY{fy} total revenue?"
+    params:
+      ticker: corpus.tickers
+      fy: corpus.fiscal_years
+    # The fact the lookup answers with, by rule S1 (docs/specs/suite-templates-s1.md): the
+    # SQL returns the filer's annual revenue rows from every filing, and the pick keeps
+    # the year's own column (the canonical filing labelled fy, ending exactly on its DEI
+    # period end; none means no case), each measure as the latest later-labelled canonical
+    # filing restates it, in the lookup's candidate order with the reporting currency
+    # first (not a 20-F convenience translation, docs/specs/unit-aware-lookup.md).
+    pick: s1_lookup
+    sql: |
+      SELECT f.value, f.fact_id, f.unit, f.cik, f.accession_no, f.fiscal_year,
+             f.fiscal_period, f.filed_date, f.is_amendment, f.is_canonical_filing,
+             f.document_period_end, f.concept, f.concept_family, f.segment_axis,
+             f.segment_member, f.period_start, f.period_end, f.concept_role,
+             f.concept_pref_rank, f.presented,
+             (SELECT CASE WHEN x.is_decimals_infinity THEN NULL
+                          ELSE x.decimals_value::int END
+              FROM fact x WHERE x.fact_id = f.fact_id) AS decimals
+      FROM   mv_financial_facts f
+      WHERE  f.ticker = %(ticker)s AND f.concept_family = 'Revenue'
+        AND  f.segment_axis IS NULL
+        AND  f.period_type = 'duration' AND f.duration_kind = 'annual'
+    expect: {value: value, fact_ids: fact_id, unit: unit}
+    rel_tol: 1.0e-4
+
+  - id: aq-1c-pnl-line-lookup
+    source: "analyst_queries.sql#1c"
+    kind: lookup
+    tags: [income-statement, metrics-generated]
+    nl:
+      - "What was {company}'s {concept_label} in fiscal {fy}?"
+      - "Report {company}'s {concept_label} for FY{fy}."
+      - "How much {concept_label} did {company} record in fiscal {fy}?"
+    params:
+      ticker: corpus.tickers
+      fy: corpus.fiscal_years
+      concept:
+        values: [GrossProfit, OperatingIncome, PretaxIncome, NetIncome,
+                 CostOfRevenue, ResearchAndDevelopment, TaxExpense, InterestExpense]
+        labels:
+          GrossProfit: gross profit
+          OperatingIncome: operating income
+          PretaxIncome: pre-tax income
+          NetIncome: net income
+          CostOfRevenue: cost of revenue
+          ResearchAndDevelopment: research and development expense
+          TaxExpense: income tax expense
+          InterestExpense: interest expense
+    # S1 pick as in aq-1a; the reporting currency goes first, so a 20-F's USD convenience
+    # translation never answers (docs/specs/unit-aware-lookup.md).
+    pick: s1_lookup
+    sql: |
+      SELECT f.value, f.fact_id, f.unit, f.cik, f.accession_no, f.fiscal_year,
+             f.fiscal_period, f.filed_date, f.is_amendment, f.is_canonical_filing,
+             f.document_period_end, f.concept, f.concept_family, f.segment_axis,
+             f.segment_member, f.period_start, f.period_end, f.concept_role,
+             f.concept_pref_rank, f.presented,
+             (SELECT CASE WHEN x.is_decimals_infinity THEN NULL
+                          ELSE x.decimals_value::int END
+              FROM fact x WHERE x.fact_id = f.fact_id) AS decimals
+      FROM   mv_financial_facts f
+      WHERE  f.ticker = %(ticker)s AND f.concept_family = %(concept)s
+        AND  f.segment_axis IS NULL
+        AND  f.period_type = 'duration' AND f.duration_kind = 'annual'
+    expect: {value: value, fact_ids: fact_id, unit: unit}
+    rel_tol: 1.0e-4
+
+  - id: aq-1b-revenue-screen
+    source: "analyst_queries.sql#1b"
+    concept: Revenue
+    kind: screen
+    tags: [revenue, cross-filer, screen, domain-relevant]
+    nl:
+      - "List the top 5 covered companies by total revenue in fiscal {fy}, ranked highest first."
+      - "Rank the 5 largest covered filers by total revenue for FY{fy}."
+    params:
+      fy: corpus.fiscal_years
+    # Each filer's fact is the one the screen cites: the lookup's candidate order
+    # (@LOOKUP_ORDER), as XbrlFactstoreScreen picks it (docs/specs/screen-candidate-order.md).
+    sql: |
+      SELECT DISTINCT ON (f.ticker) f.ticker, f.value, f.fact_id
+      FROM   mv_financial_facts f
+      WHERE  f.concept_family = 'Revenue' AND f.fiscal_year = %(fy)s
+        AND  f.segment_axis IS NULL AND f.period_type = 'duration'
+        AND  f.is_canonical_filing AND f.unit = 'USD'
+        AND  f.fiscal_period = 'FY' AND f.duration_kind = 'annual'
+        AND  @ANSWERABLE(f)
+      ORDER  BY f.ticker, @LOOKUP_ORDER(f)
+    post_sort: {by: value, order: desc}
+    expect: {rows: {entity: ticker, value: value}, fact_ids: fact_id}
+    top_n: 5
+    min_rows: 3
+    rel_tol: 1.0e-4
+
+  # =========================================================================
+  # SECTION 2 — YEAR-OVER-YEAR
+  # =========================================================================
+  - id: aq-2c-yoy-growth
+    source: "analyst_queries.sql#2c"
+    kind: compute
+    tags: [yoy, growth, metrics-generated]
+    nl:
+      - "By what percentage did {company}'s {concept_label} change in fiscal {fy} versus the prior year?"
+      - "What was {company}'s year-over-year {concept_label} growth in FY{fy}?"
+      - "How much did {company}'s {concept_label} grow in fiscal {fy} compared to fiscal {fy_prior}?"
+    params:
+      ticker: corpus.tickers
+      fy: corpus.fiscal_years
+      concept:
+        values: [Revenue, OperatingIncome, NetIncome]
+        labels:
+          Revenue: revenue
+          OperatingIncome: operating income
+          NetIncome: net income
+    # Each year as the product's lookup answers it (S1, as aq-1c), and their growth: the
+    # SQL returns the measure's rows from every filing and the pick takes fy and fy - 1,
+    # which may come from different filings (docs/specs/yoy-growth-s1.md).
+    pick: s1_yoy
+    sql: |
+      SELECT f.value, f.fact_id, f.unit, f.cik, f.accession_no, f.fiscal_year,
+             f.fiscal_period, f.filed_date, f.is_amendment, f.is_canonical_filing,
+             f.document_period_end, f.concept, f.concept_family, f.segment_axis,
+             f.segment_member, f.period_start, f.period_end, f.concept_role,
+             f.concept_pref_rank, f.presented,
+             (SELECT CASE WHEN x.is_decimals_infinity THEN NULL
+                          ELSE x.decimals_value::int END
+              FROM fact x WHERE x.fact_id = f.fact_id) AS decimals
+      FROM   mv_financial_facts f
+      WHERE  f.ticker = %(ticker)s AND f.concept_family = %(concept)s
+        AND  f.segment_axis IS NULL
+        AND  f.period_type = 'duration' AND f.duration_kind = 'annual'
+    expect:
+      value: value
+      fact_ids: [fact_id_current, fact_id_prior]
+      unit: unit
+      extra: {fy_prior: fy_prior}
+      # A change from a prior value <= 0 is "n/m" (docs/specs/pct-change-nm.md); `value`
+      # keeps the |base|-convention ratio so the grader can spot it being stated.
+      not_meaningful: not_meaningful
+    alt_scale: [100]        # a fraction (0.65) may legitimately be answered as 65%
+    rel_tol: 1.0e-2
+
+  - id: aq-2a-yoy-revenue-screen
+    source: "analyst_queries.sql#2a"
+    concept: Revenue
+    kind: screen
+    tags: [yoy, growth, cross-filer, screen, domain-relevant]
+    nl:
+      - "List the top 5 covered companies by year-over-year revenue growth in fiscal {fy}, ranked highest first."
+      - "Rank the 5 fastest-growing covered filers by revenue growth for FY{fy}."
+    params:
+      fy: corpus.fiscal_years
+    # Growth is a unitless ratio, so each filer ranks in its reporting currency (the
+    # unit it also reports comparatives in), as the system's RevenueGrowthPct does: TSMC
+    # in TWD, not its USD convenience translation (docs/specs/unit-aware-lookup.md).
+    sql: |
+      SELECT DISTINCT ON (y.ticker) y.ticker, y.yoy_pct_change AS value,
+             y.fact_id_current, y.fact_id_prior
+      FROM   mv_yoy_comparison y
+      JOIN   mv_financial_facts c ON c.fact_id = y.fact_id_current
+      WHERE  y.concept_family = 'Revenue' AND y.segment_axis IS NULL
+        AND  y.fy_current = %(fy)s AND y.yoy_pct_change IS NOT NULL
+        AND  y.fiscal_period = 'FY' AND y.duration_kind = 'annual'
+      ORDER  BY y.ticker,
+             NOT EXISTS (
+               SELECT 1 FROM mv_financial_facts p
+                WHERE p.cik = y.cik AND p.fiscal_year = y.fy_current
+                  AND p.concept_family = y.concept_family AND p.unit = y.unit
+                  AND p.segment_axis IS NULL AND p.period_end < c.period_end
+             ),
+             c.concept_pref_rank NULLS LAST,  -- the lookup's concept preference, not the largest value
+             y.value_current DESC, y.fact_id_current DESC, y.fact_id_prior DESC
+    post_sort: {by: value, order: desc}
+    expect:
+      rows: {entity: ticker, value: value}
+      fact_ids: [fact_id_current, fact_id_prior]
+    top_n: 5
+    min_rows: 3
+    alt_scale: [100]
+    rel_tol: 1.0e-2
+
+  # =========================================================================
+  # SECTION 3 — SEGMENTS
+  # =========================================================================
+  - id: aq-3a-product-segment-breakdown
+    source: "analyst_queries.sql#3a"
+    concept: Revenue
+    kind: breakdown
+    tags: [segment, product, breakdown, dimensional, novel-generated]
+    nl:
+      - "Break down {company}'s fiscal {fy} revenue by product or service segment."
+      - "Which product segment generated the most revenue for {company} in FY{fy}?"
+      - "What were {company}'s revenue figures per product line in fiscal {fy}?"
+    params:
+      ticker: corpus.tickers
+      fy: corpus.fiscal_years
+    # "The breakdown" = choose_breakdown over the members (with their local names and
+    # parents from the filing's arcs) and the reconciling-line rows (is_line), the same
+    # rule the pipeline's breakdown step uses (docs/specs/breakdown-op.md,
+    # docs/specs/breakdown-reconciling-items.md); members in the total's (reporting)
+    # currency. No breakdown, no case. One filing's split (S1, docs/specs/dimensional-s1.md
+    # R5): the pick tries breakdown_filings latest first, binding that filing's total
+    # (breakdown_total) as total_fact_id and the axes; the first that partitions answers.
+    pick: s1_breakdown
+    axes: [ProductOrServiceAxis]
+    sql: |
+      WITH t AS (
+        SELECT f.cik, f.value, f.unit, f.fact_id, f.accession_no, f.period_start,
+               f.period_end, regexp_replace(f.concept, '^.*:', '') AS concept
+        FROM   mv_financial_facts f
+        WHERE  f.fact_id = %(total_fact_id)s
+      ),
+      mem AS (
+        SELECT COALESCE(c.segment_label, regexp_replace(c.segment_member, '^.*:', ''))
+                   AS segment_name,
+               c.value, c.fact_id, t.value AS total,
+               regexp_replace(c.segment_member, '^.*:', '') AS member,
+               regexp_replace(c.concept, '^.*:', '') AS concept
+        FROM   mv_financial_facts c
+        JOIN   t ON c.cik = t.cik AND c.accession_no = t.accession_no
+                AND c.unit IS NOT DISTINCT FROM t.unit
+                AND c.period_start IS NOT DISTINCT FROM t.period_start
+                AND c.period_end IS NOT DISTINCT FROM t.period_end
+        -- single-dimension facts on the axes only: a region x product cell is not a component
+        WHERE  c.concept_family = 'Revenue' AND c.duration_kind = 'annual'
+          AND  NOT COALESCE(c.has_multiple_dimensions, FALSE)
+          AND  regexp_replace(c.segment_axis, '^.*:', '') = ANY(%(axes)s)
+      ),
+      -- The filing's own arcs, by local name (presentation, definition, calculation).
+      arcs AS (
+        SELECT ru.uri AS role, aq.local_name AS arc, pq.local_name AS parent,
+               cq.local_name AS child, rel.calculation_weight AS weight,
+               n.network_id, rel.tree_sequence, rel.relationship_id
+        FROM   t
+        JOIN   accession a      ON a.filing_accession_number = t.accession_no
+        JOIN   network n        ON n.accession_id = a.accession_id
+        JOIN   qname aq         ON aq.qname_id = n.arc_qname_id
+        JOIN   uri ru           ON ru.uri_id = n.extended_link_role_uri_id
+        JOIN   relationship rel ON rel.network_id = n.network_id
+        JOIN   element pe       ON pe.element_id = rel.from_element_id
+        JOIN   qname pq         ON pq.qname_id = pe.qname_id
+        JOIN   element ce       ON ce.element_id = rel.to_element_id
+        JOIN   qname cq         ON cq.qname_id = ce.qname_id
+        WHERE  aq.local_name IN ('presentationArc', 'definitionArc', 'calculationArc')
+      ),
+      -- The axis's own table: roles presenting both the axis and the total's concept.
+      table_roles AS (
+        SELECT a.role FROM arcs a
+         WHERE a.arc = 'presentationArc' AND 'ProductOrServiceAxis' IN (a.parent, a.child)
+        INTERSECT
+        SELECT a.role FROM arcs a JOIN t ON a.child = t.concept
+         WHERE a.arc = 'presentationArc'
+      ),
+      presented AS (
+        SELECT DISTINCT a.child FROM arcs a JOIN table_roles r ON r.role = a.role
+         WHERE a.arc = 'presentationArc'
+      ),
+      calc AS (
+        SELECT DISTINCT ON (a.child) a.child, a.weight
+        FROM   arcs a JOIN t ON a.parent = t.concept
+        WHERE  a.arc = 'calculationArc'
+        ORDER  BY a.child, a.network_id, a.tree_sequence, a.relationship_id
+      ),
+      -- Reconciling-line candidates (docs/specs/breakdown-reconciling-items.md, C3): an
+      -- undimensioned line item of the table or calculation child of the total (weighted),
+      -- or the total's concept on ConsolidationItemsAxis other than OperatingSegments.
+      lines AS (
+        SELECT CASE WHEN c.segment_axis IS NULL
+                    THEN COALESCE(c.concept_label, regexp_replace(c.concept, '^.*:', ''))
+                    ELSE c.segment_label END AS segment_name,
+               CASE WHEN c.segment_axis IS NULL AND k.child IS NOT NULL
+                    THEN COALESCE(k.weight, 1) * c.value ELSE c.value END AS value,
+               c.fact_id, t.value AS total
+        FROM   mv_financial_facts c
+        JOIN   t ON c.cik = t.cik AND c.accession_no = t.accession_no
+                AND c.unit IS NOT DISTINCT FROM t.unit
+                AND c.period_start IS NOT DISTINCT FROM t.period_start
+                AND c.period_end IS NOT DISTINCT FROM t.period_end
+        LEFT JOIN calc k ON k.child = regexp_replace(c.concept, '^.*:', '')
+        WHERE  c.value IS NOT NULL AND c.value <> 0 AND c.fact_id <> t.fact_id
+          AND  NOT COALESCE(c.has_multiple_dimensions, FALSE)
+          AND  ((c.segment_axis IS NULL
+                 AND regexp_replace(c.concept, '^.*:', '') <> t.concept
+                 AND regexp_replace(c.concept, '^.*:', '') NOT IN (SELECT concept FROM mem)
+                 AND (k.child IS NOT NULL
+                      OR regexp_replace(c.concept, '^.*:', '') IN (SELECT child FROM presented)))
+             OR (regexp_replace(c.segment_axis, '^.*:', '') = 'ConsolidationItemsAxis'
+                 AND regexp_replace(c.concept, '^.*:', '') = t.concept
+                 AND regexp_replace(c.segment_member, '^.*:', '') <> 'OperatingSegmentsMember'))
+      )
+      SELECT m.segment_name, m.value, m.fact_id, m.total, m.member,
+             ARRAY(SELECT DISTINCT a.parent FROM arcs a
+                    WHERE a.arc IN ('presentationArc', 'definitionArc')
+                      AND a.child = m.member AND a.parent <> m.member
+                      AND a.parent IN (SELECT member FROM mem)
+                    ORDER BY a.parent) AS parents,
+             FALSE AS is_line
+      FROM   mem m
+      UNION ALL
+      SELECT l.segment_name, l.value, l.fact_id, l.total, NULL::text, NULL::text[], TRUE
+      FROM   lines l
+      ORDER  BY is_line, value DESC, fact_id
+    expect: {rows: {entity: segment_name, value: value}, fact_ids: fact_id, total: total,
+             line: is_line, member: member, parents: parents}
+    min_rows: 2
+    rel_tol: 1.0e-4
+
+  - id: aq-3b-business-segment-breakdown
+    source: "analyst_queries.sql#3b"
+    concept: Revenue
+    kind: breakdown
+    tags: [segment, business-unit, breakdown, dimensional, novel-generated]
+    nl:
+      - "Break down {company}'s fiscal {fy} revenue by reportable business segment."
+      - "Which business segment was largest for {company} in FY{fy}?"
+    params:
+      ticker: corpus.tickers
+      fy: corpus.fiscal_years
+    # "The breakdown" = choose_breakdown over the members (with their local names and
+    # parents from the filing's arcs) and the reconciling-line rows (is_line), the same
+    # rule the pipeline's breakdown step uses (docs/specs/breakdown-op.md,
+    # docs/specs/breakdown-reconciling-items.md); members in the total's (reporting)
+    # currency. No breakdown, no case. One filing's split (S1, docs/specs/dimensional-s1.md
+    # R5): the pick tries breakdown_filings latest first, binding that filing's total
+    # (breakdown_total) as total_fact_id and the axes; the first that partitions answers.
+    pick: s1_breakdown
+    axes: [StatementBusinessSegmentsAxis]
+    sql: |
+      WITH t AS (
+        SELECT f.cik, f.value, f.unit, f.fact_id, f.accession_no, f.period_start,
+               f.period_end, regexp_replace(f.concept, '^.*:', '') AS concept
+        FROM   mv_financial_facts f
+        WHERE  f.fact_id = %(total_fact_id)s
+      ),
+      mem AS (
+        SELECT COALESCE(c.segment_label, regexp_replace(c.segment_member, '^.*:', ''))
+                   AS segment_name,
+               c.value, c.fact_id, t.value AS total,
+               regexp_replace(c.segment_member, '^.*:', '') AS member,
+               regexp_replace(c.concept, '^.*:', '') AS concept
+        FROM   mv_financial_facts c
+        JOIN   t ON c.cik = t.cik AND c.accession_no = t.accession_no
+                AND c.unit IS NOT DISTINCT FROM t.unit
+                AND c.period_start IS NOT DISTINCT FROM t.period_start
+                AND c.period_end IS NOT DISTINCT FROM t.period_end
+        -- single-dimension facts on the axes only: a region x product cell is not a component
+        WHERE  c.concept_family = 'Revenue' AND c.duration_kind = 'annual'
+          AND  NOT COALESCE(c.has_multiple_dimensions, FALSE)
+          AND  regexp_replace(c.segment_axis, '^.*:', '') = ANY(%(axes)s)
+      ),
+      -- The filing's own arcs, by local name (presentation, definition, calculation).
+      arcs AS (
+        SELECT ru.uri AS role, aq.local_name AS arc, pq.local_name AS parent,
+               cq.local_name AS child, rel.calculation_weight AS weight,
+               n.network_id, rel.tree_sequence, rel.relationship_id
+        FROM   t
+        JOIN   accession a      ON a.filing_accession_number = t.accession_no
+        JOIN   network n        ON n.accession_id = a.accession_id
+        JOIN   qname aq         ON aq.qname_id = n.arc_qname_id
+        JOIN   uri ru           ON ru.uri_id = n.extended_link_role_uri_id
+        JOIN   relationship rel ON rel.network_id = n.network_id
+        JOIN   element pe       ON pe.element_id = rel.from_element_id
+        JOIN   qname pq         ON pq.qname_id = pe.qname_id
+        JOIN   element ce       ON ce.element_id = rel.to_element_id
+        JOIN   qname cq         ON cq.qname_id = ce.qname_id
+        WHERE  aq.local_name IN ('presentationArc', 'definitionArc', 'calculationArc')
+      ),
+      -- The axis's own table: roles presenting both the axis and the total's concept.
+      table_roles AS (
+        SELECT a.role FROM arcs a
+         WHERE a.arc = 'presentationArc' AND 'StatementBusinessSegmentsAxis' IN (a.parent, a.child)
+        INTERSECT
+        SELECT a.role FROM arcs a JOIN t ON a.child = t.concept
+         WHERE a.arc = 'presentationArc'
+      ),
+      presented AS (
+        SELECT DISTINCT a.child FROM arcs a JOIN table_roles r ON r.role = a.role
+         WHERE a.arc = 'presentationArc'
+      ),
+      calc AS (
+        SELECT DISTINCT ON (a.child) a.child, a.weight
+        FROM   arcs a JOIN t ON a.parent = t.concept
+        WHERE  a.arc = 'calculationArc'
+        ORDER  BY a.child, a.network_id, a.tree_sequence, a.relationship_id
+      ),
+      -- Reconciling-line candidates (docs/specs/breakdown-reconciling-items.md, C3): an
+      -- undimensioned line item of the table or calculation child of the total (weighted),
+      -- or the total's concept on ConsolidationItemsAxis other than OperatingSegments.
+      lines AS (
+        SELECT CASE WHEN c.segment_axis IS NULL
+                    THEN COALESCE(c.concept_label, regexp_replace(c.concept, '^.*:', ''))
+                    ELSE c.segment_label END AS segment_name,
+               CASE WHEN c.segment_axis IS NULL AND k.child IS NOT NULL
+                    THEN COALESCE(k.weight, 1) * c.value ELSE c.value END AS value,
+               c.fact_id, t.value AS total
+        FROM   mv_financial_facts c
+        JOIN   t ON c.cik = t.cik AND c.accession_no = t.accession_no
+                AND c.unit IS NOT DISTINCT FROM t.unit
+                AND c.period_start IS NOT DISTINCT FROM t.period_start
+                AND c.period_end IS NOT DISTINCT FROM t.period_end
+        LEFT JOIN calc k ON k.child = regexp_replace(c.concept, '^.*:', '')
+        WHERE  c.value IS NOT NULL AND c.value <> 0 AND c.fact_id <> t.fact_id
+          AND  NOT COALESCE(c.has_multiple_dimensions, FALSE)
+          AND  ((c.segment_axis IS NULL
+                 AND regexp_replace(c.concept, '^.*:', '') <> t.concept
+                 AND regexp_replace(c.concept, '^.*:', '') NOT IN (SELECT concept FROM mem)
+                 AND (k.child IS NOT NULL
+                      OR regexp_replace(c.concept, '^.*:', '') IN (SELECT child FROM presented)))
+             OR (regexp_replace(c.segment_axis, '^.*:', '') = 'ConsolidationItemsAxis'
+                 AND regexp_replace(c.concept, '^.*:', '') = t.concept
+                 AND regexp_replace(c.segment_member, '^.*:', '') <> 'OperatingSegmentsMember'))
+      )
+      SELECT m.segment_name, m.value, m.fact_id, m.total, m.member,
+             ARRAY(SELECT DISTINCT a.parent FROM arcs a
+                    WHERE a.arc IN ('presentationArc', 'definitionArc')
+                      AND a.child = m.member AND a.parent <> m.member
+                      AND a.parent IN (SELECT member FROM mem)
+                    ORDER BY a.parent) AS parents,
+             FALSE AS is_line
+      FROM   mem m
+      UNION ALL
+      SELECT l.segment_name, l.value, l.fact_id, l.total, NULL::text, NULL::text[], TRUE
+      FROM   lines l
+      ORDER  BY is_line, value DESC, fact_id
+    expect: {rows: {entity: segment_name, value: value}, fact_ids: fact_id, total: total,
+             line: is_line, member: member, parents: parents}
+    min_rows: 2
+    rel_tol: 1.0e-4
+
+  - id: aq-3d-segment-member-lookup
+    source: "analyst_queries.sql#3d"
+    concept: Revenue
+    kind: dimensional
+    tags: [segment, dimensional, metrics-generated]
+    # Labels often already end in "Segment"/"Member", so the phrasing must not append
+    # the word itself ("its International Segment segment") — see clean_segment_label.
+    nl:
+      - "How much revenue did {company} report for {segment} in fiscal {fy}?"
+      - "What was {company}'s {segment} revenue in FY{fy}?"
+    params:
+      ticker: corpus.tickers
+      fy: corpus.fiscal_years
+      segment:
+        # Enumerated per (ticker, fy) — members are filer-specific extensions, so
+        # they cannot be hardcoded. `label` is what the question says.
+        from_sql: |
+          SELECT DISTINCT regexp_replace(segment_label, '\s*\[Member\]$', '')
+          FROM   mv_segment_matrix
+          WHERE  ticker = %(ticker)s AND fiscal_year = %(fy)s
+            AND  concept_family = 'Revenue'
+            AND  segment_axis IN ('srt:ProductOrServiceAxis',
+                                  'us-gaap:StatementBusinessSegmentsAxis')
+            AND  segment_label IS NOT NULL
+          ORDER  BY 1
+    # S1 (docs/specs/dimensional-s1.md R2-R3): the filer's dimensional rows of the
+    # measure from every filing, a cell (a fact with another dimension, which the flat
+    # view files under its first one) with its full dimension set from the multidim view;
+    # the pick keys the own column's matching fact as the latest later-labelled report
+    # with the same dimensions restates it.
+    pick: s1_dimensional
+    sql: |
+      SELECT f.value, f.fact_id, f.unit, f.accession_no, f.fiscal_year, f.fiscal_period,
+             f.filed_date, f.is_amendment, f.is_canonical_filing, f.document_period_end,
+             f.concept, f.period_start, f.period_end, f.segment_axis, f.segment_member,
+             f.has_multiple_dimensions, md.dimensions,
+             COALESCE(f.segment_axis IN ('srt:ProductOrServiceAxis',
+                                         'us-gaap:StatementBusinessSegmentsAxis')
+                      AND regexp_replace(f.segment_label, '\s*\[Member\]$', '')
+                          = %(segment)s, FALSE) AS matches
+      FROM   mv_financial_facts f
+      LEFT   JOIN mv_financial_facts_multidim md ON md.fact_id = f.fact_id
+      WHERE  f.ticker = %(ticker)s AND f.concept_family = 'Revenue'
+        AND  f.segment_axis IS NOT NULL
+        AND  f.period_type = 'duration' AND f.duration_kind = 'annual'
+    require_unique: true      # ambiguous member -> no case, rather than bad truth
+    expect: {value: value, fact_ids: fact_id, unit: unit}
+    rel_tol: 1.0e-4
+
+  # =========================================================================
+  # SECTION 4 — GEOGRAPHY
+  # =========================================================================
+  - id: aq-4a-geographic-breakdown
+    source: "analyst_queries.sql#4a"
+    concept: Revenue
+    kind: breakdown
+    tags: [geography, breakdown, dimensional, novel-generated]
+    nl:
+      - "Break down {company}'s fiscal {fy} revenue by geography."
+      - "Which region contributed the most revenue to {company} in FY{fy}?"
+      - "What was {company}'s revenue split across regions in fiscal {fy}?"
+    params:
+      ticker: corpus.tickers
+      fy: corpus.fiscal_years
+    # "The breakdown" = choose_breakdown over the members (with their local names and
+    # parents from the filing's arcs) and the reconciling-line rows (is_line), the same
+    # rule the pipeline's breakdown step uses (docs/specs/breakdown-op.md,
+    # docs/specs/breakdown-reconciling-items.md); members in the total's (reporting)
+    # currency. No breakdown, no case. One filing's split (S1, docs/specs/dimensional-s1.md
+    # R5): the pick tries breakdown_filings latest first, binding that filing's total
+    # (breakdown_total) as total_fact_id and the axes; the first that partitions answers.
+    pick: s1_breakdown
+    axes: [StatementGeographicalAxis, GeographicalAreasAxis]
+    sql: |
+      WITH t AS (
+        SELECT f.cik, f.value, f.unit, f.fact_id, f.accession_no, f.period_start,
+               f.period_end, regexp_replace(f.concept, '^.*:', '') AS concept
+        FROM   mv_financial_facts f
+        WHERE  f.fact_id = %(total_fact_id)s
+      ),
+      mem AS (
+        SELECT COALESCE(c.segment_label, regexp_replace(c.segment_member, '^.*:', ''))
+                   AS geo_name,
+               c.value, c.fact_id, t.value AS total,
+               regexp_replace(c.segment_member, '^.*:', '') AS member,
+               regexp_replace(c.concept, '^.*:', '') AS concept
+        FROM   mv_financial_facts c
+        JOIN   t ON c.cik = t.cik AND c.accession_no = t.accession_no
+                AND c.unit IS NOT DISTINCT FROM t.unit
+                AND c.period_start IS NOT DISTINCT FROM t.period_start
+                AND c.period_end IS NOT DISTINCT FROM t.period_end
+        -- single-dimension facts on the axes only: a region x product cell is not a component
+        WHERE  c.concept_family = 'Revenue' AND c.duration_kind = 'annual'
+          AND  NOT COALESCE(c.has_multiple_dimensions, FALSE)
+          AND  regexp_replace(c.segment_axis, '^.*:', '') = ANY(%(axes)s)
+      ),
+      -- The filing's own arcs, by local name (presentation, definition, calculation).
+      arcs AS (
+        SELECT ru.uri AS role, aq.local_name AS arc, pq.local_name AS parent,
+               cq.local_name AS child, rel.calculation_weight AS weight,
+               n.network_id, rel.tree_sequence, rel.relationship_id
+        FROM   t
+        JOIN   accession a      ON a.filing_accession_number = t.accession_no
+        JOIN   network n        ON n.accession_id = a.accession_id
+        JOIN   qname aq         ON aq.qname_id = n.arc_qname_id
+        JOIN   uri ru           ON ru.uri_id = n.extended_link_role_uri_id
+        JOIN   relationship rel ON rel.network_id = n.network_id
+        JOIN   element pe       ON pe.element_id = rel.from_element_id
+        JOIN   qname pq         ON pq.qname_id = pe.qname_id
+        JOIN   element ce       ON ce.element_id = rel.to_element_id
+        JOIN   qname cq         ON cq.qname_id = ce.qname_id
+        WHERE  aq.local_name IN ('presentationArc', 'definitionArc', 'calculationArc')
+      ),
+      -- The axis's own table: roles presenting both the axis and the total's concept.
+      table_roles AS (
+        SELECT a.role FROM arcs a
+         WHERE a.arc = 'presentationArc' AND 'StatementGeographicalAxis' IN (a.parent, a.child)
+        INTERSECT
+        SELECT a.role FROM arcs a JOIN t ON a.child = t.concept
+         WHERE a.arc = 'presentationArc'
+      ),
+      presented AS (
+        SELECT DISTINCT a.child FROM arcs a JOIN table_roles r ON r.role = a.role
+         WHERE a.arc = 'presentationArc'
+      ),
+      calc AS (
+        SELECT DISTINCT ON (a.child) a.child, a.weight
+        FROM   arcs a JOIN t ON a.parent = t.concept
+        WHERE  a.arc = 'calculationArc'
+        ORDER  BY a.child, a.network_id, a.tree_sequence, a.relationship_id
+      ),
+      -- Reconciling-line candidates (docs/specs/breakdown-reconciling-items.md, C3): an
+      -- undimensioned line item of the table or calculation child of the total (weighted),
+      -- or the total's concept on ConsolidationItemsAxis other than OperatingSegments.
+      lines AS (
+        SELECT CASE WHEN c.segment_axis IS NULL
+                    THEN COALESCE(c.concept_label, regexp_replace(c.concept, '^.*:', ''))
+                    ELSE c.segment_label END AS geo_name,
+               CASE WHEN c.segment_axis IS NULL AND k.child IS NOT NULL
+                    THEN COALESCE(k.weight, 1) * c.value ELSE c.value END AS value,
+               c.fact_id, t.value AS total
+        FROM   mv_financial_facts c
+        JOIN   t ON c.cik = t.cik AND c.accession_no = t.accession_no
+                AND c.unit IS NOT DISTINCT FROM t.unit
+                AND c.period_start IS NOT DISTINCT FROM t.period_start
+                AND c.period_end IS NOT DISTINCT FROM t.period_end
+        LEFT JOIN calc k ON k.child = regexp_replace(c.concept, '^.*:', '')
+        WHERE  c.value IS NOT NULL AND c.value <> 0 AND c.fact_id <> t.fact_id
+          AND  NOT COALESCE(c.has_multiple_dimensions, FALSE)
+          AND  ((c.segment_axis IS NULL
+                 AND regexp_replace(c.concept, '^.*:', '') <> t.concept
+                 AND regexp_replace(c.concept, '^.*:', '') NOT IN (SELECT concept FROM mem)
+                 AND (k.child IS NOT NULL
+                      OR regexp_replace(c.concept, '^.*:', '') IN (SELECT child FROM presented)))
+             OR (regexp_replace(c.segment_axis, '^.*:', '') = 'ConsolidationItemsAxis'
+                 AND regexp_replace(c.concept, '^.*:', '') = t.concept
+                 AND regexp_replace(c.segment_member, '^.*:', '') <> 'OperatingSegmentsMember'))
+      )
+      SELECT m.geo_name, m.value, m.fact_id, m.total, m.member,
+             ARRAY(SELECT DISTINCT a.parent FROM arcs a
+                    WHERE a.arc IN ('presentationArc', 'definitionArc')
+                      AND a.child = m.member AND a.parent <> m.member
+                      AND a.parent IN (SELECT member FROM mem)
+                    ORDER BY a.parent) AS parents,
+             FALSE AS is_line
+      FROM   mem m
+      UNION ALL
+      SELECT l.geo_name, l.value, l.fact_id, l.total, NULL::text, NULL::text[], TRUE
+      FROM   lines l
+      ORDER  BY is_line, value DESC, fact_id
+    expect: {rows: {entity: geo_name, value: value}, fact_ids: fact_id, total: total,
+             line: is_line, member: member, parents: parents}
+    min_rows: 2
+    rel_tol: 1.0e-4
+
+  - id: aq-4c-china-exposure-screen
+    source: "analyst_queries.sql#4c"
+    concept: Revenue
+    kind: screen
+    tags: [geography, china, cross-filer, screen, domain-relevant]
+    nl:
+      - "List the top 5 covered companies by China revenue in fiscal {fy}, ranked highest first."
+      - "Rank the 5 covered filers with the most China revenue for FY{fy}."
+    params:
+      fy: corpus.fiscal_years
+    sql: |
+      SELECT DISTINCT ON (ticker) ticker, value, fact_id
+      FROM   mv_geographic_facts
+      WHERE  geo_code = 'CN' AND concept_family = 'Revenue'
+        AND  fiscal_year = %(fy)s AND unit = 'USD'
+        AND  fiscal_period = 'FY' AND duration_kind = 'annual'
+      ORDER  BY ticker, value DESC, fact_id DESC
+    post_sort: {by: value, order: desc}
+    expect: {rows: {entity: ticker, value: value}, fact_ids: fact_id}
+    top_n: 5
+    min_rows: 2
+    rel_tol: 1.0e-4
+
+  # =========================================================================
+  # SECTION 5 — BALANCE SHEET
+  # =========================================================================
+  - id: aq-5a-balance-sheet-lookup
+    source: "analyst_queries.sql#5a"
+    kind: lookup
+    tags: [balance-sheet, metrics-generated]
+    nl:
+      - "What were {company}'s {concept_label} at the end of fiscal {fy}?"
+      - "Report {company}'s {concept_label} as of the FY{fy} balance sheet date."
+      - "{company} {concept_label} at FY{fy} year-end?"
+    params:
+      ticker: corpus.tickers
+      fy: corpus.fiscal_years
+      concept:
+        values: [TotalAssets, TotalLiabilities, CashAndEquivalents, Inventory,
+                 Goodwill, RetainedEarnings, CurrentAssets, CurrentLiabilities]
+        labels:
+          TotalAssets: total assets
+          TotalLiabilities: total liabilities
+          CashAndEquivalents: cash and cash equivalents
+          Inventory: inventory
+          Goodwill: goodwill
+          RetainedEarnings: retained earnings
+          CurrentAssets: total current assets
+          CurrentLiabilities: total current liabilities
+    # S1 pick as in aq-1a: the balance at the fy filing's own period end, as the latest
+    # later-labelled canonical filing restates it; a 10-K that tags the balance only at
+    # earlier dates has no case (docs/specs/suite-templates-s1.md).
+    pick: s1_lookup
+    sql: |
+      SELECT f.value, f.fact_id, f.unit, f.cik, f.accession_no, f.fiscal_year,
+             f.fiscal_period, f.filed_date, f.is_amendment, f.is_canonical_filing,
+             f.document_period_end, f.concept, f.concept_family, f.segment_axis,
+             f.segment_member, f.period_start, f.period_end, f.concept_role,
+             f.concept_pref_rank, f.presented,
+             (SELECT CASE WHEN x.is_decimals_infinity THEN NULL
+                          ELSE x.decimals_value::int END
+              FROM fact x WHERE x.fact_id = f.fact_id) AS decimals
+      FROM   mv_financial_facts f
+      WHERE  f.ticker = %(ticker)s AND f.concept_family = %(concept)s
+        AND  f.segment_axis IS NULL AND f.period_type = 'instant'
+    expect: {value: value, fact_ids: fact_id, unit: unit}
+    rel_tol: 1.0e-4
+
+  - id: aq-5b-total-assets-screen
+    source: "analyst_queries.sql#5b"
+    kind: screen
+    tags: [balance-sheet, cross-filer, screen, domain-relevant]
+    nl:
+      - "List the top 5 covered companies by total assets in fiscal {fy}, ranked highest first."
+      - "Rank the 5 largest covered filers by total assets for FY{fy}."
+    params:
+      fy: corpus.fiscal_years
+    # The fact the screen cites (@LOOKUP_ORDER; docs/specs/screen-candidate-order.md).
+    sql: |
+      SELECT DISTINCT ON (f.ticker) f.ticker, f.value, f.fact_id
+      FROM   mv_financial_facts f
+      WHERE  f.concept_family = 'TotalAssets' AND f.fiscal_year = %(fy)s
+        AND  f.period_type = 'instant' AND f.segment_axis IS NULL
+        AND  f.is_canonical_filing AND f.unit = 'USD'
+        AND  f.fiscal_period = 'FY'
+        AND  @ANSWERABLE(f)
+      ORDER  BY f.ticker, @LOOKUP_ORDER(f)
+    post_sort: {by: value, order: desc}
+    expect: {rows: {entity: ticker, value: value}, fact_ids: fact_id}
+    top_n: 5
+    min_rows: 3
+    rel_tol: 1.0e-4
+
+  # =========================================================================
+  # SECTION 6 — CASH FLOW
+  # =========================================================================
+  - id: aq-6a-cash-flow-lookup
+    source: "analyst_queries.sql#6a"
+    kind: lookup
+    tags: [cash-flow, metrics-generated]
+    nl:
+      - "What was {company}'s {concept_label} in fiscal {fy}?"
+      - "How much {concept_label} did {company} report for FY{fy}?"
+    params:
+      ticker: corpus.tickers
+      fy: corpus.fiscal_years
+      concept:
+        values: [CashFromOperations, CashFromInvesting, CashFromFinancing,
+                 Capex, ShareBasedCompensation, DividendsPaid]
+        labels:
+          CashFromOperations: net cash provided by operating activities
+          CashFromInvesting: net cash used in investing activities
+          CashFromFinancing: net cash used in financing activities
+          Capex: capital expenditure
+          ShareBasedCompensation: share-based compensation expense
+          DividendsPaid: dividends paid
+    # S1 pick as in aq-1a: a restated cash flow keys the restating filing's figure
+    # (docs/specs/suite-templates-s1.md).
+    pick: s1_lookup
+    sql: |
+      SELECT f.value, f.fact_id, f.unit, f.cik, f.accession_no, f.fiscal_year,
+             f.fiscal_period, f.filed_date, f.is_amendment, f.is_canonical_filing,
+             f.document_period_end, f.concept, f.concept_family, f.segment_axis,
+             f.segment_member, f.period_start, f.period_end, f.concept_role,
+             f.concept_pref_rank, f.presented,
+             (SELECT CASE WHEN x.is_decimals_infinity THEN NULL
+                          ELSE x.decimals_value::int END
+              FROM fact x WHERE x.fact_id = f.fact_id) AS decimals
+      FROM   mv_financial_facts f
+      WHERE  f.ticker = %(ticker)s AND f.concept_family = %(concept)s
+        AND  f.segment_axis IS NULL
+        AND  f.period_type = 'duration' AND f.duration_kind = 'annual'
+    expect: {value: value, fact_ids: fact_id, unit: unit}
+    rel_tol: 1.0e-4
+
+  # =========================================================================
+  # SECTION 7 — DERIVED METRICS  (ratios; value is a FRACTION in the store)
+  # =========================================================================
+  - id: aq-7a-derived-metric-lookup
+    source: "analyst_queries.sql#7a"
+    kind: compute
+    tags: [ratio, profitability, metrics-generated]
+    nl:
+      - "What was {company}'s {metric_label} in fiscal {fy}?"
+      - "Calculate {company}'s {metric_label} for FY{fy}."
+      - "{company} FY{fy} {metric_label}?"
+    params:
+      ticker: corpus.tickers
+      fy: corpus.fiscal_years
+      metric:
+        values: [GrossMarginPct, OperatingMarginPct, NetMarginPct,
+                 RnDIntensityPct, EffectiveTaxRate, CurrentRatio,
+                 FreeCashFlow, EBITDA]
+        labels:
+          GrossMarginPct: gross margin
+          OperatingMarginPct: operating margin
+          NetMarginPct: net profit margin
+          RnDIntensityPct: R&D intensity as a share of revenue
+          EffectiveTaxRate: effective tax rate
+          CurrentRatio: current ratio
+          FreeCashFlow: free cash flow
+          EBITDA: EBITDA
+    sql: |
+      SELECT value, component_fact_ids, formula
+      FROM   mv_derived_metrics
+      WHERE  ticker = %(ticker)s AND fiscal_year = %(fy)s
+        AND  metric_name = %(metric)s
+        AND  fiscal_period = 'FY'
+      LIMIT  1
+    expect: {value: value, fact_ids_json: component_fact_ids}
+    alt_scale: [100]
+    rel_tol: 1.0e-2
+
+  - id: aq-7b-margin-screen
+    source: "analyst_queries.sql#7b"
+    kind: screen
+    max_per_stratum: 4      # all four metrics per year (stratum = fiscal year)
+    tags: [ratio, profitability, cross-filer, screen, domain-relevant]
+    nl:
+      - "List the top 5 covered companies by {metric_label} in fiscal {fy}, ranked highest first."
+      - "Rank the 5 covered filers with the highest {metric_label} for FY{fy}."
+    params:
+      fy: corpus.fiscal_years
+      metric:
+        values: [GrossMarginPct, OperatingMarginPct, NetMarginPct, FreeCashFlow]
+        labels:
+          GrossMarginPct: gross margin
+          OperatingMarginPct: operating margin
+          NetMarginPct: net profit margin
+          FreeCashFlow: free cash flow
+    sql: |
+      SELECT DISTINCT ON (ticker) ticker, value, component_fact_ids
+      FROM   mv_derived_metrics
+      WHERE  fiscal_year = %(fy)s AND metric_name = %(metric)s
+        AND  fiscal_period = 'FY'
+      ORDER  BY ticker, fiscal_year DESC
+    post_sort: {by: value, order: desc}
+    expect:
+      rows: {entity: ticker, value: value}
+      fact_ids_json: component_fact_ids
+    top_n: 5
+    min_rows: 3
+    alt_scale: [100]
+    rel_tol: 1.0e-2
+
+  # =========================================================================
+  # SECTION 8 — MULTI-DIMENSIONAL FACTS
+  # Axis matching is on the *local name* (namespace-insensitive): WS-1/A2 found
+  # date-stamped namespace drift, not renames, to be the dominant real failure.
+  # `require_unique` is essential here — the same (concept, dimensions) pair recurs
+  # across comparative periods, so without it the ground truth would be ambiguous.
+  # =========================================================================
+  - id: aq-8b-multidim-lookup
+    source: "analyst_queries.sql#8b"
+    kind: dimensional
+    tags: [multidim, dimensional, novel-generated]
+    nl:
+      - "For {company} in fiscal {fy}, what was {concept_label} for {dim_label}?"
+      - "What did {company} report for {concept_label} under {dim_label} in FY{fy}?"
+    params:
+      ticker: corpus.tickers
+      fy: corpus.fiscal_years
+      combo:
+        from_sql: |
+          SELECT m.concept_label || ' :: ' || m.dim_label
+          FROM (
+            SELECT DISTINCT
+                   regexp_replace(mm.concept, '^.*:', '')            AS concept_label,
+                   (SELECT string_agg(v, ' and ' ORDER BY v)
+                      FROM jsonb_each_text(mm.dimension_labels) AS t(k, v))
+                                                                     AS dim_label,
+                   count(*) OVER (PARTITION BY mm.concept, mm.dimension_labels) AS n
+            FROM   mv_financial_facts_multidim mm
+            JOIN   entity_master em ON em.cik = mm.cik
+            WHERE  em.trading_symbol = %(ticker)s AND mm.fiscal_year = %(fy)s
+              AND  mm.unit = 'USD' AND mm.dimension_count >= 2
+              AND  mm.is_current_period AND mm.fiscal_period = 'FY'
+              -- Only concepts the `lookup` op can actually reach: it resolves
+              -- through concept_family, so a fact whose concept has no mapping
+              -- is unanswerable by design. 34 of 40 cases were such facts, and
+              -- the template was asking questions the architecture cannot answer.
+              AND  EXISTS (SELECT 1 FROM concept_mapping cm
+                            WHERE regexp_replace(cm.qname, '^.*:', '')
+                                = regexp_replace(mm.concept, '^.*:', '')
+                              AND COALESCE(cm.is_deprecated, FALSE) = FALSE)
+          ) m
+          WHERE m.n = 1 AND m.dim_label IS NOT NULL
+          ORDER BY 1
+          LIMIT 40
+    # S1 (docs/specs/dimensional-s1.md R2-R3): the filer's multidim rows of the concept
+    # from every filing, with the filing columns; the pick keys the own column's matching
+    # cell as the latest later-labelled report with the same dimensions restates it.
+    pick: s1_dimensional
+    sql: |
+      SELECT mm.value, mm.fact_id, mm.unit, mm.accession_no, mm.fiscal_year,
+             mm.fiscal_period, fr.filed_date, fr.is_amendment,
+             fr.superseded_by IS NULL AS is_canonical_filing,
+             (SELECT d.document_period_end FROM mv_dei_metadata d
+               WHERE d.accession_no = mm.accession_no LIMIT 1) AS document_period_end,
+             mm.concept, mm.period_start, mm.period_end, mm.dimensions,
+             COALESCE((SELECT string_agg(v, ' and ' ORDER BY v)
+                         FROM jsonb_each_text(mm.dimension_labels) AS t(k, v))
+                      = split_part(%(combo)s, ' :: ', 2), FALSE) AS matches
+      FROM   mv_financial_facts_multidim mm
+      JOIN   entity_master em ON em.cik = mm.cik
+      JOIN   filing_registry fr ON fr.accession_no = mm.accession_no AND fr.cik = mm.cik
+      WHERE  em.trading_symbol = %(ticker)s
+        AND  mm.unit = 'USD' AND mm.dimension_count >= 2
+        AND  regexp_replace(mm.concept, '^.*:', '') = split_part(%(combo)s, ' :: ', 1)
+    require_unique: true
+    expect: {value: value, fact_ids: fact_id, unit: unit}
+    rel_tol: 1.0e-4
+
+  # =========================================================================
+  # SECTION 10 — IFRS / 20-F FILER (TSM), reported in TWD.
+  # Keeps unit-handling regressions visible: TSM tags both TWD and USD facts, and
+  # a query that silently returns the wrong currency is a silent-wrong answer.
+  # =========================================================================
+  - id: aq-10a-tsm-twd-lookup
+    source: "analyst_queries.sql#10a"
+    kind: lookup
+    max_per_stratum: 6      # TSM is the only 20-F filer; keep its unit coverage
+    tags: [ifrs, twd, currency, tsm, novel-generated]
+    nl:
+      - "What was TSMC's {concept_label} in fiscal {fy}, in New Taiwan dollars?"
+      - "Report TSMC's FY{fy} {concept_label} in TWD."
+    params:
+      fy: corpus.fiscal_years
+      concept:
+        values: [Revenue, GrossProfit, OperatingIncome, NetIncome,
+                 CashFromOperations, Capex]
+        labels:
+          Revenue: revenue
+          GrossProfit: gross profit
+          OperatingIncome: operating income
+          NetIncome: net income
+          CashFromOperations: net cash from operating activities
+          Capex: capital expenditure
+    # S1 pick as in aq-1a, over TSM's TWD rows (docs/specs/suite-templates-s1.md).
+    pick: s1_lookup
+    sql: |
+      SELECT f.value, f.fact_id, f.unit, f.cik, f.accession_no, f.fiscal_year,
+             f.fiscal_period, f.filed_date, f.is_amendment, f.is_canonical_filing,
+             f.document_period_end, f.concept, f.concept_family, f.segment_axis,
+             f.segment_member, f.period_start, f.period_end, f.concept_role,
+             f.concept_pref_rank, f.presented,
+             (SELECT CASE WHEN x.is_decimals_infinity THEN NULL
+                          ELSE x.decimals_value::int END
+              FROM fact x WHERE x.fact_id = f.fact_id) AS decimals
+      FROM   mv_financial_facts f
+      WHERE  f.ticker = 'TSM' AND f.concept_family = %(concept)s AND f.unit = 'TWD'
+        AND  f.segment_axis IS NULL
+        AND  f.period_type = 'duration' AND f.duration_kind = 'annual'
+    expect: {value: value, fact_ids: fact_id, unit: unit}
+    ticker: TSM
+    rel_tol: 1.0e-4
+
+  - id: aq-10b-tsm-geo-breakdown
+    source: "analyst_queries.sql#10b"
+    concept: Revenue
+    kind: breakdown
+    tags: [ifrs, geography, breakdown, tsm, novel-generated]
+    nl:
+      - "Break down TSMC's fiscal {fy} revenue by region."
+      - "Which region contributed the most revenue to TSMC in FY{fy}?"
+    params:
+      fy: corpus.fiscal_years
+    # "The breakdown" = choose_breakdown over the members (with their local names and
+    # parents from the filing's arcs) and the reconciling-line rows (is_line), the same
+    # rule the pipeline's breakdown step uses (docs/specs/breakdown-op.md,
+    # docs/specs/breakdown-reconciling-items.md); members in the total's (reporting)
+    # currency. No breakdown, no case. One filing's split (S1, docs/specs/dimensional-s1.md
+    # R5): the pick tries breakdown_filings latest first, binding that filing's total
+    # (breakdown_total) as total_fact_id and the axes; the first that partitions answers.
+    pick: s1_breakdown
+    axes: [StatementGeographicalAxis, GeographicalAreasAxis]
+    sql: |
+      WITH t AS (
+        SELECT f.cik, f.value, f.unit, f.fact_id, f.accession_no, f.period_start,
+               f.period_end, regexp_replace(f.concept, '^.*:', '') AS concept
+        FROM   mv_financial_facts f
+        WHERE  f.fact_id = %(total_fact_id)s
+      ),
+      mem AS (
+        SELECT COALESCE(c.segment_label, regexp_replace(c.segment_member, '^.*:', ''))
+                   AS geo_name,
+               c.value, c.fact_id, t.value AS total,
+               regexp_replace(c.segment_member, '^.*:', '') AS member,
+               regexp_replace(c.concept, '^.*:', '') AS concept
+        FROM   mv_financial_facts c
+        JOIN   t ON c.cik = t.cik AND c.accession_no = t.accession_no
+                AND c.unit IS NOT DISTINCT FROM t.unit
+                AND c.period_start IS NOT DISTINCT FROM t.period_start
+                AND c.period_end IS NOT DISTINCT FROM t.period_end
+        -- single-dimension facts on the axes only: a region x product cell is not a component
+        WHERE  c.concept_family = 'Revenue' AND c.duration_kind = 'annual'
+          AND  NOT COALESCE(c.has_multiple_dimensions, FALSE)
+          AND  regexp_replace(c.segment_axis, '^.*:', '') = ANY(%(axes)s)
+      ),
+      -- The filing's own arcs, by local name (presentation, definition, calculation).
+      arcs AS (
+        SELECT ru.uri AS role, aq.local_name AS arc, pq.local_name AS parent,
+               cq.local_name AS child, rel.calculation_weight AS weight,
+               n.network_id, rel.tree_sequence, rel.relationship_id
+        FROM   t
+        JOIN   accession a      ON a.filing_accession_number = t.accession_no
+        JOIN   network n        ON n.accession_id = a.accession_id
+        JOIN   qname aq         ON aq.qname_id = n.arc_qname_id
+        JOIN   uri ru           ON ru.uri_id = n.extended_link_role_uri_id
+        JOIN   relationship rel ON rel.network_id = n.network_id
+        JOIN   element pe       ON pe.element_id = rel.from_element_id
+        JOIN   qname pq         ON pq.qname_id = pe.qname_id
+        JOIN   element ce       ON ce.element_id = rel.to_element_id
+        JOIN   qname cq         ON cq.qname_id = ce.qname_id
+        WHERE  aq.local_name IN ('presentationArc', 'definitionArc', 'calculationArc')
+      ),
+      -- The axis's own table: roles presenting both the axis and the total's concept.
+      table_roles AS (
+        SELECT a.role FROM arcs a
+         WHERE a.arc = 'presentationArc' AND 'StatementGeographicalAxis' IN (a.parent, a.child)
+        INTERSECT
+        SELECT a.role FROM arcs a JOIN t ON a.child = t.concept
+         WHERE a.arc = 'presentationArc'
+      ),
+      presented AS (
+        SELECT DISTINCT a.child FROM arcs a JOIN table_roles r ON r.role = a.role
+         WHERE a.arc = 'presentationArc'
+      ),
+      calc AS (
+        SELECT DISTINCT ON (a.child) a.child, a.weight
+        FROM   arcs a JOIN t ON a.parent = t.concept
+        WHERE  a.arc = 'calculationArc'
+        ORDER  BY a.child, a.network_id, a.tree_sequence, a.relationship_id
+      ),
+      -- Reconciling-line candidates (docs/specs/breakdown-reconciling-items.md, C3): an
+      -- undimensioned line item of the table or calculation child of the total (weighted),
+      -- or the total's concept on ConsolidationItemsAxis other than OperatingSegments.
+      lines AS (
+        SELECT CASE WHEN c.segment_axis IS NULL
+                    THEN COALESCE(c.concept_label, regexp_replace(c.concept, '^.*:', ''))
+                    ELSE c.segment_label END AS geo_name,
+               CASE WHEN c.segment_axis IS NULL AND k.child IS NOT NULL
+                    THEN COALESCE(k.weight, 1) * c.value ELSE c.value END AS value,
+               c.fact_id, t.value AS total
+        FROM   mv_financial_facts c
+        JOIN   t ON c.cik = t.cik AND c.accession_no = t.accession_no
+                AND c.unit IS NOT DISTINCT FROM t.unit
+                AND c.period_start IS NOT DISTINCT FROM t.period_start
+                AND c.period_end IS NOT DISTINCT FROM t.period_end
+        LEFT JOIN calc k ON k.child = regexp_replace(c.concept, '^.*:', '')
+        WHERE  c.value IS NOT NULL AND c.value <> 0 AND c.fact_id <> t.fact_id
+          AND  NOT COALESCE(c.has_multiple_dimensions, FALSE)
+          AND  ((c.segment_axis IS NULL
+                 AND regexp_replace(c.concept, '^.*:', '') <> t.concept
+                 AND regexp_replace(c.concept, '^.*:', '') NOT IN (SELECT concept FROM mem)
+                 AND (k.child IS NOT NULL
+                      OR regexp_replace(c.concept, '^.*:', '') IN (SELECT child FROM presented)))
+             OR (regexp_replace(c.segment_axis, '^.*:', '') = 'ConsolidationItemsAxis'
+                 AND regexp_replace(c.concept, '^.*:', '') = t.concept
+                 AND regexp_replace(c.segment_member, '^.*:', '') <> 'OperatingSegmentsMember'))
+      )
+      SELECT m.geo_name, m.value, m.fact_id, m.total, m.member,
+             ARRAY(SELECT DISTINCT a.parent FROM arcs a
+                    WHERE a.arc IN ('presentationArc', 'definitionArc')
+                      AND a.child = m.member AND a.parent <> m.member
+                      AND a.parent IN (SELECT member FROM mem)
+                    ORDER BY a.parent) AS parents,
+             FALSE AS is_line
+      FROM   mem m
+      UNION ALL
+      SELECT l.geo_name, l.value, l.fact_id, l.total, NULL::text, NULL::text[], TRUE
+      FROM   lines l
+      ORDER  BY is_line, value DESC, fact_id
+    expect: {rows: {entity: geo_name, value: value}, fact_ids: fact_id, total: total,
+             line: is_line, member: member, parents: parents}
+    ticker: TSM
+    min_rows: 2
+    rel_tol: 1.0e-4

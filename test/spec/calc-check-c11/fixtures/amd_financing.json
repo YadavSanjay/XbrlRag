@@ -1,0 +1,399 @@
+{
+ "case": "amd_financing",
+ "accession_no": "0000002488-24-000012",
+ "filing": "AMD 10-K FY2023",
+ "local_source": "data/storage/sec_edgar/AMD/2023/10-K/amd-20231230.htm",
+ "extracted": "xbrl_db (read-only), 2026-11-07: network/relationship arcs of one link role and parent; every fact of those concepts in the filing (all contexts)",
+ "dates": "xbrl_db stores an instant and a duration end as the next day (end-of-day convention): 2025-01-01 is the 2024-12-31 balance sheet date",
+ "arelle_c11r": {
+  "version": "Arelle 2.41.0, arelleCmdLine --calc c11r --internetConnectivity offline, run 2026-11-07 on local_source",
+  "inconsistent_in_this_tree": [
+   {
+    "context": "c-7",
+    "period_start": "2020-12-27",
+    "period_end": "2021-12-26",
+    "reported": [
+     "1894500000",
+     "1895500000"
+    ],
+    "computed": [
+     "-1898000000",
+     "-1892000000"
+    ]
+   }
+  ]
+ },
+ "arcs": [
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.amd.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2023:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2023:ProceedsFromPaymentsForOtherFinancingActivities",
+   "weight": "1.0"
+  },
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.amd.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2023:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2023:ProceedsFromShortTermDebt",
+   "weight": "1.0"
+  },
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.amd.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2023:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2023:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+   "weight": "-1.0"
+  },
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.amd.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2023:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2023:ProceedsFromIssuanceOfSharesUnderIncentiveAndShareBasedCompensationPlansIncludingStockOptions",
+   "weight": "1.0"
+  },
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.amd.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2023:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2023:PaymentsForRepurchaseOfCommonStock",
+   "weight": "-1.0"
+  },
+  {
+   "arcrole": "http://www.xbrl.org/2003/arcrole/summation-item",
+   "link_role": "http://www.amd.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2023:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2023:RepaymentsOfDebt",
+   "weight": "-1.0"
+  }
+ ],
+ "facts": [
+  {
+   "fact_id": 18008,
+   "concept": "http://fasb.org/us-gaap/2023:NetCashProvidedByUsedInFinancingActivities",
+   "entity": "0000002488",
+   "period_start": "2020-12-27",
+   "period_end": "2021-12-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "1895000000",
+   "decimals": -6,
+   "xml_id": "f-360",
+   "context": "c-7"
+  },
+  {
+   "fact_id": 18007,
+   "concept": "http://fasb.org/us-gaap/2023:NetCashProvidedByUsedInFinancingActivities",
+   "entity": "0000002488",
+   "period_start": "2021-12-26",
+   "period_end": "2023-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "-3264000000",
+   "decimals": -6,
+   "xml_id": "f-359",
+   "context": "c-6"
+  },
+  {
+   "fact_id": 18006,
+   "concept": "http://fasb.org/us-gaap/2023:NetCashProvidedByUsedInFinancingActivities",
+   "entity": "0000002488",
+   "period_start": "2023-01-01",
+   "period_end": "2023-12-31",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "-1146000000",
+   "decimals": -6,
+   "xml_id": "f-358",
+   "context": "c-1"
+  },
+  {
+   "fact_id": 17999,
+   "concept": "http://fasb.org/us-gaap/2023:PaymentsForRepurchaseOfCommonStock",
+   "entity": "0000002488",
+   "period_start": "2020-12-27",
+   "period_end": "2021-12-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "1762000000",
+   "decimals": -6,
+   "xml_id": "f-351",
+   "context": "c-7"
+  },
+  {
+   "fact_id": 17998,
+   "concept": "http://fasb.org/us-gaap/2023:PaymentsForRepurchaseOfCommonStock",
+   "entity": "0000002488",
+   "period_start": "2021-12-26",
+   "period_end": "2023-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "3702000000",
+   "decimals": -6,
+   "xml_id": "f-350",
+   "context": "c-6"
+  },
+  {
+   "fact_id": 17997,
+   "concept": "http://fasb.org/us-gaap/2023:PaymentsForRepurchaseOfCommonStock",
+   "entity": "0000002488",
+   "period_start": "2023-01-01",
+   "period_end": "2023-12-31",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "985000000",
+   "decimals": -6,
+   "xml_id": "f-349",
+   "context": "c-1"
+  },
+  {
+   "fact_id": 17882,
+   "concept": "http://fasb.org/us-gaap/2023:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+   "entity": "0000002488",
+   "period_start": "2020-12-27",
+   "period_end": "2021-12-26",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2023:StatementEquityComponentsAxis",
+     "http://fasb.org/us-gaap/2023:TreasuryStockCommonMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "-237000000",
+   "decimals": -6,
+   "xml_id": "f-234",
+   "context": "c-33"
+  },
+  {
+   "fact_id": 18002,
+   "concept": "http://fasb.org/us-gaap/2023:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+   "entity": "0000002488",
+   "period_start": "2020-12-27",
+   "period_end": "2021-12-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "237000000",
+   "decimals": -6,
+   "xml_id": "f-354",
+   "context": "c-7"
+  },
+  {
+   "fact_id": 17881,
+   "concept": "http://fasb.org/us-gaap/2023:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+   "entity": "0000002488",
+   "period_start": "2021-12-26",
+   "period_end": "2023-01-01",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2023:StatementEquityComponentsAxis",
+     "http://fasb.org/us-gaap/2023:TreasuryStockCommonMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "-405000000",
+   "decimals": -6,
+   "xml_id": "f-233",
+   "context": "c-32"
+  },
+  {
+   "fact_id": 18001,
+   "concept": "http://fasb.org/us-gaap/2023:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+   "entity": "0000002488",
+   "period_start": "2021-12-26",
+   "period_end": "2023-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "406000000",
+   "decimals": -6,
+   "xml_id": "f-353",
+   "context": "c-6"
+  },
+  {
+   "fact_id": 17880,
+   "concept": "http://fasb.org/us-gaap/2023:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+   "entity": "0000002488",
+   "period_start": "2023-01-01",
+   "period_end": "2023-12-31",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2023:StatementEquityComponentsAxis",
+     "http://fasb.org/us-gaap/2023:TreasuryStockCommonMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "-430000000",
+   "decimals": -6,
+   "xml_id": "f-232",
+   "context": "c-31"
+  },
+  {
+   "fact_id": 18000,
+   "concept": "http://fasb.org/us-gaap/2023:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+   "entity": "0000002488",
+   "period_start": "2023-01-01",
+   "period_end": "2023-12-31",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "427000000",
+   "decimals": -6,
+   "xml_id": "f-352",
+   "context": "c-1"
+  },
+  {
+   "fact_id": 17996,
+   "concept": "http://fasb.org/us-gaap/2023:ProceedsFromIssuanceOfSharesUnderIncentiveAndShareBasedCompensationPlansIncludingStockOptions",
+   "entity": "0000002488",
+   "period_start": "2020-12-27",
+   "period_end": "2021-12-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "104000000",
+   "decimals": -6,
+   "xml_id": "f-348",
+   "context": "c-7"
+  },
+  {
+   "fact_id": 17995,
+   "concept": "http://fasb.org/us-gaap/2023:ProceedsFromIssuanceOfSharesUnderIncentiveAndShareBasedCompensationPlansIncludingStockOptions",
+   "entity": "0000002488",
+   "period_start": "2021-12-26",
+   "period_end": "2023-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "167000000",
+   "decimals": -6,
+   "xml_id": "f-347",
+   "context": "c-6"
+  },
+  {
+   "fact_id": 17994,
+   "concept": "http://fasb.org/us-gaap/2023:ProceedsFromIssuanceOfSharesUnderIncentiveAndShareBasedCompensationPlansIncludingStockOptions",
+   "entity": "0000002488",
+   "period_start": "2023-01-01",
+   "period_end": "2023-12-31",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "268000000",
+   "decimals": -6,
+   "xml_id": "f-346",
+   "context": "c-1"
+  },
+  {
+   "fact_id": 18005,
+   "concept": "http://fasb.org/us-gaap/2023:ProceedsFromPaymentsForOtherFinancingActivities",
+   "entity": "0000002488",
+   "period_start": "2020-12-27",
+   "period_end": "2021-12-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "0",
+   "decimals": -6,
+   "xml_id": "f-357",
+   "context": "c-7"
+  },
+  {
+   "fact_id": 18004,
+   "concept": "http://fasb.org/us-gaap/2023:ProceedsFromPaymentsForOtherFinancingActivities",
+   "entity": "0000002488",
+   "period_start": "2021-12-26",
+   "period_end": "2023-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "-2000000",
+   "decimals": -6,
+   "xml_id": "f-356",
+   "context": "c-6"
+  },
+  {
+   "fact_id": 18003,
+   "concept": "http://fasb.org/us-gaap/2023:ProceedsFromPaymentsForOtherFinancingActivities",
+   "entity": "0000002488",
+   "period_start": "2023-01-01",
+   "period_end": "2023-12-31",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "-2000000",
+   "decimals": -6,
+   "xml_id": "f-355",
+   "context": "c-1"
+  },
+  {
+   "fact_id": 17990,
+   "concept": "http://fasb.org/us-gaap/2023:ProceedsFromShortTermDebt",
+   "entity": "0000002488",
+   "period_start": "2020-12-27",
+   "period_end": "2021-12-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "0",
+   "decimals": -6,
+   "xml_id": "f-342",
+   "context": "c-7"
+  },
+  {
+   "fact_id": 17989,
+   "concept": "http://fasb.org/us-gaap/2023:ProceedsFromShortTermDebt",
+   "entity": "0000002488",
+   "period_start": "2021-12-26",
+   "period_end": "2023-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "991000000",
+   "decimals": -6,
+   "xml_id": "f-341",
+   "context": "c-6"
+  },
+  {
+   "fact_id": 17988,
+   "concept": "http://fasb.org/us-gaap/2023:ProceedsFromShortTermDebt",
+   "entity": "0000002488",
+   "period_start": "2023-01-01",
+   "period_end": "2023-12-31",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "0",
+   "decimals": -6,
+   "xml_id": "f-340",
+   "context": "c-1"
+  },
+  {
+   "fact_id": 17993,
+   "concept": "http://fasb.org/us-gaap/2023:RepaymentsOfDebt",
+   "entity": "0000002488",
+   "period_start": "2020-12-27",
+   "period_end": "2021-12-26",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "0",
+   "decimals": -6,
+   "xml_id": "f-345",
+   "context": "c-7"
+  },
+  {
+   "fact_id": 17992,
+   "concept": "http://fasb.org/us-gaap/2023:RepaymentsOfDebt",
+   "entity": "0000002488",
+   "period_start": "2021-12-26",
+   "period_end": "2023-01-01",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "312000000",
+   "decimals": -6,
+   "xml_id": "f-344",
+   "context": "c-6"
+  },
+  {
+   "fact_id": 17991,
+   "concept": "http://fasb.org/us-gaap/2023:RepaymentsOfDebt",
+   "entity": "0000002488",
+   "period_start": "2023-01-01",
+   "period_end": "2023-12-31",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "0",
+   "decimals": -6,
+   "xml_id": "f-343",
+   "context": "c-1"
+  }
+ ]
+}

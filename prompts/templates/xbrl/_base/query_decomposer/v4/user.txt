@@ -1,0 +1,6 @@
+USER QUERY:
+{user_query}
+
+PLANNER_FEEDBACK: {planner_feedback}
+
+Return ONLY the JSON object described in the system prompt.

@@ -1,0 +1,7 @@
+QUESTION:
+{question}
+
+EXCERPTS (JSON, in retrieval order):
+{excerpts}
+
+Reply with the single JSON object described in the system instructions.

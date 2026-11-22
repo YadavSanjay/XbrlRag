@@ -1,0 +1,17 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0000000001-24-000001	2	1	BS	0	H	Assets	us-gaap/2024	Total assets	0
+0000000001-24-000001	4	1	IS	0	H	Revenues	us-gaap/2024	Total revenues	0
+0000000001-24-000001	4	2	IS	0	H	NetIncomeLoss	us-gaap/2024	Net income	0
+0000000002-24-000002	2	1	BS	0	H	Assets	us-gaap/2024	Assets, total	0
+0000000002-24-000002	4	1	IS	0	H	ProductRevenue	0000000002-24-000002	Product revenue	0
+0000000002-24-000002	4	2	IS	0	H	ServiceRevenue	0000000002-24-000002	Service revenue	0
+0000000002-24-000002	4	3	IS	0	H	Revenues	us-gaap/2024	Total net sales	0
+0000000002-24-000002	4	4	IS	0	H	ProfitLoss	us-gaap/2024	Net income including noncontrolling interest	0
+0000000002-24-000002	4	5	IS	0	H	NetIncomeLoss	us-gaap/2024	Attributable to parent	0
+0000000003-24-000003	4	1	IS	0	H	Revenues	us-gaap/2024	Revenues	0
+0000000003-24-000003	4	2	IS	0	H	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	Revenue from contracts with customers	0
+0000000003-24-000003	4	3	IS	0	H	NetIncomeCustom	0000000003-24-000003	Net income	0
+0000000004-24-000004	2	1	BS	0	H	Assets	0000000004-24-000004	Total assets	0
+0000000004-24-000004	4	1	IS	0	H	RevenueCustom	0000000004-24-000004	Revenue	0
+0000000004-24-000004	4	2	IS	0	H	NetIncomeLoss	us-gaap/2024	Net income	0
+0000000004-24-000004	6	1	CF	0	H	Revenues	us-gaap/2024	Revenues	0

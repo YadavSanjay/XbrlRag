@@ -1,0 +1,67 @@
+{
+ "note": "ix:nonFraction elements and their xbrli:context, copied unchanged from each filing's primary document (local copy under data/storage/sec_edgar/).",
+ "filings": [
+  {
+   "ticker": "MCD",
+   "accession_no": "0000063908-24-000072",
+   "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390824000072/mcd-20231231.htm",
+   "sha256": "fa1d15b4a145d8ea92f4dffe339b0b555a6cfdee51e6b6e3d295536e4062fcda",
+   "retrieved": "2026-10-29",
+   "facts": [
+    {
+     "id": "f-904",
+     "element": "<ix:nonFraction unitRef=\"usd\" contextRef=\"c-201\" decimals=\"-5\" sign=\"-\" name=\"us-gaap:RestructuringAndRelatedCostIncurredCost\" scale=\"6\" id=\"f-904\">5.0</ix:nonFraction>",
+     "context": "<xbrli:context id=\"c-201\"><xbrli:entity><xbrli:identifier scheme=\"http://www.sec.gov/CIK\">0000063908</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension=\"us-gaap:RestructuringCostAndReserveAxis\">us-gaap:SpecialTerminationBenefitsMember</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2023-10-01</xbrli:startDate><xbrli:endDate>2023-12-31</xbrli:endDate></xbrli:period></xbrli:context>"
+    },
+    {
+     "id": "f-905",
+     "element": "<ix:nonFraction unitRef=\"usd\" contextRef=\"c-202\" decimals=\"-5\" name=\"us-gaap:RestructuringAndRelatedCostIncurredCost\" format=\"ixt:fixed-zero\" scale=\"6\" id=\"f-905\">&#8212;</ix:nonFraction>",
+     "context": "<xbrli:context id=\"c-202\"><xbrli:entity><xbrli:identifier scheme=\"http://www.sec.gov/CIK\">0000063908</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension=\"us-gaap:RestructuringCostAndReserveAxis\">us-gaap:ContractTerminationMember</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2023-10-01</xbrli:startDate><xbrli:endDate>2023-12-31</xbrli:endDate></xbrli:period></xbrli:context>"
+    },
+    {
+     "id": "f-906",
+     "element": "<ix:nonFraction unitRef=\"usd\" contextRef=\"c-203\" decimals=\"-5\" name=\"us-gaap:RestructuringAndRelatedCostIncurredCost\" scale=\"6\" id=\"f-906\">35.0</ix:nonFraction>",
+     "context": "<xbrli:context id=\"c-203\"><xbrli:entity><xbrli:identifier scheme=\"http://www.sec.gov/CIK\">0000063908</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension=\"us-gaap:RestructuringCostAndReserveAxis\">us-gaap:OtherRestructuringMember</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2023-10-01</xbrli:startDate><xbrli:endDate>2023-12-31</xbrli:endDate></xbrli:period></xbrli:context>"
+    }
+   ]
+  },
+  {
+   "ticker": "GOOGL",
+   "accession_no": "0001652044-26-000071",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+   "sha256": "74e028c9cd28cc980740aa76f06d646ea6b95ff7ccd66f74b70c9dda768d6c96",
+   "retrieved": "2026-10-06",
+   "facts": [
+    {
+     "id": "f-599",
+     "element": "<ix:nonFraction unitRef=\"usd\" contextRef=\"c-129\" decimals=\"-6\" name=\"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\" format=\"ixt:num-dot-decimal\" scale=\"6\" id=\"f-599\">60,846</ix:nonFraction>",
+     "context": "<xbrli:context id=\"c-129\"><xbrli:entity><xbrli:identifier scheme=\"http://www.sec.gov/CIK\">0001652044</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension=\"srt:StatementGeographicalAxis\">country:US</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2026-04-01</xbrli:startDate><xbrli:endDate>2026-06-30</xbrli:endDate></xbrli:period></xbrli:context>"
+    },
+    {
+     "id": "f-603",
+     "element": "<ix:nonFraction unitRef=\"usd\" contextRef=\"c-133\" decimals=\"-6\" name=\"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\" format=\"ixt:num-dot-decimal\" scale=\"6\" id=\"f-603\">114,821</ix:nonFraction>",
+     "context": "<xbrli:context id=\"c-133\"><xbrli:entity><xbrli:identifier scheme=\"http://www.sec.gov/CIK\">0001652044</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension=\"srt:StatementGeographicalAxis\">country:US</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2026-01-01</xbrli:startDate><xbrli:endDate>2026-06-30</xbrli:endDate></xbrli:period></xbrli:context>"
+    }
+   ]
+  },
+  {
+   "ticker": "TSLA",
+   "accession_no": "0001628280-26-049270",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+   "sha256": "fb52f90231ea0a0c708354badaddeb0122cd6255ec0af7fee96bc410d5f23082",
+   "retrieved": "2026-10-06",
+   "facts": [
+    {
+     "id": "f-1188",
+     "element": "<ix:nonFraction unitRef=\"usd\" contextRef=\"c-338\" decimals=\"-6\" name=\"us-gaap:Revenues\" format=\"ixt:num-dot-decimal\" scale=\"6\" id=\"f-1188\">13,208</ix:nonFraction>",
+     "context": "<xbrli:context id=\"c-338\"><xbrli:entity><xbrli:identifier scheme=\"http://www.sec.gov/CIK\">0001318605</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension=\"srt:StatementGeographicalAxis\">country:US</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2026-04-01</xbrli:startDate><xbrli:endDate>2026-06-30</xbrli:endDate></xbrli:period></xbrli:context>"
+    },
+    {
+     "id": "f-1190",
+     "element": "<ix:nonFraction unitRef=\"usd\" contextRef=\"c-340\" decimals=\"-6\" name=\"us-gaap:Revenues\" format=\"ixt:num-dot-decimal\" scale=\"6\" id=\"f-1190\">23,885</ix:nonFraction>",
+     "context": "<xbrli:context id=\"c-340\"><xbrli:entity><xbrli:identifier scheme=\"http://www.sec.gov/CIK\">0001318605</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension=\"srt:StatementGeographicalAxis\">country:US</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2026-01-01</xbrli:startDate><xbrli:endDate>2026-06-30</xbrli:endDate></xbrli:period></xbrli:context>"
+    }
+   ]
+  }
+ ]
+}

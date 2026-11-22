@@ -1,0 +1,4911 @@
+{
+  "schema": "review-core-codemap/1",
+  "built_at": "2026-10-06T00:07+00:00",
+  "head_sha": "088df0d896988025cbeba6ba5703836d591b4937",
+  "edge_hash": "20f9b6ddcd8a081c",
+  "declared": true,
+  "modules": {
+    "apply_base_lenient": {
+      "path": "apply_base_lenient.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 0,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "examples.logging_demo": {
+      "path": "examples/logging_demo.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 1,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "models.hfsetuptest": {
+      "path": "models/hfsetuptest.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 0,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "prompts.prompt_registry": {
+      "path": "prompts/prompt_registry.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (1 hops): prompt_registry ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 5,
+        "fan_in_transitive": 20,
+        "fan_out": 12,
+        "pagerank": 0.575,
+        "tests": 1,
+        "tests_reach": 18,
+        "test_coverage": "direct",
+        "instability": 0.71
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "prompts.prompts": {
+      "path": "prompts/prompts.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): prompts ← prompt_registry ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 8,
+        "fan_in_transitive": 34,
+        "fan_out": 1,
+        "pagerank": 1.064,
+        "tests": 3,
+        "tests_reach": 21,
+        "test_coverage": "direct",
+        "instability": 0.11
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": [
+        "src/pipelines/xbrl/retrieval_pipeline.py (4)",
+        "src/llm/config.py (3)",
+        "src/retriever/xbrl/intent_router.py (3)"
+      ]
+    },
+    "prompts/templates/xbrl/_base/faithfulness_verifier/v1/system.txt": {
+      "path": "prompts/templates/xbrl/_base/faithfulness_verifier/v1/system.txt",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): prompts/templates/xbrl/_base/faithfulness_verifier/v1/system.txt ← prompt_registry ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 21,
+        "fan_out": 0,
+        "pagerank": 0.365,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "prompts/templates/xbrl/_base/faithfulness_verifier/v1/user.txt": {
+      "path": "prompts/templates/xbrl/_base/faithfulness_verifier/v1/user.txt",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): prompts/templates/xbrl/_base/faithfulness_verifier/v1/user.txt ← prompt_registry ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 21,
+        "fan_out": 0,
+        "pagerank": 0.365,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "prompts/templates/xbrl/_base/intent_router/v1/system.txt": {
+      "path": "prompts/templates/xbrl/_base/intent_router/v1/system.txt",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): prompts/templates/xbrl/_base/intent_router/v1/system.txt ← prompt_registry ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 21,
+        "fan_out": 0,
+        "pagerank": 0.365,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "prompts/templates/xbrl/_base/intent_router/v1/user.txt": {
+      "path": "prompts/templates/xbrl/_base/intent_router/v1/user.txt",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): prompts/templates/xbrl/_base/intent_router/v1/user.txt ← prompt_registry ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 21,
+        "fan_out": 0,
+        "pagerank": 0.365,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "prompts/templates/xbrl/_base/plan_generator/v1/system.txt": {
+      "path": "prompts/templates/xbrl/_base/plan_generator/v1/system.txt",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): prompts/templates/xbrl/_base/plan_generator/v1/system.txt ← prompt_registry ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 21,
+        "fan_out": 0,
+        "pagerank": 0.365,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "prompts/templates/xbrl/_base/plan_generator/v1/user.txt": {
+      "path": "prompts/templates/xbrl/_base/plan_generator/v1/user.txt",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): prompts/templates/xbrl/_base/plan_generator/v1/user.txt ← prompt_registry ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 21,
+        "fan_out": 0,
+        "pagerank": 0.365,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "prompts/templates/xbrl/_base/query_decomposer/v1/system.txt": {
+      "path": "prompts/templates/xbrl/_base/query_decomposer/v1/system.txt",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): prompts/templates/xbrl/_base/query_decomposer/v1/system.txt ← prompt_registry ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 21,
+        "fan_out": 0,
+        "pagerank": 0.365,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "prompts/templates/xbrl/_base/query_decomposer/v1/user.txt": {
+      "path": "prompts/templates/xbrl/_base/query_decomposer/v1/user.txt",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): prompts/templates/xbrl/_base/query_decomposer/v1/user.txt ← prompt_registry ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 21,
+        "fan_out": 0,
+        "pagerank": 0.365,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "prompts/templates/xbrl/_base/synthesizer/v1/system.txt": {
+      "path": "prompts/templates/xbrl/_base/synthesizer/v1/system.txt",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): prompts/templates/xbrl/_base/synthesizer/v1/system.txt ← prompt_registry ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 21,
+        "fan_out": 0,
+        "pagerank": 0.365,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "prompts/templates/xbrl/_base/synthesizer/v1/user.txt": {
+      "path": "prompts/templates/xbrl/_base/synthesizer/v1/user.txt",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): prompts/templates/xbrl/_base/synthesizer/v1/user.txt ← prompt_registry ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 21,
+        "fan_out": 0,
+        "pagerank": 0.365,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "prompts/templates/xbrl/registry.yaml": {
+      "path": "prompts/templates/xbrl/registry.yaml",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): prompts/templates/xbrl/registry.yaml ← prompt_registry ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 21,
+        "fan_out": 0,
+        "pagerank": 0.365,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "scripts.bootstrap_db": {
+      "path": "scripts/bootstrap_db.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.build_push_images": {
+      "path": "scripts/build_push_images.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.dbq": {
+      "path": "scripts/dbq.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.ddl.audit._apply": {
+      "path": "scripts/ddl/audit/_apply.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.ddl.eval._apply": {
+      "path": "scripts/ddl/eval/_apply.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.eval.build_baseline": {
+      "path": "scripts/eval/build_baseline.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.eval.build_golden_set": {
+      "path": "scripts/eval/build_golden_set.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.eval.build_sql_derived_suite": {
+      "path": "scripts/eval/build_sql_derived_suite.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.eval.run_drift_check": {
+      "path": "scripts/eval/run_drift_check.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.eval.run_golden_eval": {
+      "path": "scripts/eval/run_golden_eval.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.eval.run_regression_matrix": {
+      "path": "scripts/eval/run_regression_matrix.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.eval.run_suite": {
+      "path": "scripts/eval/run_suite.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.harness.check_features": {
+      "path": "scripts/harness/check_features.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.harness.check_reaudit": {
+      "path": "scripts/harness/check_reaudit.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.harness.watchdog": {
+      "path": "scripts/harness/watchdog.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.rebuild_dependent_mvs": {
+      "path": "scripts/rebuild_dependent_mvs.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.rebuild_mvs": {
+      "path": "scripts/rebuild_mvs.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts.run_synonym_mining": {
+      "path": "scripts/run_synonym_mining.py",
+      "tier": "LEAF",
+      "reason": "script code (consumer, not depended on)",
+      "metrics": {},
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "scripts/ddl/base/xbrlPublicPostgresDB.ddl": {
+      "path": "scripts/ddl/base/xbrlPublicPostgresDB.ddl",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/base/xbrlPublicPostgresDB.ddl ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/layer_0/chunk_cross_links.sql": {
+      "path": "scripts/ddl/layer_0/chunk_cross_links.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/layer_0/chunk_cross_links.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "scripts/ddl/layer_0/chunk_metadata.sql (2)",
+        "scripts/ddl/layer_0/concept_labels.sql (2)",
+        "scripts/ddl/layer_0/concept_mapping.sql (2)"
+      ]
+    },
+    "scripts/ddl/layer_0/chunk_metadata.sql": {
+      "path": "scripts/ddl/layer_0/chunk_metadata.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/layer_0/chunk_metadata.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "scripts/ddl/layer_0/chunk_cross_links.sql (2)",
+        "scripts/ddl/layer_0/concept_labels.sql (2)",
+        "scripts/ddl/layer_0/concept_mapping.sql (2)"
+      ]
+    },
+    "scripts/ddl/layer_0/concept_labels.sql": {
+      "path": "scripts/ddl/layer_0/concept_labels.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/layer_0/concept_labels.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "scripts/ddl/layer_0/chunk_cross_links.sql (2)",
+        "scripts/ddl/layer_0/chunk_metadata.sql (2)",
+        "scripts/ddl/layer_0/concept_mapping.sql (2)"
+      ]
+    },
+    "scripts/ddl/layer_0/concept_mapping.sql": {
+      "path": "scripts/ddl/layer_0/concept_mapping.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/layer_0/concept_mapping.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "scripts/ddl/layer_0/chunk_cross_links.sql (2)",
+        "scripts/ddl/layer_0/chunk_metadata.sql (2)",
+        "scripts/ddl/layer_0/concept_labels.sql (2)"
+      ]
+    },
+    "scripts/ddl/layer_0/dimension_catalog.sql": {
+      "path": "scripts/ddl/layer_0/dimension_catalog.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/layer_0/dimension_catalog.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "scripts/ddl/layer_0/chunk_cross_links.sql (2)",
+        "scripts/ddl/layer_0/chunk_metadata.sql (2)",
+        "scripts/ddl/layer_0/concept_labels.sql (2)"
+      ]
+    },
+    "scripts/ddl/layer_0/entity_master.sql": {
+      "path": "scripts/ddl/layer_0/entity_master.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/layer_0/entity_master.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "scripts/ddl/layer_0/chunk_cross_links.sql (2)",
+        "scripts/ddl/layer_0/chunk_metadata.sql (2)",
+        "scripts/ddl/layer_0/concept_labels.sql (2)"
+      ]
+    },
+    "scripts/ddl/layer_0/fact_dom_position.sql": {
+      "path": "scripts/ddl/layer_0/fact_dom_position.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/layer_0/fact_dom_position.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "scripts/ddl/layer_0/chunk_cross_links.sql (2)",
+        "scripts/ddl/layer_0/chunk_metadata.sql (2)",
+        "scripts/ddl/layer_0/concept_labels.sql (2)"
+      ]
+    },
+    "scripts/ddl/layer_0/filing_registry.sql": {
+      "path": "scripts/ddl/layer_0/filing_registry.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/layer_0/filing_registry.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "scripts/ddl/layer_0/chunk_cross_links.sql (2)",
+        "scripts/ddl/layer_0/chunk_metadata.sql (2)",
+        "scripts/ddl/layer_0/concept_labels.sql (2)"
+      ]
+    },
+    "scripts/ddl/layer_0/fiscal_calendar.sql": {
+      "path": "scripts/ddl/layer_0/fiscal_calendar.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/layer_0/fiscal_calendar.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "scripts/ddl/layer_0/chunk_cross_links.sql (2)",
+        "scripts/ddl/layer_0/chunk_metadata.sql (2)",
+        "scripts/ddl/layer_0/concept_labels.sql (2)"
+      ]
+    },
+    "scripts/ddl/layer_0/geography_normalization.sql": {
+      "path": "scripts/ddl/layer_0/geography_normalization.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/layer_0/geography_normalization.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "scripts/ddl/layer_0/chunk_cross_links.sql (2)",
+        "scripts/ddl/layer_0/chunk_metadata.sql (2)",
+        "scripts/ddl/layer_0/concept_labels.sql (2)"
+      ]
+    },
+    "scripts/ddl/layer_0/member_aliases.sql": {
+      "path": "scripts/ddl/layer_0/member_aliases.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/layer_0/member_aliases.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/layer_0/publish_manifest.sql": {
+      "path": "scripts/ddl/layer_0/publish_manifest.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/layer_0/publish_manifest.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/layer_0/query_cache_epoch.sql": {
+      "path": "scripts/ddl/layer_0/query_cache_epoch.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/layer_0/query_cache_epoch.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/layer_0/section_assignment.sql": {
+      "path": "scripts/ddl/layer_0/section_assignment.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/layer_0/section_assignment.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "scripts/ddl/layer_0/chunk_cross_links.sql (2)",
+        "scripts/ddl/layer_0/chunk_metadata.sql (2)",
+        "scripts/ddl/layer_0/concept_labels.sql (2)"
+      ]
+    },
+    "scripts/ddl/mv/01_mv_dei_metadata.sql": {
+      "path": "scripts/ddl/mv/01_mv_dei_metadata.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/01_mv_dei_metadata.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/mv/02_mv_label_index.sql": {
+      "path": "scripts/ddl/mv/02_mv_label_index.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/02_mv_label_index.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/mv/03_mv_presentation_network.sql": {
+      "path": "scripts/ddl/mv/03_mv_presentation_network.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/03_mv_presentation_network.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/mv/04_mv_fact_section_assignment.sql": {
+      "path": "scripts/ddl/mv/04_mv_fact_section_assignment.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/04_mv_fact_section_assignment.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/mv/05_mv_anchor_coverage.sql": {
+      "path": "scripts/ddl/mv/05_mv_anchor_coverage.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/05_mv_anchor_coverage.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/mv/06_mv_entity_registry.sql": {
+      "path": "scripts/ddl/mv/06_mv_entity_registry.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/06_mv_entity_registry.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/mv/07_mv_fiscal_period_bounds.sql": {
+      "path": "scripts/ddl/mv/07_mv_fiscal_period_bounds.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/07_mv_fiscal_period_bounds.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/mv/10_mv_financial_facts.sql": {
+      "path": "scripts/ddl/mv/10_mv_financial_facts.sql",
+      "tier": "TRUNK",
+      "reason": "pinned in profile criticality.pins",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/mv/11_mv_financial_facts_multidim.sql": {
+      "path": "scripts/ddl/mv/11_mv_financial_facts_multidim.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/11_mv_financial_facts_multidim.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/mv/12_mv_calculation_network.sql": {
+      "path": "scripts/ddl/mv/12_mv_calculation_network.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/12_mv_calculation_network.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/mv/30_mv_concept_coverage.sql": {
+      "path": "scripts/ddl/mv/30_mv_concept_coverage.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/30_mv_concept_coverage.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/mv/31_mv_segment_matrix.sql": {
+      "path": "scripts/ddl/mv/31_mv_segment_matrix.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/31_mv_segment_matrix.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/mv/32_mv_geographic_facts.sql": {
+      "path": "scripts/ddl/mv/32_mv_geographic_facts.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/32_mv_geographic_facts.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/mv/33_mv_yoy_comparison.sql": {
+      "path": "scripts/ddl/mv/33_mv_yoy_comparison.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/33_mv_yoy_comparison.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/retriever/xbrl/xbrl_factstore_lookup.py (2)",
+        "src/retriever/xbrl/xbrl_factstore_screen.py (2)"
+      ]
+    },
+    "scripts/ddl/mv/34_mv_derived_metrics.sql": {
+      "path": "scripts/ddl/mv/34_mv_derived_metrics.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/34_mv_derived_metrics.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/mv/35_mv_fact_prose_links.sql": {
+      "path": "scripts/ddl/mv/35_mv_fact_prose_links.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/35_mv_fact_prose_links.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/mv/40_mv_sum_of_parts_checks.sql": {
+      "path": "scripts/ddl/mv/40_mv_sum_of_parts_checks.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/40_mv_sum_of_parts_checks.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/mv/41_mv_filing_completeness.sql": {
+      "path": "scripts/ddl/mv/41_mv_filing_completeness.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/mv/41_mv_filing_completeness.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/populate/concept_mapping_ns_expand.sql": {
+      "path": "scripts/ddl/populate/concept_mapping_ns_expand.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/populate/concept_mapping_ns_expand.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/populate/dimension_catalog.sql": {
+      "path": "scripts/ddl/populate/dimension_catalog.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/populate/dimension_catalog.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/ddl/populate/entity_master.sql": {
+      "path": "scripts/ddl/populate/entity_master.sql",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): scripts/ddl/populate/entity_master.sql ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "scripts/xbrl/analyst_queries.sql": {
+      "path": "scripts/xbrl/analyst_queries.sql",
+      "tier": "BRANCH",
+      "reason": "3 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 3,
+        "fan_out": 0,
+        "pagerank": 0.737,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src": {
+      "path": "src/__init__.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, index, narrative (1 hops): src ← load_to_vectordb_pipeline",
+      "metrics": {
+        "fan_in": 20,
+        "fan_in_transitive": 40,
+        "fan_out": 1,
+        "pagerank": 2.751,
+        "tests": 2,
+        "tests_reach": 20,
+        "test_coverage": "direct",
+        "instability": 0.05
+      },
+      "outputs": [
+        "answer",
+        "index",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/pipelines/sec10k/chunking_pipeline.py (4)",
+        "src/preprocess/sec10k/sec10k_toc.py (4)",
+        "src/chunking/chunk.py (3)"
+      ]
+    },
+    "src.api.config": {
+      "path": "src/api/config.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·infra: 13 transitive dependents (top 10%)",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 13,
+        "fan_out": 1,
+        "pagerank": 0.883,
+        "tests": 0,
+        "tests_reach": 6,
+        "test_coverage": "indirect",
+        "instability": 0.25
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/api/routes/observability.py (2)",
+        "src/api/routes/query.py (2)"
+      ]
+    },
+    "src.api.db": {
+      "path": "src/api/db.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·infra: 12 transitive dependents (top 10%)",
+      "metrics": {
+        "fan_in": 7,
+        "fan_in_transitive": 12,
+        "fan_out": 2,
+        "pagerank": 1.007,
+        "tests": 2,
+        "tests_reach": 6,
+        "test_coverage": "direct",
+        "instability": 0.22
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.api.main": {
+      "path": "src/api/main.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 9,
+        "pagerank": 0.324,
+        "tests": 4,
+        "tests_reach": 4,
+        "test_coverage": "direct",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.api.pipelines": {
+      "path": "src/api/pipelines.py",
+      "tier": "BRANCH",
+      "reason": "7 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 4,
+        "fan_in_transitive": 7,
+        "fan_out": 5,
+        "pagerank": 0.706,
+        "tests": 2,
+        "tests_reach": 7,
+        "test_coverage": "direct",
+        "instability": 0.56
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.api.routes.eval": {
+      "path": "src/api/routes/eval.py",
+      "tier": "BRANCH",
+      "reason": "1 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 2,
+        "pagerank": 0.355,
+        "tests": 0,
+        "tests_reach": 4,
+        "test_coverage": "indirect",
+        "instability": 0.67
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.api.routes.metrics_prom": {
+      "path": "src/api/routes/metrics_prom.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 1 transitive dependents",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 2,
+        "pagerank": 0.355,
+        "tests": 0,
+        "tests_reach": 4,
+        "test_coverage": "indirect",
+        "instability": 0.67
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.api.routes.observability": {
+      "path": "src/api/routes/observability.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 1 transitive dependents",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 3,
+        "pagerank": 0.355,
+        "tests": 0,
+        "tests_reach": 4,
+        "test_coverage": "indirect",
+        "instability": 0.75
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/api/config.py (2)",
+        "src/api/routes/query.py (2)"
+      ]
+    },
+    "src.api.routes.query": {
+      "path": "src/api/routes/query.py",
+      "tier": "BRANCH",
+      "reason": "1 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 5,
+        "pagerank": 0.355,
+        "tests": 0,
+        "tests_reach": 4,
+        "test_coverage": "indirect",
+        "instability": 0.83
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/api/config.py (2)",
+        "src/api/routes/observability.py (2)"
+      ]
+    },
+    "src.api.schemas": {
+      "path": "src/api/schemas.py",
+      "tier": "BRANCH",
+      "reason": "2 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 2,
+        "fan_out": 0,
+        "pagerank": 0.415,
+        "tests": 0,
+        "tests_reach": 4,
+        "test_coverage": "indirect",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.api.streaming": {
+      "path": "src/api/streaming.py",
+      "tier": "BRANCH",
+      "reason": "2 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 2,
+        "fan_out": 2,
+        "pagerank": 0.384,
+        "tests": 0,
+        "tests_reach": 4,
+        "test_coverage": "indirect",
+        "instability": 0.67
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.api.v1": {
+      "path": "src/api/v1/__init__.py",
+      "tier": "BRANCH",
+      "reason": "1 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 1,
+        "pagerank": 0.355,
+        "tests": 0,
+        "tests_reach": 4,
+        "test_coverage": "indirect",
+        "instability": 0.5
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/api/v1/router.py (2)",
+        "src/mcp_server/__init__.py (2)"
+      ]
+    },
+    "src.api.v1.router": {
+      "path": "src/api/v1/router.py",
+      "tier": "BRANCH",
+      "reason": "4 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 4,
+        "fan_out": 5,
+        "pagerank": 0.753,
+        "tests": 1,
+        "tests_reach": 6,
+        "test_coverage": "direct",
+        "instability": 0.71
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/api/v1/schemas.py (3)",
+        "src/api/v1/service.py (3)",
+        "src/api/v1/__init__.py (2)"
+      ]
+    },
+    "src.api.v1.schemas": {
+      "path": "src/api/v1/schemas.py",
+      "tier": "BRANCH",
+      "reason": "5 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 5,
+        "fan_out": 0,
+        "pagerank": 0.579,
+        "tests": 1,
+        "tests_reach": 6,
+        "test_coverage": "direct",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/api/v1/router.py (3)",
+        "src/api/v1/service.py (3)",
+        "src/retriever/xbrl/intent_router.py (2)"
+      ]
+    },
+    "src.api.v1.service": {
+      "path": "src/api/v1/service.py",
+      "tier": "BRANCH",
+      "reason": "5 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 5,
+        "fan_out": 7,
+        "pagerank": 0.579,
+        "tests": 1,
+        "tests_reach": 6,
+        "test_coverage": "direct",
+        "instability": 0.78
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/api/v1/router.py (3)",
+        "src/api/v1/schemas.py (3)",
+        "src/retriever/xbrl/intent_router.py (2)"
+      ]
+    },
+    "src.chunking.base_chunking": {
+      "path": "src/chunking/base_chunking.py",
+      "tier": "BRANCH",
+      "reason": "1 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 4,
+        "pagerank": 0.363,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.8
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/preprocess/sec10k/sec10k_table_util.py (5)",
+        "src/pipelines/sec10k/chunking_pipeline.py (4)",
+        "src/pipelines/sec10k/page_llm_summary_pipeline.py (3)"
+      ]
+    },
+    "src.chunking.chunk": {
+      "path": "src/chunking/chunk.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, index, narrative (3 hops): chunk ← qdrant_vectordb_client ← xbrl_qdrant_vectordb_client ← load_to_vectordb_pipeline",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 25,
+        "fan_out": 0,
+        "pagerank": 0.591,
+        "tests": 0,
+        "tests_reach": 16,
+        "test_coverage": "indirect",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "index",
+        "narrative"
+      ],
+      "distance": 3,
+      "cochange": [
+        "src/pipelines/sec10k/chunking_pipeline.py (4)",
+        "src/__init__.py (3)",
+        "src/chunking/base_chunking.py (3)"
+      ]
+    },
+    "src.chunking.coref_chunking": {
+      "path": "src/chunking/coref_chunking.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 0,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.chunking.crossref_chunking": {
+      "path": "src/chunking/crossref_chunking.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 0,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.chunking.xbrl_html_base_chunking": {
+      "path": "src/chunking/xbrl_html_base_chunking.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, index, narrative (1 hops): xbrl_html_base_chunking ← load_to_vectordb_pipeline",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 18,
+        "fan_out": 5,
+        "pagerank": 0.511,
+        "tests": 1,
+        "tests_reach": 16,
+        "test_coverage": "direct",
+        "instability": 0.71
+      },
+      "outputs": [
+        "answer",
+        "index",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/ingest/sec_edgar/xbrl/dom_position_populator.py (3)",
+        "src/ingest/sec_edgar/storage.py (2)",
+        "src/ingest/sec_edgar/xbrl/html_canonicalizer.py (2)"
+      ]
+    },
+    "src.config": {
+      "path": "src/config/__init__.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 1,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.config.deploy": {
+      "path": "src/config/deploy.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, index, ingest, narrative (2 hops): deploy ← storage ← load_to_vectordb_pipeline",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 55,
+        "fan_out": 0,
+        "pagerank": 3.568,
+        "tests": 1,
+        "tests_reach": 40,
+        "test_coverage": "direct",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "index",
+        "ingest",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "src.db": {
+      "path": "src/db/__init__.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 1,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.db.conn": {
+      "path": "src/db/conn.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, ingest, narrative (1 hops): conn ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 13,
+        "fan_in_transitive": 41,
+        "fan_out": 1,
+        "pagerank": 2.464,
+        "tests": 1,
+        "tests_reach": 31,
+        "test_coverage": "direct",
+        "instability": 0.07
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "ingest",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.embeddings": {
+      "path": "src/embeddings/__init__.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 3,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.embeddings.base": {
+      "path": "src/embeddings/base.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, index, narrative (2 hops): base ← xbrl_qdrant_vectordb_client ← load_to_vectordb_pipeline",
+      "metrics": {
+        "fan_in": 6,
+        "fan_in_transitive": 28,
+        "fan_out": 1,
+        "pagerank": 1.188,
+        "tests": 1,
+        "tests_reach": 17,
+        "test_coverage": "direct",
+        "instability": 0.14
+      },
+      "outputs": [
+        "answer",
+        "index",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "src.embeddings.bge_embedding": {
+      "path": "src/embeddings/bge_embedding.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, index, narrative (2 hops): bge_embedding ← xbrl_bge_embedding ← load_to_vectordb_pipeline",
+      "metrics": {
+        "fan_in": 4,
+        "fan_in_transitive": 25,
+        "fan_out": 2,
+        "pagerank": 0.675,
+        "tests": 0,
+        "tests_reach": 17,
+        "test_coverage": "indirect",
+        "instability": 0.33
+      },
+      "outputs": [
+        "answer",
+        "index",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": [
+        "src/vectorstores/qdrant_vectordb_client.py (3)",
+        "src/pipelines/xbrl/load_to_vectordb_pipeline.py (2)",
+        "src/pipelines/sec10k/load_to_vectordb_pipeline.py (2)"
+      ]
+    },
+    "src.embeddings.openai_embedding": {
+      "path": "src/embeddings/openai_embedding.py",
+      "tier": "BRANCH",
+      "reason": "1 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 2,
+        "pagerank": 0.416,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.67
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.embeddings.remote_embedder": {
+      "path": "src/embeddings/remote_embedder.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, index, narrative (1 hops): remote_embedder ← load_to_vectordb_pipeline",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 15,
+        "fan_out": 4,
+        "pagerank": 0.387,
+        "tests": 2,
+        "tests_reach": 14,
+        "test_coverage": "direct",
+        "instability": 0.67
+      },
+      "outputs": [
+        "answer",
+        "index",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/retriever/remote_reranker.py (2)"
+      ]
+    },
+    "src.embeddings.xbrl_bge_embedding": {
+      "path": "src/embeddings/xbrl_bge_embedding.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, index, narrative (1 hops): xbrl_bge_embedding ← load_to_vectordb_pipeline",
+      "metrics": {
+        "fan_in": 4,
+        "fan_in_transitive": 17,
+        "fan_out": 3,
+        "pagerank": 0.552,
+        "tests": 0,
+        "tests_reach": 15,
+        "test_coverage": "indirect",
+        "instability": 0.43
+      },
+      "outputs": [
+        "answer",
+        "index",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/pipelines/xbrl/load_to_vectordb_pipeline.py (2)"
+      ]
+    },
+    "src.eval.core": {
+      "path": "src/eval/core/__init__.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 6,
+        "pagerank": 0.324,
+        "tests": 2,
+        "tests_reach": 2,
+        "test_coverage": "direct",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/eval/core/case.py (2)",
+        "src/eval/core/graders/__init__.py (2)",
+        "src/eval/core/graders/dispatch.py (2)"
+      ]
+    },
+    "src.eval.core.case": {
+      "path": "src/eval/core/case.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → eval (1 hops): case ← dispatch",
+      "metrics": {
+        "fan_in": 9,
+        "fan_in_transitive": 12,
+        "fan_out": 0,
+        "pagerank": 1.605,
+        "tests": 0,
+        "tests_reach": 3,
+        "test_coverage": "indirect",
+        "instability": 0.0
+      },
+      "outputs": [
+        "eval"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/eval/core/graders/dispatch.py (3)",
+        "src/eval/core/graders/citation.py (2)",
+        "src/eval/suites/sql_derived.py (2)"
+      ]
+    },
+    "src.eval.core.coverage": {
+      "path": "src/eval/core/coverage.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 2,
+        "pagerank": 0.324,
+        "tests": 1,
+        "tests_reach": 1,
+        "test_coverage": "direct",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.eval.core.fingerprint": {
+      "path": "src/eval/core/fingerprint.py",
+      "tier": "BRANCH",
+      "reason": "1 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 2,
+        "pagerank": 0.37,
+        "tests": 0,
+        "tests_reach": 1,
+        "test_coverage": "indirect",
+        "instability": 0.67
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.eval.core.graders": {
+      "path": "src/eval/core/graders/__init__.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 5,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/eval/core/__init__.py (2)",
+        "src/eval/core/case.py (2)",
+        "src/eval/core/graders/dispatch.py (2)"
+      ]
+    },
+    "src.eval.core.graders.base": {
+      "path": "src/eval/core/graders/base.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → eval (1 hops): base ← dispatch",
+      "metrics": {
+        "fan_in": 4,
+        "fan_in_transitive": 6,
+        "fan_out": 0,
+        "pagerank": 0.626,
+        "tests": 1,
+        "tests_reach": 2,
+        "test_coverage": "direct",
+        "instability": 0.0
+      },
+      "outputs": [
+        "eval"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/eval/core/graders/dispatch.py (2)"
+      ]
+    },
+    "src.eval.core.graders.breakdown": {
+      "path": "src/eval/core/graders/breakdown.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → eval (1 hops): breakdown ← dispatch",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 4,
+        "fan_out": 1,
+        "pagerank": 0.438,
+        "tests": 0,
+        "tests_reach": 2,
+        "test_coverage": "indirect",
+        "instability": 0.33
+      },
+      "outputs": [
+        "eval"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.eval.core.graders.citation": {
+      "path": "src/eval/core/graders/citation.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → eval (1 hops): citation ← dispatch",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 4,
+        "fan_out": 0,
+        "pagerank": 0.438,
+        "tests": 1,
+        "tests_reach": 2,
+        "test_coverage": "direct",
+        "instability": 0.0
+      },
+      "outputs": [
+        "eval"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/eval/core/case.py (2)",
+        "src/eval/core/graders/dispatch.py (2)"
+      ]
+    },
+    "src.eval.core.graders.dispatch": {
+      "path": "src/eval/core/graders/dispatch.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → eval (0 hops): dispatch",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 3,
+        "fan_out": 7,
+        "pagerank": 0.488,
+        "tests": 0,
+        "tests_reach": 2,
+        "test_coverage": "indirect",
+        "instability": 0.7
+      },
+      "outputs": [
+        "eval"
+      ],
+      "distance": 0,
+      "cochange": [
+        "src/eval/core/case.py (3)",
+        "src/eval/core/graders/base.py (2)",
+        "src/eval/core/graders/citation.py (2)"
+      ]
+    },
+    "src.eval.core.graders.numeric": {
+      "path": "src/eval/core/graders/numeric.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → eval (1 hops): numeric ← dispatch",
+      "metrics": {
+        "fan_in": 6,
+        "fan_in_transitive": 14,
+        "fan_out": 0,
+        "pagerank": 1.962,
+        "tests": 1,
+        "tests_reach": 10,
+        "test_coverage": "direct",
+        "instability": 0.0
+      },
+      "outputs": [
+        "eval"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.eval.core.graders.screen": {
+      "path": "src/eval/core/graders/screen.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → eval (1 hops): screen ← dispatch",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 4,
+        "fan_out": 1,
+        "pagerank": 0.438,
+        "tests": 1,
+        "tests_reach": 2,
+        "test_coverage": "direct",
+        "instability": 0.33
+      },
+      "outputs": [
+        "eval"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/eval/core/__init__.py (2)",
+        "src/eval/core/case.py (2)",
+        "src/eval/core/graders/__init__.py (2)"
+      ]
+    },
+    "src.eval.core.report": {
+      "path": "src/eval/core/report.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 3 transitive dependents",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 3,
+        "fan_out": 3,
+        "pagerank": 0.502,
+        "tests": 1,
+        "tests_reach": 2,
+        "test_coverage": "direct",
+        "instability": 0.5
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.eval.core.runner": {
+      "path": "src/eval/core/runner.py",
+      "tier": "BRANCH",
+      "reason": "1 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 5,
+        "pagerank": 0.37,
+        "tests": 1,
+        "tests_reach": 2,
+        "test_coverage": "direct",
+        "instability": 0.83
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.eval.core.store": {
+      "path": "src/eval/core/store.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 4,
+        "pagerank": 0.324,
+        "tests": 1,
+        "tests_reach": 1,
+        "test_coverage": "direct",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.eval.core.system": {
+      "path": "src/eval/core/system.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → eval (1 hops): system ← dispatch",
+      "metrics": {
+        "fan_in": 5,
+        "fan_in_transitive": 8,
+        "fan_out": 1,
+        "pagerank": 0.719,
+        "tests": 0,
+        "tests_reach": 2,
+        "test_coverage": "indirect",
+        "instability": 0.17
+      },
+      "outputs": [
+        "eval"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.eval.deepeval.sec10k_rag_custom_eval": {
+      "path": "src/eval/deepeval/sec10k_rag_custom_eval.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 0,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.eval.deepeval.sec10k_rag_standard_eval": {
+      "path": "src/eval/deepeval/sec10k_rag_standard_eval.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 3,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/pipelines/sec10k/retrieval_pipeline.py (2)",
+        "src/retriever/base_retriever.py (2)",
+        "src/retriever/hyde_retriever.py (2)"
+      ]
+    },
+    "src.eval.regression": {
+      "path": "src/eval/regression/__init__.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 1,
+        "pagerank": 0.324,
+        "tests": 1,
+        "tests_reach": 1,
+        "test_coverage": "direct",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.eval.regression.prompt_matrix": {
+      "path": "src/eval/regression/prompt_matrix.py",
+      "tier": "BRANCH",
+      "reason": "2 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 2,
+        "fan_out": 0,
+        "pagerank": 0.639,
+        "tests": 1,
+        "tests_reach": 2,
+        "test_coverage": "direct",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.eval.suites.golden_xbrl": {
+      "path": "src/eval/suites/golden_xbrl.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 3,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.eval.suites.sql_derived": {
+      "path": "src/eval/suites/sql_derived.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 6,
+        "pagerank": 0.324,
+        "tests": 1,
+        "tests_reach": 1,
+        "test_coverage": "direct",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/eval/core/case.py (2)",
+        "src/eval/core/graders/dispatch.py (2)"
+      ]
+    },
+    "src.eval.systems": {
+      "path": "src/eval/systems/__init__.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 1,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.eval.systems.xbrlrag_full": {
+      "path": "src/eval/systems/xbrlrag_full.py",
+      "tier": "BRANCH",
+      "reason": "1 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 6,
+        "pagerank": 0.599,
+        "tests": 1,
+        "tests_reach": 1,
+        "test_coverage": "direct",
+        "instability": 0.86
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.eval.xbrl.drift": {
+      "path": "src/eval/xbrl/drift.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 2,
+        "pagerank": 0.324,
+        "tests": 1,
+        "tests_reach": 1,
+        "test_coverage": "direct",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.eval.xbrl.golden": {
+      "path": "src/eval/xbrl/golden.py",
+      "tier": "BRANCH",
+      "reason": "3 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 3,
+        "fan_out": 1,
+        "pagerank": 0.593,
+        "tests": 4,
+        "tests_reach": 4,
+        "test_coverage": "direct",
+        "instability": 0.25
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.eval.xbrl.numeric": {
+      "path": "src/eval/xbrl/numeric.py",
+      "tier": "BRANCH",
+      "reason": "4 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 4,
+        "fan_out": 1,
+        "pagerank": 0.828,
+        "tests": 1,
+        "tests_reach": 7,
+        "test_coverage": "direct",
+        "instability": 0.5
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.eval.xbrl.regression_runner": {
+      "path": "src/eval/xbrl/regression_runner.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 7,
+        "pagerank": 0.324,
+        "tests": 1,
+        "tests_reach": 1,
+        "test_coverage": "direct",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.ingest.pdfparse.hierarchicalParse": {
+      "path": "src/ingest/pdfparse/hierarchicalParse.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 0,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.ingest.pdfparse.pymuparse": {
+      "path": "src/ingest/pdfparse/pymuparse.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 0,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.ingest.pdfparse.sample_parsebarhistogram": {
+      "path": "src/ingest/pdfparse/sample_parsebarhistogram.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 0,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.ingest.pdfparse.sample_parsechart": {
+      "path": "src/ingest/pdfparse/sample_parsechart.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 0,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.ingest.pdfparse.sample_parsetable": {
+      "path": "src/ingest/pdfparse/sample_parsetable.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 0,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.ingest.sec_edgar.downloader": {
+      "path": "src/ingest/sec_edgar/downloader/__init__.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 1,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.ingest.sec_edgar.downloader.__main__": {
+      "path": "src/ingest/sec_edgar/downloader/__main__.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 2,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/ingest/util/generate_geography_normalization.py (2)",
+        "src/ingest/sec_edgar/downloader/sec_filing_downloader.py (2)"
+      ]
+    },
+    "src.ingest.sec_edgar.downloader.sec_filing_downloader": {
+      "path": "src/ingest/sec_edgar/downloader/sec_filing_downloader.py",
+      "tier": "BRANCH",
+      "reason": "2 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 2,
+        "fan_out": 2,
+        "pagerank": 0.737,
+        "tests": 2,
+        "tests_reach": 2,
+        "test_coverage": "direct",
+        "instability": 0.5
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/pipelines/xbrl/load_to_vectordb_pipeline.py (2)",
+        "src/ingest/sec_edgar/downloader/__main__.py (2)"
+      ]
+    },
+    "src.ingest.sec_edgar.ingest.__main__": {
+      "path": "src/ingest/sec_edgar/ingest/__main__.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, ingest, narrative (0 hops): __main__",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 3,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.6
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "ingest",
+        "narrative"
+      ],
+      "distance": 0,
+      "cochange": [
+        "src/ingest/sec_edgar/ingest/layer0_populator.py (2)"
+      ]
+    },
+    "src.ingest.sec_edgar.ingest.arelle_plugins.export_concept_labels": {
+      "path": "src/ingest/sec_edgar/ingest/arelle_plugins/export_concept_labels.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): export_concept_labels ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.ingest.sec_edgar.ingest.arelle_plugins.xbrl_db_ixbrl_patch": {
+      "path": "src/ingest/sec_edgar/ingest/arelle_plugins/xbrl_db_ixbrl_patch.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): xbrl_db_ixbrl_patch ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 0,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.ingest.sec_edgar.ingest.arelle_xbrl_ingestor": {
+      "path": "src/ingest/sec_edgar/ingest/arelle_xbrl_ingestor.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, ingest, narrative (1 hops): arelle_xbrl_ingestor ← __main__",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 20,
+        "fan_out": 6,
+        "pagerank": 0.437,
+        "tests": 4,
+        "tests_reach": 4,
+        "test_coverage": "direct",
+        "instability": 0.67
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "ingest",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/ingest/util/generate_geography_normalization.py (3)",
+        "src/pipelines/xbrl/load_to_vectordb_pipeline.py (2)",
+        "src/ingest/sec_edgar/ingest/concept_labels_populator.py (2)"
+      ]
+    },
+    "src.ingest.sec_edgar.ingest.concept_labels_populator": {
+      "path": "src/ingest/sec_edgar/ingest/concept_labels_populator.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, ingest, narrative (1 hops): concept_labels_populator ← __main__",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 20,
+        "fan_out": 2,
+        "pagerank": 0.437,
+        "tests": 2,
+        "tests_reach": 2,
+        "test_coverage": "direct",
+        "instability": 0.4
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "ingest",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/ingest/sec_edgar/ingest/arelle_xbrl_ingestor.py (2)"
+      ]
+    },
+    "src.ingest.sec_edgar.ingest.layer0_populator": {
+      "path": "src/ingest/sec_edgar/ingest/layer0_populator.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, ingest, narrative (1 hops): layer0_populator ← __main__",
+      "metrics": {
+        "fan_in": 4,
+        "fan_in_transitive": 21,
+        "fan_out": 1,
+        "pagerank": 0.727,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.2
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "ingest",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/ingest/sec_edgar/ingest/__main__.py (2)"
+      ]
+    },
+    "src.ingest.sec_edgar.ingest.registry_populator": {
+      "path": "src/ingest/sec_edgar/ingest/registry_populator.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (1 hops): registry_populator ← xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 19,
+        "fan_out": 1,
+        "pagerank": 0.341,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.33
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.ingest.sec_edgar.storage": {
+      "path": "src/ingest/sec_edgar/storage.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, index, ingest, narrative (1 hops): storage ← load_to_vectordb_pipeline",
+      "metrics": {
+        "fan_in": 8,
+        "fan_in_transitive": 33,
+        "fan_out": 2,
+        "pagerank": 2.058,
+        "tests": 5,
+        "tests_reach": 25,
+        "test_coverage": "direct",
+        "instability": 0.2
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "index",
+        "ingest",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/ingest/sec_edgar/xbrl/html_canonicalizer.py (4)",
+        "src/chunking/xbrl_html_base_chunking.py (2)",
+        "src/ingest/sec_edgar/xbrl/dom_position_populator.py (2)"
+      ]
+    },
+    "src.ingest.sec_edgar.xbrl.dom_position_populator": {
+      "path": "src/ingest/sec_edgar/xbrl/dom_position_populator.py",
+      "tier": "BRANCH",
+      "reason": "co-changes with TRUNK src/chunking/xbrl_html_base_chunking.py (3 commits)",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 2,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/chunking/xbrl_html_base_chunking.py (3)",
+        "src/ingest/sec_edgar/storage.py (2)",
+        "src/ingest/sec_edgar/xbrl/html_canonicalizer.py (2)"
+      ]
+    },
+    "src.ingest.sec_edgar.xbrl.html_canonicalizer": {
+      "path": "src/ingest/sec_edgar/xbrl/html_canonicalizer.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, index, narrative (2 hops): html_canonicalizer ← xbrl_html_base_chunking ← load_to_vectordb_pipeline",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 19,
+        "fan_out": 1,
+        "pagerank": 0.411,
+        "tests": 1,
+        "tests_reach": 1,
+        "test_coverage": "direct",
+        "instability": 0.5
+      },
+      "outputs": [
+        "answer",
+        "index",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": [
+        "src/ingest/sec_edgar/storage.py (4)",
+        "src/chunking/xbrl_html_base_chunking.py (2)",
+        "src/ingest/sec_edgar/xbrl/dom_position_populator.py (2)"
+      ]
+    },
+    "src.ingest.sec_edgar.xbrl.member_alias_detector": {
+      "path": "src/ingest/sec_edgar/xbrl/member_alias_detector.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 1,
+        "pagerank": 0.324,
+        "tests": 2,
+        "tests_reach": 2,
+        "test_coverage": "direct",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.ingest.sec_edgar.xbrl.promotion": {
+      "path": "src/ingest/sec_edgar/xbrl/promotion.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, ingest (0 hops): promotion",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 14,
+        "fan_out": 3,
+        "pagerank": 0.461,
+        "tests": 2,
+        "tests_reach": 2,
+        "test_coverage": "direct",
+        "instability": 0.75
+      },
+      "outputs": [
+        "answer",
+        "ingest"
+      ],
+      "distance": 0,
+      "cochange": []
+    },
+    "src.ingest.sec_edgar.xbrl.xbrl_html_dom_parser": {
+      "path": "src/ingest/sec_edgar/xbrl/xbrl_html_dom_parser.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, index, narrative (1 hops): xbrl_html_dom_parser ← load_to_vectordb_pipeline",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 20,
+        "fan_out": 0,
+        "pagerank": 0.579,
+        "tests": 2,
+        "tests_reach": 17,
+        "test_coverage": "direct",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "index",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.ingest.util.arelle_cmd": {
+      "path": "src/ingest/util/arelle_cmd.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, ingest, narrative (2 hops): arelle_cmd ← arelle_xbrl_ingestor ← __main__",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 23,
+        "fan_out": 0,
+        "pagerank": 0.709,
+        "tests": 1,
+        "tests_reach": 4,
+        "test_coverage": "direct",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "ingest",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "src.ingest.util.arelle_run": {
+      "path": "src/ingest/util/arelle_run.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, ingest, narrative (2 hops): arelle_run ← arelle_xbrl_ingestor ← __main__",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 23,
+        "fan_out": 0,
+        "pagerank": 0.709,
+        "tests": 1,
+        "tests_reach": 4,
+        "test_coverage": "direct",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "ingest",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "src.ingest.util.generate_concept_mapping": {
+      "path": "src/ingest/util/generate_concept_mapping.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 0,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.ingest.util.generate_geography_normalization": {
+      "path": "src/ingest/util/generate_geography_normalization.py",
+      "tier": "BRANCH",
+      "reason": "co-changes with TRUNK src/ingest/sec_edgar/ingest/arelle_xbrl_ingestor.py (3 commits)",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 2,
+        "pagerank": 0.324,
+        "tests": 1,
+        "tests_reach": 1,
+        "test_coverage": "direct",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/ingest/sec_edgar/ingest/arelle_xbrl_ingestor.py (3)",
+        "src/ingest/sec_edgar/downloader/__main__.py (2)"
+      ]
+    },
+    "src.ingest.util.hifi_kpi": {
+      "path": "src/ingest/util/hifi_kpi.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 2,
+        "pagerank": 0.324,
+        "tests": 1,
+        "tests_reach": 1,
+        "test_coverage": "direct",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.ingest.util.retry": {
+      "path": "src/ingest/util/retry.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, ingest, narrative (2 hops): retry ← arelle_xbrl_ingestor ← __main__",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 24,
+        "fan_out": 1,
+        "pagerank": 0.699,
+        "tests": 1,
+        "tests_reach": 6,
+        "test_coverage": "direct",
+        "instability": 0.33
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "ingest",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "src.llm": {
+      "path": "src/llm/__init__.py",
+      "tier": "BRANCH",
+      "reason": "co-changes with TRUNK src/llm/config.py (3 commits)",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 7,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/llm/config.py (3)",
+        "src/__init__.py (2)",
+        "src/llm/sec10k_page_summary.py (2)"
+      ]
+    },
+    "src.llm.anthropic_wrapper": {
+      "path": "src/llm/anthropic_wrapper.py",
+      "tier": "BRANCH",
+      "reason": "1 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 5,
+        "pagerank": 0.363,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.83
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.llm.base": {
+      "path": "src/llm/base.py",
+      "tier": "BRANCH",
+      "reason": "5 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 4,
+        "fan_in_transitive": 5,
+        "fan_out": 0,
+        "pagerank": 0.664,
+        "tests": 1,
+        "tests_reach": 2,
+        "test_coverage": "direct",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.llm.batch": {
+      "path": "src/llm/batch.py",
+      "tier": "BRANCH",
+      "reason": "1 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 2,
+        "pagerank": 0.363,
+        "tests": 1,
+        "tests_reach": 1,
+        "test_coverage": "direct",
+        "instability": 0.67
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.llm.config": {
+      "path": "src/llm/config.py",
+      "tier": "TRUNK",
+      "reason": "pinned in profile criticality.pins",
+      "metrics": {
+        "fan_in": 17,
+        "fan_in_transitive": 43,
+        "fan_out": 0,
+        "pagerank": 2.485,
+        "tests": 3,
+        "tests_reach": 27,
+        "test_coverage": "direct",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "prompts/prompts.py (3)",
+        "src/llm/__init__.py (3)",
+        "src/llm/sec10k_page_summary.py (3)"
+      ]
+    },
+    "src.llm.cost_tracker": {
+      "path": "src/llm/cost_tracker.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (3 hops): cost_tracker ← gateway ← gateway ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 6,
+        "fan_in_transitive": 28,
+        "fan_out": 2,
+        "pagerank": 0.679,
+        "tests": 5,
+        "tests_reach": 25,
+        "test_coverage": "direct",
+        "instability": 0.25
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 3,
+      "cochange": [
+        "src/llm/config.py (2)"
+      ]
+    },
+    "src.llm.escalation": {
+      "path": "src/llm/escalation.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer (1 hops): escalation ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 15,
+        "fan_out": 3,
+        "pagerank": 0.444,
+        "tests": 1,
+        "tests_reach": 16,
+        "test_coverage": "direct",
+        "instability": 0.5
+      },
+      "outputs": [
+        "answer"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.llm.gateway": {
+      "path": "src/llm/gateway/__init__.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (1 hops): gateway ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 6,
+        "fan_in_transitive": 21,
+        "fan_out": 4,
+        "pagerank": 0.737,
+        "tests": 4,
+        "tests_reach": 22,
+        "test_coverage": "direct",
+        "instability": 0.4
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.llm.gateway.adapters": {
+      "path": "src/llm/gateway/adapters/__init__.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): adapters ← gateway ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 24,
+        "fan_out": 3,
+        "pagerank": 0.612,
+        "tests": 1,
+        "tests_reach": 23,
+        "test_coverage": "direct",
+        "instability": 0.5
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "src.llm.gateway.adapters.anthropic_adapter": {
+      "path": "src/llm/gateway/adapters/anthropic_adapter.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (3 hops): anthropic_adapter ← adapters ← gateway ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 25,
+        "fan_out": 2,
+        "pagerank": 0.497,
+        "tests": 1,
+        "tests_reach": 23,
+        "test_coverage": "direct",
+        "instability": 0.67
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 3,
+      "cochange": []
+    },
+    "src.llm.gateway.adapters.base": {
+      "path": "src/llm/gateway/adapters/base.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (3 hops): base ← adapters ← gateway ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 4,
+        "fan_in_transitive": 27,
+        "fan_out": 0,
+        "pagerank": 0.975,
+        "tests": 3,
+        "tests_reach": 23,
+        "test_coverage": "direct",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 3,
+      "cochange": []
+    },
+    "src.llm.gateway.adapters.openai_adapter": {
+      "path": "src/llm/gateway/adapters/openai_adapter.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (3 hops): openai_adapter ← adapters ← gateway ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 25,
+        "fan_out": 2,
+        "pagerank": 0.497,
+        "tests": 1,
+        "tests_reach": 23,
+        "test_coverage": "direct",
+        "instability": 0.67
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 3,
+      "cochange": []
+    },
+    "src.llm.gateway.gateway": {
+      "path": "src/llm/gateway/gateway.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): gateway ← gateway ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 23,
+        "fan_out": 6,
+        "pagerank": 0.536,
+        "tests": 0,
+        "tests_reach": 23,
+        "test_coverage": "indirect",
+        "instability": 0.75
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": [
+        "src/observability/trace_context.py (2)",
+        "src/pipelines/xbrl/retrieval_pipeline.py (2)"
+      ]
+    },
+    "src.llm.gateway.json_utils": {
+      "path": "src/llm/gateway/json_utils.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): json_utils ← gateway ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 22,
+        "fan_out": 0,
+        "pagerank": 0.481,
+        "tests": 0,
+        "tests_reach": 22,
+        "test_coverage": "indirect",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "src.llm.gateway.model_ref": {
+      "path": "src/llm/gateway/model_ref.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (1 hops): model_ref ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 5,
+        "fan_in_transitive": 25,
+        "fan_out": 1,
+        "pagerank": 0.765,
+        "tests": 3,
+        "tests_reach": 24,
+        "test_coverage": "direct",
+        "instability": 0.17
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.llm.huggingface_wrapper": {
+      "path": "src/llm/huggingface_wrapper.py",
+      "tier": "BRANCH",
+      "reason": "1 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 5,
+        "pagerank": 0.363,
+        "tests": 1,
+        "tests_reach": 1,
+        "test_coverage": "direct",
+        "instability": 0.83
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.llm.instrumented_openai_client": {
+      "path": "src/llm/instrumented_openai_client.py",
+      "tier": "BRANCH",
+      "reason": "co-changes with TRUNK src/retriever/xbrl/intent_router.py (4 commits)",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 5,
+        "pagerank": 0.324,
+        "tests": 1,
+        "tests_reach": 1,
+        "test_coverage": "direct",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/retriever/xbrl/intent_router.py (4)",
+        "src/pipelines/xbrl/retrieval_pipeline.py (4)",
+        "src/observability/trace_context.py (3)"
+      ]
+    },
+    "src.llm.openai_wrapper": {
+      "path": "src/llm/openai_wrapper.py",
+      "tier": "BRANCH",
+      "reason": "1 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 5,
+        "pagerank": 0.363,
+        "tests": 2,
+        "tests_reach": 2,
+        "test_coverage": "direct",
+        "instability": 0.83
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.llm.rate_limiter": {
+      "path": "src/llm/rate_limiter.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): rate_limiter ← xbrl_gateway ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 4,
+        "fan_in_transitive": 25,
+        "fan_out": 0,
+        "pagerank": 0.672,
+        "tests": 2,
+        "tests_reach": 20,
+        "test_coverage": "direct",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "src.llm.run_budget": {
+      "path": "src/llm/run_budget.py",
+      "tier": "TRUNK",
+      "reason": "pinned in profile criticality.pins",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 24,
+        "fan_out": 0,
+        "pagerank": 0.593,
+        "tests": 1,
+        "tests_reach": 23,
+        "test_coverage": "direct",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.llm.sec10k_page_summary": {
+      "path": "src/llm/sec10k_page_summary.py",
+      "tier": "BRANCH",
+      "reason": "1 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 5,
+        "pagerank": 0.379,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.83
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/llm/config.py (3)",
+        "prompts/prompts.py (2)",
+        "src/llm/sec10k_table_processor.py (2)"
+      ]
+    },
+    "src.llm.sec10k_page_summary_reader": {
+      "path": "src/llm/sec10k_page_summary_reader.py",
+      "tier": "BRANCH",
+      "reason": "1 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 0,
+        "pagerank": 0.363,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.llm.sec10k_table_processor": {
+      "path": "src/llm/sec10k_table_processor.py",
+      "tier": "BRANCH",
+      "reason": "2 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 2,
+        "fan_out": 3,
+        "pagerank": 0.418,
+        "tests": 1,
+        "tests_reach": 1,
+        "test_coverage": "direct",
+        "instability": 0.6
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/pipelines/sec10k/page_llm_summary_pipeline.py (3)",
+        "src/pipelines/sec10k/table_vlm_summary_pipeline.py (3)",
+        "src/llm/config.py (2)"
+      ]
+    },
+    "src.llm.sec10k_table_summary_reader": {
+      "path": "src/llm/sec10k_table_summary_reader.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 17 transitive dependents",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 17,
+        "fan_out": 2,
+        "pagerank": 0.459,
+        "tests": 0,
+        "tests_reach": 9,
+        "test_coverage": "indirect",
+        "instability": 0.5
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/pipelines/sec10k/chunking_pipeline.py (2)",
+        "src/pipelines/sec10k/page_llm_summary_pipeline.py (2)",
+        "src/pipelines/sec10k/table_vlm_summary_pipeline.py (2)"
+      ]
+    },
+    "src.llm.xbrl_gateway": {
+      "path": "src/llm/xbrl_gateway.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (1 hops): xbrl_gateway ← llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 5,
+        "fan_in_transitive": 20,
+        "fan_out": 3,
+        "pagerank": 0.575,
+        "tests": 1,
+        "tests_reach": 18,
+        "test_coverage": "direct",
+        "instability": 0.38
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.logging_config": {
+      "path": "src/logging_config.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 113 transitive dependents",
+      "metrics": {
+        "fan_in": 84,
+        "fan_in_transitive": 113,
+        "fan_out": 1,
+        "pagerank": 64.068,
+        "tests": 0,
+        "tests_reach": 59,
+        "test_coverage": "indirect",
+        "instability": 0.01
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.mcp_server": {
+      "path": "src/mcp_server/__init__.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 1,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/api/v1/__init__.py (2)",
+        "src/api/v1/router.py (2)"
+      ]
+    },
+    "src.mcp_server.server": {
+      "path": "src/mcp_server/server.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 1 transitive dependents",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 1,
+        "fan_out": 4,
+        "pagerank": 0.599,
+        "tests": 2,
+        "tests_reach": 2,
+        "test_coverage": "direct",
+        "instability": 0.8
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.observability": {
+      "path": "src/observability/__init__.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 1,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/llm/instrumented_openai_client.py (2)",
+        "src/observability/trace_context.py (2)",
+        "src/pipelines/xbrl/retrieval_pipeline.py (2)"
+      ]
+    },
+    "src.observability.audit_store": {
+      "path": "src/observability/audit_store.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 12 transitive dependents",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 12,
+        "fan_out": 3,
+        "pagerank": 0.474,
+        "tests": 2,
+        "tests_reach": 14,
+        "test_coverage": "direct",
+        "instability": 0.6
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/observability/ingestion_audit.py (2)",
+        "src/retriever/xbrl/xbrl_factstore_lookup.py (2)",
+        "src/retriever/xbrl/xbrl_factstore_screen.py (2)"
+      ]
+    },
+    "src.observability.ingestion_audit": {
+      "path": "src/observability/ingestion_audit.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 22 transitive dependents",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 22,
+        "fan_out": 2,
+        "pagerank": 0.416,
+        "tests": 2,
+        "tests_reach": 6,
+        "test_coverage": "direct",
+        "instability": 0.5
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/observability/audit_store.py (2)"
+      ]
+    },
+    "src.observability.metrics_exporter": {
+      "path": "src/observability/metrics_exporter.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 2 transitive dependents",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 2,
+        "fan_out": 2,
+        "pagerank": 0.475,
+        "tests": 1,
+        "tests_reach": 4,
+        "test_coverage": "direct",
+        "instability": 0.67
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.observability.trace_context": {
+      "path": "src/observability/trace_context.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 113 transitive dependents",
+      "metrics": {
+        "fan_in": 14,
+        "fan_in_transitive": 113,
+        "fan_out": 1,
+        "pagerank": 56.109,
+        "tests": 8,
+        "tests_reach": 59,
+        "test_coverage": "direct",
+        "instability": 0.07
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/pipelines/xbrl/retrieval_pipeline.py (5)",
+        "src/retriever/xbrl/intent_router.py (3)",
+        "src/retriever/xbrl/llm_xbrl_faithfulness_verifier.py (3)"
+      ]
+    },
+    "src.pipelines.sec10k": {
+      "path": "src/pipelines/sec10k/__init__.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 4 transitive dependents",
+      "metrics": {
+        "fan_in": 4,
+        "fan_in_transitive": 4,
+        "fan_out": 1,
+        "pagerank": 0.519,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.2
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.pipelines.sec10k.chunking_pipeline": {
+      "path": "src/pipelines/sec10k/chunking_pipeline.py",
+      "tier": "BRANCH",
+      "reason": "co-changes with TRUNK src/__init__.py (4 commits)",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 7,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/__init__.py (4)",
+        "src/chunking/chunk.py (4)",
+        "src/chunking/base_chunking.py (4)"
+      ]
+    },
+    "src.pipelines.sec10k.load_to_vectordb_pipeline": {
+      "path": "src/pipelines/sec10k/load_to_vectordb_pipeline.py",
+      "tier": "BRANCH",
+      "reason": "co-changes with TRUNK src/vectorstores/qdrant_vectordb_client.py (3 commits)",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 6,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/vectorstores/qdrant_vectordb_client.py (3)",
+        "src/embeddings/bge_embedding.py (2)",
+        "src/retriever/base_retriever.py (2)"
+      ]
+    },
+    "src.pipelines.sec10k.page_llm_summary_pipeline": {
+      "path": "src/pipelines/sec10k/page_llm_summary_pipeline.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 5,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/pipelines/sec10k/table_vlm_summary_pipeline.py (6)",
+        "src/preprocess/sec10k/sec10k_subsection_generator.py (4)",
+        "src/preprocess/sec10k/sec10k_table_util.py (4)"
+      ]
+    },
+    "src.pipelines.sec10k.retrieval_pipeline": {
+      "path": "src/pipelines/sec10k/retrieval_pipeline.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 9 transitive dependents",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 9,
+        "fan_out": 4,
+        "pagerank": 0.536,
+        "tests": 0,
+        "tests_reach": 7,
+        "test_coverage": "indirect",
+        "instability": 0.67
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/retriever/base_retriever.py (4)",
+        "src/retriever/llm_rag_query.py (3)",
+        "src/retriever/bge_reranker.py (2)"
+      ]
+    },
+    "src.pipelines.sec10k.table_vlm_preprocess_pipeline": {
+      "path": "src/pipelines/sec10k/table_vlm_preprocess_pipeline.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 0,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.pipelines.sec10k.table_vlm_summary_pipeline": {
+      "path": "src/pipelines/sec10k/table_vlm_summary_pipeline.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 5,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/pipelines/sec10k/page_llm_summary_pipeline.py (6)",
+        "src/preprocess/sec10k/sec10k_subsection_generator.py (4)",
+        "src/preprocess/sec10k/sec10k_table_util.py (4)"
+      ]
+    },
+    "src.pipelines.xbrl": {
+      "path": "src/pipelines/xbrl/__init__.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, index, narrative (1 hops): xbrl ← load_to_vectordb_pipeline",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 15,
+        "fan_out": 1,
+        "pagerank": 0.354,
+        "tests": 1,
+        "tests_reach": 1,
+        "test_coverage": "direct",
+        "instability": 0.5
+      },
+      "outputs": [
+        "answer",
+        "index",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.pipelines.xbrl.load_to_vectordb_pipeline": {
+      "path": "src/pipelines/xbrl/load_to_vectordb_pipeline.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, index, narrative (0 hops): load_to_vectordb_pipeline",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 14,
+        "fan_out": 10,
+        "pagerank": 0.357,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.91
+      },
+      "outputs": [
+        "answer",
+        "index",
+        "narrative"
+      ],
+      "distance": 0,
+      "cochange": [
+        "src/chunking/xbrl_html_base_chunking.py (2)",
+        "src/ingest/sec_edgar/downloader/sec_filing_downloader.py (2)",
+        "src/ingest/sec_edgar/storage.py (2)"
+      ]
+    },
+    "src.pipelines.xbrl.query_cache": {
+      "path": "src/pipelines/xbrl/query_cache.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, ingest (1 hops): query_cache ← promotion",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 14,
+        "fan_out": 3,
+        "pagerank": 0.485,
+        "tests": 1,
+        "tests_reach": 14,
+        "test_coverage": "direct",
+        "instability": 0.6
+      },
+      "outputs": [
+        "answer",
+        "ingest"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.pipelines.xbrl.retrieval_pipeline": {
+      "path": "src/pipelines/xbrl/retrieval_pipeline.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer (0 hops): retrieval_pipeline",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 11,
+        "fan_out": 16,
+        "pagerank": 0.568,
+        "tests": 2,
+        "tests_reach": 12,
+        "test_coverage": "direct",
+        "instability": 0.84
+      },
+      "outputs": [
+        "answer"
+      ],
+      "distance": 0,
+      "cochange": [
+        "src/observability/trace_context.py (5)",
+        "src/retriever/xbrl/llm_xbrl_faithfulness_verifier.py (5)",
+        "src/retriever/xbrl/intent_router.py (4)"
+      ]
+    },
+    "src.preprocess.pdf.pdf_utils": {
+      "path": "src/preprocess/pdf/pdf_utils.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 2,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/pipelines/sec10k/page_llm_summary_pipeline.py (2)",
+        "src/pipelines/sec10k/table_vlm_summary_pipeline.py (2)",
+        "src/preprocess/sec10k/sec10k_subsection_generator.py (2)"
+      ]
+    },
+    "src.preprocess.pdf.sec10k_toc_regex_parser": {
+      "path": "src/preprocess/pdf/sec10k_toc_regex_parser.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 0,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.preprocess.sec10k.sec10k_subsection_generator": {
+      "path": "src/preprocess/sec10k/sec10k_subsection_generator.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 2 transitive dependents",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 2,
+        "fan_out": 4,
+        "pagerank": 0.418,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.67
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/preprocess/sec10k/sec10k_toc.py (7)",
+        "src/pipelines/sec10k/page_llm_summary_pipeline.py (4)",
+        "src/pipelines/sec10k/table_vlm_summary_pipeline.py (4)"
+      ]
+    },
+    "src.preprocess.sec10k.sec10k_table_util": {
+      "path": "src/preprocess/sec10k/sec10k_table_util.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 3 transitive dependents",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 3,
+        "fan_out": 5,
+        "pagerank": 0.456,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.71
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/chunking/base_chunking.py (5)",
+        "src/pipelines/sec10k/page_llm_summary_pipeline.py (4)",
+        "src/pipelines/sec10k/table_vlm_summary_pipeline.py (4)"
+      ]
+    },
+    "src.preprocess.sec10k.sec10k_toc": {
+      "path": "src/preprocess/sec10k/sec10k_toc.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 20 transitive dependents",
+      "metrics": {
+        "fan_in": 6,
+        "fan_in_transitive": 20,
+        "fan_out": 2,
+        "pagerank": 0.754,
+        "tests": 0,
+        "tests_reach": 7,
+        "test_coverage": "indirect",
+        "instability": 0.25
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/preprocess/sec10k/sec10k_subsection_generator.py (7)",
+        "src/pipelines/sec10k/page_llm_summary_pipeline.py (4)",
+        "src/pipelines/sec10k/table_vlm_summary_pipeline.py (4)"
+      ]
+    },
+    "src.preprocess.utils.coords_util": {
+      "path": "src/preprocess/utils/coords_util.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 5 transitive dependents",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 5,
+        "fan_out": 0,
+        "pagerank": 0.493,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.preprocess.utils.string_utils": {
+      "path": "src/preprocess/utils/string_utils.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 3 transitive dependents",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 3,
+        "fan_out": 0,
+        "pagerank": 0.413,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/preprocess/sec10k/sec10k_subsection_generator.py (3)",
+        "src/preprocess/sec10k/sec10k_toc.py (3)"
+      ]
+    },
+    "src.preprocess.vlm.detr_layout_parser": {
+      "path": "src/preprocess/vlm/detr_layout_parser.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 3,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 1.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/preprocess/sec10k/sec10k_subsection_generator.py (3)",
+        "src/preprocess/sec10k/sec10k_toc.py (3)",
+        "src/pipelines/sec10k/page_llm_summary_pipeline.py (2)"
+      ]
+    },
+    "src.retriever.base_reranker": {
+      "path": "src/retriever/base_reranker.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (1 hops): base_reranker ← xbrl_narrative_retriever",
+      "metrics": {
+        "fan_in": 4,
+        "fan_in_transitive": 22,
+        "fan_out": 2,
+        "pagerank": 0.749,
+        "tests": 0,
+        "tests_reach": 16,
+        "test_coverage": "indirect",
+        "instability": 0.33
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.retriever.base_retriever": {
+      "path": "src/retriever/base_retriever.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 12 transitive dependents",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 12,
+        "fan_out": 9,
+        "pagerank": 0.606,
+        "tests": 2,
+        "tests_reach": 9,
+        "test_coverage": "direct",
+        "instability": 0.75
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/vectorstores/qdrant_vectordb_client.py (6)",
+        "src/retriever/retriever_util.py (5)",
+        "src/retriever/hyde_retriever.py (5)"
+      ]
+    },
+    "src.retriever.bge_reranker": {
+      "path": "src/retriever/bge_reranker.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 13 transitive dependents",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 13,
+        "fan_out": 3,
+        "pagerank": 0.381,
+        "tests": 0,
+        "tests_reach": 9,
+        "test_coverage": "indirect",
+        "instability": 0.75
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/retriever/base_retriever.py (4)",
+        "src/retriever/retriever_util.py (4)",
+        "src/vectorstores/qdrant_vectordb_client.py (3)"
+      ]
+    },
+    "src.retriever.custom_reranker_retriever": {
+      "path": "src/retriever/custom_reranker_retriever.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 0,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.retriever.endpoints": {
+      "path": "src/retriever/endpoints.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, index, narrative (2 hops): endpoints ← remote_embedder ← load_to_vectordb_pipeline",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 17,
+        "fan_out": 0,
+        "pagerank": 0.482,
+        "tests": 0,
+        "tests_reach": 15,
+        "test_coverage": "indirect",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "index",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "src.retriever.extract_year_util": {
+      "path": "src/retriever/extract_year_util.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): extract_year_util ← entity_extractor ← retrieval_pipeline",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 23,
+        "fan_out": 0,
+        "pagerank": 0.558,
+        "tests": 0,
+        "tests_reach": 16,
+        "test_coverage": "indirect",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": []
+    },
+    "src.retriever.hyde_retriever": {
+      "path": "src/retriever/hyde_retriever.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 10 transitive dependents",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 10,
+        "fan_out": 6,
+        "pagerank": 0.438,
+        "tests": 0,
+        "tests_reach": 7,
+        "test_coverage": "indirect",
+        "instability": 0.86
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/retriever/base_retriever.py (5)",
+        "src/retriever/llm_query_rewriter.py (3)",
+        "src/retriever/retriever_util.py (3)"
+      ]
+    },
+    "src.retriever.jina_reranker": {
+      "path": "src/retriever/jina_reranker.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (1 hops): jina_reranker ← xbrl_narrative_retriever",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 20,
+        "fan_out": 2,
+        "pagerank": 0.49,
+        "tests": 0,
+        "tests_reach": 16,
+        "test_coverage": "indirect",
+        "instability": 0.4
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "src.retriever.llm_hyde_generator": {
+      "path": "src/retriever/llm_hyde_generator.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·infra: 11 transitive dependents (top 10%)",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 11,
+        "fan_out": 3,
+        "pagerank": 0.386,
+        "tests": 0,
+        "tests_reach": 7,
+        "test_coverage": "indirect",
+        "instability": 0.75
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "prompts/prompts.py (2)",
+        "src/retriever/base_retriever.py (2)",
+        "src/retriever/hyde_retriever.py (2)"
+      ]
+    },
+    "src.retriever.llm_query_rewriter": {
+      "path": "src/retriever/llm_query_rewriter.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 12 transitive dependents",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 12,
+        "fan_out": 3,
+        "pagerank": 0.492,
+        "tests": 0,
+        "tests_reach": 7,
+        "test_coverage": "indirect",
+        "instability": 0.6
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/retriever/base_retriever.py (3)",
+        "src/retriever/hyde_retriever.py (3)",
+        "prompts/prompts.py (2)"
+      ]
+    },
+    "src.retriever.llm_query_router": {
+      "path": "src/retriever/llm_query_router.py",
+      "tier": "BRANCH",
+      "reason": "non_value (capped at BRANCH): 12 transitive dependents",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 12,
+        "fan_out": 4,
+        "pagerank": 0.492,
+        "tests": 0,
+        "tests_reach": 7,
+        "test_coverage": "indirect",
+        "instability": 0.67
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.retriever.llm_rag_query": {
+      "path": "src/retriever/llm_rag_query.py",
+      "tier": "BRANCH",
+      "reason": "10 transitive dependents, not on a value path",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 10,
+        "fan_out": 3,
+        "pagerank": 0.438,
+        "tests": 0,
+        "tests_reach": 7,
+        "test_coverage": "indirect",
+        "instability": 0.75
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/pipelines/sec10k/retrieval_pipeline.py (3)",
+        "src/retriever/base_retriever.py (3)",
+        "src/eval/deepeval/sec10k_rag_standard_eval.py (2)"
+      ]
+    },
+    "src.retriever.remote_reranker": {
+      "path": "src/retriever/remote_reranker.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (1 hops): remote_reranker ← xbrl_narrative_retriever",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 14,
+        "fan_out": 4,
+        "pagerank": 0.357,
+        "tests": 2,
+        "tests_reach": 14,
+        "test_coverage": "direct",
+        "instability": 0.8
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/embeddings/remote_embedder.py (2)"
+      ]
+    },
+    "src.retriever.retriever_util": {
+      "path": "src/retriever/retriever_util.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (2 hops): retriever_util ← base_reranker ← xbrl_narrative_retriever",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 23,
+        "fan_out": 1,
+        "pagerank": 0.807,
+        "tests": 0,
+        "tests_reach": 16,
+        "test_coverage": "indirect",
+        "instability": 0.25
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": [
+        "src/retriever/base_retriever.py (5)",
+        "src/retriever/bge_reranker.py (4)",
+        "src/vectorstores/qdrant_vectordb_client.py (4)"
+      ]
+    },
+    "src.retriever.subquery_retriever": {
+      "path": "src/retriever/subquery_retriever.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·infra: 11 transitive dependents (top 10%)",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 11,
+        "fan_out": 4,
+        "pagerank": 0.5,
+        "tests": 0,
+        "tests_reach": 7,
+        "test_coverage": "indirect",
+        "instability": 0.67
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": [
+        "src/retriever/base_retriever.py (3)",
+        "src/retriever/hyde_retriever.py (3)",
+        "src/retriever/llm_query_rewriter.py (2)"
+      ]
+    },
+    "src.retriever.xbrl.branch_dispatcher": {
+      "path": "src/retriever/xbrl/branch_dispatcher.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer (1 hops): branch_dispatcher ← retrieval_pipeline",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 12,
+        "fan_out": 3,
+        "pagerank": 0.354,
+        "tests": 1,
+        "tests_reach": 12,
+        "test_coverage": "direct",
+        "instability": 0.75
+      },
+      "outputs": [
+        "answer"
+      ],
+      "distance": 1,
+      "cochange": [
+        "prompts/prompts.py (2)",
+        "src/retriever/xbrl/intent_router.py (2)",
+        "src/retriever/xbrl/plan_validator.py (2)"
+      ]
+    },
+    "src.retriever.xbrl.entity_extractor": {
+      "path": "src/retriever/xbrl/entity_extractor.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (1 hops): entity_extractor ← retrieval_pipeline",
+      "metrics": {
+        "fan_in": 5,
+        "fan_in_transitive": 17,
+        "fan_out": 3,
+        "pagerank": 0.626,
+        "tests": 1,
+        "tests_reach": 14,
+        "test_coverage": "direct",
+        "instability": 0.38
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/retriever/xbrl/xbrl_factstore_lookup.py (2)",
+        "src/retriever/xbrl/xbrl_factstore_screen.py (2)",
+        "src/retriever/xbrl/intent_router.py (2)"
+      ]
+    },
+    "src.retriever.xbrl.intent_router": {
+      "path": "src/retriever/xbrl/intent_router.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (1 hops): intent_router ← xbrl_narrative_retriever",
+      "metrics": {
+        "fan_in": 4,
+        "fan_in_transitive": 16,
+        "fan_out": 7,
+        "pagerank": 0.524,
+        "tests": 2,
+        "tests_reach": 14,
+        "test_coverage": "direct",
+        "instability": 0.64
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/retriever/xbrl/plan_generator.py (6)",
+        "src/retriever/xbrl/llm_xbrl_faithfulness_verifier.py (5)",
+        "src/pipelines/xbrl/retrieval_pipeline.py (4)"
+      ]
+    },
+    "src.retriever.xbrl.llm_xbrl_faithfulness_verifier": {
+      "path": "src/retriever/xbrl/llm_xbrl_faithfulness_verifier.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer (0 hops): llm_xbrl_faithfulness_verifier",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 12,
+        "fan_out": 9,
+        "pagerank": 0.393,
+        "tests": 3,
+        "tests_reach": 14,
+        "test_coverage": "direct",
+        "instability": 0.82
+      },
+      "outputs": [
+        "answer"
+      ],
+      "distance": 0,
+      "cochange": [
+        "src/pipelines/xbrl/retrieval_pipeline.py (5)",
+        "src/retriever/xbrl/intent_router.py (5)",
+        "src/retriever/xbrl/llm_xbrl_synthesizer.py (4)"
+      ]
+    },
+    "src.retriever.xbrl.llm_xbrl_synthesizer": {
+      "path": "src/retriever/xbrl/llm_xbrl_synthesizer.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer (0 hops): llm_xbrl_synthesizer",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 13,
+        "fan_out": 8,
+        "pagerank": 0.431,
+        "tests": 5,
+        "tests_reach": 15,
+        "test_coverage": "direct",
+        "instability": 0.73
+      },
+      "outputs": [
+        "answer"
+      ],
+      "distance": 0,
+      "cochange": [
+        "src/pipelines/xbrl/retrieval_pipeline.py (4)",
+        "src/retriever/xbrl/intent_router.py (4)",
+        "src/retriever/xbrl/llm_xbrl_faithfulness_verifier.py (4)"
+      ]
+    },
+    "src.retriever.xbrl.plan_executor": {
+      "path": "src/retriever/xbrl/plan_executor.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (0 hops): plan_executor",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 16,
+        "fan_out": 4,
+        "pagerank": 0.433,
+        "tests": 1,
+        "tests_reach": 17,
+        "test_coverage": "direct",
+        "instability": 0.57
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 0,
+      "cochange": [
+        "prompts/prompts.py (2)",
+        "src/llm/instrumented_openai_client.py (2)",
+        "src/pipelines/xbrl/retrieval_pipeline.py (2)"
+      ]
+    },
+    "src.retriever.xbrl.plan_generator": {
+      "path": "src/retriever/xbrl/plan_generator.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer (1 hops): plan_generator ← retrieval_pipeline",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 12,
+        "fan_out": 9,
+        "pagerank": 0.393,
+        "tests": 1,
+        "tests_reach": 13,
+        "test_coverage": "direct",
+        "instability": 0.82
+      },
+      "outputs": [
+        "answer"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/retriever/xbrl/intent_router.py (6)",
+        "src/retriever/xbrl/llm_xbrl_faithfulness_verifier.py (4)",
+        "src/retriever/xbrl/llm_xbrl_synthesizer.py (4)"
+      ]
+    },
+    "src.retriever.xbrl.plan_validator": {
+      "path": "src/retriever/xbrl/plan_validator.py",
+      "tier": "TRUNK",
+      "reason": "pinned in profile criticality.pins",
+      "metrics": {
+        "fan_in": 1,
+        "fan_in_transitive": 13,
+        "fan_out": 0,
+        "pagerank": 0.361,
+        "tests": 2,
+        "tests_reach": 14,
+        "test_coverage": "direct",
+        "instability": 0.0
+      },
+      "outputs": [
+        "answer"
+      ],
+      "distance": 2,
+      "cochange": [
+        "src/retriever/xbrl/intent_router.py (3)",
+        "src/retriever/xbrl/entity_extractor.py (2)",
+        "src/retriever/xbrl/plan_generator.py (2)"
+      ]
+    },
+    "src.retriever.xbrl.query_decomposer": {
+      "path": "src/retriever/xbrl/query_decomposer.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer (1 hops): query_decomposer ← retrieval_pipeline",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 12,
+        "fan_out": 5,
+        "pagerank": 0.393,
+        "tests": 1,
+        "tests_reach": 12,
+        "test_coverage": "direct",
+        "instability": 0.71
+      },
+      "outputs": [
+        "answer"
+      ],
+      "distance": 1,
+      "cochange": [
+        "src/pipelines/xbrl/retrieval_pipeline.py (2)",
+        "src/retriever/xbrl/intent_router.py (2)",
+        "src/retriever/xbrl/llm_xbrl_faithfulness_verifier.py (2)"
+      ]
+    },
+    "src.retriever.xbrl.xbrl_calculator_tool": {
+      "path": "src/retriever/xbrl/xbrl_calculator_tool.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (0 hops): xbrl_calculator_tool",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 17,
+        "fan_out": 1,
+        "pagerank": 0.614,
+        "tests": 1,
+        "tests_reach": 18,
+        "test_coverage": "direct",
+        "instability": 0.25
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 0,
+      "cochange": [
+        "src/retriever/xbrl/plan_executor.py (2)"
+      ]
+    },
+    "src.retriever.xbrl.xbrl_factstore_lookup": {
+      "path": "src/retriever/xbrl/xbrl_factstore_lookup.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts, narrative (0 hops): xbrl_factstore_lookup",
+      "metrics": {
+        "fan_in": 4,
+        "fan_in_transitive": 18,
+        "fan_out": 48,
+        "pagerank": 0.524,
+        "tests": 5,
+        "tests_reach": 20,
+        "test_coverage": "direct",
+        "instability": 0.92
+      },
+      "outputs": [
+        "answer",
+        "facts",
+        "narrative"
+      ],
+      "distance": 0,
+      "cochange": [
+        "src/retriever/xbrl/xbrl_factstore_screen.py (4)",
+        "src/observability/audit_store.py (2)",
+        "src/retriever/xbrl/entity_extractor.py (2)"
+      ]
+    },
+    "src.retriever.xbrl.xbrl_factstore_screen": {
+      "path": "src/retriever/xbrl/xbrl_factstore_screen.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, facts (0 hops): xbrl_factstore_screen",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 13,
+        "fan_out": 48,
+        "pagerank": 0.424,
+        "tests": 0,
+        "tests_reach": 12,
+        "test_coverage": "indirect",
+        "instability": 0.96
+      },
+      "outputs": [
+        "answer",
+        "facts"
+      ],
+      "distance": 0,
+      "cochange": [
+        "src/retriever/xbrl/xbrl_factstore_lookup.py (4)",
+        "src/observability/audit_store.py (2)",
+        "src/retriever/xbrl/entity_extractor.py (2)"
+      ]
+    },
+    "src.retriever.xbrl.xbrl_narrative_retriever": {
+      "path": "src/retriever/xbrl/xbrl_narrative_retriever.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, narrative (0 hops): xbrl_narrative_retriever",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 13,
+        "fan_out": 11,
+        "pagerank": 0.424,
+        "tests": 1,
+        "tests_reach": 13,
+        "test_coverage": "direct",
+        "instability": 0.85
+      },
+      "outputs": [
+        "answer",
+        "narrative"
+      ],
+      "distance": 0,
+      "cochange": []
+    },
+    "src.vectorstores.chroma_vectordb_client": {
+      "path": "src/vectorstores/chroma_vectordb_client.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 0,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    },
+    "src.vectorstores.qdrant_vectordb_client": {
+      "path": "src/vectorstores/qdrant_vectordb_client.py",
+      "tier": "TRUNK",
+      "reason": "TRUNK·value → answer, index, narrative (2 hops): qdrant_vectordb_client ← xbrl_qdrant_vectordb_client ← load_to_vectordb_pipeline",
+      "metrics": {
+        "fan_in": 3,
+        "fan_in_transitive": 22,
+        "fan_out": 3,
+        "pagerank": 0.509,
+        "tests": 1,
+        "tests_reach": 16,
+        "test_coverage": "direct",
+        "instability": 0.5
+      },
+      "outputs": [
+        "answer",
+        "index",
+        "narrative"
+      ],
+      "distance": 2,
+      "cochange": [
+        "src/retriever/base_retriever.py (6)",
+        "src/retriever/retriever_util.py (4)",
+        "src/embeddings/bge_embedding.py (3)"
+      ]
+    },
+    "src.vectorstores.xbrl_qdrant_vectordb_client": {
+      "path": "src/vectorstores/xbrl_qdrant_vectordb_client.py",
+      "tier": "TRUNK",
+      "reason": "pinned in profile criticality.pins",
+      "metrics": {
+        "fan_in": 2,
+        "fan_in_transitive": 15,
+        "fan_out": 4,
+        "pagerank": 0.387,
+        "tests": 1,
+        "tests_reach": 14,
+        "test_coverage": "direct",
+        "instability": 0.67
+      },
+      "outputs": [
+        "answer",
+        "index",
+        "narrative"
+      ],
+      "distance": 1,
+      "cochange": []
+    },
+    "tools.standards.check_standards": {
+      "path": "tools/standards/check_standards.py",
+      "tier": "LEAF",
+      "reason": "no production module depends on it",
+      "metrics": {
+        "fan_in": 0,
+        "fan_in_transitive": 0,
+        "fan_out": 0,
+        "pagerank": 0.324,
+        "tests": 0,
+        "tests_reach": 0,
+        "test_coverage": "none",
+        "instability": 0.0
+      },
+      "outputs": [],
+      "distance": null,
+      "cochange": []
+    }
+  }
+}

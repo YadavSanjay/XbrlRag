@@ -1,0 +1,40 @@
+tag	version	custom	abstract	datatype	iord	crdr	tlabel	doc
+AccruedExpensesAndOtherCurrentLiabilities	0000063908-25-000012	1	0	monetary	I	C	Accrued Expenses And Other Current Liabilities	Accrued expenses and other current liabilities
+CurrentLeaseLiabilityNet	0000063908-25-000012	1	0	monetary	I	D	Current lease liability, net	Current lease liability, net
+FoodAndPaperCosts	0000063908-25-000012	1	0	monetary	D	D	Food And Paper Costs	Cost of raw products and paper items, such as cups, wrapping and lids, used in the course of preparing and serving restaurant menu items, freight, and non-product costs from outside vendors used in generating sales.
+Franchisedrestaurantsoccupancyexpenses	0000063908-25-000012	1	0	monetary	D	D	Franchised restaurants occupancy expenses	Franchised restaurants occupancy expenses
+IncomeLossFromContinuingOperationsBeforeIncomeTaxes	0000063908-25-000012	1	0	monetary	D	C	Income Loss From Continuing Operations Before Income Taxes	Sum of operating profit and nonoperating income (expense) before income taxes.
+IncreaseDecreaseInInventoriesPrepaidExpensesAndOtherCurrentAssets	0000063908-25-000012	1	0	monetary	D	C	Increase Decrease In Inventories Prepaid Expenses And Other Current Assets	The net change during the reporting period in the aggregate value of all inventory held by the reporting entity, associated with underlying transactions that are classified as operating activities, the net change during the reporting period in the amount of outstanding money paid in advance for goods or services that bring economic benefits for future periods and the net change during the reporting period in other operating assets not otherwise defined in the taxonomy.
+LeaseRightOfUseAssetNet	0000063908-25-000012	1	0	monetary	I	D	Lease right-of use asset, net	Lease right-of use asset, net
+LongTermLeaseLiabilityNoncurrentNet	0000063908-25-000012	1	0	monetary	I	D	Long-term lease liability (noncurrent), net	Long-term lease liability (noncurrent), net
+OccupancyAndOtherOperatingExpenses	0000063908-25-000012	1	0	monetary	D	D	Occupancy And Other Operating Expenses	Cost of rent for ground and top leases to third party owners of land and/or buildings of which company-operated restaurants are operated, as well as the depreciation of tangible assets (equipment, signs, seating, decor and leasehold improvements), company-operated restaurant buildings/leaseholds and the amortization of reacquired franchise rights, and the cost of advertising, promotion, operating supplies, maintenance and repair, insurance, taxes and licenses, credit/debit card processing fees, etc.
+OtherRevenues	0000063908-25-000012	1	0	monetary	D	C	Other Revenues	Other Revenues
+PayrollAndEmployeeBenefits	0000063908-25-000012	1	0	monetary	D	D	Payroll And Employee Benefits	Costs of crew labor, management labor and payroll taxes along with health insurance, bonuses and profit sharing, short-term disability and other employee related benefit.
+Revenuesfromfranchisedrestaurants	0000063908-25-000012	1	0	monetary	D	C	Revenues from franchised restaurants	Revenues from franchised restaurants
+SalesbyCompanyoperatedrestaurants	0000063908-25-000012	1	0	monetary	D	C	Sales by Company-operated restaurants	Sales by Company-operated restaurants.
+TotalOtherAssets	0000063908-25-000012	1	0	monetary	I	D	Total Other Assets	Total Other Assets
+AccruedAndOtherCurrentLiabilities	0001628280-25-003063	1	0	monetary	I	C	Accrued And Other Current Liabilities	Accrued and other current liabilities.
+DepreciationAmortizationAndImpairment	0001628280-25-003063	1	0	monetary	D	D	Depreciation Amortization And Impairment	Depreciation amortization and impairment.
+DigitalAssetsNetNonCurrent	0001628280-25-003063	1	0	monetary	I	D	Digital Assets Net Non-current	Amount of digital assets net, non-current.
+GainLossOnDigitalAssets	0001628280-25-003063	1	0	monetary	D	C	Gain (Loss) on Digital Assets	Gain (loss) on digital assets.
+GovernmentGrantReceipt	0001628280-25-003063	1	0	monetary	D	D	Government Grant Receipt	Receipt of government grants.
+IncreaseDecreaseInOperatingLeaseVehicles	0001628280-25-003063	1	0	monetary	D	C	Increase Decrease In Operating Lease Vehicles	Increase decrease in operating lease vehicles.
+LeasedAssetsNet	0001628280-25-003063	1	0	monetary	I	D	Leased Assets Net	Leased assets net.
+LongTermDebtAndFinanceLeasesCurrent	0001628280-25-003063	1	0	monetary	I	C	Long Term Debt And Finance Leases Current	Long term debt and finance leases current.
+LongTermDebtAndFinanceLeasesNoncurrent	0001628280-25-003063	1	0	monetary	I	C	Long Term Debt And Finance Leases Noncurrent	Long term debt and finance leases, noncurrent
+NoncashInterestIncomeExpenseAndOtherOperatingActivities	0001628280-25-003063	1	0	monetary	D	C	Noncash Interest Income Expense And Other Operating Activities	Noncash interest income (expense) and other operating activities.
+PaymentsForBuyOutsOfNoncontrollingInterestsInSubsidiaries	0001628280-25-003063	1	0	monetary	D	C	Payments For Buy Outs Of Noncontrolling Interests In Subsidiaries	Payments for buy-outs of noncontrolling interests in subsidiaries.
+PaymentsForSolarEnergySystemsNetOfSales	0001628280-25-003063	1	0	monetary	D	C	Payments For Solar Energy Systems Net Of Sales	Payments for solar energy systems, net of sales.
+PaymentsToAcquireOtherIndefiniteLivedIntangibleAssets	0001628280-25-003063	1	0	monetary	D	C	Payments to Acquire Other Indefinite Lived Intangible Assets	Payments to acquire other indefinite lived intangible assets.
+ProceedsFromSalesOfDigitalAssets	0001628280-25-003063	1	0	monetary	D	D	Proceeds from sales of digital assets	Proceeds from sales of digital assets
+RestructuringAndOtherExpenses	0001628280-25-003063	1	0	monetary	D	D	Restructuring And Other Expenses	Restructuring and other expenses.
+BusinessCombinationAdvancedConsiderationWrittenOff	0001045810-25-000023	1	0	monetary	D	D	Business Combination, Advanced Consideration Written Off	Business Combination, Advanced Consideration Written Off
+PaymentsForFinancedPropertyPlantAndEquipmentAndIntangibleAssetsFinancingActivities	0001045810-25-000023	1	0	monetary	D	C	Payments For Financed Property, Plant And Equipment And Intangible Assets, Financing Activities	Payments For Financed Property, Plant And Equipment And Intangible Assets, Financing Activities
+ClassifiedProgramsGainsLosses	0000936468-25-000009	1	0	monetary	D	D	Classified Programs (Gains) Losses	Classified Programs (Gains) Losses
+DepreciationAndAmortizationIncludingDiscontinuedOperations	0000936468-25-000009	1	0	monetary	D	D	Depreciation and Amortization Including Discontinued Operations	Depreciation and Amortization Including Discontinued Operations
+OtherUnallocatedIncomeExpense	0000936468-25-000009	1	0	monetary	D	D	Other Unallocated (Income) Expense	Other Unallocated (Income) Expense
+AssetImpairmentChargesAndGainLossOnDisposalOfPropertyPlantAndEquipment	0000050863-25-000009	1	0	monetary	D	D	Asset Impairment Charges And (Gain) Loss On Disposal Of Property, Plant, And Equipment	Asset Impairment Charges And (Gain) Loss On Disposal Of Property, Plant, And Equipment
+EquityInvestments	0000050863-25-000009	1	0	monetary	I	D	Equity Investments	Equity Investments
+GainsLossesOnEquityInvestments	0000050863-25-000009	1	0	monetary	D	C	Gains (Losses) On Equity Investments	Gains (Losses) On Equity Investments
+PaymentsToAcquirePropertyPlantAndEquipmentFinancingActivities	0000050863-25-000009	1	0	monetary	D	C	Payments To Acquire Property, Plant, And Equipment, Financing Activities	Payments To Acquire Property, Plant, And Equipment, Financing Activities
+ProceedsFromCapitalGrants	0000050863-25-000009	1	0	monetary	D	D	Proceeds From Capital Grants	Proceeds From Capital Grants

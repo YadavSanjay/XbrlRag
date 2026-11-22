@@ -1,0 +1,2320 @@
+{
+ "case": "adbe_fy2025_revenues",
+ "ticker": "ADBE",
+ "cik": "0000796343",
+ "accession_no": "0000796343-26-000003",
+ "filing_index_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/",
+ "document_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+ "local_source": "data/storage/sec_edgar/ADBE/2025/10-K/adbe-20251128.htm",
+ "local_source_sha256": "f8aed97fb87afbe5849327cd57ed620c6af11b183988d49dfd971cffeb3b42fc",
+ "retrieved": "2026-11-07",
+ "extracted": "xbrl_db (read-only), 2026-11-07: every fact of the concept in the filing, all contexts; dimensions from context_dimension in the views' QName form (standard namespaces as prefix:local, extension namespaces as uri:local); `view` is the fact's mv_financial_facts row",
+ "dimensions": "explicit_dimensions are the context's is_default=FALSE rows as [axis, member, typed_value] (member null for a typed dimension); default_set names the context's is_default=TRUE rows, listed once in default_sets as [axis, member]",
+ "dates": "xbrl_db stores a duration end as the next day (end-of-day convention): 2025-01-01 ends fiscal 2024",
+ "default_sets": {
+  "d0": [
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "srt:TitleOfIndividualAxis",
+    "srt:TitleOfIndividualWithRelationshipToEntityDomain"
+   ],
+   [
+    "us-gaap:RestrictedCashAndCashEquivalentsCashAndCashEquivalentsAxis",
+    "us-gaap:RestrictedCashAndCashEquivalentsCashAndCashEquivalentsMember"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:BusinessAcquisitionAxis",
+    "us-gaap:BusinessAcquisitionAcquireeDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "http://adobe.com/20251128:InterestRateScenarioAxis",
+    "http://adobe.com/20251128:InterestRateScenarioDomain"
+   ],
+   [
+    "us-gaap:CreditFacilityAxis",
+    "us-gaap:CreditFacilityDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentAxis",
+    "us-gaap:DebtInstrumentNameDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentRiskAxis",
+    "us-gaap:DerivativeContractTypeDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentsGainLossByHedgingRelationshipAxis",
+    "us-gaap:HedgingRelationshipDomain"
+   ],
+   [
+    "us-gaap:HedgingDesignationAxis",
+    "us-gaap:HedgingDesignationDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ReclassificationOfUnrealizedGainLossCategoryAxis",
+    "http://adobe.com/20251128:ReclassificationOfUnrealizedGainLossCategoryDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementLocationAxis",
+    "us-gaap:IncomeStatementLocationDomain"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:FiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:FiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:StatementBusinessSegmentsAxis",
+    "us-gaap:SegmentDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "srt:StatementGeographicalAxis",
+    "srt:SegmentGeographicalDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ContractLiabilityArrangementTypeAxis",
+    "http://adobe.com/20251128:ContractLiabilityArrangementTypeDomain"
+   ],
+   [
+    "srt:MajorCustomersAxis",
+    "srt:NameOfMajorCustomerDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "srt:ShareRepurchaseProgramAxis",
+    "srt:ShareRepurchaseProgramDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ShareRepurchaseAuthorityAxis",
+    "http://adobe.com/20251128:ShareRepurchaseAuthorityDomain"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ],
+  "d1": [
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "srt:TitleOfIndividualAxis",
+    "srt:TitleOfIndividualWithRelationshipToEntityDomain"
+   ],
+   [
+    "us-gaap:RestrictedCashAndCashEquivalentsCashAndCashEquivalentsAxis",
+    "us-gaap:RestrictedCashAndCashEquivalentsCashAndCashEquivalentsMember"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:BusinessAcquisitionAxis",
+    "us-gaap:BusinessAcquisitionAcquireeDomain"
+   ],
+   [
+    "srt:ProductOrServiceAxis",
+    "srt:ProductsAndServicesDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "http://adobe.com/20251128:InterestRateScenarioAxis",
+    "http://adobe.com/20251128:InterestRateScenarioDomain"
+   ],
+   [
+    "us-gaap:CreditFacilityAxis",
+    "us-gaap:CreditFacilityDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentAxis",
+    "us-gaap:DebtInstrumentNameDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentRiskAxis",
+    "us-gaap:DerivativeContractTypeDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentsGainLossByHedgingRelationshipAxis",
+    "us-gaap:HedgingRelationshipDomain"
+   ],
+   [
+    "us-gaap:HedgingDesignationAxis",
+    "us-gaap:HedgingDesignationDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ReclassificationOfUnrealizedGainLossCategoryAxis",
+    "http://adobe.com/20251128:ReclassificationOfUnrealizedGainLossCategoryDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementLocationAxis",
+    "us-gaap:IncomeStatementLocationDomain"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:FiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:FiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:StatementBusinessSegmentsAxis",
+    "us-gaap:SegmentDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "srt:StatementGeographicalAxis",
+    "srt:SegmentGeographicalDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ContractLiabilityArrangementTypeAxis",
+    "http://adobe.com/20251128:ContractLiabilityArrangementTypeDomain"
+   ],
+   [
+    "srt:MajorCustomersAxis",
+    "srt:NameOfMajorCustomerDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "srt:ShareRepurchaseProgramAxis",
+    "srt:ShareRepurchaseProgramDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ShareRepurchaseAuthorityAxis",
+    "http://adobe.com/20251128:ShareRepurchaseAuthorityDomain"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ],
+  "d2": [
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "srt:TitleOfIndividualAxis",
+    "srt:TitleOfIndividualWithRelationshipToEntityDomain"
+   ],
+   [
+    "us-gaap:RestrictedCashAndCashEquivalentsCashAndCashEquivalentsAxis",
+    "us-gaap:RestrictedCashAndCashEquivalentsCashAndCashEquivalentsMember"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:BusinessAcquisitionAxis",
+    "us-gaap:BusinessAcquisitionAcquireeDomain"
+   ],
+   [
+    "srt:ProductOrServiceAxis",
+    "srt:ProductsAndServicesDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "http://adobe.com/20251128:InterestRateScenarioAxis",
+    "http://adobe.com/20251128:InterestRateScenarioDomain"
+   ],
+   [
+    "us-gaap:CreditFacilityAxis",
+    "us-gaap:CreditFacilityDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentAxis",
+    "us-gaap:DebtInstrumentNameDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentRiskAxis",
+    "us-gaap:DerivativeContractTypeDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentsGainLossByHedgingRelationshipAxis",
+    "us-gaap:HedgingRelationshipDomain"
+   ],
+   [
+    "us-gaap:HedgingDesignationAxis",
+    "us-gaap:HedgingDesignationDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ReclassificationOfUnrealizedGainLossCategoryAxis",
+    "http://adobe.com/20251128:ReclassificationOfUnrealizedGainLossCategoryDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementLocationAxis",
+    "us-gaap:IncomeStatementLocationDomain"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:FiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:FiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "srt:StatementGeographicalAxis",
+    "srt:SegmentGeographicalDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ContractLiabilityArrangementTypeAxis",
+    "http://adobe.com/20251128:ContractLiabilityArrangementTypeDomain"
+   ],
+   [
+    "srt:MajorCustomersAxis",
+    "srt:NameOfMajorCustomerDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "srt:ShareRepurchaseProgramAxis",
+    "srt:ShareRepurchaseProgramDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ShareRepurchaseAuthorityAxis",
+    "http://adobe.com/20251128:ShareRepurchaseAuthorityDomain"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ],
+  "d3": [
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "srt:TitleOfIndividualAxis",
+    "srt:TitleOfIndividualWithRelationshipToEntityDomain"
+   ],
+   [
+    "us-gaap:RestrictedCashAndCashEquivalentsCashAndCashEquivalentsAxis",
+    "us-gaap:RestrictedCashAndCashEquivalentsCashAndCashEquivalentsMember"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:BusinessAcquisitionAxis",
+    "us-gaap:BusinessAcquisitionAcquireeDomain"
+   ],
+   [
+    "srt:ProductOrServiceAxis",
+    "srt:ProductsAndServicesDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "http://adobe.com/20251128:InterestRateScenarioAxis",
+    "http://adobe.com/20251128:InterestRateScenarioDomain"
+   ],
+   [
+    "us-gaap:CreditFacilityAxis",
+    "us-gaap:CreditFacilityDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentAxis",
+    "us-gaap:DebtInstrumentNameDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentRiskAxis",
+    "us-gaap:DerivativeContractTypeDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentsGainLossByHedgingRelationshipAxis",
+    "us-gaap:HedgingRelationshipDomain"
+   ],
+   [
+    "us-gaap:HedgingDesignationAxis",
+    "us-gaap:HedgingDesignationDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ReclassificationOfUnrealizedGainLossCategoryAxis",
+    "http://adobe.com/20251128:ReclassificationOfUnrealizedGainLossCategoryDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementLocationAxis",
+    "us-gaap:IncomeStatementLocationDomain"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:FiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:FiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:StatementBusinessSegmentsAxis",
+    "us-gaap:SegmentDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ContractLiabilityArrangementTypeAxis",
+    "http://adobe.com/20251128:ContractLiabilityArrangementTypeDomain"
+   ],
+   [
+    "srt:MajorCustomersAxis",
+    "srt:NameOfMajorCustomerDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "srt:ShareRepurchaseProgramAxis",
+    "srt:ShareRepurchaseProgramDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ShareRepurchaseAuthorityAxis",
+    "http://adobe.com/20251128:ShareRepurchaseAuthorityDomain"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ],
+  "d4": [
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "srt:TitleOfIndividualAxis",
+    "srt:TitleOfIndividualWithRelationshipToEntityDomain"
+   ],
+   [
+    "us-gaap:RestrictedCashAndCashEquivalentsCashAndCashEquivalentsAxis",
+    "us-gaap:RestrictedCashAndCashEquivalentsCashAndCashEquivalentsMember"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:BusinessAcquisitionAxis",
+    "us-gaap:BusinessAcquisitionAcquireeDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "http://adobe.com/20251128:InterestRateScenarioAxis",
+    "http://adobe.com/20251128:InterestRateScenarioDomain"
+   ],
+   [
+    "us-gaap:CreditFacilityAxis",
+    "us-gaap:CreditFacilityDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentAxis",
+    "us-gaap:DebtInstrumentNameDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentRiskAxis",
+    "us-gaap:DerivativeContractTypeDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentsGainLossByHedgingRelationshipAxis",
+    "us-gaap:HedgingRelationshipDomain"
+   ],
+   [
+    "us-gaap:HedgingDesignationAxis",
+    "us-gaap:HedgingDesignationDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ReclassificationOfUnrealizedGainLossCategoryAxis",
+    "http://adobe.com/20251128:ReclassificationOfUnrealizedGainLossCategoryDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementLocationAxis",
+    "us-gaap:IncomeStatementLocationDomain"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:FiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:FiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "srt:StatementGeographicalAxis",
+    "srt:SegmentGeographicalDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ContractLiabilityArrangementTypeAxis",
+    "http://adobe.com/20251128:ContractLiabilityArrangementTypeDomain"
+   ],
+   [
+    "srt:MajorCustomersAxis",
+    "srt:NameOfMajorCustomerDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "srt:ShareRepurchaseProgramAxis",
+    "srt:ShareRepurchaseProgramDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ShareRepurchaseAuthorityAxis",
+    "http://adobe.com/20251128:ShareRepurchaseAuthorityDomain"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ],
+  "d5": [
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "srt:TitleOfIndividualAxis",
+    "srt:TitleOfIndividualWithRelationshipToEntityDomain"
+   ],
+   [
+    "us-gaap:RestrictedCashAndCashEquivalentsCashAndCashEquivalentsAxis",
+    "us-gaap:RestrictedCashAndCashEquivalentsCashAndCashEquivalentsMember"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:BusinessAcquisitionAxis",
+    "us-gaap:BusinessAcquisitionAcquireeDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "http://adobe.com/20251128:InterestRateScenarioAxis",
+    "http://adobe.com/20251128:InterestRateScenarioDomain"
+   ],
+   [
+    "us-gaap:CreditFacilityAxis",
+    "us-gaap:CreditFacilityDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentAxis",
+    "us-gaap:DebtInstrumentNameDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentRiskAxis",
+    "us-gaap:DerivativeContractTypeDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentsGainLossByHedgingRelationshipAxis",
+    "us-gaap:HedgingRelationshipDomain"
+   ],
+   [
+    "us-gaap:HedgingDesignationAxis",
+    "us-gaap:HedgingDesignationDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ReclassificationOfUnrealizedGainLossCategoryAxis",
+    "http://adobe.com/20251128:ReclassificationOfUnrealizedGainLossCategoryDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementLocationAxis",
+    "us-gaap:IncomeStatementLocationDomain"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:FiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:FiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "srt:StatementGeographicalAxis",
+    "srt:SegmentGeographicalDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ContractLiabilityArrangementTypeAxis",
+    "http://adobe.com/20251128:ContractLiabilityArrangementTypeDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "srt:ShareRepurchaseProgramAxis",
+    "srt:ShareRepurchaseProgramDomain"
+   ],
+   [
+    "http://adobe.com/20251128:ShareRepurchaseAuthorityAxis",
+    "http://adobe.com/20251128:ShareRepurchaseAuthorityDomain"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ]
+ },
+ "facts": [
+  {
+   "fact_id": 171025,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "22904000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171026,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "20521000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171027,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "18284000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171028,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "325000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:ProductMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:ProductMember",
+    "segment_label": "Product [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171029,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "386000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:ProductMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:ProductMember",
+    "segment_label": "Product [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171030,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "460000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:ProductMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:ProductMember",
+    "segment_label": "Product [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171031,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "540000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:ServiceOtherMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:ServiceOtherMember",
+    "segment_label": "Service, Other [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171032,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "598000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:ServiceOtherMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:ServiceOtherMember",
+    "segment_label": "Service, Other [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171033,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "665000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:ServiceOtherMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:ServiceOtherMember",
+    "segment_label": "Service, Other [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171034,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "23769000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171035,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "21505000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171036,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "19409000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171346,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "17649000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalMediaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://adobe.com/20251128:DigitalMediaMember",
+    "segment_label": "Digital Media [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171347,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "5864000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalExperienceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://adobe.com/20251128:DigitalExperienceMember",
+    "segment_label": "Digital Experience [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171348,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "256000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:PublishingAndAdvertisingMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://adobe.com/20251128:PublishingAndAdvertisingMember",
+    "segment_label": "Publishing and Advertising [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171349,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "23769000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171362,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "15864000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalMediaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://adobe.com/20251128:DigitalMediaMember",
+    "segment_label": "Digital Media [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171363,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "5366000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalExperienceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://adobe.com/20251128:DigitalExperienceMember",
+    "segment_label": "Digital Experience [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171364,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "275000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:PublishingAndAdvertisingMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://adobe.com/20251128:PublishingAndAdvertisingMember",
+    "segment_label": "Publishing and Advertising [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171365,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "21505000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171378,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "14216000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalMediaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://adobe.com/20251128:DigitalMediaMember",
+    "segment_label": "Digital Media [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171379,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "4893000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalExperienceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://adobe.com/20251128:DigitalExperienceMember",
+    "segment_label": "Digital Experience [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171380,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "300000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:PublishingAndAdvertisingMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://adobe.com/20251128:PublishingAndAdvertisingMember",
+    "segment_label": "Publishing and Advertising [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171381,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "19409000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171395,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "12529000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171396,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "11499000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171397,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "10460000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171398,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "1591000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "http://adobe.com/20251128:OtherAmericasMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "http://adobe.com/20251128:OtherAmericasMember",
+    "segment_label": "Other Americas [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171399,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "1392000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "http://adobe.com/20251128:OtherAmericasMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "http://adobe.com/20251128:OtherAmericasMember",
+    "segment_label": "Other Americas [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171400,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "1194000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "http://adobe.com/20251128:OtherAmericasMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "http://adobe.com/20251128:OtherAmericasMember",
+    "segment_label": "Other Americas [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171401,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "14120000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "srt:AmericasMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "srt:AmericasMember",
+    "segment_label": "Americas [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171402,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "12891000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "srt:AmericasMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "srt:AmericasMember",
+    "segment_label": "Americas [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171403,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "11654000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "srt:AmericasMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "srt:AmericasMember",
+    "segment_label": "Americas [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171404,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "6289000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:EMEAMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:EMEAMember",
+    "segment_label": "EMEA [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171405,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "5554000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:EMEAMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:EMEAMember",
+    "segment_label": "EMEA [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171406,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "4881000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:EMEAMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:EMEAMember",
+    "segment_label": "EMEA [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171407,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "3360000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "srt:AsiaPacificMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "srt:AsiaPacificMember",
+    "segment_label": "Asia Pacific [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171408,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "3060000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "srt:AsiaPacificMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "srt:AsiaPacificMember",
+    "segment_label": "Asia Pacific [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171409,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "2874000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "srt:AsiaPacificMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "srt:AsiaPacificMember",
+    "segment_label": "Asia Pacific [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171410,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "23769000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171411,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "21505000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171412,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "19409000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171414,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "17389000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalMediaMember",
+     null
+    ]
+   ],
+   "default_set": "d4",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171415,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "15547000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalMediaMember",
+     null
+    ]
+   ],
+   "default_set": "d4",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171416,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "13838000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalMediaMember",
+     null
+    ]
+   ],
+   "default_set": "d4",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171417,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "5409000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalExperienceMember",
+     null
+    ]
+   ],
+   "default_set": "d4",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171418,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "4864000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalExperienceMember",
+     null
+    ]
+   ],
+   "default_set": "d4",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171419,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "4331000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalExperienceMember",
+     null
+    ]
+   ],
+   "default_set": "d4",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171420,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "106000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:PublishingAndAdvertisingMember",
+     null
+    ]
+   ],
+   "default_set": "d4",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171421,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "110000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:PublishingAndAdvertisingMember",
+     null
+    ]
+   ],
+   "default_set": "d4",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171422,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "115000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:PublishingAndAdvertisingMember",
+     null
+    ]
+   ],
+   "default_set": "d4",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171423,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "22904000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171424,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "20521000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171425,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "18284000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171426,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "16303000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "srt:MajorCustomersAxis",
+     "http://adobe.com/20251128:CreativeProfessionalsAndMarketersMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalMediaAndDigitalExperienceMember",
+     null
+    ]
+   ],
+   "default_set": "d5",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171427,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "14749000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "srt:MajorCustomersAxis",
+     "http://adobe.com/20251128:CreativeProfessionalsAndMarketersMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalMediaAndDigitalExperienceMember",
+     null
+    ]
+   ],
+   "default_set": "d5",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171428,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "13425000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "srt:MajorCustomersAxis",
+     "http://adobe.com/20251128:CreativeProfessionalsAndMarketersMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalMediaAndDigitalExperienceMember",
+     null
+    ]
+   ],
+   "default_set": "d5",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171429,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "6495000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "srt:MajorCustomersAxis",
+     "http://adobe.com/20251128:BusinessProfessionalsAndConsumersMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalMediaAndDigitalExperienceMember",
+     null
+    ]
+   ],
+   "default_set": "d5",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171430,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "5662000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "srt:MajorCustomersAxis",
+     "http://adobe.com/20251128:BusinessProfessionalsAndConsumersMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalMediaAndDigitalExperienceMember",
+     null
+    ]
+   ],
+   "default_set": "d5",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171431,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "4744000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "srt:MajorCustomersAxis",
+     "http://adobe.com/20251128:BusinessProfessionalsAndConsumersMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalMediaAndDigitalExperienceMember",
+     null
+    ]
+   ],
+   "default_set": "d5",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171432,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2024-11-30",
+   "period_end": "2025-11-29",
+   "value": "22798000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalMediaAndDigitalExperienceMember",
+     null
+    ]
+   ],
+   "default_set": "d4",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 171433,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2023-12-02",
+   "period_end": "2024-11-30",
+   "value": "20411000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalMediaAndDigitalExperienceMember",
+     null
+    ]
+   ],
+   "default_set": "d4",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 171434,
+   "concept": "http://fasb.org/us-gaap/2025:Revenues",
+   "unit": "USD",
+   "period_start": "2022-12-03",
+   "period_end": "2023-12-02",
+   "value": "18169000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://adobe.com/20251128:SubscriptionRevenueMember",
+     null
+    ],
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://adobe.com/20251128:DigitalMediaAndDigitalExperienceMember",
+     null
+    ]
+   ],
+   "default_set": "d4",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://adobe.com/20251128:SubscriptionRevenueMember",
+    "segment_label": "Subscription Revenue [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,296 @@
+# witness-rules-r2 judging oracle (locked). Spec: docs/specs/witness-rules-r2.md requirement 2.
+# Per family: the us-gaap elements whose taxonomy definition IS the family's measure, and
+# where an oracle line may sit: statements and parenthetical are r1's for the family
+# (key-statement-witness locked copy), fixed here so the rules under test cannot move them.
+# Debt and DeferredRevenue (definitions open: key-definitions) and EffectiveTaxRate (rarely a
+# statement line) are not judged.
+version: 1
+families:
+  Revenue:
+    elements: [Revenues, RevenueFromContractWithCustomerExcludingAssessedTax, RevenueFromContractWithCustomerIncludingAssessedTax, SalesRevenueNet]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD
+  CostOfRevenue:
+    elements: [CostOfRevenue, CostOfGoodsAndServicesSold]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD
+  GrossProfit:
+    elements: [GrossProfit]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD
+  OperatingExpenses:
+    elements: [OperatingExpenses]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD
+  ResearchAndDevelopment:
+    elements: [ResearchAndDevelopmentExpense, ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD
+  SellingGeneralAndAdministrative:
+    elements: [SellingGeneralAndAdministrativeExpense]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD
+  SellingAndMarketing:
+    elements: [SellingAndMarketingExpense]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD
+  GeneralAndAdministrative:
+    elements: [GeneralAndAdministrativeExpense]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD
+  RestructuringCharges:
+    elements: [RestructuringCharges]
+    statements: [IS, CF]
+    parenthetical: false
+    period: duration
+    unit: USD
+  OperatingIncome:
+    elements: [OperatingIncomeLoss]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD
+  InterestExpense:
+    elements: [InterestExpense, InterestExpenseNonoperating, InterestExpenseDebt]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD
+  InterestIncome:
+    elements: [InvestmentIncomeInterest, InvestmentIncomeInterestAndDividend]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD
+  OtherNonOperatingIncome:
+    elements: [OtherNonoperatingIncomeExpense]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD
+  PretaxIncome:
+    elements: [IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest, IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD
+  TaxExpense:
+    elements: [IncomeTaxExpenseBenefit]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD
+  NetIncome:
+    elements: [NetIncomeLoss]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD
+  NetIncomeToCommon:
+    elements: [NetIncomeLossAvailableToCommonStockholdersBasic]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD
+  ComprehensiveIncome:
+    elements: [ComprehensiveIncomeNetOfTax]
+    statements: [CI, IS]
+    parenthetical: false
+    period: duration
+    unit: USD
+  EarningsPerShareBasic:
+    elements: [EarningsPerShareBasic, EarningsPerShareBasicAndDiluted]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD/shares
+  EarningsPerShareDiluted:
+    elements: [EarningsPerShareDiluted, EarningsPerShareBasicAndDiluted]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: USD/shares
+  WeightedAverageSharesBasic:
+    elements: [WeightedAverageNumberOfSharesOutstandingBasic, WeightedAverageNumberOfShareOutstandingBasicAndDiluted]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: shares
+  WeightedAverageSharesDiluted:
+    elements: [WeightedAverageNumberOfDilutedSharesOutstanding, WeightedAverageNumberOfShareOutstandingBasicAndDiluted]
+    statements: [IS, CI]
+    parenthetical: false
+    period: duration
+    unit: shares
+  DividendsPerShare:
+    elements: [CommonStockDividendsPerShareDeclared, CommonStockDividendsPerShareCashPaid]
+    statements: [IS, EQ, CI]
+    parenthetical: true
+    period: duration
+    unit: USD/shares
+  TotalAssets:
+    elements: [Assets]
+    statements: [BS]
+    parenthetical: false
+    period: instant
+    unit: USD
+  CurrentAssets:
+    elements: [AssetsCurrent]
+    statements: [BS]
+    parenthetical: false
+    period: instant
+    unit: USD
+  CashAndEquivalents:
+    elements: [CashAndCashEquivalentsAtCarryingValue]
+    statements: [BS]
+    parenthetical: false
+    period: instant
+    unit: USD
+  ShortTermInvestments:
+    elements: [ShortTermInvestments, MarketableSecuritiesCurrent, AvailableForSaleSecuritiesDebtSecuritiesCurrent]
+    statements: [BS]
+    parenthetical: false
+    period: instant
+    unit: USD
+  AccountsReceivable:
+    elements: [AccountsReceivableNetCurrent]
+    statements: [BS]
+    parenthetical: false
+    period: instant
+    unit: USD
+  Inventory:
+    elements: [InventoryNet]
+    statements: [BS]
+    parenthetical: false
+    period: instant
+    unit: USD
+  PropertyPlantAndEquipment:
+    elements: [PropertyPlantAndEquipmentNet]
+    statements: [BS]
+    parenthetical: false
+    period: instant
+    unit: USD
+  Goodwill:
+    elements: [Goodwill]
+    statements: [BS]
+    parenthetical: false
+    period: instant
+    unit: USD
+  IntangibleAssets:
+    elements: [IntangibleAssetsNetExcludingGoodwill, FiniteLivedIntangibleAssetsNet]
+    statements: [BS]
+    parenthetical: false
+    period: instant
+    unit: USD
+  TotalLiabilities:
+    elements: [Liabilities]
+    statements: [BS]
+    parenthetical: false
+    period: instant
+    unit: USD
+  CurrentLiabilities:
+    elements: [LiabilitiesCurrent]
+    statements: [BS]
+    parenthetical: false
+    period: instant
+    unit: USD
+  AccountsPayable:
+    elements: [AccountsPayableCurrent]
+    statements: [BS]
+    parenthetical: false
+    period: instant
+    unit: USD
+  StockholdersEquity:
+    elements: [StockholdersEquity]
+    statements: [BS]
+    parenthetical: false
+    period: instant
+    unit: USD
+  RetainedEarnings:
+    elements: [RetainedEarningsAccumulatedDeficit]
+    statements: [BS]
+    parenthetical: false
+    period: instant
+    unit: USD
+  SharesOutstanding:
+    elements: [CommonStockSharesOutstanding]
+    statements: [BS, EQ]
+    parenthetical: true
+    period: instant
+    unit: shares
+  Capex:
+    elements: [PaymentsToAcquirePropertyPlantAndEquipment, PaymentsToAcquireProductiveAssets]
+    statements: [CF]
+    parenthetical: false
+    period: duration
+    unit: USD
+  CashFromOperations:
+    elements: [NetCashProvidedByUsedInOperatingActivities]
+    statements: [CF]
+    parenthetical: false
+    period: duration
+    unit: USD
+  CashFromInvesting:
+    elements: [NetCashProvidedByUsedInInvestingActivities]
+    statements: [CF]
+    parenthetical: false
+    period: duration
+    unit: USD
+  CashFromFinancing:
+    elements: [NetCashProvidedByUsedInFinancingActivities]
+    statements: [CF]
+    parenthetical: false
+    period: duration
+    unit: USD
+  DepreciationAndAmortization:
+    elements: [DepreciationDepletionAndAmortization, DepreciationAndAmortization]
+    statements: [CF, IS]
+    parenthetical: false
+    period: duration
+    unit: USD
+  ShareBasedCompensation:
+    elements: [ShareBasedCompensation, AllocatedShareBasedCompensationExpense]
+    statements: [CF]
+    parenthetical: false
+    period: duration
+    unit: USD
+  StockRepurchases:
+    elements: [PaymentsForRepurchaseOfCommonStock]
+    statements: [CF]
+    parenthetical: false
+    period: duration
+    unit: USD
+  DividendsPaid:
+    elements: [PaymentsOfDividends, PaymentsOfDividendsCommonStock]
+    statements: [CF]
+    parenthetical: false
+    period: duration
+    unit: USD
+  DebtIssued:
+    elements: [ProceedsFromIssuanceOfLongTermDebt, ProceedsFromIssuanceOfDebt, ProceedsFromIssuanceOfSeniorLongTermDebt]
+    statements: [CF]
+    parenthetical: false
+    period: duration
+    unit: USD
+  DebtRepaid:
+    elements: [RepaymentsOfLongTermDebt, RepaymentsOfDebt, RepaymentsOfSeniorDebt]
+    statements: [CF]
+    parenthetical: false
+    period: duration
+    unit: USD

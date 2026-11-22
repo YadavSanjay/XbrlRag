@@ -1,0 +1,378 @@
+{
+ "built": "2026-11-12",
+ "files": {
+  "fsds/2022q2/num.tsv": "c37c78ea1ca9e40119e20c1f50f44171c3eec2de069f05c03bd03ec5da8f98a3",
+  "fsds/2022q2/pre.tsv": "57185ef18a0c20877f18688f6efdfc827fa1362babb97a09004e86193d3eb6b0",
+  "fsds/2022q2/sub.tsv": "c3cf9542522c1fe99d2392e73b27e69db93efd5c216079661cdf72f0650ca548",
+  "fsds/2022q4/num.tsv": "b328701aeaa283acdc0f868377bb7cdf06770e63e49cff1901a33a44663bbc0d",
+  "fsds/2022q4/pre.tsv": "1264b671cd069e35bc495a10faac4a2ccc847caedf489858da7fec031c161dfe",
+  "fsds/2022q4/sub.tsv": "dac47689aeff6370c15e892b1717e4b67436bfde4c12363c8387722db2c1ec6b",
+  "fsds/2023q1/num.tsv": "f1dc54940fdd4786e217d6420cc72503023f19e3704b36bd06645aaab89b4e20",
+  "fsds/2023q1/pre.tsv": "deae6d2285b1042c8023a456d1e7255b2d20076b169e8ff393326c5754d51710",
+  "fsds/2023q1/sub.tsv": "3a9951ca0849d63f56482949e992c961080e475525a2a2398445233998f04a91",
+  "fsds/2023q2/num.tsv": "3895ff0fd36ffb9a8fdb7daaa0528dabd7d6e3980efbff48f4a47eaa4b119de1",
+  "fsds/2023q2/pre.tsv": "f36f016d75a90523b4f036cabad60c09cd2fcca82100d4e678875aa0b49c4681",
+  "fsds/2023q2/sub.tsv": "36ebe85eb845c8b757f3cc06ee2c05d2355d37a3be116d384a8c24909f207252",
+  "fsds/2023q3/num.tsv": "ad8bc20df855ee2987f2f27e5d6a82466fa6946c4e26129555cbeb90f1a97836",
+  "fsds/2023q3/pre.tsv": "d3a834b71b83ce4e1673cb221a1f973fad6e43be8c1b004763764117ada930b7",
+  "fsds/2023q3/sub.tsv": "35900bebf79513574be516ba2d6e77067be5793590292a15ee605ac30884d1f8",
+  "fsds/2023q4/num.tsv": "06edd6485092fe96ecb8c6dda0e503bdc330cf0326b7ce1bde98dc97c8fbad35",
+  "fsds/2023q4/pre.tsv": "a21dc5a22dfe32de544b02e420cdce0954b84ba83f39a3cef48bf01da3d1a771",
+  "fsds/2023q4/sub.tsv": "d85046c833621584f5230b6ce60c64cb41232fd0ea0eb32eed8ae6148f6add1d",
+  "fsds/2024q1/num.tsv": "221a7738904b5dcc061ddc1f597f3edfc4b9b4f453c72af78214fcebef0db495",
+  "fsds/2024q1/pre.tsv": "8141fc377f99e77c4c939fe147f522f8bdcab488388d26f8639795936b046c35",
+  "fsds/2024q1/sub.tsv": "3315999af733d65134be37ce4365db70402e2c6d9f50710ed219392d4b7c55f2",
+  "fsds/2024q2/num.tsv": "2fb323fb71c7f6d947833408a9a53b9dc83924b3c7d6046bda240acd368e78b5",
+  "fsds/2024q2/pre.tsv": "2fb994e61998f89f8fa79aba0bf69b5512989d97ce420a1f46d19a8234b0d5d3",
+  "fsds/2024q2/sub.tsv": "df12ee6497c41b024b2acf62d03bf77d2474c06d149b66e4cde702e0178f832d",
+  "fsds/2024q3/num.tsv": "ae353275879f7a1b38d09014c2cdda6c9e6cfffb75350ddf7ac5d40355776785",
+  "fsds/2024q3/pre.tsv": "01ae8a073a56847df032710ad66d005a87e98834a66047afbcdd0a9acbd75eae",
+  "fsds/2024q3/sub.tsv": "fefbb5d68aab5059dea48e9d2886fc0127eacd56ffef701c46b55bae1b744a8e",
+  "fsds/2024q4/num.tsv": "b51beecb54302dab34cbc55f18d134189ae01503180b32c17feb777b4001b53e",
+  "fsds/2024q4/pre.tsv": "511f5cf7a505aba8500ebd727afc934e70300a0679e7e3d83faf7a471dc41a7d",
+  "fsds/2024q4/sub.tsv": "ea189fa068757ed018d1069bb20ce3e832509d16eabbb8065e6c341e6f3a47b6",
+  "fsds/2025q1/num.tsv": "7e036f98510afe6c6e9b4867e30dca72e1fea006a001b1add2f26f325998dfb5",
+  "fsds/2025q1/pre.tsv": "458330a08a265315d188ee2f242b97218ed408b36b853a9059b1031be99ad91e",
+  "fsds/2025q1/sub.tsv": "b262a3dc8669545b9ab6a364dcf47620507cf99c6200c9d06c70dc66a98b8642",
+  "fsds/2025q2/num.tsv": "72c3074926adf2e6218899c512a6433a9c11abea3a074dedd713645ded08aa12",
+  "fsds/2025q2/pre.tsv": "157f90fc64c0af9db4bf2323cf57e417e7e38a71ec1dee8e6d50d8fa502eb2ff",
+  "fsds/2025q2/sub.tsv": "34eb06bc073b5900243d0a9af083d8ae7b8e66fc40534b1018f62e8338dd1693",
+  "fsds/2025q3/num.tsv": "98c30a2be33ee29176e34d09ba103805d1a66e7ce9bb0033eb4aea188067df59",
+  "fsds/2025q3/pre.tsv": "869276b3d34431fa913f7235aef6c971a6a4efcf82e4e901e30958bb3a0953d4",
+  "fsds/2025q3/sub.tsv": "86829f1c331bc8081a3d483c30923ba1e7cd153ea1357581e72b73f767a0a14b",
+  "fsds/2025q4/num.tsv": "83af19735a741b9098941fe571a1426725281e4bd73f63004b4efae6987a38da",
+  "fsds/2025q4/pre.tsv": "3b3a218e2dd828936e44d8931f436c312dc9073709e7710e2998d9dc2f7f514e",
+  "fsds/2025q4/sub.tsv": "4c8833a481f506048a0346e520d79c8398477462e259855115fde5cb8c78a2a6",
+  "fsds/2026q1/num.tsv": "50a9f0709d4593c5952f971aa6bd8062c68e5880ad84a2fbd011e1d9e9744131",
+  "fsds/2026q1/pre.tsv": "498721809a73be1d893c992097f5c7bfcd49487b25a946a21f77b66d00e4f618",
+  "fsds/2026q1/sub.tsv": "b83bb25a0ae07ad053f55af884e10cf51b7e3b07e2f9b6dec52adaa3a15906e4",
+  "fsds/2026q2/num.tsv": "b0c0d9b3ef7ef4061387fb60f9c7d7bebff9009bf08eb0eb16a066d5ac6e433b",
+  "fsds/2026q2/pre.tsv": "e3f65eacb6a4560b0dc171c92b8de39152d380d5022002a3b800ebb038ff281a",
+  "fsds/2026q2/sub.tsv": "c6821d0160eb4fc723bdd225585f79224858c2db35c6325387707f89ac1e6a2f",
+  "fsds/2026q3/num.tsv": "c3ef9ce46574e4c3490cba10d459343ebef49dc221059b8899c72a268992e4a6",
+  "fsds/2026q3/pre.tsv": "12fc03a8aea1a61e409a60f1c721e3d9981d4e5ab6fb934b1ef459d7bacbea11",
+  "fsds/2026q3/sub.tsv": "8dd74381bb2654142caf65c6ea5941393e6da12b2f7bf9b4911fb5d3e6c38c99"
+ },
+ "filings": [
+  {
+   "accession": "0001564590-22-023675",
+   "fiscal_year_label": 2022,
+   "quarter": "2022q2",
+   "ticker": "ORCL"
+  },
+  {
+   "accession": "0000723125-22-000048",
+   "fiscal_year_label": 2022,
+   "quarter": "2022q4",
+   "ticker": "MU"
+  },
+  {
+   "accession": "0000002488-23-000047",
+   "fiscal_year_label": 2022,
+   "quarter": "2023q1",
+   "ticker": "AMD"
+  },
+  {
+   "accession": "0000050863-23-000006",
+   "fiscal_year_label": 2022,
+   "quarter": "2023q1",
+   "ticker": "INTC"
+  },
+  {
+   "accession": "0001692819-23-000005",
+   "fiscal_year_label": 2022,
+   "quarter": "2023q1",
+   "ticker": "VST"
+  },
+  {
+   "accession": "0000950170-23-028914",
+   "fiscal_year_label": 2023,
+   "quarter": "2023q2",
+   "ticker": "ORCL"
+  },
+  {
+   "accession": "0000080424-23-000073",
+   "fiscal_year_label": 2023,
+   "quarter": "2023q3",
+   "ticker": "PG"
+  },
+  {
+   "accession": "0000909832-23-000042",
+   "fiscal_year_label": 2023,
+   "quarter": "2023q4",
+   "ticker": "COST"
+  },
+  {
+   "accession": "0000050863-24-000010",
+   "fiscal_year_label": 2023,
+   "quarter": "2024q1",
+   "ticker": "INTC"
+  },
+  {
+   "accession": "0000002488-24-000012",
+   "fiscal_year_label": 2023,
+   "quarter": "2024q1",
+   "ticker": "AMD"
+  },
+  {
+   "accession": "0001692819-24-000012",
+   "fiscal_year_label": 2023,
+   "quarter": "2024q1",
+   "ticker": "VST"
+  },
+  {
+   "accession": "0000950170-24-075605",
+   "fiscal_year_label": 2024,
+   "quarter": "2024q2",
+   "ticker": "ORCL"
+  },
+  {
+   "accession": "0000080424-24-000083",
+   "fiscal_year_label": 2024,
+   "quarter": "2024q3",
+   "ticker": "PG"
+  },
+  {
+   "accession": "0000909832-24-000049",
+   "fiscal_year_label": 2024,
+   "quarter": "2024q4",
+   "ticker": "COST"
+  },
+  {
+   "accession": "0000002488-25-000012",
+   "fiscal_year_label": 2024,
+   "quarter": "2025q1",
+   "ticker": "AMD"
+  },
+  {
+   "accession": "0000050863-25-000009",
+   "fiscal_year_label": 2024,
+   "quarter": "2025q1",
+   "ticker": "INTC"
+  },
+  {
+   "accession": "0001045810-25-000023",
+   "fiscal_year_label": 2025,
+   "quarter": "2025q1",
+   "ticker": "NVDA"
+  },
+  {
+   "accession": "0001108524-25-000006",
+   "fiscal_year_label": 2025,
+   "quarter": "2025q1",
+   "ticker": "CRM"
+  },
+  {
+   "accession": "0001692819-25-000013",
+   "fiscal_year_label": 2024,
+   "quarter": "2025q1",
+   "ticker": "VST"
+  },
+  {
+   "accession": "0000950170-25-087926",
+   "fiscal_year_label": 2025,
+   "quarter": "2025q2",
+   "ticker": "ORCL"
+  },
+  {
+   "accession": "0000080424-25-000076",
+   "fiscal_year_label": 2025,
+   "quarter": "2025q3",
+   "ticker": "PG"
+  },
+  {
+   "accession": "0000723125-25-000028",
+   "fiscal_year_label": 2025,
+   "quarter": "2025q4",
+   "ticker": "MU"
+  },
+  {
+   "accession": "0000804328-25-000085",
+   "fiscal_year_label": 2025,
+   "quarter": "2025q4",
+   "ticker": "QCOM"
+  },
+  {
+   "accession": "0000909832-25-000101",
+   "fiscal_year_label": 2025,
+   "quarter": "2025q4",
+   "ticker": "COST"
+  },
+  {
+   "accession": "0001730168-25-000121",
+   "fiscal_year_label": 2025,
+   "quarter": "2025q4",
+   "ticker": "AVGO"
+  },
+  {
+   "accession": "0001628280-26-019436",
+   "fiscal_year_label": 2025,
+   "quarter": "2026q1",
+   "ticker": "HD"
+  },
+  {
+   "accession": "0000002488-26-000018",
+   "fiscal_year_label": 2025,
+   "quarter": "2026q1",
+   "ticker": "AMD"
+  },
+  {
+   "accession": "0000050863-26-000011",
+   "fiscal_year_label": 2025,
+   "quarter": "2026q1",
+   "ticker": "INTC"
+  },
+  {
+   "accession": "0000097476-26-000059",
+   "fiscal_year_label": 2025,
+   "quarter": "2026q1",
+   "ticker": "TXN"
+  },
+  {
+   "accession": "0001018724-26-000004",
+   "fiscal_year_label": 2025,
+   "quarter": "2026q1",
+   "ticker": "AMZN"
+  },
+  {
+   "accession": "0001628280-26-003942",
+   "fiscal_year_label": 2025,
+   "quarter": "2026q1",
+   "ticker": "META"
+  },
+  {
+   "accession": "0001628280-26-003952",
+   "fiscal_year_label": 2025,
+   "quarter": "2026q1",
+   "ticker": "TSLA"
+  },
+  {
+   "accession": "0001652044-26-000018",
+   "fiscal_year_label": 2025,
+   "quarter": "2026q1",
+   "ticker": "GOOGL"
+  },
+  {
+   "accession": "0001628280-26-008432",
+   "fiscal_year_label": 2025,
+   "quarter": "2026q1",
+   "ticker": "UPS"
+  },
+  {
+   "accession": "0001692819-26-000006",
+   "fiscal_year_label": 2025,
+   "quarter": "2026q1",
+   "ticker": "VST"
+  },
+  {
+   "accession": "0001193125-26-277521",
+   "fiscal_year_label": 2026,
+   "quarter": "2026q2",
+   "ticker": "ORCL"
+  },
+  {
+   "accession": "0000080424-26-000103",
+   "fiscal_year_label": 2026,
+   "quarter": "2026q3",
+   "ticker": "PG"
+  }
+ ],
+ "filter": "sub: the accessions below; num: those accessions, the tags below, segments and coreg empty; pre: those accessions and tags",
+ "source": "SEC Financial Statement Data Sets (filtered cache of the raw quarterly zips)",
+ "tags": [
+  "AvailableForSaleSecuritiesCurrent",
+  "AvailableForSaleSecuritiesDebtSecuritiesCurrent",
+  "CashAndCashEquivalentsAndShortTermInvestments",
+  "CashAndCashEquivalentsAtCarryingValue",
+  "CashCashEquivalentsAndShortTermInvestments",
+  "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+  "HeldToMaturitySecuritiesCurrent",
+  "MarketableSecuritiesCurrent",
+  "NonoperatingIncomeExpense",
+  "OtherNonoperatingIncomeExpense",
+  "OtherShortTermInvestments",
+  "ProceedsFromDebtMaturingInMoreThanThreeMonths",
+  "ProceedsFromDebtNetOfIssuanceCosts",
+  "ProceedsFromIssuanceOfDebt",
+  "ProceedsFromIssuanceOfLongTermDebt",
+  "ProceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet",
+  "ProceedsFromIssuanceOfMediumTermNotes",
+  "ProceedsFromIssuanceOfSeniorLongTermDebt",
+  "ProceedsFromLongTermLinesOfCredit",
+  "ProceedsFromShortTermDebt",
+  "PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization",
+  "PropertyPlantAndEquipmentGross",
+  "PropertyPlantAndEquipmentNet",
+  "ShortTermInvestments"
+ ],
+ "zips": {
+  "2022q2": {
+   "sha256": "8939a4cafeabf7c94bde48be0e8c444f6332e4a9663698a89242eddd1036d27e",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2022q2.zip"
+  },
+  "2022q4": {
+   "sha256": "83bdc7a9545479eb64d118688c888ba8e7554ebc774f3ab8a8b0cc1decb87f28",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2022q4.zip"
+  },
+  "2023q1": {
+   "sha256": "479638c1be4088fa2ae42d2947468913eaff5ad0f093c412ba4340af8a8f791e",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2023q1.zip"
+  },
+  "2023q2": {
+   "sha256": "f028f1e8d24313e7619aa87c7c683a459452e7e81a8e5ba72d7ce39ddf62bda9",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2023q2.zip"
+  },
+  "2023q3": {
+   "sha256": "f075d721dde4393dabd49c1746578294ada4665ec29c85c2b3184f44f6f09187",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2023q3.zip"
+  },
+  "2023q4": {
+   "sha256": "ad23c5505e59b7305e16bfebb8bb839476689330b85a3e1ce216f809b18d1521",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2023q4.zip"
+  },
+  "2024q1": {
+   "sha256": "94c7894b00903f8ff7186c4250ba1c1daa1bde8b3a0b26fae68f72608b2ffc9b",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q1.zip"
+  },
+  "2024q2": {
+   "sha256": "698796e9f0946501d3dc74e7696a6c8c71cf32b66026e053722a784236b37761",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q2.zip"
+  },
+  "2024q3": {
+   "sha256": "b1823f2d65189f0d5ecbb1968d683c59df762129ae1b23bda0394093a69e0da9",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q3.zip"
+  },
+  "2024q4": {
+   "sha256": "9a2cbbaf39c94aa642b33d512f4def92b198d3bfd12d2267bcd27abe55b9902d",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q4.zip"
+  },
+  "2025q1": {
+   "sha256": "4386e7057cc216b6fc729d8f957998acb831d29be7b16f6d8ed0f6b1ab74eba5",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q1.zip"
+  },
+  "2025q2": {
+   "sha256": "81bf19bdb5606d5ee0164a8de8b7e96d5546170e42e59bcbf95b652ca83ac5d7",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q2.zip"
+  },
+  "2025q3": {
+   "sha256": "ebe25fa74c3655f4738ed9eb144af3953c3981c80f57d74829fb9ad68b114710",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q3.zip"
+  },
+  "2025q4": {
+   "sha256": "2b36ac3850c022cf19edd882e31c3c453c7666677b9fdd2e1f7748fdb5768c6e",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q4.zip"
+  },
+  "2026q1": {
+   "sha256": "d18c01c615da8f5cd46273b0dacaeee5b1163f4089171da0f84153a5f3c362f6",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q1.zip"
+  },
+  "2026q2": {
+   "sha256": "d7c815395cd420cfbe09b29dbae73a45406c5d0652d5ae1859ae11ea2e22df77",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q2.zip"
+  },
+  "2026q3": {
+   "sha256": "b6ebdc56b78526a6423f5b99f6e355afcb0510e7264324300ee5f0d3bd1bad21",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q3.zip"
+  }
+ }
+}

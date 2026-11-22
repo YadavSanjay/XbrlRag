@@ -1,0 +1,84 @@
+{
+ "case": "tsm_fy2024_geo_members",
+ "ticker": "TSM",
+ "cik": "0001046179",
+ "accession_no": "0001193125-25-083423",
+ "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1046179/000119312525083423/",
+ "document_url": "https://www.sec.gov/Archives/edgar/data/1046179/000119312525083423/d896993d20f.htm",
+ "local_source": "data/storage/sec_edgar/TSM/2024/20-F/d896993d20f.htm",
+ "local_source_sha256": "38fadd39498c28cab2ecbbd7443dca0d1f9a30e4498e21a73922b02c988db9f0",
+ "retrieved": "2026-11-07",
+ "extracted": "xbrl_db (read-only), 2026-11-07: every distinct member on a geographic axis (srt:StatementGeographicalAxis, ifrs-full:GeographicalAreasAxis) of the filing in mv_financial_facts, with its label and one example fact",
+ "members": [
+  {
+   "segment_axis": "ifrs-full:GeographicalAreasAxis",
+   "segment_member": "country:CN",
+   "segment_label": "CHINA",
+   "n_facts": 5,
+   "example_fact_id": 89570
+  },
+  {
+   "segment_axis": "ifrs-full:GeographicalAreasAxis",
+   "segment_member": "country:JP",
+   "segment_label": "JAPAN",
+   "n_facts": 5,
+   "example_fact_id": 89573
+  },
+  {
+   "segment_axis": "ifrs-full:GeographicalAreasAxis",
+   "segment_member": "country:TW",
+   "segment_label": "TAIWAN",
+   "n_facts": 3,
+   "example_fact_id": 89564
+  },
+  {
+   "segment_axis": "ifrs-full:GeographicalAreasAxis",
+   "segment_member": "country:US",
+   "segment_label": "UNITED STATES",
+   "n_facts": 5,
+   "example_fact_id": 89567
+  },
+  {
+   "segment_axis": "ifrs-full:GeographicalAreasAxis",
+   "segment_member": "http://www.tsmc.com/20241231:EmeaMember",
+   "segment_label": "EMEA [member]",
+   "n_facts": 2,
+   "example_fact_id": 90699
+  },
+  {
+   "segment_axis": "ifrs-full:GeographicalAreasAxis",
+   "segment_member": "http://www.tsmc.com/20241231:EuropeMiddleEastAndAfricaMember",
+   "segment_label": "Europe Middle East and Africa [member]",
+   "n_facts": 3,
+   "example_fact_id": 89576
+  },
+  {
+   "segment_axis": "ifrs-full:GeographicalAreasAxis",
+   "segment_member": "http://www.tsmc.com/20241231:OtherCountryMember",
+   "segment_label": "Other country [member]",
+   "n_facts": 3,
+   "example_fact_id": 89579
+  },
+  {
+   "segment_axis": "ifrs-full:GeographicalAreasAxis",
+   "segment_member": "http://www.tsmc.com/20241231:OthersMember",
+   "segment_label": "Others [member]",
+   "n_facts": 2,
+   "example_fact_id": 90701
+  },
+  {
+   "segment_axis": "ifrs-full:GeographicalAreasAxis",
+   "segment_member": "ifrs-full:CountryOfDomicileMember",
+   "segment_label": "Country of domicile [member]",
+   "n_facts": 89,
+   "example_fact_id": 88709
+  },
+  {
+   "segment_axis": "ifrs-full:GeographicalAreasAxis",
+   "segment_member": "ifrs-full:ForeignCountriesMember",
+   "segment_label": "Foreign countries [member]",
+   "n_facts": 16,
+   "example_fact_id": 89058
+  }
+ ]
+}

@@ -1,0 +1,420 @@
+# v2 eval lexicon: the surface forms the phrasing renderer substitutes into
+# configs/eval/v2/phrasebook.yaml. Loaded and validated by src/eval/suites/intents.py
+# (load_lexicon); spec docs/specs/eval-intents.md.
+#
+# Scope: the dev filers in the corpus (v2 plan §4.1) and the wave-1 filers (§4.2), added
+# with their ingest. The held-out filers (plan §4.3) are NEVER added to this file.
+#
+# Rules:
+#   - Every surface string is non-empty and has no "{" or "}".
+#   - A surface that contains a comma is quoted: unquoted, a flow list splits it in two.
+#     scripts/eval/build_v2_suite.py fails on a phrasing two entries share or on a stray
+#     one-word phrasing (src/eval/suites/intents.py check_lexicon_phrasings).
+#   - The first phrase of a dimension or universe is the one rendered; further phrases are
+#     reserved for a later phrasing axis.
+#   - Metric ids are the fact store's canonical ids: the `concept_family` of
+#     mv_financial_facts, or the `metric_name` of mv_derived_metrics for the derived ratios
+#     (definitions in docs/design/XbrlRag_Eval_Semantics.md S4). `label` is the XBRL
+#     standard label of the family's representative element (or the plain name of a derived
+#     metric); `synonyms` are other names in common use; `shorthand` is analyst shorthand.
+#   - period_ends are each filer's DocumentPeriodEndDate per DocumentFiscalYearFocus
+#     (annual 10-K / 20-F filings only; S2: fiscal years are the filer's own labels).
+
+companies:
+  AAPL: {short: Apple, legal: Apple Inc.}
+  AMD: {short: Advanced Micro Devices, legal: "Advanced Micro Devices, Inc."}
+  AMZN: {short: Amazon, legal: "Amazon.com, Inc."}
+  AVGO: {short: Broadcom, legal: Broadcom Inc.}
+  CEG: {short: Constellation Energy, legal: Constellation Energy Corporation}
+  GOOGL: {short: Alphabet, legal: Alphabet Inc.}
+  INTC: {short: Intel, legal: Intel Corporation}
+  META: {short: Meta, legal: "Meta Platforms, Inc."}
+  MSFT: {short: Microsoft, legal: Microsoft Corporation}
+  MU: {short: Micron, legal: "Micron Technology, Inc."}
+  NVDA: {short: Nvidia, legal: NVIDIA Corporation}
+  ORCL: {short: Oracle, legal: Oracle Corporation}
+  TSLA: {short: Tesla, legal: "Tesla, Inc."}
+  TSM: {short: TSMC, legal: Taiwan Semiconductor Manufacturing Company Limited}
+  VST: {short: Vistra, legal: Vistra Corp.}
+  # --- wave 1
+  ABT: {short: Abbott, legal: Abbott Laboratories}
+  ADBE: {short: Adobe, legal: Adobe Inc.}
+  COST: {short: Costco, legal: Costco Wholesale Corporation}
+  CRM: {short: Salesforce, legal: "Salesforce, Inc."}
+  CSCO: {short: Cisco, legal: "Cisco Systems, Inc."}
+  HD: {short: Home Depot, legal: "The Home Depot, Inc."}
+  KO: {short: Coca-Cola, legal: The Coca-Cola Company}
+  LLY: {short: Eli Lilly, legal: Eli Lilly and Company}
+  LMT: {short: Lockheed Martin, legal: Lockheed Martin Corporation}
+  MCD: {short: McDonald's, legal: McDonald's Corporation}
+  MRK: {short: Merck, legal: "Merck & Co., Inc."}
+  NFLX: {short: Netflix, legal: "Netflix, Inc."}
+  PG: {short: Procter & Gamble, legal: The Procter & Gamble Company}
+  QCOM: {short: Qualcomm, legal: Qualcomm Incorporated}
+  TXN: {short: Texas Instruments, legal: Texas Instruments Incorporated}
+  UNP: {short: Union Pacific, legal: Union Pacific Corporation}
+  UPS: {short: UPS, legal: "United Parcel Service, Inc."}
+  WMT: {short: Walmart, legal: Walmart Inc.}
+
+metrics:
+  # --- income statement
+  Revenue:
+    label: Revenues
+    synonyms: [revenue, net sales, total revenue, sales, turnover]
+    shorthand: [top line, rev]
+  CostOfRevenue:
+    label: Cost of Revenue
+    synonyms: [cost of sales, cost of goods sold]
+    shorthand: [COGS, COS]
+  GrossProfit:
+    label: Gross Profit
+    synonyms: [gross profit dollars, gross margin dollars]
+    shorthand: [GP]
+  OperatingExpenses:
+    label: Operating Expenses
+    synonyms: [total operating expenses, operating costs]
+    shorthand: [opex]
+  ResearchAndDevelopment:
+    label: Research and Development Expense
+    synonyms: [R&D expense, research and development spending, R&D spend]
+    shorthand: [R&D]
+  SellingGeneralAndAdministrative:
+    label: Selling, General and Administrative Expense
+    synonyms: [SG&A expense, "selling, general and administrative expenses"]
+    shorthand: [SG&A]
+  SellingAndMarketing:
+    label: Selling and Marketing Expense
+    synonyms: [sales and marketing expense, sales and marketing spend]
+    shorthand: [S&M]
+  GeneralAndAdministrative:
+    label: General and Administrative Expense
+    synonyms: [G&A expense, general and administrative costs]
+    shorthand: [G&A]
+  RestructuringCharges:
+    label: Restructuring Charges
+    synonyms: [restructuring costs, restructuring expense]
+  OperatingIncome:
+    label: Operating Income (Loss)
+    synonyms: [operating income, operating profit, income from operations]
+    shorthand: [op income, OI]
+  InterestExpense:
+    label: Interest Expense
+    synonyms: [interest expense]
+  InterestIncome:
+    label: Investment Income, Interest
+    synonyms: [interest income, interest earned]
+  OtherNonOperatingIncome:
+    label: Other Nonoperating Income (Expense)
+    synonyms: [other income (expense), other non-operating income (expense)]
+  PretaxIncome:
+    label: Income (Loss) from Continuing Operations before Income Taxes
+    synonyms: [pretax income, income before income taxes, earnings before taxes]
+    shorthand: [EBT, pre-tax profit]
+  TaxExpense:
+    label: Income Tax Expense (Benefit)
+    synonyms: [income tax expense, provision for income taxes, tax expense]
+    shorthand: [tax provision]
+  EffectiveTaxRate:
+    label: Effective Income Tax Rate Reconciliation, Percent
+    synonyms: [effective tax rate, effective income tax rate]
+    shorthand: [ETR]
+  NetIncome:
+    label: Net Income (Loss)
+    synonyms: [net income, net earnings, net profit]
+    shorthand: [bottom line, NI]
+  NetIncomeToCommon:
+    label: Net Income (Loss) Available to Common Stockholders, Basic
+    synonyms: [net income available to common shareholders, net income attributable to common stockholders]
+  ComprehensiveIncome:
+    label: Comprehensive Income (Loss), Net of Tax
+    synonyms: [comprehensive income, total comprehensive income]
+  EarningsPerShareBasic:
+    label: Earnings Per Share, Basic
+    synonyms: [basic earnings per share, basic EPS]
+  EarningsPerShareDiluted:
+    label: Earnings Per Share, Diluted
+    synonyms: [diluted earnings per share, diluted EPS]
+    shorthand: [EPS]
+  WeightedAverageSharesBasic:
+    label: Weighted Average Number of Shares Outstanding, Basic
+    synonyms: [basic weighted average shares outstanding, basic share count]
+  WeightedAverageSharesDiluted:
+    label: Weighted Average Number of Shares Outstanding, Diluted
+    synonyms: [diluted weighted average shares outstanding, diluted share count]
+  DividendsPerShare:
+    label: Common Stock, Dividends, Per Share, Declared
+    synonyms: [dividends declared per share, dividend per share]
+    shorthand: [DPS]
+  # --- balance sheet
+  TotalAssets:
+    label: Assets
+    synonyms: [total assets]
+  CurrentAssets:
+    label: Assets, Current
+    synonyms: [total current assets, current assets]
+  CashAndEquivalents:
+    label: Cash and Cash Equivalents, at Carrying Value
+    synonyms: [cash and cash equivalents, cash and equivalents]
+  ShortTermInvestments:
+    label: Short-term Investments
+    synonyms: [short-term investments, short-term marketable securities]
+  AccountsReceivable:
+    label: Accounts Receivable, after Allowance for Credit Loss, Current
+    synonyms: [accounts receivable, trade receivables]
+    shorthand: [A/R, AR]
+  Inventory:
+    label: Inventory, Net
+    synonyms: [inventory, inventories]
+  PropertyPlantAndEquipment:
+    label: Property, Plant and Equipment, Net
+    synonyms: ["net property, plant and equipment", net PP&E, net fixed assets]
+    shorthand: [PP&E]
+  Goodwill:
+    label: Goodwill
+    synonyms: [goodwill balance]
+  IntangibleAssets:
+    label: Intangible Assets, Net (Excluding Goodwill)
+    synonyms: [intangible assets, net intangible assets]
+    shorthand: [intangibles]
+  TotalLiabilities:
+    label: Liabilities
+    synonyms: [total liabilities]
+  CurrentLiabilities:
+    label: Liabilities, Current
+    synonyms: [total current liabilities, current liabilities]
+  AccountsPayable:
+    label: Accounts Payable, Current
+    synonyms: [accounts payable, trade payables]
+    shorthand: [A/P, AP]
+  DeferredRevenue:
+    label: Contract with Customer, Liability
+    synonyms: [deferred revenue, total deferred revenue, unearned revenue, contract liabilities]
+  Debt:
+    label: Total Debt
+    synonyms: [total debt, debt, total borrowings]
+  StockholdersEquity:
+    label: Stockholders' Equity Attributable to Parent
+    synonyms: [stockholders' equity, shareholders' equity, book equity]
+    shorthand: [equity]
+  RetainedEarnings:
+    label: Retained Earnings (Accumulated Deficit)
+    synonyms: [retained earnings, accumulated earnings]
+  SharesOutstanding:
+    label: Common Stock, Shares, Outstanding
+    synonyms: [shares outstanding, common shares outstanding]
+    shorthand: [share count]
+  # --- cash flow statement
+  CashFromOperations:
+    label: Net Cash Provided by (Used in) Operating Activities
+    synonyms: [operating cash flow, cash from operations, cash flow from operating activities]
+    shorthand: [CFO, OCF]
+  CashFromInvesting:
+    label: Net Cash Provided by (Used in) Investing Activities
+    synonyms: [investing cash flow, cash flow from investing activities]
+    shorthand: [CFI]
+  CashFromFinancing:
+    label: Net Cash Provided by (Used in) Financing Activities
+    synonyms: [financing cash flow, cash flow from financing activities]
+    shorthand: [CFF]
+  Capex:
+    label: Payments to Acquire Property, Plant, and Equipment
+    synonyms: [capital expenditures, capital spending, purchases of property and equipment]
+    shorthand: [capex]
+  DepreciationAndAmortization:
+    label: Depreciation, Depletion and Amortization
+    synonyms: [depreciation and amortization, depreciation and amortization expense]
+    shorthand: [D&A]
+  ShareBasedCompensation:
+    label: Share-based Payment Arrangement, Noncash Expense
+    synonyms: [stock-based compensation, share-based compensation expense]
+    shorthand: [SBC]
+  StockRepurchases:
+    label: Payments for Repurchase of Common Stock
+    synonyms: [share repurchases, stock buybacks]
+    shorthand: [buybacks]
+  DividendsPaid:
+    label: Payments of Dividends
+    synonyms: [dividends paid, cash dividends paid]
+  DebtIssued:
+    label: Proceeds from Issuance of Debt
+    synonyms: [proceeds from debt issuance, debt issued]
+  DebtRepaid:
+    label: Repayments of Long-Term Debt
+    synonyms: [long-term debt repayments, repayments of long-term borrowings]
+  # --- derived metrics (mv_derived_metrics; definitions per S4)
+  GrossMarginPct:
+    label: Gross Margin
+    synonyms: [gross margin percentage, gross profit margin]
+    shorthand: [GM]
+  OperatingMarginPct:
+    label: Operating Margin
+    synonyms: [operating margin percentage, operating profit margin]
+    shorthand: [op margin, OPM]
+  NetMarginPct:
+    label: Net Margin
+    synonyms: [net profit margin, net income margin]
+  EBITDA:
+    label: EBITDA
+    synonyms: ["earnings before interest, taxes, depreciation and amortization"]
+  EBITDAMarginPct:
+    label: EBITDA Margin
+    synonyms: [EBITDA as a percentage of revenue]
+  FreeCashFlow:
+    label: Free Cash Flow
+    synonyms: [free cash flow generation]
+    shorthand: [FCF]
+  FreeCashFlowMarginPct:
+    label: Free Cash Flow Margin
+    synonyms: [free cash flow as a percentage of revenue]
+    shorthand: [FCF margin]
+  RnDIntensityPct:
+    label: R&D Intensity
+    synonyms: [R&D as a percentage of revenue, research and development intensity]
+  ReturnOnEquityPct:
+    label: Return on Equity
+    synonyms: [return on shareholders' equity]
+    shorthand: [ROE]
+  ReturnOnAssetsPct:
+    label: Return on Assets
+    synonyms: [return on total assets]
+    shorthand: [ROA]
+  ReturnOnInvestedCapitalPct:
+    label: Return on Invested Capital
+    synonyms: [return on capital]
+    shorthand: [ROIC]
+  CurrentRatio:
+    label: Current Ratio
+    synonyms: [ratio of current assets to current liabilities]
+  QuickRatio:
+    label: Quick Ratio
+    synonyms: [acid-test ratio]
+  DebtToEquity:
+    label: Debt to Equity
+    synonyms: [debt-to-equity ratio, leverage ratio]
+    shorthand: [D/E]
+  InterestCoverage:
+    label: Interest Coverage
+    synonyms: [interest coverage ratio, times interest earned]
+  NetDebt:
+    label: Net Debt
+    synonyms: [debt net of cash]
+  # --- S4 ratio definition ids: the ratio a compound rank_by_ratio question asks about
+  # (docs/specs/compound-shape.md requirement 2). Keyed from their S4 inputs, never from a
+  # derived-metric row; the main suites never phrase them.
+  operating_margin:
+    label: Operating Margin
+    synonyms: [operating profit margin, operating margin percentage]
+    shorthand: [op margin]
+  net_margin:
+    label: Net Margin
+    synonyms: [net profit margin, net income margin]
+  rd_intensity:
+    label: R&D Intensity
+    synonyms: [R&D as a share of revenue, research and development intensity]
+    shorthand: [R&D/sales]
+  current_ratio:
+    label: Current Ratio
+    synonyms: [ratio of current assets to current liabilities, working capital ratio]
+    shorthand: [CA/CL]
+
+# Breakdown axes (an intent's `dimension` for kind `breakdown`) and the members a
+# dimensional lookup names (kind `dimensional`). Member ids are matched to a filer's
+# member by its label when answer keys are built.
+dimensions:
+  # axes
+  segment: [business segment, reportable segment, operating segment]
+  product_or_service: [product or service line, product line, revenue stream]
+  geography: [geographic region, geography, region]
+  # business-segment members
+  aws_segment: [AWS segment, Amazon Web Services segment]
+  north_america_segment: [North America segment]
+  international_segment: [International segment]
+  google_services: [Google Services, Google Services segment]
+  google_cloud: [Google Cloud, Google Cloud segment]
+  family_of_apps: [Family of Apps, Family of Apps segment]
+  reality_labs: [Reality Labs, Reality Labs segment]
+  intelligent_cloud: [Intelligent Cloud, Intelligent Cloud segment]
+  productivity_and_business_processes: [Productivity and Business Processes]
+  more_personal_computing: [More Personal Computing]
+  semiconductor_solutions: [Semiconductor Solutions, semiconductor solutions segment]
+  infrastructure_software: [Infrastructure Software, infrastructure software segment]
+  automotive_segment: [Automotive segment, automotive business]
+  energy_generation_and_storage: [Energy Generation and Storage, energy generation and storage segment]
+  # product and service members
+  iphone: [iPhone]
+  mac: [Mac]
+  ipad: [iPad]
+  wearables_home_and_accessories: ["Wearables, Home and Accessories"]
+  services: [Services]
+  data_center: [Data Center, data center platform]
+  gaming: [Gaming]
+  professional_visualization: [Professional Visualization, ProViz]
+  automotive: [Automotive]
+  client: [Client, client segment]
+  dram: [DRAM, DRAM products]
+  nand: [NAND, NAND products]
+  online_stores: [online stores]
+  third_party_seller_services: [third-party seller services]
+  subscription_services: [subscription services]
+  advertising: [advertising]
+  youtube_ads: [YouTube ads, YouTube advertising]
+  google_search_and_other: [Google Search & other, Google Search]
+  linkedin: [LinkedIn]
+  cloud_services_and_license_support: [cloud services and license support]
+  # geography members
+  united_states: [United States, U.S.]
+  china: [China]
+  taiwan: [Taiwan]
+  emea: [EMEA, "Europe, the Middle East and Africa"]
+  asia_pacific: [Asia Pacific, APAC]
+  americas: [Americas]
+
+# Cross-filer universes (S3): the corpus-wide `covered`, plus one entry per named group of
+# configs/eval/v2/groups.yaml (scripts/eval/build_universe_groups.py checks every group id
+# has phrases here).
+universes:
+  covered: [the covered companies, all covered companies, the companies in coverage]
+  semiconductors: [the semiconductor companies, the chipmakers, semiconductor makers]
+  retailers: [the retailers, the retail companies]
+  big_tech: [the big tech companies, big tech, the Magnificent Seven]
+
+period_ends:
+  AAPL: {2022: "2022-09-24", 2023: "2023-09-30", 2024: "2024-09-28", 2025: "2025-09-27"}
+  AMD: {2022: "2022-12-31", 2023: "2023-12-30", 2024: "2024-12-28", 2025: "2025-12-27"}
+  AMZN: {2022: "2022-12-31", 2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  AVGO: {2022: "2022-10-30", 2023: "2023-10-29", 2024: "2024-11-03", 2025: "2025-11-02"}
+  CEG: {2022: "2022-12-31", 2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  GOOGL: {2022: "2022-12-31", 2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  INTC: {2022: "2022-12-31", 2023: "2023-12-30", 2024: "2024-12-28", 2025: "2025-12-27"}
+  META: {2022: "2022-12-31", 2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  MSFT: {2022: "2022-06-30", 2023: "2023-06-30", 2024: "2024-06-30", 2025: "2025-06-30",
+         2026: "2026-06-30"}
+  MU: {2022: "2022-09-01", 2023: "2023-08-31", 2024: "2024-08-29", 2025: "2025-08-28"}
+  NVDA: {2022: "2022-01-30", 2023: "2023-01-29", 2024: "2024-01-28", 2025: "2025-01-26",
+         2026: "2026-01-25"}
+  ORCL: {2022: "2022-05-31", 2023: "2023-05-31", 2024: "2024-05-31", 2025: "2025-05-31",
+         2026: "2026-05-31"}
+  TSLA: {2022: "2022-12-31", 2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  TSM: {2022: "2022-12-31", 2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  VST: {2022: "2022-12-31", 2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  # --- wave 1 (DEI DocumentFiscalYearFocus / DocumentPeriodEndDate of each original annual
+  # 10-K in xbrl_db, read 2026-10-29). HD labels the year ending in late January or early
+  # February by the calendar year it mostly covers (fiscal 2024 ended 2025-02-02).
+  ABT: {2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  ADBE: {2023: "2023-12-01", 2024: "2024-11-29", 2025: "2025-11-28"}
+  COST: {2023: "2023-09-03", 2024: "2024-09-01", 2025: "2025-08-31"}
+  CRM: {2023: "2023-01-31", 2024: "2024-01-31", 2025: "2025-01-31"}
+  CSCO: {2023: "2023-07-29", 2024: "2024-07-27", 2025: "2025-07-26"}
+  HD: {2023: "2024-01-28", 2024: "2025-02-02", 2025: "2026-02-01"}
+  KO: {2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  LLY: {2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  LMT: {2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  MCD: {2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  MRK: {2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  NFLX: {2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  PG: {2023: "2023-06-30", 2024: "2024-06-30", 2025: "2025-06-30"}
+  QCOM: {2023: "2023-09-24", 2024: "2024-09-29", 2025: "2025-09-28"}
+  TXN: {2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  UNP: {2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  UPS: {2023: "2023-12-31", 2024: "2024-12-31", 2025: "2025-12-31"}
+  WMT: {2023: "2023-01-31", 2024: "2024-01-31", 2025: "2025-01-31"}

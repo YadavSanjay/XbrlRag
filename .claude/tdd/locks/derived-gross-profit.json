@@ -1,0 +1,59 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/derived-gross-profit/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-16",
+  "criteria": {
+    "C1": [
+      "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_meta_gross_profit_is_derived_with_both_facts_cited",
+      "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_meta_gross_margin_computes_from_the_derived_value",
+      "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_derivation_is_revenue_minus_cost"
+    ],
+    "C2": [
+      "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_never_guesses_from_one_or_an_ambiguous_component[broken0]",
+      "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_never_guesses_from_one_or_an_ambiguous_component[broken1]",
+      "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_never_guesses_from_one_or_an_ambiguous_component[broken2]",
+      "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_never_guesses_from_one_or_an_ambiguous_component[broken3]",
+      "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_derived_exactly_when_both_ok_in_one_unit"
+    ],
+    "C3": [
+      "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_resolved_gross_profit_makes_no_component_lookups",
+      "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_other_families_and_resolved_gross_profit_trigger_nothing"
+    ]
+  },
+  "files": {
+    "test/spec/derived-gross-profit/test_derived_gross_profit.py": "f1e4ea73b80771e47fb90cc41f4cbd436757bb3a7b28a55440c0c83d3c0003c6"
+  },
+  "id": "derived-gross-profit",
+  "interface": [],
+  "nodes": [
+    "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_derivation_is_revenue_minus_cost",
+    "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_derived_exactly_when_both_ok_in_one_unit",
+    "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_meta_gross_margin_computes_from_the_derived_value",
+    "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_meta_gross_profit_is_derived_with_both_facts_cited",
+    "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_never_guesses_from_one_or_an_ambiguous_component[broken0]",
+    "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_never_guesses_from_one_or_an_ambiguous_component[broken1]",
+    "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_never_guesses_from_one_or_an_ambiguous_component[broken2]",
+    "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_never_guesses_from_one_or_an_ambiguous_component[broken3]",
+    "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_other_families_and_resolved_gross_profit_trigger_nothing",
+    "test/spec/derived-gross-profit/test_derived_gross_profit.py::test_resolved_gross_profit_makes_no_component_lookups"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/derived-gross-profit.md",
+    "sha256": "f3659fe267d2d5d254d2aa92b51bdcb4fbe427e148845a4462337023a7a58c8f"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

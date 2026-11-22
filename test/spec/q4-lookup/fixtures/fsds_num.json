@@ -1,0 +1,71 @@
+{
+ "note": "Lines of SEC Financial Statement Data Sets num.txt (tab-separated, columns adsh tag version ddate qtrs uom segments coreg value footnote), copied unchanged from the local filtered copy data/cache/sec_fsds/filtered/<q>/num.tsv of the raw zip: the MSFT FY2026 10-K and Q3 10-Q lines of the three tags with no segment at ddate 20260630 / 20260331. ddate is the end rounded to a month end; qtrs is the count of quarters, rounded.",
+ "sources": {
+  "2026q2": {
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q2.zip",
+   "zip_sha256": "d7c815395cd420cfbe09b29dbae73a45406c5d0652d5ae1859ae11ea2e22df77",
+   "filtered_num_tsv_sha256": "0ad0fa490064cf5611aa22ddcbfce7800e7856795af520301b8f06178741f136",
+   "retrieved": "2026-11-07"
+  },
+  "2026q3": {
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q3.zip",
+   "zip_sha256": "b6ebdc56b78526a6423f5b99f6e355afcb0510e7264324300ee5f0d3bd1bad21",
+   "filtered_num_tsv_sha256": "323f6605fc8c32c17cb664872347b2fbefa9d0701b45ac481af65ce406c9ebd6",
+   "retrieved": "2026-11-07"
+  }
+ },
+ "lines": [
+  {
+   "quarter": "2026q3",
+   "line": "0001193125-26-323660\tCommonStockDividendsPerShareDeclared\tus-gaap/2025\t20260331\t1\tUSD\t\t\t0.9100\t"
+  },
+  {
+   "quarter": "2026q3",
+   "line": "0001193125-26-323660\tCommonStockDividendsPerShareDeclared\tus-gaap/2025\t20260630\t1\tUSD\t\t\t0.9100\t"
+  },
+  {
+   "quarter": "2026q3",
+   "line": "0001193125-26-323660\tCommonStockDividendsPerShareDeclared\tus-gaap/2025\t20260630\t4\tUSD\t\t\t3.6400\t"
+  },
+  {
+   "quarter": "2026q3",
+   "line": "0001193125-26-323660\tDividendsCommonStockCash\tus-gaap/2025\t20260331\t1\tUSD\t\t\t6758000000.0000\t"
+  },
+  {
+   "quarter": "2026q3",
+   "line": "0001193125-26-323660\tDividendsCommonStockCash\tus-gaap/2025\t20260630\t1\tUSD\t\t\t6759000000.0000\t"
+  },
+  {
+   "quarter": "2026q3",
+   "line": "0001193125-26-323660\tDividendsCommonStockCash\tus-gaap/2025\t20260630\t4\tUSD\t\t\t27035000000.0000\t"
+  },
+  {
+   "quarter": "2026q3",
+   "line": "0001193125-26-323660\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2025\t20260630\t4\tUSD\t\t\t331839000000.0000\t"
+  },
+  {
+   "quarter": "2026q2",
+   "line": "0001193125-26-191507\tCommonStockDividendsPerShareDeclared\tus-gaap/2025\t20260331\t1\tUSD\t\t\t0.9100\t"
+  },
+  {
+   "quarter": "2026q2",
+   "line": "0001193125-26-191507\tCommonStockDividendsPerShareDeclared\tus-gaap/2025\t20260331\t3\tUSD\t\t\t2.7300\t"
+  },
+  {
+   "quarter": "2026q2",
+   "line": "0001193125-26-191507\tDividendsCommonStockCash\tus-gaap/2025\t20260331\t1\tUSD\t\t\t6760000000.0000\t"
+  },
+  {
+   "quarter": "2026q2",
+   "line": "0001193125-26-191507\tDividendsCommonStockCash\tus-gaap/2025\t20260331\t3\tUSD\t\t\t20278000000.0000\t"
+  },
+  {
+   "quarter": "2026q2",
+   "line": "0001193125-26-191507\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2025\t20260331\t1\tUSD\t\t\t82886000000.0000\t"
+  },
+  {
+   "quarter": "2026q2",
+   "line": "0001193125-26-191507\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2025\t20260331\t3\tUSD\t\t\t241832000000.0000\t"
+  }
+ ]
+}

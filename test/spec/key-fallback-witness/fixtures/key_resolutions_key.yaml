@@ -1,0 +1,10 @@
+# Synthetic resolution: FALL FY2024 "Interest income and other, net" (169) is kept as the key.
+version: 1
+resolutions:
+  - family: InterestIncome
+    cik: "0000810001"
+    fiscal_year: 2024
+    concept: us-gaap:InterestAndOtherIncome
+    value: 169000000
+    reading: key
+    reason: synthetic - the other income is immaterial, so the line is the measure

@@ -1,0 +1,7 @@
+FILING (one SEC annual report, as a JSON string):
+{filing}
+
+QUESTION:
+{question}
+
+Reply with the single JSON object described in the system instructions.

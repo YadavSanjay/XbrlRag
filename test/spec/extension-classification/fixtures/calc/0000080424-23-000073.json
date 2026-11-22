@@ -1,0 +1,146 @@
+{
+ "accession_no": "0000080424-23-000073",
+ "cik": "0000080424",
+ "ticker": "PG",
+ "extension_namespace": "http://www.pg.com/20230630",
+ "source_file": "pg-20230630_cal.xml",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042423000073/pg-20230630_cal.xml",
+ "source_sha256": "9e0eeec58b5b3c1a9f9cb8c6871b195b615cd865de256bf8e06e223a3e9633c7",
+ "retrieved": "local copy under data/storage/sec_edgar (downloaded at ingest); hashed 2026-11-07",
+ "cross_check": "arcs equal to xbrl_db mv_calculation_network by local name (150 arcs)",
+ "selection": "every summation-item arc of every tree (link role, parent) whose parent or a child is an extension presented on IS/BS/CF",
+ "arcs": [
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDBALANCESHEETS",
+   "parent": "http://fasb.org/us-gaap/2022:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "child": "http://fasb.org/us-gaap/2022:AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDBALANCESHEETS",
+   "parent": "http://fasb.org/us-gaap/2022:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "child": "http://fasb.org/us-gaap/2022:AdditionalPaidInCapital",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDBALANCESHEETS",
+   "parent": "http://fasb.org/us-gaap/2022:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "child": "http://fasb.org/us-gaap/2022:CommonStockValue",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDBALANCESHEETS",
+   "parent": "http://fasb.org/us-gaap/2022:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "child": "http://fasb.org/us-gaap/2022:MinorityInterest",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDBALANCESHEETS",
+   "parent": "http://fasb.org/us-gaap/2022:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "child": "http://fasb.org/us-gaap/2022:PreferredStockValue",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDBALANCESHEETS",
+   "parent": "http://fasb.org/us-gaap/2022:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "child": "http://fasb.org/us-gaap/2022:RetainedEarningsAccumulatedDeficit",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDBALANCESHEETS",
+   "parent": "http://fasb.org/us-gaap/2022:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "child": "http://fasb.org/us-gaap/2022:TreasuryStockValue",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDBALANCESHEETS",
+   "parent": "http://fasb.org/us-gaap/2022:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "child": "http://www.pg.com/20230630:ReserveForEsopDebtRetirement",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2022:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2022:PaymentsForRepurchaseOfCommonStock",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2022:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2022:PaymentsOfDividends",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2022:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2022:ProceedsFromIssuanceOfLongTermDebt",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2022:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2022:ProceedsFromRepaymentsOfShortTermDebtMaturingInThreeMonthsOrLess",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2022:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2022:ProceedsFromShortTermDebtMaturingInMoreThanThreeMonths",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2022:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2022:RepaymentsOfLongTermDebt",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2022:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2022:RepaymentsOfShortTermDebtMaturingInMoreThanThreeMonths",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS",
+   "parent": "http://fasb.org/us-gaap/2022:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://www.pg.com/20230630:ProceedsFromStockOptionsExercisedAndOtherFinancingActivities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDSTATEMENTSOFEARNINGS",
+   "parent": "http://fasb.org/us-gaap/2022:ProfitLoss",
+   "child": "http://fasb.org/us-gaap/2022:IncomeTaxExpenseBenefit",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDSTATEMENTSOFEARNINGS",
+   "parent": "http://fasb.org/us-gaap/2022:ProfitLoss",
+   "child": "http://www.pg.com/20230630:IncomeLossFromContinuingOperationsBeforeIncomeTaxes",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDSTATEMENTSOFEARNINGS",
+   "parent": "http://www.pg.com/20230630:IncomeLossFromContinuingOperationsBeforeIncomeTaxes",
+   "child": "http://fasb.org/us-gaap/2022:InterestExpense",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDSTATEMENTSOFEARNINGS",
+   "parent": "http://www.pg.com/20230630:IncomeLossFromContinuingOperationsBeforeIncomeTaxes",
+   "child": "http://fasb.org/us-gaap/2022:InvestmentIncomeInterest",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDSTATEMENTSOFEARNINGS",
+   "parent": "http://www.pg.com/20230630:IncomeLossFromContinuingOperationsBeforeIncomeTaxes",
+   "child": "http://fasb.org/us-gaap/2022:OperatingIncomeLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.pg.com/role/CONSOLIDATEDSTATEMENTSOFEARNINGS",
+   "parent": "http://www.pg.com/20230630:IncomeLossFromContinuingOperationsBeforeIncomeTaxes",
+   "child": "http://fasb.org/us-gaap/2022:OtherNonoperatingIncomeExpense",
+   "weight": "1"
+  }
+ ]
+}

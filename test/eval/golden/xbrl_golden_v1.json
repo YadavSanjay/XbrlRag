@@ -1,0 +1,203 @@
+{
+  "version": "xbrl_golden_v1",
+  "generated_from": "mv_financial_facts + fiscal_calendar (local 12-filer corpus)",
+  "n_cases": 13,
+  "cases": [
+    {
+      "id": "nvda-rev-2026",
+      "query": "What was NVIDIA's revenue in fiscal 2026?",
+      "kind": "lookup",
+      "expected_value": 215938000000.0,
+      "unit": "USD",
+      "rel_tol": 0.0001,
+      "require_citation": true,
+      "ticker": "NVDA",
+      "fy": 2026,
+      "concept": "Revenue",
+      "tags": [
+        "revenue"
+      ]
+    },
+    {
+      "id": "nvda-netincome-2026",
+      "query": "What was NVIDIA's net income in fiscal 2026?",
+      "kind": "lookup",
+      "expected_value": 120067000000.0,
+      "unit": "USD",
+      "rel_tol": 0.0001,
+      "require_citation": true,
+      "ticker": "NVDA",
+      "fy": 2026,
+      "concept": "NetIncome",
+      "tags": [
+        "net-income"
+      ]
+    },
+    {
+      "id": "nvda-assets-2026",
+      "query": "What were NVIDIA's total assets at the end of fiscal 2026?",
+      "kind": "lookup",
+      "expected_value": 206803000000.0,
+      "unit": "USD",
+      "rel_tol": 0.0001,
+      "require_citation": true,
+      "ticker": "NVDA",
+      "fy": 2026,
+      "concept": "TotalAssets",
+      "tags": [
+        "balance-sheet"
+      ]
+    },
+    {
+      "id": "aapl-rev-2024",
+      "query": "What was Apple's revenue in fiscal 2024?",
+      "kind": "lookup",
+      "expected_value": 391035000000.0,
+      "unit": "USD",
+      "rel_tol": 0.0001,
+      "require_citation": true,
+      "ticker": "AAPL",
+      "fy": 2024,
+      "concept": "Revenue",
+      "tags": [
+        "revenue"
+      ]
+    },
+    {
+      "id": "aapl-netincome-2024",
+      "query": "What was Apple's net income in fiscal 2024?",
+      "kind": "lookup",
+      "expected_value": 93736000000.0,
+      "unit": "USD",
+      "rel_tol": 0.0001,
+      "require_citation": true,
+      "ticker": "AAPL",
+      "fy": 2024,
+      "concept": "NetIncome",
+      "tags": [
+        "net-income"
+      ]
+    },
+    {
+      "id": "aapl-assets-2024",
+      "query": "What were Apple's total assets at the end of fiscal 2024?",
+      "kind": "lookup",
+      "expected_value": 364980000000.0,
+      "unit": "USD",
+      "rel_tol": 0.0001,
+      "require_citation": true,
+      "ticker": "AAPL",
+      "fy": 2024,
+      "concept": "TotalAssets",
+      "tags": [
+        "balance-sheet"
+      ]
+    },
+    {
+      "id": "msft-rev-2025",
+      "query": "What was Microsoft's revenue in fiscal 2025?",
+      "kind": "lookup",
+      "expected_value": 281724000000.0,
+      "unit": "USD",
+      "rel_tol": 0.0001,
+      "require_citation": true,
+      "ticker": "MSFT",
+      "fy": 2025,
+      "concept": "Revenue",
+      "tags": [
+        "revenue"
+      ]
+    },
+    {
+      "id": "googl-rev-2023",
+      "query": "What was Alphabet's revenue in fiscal 2023?",
+      "kind": "lookup",
+      "expected_value": 307394000000.0,
+      "unit": "USD",
+      "rel_tol": 0.0001,
+      "require_citation": true,
+      "ticker": "GOOGL",
+      "fy": 2023,
+      "concept": "Revenue",
+      "tags": [
+        "revenue"
+      ]
+    },
+    {
+      "id": "googl-rd-2023",
+      "query": "What was Alphabet's research and development expense in fiscal 2023?",
+      "kind": "lookup",
+      "expected_value": 45427000000.0,
+      "unit": "USD",
+      "rel_tol": 0.0001,
+      "require_citation": true,
+      "ticker": "GOOGL",
+      "fy": 2023,
+      "concept": "ResearchAndDevelopment",
+      "tags": [
+        "rd"
+      ]
+    },
+    {
+      "id": "amd-rev-2024",
+      "query": "What was AMD's revenue in fiscal 2024?",
+      "kind": "lookup",
+      "expected_value": 25785000000.0,
+      "unit": "USD",
+      "rel_tol": 0.0001,
+      "require_citation": true,
+      "ticker": "AMD",
+      "fy": 2024,
+      "concept": "Revenue",
+      "tags": [
+        "revenue"
+      ]
+    },
+    {
+      "id": "nvda-datacenter-rev-2026",
+      "query": "What was NVIDIA's Data Center revenue in fiscal 2026?",
+      "kind": "dimensional",
+      "expected_value": 193737000000.0,
+      "unit": "USD",
+      "rel_tol": 0.0001,
+      "require_citation": true,
+      "ticker": "NVDA",
+      "fy": 2026,
+      "concept": "Revenue",
+      "tags": [
+        "dimensional",
+        "revenue"
+      ]
+    },
+    {
+      "id": "nvda-rev-yoy-2526",
+      "query": "What was the year-over-year growth in NVIDIA's revenue from fiscal 2025 to fiscal 2026?",
+      "kind": "compute",
+      "expected_value": 0.654735357900948,
+      "rel_tol": 0.01,
+      "alt_values": [
+        65.4735357900948
+      ],
+      "require_citation": true,
+      "tags": [
+        "compute",
+        "yoy"
+      ]
+    },
+    {
+      "id": "aapl-net-margin-2024",
+      "query": "What was Apple's net profit margin in fiscal 2024?",
+      "kind": "compute",
+      "expected_value": 0.23971255769943867,
+      "rel_tol": 0.01,
+      "alt_values": [
+        23.971255769943866
+      ],
+      "require_citation": true,
+      "tags": [
+        "compute",
+        "margin"
+      ]
+    }
+  ]
+}

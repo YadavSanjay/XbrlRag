@@ -1,0 +1,7 @@
+# Synthetic overlay naming two made-up filers that are in no fixture inventory: merging it
+# must leave a development build byte-identical (docs/specs/hf-suite-build.md criterion C13).
+companies:
+  DEVX: {short: Devx, legal: Devx Inc.}
+  DEVY: {short: Devy, legal: Devy plc}
+period_ends:
+  DEVX: {2024: "2024-06-30"}

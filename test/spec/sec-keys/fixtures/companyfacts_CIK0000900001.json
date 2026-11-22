@@ -1,0 +1,98 @@
+{
+  "cik": 900001,
+  "entityName": "Synthetic Sep Corp",
+  "facts": {
+    "us-gaap": {
+      "Revenues": {
+        "label": "Revenues",
+        "description": "Synthetic revenue of a September 52/53-week filer.",
+        "units": {
+          "USD": [
+            {"start": "2023-10-01", "end": "2024-09-28", "val": 360000000000, "accn": "0000900001-24-000030", "fy": 2024, "fp": "FY", "form": "10-K", "filed": "2024-11-01"},
+            {"start": "2022-09-25", "end": "2023-09-30", "val": 340750000000, "accn": "0000900001-24-000030", "fy": 2024, "fp": "FY", "form": "10-K", "filed": "2024-11-01"},
+            {"start": "2021-09-26", "end": "2022-09-24", "val": 321500000000, "accn": "0000900001-24-000030", "fy": 2024, "fp": "FY", "form": "10-K", "filed": "2024-11-01"},
+            {"start": "2021-09-26", "end": "2022-09-24", "val": 320000000000, "accn": "0000900001-22-000010", "fy": 2022, "fp": "FY", "form": "10-K", "filed": "2022-10-28"},
+            {"start": "2020-09-27", "end": "2021-09-25", "val": 300000000000, "accn": "0000900001-22-000010", "fy": 2022, "fp": "FY", "form": "10-K", "filed": "2022-10-28"},
+            {"start": "2022-06-26", "end": "2022-09-24", "val": 85000000000, "accn": "0000900001-22-000010", "fy": 2022, "fp": "FY", "form": "10-K", "filed": "2022-10-28"},
+            {"start": "2022-09-25", "end": "2023-09-30", "val": 340000000000, "accn": "0000900001-23-000020", "fy": 2023, "fp": "FY", "form": "10-K", "filed": "2023-11-03"},
+            {"start": "2021-09-26", "end": "2022-09-24", "val": 320000000000, "accn": "0000900001-23-000020", "fy": 2023, "fp": "FY", "form": "10-K", "filed": "2023-11-03"},
+            {"start": "2020-09-27", "end": "2021-09-25", "val": 300000000000, "accn": "0000900001-23-000020", "fy": 2023, "fp": "FY", "form": "10-K", "filed": "2023-11-03"},
+            {"start": "2024-09-29", "end": "2024-12-28", "val": 95000000000, "accn": "0000900001-25-000005", "fy": 2025, "fp": "Q1", "form": "10-Q", "filed": "2025-01-31"}
+          ]
+        }
+      },
+      "Assets": {
+        "label": "Assets",
+        "description": "Synthetic total assets (instants).",
+        "units": {
+          "USD": [
+            {"end": "2023-09-30", "val": 350000000000, "accn": "0000900001-23-000020", "fy": 2023, "fp": "FY", "form": "10-K", "filed": "2023-11-03"},
+            {"end": "2022-09-24", "val": 352000000000, "accn": "0000900001-23-000020", "fy": 2023, "fp": "FY", "form": "10-K", "filed": "2023-11-03"},
+            {"end": "2024-09-28", "val": 365000000000, "accn": "0000900001-24-000030", "fy": 2024, "fp": "FY", "form": "10-K", "filed": "2024-11-01"},
+            {"end": "2023-09-30", "val": 351000000000, "accn": "0000900001-24-000030", "fy": 2024, "fp": "FY", "form": "10-K", "filed": "2024-11-01"},
+            {"end": "2024-12-28", "val": 344000000000, "accn": "0000900001-25-000005", "fy": 2025, "fp": "Q1", "form": "10-Q", "filed": "2025-01-31"}
+          ]
+        }
+      },
+      "CashAndCashEquivalentsAtCarryingValue": {
+        "label": "Cash and Cash Equivalents",
+        "description": "Synthetic: an instant and a duration entry sharing one end date.",
+        "units": {
+          "USD": [
+            {"start": "2023-10-01", "end": "2024-09-28", "val": 999000000, "accn": "0000900001-24-000030", "fy": 2024, "fp": "FY", "form": "10-K", "filed": "2024-11-01"},
+            {"end": "2024-09-28", "val": 30000000000, "accn": "0000900001-24-000030", "fy": 2024, "fp": "FY", "form": "10-K", "filed": "2024-11-01"}
+          ]
+        }
+      },
+      "Goodwill": {
+        "label": "Goodwill",
+        "description": "Synthetic: the only entry is nil.",
+        "units": {
+          "USD": [
+            {"end": "2024-09-28", "val": null, "accn": "0000900001-24-000030", "fy": 2024, "fp": "FY", "form": "10-K", "filed": "2024-11-01"}
+          ]
+        }
+      },
+      "InventoryNet": {
+        "label": "Inventory, Net",
+        "description": "Synthetic: the latest entry is nil, an earlier one is not.",
+        "units": {
+          "USD": [
+            {"end": "2023-09-30", "val": 6000000000, "accn": "0000900001-23-000020", "fy": 2023, "fp": "FY", "form": "10-K", "filed": "2023-11-03"},
+            {"end": "2023-09-30", "val": null, "accn": "0000900001-24-000030", "fy": 2024, "fp": "FY", "form": "10-K", "filed": "2024-11-01"}
+          ]
+        }
+      },
+      "ResearchAndDevelopmentExpense": {
+        "label": "Research and Development Expense",
+        "description": "Synthetic: a same-day 10-K/A repeats the 10-K value.",
+        "units": {
+          "USD": [
+            {"start": "2023-10-01", "end": "2024-09-28", "val": 30000000000, "accn": "0000900001-24-000030", "fy": 2024, "fp": "FY", "form": "10-K", "filed": "2024-11-01"},
+            {"start": "2023-10-01", "end": "2024-09-28", "val": 30000000000, "accn": "0000900001-24-000031", "fy": 2024, "fp": "FY", "form": "10-K/A", "filed": "2024-11-01"}
+          ]
+        }
+      },
+      "CostOfRevenue": {
+        "label": "Cost of Revenue",
+        "description": "Synthetic: a same-day 10-K/A reports a different value.",
+        "units": {
+          "USD": [
+            {"start": "2022-09-25", "end": "2023-09-30", "val": 190000000000, "accn": "0000900001-23-000020", "fy": 2023, "fp": "FY", "form": "10-K", "filed": "2023-11-03"},
+            {"start": "2023-10-01", "end": "2024-09-28", "val": 200000000000, "accn": "0000900001-24-000030", "fy": 2024, "fp": "FY", "form": "10-K", "filed": "2024-11-01"},
+            {"start": "2023-10-01", "end": "2024-09-28", "val": 201000000000, "accn": "0000900001-24-000031", "fy": 2024, "fp": "FY", "form": "10-K/A", "filed": "2024-11-01"}
+          ]
+        }
+      },
+      "EffectiveIncomeTaxRateContinuingOperations": {
+        "label": "Effective Income Tax Rate",
+        "description": "Synthetic pure-unit rate.",
+        "units": {
+          "pure": [
+            {"start": "2023-10-01", "end": "2024-09-28", "val": 0.155, "accn": "0000900001-24-000030", "fy": 2024, "fp": "FY", "form": "10-K", "filed": "2024-11-01"}
+          ]
+        }
+      }
+    }
+  }
+}

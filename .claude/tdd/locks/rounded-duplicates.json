@@ -1,0 +1,66 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/rounded-duplicates/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-16",
+  "criteria": {
+    "C1": [
+      "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_point_cases",
+      "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_point_cases_exact_and_positive_decimals",
+      "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_matches_rule"
+    ],
+    "C2": [
+      "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_point_case_permutation",
+      "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_permutation_follows_the_fact",
+      "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_adding_a_rounded_copy_keeps_the_winner",
+      "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_adding_a_far_value_breaks_consistency"
+    ],
+    "C3": [
+      "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_nvidia_goodwill_resolves_to_the_precise_fact",
+      "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_amazon_tax_resolves_and_inconsistent_rows_stay_ambiguous",
+      "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_rounded_copies_never_make_a_lookup_ambiguous"
+    ]
+  },
+  "files": {
+    "test/spec/rounded-duplicates/test_rounded_duplicates.py": "e0b949887b5e675ccfa75cd6a99c98dfb3ddf093eaaaa243d725570055bff576"
+  },
+  "id": "rounded-duplicates",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_lookup.py",
+      "module": "retriever.xbrl.xbrl_factstore_lookup",
+      "qualname": "most_precise_consistent",
+      "signature": "def most_precise_consistent(facts: Sequence[tuple[float, int | None]]) -> int | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_adding_a_far_value_breaks_consistency",
+    "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_adding_a_rounded_copy_keeps_the_winner",
+    "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_amazon_tax_resolves_and_inconsistent_rows_stay_ambiguous",
+    "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_matches_rule",
+    "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_nvidia_goodwill_resolves_to_the_precise_fact",
+    "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_permutation_follows_the_fact",
+    "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_point_case_permutation",
+    "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_point_cases",
+    "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_point_cases_exact_and_positive_decimals",
+    "test/spec/rounded-duplicates/test_rounded_duplicates.py::test_rounded_copies_never_make_a_lookup_ambiguous"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/rounded-duplicates.md",
+    "sha256": "28c9c25d2d33ef143603d0dacd80e6f0998b35bd10881b260dd8f5285af3ecec"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

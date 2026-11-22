@@ -1,0 +1,10 @@
+# Synthetic resolution: FALL FY2024 "Interest income and other, net" (169) is dropped.
+version: 1
+resolutions:
+  - family: InterestIncome
+    cik: "0000810001"
+    fiscal_year: 2024
+    concept: us-gaap:InterestAndOtherIncome
+    value: 169000000
+    reading: drop
+    reason: synthetic - the line includes other income, so it is not interest income alone

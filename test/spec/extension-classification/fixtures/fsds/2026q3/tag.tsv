@@ -1,0 +1,5 @@
+tag	version	custom	abstract	datatype	iord	crdr	tlabel	doc
+PaymentsToAcquirePropertyPlantAndEquipmentFromDiscontinuedOperation	0000002488-26-000123	1	0	monetary	D	C	Payments to Acquire Property, Plant, and Equipment from Discontinued Operation	Payments to Acquire Property, Plant, and Equipment from Discontinued Operation
+AmortizationOfAcquisitionRelatedIntangiblesCOGS	0000002488-26-000123	1	0	monetary	D	D	Amortization of acquisition-related intangibles- COGS	Amortization of acquisition-related intangibles- COGS
+AmortizationOfAcquisitionRelatedIntangiblesOpex	0000002488-26-000123	1	0	monetary	D	D	Amortization of acquisition-related intangibles-Opex	Amortization of acquisition-related intangibles-Opex
+GainsLossesOnLongTermInvestmetnsNet	0000002488-26-000123	1	0	monetary	D	C	(Gains) losses on long-term investmetns, net	(Gains) losses on long-term investmetns, net

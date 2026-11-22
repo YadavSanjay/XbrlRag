@@ -1,0 +1,48 @@
+{{- if .Values.ui.enabled }}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "xbrlrag.fullname" . }}-ui
+  labels:
+    {{- include "xbrlrag.labels" . | nindent 4 }}
+    app.kubernetes.io/component: ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: {{ .Release.Name }}
+      app.kubernetes.io/component: ui
+  template:
+    metadata:
+      labels:
+        {{- include "xbrlrag.labels" . | nindent 8 }}
+        app.kubernetes.io/component: ui
+    spec:
+      containers:
+        - name: ui
+          image: "{{ .Values.ui.image.repository }}:{{ .Values.ui.image.tag }}"
+          imagePullPolicy: {{ .Values.ui.image.pullPolicy }}
+          ports:
+            - containerPort: 80
+          env:
+            # nginx proxies /api + /metrics to the api Service.
+            - name: XBRLRAG_API_UPSTREAM
+              value: "{{ include "xbrlrag.fullname" . }}-api:{{ .Values.api.service.port }}"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "xbrlrag.fullname" . }}-ui
+  labels:
+    {{- include "xbrlrag.labels" . | nindent 4 }}
+    app.kubernetes.io/component: ui
+spec:
+  type: {{ .Values.ui.service.type }}
+  selector:
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/component: ui
+  ports:
+    - name: http
+      port: {{ .Values.ui.service.port }}
+      targetPort: 80
+{{- end }}

@@ -1,0 +1,209 @@
+# Reviewed additions to the concept families of
+# src/ingest/util/generate_concept_mapping.py (docs/specs/concept-families-wave1.md).
+#
+# generate_concept_mapping loads and validates this file (rules V1-V10): additions are
+# appended after the base QNames, so no base QName changes rank, and each filer entry
+# writes that filer's reviewed ranking as `reviewed_override` rows, which the
+# facts-count override pass never touches. Every entry needs a reason that a reviewer
+# can check against the filer's own statements.
+#
+# Revenue is the filer's reported total-revenue line, never a sum of parts.
+# Deliberately absent (no entry, see the spec's Notes): CostOfRevenue for MCD, UNP and
+# UPS (operating-expense presentation), OperatingIncome for LLY and MRK (no
+# operating-income line).
+version: 1
+
+families:
+  Capex:
+    primaries: [us-gaap:PaymentsToAcquireOtherPropertyPlantAndEquipment]
+    reason: >-
+      Eli Lilly tags its only capital-expenditure line, "Purchases of property and
+      equipment" (FY2023 3,447.6M, FY2024 5,057.8M, FY2025 7,841.0M), with this concept
+      and reports none of the base Capex primaries, so Capex was absent for it. No other
+      corpus filer reports the concept (checked 2026-10-29), and as the last primary it
+      never outranks a base one.
+
+  # concept-family-coverage (docs/specs/concept-family-coverage.md, decisions D1-D44 of
+  # docs/design/XbrlRag_Concept_Decisions.md, agreed 2026-11-07). Same-measure elements are
+  # primaries; the nearest-line substitutes are components here (rank 50+) and get role
+  # `substitute` with their code and note in concept_family_coverage.yaml.
+  OtherNonOperatingIncome:
+    primaries: [us-gaap:InterestAndOtherIncome]
+    reason: >-
+      D14: "Interest and other income" is the filer's whole non-operating line where it
+      reports no other-income total (Costco FY2026 "Interest income and other, net" 711M).
+  DebtIssued:
+    primaries:
+      - us-gaap:ProceedsFromIssuanceOfDebt
+      - us-gaap:ProceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet
+      - us-gaap:ProceedsFromDebtMaturingInMoreThanThreeMonths
+      - us-gaap:ProceedsFromIssuanceOfMediumTermNotes
+      - us-gaap:ProceedsFromIssuanceOfSeniorLongTermDebt
+      - us-gaap:ProceedsFromShortTermDebt
+    components: [ifrs-full:ProceedsFromIssueOfBondsNotesAndDebentures]
+    reason: >-
+      D17, D20 and D22: gross debt-issuance lines of the cash-flow statement (Merck
+      "Proceeds from issuance of debt", Home Depot, Microsoft's "maturities longer than 90
+      days"); medium-term notes rank last among the long-term lines. The family is gross
+      debt issued of any term (D3, 2026-11-11). D21: TSMC's bonds line is one of several
+      gross lines and answers only as a stated substitute. screen-candidate-order R2:
+      senior-note proceeds (Oracle FY2025 "Proceeds from issuances of senior notes"
+      19,548M, its only issuance line from FY2023) follow the long-term lines; short-term
+      debt proceeds come last (AMD FY2025 "Proceeds from debt and commercial paper" 2,441M,
+      its only issuance line), so a long-term line keeps answering where a filer presents
+      both (Costco, Vistra); concept_family_coverage.yaml makes it fallback-only (R3).
+  DebtRepaid:
+    primaries:
+      - us-gaap:RepaymentsOfLongTermDebtAndCapitalSecurities
+      - us-gaap:RepaymentsOfOtherLongTermDebt
+      - us-gaap:RepaymentsOfDebtAndCapitalLeaseObligations
+      - us-gaap:RepaymentsOfConvertibleDebt
+      - us-gaap:RepaymentsOfDebtMaturingInMoreThanThreeMonths
+      - us-gaap:RepaymentsOfAssumedDebt
+    components:
+      - ifrs-full:RepaymentsOfBondsNotesAndDebentures
+      - ifrs-full:RepaymentsOfNoncurrentBorrowings
+      - us-gaap:RepaymentsOfLinesOfCredit
+    reason: >-
+      D18-D20 and D22: gross debt-repayment lines (Home Depot, Cisco, Coca-Cola, Tesla,
+      Microsoft); the lease-inclusive element after the two debt-only ones, convertible
+      debt after them, assumed debt last. D21: lines that are one of several gross lines
+      answer only as stated substitutes.
+  InterestIncome:
+    primaries: [us-gaap:InvestmentIncomeInterestAndDividend]
+    components: [us-gaap:InvestmentIncomeNet]
+    reason: >-
+      D24: Cisco's "Interest income" line is tagged InvestmentIncomeInterestAndDividend.
+      D25: net investment income (Micron, UPS) can include gains and losses, so it answers
+      only as a stated substitute.
+  IncomeFromDiscontinuedOperations:
+    primaries: [us-gaap:IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntity]
+    reason: >-
+      D29: the parent's share of discontinued operations, net of tax, is the family's
+      measure where the filer tags no other total.
+  SellingAndMarketing:
+    primaries: [us-gaap:MarketingExpense]
+    reason: >-
+      D32: Amazon's "Sales and marketing" line (FY2025 47,129M) is tagged MarketingExpense.
+  ShortTermInvestments:
+    primaries:
+      - us-gaap:OtherShortTermInvestments
+      - us-gaap:HeldToMaturitySecuritiesCurrent
+      - us-gaap:AvailableForSaleSecuritiesDebtSecuritiesCurrent
+    reason: >-
+      D39: Coca-Cola's and Union Pacific's short-term investment lines.
+      screen-candidate-order R2: current available-for-sale debt securities, the post-ASU
+      2016-01 successor of AvailableForSaleSecuritiesCurrent, are the balance-sheet line of
+      Intel ("Short-term investments" FY2022 17,194M), Micron (1,069M) and Oracle
+      ("Marketable securities" 519M), which present no other short-term-investment line.
+  PropertyPlantAndEquipment:
+    primaries:
+      - us-gaap:PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization
+    reason: >-
+      screen-candidate-order R2: net PP&E including finance-lease right-of-use assets is
+      the balance-sheet PP&E line of filers that present no PropertyPlantAndEquipmentNet
+      line that year (Intel FY2025 "Property, plant and equipment, net" 105,414M; Home
+      Depot "Net property and equipment" 28,021M; Micron 46,590M; also UPS, Salesforce,
+      Tesla, Meta, Alphabet, Union Pacific, Amazon). Ranked after the gross line so no base
+      rank moves; the presented-line rule picks it.
+  CashAndEquivalents:
+    primaries: [us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents]
+    reason: >-
+      screen-candidate-order R2: Procter & Gamble (FY2023-FY2026) and Intel (FY2022-FY2024)
+      present their balance-sheet "Cash and cash equivalents" line with this element and no
+      plain cash fact (P&G FY2025 9,556M). Ranked after the plain line and the
+      cash-and-short-term-investment totals, so the plain line wins where both are
+      presented (Intel FY2025 balance sheet 14,265M, cash-flow statement 14,712M);
+      concept_family_coverage.yaml makes it fallback-only (R3).
+  Debt:
+    primaries: [us-gaap:DebtLongtermAndShorttermCombinedAmount]
+    reason: >-
+      Decided 2026-11-07 (spec C8, D44): total debt, short- and long-term, is the same
+      measure; it ranks right after LongTermDebt so a long-term-debt total keeps answering
+      where it exists (Eli Lilly FY2025 42,503M; AMD, Broadcom, Merck, Oracle).
+  DepreciationAndAmortization:
+    components: [us-gaap:DepreciationAmortizationAndAccretionNet, ifrs-full:DepreciationExpense]
+    reason: >-
+      D6 and D3: D&A including accretion (Constellation, Walmart) and IFRS depreciation
+      expense (TSMC) are stated substitutes, never the D&A total itself.
+  SharesOutstanding:
+    components: [dei:EntityCommonStockSharesOutstanding]
+    reason: >-
+      D16: the cover-page count, dated after the balance sheet, is a stated substitute for
+      a filer with no balance-sheet shares-outstanding line (Coca-Cola, McDonald's, TI).
+  RestructuringCharges:
+    components:
+      - us-gaap:RestructuringSettlementAndImpairmentProvisions
+      - us-gaap:RestructuringCostsAndAssetImpairmentCharges
+    reason: >-
+      D26: restructuring combined with impairment on one line (Eli Lilly, Micron) answers
+      only as a stated substitute.
+  CashFromOperations:
+    components: [us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations]
+    reason: >-
+      D31: Merck reports continuing-operations cash flows only; a stated substitute.
+  CashFromInvesting:
+    components: [us-gaap:NetCashProvidedByUsedInInvestingActivitiesContinuingOperations]
+    reason: >-
+      D31: Merck reports continuing-operations cash flows only; a stated substitute.
+  CashFromFinancing:
+    components: [us-gaap:NetCashProvidedByUsedInFinancingActivitiesContinuingOperations]
+    reason: >-
+      D31: Merck reports continuing-operations cash flows only; a stated substitute.
+  AccountsPayable:
+    components: [us-gaap:AccountsPayableAndOtherAccruedLiabilitiesCurrent]
+    reason: >-
+      D33: Salesforce's "Accounts payable, accrued expenses and other liabilities" is a
+      stated substitute.
+  IntangibleAssets:
+    components: [ifrs-full:IntangibleAssetsAndGoodwill]
+    reason: >-
+      D35: TSMC's intangible-assets line includes goodwill; a stated substitute.
+
+filers:
+  - cik: "0000104169"   # Walmart Inc.
+    family: Revenue
+    preferred: [us-gaap:Revenues]
+    reason: >-
+      Walmart tags total revenues (net sales plus membership and other income) as
+      us-gaap:Revenues (FY2025 680,985M) and net sales alone as
+      RevenueFromContractWithCustomerExcludingAssessedTax (674,538M), both undimensioned
+      in FY2023-2025. The facts-count rule keeps the global rank 1, so "Walmart's
+      revenue" would be answered with net sales.
+  - cik: "0000909832"   # Costco Wholesale Corp.
+    family: Revenue
+    preferred: [us-gaap:Revenues]
+    reason: >-
+      Costco's total revenue (net sales plus membership fees, FY2024 254,453M) is the
+      reported total. In FY2023-2025 it tags that total undimensioned with both
+      us-gaap:Revenues and RevenueFromContractWithCustomerExcludingAssessedTax; net sales
+      (249,625M) appears only under ProductOrServiceAxis=ProductMember. The entry pins
+      the total-revenue concept so that a filing tagging net sales undimensioned with
+      the contract-revenue concept cannot change the answer.
+  - cik: "0001692819"   # Vistra Corp.
+    family: Revenue
+    preferred: [us-gaap:Revenues]
+    reason: >-
+      Vistra's income statement total is "Operating revenues", tagged us-gaap:Revenues
+      (FY2023 14,779M, FY2024 17,224M, FY2025 17,738M). It also tags the part from
+      contracts with customers as RevenueFromContractWithCustomerExcludingAssessedTax
+      (13,804M, 14,761M, 17,586M), which excludes hedging and other revenue, so the global
+      rank 1 answered "Vistra's revenue" with that part.
+  - cik: "0001868275"   # Constellation Energy Corp.
+    family: Revenue
+    preferred: [us-gaap:Revenues]
+    reason: >-
+      Constellation's income statement total is "Operating revenues", tagged
+      us-gaap:Revenues (FY2023 24,918M, FY2024 23,568M, FY2025 25,533M). It also tags the
+      part from contracts with customers as RevenueFromContractWithCustomerExcludingAssessedTax
+      (20,841M, 18,964M, 22,663M), so the global rank 1 answered "Constellation's revenue"
+      with that part.
+  - cik: "0000063908"   # McDonald's Corp.
+    family: DepreciationAndAmortization
+    preferred: [us-gaap:DepreciationAndAmortization]
+    reason: >-
+      McDonald's cash-flow add-back "Depreciation and amortization" is tagged
+      us-gaap:DepreciationAndAmortization (FY2023 1,978.2M, FY2024 2,097M, FY2025
+      2,199M). It also tags a much smaller amount as DepreciationDepletionAndAmortization
+      (381.7M, 447M, 457M), which is not its total D&A, so the global rank 1 answered
+      "McDonald's D&A" with it.

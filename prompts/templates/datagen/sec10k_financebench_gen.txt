@@ -1,0 +1,23 @@
+
+Financebench dataset is available at this location
+https://raw.githubusercontent.com/patronus-ai/financebench/refs/heads/main/data/financebench_open_source.jsonl
+
+We need to analyze data where doc_type='<<10-k|10-q>>' and gic_sector=<<'sector'>> and question_type=<<'domain-relevant|metrics-generated|novel-generated|'>>
+
+Now using publicably available SEC-10K filings for <<COMPANY>> from filing years in range [2022,2023,2024] we need to generate NEW 5 questions of question_reasoning type 
+<<['Logical reasoning (based on numerical reasoning) OR Logical reasoning', 'Logical reasoning (based on numerical reasoning)', 'Numerical reasoning'] >>
+<<['Information extraction', 'Numerical reasoning']>>
+
+Follow the reasoning approach taken by Financebench dataset and come up with 5 questions grounded in actual filings facts and do not fabricate data or questions.
+It is important that you maintain difficulty level of the questions by adopting advanced reasoning mode AND also by coming up with questions that need to pull information from multiple sections of the filings.
+
+response should be in financebench json schema providing following data points in the repsonse
+1. which years SEC-10k filing used
+2. question type
+3. question_reasoning
+4. question
+5. answer
+6. justification
+7. evidence INCLUDING page number in actual filing
+8. company name
+9. All other fields in financebench schema

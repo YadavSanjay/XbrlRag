@@ -1,0 +1,73 @@
+# Default values for the XbrlRag chart (WS-6 / B7).
+
+image:
+  repository: arag
+  tag: local           # override with your built/pushed tag
+  pullPolicy: IfNotPresent
+
+ui:
+  enabled: true
+  image:
+    repository: arag-ui
+    tag: local
+    pullPolicy: IfNotPresent
+  service:
+    type: ClusterIP
+    port: 80
+
+# BFF (src.api.main:app)
+api:
+  replicas: 1
+  service:
+    type: ClusterIP
+    port: 8000
+  resources:
+    requests: { cpu: "100m", memory: "256Mi" }
+    limits:   { cpu: "1",    memory: "1Gi" }
+
+# MCP server (src.mcp_server.server, streamable-http)
+mcp:
+  enabled: true
+  replicas: 1
+  port: 8765
+  service:
+    type: ClusterIP
+    port: 8765
+  resources:
+    requests: { cpu: "50m",  memory: "128Mi" }
+    limits:   { cpu: "500m", memory: "512Mi" }
+
+# External managed services — set these to your cluster's endpoints.
+externalServices:
+  postgres:
+    host: postgres
+    port: 5432
+    name: xbrl_db
+    user: postgres
+  qdrant:
+    host: qdrant
+    port: 6333
+  # Shared BGE-M3 + Jina inference (sibling repo). Empty => the app would try to
+  # load models locally, which the slim image cannot — set this in any real deploy.
+  raginferenceUrl: ""
+
+# Non-secret app config (rendered into a ConfigMap).
+config:
+  XBRLRAG_QUERY_CACHE: "0"
+
+# Secrets — provide via --set-string or a pre-created secret. Do NOT commit real values.
+secrets:
+  # If create=true, a Secret is templated from the values below (use --set-string /
+  # a values override in CI/CD, never commit). If false, set existingSecret.
+  create: true
+  existingSecret: ""
+  openaiApiKey: ""
+  jinaApiKey: ""
+  postgresPassword: "postgres"
+
+ingress:
+  enabled: false
+  className: ""
+  host: xbrlrag.local
+  annotations: {}
+  # Routes "/" -> ui, "/api" + "/metrics" -> api.

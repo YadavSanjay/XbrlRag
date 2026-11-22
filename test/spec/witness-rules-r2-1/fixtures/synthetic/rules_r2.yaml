@@ -1,0 +1,6 @@
+# Synthetic r2 rules: S2's balance-sheet total and parent net income are now selected.
+version: 1
+families:
+  TotalAssets: {statements: [BS], include: ['^total assets', '^assets, total']}
+  Revenue: {statements: [IS], include: ['revenue'], exclude: ['cost']}
+  NetIncome: {statements: [IS], include: ['^net income', 'attributable to parent'], exclude: ['noncontrolling']}

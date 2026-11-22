@@ -1,0 +1,3336 @@
+{
+ "cases": {
+  "aapl_shares": {
+   "cik": 320193,
+   "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+   "expected_value": 16215963000,
+   "fy": 2022,
+   "id": "int-3e3c1e99189f-011f2fdc",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0000320193-24-000123",
+      "calendar_year": null,
+      "cik": "0000320193",
+      "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+      "decimals": -3,
+      "filed": "2024-11-01",
+      "fiscal_year": 2022,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-09-24",
+      "period_start": "2021-09-26",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "shares",
+      "value": 16215963000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S6"
+    ],
+    "same_filing": null,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "lookup",
+   "origin": "v2:lookup",
+   "paraphrase_group": "int-3e3c1e99189f",
+   "question": "Apple Inc. basic share count fiscal year 2022",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-3e3c1e99189f",
+    "family:terse",
+    "template:lookup-terse-1",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:lookup"
+   ],
+   "ticker": "AAPL",
+   "unit": "shares"
+  },
+  "adbe_eps": {
+   "cik": 796343,
+   "concept": "us-gaap:EarningsPerShareDiluted",
+   "expected_value": 16.7,
+   "fy": 2025,
+   "id": "int-583d99feae44-0149f30b",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0000796343-26-000003",
+      "calendar_year": null,
+      "cik": "0000796343",
+      "concept": "us-gaap:EarningsPerShareDiluted",
+      "decimals": 2,
+      "filed": "2026-01-15",
+      "fiscal_year": 2025,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-11-28",
+      "period_start": "2024-11-30",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD/shares",
+      "value": 16.7,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S6"
+    ],
+    "same_filing": null,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "lookup",
+   "origin": "v2:lookup",
+   "paraphrase_group": "int-583d99feae44",
+   "question": "Adobe EPS, the fiscal year ended November 28, 2025?",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-583d99feae44",
+    "family:terse",
+    "template:lookup-terse-2",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:lookup"
+   ],
+   "ticker": "ADBE",
+   "unit": "USD/shares"
+  },
+  "avgo_capex_peer": {
+   "cik": 1730168,
+   "disclosures": {
+    "disclose_period_ends": true,
+    "excluded": [
+     {
+      "reason": "period_not_filed",
+      "ticker": "ABT"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "ADBE"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "COST"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "CRM"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "CSCO"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "HD"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "KO"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "LLY"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "LMT"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "MCD"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "MRK"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "NFLX"
+     },
+     {
+      "reason": "metric_not_tagged",
+      "ticker": "NVDA"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "PG"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "QCOM"
+     },
+     {
+      "reason": "currency",
+      "ticker": "TSM"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "TXN"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "UNP"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "UPS"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "WMT"
+     }
+    ],
+    "members": 33,
+    "period_ends": {
+     "AAPL": "2022-09-24",
+     "AMD": "2022-12-31",
+     "AMZN": "2022-12-31",
+     "AVGO": "2022-10-30",
+     "CEG": "2022-12-31",
+     "GOOGL": "2022-12-31",
+     "INTC": "2022-12-31",
+     "META": "2022-12-31",
+     "MSFT": "2022-06-30",
+     "MU": "2022-09-01",
+     "ORCL": "2022-05-31",
+     "TSLA": "2022-12-31",
+     "VST": "2022-12-31"
+    },
+    "ranked": [
+     "AMZN",
+     "GOOGL",
+     "META",
+     "INTC",
+     "MSFT",
+     "MU",
+     "AAPL",
+     "TSLA",
+     "ORCL",
+     "CEG",
+     "VST",
+     "AMD",
+     "AVGO"
+    ],
+    "universe": "covered"
+   },
+   "expected_rows": [
+    {
+     "fiscal_year": 2022,
+     "period_end": "2022-12-31",
+     "ticker": "AMZN",
+     "value": 63645000000
+    },
+    {
+     "fiscal_year": 2022,
+     "period_end": "2022-12-31",
+     "ticker": "GOOGL",
+     "value": 31485000000
+    },
+    {
+     "fiscal_year": 2022,
+     "period_end": "2022-12-31",
+     "ticker": "META",
+     "value": 31186000000
+    },
+    {
+     "fiscal_year": 2022,
+     "period_end": "2022-12-31",
+     "ticker": "INTC",
+     "value": 24844000000
+    },
+    {
+     "fiscal_year": 2022,
+     "period_end": "2022-06-30",
+     "ticker": "MSFT",
+     "value": 23886000000
+    },
+    {
+     "fiscal_year": 2022,
+     "period_end": "2022-09-01",
+     "ticker": "MU",
+     "value": 12067000000
+    },
+    {
+     "fiscal_year": 2022,
+     "period_end": "2022-09-24",
+     "ticker": "AAPL",
+     "value": 10708000000
+    },
+    {
+     "fiscal_year": 2022,
+     "period_end": "2022-12-31",
+     "ticker": "TSLA",
+     "value": 7158000000
+    },
+    {
+     "fiscal_year": 2022,
+     "period_end": "2022-05-31",
+     "ticker": "ORCL",
+     "value": 4511000000
+    },
+    {
+     "fiscal_year": 2022,
+     "period_end": "2022-12-31",
+     "ticker": "CEG",
+     "value": 1689000000
+    },
+    {
+     "fiscal_year": 2022,
+     "period_end": "2022-12-31",
+     "ticker": "VST",
+     "value": 1301000000
+    },
+    {
+     "fiscal_year": 2022,
+     "period_end": "2022-12-31",
+     "ticker": "AMD",
+     "value": 450000000
+    },
+    {
+     "fiscal_year": 2022,
+     "period_end": "2022-10-30",
+     "ticker": "AVGO",
+     "value": 424000000
+    }
+   ],
+   "fy": 2022,
+   "id": "int-06f3dc7f5a2d-02a1de0d",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001018724-25-000004",
+      "calendar_year": null,
+      "cik": "0001018724",
+      "concept": "us-gaap:PaymentsToAcquireProductiveAssets",
+      "decimals": -6,
+      "filed": "2025-02-07",
+      "fiscal_year": 2022,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-12-31",
+      "period_start": "2022-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 63645000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001652044-25-000014",
+      "calendar_year": null,
+      "cik": "0001652044",
+      "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "decimals": -6,
+      "filed": "2025-02-05",
+      "fiscal_year": 2022,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-12-31",
+      "period_start": "2022-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 31485000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001326801-25-000017",
+      "calendar_year": null,
+      "cik": "0001326801",
+      "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "decimals": -6,
+      "filed": "2025-01-30",
+      "fiscal_year": 2022,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-12-31",
+      "period_start": "2022-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 31186000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000050863-25-000009",
+      "calendar_year": null,
+      "cik": "0000050863",
+      "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "decimals": -6,
+      "filed": "2025-01-31",
+      "fiscal_year": 2022,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-12-31",
+      "period_start": "2021-12-26",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 24844000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000950170-24-087843",
+      "calendar_year": null,
+      "cik": "0000789019",
+      "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "decimals": -6,
+      "filed": "2024-07-30",
+      "fiscal_year": 2022,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-06-30",
+      "period_start": "2021-07-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 23886000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000723125-24-000027",
+      "calendar_year": null,
+      "cik": "0000723125",
+      "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "decimals": -6,
+      "filed": "2024-10-04",
+      "fiscal_year": 2022,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-09-01",
+      "period_start": "2021-09-03",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 12067000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000320193-24-000123",
+      "calendar_year": null,
+      "cik": "0000320193",
+      "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "decimals": -6,
+      "filed": "2024-11-01",
+      "fiscal_year": 2022,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-09-24",
+      "period_start": "2021-09-26",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 10708000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001628280-25-003063",
+      "calendar_year": null,
+      "cik": "0001318605",
+      "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "decimals": -6,
+      "filed": "2025-01-30",
+      "fiscal_year": 2022,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-12-31",
+      "period_start": "2022-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 7158000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000950170-24-075605",
+      "calendar_year": null,
+      "cik": "0001341439",
+      "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "decimals": -6,
+      "filed": "2024-06-20",
+      "fiscal_year": 2022,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-05-31",
+      "period_start": "2021-06-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 4511000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001868275-25-000023",
+      "calendar_year": null,
+      "cik": "0001868275",
+      "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "decimals": -6,
+      "filed": "2025-02-18",
+      "fiscal_year": 2022,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-12-31",
+      "period_start": "2022-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 1689000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001692819-25-000013",
+      "calendar_year": null,
+      "cik": "0001692819",
+      "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "decimals": -6,
+      "filed": "2025-02-28",
+      "fiscal_year": 2022,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-12-31",
+      "period_start": "2022-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 1301000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000002488-25-000012",
+      "calendar_year": null,
+      "cik": "0000002488",
+      "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "decimals": -6,
+      "filed": "2025-02-05",
+      "fiscal_year": 2022,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-12-31",
+      "period_start": "2021-12-26",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 450000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001730168-24-000139",
+      "calendar_year": null,
+      "cik": "0001730168",
+      "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "decimals": -6,
+      "filed": "2024-12-20",
+      "fiscal_year": 2022,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-10-30",
+      "period_start": "2021-11-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 424000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S3",
+     "S5",
+     "S6"
+    ],
+    "same_filing": null,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "screen",
+   "origin": "v2:peer_relative",
+   "paraphrase_group": "int-06f3dc7f5a2d",
+   "question": "Where did Broadcom rank among the covered companies on capital expenditures in fiscal year 2022?",
+   "rel_tol": 0.0001,
+   "subject": {
+    "position": "below",
+    "rank": 13,
+    "ticker": "AVGO",
+    "universe_median": 10708000000
+   },
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-06f3dc7f5a2d",
+    "family:conversational",
+    "template:peer-conv-2",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:peer_relative"
+   ],
+   "ticker": "AVGO",
+   "unit": "USD"
+  },
+  "bigtech_div_sum": {
+   "disclosures": {
+    "disclose_period_ends": true,
+    "excluded": [
+     {
+      "reason": "metric_not_tagged",
+      "ticker": "AMZN"
+     },
+     {
+      "reason": "metric_not_tagged",
+      "ticker": "GOOGL"
+     },
+     {
+      "reason": "metric_not_tagged",
+      "ticker": "META"
+     },
+     {
+      "reason": "metric_not_tagged",
+      "ticker": "TSLA"
+     }
+    ],
+    "members": 7,
+    "period_ends": {
+     "AAPL": "2023-09-30",
+     "MSFT": "2023-06-30",
+     "NVDA": "2023-01-29"
+    },
+    "ranked": [
+     "MSFT",
+     "AAPL",
+     "NVDA"
+    ],
+    "universe": "big_tech"
+   },
+   "expected_value": 35223000000,
+   "fy": 2023,
+   "id": "int-014d29a97aa6-041912ee",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0000950170-25-100235",
+      "calendar_year": null,
+      "cik": "0000789019",
+      "concept": "us-gaap:PaymentsOfDividendsCommonStock",
+      "decimals": -6,
+      "filed": "2025-07-30",
+      "fiscal_year": 2023,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2023-06-30",
+      "period_start": "2022-07-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 19800000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000320193-25-000079",
+      "calendar_year": null,
+      "cik": "0000320193",
+      "concept": "us-gaap:PaymentsOfDividends",
+      "decimals": -6,
+      "filed": "2025-10-31",
+      "fiscal_year": 2023,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2023-09-30",
+      "period_start": "2022-09-25",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 15025000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001045810-25-000023",
+      "calendar_year": null,
+      "cik": "0001045810",
+      "concept": "us-gaap:PaymentsOfDividends",
+      "decimals": -6,
+      "filed": "2025-02-26",
+      "fiscal_year": 2023,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2023-01-29",
+      "period_start": "2022-01-31",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 398000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S3",
+     "S5",
+     "S6"
+    ],
+    "same_filing": null,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "compute",
+   "origin": "v2:screen.sum",
+   "paraphrase_group": "int-014d29a97aa6",
+   "question": "combined fiscal 2023 dividends paid of the big tech companies",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-014d29a97aa6",
+    "family:terse",
+    "template:sum-terse-2",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:screen.sum"
+   ],
+   "unit": "USD"
+  },
+  "bigtech_equity_median": {
+   "disclosures": {
+    "disclose_period_ends": true,
+    "excluded": [],
+    "members": 7,
+    "period_ends": {
+     "AAPL": "2024-09-28",
+     "AMZN": "2024-12-31",
+     "GOOGL": "2024-12-31",
+     "META": "2024-12-31",
+     "MSFT": "2024-06-30",
+     "NVDA": "2024-01-28",
+     "TSLA": "2024-12-31"
+    },
+    "ranked": [
+     "GOOGL",
+     "AMZN",
+     "MSFT",
+     "META",
+     "TSLA",
+     "AAPL",
+     "NVDA"
+    ],
+    "universe": "big_tech"
+   },
+   "expected_value": 182637000000,
+   "fy": 2024,
+   "id": "int-3318dfdb281b-055b029a",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001652044-26-000084",
+      "calendar_year": null,
+      "cik": "0001652044",
+      "concept": "us-gaap:StockholdersEquity",
+      "decimals": null,
+      "filed": "2026-10-29",
+      "fiscal_year": 2024,
+      "form": "10-Q",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-12-31",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "single-source",
+      "unit": "USD",
+      "value": 325084000000,
+      "verified_by": []
+     },
+     {
+      "accession": "0001018724-26-000026",
+      "calendar_year": null,
+      "cik": "0001018724",
+      "concept": "us-gaap:StockholdersEquity",
+      "decimals": -6,
+      "filed": "2026-07-31",
+      "fiscal_year": 2024,
+      "form": "10-Q",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-12-31",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 285970000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001193125-26-323660",
+      "calendar_year": null,
+      "cik": "0000789019",
+      "concept": "us-gaap:StockholdersEquity",
+      "decimals": -6,
+      "filed": "2026-07-29",
+      "fiscal_year": 2024,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-06-30",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 268477000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001628280-26-066773",
+      "calendar_year": null,
+      "cik": "0001326801",
+      "concept": "us-gaap:StockholdersEquity",
+      "decimals": null,
+      "filed": "2026-10-22",
+      "fiscal_year": 2024,
+      "form": "10-Q",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-12-31",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "single-source",
+      "unit": "USD",
+      "value": 182637000000,
+      "verified_by": []
+     },
+     {
+      "accession": "0001628280-26-003952",
+      "calendar_year": null,
+      "cik": "0001318605",
+      "concept": "us-gaap:StockholdersEquity",
+      "decimals": -6,
+      "filed": "2026-01-29",
+      "fiscal_year": 2024,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-12-31",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 72913000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000320193-26-000020",
+      "calendar_year": null,
+      "cik": "0000320193",
+      "concept": "us-gaap:StockholdersEquity",
+      "decimals": -6,
+      "filed": "2026-07-31",
+      "fiscal_year": 2024,
+      "form": "10-Q",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-09-28",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 56950000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001045810-26-000021",
+      "calendar_year": null,
+      "cik": "0001045810",
+      "concept": "us-gaap:StockholdersEquity",
+      "decimals": -6,
+      "filed": "2026-02-25",
+      "fiscal_year": 2024,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-01-28",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 42978000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S3",
+     "S5",
+     "S6"
+    ],
+    "same_filing": null,
+    "source": "sec_companyfacts",
+    "status": "single-source"
+   },
+   "kind": "compute",
+   "origin": "v2:screen.median",
+   "paraphrase_group": "int-3318dfdb281b",
+   "question": "Please determine the median book equity reported by the big tech companies for fiscal year 2024.",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-3318dfdb281b",
+    "family:formal",
+    "template:median-formal-2",
+    "key_source:sec_companyfacts",
+    "key_status:single-source",
+    "shape:screen.median"
+   ],
+   "unit": "USD"
+  },
+  "bigtech_goodwill_top3": {
+   "disclosures": {
+    "disclose_period_ends": true,
+    "excluded": [
+     {
+      "reason": "period_not_filed",
+      "ticker": "AAPL"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "AMZN"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "GOOGL"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "META"
+     },
+     {
+      "reason": "period_not_filed",
+      "ticker": "TSLA"
+     }
+    ],
+    "members": 7,
+    "period_ends": {
+     "MSFT": "2026-06-30",
+     "NVDA": "2026-01-25"
+    },
+    "ranked": [
+     "MSFT",
+     "NVDA"
+    ],
+    "universe": "big_tech"
+   },
+   "expected_rows": [
+    {
+     "fiscal_year": 2026,
+     "period_end": "2026-06-30",
+     "ticker": "MSFT",
+     "value": 119651000000
+    },
+    {
+     "fiscal_year": 2026,
+     "period_end": "2026-01-25",
+     "ticker": "NVDA",
+     "value": 20832000000
+    }
+   ],
+   "fy": 2026,
+   "id": "int-536c1d41288b-03090468",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001193125-26-436133",
+      "calendar_year": null,
+      "cik": "0000789019",
+      "concept": "us-gaap:Goodwill",
+      "decimals": null,
+      "filed": "2026-10-28",
+      "fiscal_year": 2026,
+      "form": "10-Q",
+      "key_source": "sec_companyfacts",
+      "period_end": "2026-06-30",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "single-source",
+      "unit": "USD",
+      "value": 119651000000,
+      "verified_by": []
+     },
+     {
+      "accession": "0001045810-26-000075",
+      "calendar_year": null,
+      "cik": "0001045810",
+      "concept": "us-gaap:Goodwill",
+      "decimals": -6,
+      "filed": "2026-08-26",
+      "fiscal_year": 2026,
+      "form": "10-Q",
+      "key_source": "sec_companyfacts",
+      "period_end": "2026-01-25",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 20832000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S3",
+     "S5",
+     "S6"
+    ],
+    "same_filing": null,
+    "source": "sec_companyfacts",
+    "status": "single-source"
+   },
+   "kind": "screen",
+   "origin": "v2:screen.top",
+   "paraphrase_group": "int-536c1d41288b",
+   "question": "top 3 by goodwill balance among the big tech companies, fiscal year 2026",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-536c1d41288b",
+    "family:terse",
+    "template:top-terse-1",
+    "key_source:sec_companyfacts",
+    "key_status:single-source",
+    "shape:screen.top"
+   ],
+   "top_n": 3,
+   "unit": "USD"
+  },
+  "crm_shares": {
+   "cik": 1108524,
+   "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+   "expected_value": 962000000,
+   "fy": 2025,
+   "id": "int-241692c4fef6-024af282",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001108524-26-000060",
+      "calendar_year": null,
+      "cik": "0001108524",
+      "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+      "decimals": -6,
+      "filed": "2026-03-02",
+      "fiscal_year": 2025,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-01-31",
+      "period_start": "2024-02-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "shares",
+      "value": 962000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S6"
+    ],
+    "same_filing": null,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "lookup",
+   "origin": "v2:lookup",
+   "paraphrase_group": "int-241692c4fef6",
+   "question": "What was Salesforce's basic weighted average shares outstanding in fiscal year 2025?",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-241692c4fef6",
+    "family:conversational",
+    "template:lookup-conv-1",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:lookup"
+   ],
+   "ticker": "CRM",
+   "unit": "shares"
+  },
+  "googl_ccl_diff": {
+   "cik": 1652044,
+   "concept": "us-gaap:ContractWithCustomerLiability",
+   "expected_value": 2600000000,
+   "fy": 2025,
+   "id": "int-4ae1be3f1065-00e370c0",
+   "key": {
+    "definition": "difference",
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001652044-26-000018",
+      "calendar_year": null,
+      "cik": "0001652044",
+      "concept": "us-gaap:ContractWithCustomerLiability",
+      "decimals": -8,
+      "filed": "2026-02-05",
+      "fiscal_year": 2024,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-12-31",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 6000000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001652044-26-000084",
+      "calendar_year": null,
+      "cik": "0001652044",
+      "concept": "us-gaap:ContractWithCustomerLiability",
+      "decimals": null,
+      "filed": "2026-10-29",
+      "fiscal_year": 2025,
+      "form": "10-Q",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-12-31",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "single-source",
+      "unit": "USD",
+      "value": 8600000000,
+      "verified_by": []
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S4",
+     "S6"
+    ],
+    "same_filing": false,
+    "source": "sec_companyfacts",
+    "status": "single-source"
+   },
+   "kind": "compute",
+   "origin": "v2:compute.difference",
+   "paraphrase_group": "int-4ae1be3f1065",
+   "question": "How far did Alphabet's Contract with Customer, Liability move from the fiscal year ended December 31, 2024 to the fiscal year ended December 31, 2025, in absolute terms?",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-4ae1be3f1065",
+    "family:conversational",
+    "template:diff-conv-2",
+    "key_source:sec_companyfacts",
+    "key_status:single-source",
+    "shape:compute.difference"
+   ],
+   "ticker": "GOOGL",
+   "unit": "USD"
+  },
+  "intc_opinc": {
+   "cik": 50863,
+   "concept": "us-gaap:OperatingIncomeLoss",
+   "expected_value": 93000000,
+   "fy": 2023,
+   "id": "int-01028e0e186d-004d469e",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0000050863-26-000011",
+      "calendar_year": null,
+      "cik": "0000050863",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "decimals": -6,
+      "filed": "2026-01-23",
+      "fiscal_year": 2023,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2023-12-30",
+      "period_start": "2023-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 93000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S6"
+    ],
+    "same_filing": null,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "lookup",
+   "origin": "v2:lookup",
+   "paraphrase_group": "int-01028e0e186d",
+   "question": "What was INTC's operating income in FY23?",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-01028e0e186d",
+    "family:conversational",
+    "template:lookup-conv-1",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:lookup"
+   ],
+   "ticker": "INTC",
+   "unit": "USD"
+  },
+  "meta_equity_trend": {
+   "cik": 1326801,
+   "concept": "us-gaap:StockholdersEquity",
+   "expected_rows": [
+    {
+     "entity": "FY2023",
+     "fiscal_year": 2023,
+     "period_end": "2023-12-31",
+     "value": 153168000000
+    },
+    {
+     "entity": "FY2024",
+     "fiscal_year": 2024,
+     "period_end": "2024-12-31",
+     "value": 182637000000
+    },
+    {
+     "entity": "FY2025",
+     "fiscal_year": 2025,
+     "period_end": "2025-12-31",
+     "value": 217243000000
+    }
+   ],
+   "fy": 2025,
+   "id": "int-548774abac0e-0157682f",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001628280-26-003942",
+      "calendar_year": null,
+      "cik": "0001326801",
+      "concept": "us-gaap:StockholdersEquity",
+      "decimals": -6,
+      "filed": "2026-01-29",
+      "fiscal_year": 2023,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2023-12-31",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 153168000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001628280-26-066773",
+      "calendar_year": null,
+      "cik": "0001326801",
+      "concept": "us-gaap:StockholdersEquity",
+      "decimals": null,
+      "filed": "2026-10-22",
+      "fiscal_year": 2024,
+      "form": "10-Q",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-12-31",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "single-source",
+      "unit": "USD",
+      "value": 182637000000,
+      "verified_by": []
+     },
+     {
+      "accession": "0001628280-26-066773",
+      "calendar_year": null,
+      "cik": "0001326801",
+      "concept": "us-gaap:StockholdersEquity",
+      "decimals": null,
+      "filed": "2026-10-22",
+      "fiscal_year": 2025,
+      "form": "10-Q",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-12-31",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "single-source",
+      "unit": "USD",
+      "value": 217243000000,
+      "verified_by": []
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S6"
+    ],
+    "same_filing": false,
+    "source": "sec_companyfacts",
+    "status": "single-source"
+   },
+   "kind": "breakdown",
+   "order_sensitive": false,
+   "origin": "v2:trend",
+   "paraphrase_group": "int-548774abac0e",
+   "question": "META Stockholders' Equity Attributable to Parent trend, FY23 through FY25",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-548774abac0e",
+    "family:terse",
+    "template:trend-terse-1",
+    "key_source:sec_companyfacts",
+    "key_status:single-source",
+    "shape:trend"
+   ],
+   "ticker": "META",
+   "unit": "USD"
+  },
+  "meta_intinc_yoy": {
+   "alt_values": [
+    -15.653555820421136
+   ],
+   "cik": 1326801,
+   "expected_value": -0.15653555820421136,
+   "fy": 2025,
+   "id": "int-1bb19a4aed8c-007740fc",
+   "key": {
+    "definition": "growth",
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001628280-26-003942",
+      "calendar_year": null,
+      "cik": "0001326801",
+      "concept": "us-gaap:InvestmentIncomeInterest",
+      "decimals": -6,
+      "filed": "2026-01-29",
+      "fiscal_year": 2024,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-12-31",
+      "period_start": "2024-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "as_reported",
+      "status": "verified",
+      "unit": "USD",
+      "value": 2517000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001628280-26-003942",
+      "calendar_year": null,
+      "cik": "0001326801",
+      "concept": "us-gaap:InvestmentIncomeInterest",
+      "decimals": -6,
+      "filed": "2026-01-29",
+      "fiscal_year": 2025,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-12-31",
+      "period_start": "2025-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "as_reported",
+      "status": "verified",
+      "unit": "USD",
+      "value": 2123000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S4",
+     "S6"
+    ],
+    "same_filing": true,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "compute",
+   "origin": "v2:compute.yoy_growth",
+   "paraphrase_group": "int-1bb19a4aed8c",
+   "question": "Meta interest income growth, fiscal 2024 to fiscal 2025, %",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-1bb19a4aed8c",
+    "family:terse",
+    "template:yoy-terse-2",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:compute.yoy_growth"
+   ],
+   "ticker": "META"
+  },
+  "msft_dps": {
+   "cik": 789019,
+   "concept": "us-gaap:CommonStockDividendsPerShareDeclared",
+   "expected_value": 3,
+   "fy": 2024,
+   "id": "int-d07328c9f55a-015c70bf",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001193125-26-323660",
+      "calendar_year": null,
+      "cik": "0000789019",
+      "concept": "us-gaap:CommonStockDividendsPerShareDeclared",
+      "decimals": null,
+      "filed": "2026-07-29",
+      "fiscal_year": 2024,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-06-30",
+      "period_start": "2023-07-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD/shares",
+      "value": 3,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S6"
+    ],
+    "same_filing": null,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "lookup",
+   "origin": "v2:lookup",
+   "paraphrase_group": "int-d07328c9f55a",
+   "question": "Can you pull MSFT's DPS for the fiscal year ended June 30, 2024?",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-d07328c9f55a",
+    "family:conversational",
+    "template:lookup-conv-3",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:lookup"
+   ],
+   "ticker": "MSFT",
+   "unit": "USD/shares"
+  },
+  "msft_dps_diff": {
+   "cik": 789019,
+   "concept": "us-gaap:CommonStockDividendsPerShareDeclared",
+   "expected_value": 0.2799999999999998,
+   "fy": 2024,
+   "id": "int-60fe5995b9d0-01679867",
+   "key": {
+    "definition": "difference",
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0000950170-25-100235",
+      "calendar_year": null,
+      "cik": "0000789019",
+      "concept": "us-gaap:CommonStockDividendsPerShareDeclared",
+      "decimals": null,
+      "filed": "2025-07-30",
+      "fiscal_year": 2023,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2023-06-30",
+      "period_start": "2022-07-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD/shares",
+      "value": 2.72,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001193125-26-323660",
+      "calendar_year": null,
+      "cik": "0000789019",
+      "concept": "us-gaap:CommonStockDividendsPerShareDeclared",
+      "decimals": null,
+      "filed": "2026-07-29",
+      "fiscal_year": 2024,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-06-30",
+      "period_start": "2023-07-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD/shares",
+      "value": 3,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S4",
+     "S6"
+    ],
+    "same_filing": false,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "compute",
+   "origin": "v2:compute.difference",
+   "paraphrase_group": "int-60fe5995b9d0",
+   "question": "How far did Microsoft's Common Stock, Dividends, Per Share, Declared move from fiscal 2023 to fiscal 2024, in absolute terms?",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-60fe5995b9d0",
+    "family:conversational",
+    "template:diff-conv-2",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:compute.difference"
+   ],
+   "ticker": "MSFT",
+   "unit": "USD/shares"
+  },
+  "msft_tax_yoy": {
+   "alt_values": [
+    10.91038623988601
+   ],
+   "cik": 789019,
+   "expected_value": 0.10910386239886011,
+   "fy": 2025,
+   "id": "int-0d0ef5d9b4ee-00d56d67",
+   "key": {
+    "definition": "growth",
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001193125-26-323660",
+      "calendar_year": null,
+      "cik": "0000789019",
+      "concept": "us-gaap:IncomeTaxExpenseBenefit",
+      "decimals": -6,
+      "filed": "2026-07-29",
+      "fiscal_year": 2024,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-06-30",
+      "period_start": "2023-07-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "as_reported",
+      "status": "verified",
+      "unit": "USD",
+      "value": 19651000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001193125-26-323660",
+      "calendar_year": null,
+      "cik": "0000789019",
+      "concept": "us-gaap:IncomeTaxExpenseBenefit",
+      "decimals": -6,
+      "filed": "2026-07-29",
+      "fiscal_year": 2025,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-06-30",
+      "period_start": "2024-07-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "as_reported",
+      "status": "verified",
+      "unit": "USD",
+      "value": 21795000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S4",
+     "S6"
+    ],
+    "same_filing": true,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "compute",
+   "origin": "v2:compute.yoy_growth",
+   "paraphrase_group": "int-0d0ef5d9b4ee",
+   "question": "What was the year-over-year percentage change in MSFT's provision for income taxes for fiscal year 2025?",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-0d0ef5d9b4ee",
+    "family:formal",
+    "template:yoy-formal-1",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:compute.yoy_growth"
+   ],
+   "ticker": "MSFT"
+  },
+  "mu_eps_pit": {
+   "cik": 723125,
+   "concept": "us-gaap:EarningsPerShareDiluted",
+   "expected_value": -5.34,
+   "fy": 2023,
+   "id": "int-5051277cfeee-011e355f",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0000723125-25-000028",
+      "calendar_year": null,
+      "cik": "0000723125",
+      "concept": "us-gaap:EarningsPerShareDiluted",
+      "decimals": 2,
+      "filed": "2025-10-03",
+      "fiscal_year": 2023,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2023-08-31",
+      "period_start": "2022-09-02",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "as_reported",
+      "status": "verified",
+      "unit": "USD/shares",
+      "value": -5.34,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S6"
+    ],
+    "same_filing": null,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "lookup",
+   "origin": "v2:point_in_time",
+   "paraphrase_group": "int-5051277cfeee",
+   "question": "Please state the EPS for fiscal year 2023 that Micron Technology, Inc. presented as a comparative figure in its annual report for fiscal year 2025.",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-5051277cfeee",
+    "family:formal",
+    "template:pit-formal-2",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:point_in_time"
+   ],
+   "ticker": "MU",
+   "unit": "USD/shares"
+  },
+  "nflx_ga_pit": {
+   "cik": 1065280,
+   "concept": "us-gaap:GeneralAndAdministrativeExpense",
+   "expected_value": 1720285000,
+   "fy": 2023,
+   "id": "int-4bc1b4052e79-008d74d6",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001065280-26-000034",
+      "calendar_year": null,
+      "cik": "0001065280",
+      "concept": "us-gaap:GeneralAndAdministrativeExpense",
+      "decimals": -3,
+      "filed": "2026-01-23",
+      "fiscal_year": 2023,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2023-12-31",
+      "period_start": "2023-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "as_reported",
+      "status": "verified",
+      "unit": "USD",
+      "value": 1720285000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S6"
+    ],
+    "same_filing": null,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "lookup",
+   "origin": "v2:point_in_time",
+   "paraphrase_group": "int-4bc1b4052e79",
+   "question": "Netflix, Inc. general and administrative costs the fiscal year ended December 31, 2023, as reported in the annual report for the fiscal year ended December 31, 2025",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-4bc1b4052e79",
+    "family:terse",
+    "template:pit-terse-1",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:point_in_time"
+   ],
+   "ticker": "NFLX",
+   "unit": "USD"
+  },
+  "nflx_rd_ratio": {
+   "alt_values": [
+    7.934449588366167
+   ],
+   "cik": 1065280,
+   "expected_value": 0.07934449588366167,
+   "fy": 2023,
+   "id": "int-0146a5af454c-008ec20c",
+   "key": {
+    "definition": "rd_intensity",
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001065280-26-000034",
+      "calendar_year": null,
+      "cik": "0001065280",
+      "concept": "us-gaap:ResearchAndDevelopmentExpense",
+      "decimals": -3,
+      "filed": "2026-01-23",
+      "fiscal_year": 2023,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2023-12-31",
+      "period_start": "2023-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 2675758000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001065280-26-000034",
+      "calendar_year": null,
+      "cik": "0001065280",
+      "concept": "us-gaap:Revenues",
+      "decimals": -3,
+      "filed": "2026-01-23",
+      "fiscal_year": 2023,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2023-12-31",
+      "period_start": "2023-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 33723297000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S4",
+     "S6"
+    ],
+    "same_filing": null,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "compute",
+   "origin": "v2:compute.ratio",
+   "paraphrase_group": "int-0146a5af454c",
+   "question": "What was the ratio of Research and Development Expense to Revenues at NFLX for FY23?",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-0146a5af454c",
+    "family:conversational",
+    "template:ratio-conv-2",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:compute.ratio"
+   ],
+   "ticker": "NFLX"
+  },
+  "nvda_eps": {
+   "cik": 1045810,
+   "concept": "us-gaap:EarningsPerShareDiluted",
+   "expected_value": 1.19,
+   "fy": 2024,
+   "id": "int-21db19924f4b-002251c1",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001045810-26-000021",
+      "calendar_year": null,
+      "cik": "0001045810",
+      "concept": "us-gaap:EarningsPerShareDiluted",
+      "decimals": 2,
+      "filed": "2026-02-25",
+      "fiscal_year": 2024,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-01-28",
+      "period_start": "2023-01-30",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD/shares",
+      "value": 1.19,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S6"
+    ],
+    "same_filing": null,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "lookup",
+   "origin": "v2:lookup",
+   "paraphrase_group": "int-21db19924f4b",
+   "question": "Please state the Earnings Per Share, Diluted reported by NVDA for fiscal year 2024.",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-21db19924f4b",
+    "family:formal",
+    "template:lookup-formal-1",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:lookup"
+   ],
+   "ticker": "NVDA",
+   "unit": "USD/shares"
+  },
+  "pg_nonop_diff": {
+   "cik": 80424,
+   "concept": "us-gaap:OtherNonoperatingIncomeExpense",
+   "expected_value": -514000000,
+   "fy": 2025,
+   "id": "int-abb5d2cfac63-006828a2",
+   "key": {
+    "definition": "difference",
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0000080424-26-000103",
+      "calendar_year": null,
+      "cik": "0000080424",
+      "concept": "us-gaap:OtherNonoperatingIncomeExpense",
+      "decimals": -6,
+      "filed": "2026-08-04",
+      "fiscal_year": 2024,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-06-30",
+      "period_start": "2023-07-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "as_reported",
+      "status": "verified",
+      "unit": "USD",
+      "value": 668000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000080424-26-000103",
+      "calendar_year": null,
+      "cik": "0000080424",
+      "concept": "us-gaap:OtherNonoperatingIncomeExpense",
+      "decimals": -6,
+      "filed": "2026-08-04",
+      "fiscal_year": 2025,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-06-30",
+      "period_start": "2024-07-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "as_reported",
+      "status": "verified",
+      "unit": "USD",
+      "value": 154000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S4",
+     "S6"
+    ],
+    "same_filing": true,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "compute",
+   "origin": "v2:compute.difference",
+   "paraphrase_group": "int-abb5d2cfac63",
+   "question": "By how much did Procter & Gamble's Other Nonoperating Income (Expense) change between fiscal year 2024 and fiscal year 2025?",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-abb5d2cfac63",
+    "family:conversational",
+    "template:diff-conv-1",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:compute.difference"
+   ],
+   "ticker": "PG",
+   "unit": "USD"
+  },
+  "qcom_pretax_cagr": {
+   "alt_values": [
+    30.435045475787902
+   ],
+   "cik": 804328,
+   "expected_value": 0.30435045475787903,
+   "fy": 2025,
+   "id": "int-2288a33fd0aa-006fc9c1",
+   "key": {
+    "definition": "cagr",
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0000804328-25-000085",
+      "calendar_year": null,
+      "cik": "0000804328",
+      "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "decimals": -6,
+      "filed": "2025-11-05",
+      "fiscal_year": 2023,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2023-09-24",
+      "period_start": "2022-09-26",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "as_reported",
+      "status": "verified",
+      "unit": "USD",
+      "value": 7443000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000804328-25-000085",
+      "calendar_year": null,
+      "cik": "0000804328",
+      "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "decimals": -6,
+      "filed": "2025-11-05",
+      "fiscal_year": 2025,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-09-28",
+      "period_start": "2024-09-30",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "as_reported",
+      "status": "verified",
+      "unit": "USD",
+      "value": 12663000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S4",
+     "S6"
+    ],
+    "same_filing": true,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "compute",
+   "origin": "v2:compute.cagr",
+   "paraphrase_group": "int-2288a33fd0aa",
+   "question": "QCOM income before income taxes CAGR, the fiscal year ended September 24, 2023 to the fiscal year ended September 28, 2025",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-2288a33fd0aa",
+    "family:terse",
+    "template:cagr-terse-1",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:compute.cagr"
+   ],
+   "ticker": "QCOM"
+  },
+  "semis_ni_top3": {
+   "disclosures": {
+    "disclose_period_ends": true,
+    "excluded": [
+     {
+      "reason": "currency",
+      "ticker": "TSM"
+     }
+    ],
+    "members": 8,
+    "period_ends": {
+     "AMD": "2025-12-27",
+     "AVGO": "2025-11-02",
+     "INTC": "2025-12-27",
+     "MU": "2025-08-28",
+     "NVDA": "2025-01-26",
+     "QCOM": "2025-09-28",
+     "TXN": "2025-12-31"
+    },
+    "ranked": [
+     "NVDA",
+     "AVGO",
+     "MU",
+     "QCOM",
+     "TXN",
+     "AMD",
+     "INTC"
+    ],
+    "universe": "semiconductors"
+   },
+   "expected_rows": [
+    {
+     "fiscal_year": 2025,
+     "period_end": "2025-01-26",
+     "ticker": "NVDA",
+     "value": 72880000000
+    },
+    {
+     "fiscal_year": 2025,
+     "period_end": "2025-11-02",
+     "ticker": "AVGO",
+     "value": 23126000000
+    },
+    {
+     "fiscal_year": 2025,
+     "period_end": "2025-08-28",
+     "ticker": "MU",
+     "value": 8539000000
+    }
+   ],
+   "fy": 2025,
+   "id": "int-05a90cb5f16e-005be6dc",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001045810-26-000021",
+      "calendar_year": null,
+      "cik": "0001045810",
+      "concept": "us-gaap:NetIncomeLoss",
+      "decimals": -6,
+      "filed": "2026-02-25",
+      "fiscal_year": 2025,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-01-26",
+      "period_start": "2024-01-29",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 72880000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001730168-25-000121",
+      "calendar_year": null,
+      "cik": "0001730168",
+      "concept": "us-gaap:ProfitLoss",
+      "decimals": -6,
+      "filed": "2025-12-18",
+      "fiscal_year": 2025,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-11-02",
+      "period_start": "2024-11-04",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 23126000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000723125-26-000023",
+      "calendar_year": null,
+      "cik": "0000723125",
+      "concept": "us-gaap:NetIncomeLoss",
+      "decimals": -6,
+      "filed": "2026-10-09",
+      "fiscal_year": 2025,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-08-28",
+      "period_start": "2024-08-30",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 8539000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000804328-25-000085",
+      "calendar_year": null,
+      "cik": "0000804328",
+      "concept": "us-gaap:NetIncomeLoss",
+      "decimals": -6,
+      "filed": "2025-11-05",
+      "fiscal_year": 2025,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-09-28",
+      "period_start": "2024-09-30",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 5541000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000097476-26-000059",
+      "calendar_year": null,
+      "cik": "0000097476",
+      "concept": "us-gaap:NetIncomeLoss",
+      "decimals": -6,
+      "filed": "2026-02-06",
+      "fiscal_year": 2025,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-12-31",
+      "period_start": "2025-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 5001000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000002488-26-000018",
+      "calendar_year": null,
+      "cik": "0000002488",
+      "concept": "us-gaap:NetIncomeLoss",
+      "decimals": -6,
+      "filed": "2026-02-04",
+      "fiscal_year": 2025,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-12-27",
+      "period_start": "2024-12-29",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 4335000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000050863-26-000011",
+      "calendar_year": null,
+      "cik": "0000050863",
+      "concept": "us-gaap:NetIncomeLoss",
+      "decimals": -6,
+      "filed": "2026-01-23",
+      "fiscal_year": 2025,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-12-27",
+      "period_start": "2024-12-29",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": -267000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S3",
+     "S5",
+     "S6"
+    ],
+    "same_filing": null,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "screen",
+   "origin": "v2:screen.top",
+   "paraphrase_group": "int-05a90cb5f16e",
+   "question": "top 3 by net income among the semiconductor companies, FY25",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-05a90cb5f16e",
+    "family:terse",
+    "template:top-terse-1",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:screen.top"
+   ],
+   "top_n": 3,
+   "unit": "USD"
+  },
+  "tsla_ni_trend": {
+   "cik": 1318605,
+   "concept": "us-gaap:NetIncomeLoss",
+   "expected_rows": [
+    {
+     "entity": "FY2023",
+     "fiscal_year": 2023,
+     "period_end": "2023-12-31",
+     "value": 14997000000
+    },
+    {
+     "entity": "FY2024",
+     "fiscal_year": 2024,
+     "period_end": "2024-12-31",
+     "value": 7091000000
+    },
+    {
+     "entity": "FY2025",
+     "fiscal_year": 2025,
+     "period_end": "2025-12-31",
+     "value": 3794000000
+    }
+   ],
+   "fy": 2025,
+   "id": "int-03c77d1d4aa0-010a4ef4",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001628280-26-003952",
+      "calendar_year": null,
+      "cik": "0001318605",
+      "concept": "us-gaap:NetIncomeLoss",
+      "decimals": -6,
+      "filed": "2026-01-29",
+      "fiscal_year": 2023,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2023-12-31",
+      "period_start": "2023-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "as_reported",
+      "status": "verified",
+      "unit": "USD",
+      "value": 14997000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001628280-26-003952",
+      "calendar_year": null,
+      "cik": "0001318605",
+      "concept": "us-gaap:NetIncomeLoss",
+      "decimals": -6,
+      "filed": "2026-01-29",
+      "fiscal_year": 2024,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-12-31",
+      "period_start": "2024-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "as_reported",
+      "status": "verified",
+      "unit": "USD",
+      "value": 7091000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001628280-26-003952",
+      "calendar_year": null,
+      "cik": "0001318605",
+      "concept": "us-gaap:NetIncomeLoss",
+      "decimals": -6,
+      "filed": "2026-01-29",
+      "fiscal_year": 2025,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-12-31",
+      "period_start": "2025-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "as_reported",
+      "status": "verified",
+      "unit": "USD",
+      "value": 3794000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S6"
+    ],
+    "same_filing": true,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "breakdown",
+   "order_sensitive": false,
+   "origin": "v2:trend",
+   "paraphrase_group": "int-03c77d1d4aa0",
+   "question": "Can you walk me through Tesla's NI year by year from fiscal year 2023 to fiscal year 2025?",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-03c77d1d4aa0",
+    "family:conversational",
+    "template:trend-conv-2",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:trend"
+   ],
+   "ticker": "TSLA",
+   "unit": "USD"
+  },
+  "tsla_pretax_cagr": {
+   "alt_values": [
+    -27.269655738954
+   ],
+   "cik": 1318605,
+   "expected_value": -0.27269655738954,
+   "fy": 2025,
+   "id": "int-d3cefdc64e8f-0198bde0",
+   "key": {
+    "definition": "cagr",
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001628280-25-003063",
+      "calendar_year": null,
+      "cik": "0001318605",
+      "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "decimals": -6,
+      "filed": "2025-01-30",
+      "fiscal_year": 2022,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-12-31",
+      "period_start": "2022-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 13719000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001628280-26-003952",
+      "calendar_year": null,
+      "cik": "0001318605",
+      "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "decimals": -6,
+      "filed": "2026-01-29",
+      "fiscal_year": 2025,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-12-31",
+      "period_start": "2025-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "USD",
+      "value": 5278000000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S4",
+     "S6"
+    ],
+    "same_filing": false,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "compute",
+   "origin": "v2:compute.cagr",
+   "paraphrase_group": "int-d3cefdc64e8f",
+   "question": "What was the compound annual growth rate of TSLA's earnings before taxes from fiscal 2022 to fiscal 2025?",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-d3cefdc64e8f",
+    "family:formal",
+    "template:cagr-formal-1",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:compute.cagr"
+   ],
+   "ticker": "TSLA"
+  },
+  "tsm_cash": {
+   "cik": 1046179,
+   "concept": "ifrs-full:CashAndCashEquivalents",
+   "expected_value": 1342814100000,
+   "fy": 2022,
+   "id": "int-1f34faa1da08-00dad23b",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001193125-25-083423",
+      "calendar_year": null,
+      "cik": "0001046179",
+      "concept": "ifrs-full:CashAndCashEquivalents",
+      "decimals": -5,
+      "filed": "2025-04-17",
+      "fiscal_year": 2022,
+      "form": "20-F",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-12-31",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "TWD",
+      "value": 1342814100000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S6"
+    ],
+    "same_filing": null,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "lookup",
+   "origin": "v2:lookup",
+   "paraphrase_group": "int-1f34faa1da08",
+   "question": "TSM Cash and Cash Equivalents, at Carrying Value FY22",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-1f34faa1da08",
+    "family:terse",
+    "template:lookup-terse-1",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:lookup"
+   ],
+   "ticker": "TSM",
+   "unit": "TWD"
+  },
+  "tsm_gp_trend": {
+   "cik": 1046179,
+   "concept": "ifrs-full:GrossProfit",
+   "expected_rows": [
+    {
+     "entity": "FY2022",
+     "fiscal_year": 2022,
+     "period_end": "2022-12-31",
+     "value": 1348354800000
+    },
+    {
+     "entity": "FY2023",
+     "fiscal_year": 2023,
+     "period_end": "2023-12-31",
+     "value": 1175110600000
+    },
+    {
+     "entity": "FY2024",
+     "fiscal_year": 2024,
+     "period_end": "2024-12-31",
+     "value": 1624353600000
+    }
+   ],
+   "fy": 2024,
+   "id": "int-5c685209cc7a-00861698",
+   "key": {
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001193125-25-083423",
+      "calendar_year": null,
+      "cik": "0001046179",
+      "concept": "ifrs-full:GrossProfit",
+      "decimals": -5,
+      "filed": "2025-04-17",
+      "fiscal_year": 2022,
+      "form": "20-F",
+      "key_source": "sec_companyfacts",
+      "period_end": "2022-12-31",
+      "period_start": "2022-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "as_reported",
+      "status": "verified",
+      "unit": "TWD",
+      "value": 1348354800000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001193125-25-083423",
+      "calendar_year": null,
+      "cik": "0001046179",
+      "concept": "ifrs-full:GrossProfit",
+      "decimals": -5,
+      "filed": "2025-04-17",
+      "fiscal_year": 2023,
+      "form": "20-F",
+      "key_source": "sec_companyfacts",
+      "period_end": "2023-12-31",
+      "period_start": "2023-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "as_reported",
+      "status": "verified",
+      "unit": "TWD",
+      "value": 1175110600000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001193125-25-083423",
+      "calendar_year": null,
+      "cik": "0001046179",
+      "concept": "ifrs-full:GrossProfit",
+      "decimals": -5,
+      "filed": "2025-04-17",
+      "fiscal_year": 2024,
+      "form": "20-F",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-12-31",
+      "period_start": "2024-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "as_reported",
+      "status": "verified",
+      "unit": "TWD",
+      "value": 1624353600000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S6"
+    ],
+    "same_filing": true,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "breakdown",
+   "order_sensitive": false,
+   "origin": "v2:trend",
+   "paraphrase_group": "int-5c685209cc7a",
+   "question": "Can you walk me through TSMC's gross profit dollars year by year from fiscal year 2022 to fiscal year 2024?",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-5c685209cc7a",
+    "family:conversational",
+    "template:trend-conv-2",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:trend"
+   ],
+   "ticker": "TSM",
+   "unit": "TWD"
+  },
+  "tsm_rd_ratio": {
+   "alt_values": [
+    7.054598928787012
+   ],
+   "cik": 1046179,
+   "expected_value": 0.07054598928787012,
+   "fy": 2024,
+   "id": "int-06cd6ac27f98-000fea8f",
+   "key": {
+    "definition": "rd_intensity",
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0001193125-25-083423",
+      "calendar_year": null,
+      "cik": "0001046179",
+      "concept": "ifrs-full:ResearchAndDevelopmentExpense",
+      "decimals": -5,
+      "filed": "2025-04-17",
+      "fiscal_year": 2024,
+      "form": "20-F",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-12-31",
+      "period_start": "2024-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "TWD",
+      "value": 204181800000,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0001193125-25-083423",
+      "calendar_year": null,
+      "cik": "0001046179",
+      "concept": "ifrs-full:Revenue",
+      "decimals": -5,
+      "filed": "2025-04-17",
+      "fiscal_year": 2024,
+      "form": "20-F",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-12-31",
+      "period_start": "2024-01-01",
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "TWD",
+      "value": 2894307700000,
+      "verified_by": [
+       "fact_store"
+      ]
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S4",
+     "S6"
+    ],
+    "same_filing": null,
+    "source": "sec_companyfacts",
+    "status": "verified"
+   },
+   "kind": "compute",
+   "origin": "v2:compute.ratio",
+   "paraphrase_group": "int-06cd6ac27f98",
+   "question": "TSM R&D spend / total revenue, FY24",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-06cd6ac27f98",
+    "family:terse",
+    "template:ratio-terse-1",
+    "key_source:sec_companyfacts",
+    "key_status:verified",
+    "shape:compute.ratio"
+   ],
+   "ticker": "TSM"
+  },
+  "unp_shares_trend": {
+   "cik": 100885,
+   "concept": "us-gaap:CommonStockSharesOutstanding",
+   "expected_rows": [
+    {
+     "alt_readings": [
+      {
+       "accession": "0001437749-24-003599",
+       "concept": "dei:EntityCommonStockSharesOutstanding",
+       "period_end": "2024-02-02",
+       "reading": "cover_page",
+       "value": 609777914
+      }
+     ],
+     "entity": "FY2023",
+     "fiscal_year": 2023,
+     "period_end": "2023-12-31",
+     "value": 609703814
+    },
+    {
+     "alt_readings": [
+      {
+       "accession": "0000100885-25-000042",
+       "concept": "dei:EntityCommonStockSharesOutstanding",
+       "period_end": "2025-01-31",
+       "reading": "cover_page",
+       "value": 604286378
+      }
+     ],
+     "entity": "FY2024",
+     "fiscal_year": 2024,
+     "period_end": "2024-12-31",
+     "value": 604241260
+    },
+    {
+     "alt_readings": [
+      {
+       "accession": "0000100885-26-000037",
+       "concept": "dei:EntityCommonStockSharesOutstanding",
+       "period_end": "2026-01-30",
+       "reading": "cover_page",
+       "value": 593391460
+      }
+     ],
+     "entity": "FY2025",
+     "fiscal_year": 2025,
+     "period_end": "2025-12-31",
+     "value": 593245884
+    }
+   ],
+   "fy": 2025,
+   "id": "int-e7396d5254a1-004a160f",
+   "key": {
+    "alternates": [
+     {
+      "accession": "0001437749-24-003599",
+      "calendar_year": null,
+      "cik": "0000100885",
+      "concept": "dei:EntityCommonStockSharesOutstanding",
+      "decimals": null,
+      "filed": "2024-02-09",
+      "fiscal_year": 2023,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-02-02",
+      "period_start": null,
+      "policies": [
+       "S2",
+       "S6"
+      ],
+      "selection": "cover_page",
+      "status": "single-source",
+      "unit": "shares",
+      "value": 609777914,
+      "verified_by": []
+     },
+     {
+      "accession": "0000100885-25-000042",
+      "calendar_year": null,
+      "cik": "0000100885",
+      "concept": "dei:EntityCommonStockSharesOutstanding",
+      "decimals": null,
+      "filed": "2025-02-07",
+      "fiscal_year": 2024,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-01-31",
+      "period_start": null,
+      "policies": [
+       "S2",
+       "S6"
+      ],
+      "selection": "cover_page",
+      "status": "single-source",
+      "unit": "shares",
+      "value": 604286378,
+      "verified_by": []
+     },
+     {
+      "accession": "0000100885-26-000037",
+      "calendar_year": null,
+      "cik": "0000100885",
+      "concept": "dei:EntityCommonStockSharesOutstanding",
+      "decimals": null,
+      "filed": "2026-02-06",
+      "fiscal_year": 2025,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2026-01-30",
+      "period_start": null,
+      "policies": [
+       "S2",
+       "S6"
+      ],
+      "selection": "cover_page",
+      "status": "single-source",
+      "unit": "shares",
+      "value": 593391460,
+      "verified_by": []
+     }
+    ],
+    "definition": null,
+    "disagreements": [],
+    "inputs": [
+     {
+      "accession": "0000100885-25-000042",
+      "calendar_year": null,
+      "cik": "0000100885",
+      "concept": "us-gaap:CommonStockSharesOutstanding",
+      "decimals": null,
+      "filed": "2025-02-07",
+      "fiscal_year": 2023,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2023-12-31",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "shares",
+      "value": 609703814,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000100885-26-000037",
+      "calendar_year": null,
+      "cik": "0000100885",
+      "concept": "us-gaap:CommonStockSharesOutstanding",
+      "decimals": null,
+      "filed": "2026-02-06",
+      "fiscal_year": 2024,
+      "form": "10-K",
+      "key_source": "sec_companyfacts",
+      "period_end": "2024-12-31",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "verified",
+      "unit": "shares",
+      "value": 604241260,
+      "verified_by": [
+       "fact_store"
+      ]
+     },
+     {
+      "accession": "0000100885-26-000321",
+      "calendar_year": null,
+      "cik": "0000100885",
+      "concept": "us-gaap:CommonStockSharesOutstanding",
+      "decimals": null,
+      "filed": "2026-10-22",
+      "fiscal_year": 2025,
+      "form": "10-Q",
+      "key_source": "sec_companyfacts",
+      "period_end": "2025-12-31",
+      "period_start": null,
+      "policies": [
+       "S1",
+       "S2",
+       "S6"
+      ],
+      "selection": "latest_filed",
+      "status": "single-source",
+      "unit": "shares",
+      "value": 593245884,
+      "verified_by": []
+     }
+    ],
+    "policies": [
+     "S1",
+     "S2",
+     "S6"
+    ],
+    "same_filing": false,
+    "source": "sec_companyfacts",
+    "status": "single-source"
+   },
+   "kind": "breakdown",
+   "order_sensitive": false,
+   "origin": "v2:trend",
+   "paraphrase_group": "int-e7396d5254a1",
+   "question": "Please present Union Pacific's shares outstanding for each year from fiscal 2023 through fiscal 2025.",
+   "rel_tol": 0.0001,
+   "suite": "xbrl_v2_dev",
+   "tags": [
+    "split:dev",
+    "intent:int-e7396d5254a1",
+    "family:formal",
+    "template:trend-formal-1",
+    "key_source:sec_companyfacts",
+    "key_status:single-source",
+    "shape:trend"
+   ],
+   "ticker": "UNP",
+   "unit": "shares"
+  }
+ },
+ "source": "data/eval/v2_frozen/xbrl_v2_dev.json (split dev, suite content_hash sha256:01c4c0336e32e8329036782888aacf653787a9150d2c8509468dbe3a6c743124), copied verbatim; SEC companyfacts values are public-domain"
+}

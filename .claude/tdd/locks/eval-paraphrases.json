@@ -1,0 +1,288 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-29",
+  "criteria": {
+    "C1": [
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_fields_stored_point",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[0]",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[1]",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[2]",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[3]",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[4]",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[5]",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[6]",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[7]",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[8]",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[9]",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[10]",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[11]",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[12]",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[13]",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[14]",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[15]",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_years_sorted_set_property"
+    ],
+    "C10": [
+      "test/spec/eval-paraphrases/test_c9_c10_split_freeze.py::test_c10_hash_and_round_trip_point",
+      "test/spec/eval-paraphrases/test_c9_c10_split_freeze.py::test_c10_reimport_metamorphic"
+    ],
+    "C11": [
+      "test/spec/eval-paraphrases/test_c11_no_text.py::test_c11_report_point",
+      "test/spec/eval-paraphrases/test_c11_no_text.py::test_c11_errors_carry_no_text_point",
+      "test/spec/eval-paraphrases/test_c11_no_text.py::test_c11_sealed_report_property"
+    ],
+    "C2": [
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c2_normalise_table_point",
+      "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c2_normalise_property"
+    ],
+    "C3": [
+      "test/spec/eval-paraphrases/test_c3_c4_export.py::test_c3_assign_personas_point",
+      "test/spec/eval-paraphrases/test_c3_c4_export.py::test_c3_export_exact_text_point",
+      "test/spec/eval-paraphrases/test_c3_c4_export.py::test_c3_export_errors_point",
+      "test/spec/eval-paraphrases/test_c3_c4_export.py::test_c3_export_partition_property"
+    ],
+    "C4": [
+      "test/spec/eval-paraphrases/test_c3_c4_export.py::test_c4_instructions_v1_point",
+      "test/spec/eval-paraphrases/test_c3_c4_export.py::test_c4_version_property"
+    ],
+    "C5": [
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_fixture_a_point",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_fixture_b_point",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_bom_crlf_point",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[blank first line]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[comment in body]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[date not real]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[date short form]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[date with time]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[duplicate model]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[empty case_id]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[empty model]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[empty paraphrase]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[extra key]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[json array]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[missing date]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[missing key]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[missing prompt]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[model anthropic]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[model chatgpt]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[model claude]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[model deepseek]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[model gpt]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[model o-series]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[model openai]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[no header]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[no records]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[non-string case_id]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[not json]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[persona wrong case]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[unknown header key]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[unknown persona]",
+      "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_round_trip_property"
+    ],
+    "C6": [
+      "test/spec/eval-paraphrases/test_c6_meaning.py::test_c6_fixture_records_point",
+      "test/spec/eval-paraphrases/test_c6_meaning.py::test_c6_each_reason_point",
+      "test/spec/eval-paraphrases/test_c6_meaning.py::test_c6_period_forms_point",
+      "test/spec/eval-paraphrases/test_c6_meaning.py::test_c6_drift_point",
+      "test/spec/eval-paraphrases/test_c6_meaning.py::test_c6_metamorphic_property"
+    ],
+    "C7": [
+      "test/spec/eval-paraphrases/test_c7_c8_import.py::test_c7_fixture_import_point",
+      "test/spec/eval-paraphrases/test_c7_c8_import.py::test_c7_import_errors_point",
+      "test/spec/eval-paraphrases/test_c7_c8_import.py::test_c7_order_invariance_property"
+    ],
+    "C8": [
+      "test/spec/eval-paraphrases/test_c7_c8_import.py::test_c8_fixture_duplicates_point",
+      "test/spec/eval-paraphrases/test_c7_c8_import.py::test_c8_other_intent_not_duplicate_point",
+      "test/spec/eval-paraphrases/test_c7_c8_import.py::test_c8_variants_collapse_property"
+    ],
+    "C9": [
+      "test/spec/eval-paraphrases/test_c9_c10_split_freeze.py::test_c9_split_point",
+      "test/spec/eval-paraphrases/test_c9_c10_split_freeze.py::test_c9_split_property"
+    ]
+  },
+  "files": {
+    "test/spec/eval-paraphrases/conftest.py": "ff3253b5a5ddee19bfca1641b18db1e3d224c25a32ead927135704039b334703",
+    "test/spec/eval-paraphrases/replies/reply_a.txt": "4b7b713d53e7f96bd583779a0fb2579e7bde147f549eb011ad1e8baddbb13692",
+    "test/spec/eval-paraphrases/replies/reply_b.txt": "9a8e45315b9ad45e315158f0472686b6166e98d5111bca57de2903b566be6eb3",
+    "test/spec/eval-paraphrases/test_c11_no_text.py": "ec3790219ee1a6dc11b7d6ed2cd63ecb4354033fe62925962b4ecb336c2b64be",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py": "e574f3dfd0f80f88193882cd113533aed6c6d6a1831d66023c08d6319f44f134",
+    "test/spec/eval-paraphrases/test_c3_c4_export.py": "090be98e13d8ff87ca447f18647d05e24fb8f9bdb5274bb9d8368ba304cee7b0",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py": "f51f9e8709ad0ba5861a11932a398338baeedc4ecbeb16aba9d091e4760c1f50",
+    "test/spec/eval-paraphrases/test_c6_meaning.py": "7dd6c13e221563f48f04688c2bcc784b858264d99eb96cc4cbfc0e10651c7204",
+    "test/spec/eval-paraphrases/test_c7_c8_import.py": "6c1d91d55487aad60ac065f365a5277525c74a71560776a6d9ac71628fb7ac55",
+    "test/spec/eval-paraphrases/test_c9_c10_split_freeze.py": "249c38497244703dd36caffcdc227fa31c4a75358bf383005e4d0d32ced1ef13"
+  },
+  "id": "eval-paraphrases",
+  "interface": [
+    {
+      "file": "src/eval/suites/paraphrases.py",
+      "module": "eval.suites.paraphrases",
+      "qualname": "ParaphraseSource.__init__",
+      "signature": "def __init__(self, case_id: str, question: str, *, intent_id: str, intent_axis: str, template_axis: str, company_forms: Sequence[str]=(), years: Sequence[int]=(), period_ends: Mapping[int, str] | None=None, metric_forms: Sequence[Sequence[str]]=(), universe_forms: Sequence[str]=(), forbidden_forms: Sequence[str]=()) -> None"
+    },
+    {
+      "file": "src/eval/suites/paraphrases.py",
+      "module": "eval.suites.paraphrases",
+      "qualname": "normalise",
+      "signature": "def normalise(text: str) -> str"
+    },
+    {
+      "file": "src/eval/suites/paraphrases.py",
+      "module": "eval.suites.paraphrases",
+      "qualname": "assign_personas",
+      "signature": "def assign_personas(case_id: str, k: int) -> tuple[str, ...]"
+    },
+    {
+      "file": "src/eval/suites/paraphrases.py",
+      "module": "eval.suites.paraphrases",
+      "qualname": "instructions_path",
+      "signature": "def instructions_path(version: str) -> Path"
+    },
+    {
+      "file": "src/eval/suites/paraphrases.py",
+      "module": "eval.suites.paraphrases",
+      "qualname": "export_batches",
+      "signature": "def export_batches(sources: Sequence[ParaphraseSource], *, instructions: str, prompt_version: str, batch_size: int=50, personas_per_case: int=2) -> list[str]"
+    },
+    {
+      "file": "src/eval/suites/paraphrases.py",
+      "module": "eval.suites.paraphrases",
+      "qualname": "parse_reply",
+      "signature": "def parse_reply(text: str) -> dict"
+    },
+    {
+      "file": "src/eval/suites/paraphrases.py",
+      "module": "eval.suites.paraphrases",
+      "qualname": "check_meaning",
+      "signature": "def check_meaning(source: ParaphraseSource, paraphrase: str) -> list[str]"
+    },
+    {
+      "file": "src/eval/suites/paraphrases.py",
+      "module": "eval.suites.paraphrases",
+      "qualname": "import_replies",
+      "signature": "def import_replies(sources: Sequence[ParaphraseSource], reply_paths: Sequence[str | Path], *, prompt_version: str, share: float, salt: str, sealed: bool=False) -> dict"
+    },
+    {
+      "file": "src/eval/suites/paraphrases.py",
+      "module": "eval.suites.paraphrases",
+      "qualname": "canonical_bytes",
+      "signature": "def canonical_bytes(obj: dict) -> bytes"
+    },
+    {
+      "file": "src/eval/suites/paraphrases.py",
+      "module": "eval.suites.paraphrases",
+      "qualname": "write_paraphrase_set",
+      "signature": "def write_paraphrase_set(pset: dict, path: str | Path) -> str"
+    },
+    {
+      "file": "src/eval/suites/paraphrases.py",
+      "module": "eval.suites.paraphrases",
+      "qualname": "load_paraphrase_set",
+      "signature": "def load_paraphrase_set(path: str | Path) -> dict"
+    },
+    {
+      "file": "src/eval/suites/paraphrases.py",
+      "module": "eval.suites.paraphrases",
+      "qualname": "render_import_report",
+      "signature": "def render_import_report(pset: dict) -> str"
+    }
+  ],
+  "nodes": [
+    "test/spec/eval-paraphrases/test_c11_no_text.py::test_c11_errors_carry_no_text_point",
+    "test/spec/eval-paraphrases/test_c11_no_text.py::test_c11_report_point",
+    "test/spec/eval-paraphrases/test_c11_no_text.py::test_c11_sealed_report_property",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_fields_stored_point",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[0]",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[10]",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[11]",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[12]",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[13]",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[14]",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[15]",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[1]",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[2]",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[3]",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[4]",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[5]",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[6]",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[7]",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[8]",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_invalid_inputs_raise[9]",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c1_years_sorted_set_property",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c2_normalise_property",
+    "test/spec/eval-paraphrases/test_c1_c2_source_normalise.py::test_c2_normalise_table_point",
+    "test/spec/eval-paraphrases/test_c3_c4_export.py::test_c3_assign_personas_point",
+    "test/spec/eval-paraphrases/test_c3_c4_export.py::test_c3_export_errors_point",
+    "test/spec/eval-paraphrases/test_c3_c4_export.py::test_c3_export_exact_text_point",
+    "test/spec/eval-paraphrases/test_c3_c4_export.py::test_c3_export_partition_property",
+    "test/spec/eval-paraphrases/test_c3_c4_export.py::test_c4_instructions_v1_point",
+    "test/spec/eval-paraphrases/test_c3_c4_export.py::test_c4_version_property",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_bom_crlf_point",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_fixture_a_point",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_fixture_b_point",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[blank first line]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[comment in body]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[date not real]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[date short form]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[date with time]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[duplicate model]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[empty case_id]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[empty model]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[empty paraphrase]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[extra key]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[json array]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[missing date]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[missing key]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[missing prompt]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[model anthropic]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[model chatgpt]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[model claude]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[model deepseek]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[model gpt]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[model o-series]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[model openai]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[no header]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[no records]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[non-string case_id]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[not json]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[persona wrong case]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[unknown header key]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_format_errors_point[unknown persona]",
+    "test/spec/eval-paraphrases/test_c5_parse_reply.py::test_c5_round_trip_property",
+    "test/spec/eval-paraphrases/test_c6_meaning.py::test_c6_drift_point",
+    "test/spec/eval-paraphrases/test_c6_meaning.py::test_c6_each_reason_point",
+    "test/spec/eval-paraphrases/test_c6_meaning.py::test_c6_fixture_records_point",
+    "test/spec/eval-paraphrases/test_c6_meaning.py::test_c6_metamorphic_property",
+    "test/spec/eval-paraphrases/test_c6_meaning.py::test_c6_period_forms_point",
+    "test/spec/eval-paraphrases/test_c7_c8_import.py::test_c7_fixture_import_point",
+    "test/spec/eval-paraphrases/test_c7_c8_import.py::test_c7_import_errors_point",
+    "test/spec/eval-paraphrases/test_c7_c8_import.py::test_c7_order_invariance_property",
+    "test/spec/eval-paraphrases/test_c7_c8_import.py::test_c8_fixture_duplicates_point",
+    "test/spec/eval-paraphrases/test_c7_c8_import.py::test_c8_other_intent_not_duplicate_point",
+    "test/spec/eval-paraphrases/test_c7_c8_import.py::test_c8_variants_collapse_property",
+    "test/spec/eval-paraphrases/test_c9_c10_split_freeze.py::test_c10_hash_and_round_trip_point",
+    "test/spec/eval-paraphrases/test_c9_c10_split_freeze.py::test_c10_reimport_metamorphic",
+    "test/spec/eval-paraphrases/test_c9_c10_split_freeze.py::test_c9_split_point",
+    "test/spec/eval-paraphrases/test_c9_c10_split_freeze.py::test_c9_split_property"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/eval-paraphrases.md",
+    "sha256": "02504fdc13c862a217e3fc0bfef0895cfd36ce45c0f252abe0afad0031495a7e"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

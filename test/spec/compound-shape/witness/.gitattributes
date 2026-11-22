@@ -1,0 +1,2 @@
+# Synthetic FSDS rows read by a plain split on newline and tab: keep LF line ends on every checkout.
+* -text

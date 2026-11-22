@@ -1,0 +1,86 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/model-set-switch/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-17",
+  "criteria": {
+    "C1": [
+      "test/spec/model-set-switch/test_model_set_switch.py::test_switch_off_keeps_todays_models",
+      "test/spec/model-set-switch/test_model_set_switch.py::test_returned_dicts_are_fresh_copies"
+    ],
+    "C2": [
+      "test/spec/model-set-switch/test_model_set_switch.py::test_switch_on_selects_openais_named_replacements",
+      "test/spec/model-set-switch/test_model_set_switch.py::test_every_stage_keeps_its_tier_across_sets"
+    ],
+    "C3": [
+      "test/spec/model-set-switch/test_model_set_switch.py::test_switch_is_off_by_default_and_env_words_are_read",
+      "test/spec/model-set-switch/test_model_set_switch.py::test_unknown_env_value_raises",
+      "test/spec/model-set-switch/test_model_set_switch.py::test_case_and_whitespace_do_not_change_the_reading",
+      "test/spec/model-set-switch/test_model_set_switch.py::test_any_other_value_raises"
+    ],
+    "C4": [
+      "test/spec/model-set-switch/test_model_set_switch.py::test_replacement_models_are_priced_and_configured",
+      "test/spec/model-set-switch/test_model_set_switch.py::test_every_model_in_either_set_has_pricing_and_call_config"
+    ],
+    "C5": [
+      "test/spec/model-set-switch/test_model_set_switch.py::test_module_constants_follow_the_switch_at_import",
+      "test/spec/model-set-switch/test_model_set_switch.py::test_env_override_moves_constants_on_reload"
+    ]
+  },
+  "files": {
+    "test/spec/model-set-switch/test_model_set_switch.py": "5d2e35c53a67332e2e6580d13c66d07f273c12889c07afba8caf82ca02c84d56"
+  },
+  "id": "model-set-switch",
+  "interface": [
+    {
+      "file": "src/llm/config.py",
+      "module": "llm.config",
+      "qualname": "openai_model_set",
+      "signature": "def openai_model_set(use_replacement: bool) -> dict[str, str]"
+    },
+    {
+      "file": "src/llm/config.py",
+      "module": "llm.config",
+      "qualname": "xbrl_stage_models",
+      "signature": "def xbrl_stage_models(use_replacement: bool) -> dict[str, str]"
+    },
+    {
+      "file": "src/llm/config.py",
+      "module": "llm.config",
+      "qualname": "replacement_models_enabled",
+      "signature": "def replacement_models_enabled(env: Mapping[str, str] | None=None) -> bool"
+    }
+  ],
+  "nodes": [
+    "test/spec/model-set-switch/test_model_set_switch.py::test_any_other_value_raises",
+    "test/spec/model-set-switch/test_model_set_switch.py::test_case_and_whitespace_do_not_change_the_reading",
+    "test/spec/model-set-switch/test_model_set_switch.py::test_env_override_moves_constants_on_reload",
+    "test/spec/model-set-switch/test_model_set_switch.py::test_every_model_in_either_set_has_pricing_and_call_config",
+    "test/spec/model-set-switch/test_model_set_switch.py::test_every_stage_keeps_its_tier_across_sets",
+    "test/spec/model-set-switch/test_model_set_switch.py::test_module_constants_follow_the_switch_at_import",
+    "test/spec/model-set-switch/test_model_set_switch.py::test_replacement_models_are_priced_and_configured",
+    "test/spec/model-set-switch/test_model_set_switch.py::test_returned_dicts_are_fresh_copies",
+    "test/spec/model-set-switch/test_model_set_switch.py::test_switch_is_off_by_default_and_env_words_are_read",
+    "test/spec/model-set-switch/test_model_set_switch.py::test_switch_off_keeps_todays_models",
+    "test/spec/model-set-switch/test_model_set_switch.py::test_switch_on_selects_openais_named_replacements",
+    "test/spec/model-set-switch/test_model_set_switch.py::test_unknown_env_value_raises"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/model-set-switch.md",
+    "sha256": "3ed3153a252ae0066aa510a1950f9dab825031f2dad086042df3c81144203b41"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

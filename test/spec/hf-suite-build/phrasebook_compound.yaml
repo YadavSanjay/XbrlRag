@@ -1,0 +1,27 @@
+# Synthetic compound phrasebook for the compound-shape spec tests: three templates per
+# compound shape, one per register.
+templates:
+  - id: rbr-terse
+    register: terse
+    shapes: [compound.rank_by_ratio]
+    text: "top {n} {universe} by {metric} {period}: highest {metric_2}?"
+  - id: rbr-conv
+    register: conversational
+    shapes: [compound.rank_by_ratio]
+    text: "Of the {n} largest of {universe} by {metric} in {period}, which had the highest {metric_2}?"
+  - id: rbr-formal
+    register: formal
+    shapes: [compound.rank_by_ratio]
+    text: "Among the {n} members of {universe} with the greatest {metric} for {period}, identify the one with the highest {metric_2}."
+  - id: lg-terse
+    register: terse
+    shapes: [compound.leader_growth]
+    text: "top {n} {universe} by {metric} {last_period}: leader {metric_2} growth"
+  - id: lg-conv
+    register: conversational
+    shapes: [compound.leader_growth]
+    text: "Of the {n} largest of {universe} by {metric} in {last_period}, how much did the largest one's {metric_2} grow from {first_period}?"
+  - id: lg-formal
+    register: formal
+    shapes: [compound.leader_growth]
+    text: "For the largest of the top {n} of {universe} by {metric} in {last_period}, state the growth in its {metric_2}."

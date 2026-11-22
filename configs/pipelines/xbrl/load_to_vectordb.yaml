@@ -1,0 +1,124 @@
+# XBRL/HTML-canonical -> Qdrant vector DB load pipeline (the embed + Qdrant upsert step;
+# docs/design/XbrlRag_HTML_Canonical_Source.md).
+#
+# Run:
+#   python -m src.pipelines.xbrl.load_to_vectordb_pipeline                # uses `scope` below
+#   python -m src.pipelines.xbrl.load_to_vectordb_pipeline --all          # every eligible filing
+#   python -m src.pipelines.xbrl.load_to_vectordb_pipeline --ticker NVDA  # all filings for NVDA
+#   python -m src.pipelines.xbrl.load_to_vectordb_pipeline --ticker NVDA --fiscal-year 2026 --form-type 10-K
+#   python -m src.pipelines.xbrl.load_to_vectordb_pipeline --accessions 0001045810-26-000021
+#
+# CLI flags (--ticker / --fiscal-year / --form-type / --accessions / --all)
+# override `scope`/`tickers`/`accessions` below — the config is the default
+# when the pipeline is run with no scope-related flags.
+
+# The QDRANT_HOST / QDRANT_PORT env vars (and QDRANT_API_KEY / QDRANT_HTTPS,
+# read by the client) override these when set, so an AWS/in-VPC Qdrant is
+# reached without editing this file. Env unset => the localhost defaults below.
+qdrant:
+  host: localhost
+  port: 6333
+  # REST request timeout (s). The client default (5s) can be exceeded by
+  # payload-index builds on a freshly created on-disk-HNSW collection,
+  # raising ReadTimeout during ensure_collections().
+  timeout: 60
+
+collections:
+  text_collection: xbrl_sec10k_text       # src.XBRL_TEXT_COLLECTION_NAME
+  metadata_collection: xbrl_sec10k_metadata  # src.XBRL_METADATA_COLLECTION_NAME
+  # Toggle hnsw m=0 -> m=16 around the run (faster bulk ingest). Leave true
+  # for `scope: all` / large ticker backfills; set false for small
+  # incremental single-filing runs where the rebuild cost dominates.
+  toggle_hnsw: true
+  # Create/refresh the payload indexes used by XBRLQdrantVectorDBClient
+  # filters (cik, fiscal_year, section_path, section_path_ancestors,
+  # contains_table, xbrl_fact_ids, ...). Idempotent — safe to leave true.
+  ensure_payload_indexes: true
+
+embedding:
+  model: BAAI/bge-m3
+  # BGE-M3 encode batch size. FlagEmbedding's default (256) builds one
+  # oversized CPU forward pass that segfaults the process (0xC0000005, silent
+  # exit with no traceback). Keep modest; lower it if you hit memory pressure,
+  # raise it for throughput (esp. on GPU).
+  batch_size: 12
+  # Max tokens per text before truncation (BGE-M3 supports up to 8192).
+  max_length: 8192
+
+chunking:
+  chunk_size_chars: 1000  # src.CHUNK_SIZE_IN_CHARS
+
+paths:
+  # Intentionally EMPTY. Roots come from SEC_EDGAR_ROOT / XBRLRAG_NORMALIZED_ROOT,
+  # falling back to the local-dev defaults in src/ingest/sec_edgar/storage.py
+  # (`local_root`). Do not put absolute paths here: a Windows path is a *relative*
+  # path on POSIX, so in the container it resolved to /app/D:/... , discovery
+  # found nothing, and the stage reported success. Env now wins over this section
+  # regardless — these keys remain only as an explicit per-run override.
+  sec_edgar_root:
+  normalized_root:
+
+# ---------------------------------------------------------------------------
+# Scope — what to process when run with no CLI scope overrides.
+#   all         -> every non-superseded filing with chunk_metadata rows.
+#   tickers     -> only the tickers (+ optional fiscal_years/form_types)
+#                  listed under `tickers:` below.
+#   accessions  -> only the explicit accession numbers under `accessions:`.
+# ---------------------------------------------------------------------------
+scope: tickers
+
+# Every ticker/year/form_type combination with a canonical.htm under
+# data/storage/xbrl/normalized/<ticker>/<fiscal_year>/<form_type>/ as of this
+# writing. `form_types` lists every form_type seen on disk for that ticker
+# (10-K and, where the latest annual filing was amended, also 10-K/A) plus
+# 10-Q for the FY2026 quarterlies; `fiscal_years` covers every year present.
+# Filings without chunk_metadata rows yet (Phase 7/8 not run) are simply not
+# discovered — listing them here is harmless and future-proof.
+tickers:
+  - ticker: AAPL
+    fiscal_years: [2022, 2023, 2024, 2025, 2026]
+    form_types: ["10-K", "10-Q"]
+  - ticker: AMD
+    fiscal_years: [2022, 2023, 2024, 2025, 2026]
+    form_types: ["10-K", "10-K/A", "10-Q"]
+  - ticker: AMZN
+    fiscal_years: [2022, 2023, 2024, 2025, 2026]
+    form_types: ["10-K", "10-Q"]
+  - ticker: AVGO
+    fiscal_years: [2022, 2023, 2024, 2025, 2026]
+    form_types: ["10-K", "10-Q"]
+  - ticker: CEG
+    fiscal_years: [2022, 2023, 2024, 2025, 2026]
+    form_types: ["10-K", "10-Q"]
+  - ticker: GOOGL
+    fiscal_years: [2022, 2023, 2024, 2025, 2026]
+    form_types: ["10-K", "10-Q"]
+  - ticker: INTC
+    fiscal_years: [2022, 2023, 2024, 2025, 2026]
+    form_types: ["10-K", "10-Q"]
+  - ticker: META
+    fiscal_years: [2022, 2023, 2024, 2025, 2026]
+    form_types: ["10-K", "10-Q"]
+  - ticker: MSFT
+    fiscal_years: [2022, 2023, 2024, 2025, 2026]
+    form_types: ["10-K", "10-Q"]
+  - ticker: MU
+    fiscal_years: [2022, 2023, 2024, 2025, 2026]
+    form_types: ["10-K", "10-Q"]
+  - ticker: NVDA
+    fiscal_years: [2022, 2023, 2024, 2025, 2026]
+    form_types: ["10-K", "10-Q"]
+  - ticker: ORCL
+    fiscal_years: [2022, 2023, 2024, 2025, 2026]
+    form_types: ["10-K", "10-Q"]
+  - ticker: TSLA
+    fiscal_years: [2022, 2023, 2024, 2025, 2026]
+    form_types: ["10-K", "10-K/A", "10-Q"]
+  - ticker: TSM
+    fiscal_years: [2022, 2023, 2024, 2025]
+    form_types: ["20-F"]
+  - ticker: VST
+    fiscal_years: [2022, 2023, 2024, 2025, 2026]
+    form_types: ["10-K", "10-Q"]
+
+accessions: []

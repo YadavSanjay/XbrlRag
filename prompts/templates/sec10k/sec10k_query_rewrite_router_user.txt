@@ -1,0 +1,11 @@
+"""
+
+User query:
+{user_query}
+
+Document scope:
+{document_scope}
+
+Decide Routing
+
+"""

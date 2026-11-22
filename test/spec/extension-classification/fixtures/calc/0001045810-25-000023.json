@@ -1,0 +1,152 @@
+{
+ "accession_no": "0001045810-25-000023",
+ "cik": "0001045810",
+ "ticker": "NVDA",
+ "extension_namespace": "http://www.nvidia.com/20250126",
+ "source_file": "nvda-20250126_cal.xml",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126_cal.xml",
+ "source_sha256": "026241b9aeb4dc1199361eab00fe33fe5cc6c7cf6d8516e79d802bd9acda7b32",
+ "retrieved": "local copy under data/storage/sec_edgar (downloaded at ingest); hashed 2026-11-07",
+ "cross_check": "arcs equal to xbrl_db mv_calculation_network by local name (202 arcs)",
+ "selection": "every summation-item arc of every tree (link role, parent) whose parent or a child is an extension presented on IS/BS/CF",
+ "arcs": [
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:PaymentsForRepurchaseOfCommonStock",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:PaymentsOfDividends",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProceedsFromPaymentsForOtherFinancingActivities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProceedsFromStockPlans",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:RepaymentsOfDebt",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://www.nvidia.com/20250126:PaymentsForFinancedPropertyPlantAndEquipmentAndIntangibleAssetsFinancingActivities",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:DeferredIncomeTaxExpenseBenefit",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:DepreciationDepletionAndAmortization",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:GainLossOnInvestments",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInAccountsPayable",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInAccountsReceivable",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInInventories",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInOtherNoncurrentLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:NetIncomeLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:OtherNoncashIncomeExpense",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ShareBasedCompensation",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://www.nvidia.com/20250126:BusinessCombinationAdvancedConsiderationWrittenOff",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:OperatingExpenses",
+   "child": "http://fasb.org/us-gaap/2024:ResearchAndDevelopmentExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:OperatingExpenses",
+   "child": "http://fasb.org/us-gaap/2024:SellingGeneralAndAdministrativeExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:OperatingExpenses",
+   "child": "http://www.nvidia.com/20250126:BusinessCombinationAdvancedConsiderationWrittenOff",
+   "weight": "1"
+  }
+ ]
+}

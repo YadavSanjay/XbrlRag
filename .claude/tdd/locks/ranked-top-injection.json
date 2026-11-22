@@ -1,0 +1,127 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-15",
+  "criteria": {
+    "C1": [
+      "test/spec/ranked-top-injection/test_c1_injection_text.py::test_three_ranked_rows_carry_their_ranks",
+      "test/spec/ranked-top-injection/test_c1_injection_text.py::test_n_two_takes_the_first_two_positions",
+      "test/spec/ranked-top-injection/test_c1_injection_text.py::test_fewer_rows_than_n_injects_what_exists_with_labels",
+      "test/spec/ranked-top-injection/test_c1_injection_text.py::test_n_one_injects_the_bare_ticker",
+      "test/spec/ranked-top-injection/test_c1_injection_text.py::test_an_ascending_screen_is_labelled_in_list_order",
+      "test/spec/ranked-top-injection/test_c1_injection_text.py::test_rank_keys_are_not_used_to_re_sort",
+      "test/spec/ranked-top-injection/test_c1_injection_text.py::test_tickerless_rows_are_skipped_but_keep_their_position",
+      "test/spec/ranked-top-injection/test_c1_injection_text.py::test_nothing_to_inject_gives_none_and_one_ticker_gives_text",
+      "test/spec/ranked-top-injection/test_c1_injection_text.py::test_the_rows_are_not_modified",
+      "test/spec/ranked-top-injection/test_c1_injection_text.py::test_any_screen_gives_the_hand_rule",
+      "test/spec/ranked-top-injection/test_c1_injection_text.py::test_values_ranks_and_rows_past_n_never_change_the_text"
+    ],
+    "C2": [
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_trailing_label_is_removed[AMZN (#1)-AMZN]",
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_trailing_label_is_removed[  MSFT(#12) -MSFT]",
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_trailing_label_is_removed[Amazon.com, Inc. (#2)-Amazon.com, Inc.]",
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_trailing_label_is_removed[GOOGL\\t(#3)-GOOGL]",
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_trailing_label_is_removed[AAA (#2) (#1)-AAA (#2)]",
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[AMZN]",
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[ Alpha Holdings ]",
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[Berkshire Hathaway (Class B)]",
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[AMZN #1]",
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[AMZN (#)]",
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[AMZN (#1a)]",
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[AMZN (#1) Inc]",
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[(#1)]",
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[  (#4) ]",
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[]",
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_any_labelled_name_gives_the_stripped_name",
+      "test/spec/ranked-top-injection/test_c2_strip_label.py::test_an_unlabelled_mention_is_untouched_and_its_labelled_form_is_stripped"
+    ],
+    "C3": [
+      "test/spec/ranked-top-injection/test_c3_router.py::test_a_labelled_mention_reaches_the_resolver_as_its_ticker",
+      "test/spec/ranked-top-injection/test_c3_router.py::test_labelled_and_plain_mentions_keep_their_order",
+      "test/spec/ranked-top-injection/test_c3_router.py::test_any_mix_of_labelled_mentions_resolves"
+    ],
+    "C4": [
+      "test/spec/ranked-top-injection/test_c4_pipeline.py::test_the_leader_question_reaches_the_router_with_ranks",
+      "test/spec/ranked-top-injection/test_c4_pipeline.py::test_a_top_one_token_stays_bare_while_a_top_two_token_is_labelled",
+      "test/spec/ranked-top-injection/test_c4_pipeline.py::test_any_screen_order_and_token_is_injected_by_the_rule",
+      "test/spec/ranked-top-injection/test_c4_pipeline.py::test_reversing_the_screen_moves_the_first_rank"
+    ]
+  },
+  "files": {
+    "test/spec/ranked-top-injection/conftest.py": "1369517778efd99b502d67db799e9c1ef6ee8a62b15e82908d82b01c502a2c15",
+    "test/spec/ranked-top-injection/test_c1_injection_text.py": "a2e15bde2c949ab18323596db5c93f9850cd44b8d9056195f73ef7ef304368ba",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py": "d62338c337c088642282830b6123980fc740d7e105c1586a0725f4c80b5d1baf",
+    "test/spec/ranked-top-injection/test_c3_router.py": "edca3eeb7c7cd5d06898991e9ce77fe4b57fd6cb2d997a912cc6ca1095005768",
+    "test/spec/ranked-top-injection/test_c4_pipeline.py": "6895b5a15d61a6c11e2872461f90ab57cd5da2a4654433e379e9b81f5d158ff4"
+  },
+  "id": "ranked-top-injection",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/ranked_top.py",
+      "module": "retriever.xbrl.ranked_top",
+      "qualname": "ranked_top_text",
+      "signature": "def ranked_top_text(rows: Sequence[Mapping[str, Any]], n: int) -> str | None"
+    },
+    {
+      "file": "src/retriever/xbrl/ranked_top.py",
+      "module": "retriever.xbrl.ranked_top",
+      "qualname": "strip_rank_label",
+      "signature": "def strip_rank_label(mention: str) -> str"
+    }
+  ],
+  "nodes": [
+    "test/spec/ranked-top-injection/test_c1_injection_text.py::test_an_ascending_screen_is_labelled_in_list_order",
+    "test/spec/ranked-top-injection/test_c1_injection_text.py::test_any_screen_gives_the_hand_rule",
+    "test/spec/ranked-top-injection/test_c1_injection_text.py::test_fewer_rows_than_n_injects_what_exists_with_labels",
+    "test/spec/ranked-top-injection/test_c1_injection_text.py::test_n_one_injects_the_bare_ticker",
+    "test/spec/ranked-top-injection/test_c1_injection_text.py::test_n_two_takes_the_first_two_positions",
+    "test/spec/ranked-top-injection/test_c1_injection_text.py::test_nothing_to_inject_gives_none_and_one_ticker_gives_text",
+    "test/spec/ranked-top-injection/test_c1_injection_text.py::test_rank_keys_are_not_used_to_re_sort",
+    "test/spec/ranked-top-injection/test_c1_injection_text.py::test_the_rows_are_not_modified",
+    "test/spec/ranked-top-injection/test_c1_injection_text.py::test_three_ranked_rows_carry_their_ranks",
+    "test/spec/ranked-top-injection/test_c1_injection_text.py::test_tickerless_rows_are_skipped_but_keep_their_position",
+    "test/spec/ranked-top-injection/test_c1_injection_text.py::test_values_ranks_and_rows_past_n_never_change_the_text",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[  (#4) ]",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[ Alpha Holdings ]",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[(#1)]",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[AMZN #1]",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[AMZN (#)]",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[AMZN (#1) Inc]",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[AMZN (#1a)]",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[AMZN]",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[Berkshire Hathaway (Class B)]",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_mention_without_a_label_is_returned_unchanged[]",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_trailing_label_is_removed[  MSFT(#12) -MSFT]",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_trailing_label_is_removed[AAA (#2) (#1)-AAA (#2)]",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_trailing_label_is_removed[AMZN (#1)-AMZN]",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_trailing_label_is_removed[Amazon.com, Inc. (#2)-Amazon.com, Inc.]",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_a_trailing_label_is_removed[GOOGL\\t(#3)-GOOGL]",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_an_unlabelled_mention_is_untouched_and_its_labelled_form_is_stripped",
+    "test/spec/ranked-top-injection/test_c2_strip_label.py::test_any_labelled_name_gives_the_stripped_name",
+    "test/spec/ranked-top-injection/test_c3_router.py::test_a_labelled_mention_reaches_the_resolver_as_its_ticker",
+    "test/spec/ranked-top-injection/test_c3_router.py::test_any_mix_of_labelled_mentions_resolves",
+    "test/spec/ranked-top-injection/test_c3_router.py::test_labelled_and_plain_mentions_keep_their_order",
+    "test/spec/ranked-top-injection/test_c4_pipeline.py::test_a_top_one_token_stays_bare_while_a_top_two_token_is_labelled",
+    "test/spec/ranked-top-injection/test_c4_pipeline.py::test_any_screen_order_and_token_is_injected_by_the_rule",
+    "test/spec/ranked-top-injection/test_c4_pipeline.py::test_reversing_the_screen_moves_the_first_rank",
+    "test/spec/ranked-top-injection/test_c4_pipeline.py::test_the_leader_question_reaches_the_router_with_ranks"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/ranked-top-injection.md",
+    "sha256": "a11548981f0ecc95d4387f93eab41416fe24e78b32292a29fad09752ee2e9845"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

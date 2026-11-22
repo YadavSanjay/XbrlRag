@@ -1,0 +1,5 @@
+# XbrlRag — dev/CI tooling, exact pins (upgrade deliberately, in all three repos together).
+# Runtime dependencies stay in requirements.txt.
+ruff==0.14.2
+pytest==9.0.3
+hypothesis==6.168.5

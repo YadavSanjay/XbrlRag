@@ -1,0 +1,173 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-11",
+  "criteria": {
+    "C1": [
+      "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_fixture_filers[TWDC-TWD]",
+      "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_fixture_filers[TWDK-TWD]",
+      "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_fixture_filers[USDA-USD]",
+      "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_fixture_filers[USDB-USD]",
+      "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_fixture_filers[IFRU-USD]",
+      "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_fixture_filers[AMDX-USD]",
+      "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_no_filing_for_the_year_is_none",
+      "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_hand_written_documents",
+      "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_matches_the_rule_written_out",
+      "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_order_and_repeats_do_not_matter"
+    ],
+    "C2": [
+      "test/spec/key-currency-and-definition/test_c2_screen_currency.py::test_debt_issued_sum_ranks_only_usd_reporters",
+      "test/spec/key-currency-and-definition/test_c2_screen_currency.py::test_debt_sum_excludes_the_defined_path_too",
+      "test/spec/key-currency-and-definition/test_c2_screen_currency.py::test_top_rows_and_peer_rank",
+      "test/spec/key-currency-and-definition/test_c2_screen_currency.py::test_a_usd_only_document_returns_the_member_to_its_path",
+      "test/spec/key-currency-and-definition/test_c2_screen_currency.py::test_usd_reporters_are_untouched"
+    ],
+    "C3": [
+      "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_live_mapping_substitutes",
+      "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_malformed_mapping_raises[substitutions: {}\\nsubstitutes:\\n  DebtIssued:\\n    ifrs-full:A: no_such_code\\n]",
+      "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_malformed_mapping_raises[substitutions: {c: note}\\nsubstitutes:\\n  DebtIssued:\\n    not a concept: c\\n]",
+      "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_malformed_mapping_raises[substitutions: {c: note}\\nsubstitutes:\\n  DebtIssued:\\n    ifrs-full:A: {code: c}\\n]",
+      "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_merge_adds_the_mapping_substitutes",
+      "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_merge_rule_written_out",
+      "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_the_build_witness_carries_the_mapping",
+      "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_an_ifrs_bonds_line_is_one_of_several_lines",
+      "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_only_the_merge_moves_the_member"
+    ],
+    "C4": [
+      "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_fixture_list_loads",
+      "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_malformed_lists_raise[version: 2\\nfamilies: {}\\n]",
+      "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_malformed_lists_raise[version: 1\\nfamilies: {}\\nextra: 1\\n]",
+      "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_malformed_lists_raise[version: 1\\nfamilies:\\n  DebtIssued:\\n    ext:Foo:\\n      definition: d\\n      review: {by: Reviewer A, date: 2026-11-11, bucket: definition, evidence: {kind: statement, adsh: 0000830006-24-000060, report: 4, line: 1, plabel: P}}\\n]",
+      "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_malformed_lists_raise[version: 1\\nfamilies:\\n  DebtIssued:\\n    us-gaap:Foo:\\n      definition: ''\\n      review: {by: Reviewer A, date: 2026-11-11, bucket: definition, evidence: {kind: statement, adsh: 0000830006-24-000060, report: 4, line: 1, plabel: P}}\\n]",
+      "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_malformed_lists_raise[version: 1\\nfamilies:\\n  DebtIssued:\\n    us-gaap:Foo:\\n      definition: d\\n]",
+      "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_malformed_lists_raise[version: 1\\nfamilies:\\n  DebtIssued:\\n    us-gaap:Foo:\\n      definition: d\\n      review: {by: Somebody Else, date: 2026-11-11, bucket: definition, evidence: {kind: statement, adsh: 0000830006-24-000060, report: 4, line: 1, plabel: P}}\\n]",
+      "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_malformed_lists_raise[version: 1\\nfamilies:\\n  DebtIssued:\\n    us-gaap:Foo:\\n      definition: d\\n      x: 1\\n      review: {by: Reviewer A, date: 2026-11-11, bucket: definition, evidence: {kind: statement, adsh: 0000830006-24-000060, report: 4, line: 1, plabel: P}}\\n]",
+      "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_status_rule",
+      "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_status_rule_written_out",
+      "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_the_witness_applies_its_list_on_every_member_path",
+      "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_live_list_and_the_d3_reading_of_amd"
+    ],
+    "C5": [
+      "test/spec/key-currency-and-definition/test_c5_debt_issued_phrasing.py::test_lexicon_names_debt_issued",
+      "test/spec/key-currency-and-definition/test_c5_debt_issued_phrasing.py::test_check_only_forms_name_no_term",
+      "test/spec/key-currency-and-definition/test_c5_debt_issued_phrasing.py::test_every_candidate_phrasing_says_debt_issued",
+      "test/spec/key-currency-and-definition/test_c5_debt_issued_phrasing.py::test_no_draw_names_a_term"
+    ],
+    "C6": [
+      "test/spec/key-currency-and-definition/test_c6_defined_key_s1_column.py::test_each_year_reads_the_latest_column",
+      "test/spec/key-currency-and-definition/test_c6_defined_key_s1_column.py::test_without_a_readable_later_column_the_own_column_stands",
+      "test/spec/key-currency-and-definition/test_c6_defined_key_s1_column.py::test_the_key_follows_the_later_column"
+    ]
+  },
+  "files": {
+    "test/spec/key-currency-and-definition/conftest.py": "94590af98f927f90c153ba99202bc82f75b8660ac2525084be5b6bd1132a1cad",
+    "test/spec/key-currency-and-definition/fixtures/element_fit.yaml": "722bdf25d8f89ee58c28dba74489cf7c1b32fd446aca0f172bc53a439773d6ee",
+    "test/spec/key-currency-and-definition/fixtures/key_resolutions.yaml": "508144c884b3e51c14fb2c80b1654931dfc2e378bd35d8d4fc2b954c00b7f540",
+    "test/spec/key-currency-and-definition/fixtures/lexicon.yaml": "f534345cc4d7709d9a40c19972f984d9e8c5f0a4dcb9627fc047553fe3a40e08",
+    "test/spec/key-currency-and-definition/fixtures/note_concepts.yaml": "343d3cb849f14c5469d60ba9fc3fd6c21bdc4b223007c3daf67ae22dbdcf01c5",
+    "test/spec/key-currency-and-definition/fixtures/phrasebook.yaml": "417ce0e875675106e777b46b5e3e0e028b06b0f83e95ee5faba90e7b9cd8bbcd",
+    "test/spec/key-currency-and-definition/fixtures/statement_lines.yaml": "7f32d046f0fe4c5672ec905c9a5959d19d73dc6401418af868535f5f8ac7e39c",
+    "test/spec/key-currency-and-definition/test_c1_reporting_currency.py": "516c428d62d73d1a415156afbb49d675614df210d383b11e48db499213fb210e",
+    "test/spec/key-currency-and-definition/test_c2_screen_currency.py": "522c1b3403a4e5728dfa00f4a9f00a0f641a849c5c607843641b43063c198f25",
+    "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py": "6d480d086a216691b3a68f1e8da3ce28270f212421b86a417c097ff4d4512459",
+    "test/spec/key-currency-and-definition/test_c4_element_fit.py": "64262de088579b1418105493988730933ca2452683d39badfac8ba3dfaac23e0",
+    "test/spec/key-currency-and-definition/test_c5_debt_issued_phrasing.py": "8e72158294afb47f6e34881271cff4a4d159e1224cbea162f402e472a3de0fa2",
+    "test/spec/key-currency-and-definition/test_c6_defined_key_s1_column.py": "a12455aacff60a628083956afaa9bcab7a98ad214e34caf695dc6b87d0262270"
+  },
+  "id": "key-currency-and-definition",
+  "interface": [
+    {
+      "file": "src/eval/keys/core.py",
+      "module": "eval.keys.core",
+      "qualname": "reporting_currency",
+      "signature": "def reporting_currency(company_facts: dict, labels: Mapping[str, int], fiscal_year: int) -> str | None"
+    },
+    {
+      "file": "src/eval/keys/statement_witness.py",
+      "module": "eval.keys.statement_witness",
+      "qualname": "load_mapping_substitutes",
+      "signature": "def load_mapping_substitutes(path: str | os.PathLike[str]) -> dict[str, dict[str, dict[str, str]]]"
+    },
+    {
+      "file": "src/eval/keys/statement_witness.py",
+      "module": "eval.keys.statement_witness",
+      "qualname": "merge_mapping_substitutes",
+      "signature": "def merge_mapping_substitutes(rules: Mapping[str, StatementRule], substitutes: Mapping[str, Mapping[str, Mapping[str, str]]]) -> dict[str, StatementRule]"
+    },
+    {
+      "file": "src/eval/keys/statement_witness.py",
+      "module": "eval.keys.statement_witness",
+      "qualname": "load_element_fit",
+      "signature": "def load_element_fit(path: str | os.PathLike[str], reviewers: Sequence[str] | None=None) -> dict[str, dict[str, dict[str, Any]]]"
+    },
+    {
+      "file": "src/eval/keys/statement_witness.py",
+      "module": "eval.keys.statement_witness",
+      "qualname": "element_fit_status",
+      "signature": "def element_fit_status(status: UniverseStatus, family: str, element_fit: Mapping[str, Mapping[str, Any]]) -> UniverseStatus"
+    }
+  ],
+  "nodes": [
+    "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_fixture_filers[AMDX-USD]",
+    "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_fixture_filers[IFRU-USD]",
+    "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_fixture_filers[TWDC-TWD]",
+    "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_fixture_filers[TWDK-TWD]",
+    "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_fixture_filers[USDA-USD]",
+    "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_fixture_filers[USDB-USD]",
+    "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_hand_written_documents",
+    "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_matches_the_rule_written_out",
+    "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_no_filing_for_the_year_is_none",
+    "test/spec/key-currency-and-definition/test_c1_reporting_currency.py::test_order_and_repeats_do_not_matter",
+    "test/spec/key-currency-and-definition/test_c2_screen_currency.py::test_a_usd_only_document_returns_the_member_to_its_path",
+    "test/spec/key-currency-and-definition/test_c2_screen_currency.py::test_debt_issued_sum_ranks_only_usd_reporters",
+    "test/spec/key-currency-and-definition/test_c2_screen_currency.py::test_debt_sum_excludes_the_defined_path_too",
+    "test/spec/key-currency-and-definition/test_c2_screen_currency.py::test_top_rows_and_peer_rank",
+    "test/spec/key-currency-and-definition/test_c2_screen_currency.py::test_usd_reporters_are_untouched",
+    "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_an_ifrs_bonds_line_is_one_of_several_lines",
+    "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_live_mapping_substitutes",
+    "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_malformed_mapping_raises[substitutions: {c: note}\\nsubstitutes:\\n  DebtIssued:\\n    ifrs-full:A: {code: c}\\n]",
+    "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_malformed_mapping_raises[substitutions: {c: note}\\nsubstitutes:\\n  DebtIssued:\\n    not a concept: c\\n]",
+    "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_malformed_mapping_raises[substitutions: {}\\nsubstitutes:\\n  DebtIssued:\\n    ifrs-full:A: no_such_code\\n]",
+    "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_merge_adds_the_mapping_substitutes",
+    "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_merge_rule_written_out",
+    "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_only_the_merge_moves_the_member",
+    "test/spec/key-currency-and-definition/test_c3_mapping_substitutes.py::test_the_build_witness_carries_the_mapping",
+    "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_fixture_list_loads",
+    "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_live_list_and_the_d3_reading_of_amd",
+    "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_malformed_lists_raise[version: 1\\nfamilies: {}\\nextra: 1\\n]",
+    "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_malformed_lists_raise[version: 1\\nfamilies:\\n  DebtIssued:\\n    ext:Foo:\\n      definition: d\\n      review: {by: Reviewer A, date: 2026-11-11, bucket: definition, evidence: {kind: statement, adsh: 0000830006-24-000060, report: 4, line: 1, plabel: P}}\\n]",
+    "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_malformed_lists_raise[version: 1\\nfamilies:\\n  DebtIssued:\\n    us-gaap:Foo:\\n      definition: ''\\n      review: {by: Reviewer A, date: 2026-11-11, bucket: definition, evidence: {kind: statement, adsh: 0000830006-24-000060, report: 4, line: 1, plabel: P}}\\n]",
+    "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_malformed_lists_raise[version: 1\\nfamilies:\\n  DebtIssued:\\n    us-gaap:Foo:\\n      definition: d\\n      review: {by: Somebody Else, date: 2026-11-11, bucket: definition, evidence: {kind: statement, adsh: 0000830006-24-000060, report: 4, line: 1, plabel: P}}\\n]",
+    "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_malformed_lists_raise[version: 1\\nfamilies:\\n  DebtIssued:\\n    us-gaap:Foo:\\n      definition: d\\n      x: 1\\n      review: {by: Reviewer A, date: 2026-11-11, bucket: definition, evidence: {kind: statement, adsh: 0000830006-24-000060, report: 4, line: 1, plabel: P}}\\n]",
+    "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_malformed_lists_raise[version: 1\\nfamilies:\\n  DebtIssued:\\n    us-gaap:Foo:\\n      definition: d\\n]",
+    "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_malformed_lists_raise[version: 2\\nfamilies: {}\\n]",
+    "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_status_rule",
+    "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_status_rule_written_out",
+    "test/spec/key-currency-and-definition/test_c4_element_fit.py::test_the_witness_applies_its_list_on_every_member_path",
+    "test/spec/key-currency-and-definition/test_c5_debt_issued_phrasing.py::test_check_only_forms_name_no_term",
+    "test/spec/key-currency-and-definition/test_c5_debt_issued_phrasing.py::test_every_candidate_phrasing_says_debt_issued",
+    "test/spec/key-currency-and-definition/test_c5_debt_issued_phrasing.py::test_lexicon_names_debt_issued",
+    "test/spec/key-currency-and-definition/test_c5_debt_issued_phrasing.py::test_no_draw_names_a_term",
+    "test/spec/key-currency-and-definition/test_c6_defined_key_s1_column.py::test_each_year_reads_the_latest_column",
+    "test/spec/key-currency-and-definition/test_c6_defined_key_s1_column.py::test_the_key_follows_the_later_column",
+    "test/spec/key-currency-and-definition/test_c6_defined_key_s1_column.py::test_without_a_readable_later_column_the_own_column_stands"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/key-currency-and-definition.md",
+    "sha256": "a3704961359ad0545b2f123afa36da1b695acf4976d3377408e39da439d8774e"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

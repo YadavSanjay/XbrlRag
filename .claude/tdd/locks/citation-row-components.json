@@ -1,0 +1,64 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-14",
+  "criteria": {
+    "C1": [
+      "test/spec/citation-row-components/test_crc_c1_row_component_ids.py::test_component_ids_of_screen_and_breakdown_rows_resolve",
+      "test/spec/citation-row-components/test_crc_c1_row_component_ids.py::test_component_id_maps_to_the_row_record_with_its_op",
+      "test/spec/citation-row-components/test_crc_c1_row_component_ids.py::test_every_row_component_resolves_and_adding_components_never_unresolves"
+    ],
+    "C2": [
+      "test/spec/citation-row-components/test_crc_c2_row_component_numbers.py::test_value_count_and_rank_match_a_row_cited_by_a_component",
+      "test/spec/citation-row-components/test_crc_c2_row_component_numbers.py::test_wrong_value_and_rank_and_uncited_row_stay_unmatched",
+      "test/spec/citation-row-components/test_crc_c2_row_component_numbers.py::test_any_subset_of_a_rows_parts_cites_the_row"
+    ],
+    "C3": [
+      "test/spec/citation-row-components/test_crc_c3_verifier_row_evidence.py::test_component_citations_are_kept_and_sent_with_their_row",
+      "test/spec/citation-row-components/test_crc_c3_verifier_row_evidence.py::test_any_citation_of_a_rows_ids_gives_exactly_that_row"
+    ],
+    "C4": [
+      "test/spec/citation-row-components/test_crc_c4_judge_row_passage.py::test_component_citation_gets_the_rows_passage",
+      "test/spec/citation-row-components/test_crc_c4_judge_row_passage.py::test_every_component_id_gives_its_rows_passage"
+    ]
+  },
+  "files": {
+    "test/spec/citation-row-components/conftest.py": "51eec400b8336a39489bc163f9f8eba9a3c102844863491876c0af6857369aa6",
+    "test/spec/citation-row-components/test_crc_c1_row_component_ids.py": "df905dbe4065dd4da468439893d768543e4d0f1e6ee988b3c2d6be642c1be90a",
+    "test/spec/citation-row-components/test_crc_c2_row_component_numbers.py": "590bc1185ea3691253c0012847b156ea02927ace4c7b7aabfdfb9b7574fd5500",
+    "test/spec/citation-row-components/test_crc_c3_verifier_row_evidence.py": "aa85add57e9d6ff72b1f091aac14ccee4245b848b4ecd8bdfe7b027be4851118",
+    "test/spec/citation-row-components/test_crc_c4_judge_row_passage.py": "4f5a0fdfd1e1eda255c5a73ebcc33a501e1a509bcb83847defbb9d5df273a3cc"
+  },
+  "id": "citation-row-components",
+  "interface": [],
+  "nodes": [
+    "test/spec/citation-row-components/test_crc_c1_row_component_ids.py::test_component_id_maps_to_the_row_record_with_its_op",
+    "test/spec/citation-row-components/test_crc_c1_row_component_ids.py::test_component_ids_of_screen_and_breakdown_rows_resolve",
+    "test/spec/citation-row-components/test_crc_c1_row_component_ids.py::test_every_row_component_resolves_and_adding_components_never_unresolves",
+    "test/spec/citation-row-components/test_crc_c2_row_component_numbers.py::test_any_subset_of_a_rows_parts_cites_the_row",
+    "test/spec/citation-row-components/test_crc_c2_row_component_numbers.py::test_value_count_and_rank_match_a_row_cited_by_a_component",
+    "test/spec/citation-row-components/test_crc_c2_row_component_numbers.py::test_wrong_value_and_rank_and_uncited_row_stay_unmatched",
+    "test/spec/citation-row-components/test_crc_c3_verifier_row_evidence.py::test_any_citation_of_a_rows_ids_gives_exactly_that_row",
+    "test/spec/citation-row-components/test_crc_c3_verifier_row_evidence.py::test_component_citations_are_kept_and_sent_with_their_row",
+    "test/spec/citation-row-components/test_crc_c4_judge_row_passage.py::test_component_citation_gets_the_rows_passage",
+    "test/spec/citation-row-components/test_crc_c4_judge_row_passage.py::test_every_component_id_gives_its_rows_passage"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/citation-row-components.md",
+    "sha256": "09d5b6a538034da016efce5280461205dda5f51f792885f7e499600c4b46d105"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

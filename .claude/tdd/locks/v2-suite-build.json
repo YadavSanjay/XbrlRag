@@ -1,0 +1,231 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-29",
+  "criteria": {
+    "C1": [
+      "test/spec/v2-suite-build/test_c1_quotas.py::test_sixty_splits_exactly",
+      "test/spec/v2-suite-build/test_c1_quotas.py::test_ten_uses_largest_remainders",
+      "test/spec/v2-suite-build/test_c1_quotas.py::test_one_and_seven",
+      "test/spec/v2-suite-build/test_c1_quotas.py::test_zero_and_bad_totals",
+      "test/spec/v2-suite-build/test_c1_quotas.py::test_apportionment_properties"
+    ],
+    "C10": [
+      "test/spec/v2-suite-build/test_c10_files.py::test_canonical_json_and_hash",
+      "test/spec/v2-suite-build/test_c10_files.py::test_suites_are_sorted_and_hashed",
+      "test/spec/v2-suite-build/test_c10_files.py::test_manifest_counts",
+      "test/spec/v2-suite-build/test_c10_files.py::test_intent_list_rebuilds_the_phrased_cases",
+      "test/spec/v2-suite-build/test_c10_files.py::test_written_files",
+      "test/spec/v2-suite-build/test_c10_files.py::test_builds_are_byte_identical"
+    ],
+    "C2": [
+      "test/spec/v2-suite-build/test_c2_enumerate.py::test_candidates_are_the_hand_listed_intents",
+      "test/spec/v2-suite-build/test_c2_enumerate.py::test_changed_concept_blocks_multi_year_intents_and_absent_member_adds_none",
+      "test/spec/v2-suite-build/test_c2_enumerate.py::test_adding_a_filer_keeps_the_others_candidates",
+      "test/spec/v2-suite-build/test_c2_enumerate.py::test_input_order_does_not_matter"
+    ],
+    "C3": [
+      "test/spec/v2-suite-build/test_c3_order.py::test_order_is_the_hash_round_robin",
+      "test/spec/v2-suite-build/test_c3_order.py::test_screens_stratify_by_universe",
+      "test/spec/v2-suite-build/test_c3_order.py::test_duplicate_raises",
+      "test/spec/v2-suite-build/test_c3_order.py::test_order_ignores_input_order"
+    ],
+    "C4": [
+      "test/spec/v2-suite-build/test_c4_single_filer.py::test_lookup_is_the_latest_filed_recast",
+      "test/spec/v2-suite-build/test_c4_single_filer.py::test_point_in_time_reads_the_filing_labelled_f",
+      "test/spec/v2-suite-build/test_c4_single_filer.py::test_late_amendment_wins_the_lookup_not_the_point_in_time",
+      "test/spec/v2-suite-build/test_c4_single_filer.py::test_twd_filer_is_keyed_in_its_reporting_currency",
+      "test/spec/v2-suite-build/test_c4_single_filer.py::test_ratio_is_computed_from_keyed_inputs",
+      "test/spec/v2-suite-build/test_c4_single_filer.py::test_a_later_recast_moves_the_lookup_not_the_point_in_time"
+    ],
+    "C5": [
+      "test/spec/v2-suite-build/test_c5_comparisons.py::test_growth_reads_both_years_from_the_latest_filing",
+      "test/spec/v2-suite-build/test_c5_comparisons.py::test_growth_ignores_a_later_amendment_of_the_prior_year",
+      "test/spec/v2-suite-build/test_c5_comparisons.py::test_growth_from_a_negative_base_is_not_meaningful",
+      "test/spec/v2-suite-build/test_c5_comparisons.py::test_cagr",
+      "test/spec/v2-suite-build/test_c5_comparisons.py::test_difference",
+      "test/spec/v2-suite-build/test_c5_comparisons.py::test_trend_falls_back_to_own_keys_when_one_filing_misses_a_period",
+      "test/spec/v2-suite-build/test_c5_comparisons.py::test_scaling_the_metric"
+    ],
+    "C6": [
+      "test/spec/v2-suite-build/test_c6_screens.py::test_top_ranks_usd_keys_and_names_exclusions",
+      "test/spec/v2-suite-build/test_c6_screens.py::test_bottom_and_ninety_two_days",
+      "test/spec/v2-suite-build/test_c6_screens.py::test_sum_and_median",
+      "test/spec/v2-suite-build/test_c6_screens.py::test_one_ranked_filer_is_too_few",
+      "test/spec/v2-suite-build/test_c6_screens.py::test_peer_relative",
+      "test/spec/v2-suite-build/test_c6_screens.py::test_member_order_does_not_matter",
+      "test/spec/v2-suite-build/test_c6_screens.py::test_adding_a_non_usd_filer_adds_one_currency_exclusion"
+    ],
+    "C7": [
+      "test/spec/v2-suite-build/test_c7_cross_check.py::test_agreement_verifies_and_adopts_decimals",
+      "test/spec/v2-suite-build/test_c7_cross_check.py::test_disagreement_is_recorded_and_the_sec_value_kept",
+      "test/spec/v2-suite-build/test_c7_cross_check.py::test_missing_store_value_is_single_source_without_disagreement",
+      "test/spec/v2-suite-build/test_c7_cross_check.py::test_one_unverified_input_makes_a_screen_single_source",
+      "test/spec/v2-suite-build/test_c7_cross_check.py::test_store_never_changes_the_value"
+    ],
+    "C8": [
+      "test/spec/v2-suite-build/test_c8_drops.py::test_key_errors_drop_with_their_reason",
+      "test/spec/v2-suite-build/test_c8_drops.py::test_same_day_different_values_are_ambiguous",
+      "test/spec/v2-suite-build/test_c8_drops.py::test_zero_value_and_zero_denominator",
+      "test/spec/v2-suite-build/test_c8_drops.py::test_screen_drops",
+      "test/spec/v2-suite-build/test_c8_drops.py::test_build_counts_drops_and_never_emits_them",
+      "test/spec/v2-suite-build/test_c8_drops.py::test_walk_moves_past_drops_to_fill_the_quota",
+      "test/spec/v2-suite-build/test_c8_drops.py::test_quota_accounting"
+    ],
+    "C9": [
+      "test/spec/v2-suite-build/test_c9_emission.py::test_tags_are_the_run_columns_in_order",
+      "test/spec/v2-suite-build/test_c9_emission.py::test_lookup_case_fields",
+      "test/spec/v2-suite-build/test_c9_emission.py::test_not_meaningful_growth_case",
+      "test/spec/v2-suite-build/test_c9_emission.py::test_screen_and_trend_cases",
+      "test/spec/v2-suite-build/test_c9_emission.py::test_split_is_the_phrased_cases_split"
+    ]
+  },
+  "files": {
+    "test/spec/v2-suite-build/conftest.py": "6f84001e2d366691ced0f7b0d51a6b73d7a884c3d714ea6aaad93a83cde78c41",
+    "test/spec/v2-suite-build/lexicon.yaml": "9557dca20b1195d5c5e2c3cb92475310b7599eef2156989a549ebd70fbfad905",
+    "test/spec/v2-suite-build/phrasebook.yaml": "024c5a7a8fb203a30d2e59e16d4f5ece45fbd238d1169550f980b2e977965a07",
+    "test/spec/v2-suite-build/test_c10_files.py": "ef161ca3979f206a3ad508d3f4b7dddb60d1c1381aa0343a042e8abcb4f58171",
+    "test/spec/v2-suite-build/test_c1_quotas.py": "d6f0245cc5a95682f5adb777663fa20cf5bcbb535099a4b56b36d518fd9c1bb8",
+    "test/spec/v2-suite-build/test_c2_enumerate.py": "ac62ed8f83092e67c359f848b9172741cef97963f07479795a65708d9f1b25fc",
+    "test/spec/v2-suite-build/test_c3_order.py": "a44581af02cf99bdcab82387c972cd5debd270434684748808c34d403469a3a7",
+    "test/spec/v2-suite-build/test_c4_single_filer.py": "8785b677096e4232c623c529612556eed1cf713c5238516e1e776e5d3875b5bb",
+    "test/spec/v2-suite-build/test_c5_comparisons.py": "a9aa9ff0748b51fcde9da8bb88e6b0342603e548e67a36a2424a4dff9a6bc6fc",
+    "test/spec/v2-suite-build/test_c6_screens.py": "b50549f4fc3ad6e9dabcd15bc01451d1db259df2a2973b61fe2ec3b845739cc6",
+    "test/spec/v2-suite-build/test_c7_cross_check.py": "e99441dcfad3146610647ff41f2fc004509bf97fe8123ebf01d59429d7e6008e",
+    "test/spec/v2-suite-build/test_c8_drops.py": "289b5d150f75d23a9481d82bc19c6ae36ce3119a142fda725dda92d841eb8697",
+    "test/spec/v2-suite-build/test_c9_emission.py": "eee9a778bebfacb19489be7f3b4462d4236a340d09d97f20dfb9a2395dce1f46"
+  },
+  "id": "v2-suite-build",
+  "interface": [
+    {
+      "file": "src/eval/suites/v2_suite.py",
+      "module": "eval.suites.v2_suite",
+      "qualname": "FactStoreSource.value",
+      "signature": "@abstractmethod def value(self, cik: str, concept: str, unit: str, period_start: str | None, period_end: str, accession: str) -> AnswerKey | None"
+    },
+    {
+      "file": "src/eval/suites/v2_suite.py",
+      "module": "eval.suites.v2_suite",
+      "qualname": "shape_quotas",
+      "signature": "def shape_quotas(total: int) -> dict[str, int]"
+    },
+    {
+      "file": "src/eval/suites/v2_suite.py",
+      "module": "eval.suites.v2_suite",
+      "qualname": "enumerate_intents",
+      "signature": "def enumerate_intents(inventory: Mapping[str, Any], universes: Mapping[str, Sequence[str]]) -> dict[str, list[Intent]]"
+    },
+    {
+      "file": "src/eval/suites/v2_suite.py",
+      "module": "eval.suites.v2_suite",
+      "qualname": "order_candidates",
+      "signature": "def order_candidates(intents: Sequence[Intent]) -> list[Intent]"
+    },
+    {
+      "file": "src/eval/suites/v2_suite.py",
+      "module": "eval.suites.v2_suite",
+      "qualname": "key_intent",
+      "signature": "def key_intent(intent: Intent, inventory: Mapping[str, Any], universes: Mapping[str, Sequence[str]], sec: SecSource, fact_store: FactStoreSource) -> KeyedIntent"
+    },
+    {
+      "file": "src/eval/suites/v2_suite.py",
+      "module": "eval.suites.v2_suite",
+      "qualname": "build_v2_suites",
+      "signature": "def build_v2_suites(inventory: Mapping[str, Any], universes: Mapping[str, Sequence[str]], sec: SecSource, fact_store: FactStoreSource, phrasebook: Phrasebook, lexicon: Lexicon, *, quotas: Mapping[str, int], per_intent: int, share: float, salt: str) -> dict[str, Any]"
+    },
+    {
+      "file": "src/eval/suites/v2_suite.py",
+      "module": "eval.suites.v2_suite",
+      "qualname": "canonical_json",
+      "signature": "def canonical_json(obj: Any) -> str"
+    },
+    {
+      "file": "src/eval/suites/v2_suite.py",
+      "module": "eval.suites.v2_suite",
+      "qualname": "content_hash",
+      "signature": "def content_hash(obj: Any) -> str"
+    },
+    {
+      "file": "src/eval/suites/v2_suite.py",
+      "module": "eval.suites.v2_suite",
+      "qualname": "write_v2_suites",
+      "signature": "def write_v2_suites(build: Mapping[str, Any], out_dir: str | Path) -> dict[str, Path]"
+    }
+  ],
+  "nodes": [
+    "test/spec/v2-suite-build/test_c10_files.py::test_builds_are_byte_identical",
+    "test/spec/v2-suite-build/test_c10_files.py::test_canonical_json_and_hash",
+    "test/spec/v2-suite-build/test_c10_files.py::test_intent_list_rebuilds_the_phrased_cases",
+    "test/spec/v2-suite-build/test_c10_files.py::test_manifest_counts",
+    "test/spec/v2-suite-build/test_c10_files.py::test_suites_are_sorted_and_hashed",
+    "test/spec/v2-suite-build/test_c10_files.py::test_written_files",
+    "test/spec/v2-suite-build/test_c1_quotas.py::test_apportionment_properties",
+    "test/spec/v2-suite-build/test_c1_quotas.py::test_one_and_seven",
+    "test/spec/v2-suite-build/test_c1_quotas.py::test_sixty_splits_exactly",
+    "test/spec/v2-suite-build/test_c1_quotas.py::test_ten_uses_largest_remainders",
+    "test/spec/v2-suite-build/test_c1_quotas.py::test_zero_and_bad_totals",
+    "test/spec/v2-suite-build/test_c2_enumerate.py::test_adding_a_filer_keeps_the_others_candidates",
+    "test/spec/v2-suite-build/test_c2_enumerate.py::test_candidates_are_the_hand_listed_intents",
+    "test/spec/v2-suite-build/test_c2_enumerate.py::test_changed_concept_blocks_multi_year_intents_and_absent_member_adds_none",
+    "test/spec/v2-suite-build/test_c2_enumerate.py::test_input_order_does_not_matter",
+    "test/spec/v2-suite-build/test_c3_order.py::test_duplicate_raises",
+    "test/spec/v2-suite-build/test_c3_order.py::test_order_ignores_input_order",
+    "test/spec/v2-suite-build/test_c3_order.py::test_order_is_the_hash_round_robin",
+    "test/spec/v2-suite-build/test_c3_order.py::test_screens_stratify_by_universe",
+    "test/spec/v2-suite-build/test_c4_single_filer.py::test_a_later_recast_moves_the_lookup_not_the_point_in_time",
+    "test/spec/v2-suite-build/test_c4_single_filer.py::test_late_amendment_wins_the_lookup_not_the_point_in_time",
+    "test/spec/v2-suite-build/test_c4_single_filer.py::test_lookup_is_the_latest_filed_recast",
+    "test/spec/v2-suite-build/test_c4_single_filer.py::test_point_in_time_reads_the_filing_labelled_f",
+    "test/spec/v2-suite-build/test_c4_single_filer.py::test_ratio_is_computed_from_keyed_inputs",
+    "test/spec/v2-suite-build/test_c4_single_filer.py::test_twd_filer_is_keyed_in_its_reporting_currency",
+    "test/spec/v2-suite-build/test_c5_comparisons.py::test_cagr",
+    "test/spec/v2-suite-build/test_c5_comparisons.py::test_difference",
+    "test/spec/v2-suite-build/test_c5_comparisons.py::test_growth_from_a_negative_base_is_not_meaningful",
+    "test/spec/v2-suite-build/test_c5_comparisons.py::test_growth_ignores_a_later_amendment_of_the_prior_year",
+    "test/spec/v2-suite-build/test_c5_comparisons.py::test_growth_reads_both_years_from_the_latest_filing",
+    "test/spec/v2-suite-build/test_c5_comparisons.py::test_scaling_the_metric",
+    "test/spec/v2-suite-build/test_c5_comparisons.py::test_trend_falls_back_to_own_keys_when_one_filing_misses_a_period",
+    "test/spec/v2-suite-build/test_c6_screens.py::test_adding_a_non_usd_filer_adds_one_currency_exclusion",
+    "test/spec/v2-suite-build/test_c6_screens.py::test_bottom_and_ninety_two_days",
+    "test/spec/v2-suite-build/test_c6_screens.py::test_member_order_does_not_matter",
+    "test/spec/v2-suite-build/test_c6_screens.py::test_one_ranked_filer_is_too_few",
+    "test/spec/v2-suite-build/test_c6_screens.py::test_peer_relative",
+    "test/spec/v2-suite-build/test_c6_screens.py::test_sum_and_median",
+    "test/spec/v2-suite-build/test_c6_screens.py::test_top_ranks_usd_keys_and_names_exclusions",
+    "test/spec/v2-suite-build/test_c7_cross_check.py::test_agreement_verifies_and_adopts_decimals",
+    "test/spec/v2-suite-build/test_c7_cross_check.py::test_disagreement_is_recorded_and_the_sec_value_kept",
+    "test/spec/v2-suite-build/test_c7_cross_check.py::test_missing_store_value_is_single_source_without_disagreement",
+    "test/spec/v2-suite-build/test_c7_cross_check.py::test_one_unverified_input_makes_a_screen_single_source",
+    "test/spec/v2-suite-build/test_c7_cross_check.py::test_store_never_changes_the_value",
+    "test/spec/v2-suite-build/test_c8_drops.py::test_build_counts_drops_and_never_emits_them",
+    "test/spec/v2-suite-build/test_c8_drops.py::test_key_errors_drop_with_their_reason",
+    "test/spec/v2-suite-build/test_c8_drops.py::test_quota_accounting",
+    "test/spec/v2-suite-build/test_c8_drops.py::test_same_day_different_values_are_ambiguous",
+    "test/spec/v2-suite-build/test_c8_drops.py::test_screen_drops",
+    "test/spec/v2-suite-build/test_c8_drops.py::test_walk_moves_past_drops_to_fill_the_quota",
+    "test/spec/v2-suite-build/test_c8_drops.py::test_zero_value_and_zero_denominator",
+    "test/spec/v2-suite-build/test_c9_emission.py::test_lookup_case_fields",
+    "test/spec/v2-suite-build/test_c9_emission.py::test_not_meaningful_growth_case",
+    "test/spec/v2-suite-build/test_c9_emission.py::test_screen_and_trend_cases",
+    "test/spec/v2-suite-build/test_c9_emission.py::test_split_is_the_phrased_cases_split",
+    "test/spec/v2-suite-build/test_c9_emission.py::test_tags_are_the_run_columns_in_order"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/v2-suite-build.md",
+    "sha256": "2703196bc52335dc1da8dcdf0c38d136aa9b403dacba56b06e27bdc517a95dea"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

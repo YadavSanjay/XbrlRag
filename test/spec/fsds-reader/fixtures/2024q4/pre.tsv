@@ -1,0 +1,44 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0000320193-24-000123	3	7	IS	0	H	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	Net sales	0
+0000320193-24-000123	3	8	IS	0	H	CostOfGoodsAndServicesSold	us-gaap/2024	Cost of sales	0
+0000320193-24-000123	3	9	IS	0	H	GrossProfit	us-gaap/2024	Gross margin	0
+0000320193-24-000123	3	11	IS	0	H	ResearchAndDevelopmentExpense	us-gaap/2024	Research and development	0
+0000320193-24-000123	3	12	IS	0	H	SellingGeneralAndAdministrativeExpense	us-gaap/2024	Selling, general and administrative	0
+0000320193-24-000123	3	13	IS	0	H	OperatingExpenses	us-gaap/2024	Total operating expenses	0
+0000320193-24-000123	3	14	IS	0	H	OperatingIncomeLoss	us-gaap/2024	Operating income	0
+0000320193-24-000123	3	15	IS	0	H	NonoperatingIncomeExpense	us-gaap/2024	Other income/(expense), net	0
+0000320193-24-000123	3	16	IS	0	H	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2024	Income before provision for income taxes	0
+0000320193-24-000123	3	17	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2024	Provision for income taxes	0
+0000320193-24-000123	3	18	IS	0	H	NetIncomeLoss	us-gaap/2024	Net income	0
+0000320193-24-000123	3	20	IS	0	H	EarningsPerShareBasic	us-gaap/2024	Basic (in dollars per share)	0
+0000320193-24-000123	3	21	IS	0	H	EarningsPerShareDiluted	us-gaap/2024	Diluted (in dollars per share)	0
+0000320193-24-000123	3	23	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2024	Basic (in shares)	0
+0000320193-24-000123	3	24	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2024	Diluted (in shares)	0
+0000320193-24-000123	8	7	CF	0	H	OtherNoncashIncomeExpense	us-gaap/2024	Other	1
+0000320193-24-000123	8	20	CF	0	H	PaymentsToAcquirePropertyPlantAndEquipment	us-gaap/2024	Payments for acquisition of property, plant and equipment	1
+0001730168-24-000139	5	7	IS	0	H	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2024	Total net revenue	0
+0001730168-24-000139	5	9	IS	0	H	CostofProductsSold	0001730168-24-000139	Cost of products sold	0
+0001730168-24-000139	5	10	IS	0	H	CostofSubscriptionsandServices	0001730168-24-000139	Cost of subscriptions and services	0
+0001730168-24-000139	5	11	IS	0	H	Amortizationofacquisitionrelatedintangibleassetscostofproductssold	0001730168-24-000139	Amortization of acquisition-related intangible assets	0
+0001730168-24-000139	5	12	IS	0	H	RestructuringChargesCostOfProductsSold	0001730168-24-000139	Restructuring charges	0
+0001730168-24-000139	5	13	IS	0	H	CostOfRevenue	us-gaap/2024	Total cost of revenue	0
+0001730168-24-000139	5	14	IS	0	H	GrossProfit	us-gaap/2024	Gross margin	0
+0001730168-24-000139	5	15	IS	0	H	ResearchAndDevelopmentExpense	us-gaap/2024	Research and development	0
+0001730168-24-000139	5	16	IS	0	H	SellingGeneralAndAdministrativeExpense	us-gaap/2024	Selling, general and administrative	0
+0001730168-24-000139	5	17	IS	0	H	Amortizationofacquisitionrelatedintangibleassetsoperatingexpenses	0001730168-24-000139	Amortization of acquisition-related intangible assets	0
+0001730168-24-000139	5	18	IS	0	H	RestructuringSettlementAndImpairmentProvisions	us-gaap/2024	Restructuring and other charges	0
+0001730168-24-000139	5	19	IS	0	H	OperatingExpenses	us-gaap/2024	Total operating expenses	0
+0001730168-24-000139	5	20	IS	0	H	OperatingIncomeLoss	us-gaap/2024	Operating income	0
+0001730168-24-000139	5	21	IS	0	H	InterestExpense	us-gaap/2024	Interest expense	1
+0001730168-24-000139	5	22	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2024	Other income (expense), net	0
+0001730168-24-000139	5	23	IS	0	H	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2024	Income from continuing operations before income taxes	0
+0001730168-24-000139	5	24	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2024	Provision for income taxes	0
+0001730168-24-000139	5	25	IS	0	H	IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2024	Income from continuing operations	0
+0001730168-24-000139	5	26	IS	0	H	IncomeLossFromDiscontinuedOperationsNetOfTax	us-gaap/2024	Loss from discontinued operations, net of income taxes	0
+0001730168-24-000139	5	27	IS	0	H	ProfitLoss	us-gaap/2024	Net income	0
+0001730168-24-000139	5	28	IS	0	H	PreferredStockDividendsIncomeStatementImpact	us-gaap/2024	Dividends on preferred stock	1
+0001730168-24-000139	5	29	IS	0	H	NetIncomeLossAvailableToCommonStockholdersBasic	us-gaap/2024	Net income attributable to common stock	0
+0001730168-24-000139	5	32	IS	0	H	EarningsPerShareBasic	us-gaap/2024	Net income per share	0
+0001730168-24-000139	5	34	IS	0	H	EarningsPerShareDiluted	us-gaap/2024	Net income per share	0
+0001730168-24-000139	5	36	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2024	Basic	0
+0001730168-24-000139	5	37	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2024	Diluted	0

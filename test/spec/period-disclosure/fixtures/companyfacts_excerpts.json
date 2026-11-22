@@ -1,0 +1,756 @@
+{
+ "note": "Entries copied unchanged from SEC companyfacts (local copy data/sec_companyfacts/). retrieved = the local file's date.",
+ "sources": {
+  "0000320193": {
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+   "sha256": "73a86c6aedc31f77cac2ea4df5f80f0b3bd7e6eb58bb4e01444fbedf3afb9c43",
+   "retrieved": "2026-10-21"
+  },
+  "0000789019": {
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+   "sha256": "dd0308149a8e96497989ed7c690b5a49a00bef9ceafbb24638bda41e8ae938dd",
+   "retrieved": "2026-10-21"
+  },
+  "0001868275": {
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001868275.json",
+   "sha256": "a8687375ee9f368b8d024f1541f8aafbb4f082c1f0b27dfea8abf79fa7e16a08",
+   "retrieved": "2026-11-07"
+  },
+  "0000063908": {
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000063908.json",
+   "sha256": "0394e814d75510be107679b026e2df6e5d02d4f2029166911aa4924f9556681f",
+   "retrieved": "2026-10-30"
+  },
+  "0001692819": {
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001692819.json",
+   "sha256": "c0484a20916438410181975f561d3f9307116cdf096c4c6abd386cdd7228e1e1",
+   "retrieved": "2026-11-07"
+  }
+ },
+ "entries": [
+  {
+   "cik": "0000320193",
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "entry": {
+    "start": "2019-09-29",
+    "end": "2020-09-26",
+    "val": 274515000000,
+    "accn": "0000320193-22-000108",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2022-10-28",
+    "frame": "CY2020"
+   }
+  },
+  {
+   "cik": "0000320193",
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "entry": {
+    "start": "2020-09-27",
+    "end": "2021-09-25",
+    "val": 365817000000,
+    "accn": "0000320193-22-000108",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2022-10-28"
+   }
+  },
+  {
+   "cik": "0000320193",
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "entry": {
+    "start": "2020-09-27",
+    "end": "2021-09-25",
+    "val": 365817000000,
+    "accn": "0000320193-23-000106",
+    "fy": 2023,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-11-03",
+    "frame": "CY2021"
+   }
+  },
+  {
+   "cik": "0000320193",
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "entry": {
+    "start": "2021-09-26",
+    "end": "2022-09-24",
+    "val": 394328000000,
+    "accn": "0000320193-22-000108",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2022-10-28"
+   }
+  },
+  {
+   "cik": "0000320193",
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "entry": {
+    "start": "2021-09-26",
+    "end": "2022-09-24",
+    "val": 394328000000,
+    "accn": "0000320193-23-000106",
+    "fy": 2023,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-11-03"
+   }
+  },
+  {
+   "cik": "0000320193",
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "entry": {
+    "start": "2021-09-26",
+    "end": "2022-09-24",
+    "val": 394328000000,
+    "accn": "0000320193-24-000123",
+    "fy": 2024,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2024-11-01",
+    "frame": "CY2022"
+   }
+  },
+  {
+   "cik": "0000320193",
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "entry": {
+    "start": "2022-09-25",
+    "end": "2023-09-30",
+    "val": 383285000000,
+    "accn": "0000320193-23-000106",
+    "fy": 2023,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-11-03"
+   }
+  },
+  {
+   "cik": "0000320193",
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "entry": {
+    "start": "2022-09-25",
+    "end": "2023-09-30",
+    "val": 383285000000,
+    "accn": "0000320193-24-000123",
+    "fy": 2024,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2024-11-01"
+   }
+  },
+  {
+   "cik": "0000320193",
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "entry": {
+    "start": "2023-10-01",
+    "end": "2024-09-28",
+    "val": 391035000000,
+    "accn": "0000320193-24-000123",
+    "fy": 2024,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2024-11-01"
+   }
+  },
+  {
+   "cik": "0000320193",
+   "concept": "us-gaap:Assets",
+   "unit": "USD",
+   "entry": {
+    "end": "2021-09-25",
+    "val": 351002000000,
+    "accn": "0000320193-22-000108",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2022-10-28",
+    "frame": "CY2021Q3I"
+   }
+  },
+  {
+   "cik": "0000320193",
+   "concept": "us-gaap:Assets",
+   "unit": "USD",
+   "entry": {
+    "end": "2022-09-24",
+    "val": 352755000000,
+    "accn": "0000320193-22-000108",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2022-10-28"
+   }
+  },
+  {
+   "cik": "0000789019",
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "entry": {
+    "start": "2023-07-01",
+    "end": "2024-06-30",
+    "val": 245122000000,
+    "accn": "0001193125-26-323660",
+    "fy": 2026,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2026-07-29",
+    "frame": "CY2024"
+   }
+  },
+  {
+   "cik": "0000789019",
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "entry": {
+    "start": "2024-07-01",
+    "end": "2025-03-31",
+    "val": 205283000000,
+    "accn": "0001193125-26-191507",
+    "fy": 2026,
+    "fp": "Q3",
+    "form": "10-Q",
+    "filed": "2026-04-29"
+   }
+  },
+  {
+   "cik": "0000789019",
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "entry": {
+    "start": "2025-01-01",
+    "end": "2025-03-31",
+    "val": 70066000000,
+    "accn": "0001193125-26-191507",
+    "fy": 2026,
+    "fp": "Q3",
+    "form": "10-Q",
+    "filed": "2026-04-29",
+    "frame": "CY2025Q1"
+   }
+  },
+  {
+   "cik": "0000789019",
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "entry": {
+    "start": "2024-07-01",
+    "end": "2025-06-30",
+    "val": 281724000000,
+    "accn": "0001193125-26-323660",
+    "fy": 2026,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2026-07-29",
+    "frame": "CY2025"
+   }
+  },
+  {
+   "cik": "0000789019",
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "entry": {
+    "start": "2025-07-01",
+    "end": "2026-03-31",
+    "val": 241832000000,
+    "accn": "0001193125-26-191507",
+    "fy": 2026,
+    "fp": "Q3",
+    "form": "10-Q",
+    "filed": "2026-04-29"
+   }
+  },
+  {
+   "cik": "0000789019",
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "entry": {
+    "start": "2026-01-01",
+    "end": "2026-03-31",
+    "val": 82886000000,
+    "accn": "0001193125-26-191507",
+    "fy": 2026,
+    "fp": "Q3",
+    "form": "10-Q",
+    "filed": "2026-04-29",
+    "frame": "CY2026Q1"
+   }
+  },
+  {
+   "cik": "0000789019",
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "unit": "USD",
+   "entry": {
+    "start": "2025-07-01",
+    "end": "2026-06-30",
+    "val": 331839000000,
+    "accn": "0001193125-26-323660",
+    "fy": 2026,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2026-07-29",
+    "frame": "CY2026"
+   }
+  },
+  {
+   "cik": "0001868275",
+   "concept": "us-gaap:ProfitLoss",
+   "unit": "USD",
+   "entry": {
+    "start": "2020-01-01",
+    "end": "2020-12-31",
+    "val": 579000000,
+    "accn": "0001868275-23-000014",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-02-16",
+    "frame": "CY2020"
+   }
+  },
+  {
+   "cik": "0001868275",
+   "concept": "us-gaap:ProfitLoss",
+   "unit": "USD",
+   "entry": {
+    "start": "2021-01-01",
+    "end": "2021-12-31",
+    "val": -83000000,
+    "accn": "0001868275-23-000014",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-02-16"
+   }
+  },
+  {
+   "cik": "0001868275",
+   "concept": "us-gaap:ProfitLoss",
+   "unit": "USD",
+   "entry": {
+    "start": "2022-01-01",
+    "end": "2022-01-31",
+    "val": 151000000,
+    "accn": "0001868275-23-000014",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-02-16"
+   }
+  },
+  {
+   "cik": "0001868275",
+   "concept": "us-gaap:ProfitLoss",
+   "unit": "USD",
+   "entry": {
+    "start": "2022-01-01",
+    "end": "2022-12-31",
+    "val": -167000000,
+    "accn": "0001868275-23-000014",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-02-16"
+   }
+  },
+  {
+   "cik": "0001868275",
+   "concept": "us-gaap:ProfitLoss",
+   "unit": "USD",
+   "entry": {
+    "start": "2022-02-01",
+    "end": "2022-12-31",
+    "val": -318000000,
+    "accn": "0001868275-23-000014",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-02-16"
+   }
+  },
+  {
+   "cik": "0000063908",
+   "concept": "us-gaap:RestructuringAndRelatedCostIncurredCost",
+   "unit": "USD",
+   "entry": {
+    "start": "2023-01-01",
+    "end": "2023-03-31",
+    "val": 180500000,
+    "accn": "0000063908-24-000072",
+    "fy": 2023,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2024-02-22",
+    "frame": "CY2023Q1"
+   }
+  },
+  {
+   "cik": "0000063908",
+   "concept": "us-gaap:RestructuringAndRelatedCostIncurredCost",
+   "unit": "USD",
+   "entry": {
+    "start": "2023-04-01",
+    "end": "2023-06-30",
+    "val": 18700000,
+    "accn": "0000063908-24-000072",
+    "fy": 2023,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2024-02-22",
+    "frame": "CY2023Q2"
+   }
+  },
+  {
+   "cik": "0000063908",
+   "concept": "us-gaap:RestructuringAndRelatedCostIncurredCost",
+   "unit": "USD",
+   "entry": {
+    "start": "2023-07-01",
+    "end": "2023-09-30",
+    "val": 20500000,
+    "accn": "0000063908-24-000072",
+    "fy": 2023,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2024-02-22",
+    "frame": "CY2023Q3"
+   }
+  },
+  {
+   "cik": "0000063908",
+   "concept": "us-gaap:RestructuringAndRelatedCostIncurredCost",
+   "unit": "USD",
+   "entry": {
+    "start": "2023-01-01",
+    "end": "2023-12-31",
+    "val": 249700000,
+    "accn": "0000063908-24-000072",
+    "fy": 2023,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2024-02-22"
+   }
+  },
+  {
+   "cik": "0000063908",
+   "concept": "us-gaap:RestructuringAndRelatedCostIncurredCost",
+   "unit": "USD",
+   "entry": {
+    "start": "2023-01-01",
+    "end": "2023-12-31",
+    "val": 250000000,
+    "accn": "0000063908-25-000012",
+    "fy": 2024,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2025-02-25"
+   }
+  },
+  {
+   "cik": "0000063908",
+   "concept": "us-gaap:RestructuringAndRelatedCostIncurredCost",
+   "unit": "USD",
+   "entry": {
+    "start": "2023-01-01",
+    "end": "2023-12-31",
+    "val": 250000000,
+    "accn": "0000063908-26-000035",
+    "fy": 2025,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "frame": "CY2023"
+   }
+  },
+  {
+   "cik": "0000063908",
+   "concept": "us-gaap:RestructuringAndRelatedCostIncurredCost",
+   "unit": "USD",
+   "entry": {
+    "start": "2023-10-01",
+    "end": "2023-12-31",
+    "val": 30000000,
+    "accn": "0000063908-24-000072",
+    "fy": 2023,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2024-02-22",
+    "frame": "CY2023Q4"
+   }
+  },
+  {
+   "cik": "0000063908",
+   "concept": "us-gaap:RestructuringAndRelatedCostIncurredCost",
+   "unit": "USD",
+   "entry": {
+    "start": "2023-01-01",
+    "end": "2024-12-31",
+    "val": 471000000,
+    "accn": "0000063908-25-000012",
+    "fy": 2024,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2025-02-25"
+   }
+  },
+  {
+   "cik": "0000063908",
+   "concept": "us-gaap:RestructuringAndRelatedCostIncurredCost",
+   "unit": "USD",
+   "entry": {
+    "start": "2024-01-01",
+    "end": "2024-12-31",
+    "val": 221000000,
+    "accn": "0000063908-25-000012",
+    "fy": 2024,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2025-02-25"
+   }
+  },
+  {
+   "cik": "0000063908",
+   "concept": "us-gaap:RestructuringAndRelatedCostIncurredCost",
+   "unit": "USD",
+   "entry": {
+    "start": "2024-01-01",
+    "end": "2024-12-31",
+    "val": 221000000,
+    "accn": "0000063908-26-000035",
+    "fy": 2025,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "frame": "CY2024"
+   }
+  },
+  {
+   "cik": "0000063908",
+   "concept": "us-gaap:RestructuringAndRelatedCostIncurredCost",
+   "unit": "USD",
+   "entry": {
+    "start": "2023-01-01",
+    "end": "2025-12-31",
+    "val": 697000000,
+    "accn": "0000063908-26-000035",
+    "fy": 2025,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2026-02-24"
+   }
+  },
+  {
+   "cik": "0000063908",
+   "concept": "us-gaap:RestructuringAndRelatedCostIncurredCost",
+   "unit": "USD",
+   "entry": {
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "val": 226000000,
+    "accn": "0000063908-26-000035",
+    "fy": 2025,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "frame": "CY2025"
+   }
+  },
+  {
+   "cik": "0001692819",
+   "concept": "us-gaap:CommonStockDividendsPerShareCashPaid",
+   "unit": "USD/shares",
+   "entry": {
+    "start": "2020-03-01",
+    "end": "2020-03-31",
+    "val": 0.135,
+    "accn": "0001692819-23-000005",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-03-01",
+    "frame": "CY2020Q1I"
+   }
+  },
+  {
+   "cik": "0001692819",
+   "concept": "us-gaap:CommonStockDividendsPerShareCashPaid",
+   "unit": "USD/shares",
+   "entry": {
+    "start": "2020-06-01",
+    "end": "2020-06-30",
+    "val": 0.135,
+    "accn": "0001692819-23-000005",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-03-01",
+    "frame": "CY2020Q2I"
+   }
+  },
+  {
+   "cik": "0001692819",
+   "concept": "us-gaap:CommonStockDividendsPerShareCashPaid",
+   "unit": "USD/shares",
+   "entry": {
+    "start": "2020-09-01",
+    "end": "2020-09-30",
+    "val": 0.135,
+    "accn": "0001692819-23-000005",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-03-01",
+    "frame": "CY2020Q3I"
+   }
+  },
+  {
+   "cik": "0001692819",
+   "concept": "us-gaap:CommonStockDividendsPerShareCashPaid",
+   "unit": "USD/shares",
+   "entry": {
+    "start": "2020-12-01",
+    "end": "2020-12-31",
+    "val": 0.135,
+    "accn": "0001692819-23-000005",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-03-01",
+    "frame": "CY2020Q4I"
+   }
+  },
+  {
+   "cik": "0001692819",
+   "concept": "us-gaap:CommonStockDividendsPerShareCashPaid",
+   "unit": "USD/shares",
+   "entry": {
+    "start": "2021-03-01",
+    "end": "2021-03-31",
+    "val": 0.15,
+    "accn": "0001692819-23-000005",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-03-01"
+   }
+  },
+  {
+   "cik": "0001692819",
+   "concept": "us-gaap:CommonStockDividendsPerShareCashPaid",
+   "unit": "USD/shares",
+   "entry": {
+    "start": "2021-06-01",
+    "end": "2021-06-30",
+    "val": 0.15,
+    "accn": "0001692819-23-000005",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-03-01"
+   }
+  },
+  {
+   "cik": "0001692819",
+   "concept": "us-gaap:CommonStockDividendsPerShareCashPaid",
+   "unit": "USD/shares",
+   "entry": {
+    "start": "2021-09-01",
+    "end": "2021-09-30",
+    "val": 0.15,
+    "accn": "0001692819-23-000005",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-03-01"
+   }
+  },
+  {
+   "cik": "0001692819",
+   "concept": "us-gaap:CommonStockDividendsPerShareCashPaid",
+   "unit": "USD/shares",
+   "entry": {
+    "start": "2021-12-01",
+    "end": "2021-12-31",
+    "val": 0.15,
+    "accn": "0001692819-23-000005",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-03-01"
+   }
+  },
+  {
+   "cik": "0001692819",
+   "concept": "us-gaap:CommonStockDividendsPerShareCashPaid",
+   "unit": "USD/shares",
+   "entry": {
+    "start": "2022-03-01",
+    "end": "2022-03-31",
+    "val": 0.17,
+    "accn": "0001692819-23-000005",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-03-01"
+   }
+  },
+  {
+   "cik": "0001692819",
+   "concept": "us-gaap:CommonStockDividendsPerShareCashPaid",
+   "unit": "USD/shares",
+   "entry": {
+    "start": "2022-06-01",
+    "end": "2022-06-30",
+    "val": 0.177,
+    "accn": "0001692819-23-000005",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-03-01"
+   }
+  },
+  {
+   "cik": "0001692819",
+   "concept": "us-gaap:CommonStockDividendsPerShareCashPaid",
+   "unit": "USD/shares",
+   "entry": {
+    "start": "2022-09-01",
+    "end": "2022-09-30",
+    "val": 0.184,
+    "accn": "0001692819-23-000005",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-03-01"
+   }
+  },
+  {
+   "cik": "0001692819",
+   "concept": "us-gaap:CommonStockDividendsPerShareCashPaid",
+   "unit": "USD/shares",
+   "entry": {
+    "start": "2022-12-01",
+    "end": "2022-12-31",
+    "val": 0.193,
+    "accn": "0001692819-23-000005",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2023-03-01"
+   }
+  }
+ ]
+}

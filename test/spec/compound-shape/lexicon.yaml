@@ -1,0 +1,22 @@
+# Synthetic lexicon for the compound-shape spec tests (made-up filers DEVA..DEVF), with the
+# four S4 ratio ids as metrics (docs/specs/compound-shape.md requirement 2).
+companies:
+  DEVA: {short: Deva, legal: Deva Holdings Inc.}
+  DEVB: {short: Devb, legal: Devb Corporation}
+  DEVC: {short: Devc, legal: Devc Inc.}
+  DEVD: {short: Devd, legal: Devd Ltd.}
+  DEVE: {short: Deve, legal: Deve SE}
+  DEVF: {short: Devf, legal: Devf Corp.}
+metrics:
+  Revenue: {label: revenue, synonyms: [net sales]}
+  OperatingIncome: {label: operating income, synonyms: [operating profit]}
+  NetIncome: {label: net income, synonyms: [net earnings]}
+  operating_margin: {label: operating margin, synonyms: [operating profit margin]}
+  net_margin: {label: net margin, synonyms: [net profit margin]}
+  rd_intensity: {label: R&D intensity, synonyms: [research intensity]}
+  current_ratio: {label: current ratio, synonyms: [liquidity ratio]}
+universes:
+  big: [the covered companies]
+  small: [the pair]
+  tiny: [the lone filer]
+  extra: [the extended group]

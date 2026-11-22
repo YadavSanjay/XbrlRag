@@ -1,0 +1,227 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-29",
+  "criteria": {
+    "C1": [
+      "test/spec/eval-judge/test_ej_c1_aggregation.py::test_hand_counted_scores",
+      "test/spec/eval-judge/test_ej_c1_aggregation.py::test_scores_follow_the_formulas",
+      "test/spec/eval-judge/test_ej_c1_aggregation.py::test_permuting_claims_keeps_scores"
+    ],
+    "C2": [
+      "test/spec/eval-judge/test_ej_c2_uncited.py::test_uncited_claim_is_unsupported",
+      "test/spec/eval-judge/test_ej_c2_uncited.py::test_adding_an_uncited_claim_adds_one_unsupported"
+    ],
+    "C3": [
+      "test/spec/eval-judge/test_ej_c3_inputs.py::test_empty_answer_scores_zero_without_a_call",
+      "test/spec/eval-judge/test_ej_c3_inputs.py::test_empty_key_points_and_duplicate_ids_raise",
+      "test/spec/eval-judge/test_ej_c3_inputs.py::test_empty_answer_never_calls"
+    ],
+    "C4": [
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_the_well_formed_reply_scores",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[claim_duplicate]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[claim_extra]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[claim_missing]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[claims_missing]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[claims_not_list]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[correct_not_bool]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[covered_not_bool]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[json_array]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[key_points_missing]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[not_json]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[point_duplicate]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[point_missing]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[point_out_of_range]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[supported_int]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[supported_missing]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_failed_call_is_judge_error[provider_error]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_failed_call_is_judge_error[refusal]",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_run_halt_propagates",
+      "test/spec/eval-judge/test_ej_c4_judge_error.py::test_dropping_a_claim_entry_turns_a_score_into_an_error"
+    ],
+    "C5": [
+      "test/spec/eval-judge/test_ej_c5_untrusted.py::test_untrusted_text_reaches_only_the_user_message",
+      "test/spec/eval-judge/test_ej_c5_untrusted.py::test_random_untrusted_text"
+    ],
+    "C6": [
+      "test/spec/eval-judge/test_ej_c6_family_version.py::test_model_family_examples",
+      "test/spec/eval-judge/test_ej_c6_family_version.py::test_same_or_unknown_family_is_refused[deepseek-flash-deepseek-v4-pro]",
+      "test/spec/eval-judge/test_ej_c6_family_version.py::test_same_or_unknown_family_is_refused[gpt-5-gpt-5.6-sol]",
+      "test/spec/eval-judge/test_ej_c6_family_version.py::test_same_or_unknown_family_is_refused[claude-haiku-5-5-claude-opus-5-5]",
+      "test/spec/eval-judge/test_ej_c6_family_version.py::test_same_or_unknown_family_is_refused[llama-3-70b-instruct-gpt-5.6-sol]",
+      "test/spec/eval-judge/test_ej_c6_family_version.py::test_same_or_unknown_family_is_refused[claude-opus-5-5-llama-3-70b-instruct]",
+      "test/spec/eval-judge/test_ej_c6_family_version.py::test_cross_family_builds_and_is_stamped",
+      "test/spec/eval-judge/test_ej_c6_family_version.py::test_family_is_the_llm_yaml_provider",
+      "test/spec/eval-judge/test_ej_c6_family_version.py::test_construction_raises_exactly_for_same_provider",
+      "test/spec/eval-judge/test_ej_c6_family_version.py::test_judge_version_format"
+    ],
+    "C7": [
+      "test/spec/eval-judge/test_ej_c7_kappa.py::test_wikipedia_worked_example",
+      "test/spec/eval-judge/test_ej_c7_kappa.py::test_hand_computed_examples",
+      "test/spec/eval-judge/test_ej_c7_kappa.py::test_invalid_input_raises",
+      "test/spec/eval-judge/test_ej_c7_kappa.py::test_symmetry_relabelling_and_permutation",
+      "test/spec/eval-judge/test_ej_c7_kappa.py::test_self_agreement_is_one"
+    ],
+    "C8": [
+      "test/spec/eval-judge/test_ej_c8_calibration_gate.py::test_worked_example_fails_the_threshold",
+      "test/spec/eval-judge/test_ej_c8_calibration_gate.py::test_pass_needs_enough_items_and_agreement",
+      "test/spec/eval-judge/test_ej_c8_calibration_gate.py::test_gate_follows_the_last_report_for_the_version",
+      "test/spec/eval-judge/test_ej_c8_calibration_gate.py::test_report_matches_its_definition"
+    ]
+  },
+  "files": {
+    "test/spec/eval-judge/conftest.py": "feb8cb24692c5af15aa038f4f4285e010fe4bcf53ae586831d2e90e5924cdc13",
+    "test/spec/eval-judge/test_ej_c1_aggregation.py": "40b96fb30c21c035e2289ba40dc9dab274b7c5e083917ba4d83f8420ad40a4d0",
+    "test/spec/eval-judge/test_ej_c2_uncited.py": "305450310b2721d0480b876b0dd847908e69b44390c663d08bd7fe47adf832a8",
+    "test/spec/eval-judge/test_ej_c3_inputs.py": "9d1cfff277a6ab6811575e9980be1b0436ced06b87615b96702c45cdbd00fe3c",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py": "e957cac7e70a7ea1c050ab82b8cec949d9acd5133a9ef24f7925b45ccdbfe57a",
+    "test/spec/eval-judge/test_ej_c5_untrusted.py": "78f69bdbfdf957007df07536a6d71bb157866e3be4654af53651d33b27e90f1e",
+    "test/spec/eval-judge/test_ej_c6_family_version.py": "f2f0fefd059dafd01932a4f9a19f94600c942463006f2ec5a3495511a69ba0ee",
+    "test/spec/eval-judge/test_ej_c7_kappa.py": "2389d6d59c106e7c0af32104fe27f407d92fc80d0db2bda0a9d7f92b4bfe2269",
+    "test/spec/eval-judge/test_ej_c8_calibration_gate.py": "6f2b45b2eb879d3dae57e4ab0f5faf567a0f147e03379c4773581697ebf17583"
+  },
+  "id": "eval-judge",
+  "interface": [
+    {
+      "file": "src/eval/core/graders/judge.py",
+      "module": "eval.core.graders.judge",
+      "qualname": "model_family",
+      "signature": "def model_family(model: str) -> str"
+    },
+    {
+      "file": "src/eval/core/graders/judge.py",
+      "module": "eval.core.graders.judge",
+      "qualname": "judge_version",
+      "signature": "def judge_version(prompt_version: str, model: str) -> str"
+    },
+    {
+      "file": "src/eval/core/graders/judge.py",
+      "module": "eval.core.graders.judge",
+      "qualname": "Claim.__init__",
+      "signature": "def __init__(self, claim_id: str, text: str, cited_passages: Sequence[str]) -> None"
+    },
+    {
+      "file": "src/eval/core/graders/judge.py",
+      "module": "eval.core.graders.judge",
+      "qualname": "ClaimVerdict.__init__",
+      "signature": "def __init__(self, claim_id: str, correct: bool, supported: bool) -> None"
+    },
+    {
+      "file": "src/eval/core/graders/judge.py",
+      "module": "eval.core.graders.judge",
+      "qualname": "JudgeResult.__init__",
+      "signature": "def __init__(self, *, judge_version: str, verdicts: Sequence[ClaimVerdict], correctness: float | None, completeness: float | None, citation_support: float | None, unsupported_claims: int | None, error: str | None=None) -> None"
+    },
+    {
+      "file": "src/eval/core/graders/judge.py",
+      "module": "eval.core.graders.judge",
+      "qualname": "ClaimJudge.__init__",
+      "signature": "def __init__(self, *, model: str, generator_model: str, gateway: LLMGateway | None=None, prompt_version: str='v1') -> None"
+    },
+    {
+      "file": "src/eval/core/graders/judge.py",
+      "module": "eval.core.graders.judge",
+      "qualname": "ClaimJudge.judge_version",
+      "signature": "@property def judge_version(self) -> str"
+    },
+    {
+      "file": "src/eval/core/graders/judge.py",
+      "module": "eval.core.graders.judge",
+      "qualname": "ClaimJudge.judge",
+      "signature": "def judge(self, question: str, reference_answer: str, key_points: Sequence[str], claims: Sequence[Claim]) -> JudgeResult"
+    },
+    {
+      "file": "src/eval/core/graders/judge.py",
+      "module": "eval.core.graders.judge",
+      "qualname": "cohen_kappa",
+      "signature": "def cohen_kappa(labels_a: Sequence[Hashable], labels_b: Sequence[Hashable]) -> float"
+    },
+    {
+      "file": "src/eval/core/graders/judge.py",
+      "module": "eval.core.graders.judge",
+      "qualname": "CalibrationReport.__init__",
+      "signature": "def __init__(self, *, judge_version: str, n: int, kappa: float, threshold: float, min_items: int, passed: bool) -> None"
+    },
+    {
+      "file": "src/eval/core/graders/judge.py",
+      "module": "eval.core.graders.judge",
+      "qualname": "calibration_report",
+      "signature": "def calibration_report(judge_labels: Sequence[Hashable], human_labels: Sequence[Hashable], *, judge_version: str, threshold: float=0.7, min_items: int=100) -> CalibrationReport"
+    },
+    {
+      "file": "src/eval/core/graders/judge.py",
+      "module": "eval.core.graders.judge",
+      "qualname": "scores_reportable",
+      "signature": "def scores_reportable(judge_version: str, reports: Sequence[CalibrationReport]) -> bool"
+    }
+  ],
+  "nodes": [
+    "test/spec/eval-judge/test_ej_c1_aggregation.py::test_hand_counted_scores",
+    "test/spec/eval-judge/test_ej_c1_aggregation.py::test_permuting_claims_keeps_scores",
+    "test/spec/eval-judge/test_ej_c1_aggregation.py::test_scores_follow_the_formulas",
+    "test/spec/eval-judge/test_ej_c2_uncited.py::test_adding_an_uncited_claim_adds_one_unsupported",
+    "test/spec/eval-judge/test_ej_c2_uncited.py::test_uncited_claim_is_unsupported",
+    "test/spec/eval-judge/test_ej_c3_inputs.py::test_empty_answer_never_calls",
+    "test/spec/eval-judge/test_ej_c3_inputs.py::test_empty_answer_scores_zero_without_a_call",
+    "test/spec/eval-judge/test_ej_c3_inputs.py::test_empty_key_points_and_duplicate_ids_raise",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_dropping_a_claim_entry_turns_a_score_into_an_error",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_failed_call_is_judge_error[provider_error]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_failed_call_is_judge_error[refusal]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[claim_duplicate]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[claim_extra]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[claim_missing]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[claims_missing]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[claims_not_list]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[correct_not_bool]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[covered_not_bool]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[json_array]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[key_points_missing]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[not_json]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[point_duplicate]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[point_missing]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[point_out_of_range]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[supported_int]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_malformed_reply_is_judge_error[supported_missing]",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_run_halt_propagates",
+    "test/spec/eval-judge/test_ej_c4_judge_error.py::test_the_well_formed_reply_scores",
+    "test/spec/eval-judge/test_ej_c5_untrusted.py::test_random_untrusted_text",
+    "test/spec/eval-judge/test_ej_c5_untrusted.py::test_untrusted_text_reaches_only_the_user_message",
+    "test/spec/eval-judge/test_ej_c6_family_version.py::test_construction_raises_exactly_for_same_provider",
+    "test/spec/eval-judge/test_ej_c6_family_version.py::test_cross_family_builds_and_is_stamped",
+    "test/spec/eval-judge/test_ej_c6_family_version.py::test_family_is_the_llm_yaml_provider",
+    "test/spec/eval-judge/test_ej_c6_family_version.py::test_judge_version_format",
+    "test/spec/eval-judge/test_ej_c6_family_version.py::test_model_family_examples",
+    "test/spec/eval-judge/test_ej_c6_family_version.py::test_same_or_unknown_family_is_refused[claude-haiku-5-5-claude-opus-5-5]",
+    "test/spec/eval-judge/test_ej_c6_family_version.py::test_same_or_unknown_family_is_refused[claude-opus-5-5-llama-3-70b-instruct]",
+    "test/spec/eval-judge/test_ej_c6_family_version.py::test_same_or_unknown_family_is_refused[deepseek-flash-deepseek-v4-pro]",
+    "test/spec/eval-judge/test_ej_c6_family_version.py::test_same_or_unknown_family_is_refused[gpt-5-gpt-5.6-sol]",
+    "test/spec/eval-judge/test_ej_c6_family_version.py::test_same_or_unknown_family_is_refused[llama-3-70b-instruct-gpt-5.6-sol]",
+    "test/spec/eval-judge/test_ej_c7_kappa.py::test_hand_computed_examples",
+    "test/spec/eval-judge/test_ej_c7_kappa.py::test_invalid_input_raises",
+    "test/spec/eval-judge/test_ej_c7_kappa.py::test_self_agreement_is_one",
+    "test/spec/eval-judge/test_ej_c7_kappa.py::test_symmetry_relabelling_and_permutation",
+    "test/spec/eval-judge/test_ej_c7_kappa.py::test_wikipedia_worked_example",
+    "test/spec/eval-judge/test_ej_c8_calibration_gate.py::test_gate_follows_the_last_report_for_the_version",
+    "test/spec/eval-judge/test_ej_c8_calibration_gate.py::test_pass_needs_enough_items_and_agreement",
+    "test/spec/eval-judge/test_ej_c8_calibration_gate.py::test_report_matches_its_definition",
+    "test/spec/eval-judge/test_ej_c8_calibration_gate.py::test_worked_example_fails_the_threshold"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/eval-judge.md",
+    "sha256": "bfae6401c041cf341b82f2b3eed8f698fb56ea57bb56710643b156acbc28cef4"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

@@ -1,0 +1,170 @@
+{
+ "source": "xbrl_db entity_master (cik, trading_symbol, company_name), read 2026-11-07",
+ "rows": [
+  {
+   "cik": "0000320193",
+   "trading_symbol": "AAPL",
+   "company_name": "Apple Inc."
+  },
+  {
+   "cik": "0000001800",
+   "trading_symbol": "ABT",
+   "company_name": "Abbott Laboratories"
+  },
+  {
+   "cik": "0000796343",
+   "trading_symbol": "ADBE",
+   "company_name": "ADOBE INC."
+  },
+  {
+   "cik": "0000002488",
+   "trading_symbol": "AMD",
+   "company_name": "ADVANCED MICRO DEVICES, INC"
+  },
+  {
+   "cik": "0001018724",
+   "trading_symbol": "AMZN",
+   "company_name": "AMAZON.COM, INC."
+  },
+  {
+   "cik": "0001730168",
+   "trading_symbol": "AVGO",
+   "company_name": "Broadcom Inc."
+  },
+  {
+   "cik": "0001868275",
+   "trading_symbol": "CEG",
+   "company_name": "CONSTELLATION ENERGY CORPORATION"
+  },
+  {
+   "cik": "0000909832",
+   "trading_symbol": "COST",
+   "company_name": "COSTCO WHOLESALE CORP /NEW"
+  },
+  {
+   "cik": "0001108524",
+   "trading_symbol": "CRM",
+   "company_name": "Salesforce, Inc."
+  },
+  {
+   "cik": "0000858877",
+   "trading_symbol": "CSCO",
+   "company_name": "CISCO SYSTEMS, INC."
+  },
+  {
+   "cik": "0001652044",
+   "trading_symbol": "GOOGL",
+   "company_name": "Alphabet Inc."
+  },
+  {
+   "cik": "0000354950",
+   "trading_symbol": "HD",
+   "company_name": "HOME DEPOT, INC."
+  },
+  {
+   "cik": "0000050863",
+   "trading_symbol": "INTC",
+   "company_name": "INTEL CORPORATION"
+  },
+  {
+   "cik": "0000021344",
+   "trading_symbol": "KO",
+   "company_name": "COCA COLA CO"
+  },
+  {
+   "cik": "0000059478",
+   "trading_symbol": "LLY",
+   "company_name": "ELI LILLY AND COMPANY"
+  },
+  {
+   "cik": "0000936468",
+   "trading_symbol": "LMT",
+   "company_name": "LOCKHEED MARTIN CORPORATION"
+  },
+  {
+   "cik": "0000063908",
+   "trading_symbol": "MCD",
+   "company_name": "McDONALD\u2019S CORPORATION"
+  },
+  {
+   "cik": "0001326801",
+   "trading_symbol": "META",
+   "company_name": "Meta Platforms, Inc."
+  },
+  {
+   "cik": "0000310158",
+   "trading_symbol": "MRK",
+   "company_name": "Merck & Co., Inc."
+  },
+  {
+   "cik": "0000789019",
+   "trading_symbol": "MSFT",
+   "company_name": "MICROSOFT CORPORATION"
+  },
+  {
+   "cik": "0000723125",
+   "trading_symbol": "MU",
+   "company_name": "Micron Technology, Inc."
+  },
+  {
+   "cik": "0001065280",
+   "trading_symbol": "NFLX",
+   "company_name": "Netflix, Inc."
+  },
+  {
+   "cik": "0001045810",
+   "trading_symbol": "NVDA",
+   "company_name": "NVIDIA CORP"
+  },
+  {
+   "cik": "0001341439",
+   "trading_symbol": "ORCL",
+   "company_name": "Oracle Corporation"
+  },
+  {
+   "cik": "0000080424",
+   "trading_symbol": "PG",
+   "company_name": "PROCTER & GAMBLE CO"
+  },
+  {
+   "cik": "0000804328",
+   "trading_symbol": "QCOM",
+   "company_name": "QUALCOMM INC/DE"
+  },
+  {
+   "cik": "0001318605",
+   "trading_symbol": "TSLA",
+   "company_name": "Tesla, Inc."
+  },
+  {
+   "cik": "0001046179",
+   "trading_symbol": "TSM",
+   "company_name": "Taiwan Semiconductor Manufacturing Company Limited"
+  },
+  {
+   "cik": "0000097476",
+   "trading_symbol": "TXN",
+   "company_name": "TEXAS INSTRUMENTS INCORPORATED"
+  },
+  {
+   "cik": "0000100885",
+   "trading_symbol": "UNP",
+   "company_name": "UNION PACIFIC CORP"
+  },
+  {
+   "cik": "0001090727",
+   "trading_symbol": "UPS",
+   "company_name": "United Parcel Service, Inc."
+  },
+  {
+   "cik": "0001692819",
+   "trading_symbol": "VST",
+   "company_name": "Vistra Corp."
+  },
+  {
+   "cik": "0000104169",
+   "trading_symbol": "WMT",
+   "company_name": "Walmart Inc."
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0000002488-26-000018	3	13	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2025	Other income (expense), net	0
+0000002488-26-000018	5	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0000002488-26-000018	5	4	BS	0	H	ShortTermInvestments	us-gaap/2025	Short-term investments	0
+0000002488-26-000018	5	9	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2025	Property and equipment, net	0
+0000002488-26-000018	8	36	CF	0	H	ProceedsFromShortTermDebt	us-gaap/2025	Proceeds from debt and commercial paper issuance, net of issuance costs	0
+0000002488-26-000018	8	46	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash, cash equivalents and restricted cash at beginning of year	0
+0000002488-26-000018	8	47	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash, cash equivalents and restricted cash at end of year	0
+0000002488-26-000018	8	60	CF	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0000002488-26-000018	8	62	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Total cash, cash equivalents, and restricted cash	0
+0000050863-26-000011	3	10	IS	0	H	NonoperatingIncomeExpense	us-gaap/2025	Interest and other, net	0
+0000050863-26-000011	5	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0000050863-26-000011	5	4	BS	0	H	AvailableForSaleSecuritiesDebtSecuritiesCurrent	us-gaap/2025	Short-term investments	0
+0000050863-26-000011	5	9	BS	0	H	PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization	us-gaap/2025	Property, plant and equipment, net	0
+0000050863-26-000011	7	1	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash and cash equivalents, beginning of period	0
+0000050863-26-000011	7	38	CF	0	H	ProceedsFromIssuanceOfLongTermDebt	us-gaap/2025	Issuance of long-term debt, net of issuance costs	0
+0000050863-26-000011	7	47	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash, cash equivalents, and restricted cash, end of period	0
+0000097476-26-000059	3	8	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2025	Other income (expense), net (OI&E)	0
+0000097476-26-000059	5	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0000097476-26-000059	5	4	BS	0	H	ShortTermInvestments	us-gaap/2025	Short-term investments	0
+0000097476-26-000059	5	12	BS	0	H	PropertyPlantAndEquipmentGross	us-gaap/2025	Property, plant and equipment at cost	0
+0000097476-26-000059	5	14	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2025	Property, plant and equipment	0
+0000097476-26-000059	7	28	CF	0	H	ProceedsFromIssuanceOfLongTermDebt	us-gaap/2025	Proceeds from issuance of long-term debt	0
+0001018724-26-000004	3	1	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	CASH, CASH EQUIVALENTS, AND RESTRICTED CASH, BEGINNING OF PERIOD	0
+0001018724-26-000004	3	25	CF	0	H	ProceedsFromShortTermDebt	us-gaap/2025	Proceeds from short-term debt, and other	0
+0001018724-26-000004	3	27	CF	0	H	ProceedsFromIssuanceOfLongTermDebt	us-gaap/2025	Proceeds from long-term debt	0
+0001018724-26-000004	3	34	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	CASH, CASH EQUIVALENTS, AND RESTRICTED CASH, END OF PERIOD	0
+0001018724-26-000004	4	19	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2025	Other income (expense), net	0
+0001018724-26-000004	4	20	IS	0	H	NonoperatingIncomeExpense	us-gaap/2025	Total non-operating income	0
+0001018724-26-000004	7	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001018724-26-000004	7	4	BS	0	H	MarketableSecuritiesCurrent	us-gaap/2025	Marketable securities	0
+0001018724-26-000004	7	8	BS	0	H	PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization	us-gaap/2025	Property and equipment, net	0
+0001628280-26-003942	3	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001628280-26-003942	3	4	BS	0	H	MarketableSecuritiesCurrent	us-gaap/2025	Marketable securities	0
+0001628280-26-003942	3	9	BS	0	H	PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization	us-gaap/2025	Property and equipment, net	0
+0001628280-26-003942	5	9	IS	0	H	NonoperatingIncomeExpense	us-gaap/2025	Interest and other income, net	0
+0001628280-26-003942	9	32	CF	0	H	ProceedsFromIssuanceOfLongTermDebt	us-gaap/2025	Proceeds from issuance of long-term debt, net	0
+0001628280-26-003942	9	38	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash, cash equivalents, and restricted cash equivalents at beginning of the period	0
+0001628280-26-003942	9	39	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash, cash equivalents, and restricted cash equivalents at end of the period	0
+0001628280-26-003942	9	41	CF	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001628280-26-003942	9	44	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Total cash, cash equivalents, and restricted cash equivalents	0
+0001628280-26-003952	3	9	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001628280-26-003952	3	10	BS	0	H	ShortTermInvestments	us-gaap/2025	Short-term investments	0
+0001628280-26-003952	3	17	BS	0	H	PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization	us-gaap/2025	Property, plant and equipment, net	0
+0001628280-26-003952	5	24	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2025	Other (expense) income, net	0
+0001628280-26-003952	9	27	CF	0	H	ProceedsFromIssuanceOfDebt	us-gaap/2025	Proceeds from issuances of debt	0
+0001628280-26-008432	3	9	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001628280-26-008432	3	13	BS	0	H	PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization	us-gaap/2025	Property, Plant and Equipment, Net	0
+0001628280-26-008432	5	15	IS	0	H	NonoperatingIncomeExpense	us-gaap/2025	Total Other Income and (Expense)	0
+0001628280-26-008432	7	29	CF	0	H	ProceedsFromIssuanceOfLongTermDebt	us-gaap/2025	Proceeds from long-term borrowings	0
+0001628280-26-008432	7	39	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Beginning of period	0
+0001628280-26-008432	7	40	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	End of period	0
+0001628280-26-019436	3	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001628280-26-019436	3	8	BS	0	H	PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization	us-gaap/2025	Net property and equipment	0
+0001628280-26-019436	5	12	IS	0	H	NonoperatingIncomeExpense	us-gaap/2025	Interest and other, net	1
+0001628280-26-019436	8	23	CF	0	H	ProceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet	us-gaap/2025	Proceeds from long-term debt, net of discounts	0
+0001628280-26-019436	8	32	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash and cash equivalents at beginning of year	0
+0001628280-26-019436	8	33	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash and cash equivalents at end of year	0
+0001652044-26-000018	3	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001652044-26-000018	3	4	BS	0	H	MarketableSecuritiesCurrent	us-gaap/2025	Marketable securities	0
+0001652044-26-000018	3	5	BS	0	H	CashCashEquivalentsAndShortTermInvestments	us-gaap/2025	Total cash, cash equivalents, and marketable securities	0
+0001652044-26-000018	3	11	BS	0	H	PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization	us-gaap/2025	Property and equipment, net	0
+0001652044-26-000018	5	9	IS	0	H	NonoperatingIncomeExpense	us-gaap/2025	Other income (expense), net	0
+0001652044-26-000018	10	31	CF	0	H	ProceedsFromDebtNetOfIssuanceCosts	us-gaap/2025	Proceeds from issuance of debt, net of costs	0
+0001652044-26-000018	10	37	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash and cash equivalents at beginning of period	0
+0001652044-26-000018	10	38	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash and cash equivalents at end of period	0
+0001692819-26-000006	6	9	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001692819-26-000006	6	20	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2025	Property, plant, and equipment  net	0
+0001692819-26-000006	8	52	CF	0	H	ProceedsFromIssuanceOfDebt	us-gaap/2025	Issuances of debt	0
+0001692819-26-000006	8	57	CF	0	H	ProceedsFromShortTermDebt	us-gaap/2025	Borrowings under Commodity-Linked Facility	0
+0001692819-26-000006	8	70	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash, cash equivalents, and restricted cash (current and noncurrent)  beginning balance	0
+0001692819-26-000006	8	71	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash, cash equivalents, and restricted cash (current and noncurrent)  ending balance	0

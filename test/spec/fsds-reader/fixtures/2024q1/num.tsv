@@ -1,0 +1,89 @@
+adsh	tag	version	ddate	qtrs	uom	segments	coreg	value	footnote
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	BusinessSegments=ConstellationMidAtlantic;ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		4564000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	LegalEntity=ConstellationEnergyGenerationLLC;	ConstellationEnergyGenerationLLC	24440000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	BusinessSegments=ConstellationERCOT;ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		1341000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	BusinessSegments=ConstellationMidwest;ProductOrService=Electricity;		4060000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	FairValueByLiabilityClass=ContractLiability;		82000000.0000	
+0001868275-24-000014	OperatingIncomeLoss	us-gaap/2023	20211231	4	USD	LegalEntity=ConstellationEnergyGenerationLLC;	ConstellationEnergyGenerationLLC	-346000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	BusinessSegments=ConstellationMidAtlantic;ConsolidationItems=IntersegmentElimination;ProductOrService=Electricity;		-50000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	ProductOrService=Electricity;		19684000000.0000	
+0001868275-24-000014	Assets	us-gaap/2023	20231231	0	USD	ConsolidatedEntities=VariableInterestEntityPrimaryBeneficiary;PledgedStatus=AssetPledgedAsCollateral;		3355000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		16290000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	BusinessSegments=ConstellationMidwest;ProductOrService=Electricity;		4658000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	ProductOrService=Electricity;		16290000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	FairValueByLiabilityClass=ContractLiability;		26000000.0000	
+0001868275-24-000014	Assets	us-gaap/2023	20221231	0	USD	ConsolidatedEntities=VariableInterestEntityPrimaryBeneficiary;LegalEntity=ConstellationEnergyGenerationLLC;PledgedStatus=AssetPledgedAsCollateral;		2641000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	BusinessSegments=ConstellationMidwest;ConsolidationItems=IntersegmentElimination;ProductOrService=Electricity;		-7000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	BusinessSegments=ConstellationOtherRegions;ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		5864000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	BusinessSegments=ConstellationOtherRegions;ConsolidationItems=IntersegmentElimination;ProductOrService=Electricity;		-13000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	BusinessSegments=ConstellationNewYork;ConsolidationItems=IntersegmentElimination;ProductOrService=Electricity;		55000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	BusinessSegments=ConstellationERCOT;ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		1172000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	BusinessSegments=ConstellationMidAtlantic;ProductOrService=Electricity;		5164000000.0000	
+0001868275-24-000014	OperatingIncomeLoss	us-gaap/2023	20221231	4	USD			495000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	BusinessSegments=ConstellationERCOT;ProductOrService=Electricity;		1181000000.0000	
+0001868275-24-000014	Assets	us-gaap/2023	20221231	0	USD	ConsolidatedEntities=VariableInterestEntityNotPrimaryBeneficiary;VariableInterestEntitiesbyInterestType=EquityInvestmentVIE;		0.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	ProductOrService=Electricity;		19014000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	BusinessSegments=ConstellationOtherRegions;ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		4918000000.0000	
+0001868275-24-000014	Assets	us-gaap/2023	20221231	0	USD			46909000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	BusinessSegments=ConstellationMidAtlantic;ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		5159000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	BusinessSegments=ConstellationNewYork;ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		1576000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	BusinessSegments=ConstellationNewYork;ConsolidationItems=IntersegmentElimination;ProductOrService=Electricity;		-1000000.0000	
+0001868275-24-000014	Assets	us-gaap/2023	20231231	0	USD	ConsolidatedEntities=VariableInterestEntityNotPrimaryBeneficiary;		704000000.0000	
+0001868275-24-000014	Assets	us-gaap/2023	20231231	0	USD	LegalEntity=ConstellationEnergyGenerationLLC;	ConstellationEnergyGenerationLLC	50738000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	BusinessSegments=ConstellationERCOT;ProductOrService=Electricity;		1346000000.0000	
+0001868275-24-000014	Assets	us-gaap/2023	20231231	0	USD	ConsolidatedEntities=VariableInterestEntityPrimaryBeneficiary;LegalEntity=ConstellationEnergyGenerationLLC;PledgedStatus=AssetPledgedAsCollateral;		3355000000.0000	
+0001868275-24-000014	OperatingIncomeLoss	us-gaap/2023	20211231	4	USD			-346000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	BusinessSegments=ConstellationOtherRegions;ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		6716000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		19014000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	BusinessSegments=ConstellationMidwest;ProductOrService=Electricity;		4650000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	BusinessSegments=ConstellationMidAtlantic;ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		5188000000.0000	
+0001868275-24-000014	Assets	us-gaap/2023	20231231	0	USD			50758000000.0000	Our consolidated assets include $3,355 million and $2,641 million at December 31, 2023 and 2022, respectively, of certain VIEs that can only be used to settle the liabilities of the VIE. Our consolidated liabilities include $990 million and $1,041 million at December 31, 2023 and 2022, respectively, of certain VIEs for which the VIE creditors do not have recourse to us. See Note 22Variable Interest Entities for additional information.
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	BusinessSegments=ConstellationOtherRegions;ProductOrService=Electricity;		5851000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	BusinessSegments=ConstellationMidwest;ConsolidationItems=IntersegmentElimination;ProductOrService=Electricity;		3000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	BusinessSegments=ConstellationMidAtlantic;ProductOrService=Electricity;		4584000000.0000	
+0001868275-24-000014	Assets	us-gaap/2023	20231231	0	USD	ConsolidatedEntities=VariableInterestEntityNotPrimaryBeneficiary;VariableInterestEntitiesbyInterestType=CommercialAgreementVIE;		704000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	BusinessSegments=ConstellationMidwest;ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		4655000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	ConsolidationItems=MaterialReconcilingItems;ProductOrService=ProductAndServiceOther;		-211000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	BusinessSegments=ConstellationERCOT;ConsolidationItems=IntersegmentElimination;ProductOrService=Electricity;		9000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	BusinessSegments=ConstellationMidwest;ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		4657000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	BusinessSegments=ConstellationMidwest;ConsolidationItems=IntersegmentElimination;ProductOrService=Electricity;		0.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	BusinessSegments=ConstellationMidAtlantic;ConsolidationItems=IntersegmentElimination;ProductOrService=Electricity;		5000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	BusinessSegments=ConstellationNewYork;ConsolidationItems=IntersegmentElimination;ProductOrService=Electricity;		-1000000.0000	
+0001868275-24-000014	Assets	us-gaap/2023	20231231	0	USD	ConsolidatedEntities=VariableInterestEntityPrimaryBeneficiary;		3532000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	BusinessSegments=ConstellationOtherRegions;ConsolidationItems=IntersegmentElimination;ProductOrService=Electricity;		16000000.0000	
+0001868275-24-000014	Assets	us-gaap/2023	20221231	0	USD	ConsolidatedEntities=VariableInterestEntityNotPrimaryBeneficiary;		715000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	BusinessSegments=ConstellationOtherRegions;ConsolidationItems=IntersegmentElimination;ProductOrService=Electricity;		-28000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	BusinessSegments=ConstellationOtherRegions;ProductOrService=Electricity;		4890000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	BusinessSegments=ConstellationNewYork;ProductOrService=Electricity;		2021000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	FairValueByLiabilityClass=ContractLiability;		71000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	ConsolidationItems=MaterialReconcilingItems;ProductOrService=NaturalGasReserves;		3379000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	BusinessSegments=ConstellationMidAtlantic;ConsolidationItems=IntersegmentElimination;ProductOrService=Electricity;		20000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	BusinessSegments=ConstellationERCOT;ProductOrService=Electricity;		1543000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		19684000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	BusinessSegments=ConstellationNewYork;ProductOrService=Electricity;		1575000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	BusinessSegments=ConstellationERCOT;ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		1556000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	BusinessSegments=ConstellationERCOT;ConsolidationItems=IntersegmentElimination;ProductOrService=Electricity;		-13000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	LegalEntity=ConstellationEnergyGenerationLLC;	ConstellationEnergyGenerationLLC	24918000000.0000	
+0001868275-24-000014	OperatingIncomeLoss	us-gaap/2023	20231231	4	USD			1610000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	BusinessSegments=ConstellationOtherRegions;ProductOrService=Electricity;		6732000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	BusinessSegments=ConstellationNewYork;ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		1966000000.0000	
+0001868275-24-000014	Assets	us-gaap/2023	20221231	0	USD	ConsolidatedEntities=VariableInterestEntityPrimaryBeneficiary;PledgedStatus=AssetPledgedAsCollateral;		2641000000.0000	
+0001868275-24-000014	Assets	us-gaap/2023	20221231	0	USD	LegalEntity=ConstellationEnergyGenerationLLC;	ConstellationEnergyGenerationLLC	46869000000.0000	
+0001868275-24-000014	Assets	us-gaap/2023	20231231	0	USD	ConsolidatedEntities=VariableInterestEntityNotPrimaryBeneficiary;VariableInterestEntitiesbyInterestType=EquityInvestmentVIE;		0.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	ConsolidationItems=MaterialReconcilingItems;ProductOrService=NaturalGasReserves;		3725000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	BusinessSegments=ConstellationNewYork;ProductOrService=Electricity;		1595000000.0000	
+0001868275-24-000014	OperatingIncomeLoss	us-gaap/2023	20231231	4	USD	LegalEntity=ConstellationEnergyGenerationLLC;	ConstellationEnergyGenerationLLC	1610000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD			24918000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	BusinessSegments=ConstellationMidAtlantic;ProductOrService=Electricity;		5138000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	ConsolidationItems=MaterialReconcilingItems;ProductOrService=NaturalGasReserves;		4967000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	BusinessSegments=ConstellationERCOT;ConsolidationItems=IntersegmentElimination;ProductOrService=Electricity;		5000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	ConsolidationItems=MaterialReconcilingItems;ProductOrService=ProductAndServiceOther;		-20000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD			19649000000.0000	
+0001868275-24-000014	OperatingIncomeLoss	us-gaap/2023	20221231	4	USD	LegalEntity=ConstellationEnergyGenerationLLC;	ConstellationEnergyGenerationLLC	495000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	BusinessSegments=ConstellationMidwest;ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		4060000000.0000	
+0001868275-24-000014	Assets	us-gaap/2023	20221231	0	USD	ConsolidatedEntities=VariableInterestEntityPrimaryBeneficiary;		2842000000.0000	
+0001868275-24-000014	Assets	us-gaap/2023	20221231	0	USD	ConsolidatedEntities=VariableInterestEntityNotPrimaryBeneficiary;VariableInterestEntitiesbyInterestType=CommercialAgreementVIE;		715000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20211231	4	USD	LegalEntity=ConstellationEnergyGenerationLLC;	ConstellationEnergyGenerationLLC	19649000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD	BusinessSegments=ConstellationNewYork;ConsolidationItems=OperatingSegments;ProductOrService=Electricity;		1596000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20231231	4	USD	ConsolidationItems=MaterialReconcilingItems;ProductOrService=ProductAndServiceOther;		2179000000.0000	
+0001868275-24-000014	Revenues	us-gaap/2023	20221231	4	USD			24440000000.0000	

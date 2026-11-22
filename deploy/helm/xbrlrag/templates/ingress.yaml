@@ -1,0 +1,43 @@
+{{- if .Values.ingress.enabled }}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ include "xbrlrag.fullname" . }}
+  labels:
+    {{- include "xbrlrag.labels" . | nindent 4 }}
+  {{- with .Values.ingress.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+spec:
+  {{- with .Values.ingress.className }}
+  ingressClassName: {{ . }}
+  {{- end }}
+  rules:
+    - host: {{ .Values.ingress.host | quote }}
+      http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ include "xbrlrag.fullname" . }}-api
+                port:
+                  number: {{ .Values.api.service.port }}
+          - path: /metrics
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ include "xbrlrag.fullname" . }}-api
+                port:
+                  number: {{ .Values.api.service.port }}
+          {{- if .Values.ui.enabled }}
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ include "xbrlrag.fullname" . }}-ui
+                port:
+                  number: {{ .Values.ui.service.port }}
+          {{- end }}
+{{- end }}

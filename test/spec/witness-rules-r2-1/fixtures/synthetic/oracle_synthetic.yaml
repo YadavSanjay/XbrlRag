@@ -1,0 +1,11 @@
+# Synthetic oracle for the witness-rules-r2 spec tests (three families).
+version: 1
+families:
+  TotalAssets: {elements: [Assets], statements: [BS], parenthetical: false, period: instant, unit: USD}
+  Revenue:
+    elements: [Revenues, RevenueFromContractWithCustomerExcludingAssessedTax]
+    statements: [IS]
+    parenthetical: false
+    period: duration
+    unit: USD
+  NetIncome: {elements: [NetIncomeLoss], statements: [IS], parenthetical: false, period: duration, unit: USD}

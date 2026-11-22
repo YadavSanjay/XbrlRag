@@ -1,0 +1,7024 @@
+{
+ "source_url": "https://www.sec.gov/files/company_tickers.json",
+ "retrieved": "2026-11-07",
+ "source_sha256": "76b4b2abb9f7dd0e9cff38e2f20336952bb41806057b2dd1033e244f3e1faec2",
+ "source_bytes": 796507,
+ "source_rows": 10409,
+ "selection": "Excerpt of SEC's company ticker list (cik_str, ticker, title as published). why=corpus: every row whose CIK is one of the 33 corpus filers. why=named: named lookalikes and S&P 100 constituents outside the corpus. why=near: every other row whose name scores >= 0.30 against a corpus filer, either as pg_trgm similarity of the lower-cased names (the rule in force on 2026-11-07, which resolves all of them to that filer) or on the company_name_key of docs/specs/entity-resolution-margin.md. Selection only; the oracle is each row's CIK.",
+ "rows": [
+  {
+   "cik_str": 1800,
+   "ticker": "ABT",
+   "title": "ABBOTT LABORATORIES",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 2488,
+   "ticker": "AMD",
+   "title": "ADVANCED MICRO DEVICES INC",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 21344,
+   "ticker": "KO",
+   "title": "COCA COLA CO",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 50863,
+   "ticker": "INTC",
+   "title": "INTEL CORP",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 59478,
+   "ticker": "LLY",
+   "title": "ELI LILLY & Co",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 63908,
+   "ticker": "MCD",
+   "title": "MCDONALDS CORP",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 80424,
+   "ticker": "PG",
+   "title": "PROCTER & GAMBLE Co",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 97476,
+   "ticker": "TXN",
+   "title": "TEXAS INSTRUMENTS INC",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 100885,
+   "ticker": "UNP",
+   "title": "UNION PACIFIC CORP",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 104169,
+   "ticker": "WMT",
+   "title": "Walmart Inc.",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 310158,
+   "ticker": "MRK",
+   "title": "Merck & Co., Inc.",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 320193,
+   "ticker": "AAPL",
+   "title": "Apple Inc.",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 354950,
+   "ticker": "HD",
+   "title": "HOME DEPOT, INC.",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 723125,
+   "ticker": "MU",
+   "title": "MICRON TECHNOLOGY INC",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 789019,
+   "ticker": "MSFT",
+   "title": "MICROSOFT CORP",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 796343,
+   "ticker": "ADBE",
+   "title": "ADOBE INC.",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 804328,
+   "ticker": "QCOM",
+   "title": "QUALCOMM INC/DE",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 858877,
+   "ticker": "CSCO",
+   "title": "CISCO SYSTEMS, INC.",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 909832,
+   "ticker": "COST",
+   "title": "COSTCO WHOLESALE CORP /NEW",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 936468,
+   "ticker": "LMT",
+   "title": "LOCKHEED MARTIN CORP",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1018724,
+   "ticker": "AMZN",
+   "title": "AMAZON COM INC",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1045810,
+   "ticker": "NVDA",
+   "title": "NVIDIA CORP",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1046179,
+   "ticker": "TSM",
+   "title": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1046179,
+   "ticker": "TSMWF",
+   "title": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1065280,
+   "ticker": "NFLX",
+   "title": "NETFLIX INC",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1090727,
+   "ticker": "UPS",
+   "title": "UNITED PARCEL SERVICE INC",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1108524,
+   "ticker": "CRM",
+   "title": "Salesforce, Inc.",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1318605,
+   "ticker": "TSLA",
+   "title": "Tesla, Inc.",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1326801,
+   "ticker": "META",
+   "title": "Meta Platforms, Inc.",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1326801,
+   "ticker": "METAM",
+   "title": "Meta Platforms, Inc.",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1341439,
+   "ticker": "ORCL",
+   "title": "ORACLE CORP",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1341439,
+   "ticker": "ORCL-PD",
+   "title": "ORACLE CORP",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1652044,
+   "ticker": "GOOG",
+   "title": "Alphabet Inc.",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1652044,
+   "ticker": "GOOGL",
+   "title": "Alphabet Inc.",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1652044,
+   "ticker": "GOOGM",
+   "title": "Alphabet Inc.",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1652044,
+   "ticker": "GOOGN",
+   "title": "Alphabet Inc.",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1692819,
+   "ticker": "VST",
+   "title": "Vistra Corp.",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1730168,
+   "ticker": "AVGO",
+   "title": "Broadcom Inc.",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1868275,
+   "ticker": "CEG",
+   "title": "Constellation Energy Corp",
+   "why": "corpus"
+  },
+  {
+   "cik_str": 1750,
+   "ticker": "AIR",
+   "title": "AAR CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 2186,
+   "ticker": "BKTI",
+   "title": "BK Technologies Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 3545,
+   "ticker": "ALCO",
+   "title": "ALICO, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 4962,
+   "ticker": "AXP",
+   "title": "AMERICAN EXPRESS CO",
+   "why": "named"
+  },
+  {
+   "cik_str": 4977,
+   "ticker": "AFL",
+   "title": "AFLAC INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 6281,
+   "ticker": "ADI",
+   "title": "ANALOG DEVICES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 6951,
+   "ticker": "AMAT",
+   "title": "APPLIED MATERIALS INC /DE",
+   "why": "named"
+  },
+  {
+   "cik_str": 7623,
+   "ticker": "ARTW",
+   "title": "ARTS WAY MANUFACTURING CO INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 8504,
+   "ticker": "UAVS",
+   "title": "AgEagle Aerial Systems Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 8670,
+   "ticker": "ADP",
+   "title": "AUTOMATIC DATA PROCESSING INC",
+   "why": "named"
+  },
+  {
+   "cik_str": 8858,
+   "ticker": "AVT",
+   "title": "AVNET INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 8947,
+   "ticker": "AZZ",
+   "title": "AZZ INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 12208,
+   "ticker": "BIO",
+   "title": "BIO-RAD LABORATORIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 12208,
+   "ticker": "BIO-B",
+   "title": "BIO-RAD LABORATORIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 12927,
+   "ticker": "BA",
+   "title": "BOEING CO",
+   "why": "named"
+  },
+  {
+   "cik_str": 14272,
+   "ticker": "BMY",
+   "title": "BRISTOL MYERS SQUIBB CO",
+   "why": "named"
+  },
+  {
+   "cik_str": 16918,
+   "ticker": "STZ",
+   "title": "CONSTELLATION BRANDS, INC.",
+   "why": "named"
+  },
+  {
+   "cik_str": 16988,
+   "ticker": "CAJFF",
+   "title": "CANON INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 16988,
+   "ticker": "CAJPY",
+   "title": "CANON INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 17843,
+   "ticker": "CRS",
+   "title": "CARPENTER TECHNOLOGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 18230,
+   "ticker": "CAT",
+   "title": "CATERPILLAR INC",
+   "why": "named"
+  },
+  {
+   "cik_str": 18255,
+   "ticker": "CATO",
+   "title": "CATO CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 18926,
+   "ticker": "LUMN",
+   "title": "Lumen Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 19617,
+   "ticker": "JPM",
+   "title": "JPMORGAN CHASE & CO",
+   "why": "named"
+  },
+  {
+   "cik_str": 21535,
+   "ticker": "COHU",
+   "title": "COHU INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 21665,
+   "ticker": "CL",
+   "title": "COLGATE PALMOLIVE CO",
+   "why": "named"
+  },
+  {
+   "cik_str": 22701,
+   "ticker": "SUNE",
+   "title": "SUNation Energy, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 26058,
+   "ticker": "CTS",
+   "title": "CTS CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 29644,
+   "ticker": "DCI",
+   "title": "DONALDSON Co INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 30305,
+   "ticker": "DCO",
+   "title": "DUCOMMUN INC /DE/",
+   "why": "near"
+  },
+  {
+   "cik_str": 33213,
+   "ticker": "EQT",
+   "title": "EQT Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 36104,
+   "ticker": "USB",
+   "title": "US BANCORP DE",
+   "why": "named"
+  },
+  {
+   "cik_str": 37785,
+   "ticker": "FMC",
+   "title": "FMC CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 37996,
+   "ticker": "F",
+   "title": "FORD MOTOR CO",
+   "why": "named"
+  },
+  {
+   "cik_str": 40533,
+   "ticker": "GD",
+   "title": "GENERAL DYNAMICS CORP",
+   "why": "named"
+  },
+  {
+   "cik_str": 40545,
+   "ticker": "GE",
+   "title": "GENERAL ELECTRIC CO",
+   "why": "named"
+  },
+  {
+   "cik_str": 41719,
+   "ticker": "MAGN",
+   "title": "Magnera Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 46129,
+   "ticker": "ALNT",
+   "title": "ALLIENT INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 47217,
+   "ticker": "HPQ",
+   "title": "HP INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 48287,
+   "ticker": "HNI",
+   "title": "HNI CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 50292,
+   "ticker": "IEHC",
+   "title": "IEH Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 51143,
+   "ticker": "IBM",
+   "title": "INTERNATIONAL BUSINESS MACHINES CORP",
+   "why": "named"
+  },
+  {
+   "cik_str": 55135,
+   "ticker": "KELYA",
+   "title": "KELLY SERVICES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 55135,
+   "ticker": "KELYB",
+   "title": "KELLY SERVICES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 57083,
+   "ticker": "KYOAY",
+   "title": "KYOCERA CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 57083,
+   "ticker": "KYOCF",
+   "title": "KYOCERA CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 59255,
+   "ticker": "VHI",
+   "title": "VALHI INC /DE/",
+   "why": "near"
+  },
+  {
+   "cik_str": 60519,
+   "ticker": "LPX",
+   "title": "LOUISIANA-PACIFIC CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 60667,
+   "ticker": "LOW",
+   "title": "LOWES COMPANIES INC",
+   "why": "named"
+  },
+  {
+   "cik_str": 61986,
+   "ticker": "MTW",
+   "title": "MANITOWOC CO INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 63276,
+   "ticker": "MAT",
+   "title": "MATTEL INC /DE/",
+   "why": "near"
+  },
+  {
+   "cik_str": 63296,
+   "ticker": "MATW",
+   "title": "MATTHEWS INTERNATIONAL CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 63754,
+   "ticker": "MKC",
+   "title": "MCCORMICK & CO INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 63754,
+   "ticker": "MKC-V",
+   "title": "MCCORMICK & CO INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 64040,
+   "ticker": "SPGI",
+   "title": "S&P Global Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 64803,
+   "ticker": "CVS",
+   "title": "CVS HEALTH Corp",
+   "why": "named"
+  },
+  {
+   "cik_str": 65433,
+   "ticker": "MXF",
+   "title": "MEXICO FUND INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 65770,
+   "ticker": "MVIS",
+   "title": "MICROVISION, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 66418,
+   "ticker": "MXC",
+   "title": "MEXCO ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 66740,
+   "ticker": "MMM",
+   "title": "3M CO",
+   "why": "named"
+  },
+  {
+   "cik_str": 67347,
+   "ticker": "MOD",
+   "title": "MODINE MANUFACTURING CO",
+   "why": "near"
+  },
+  {
+   "cik_str": 69422,
+   "ticker": "INTG",
+   "title": "INTERGROUP CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 69633,
+   "ticker": "NSSC",
+   "title": "NAPCO SECURITY TECHNOLOGIES, INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 70858,
+   "ticker": "BAC",
+   "title": "BANK OF AMERICA CORP /DE/",
+   "why": "named"
+  },
+  {
+   "cik_str": 72205,
+   "ticker": "NOBH",
+   "title": "NOBILITY HOMES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 72331,
+   "ticker": "NDSN",
+   "title": "NORDSON CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 72444,
+   "ticker": "VXRT",
+   "title": "Vaxart, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 72971,
+   "ticker": "WFC",
+   "title": "WELLS FARGO & COMPANY/MN",
+   "why": "named"
+  },
+  {
+   "cik_str": 73309,
+   "ticker": "NUE",
+   "title": "NUCOR CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 74818,
+   "ticker": "ORBT",
+   "title": "ORBIT INTERNATIONAL CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 75488,
+   "ticker": "PCG-PA",
+   "title": "PACIFIC GAS & ELECTRIC Co",
+   "why": "near"
+  },
+  {
+   "cik_str": 77476,
+   "ticker": "PEP",
+   "title": "PEPSICO INC",
+   "why": "named"
+  },
+  {
+   "cik_str": 78003,
+   "ticker": "PFE",
+   "title": "PFIZER INC",
+   "why": "named"
+  },
+  {
+   "cik_str": 79282,
+   "ticker": "BRO",
+   "title": "BROWN & BROWN, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 84246,
+   "ticker": "RLI",
+   "title": "RLI CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 85961,
+   "ticker": "R",
+   "title": "RYDER SYSTEM INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 87050,
+   "ticker": "NEON",
+   "title": "Neonode Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 88205,
+   "ticker": "SPXC",
+   "title": "SPX Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 89089,
+   "ticker": "SCI",
+   "title": "SERVICE CORP INTERNATIONAL",
+   "why": "near"
+  },
+  {
+   "cik_str": 90896,
+   "ticker": "SKY",
+   "title": "Champion Homes, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 91668,
+   "ticker": "SODI",
+   "title": "SOLITRON DEVICES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 92122,
+   "ticker": "SO",
+   "title": "SOUTHERN CO",
+   "why": "named"
+  },
+  {
+   "cik_str": 93410,
+   "ticker": "CVX",
+   "title": "CHEVRON CORP",
+   "why": "named"
+  },
+  {
+   "cik_str": 96021,
+   "ticker": "SYY",
+   "title": "SYSCO CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 96536,
+   "ticker": "TAYD",
+   "title": "TAYLOR DEVICES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 96943,
+   "ticker": "TFX",
+   "title": "TELEFLEX INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 97210,
+   "ticker": "TER",
+   "title": "TERADYNE, INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 97745,
+   "ticker": "TMO",
+   "title": "THERMO FISHER SCIENTIFIC INC.",
+   "why": "named"
+  },
+  {
+   "cik_str": 100591,
+   "ticker": "AGX",
+   "title": "ARGAN INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 100826,
+   "ticker": "UELMO",
+   "title": "UNION ELECTRIC CO",
+   "why": "named"
+  },
+  {
+   "cik_str": 100826,
+   "ticker": "UEPCN",
+   "title": "UNION ELECTRIC CO",
+   "why": "near"
+  },
+  {
+   "cik_str": 100826,
+   "ticker": "UEPCO",
+   "title": "UNION ELECTRIC CO",
+   "why": "near"
+  },
+  {
+   "cik_str": 100826,
+   "ticker": "UEPCP",
+   "title": "UNION ELECTRIC CO",
+   "why": "near"
+  },
+  {
+   "cik_str": 100826,
+   "ticker": "UEPEM",
+   "title": "UNION ELECTRIC CO",
+   "why": "near"
+  },
+  {
+   "cik_str": 100826,
+   "ticker": "UEPEN",
+   "title": "UNION ELECTRIC CO",
+   "why": "near"
+  },
+  {
+   "cik_str": 100826,
+   "ticker": "UEPEO",
+   "title": "UNION ELECTRIC CO",
+   "why": "near"
+  },
+  {
+   "cik_str": 100826,
+   "ticker": "UEPEP",
+   "title": "UNION ELECTRIC CO",
+   "why": "near"
+  },
+  {
+   "cik_str": 101295,
+   "ticker": "UG",
+   "title": "UNITED GUARDIAN INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 101829,
+   "ticker": "RTX",
+   "title": "RTX Corp",
+   "why": "named"
+  },
+  {
+   "cik_str": 102752,
+   "ticker": "VSEC",
+   "title": "VSE CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 102752,
+   "ticker": "VSECU",
+   "title": "VSE CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 103145,
+   "ticker": "VECO",
+   "title": "VEECO INSTRUMENTS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 103379,
+   "ticker": "VFC",
+   "title": "V F CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 103730,
+   "ticker": "VSH",
+   "title": "VISHAY INTERTECHNOLOGY INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 104918,
+   "ticker": "AVA",
+   "title": "AVISTA CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 105016,
+   "ticker": "WSO",
+   "title": "WATSCO INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 105016,
+   "ticker": "WSO-B",
+   "title": "WATSCO INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 105744,
+   "ticker": "GBR",
+   "title": "New Concept Energy, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 109563,
+   "ticker": "AIT",
+   "title": "APPLIED INDUSTRIAL TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 200406,
+   "ticker": "JNJ",
+   "title": "JOHNSON & JOHNSON",
+   "why": "named"
+  },
+  {
+   "cik_str": 201533,
+   "ticker": "CMS-PB",
+   "title": "CONSUMERS ENERGY CO",
+   "why": "near"
+  },
+  {
+   "cik_str": 202058,
+   "ticker": "LHX",
+   "title": "L3HARRIS TECHNOLOGIES, INC. /DE/",
+   "why": "near"
+  },
+  {
+   "cik_str": 215466,
+   "ticker": "CDE",
+   "title": "Coeur Mining, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 216228,
+   "ticker": "ITT",
+   "title": "ITT INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 217346,
+   "ticker": "TXT",
+   "title": "TEXTRON INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 277948,
+   "ticker": "CSX",
+   "title": "CSX CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 310764,
+   "ticker": "SYK",
+   "title": "STRYKER CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 313616,
+   "ticker": "DHR",
+   "title": "DANAHER CORP /DE/",
+   "why": "named"
+  },
+  {
+   "cik_str": 315189,
+   "ticker": "DE",
+   "title": "DEERE & CO",
+   "why": "named"
+  },
+  {
+   "cik_str": 316709,
+   "ticker": "SCHW",
+   "title": "SCHWAB CHARLES CORP",
+   "why": "named"
+  },
+  {
+   "cik_str": 317540,
+   "ticker": "COKE",
+   "title": "Coca-Cola Consolidated, Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 318154,
+   "ticker": "AMGN",
+   "title": "AMGEN INC",
+   "why": "named"
+  },
+  {
+   "cik_str": 318833,
+   "ticker": "TISI",
+   "title": "TEAM INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 319201,
+   "ticker": "KLAC",
+   "title": "KLA CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 320187,
+   "ticker": "NKE",
+   "title": "NIKE, Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 320335,
+   "ticker": "GL",
+   "title": "GLOBE LIFE INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 320335,
+   "ticker": "GL-PD",
+   "title": "GLOBE LIFE INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 352541,
+   "ticker": "LNT",
+   "title": "ALLIANT ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 352915,
+   "ticker": "UHS",
+   "title": "UNIVERSAL HEALTH SERVICES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 352991,
+   "ticker": "AOXY",
+   "title": "ADVANCED OXYGEN TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 353184,
+   "ticker": "AIRT",
+   "title": "AIR T INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 353184,
+   "ticker": "AIRTP",
+   "title": "AIR T INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 356037,
+   "ticker": "CSPI",
+   "title": "CSP INC /MA/",
+   "why": "near"
+  },
+  {
+   "cik_str": 700841,
+   "ticker": "RCMT",
+   "title": "RCM TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 701347,
+   "ticker": "CPF",
+   "title": "CENTRAL PACIFIC FINANCIAL CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 704440,
+   "ticker": "KRMD",
+   "title": "KORU Medical Systems, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 706863,
+   "ticker": "UNB",
+   "title": "UNION BANKSHARES INC",
+   "why": "named"
+  },
+  {
+   "cik_str": 708781,
+   "ticker": "CASS",
+   "title": "CASS INFORMATION SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 708821,
+   "ticker": "PAR",
+   "title": "PAR TECHNOLOGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 711377,
+   "ticker": "NEOG",
+   "title": "NEOGEN CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 715787,
+   "ticker": "TILE",
+   "title": "INTERFACE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 715957,
+   "ticker": "D",
+   "title": "DOMINION ENERGY, INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 717954,
+   "ticker": "UNF",
+   "title": "UNIFIRST CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 718940,
+   "ticker": "BCAEF",
+   "title": "BCE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 718940,
+   "ticker": "BCE",
+   "title": "BCE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 718940,
+   "ticker": "BCEFF",
+   "title": "BCE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 718940,
+   "ticker": "BCEIF",
+   "title": "BCE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 718940,
+   "ticker": "BCENF",
+   "title": "BCE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 718940,
+   "ticker": "BCEPF",
+   "title": "BCE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 718940,
+   "ticker": "BCEXF",
+   "title": "BCE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 718940,
+   "ticker": "BCPPF",
+   "title": "BCE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 718940,
+   "ticker": "BECEF",
+   "title": "BCE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 720500,
+   "ticker": "ASYS",
+   "title": "AMTECH SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 722313,
+   "ticker": "NSYS",
+   "title": "NORTECH SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 724004,
+   "ticker": "MLAB",
+   "title": "MESA LABORATORIES INC /CO/",
+   "why": "near"
+  },
+  {
+   "cik_str": 724910,
+   "ticker": "NVEC",
+   "title": "NVE CORP /NEW/",
+   "why": "near"
+  },
+  {
+   "cik_str": 725394,
+   "ticker": "DHTI",
+   "title": "Dalrada Technology Group, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 730464,
+   "ticker": "CVSA",
+   "title": "Covista Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 731766,
+   "ticker": "UNH",
+   "title": "UNITEDHEALTH GROUP INC",
+   "why": "named"
+  },
+  {
+   "cik_str": 731802,
+   "ticker": "ATO",
+   "title": "ATMOS ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 732417,
+   "ticker": "HBIA",
+   "title": "HILLS BANCORPORATION",
+   "why": "near"
+  },
+  {
+   "cik_str": 732712,
+   "ticker": "VZ",
+   "title": "VERIZON COMMUNICATIONS INC",
+   "why": "named"
+  },
+  {
+   "cik_str": 732717,
+   "ticker": "T",
+   "title": "AT&T INC.",
+   "why": "named"
+  },
+  {
+   "cik_str": 732717,
+   "ticker": "T-PA",
+   "title": "AT&T INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 732717,
+   "ticker": "T-PC",
+   "title": "AT&T INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 732717,
+   "ticker": "TBB",
+   "title": "AT&T INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 746838,
+   "ticker": "UIS",
+   "title": "UNISYS CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 750558,
+   "ticker": "QNBC",
+   "title": "QNB CORP.",
+   "why": "near"
+  },
+  {
+   "cik_str": 750574,
+   "ticker": "AUBN",
+   "title": "AUBURN NATIONAL BANCORPORATION, INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 751365,
+   "ticker": "VIRC",
+   "title": "VIRCO MFG CORPORATION",
+   "why": "near"
+  },
+  {
+   "cik_str": 751978,
+   "ticker": "VICR",
+   "title": "VICOR CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 753308,
+   "ticker": "NEE",
+   "title": "NEXTERA ENERGY INC",
+   "why": "named"
+  },
+  {
+   "cik_str": 755001,
+   "ticker": "UTL",
+   "title": "UNITIL CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 764180,
+   "ticker": "MO",
+   "title": "ALTRIA GROUP, INC.",
+   "why": "named"
+  },
+  {
+   "cik_str": 764478,
+   "ticker": "BBY",
+   "title": "BEST BUY CO INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 773840,
+   "ticker": "HON",
+   "title": "HONEYWELL INTERNATIONAL INC",
+   "why": "named"
+  },
+  {
+   "cik_str": 783324,
+   "ticker": "VGZ",
+   "title": "VISTA GOLD CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 788611,
+   "ticker": "NTRP",
+   "title": "NextTrip, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 795266,
+   "ticker": "KBH",
+   "title": "KB HOME",
+   "why": "near"
+  },
+  {
+   "cik_str": 795403,
+   "ticker": "WTS",
+   "title": "WATTS WATER TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 798287,
+   "ticker": "PAMT",
+   "title": "PAMT CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 799292,
+   "ticker": "MHO",
+   "title": "M/I HOMES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 802257,
+   "ticker": "MITI",
+   "title": "Mitesco, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 805928,
+   "ticker": "AXGN",
+   "title": "Axogen, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 807863,
+   "ticker": "MITK",
+   "title": "MITEK SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 808439,
+   "ticker": "TATT",
+   "title": "TAT TECHNOLOGIES LTD",
+   "why": "near"
+  },
+  {
+   "cik_str": 811156,
+   "ticker": "CMS",
+   "title": "CMS ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 811156,
+   "ticker": "CMS-PC",
+   "title": "CMS ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 811156,
+   "ticker": "CMSA",
+   "title": "CMS ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 811156,
+   "ticker": "CMSC",
+   "title": "CMS ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 811156,
+   "ticker": "CMSD",
+   "title": "CMS ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 813672,
+   "ticker": "CDNS",
+   "title": "CADENCE DESIGN SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 813716,
+   "ticker": "CIRX",
+   "title": "CIRTRAN CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 814676,
+   "ticker": "CPSH",
+   "title": "CPS TECHNOLOGIES CORP/DE/",
+   "why": "near"
+  },
+  {
+   "cik_str": 819793,
+   "ticker": "AIN",
+   "title": "ALBANY INTERNATIONAL CORP /DE/",
+   "why": "near"
+  },
+  {
+   "cik_str": 821483,
+   "ticker": "PARR",
+   "title": "PAR PACIFIC HOLDINGS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 823277,
+   "ticker": "CHSCL",
+   "title": "CHS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 823277,
+   "ticker": "CHSCM",
+   "title": "CHS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 823277,
+   "ticker": "CHSCN",
+   "title": "CHS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 823277,
+   "ticker": "CHSCO",
+   "title": "CHS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 823277,
+   "ticker": "CHSCP",
+   "title": "CHS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 824142,
+   "ticker": "AAON",
+   "title": "AAON, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 826253,
+   "ticker": "AUSI",
+   "title": "AURA SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 827054,
+   "ticker": "MCHP",
+   "title": "MICROCHIP TECHNOLOGY INC",
+   "why": "named"
+  },
+  {
+   "cik_str": 827054,
+   "ticker": "MCHPP",
+   "title": "MICROCHIP TECHNOLOGY INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 829224,
+   "ticker": "SBUX",
+   "title": "STARBUCKS CORP",
+   "why": "named"
+  },
+  {
+   "cik_str": 831001,
+   "ticker": "C",
+   "title": "CITIGROUP INC",
+   "why": "named"
+  },
+  {
+   "cik_str": 831641,
+   "ticker": "TTEK",
+   "title": "TETRA TECH INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 833444,
+   "ticker": "JCI",
+   "title": "Johnson Controls International plc",
+   "why": "named"
+  },
+  {
+   "cik_str": 839087,
+   "ticker": "VASO",
+   "title": "VASO Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 844965,
+   "ticker": "TTI",
+   "title": "TETRA TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 846913,
+   "ticker": "FTEK",
+   "title": "FUEL TECH, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 853816,
+   "ticker": "LSTR",
+   "title": "LANDSTAR SYSTEM INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 855658,
+   "ticker": "LSCC",
+   "title": "LATTICE SEMICONDUCTOR CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 856982,
+   "ticker": "MMSI",
+   "title": "MERIT MEDICAL SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 856984,
+   "ticker": "USAQ",
+   "title": "QHSLab, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 860731,
+   "ticker": "TYL",
+   "title": "TYLER TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 866291,
+   "ticker": "ALGM",
+   "title": "ALLEGRO MICROSYSTEMS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 866706,
+   "ticker": "ESE",
+   "title": "ESCO TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 867840,
+   "ticker": "POCI",
+   "title": "PRECISION OPTICS CORPORATION, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 872912,
+   "ticker": "DCTH",
+   "title": "DELCATH SYSTEMS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 874499,
+   "ticker": "GPOR",
+   "title": "GULFPORT ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 874716,
+   "ticker": "IDXX",
+   "title": "IDEXX LABORATORIES INC /DE",
+   "why": "near"
+  },
+  {
+   "cik_str": 874761,
+   "ticker": "AES",
+   "title": "AES CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 874866,
+   "ticker": "CRVL",
+   "title": "CORVEL CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 875729,
+   "ticker": "BNET",
+   "title": "BION ENVIRONMENTAL TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 877212,
+   "ticker": "ZBRA",
+   "title": "ZEBRA TECHNOLOGIES CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 879911,
+   "ticker": "AERG",
+   "title": "APPLIED ENERGETICS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 879911,
+   "ticker": "AERGP",
+   "title": "APPLIED ENERGETICS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 882095,
+   "ticker": "GILD",
+   "title": "GILEAD SCIENCES, INC.",
+   "why": "named"
+  },
+  {
+   "cik_str": 882184,
+   "ticker": "DHI",
+   "title": "HORTON D R INC /DE/",
+   "why": "near"
+  },
+  {
+   "cik_str": 882835,
+   "ticker": "ROP",
+   "title": "ROPER TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 883107,
+   "ticker": "SLSN",
+   "title": "SOLESENCE, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 883948,
+   "ticker": "AUB",
+   "title": "Atlantic Union Bankshares Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 883948,
+   "ticker": "AUB-PA",
+   "title": "Atlantic Union Bankshares Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 884614,
+   "ticker": "UGI",
+   "title": "UGI CORP /PA/",
+   "why": "near"
+  },
+  {
+   "cik_str": 885245,
+   "ticker": "BKE",
+   "title": "BUCKLE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 886982,
+   "ticker": "GS",
+   "title": "GOLDMAN SACHS GROUP INC",
+   "why": "named"
+  },
+  {
+   "cik_str": 887343,
+   "ticker": "COLB",
+   "title": "COLUMBIA BANKING SYSTEM, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 887359,
+   "ticker": "VCEL",
+   "title": "Vericel Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 888295,
+   "ticker": "CREAF",
+   "title": "CREATIVE TECHNOLOGY LTD",
+   "why": "near"
+  },
+  {
+   "cik_str": 888295,
+   "ticker": "CREAY",
+   "title": "CREATIVE TECHNOLOGY LTD",
+   "why": "near"
+  },
+  {
+   "cik_str": 888981,
+   "ticker": "NNUP",
+   "title": "NOCOPI TECHNOLOGIES INC/MD/",
+   "why": "near"
+  },
+  {
+   "cik_str": 889971,
+   "ticker": "LPTH",
+   "title": "LIGHTPATH TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 891014,
+   "ticker": "MTX",
+   "title": "MINERALS TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 892450,
+   "ticker": "KT",
+   "title": "KT CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 894627,
+   "ticker": "EGY",
+   "title": "VAALCO ENERGY INC /DE/",
+   "why": "near"
+  },
+  {
+   "cik_str": 895126,
+   "ticker": "EXE",
+   "title": "EXPAND ENERGY Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 895421,
+   "ticker": "MS",
+   "title": "MORGAN STANLEY",
+   "why": "named"
+  },
+  {
+   "cik_str": 895564,
+   "ticker": "BAESF",
+   "title": "BAE SYSTEMS PLC /FI/",
+   "why": "near"
+  },
+  {
+   "cik_str": 895564,
+   "ticker": "BAESY",
+   "title": "BAE SYSTEMS PLC /FI/",
+   "why": "near"
+  },
+  {
+   "cik_str": 896622,
+   "ticker": "ATR",
+   "title": "APTARGROUP, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 896878,
+   "ticker": "INTU",
+   "title": "INTUIT INC.",
+   "why": "named"
+  },
+  {
+   "cik_str": 899715,
+   "ticker": "SKT",
+   "title": "TANGER INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 900075,
+   "ticker": "CPRT",
+   "title": "COPART INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 906163,
+   "ticker": "NVR",
+   "title": "NVR INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 910329,
+   "ticker": "MED",
+   "title": "MEDIFAST INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 910631,
+   "ticker": "COCSF",
+   "title": "COCA COLA FEMSA SAB DE CV",
+   "why": "near"
+  },
+  {
+   "cik_str": 910631,
+   "ticker": "KOF",
+   "title": "COCA COLA FEMSA SAB DE CV",
+   "why": "named"
+  },
+  {
+   "cik_str": 910638,
+   "ticker": "DDD",
+   "title": "3D SYSTEMS CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 911177,
+   "ticker": "CWST",
+   "title": "CASELLA WASTE SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 911216,
+   "ticker": "PTN",
+   "title": "PALATIN TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 912544,
+   "ticker": "NSTM",
+   "title": "NovelStem International Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 914156,
+   "ticker": "UFPT",
+   "title": "UFP TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 918541,
+   "ticker": "NNBR",
+   "title": "NN INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 918965,
+   "ticker": "SCSC",
+   "title": "SCANSOURCE, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 920371,
+   "ticker": "SSD",
+   "title": "Simpson Manufacturing Co., Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 922224,
+   "ticker": "PPL",
+   "title": "PPL Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 922224,
+   "ticker": "PPLC",
+   "title": "PPL Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 923883,
+   "ticker": "TLTFF",
+   "title": "THERALASE TECHNOLOGIES INC /FI",
+   "why": "near"
+  },
+  {
+   "cik_str": 924095,
+   "ticker": "MVCO",
+   "title": "Metavesco, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 924613,
+   "ticker": "NOK",
+   "title": "NOKIA CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 924613,
+   "ticker": "NOKBF",
+   "title": "NOKIA CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 925528,
+   "ticker": "HDSN",
+   "title": "HUDSON TECHNOLOGIES INC /NY",
+   "why": "near"
+  },
+  {
+   "cik_str": 926423,
+   "ticker": "MIND",
+   "title": "MIND TECHNOLOGY, INC",
+   "why": "named"
+  },
+  {
+   "cik_str": 927003,
+   "ticker": "AEIS",
+   "title": "ADVANCED ENERGY INDUSTRIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 928876,
+   "ticker": "TSEM",
+   "title": "TOWER SEMICONDUCTOR LTD",
+   "why": "near"
+  },
+  {
+   "cik_str": 930420,
+   "ticker": "KFRC",
+   "title": "KFORCE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 933974,
+   "ticker": "AZTA",
+   "title": "Azenta, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 936528,
+   "ticker": "WAFD",
+   "title": "WAFD INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 936528,
+   "ticker": "WAFDP",
+   "title": "WAFD INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 946563,
+   "ticker": "RVP",
+   "title": "RETRACTABLE TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 948708,
+   "ticker": "SMSI",
+   "title": "SMITH MICRO SOFTWARE, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1002047,
+   "ticker": "NTAP",
+   "title": "NetApp, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1005731,
+   "ticker": "IDT",
+   "title": "IDT CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1009829,
+   "ticker": "JAKK",
+   "title": "JAKKS PACIFIC INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1009922,
+   "ticker": "NSFDF",
+   "title": "NXT Energy Solutions Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1010086,
+   "ticker": "SIGA",
+   "title": "SIGA TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1013237,
+   "ticker": "FDS",
+   "title": "FACTSET RESEARCH SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1013857,
+   "ticker": "PEGA",
+   "title": "PEGASYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1014052,
+   "ticker": "DTGI",
+   "title": "Digerati Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1014763,
+   "ticker": "AIMD",
+   "title": "Ainos, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1014763,
+   "ticker": "AIMDW",
+   "title": "Ainos, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1016838,
+   "ticker": "RDCM",
+   "title": "RADCOM LTD",
+   "why": "near"
+  },
+  {
+   "cik_str": 1017303,
+   "ticker": "TACT",
+   "title": "TRANSACT TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1018963,
+   "ticker": "ATI",
+   "title": "ATI INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1021635,
+   "ticker": "OGE",
+   "title": "OGE ENERGY CORP.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1021860,
+   "ticker": "NOV",
+   "title": "NOV Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1023298,
+   "ticker": "ALPE",
+   "title": "alpha-En Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1023731,
+   "ticker": "EGHT",
+   "title": "8X8 INC /DE/",
+   "why": "near"
+  },
+  {
+   "cik_str": 1024305,
+   "ticker": "COTY",
+   "title": "COTY INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1024795,
+   "ticker": "HLIO",
+   "title": "HELIOS TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1026655,
+   "ticker": "CMT",
+   "title": "CORE MOLDING TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1026980,
+   "ticker": "APWC",
+   "title": "ASIA PACIFIC WIRE & CABLE CORP LTD",
+   "why": "near"
+  },
+  {
+   "cik_str": 1027664,
+   "ticker": "ESLT",
+   "title": "ELBIT SYSTEMS LTD",
+   "why": "near"
+  },
+  {
+   "cik_str": 1027838,
+   "ticker": "TCMD",
+   "title": "TACTILE SYSTEMS TECHNOLOGY INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1031308,
+   "ticker": "BSY",
+   "title": "BENTLEY SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1032033,
+   "ticker": "SLM",
+   "title": "SLM Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1032033,
+   "ticker": "SLMBP",
+   "title": "SLM Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1035267,
+   "ticker": "ISRG",
+   "title": "INTUITIVE SURGICAL INC",
+   "why": "named"
+  },
+  {
+   "cik_str": 1035983,
+   "ticker": "FIX",
+   "title": "COMFORT SYSTEMS USA INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1036044,
+   "ticker": "INVE",
+   "title": "INVE Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1036262,
+   "ticker": "INTT",
+   "title": "INTEST CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1037540,
+   "ticker": "BXP",
+   "title": "BXP, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1037868,
+   "ticker": "AME",
+   "title": "AMETEK INC/",
+   "why": "near"
+  },
+  {
+   "cik_str": 1038074,
+   "ticker": "SLAB",
+   "title": "SILICON LABORATORIES INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1039065,
+   "ticker": "OSIS",
+   "title": "OSI SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1039280,
+   "ticker": "NTWK",
+   "title": "NETSOL TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1039684,
+   "ticker": "OKE",
+   "title": "ONEOK INC /NEW/",
+   "why": "near"
+  },
+  {
+   "cik_str": 1040470,
+   "ticker": "AEHR",
+   "title": "AEHR TEST SYSTEMS",
+   "why": "near"
+  },
+  {
+   "cik_str": 1040896,
+   "ticker": "IDN",
+   "title": "Intellicheck, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1041514,
+   "ticker": "LSAK",
+   "title": "LESAKA TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1041803,
+   "ticker": "PSMT",
+   "title": "PRICESMART INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1047127,
+   "ticker": "AMKR",
+   "title": "AMKOR TECHNOLOGY, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1048695,
+   "ticker": "FFIV",
+   "title": "F5, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1049502,
+   "ticker": "MKSI",
+   "title": "MKS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1049521,
+   "ticker": "MRCY",
+   "title": "MERCURY SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1050140,
+   "ticker": "DSGX",
+   "title": "DESCARTES SYSTEMS GROUP INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1050915,
+   "ticker": "PWR",
+   "title": "QUANTA SERVICES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1051512,
+   "ticker": "TDS",
+   "title": "TELEPHONE & DATA SYSTEMS INC /DE/",
+   "why": "near"
+  },
+  {
+   "cik_str": 1051512,
+   "ticker": "TDS-PU",
+   "title": "TELEPHONE & DATA SYSTEMS INC /DE/",
+   "why": "near"
+  },
+  {
+   "cik_str": 1051512,
+   "ticker": "TDS-PV",
+   "title": "TELEPHONE & DATA SYSTEMS INC /DE/",
+   "why": "near"
+  },
+  {
+   "cik_str": 1051627,
+   "ticker": "AXTI",
+   "title": "AXT INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1058307,
+   "ticker": "NXPL",
+   "title": "NextPlat Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1061574,
+   "ticker": "GIB",
+   "title": "CGI INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1064728,
+   "ticker": "BTU",
+   "title": "PEABODY ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1065059,
+   "ticker": "LEU",
+   "title": "CENTRUS ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1065078,
+   "ticker": "NTIP",
+   "title": "NETWORK-1 TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1065696,
+   "ticker": "LKQ",
+   "title": "LKQ CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1066684,
+   "ticker": "TGLO",
+   "title": "THEGLOBE COM INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1066764,
+   "ticker": "BESS",
+   "title": "Bimergen Energy Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1066764,
+   "ticker": "BESS-WT",
+   "title": "Bimergen Energy Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1067701,
+   "ticker": "URI",
+   "title": "UNITED RENTALS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1069878,
+   "ticker": "TREX",
+   "title": "TREX CO INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1071840,
+   "ticker": "WNDW",
+   "title": "SolarWindow Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1075531,
+   "ticker": "BKNG",
+   "title": "Booking Holdings Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 1078075,
+   "ticker": "NTCT",
+   "title": "NETSCOUT SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1081745,
+   "ticker": "INLX",
+   "title": "INTELLINETICS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1082733,
+   "ticker": "VISM",
+   "title": "VISIUM TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1083301,
+   "ticker": "WULF",
+   "title": "TERAWULF INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1084267,
+   "ticker": "MOBQ",
+   "title": "Mobiquity Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1084267,
+   "ticker": "MOBQW",
+   "title": "Mobiquity Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1085243,
+   "ticker": "VTSI",
+   "title": "VirTra, Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1085921,
+   "ticker": "MMTIF",
+   "title": "MICROMEM TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1086222,
+   "ticker": "AKAM",
+   "title": "AKAMAI TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1089815,
+   "ticker": "EHSI",
+   "title": "Elite Health Systems Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1090012,
+   "ticker": "DVN",
+   "title": "DEVON ENERGY CORP/DE",
+   "why": "near"
+  },
+  {
+   "cik_str": 1090872,
+   "ticker": "A",
+   "title": "AGILENT TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1092699,
+   "ticker": "SPSC",
+   "title": "SPS COMMERCE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1093557,
+   "ticker": "DXCM",
+   "title": "DEXCOM INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1094285,
+   "ticker": "TDY",
+   "title": "TELEDYNE TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1094324,
+   "ticker": "SIFY",
+   "title": "SIFY TECHNOLOGIES LTD",
+   "why": "near"
+  },
+  {
+   "cik_str": 1097149,
+   "ticker": "ALGN",
+   "title": "ALIGN TECHNOLOGY INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1097864,
+   "ticker": "ON",
+   "title": "ON SEMICONDUCTOR CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1098972,
+   "ticker": "AGEN",
+   "title": "AGENUS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1099160,
+   "ticker": "BBGI",
+   "title": "BEASLEY BROADCAST GROUP INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1099219,
+   "ticker": "MET",
+   "title": "METLIFE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1099219,
+   "ticker": "MET-PA",
+   "title": "METLIFE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1099219,
+   "ticker": "MET-PE",
+   "title": "METLIFE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1099219,
+   "ticker": "MET-PF",
+   "title": "METLIFE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1099369,
+   "ticker": "DSNY",
+   "title": "DESTINY MEDIA TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1099590,
+   "ticker": "MELI",
+   "title": "MERCADOLIBRE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1103982,
+   "ticker": "MDLZ",
+   "title": "Mondelez International, Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 1107457,
+   "ticker": "IFNNF",
+   "title": "INFINEON TECHNOLOGIES AG",
+   "why": "near"
+  },
+  {
+   "cik_str": 1107457,
+   "ticker": "IFNNY",
+   "title": "INFINEON TECHNOLOGIES AG",
+   "why": "near"
+  },
+  {
+   "cik_str": 1107843,
+   "ticker": "QLYS",
+   "title": "QUALYS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1108109,
+   "ticker": "CYH",
+   "title": "COMMUNITY HEALTH SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1108248,
+   "ticker": "KNOS",
+   "title": "KRONOS ADVANCED TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1110607,
+   "ticker": "KLNG",
+   "title": "Koil Energy Solutions, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1110646,
+   "ticker": "NETTF",
+   "title": "NetEase, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1110646,
+   "ticker": "NTES",
+   "title": "NetEase, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1111335,
+   "ticker": "VC",
+   "title": "VISTEON CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1113232,
+   "ticker": "ACLS",
+   "title": "AXCELIS TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1116463,
+   "ticker": "OSUR",
+   "title": "ORASURE TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1116942,
+   "ticker": "TTMI",
+   "title": "TTM TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1119190,
+   "ticker": "RWAX",
+   "title": "TAP REAL ESTATE TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1119643,
+   "ticker": "NPHC",
+   "title": "NUTRA PHARMA CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1120370,
+   "ticker": "BWEN",
+   "title": "BROADWIND, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1120970,
+   "ticker": "LODE",
+   "title": "Comstock Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1122411,
+   "ticker": "ASX",
+   "title": "ASE Technology Holding Co., Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1122904,
+   "ticker": "NTGR",
+   "title": "NETGEAR, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1123134,
+   "ticker": "IMOS",
+   "title": "CHIPMOS TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1123596,
+   "ticker": "BABB",
+   "title": "BAB, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1126741,
+   "ticker": "GSIT",
+   "title": "GSI TECHNOLOGY INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1130781,
+   "ticker": "BMPA",
+   "title": "BMP AI Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1133421,
+   "ticker": "NOC",
+   "title": "NORTHROP GRUMMAN CORP /DE/",
+   "why": "named"
+  },
+  {
+   "cik_str": 1133519,
+   "ticker": "MCUJF",
+   "title": "MEDICURE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1135951,
+   "ticker": "RDY",
+   "title": "DR REDDYS LABORATORIES LTD",
+   "why": "near"
+  },
+  {
+   "cik_str": 1137789,
+   "ticker": "STX",
+   "title": "Seagate Technology Holdings plc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1141240,
+   "ticker": "LQMT",
+   "title": "LIQUIDMETAL TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1141391,
+   "ticker": "MA",
+   "title": "Mastercard Inc",
+   "why": "named"
+  },
+  {
+   "cik_str": 1143994,
+   "ticker": "MRPT",
+   "title": "MACREPORT NET INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1144215,
+   "ticker": "AYI",
+   "title": "ACUITY INC. (DE)",
+   "why": "near"
+  },
+  {
+   "cik_str": 1144392,
+   "ticker": "BKTH",
+   "title": "MEGOLA INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1158172,
+   "ticker": "SCOR",
+   "title": "COMSCORE, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1160308,
+   "ticker": "SVRA",
+   "title": "Savara Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1160420,
+   "ticker": "ADIA",
+   "title": "Adia Med, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1161814,
+   "ticker": "KIQSF",
+   "title": "KELSO TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1163165,
+   "ticker": "COP",
+   "title": "CONOCOPHILLIPS",
+   "why": "named"
+  },
+  {
+   "cik_str": 1166663,
+   "ticker": "TEN",
+   "title": "TSAKOS ENERGY NAVIGATION LTD",
+   "why": "near"
+  },
+  {
+   "cik_str": 1166663,
+   "ticker": "TEN-PE",
+   "title": "TSAKOS ENERGY NAVIGATION LTD",
+   "why": "near"
+  },
+  {
+   "cik_str": 1166663,
+   "ticker": "TEN-PF",
+   "title": "TSAKOS ENERGY NAVIGATION LTD",
+   "why": "near"
+  },
+  {
+   "cik_str": 1166691,
+   "ticker": "CMCSA",
+   "title": "COMCAST CORP",
+   "why": "named"
+  },
+  {
+   "cik_str": 1166928,
+   "ticker": "WTBA",
+   "title": "WEST BANCORPORATION INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1167379,
+   "ticker": "ALC",
+   "title": "ALCON INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1167419,
+   "ticker": "RIOT",
+   "title": "Riot Platforms, Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 1169561,
+   "ticker": "CVLT",
+   "title": "COMMVAULT SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1173382,
+   "ticker": "CAE",
+   "title": "CAE INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1175454,
+   "ticker": "CPAY",
+   "title": "CORPAY, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1177702,
+   "ticker": "SAIA",
+   "title": "SAIA INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1187953,
+   "ticker": "CELZ",
+   "title": "CREATIVE MEDICAL TECHNOLOGY HOLDINGS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1192323,
+   "ticker": "SPST",
+   "title": "Superstar Platforms Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1193158,
+   "ticker": "NXTN",
+   "title": "NEXT10, INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1196298,
+   "ticker": "NEPH",
+   "title": "NEPHROS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1200375,
+   "ticker": "CDXS",
+   "title": "CODEXIS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1227282,
+   "ticker": "SPOWF",
+   "title": "Strata Power Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1227636,
+   "ticker": "STIM",
+   "title": "Neuronetics, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1232384,
+   "ticker": "TCANF",
+   "title": "TC ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1232384,
+   "ticker": "TCENF",
+   "title": "TC ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1232384,
+   "ticker": "TCEYF",
+   "title": "TC ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1232384,
+   "ticker": "TNCAF",
+   "title": "TC ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1232384,
+   "ticker": "TRP",
+   "title": "TC ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1232384,
+   "ticker": "TRPEF",
+   "title": "TC ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1232384,
+   "ticker": "TRPPF",
+   "title": "TC ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1232384,
+   "ticker": "TRPRF",
+   "title": "TC ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1254435,
+   "ticker": "PEXZF",
+   "title": "PACIFIC RIDGE EXPLORATION LTD",
+   "why": "near"
+  },
+  {
+   "cik_str": 1258602,
+   "ticker": "NNI",
+   "title": "NELNET INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1269026,
+   "ticker": "SINT",
+   "title": "Sintx Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1270436,
+   "ticker": "COHN",
+   "title": "Cohen & Co Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1279495,
+   "ticker": "BTE",
+   "title": "BAYTEX ENERGY CORP.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1280452,
+   "ticker": "MPWR",
+   "title": "MONOLITHIC POWER SYSTEMS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1282631,
+   "ticker": "NLST",
+   "title": "NETLIST INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1283699,
+   "ticker": "TMUS",
+   "title": "T-Mobile US, Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 1286139,
+   "ticker": "LZ",
+   "title": "LEGALZOOM.COM, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1289460,
+   "ticker": "TXRH",
+   "title": "Texas Roadhouse, Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 1293135,
+   "ticker": "VET",
+   "title": "VERMILION ENERGY INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1293818,
+   "ticker": "CFOR",
+   "title": "CapForce Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1296445,
+   "ticker": "ORA",
+   "title": "ORMAT TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1308027,
+   "ticker": "VYST",
+   "title": "Vystar Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1308547,
+   "ticker": "DLB",
+   "title": "Dolby Laboratories, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1309082,
+   "ticker": "VGTK",
+   "title": "Viking Global Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1309108,
+   "ticker": "WEX",
+   "title": "WEX Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1318268,
+   "ticker": "MDEX",
+   "title": "Madison Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1320760,
+   "ticker": "TSSI",
+   "title": "TSS, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1321655,
+   "ticker": "PLTR",
+   "title": "Palantir Technologies Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 1321741,
+   "ticker": "GAIN",
+   "title": "GLADSTONE INVESTMENT CORPORATION\\DE",
+   "why": "near"
+  },
+  {
+   "cik_str": 1321741,
+   "ticker": "GAING",
+   "title": "GLADSTONE INVESTMENT CORPORATION\\DE",
+   "why": "near"
+  },
+  {
+   "cik_str": 1321741,
+   "ticker": "GAINI",
+   "title": "GLADSTONE INVESTMENT CORPORATION\\DE",
+   "why": "near"
+  },
+  {
+   "cik_str": 1321741,
+   "ticker": "GAINZ",
+   "title": "GLADSTONE INVESTMENT CORPORATION\\DE",
+   "why": "near"
+  },
+  {
+   "cik_str": 1321834,
+   "ticker": "QCLS",
+   "title": "Q/C TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1325702,
+   "ticker": "MX",
+   "title": "MAGNACHIP SEMICONDUCTOR Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1326160,
+   "ticker": "DUK",
+   "title": "Duke Energy CORP",
+   "why": "named"
+  },
+  {
+   "cik_str": 1326160,
+   "ticker": "DUK-PA",
+   "title": "Duke Energy CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1326160,
+   "ticker": "DUKB",
+   "title": "Duke Energy CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1326160,
+   "ticker": "DUKU",
+   "title": "Duke Energy CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1329394,
+   "ticker": "SIMO",
+   "title": "Silicon Motion Technology CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1329606,
+   "ticker": "CETY",
+   "title": "Clean Energy Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1331520,
+   "ticker": "HOMB",
+   "title": "HOME BANCSHARES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1334933,
+   "ticker": "UEC",
+   "title": "URANIUM ENERGY CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1335288,
+   "ticker": "REOS",
+   "title": "ReoStar Energy CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1340909,
+   "ticker": "GJO",
+   "title": "STRATS SM TRUST FOR WAL-MART STORES, INC. SECURITIES, SERIES 2005-4",
+   "why": "named"
+  },
+  {
+   "cik_str": 1342338,
+   "ticker": "HIMX",
+   "title": "Himax Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1347123,
+   "ticker": "EBRCZ",
+   "title": "EBR Systems, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1350102,
+   "ticker": "ASTI",
+   "title": "Ascent Solar Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1350653,
+   "ticker": "ATEC",
+   "title": "Alphatec Holdings, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1352010,
+   "ticker": "EPAM",
+   "title": "EPAM Systems, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1353226,
+   "ticker": "GJR",
+   "title": "STRATS(SM) Trust for Procter & Gamble Securities, Series 2006-1",
+   "why": "named"
+  },
+  {
+   "cik_str": 1354866,
+   "ticker": "BYRN",
+   "title": "Byrna Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1355790,
+   "ticker": "ISCO",
+   "title": "International Stem Cell CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1361113,
+   "ticker": "VRNS",
+   "title": "VARONIS SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1362898,
+   "ticker": "AVLNF",
+   "title": "Avalon Advanced Materials Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1365359,
+   "ticker": "PCGC",
+   "title": "HYDRO POWER TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1365388,
+   "ticker": "HSTI",
+   "title": "High Sierra Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1369085,
+   "ticker": "NEWP",
+   "title": "NEW PACIFIC METALS CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1370416,
+   "ticker": "AETR",
+   "title": "AETHERION TECHNOLOGIES INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1370416,
+   "ticker": "WPRT",
+   "title": "AETHERION TECHNOLOGIES INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1372612,
+   "ticker": "BOX",
+   "title": "BOX INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1372612,
+   "ticker": "BXCAP",
+   "title": "BOX INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1372920,
+   "ticker": "EDU",
+   "title": "New Oriental Education & Technology Group Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1372920,
+   "ticker": "NWOEF",
+   "title": "New Oriental Education & Technology Group Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1373715,
+   "ticker": "NOW",
+   "title": "ServiceNow, Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 1376139,
+   "ticker": "CVI",
+   "title": "CVR ENERGY INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1376321,
+   "ticker": "CNET",
+   "title": "ZW Data Action Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1376793,
+   "ticker": "CVAT",
+   "title": "Cavitation Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1378140,
+   "ticker": "OPTT",
+   "title": "Ocean Power Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1378950,
+   "ticker": "PRTS",
+   "title": "CarParts.com, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1384365,
+   "ticker": "RDAR",
+   "title": "Telvantis, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1391426,
+   "ticker": "CLNV",
+   "title": "Clean Vision Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1393052,
+   "ticker": "VEEV",
+   "title": "VEEVA SYSTEMS INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1393772,
+   "ticker": "BUDZ",
+   "title": "WEED, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1394056,
+   "ticker": "OSS",
+   "title": "ONE STOP SYSTEMS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1394832,
+   "ticker": "ATS",
+   "title": "ATS Corp /ATS",
+   "why": "near"
+  },
+  {
+   "cik_str": 1396536,
+   "ticker": "DUOT",
+   "title": "DUOS TECHNOLOGIES GROUP, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1397016,
+   "ticker": "OPXS",
+   "title": "Optex Systems Holdings Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1397795,
+   "ticker": "MDTK",
+   "title": "Bryn Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1398713,
+   "ticker": "URZEF",
+   "title": "URZ3 ENERGY CORP.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1400271,
+   "ticker": "CUBT",
+   "title": "Curative Biotechnology Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1401257,
+   "ticker": "FET",
+   "title": "FORUM ENERGY TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1401667,
+   "ticker": "PBYI",
+   "title": "PUMA BIOTECHNOLOGY, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1402057,
+   "ticker": "CDW",
+   "title": "CDW Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1402436,
+   "ticker": "SSNC",
+   "title": "SS&C Technologies Holdings Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1403161,
+   "ticker": "V",
+   "title": "VISA INC.",
+   "why": "named"
+  },
+  {
+   "cik_str": 1404593,
+   "ticker": "MDCE",
+   "title": "Medical Care Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1404644,
+   "ticker": "NGNE",
+   "title": "Neurogene Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1404655,
+   "ticker": "HUBS",
+   "title": "HUBSPOT INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1404912,
+   "ticker": "KKR",
+   "title": "KKR & Co. Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1404912,
+   "ticker": "KKR-PD",
+   "title": "KKR & Co. Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1404912,
+   "ticker": "KKRS",
+   "title": "KKR & Co. Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1404912,
+   "ticker": "KKRT",
+   "title": "KKR & Co. Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1406666,
+   "ticker": "CALX",
+   "title": "CALIX, INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1409375,
+   "ticker": "OESX",
+   "title": "ORION ENERGY SYSTEMS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1409970,
+   "ticker": "HAPN",
+   "title": "Happen, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1410098,
+   "ticker": "CRMD",
+   "title": "CorMedix Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1410738,
+   "ticker": "VPLM",
+   "title": "Voip-pal.com Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1413119,
+   "ticker": "KBLB",
+   "title": "Kraig Biocraft Laboratories, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1413329,
+   "ticker": "PM",
+   "title": "Philip Morris International Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 1413855,
+   "ticker": "AIFU",
+   "title": "AIFU Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1414382,
+   "ticker": "CLEV",
+   "title": "Concrete Leveling Systems Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1414767,
+   "ticker": "NCPL",
+   "title": "Netcapital Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1414767,
+   "ticker": "NCPLW",
+   "title": "Netcapital Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1418121,
+   "ticker": "APLE",
+   "title": "Apple Hospitality REIT, Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 1419612,
+   "ticker": "SEDG",
+   "title": "SOLAREDGE TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1420800,
+   "ticker": "ENOV",
+   "title": "Enovis CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1424182,
+   "ticker": "BNL",
+   "title": "Broadstone Net Lease, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1427570,
+   "ticker": "HIND",
+   "title": "Vyome Holdings, Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1427925,
+   "ticker": "TLPH",
+   "title": "TALPHERA, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1433195,
+   "ticker": "APPF",
+   "title": "APPFOLIO INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1433309,
+   "ticker": "PLTYF",
+   "title": "Plastec Technologies, Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1436425,
+   "ticker": "HBCP",
+   "title": "HOME BANCORP, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1437424,
+   "ticker": "POET",
+   "title": "POET TECHNOLOGIES INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1437517,
+   "ticker": "CLOQ",
+   "title": "CYBERLOQ TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1438423,
+   "ticker": "MRAM",
+   "title": "EVERSPIN TECHNOLOGIES INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1441683,
+   "ticker": "APPN",
+   "title": "APPIAN CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1442620,
+   "ticker": "RCON",
+   "title": "Recon Technology, Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 1446159,
+   "ticker": "AGPU",
+   "title": "AXE COMPUTE INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1447669,
+   "ticker": "TWLO",
+   "title": "TWILIO INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1450468,
+   "ticker": "MRAAF",
+   "title": "Murata Manufacturing Co., Ltd./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 1453015,
+   "ticker": "BLDP",
+   "title": "Ballard Power Systems Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1459200,
+   "ticker": "ALRM",
+   "title": "Alarm.com Holdings, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1463972,
+   "ticker": "VUZI",
+   "title": "Vuzix Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1466258,
+   "ticker": "TT",
+   "title": "Trane Technologies plc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1467373,
+   "ticker": "ACN",
+   "title": "Accenture plc",
+   "why": "named"
+  },
+  {
+   "cik_str": 1467858,
+   "ticker": "GM",
+   "title": "General Motors Co",
+   "why": "named"
+  },
+  {
+   "cik_str": 1468929,
+   "ticker": "NXGL",
+   "title": "NEXGEL, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1468929,
+   "ticker": "NXGLW",
+   "title": "NEXGEL, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1470129,
+   "ticker": "VIIQ",
+   "title": "VisitIQ Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1471781,
+   "ticker": "GTCH",
+   "title": "GBT Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1472091,
+   "ticker": "PDSB",
+   "title": "PDS Biotechnology Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1472466,
+   "ticker": "LPSIF",
+   "title": "LEGEND POWER SYSTEMS INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1474627,
+   "ticker": "NEGG",
+   "title": "Newegg Commerce, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1477720,
+   "ticker": "ASAN",
+   "title": "Asana, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1481443,
+   "ticker": "TCRI",
+   "title": "TechCom, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1482512,
+   "ticker": "HPP",
+   "title": "Hudson Pacific Properties, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1482512,
+   "ticker": "HPP-PC",
+   "title": "Hudson Pacific Properties, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1486159,
+   "ticker": "CHRD",
+   "title": "Chord Energy Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1486957,
+   "ticker": "BWXT",
+   "title": "BWX Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1487428,
+   "ticker": "HRZN",
+   "title": "Horizon Technology Finance Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1487428,
+   "ticker": "HTFC",
+   "title": "Horizon Technology Finance Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1488139,
+   "ticker": "AMRC",
+   "title": "Ameresco, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1492617,
+   "ticker": "FWFW",
+   "title": "FLYWHEEL ADVANCED TECHNOLOGY, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1493137,
+   "ticker": "LCTC",
+   "title": "Lifeloc Technologies, Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1493594,
+   "ticker": "MTSI",
+   "title": "MACOM Technology Solutions Holdings, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1494413,
+   "ticker": "QUTX",
+   "title": "Quantum X Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1495584,
+   "ticker": "SVVC",
+   "title": "Firsthand Technology Value Fund, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1495932,
+   "ticker": "AGNT",
+   "title": "AGNT, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1496690,
+   "ticker": "BCRD",
+   "title": "BlueOne Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1497770,
+   "ticker": "WD",
+   "title": "Walker & Dunlop, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1499494,
+   "ticker": "DXF",
+   "title": "Eason Technology Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 1500412,
+   "ticker": "AMBQ",
+   "title": "Ambiq Micro, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1500881,
+   "ticker": "EU",
+   "title": "enCore Energy Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1503584,
+   "ticker": "CMRE",
+   "title": "Costamare Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1503584,
+   "ticker": "CMRE-PB",
+   "title": "Costamare Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1503584,
+   "ticker": "CMRE-PC",
+   "title": "Costamare Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1503584,
+   "ticker": "CMRE-PD",
+   "title": "Costamare Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1509745,
+   "ticker": "CYPH",
+   "title": "CYPHERPUNK TECHNOLOGIES INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1512886,
+   "ticker": "NTRR",
+   "title": "NEUTRA CORP.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1514946,
+   "ticker": "AXIM",
+   "title": "AXIM BIOTECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1515139,
+   "ticker": "WAST",
+   "title": "WASTE ENERGY CORP.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1515156,
+   "ticker": "ARQ",
+   "title": "Arq, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1519472,
+   "ticker": "SMXT",
+   "title": "SolarMax Technology, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1527352,
+   "ticker": "NXL",
+   "title": "Nexalin Technology, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1527636,
+   "ticker": "ATHM",
+   "title": "Autohome Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1527702,
+   "ticker": "IQST",
+   "title": "iQSTEL Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1528287,
+   "ticker": "NPCE",
+   "title": "NeuroPace Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1529274,
+   "ticker": "ALKT",
+   "title": "ALKAMI TECHNOLOGY, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1529628,
+   "ticker": "SND",
+   "title": "Smart Sand, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1530766,
+   "ticker": "STEX",
+   "title": "Streamex Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1531152,
+   "ticker": "BJ",
+   "title": "BJ's Wholesale Club Holdings, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1532286,
+   "ticker": "NINE",
+   "title": "Nine Energy Service, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1532383,
+   "ticker": "VNJA",
+   "title": "VANJIA CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1533924,
+   "ticker": "AMPY",
+   "title": "Amplify Energy Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1534154,
+   "ticker": "AUID",
+   "title": "authID Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1537435,
+   "ticker": "TGEN",
+   "title": "TECOGEN INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1539680,
+   "ticker": "HMMR",
+   "title": "HAMMER TECHNOLOGY HOLDINGS CORP.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1543151,
+   "ticker": "UBER",
+   "title": "Uber Technologies, Inc",
+   "why": "named"
+  },
+  {
+   "cik_str": 1546853,
+   "ticker": "SKKY",
+   "title": "Skkynet Cloud Systems, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1549802,
+   "ticker": "JD",
+   "title": "JD.com, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1549802,
+   "ticker": "JDCMF",
+   "title": "JD.com, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1551152,
+   "ticker": "ABBV",
+   "title": "AbbVie Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 1553264,
+   "ticker": "APSI",
+   "title": "AQUA POWER SYSTEMS INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1554818,
+   "ticker": "AUUD",
+   "title": "AUDDIA INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1555279,
+   "ticker": "MASS",
+   "title": "908 Devices Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1559720,
+   "ticker": "ABNB",
+   "title": "Airbnb, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1561921,
+   "ticker": "TELA",
+   "title": "TELA Bio, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1563190,
+   "ticker": "COMP",
+   "title": "Compass, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1563411,
+   "ticker": "CSTM",
+   "title": "CONSTELLIUM SE",
+   "why": "near"
+  },
+  {
+   "cik_str": 1564708,
+   "ticker": "NWS",
+   "title": "NEWS CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1564708,
+   "ticker": "NWSA",
+   "title": "NEWS CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1564708,
+   "ticker": "NWSLL",
+   "title": "NEWS CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1564902,
+   "ticker": "PRKS",
+   "title": "United Parks & Resorts Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1565228,
+   "ticker": "VISL",
+   "title": "Vislink Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1565687,
+   "ticker": "INTA",
+   "title": "Intapp, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1567526,
+   "ticker": "IHICF",
+   "title": "IHI Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 1568969,
+   "ticker": "LOTT",
+   "title": "Techlott Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1570299,
+   "ticker": "NCHEF",
+   "title": "Nichirei Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 1571996,
+   "ticker": "DELL",
+   "title": "Dell Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1576159,
+   "ticker": "BDCTF",
+   "title": "BuildDirect.com Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1576873,
+   "ticker": "ABAT",
+   "title": "AMERICAN BATTERY TECHNOLOGY Co",
+   "why": "near"
+  },
+  {
+   "cik_str": 1577526,
+   "ticker": "AI",
+   "title": "C3.ai, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1579684,
+   "ticker": "TDAY",
+   "title": "USA TODAY Co., Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1580670,
+   "ticker": "LGIH",
+   "title": "LGI Homes, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1580808,
+   "ticker": "ATEN",
+   "title": "A10 Networks, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1587987,
+   "ticker": "NEWT",
+   "title": "NewtekOne, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1587987,
+   "ticker": "NEWTG",
+   "title": "NewtekOne, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1587987,
+   "ticker": "NEWTH",
+   "title": "NewtekOne, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1587987,
+   "ticker": "NEWTI",
+   "title": "NewtekOne, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1587987,
+   "ticker": "NEWTO",
+   "title": "NewtekOne, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1587987,
+   "ticker": "NEWTP",
+   "title": "NewtekOne, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1589149,
+   "ticker": "GWAV",
+   "title": "Greenwave Technology Solutions, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1591588,
+   "ticker": "GOLD",
+   "title": "Gold.com, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1591956,
+   "ticker": "DRK",
+   "title": "DarkHorse Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1597672,
+   "ticker": "RYAM",
+   "title": "RAYONIER ADVANCED MATERIALS INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1598428,
+   "ticker": "MTUS",
+   "title": "Metallus Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1598981,
+   "ticker": "SKYX",
+   "title": "SKYX Platforms Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1600641,
+   "ticker": "DIBS",
+   "title": "1stdibs.com, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1601046,
+   "ticker": "KEYS",
+   "title": "Keysight Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1603978,
+   "ticker": "AQB",
+   "title": "AQUABOUNTY TECHNOLOGIES INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1603993,
+   "ticker": "AIOS",
+   "title": "AIOS Tech Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1604028,
+   "ticker": "WMS",
+   "title": "ADVANCED DRAINAGE SYSTEMS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1604191,
+   "ticker": "GRDX",
+   "title": "GridAI Technologies Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1604868,
+   "ticker": "GRWG",
+   "title": "GrowGeneration Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1605331,
+   "ticker": "AERA",
+   "title": "AI Era Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1607807,
+   "ticker": "NVGLF",
+   "title": "NV Gold Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1609436,
+   "ticker": "PUROF",
+   "title": "Platauro Metals Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1609550,
+   "ticker": "INSP",
+   "title": "Inspire Medical Systems, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1611052,
+   "ticker": "PCOR",
+   "title": "PROCORE TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1613103,
+   "ticker": "MDT",
+   "title": "Medtronic plc",
+   "why": "named"
+  },
+  {
+   "cik_str": 1613780,
+   "ticker": "DBVT",
+   "title": "DBV Technologies S.A.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1613780,
+   "ticker": "DBVTF",
+   "title": "DBV Technologies S.A.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1616707,
+   "ticker": "W",
+   "title": "Wayfair Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1616736,
+   "ticker": "GGBY",
+   "title": "Alpha Investment Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1616862,
+   "ticker": "AXTA",
+   "title": "Axalta Coating Systems Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1618732,
+   "ticker": "NTNX",
+   "title": "Nutanix, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1619544,
+   "ticker": "JFU",
+   "title": "9F Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1620704,
+   "ticker": "MXRX",
+   "title": "MED-X, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1622536,
+   "ticker": "TLN",
+   "title": "Talen Energy Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1625641,
+   "ticker": "LAW",
+   "title": "CS Disco, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1626450,
+   "ticker": "CMRC",
+   "title": "Commerce.com, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1629632,
+   "ticker": "EGTYF",
+   "title": "Eguana Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1630212,
+   "ticker": "CHGA",
+   "title": "Change Agents Corporation.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1633917,
+   "ticker": "PYPL",
+   "title": "PayPal Holdings, Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 1637459,
+   "ticker": "KHC",
+   "title": "Kraft Heinz Co",
+   "why": "named"
+  },
+  {
+   "cik_str": 1638287,
+   "ticker": "MTVA",
+   "title": "MetaVia Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1638826,
+   "ticker": "TTAN",
+   "title": "ServiceTitan, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1639920,
+   "ticker": "SPOT",
+   "title": "Spotify Technology S.A.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1645155,
+   "ticker": "WBSR",
+   "title": "Webstar Technology Group Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1647822,
+   "ticker": "SVMB",
+   "title": "Jingbo Technology, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1648512,
+   "ticker": "SHMXY",
+   "title": "Shimadzu Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 1648512,
+   "ticker": "SHMZF",
+   "title": "Shimadzu Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 1650107,
+   "ticker": "CCEP",
+   "title": "COCA-COLA EUROPACIFIC PARTNERS plc",
+   "why": "named"
+  },
+  {
+   "cik_str": 1650164,
+   "ticker": "TOST",
+   "title": "Toast, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1650575,
+   "ticker": "BRQSF",
+   "title": "Borqs Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1651562,
+   "ticker": "COUR",
+   "title": "Coursera, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1651992,
+   "ticker": "ASFT",
+   "title": "Appsoft Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1653087,
+   "ticker": "ALEC",
+   "title": "Alector, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1653558,
+   "ticker": "PRTH",
+   "title": "Priority Technology Holdings, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1653558,
+   "ticker": "PRTHU",
+   "title": "Priority Technology Holdings, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1653909,
+   "ticker": "BIRD",
+   "title": "Smartbird, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1655923,
+   "ticker": "ACOG",
+   "title": "Alpha Cognition Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1658678,
+   "ticker": "BSEM",
+   "title": "BioStem Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1661059,
+   "ticker": "NXTC",
+   "title": "NextCure, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1662684,
+   "ticker": "KULR",
+   "title": "KULR Technology Group, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1662991,
+   "ticker": "SEZL",
+   "title": "Sezzle Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1664703,
+   "ticker": "BE",
+   "title": "Bloom Energy Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1668438,
+   "ticker": "IMTE",
+   "title": "Integrated Media Technology Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 1668501,
+   "ticker": "KOSCF",
+   "title": "Kose Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 1671750,
+   "ticker": "DISPF",
+   "title": "Disco Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 1673985,
+   "ticker": "ASIX",
+   "title": "AdvanSix Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1674440,
+   "ticker": "YYAI",
+   "title": "AIRWA INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1676238,
+   "ticker": "BRZE",
+   "title": "Braze, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1677703,
+   "ticker": "CNDT",
+   "title": "CONDUENT Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1679817,
+   "ticker": "OZSC",
+   "title": "OZOP ENERGY SOLUTIONS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1682241,
+   "ticker": "MATH",
+   "title": "Metalpha Technology Holding Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 1683606,
+   "ticker": "CARS",
+   "title": "Cars.com Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1684505,
+   "ticker": "XTRAF",
+   "title": "Xtract One Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1684693,
+   "ticker": "SLGL",
+   "title": "Sol-Gel Technologies Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1687229,
+   "ticker": "INVH",
+   "title": "Invitation Homes Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1687542,
+   "ticker": "FRGT",
+   "title": "Freight Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1688568,
+   "ticker": "DXC",
+   "title": "DXC Technology Co",
+   "why": "near"
+  },
+  {
+   "cik_str": 1691303,
+   "ticker": "HCC",
+   "title": "WARRIOR MET COAL, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1697851,
+   "ticker": "REKR",
+   "title": "Rekor Systems, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1699967,
+   "ticker": "MEIUF",
+   "title": "Meitu Inc./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 1700662,
+   "ticker": "HHGSY",
+   "title": "Hua Hong Semiconductor Limited/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 1700662,
+   "ticker": "HHUSF",
+   "title": "Hua Hong Semiconductor Limited/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 1701478,
+   "ticker": "AZTR",
+   "title": "Azitra, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1701963,
+   "ticker": "VS",
+   "title": "Versus Systems Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1702924,
+   "ticker": "WRAP",
+   "title": "WRAP TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1703056,
+   "ticker": "ADT",
+   "title": "ADT Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1703073,
+   "ticker": "VIVC",
+   "title": "VIVIC CORP.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1704715,
+   "ticker": "AMR",
+   "title": "Alpha Metallurgical Resources, Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 1705110,
+   "ticker": "ANGI",
+   "title": "Angi Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1706431,
+   "ticker": "VIR",
+   "title": "Vir Biotechnology, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1707303,
+   "ticker": "DOGZ",
+   "title": "Dogness (International) Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1707925,
+   "ticker": "LIN",
+   "title": "LINDE PLC",
+   "why": "named"
+  },
+  {
+   "cik_str": 1712178,
+   "ticker": "NAAS",
+   "title": "NaaS Technology Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1712762,
+   "ticker": "BIAF",
+   "title": "bioAffinity Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1712762,
+   "ticker": "BIAFW",
+   "title": "bioAffinity Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1713923,
+   "ticker": "AIJTY",
+   "title": "Jianpu Technology Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1715819,
+   "ticker": "EMED",
+   "title": "Electromedical Technologies, Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1717115,
+   "ticker": "TEM",
+   "title": "Tempus AI, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1718224,
+   "ticker": "BTBD",
+   "title": "BT Brands, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1718224,
+   "ticker": "BTBDW",
+   "title": "BT Brands, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1720250,
+   "ticker": "KNDI",
+   "title": "Kandi Technologies Group, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1720580,
+   "ticker": "ACET",
+   "title": "Adicet Bio, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1723047,
+   "ticker": "VAUCF",
+   "title": "Viva Gold Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1723935,
+   "ticker": "STG",
+   "title": "Sunlands Technology Group",
+   "why": "near"
+  },
+  {
+   "cik_str": 1725332,
+   "ticker": "ALAR",
+   "title": "Alarum Technologies Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1726159,
+   "ticker": "USGDF",
+   "title": "AMERICAN PACIFIC MINING CORP",
+   "why": "near"
+  },
+  {
+   "cik_str": 1734750,
+   "ticker": "MOVE",
+   "title": "Corvex, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1736541,
+   "ticker": "NIO",
+   "title": "NIO Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1736541,
+   "ticker": "NIOIF",
+   "title": "NIO Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1736946,
+   "ticker": "ARLO",
+   "title": "Arlo Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1737319,
+   "ticker": "CUAUF",
+   "title": "C3 Metals Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1739445,
+   "ticker": "ACA",
+   "title": "Arcosa, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1739940,
+   "ticker": "CI",
+   "title": "Cigna Group",
+   "why": "named"
+  },
+  {
+   "cik_str": 1740332,
+   "ticker": "REZI",
+   "title": "RESIDEO TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1742341,
+   "ticker": "BDAI",
+   "title": "Biddance AI Systems, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1742770,
+   "ticker": "VIOT",
+   "title": "Viomi Technology Co., Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 1744489,
+   "ticker": "DIS",
+   "title": "Walt Disney Co",
+   "why": "named"
+  },
+  {
+   "cik_str": 1744781,
+   "ticker": "NIU",
+   "title": "Niu Technologies",
+   "why": "near"
+  },
+  {
+   "cik_str": 1745648,
+   "ticker": "APMD",
+   "title": "Apnimed, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1747777,
+   "ticker": "OTF",
+   "title": "Blue Owl Technology Finance Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1748137,
+   "ticker": "NEOV",
+   "title": "NeoVolta Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1748137,
+   "ticker": "NEOVW",
+   "title": "NeoVolta Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1748797,
+   "ticker": "DOO",
+   "title": "BRP Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1748830,
+   "ticker": "XIACF",
+   "title": "Xiaomi Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 1750106,
+   "ticker": "AEI",
+   "title": "Alset Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1750735,
+   "ticker": "MRBK",
+   "title": "Meridian Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1751008,
+   "ticker": "APP",
+   "title": "AppLovin Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1752564,
+   "ticker": "MRCIF",
+   "title": "Mercari, Inc./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 1753368,
+   "ticker": "SANG",
+   "title": "Sangoma Technologies Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1753539,
+   "ticker": "BKSY",
+   "title": "BlackSky Technology Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1754301,
+   "ticker": "FOX",
+   "title": "Fox Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1754301,
+   "ticker": "FOXA",
+   "title": "Fox Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1755672,
+   "ticker": "CTVA",
+   "title": "Corteva, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1756708,
+   "ticker": "JMIA",
+   "title": "Jumia Technologies AG",
+   "why": "near"
+  },
+  {
+   "cik_str": 1758766,
+   "ticker": "STEM",
+   "title": "STEM, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1760026,
+   "ticker": "RMTG",
+   "title": "Regenerative Medical Technology Group Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1769256,
+   "ticker": "XHG",
+   "title": "XChange TEC.INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1770121,
+   "ticker": "SANA",
+   "title": "Sana Biotechnology, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1770236,
+   "ticker": "MITQ",
+   "title": "MOVING iMAGE TECHNOLOGIES INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1779474,
+   "ticker": "MAPS",
+   "title": "WM TECHNOLOGY, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1781629,
+   "ticker": "ANKM",
+   "title": "Ankam, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1782107,
+   "ticker": "ONCO",
+   "title": "Onconetix, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1784570,
+   "ticker": "BETA",
+   "title": "BETA Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1784970,
+   "ticker": "NXTT",
+   "title": "Next Technology Holding Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1786842,
+   "ticker": "VNT",
+   "title": "Vontier Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1787425,
+   "ticker": "XP",
+   "title": "XP Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1787803,
+   "ticker": "WNW",
+   "title": "Meiwu Technology Co Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 1788060,
+   "ticker": "VOYG",
+   "title": "Voyager Technologies, Inc./TX",
+   "why": "near"
+  },
+  {
+   "cik_str": 1788451,
+   "ticker": "LIFE",
+   "title": "Ethos Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1789029,
+   "ticker": "AEVA",
+   "title": "Aeva Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1789192,
+   "ticker": "NXTS",
+   "title": "Nexentis Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1794515,
+   "ticker": "GTM",
+   "title": "ZoomInfo Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1796898,
+   "ticker": "MAXNQ",
+   "title": "Maxeon Solar Technologies, Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1798562,
+   "ticker": "TMC",
+   "title": "TMC the metals Co Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1800227,
+   "ticker": "PPLI",
+   "title": "People Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1800392,
+   "ticker": "MLGO",
+   "title": "MicroAlgo Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1800392,
+   "ticker": "VENAF",
+   "title": "MicroAlgo Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1801169,
+   "ticker": "OPEN",
+   "title": "Opendoor Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1801169,
+   "ticker": "OPENL",
+   "title": "Opendoor Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1801169,
+   "ticker": "OPENW",
+   "title": "Opendoor Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1801169,
+   "ticker": "OPENZ",
+   "title": "Opendoor Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1801834,
+   "ticker": "PRFX",
+   "title": "PRF Technologies Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1802883,
+   "ticker": "API",
+   "title": "Agora, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1803407,
+   "ticker": "OST",
+   "title": "Ostin Technology Group Co., Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1803696,
+   "ticker": "ADEA",
+   "title": "Adeia Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1805385,
+   "ticker": "EVLV",
+   "title": "Evolv Technologies Holdings, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1805833,
+   "ticker": "SST",
+   "title": "System1, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1805833,
+   "ticker": "SSTPW",
+   "title": "System1, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1806904,
+   "ticker": "EZGO",
+   "title": "EZGO Technologies Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1808805,
+   "ticker": "NAUT",
+   "title": "Nautilus Biotechnology, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1809987,
+   "ticker": "MIR",
+   "title": "Mirion Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1810019,
+   "ticker": "RXT",
+   "title": "Rackspace Technology, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1811074,
+   "ticker": "TPL",
+   "title": "Texas Pacific Land Corp",
+   "why": "named"
+  },
+  {
+   "cik_str": 1812360,
+   "ticker": "FOXO",
+   "title": "FOXO TECHNOLOGIES INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1812360,
+   "ticker": "FOXOW",
+   "title": "FOXO TECHNOLOGIES INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1813241,
+   "ticker": "GPGCF",
+   "title": "Great Pacific Gold Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1813783,
+   "ticker": "VMAR",
+   "title": "Vision Marine Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1815632,
+   "ticker": "TGCB",
+   "title": "Tego Cyber, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1817004,
+   "ticker": "NXXT",
+   "title": "NEXTNRG, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1817511,
+   "ticker": "SOPAQ",
+   "title": "SOCIETY PASS INCORPORATED.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1817760,
+   "ticker": "SMTK",
+   "title": "SmartKem, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1818093,
+   "ticker": "SKIN",
+   "title": "SkinHealth Systems Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1818383,
+   "ticker": "MAX",
+   "title": "MediaAlpha, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1818644,
+   "ticker": "LIDR",
+   "title": "AEye, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1818838,
+   "ticker": "ADAG",
+   "title": "Adagene Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1818874,
+   "ticker": "SOFI",
+   "title": "SoFi Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1819404,
+   "ticker": "NRDY",
+   "title": "Nerdy Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1819438,
+   "ticker": "GWHT",
+   "title": "ESS Tech, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1819576,
+   "ticker": "LQDA",
+   "title": "Liquidia Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1819704,
+   "ticker": "MRM",
+   "title": "Medirom Healthcare Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1820721,
+   "ticker": "ARRY",
+   "title": "Array Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1820875,
+   "ticker": "CXAI",
+   "title": "CXApp Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1820875,
+   "ticker": "CXAIW",
+   "title": "CXApp Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1821468,
+   "ticker": "YQ",
+   "title": "17 Education & Technology Group Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1821769,
+   "ticker": "NVTS",
+   "title": "Navitas Semiconductor Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1821866,
+   "ticker": "BTQ",
+   "title": "BTQ Technologies Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1822523,
+   "ticker": "AFCG",
+   "title": "Advanced Flower Capital Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1822928,
+   "ticker": "HLLY",
+   "title": "Holley Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1822989,
+   "ticker": "LSRCF",
+   "title": "Lasertec Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 1823986,
+   "ticker": "WDH",
+   "title": "Waterdrop Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1825088,
+   "ticker": "DFH",
+   "title": "Dream Finders Homes, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1826011,
+   "ticker": "PARA",
+   "title": "Parabolic Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1826011,
+   "ticker": "PARAW",
+   "title": "Parabolic Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1826376,
+   "ticker": "GSUN",
+   "title": "Golden Sun Technology Group Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1826397,
+   "ticker": "AVX",
+   "title": "AVAX ONE TECHNOLOGY LTD.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1826660,
+   "ticker": "WETH",
+   "title": "Wetouch Technology Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1828365,
+   "ticker": "RLX",
+   "title": "RLX Technology Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1828791,
+   "ticker": "DSP",
+   "title": "Viant Technology Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1828805,
+   "ticker": "ALMU",
+   "title": "Aeluma, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1829118,
+   "ticker": "TUYA",
+   "title": "Tuya Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1829311,
+   "ticker": "BMNP",
+   "title": "BITMINE IMMERSION TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1829311,
+   "ticker": "BMNR",
+   "title": "BITMINE IMMERSION TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1829864,
+   "ticker": "TASK",
+   "title": "TaskUs, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1830033,
+   "ticker": "PCT",
+   "title": "PureCycle Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1830033,
+   "ticker": "PCTBP",
+   "title": "PureCycle Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1830033,
+   "ticker": "PCTTU",
+   "title": "PureCycle Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1830033,
+   "ticker": "PCTTW",
+   "title": "PureCycle Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1830043,
+   "ticker": "BMBL",
+   "title": "Bumble Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1831631,
+   "ticker": "LDI",
+   "title": "loanDepot, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1831651,
+   "ticker": "SHLS",
+   "title": "Shoals Technologies Group, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1834032,
+   "ticker": "CSTAF",
+   "title": "Constellation Acquisition Corp I",
+   "why": "named"
+  },
+  {
+   "cik_str": 1834032,
+   "ticker": "CSTUF",
+   "title": "Constellation Acquisition Corp I",
+   "why": "near"
+  },
+  {
+   "cik_str": 1834032,
+   "ticker": "CSTWF",
+   "title": "Constellation Acquisition Corp I",
+   "why": "near"
+  },
+  {
+   "cik_str": 1834488,
+   "ticker": "NABL",
+   "title": "N-able, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1834584,
+   "ticker": "CPNG",
+   "title": "Coupang, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1835632,
+   "ticker": "MRVL",
+   "title": "Marvell Technology, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1835654,
+   "ticker": "INVZ",
+   "title": "Innoviz Technologies Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1836295,
+   "ticker": "RTGN",
+   "title": "RetinalGenix Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1837014,
+   "ticker": "SMRT",
+   "title": "SmartRent, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1837774,
+   "ticker": "GIPL",
+   "title": "Global Innovative Platforms Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1838406,
+   "ticker": "BKV",
+   "title": "BKV Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1840780,
+   "ticker": "LOCL",
+   "title": "Local Bounti Corporation/DE",
+   "why": "near"
+  },
+  {
+   "cik_str": 1840780,
+   "ticker": "LOCLW",
+   "title": "Local Bounti Corporation/DE",
+   "why": "near"
+  },
+  {
+   "cik_str": 1841209,
+   "ticker": "HOLO",
+   "title": "MicroCloud Hologram Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1841209,
+   "ticker": "HOLOW",
+   "title": "MicroCloud Hologram Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1841408,
+   "ticker": "DAVE",
+   "title": "Dave Inc./DE",
+   "why": "near"
+  },
+  {
+   "cik_str": 1841408,
+   "ticker": "DAVEW",
+   "title": "Dave Inc./DE",
+   "why": "near"
+  },
+  {
+   "cik_str": 1841666,
+   "ticker": "APA",
+   "title": "APA Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1841925,
+   "ticker": "INDI",
+   "title": "indie Semiconductor, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1845123,
+   "ticker": "ANNA",
+   "title": "AleAnna, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1845123,
+   "ticker": "ANNAW",
+   "title": "AleAnna, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1845437,
+   "ticker": "NPWR",
+   "title": "Net Power Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1845437,
+   "ticker": "NPWR-WT",
+   "title": "Net Power Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1847367,
+   "ticker": "ALMS",
+   "title": "ALUMIS INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1849635,
+   "ticker": "DJT",
+   "title": "Trump Media & Technology Group Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1849635,
+   "ticker": "DJTWW",
+   "title": "Trump Media & Technology Group Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1850902,
+   "ticker": "TKNO",
+   "title": "Alpha Teknova, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1851961,
+   "ticker": "GCTS",
+   "title": "GCT Semiconductor Holding, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1851961,
+   "ticker": "GCTS-WT",
+   "title": "GCT Semiconductor Holding, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1852131,
+   "ticker": "NXT",
+   "title": "Nextpower Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1852767,
+   "ticker": "MRT",
+   "title": "Marti Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1853044,
+   "ticker": "AERT",
+   "title": "Aeries Technology, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1853044,
+   "ticker": "AERTW",
+   "title": "Aeries Technology, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1856525,
+   "ticker": "CNM",
+   "title": "Core & Main, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1857030,
+   "ticker": "INCR",
+   "title": "Intercure Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1857816,
+   "ticker": "GCT",
+   "title": "GigaCloud Technology Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1860871,
+   "ticker": "TVGN",
+   "title": "Tevogen Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1860871,
+   "ticker": "TVGNW",
+   "title": "Tevogen Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1861622,
+   "ticker": "JTAI",
+   "title": "Jet.AI Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1862463,
+   "ticker": "AMOD",
+   "title": "ALPHA MODUS HOLDINGS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1862463,
+   "ticker": "AMODW",
+   "title": "ALPHA MODUS HOLDINGS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1863006,
+   "ticker": "VLN",
+   "title": "Valens Semiconductor Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1863934,
+   "ticker": "ADUR",
+   "title": "ADURO CLEAN TECHNOLOGIES INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1864163,
+   "ticker": "INTR",
+   "title": "Inter & Co, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1865506,
+   "ticker": "ZEO",
+   "title": "Zeo Energy Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1865506,
+   "ticker": "ZEOWW",
+   "title": "Zeo Energy Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1865631,
+   "ticker": "NN",
+   "title": "NEXTNAV INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1865631,
+   "ticker": "NXNVW",
+   "title": "NEXTNAV INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1866581,
+   "ticker": "BROS",
+   "title": "Dutch Bros Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1868640,
+   "ticker": "RDZN",
+   "title": "Roadzen Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1868640,
+   "ticker": "RDZNW",
+   "title": "Roadzen Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1868995,
+   "ticker": "CINT",
+   "title": "CI&T Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1869137,
+   "ticker": "MHUBF",
+   "title": "MineHub Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1870940,
+   "ticker": "AIRS",
+   "title": "Airsculpt Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1873454,
+   "ticker": "RYET",
+   "title": "Ruanyun Edai Technology Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1875444,
+   "ticker": "ARHS",
+   "title": "Arhaus, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1878313,
+   "ticker": "MAIA",
+   "title": "MAIA Biotechnology, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1880343,
+   "ticker": "AMZE",
+   "title": "AMAZE HOLDINGS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1880661,
+   "ticker": "TPG",
+   "title": "TPG Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1880661,
+   "ticker": "TPGXL",
+   "title": "TPG Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1881551,
+   "ticker": "STI",
+   "title": "Solidion Technology Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1882198,
+   "ticker": "ATEK",
+   "title": "Athena Technology Acquisition Corp. II",
+   "why": "near"
+  },
+  {
+   "cik_str": 1882198,
+   "ticker": "ATEKU",
+   "title": "Athena Technology Acquisition Corp. II",
+   "why": "near"
+  },
+  {
+   "cik_str": 1882198,
+   "ticker": "ATEKW",
+   "title": "Athena Technology Acquisition Corp. II",
+   "why": "near"
+  },
+  {
+   "cik_str": 1883085,
+   "ticker": "PGY",
+   "title": "Pagaya Technologies Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1883085,
+   "ticker": "PGYWW",
+   "title": "Pagaya Technologies Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1884122,
+   "ticker": "VCUFF",
+   "title": "Vizsla Copper Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1885408,
+   "ticker": "NEXR",
+   "title": "Nexera Technologies Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 1885408,
+   "ticker": "NEXRW",
+   "title": "Nexera Technologies Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 1888151,
+   "ticker": "FMTOF",
+   "title": "Femto Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1888274,
+   "ticker": "DEFT",
+   "title": "Defi Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1888654,
+   "ticker": "FEAM",
+   "title": "5E Advanced Materials, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1888654,
+   "ticker": "FEAV",
+   "title": "5E Advanced Materials, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1889823,
+   "ticker": "DFSC",
+   "title": "DEFSEC Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1889823,
+   "ticker": "DFSCW",
+   "title": "DEFSEC Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1891101,
+   "ticker": "BRCC",
+   "title": "BRC Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1894954,
+   "ticker": "XPON",
+   "title": "Expion Energy, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1895249,
+   "ticker": "CNTM",
+   "title": "ConnectM Technology Solutions, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1896425,
+   "ticker": "LBGJ",
+   "title": "Li Bang International Corp Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1897087,
+   "ticker": "SUPX",
+   "title": "SuperX AI Technology Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 1899287,
+   "ticker": "AMPX",
+   "title": "Amprius Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1899287,
+   "ticker": "AMPX-WT",
+   "title": "Amprius Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1903145,
+   "ticker": "GRRR",
+   "title": "Gorilla Technology Group Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1903145,
+   "ticker": "GRRRW",
+   "title": "Gorilla Technology Group Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1911545,
+   "ticker": "GITS",
+   "title": "Global Interactive Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1912540,
+   "ticker": "SCVE",
+   "title": "Sound Cave Technology Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1917993,
+   "ticker": "CYPA",
+   "title": "Cyphaira Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1919191,
+   "ticker": "ITHR",
+   "title": "Intelithrive, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1921963,
+   "ticker": "ATMU",
+   "title": "Atmus Filtration Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1923780,
+   "ticker": "NCL",
+   "title": "Northann Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1927578,
+   "ticker": "NTCL",
+   "title": "NetClass Technology Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1929783,
+   "ticker": "WOK",
+   "title": "WORK Medical Technology Group LTD",
+   "why": "near"
+  },
+  {
+   "cik_str": 1930419,
+   "ticker": "ALRTF",
+   "title": "ALR Technologies SG Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1932072,
+   "ticker": "LOBO",
+   "title": "LOBO TECHNOLOGIES LTD.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1932393,
+   "ticker": "GEHC",
+   "title": "GE HealthCare Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1933359,
+   "ticker": "NTCS",
+   "title": "Natics Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1933567,
+   "ticker": "NRXS",
+   "title": "Neuraxis, INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 1936804,
+   "ticker": "SDA",
+   "title": "SunCar Technology Group Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1936804,
+   "ticker": "SDAWW",
+   "title": "SunCar Technology Group Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1938109,
+   "ticker": "PAPL",
+   "title": "Pineapple Financial Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1938109,
+   "ticker": "PTIV",
+   "title": "Pineapple Financial Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1938569,
+   "ticker": "PALX",
+   "title": "Palomino Laboratories Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1938571,
+   "ticker": "APTN",
+   "title": "ADAPTIN BIO, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1941029,
+   "ticker": "ADVB",
+   "title": "Advanced Biomed Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1941189,
+   "ticker": "TANAF",
+   "title": "Tian'an Technology Group Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 1943444,
+   "ticker": "TRSG",
+   "title": "Tungray Technologies Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1944885,
+   "ticker": "APLM",
+   "title": "Apollomics Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1944885,
+   "ticker": "APLMW",
+   "title": "Apollomics Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1945166,
+   "ticker": "MECPF",
+   "title": "MUSTANG ENERGY CORP.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1947210,
+   "ticker": "ROLR",
+   "title": "High Roller Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1948455,
+   "ticker": "ISPR",
+   "title": "Ispire Technology Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1954594,
+   "ticker": "HAO",
+   "title": "Haoxi Health Technology Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 1956166,
+   "ticker": "PMA",
+   "title": "PMA Graphene Technology Group Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1956648,
+   "ticker": "NOEM",
+   "title": "CO2 Energy Transition Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1956648,
+   "ticker": "NOEMR",
+   "title": "CO2 Energy Transition Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1956648,
+   "ticker": "NOEMU",
+   "title": "CO2 Energy Transition Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1956648,
+   "ticker": "NOEMW",
+   "title": "CO2 Energy Transition Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1956744,
+   "ticker": "TRON",
+   "title": "Tron Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1957413,
+   "ticker": "DCX",
+   "title": "Digital Currency X Technology Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1958086,
+   "ticker": "CLB",
+   "title": "Core Laboratories Inc. /DE/",
+   "why": "near"
+  },
+  {
+   "cik_str": 1958133,
+   "ticker": "DXST",
+   "title": "Decent Holding Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1958389,
+   "ticker": "HYDTF",
+   "title": "Hydreight Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1960355,
+   "ticker": "EXYN",
+   "title": "Exyn Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1960355,
+   "ticker": "EXYNW",
+   "title": "Exyn Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1962746,
+   "ticker": "LOT",
+   "title": "Lotus Technology Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1962746,
+   "ticker": "LOTWW",
+   "title": "Lotus Technology Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1964946,
+   "ticker": "YAAS",
+   "title": "Youxin Technology Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 1964979,
+   "ticker": "ALUR",
+   "title": "ALLURION TECHNOLOGIES, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1966678,
+   "ticker": "ZDAI",
+   "title": "DirectBooking Technology Co., Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1966750,
+   "ticker": "ZBAO",
+   "title": "Zhibao Technology Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1967306,
+   "ticker": "MSBB",
+   "title": "Mercer Bancorp, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1967397,
+   "ticker": "LZMH",
+   "title": "LZ Technology Holdings Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 1967621,
+   "ticker": "ATGL",
+   "title": "Alpha Technology Group Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 1967631,
+   "ticker": "NAMI",
+   "title": "Jinxin Technology Holding Co",
+   "why": "near"
+  },
+  {
+   "cik_str": 1967649,
+   "ticker": "VSTS",
+   "title": "Vestis Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1967680,
+   "ticker": "VLTO",
+   "title": "Veralto Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1970125,
+   "ticker": "FDXTF",
+   "title": "FENDX TECHNOLOGIES INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1971975,
+   "ticker": "ABXXF",
+   "title": "Abaxx Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1973160,
+   "ticker": "GMZP",
+   "title": "GEMZ Corp. NV",
+   "why": "near"
+  },
+  {
+   "cik_str": 1973276,
+   "ticker": "LIS",
+   "title": "LIS Technologies Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 1976663,
+   "ticker": "NXNT",
+   "title": "Nexscient, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1977971,
+   "ticker": "ALTUF",
+   "title": "Altura Energy Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1978111,
+   "ticker": "NPLY",
+   "title": "Naploy Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1979005,
+   "ticker": "AFJK",
+   "title": "Aimei Health Technology Co., Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1979005,
+   "ticker": "AFJKR",
+   "title": "Aimei Health Technology Co., Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1979005,
+   "ticker": "AFJKU",
+   "title": "Aimei Health Technology Co., Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1979407,
+   "ticker": "ORKT",
+   "title": "ORANGEKLOUD TECHNOLOGY INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1979414,
+   "ticker": "NTHI",
+   "title": "NEONC TECHNOLOGIES HOLDINGS, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1982708,
+   "ticker": "NNNN",
+   "title": "Anbio Biotechnology",
+   "why": "near"
+  },
+  {
+   "cik_str": 1984124,
+   "ticker": "LUD",
+   "title": "Luda Technology Group Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 1985337,
+   "ticker": "YFOR",
+   "title": "YYForce Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1985554,
+   "ticker": "ADVI",
+   "title": "ALPHA DIGITAL VOLTZ INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1986247,
+   "ticker": "BYAH",
+   "title": "Park Ha Biological Technology Co., Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1989815,
+   "ticker": "TRGEF",
+   "title": "Targa Exploration Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1991332,
+   "ticker": "MKDW",
+   "title": "MKDWELL Tech Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1991332,
+   "ticker": "MKDWW",
+   "title": "MKDWELL Tech Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1993097,
+   "ticker": "MASK",
+   "title": "3 E Network Technology Group Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 1993727,
+   "ticker": "SNT",
+   "title": "Senstar Technologies Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1994214,
+   "ticker": "NOMA",
+   "title": "Nomadar Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1994373,
+   "ticker": "HNIT",
+   "title": "Huineng Technology Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1994624,
+   "ticker": "STAI",
+   "title": "ScanTech AI Systems Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1995574,
+   "ticker": "ICON",
+   "title": "Icon Energy Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 1996192,
+   "ticker": "QNME",
+   "title": "Quanome Technologies, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 1999111,
+   "ticker": "MTTAF",
+   "title": "Meta Critical Minerals Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 2000230,
+   "ticker": "BRIA",
+   "title": "BrilliA Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 2000756,
+   "ticker": "NXAT",
+   "title": "Nexus Advanced Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2000756,
+   "ticker": "NXATW",
+   "title": "Nexus Advanced Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2007596,
+   "ticker": "TWFG",
+   "title": "TWFG, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2009233,
+   "ticker": "AGRZ",
+   "title": "Agroz Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2012219,
+   "ticker": "OMSE",
+   "title": "OMS Energy Technologies Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2012383,
+   "ticker": "BLK",
+   "title": "BlackRock, Inc.",
+   "why": "named"
+  },
+  {
+   "cik_str": 2014254,
+   "ticker": "FSTWF",
+   "title": "FST Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2014254,
+   "ticker": "KBSX",
+   "title": "FST Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2017758,
+   "ticker": "LHAI",
+   "title": "Linkhome Holdings Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2018064,
+   "ticker": "TTGT",
+   "title": "TechTarget, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2018139,
+   "ticker": "TYHOF",
+   "title": "Toyota Tsusho Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2018139,
+   "ticker": "TYHOY",
+   "title": "Toyota Tsusho Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2021728,
+   "ticker": "CBRS",
+   "title": "Cerebras Systems Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2025774,
+   "ticker": "ALPS",
+   "title": "Alps Group Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 2025774,
+   "ticker": "ALPWF",
+   "title": "Alps Group Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 2025947,
+   "ticker": "TGMPF",
+   "title": "Tantalus Systems Holding Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2026478,
+   "ticker": "NMAX",
+   "title": "Newsmax Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2028707,
+   "ticker": "MRLN",
+   "title": "Merlin, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2029014,
+   "ticker": "MRCL",
+   "title": "Mercalot Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2034723,
+   "ticker": "YDDL",
+   "title": "One & one Green Technologies. INC",
+   "why": "near"
+  },
+  {
+   "cik_str": 2037400,
+   "ticker": "CAAS",
+   "title": "China Automotive Systems, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2041493,
+   "ticker": "ALUB",
+   "title": "Alussa Energy Acquisition Corp. II",
+   "why": "near"
+  },
+  {
+   "cik_str": 2041493,
+   "ticker": "ALUB-UN",
+   "title": "Alussa Energy Acquisition Corp. II",
+   "why": "near"
+  },
+  {
+   "cik_str": 2041493,
+   "ticker": "ALUB-WT",
+   "title": "Alussa Energy Acquisition Corp. II",
+   "why": "near"
+  },
+  {
+   "cik_str": 2041531,
+   "ticker": "BDTB",
+   "title": "Bodhi Tree Biotechnology Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 2042320,
+   "ticker": "AOAO",
+   "title": "Alpha One Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2045931,
+   "ticker": "AHJK",
+   "title": "Aimei Health Technology II Co., Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2046386,
+   "ticker": "MDLN",
+   "title": "Medline Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2048951,
+   "ticker": "TMS",
+   "title": "Teamshares Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 2048951,
+   "ticker": "TMSWW",
+   "title": "Teamshares Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 2050020,
+   "ticker": "HCPC",
+   "title": "HengHong Technology Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2053383,
+   "ticker": "KXHCF",
+   "title": "Kioxia Holdings Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2053383,
+   "ticker": "KXIAY",
+   "title": "Kioxia Holdings Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2056030,
+   "ticker": "SPMEF",
+   "title": "South Pacific Metals Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2060083,
+   "ticker": "FOFO",
+   "title": "Hang Feng Technology Innovation Co., Ltd.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2062807,
+   "ticker": "MGHTF",
+   "title": "Mercury NZ Ltd./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2062807,
+   "ticker": "MNZLY",
+   "title": "Mercury NZ Ltd./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2063196,
+   "ticker": "NTSK",
+   "title": "Netskope Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 2064124,
+   "ticker": "FGRS",
+   "title": "Figure Technology Solutions, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2064124,
+   "ticker": "FIGR",
+   "title": "Figure Technology Solutions, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2064953,
+   "ticker": "SOLS",
+   "title": "Solstice Advanced Materials Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2065485,
+   "ticker": "JXADF",
+   "title": "JX Advanced Metals Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2065485,
+   "ticker": "JXAMY",
+   "title": "JX Advanced Metals Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2067767,
+   "ticker": "NXB",
+   "title": "NextBoat Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2072563,
+   "ticker": "SAPIF",
+   "title": "Saputo Inc./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2072563,
+   "ticker": "SAPUY",
+   "title": "Saputo Inc./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2073643,
+   "ticker": "METRY",
+   "title": "METRO INC./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2074652,
+   "ticker": "VNYR",
+   "title": "Venyra Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 2076765,
+   "ticker": "ELVX",
+   "title": "Elventix Technology Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 2080845,
+   "ticker": "PAYP",
+   "title": "PayPay Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 2081206,
+   "ticker": "AGBK",
+   "title": "AGI Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 2082729,
+   "ticker": "CBAI",
+   "title": "Coolbit Technologies Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 2083689,
+   "ticker": "AEAQ",
+   "title": "Activate Energy Acquisition Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2083689,
+   "ticker": "AEAQU",
+   "title": "Activate Energy Acquisition Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2083689,
+   "ticker": "AEAQW",
+   "title": "Activate Energy Acquisition Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2084585,
+   "ticker": "UATCY",
+   "title": "Unisound AI Technology Co., Ltd./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2085836,
+   "ticker": "POCH",
+   "title": "POCHE TECHNOLOGY CO., Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 2086545,
+   "ticker": "ARTC",
+   "title": "Art Technology Acquisition Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2086545,
+   "ticker": "ARTCU",
+   "title": "Art Technology Acquisition Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2086545,
+   "ticker": "ARTCW",
+   "title": "Art Technology Acquisition Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2086587,
+   "ticker": "YSS",
+   "title": "York Space Systems Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2086841,
+   "ticker": "CBAT",
+   "title": "CBAK Energy Technology Ltd",
+   "why": "near"
+  },
+  {
+   "cik_str": 2087398,
+   "ticker": "TMCR",
+   "title": "Metals Royalty Co Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2088896,
+   "ticker": "XE",
+   "title": "X-Energy, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2089174,
+   "ticker": "PTAXY",
+   "title": "Paltac Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2092967,
+   "ticker": "FRTT",
+   "title": "Fort Technology Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 2093536,
+   "ticker": "ARXS",
+   "title": "Arxis, Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2097702,
+   "ticker": "GOW",
+   "title": "GOWell Energy Technology",
+   "why": "near"
+  },
+  {
+   "cik_str": 2098381,
+   "ticker": "LNTCY",
+   "title": "Lens Technology Co., Ltd./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2098425,
+   "ticker": "BGTCF",
+   "title": "Beijing Geekplus Technology Co., Ltd./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2098425,
+   "ticker": "BJGPY",
+   "title": "Beijing Geekplus Technology Co., Ltd./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2098710,
+   "ticker": "FRTRY",
+   "title": "Fortior Technology (Shenzhen) Co., Ltd./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2100603,
+   "ticker": "MPJPY",
+   "title": "Metaplanet Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2100603,
+   "ticker": "MTPLF",
+   "title": "Metaplanet Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2104052,
+   "ticker": "NVRI",
+   "title": "Enviri Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 2108180,
+   "ticker": "NOFCF",
+   "title": "NOF Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2108185,
+   "ticker": "AZBLY",
+   "title": "Azbil Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2108185,
+   "ticker": "YMATF",
+   "title": "Azbil Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2109547,
+   "ticker": "GIDHF",
+   "title": "GigaDevice Semiconductor Inc./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2109547,
+   "ticker": "GIGDY",
+   "title": "GigaDevice Semiconductor Inc./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2109801,
+   "ticker": "VAT",
+   "title": "VARSAL TECH, INC.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2110117,
+   "ticker": "ITG",
+   "title": "ITG, Inc./DE/",
+   "why": "near"
+  },
+  {
+   "cik_str": 2111453,
+   "ticker": "VUECF",
+   "title": "Verdera Energy Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2115436,
+   "ticker": "XOM",
+   "title": "ExxonMobil Holdings Corp",
+   "why": "named"
+  },
+  {
+   "cik_str": 2123346,
+   "ticker": "MNTCF",
+   "title": "Montage Technology Co., Ltd./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2123346,
+   "ticker": "MNTGY",
+   "title": "Montage Technology Co., Ltd./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2125567,
+   "ticker": "SAMO",
+   "title": "Samos Energy Acquisition Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 2125567,
+   "ticker": "SAMO-UN",
+   "title": "Samos Energy Acquisition Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 2125567,
+   "ticker": "SAMO-WT",
+   "title": "Samos Energy Acquisition Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 2128448,
+   "ticker": "MNLTF",
+   "title": "Mininglamp Technology Group Limited/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2128448,
+   "ticker": "MTGLY",
+   "title": "Mininglamp Technology Group Limited/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2128597,
+   "ticker": "SXTEY",
+   "title": "Shenzhen Xunce Technology Co., Ltd./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2128619,
+   "ticker": "TYOEY",
+   "title": "Toyo Engineering Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2131350,
+   "ticker": "BRTM",
+   "title": "B&R Technology Merger Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2131350,
+   "ticker": "BRTMU",
+   "title": "B&R Technology Merger Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2131350,
+   "ticker": "BRTMW",
+   "title": "B&R Technology Merger Corp.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2132082,
+   "ticker": "SIGEY",
+   "title": "Sigenergy Technology Co., Ltd./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2133136,
+   "ticker": "MTAK",
+   "title": "Market Technology Acquisition Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 2133136,
+   "ticker": "MTAKU",
+   "title": "Market Technology Acquisition Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 2133136,
+   "ticker": "MTAKW",
+   "title": "Market Technology Acquisition Corp",
+   "why": "near"
+  },
+  {
+   "cik_str": 2134863,
+   "ticker": "NYO",
+   "title": "NeoCryo Inc",
+   "why": "near"
+  },
+  {
+   "cik_str": 2135894,
+   "ticker": "SXZTY",
+   "title": "Shanghai Xizhi Technology Co., Ltd./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2138453,
+   "ticker": "SBRTY",
+   "title": "Shanghai Biren Technology/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2139627,
+   "ticker": "ATZAF",
+   "title": "Aritzia Inc./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2139627,
+   "ticker": "ATZIY",
+   "title": "Aritzia Inc./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2140977,
+   "ticker": "DLTYY",
+   "title": "Delton Technology Guangzhou Inc./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2141099,
+   "ticker": "RGAKF",
+   "title": "Rigaku Holdings Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2141099,
+   "ticker": "RGKUY",
+   "title": "Rigaku Holdings Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2141616,
+   "ticker": "AMRO",
+   "title": "Amaero Inc.",
+   "why": "near"
+  },
+  {
+   "cik_str": 2142762,
+   "ticker": "ORCRY",
+   "title": "Organo Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2142762,
+   "ticker": "ORGJF",
+   "title": "Organo Corporation/ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2145378,
+   "ticker": "GDTTY",
+   "title": "Guangdong Dtech Technology Co., Ltd./ADR",
+   "why": "near"
+  },
+  {
+   "cik_str": 2155709,
+   "ticker": "SGMIY",
+   "title": "SG Micro Corp/ADR",
+   "why": "near"
+  }
+ ]
+}

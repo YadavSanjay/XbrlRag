@@ -1,0 +1,163 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-05",
+  "criteria": {
+    "C1": [
+      "test/spec/eval-regrade/test_rg_c1_answer.py::test_every_graded_field_is_restored",
+      "test/spec/eval-regrade/test_rg_c1_answer.py::test_missing_keys_take_the_defaults",
+      "test/spec/eval-regrade/test_rg_c1_answer.py::test_error_answer_regrades_as_error",
+      "test/spec/eval-regrade/test_rg_c1_answer.py::test_regrading_a_rebuilt_answer_gives_the_original_grade"
+    ],
+    "C2": [
+      "test/spec/eval-regrade/test_rg_c2_refusals.py::test_empty_results_refuse",
+      "test/spec/eval-regrade/test_rg_c2_refusals.py::test_a_case_missing_from_the_suite_refuses_naming_it",
+      "test/spec/eval-regrade/test_rg_c2_refusals.py::test_a_changed_question_refuses_naming_the_case",
+      "test/spec/eval-regrade/test_rg_c2_refusals.py::test_a_duplicated_result_refuses",
+      "test/spec/eval-regrade/test_rg_c2_refusals.py::test_a_result_without_produced_refuses",
+      "test/spec/eval-regrade/test_rg_c2_refusals.py::test_a_split_mismatch_refuses",
+      "test/spec/eval-regrade/test_rg_c2_refusals.py::test_mixed_splits_in_the_matched_cases_refuse",
+      "test/spec/eval-regrade/test_rg_c2_refusals.py::test_reusing_the_source_run_id_refuses",
+      "test/spec/eval-regrade/test_rg_c2_refusals.py::test_extra_suite_cases_are_ignored",
+      "test/spec/eval-regrade/test_rg_c2_refusals.py::test_any_single_character_change_in_a_question_refuses"
+    ],
+    "C3": [
+      "test/spec/eval-regrade/test_rg_c3_identity.py::test_a_runner_produced_run_regrades_to_itself",
+      "test/spec/eval-regrade/test_rg_c3_identity.py::test_any_run_regrades_to_its_stored_grades",
+      "test/spec/eval-regrade/test_rg_c3_identity.py::test_regrading_a_regrade_is_idempotent"
+    ],
+    "C4": [
+      "test/spec/eval-regrade/test_rg_c4_corrected_key.py::test_a_wrong_key_corrected_to_the_arms_value",
+      "test/spec/eval-regrade/test_rg_c4_corrected_key.py::test_only_rekeyed_cases_move"
+    ],
+    "C5": [
+      "test/spec/eval-regrade/test_rg_c5_provenance.py::test_run_fields",
+      "test/spec/eval-regrade/test_rg_c5_provenance.py::test_regrade_provenance",
+      "test/spec/eval-regrade/test_rg_c5_provenance.py::test_a_regraded_run_cannot_be_resumed",
+      "test/spec/eval-regrade/test_rg_c5_provenance.py::test_per_case_execution_metadata_is_exact",
+      "test/spec/eval-regrade/test_rg_c5_provenance.py::test_default_regraded_at_is_a_utc_timestamp",
+      "test/spec/eval-regrade/test_rg_c5_provenance.py::test_suite_hash_covers_only_the_matched_cases",
+      "test/spec/eval-regrade/test_rg_c5_provenance.py::test_root_run_id_survives_a_chain"
+    ],
+    "C6": [
+      "test/spec/eval-regrade/test_rg_c6_judge.py::test_unchanged_reference_text_keeps_the_scores[json]",
+      "test/spec/eval-regrade/test_rg_c6_judge.py::test_unchanged_reference_text_keeps_the_scores[payload]",
+      "test/spec/eval-regrade/test_rg_c6_judge.py::test_changed_text_or_no_longer_judged_drops_and_lists",
+      "test/spec/eval-regrade/test_rg_c6_judge.py::test_stale_set_is_exactly_the_edited_texts"
+    ],
+    "C7": [
+      "test/spec/eval-regrade/test_rg_c7_load.py::test_a_stored_run_loads",
+      "test/spec/eval-regrade/test_rg_c7_load.py::test_split_falls_back_to_the_config",
+      "test/spec/eval-regrade/test_rg_c7_load.py::test_unknown_running_and_payloadless_runs_refuse",
+      "test/spec/eval-regrade/test_rg_c7_load.py::test_store_and_json_sources_regrade_alike",
+      "test/spec/eval-regrade/test_rg_c7_load.py::test_finished_runs_of_any_status_load"
+    ],
+    "C8": [
+      "test/spec/eval-regrade/test_rg_c8_summary.py::test_heldout_summary_has_aggregates_only[heldout_filers]",
+      "test/spec/eval-regrade/test_rg_c8_summary.py::test_heldout_summary_has_aggregates_only[external]",
+      "test/spec/eval-regrade/test_rg_c8_summary.py::test_heldout_summary_has_aggregates_only[temporal]",
+      "test/spec/eval-regrade/test_rg_c8_summary.py::test_dev_summary_hand_count",
+      "test/spec/eval-regrade/test_rg_c8_summary.py::test_missing_stored_grade_reads_none",
+      "test/spec/eval-regrade/test_rg_c8_summary.py::test_per_case_list_hidden_exactly_for_heldout"
+    ]
+  },
+  "files": {
+    "test/spec/eval-regrade/conftest.py": "00d9e92bf0aa683b1a64cab32e3cba1dcc79b1ba1be37ac3fc0f5da9a018d95a",
+    "test/spec/eval-regrade/test_rg_c1_answer.py": "452173047bdd7ceca2daf1b8ef9bfb2a7e8e5e5b80a8e1418b5d169fce79639f",
+    "test/spec/eval-regrade/test_rg_c2_refusals.py": "028d92a9fc19fdf839bbb850131d4e1c6d4ef22b4cb8fb0bb2fef2a93e33ca21",
+    "test/spec/eval-regrade/test_rg_c3_identity.py": "19dd135bca04d6169af1f7af7b961c45c98f3e6782c90af2986d5f0fd74d1d32",
+    "test/spec/eval-regrade/test_rg_c4_corrected_key.py": "5b4b954cd096422be9df996667b88964385a7ba70a8280e7f72bee8c9c625442",
+    "test/spec/eval-regrade/test_rg_c5_provenance.py": "e96b52cc83838379c7bad85dba968240f28b7d550ae112292c7e08c3ad7d17a2",
+    "test/spec/eval-regrade/test_rg_c6_judge.py": "985ac7478bd7114c8adae0f7b038a23200df87df5ab106410aa9e61f71c73825",
+    "test/spec/eval-regrade/test_rg_c7_load.py": "83d82421b00f8865d10c44b48d9a4f7563350e295214d604b807033f3e83c10f",
+    "test/spec/eval-regrade/test_rg_c8_summary.py": "e1ccb35c88c8a728431d0af01f6b7207c5df92dacb573ec632085ccfe51b673b"
+  },
+  "id": "eval-regrade",
+  "interface": [
+    {
+      "file": "src/eval/core/regrade.py",
+      "module": "eval.core.regrade",
+      "qualname": "answer_from_payload",
+      "signature": "def answer_from_payload(produced: Mapping[str, Any]) -> SystemAnswer"
+    },
+    {
+      "file": "src/eval/core/regrade.py",
+      "module": "eval.core.regrade",
+      "qualname": "regrade_report",
+      "signature": "def regrade_report(source: Mapping[str, Any], cases: Sequence[EvalCase], *, suite: str, suite_version: str, corpus_fingerprint: str | None, run_id: str | None=None, regraded_at: str | None=None) -> RunReport"
+    },
+    {
+      "file": "src/eval/core/regrade.py",
+      "module": "eval.core.regrade",
+      "qualname": "load_source",
+      "signature": "def load_source(store: RunStore, run_id: str) -> dict[str, Any]"
+    },
+    {
+      "file": "src/eval/core/regrade.py",
+      "module": "eval.core.regrade",
+      "qualname": "regrade_summary",
+      "signature": "def regrade_summary(source: Mapping[str, Any], regraded: RunReport) -> dict[str, Any]"
+    }
+  ],
+  "nodes": [
+    "test/spec/eval-regrade/test_rg_c1_answer.py::test_error_answer_regrades_as_error",
+    "test/spec/eval-regrade/test_rg_c1_answer.py::test_every_graded_field_is_restored",
+    "test/spec/eval-regrade/test_rg_c1_answer.py::test_missing_keys_take_the_defaults",
+    "test/spec/eval-regrade/test_rg_c1_answer.py::test_regrading_a_rebuilt_answer_gives_the_original_grade",
+    "test/spec/eval-regrade/test_rg_c2_refusals.py::test_a_case_missing_from_the_suite_refuses_naming_it",
+    "test/spec/eval-regrade/test_rg_c2_refusals.py::test_a_changed_question_refuses_naming_the_case",
+    "test/spec/eval-regrade/test_rg_c2_refusals.py::test_a_duplicated_result_refuses",
+    "test/spec/eval-regrade/test_rg_c2_refusals.py::test_a_result_without_produced_refuses",
+    "test/spec/eval-regrade/test_rg_c2_refusals.py::test_a_split_mismatch_refuses",
+    "test/spec/eval-regrade/test_rg_c2_refusals.py::test_any_single_character_change_in_a_question_refuses",
+    "test/spec/eval-regrade/test_rg_c2_refusals.py::test_empty_results_refuse",
+    "test/spec/eval-regrade/test_rg_c2_refusals.py::test_extra_suite_cases_are_ignored",
+    "test/spec/eval-regrade/test_rg_c2_refusals.py::test_mixed_splits_in_the_matched_cases_refuse",
+    "test/spec/eval-regrade/test_rg_c2_refusals.py::test_reusing_the_source_run_id_refuses",
+    "test/spec/eval-regrade/test_rg_c3_identity.py::test_a_runner_produced_run_regrades_to_itself",
+    "test/spec/eval-regrade/test_rg_c3_identity.py::test_any_run_regrades_to_its_stored_grades",
+    "test/spec/eval-regrade/test_rg_c3_identity.py::test_regrading_a_regrade_is_idempotent",
+    "test/spec/eval-regrade/test_rg_c4_corrected_key.py::test_a_wrong_key_corrected_to_the_arms_value",
+    "test/spec/eval-regrade/test_rg_c4_corrected_key.py::test_only_rekeyed_cases_move",
+    "test/spec/eval-regrade/test_rg_c5_provenance.py::test_a_regraded_run_cannot_be_resumed",
+    "test/spec/eval-regrade/test_rg_c5_provenance.py::test_default_regraded_at_is_a_utc_timestamp",
+    "test/spec/eval-regrade/test_rg_c5_provenance.py::test_per_case_execution_metadata_is_exact",
+    "test/spec/eval-regrade/test_rg_c5_provenance.py::test_regrade_provenance",
+    "test/spec/eval-regrade/test_rg_c5_provenance.py::test_root_run_id_survives_a_chain",
+    "test/spec/eval-regrade/test_rg_c5_provenance.py::test_run_fields",
+    "test/spec/eval-regrade/test_rg_c5_provenance.py::test_suite_hash_covers_only_the_matched_cases",
+    "test/spec/eval-regrade/test_rg_c6_judge.py::test_changed_text_or_no_longer_judged_drops_and_lists",
+    "test/spec/eval-regrade/test_rg_c6_judge.py::test_stale_set_is_exactly_the_edited_texts",
+    "test/spec/eval-regrade/test_rg_c6_judge.py::test_unchanged_reference_text_keeps_the_scores[json]",
+    "test/spec/eval-regrade/test_rg_c6_judge.py::test_unchanged_reference_text_keeps_the_scores[payload]",
+    "test/spec/eval-regrade/test_rg_c7_load.py::test_a_stored_run_loads",
+    "test/spec/eval-regrade/test_rg_c7_load.py::test_finished_runs_of_any_status_load",
+    "test/spec/eval-regrade/test_rg_c7_load.py::test_split_falls_back_to_the_config",
+    "test/spec/eval-regrade/test_rg_c7_load.py::test_store_and_json_sources_regrade_alike",
+    "test/spec/eval-regrade/test_rg_c7_load.py::test_unknown_running_and_payloadless_runs_refuse",
+    "test/spec/eval-regrade/test_rg_c8_summary.py::test_dev_summary_hand_count",
+    "test/spec/eval-regrade/test_rg_c8_summary.py::test_heldout_summary_has_aggregates_only[external]",
+    "test/spec/eval-regrade/test_rg_c8_summary.py::test_heldout_summary_has_aggregates_only[heldout_filers]",
+    "test/spec/eval-regrade/test_rg_c8_summary.py::test_heldout_summary_has_aggregates_only[temporal]",
+    "test/spec/eval-regrade/test_rg_c8_summary.py::test_missing_stored_grade_reads_none",
+    "test/spec/eval-regrade/test_rg_c8_summary.py::test_per_case_list_hidden_exactly_for_heldout"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/eval-regrade.md",
+    "sha256": "7e20c4d45932ca1c0a27b0bf4dc5d76e169d0abc3ad2cc0712671a158b607083"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

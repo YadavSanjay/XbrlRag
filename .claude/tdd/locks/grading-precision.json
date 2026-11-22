@@ -1,0 +1,206 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-07",
+  "criteria": {
+    "C1": [
+      "test/spec/grading-precision/test_gp_c1_precision_rule.py::test_reported_amounts_and_shares_use_the_key_facts_decimals",
+      "test/spec/grading-precision/test_gp_c1_precision_rule.py::test_per_share_ratio_and_percent_kinds",
+      "test/spec/grading-precision/test_gp_c1_precision_rule.py::test_aggregates_use_the_coarsest_integer_decimals",
+      "test/spec/grading-precision/test_gp_c1_precision_rule.py::test_rows_use_their_own_input",
+      "test/spec/grading-precision/test_gp_c1_precision_rule.py::test_inf_is_exact_and_untagged_cases_are_legacy",
+      "test/spec/grading-precision/test_gp_c1_precision_rule.py::test_aggregate_rule_is_order_free_and_follows_the_coarsest"
+    ],
+    "C10": [
+      "test/spec/grading-precision/test_gp_c10_loss_words.py::test_parser_marks_loss_words",
+      "test/spec/grading-precision/test_gp_c10_loss_words.py::test_income_metric_kinds",
+      "test/spec/grading-precision/test_gp_c10_loss_words.py::test_loss_words_grade_mu_eps",
+      "test/spec/grading-precision/test_gp_c10_loss_words.py::test_loss_words_on_a_positive_key_and_outside_scope",
+      "test/spec/grading-precision/test_gp_c10_loss_words.py::test_loss_forms_agree_for_an_income_metric",
+      "test/spec/grading-precision/test_gp_c10_loss_words.py::test_loss_is_unsigned_outside_income_metrics"
+    ],
+    "C2": [
+      "test/spec/grading-precision/test_gp_c2_matches_at_precision.py::test_maintainer_examples",
+      "test/spec/grading-precision/test_gp_c2_matches_at_precision.py::test_real_keys",
+      "test/spec/grading-precision/test_gp_c2_matches_at_precision.py::test_reported_key_passes_and_one_quantum_beyond_fails",
+      "test/spec/grading-precision/test_gp_c2_matches_at_precision.py::test_ratio_key_rounded_at_or_below_the_rule_passes",
+      "test/spec/grading-precision/test_gp_c2_matches_at_precision.py::test_percent_key_at_a_tenth_of_a_point",
+      "test/spec/grading-precision/test_gp_c2_matches_at_precision.py::test_binary_noise_does_not_change_the_verdict"
+    ],
+    "C3": [
+      "test/spec/grading-precision/test_gp_c3_stated_numbers.py::test_scale_and_precision",
+      "test/spec/grading-precision/test_gp_c3_stated_numbers.py::test_direction_words",
+      "test/spec/grading-precision/test_gp_c3_stated_numbers.py::test_non_amounts_are_skipped",
+      "test/spec/grading-precision/test_gp_c3_stated_numbers.py::test_values_agree_with_extract_numbers_without_direction_words",
+      "test/spec/grading-precision/test_gp_c3_stated_numbers.py::test_scale_word_restatements_state_the_same_value"
+    ],
+    "C4": [
+      "test/spec/grading-precision/test_gp_c4_scalar_grading.py::test_reported_amounts",
+      "test/spec/grading-precision/test_gp_c4_scalar_grading.py::test_ratios_and_growth",
+      "test/spec/grading-precision/test_gp_c4_scalar_grading.py::test_aggregates",
+      "test/spec/grading-precision/test_gp_c4_scalar_grading.py::test_shares_and_per_share",
+      "test/spec/grading-precision/test_gp_c4_scalar_grading.py::test_untagged_case_keeps_rel_tol",
+      "test/spec/grading-precision/test_gp_c4_scalar_grading.py::test_within_and_beyond_a_quantum",
+      "test/spec/grading-precision/test_gp_c4_scalar_grading.py::test_scale_word_and_rewording_invariance"
+    ],
+    "C5": [
+      "test/spec/grading-precision/test_gp_c5_signs.py::test_growth_and_cagr_directions",
+      "test/spec/grading-precision/test_gp_c5_signs.py::test_signed_differences_and_per_share",
+      "test/spec/grading-precision/test_gp_c5_signs.py::test_opposite_direction_fails"
+    ],
+    "C6": [
+      "test/spec/grading-precision/test_gp_c6_rows.py::test_goodwill_screen_mixed_decimals",
+      "test/spec/grading-precision/test_gp_c6_rows.py::test_tsm_gross_profit_trend",
+      "test/spec/grading-precision/test_gp_c6_rows.py::test_meta_equity_trend_mixed_rules",
+      "test/spec/grading-precision/test_gp_c6_rows.py::test_one_quantum_on_one_row_costs_one_row"
+    ],
+    "C7": [
+      "test/spec/grading-precision/test_gp_c7_final_answer.py::test_final_answer_text",
+      "test/spec/grading-precision/test_gp_c7_final_answer.py::test_answer_rows_follow_the_citing_statements",
+      "test/spec/grading-precision/test_gp_c7_final_answer.py::test_full_system_reads_its_final_answer",
+      "test/spec/grading-precision/test_gp_c7_final_answer.py::test_full_system_screen_uses_stated_rows",
+      "test/spec/grading-precision/test_gp_c7_final_answer.py::test_same_text_same_verdict_for_xbrlrag_and_a_text_arm"
+    ],
+    "C8": [
+      "test/spec/grading-precision/test_gp_c8_grader_version.py::test_grader_version_is_4",
+      "test/spec/grading-precision/test_gp_c8_grader_version.py::test_every_scorecard_carries_version_4"
+    ],
+    "C9": [
+      "test/spec/grading-precision/test_gp_c9_imprecise.py::test_precision_outcome_on_real_rules",
+      "test/spec/grading-precision/test_gp_c9_imprecise.py::test_legacy_rule_is_never_imprecise",
+      "test/spec/grading-precision/test_gp_c9_imprecise.py::test_grades_on_real_cases",
+      "test/spec/grading-precision/test_gp_c9_imprecise.py::test_imprecise_is_neither_correct_nor_wrong",
+      "test/spec/grading-precision/test_gp_c9_imprecise.py::test_tenths_of_a_billion_are_imprecise",
+      "test/spec/grading-precision/test_gp_c9_imprecise.py::test_no_coarser_than_the_rule_is_never_imprecise"
+    ]
+  },
+  "files": {
+    "test/spec/grading-precision/conftest.py": "1b4093261c438aca96ef33afc723947bcf47ae5bdb940d5dfd3a240eab796b1a",
+    "test/spec/grading-precision/fixtures/dev_cases.json": "ab71d3389783f498cec17c91d2c9008b5e807278707684325eec85a0b949a462",
+    "test/spec/grading-precision/test_gp_c10_loss_words.py": "d04b7f09f79562d41d430d0a30c8f4e16426fdb301f54353482142d6ae39dec0",
+    "test/spec/grading-precision/test_gp_c1_precision_rule.py": "7b12fcc551f5dab16e657213564350ad3bb22a7bd3c08455a84a50e48829db6a",
+    "test/spec/grading-precision/test_gp_c2_matches_at_precision.py": "be66ccec5b1e2af7dd3c8ddfb8528b69167124025f45130c273a68b7df66a0c3",
+    "test/spec/grading-precision/test_gp_c3_stated_numbers.py": "584df34fee865363b9729acbec2a9d0777ddc9eead37a759b917f3a21940c8f7",
+    "test/spec/grading-precision/test_gp_c4_scalar_grading.py": "2c999998a3b18b3426385b2bd24db5ca53a56778f7a6bff1cf0499e878b21426",
+    "test/spec/grading-precision/test_gp_c5_signs.py": "93c27549f87f01e31f32f9084a27be53676c6be8791dd4ebd6225fd241252894",
+    "test/spec/grading-precision/test_gp_c6_rows.py": "501f9bcb293b8e4b2099fb26c4ac6c7013441f6640bee734dfb4aad3aec1e138",
+    "test/spec/grading-precision/test_gp_c7_final_answer.py": "a9c16c9d397b2600ee50346f8edab1a86e87817c4a7b63d0add1cbaea62ba338",
+    "test/spec/grading-precision/test_gp_c8_grader_version.py": "1c42ee49e23a20cf22470039466470d3b17470037622a44598bc3244e9ebc5ac",
+    "test/spec/grading-precision/test_gp_c9_imprecise.py": "03794fb96e4ca9e7f56bc61308bb49526da072514e03669766a99fcd9357a433"
+  },
+  "id": "grading-precision",
+  "interface": [
+    {
+      "file": "src/eval/core/answer_parsing.py",
+      "module": "eval.core.answer_parsing",
+      "qualname": "extract_stated_numbers",
+      "signature": "def extract_stated_numbers(text: str) -> list[StatedNumber]"
+    },
+    {
+      "file": "src/eval/core/graders/precision.py",
+      "module": "eval.core.graders.precision",
+      "qualname": "precision_rule",
+      "signature": "def precision_rule(case: EvalCase, row: dict | None=None) -> PrecisionRule"
+    },
+    {
+      "file": "src/eval/core/graders/precision.py",
+      "module": "eval.core.graders.precision",
+      "qualname": "matches_at_precision",
+      "signature": "def matches_at_precision(value: float, expected: float, rule: PrecisionRule) -> bool"
+    },
+    {
+      "file": "src/eval/core/graders/precision.py",
+      "module": "eval.core.graders.precision",
+      "qualname": "precision_outcome",
+      "signature": "def precision_outcome(value: float, stated_quantum: float | None, expected: float, rule: PrecisionRule) -> str"
+    },
+    {
+      "file": "src/eval/core/graders/precision.py",
+      "module": "eval.core.graders.precision",
+      "qualname": "is_income_metric",
+      "signature": "def is_income_metric(case: EvalCase) -> bool"
+    },
+    {
+      "file": "src/eval/systems/xbrlrag_full.py",
+      "module": "eval.systems.xbrlrag_full",
+      "qualname": "final_answer_text",
+      "signature": "def final_answer_text(resp: Any) -> str"
+    },
+    {
+      "file": "src/eval/systems/xbrlrag_full.py",
+      "module": "eval.systems.xbrlrag_full",
+      "qualname": "answer_rows",
+      "signature": "def answer_rows(resp: Any) -> list[dict]"
+    }
+  ],
+  "nodes": [
+    "test/spec/grading-precision/test_gp_c10_loss_words.py::test_income_metric_kinds",
+    "test/spec/grading-precision/test_gp_c10_loss_words.py::test_loss_forms_agree_for_an_income_metric",
+    "test/spec/grading-precision/test_gp_c10_loss_words.py::test_loss_is_unsigned_outside_income_metrics",
+    "test/spec/grading-precision/test_gp_c10_loss_words.py::test_loss_words_grade_mu_eps",
+    "test/spec/grading-precision/test_gp_c10_loss_words.py::test_loss_words_on_a_positive_key_and_outside_scope",
+    "test/spec/grading-precision/test_gp_c10_loss_words.py::test_parser_marks_loss_words",
+    "test/spec/grading-precision/test_gp_c1_precision_rule.py::test_aggregate_rule_is_order_free_and_follows_the_coarsest",
+    "test/spec/grading-precision/test_gp_c1_precision_rule.py::test_aggregates_use_the_coarsest_integer_decimals",
+    "test/spec/grading-precision/test_gp_c1_precision_rule.py::test_inf_is_exact_and_untagged_cases_are_legacy",
+    "test/spec/grading-precision/test_gp_c1_precision_rule.py::test_per_share_ratio_and_percent_kinds",
+    "test/spec/grading-precision/test_gp_c1_precision_rule.py::test_reported_amounts_and_shares_use_the_key_facts_decimals",
+    "test/spec/grading-precision/test_gp_c1_precision_rule.py::test_rows_use_their_own_input",
+    "test/spec/grading-precision/test_gp_c2_matches_at_precision.py::test_binary_noise_does_not_change_the_verdict",
+    "test/spec/grading-precision/test_gp_c2_matches_at_precision.py::test_maintainer_examples",
+    "test/spec/grading-precision/test_gp_c2_matches_at_precision.py::test_percent_key_at_a_tenth_of_a_point",
+    "test/spec/grading-precision/test_gp_c2_matches_at_precision.py::test_ratio_key_rounded_at_or_below_the_rule_passes",
+    "test/spec/grading-precision/test_gp_c2_matches_at_precision.py::test_real_keys",
+    "test/spec/grading-precision/test_gp_c2_matches_at_precision.py::test_reported_key_passes_and_one_quantum_beyond_fails",
+    "test/spec/grading-precision/test_gp_c3_stated_numbers.py::test_direction_words",
+    "test/spec/grading-precision/test_gp_c3_stated_numbers.py::test_non_amounts_are_skipped",
+    "test/spec/grading-precision/test_gp_c3_stated_numbers.py::test_scale_and_precision",
+    "test/spec/grading-precision/test_gp_c3_stated_numbers.py::test_scale_word_restatements_state_the_same_value",
+    "test/spec/grading-precision/test_gp_c3_stated_numbers.py::test_values_agree_with_extract_numbers_without_direction_words",
+    "test/spec/grading-precision/test_gp_c4_scalar_grading.py::test_aggregates",
+    "test/spec/grading-precision/test_gp_c4_scalar_grading.py::test_ratios_and_growth",
+    "test/spec/grading-precision/test_gp_c4_scalar_grading.py::test_reported_amounts",
+    "test/spec/grading-precision/test_gp_c4_scalar_grading.py::test_scale_word_and_rewording_invariance",
+    "test/spec/grading-precision/test_gp_c4_scalar_grading.py::test_shares_and_per_share",
+    "test/spec/grading-precision/test_gp_c4_scalar_grading.py::test_untagged_case_keeps_rel_tol",
+    "test/spec/grading-precision/test_gp_c4_scalar_grading.py::test_within_and_beyond_a_quantum",
+    "test/spec/grading-precision/test_gp_c5_signs.py::test_growth_and_cagr_directions",
+    "test/spec/grading-precision/test_gp_c5_signs.py::test_opposite_direction_fails",
+    "test/spec/grading-precision/test_gp_c5_signs.py::test_signed_differences_and_per_share",
+    "test/spec/grading-precision/test_gp_c6_rows.py::test_goodwill_screen_mixed_decimals",
+    "test/spec/grading-precision/test_gp_c6_rows.py::test_meta_equity_trend_mixed_rules",
+    "test/spec/grading-precision/test_gp_c6_rows.py::test_one_quantum_on_one_row_costs_one_row",
+    "test/spec/grading-precision/test_gp_c6_rows.py::test_tsm_gross_profit_trend",
+    "test/spec/grading-precision/test_gp_c7_final_answer.py::test_answer_rows_follow_the_citing_statements",
+    "test/spec/grading-precision/test_gp_c7_final_answer.py::test_final_answer_text",
+    "test/spec/grading-precision/test_gp_c7_final_answer.py::test_full_system_reads_its_final_answer",
+    "test/spec/grading-precision/test_gp_c7_final_answer.py::test_full_system_screen_uses_stated_rows",
+    "test/spec/grading-precision/test_gp_c7_final_answer.py::test_same_text_same_verdict_for_xbrlrag_and_a_text_arm",
+    "test/spec/grading-precision/test_gp_c8_grader_version.py::test_every_scorecard_carries_version_4",
+    "test/spec/grading-precision/test_gp_c8_grader_version.py::test_grader_version_is_4",
+    "test/spec/grading-precision/test_gp_c9_imprecise.py::test_grades_on_real_cases",
+    "test/spec/grading-precision/test_gp_c9_imprecise.py::test_imprecise_is_neither_correct_nor_wrong",
+    "test/spec/grading-precision/test_gp_c9_imprecise.py::test_legacy_rule_is_never_imprecise",
+    "test/spec/grading-precision/test_gp_c9_imprecise.py::test_no_coarser_than_the_rule_is_never_imprecise",
+    "test/spec/grading-precision/test_gp_c9_imprecise.py::test_precision_outcome_on_real_rules",
+    "test/spec/grading-precision/test_gp_c9_imprecise.py::test_tenths_of_a_billion_are_imprecise"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/grading-precision.md",
+    "sha256": "4ad84c06f79edb2de39d8316d5f8899d4df6b4611a8304d0779fa13783d7007a"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

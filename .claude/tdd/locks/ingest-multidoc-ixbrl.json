@@ -1,0 +1,204 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-30",
+  "criteria": {
+    "C1": [
+      "test/spec/ingest-multidoc-ixbrl/test_download_documents.py::test_second_inline_document_typed_as_an_exhibit_is_saved",
+      "test/spec/ingest-multidoc-ixbrl/test_download_documents.py::test_manifest_lists_the_documents_primary_first",
+      "test/spec/ingest-multidoc-ixbrl/test_download_documents.py::test_single_document_filing_lists_one_document",
+      "test/spec/ingest-multidoc-ixbrl/test_download_documents.py::test_is_inline_xbrl_document_reads_the_content",
+      "test/spec/ingest-multidoc-ixbrl/test_download_documents.py::test_edgar_type_label_never_decides"
+    ],
+    "C10": [
+      "test/spec/ingest-multidoc-ixbrl/test_html_flow_composition.py::test_item_8_in_the_second_document_is_found_after_stripping",
+      "test/spec/ingest-multidoc-ixbrl/test_html_flow_composition.py::test_one_stripped_document_is_unchanged"
+    ],
+    "C2": [
+      "test/spec/ingest-multidoc-ixbrl/test_download_documents.py::test_unreadable_inline_document_fails_the_download",
+      "test/spec/ingest-multidoc-ixbrl/test_download_documents.py::test_any_unreadable_html_attachment_fails_but_a_viewer_page_does_not"
+    ],
+    "C3": [
+      "test/spec/ingest-multidoc-ixbrl/test_arelle_entry.py::test_document_names_and_entry_of_a_multi_document_filing",
+      "test/spec/ingest-multidoc-ixbrl/test_arelle_entry.py::test_manifest_from_before_this_change_keeps_its_primary_document",
+      "test/spec/ingest-multidoc-ixbrl/test_arelle_entry.py::test_multi_document_filing_without_an_instance_is_refused",
+      "test/spec/ingest-multidoc-ixbrl/test_arelle_entry.py::test_ingest_gives_arelle_the_instance",
+      "test/spec/ingest-multidoc-ixbrl/test_arelle_entry.py::test_geography_stage_reads_the_instance",
+      "test/spec/ingest-multidoc-ixbrl/test_arelle_entry.py::test_instance_and_primary_of_one_filing_are_the_same_entry",
+      "test/spec/ingest-multidoc-ixbrl/test_arelle_entry.py::test_entry_names_for_any_filer"
+    ],
+    "C4": [
+      "test/spec/ingest-multidoc-ixbrl/test_reconciliation.py::test_complete_set_returns_the_instance_fact_count",
+      "test/spec/ingest-multidoc-ixbrl/test_reconciliation.py::test_missing_document_is_a_mismatch_that_states_the_counts",
+      "test/spec/ingest-multidoc-ixbrl/test_reconciliation.py::test_equal_counts_with_a_foreign_id_is_a_mismatch",
+      "test/spec/ingest-multidoc-ixbrl/test_reconciliation.py::test_ingest_refuses_the_reported_filing_before_arelle_runs",
+      "test/spec/ingest-multidoc-ixbrl/test_reconciliation.py::test_listed_document_missing_from_disk_is_refused",
+      "test/spec/ingest-multidoc-ixbrl/test_reconciliation.py::test_ordinary_filing_passes_and_loads_as_before",
+      "test/spec/ingest-multidoc-ixbrl/test_reconciliation.py::test_dropping_a_document_is_always_caught"
+    ],
+    "C5": [
+      "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_facts_of_both_documents_resolve_to_their_own_bytes",
+      "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_one_document_in_filing_order",
+      "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_a_link_into_the_second_document_makes_a_section",
+      "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_chunks_cover_the_second_document",
+      "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_a_colliding_anchor_stays_with_its_own_document",
+      "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_the_same_fact_id_in_two_documents_is_refused",
+      "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_no_documents_is_refused",
+      "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_every_fact_of_any_split_is_found_exactly_once"
+    ],
+    "C6": [
+      "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_canonicalizer_writes_the_merged_document",
+      "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_missing_listed_document_is_an_error_not_a_skip",
+      "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_force_rebuilds_a_canonical_written_from_the_main_document_alone"
+    ],
+    "C7": [
+      "test/spec/ingest-multidoc-ixbrl/test_single_document_unchanged.py::test_merge_of_one_document_is_the_canonical_bytes",
+      "test/spec/ingest-multidoc-ixbrl/test_single_document_unchanged.py::test_chunk_ids_and_offsets_are_pinned",
+      "test/spec/ingest-multidoc-ixbrl/test_single_document_unchanged.py::test_canonicalizer_output_for_a_single_document_filing",
+      "test/spec/ingest-multidoc-ixbrl/test_single_document_unchanged.py::test_merge_of_one_document_is_identity_for_any_document"
+    ],
+    "C8": [
+      "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_selection_uses_the_index_and_keeps_the_amendment_rule",
+      "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_a_january_year_end_belongs_to_the_year_it_ends_in",
+      "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_quarterly_selection_maps_the_period_month",
+      "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_no_match_raises_and_an_empty_report_date_is_not_a_match",
+      "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_filing_date_floor_is_the_start_of_the_fiscal_year",
+      "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_selection_matches_the_rule_and_no_text_is_read"
+    ],
+    "C9": [
+      "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_read_timeout_default_and_override",
+      "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_downloader_sets_the_timeout_on_the_edgar_client",
+      "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_a_mistyped_timeout_raises",
+      "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_any_positive_timeout_is_read_back"
+    ]
+  },
+  "files": {
+    "test/spec/ingest-multidoc-ixbrl/conftest.py": "c1c7cbd34b80805012b4da0d724f318e1e1a023be95f4f9f95c0ac163d9e7475",
+    "test/spec/ingest-multidoc-ixbrl/test_arelle_entry.py": "74ff18991b6b2088265e22cf0cc35845b9314c2328fe5aa9909d27cc3067517b",
+    "test/spec/ingest-multidoc-ixbrl/test_download_documents.py": "1353c8c0b9347c01caf6b65de4109e550d7ad6b1efdb9623c83137bb02712a3b",
+    "test/spec/ingest-multidoc-ixbrl/test_html_flow_composition.py": "fb3087db71f4528408937cb66de38fe2e4a133a3d8825c520fc0cfc9300d9b7e",
+    "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py": "1a5203e3a910213a8ba8bbda79a644e21bc98b1d2cbcaca5cded87d39011fbf9",
+    "test/spec/ingest-multidoc-ixbrl/test_reconciliation.py": "294ae6cc3feaa68208ef3ca526d44993803a44fcdd165a5c1c8a98f56da7f9e2",
+    "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py": "8f6d40ddcf2c3f5e5f137ef26fc45a86c4e119690356270b1315e0e84a4375fa",
+    "test/spec/ingest-multidoc-ixbrl/test_single_document_unchanged.py": "4d814a1e0756adb27ef78b2c55907e0590641b391139c074d96e1a72d5ff88ec"
+  },
+  "id": "ingest-multidoc-ixbrl",
+  "interface": [
+    {
+      "file": "src/ingest/sec_edgar/document_set.py",
+      "module": "ingest.sec_edgar.document_set",
+      "qualname": "inline_document_names",
+      "signature": "def inline_document_names(manifest: Mapping[str, Any]) -> list[str]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/document_set.py",
+      "module": "ingest.sec_edgar.document_set",
+      "qualname": "arelle_entry_name",
+      "signature": "def arelle_entry_name(manifest: Mapping[str, Any]) -> str"
+    },
+    {
+      "file": "src/ingest/sec_edgar/document_set.py",
+      "module": "ingest.sec_edgar.document_set",
+      "qualname": "assert_document_set_complete",
+      "signature": "def assert_document_set_complete(inline_documents: Sequence[bytes], instance: bytes) -> int"
+    },
+    {
+      "file": "src/ingest/sec_edgar/downloader/sec_filing_downloader.py",
+      "module": "ingest.sec_edgar.downloader.sec_filing_downloader",
+      "qualname": "is_inline_xbrl_document",
+      "signature": "def is_inline_xbrl_document(payload: bytes | str) -> bool"
+    },
+    {
+      "file": "src/ingest/sec_edgar/downloader/sec_filing_downloader.py",
+      "module": "ingest.sec_edgar.downloader.sec_filing_downloader",
+      "qualname": "filing_date_floor",
+      "signature": "def filing_date_floor(request: FilingRequest) -> date"
+    },
+    {
+      "file": "src/ingest/sec_edgar/downloader/sec_filing_downloader.py",
+      "module": "ingest.sec_edgar.downloader.sec_filing_downloader",
+      "qualname": "select_filings",
+      "signature": "def select_filings(company: Any, request: FilingRequest) -> list[Any]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/downloader/sec_filing_downloader.py",
+      "module": "ingest.sec_edgar.downloader.sec_filing_downloader",
+      "qualname": "edgar_read_timeout_s",
+      "signature": "def edgar_read_timeout_s() -> float"
+    },
+    {
+      "file": "src/ingest/sec_edgar/xbrl/html_canonicalizer.py",
+      "module": "ingest.sec_edgar.xbrl.html_canonicalizer",
+      "qualname": "merge_canonical_documents",
+      "signature": "def merge_canonical_documents(documents: Sequence[tuple[str, bytes]]) -> bytes"
+    }
+  ],
+  "nodes": [
+    "test/spec/ingest-multidoc-ixbrl/test_arelle_entry.py::test_document_names_and_entry_of_a_multi_document_filing",
+    "test/spec/ingest-multidoc-ixbrl/test_arelle_entry.py::test_entry_names_for_any_filer",
+    "test/spec/ingest-multidoc-ixbrl/test_arelle_entry.py::test_geography_stage_reads_the_instance",
+    "test/spec/ingest-multidoc-ixbrl/test_arelle_entry.py::test_ingest_gives_arelle_the_instance",
+    "test/spec/ingest-multidoc-ixbrl/test_arelle_entry.py::test_instance_and_primary_of_one_filing_are_the_same_entry",
+    "test/spec/ingest-multidoc-ixbrl/test_arelle_entry.py::test_manifest_from_before_this_change_keeps_its_primary_document",
+    "test/spec/ingest-multidoc-ixbrl/test_arelle_entry.py::test_multi_document_filing_without_an_instance_is_refused",
+    "test/spec/ingest-multidoc-ixbrl/test_download_documents.py::test_any_unreadable_html_attachment_fails_but_a_viewer_page_does_not",
+    "test/spec/ingest-multidoc-ixbrl/test_download_documents.py::test_edgar_type_label_never_decides",
+    "test/spec/ingest-multidoc-ixbrl/test_download_documents.py::test_is_inline_xbrl_document_reads_the_content",
+    "test/spec/ingest-multidoc-ixbrl/test_download_documents.py::test_manifest_lists_the_documents_primary_first",
+    "test/spec/ingest-multidoc-ixbrl/test_download_documents.py::test_second_inline_document_typed_as_an_exhibit_is_saved",
+    "test/spec/ingest-multidoc-ixbrl/test_download_documents.py::test_single_document_filing_lists_one_document",
+    "test/spec/ingest-multidoc-ixbrl/test_download_documents.py::test_unreadable_inline_document_fails_the_download",
+    "test/spec/ingest-multidoc-ixbrl/test_html_flow_composition.py::test_item_8_in_the_second_document_is_found_after_stripping",
+    "test/spec/ingest-multidoc-ixbrl/test_html_flow_composition.py::test_one_stripped_document_is_unchanged",
+    "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_a_colliding_anchor_stays_with_its_own_document",
+    "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_a_link_into_the_second_document_makes_a_section",
+    "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_canonicalizer_writes_the_merged_document",
+    "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_chunks_cover_the_second_document",
+    "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_every_fact_of_any_split_is_found_exactly_once",
+    "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_facts_of_both_documents_resolve_to_their_own_bytes",
+    "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_force_rebuilds_a_canonical_written_from_the_main_document_alone",
+    "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_missing_listed_document_is_an_error_not_a_skip",
+    "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_no_documents_is_refused",
+    "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_one_document_in_filing_order",
+    "test/spec/ingest-multidoc-ixbrl/test_merged_canonical.py::test_the_same_fact_id_in_two_documents_is_refused",
+    "test/spec/ingest-multidoc-ixbrl/test_reconciliation.py::test_complete_set_returns_the_instance_fact_count",
+    "test/spec/ingest-multidoc-ixbrl/test_reconciliation.py::test_dropping_a_document_is_always_caught",
+    "test/spec/ingest-multidoc-ixbrl/test_reconciliation.py::test_equal_counts_with_a_foreign_id_is_a_mismatch",
+    "test/spec/ingest-multidoc-ixbrl/test_reconciliation.py::test_ingest_refuses_the_reported_filing_before_arelle_runs",
+    "test/spec/ingest-multidoc-ixbrl/test_reconciliation.py::test_listed_document_missing_from_disk_is_refused",
+    "test/spec/ingest-multidoc-ixbrl/test_reconciliation.py::test_missing_document_is_a_mismatch_that_states_the_counts",
+    "test/spec/ingest-multidoc-ixbrl/test_reconciliation.py::test_ordinary_filing_passes_and_loads_as_before",
+    "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_a_january_year_end_belongs_to_the_year_it_ends_in",
+    "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_a_mistyped_timeout_raises",
+    "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_any_positive_timeout_is_read_back",
+    "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_downloader_sets_the_timeout_on_the_edgar_client",
+    "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_filing_date_floor_is_the_start_of_the_fiscal_year",
+    "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_no_match_raises_and_an_empty_report_date_is_not_a_match",
+    "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_quarterly_selection_maps_the_period_month",
+    "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_read_timeout_default_and_override",
+    "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_selection_matches_the_rule_and_no_text_is_read",
+    "test/spec/ingest-multidoc-ixbrl/test_selection_and_timeout.py::test_selection_uses_the_index_and_keeps_the_amendment_rule",
+    "test/spec/ingest-multidoc-ixbrl/test_single_document_unchanged.py::test_canonicalizer_output_for_a_single_document_filing",
+    "test/spec/ingest-multidoc-ixbrl/test_single_document_unchanged.py::test_chunk_ids_and_offsets_are_pinned",
+    "test/spec/ingest-multidoc-ixbrl/test_single_document_unchanged.py::test_merge_of_one_document_is_identity_for_any_document",
+    "test/spec/ingest-multidoc-ixbrl/test_single_document_unchanged.py::test_merge_of_one_document_is_the_canonical_bytes"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/ingest-multidoc-ixbrl.md",
+    "sha256": "bebee87e0dc9214596df1061c150ea9fe75ea1ae86b045f81a01e7a2561b593d"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

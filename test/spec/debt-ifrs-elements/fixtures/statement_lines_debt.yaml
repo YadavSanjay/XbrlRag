@@ -1,0 +1,69 @@
+# The Debt and DeferredRevenue statement-line rules of docs/specs/debt-ifrs-elements.md.
+# Locked copy: the live configs/eval/v2/statement_lines.yaml must carry these two entries with
+# the same loaded content. DeferredRevenue and every Debt field other than `elements` are
+# key-definitions' locked rules (test/spec/key-definitions/fixtures/statement_lines_kd.yaml).
+#
+# `elements` (statement-rules-by-element requirement 2): the ifrs-full elements whose IFRS
+# taxonomy definition is an amount of borrowings, loans received, bonds, notes and debentures,
+# commercial paper or debt instruments issued (fixtures/taxonomy_excerpt_ifrs.json, IFRS
+# Accounting Standards Taxonomy 2024-03-27), taken from the taxonomy as a whole and never from
+# one filer. A line on one of them is a Debt line whatever its label. Lease liabilities, net
+# debt, undiscounted cash flows, undrawn facilities and measurement-category or subset
+# disclosures are left out by their definitions (spec requirement 2).
+version: 1
+families:
+  Debt:
+    # Every borrowing line of the balance sheet: short-term borrowings, commercial paper,
+    # current maturities and long-term debt. A lease line counts only when its label also
+    # names debt or borrowings (a debt line that includes finance leases); operating leases,
+    # assets, investments, issuance costs, interest and equity lines never count.
+    statements: [BS]
+    include: ['\bdebt\b', 'borrowings', 'commercial paper', 'notes payable', 'loans payable',
+              'bonds payable', 'bank loans', 'short-term loans', 'senior notes', '\bterm loans?\b']
+    exclude: ['issuance costs', 'securities', 'held for sale', 'deferred', 'interest',
+              'related part', '\besop\b', 'reserve', 'investment', 'receivable', '\bassets?\b',
+              'operating lease', 'right-of-use', '^(?!.*(debt|borrowing|loan|notes|bonds)).*lease',
+              'guarantee', 'equity']
+    prefer: ['^total (debt|borrowings)']
+    combine: sum
+    elements:
+      # Borrowings: total, current, current portion and non-current portion; other borrowings.
+      - ifrs-full:Borrowings
+      - ifrs-full:ShorttermBorrowings
+      - ifrs-full:CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings
+      - ifrs-full:CurrentPortionOfLongtermBorrowings
+      - ifrs-full:LongtermBorrowings
+      - ifrs-full:OtherBorrowings
+      - ifrs-full:OtherCurrentBorrowingsAndCurrentPortionOfOtherNoncurrentBorrowings
+      - ifrs-full:NoncurrentPortionOfOtherNoncurrentBorrowings
+      # Loans received, and bank loans secured or unsecured.
+      - ifrs-full:LoansReceived
+      - ifrs-full:CurrentLoansReceivedAndCurrentPortionOfNoncurrentLoansReceived
+      - ifrs-full:NoncurrentPortionOfNoncurrentLoansReceived
+      - ifrs-full:SecuredBankLoansReceived
+      - ifrs-full:CurrentSecuredBankLoansReceivedAndCurrentPortionOfNoncurrentSecuredBankLoansReceived
+      - ifrs-full:NoncurrentPortionOfNoncurrentSecuredBankLoansReceived
+      - ifrs-full:UnsecuredBankLoansReceived
+      - ifrs-full:CurrentUnsecuredBankLoansReceivedAndCurrentPortionOfNoncurrentUnsecuredBankLoansReceived
+      - ifrs-full:NoncurrentPortionOfNoncurrentUnsecuredBankLoansReceived
+      # Debt securities issued: bonds, notes and debentures, commercial paper, all debt
+      # instruments.
+      - ifrs-full:BondsIssued
+      - ifrs-full:CurrentBondsIssuedAndCurrentPortionOfNoncurrentBondsIssued
+      - ifrs-full:NoncurrentPortionOfNoncurrentBondsIssued
+      - ifrs-full:NotesAndDebenturesIssued
+      - ifrs-full:CurrentNotesAndDebenturesIssuedAndCurrentPortionOfNoncurrentNotesAndDebenturesIssued
+      - ifrs-full:NoncurrentPortionOfNoncurrentNotesAndDebenturesIssued
+      - ifrs-full:CommercialPapersIssued
+      - ifrs-full:CurrentCommercialPapersIssuedAndCurrentPortionOfNoncurrentCommercialPapersIssued
+      - ifrs-full:NoncurrentPortionOfNoncurrentCommercialPapersIssued
+      - ifrs-full:DebtSecurities
+      - ifrs-full:CurrentDebtInstrumentsIssued
+      - ifrs-full:NoncurrentDebtInstrumentsIssued
+  DeferredRevenue:
+    # Every deferred-revenue / unearned-revenue / contract-liability line, current and
+    # non-current; never a deferred tax or government-incentive line.
+    statements: [BS]
+    include: ['deferred revenue', 'contract liabilit', 'unearned revenue', 'deferred income']
+    exclude: ['tax', 'government', 'incentive']
+    combine: sum

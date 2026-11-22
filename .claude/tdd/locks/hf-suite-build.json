@@ -1,0 +1,269 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-10",
+  "criteria": {
+    "C1": [
+      "test/spec/hf-suite-build/test_c1_require_outside.py::test_inside_refused_outside_returned_resolved",
+      "test/spec/hf-suite-build/test_c1_require_outside.py::test_any_parts_under_root_refused_elsewhere_returned"
+    ],
+    "C10": [
+      "test/spec/hf-suite-build/test_c10_counts_only.py::test_summary_states_counts_and_nothing_else",
+      "test/spec/hf-suite-build/test_c10_counts_only.py::test_logs_name_no_filer_value_or_question",
+      "test/spec/hf-suite-build/test_c10_counts_only.py::test_any_heldout_set_summary_is_counts_only"
+    ],
+    "C11": [
+      "test/spec/hf-suite-build/test_c11_fsds_cut.py::test_cut_tables_by_hand",
+      "test/spec/hf-suite-build/test_c11_fsds_cut.py::test_cut_quarter_zips_into_a_directory",
+      "test/spec/hf-suite-build/test_c11_fsds_cut.py::test_cut_of_a_union_is_the_union_of_cuts"
+    ],
+    "C12": [
+      "test/spec/hf-suite-build/test_c12_log_dir.py::test_resolve_log_dir",
+      "test/spec/hf-suite-build/test_c12_log_dir.py::test_relocate_moves_file_handlers_only",
+      "test/spec/hf-suite-build/test_c12_log_dir.py::test_only_filenames_change"
+    ],
+    "C13": [
+      "test/spec/hf-suite-build/test_c13_nothing_else_moves.py::test_dev_names_and_tags_after_heldout_builds",
+      "test/spec/hf-suite-build/test_c13_nothing_else_moves.py::test_dev_bytes_unchanged_by_an_absent_overlay_and_by_heldout_builds"
+    ],
+    "C2": [
+      "test/spec/hf-suite-build/test_c2_overlay_merge.py::test_base_plus_overlay_is_the_full_lexicon",
+      "test/spec/hf-suite-build/test_c2_overlay_merge.py::test_bad_overlays_refused_without_naming_overlay_filers[brace]",
+      "test/spec/hf-suite-build/test_c2_overlay_merge.py::test_bad_overlays_refused_without_naming_overlay_filers[metrics]",
+      "test/spec/hf-suite-build/test_c2_overlay_merge.py::test_bad_overlays_refused_without_naming_overlay_filers[orphan_end]",
+      "test/spec/hf-suite-build/test_c2_overlay_merge.py::test_bad_overlays_refused_without_naming_overlay_filers[rename]",
+      "test/spec/hf-suite-build/test_c2_overlay_merge.py::test_bad_overlays_refused_without_naming_overlay_filers[universes]",
+      "test/spec/hf-suite-build/test_c2_overlay_merge.py::test_disjoint_overlays_merge_in_either_order"
+    ],
+    "C3": [
+      "test/spec/hf-suite-build/test_c3_overlay_generator.py::test_drawn_filers_of_both_strata_sorted_by_cik",
+      "test/spec/hf-suite-build/test_c3_overlay_generator.py::test_overlay_from_rows_by_hand",
+      "test/spec/hf-suite-build/test_c3_overlay_generator.py::test_written_overlay_round_trips",
+      "test/spec/hf-suite-build/test_c3_overlay_generator.py::test_row_order_changes_nothing"
+    ],
+    "C4": [
+      "test/spec/hf-suite-build/test_c4_groups.py::test_heldout_filers_join_the_groups_their_tags_select",
+      "test/spec/hf-suite-build/test_c4_groups.py::test_overlapping_tags_and_stale_groups_refused",
+      "test/spec/hf-suite-build/test_c4_groups.py::test_each_group_is_committed_plus_the_selected_heldout_filers"
+    ],
+    "C5": [
+      "test/spec/hf-suite-build/test_c5_involves.py::test_hand_made_intents_classified",
+      "test/spec/hf-suite-build/test_c5_involves.py::test_candidate_counts_for_one_heldout_filer",
+      "test/spec/hf-suite-build/test_c5_involves.py::test_counts_equal_the_restated_filter"
+    ],
+    "C6": [
+      "test/spec/hf-suite-build/test_c6_main_cases.py::test_suite_cases_and_manifest",
+      "test/spec/hf-suite-build/test_c6_main_cases.py::test_empty_or_unknown_heldout_refused",
+      "test/spec/hf-suite-build/test_c6_main_cases.py::test_records_are_the_dev_records_relabelled",
+      "test/spec/hf-suite-build/test_c6_main_cases.py::test_input_order_changes_nothing"
+    ],
+    "C7": [
+      "test/spec/hf-suite-build/test_c7_compound_cases.py::test_compound_suite_and_a_hand_keyed_case",
+      "test/spec/hf-suite-build/test_c7_compound_cases.py::test_compound_records_are_the_dev_records_relabelled"
+    ],
+    "C8": [
+      "test/spec/hf-suite-build/test_c8_witness.py::test_blocked_keys_dropped_and_never_reported",
+      "test/spec/hf-suite-build/test_c8_witness.py::test_resolutions_used_and_unused",
+      "test/spec/hf-suite-build/test_c8_witness.py::test_compound_blocks_dropped_on_a_shared_witness",
+      "test/spec/hf-suite-build/test_c8_witness.py::test_any_quota_walks_the_keyable_candidates"
+    ],
+    "C9": [
+      "test/spec/hf-suite-build/test_c9_writing.py::test_files_names_and_bytes",
+      "test/spec/hf-suite-build/test_c9_writing.py::test_two_builds_write_identical_bytes"
+    ]
+  },
+  "files": {
+    "test/spec/hf-suite-build/conftest.py": "b343a003f79796aa1440b6786ff508a07955e2aa5b94f569cdc8e93aa2f09718",
+    "test/spec/hf-suite-build/lexicon_base.yaml": "8d0ac0bb9e52f36e295e753905c7f8196adcaeb0b5b8910a6dca612a44c882e6",
+    "test/spec/hf-suite-build/lexicon_full.yaml": "146f346940b3fad247055d14028b887da26a3e19662f8c3d6c1ca6e6471a9faf",
+    "test/spec/hf-suite-build/overlay.yaml": "138d9c593e56cebdbc058bf35bb59eb25b08c0b9c3abdc030a16ed98b3645a4f",
+    "test/spec/hf-suite-build/overlay_absent.yaml": "1014089b7b5836708e7ebb71c79e1a4963f46528af99ef94a12874360d672349",
+    "test/spec/hf-suite-build/phrasebook_compound.yaml": "dc79f2bc77241c1cd8567e391fab86f7d3df7d4499d5d920a3c37a28451da316",
+    "test/spec/hf-suite-build/phrasebook_main.yaml": "a2e1300af81b875e48f2c70abf84be59b660df10bf3fd52c5cff5fc36ca7a77d",
+    "test/spec/hf-suite-build/test_c10_counts_only.py": "af4d035463a179d35d92e440babb3680a99a178f9d8134898f8225afc32e62b8",
+    "test/spec/hf-suite-build/test_c11_fsds_cut.py": "b9fea28cb30ce58c3507e3d378459c0963b65a621553922d06af4e47b4d03fd3",
+    "test/spec/hf-suite-build/test_c12_log_dir.py": "caff7852836af270e5c85dd1a43e9241c60aa5ab72eed2256db57723ba691aaf",
+    "test/spec/hf-suite-build/test_c13_nothing_else_moves.py": "b9989850eba7e2864a04944ed0817680f414b8afd2783e45be0eecf5f69821b5",
+    "test/spec/hf-suite-build/test_c1_require_outside.py": "d9a42107d644b90b01c929afa760d84a1b99de34b2780e752442a77f6aa763f9",
+    "test/spec/hf-suite-build/test_c2_overlay_merge.py": "0563d5e4f4104041fed731ce2f04c6d826207803bdec1eb05887f172477829aa",
+    "test/spec/hf-suite-build/test_c3_overlay_generator.py": "c5f670c0d2291b2f18373e8e02519364967c9cbf69dd2280a2ba3875652d3f68",
+    "test/spec/hf-suite-build/test_c4_groups.py": "cbc0a3f301d27626c7bd353208278384515fa9f17de70e8b34105e899511520a",
+    "test/spec/hf-suite-build/test_c5_involves.py": "a536575b46d8ae88e41b7d8e9cfc6e904e1d37609adeca3065496cac6f168267",
+    "test/spec/hf-suite-build/test_c6_main_cases.py": "4ecb6bd2a22196aa24f57b77485e96777cb0039b36144b711f0a1fdb5c4f554a",
+    "test/spec/hf-suite-build/test_c7_compound_cases.py": "ef0043d2935308fc7304aa30c16eddfa83fd6b8821031ff297ef2abb3995fcf7",
+    "test/spec/hf-suite-build/test_c8_witness.py": "4c420a28883e73d37f7768ff3216caddf4606b416c2e123e40aafaacda4f8976",
+    "test/spec/hf-suite-build/test_c9_writing.py": "52e9bd5b55ed7d728d4a3c27f3c8868010ba5e2097bafdb152efc75537cebb9d",
+    "test/spec/hf-suite-build/witness/.gitattributes": "0683acf03486ac35353535e1eb9c6a0b2f499cca47e404130a725743c8381b77",
+    "test/spec/hf-suite-build/witness/README.txt": "28d4deaa587c4cac93809a03a09ec4a73a3a54bd00d85ef02f73c5cd555b396e",
+    "test/spec/hf-suite-build/witness/fsds/2025q1/num.tsv": "89fc8c3b39c8a0775d2d0eb004904d190b5abbd6e3731b54e444ca33ab28a3f2",
+    "test/spec/hf-suite-build/witness/fsds/2025q1/pre.tsv": "13292765a2713da474ee6fa12d160a4f5adb4be3442afce81baa4cddb7aeaacc",
+    "test/spec/hf-suite-build/witness/fsds/2025q1/sub.tsv": "c2378712dec5e5bee8d2db46baa2d99768c8371b977fadb3923a695d7f172185",
+    "test/spec/hf-suite-build/witness/fsds/2025q1/tag.tsv": "c4543be6ee356c744a312b620f5770cfe38ef28dcbe3335def81a4b48fe2fd2b",
+    "test/spec/hf-suite-build/witness/key_resolutions_drop.yaml": "e44c812e533e36ebcab487998000439d7a1dfb405c3f7b2779872962780c5c3f",
+    "test/spec/hf-suite-build/witness/key_resolutions_key.yaml": "bfc7d01cbf5a93b5fe36ff7aaadc3491f5f77f2fba76a501d000d26d53db7d47",
+    "test/spec/hf-suite-build/witness/key_resolutions_none.yaml": "df4b1792c18300d5b1fd5149d9662da27f0f0fad6e6eee16b067da6779592ec0",
+    "test/spec/hf-suite-build/witness/note_concepts.yaml": "5be5c267a77214577de7f3304eaa4706617494e1b7aea61080e6e10fd82bba91",
+    "test/spec/hf-suite-build/witness/statement_lines.yaml": "02aac77f53c8e364ef65efa682cadb527e741cb9ceab626423a69036367c69a8"
+  },
+  "id": "hf-suite-build",
+  "interface": [
+    {
+      "file": "src/eval/sec_reference/fsds_cut.py",
+      "module": "eval.sec_reference.fsds_cut",
+      "qualname": "cut_fsds_tables",
+      "signature": "def cut_fsds_tables(raw: Mapping[str, bytes], ciks: Collection[str]) -> dict[str, bytes]"
+    },
+    {
+      "file": "src/eval/sec_reference/fsds_cut.py",
+      "module": "eval.sec_reference.fsds_cut",
+      "qualname": "cut_fsds",
+      "signature": "def cut_fsds(zips: Sequence[str | Path], ciks: Collection[str], out_dir: str | Path) -> dict[str, dict[str, int]]"
+    },
+    {
+      "file": "src/eval/suites/heldout_build.py",
+      "module": "eval.suites.heldout_build",
+      "qualname": "require_outside",
+      "signature": "def require_outside(path: str | Path, repo_root: str | Path) -> Path"
+    },
+    {
+      "file": "src/eval/suites/heldout_build.py",
+      "module": "eval.suites.heldout_build",
+      "qualname": "merge_lexicon_overlay",
+      "signature": "def merge_lexicon_overlay(lexicon: Lexicon, path: str | Path) -> Lexicon"
+    },
+    {
+      "file": "src/eval/suites/heldout_build.py",
+      "module": "eval.suites.heldout_build",
+      "qualname": "drawn_filers",
+      "signature": "def drawn_filers(draw: Mapping[str, Any]) -> list[dict[str, str]]"
+    },
+    {
+      "file": "src/eval/suites/heldout_build.py",
+      "module": "eval.suites.heldout_build",
+      "qualname": "lexicon_overlay",
+      "signature": "def lexicon_overlay(drawn: Sequence[Mapping[str, str]], entities: Iterable[Sequence[Any]], filings: Iterable[Sequence[Any]]) -> dict[str, Any]"
+    },
+    {
+      "file": "src/eval/suites/heldout_build.py",
+      "module": "eval.suites.heldout_build",
+      "qualname": "write_lexicon_overlay",
+      "signature": "def write_lexicon_overlay(overlay: Mapping[str, Any], path: str | Path) -> Path"
+    },
+    {
+      "file": "src/eval/suites/heldout_build.py",
+      "module": "eval.suites.heldout_build",
+      "qualname": "heldout_groups",
+      "signature": "def heldout_groups(groups_doc: Mapping[str, Any], dev_tags: Mapping[str, Any], heldout_tags: Mapping[str, Any]) -> dict[str, list[str]]"
+    },
+    {
+      "file": "src/eval/suites/heldout_build.py",
+      "module": "eval.suites.heldout_build",
+      "qualname": "involves_heldout",
+      "signature": "def involves_heldout(intent: Intent, universes: Mapping[str, Sequence[str]], heldout: Collection[str]) -> bool"
+    },
+    {
+      "file": "src/eval/suites/heldout_build.py",
+      "module": "eval.suites.heldout_build",
+      "qualname": "build_heldout_suites",
+      "signature": "def build_heldout_suites(inventory: Mapping[str, Any], universes: Mapping[str, Sequence[str]], sec: SecSource, fact_store: FactStoreSource, phrasebook: Phrasebook, lexicon: Lexicon, *, heldout: Sequence[str], quotas: Mapping[str, int], per_intent: int, salt: str, witness: KeyWitness | None=None) -> dict[str, Any]"
+    },
+    {
+      "file": "src/eval/suites/heldout_build.py",
+      "module": "eval.suites.heldout_build",
+      "qualname": "build_heldout_compound_suites",
+      "signature": "def build_heldout_compound_suites(inventory: Mapping[str, Any], universes: Mapping[str, Sequence[str]], sec: SecSource, fact_store: FactStoreSource, phrasebook: Phrasebook, lexicon: Lexicon, *, heldout: Sequence[str], quotas: Mapping[str, int], per_intent: int, salt: str, witness: KeyWitness | None=None) -> dict[str, Any]"
+    },
+    {
+      "file": "src/eval/suites/heldout_build.py",
+      "module": "eval.suites.heldout_build",
+      "qualname": "write_heldout_suites",
+      "signature": "def write_heldout_suites(build: Mapping[str, Any], out_dir: str | Path) -> dict[str, Path]"
+    },
+    {
+      "file": "src/eval/suites/heldout_build.py",
+      "module": "eval.suites.heldout_build",
+      "qualname": "write_heldout_compound_suites",
+      "signature": "def write_heldout_compound_suites(build: Mapping[str, Any], out_dir: str | Path) -> dict[str, Path]"
+    },
+    {
+      "file": "src/eval/suites/heldout_build.py",
+      "module": "eval.suites.heldout_build",
+      "qualname": "heldout_summary",
+      "signature": "def heldout_summary(build: Mapping[str, Any]) -> list[str]"
+    },
+    {
+      "file": "src/log_dir.py",
+      "module": "log_dir",
+      "qualname": "resolve_log_dir",
+      "signature": "def resolve_log_dir(explicit: str | Path | None, environ: Mapping[str, str]) -> Path | None"
+    },
+    {
+      "file": "src/log_dir.py",
+      "module": "log_dir",
+      "qualname": "relocate_log_handlers",
+      "signature": "def relocate_log_handlers(cfg: Mapping[str, Any], log_dir: str | Path) -> dict[str, Any]"
+    }
+  ],
+  "nodes": [
+    "test/spec/hf-suite-build/test_c10_counts_only.py::test_any_heldout_set_summary_is_counts_only",
+    "test/spec/hf-suite-build/test_c10_counts_only.py::test_logs_name_no_filer_value_or_question",
+    "test/spec/hf-suite-build/test_c10_counts_only.py::test_summary_states_counts_and_nothing_else",
+    "test/spec/hf-suite-build/test_c11_fsds_cut.py::test_cut_of_a_union_is_the_union_of_cuts",
+    "test/spec/hf-suite-build/test_c11_fsds_cut.py::test_cut_quarter_zips_into_a_directory",
+    "test/spec/hf-suite-build/test_c11_fsds_cut.py::test_cut_tables_by_hand",
+    "test/spec/hf-suite-build/test_c12_log_dir.py::test_only_filenames_change",
+    "test/spec/hf-suite-build/test_c12_log_dir.py::test_relocate_moves_file_handlers_only",
+    "test/spec/hf-suite-build/test_c12_log_dir.py::test_resolve_log_dir",
+    "test/spec/hf-suite-build/test_c13_nothing_else_moves.py::test_dev_bytes_unchanged_by_an_absent_overlay_and_by_heldout_builds",
+    "test/spec/hf-suite-build/test_c13_nothing_else_moves.py::test_dev_names_and_tags_after_heldout_builds",
+    "test/spec/hf-suite-build/test_c1_require_outside.py::test_any_parts_under_root_refused_elsewhere_returned",
+    "test/spec/hf-suite-build/test_c1_require_outside.py::test_inside_refused_outside_returned_resolved",
+    "test/spec/hf-suite-build/test_c2_overlay_merge.py::test_bad_overlays_refused_without_naming_overlay_filers[brace]",
+    "test/spec/hf-suite-build/test_c2_overlay_merge.py::test_bad_overlays_refused_without_naming_overlay_filers[metrics]",
+    "test/spec/hf-suite-build/test_c2_overlay_merge.py::test_bad_overlays_refused_without_naming_overlay_filers[orphan_end]",
+    "test/spec/hf-suite-build/test_c2_overlay_merge.py::test_bad_overlays_refused_without_naming_overlay_filers[rename]",
+    "test/spec/hf-suite-build/test_c2_overlay_merge.py::test_bad_overlays_refused_without_naming_overlay_filers[universes]",
+    "test/spec/hf-suite-build/test_c2_overlay_merge.py::test_base_plus_overlay_is_the_full_lexicon",
+    "test/spec/hf-suite-build/test_c2_overlay_merge.py::test_disjoint_overlays_merge_in_either_order",
+    "test/spec/hf-suite-build/test_c3_overlay_generator.py::test_drawn_filers_of_both_strata_sorted_by_cik",
+    "test/spec/hf-suite-build/test_c3_overlay_generator.py::test_overlay_from_rows_by_hand",
+    "test/spec/hf-suite-build/test_c3_overlay_generator.py::test_row_order_changes_nothing",
+    "test/spec/hf-suite-build/test_c3_overlay_generator.py::test_written_overlay_round_trips",
+    "test/spec/hf-suite-build/test_c4_groups.py::test_each_group_is_committed_plus_the_selected_heldout_filers",
+    "test/spec/hf-suite-build/test_c4_groups.py::test_heldout_filers_join_the_groups_their_tags_select",
+    "test/spec/hf-suite-build/test_c4_groups.py::test_overlapping_tags_and_stale_groups_refused",
+    "test/spec/hf-suite-build/test_c5_involves.py::test_candidate_counts_for_one_heldout_filer",
+    "test/spec/hf-suite-build/test_c5_involves.py::test_counts_equal_the_restated_filter",
+    "test/spec/hf-suite-build/test_c5_involves.py::test_hand_made_intents_classified",
+    "test/spec/hf-suite-build/test_c6_main_cases.py::test_empty_or_unknown_heldout_refused",
+    "test/spec/hf-suite-build/test_c6_main_cases.py::test_input_order_changes_nothing",
+    "test/spec/hf-suite-build/test_c6_main_cases.py::test_records_are_the_dev_records_relabelled",
+    "test/spec/hf-suite-build/test_c6_main_cases.py::test_suite_cases_and_manifest",
+    "test/spec/hf-suite-build/test_c7_compound_cases.py::test_compound_records_are_the_dev_records_relabelled",
+    "test/spec/hf-suite-build/test_c7_compound_cases.py::test_compound_suite_and_a_hand_keyed_case",
+    "test/spec/hf-suite-build/test_c8_witness.py::test_any_quota_walks_the_keyable_candidates",
+    "test/spec/hf-suite-build/test_c8_witness.py::test_blocked_keys_dropped_and_never_reported",
+    "test/spec/hf-suite-build/test_c8_witness.py::test_compound_blocks_dropped_on_a_shared_witness",
+    "test/spec/hf-suite-build/test_c8_witness.py::test_resolutions_used_and_unused",
+    "test/spec/hf-suite-build/test_c9_writing.py::test_files_names_and_bytes",
+    "test/spec/hf-suite-build/test_c9_writing.py::test_two_builds_write_identical_bytes"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/hf-suite-build.md",
+    "sha256": "99f0a044f3e1715253b9d521977cee275a5a47ac3abfcf364cae3a5187f07e40"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

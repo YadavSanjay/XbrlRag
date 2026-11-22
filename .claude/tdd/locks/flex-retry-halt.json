@@ -1,0 +1,152 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-04",
+  "criteria": {
+    "C1": [
+      "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_default_and_values",
+      "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_rejects_bad_values[0]",
+      "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_rejects_bad_values[-5]",
+      "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_rejects_bad_values[nan]",
+      "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_rejects_bad_values[inf]",
+      "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_rejects_bad_values[-inf]",
+      "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_rejects_bad_values[x]",
+      "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_rejects_bad_values[1e999]",
+      "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_property_reads_back"
+    ],
+    "C2": [
+      "test/spec/flex-retry-halt/test_c2_stop_scope.py::test_scope_follows_its_event",
+      "test/spec/flex-retry-halt/test_c2_stop_scope.py::test_innermost_scope_decides_and_exit_restores",
+      "test/spec/flex-retry-halt/test_c2_stop_scope.py::test_scope_is_per_thread",
+      "test/spec/flex-retry-halt/test_c2_stop_scope.py::test_property_innermost_event"
+    ],
+    "C3": [
+      "test/spec/flex-retry-halt/test_c3_budget_recheck.py::test_breaker_tripped_during_the_wait",
+      "test/spec/flex-retry-halt/test_c3_budget_recheck.py::test_cost_cap_passed_during_the_attempt",
+      "test/spec/flex-retry-halt/test_c3_budget_recheck.py::test_call_cap_reached_during_the_third_wait",
+      "test/spec/flex-retry-halt/test_c3_budget_recheck.py::test_property_breaker_trip_at_any_flex_attempt"
+    ],
+    "C4": [
+      "test/spec/flex-retry-halt/test_c4_stop_signal.py::test_stop_already_set_halts_before_the_first_wait",
+      "test/spec/flex-retry-halt/test_c4_stop_signal.py::test_stop_set_during_a_short_wait",
+      "test/spec/flex-retry-halt/test_c4_stop_signal.py::test_stop_set_during_a_slice_of_a_long_wait",
+      "test/spec/flex-retry-halt/test_c4_stop_signal.py::test_slices_only_inside_a_scope",
+      "test/spec/flex-retry-halt/test_c4_stop_signal.py::test_property_stop_seen_within_one_slice",
+      "test/spec/flex-retry-halt/test_c4_stop_signal.py::test_metamorphic_slices_sum_to_the_wait"
+    ],
+    "C5": [
+      "test/spec/flex-retry-halt/test_c5_trace_cap.py::test_second_storm_in_a_trace_halts",
+      "test/spec/flex-retry-halt/test_c5_trace_cap.py::test_exactly_at_the_cap_is_allowed",
+      "test/spec/flex-retry-halt/test_c5_trace_cap.py::test_cap_is_per_trace",
+      "test/spec/flex-retry-halt/test_c5_trace_cap.py::test_no_trace_no_cap",
+      "test/spec/flex-retry-halt/test_c5_trace_cap.py::test_retry_after_counts_as_taken",
+      "test/spec/flex-retry-halt/test_c5_trace_cap.py::test_property_matches_the_rules"
+    ],
+    "C6": [
+      "test/spec/flex-retry-halt/test_c6_runner.py::test_a_halt_stops_another_case_waiting_on_flex",
+      "test/spec/flex-retry-halt/test_c6_runner.py::test_runner_does_not_change_an_unhalted_answer[1]",
+      "test/spec/flex-retry-halt/test_c6_runner.py::test_runner_does_not_change_an_unhalted_answer[3]"
+    ],
+    "C7": [
+      "test/spec/flex-retry-halt/test_c7_resumable.py::test_halts_are_run_halts_and_transport_errors",
+      "test/spec/flex-retry-halt/test_c7_resumable.py::test_property_any_message_is_transport"
+    ]
+  },
+  "files": {
+    "test/spec/flex-retry-halt/conftest.py": "ed3fef26ea87555c3eed0f0406809295e260dcc6d2adb3b40a49589ba858da04",
+    "test/spec/flex-retry-halt/test_c1_cap.py": "299c2eba1fe37305da49eb1d91fbc61609fcf320e6f8f63e1338b95036f5a367",
+    "test/spec/flex-retry-halt/test_c2_stop_scope.py": "7331a46c5b60d8d8bfe0f55cba25702b3454980ba3157b418cfdc9730deea9e3",
+    "test/spec/flex-retry-halt/test_c3_budget_recheck.py": "af306f7a410124fe906643859421ce157396ebcc3699203096efec8dbdf69561",
+    "test/spec/flex-retry-halt/test_c4_stop_signal.py": "17d718b0b59cd20c6e4434e151b6bdc304600ed874190920d1d65680d513c239",
+    "test/spec/flex-retry-halt/test_c5_trace_cap.py": "20750a0a37ccc71277a0b0ccf2eb721eb9ef58f641ca7272b0cf6f06696f6a97",
+    "test/spec/flex-retry-halt/test_c6_runner.py": "5b25473ca84b06f2afaa3441aaac0377757fd6e8f6c4a70c109b0164623bee88",
+    "test/spec/flex-retry-halt/test_c7_resumable.py": "5634e9aea83b4a83638ebb89d372acd729d77643f0d475ab5a18d5f6620a43e4"
+  },
+  "id": "flex-retry-halt",
+  "interface": [
+    {
+      "file": "src/llm/request_options.py",
+      "module": "llm.request_options",
+      "qualname": "flex_trace_wait_cap_s",
+      "signature": "def flex_trace_wait_cap_s(environ: Mapping[str, str] | None=None) -> float"
+    },
+    {
+      "file": "src/llm/run_budget.py",
+      "module": "llm.run_budget",
+      "qualname": "RunStopScope.__init__",
+      "signature": "def __init__(self, stop: threading.Event) -> None"
+    },
+    {
+      "file": "src/llm/run_budget.py",
+      "module": "llm.run_budget",
+      "qualname": "RunStopScope.__enter__",
+      "signature": "def __enter__(self) -> RunStopScope"
+    },
+    {
+      "file": "src/llm/run_budget.py",
+      "module": "llm.run_budget",
+      "qualname": "RunStopScope.__exit__",
+      "signature": "def __exit__(self, *exc: object) -> None"
+    },
+    {
+      "file": "src/llm/run_budget.py",
+      "module": "llm.run_budget",
+      "qualname": "run_stop_requested",
+      "signature": "def run_stop_requested() -> bool"
+    }
+  ],
+  "nodes": [
+    "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_default_and_values",
+    "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_property_reads_back",
+    "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_rejects_bad_values[-5]",
+    "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_rejects_bad_values[-inf]",
+    "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_rejects_bad_values[0]",
+    "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_rejects_bad_values[1e999]",
+    "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_rejects_bad_values[inf]",
+    "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_rejects_bad_values[nan]",
+    "test/spec/flex-retry-halt/test_c1_cap.py::test_cap_rejects_bad_values[x]",
+    "test/spec/flex-retry-halt/test_c2_stop_scope.py::test_innermost_scope_decides_and_exit_restores",
+    "test/spec/flex-retry-halt/test_c2_stop_scope.py::test_property_innermost_event",
+    "test/spec/flex-retry-halt/test_c2_stop_scope.py::test_scope_follows_its_event",
+    "test/spec/flex-retry-halt/test_c2_stop_scope.py::test_scope_is_per_thread",
+    "test/spec/flex-retry-halt/test_c3_budget_recheck.py::test_breaker_tripped_during_the_wait",
+    "test/spec/flex-retry-halt/test_c3_budget_recheck.py::test_call_cap_reached_during_the_third_wait",
+    "test/spec/flex-retry-halt/test_c3_budget_recheck.py::test_cost_cap_passed_during_the_attempt",
+    "test/spec/flex-retry-halt/test_c3_budget_recheck.py::test_property_breaker_trip_at_any_flex_attempt",
+    "test/spec/flex-retry-halt/test_c4_stop_signal.py::test_metamorphic_slices_sum_to_the_wait",
+    "test/spec/flex-retry-halt/test_c4_stop_signal.py::test_property_stop_seen_within_one_slice",
+    "test/spec/flex-retry-halt/test_c4_stop_signal.py::test_slices_only_inside_a_scope",
+    "test/spec/flex-retry-halt/test_c4_stop_signal.py::test_stop_already_set_halts_before_the_first_wait",
+    "test/spec/flex-retry-halt/test_c4_stop_signal.py::test_stop_set_during_a_short_wait",
+    "test/spec/flex-retry-halt/test_c4_stop_signal.py::test_stop_set_during_a_slice_of_a_long_wait",
+    "test/spec/flex-retry-halt/test_c5_trace_cap.py::test_cap_is_per_trace",
+    "test/spec/flex-retry-halt/test_c5_trace_cap.py::test_exactly_at_the_cap_is_allowed",
+    "test/spec/flex-retry-halt/test_c5_trace_cap.py::test_no_trace_no_cap",
+    "test/spec/flex-retry-halt/test_c5_trace_cap.py::test_property_matches_the_rules",
+    "test/spec/flex-retry-halt/test_c5_trace_cap.py::test_retry_after_counts_as_taken",
+    "test/spec/flex-retry-halt/test_c5_trace_cap.py::test_second_storm_in_a_trace_halts",
+    "test/spec/flex-retry-halt/test_c6_runner.py::test_a_halt_stops_another_case_waiting_on_flex",
+    "test/spec/flex-retry-halt/test_c6_runner.py::test_runner_does_not_change_an_unhalted_answer[1]",
+    "test/spec/flex-retry-halt/test_c6_runner.py::test_runner_does_not_change_an_unhalted_answer[3]",
+    "test/spec/flex-retry-halt/test_c7_resumable.py::test_halts_are_run_halts_and_transport_errors",
+    "test/spec/flex-retry-halt/test_c7_resumable.py::test_property_any_message_is_transport"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/flex-retry-halt.md",
+    "sha256": "93556c080bede9a52714fa99785f37e9268c6db4fdaa778fe9c88e6c73f016b0"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

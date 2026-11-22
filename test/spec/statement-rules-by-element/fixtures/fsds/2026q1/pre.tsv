@@ -1,0 +1,38 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0001628280-26-003952	9	2	CF	0	H	ProfitLoss	us-gaap/2025	Net income	0
+0001628280-26-003952	9	4	CF	0	H	DepreciationAmortizationAndImpairment	0001628280-26-003952	Depreciation, amortization and impairment	0
+0001628280-26-003952	9	5	CF	0	H	ShareBasedCompensation	us-gaap/2025	Stock-based compensation	0
+0001628280-26-003952	9	6	CF	0	H	InventoryWriteDown	us-gaap/2025	Inventory and purchase commitments write-downs	0
+0001628280-26-003952	9	7	CF	0	H	ForeignCurrencyTransactionGainLossUnrealized	us-gaap/2025	Foreign currency transaction net unrealized loss (gain)	1
+0001628280-26-003952	9	8	CF	0	H	DeferredIncomeTaxExpenseBenefit	us-gaap/2025	Deferred income taxes	0
+0001628280-26-003952	9	9	CF	0	H	NoncashInterestIncomeExpenseAndOtherOperatingActivities	0001628280-26-003952	Non-cash interest and other operating activities	1
+0001628280-26-003952	9	10	CF	0	H	GainLossOnDigitalAssets	0001628280-26-003952	Digital assets loss (gain), net	1
+0001628280-26-003952	9	12	CF	0	H	IncreaseDecreaseInAccountsReceivable	us-gaap/2025	Accounts receivable	1
+0001628280-26-003952	9	13	CF	0	H	IncreaseDecreaseInInventories	us-gaap/2025	Inventory	1
+0001628280-26-003952	9	14	CF	0	H	IncreaseDecreaseInOperatingLeaseVehicles	0001628280-26-003952	Operating lease vehicles	1
+0001628280-26-003952	9	15	CF	0	H	IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets	us-gaap/2025	Prepaid expenses and other assets	1
+0001628280-26-003952	9	16	CF	0	H	IncreaseDecreaseInAccountsPayableAndAccruedLiabilities	us-gaap/2025	Accounts payable, accrued and other liabilities	0
+0001628280-26-003952	9	17	CF	0	H	IncreaseDecreaseInContractWithCustomerLiability	us-gaap/2025	Deferred revenue	0
+0001628280-26-003952	9	18	CF	0	H	NetCashProvidedByUsedInOperatingActivities	us-gaap/2025	Net cash provided by operating activities	0
+0001628280-26-003952	9	20	CF	0	H	PaymentsToAcquirePropertyPlantAndEquipment	us-gaap/2025	Purchases of property and equipment excluding finance leases, net of sales	1
+0001628280-26-003952	9	21	CF	0	H	PaymentsToAcquireInvestments	us-gaap/2025	Purchases of investments	1
+0001628280-26-003952	9	22	CF	0	H	ProceedsFromSaleMaturityAndCollectionsOfInvestments	us-gaap/2025	Proceeds from maturities of investments	0
+0001628280-26-003952	9	23	CF	0	H	ProceedsFromSaleOfShortTermInvestments	us-gaap/2025	Proceeds from sales of investments	0
+0001628280-26-003952	9	24	CF	0	H	PaymentsToAcquireBusinessesNetOfCashAcquired	us-gaap/2025	Business combinations, net of cash acquired	1
+0001628280-26-003952	9	25	CF	0	H	NetCashProvidedByUsedInInvestingActivities	us-gaap/2025	Net cash used in investing activities	0
+0001628280-26-003952	9	27	CF	0	H	ProceedsFromIssuanceOfDebt	us-gaap/2025	Proceeds from issuances of debt	0
+0001628280-26-003952	9	28	CF	0	H	RepaymentsOfConvertibleDebt	us-gaap/2025	Repayments of debt	1
+0001628280-26-003952	9	29	CF	0	H	ProceedsFromIssuanceOfSharesUnderIncentiveAndShareBasedCompensationPlansIncludingStockOptions	us-gaap/2025	Proceeds from exercises of stock options and other stock issuances, net of issuance costs	0
+0001628280-26-003952	9	30	CF	0	H	FinanceLeasePrincipalPayments	us-gaap/2025	Principal payments on finance leases	1
+0001628280-26-003952	9	31	CF	0	H	ProceedsReceivedFromDirectorsInShareholderSettlement	0001628280-26-003952	Proceeds received from directors in shareholder settlement	0
+0001628280-26-003952	9	32	CF	0	H	PaymentForLegalFees	0001628280-26-003952	Payment of legal fees associated with shareholder settlement	1
+0001628280-26-003952	9	33	CF	0	H	PaymentsOfDebtIssuanceCosts	us-gaap/2025	Debt issuance costs	1
+0001628280-26-003952	9	34	CF	0	H	PaymentsToMinorityShareholders	us-gaap/2025	Distributions paid to noncontrolling interests in subsidiaries	1
+0001628280-26-003952	9	35	CF	0	H	PaymentsForBuyOutsOfNoncontrollingInterestsInSubsidiaries	0001628280-26-003952	Payments for buy-outs of noncontrolling interests in subsidiaries	1
+0001628280-26-003952	9	36	CF	0	H	NetCashProvidedByUsedInFinancingActivities	us-gaap/2025	Net cash provided by financing activities	0
+0001628280-26-003952	9	37	CF	0	H	EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations	us-gaap/2025	Effect of exchange rate changes on cash and cash equivalents and restricted cash	0
+0001628280-26-003952	9	38	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	Net increase (decrease) in cash and cash equivalents and restricted cash	0
+0001628280-26-003952	9	39	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations	us-gaap/2025	Cash and cash equivalents and restricted cash, beginning of period	0
+0001628280-26-003952	9	40	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations	us-gaap/2025	Cash and cash equivalents and restricted cash, end of period	0
+0001628280-26-003952	9	42	CF	0	H	NoncashOrPartNoncashAcquisitionValueOfAssetsAcquired1	us-gaap/2025	Acquisitions of property and equipment included in liabilities	0
+0001628280-26-003952	9	44	CF	0	H	InterestPaidNet	us-gaap/2025	Cash paid during the period for interest	0

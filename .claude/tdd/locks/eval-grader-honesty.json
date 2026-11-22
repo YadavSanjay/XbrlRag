@@ -1,0 +1,82 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-12",
+  "criteria": {
+    "C1": [
+      "test/spec/eval-grader-honesty/test_egh_c1_grader_version.py::test_version_is_recorded_on_metrics_and_run_report",
+      "test/spec/eval-grader-honesty/test_egh_c1_grader_version.py::test_version_does_not_depend_on_the_results"
+    ],
+    "C2": [
+      "test/spec/eval-grader-honesty/test_egh_c2_hedged_miss.py::test_hedged_non_match_is_hedged_miss_and_the_rest_of_the_ladder_holds",
+      "test/spec/eval-grader-honesty/test_egh_c2_hedged_miss.py::test_hedging_flips_incorrect_to_hedged_miss"
+    ],
+    "C3": [
+      "test/spec/eval-grader-honesty/test_egh_c3_decline_metrics.py::test_hand_counted_scorecard",
+      "test/spec/eval-grader-honesty/test_egh_c3_decline_metrics.py::test_counts_partition_n_and_rates_follow_counts"
+    ],
+    "C4": [
+      "test/spec/eval-grader-honesty/test_egh_c4_unexplained_values.py::test_hand_worked_components",
+      "test/spec/eval-grader-honesty/test_egh_c4_unexplained_values.py::test_subset_sums_are_explained_and_anything_above_the_total_is_not",
+      "test/spec/eval-grader-honesty/test_egh_c4_unexplained_values.py::test_order_of_produced_values_does_not_matter"
+    ],
+    "C5": [
+      "test/spec/eval-grader-honesty/test_egh_c5_needs_review.py::test_flag_is_raised_only_for_unhedged_unexplained_failures",
+      "test/spec/eval-grader-honesty/test_egh_c5_needs_review.py::test_hedging_clears_the_flag_and_silent_wrong_stays_off"
+    ]
+  },
+  "files": {
+    "test/spec/eval-grader-honesty/conftest.py": "fd4524625784279903eba5522dfa60ff87f90cca1c53896c666b47438a78a529",
+    "test/spec/eval-grader-honesty/test_egh_c1_grader_version.py": "0483f6eb4bcbd03eec84e07cfab3a96d397b6860ed7e3e06285981f3233d17bc",
+    "test/spec/eval-grader-honesty/test_egh_c2_hedged_miss.py": "8012b9e4c308bfaf5317d3ebf79cafba776f2c2174059901cbd5b155acc1669a",
+    "test/spec/eval-grader-honesty/test_egh_c3_decline_metrics.py": "8401633e2a3643406cdabb501c9a0fdc7b4e95fc8b2ab3370b2b4c61c7d60ce8",
+    "test/spec/eval-grader-honesty/test_egh_c4_unexplained_values.py": "1c1abd186216610a14cfbdd6f2354807a1bcd352cf73ff98df1f66d80e0a4054",
+    "test/spec/eval-grader-honesty/test_egh_c5_needs_review.py": "33a607f47e9bbdab2b80d20f6c340214a9acdb5962bf2dd9c6f350f5569ca9c7"
+  },
+  "id": "eval-grader-honesty",
+  "interface": [
+    {
+      "file": "src/eval/core/graders/honesty.py",
+      "module": "eval.core.graders.honesty",
+      "qualname": "grader_version",
+      "signature": "def grader_version() -> str"
+    },
+    {
+      "file": "src/eval/core/graders/honesty.py",
+      "module": "eval.core.graders.honesty",
+      "qualname": "unexplained_breakdown_values",
+      "signature": "def unexplained_breakdown_values(expected_values: Sequence[float], produced_values: Sequence[float], rel_tol: float) -> list[float]"
+    }
+  ],
+  "nodes": [
+    "test/spec/eval-grader-honesty/test_egh_c1_grader_version.py::test_version_does_not_depend_on_the_results",
+    "test/spec/eval-grader-honesty/test_egh_c1_grader_version.py::test_version_is_recorded_on_metrics_and_run_report",
+    "test/spec/eval-grader-honesty/test_egh_c2_hedged_miss.py::test_hedged_non_match_is_hedged_miss_and_the_rest_of_the_ladder_holds",
+    "test/spec/eval-grader-honesty/test_egh_c2_hedged_miss.py::test_hedging_flips_incorrect_to_hedged_miss",
+    "test/spec/eval-grader-honesty/test_egh_c3_decline_metrics.py::test_counts_partition_n_and_rates_follow_counts",
+    "test/spec/eval-grader-honesty/test_egh_c3_decline_metrics.py::test_hand_counted_scorecard",
+    "test/spec/eval-grader-honesty/test_egh_c4_unexplained_values.py::test_hand_worked_components",
+    "test/spec/eval-grader-honesty/test_egh_c4_unexplained_values.py::test_order_of_produced_values_does_not_matter",
+    "test/spec/eval-grader-honesty/test_egh_c4_unexplained_values.py::test_subset_sums_are_explained_and_anything_above_the_total_is_not",
+    "test/spec/eval-grader-honesty/test_egh_c5_needs_review.py::test_flag_is_raised_only_for_unhedged_unexplained_failures",
+    "test/spec/eval-grader-honesty/test_egh_c5_needs_review.py::test_hedging_clears_the_flag_and_silent_wrong_stays_off"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/eval-grader-honesty.md",
+    "sha256": "8d3dba471637fd623ccf87f696a8b21e96ca8e3e6a2c9fb475cd30e1c73e76c8"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

@@ -1,0 +1,14 @@
+# Synthetic statement-line rules for the key-currency-and-definition spec tests, written for
+# the conftest's synthetic filings only. DebtIssued has no `substitutes` of its own, so a
+# stated substitute can only come from the concept mapping (requirement 3).
+version: 1
+families:
+  DebtIssued:
+    statements: [CF]
+    include: ['^proceeds from\b.*\b(debt|borrowings|bonds|loans)\b']
+    exclude: ['\bshort-term', '\brepay']
+  Debt:
+    statements: [BS]
+    include: ['\bborrowings\b', '\bbonds payable\b', '\bdebt\b']
+    exclude: ['\blease']
+    combine: sum

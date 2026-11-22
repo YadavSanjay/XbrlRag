@@ -1,0 +1,221 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-09",
+  "criteria": {
+    "C1": [
+      "test/spec/witness-rules-r2/test_c1_oracle.py::test_locked_oracle_follows_r1",
+      "test/spec/witness-rules-r2/test_c1_oracle.py::test_locked_oracle_spot_elements",
+      "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 2\\nfamilies:\\n  X: {elements: [Assets], statements: [BS], parenthetical: false, period: instant, unit: USD}\\n]",
+      "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 1\\nfamilies:\\n  X: {elements: [Assets], statements: [BS], parenthetical: false, period: instant, unit: USD, colour: red}\\n]",
+      "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 1\\nfamilies:\\n  X: {statements: [BS], parenthetical: false, period: instant, unit: USD}\\n]",
+      "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 1\\nfamilies:\\n  X: {elements: [], statements: [BS], parenthetical: false, period: instant, unit: USD}\\n]",
+      "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 1\\nfamilies:\\n  X: {elements: [us-gaap:Assets], statements: [BS], parenthetical: false, period: instant, unit: USD}\\n]",
+      "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 1\\nfamilies:\\n  X: {elements: [Assets], statements: [XX], parenthetical: false, period: instant, unit: USD}\\n]",
+      "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 1\\nfamilies:\\n  X: {elements: [Assets], statements: [BS], parenthetical: false, period: annual, unit: USD}\\n]",
+      "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 1\\nfamilies:\\n  X: {elements: [Assets], statements: [BS], parenthetical: maybe, period: instant, unit: USD}\\n]",
+      "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 1\\nfamilies:\\n  X: {elements: [Assets], statements: [BS], parenthetical: false, unit: USD}\\n]",
+      "test/spec/witness-rules-r2/test_c1_oracle.py::test_oracle_is_independent_of_layout"
+    ],
+    "C2": [
+      "test/spec/witness-rules-r2/test_c2_score_filing.py::test_synthetic_outcomes_r1[S1]",
+      "test/spec/witness-rules-r2/test_c2_score_filing.py::test_synthetic_outcomes_r1[S2]",
+      "test/spec/witness-rules-r2/test_c2_score_filing.py::test_synthetic_outcomes_r1[S3]",
+      "test/spec/witness-rules-r2/test_c2_score_filing.py::test_synthetic_outcomes_r1[S4]",
+      "test/spec/witness-rules-r2/test_c2_score_filing.py::test_synthetic_outcomes_r2[S1]",
+      "test/spec/witness-rules-r2/test_c2_score_filing.py::test_synthetic_outcomes_r2[S2]",
+      "test/spec/witness-rules-r2/test_c2_score_filing.py::test_synthetic_outcomes_r2[S3]",
+      "test/spec/witness-rules-r2/test_c2_score_filing.py::test_synthetic_outcomes_r2[S4]",
+      "test/spec/witness-rules-r2/test_c2_score_filing.py::test_custom_cash_flow_and_prior_period_lines_are_not_oracle_lines",
+      "test/spec/witness-rules-r2/test_c2_score_filing.py::test_evaluable_set_does_not_depend_on_the_rules"
+    ],
+    "C3": [
+      "test/spec/witness-rules-r2/test_c3_aggregate.py::test_synthetic_r1_aggregate",
+      "test/spec/witness-rules-r2/test_c3_aggregate.py::test_empty_denominators_give_none",
+      "test/spec/witness-rules-r2/test_c3_aggregate.py::test_unknown_outcome_is_refused",
+      "test/spec/witness-rules-r2/test_c3_aggregate.py::test_aggregate_is_a_count"
+    ],
+    "C4": [
+      "test/spec/witness-rules-r2/test_c4_acceptance.py::test_global_marks_at_their_boundaries[r2_big0-expected0]",
+      "test/spec/witness-rules-r2/test_c4_acceptance.py::test_global_marks_at_their_boundaries[r2_big1-expected1]",
+      "test/spec/witness-rules-r2/test_c4_acceptance.py::test_global_marks_at_their_boundaries[r2_big2-expected2]",
+      "test/spec/witness-rules-r2/test_c4_acceptance.py::test_global_marks_at_their_boundaries[r2_big3-expected3]",
+      "test/spec/witness-rules-r2/test_c4_acceptance.py::test_global_marks_at_their_boundaries[r2_big4-expected4]",
+      "test/spec/witness-rules-r2/test_c4_acceptance.py::test_global_marks_at_their_boundaries[r2_big5-expected5]",
+      "test/spec/witness-rules-r2/test_c4_acceptance.py::test_global_marks_at_their_boundaries[r2_big6-expected6]",
+      "test/spec/witness-rules-r2/test_c4_acceptance.py::test_family_regression_rule[small0-0]",
+      "test/spec/witness-rules-r2/test_c4_acceptance.py::test_family_regression_rule[small1-1]",
+      "test/spec/witness-rules-r2/test_c4_acceptance.py::test_family_regression_rule[small2-0]",
+      "test/spec/witness-rules-r2/test_c4_acceptance.py::test_family_regression_rule[small3-0]",
+      "test/spec/witness-rules-r2/test_c4_acceptance.py::test_family_regression_rule[small4-1]",
+      "test/spec/witness-rules-r2/test_c4_acceptance.py::test_family_regression_rule[small5-2]",
+      "test/spec/witness-rules-r2/test_c4_acceptance.py::test_verdict_names_no_family",
+      "test/spec/witness-rules-r2/test_c4_acceptance.py::test_mismatched_scores_are_refused",
+      "test/spec/witness-rules-r2/test_c4_acceptance.py::test_acceptance_matches_the_table_and_is_monotone"
+    ],
+    "C5": [
+      "test/spec/witness-rules-r2/test_c5_live_rules.py::test_live_rules_are_r2_and_clean",
+      "test/spec/witness-rules-r2/test_c5_live_rules.py::test_identifiers_are_flagged['net sales'-'net sales', '0000320193']",
+      "test/spec/witness-rules-r2/test_c5_live_rules.py::test_identifiers_are_flagged['net sales'-'net sales', '0000320193-25-000079']",
+      "test/spec/witness-rules-r2/test_c5_live_rules.py::test_identifiers_are_flagged['net sales'-'net sales 2023']",
+      "test/spec/witness-rules-r2/test_c5_live_rules.py::test_identifiers_are_flagged['cost of'-'cost of', '14813']",
+      "test/spec/witness-rules-r2/test_c5_live_rules.py::test_identifiers_are_flagged[srt:Foo-ext:Foo]",
+      "test/spec/witness-rules-r2/test_c5_live_rules.py::test_identifiers_are_flagged[srt:Foo-abc:Foo]",
+      "test/spec/witness-rules-r2/test_c5_live_rules.py::test_clean_rules_have_no_violation",
+      "test/spec/witness-rules-r2/test_c5_live_rules.py::test_digit_runs_flag_from_four"
+    ],
+    "C6": [
+      "test/spec/witness-rules-r2/test_c6_judge_record.py::test_synthetic_record",
+      "test/spec/witness-rules-r2/test_c6_judge_record.py::test_hash_map_is_checked[wrong_hash]",
+      "test/spec/witness-rules-r2/test_c6_judge_record.py::test_hash_map_is_checked[missing_key]",
+      "test/spec/witness-rules-r2/test_c6_judge_record.py::test_hash_map_is_checked[extra_key]",
+      "test/spec/witness-rules-r2/test_c6_judge_record.py::test_missing_table_file",
+      "test/spec/witness-rules-r2/test_c6_judge_record.py::test_same_rules_give_equal_scores"
+    ],
+    "C7": [
+      "test/spec/witness-rules-r2/test_c7_record.py::test_record_pins_the_draw_oracle_and_rules",
+      "test/spec/witness-rules-r2/test_c7_record.py::test_record_reproduces_the_preregistered_baseline",
+      "test/spec/witness-rules-r2/test_c7_record.py::test_record_accepts_r2",
+      "test/spec/witness-rules-r2/test_c7_record.py::test_record_scores_are_their_own_aggregates"
+    ]
+  },
+  "files": {
+    "test/spec/witness-rules-r2/conftest.py": "b20eb550d601dfb0b2417b6dc2fc9f1ec652b3dc4b1acd2a1c2a529601c60070",
+    "test/spec/witness-rules-r2/fixtures/.gitattributes": "2dba1ca9faf6bf7d9993685e02f7976ea36249c3cf24e0c1a1420e118fb99ae1",
+    "test/spec/witness-rules-r2/fixtures/oracle.yaml": "c7acf80693054531b3b2957e311aca633268d9c46fb935cf1801fca02ad80f43",
+    "test/spec/witness-rules-r2/fixtures/synthetic/num.tsv": "f99dda77bda9b28b8b87f4577185442b5b38a01a80d29a3c030d3cc5d6f5948f",
+    "test/spec/witness-rules-r2/fixtures/synthetic/oracle_synthetic.yaml": "e54225e97c4773234988d1106affde412e77679cbb03f53314fdc0af29bd3985",
+    "test/spec/witness-rules-r2/fixtures/synthetic/pre.tsv": "25edac95bcc5e163ab88039b15580418af94ba959a4d6ccf6016159953447545",
+    "test/spec/witness-rules-r2/fixtures/synthetic/rules_r1.yaml": "b68440966e9881410a69b5c4e1343a7e432917ccf980bdc1cfa8848ba5bb9f39",
+    "test/spec/witness-rules-r2/fixtures/synthetic/rules_r2.yaml": "c7857d4f633b1c409b46ea304232917aec7e4f838b4dbe1792f8c3248b932979",
+    "test/spec/witness-rules-r2/fixtures/synthetic/sub.tsv": "d0c526b533ae2d5e2821f2f37c2c5c79f5d0b10b3242f4dd4a0e161603ef2906",
+    "test/spec/witness-rules-r2/fixtures/synthetic/tag.tsv": "09f1b69469a5c96b4bbc48be4ed1f5017d378ef196fc5aa85e7dc39dbad3ea6c",
+    "test/spec/witness-rules-r2/test_c1_oracle.py": "6a9b0d276723e92a968963e6aade0edf447e18bcc6a2dbe475f666aeb2703fb9",
+    "test/spec/witness-rules-r2/test_c2_score_filing.py": "a580d328ad6d4a4ddf790682d97f55439480879fe2f999c23c769947295f5d08",
+    "test/spec/witness-rules-r2/test_c3_aggregate.py": "bd704d4702262407a7de4840ae63ecd6d410a18ec77375a4ad1efecc2dc3f5e1",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py": "5e0588c7e70e46cc0cf9989b6a992bf511e508f1f0edc4d3a76d8cde08131d0a",
+    "test/spec/witness-rules-r2/test_c5_live_rules.py": "a1af869dfaa86ebe7607f2413d29c0b912850810f096cdff2115edfcbfd1604b",
+    "test/spec/witness-rules-r2/test_c6_judge_record.py": "ea5de6a733094fb389d82c067955d41220b48c6cd22c3caea4c4e52a794fa666",
+    "test/spec/witness-rules-r2/test_c7_record.py": "535792fa21f281c365a3f2c5b387c5b651ee65ea36d5787de0442079de0b8c87"
+  },
+  "id": "witness-rules-r2",
+  "interface": [
+    {
+      "file": "src/eval/keys/witness_measure.py",
+      "module": "eval.keys.witness_measure",
+      "qualname": "load_oracle",
+      "signature": "def load_oracle(path: str | os.PathLike[str]) -> dict[str, OracleFamily]"
+    },
+    {
+      "file": "src/eval/keys/witness_measure.py",
+      "module": "eval.keys.witness_measure",
+      "qualname": "score_filing",
+      "signature": "def score_filing(tables: FsdsTables, rules: Mapping[str, StatementRule], oracle: Mapping[str, OracleFamily], adsh: str) -> dict[str, str]"
+    },
+    {
+      "file": "src/eval/keys/witness_measure.py",
+      "module": "eval.keys.witness_measure",
+      "qualname": "aggregate",
+      "signature": "def aggregate(outcomes: Iterable[tuple[str, str]]) -> Score"
+    },
+    {
+      "file": "src/eval/keys/witness_measure.py",
+      "module": "eval.keys.witness_measure",
+      "qualname": "acceptance",
+      "signature": "def acceptance(r1: Score, r2: Score) -> Verdict"
+    },
+    {
+      "file": "src/eval/keys/witness_measure.py",
+      "module": "eval.keys.witness_measure",
+      "qualname": "rule_identifier_violations",
+      "signature": "def rule_identifier_violations(path: str | os.PathLike[str]) -> list[str]"
+    },
+    {
+      "file": "src/eval/keys/witness_measure.py",
+      "module": "eval.keys.witness_measure",
+      "qualname": "judge_record",
+      "signature": "def judge_record(sample_dir: str | os.PathLike[str], rules_path: str | os.PathLike[str], r1_rules_path: str | os.PathLike[str], oracle_path: str | os.PathLike[str], draw_sha256: Mapping[str, str]) -> dict[str, Any]"
+    }
+  ],
+  "nodes": [
+    "test/spec/witness-rules-r2/test_c1_oracle.py::test_locked_oracle_follows_r1",
+    "test/spec/witness-rules-r2/test_c1_oracle.py::test_locked_oracle_spot_elements",
+    "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 1\\nfamilies:\\n  X: {elements: [Assets], statements: [BS], parenthetical: false, period: annual, unit: USD}\\n]",
+    "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 1\\nfamilies:\\n  X: {elements: [Assets], statements: [BS], parenthetical: false, period: instant, unit: USD, colour: red}\\n]",
+    "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 1\\nfamilies:\\n  X: {elements: [Assets], statements: [BS], parenthetical: false, unit: USD}\\n]",
+    "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 1\\nfamilies:\\n  X: {elements: [Assets], statements: [BS], parenthetical: maybe, period: instant, unit: USD}\\n]",
+    "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 1\\nfamilies:\\n  X: {elements: [Assets], statements: [XX], parenthetical: false, period: instant, unit: USD}\\n]",
+    "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 1\\nfamilies:\\n  X: {elements: [], statements: [BS], parenthetical: false, period: instant, unit: USD}\\n]",
+    "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 1\\nfamilies:\\n  X: {elements: [us-gaap:Assets], statements: [BS], parenthetical: false, period: instant, unit: USD}\\n]",
+    "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 1\\nfamilies:\\n  X: {statements: [BS], parenthetical: false, period: instant, unit: USD}\\n]",
+    "test/spec/witness-rules-r2/test_c1_oracle.py::test_malformed_oracle_is_refused[version: 2\\nfamilies:\\n  X: {elements: [Assets], statements: [BS], parenthetical: false, period: instant, unit: USD}\\n]",
+    "test/spec/witness-rules-r2/test_c1_oracle.py::test_oracle_is_independent_of_layout",
+    "test/spec/witness-rules-r2/test_c2_score_filing.py::test_custom_cash_flow_and_prior_period_lines_are_not_oracle_lines",
+    "test/spec/witness-rules-r2/test_c2_score_filing.py::test_evaluable_set_does_not_depend_on_the_rules",
+    "test/spec/witness-rules-r2/test_c2_score_filing.py::test_synthetic_outcomes_r1[S1]",
+    "test/spec/witness-rules-r2/test_c2_score_filing.py::test_synthetic_outcomes_r1[S2]",
+    "test/spec/witness-rules-r2/test_c2_score_filing.py::test_synthetic_outcomes_r1[S3]",
+    "test/spec/witness-rules-r2/test_c2_score_filing.py::test_synthetic_outcomes_r1[S4]",
+    "test/spec/witness-rules-r2/test_c2_score_filing.py::test_synthetic_outcomes_r2[S1]",
+    "test/spec/witness-rules-r2/test_c2_score_filing.py::test_synthetic_outcomes_r2[S2]",
+    "test/spec/witness-rules-r2/test_c2_score_filing.py::test_synthetic_outcomes_r2[S3]",
+    "test/spec/witness-rules-r2/test_c2_score_filing.py::test_synthetic_outcomes_r2[S4]",
+    "test/spec/witness-rules-r2/test_c3_aggregate.py::test_aggregate_is_a_count",
+    "test/spec/witness-rules-r2/test_c3_aggregate.py::test_empty_denominators_give_none",
+    "test/spec/witness-rules-r2/test_c3_aggregate.py::test_synthetic_r1_aggregate",
+    "test/spec/witness-rules-r2/test_c3_aggregate.py::test_unknown_outcome_is_refused",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py::test_acceptance_matches_the_table_and_is_monotone",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py::test_family_regression_rule[small0-0]",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py::test_family_regression_rule[small1-1]",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py::test_family_regression_rule[small2-0]",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py::test_family_regression_rule[small3-0]",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py::test_family_regression_rule[small4-1]",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py::test_family_regression_rule[small5-2]",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py::test_global_marks_at_their_boundaries[r2_big0-expected0]",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py::test_global_marks_at_their_boundaries[r2_big1-expected1]",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py::test_global_marks_at_their_boundaries[r2_big2-expected2]",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py::test_global_marks_at_their_boundaries[r2_big3-expected3]",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py::test_global_marks_at_their_boundaries[r2_big4-expected4]",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py::test_global_marks_at_their_boundaries[r2_big5-expected5]",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py::test_global_marks_at_their_boundaries[r2_big6-expected6]",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py::test_mismatched_scores_are_refused",
+    "test/spec/witness-rules-r2/test_c4_acceptance.py::test_verdict_names_no_family",
+    "test/spec/witness-rules-r2/test_c5_live_rules.py::test_clean_rules_have_no_violation",
+    "test/spec/witness-rules-r2/test_c5_live_rules.py::test_digit_runs_flag_from_four",
+    "test/spec/witness-rules-r2/test_c5_live_rules.py::test_identifiers_are_flagged['cost of'-'cost of', '14813']",
+    "test/spec/witness-rules-r2/test_c5_live_rules.py::test_identifiers_are_flagged['net sales'-'net sales 2023']",
+    "test/spec/witness-rules-r2/test_c5_live_rules.py::test_identifiers_are_flagged['net sales'-'net sales', '0000320193']",
+    "test/spec/witness-rules-r2/test_c5_live_rules.py::test_identifiers_are_flagged['net sales'-'net sales', '0000320193-25-000079']",
+    "test/spec/witness-rules-r2/test_c5_live_rules.py::test_identifiers_are_flagged[srt:Foo-abc:Foo]",
+    "test/spec/witness-rules-r2/test_c5_live_rules.py::test_identifiers_are_flagged[srt:Foo-ext:Foo]",
+    "test/spec/witness-rules-r2/test_c5_live_rules.py::test_live_rules_are_r2_and_clean",
+    "test/spec/witness-rules-r2/test_c6_judge_record.py::test_hash_map_is_checked[extra_key]",
+    "test/spec/witness-rules-r2/test_c6_judge_record.py::test_hash_map_is_checked[missing_key]",
+    "test/spec/witness-rules-r2/test_c6_judge_record.py::test_hash_map_is_checked[wrong_hash]",
+    "test/spec/witness-rules-r2/test_c6_judge_record.py::test_missing_table_file",
+    "test/spec/witness-rules-r2/test_c6_judge_record.py::test_same_rules_give_equal_scores",
+    "test/spec/witness-rules-r2/test_c6_judge_record.py::test_synthetic_record",
+    "test/spec/witness-rules-r2/test_c7_record.py::test_record_accepts_r2",
+    "test/spec/witness-rules-r2/test_c7_record.py::test_record_pins_the_draw_oracle_and_rules",
+    "test/spec/witness-rules-r2/test_c7_record.py::test_record_reproduces_the_preregistered_baseline",
+    "test/spec/witness-rules-r2/test_c7_record.py::test_record_scores_are_their_own_aggregates"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/witness-rules-r2.md",
+    "sha256": "5a83f59f471e09ec035bf4290af0e42747651312c6263a33af50b16218babf2d"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

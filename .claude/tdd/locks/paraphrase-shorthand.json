@@ -1,0 +1,110 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/paraphrase-shorthand/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-02",
+  "criteria": {
+    "C1": [
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_a_valid_file_loads_to_the_documented_structure",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_absent_keys_give_empty_values",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[not-a-mapping]",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[unknown-key]",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[unknown-metric]",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[unknown-universe]",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[unknown-ticker]",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[ratio-one-metric]",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[ratio-unknown-metric]",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[value-not-a-list]",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[form-not-a-str]",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[form-normalises-empty]",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[drift-phrase]",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[other-universe-phrase]",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_any_metric_outside_the_lexicon_raises"
+    ],
+    "C2": [
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_shorthand_passes_after_and_not_before[current-ratio]",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_shorthand_passes_after_and_not_before[operating-margin]",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_shorthand_passes_after_and_not_before[semis]",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_shorthand_passes_after_and_not_before[company-alias]",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_a_ratio_form_needs_its_own_pair",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_another_universes_shorthand_drifts",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_forms_are_appended_in_order_without_duplicates",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_extending_never_adds_a_reason"
+    ],
+    "C3": [
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_a_dropped_apostrophe_passes_unless_exempt",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_a_multi_word_name_gets_its_variant",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_any_non_exempt_form_gets_its_variant"
+    ],
+    "C4": [
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_an_abbreviated_month_names_the_period_end",
+      "test/spec/paraphrase-shorthand/test_ps_forms.py::test_abbreviation_passes_iff_the_full_month_does"
+    ]
+  },
+  "files": {
+    "test/spec/paraphrase-shorthand/test_ps_forms.py": "8b88992479d82774ff010361dd95f537161ec51ae179d777bbec1e5422bb826e"
+  },
+  "id": "paraphrase-shorthand",
+  "interface": [
+    {
+      "file": "src/eval/suites/paraphrase_forms.py",
+      "module": "eval.suites.paraphrase_forms",
+      "qualname": "load_paraphrase_forms",
+      "signature": "def load_paraphrase_forms(path: str | Path, lexicon: Lexicon) -> dict[str, Any]"
+    },
+    {
+      "file": "src/eval/suites/paraphrase_forms.py",
+      "module": "eval.suites.paraphrase_forms",
+      "qualname": "extend_source",
+      "signature": "def extend_source(source: ParaphraseSource, intent: Intent, forms: Mapping[str, Any]) -> ParaphraseSource"
+    }
+  ],
+  "nodes": [
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_a_dropped_apostrophe_passes_unless_exempt",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_a_multi_word_name_gets_its_variant",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_a_ratio_form_needs_its_own_pair",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_a_valid_file_loads_to_the_documented_structure",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_abbreviation_passes_iff_the_full_month_does",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_absent_keys_give_empty_values",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_an_abbreviated_month_names_the_period_end",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_another_universes_shorthand_drifts",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_any_metric_outside_the_lexicon_raises",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_any_non_exempt_form_gets_its_variant",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[drift-phrase]",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[form-normalises-empty]",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[form-not-a-str]",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[not-a-mapping]",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[other-universe-phrase]",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[ratio-one-metric]",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[ratio-unknown-metric]",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[unknown-key]",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[unknown-metric]",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[unknown-ticker]",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[unknown-universe]",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_each_rule_raises[value-not-a-list]",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_extending_never_adds_a_reason",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_forms_are_appended_in_order_without_duplicates",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_shorthand_passes_after_and_not_before[company-alias]",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_shorthand_passes_after_and_not_before[current-ratio]",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_shorthand_passes_after_and_not_before[operating-margin]",
+    "test/spec/paraphrase-shorthand/test_ps_forms.py::test_shorthand_passes_after_and_not_before[semis]"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/paraphrase-shorthand.md",
+    "sha256": "7d41dc739748cba32777afbdc47a90301b10d4fc43ed9255dc8077a3fc841e54"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

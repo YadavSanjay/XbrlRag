@@ -1,0 +1,19 @@
+# Retrieval and load settings of the HTML 10-K flow (docs/specs/html-rag-arm.md, requirement 1).
+# Read by src/retriever/html10k/config.py: every key is required and an unknown key raises.
+# Provisional: these come from one in-loop review on template numeric questions. Every html_rag
+# answer records them in selection["retrieval_config"].
+
+rrf_k: 2                          # RRF constant
+dense_weight: 2.0                 # RRF weight of the dense search
+sparse_weight: 1.0                # RRF weight of the sparse search
+prefetch_limit: 100               # candidates per vector before fusion
+rerank_candidates: 50             # fused candidates sent to the reranker (html-rag-candidates)
+context_top_k: 20                 # reranked chunks kept, per search
+reranker_model: jinaai/jina-reranker-v3   # sent to RagInference; part of the cache key
+expand_neighbors: true            # bring in neighbours and sibling table parts
+expansion_score_threshold: 0.5    # on jina's score scale; revisit if the reranker changes
+expansion_max_chunks: 20          # most chunks expansion may add, per retrieval
+max_filer_searches: 10            # with more filers, one search covers them all
+table_max_chars: 1200             # passed to chunk_filing; a change means a new load
+embed_batch_size: 32              # texts per embedding request in the load
+rerank_cache_path: ${XBRLRAG_HTML10K_RERANK_CACHE:-data/cache/html10k_rerank.sqlite3}

@@ -1,0 +1,128 @@
+{
+ "note": "Verbatim companyfacts us-gaap revenue entries of each accession whose end is the latest end it reports (the statement periods SEC lists for the filing).",
+ "periods": {
+  "0000320193-23-000106": {
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "source": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+    "sha256": "73a86c6aedc31f77cac2ea4df5f80f0b3bd7e6eb58bb4e01444fbedf3afb9c43",
+    "retrieved": "2026-11-07"
+   },
+   "entries": [
+    {
+     "start": "2022-09-25",
+     "end": "2023-09-30",
+     "val": 383285000000,
+     "accn": "0000320193-23-000106",
+     "fy": 2023,
+     "fp": "FY",
+     "form": "10-K",
+     "filed": "2023-11-03"
+    }
+   ]
+  },
+  "0000050863-23-000006": {
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "source": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000050863.json",
+    "sha256": "9c568557a91cfbc234c999183d6434f8bbf7b8ebf2f29577f28d761a9becb59d",
+    "retrieved": "2026-11-07"
+   },
+   "entries": [
+    {
+     "start": "2021-12-26",
+     "end": "2022-12-31",
+     "val": 63054000000,
+     "accn": "0000050863-23-000006",
+     "fy": 2022,
+     "fp": "FY",
+     "form": "10-K",
+     "filed": "2023-01-27"
+    }
+   ]
+  },
+  "0001018724-26-000026": {
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "source": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
+    "sha256": "7549fb68446eee40e1f50a166fa06b2d2ee6349e07c8553a4828757e032d3cd4",
+    "retrieved": "2026-11-07"
+   },
+   "entries": [
+    {
+     "start": "2026-01-01",
+     "end": "2026-06-30",
+     "val": 382125000000,
+     "accn": "0001018724-26-000026",
+     "fy": 2026,
+     "fp": "Q2",
+     "form": "10-Q",
+     "filed": "2026-07-31"
+    },
+    {
+     "start": "2026-04-01",
+     "end": "2026-06-30",
+     "val": 200606000000,
+     "accn": "0001018724-26-000026",
+     "fy": 2026,
+     "fp": "Q2",
+     "form": "10-Q",
+     "filed": "2026-07-31",
+     "frame": "CY2026Q2"
+    }
+   ]
+  },
+  "0001193125-26-389274": {
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "source": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001341439.json",
+    "sha256": "65523545f040abaea1dfcf321da2a5aec85e7f34387244b0ffcb26e4c8707f7d",
+    "retrieved": "2026-11-07"
+   },
+   "entries": [
+    {
+     "start": "2026-06-01",
+     "end": "2026-08-31",
+     "val": 19345000000,
+     "accn": "0001193125-26-389274",
+     "fy": 2026,
+     "fp": "Q1",
+     "form": "10-Q",
+     "filed": "2026-09-11",
+     "frame": "CY2026Q3"
+    }
+   ]
+  },
+  "0001193125-26-101045": {
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "source": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001341439.json",
+    "sha256": "65523545f040abaea1dfcf321da2a5aec85e7f34387244b0ffcb26e4c8707f7d",
+    "retrieved": "2026-11-07"
+   },
+   "entries": [
+    {
+     "start": "2025-06-01",
+     "end": "2026-02-28",
+     "val": 48173000000,
+     "accn": "0001193125-26-101045",
+     "fy": 2026,
+     "fp": "Q3",
+     "form": "10-Q",
+     "filed": "2026-03-11"
+    },
+    {
+     "start": "2025-12-01",
+     "end": "2026-02-28",
+     "val": 17190000000,
+     "accn": "0001193125-26-101045",
+     "fy": 2026,
+     "fp": "Q3",
+     "form": "10-Q",
+     "filed": "2026-03-11",
+     "frame": "CY2026Q1"
+    }
+   ]
+  }
+ }
+}

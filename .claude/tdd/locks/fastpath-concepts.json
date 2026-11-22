@@ -1,0 +1,63 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/fastpath-concepts/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-13",
+  "criteria": {
+    "C1": [
+      "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_current_assets_and_liabilities_have_their_own_families",
+      "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_total_prefix_does_not_change_the_current_family"
+    ],
+    "C2": [
+      "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_ratio_margin_and_derived_phrases_do_not_fast_path",
+      "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_derived_phrases_do_not_fast_path_in_any_formatting"
+    ],
+    "C3": [
+      "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_direct_names_keep_their_family_while_siblings_do_not",
+      "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_contrast_pairs_hold_under_reformatting"
+    ],
+    "C4": [
+      "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_ratio_forming_qualifiers_point_cases",
+      "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_any_ratio_qualifier_on_a_base_metric_yields_none"
+    ],
+    "C5": [
+      "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_formatting_point_cases",
+      "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_every_specified_phrase_is_formatting_invariant"
+    ]
+  },
+  "files": {
+    "test/spec/fastpath-concepts/test_fastpath_concepts.py": "6c6ba93d1ec48281ebc13bd6b89910cd28c0c300e0674158da9eac94be9f7e8a"
+  },
+  "id": "fastpath-concepts",
+  "interface": [],
+  "nodes": [
+    "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_any_ratio_qualifier_on_a_base_metric_yields_none",
+    "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_contrast_pairs_hold_under_reformatting",
+    "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_current_assets_and_liabilities_have_their_own_families",
+    "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_derived_phrases_do_not_fast_path_in_any_formatting",
+    "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_direct_names_keep_their_family_while_siblings_do_not",
+    "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_every_specified_phrase_is_formatting_invariant",
+    "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_formatting_point_cases",
+    "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_ratio_forming_qualifiers_point_cases",
+    "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_ratio_margin_and_derived_phrases_do_not_fast_path",
+    "test/spec/fastpath-concepts/test_fastpath_concepts.py::test_total_prefix_does_not_change_the_current_family"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/fastpath-concepts.md",
+    "sha256": "d42221343bbda8030312d856d978f3aedec1f232a941678f50ba1d0fcc118353"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

@@ -1,0 +1,6 @@
+# SHA-256 of each file as stored in git (LF line endings), pre-registration v0.
+# Verify:  git show <commit>:<path> | sha256sum
+0a2c41376d15fb63e7e89e9f71b062ef88a483f7d4d3f6952613c02073d8df10  docs/eval/blog_v1/preregistration_v0.md
+ac81433dcfb02860b515dd8d1fbab689fa776a6f7810b6deb8e25f624cc65bb6  docs/eval/blog_v1/prospective_spec.yaml
+c07e316665f2aa4e63b0d73e278edae48b7b5cf78dcb4474a24e7ad062475639  docs/eval/blog_v1/edgar_check.py
+308bda7b1a56825d7bc87bd8c7019e080e520aa1e420a1f0fca8bbafab4bdc96  docs/eval/blog_v1/edgar_check_2026-10-21.txt

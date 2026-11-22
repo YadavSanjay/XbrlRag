@@ -1,0 +1,16 @@
+apiVersion: v2
+name: xbrlrag
+description: >-
+  XbrlRag — XBRL RAG serving stack (WS-6/B7). Packages the BFF (api) + MCP server +
+  React UI from the slim serving image. Postgres (xbrl_db) and Qdrant are treated
+  as external managed services (configure their hosts in values.yaml); the shared
+  RagInference service is reached via RAGINFER_URL.
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+keywords:
+  - rag
+  - xbrl
+  - sec
+maintainers:
+  - name: XbrlRag

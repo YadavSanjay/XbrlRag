@@ -1,0 +1,99 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-11",
+  "criteria": {
+    "C1": [
+      "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[Q3]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[H1]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[1st quarter]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[third quarter]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[first 9 months]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[the 10-K]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[top 3 filers]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[Q3 results]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c1_only_written_years_inside_the_bounds",
+      "test/spec/no-default-year/test_no_default_year.py::test_c1_any_yearless_digit_mention_reads_as_no_year",
+      "test/spec/no-default-year/test_no_default_year.py::test_c1_adding_a_year_yields_exactly_that_year"
+    ],
+    "C2": [
+      "test/spec/no-default-year/test_no_default_year.py::test_c2_the_extractor_flags_a_mention_that_writes_no_year[Q3]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c2_the_extractor_flags_a_mention_that_writes_no_year[H1]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c2_the_extractor_flags_a_mention_that_writes_no_year[1st quarter]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c2_the_extractor_flags_a_mention_that_writes_no_year[first 9 months]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c2_the_extractor_flags_a_mention_that_writes_no_year[Q3 results]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c2_the_extractor_flags_a_mention_that_writes_no_year[fiscal 2015]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c2_a_written_year_still_resolves",
+      "test/spec/no-default-year/test_no_default_year.py::test_c2_any_yearless_digit_mention_is_flagged_for_any_anchor",
+      "test/spec/no-default-year/test_no_default_year.py::test_c2_the_year_comes_from_the_text_never_the_anchor"
+    ],
+    "C3": [
+      "test/spec/no-default-year/test_no_default_year.py::test_c3_a_yearless_q3_next_to_a_resolved_year_degrades",
+      "test/spec/no-default-year/test_no_default_year.py::test_c3_any_yearless_digit_mention_degrades_next_to_any_year"
+    ],
+    "C4": [
+      "test/spec/no-default-year/test_no_default_year.py::test_c4_re_reading_a_yearless_mention_adds_no_year[most recent]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c4_re_reading_a_yearless_mention_adds_no_year[latest fiscal year]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c4_re_reading_a_yearless_mention_adds_no_year[Q3 of the last fiscal year]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c4_re_reading_a_yearless_mention_adds_no_year[Q3]",
+      "test/spec/no-default-year/test_no_default_year.py::test_c4_any_mention_that_writes_no_year_keeps_only_the_period_year",
+      "test/spec/no-default-year/test_no_default_year.py::test_c4_only_a_written_range_adds_years"
+    ]
+  },
+  "files": {
+    "test/spec/no-default-year/conftest.py": "3955a8dd7b12e014e3ae5e524de90194a28e13b761035af45f78c5855c3f8a82",
+    "test/spec/no-default-year/test_no_default_year.py": "fbd9d13fecdbc496af704fddca954af72d55c102ff93723b0d6be000c2ff0dbb"
+  },
+  "id": "no-default-year",
+  "interface": [],
+  "nodes": [
+    "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[1st quarter]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[H1]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[Q3 results]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[Q3]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[first 9 months]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[the 10-K]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[third quarter]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c1_a_text_with_no_year_reads_as_no_year[top 3 filers]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c1_adding_a_year_yields_exactly_that_year",
+    "test/spec/no-default-year/test_no_default_year.py::test_c1_any_yearless_digit_mention_reads_as_no_year",
+    "test/spec/no-default-year/test_no_default_year.py::test_c1_only_written_years_inside_the_bounds",
+    "test/spec/no-default-year/test_no_default_year.py::test_c2_a_written_year_still_resolves",
+    "test/spec/no-default-year/test_no_default_year.py::test_c2_any_yearless_digit_mention_is_flagged_for_any_anchor",
+    "test/spec/no-default-year/test_no_default_year.py::test_c2_the_extractor_flags_a_mention_that_writes_no_year[1st quarter]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c2_the_extractor_flags_a_mention_that_writes_no_year[H1]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c2_the_extractor_flags_a_mention_that_writes_no_year[Q3 results]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c2_the_extractor_flags_a_mention_that_writes_no_year[Q3]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c2_the_extractor_flags_a_mention_that_writes_no_year[first 9 months]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c2_the_extractor_flags_a_mention_that_writes_no_year[fiscal 2015]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c2_the_year_comes_from_the_text_never_the_anchor",
+    "test/spec/no-default-year/test_no_default_year.py::test_c3_a_yearless_q3_next_to_a_resolved_year_degrades",
+    "test/spec/no-default-year/test_no_default_year.py::test_c3_any_yearless_digit_mention_degrades_next_to_any_year",
+    "test/spec/no-default-year/test_no_default_year.py::test_c4_any_mention_that_writes_no_year_keeps_only_the_period_year",
+    "test/spec/no-default-year/test_no_default_year.py::test_c4_only_a_written_range_adds_years",
+    "test/spec/no-default-year/test_no_default_year.py::test_c4_re_reading_a_yearless_mention_adds_no_year[Q3 of the last fiscal year]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c4_re_reading_a_yearless_mention_adds_no_year[Q3]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c4_re_reading_a_yearless_mention_adds_no_year[latest fiscal year]",
+    "test/spec/no-default-year/test_no_default_year.py::test_c4_re_reading_a_yearless_mention_adds_no_year[most recent]"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/no-default-year.md",
+    "sha256": "8f70803a0da75a15f17d105c4962af033eb67f4984adeddf7639218ba106369d"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

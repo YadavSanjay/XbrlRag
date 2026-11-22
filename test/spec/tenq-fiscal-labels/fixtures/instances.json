@@ -1,0 +1,60 @@
+{
+ "note": "Excerpts of the XBRL instance (*_htm.xml) EDGAR serves for each filing, each element copied verbatim and in source order: the root element and schemaRef; the DEI cover facts' context; every context without dimensions whose duration ends within 7 days of the report's end date or of the same day a year earlier; the first three dimensional duration contexts ending on the report's end date; the DEI cover facts; and the revenue facts on the kept contexts.",
+ "instances": {
+  "0000320193-23-000106": {
+   "ticker": "AAPL",
+   "file": "instances/0000320193-23-000106_htm.xml",
+   "source_file": "aapl-20230930_htm.xml",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930_htm.xml",
+   "sha256": "4bf6d8d6f39856bd40e8b3b683006deeccb0d3765c1da02c7dcca6196993fc4f",
+   "retrieved": "2026-07-10",
+   "contexts": 6,
+   "dei_facts": 6,
+   "revenue_facts": 6
+  },
+  "0000050863-23-000006": {
+   "ticker": "INTC",
+   "file": "instances/0000050863-23-000006_htm.xml",
+   "source_file": "intc-20221231_htm.xml",
+   "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086323000006/intc-20221231_htm.xml",
+   "sha256": "78bc868569657cb9f92c61e2a6944acb377109ed39d0ba36edd98f644dae6b73",
+   "retrieved": "2026-10-17",
+   "contexts": 6,
+   "dei_facts": 7,
+   "revenue_facts": 6
+  },
+  "0001018724-26-000026": {
+   "ticker": "AMZN",
+   "file": "instances/0001018724-26-000026_htm.xml",
+   "source_file": "amzn-20260630_htm.xml",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630_htm.xml",
+   "sha256": "8b0912f7f9043496e932ccffdcb040be3d5c9b7a2dcb93ccfe5ac7e846331ab6",
+   "retrieved": "2026-10-06",
+   "contexts": 10,
+   "dei_facts": 6,
+   "revenue_facts": 12
+  },
+  "0001193125-26-389274": {
+   "ticker": "ORCL",
+   "file": "instances/0001193125-26-389274_htm.xml",
+   "source_file": "orcl-20260831_htm.xml",
+   "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831_htm.xml",
+   "sha256": "3a8532c59459f4920339ba35a8370d1db5d8c8f023f0072684ef26635bad4d97",
+   "retrieved": "2026-10-06",
+   "contexts": 5,
+   "dei_facts": 6,
+   "revenue_facts": 4
+  },
+  "0001193125-26-101045": {
+   "ticker": "ORCL",
+   "file": "instances/0001193125-26-101045_htm.xml",
+   "source_file": "orcl-20260228_htm.xml",
+   "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526101045/orcl-20260228_htm.xml",
+   "sha256": "346faf4f3c5c4203b517f2e89649e7d3789f8212fce24fd712963720a2c82911",
+   "retrieved": "2026-07-10",
+   "contexts": 7,
+   "dei_facts": 6,
+   "revenue_facts": 8
+  }
+ }
+}

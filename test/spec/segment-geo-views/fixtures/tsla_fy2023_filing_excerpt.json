@@ -1,0 +1,42 @@
+{
+ "ticker": "TSLA",
+ "cik": "0001318605",
+ "accession_no": "0001628280-24-002390",
+ "document_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024002390/tsla-20231231.htm",
+ "local_source": "data/storage/sec_edgar/TSLA/2023/10-K/tsla-20231231.htm",
+ "local_source_sha256": "c0cab01cf2dfe8600386002b678e48375b27ed6a6ab5ddab792a022e6a361df1",
+ "retrieved": "2026-11-07",
+ "note": "ix:nonFraction elements and their xbrli:context elements copied verbatim from the filing; table_row_text is the text of the enclosing <tr> (tags removed). FSDS 2024q1 carries no Revenues rows for this filing, so the filing itself is the oracle.",
+ "facts": [
+  {
+   "id": "f-1642",
+   "element": "<ix:nonFraction unitRef=\"usd\" contextRef=\"c-366\" decimals=\"-6\" name=\"us-gaap:Revenues\" format=\"ixt:num-dot-decimal\" scale=\"6\" id=\"f-1642\">45,235</ix:nonFraction>",
+   "context_ref": "c-366",
+   "table_row_text": "United States | $ | 45,235 | $ | 40,553 | $ | 23,973"
+  },
+  {
+   "id": "f-1645",
+   "element": "<ix:nonFraction unitRef=\"usd\" contextRef=\"c-369\" decimals=\"-6\" name=\"us-gaap:Revenues\" format=\"ixt:num-dot-decimal\" scale=\"6\" id=\"f-1645\">21,745</ix:nonFraction>",
+   "context_ref": "c-369",
+   "table_row_text": "China | 21,745 | 18,145 | 13,844"
+  },
+  {
+   "id": "f-1648",
+   "element": "<ix:nonFraction unitRef=\"usd\" contextRef=\"c-372\" decimals=\"-6\" name=\"us-gaap:Revenues\" format=\"ixt:num-dot-decimal\" scale=\"6\" id=\"f-1648\">29,793</ix:nonFraction>",
+   "context_ref": "c-372",
+   "table_row_text": "Other international | 29,793 | 22,764 | 16,006"
+  },
+  {
+   "id": "f-1651",
+   "element": "<ix:nonFraction unitRef=\"usd\" contextRef=\"c-1\" decimals=\"-6\" name=\"us-gaap:Revenues\" format=\"ixt:num-dot-decimal\" scale=\"6\" id=\"f-1651\">96,773</ix:nonFraction>",
+   "context_ref": "c-1",
+   "table_row_text": "Total | $ | 96,773 | $ | 81,462 | $ | 53,823"
+  }
+ ],
+ "contexts": {
+  "c-366": "<xbrli:context id=\"c-366\"><xbrli:entity><xbrli:identifier scheme=\"http://www.sec.gov/CIK\">0001318605</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension=\"srt:StatementGeographicalAxis\">country:US</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2023-01-01</xbrli:startDate><xbrli:endDate>2023-12-31</xbrli:endDate></xbrli:period></xbrli:context>",
+  "c-369": "<xbrli:context id=\"c-369\"><xbrli:entity><xbrli:identifier scheme=\"http://www.sec.gov/CIK\">0001318605</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension=\"srt:StatementGeographicalAxis\">country:CN</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2023-01-01</xbrli:startDate><xbrli:endDate>2023-12-31</xbrli:endDate></xbrli:period></xbrli:context>",
+  "c-372": "<xbrli:context id=\"c-372\"><xbrli:entity><xbrli:identifier scheme=\"http://www.sec.gov/CIK\">0001318605</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension=\"srt:StatementGeographicalAxis\">tsla:OtherInternationalMember</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2023-01-01</xbrli:startDate><xbrli:endDate>2023-12-31</xbrli:endDate></xbrli:period></xbrli:context>",
+  "c-1": "<xbrli:context id=\"c-1\"><xbrli:entity><xbrli:identifier scheme=\"http://www.sec.gov/CIK\">0001318605</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2023-01-01</xbrli:startDate><xbrli:endDate>2023-12-31</xbrli:endDate></xbrli:period></xbrli:context>"
+ }
+}

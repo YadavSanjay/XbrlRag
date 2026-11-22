@@ -1,0 +1,117 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-07",
+  "criteria": {
+    "C1": [
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_orcl_countries_win_regions_set_aside",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_vst_product_lines_parent_never_with_its_child",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_hierarchy_is_transitive_and_beats_size",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_zero_and_consolidation_members_are_never_chosen",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_partition_rule_for_any_members",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_scaling_and_unrelated_members_change_nothing",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_member_parents_for_any_arcs"
+    ],
+    "C2": [
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_googl_segments_plus_hedging_line",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_googl_geography_plus_hedging_line",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_wmt_segments_plus_other_income",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_not_found_names_the_gap",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_elimination_is_never_a_segment",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_lines_rule_for_any_members",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_resolve_rows_for_any_members",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_resolve_rejects_malformed_steps"
+    ],
+    "C3": [
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_googl_candidates_from_the_segment_table",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_wmt_candidates_from_calculation_and_table",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_consolidation_items_and_weights",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_candidates_for_any_linkbase"
+    ],
+    "C4": [
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_builder_ground_truth_follows_the_rule",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_choose_partition_is_the_plain_case",
+      "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_builder_and_partition_for_any_rows"
+    ]
+  },
+  "files": {
+    "test/spec/breakdown-reconciling-items/conftest.py": "2fd1e59d20f23adf6a209696f5b42a05b98bcc5750dea9dd3281b71e2e0a9fb5",
+    "test/spec/breakdown-reconciling-items/fixtures/abt_fy2023.json": "b684385b964ad087d9319461e8a7a360386b20be3c06e220a4739f5c3b30ff03",
+    "test/spec/breakdown-reconciling-items/fixtures/googl_fy2024.json": "c87a93b4e285009ae21123d0c09e10b938f1add773cc1174553668f804a51071",
+    "test/spec/breakdown-reconciling-items/fixtures/orcl_fy2024.json": "2d26e42b0ac93969c9c248ca8519575f0df42a6ad15533a3f7296aa2f42e44f3",
+    "test/spec/breakdown-reconciling-items/fixtures/ups_fy2023.json": "3e16b5cd0a952fd7d5572b6a5c28d3074c0700e4538cd90d5475ca79a8a987f0",
+    "test/spec/breakdown-reconciling-items/fixtures/vst_fy2024.json": "cab077cab8b3f57351bf45d5a5430c2c191fcb11f04eed7ab628d8b7e0e454c9",
+    "test/spec/breakdown-reconciling-items/fixtures/wmt_fy2023.json": "02254c02f2b1805d270ce1106d171fb1b2aaec4053b833a912c0d856115c30a8",
+    "test/spec/breakdown-reconciling-items/fixtures/wmt_fy2025.json": "2582843c173ecf55a6c8632bc8a2476f71cd146353ac85673f691b8754be58ca",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py": "381811501d3e4482f8998ed34749b4f483d81c137d5fba84759e216b3f7acdd2"
+  },
+  "id": "breakdown-reconciling-items",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_breakdown.py",
+      "module": "retriever.xbrl.xbrl_factstore_breakdown",
+      "qualname": "choose_breakdown",
+      "signature": "def choose_breakdown(members: Sequence[dict], total: float | None, lines: Sequence[dict]=(), rel_tol: float=0.0001) -> dict | None"
+    },
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_breakdown.py",
+      "module": "retriever.xbrl.xbrl_factstore_breakdown",
+      "qualname": "member_parents",
+      "signature": "def member_parents(members: Sequence[str], arcs: Sequence[dict]) -> dict[str, list[str]]"
+    },
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_breakdown.py",
+      "module": "retriever.xbrl.xbrl_factstore_breakdown",
+      "qualname": "reconciling_candidates",
+      "signature": "def reconciling_candidates(total: dict, member_concepts: set[str], axis: str, arcs: Sequence[dict], facts: Sequence[dict]) -> list[dict]"
+    },
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_breakdown.py",
+      "module": "retriever.xbrl.xbrl_factstore_breakdown",
+      "qualname": "XbrlFactstoreBreakdown.resolve",
+      "signature": "def resolve(self, step: dict, facts: dict) -> ScreenResult"
+    }
+  ],
+  "nodes": [
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_builder_and_partition_for_any_rows",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_builder_ground_truth_follows_the_rule",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_candidates_for_any_linkbase",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_choose_partition_is_the_plain_case",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_consolidation_items_and_weights",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_elimination_is_never_a_segment",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_googl_candidates_from_the_segment_table",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_googl_geography_plus_hedging_line",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_googl_segments_plus_hedging_line",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_hierarchy_is_transitive_and_beats_size",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_lines_rule_for_any_members",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_member_parents_for_any_arcs",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_not_found_names_the_gap",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_orcl_countries_win_regions_set_aside",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_partition_rule_for_any_members",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_resolve_rejects_malformed_steps",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_resolve_rows_for_any_members",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_scaling_and_unrelated_members_change_nothing",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_vst_product_lines_parent_never_with_its_child",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_wmt_candidates_from_calculation_and_table",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_wmt_segments_plus_other_income",
+    "test/spec/breakdown-reconciling-items/test_breakdown_reconciling_items.py::test_zero_and_consolidation_members_are_never_chosen"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/breakdown-reconciling-items.md",
+    "sha256": "2828d7e12213084549de722158b75df05a72146d600f294d5f3e3ae7719c9903"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

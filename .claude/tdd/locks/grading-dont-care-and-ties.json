@@ -1,0 +1,159 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-11",
+  "criteria": {
+    "C1": [
+      "test/spec/grading-dont-care-and-ties/test_gdct_c1_dont_care_members.py::test_only_a_reviewed_drop_with_a_value_is_dont_care",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c1_dont_care_members.py::test_zero_counts_and_non_numeric_values_do_not",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c1_dont_care_members.py::test_hx_and_bare_cases_have_none_and_seven_raise",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c1_dont_care_members.py::test_the_members_are_exactly_the_numeric_reviewed_drops"
+    ],
+    "C2": [
+      "test/spec/grading-dont-care-and-ties/test_gdct_c2_dont_care_screens.py::test_either_reading_is_correct",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c2_dont_care_screens.py::test_a_wrong_place_or_value_for_the_member_is_wrong",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c2_dont_care_screens.py::test_a_strict_exclusion_stays_strict",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c2_dont_care_screens.py::test_the_universe_count_may_include_the_member",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c2_dont_care_screens.py::test_bottom_screens_read_both_ways",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c2_dont_care_screens.py::test_any_subset_of_dont_care_members_ranked_in_is_correct"
+    ],
+    "C3": [
+      "test/spec/grading-dont-care-and-ties/test_gdct_c3_dont_care_peer.py::test_a_member_above_allows_one_lower_rank",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c3_dont_care_peer.py::test_a_member_below_changes_nothing",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c3_dont_care_peer.py::test_accepted_ranks_are_the_two_readings"
+    ],
+    "C4": [
+      "test/spec/grading-dont-care-and-ties/test_gdct_c4_dont_care_aggregates.py::test_sum_either_reading",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c4_dont_care_aggregates.py::test_median_needs_inputs_that_reproduce_the_key",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c4_dont_care_aggregates.py::test_every_reading_is_accepted_and_nothing_else"
+    ],
+    "C5": [
+      "test/spec/grading-dont-care-and-ties/test_gdct_c5_declined_aggregate.py::test_a_hedged_median_that_lists_rows_is_refused_not_correct",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c5_declined_aggregate.py::test_a_refused_sum_that_lists_rows_is_refused_not_incorrect",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c5_declined_aggregate.py::test_a_stated_aggregate_is_still_credited",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c5_declined_aggregate.py::test_a_declining_answer_listing_only_rows_is_never_value_correct"
+    ],
+    "C6": [
+      "test/spec/grading-dont-care-and-ties/test_gdct_c6_ties.py::test_either_member_of_a_tie_at_the_cut",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c6_ties.py::test_past_the_cut_needs_aligned_inputs_and_a_real_tie",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c6_ties.py::test_a_tie_for_first_in_either_order",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c6_ties.py::test_a_tied_peer_subject_may_state_either_place",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c6_ties.py::test_any_order_within_ties_is_correct"
+    ],
+    "C7": [
+      "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[the fiscal year ended December 31, 2024-want0]",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[as of Dec. 31, 2024.-want1]",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[on December 31st 2024-want2]",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[ended Sept 30, '24-want3]",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[ended september 28-want4]",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[at 31 December 2024-want5]",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[the 31st of December, 2024-want6]",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[on 12/31/2024 and 3/1/24-want7]",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[June 30 and Jan 2-want8]",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_non_dates_have_no_components",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_the_parser_skips_date_parts",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_graded_values_drops_only_date_only_copies",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_the_mrk_refusal_is_refused",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_inserting_a_date_changes_no_amount",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_graded_values_is_idempotent_and_never_invents"
+    ],
+    "C8": [
+      "test/spec/grading-dont-care-and-ties/test_gdct_c8_grader_version.py::test_grader_version_is_7",
+      "test/spec/grading-dont-care-and-ties/test_gdct_c8_grader_version.py::test_every_scorecard_carries_version_7"
+    ]
+  },
+  "files": {
+    "test/spec/grading-dont-care-and-ties/conftest.py": "766550fdc2c4937b75a27ce58843883b42e408915a1eefb93ebadb85a37623d8",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c1_dont_care_members.py": "950f145077e1f4db1e1043bb194b3b8019a16afd29235ce9db5339ccaf1fac68",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c2_dont_care_screens.py": "e8cc8582aa0a7fabccbe9b032e28c21a326568dcb0e2c96614ec0c9051092eef",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c3_dont_care_peer.py": "afd922b898485e94a97490310bf87498f078e15f2c2e2b2ab3f93ecc802b80c1",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c4_dont_care_aggregates.py": "00053f7b66c7dc42ef9a34eb0948a1f2f8cdec88dd8161e7af26f100313eec69",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c5_declined_aggregate.py": "ec690540c77b5c4d6b2adbef036c7e1a790a89f811cfcae13047b6d865c5192f",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c6_ties.py": "033aecf558160d3bfc1c60ed25f57b0a0ea0ebb2c3a99ba69585d961369003e0",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py": "f6d9e98123a7257a7b96df4af4345dc29e7f5436f162f932981fe70cc82f7487",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c8_grader_version.py": "eed2a3cdd1c57f25af0c23b32bca90e728da1b79c81bc7511b64ce8308114d8b"
+  },
+  "id": "grading-dont-care-and-ties",
+  "interface": [
+    {
+      "file": "src/eval/core/answer_parsing.py",
+      "module": "eval.core.answer_parsing",
+      "qualname": "date_components",
+      "signature": "def date_components(text: str) -> list[float]"
+    },
+    {
+      "file": "src/eval/core/answer_parsing.py",
+      "module": "eval.core.answer_parsing",
+      "qualname": "graded_values",
+      "signature": "def graded_values(text: str, values: typing.Sequence[float]) -> list[float]"
+    },
+    {
+      "file": "src/eval/core/graders/v2.py",
+      "module": "eval.core.graders.v2",
+      "qualname": "dont_care_members",
+      "signature": "def dont_care_members(case: EvalCase) -> dict[str, float]"
+    }
+  ],
+  "nodes": [
+    "test/spec/grading-dont-care-and-ties/test_gdct_c1_dont_care_members.py::test_hx_and_bare_cases_have_none_and_seven_raise",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c1_dont_care_members.py::test_only_a_reviewed_drop_with_a_value_is_dont_care",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c1_dont_care_members.py::test_the_members_are_exactly_the_numeric_reviewed_drops",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c1_dont_care_members.py::test_zero_counts_and_non_numeric_values_do_not",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c2_dont_care_screens.py::test_a_strict_exclusion_stays_strict",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c2_dont_care_screens.py::test_a_wrong_place_or_value_for_the_member_is_wrong",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c2_dont_care_screens.py::test_any_subset_of_dont_care_members_ranked_in_is_correct",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c2_dont_care_screens.py::test_bottom_screens_read_both_ways",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c2_dont_care_screens.py::test_either_reading_is_correct",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c2_dont_care_screens.py::test_the_universe_count_may_include_the_member",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c3_dont_care_peer.py::test_a_member_above_allows_one_lower_rank",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c3_dont_care_peer.py::test_a_member_below_changes_nothing",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c3_dont_care_peer.py::test_accepted_ranks_are_the_two_readings",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c4_dont_care_aggregates.py::test_every_reading_is_accepted_and_nothing_else",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c4_dont_care_aggregates.py::test_median_needs_inputs_that_reproduce_the_key",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c4_dont_care_aggregates.py::test_sum_either_reading",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c5_declined_aggregate.py::test_a_declining_answer_listing_only_rows_is_never_value_correct",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c5_declined_aggregate.py::test_a_hedged_median_that_lists_rows_is_refused_not_correct",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c5_declined_aggregate.py::test_a_refused_sum_that_lists_rows_is_refused_not_incorrect",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c5_declined_aggregate.py::test_a_stated_aggregate_is_still_credited",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c6_ties.py::test_a_tie_for_first_in_either_order",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c6_ties.py::test_a_tied_peer_subject_may_state_either_place",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c6_ties.py::test_any_order_within_ties_is_correct",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c6_ties.py::test_either_member_of_a_tie_at_the_cut",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c6_ties.py::test_past_the_cut_needs_aligned_inputs_and_a_real_tie",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[June 30 and Jan 2-want8]",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[as of Dec. 31, 2024.-want1]",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[at 31 December 2024-want5]",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[ended Sept 30, '24-want3]",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[ended september 28-want4]",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[on 12/31/2024 and 3/1/24-want7]",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[on December 31st 2024-want2]",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[the 31st of December, 2024-want6]",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_each_written_form[the fiscal year ended December 31, 2024-want0]",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_graded_values_drops_only_date_only_copies",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_graded_values_is_idempotent_and_never_invents",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_inserting_a_date_changes_no_amount",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_non_dates_have_no_components",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_the_mrk_refusal_is_refused",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c7_date_parts.py::test_the_parser_skips_date_parts",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c8_grader_version.py::test_every_scorecard_carries_version_7",
+    "test/spec/grading-dont-care-and-ties/test_gdct_c8_grader_version.py::test_grader_version_is_7"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/grading-dont-care-and-ties.md",
+    "sha256": "07b63bbcf0587dcb18d14b2aa40e9781ef608032f15a683af43f2f388ad95f11"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

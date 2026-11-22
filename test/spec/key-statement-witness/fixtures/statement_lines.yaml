@@ -1,0 +1,287 @@
+# Statement-line rules: which line of a filer's own primary statements is "the line" of each
+# metric family. Spec: docs/specs/key-statement-witness.md (requirement 2). This is the
+# locked copy; configs/eval/v2/statement_lines.yaml must be byte-identical to it.
+#
+# Written from accounting vocabulary and the us-gaap element definitions only. It names no
+# concept_mapping row, rank or view: a change to our mapping can never change what these
+# rules select. Every pattern is a Python regular expression, searched case-insensitively in
+# the FSDS `plabel` (the filer's own line label).
+#
+# Fields (all optional except statements and include):
+#   statements     FSDS stmt codes searched, in preference order (BS, IS, CI, CF, EQ). The
+#                  first statement that has a candidate line wins.
+#   parenthetical  true: parenthetical lines (inpth = 1) are candidates too. Default false.
+#   include        a line is a candidate when ANY of these matches its plabel ...
+#   require        ... and ALL of these match ...
+#   exclude        ... and NONE of these matches.
+#   section        current_assets: only lines above the first line of the same report
+#                  whose plabel matches 'total current assets'. current_liabilities: only
+#                  lines below the first line matching '^total assets' and above the first
+#                  line matching 'total current liabilities' of the same report. A report
+#                  without those lines has no candidate for the family.
+#   prefer         patterns tried in order; the first that matches any candidate narrows the
+#                  candidates to the lines it matches.
+#   combine        one (default): the candidates must carry one value; sum: the witnessed
+#                  value is the sum of the candidates' values.
+#   substitutes    us-gaap elements whose definition is a different measure than the
+#                  family's: element -> {code, note}. Codes and notes are the ones of
+#                  docs/specs/concept-family-coverage.md (stated substitutes); a key or line
+#                  on a substitute is never ranked with primaries.
+version: 1
+families:
+  # ------------------------------------------------------------------ income statement
+  Revenue:
+    statements: [IS, CI]
+    include: ['revenues?\b', 'net sales', '^sales\b', 'total sales', 'sales,? net', 'turnover']
+    exclude: ['cost', 'expense', 'deferred', 'unearned', 'per share', 'before income tax',
+              'gain', 'share of', 'equity in', 'interest income']
+    prefer: ['^total\b', '^(net |operating |net operating )?(revenues?|sales)$']
+  CostOfRevenue:
+    statements: [IS, CI]
+    include: ['cost of (total )?(net )?(revenues?|sales|goods|products|services|net sales)',
+              'cost of goods and services', '^cost of sales']
+    exclude: ['excluding', 'exclusive of', 'amortization of']
+    prefer: ['^total\b']
+  GrossProfit:
+    statements: [IS, CI]
+    include: ['gross (profit|margin)']
+    exclude: ['%', 'percent']
+  OperatingExpenses:
+    statements: [IS, CI]
+    include: ['operating expenses', 'operating costs and expenses', 'costs and expenses']
+    exclude: ['other operating', 'non-?operating', '^other\b']
+    prefer: ['^total\b']
+    substitutes:
+      us-gaap:CostsAndExpenses: {code: includes_cost_of_revenue, note: 'Total costs and expenses, including cost of revenue.'}
+  ResearchAndDevelopment:
+    statements: [IS, CI]
+    include: ['research']
+    exclude: ['in-process', 'in process']
+  SellingGeneralAndAdministrative:
+    statements: [IS, CI]
+    include: ['(selling|sales|marketing),? general', 'selling and administrative', 'general,? selling']
+  SellingAndMarketing:
+    statements: [IS, CI]
+    include: ['marketing', 'selling', '^sales expense']
+    exclude: ['general', 'administrative']
+  GeneralAndAdministrative:
+    statements: [IS, CI]
+    include: ['general and administrative', '^administrative']
+    exclude: ['selling', 'sales', 'marketing']
+  RestructuringCharges:
+    statements: [IS, CF]
+    include: ['restructuring']
+    substitutes:
+      us-gaap:RestructuringSettlementAndImpairmentProvisions: {code: includes_impairment_or_other, note: 'Restructuring combined with impairment or other charges on one line.'}
+      us-gaap:RestructuringCostsAndAssetImpairmentCharges: {code: includes_impairment_or_other, note: 'Restructuring combined with impairment or other charges on one line.'}
+  OperatingIncome:
+    statements: [IS, CI]
+    include: ['operating (income|loss|profit)', '(income|loss|profit|earnings)( \(loss\))? from operations']
+    exclude: ['non-?operating', 'before', 'discontinued', 'per share', 'margin', 'other operating', '%']
+  InterestExpense:
+    statements: [IS, CI]
+    include: ['interest expense', 'interest and debt expense', '^interest on', '^interest$', 'financ(e|ing) costs?']
+    exclude: ['income', 'net of interest', 'capitalized']
+  InterestIncome:
+    statements: [IS, CI]
+    include: ['interest income', 'interest and dividend income', '^investment income']
+    exclude: ['expense', 'net interest', 'other']
+    substitutes:
+      us-gaap:InvestmentIncomeNet: {code: includes_investment_gains, note: 'Net investment income, which can include gains and losses besides interest.'}
+  OtherNonOperatingIncome:
+    statements: [IS, CI]
+    include: ['other (income|expense|\(income\)|\(expense\)|gains|\(gains\)|losses)', 'other non-?operating',
+              'non-?operating (income|expense)', '^other,? net', '^other$', 'interest and other']
+    exclude: ['comprehensive', 'operating income', 'other operating']
+    prefer: ['^other\b']
+  PretaxIncome:
+    statements: [IS, CI]
+    include: ['before (provision for |benefit from )?(income )?tax', 'pre-?tax', 'before taxes']
+    exclude: ['per share', '%']
+  TaxExpense:
+    statements: [IS, CI]
+    include: ['income tax', 'provision for (income )?tax', 'tax (expense|provision|benefit)',
+              'taxes on (income|earnings)', '^provision for taxes', '^income taxes']
+    exclude: ['before', 'pre-?tax', 'net of tax', 'after', 'deferred', 'per share']
+  EffectiveTaxRate:
+    statements: [IS, CI]
+    include: ['effective (income )?tax rate']
+  NetIncome:
+    statements: [IS, CI]
+    include: ['^net (income|earnings|loss|profit)', '^net \(loss\) income']
+    exclude: ['per share', 'noncontrolling', 'non-controlling', 'minority', 'available', 'continuing',
+              'discontinued', 'comprehensive', 'before', 'margin', '^less', 'realized']
+    # The parent's line: "attributable to <the company>" before "attributable to <the
+    # company> common stock" (after preferred dividends); Tesla's parent line itself reads
+    # "attributable to common stockholders".
+    prefer: ['attributable to (?!non[- ]?controlling|minority)(?!.*common)', 'attributable to (?!non[- ]?controlling|minority)']
+  NetIncomeToCommon:
+    statements: [IS, CI]
+    include: ['available to common']
+    exclude: ['per share']
+  ComprehensiveIncome:
+    statements: [CI, IS]
+    include: ['comprehensive (income|loss|earnings)']
+    exclude: ['other comprehensive', 'noncontrolling', 'non-controlling', 'minority', 'per share',
+              '^other', '^less', 'accumulated']
+    prefer: ['attributable to (?!non[- ]?controlling|minority)']
+  EarningsPerShareBasic:
+    statements: [IS, CI]
+    include: ['basic']
+    exclude: ['weighted', 'in shares', 'diluted', 'continuing', 'discontinued']
+  EarningsPerShareDiluted:
+    statements: [IS, CI]
+    include: ['diluted']
+    exclude: ['weighted', 'in shares', 'continuing', 'discontinued']
+  WeightedAverageSharesBasic:
+    statements: [IS, CI]
+    include: ['basic', 'weighted']
+    exclude: ['diluted', 'per share', 'dollars']
+  WeightedAverageSharesDiluted:
+    statements: [IS, CI]
+    include: ['diluted']
+    exclude: ['per share', 'dollars', 'basic']
+  DividendsPerShare:
+    statements: [IS, EQ, CI]
+    parenthetical: true
+    include: ['dividends?.*per', 'per (common )?share.*dividend']
+    exclude: ['preferred']
+  # ------------------------------------------------------------------ balance sheet
+  TotalAssets:
+    statements: [BS]
+    include: ['^total assets']
+  CurrentAssets:
+    statements: [BS]
+    include: ['total current assets']
+  CashAndEquivalents:
+    statements: [BS]
+    section: current_assets
+    include: ['^cash and (cash )?equivalents', '^cash$', '^cash and due']
+    exclude: ['restricted', 'held for sale']
+  ShortTermInvestments:
+    statements: [BS]
+    section: current_assets
+    include: ['short-term investments', 'short term investments', 'marketable securities', 'available-for-sale']
+    exclude: ['non-?current', 'long-term', 'equity method', 'restricted', 'non-marketable', 'total cash']
+    prefer: ['short-term investments', 'short term investments']
+  AccountsReceivable:
+    statements: [BS]
+    section: current_assets
+    include: ['receivable']
+    exclude: ['non-?current', 'long-term', 'related', 'financ', 'notes? receivable', 'income tax', '^other',
+              'vendor', 'non-trade']
+  Inventory:
+    statements: [BS]
+    section: current_assets
+    include: ['inventor']
+  PropertyPlantAndEquipment:
+    statements: [BS]
+    include: ['property(, plant)?,? and equipment', 'property, equipment', 'plant and equipment', 'fixed assets']
+    exclude: ['gross', 'accumulated', 'held for sale', 'depreciation', '^less', 'purchases']
+    prefer: ['\bnet\b', '^total\b']
+  Goodwill:
+    statements: [BS]
+    include: ['^goodwill']
+    exclude: ['intangible']
+  IntangibleAssets:
+    statements: [BS]
+    include: ['intangible']
+    exclude: ['goodwill']
+  TotalLiabilities:
+    statements: [BS]
+    include: ['^total liabilities']
+    exclude: ['equity', 'and (stockholders|shareholders|shareowners)', 'current']
+  CurrentLiabilities:
+    statements: [BS]
+    include: ['total current liabilities']
+  AccountsPayable:
+    statements: [BS]
+    section: current_liabilities
+    include: ['accounts payable', 'trade (and other )?payables', '^payables']
+    exclude: ['related', 'non-?current', 'long-term', 'accrued', 'other liabilities']
+  DeferredRevenue:
+    statements: [BS]
+    include: ['deferred revenue', 'contract liabilit', 'unearned revenue', 'deferred income']
+    exclude: ['tax', 'non-?current', 'long-term', 'net of current portion']
+  Debt:
+    statements: [BS]
+    include: ['term debt', 'long-term debt', 'long term debt', 'current (portion|maturities) of', 'senior notes',
+              'notes payable', 'borrowings', '^debt\b', '^total debt']
+    exclude: ['commercial paper', 'short-term', 'loans and notes payable', 'lease', 'issuance costs',
+              'securities', 'held', 'deferred', 'interest', 'related part']
+    prefer: ['^total (long-term )?debt']
+    combine: sum
+  StockholdersEquity:
+    statements: [BS]
+    include: ["(stockholders|shareholders|shareowners|share owners)['’]? (equity|investment)", 'equity attributable to']
+    exclude: ['liabilities and', 'noncontrolling', 'non-controlling', 'minority', '^other']
+    # The parent's total names the company ("Total Oracle Corporation stockholders' equity")
+    # when a total including noncontrolling interests ("Total stockholders' equity") follows.
+    prefer: ["^total (?!(stockholders|shareholders|shareowners|share owners)['’]? (equity|investment)\\b)", '^total\b']
+  RetainedEarnings:
+    statements: [BS]
+    include: ['retained earnings', 'accumulated deficit', 'reinvested', 'retained (deficit|income)']
+  SharesOutstanding:
+    statements: [BS, EQ]
+    parenthetical: true
+    include: ['outstanding']
+    require: ['shares?\b|stock']
+    exclude: ['treasury', 'weighted', 'preferred', 'authorized', 'issued(?! and outstanding)']
+  # ------------------------------------------------------------------ cash flow statement
+  Capex:
+    statements: [CF]
+    include: ['(purchases?|acquisitions?|additions?|payments?|expenditures?|investments?)\b.*(property|plant|equipment|capital assets|fixed assets|productive)',
+              'capital expenditures']
+    exclude: ['^proceeds', '\(proceeds', '^sales? of', '^disposals? of', 'not (yet )?paid', 'unpaid', 'included in liabilities',
+              'incurred but']
+  CashFromOperations:
+    statements: [CF]
+    include: ['operating activities']
+    exclude: ['discontinued', 'adjustments', 'changes in', 'non-?cash', 'supplemental', '^other']
+    prefer: ['^net cash']
+    substitutes:
+      us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations: {code: continuing_operations_only, note: 'Continuing operations only; cash flows of discontinued operations are reported separately.'}
+  CashFromInvesting:
+    statements: [CF]
+    include: ['investing activities']
+    exclude: ['discontinued', 'non-?cash', 'supplemental', '^other']
+    prefer: ['^net cash']
+    substitutes:
+      us-gaap:NetCashProvidedByUsedInInvestingActivitiesContinuingOperations: {code: continuing_operations_only, note: 'Continuing operations only; cash flows of discontinued operations are reported separately.'}
+  CashFromFinancing:
+    statements: [CF]
+    include: ['financing activities']
+    exclude: ['discontinued', 'non-?cash', 'supplemental', '^other']
+    prefer: ['^net cash']
+    substitutes:
+      us-gaap:NetCashProvidedByUsedInFinancingActivitiesContinuingOperations: {code: continuing_operations_only, note: 'Continuing operations only; cash flows of discontinued operations are reported separately.'}
+  DepreciationAndAmortization:
+    statements: [CF, IS]
+    include: ['depreciation']
+    exclude: ['accumulated', 'excluding', 'exclusive']
+    substitutes:
+      us-gaap:Depreciation: {code: depreciation_only, note: 'Depreciation only; amortization is not included.'}
+      us-gaap:DepreciationAmortizationAndAccretionNet: {code: includes_accretion, note: 'Depreciation and amortization including accretion.'}
+  ShareBasedCompensation:
+    statements: [CF]
+    include: ['stock-based', 'share-based', 'stock based', 'share based', 'equity-based', 'stock compensation',
+              'equity compensation', 'stock-settled']
+    exclude: ['tax', 'excess', 'withh']
+  StockRepurchases:
+    statements: [CF]
+    include: ['repurchase', 'buyback', 'buy-back', 'purchases? of.*(common|treasury|own|ordinary)', 'treasury (stock|shares)']
+    exclude: ['issuance', 'proceeds', '^employee', 'withholding', 'debt', '^gain', 'forward', 'tender']
+  DividendsPaid:
+    statements: [CF]
+    include: ['dividends']
+    exclude: ['received', '\bfrom\b', 'noncontrolling', 'non-controlling', 'preferred', 'subsidiar', 'per share', 'declared', 'net of dividends']
+  DebtIssued:
+    statements: [CF]
+    include: ['proceeds from.*(debt|borrowings|notes|bonds|senior|term loan|credit|commercial paper)', '^borrowings',
+              'issuance of.*(debt|notes)']
+    exclude: ['repay', 'payments? of', 'short-term', 'three months or less', '90 days']
+  DebtRepaid:
+    statements: [CF]
+    include: ['(repayments?|payments?|retirements?|redemptions?|principal payments).*(debt|borrowings|notes|bonds|loan|commercial paper)']
+    exclude: ['proceeds', 'lease', 'issuance costs', 'three months or less', '90 days', 'restructuring',
+              'short-term', 'commercial paper']

@@ -1,0 +1,18 @@
+# Synthetic resolutions for compound-shape C10: DEVB's two net income keys (blocked:
+# note_unlisted, no statement line) resolved with reading "key".
+version: 1
+resolutions:
+  - family: NetIncome
+    cik: '0000800002'
+    fiscal_year: 2023
+    concept: us-gaap:NetIncomeLoss
+    value: 40000000
+    reading: key
+    reason: Synthetic fixture entry (compound-shape C10).
+  - family: NetIncome
+    cik: '0000800002'
+    fiscal_year: 2024
+    concept: us-gaap:NetIncomeLoss
+    value: 48000000
+    reading: key
+    reason: Synthetic fixture entry (compound-shape C10).

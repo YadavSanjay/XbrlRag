@@ -1,0 +1,134 @@
+adsh	tag	version	ddate	qtrs	uom	segments	coreg	value	footnote
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230930	4	USD	ProductOrService=WearablesHomeandAccessories;		39845000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230831	4	USD	ProductOrService=Product;		237710000000.0000	
+0000909832-23-000042	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2023	20210831	4	shares			444346000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220831	4	USD	ProductOrService=Product;		222730000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210930	4	USD	ProductOrService=WearablesHomeandAccessories;		38367000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230930	4	USD	BusinessSegments=GreaterChinaSegment;		72559000000.0000	
+0000909832-23-000042	OperatingIncomeLoss	us-gaap/2023	20210831	4	USD	ConsolidationItems=OperatingSegments;Geographical=US;		4470000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220831	4	USD	ProductOrService=Membership;		4224000000.0000	
+0000909832-23-000042	IncomeTaxExpenseBenefit	us-gaap/2023	20230831	4	USD	Dividends=SpecialDividend;		70000000.0000	
+0000909832-23-000042	ProfitLoss	us-gaap/2023	20220831	4	USD	EquityComponents=Parent;		5844000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210930	4	USD	ProductOrService=IPad;		31862000000.0000	
+0000909832-23-000042	EarningsPerShareDiluted	us-gaap/2023	20220831	4	USD			13.1400	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230930	4	USD	BusinessSegments=EuropeSegment;		94294000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230930	4	USD	BusinessSegments=RestOfAsiaPacificSegment;		29615000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210831	4	USD	ProductOrService=Other;		31626000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220930	4	USD	ProductOrService=IPhone;		205489000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220930	4	USD			394328000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210930	4	USD	BusinessSegments=AmericasSegment;		153306000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220930	4	USD	ProductOrService=IPad;		29292000000.0000	
+0000909832-23-000042	CostOfGoodsAndServicesSold	us-gaap/2023	20230831	4	USD			212586000000.0000	
+0000909832-23-000042	EarningsPerShareDiluted	us-gaap/2023	20210831	4	USD			11.2700	
+0000909832-23-000042	OperatingIncomeLoss	us-gaap/2023	20230831	4	USD	ConsolidationItems=OperatingSegments;Geographical=CA;		1448000000.0000	
+0000909832-23-000042	OperatingIncomeLoss	us-gaap/2023	20210831	4	USD	ConsolidationItems=OperatingSegments;Geographical=CA;		1093000000.0000	
+0000909832-23-000042	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2023	20220831	4	USD			7840000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210930	4	USD	Geographical=CN;		68366000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230831	4	USD	ProductOrService=FreshFood;		31977000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210930	4	USD	ProductOrService=Product;		297392000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210831	4	USD	ProductOrService=Product;		192052000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220930	4	USD	BusinessSegments=JapanSegment;		25977000000.0000	
+0000909832-23-000042	CostOfGoodsAndServicesSold	us-gaap/2023	20210831	4	USD			170684000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230831	4	USD	ProductOrService=FoodandSundries;		96175000000.0000	
+0000909832-23-000042	InterestAndOtherIncome	us-gaap/2023	20220831	4	USD			205000000.0000	
+0000909832-23-000042	IncomeTaxExpenseBenefit	us-gaap/2023	20230831	4	USD			2195000000.0000	
+0000909832-23-000042	OperatingIncomeLoss	us-gaap/2023	20220831	4	USD	ConsolidationItems=OperatingSegments;Geographical=OtherInternational;		1179000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210831	4	USD			195929000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230930	4	USD	BusinessSegments=AmericasSegment;		162560000000.0000	
+0000909832-23-000042	IncomeTaxExpenseBenefit	us-gaap/2023	20220831	4	USD	AwardType=RestrictedStockUnitsRSU;		94000000.0000	
+0000909832-23-000042	OperatingIncomeLoss	us-gaap/2023	20210831	4	USD	ConsolidationItems=OperatingSegments;Geographical=OtherInternational;		1145000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210930	4	USD	BusinessSegments=EuropeSegment;		89307000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230930	4	USD	BusinessSegments=JapanSegment;		24257000000.0000	
+0000909832-23-000042	InterestExpense	us-gaap/2023	20220831	4	USD			158000000.0000	
+0000909832-23-000042	NetIncomeLoss	us-gaap/2023	20210831	4	USD			5007000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220930	4	USD	ProductOrService=Service;		78129000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220930	4	USD	BusinessSegments=GreaterChinaSegment;		74200000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210930	4	USD	ProductOrService=Mac;		35190000000.0000	
+0000909832-23-000042	NetIncomeLoss	us-gaap/2023	20230831	4	USD			6292000000.0000	
+0000909832-23-000042	IncomeTaxExpenseBenefit	us-gaap/2023	20220831	4	USD			1925000000.0000	
+0000909832-23-000042	OperatingIncomeLoss	us-gaap/2023	20220831	4	USD			7793000000.0000	
+0000909832-23-000042	ProfitLoss	us-gaap/2023	20230831	4	USD	EquityComponents=Parent;		6292000000.0000	
+0000909832-23-000042	SellingGeneralAndAdministrativeExpense	us-gaap/2023	20210831	4	USD			18537000000.0000	
+0000320193-23-000106	OtherNoncashIncomeExpense	us-gaap/2023	20230930	4	USD			2227000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220831	4	USD	ProductOrService=FoodandSundries;		85629000000.0000	
+0000909832-23-000042	ProfitLoss	us-gaap/2023	20220831	4	USD			5915000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210930	4	USD	ProductOrService=IPhone;		191973000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220831	4	USD	ProductOrService=FreshFood;		29527000000.0000	
+0000909832-23-000042	ProfitLoss	us-gaap/2023	20230831	4	USD	EquityComponents=RetainedEarnings;		6292000000.0000	
+0000909832-23-000042	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2023	20210831	4	shares			443089000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210930	4	USD	BusinessSegments=GreaterChinaSegment;		68366000000.0000	
+0000909832-23-000042	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2023	20230831	4	shares			444452000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220930	4	USD	Geographical=OtherCountries;		172269000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210831	4	USD	ProductOrService=Membership;		3877000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210831	4	USD	ProductOrService=FoodandSundries;		77277000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230831	4	USD			242290000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210930	4	USD	Geographical=OtherCountries;		163648000000.0000	
+0000909832-23-000042	SellingGeneralAndAdministrativeExpense	us-gaap/2023	20230831	4	USD			21590000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230930	4	USD	Geographical=CN;		72559000000.0000	
+0000909832-23-000042	SellingGeneralAndAdministrativeExpense	us-gaap/2023	20220831	4	USD			19779000000.0000	
+0000909832-23-000042	ProfitLoss	us-gaap/2023	20220831	4	USD	EquityComponents=RetainedEarnings;		5844000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230930	4	USD	ProductOrService=IPad;		28300000000.0000	
+0000909832-23-000042	IncomeTaxExpenseBenefit	us-gaap/2023	20210831	4	USD	AwardType=RestrictedStockUnitsRSU;		75000000.0000	
+0000909832-23-000042	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2023	20210831	4	USD			6680000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210930	4	USD	ProductOrService=Service;		68425000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230930	4	USD	ProductOrService=IPhone;		200583000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210831	4	USD	ProductOrService=NonFoods;		55966000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220930	4	USD	ProductOrService=Mac;		40177000000.0000	
+0000909832-23-000042	ProfitLoss	us-gaap/2023	20220831	4	USD	EquityComponents=NoncontrollingInterest;		71000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210930	4	USD	BusinessSegments=RestOfAsiaPacificSegment;		26356000000.0000	
+0000909832-23-000042	NetIncomeLossAttributableToNoncontrollingInterest	us-gaap/2023	20210831	4	USD			72000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230831	4	USD	ProductOrService=Other;		48693000000.0000	
+0000909832-23-000042	InterestExpense	us-gaap/2023	20210831	4	USD			171000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230930	4	USD			383285000000.0000	
+0000909832-23-000042	ProfitLoss	us-gaap/2023	20210831	4	USD	EquityComponents=Parent;		5007000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220930	4	USD	ProductOrService=WearablesHomeandAccessories;		41241000000.0000	
+0000909832-23-000042	ProfitLoss	us-gaap/2023	20230831	4	USD			6292000000.0000	
+0000909832-23-000042	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2023	20220831	4	shares			443651000.0000	
+0000909832-23-000042	EarningsPerShareBasic	us-gaap/2023	20210831	4	USD			11.3000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220831	4	USD	ProductOrService=Other;		46474000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230930	4	USD	Geographical=US;		138573000000.0000	
+0000909832-23-000042	OperatingIncomeLoss	us-gaap/2023	20230831	4	USD			8114000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230930	4	USD	ProductOrService=Product;		298085000000.0000	
+0000909832-23-000042	EarningsPerShareBasic	us-gaap/2023	20220831	4	USD			13.1700	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220930	4	USD	ProductOrService=Product;		316199000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230930	4	USD	ProductOrService=Service;		85200000000.0000	
+0000320193-23-000106	OtherNoncashIncomeExpense	us-gaap/2023	20220930	4	USD			-1006000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220930	4	USD	BusinessSegments=AmericasSegment;		169658000000.0000	
+0000909832-23-000042	ProfitLoss	us-gaap/2023	20210831	4	USD	EquityComponents=RetainedEarnings;		5007000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230930	4	USD	ProductOrService=Mac;		29357000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220930	4	USD	BusinessSegments=EuropeSegment;		95118000000.0000	
+0000909832-23-000042	OperatingIncomeLoss	us-gaap/2023	20210831	4	USD			6708000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210930	4	USD	Geographical=US;		133803000000.0000	
+0000909832-23-000042	NetIncomeLoss	us-gaap/2023	20220831	4	USD			5844000000.0000	
+0000909832-23-000042	CostOfGoodsAndServicesSold	us-gaap/2023	20220831	4	USD			199382000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230831	4	USD	ProductOrService=Membership;		4580000000.0000	
+0000909832-23-000042	OperatingIncomeLoss	us-gaap/2023	20230831	4	USD	ConsolidationItems=OperatingSegments;Geographical=US;		5392000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220930	4	USD	Geographical=CN;		74200000000.0000	
+0000909832-23-000042	NetIncomeLossAttributableToNoncontrollingInterest	us-gaap/2023	20220831	4	USD			71000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230930	4	USD	Geographical=OtherCountries;		172153000000.0000	
+0000909832-23-000042	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2023	20220831	4	shares			444757000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220831	4	USD			226954000000.0000	
+0000909832-23-000042	OperatingIncomeLoss	us-gaap/2023	20230831	4	USD	ConsolidationItems=OperatingSegments;Geographical=OtherInternational;		1274000000.0000	
+0000909832-23-000042	IncomeTaxExpenseBenefit	us-gaap/2023	20230831	4	USD	AwardType=RestrictedStockUnitsRSU;		54000000.0000	
+0000909832-23-000042	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2023	20230831	4	USD			8487000000.0000	
+0000909832-23-000042	ProfitLoss	us-gaap/2023	20210831	4	USD			5079000000.0000	
+0000909832-23-000042	NetIncomeLossAttributableToNoncontrollingInterest	us-gaap/2023	20230831	4	USD			0.0000	
+0000909832-23-000042	InterestExpense	us-gaap/2023	20230831	4	USD			160000000.0000	
+0000909832-23-000042	InterestAndOtherIncome	us-gaap/2023	20210831	4	USD			143000000.0000	
+0000909832-23-000042	EarningsPerShareBasic	us-gaap/2023	20230831	4	USD			14.1800	
+0000909832-23-000042	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2023	20230831	4	shares			443854000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210930	4	USD	BusinessSegments=JapanSegment;		28482000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210930	4	USD			365817000000.0000	
+0000909832-23-000042	ProfitLoss	us-gaap/2023	20230831	4	USD	EquityComponents=NoncontrollingInterest;		0.0000	
+0000909832-23-000042	EarningsPerShareDiluted	us-gaap/2023	20230831	4	USD			14.1600	
+0000320193-23-000106	OtherNoncashIncomeExpense	us-gaap/2023	20210930	4	USD			4921000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220930	4	USD	BusinessSegments=RestOfAsiaPacificSegment;		29375000000.0000	
+0000909832-23-000042	ProfitLoss	us-gaap/2023	20210831	4	USD	EquityComponents=NoncontrollingInterest;		72000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20230831	4	USD	ProductOrService=NonFoods;		60865000000.0000	
+0000909832-23-000042	OperatingIncomeLoss	us-gaap/2023	20220831	4	USD	ConsolidationItems=OperatingSegments;Geographical=US;		5268000000.0000	
+0000909832-23-000042	IncomeTaxExpenseBenefit	us-gaap/2023	20210831	4	USD			1601000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220831	4	USD	ProductOrService=NonFoods;		61100000000.0000	
+0000909832-23-000042	InterestAndOtherIncome	us-gaap/2023	20230831	4	USD			533000000.0000	
+0000909832-23-000042	OperatingIncomeLoss	us-gaap/2023	20220831	4	USD	ConsolidationItems=OperatingSegments;Geographical=CA;		1346000000.0000	
+0000320193-23-000106	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20220930	4	USD	Geographical=US;		147859000000.0000	
+0000909832-23-000042	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	20210831	4	USD	ProductOrService=FreshFood;		27183000000.0000	

@@ -1,0 +1,41 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/html-rag-fusion-order/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-02",
+  "criteria": {
+    "C1": [
+      "test/spec/html-rag-fusion-order/test_hfo_order.py::test_a_tie_across_the_cut_is_settled_by_chunk_id",
+      "test/spec/html-rag-fusion-order/test_hfo_order.py::test_chunk_ids_compare_as_strings",
+      "test/spec/html-rag-fusion-order/test_hfo_order.py::test_any_order_from_qdrant_gives_the_same_candidates"
+    ]
+  },
+  "files": {
+    "test/spec/html-rag-fusion-order/test_hfo_order.py": "e7c071c41a458302e8c70d65629b9c7cfc6856b04b7b1ebeb118586dda22e59a"
+  },
+  "id": "html-rag-fusion-order",
+  "interface": [],
+  "nodes": [
+    "test/spec/html-rag-fusion-order/test_hfo_order.py::test_a_tie_across_the_cut_is_settled_by_chunk_id",
+    "test/spec/html-rag-fusion-order/test_hfo_order.py::test_any_order_from_qdrant_gives_the_same_candidates",
+    "test/spec/html-rag-fusion-order/test_hfo_order.py::test_chunk_ids_compare_as_strings"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/html-rag-fusion-order.md",
+    "sha256": "129d37f08563a57710eb70c67416ea5ed5a15551437aa6ebd0ada79297a5ccf9"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

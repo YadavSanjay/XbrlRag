@@ -1,0 +1,126 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-04",
+  "criteria": {
+    "C1": [
+      "test/spec/screen-universe/test_screen_disclosure.py::test_stated_period_end_sec_examples",
+      "test/spec/screen-universe/test_screen_disclosure.py::test_stated_period_end_is_the_day_before"
+    ],
+    "C2": [
+      "test/spec/screen-universe/test_screen_disclosure.py::test_resolve_universe_members_point_cases",
+      "test/spec/screen-universe/test_screen_disclosure.py::test_resolve_universe_members_rejects_an_unknown_id",
+      "test/spec/screen-universe/test_screen_disclosure.py::test_resolve_universe_members_for_any_roster"
+    ],
+    "C3": [
+      "test/spec/screen-universe/test_screen_disclosure.py::test_build_disclosure_semiconductors_example",
+      "test/spec/screen-universe/test_screen_disclosure.py::test_build_disclosure_generates_not_in_corpus_and_metric_not_tagged",
+      "test/spec/screen-universe/test_screen_disclosure.py::test_build_disclosure_92_day_boundary",
+      "test/spec/screen-universe/test_screen_disclosure.py::test_build_disclosure_rules_for_any_input"
+    ],
+    "C4": [
+      "test/spec/screen-universe/test_screen_disclosure.py::test_disclosure_text_point_cases",
+      "test/spec/screen-universe/test_screen_disclosure.py::test_disclosure_text_every_reason_phrase",
+      "test/spec/screen-universe/test_screen_disclosure.py::test_disclosure_text_rule_for_any_disclosure"
+    ],
+    "C5": [
+      "test/spec/screen-universe/test_screen_disclosure.py::test_append_one_and_two_screen_steps",
+      "test/spec/screen-universe/test_screen_disclosure.py::test_append_unchanged_empty_and_duplicate_cases",
+      "test/spec/screen-universe/test_screen_disclosure.py::test_append_rule_for_any_steps"
+    ],
+    "C6": [
+      "test/spec/screen-universe/test_screen_universe_db.py::test_semiconductors_screen_ranks_only_members",
+      "test/spec/screen-universe/test_screen_universe_db.py::test_top_n_cuts_rows_not_the_disclosure",
+      "test/spec/screen-universe/test_screen_universe_db.py::test_absent_null_and_covered_universe_agree",
+      "test/spec/screen-universe/test_screen_universe_db.py::test_unknown_universe_is_an_error",
+      "test/spec/screen-universe/test_screen_universe_db.py::test_not_found_still_discloses",
+      "test/spec/screen-universe/test_screen_universe_db.py::test_screen_universe_rules_for_any_store"
+    ],
+    "C7": [
+      "test/spec/screen-universe/test_plan_validator_universe.py::test_universe_values_valid_and_invalid",
+      "test/spec/screen-universe/test_plan_validator_universe.py::test_any_unknown_universe_string_is_rejected"
+    ]
+  },
+  "files": {
+    "test/spec/screen-universe/conftest.py": "d807ed296ed9513a711ef31a3e6823f44f6118b62d85e75344b9d1b3d1dfbde3",
+    "test/spec/screen-universe/test_plan_validator_universe.py": "1114138054c99de17a467c22995c308ee0e92af8e7bf582d844917f3efe08d3b",
+    "test/spec/screen-universe/test_screen_disclosure.py": "a3cb69b8ec12afd43541a82f94c42c20393ba02062703404bdc56776b08950c8",
+    "test/spec/screen-universe/test_screen_universe_db.py": "2e3a6ca14a80cfec5bf42793d791086629c1f0f69a06d3b3d4db5f0d0992802e"
+  },
+  "id": "screen-universe",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/screen_disclosure.py",
+      "module": "retriever.xbrl.screen_disclosure",
+      "qualname": "stated_period_end",
+      "signature": "def stated_period_end(stored: dt.date | str | None) -> str | None"
+    },
+    {
+      "file": "src/retriever/xbrl/screen_disclosure.py",
+      "module": "retriever.xbrl.screen_disclosure",
+      "qualname": "resolve_universe_members",
+      "signature": "def resolve_universe_members(universe: str, roster: Sequence[str], groups: Mapping[str, Sequence[str]]) -> list[str]"
+    },
+    {
+      "file": "src/retriever/xbrl/screen_disclosure.py",
+      "module": "retriever.xbrl.screen_disclosure",
+      "qualname": "build_screen_disclosure",
+      "signature": "def build_screen_disclosure(universe: str, fiscal_year: int, members: Sequence[str], roster: Sequence[str], ranked_rows: Sequence[Mapping[str, Any]], exclusions: Sequence[Mapping[str, Any]]) -> dict[str, Any]"
+    },
+    {
+      "file": "src/retriever/xbrl/screen_disclosure.py",
+      "module": "retriever.xbrl.screen_disclosure",
+      "qualname": "screen_disclosure_text",
+      "signature": "def screen_disclosure_text(disclosure: Mapping[str, Any]) -> str"
+    },
+    {
+      "file": "src/retriever/xbrl/screen_disclosure.py",
+      "module": "retriever.xbrl.screen_disclosure",
+      "qualname": "append_screen_disclosures",
+      "signature": "def append_screen_disclosures(summary: str, steps: Sequence[Mapping[str, Any]]) -> str"
+    }
+  ],
+  "nodes": [
+    "test/spec/screen-universe/test_plan_validator_universe.py::test_any_unknown_universe_string_is_rejected",
+    "test/spec/screen-universe/test_plan_validator_universe.py::test_universe_values_valid_and_invalid",
+    "test/spec/screen-universe/test_screen_disclosure.py::test_append_one_and_two_screen_steps",
+    "test/spec/screen-universe/test_screen_disclosure.py::test_append_rule_for_any_steps",
+    "test/spec/screen-universe/test_screen_disclosure.py::test_append_unchanged_empty_and_duplicate_cases",
+    "test/spec/screen-universe/test_screen_disclosure.py::test_build_disclosure_92_day_boundary",
+    "test/spec/screen-universe/test_screen_disclosure.py::test_build_disclosure_generates_not_in_corpus_and_metric_not_tagged",
+    "test/spec/screen-universe/test_screen_disclosure.py::test_build_disclosure_rules_for_any_input",
+    "test/spec/screen-universe/test_screen_disclosure.py::test_build_disclosure_semiconductors_example",
+    "test/spec/screen-universe/test_screen_disclosure.py::test_disclosure_text_every_reason_phrase",
+    "test/spec/screen-universe/test_screen_disclosure.py::test_disclosure_text_point_cases",
+    "test/spec/screen-universe/test_screen_disclosure.py::test_disclosure_text_rule_for_any_disclosure",
+    "test/spec/screen-universe/test_screen_disclosure.py::test_resolve_universe_members_for_any_roster",
+    "test/spec/screen-universe/test_screen_disclosure.py::test_resolve_universe_members_point_cases",
+    "test/spec/screen-universe/test_screen_disclosure.py::test_resolve_universe_members_rejects_an_unknown_id",
+    "test/spec/screen-universe/test_screen_disclosure.py::test_stated_period_end_is_the_day_before",
+    "test/spec/screen-universe/test_screen_disclosure.py::test_stated_period_end_sec_examples",
+    "test/spec/screen-universe/test_screen_universe_db.py::test_absent_null_and_covered_universe_agree",
+    "test/spec/screen-universe/test_screen_universe_db.py::test_not_found_still_discloses",
+    "test/spec/screen-universe/test_screen_universe_db.py::test_screen_universe_rules_for_any_store",
+    "test/spec/screen-universe/test_screen_universe_db.py::test_semiconductors_screen_ranks_only_members",
+    "test/spec/screen-universe/test_screen_universe_db.py::test_top_n_cuts_rows_not_the_disclosure",
+    "test/spec/screen-universe/test_screen_universe_db.py::test_unknown_universe_is_an_error"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/screen-universe.md",
+    "sha256": "1cdd9fe6b71c8633e6a57df5ddc54eae987554b4ce92f9781f49442966925a0c"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xbrl
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:dei="http://xbrl.sec.gov/dei/2025"
+  xmlns:ecd="http://xbrl.sec.gov/ecd/2025"
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:orcl="http://www.oracle.com/20260228"
+  xmlns:srt="http://fasb.org/srt/2025"
+  xmlns:us-gaap="http://fasb.org/us-gaap/2025"
+  xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <link:schemaRef xlink:href="orcl-20260228.xsd" xlink:type="simple"/>
+    <context id="C_88a881dc-0068-417b-9bfd-4f8cb7d679eb">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001341439</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:AwardTypeAxis">us-gaap:EmployeeStockOptionMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2025-06-01</startDate>
+            <endDate>2026-02-28</endDate>
+        </period>
+    </context>
+    <context id="C_8c0c345e-9e68-45bd-95cf-9d3988e4854f">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001341439</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="srt:ConsolidationItemsAxis">us-gaap:OperatingSegmentsMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2025-12-01</startDate>
+            <endDate>2026-02-28</endDate>
+        </period>
+    </context>
+    <context id="C_8de00222-a558-4a0e-ab05-214046342d0a">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001341439</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="srt:ProductOrServiceAxis">orcl:CloudInfrastructureMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2025-12-01</startDate>
+            <endDate>2026-02-28</endDate>
+        </period>
+    </context>
+    <context id="C_8e6618d6-2ba3-4a10-a3eb-0ad4cd2ca357">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001341439</identifier>
+        </entity>
+        <period>
+            <startDate>2025-06-01</startDate>
+            <endDate>2026-02-28</endDate>
+        </period>
+    </context>
+    <context id="C_a559f189-24a5-4b53-8cf9-11658cfb5f92">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001341439</identifier>
+        </entity>
+        <period>
+            <startDate>2025-12-01</startDate>
+            <endDate>2026-02-28</endDate>
+        </period>
+    </context>
+    <context id="C_08c6abc1-3226-4581-b867-5e89ac769edf">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001341439</identifier>
+        </entity>
+        <period>
+            <startDate>2024-12-01</startDate>
+            <endDate>2025-02-28</endDate>
+        </period>
+    </context>
+    <context id="C_5ca6f103-da26-4707-b073-d2046c866da1">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001341439</identifier>
+        </entity>
+        <period>
+            <startDate>2024-06-01</startDate>
+            <endDate>2025-02-28</endDate>
+        </period>
+    </context>
+    <dei:CurrentFiscalYearEndDate
+      contextRef="C_8e6618d6-2ba3-4a10-a3eb-0ad4cd2ca357"
+      id="F_a1911be4-b3b2-47aa-9443-700ddf3bc2c1">--05-31</dei:CurrentFiscalYearEndDate>
+    <dei:AmendmentFlag
+      contextRef="C_8e6618d6-2ba3-4a10-a3eb-0ad4cd2ca357"
+      id="F_44ccc609-e8dd-48ff-ac83-a27925a84140">false</dei:AmendmentFlag>
+    <dei:DocumentFiscalPeriodFocus
+      contextRef="C_8e6618d6-2ba3-4a10-a3eb-0ad4cd2ca357"
+      id="F_6156da26-f63a-4ab2-ac02-6a44c3cb647e">Q3</dei:DocumentFiscalPeriodFocus>
+    <dei:DocumentType
+      contextRef="C_8e6618d6-2ba3-4a10-a3eb-0ad4cd2ca357"
+      id="F_a9334f4b-d770-4851-b144-6fd3901770bc">10-Q</dei:DocumentType>
+    <dei:DocumentPeriodEndDate
+      contextRef="C_8e6618d6-2ba3-4a10-a3eb-0ad4cd2ca357"
+      id="F_59831aff-9fa6-4dcb-b3f8-8ce89b56c032">2026-02-28</dei:DocumentPeriodEndDate>
+    <dei:DocumentFiscalYearFocus
+      contextRef="C_8e6618d6-2ba3-4a10-a3eb-0ad4cd2ca357"
+      id="F_e6faa198-e647-4f58-81bc-d70dd790741d">2026</dei:DocumentFiscalYearFocus>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="C_a559f189-24a5-4b53-8cf9-11658cfb5f92"
+      decimals="-6"
+      id="F_bc09b41b-ac6b-4b65-86e2-e333211825ed"
+      unitRef="U_USD">17190000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="C_08c6abc1-3226-4581-b867-5e89ac769edf"
+      decimals="-6"
+      id="F_16fd88e8-7223-40cb-8a29-9f410379ffd0"
+      unitRef="U_USD">14130000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="C_8e6618d6-2ba3-4a10-a3eb-0ad4cd2ca357"
+      decimals="-6"
+      id="F_f339f494-f165-4c31-b1fc-aae89f8cbe4c"
+      unitRef="U_USD">48173000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="C_5ca6f103-da26-4707-b073-d2046c866da1"
+      decimals="-6"
+      id="F_1e5f9a53-bc2e-4f4b-b5b7-ec8c1496406c"
+      unitRef="U_USD">41496000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="C_a559f189-24a5-4b53-8cf9-11658cfb5f92"
+      decimals="-6"
+      id="F_1497475e-88b8-4d52-95b5-15ddbd75c153"
+      unitRef="U_USD">17190000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="C_08c6abc1-3226-4581-b867-5e89ac769edf"
+      decimals="-6"
+      id="F_485042fe-0d5d-4746-8ece-6ee47fd95bcb"
+      unitRef="U_USD">14130000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="C_8e6618d6-2ba3-4a10-a3eb-0ad4cd2ca357"
+      decimals="-6"
+      id="F_453fc565-340c-4de1-8246-4efd6de508ef"
+      unitRef="U_USD">48173000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="C_5ca6f103-da26-4707-b073-d2046c866da1"
+      decimals="-6"
+      id="F_15fcf7f7-65a3-436b-8c40-1be248dbfa31"
+      unitRef="U_USD">41496000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+</xbrl>

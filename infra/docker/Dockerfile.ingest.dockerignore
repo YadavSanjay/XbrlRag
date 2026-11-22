@@ -1,0 +1,41 @@
+# Build-context excludes for infra/docker/Dockerfile.ingest (BuildKit honors this
+# because it is named for the Dockerfile). Mirrors the serving image's ignore but
+# KEEPS scripts/ (the ingest runner applies DDL + rebuild_mvs) and pulls the full
+# requirements.txt. Patterns are relative to the build-context root (repo root).
+#
+# The ingest image COPYs only: requirements.txt, src/, prompts/, configs/, scripts/.
+# Everything below is excluded to keep the context small and free of data/secrets.
+
+.git
+.github
+.claude
+.venv
+venv
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/.mypy_cache
+.ruff_cache
+
+# Large / irrelevant trees
+data
+logs
+*.log
+models
+benchmarks
+notebooks
+ui
+test
+
+# Docs (not needed at ingest runtime)
+docs
+*.md
+
+# Secrets — never in the image
+.env
+.env.*
+!.env.example
+
+# Packaging trees not COPYed by this Dockerfile
+deploy
+infra

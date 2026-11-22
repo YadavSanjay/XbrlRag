@@ -1,0 +1,153 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-29",
+  "criteria": {
+    "C1": [
+      "test/spec/coverage-card/test_coverage_card.py::test_card_metrics_are_the_committed_list",
+      "test/spec/coverage-card/test_coverage_card.py::test_card_metrics_are_stable_and_unique"
+    ],
+    "C2": [
+      "test/spec/coverage-card/test_coverage_card.py::test_classify_cell_point_cases",
+      "test/spec/coverage-card/test_coverage_card.py::test_classify_cell_matches_the_rule"
+    ],
+    "C3": [
+      "test/spec/coverage-card/test_coverage_card.py::test_cell_from_row_point_cases",
+      "test/spec/coverage-card/test_coverage_card.py::test_cell_from_row_accepts_exactly_the_rule"
+    ],
+    "C4": [
+      "test/spec/coverage-card/test_coverage_card.py::test_coverage_card_point_case",
+      "test/spec/coverage-card/test_coverage_card.py::test_coverage_card_refusals",
+      "test/spec/coverage-card/test_coverage_card.py::test_coverage_cards_point_case",
+      "test/spec/coverage-card/test_coverage_card.py::test_cards_agree_and_ignore_row_order"
+    ],
+    "C5": [
+      "test/spec/coverage-card/test_coverage_card.py::test_empty_cells_and_report_point_case",
+      "test/spec/coverage-card/test_coverage_card.py::test_report_lists_each_empty_cell_once"
+    ],
+    "C6": [
+      "test/spec/coverage-card/test_coverage_card.py::test_screen_eligibility_point_cases",
+      "test/spec/coverage-card/test_coverage_card.py::test_screen_eligibility_follows_the_rule"
+    ],
+    "C7": [
+      "test/spec/coverage-card/test_coverage_card.py::test_cli_point_cases",
+      "test/spec/coverage-card/test_coverage_card.py::test_cli_no_cards",
+      "test/spec/coverage-card/test_coverage_card.py::test_cli_strict_exit_follows_the_empty_cells"
+    ],
+    "C8": [
+      "test/spec/coverage-card/test_c8_ddl.py::test_view_is_dropped_created_and_indexed",
+      "test/spec/coverage-card/test_c8_ddl.py::test_view_shape",
+      "test/spec/coverage-card/test_c8_ddl.py::test_view_is_managed",
+      "test/spec/coverage-card/test_c8_ddl.py::test_checks_ignore_whitespace_and_case"
+    ]
+  },
+  "files": {
+    "test/spec/coverage-card/conftest.py": "3a1fc3bc03a515c9c9d7e52218197d5e4d7712fd60a2884354f8ad276afc4c66",
+    "test/spec/coverage-card/test_c8_ddl.py": "9afe1fb6e4ba32075e2b6a93575efdde157f6bff815539e2d90c3097a2198f2c",
+    "test/spec/coverage-card/test_coverage_card.py": "c1271b7ee0375d846c7b12d743712b03a483a36740eeea46cb7a2c0d3319a53a"
+  },
+  "id": "coverage-card",
+  "interface": [
+    {
+      "file": "src/ingest/sec_edgar/coverage/base.py",
+      "module": "ingest.sec_edgar.coverage.base",
+      "qualname": "CoverageCardSource.rows",
+      "signature": "@abstractmethod def rows(self, cik: str | None, fiscal_year: int | None) -> Sequence[Sequence]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/coverage/card.py",
+      "module": "ingest.sec_edgar.coverage.card",
+      "qualname": "card_metrics",
+      "signature": "def card_metrics() -> tuple[CardMetric, ...]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/coverage/card.py",
+      "module": "ingest.sec_edgar.coverage.card",
+      "qualname": "classify_cell",
+      "signature": "def classify_cell(standard_qnames: Sequence[str], extension_qnames: Sequence[str], component_qnames: Sequence[str]) -> tuple[str, tuple[str, ...]]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/coverage/card.py",
+      "module": "ingest.sec_edgar.coverage.card",
+      "qualname": "cell_from_row",
+      "signature": "def cell_from_row(row: Sequence) -> CoverageCell"
+    },
+    {
+      "file": "src/ingest/sec_edgar/coverage/card.py",
+      "module": "ingest.sec_edgar.coverage.card",
+      "qualname": "coverage_card",
+      "signature": "def coverage_card(source: CoverageCardSource, cik: str, fiscal_year: int) -> dict[str, CoverageCell]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/coverage/card.py",
+      "module": "ingest.sec_edgar.coverage.card",
+      "qualname": "coverage_cards",
+      "signature": "def coverage_cards(source: CoverageCardSource) -> dict[tuple[str, int], dict[str, CoverageCell]]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/coverage/card.py",
+      "module": "ingest.sec_edgar.coverage.card",
+      "qualname": "empty_cells",
+      "signature": "def empty_cells(cards: Mapping[tuple[str, int], Mapping[str, CoverageCell]]) -> list[CoverageCell]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/coverage/card.py",
+      "module": "ingest.sec_edgar.coverage.card",
+      "qualname": "render_report",
+      "signature": "def render_report(cards: Mapping[tuple[str, int], Mapping[str, CoverageCell]]) -> str"
+    },
+    {
+      "file": "src/ingest/sec_edgar/coverage/card.py",
+      "module": "ingest.sec_edgar.coverage.card",
+      "qualname": "screen_eligibility",
+      "signature": "def screen_eligibility(cards: Mapping[tuple[str, int], Mapping[str, CoverageCell]], metric: str, cik: str, fiscal_year: int) -> Eligibility"
+    },
+    {
+      "file": "src/ingest/sec_edgar/coverage/cli.py",
+      "module": "ingest.sec_edgar.coverage.cli",
+      "qualname": "main",
+      "signature": "def main(argv: Sequence[str] | None=None, source: CoverageCardSource | None=None, out: TextIO | None=None) -> int"
+    }
+  ],
+  "nodes": [
+    "test/spec/coverage-card/test_c8_ddl.py::test_checks_ignore_whitespace_and_case",
+    "test/spec/coverage-card/test_c8_ddl.py::test_view_is_dropped_created_and_indexed",
+    "test/spec/coverage-card/test_c8_ddl.py::test_view_is_managed",
+    "test/spec/coverage-card/test_c8_ddl.py::test_view_shape",
+    "test/spec/coverage-card/test_coverage_card.py::test_card_metrics_are_stable_and_unique",
+    "test/spec/coverage-card/test_coverage_card.py::test_card_metrics_are_the_committed_list",
+    "test/spec/coverage-card/test_coverage_card.py::test_cards_agree_and_ignore_row_order",
+    "test/spec/coverage-card/test_coverage_card.py::test_cell_from_row_accepts_exactly_the_rule",
+    "test/spec/coverage-card/test_coverage_card.py::test_cell_from_row_point_cases",
+    "test/spec/coverage-card/test_coverage_card.py::test_classify_cell_matches_the_rule",
+    "test/spec/coverage-card/test_coverage_card.py::test_classify_cell_point_cases",
+    "test/spec/coverage-card/test_coverage_card.py::test_cli_no_cards",
+    "test/spec/coverage-card/test_coverage_card.py::test_cli_point_cases",
+    "test/spec/coverage-card/test_coverage_card.py::test_cli_strict_exit_follows_the_empty_cells",
+    "test/spec/coverage-card/test_coverage_card.py::test_coverage_card_point_case",
+    "test/spec/coverage-card/test_coverage_card.py::test_coverage_card_refusals",
+    "test/spec/coverage-card/test_coverage_card.py::test_coverage_cards_point_case",
+    "test/spec/coverage-card/test_coverage_card.py::test_empty_cells_and_report_point_case",
+    "test/spec/coverage-card/test_coverage_card.py::test_report_lists_each_empty_cell_once",
+    "test/spec/coverage-card/test_coverage_card.py::test_screen_eligibility_follows_the_rule",
+    "test/spec/coverage-card/test_coverage_card.py::test_screen_eligibility_point_cases"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/coverage-card.md",
+    "sha256": "cde8c86504a5991644a5be3c83be6d89099fdb86194c17970e67f8d88e739f60"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

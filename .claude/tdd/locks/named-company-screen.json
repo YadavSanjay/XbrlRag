@@ -1,0 +1,113 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-15",
+  "criteria": {
+    "C1": [
+      "test/spec/named-company-screen/test_ncs_c1_member_list.py::test_c1_member_list_points",
+      "test/spec/named-company-screen/test_ncs_c1_member_list.py::test_c1_not_a_member_list_is_none",
+      "test/spec/named-company-screen/test_ncs_c1_member_list.py::test_c1_member_list_rule_for_any_list"
+    ],
+    "C2": [
+      "test/spec/named-company-screen/test_ncs_c2_named_companies.py::test_c2_named_companies_point",
+      "test/spec/named-company-screen/test_ncs_c2_named_companies.py::test_c2_ambiguous_with_ticker_is_not_named",
+      "test/spec/named-company-screen/test_ncs_c2_named_companies.py::test_c2_named_companies_rule_for_any_list"
+    ],
+    "C3": [
+      "test/spec/named-company-screen/test_ncs_c3_plan_errors.py::test_c3_wrong_universes_are_one_error_each",
+      "test/spec/named-company-screen/test_ncs_c3_plan_errors.py::test_c3_exact_member_list_passes",
+      "test/spec/named-company-screen/test_ncs_c3_plan_errors.py::test_c3_lookups_only_and_second_screen",
+      "test/spec/named-company-screen/test_ncs_c3_plan_errors.py::test_c3_out_of_scope_gives_nothing",
+      "test/spec/named-company-screen/test_ncs_c3_plan_errors.py::test_c3_rule_for_any_plan"
+    ],
+    "C4": [
+      "test/spec/named-company-screen/test_ncs_c4_validator.py::test_c4_valid_member_lists",
+      "test/spec/named-company-screen/test_ncs_c4_validator.py::test_c4_invalid_lists_one_error_each",
+      "test/spec/named-company-screen/test_ncs_c4_validator.py::test_c4_universe_error_exactly_when_unread"
+    ],
+    "C5": [
+      "test/spec/named-company-screen/test_ncs_c5_screen.py::test_c5_top_one_among_the_named",
+      "test/spec/named-company-screen/test_ncs_c5_screen.py::test_c5_unranked_members_are_excluded",
+      "test/spec/named-company-screen/test_ncs_c5_screen.py::test_c5_unreadable_list_is_an_error",
+      "test/spec/named-company-screen/test_ncs_c5_screen.py::test_c5_member_list_rules_for_any_store"
+    ],
+    "C6": [
+      "test/spec/named-company-screen/test_ncs_c6_planner.py::test_c6_wrong_screen_is_retried",
+      "test/spec/named-company-screen/test_ncs_c6_planner.py::test_c6_always_wrong_fails_validation",
+      "test/spec/named-company-screen/test_ncs_c6_planner.py::test_c6_out_of_scope_intents_accept_the_covered_screen",
+      "test/spec/named-company-screen/test_ncs_c6_planner.py::test_c6_wrong_then_right_for_any_named_set"
+    ]
+  },
+  "files": {
+    "test/spec/named-company-screen/conftest.py": "f6d4b780e697b511d013f1f41d68923e12b9e67231f34461efbd62bcaaeb1a56",
+    "test/spec/named-company-screen/test_ncs_c1_member_list.py": "ea7e03cebf9ae61dcc87cfb2299580643236061d9186767e7e33ef18736b1045",
+    "test/spec/named-company-screen/test_ncs_c2_named_companies.py": "8d5f1977d3bafc2e994544425692441aabd1a3f8925c9db267d304bc71a37111",
+    "test/spec/named-company-screen/test_ncs_c3_plan_errors.py": "2d109465a33251582fcc829f9d037ae701d9419e24246482ee7b91dea19a2f2a",
+    "test/spec/named-company-screen/test_ncs_c4_validator.py": "6fd8a6fa586ced5761c104e66fd524653cbf19c506b43fcb89ec466d431f91d0",
+    "test/spec/named-company-screen/test_ncs_c5_screen.py": "bef0ecc18d733cb3266ebab932f0479c4f7f119311b12a54d5af077e32466ec3",
+    "test/spec/named-company-screen/test_ncs_c6_planner.py": "10280c1aa9f5498d4087d11b29854c70caa57a0f11a605b334894f9601f76d4a"
+  },
+  "id": "named-company-screen",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/named_company_screen.py",
+      "module": "retriever.xbrl.named_company_screen",
+      "qualname": "member_list",
+      "signature": "def member_list(universe: Any) -> list[str] | None"
+    },
+    {
+      "file": "src/retriever/xbrl/named_company_screen.py",
+      "module": "retriever.xbrl.named_company_screen",
+      "qualname": "named_companies",
+      "signature": "def named_companies(companies: Sequence[Any]) -> list[str]"
+    },
+    {
+      "file": "src/retriever/xbrl/named_company_screen.py",
+      "module": "retriever.xbrl.named_company_screen",
+      "qualname": "named_company_plan_errors",
+      "signature": "def named_company_plan_errors(plan: Any, companies: Sequence[str], universe: str | None) -> list[str]"
+    }
+  ],
+  "nodes": [
+    "test/spec/named-company-screen/test_ncs_c1_member_list.py::test_c1_member_list_points",
+    "test/spec/named-company-screen/test_ncs_c1_member_list.py::test_c1_member_list_rule_for_any_list",
+    "test/spec/named-company-screen/test_ncs_c1_member_list.py::test_c1_not_a_member_list_is_none",
+    "test/spec/named-company-screen/test_ncs_c2_named_companies.py::test_c2_ambiguous_with_ticker_is_not_named",
+    "test/spec/named-company-screen/test_ncs_c2_named_companies.py::test_c2_named_companies_point",
+    "test/spec/named-company-screen/test_ncs_c2_named_companies.py::test_c2_named_companies_rule_for_any_list",
+    "test/spec/named-company-screen/test_ncs_c3_plan_errors.py::test_c3_exact_member_list_passes",
+    "test/spec/named-company-screen/test_ncs_c3_plan_errors.py::test_c3_lookups_only_and_second_screen",
+    "test/spec/named-company-screen/test_ncs_c3_plan_errors.py::test_c3_out_of_scope_gives_nothing",
+    "test/spec/named-company-screen/test_ncs_c3_plan_errors.py::test_c3_rule_for_any_plan",
+    "test/spec/named-company-screen/test_ncs_c3_plan_errors.py::test_c3_wrong_universes_are_one_error_each",
+    "test/spec/named-company-screen/test_ncs_c4_validator.py::test_c4_invalid_lists_one_error_each",
+    "test/spec/named-company-screen/test_ncs_c4_validator.py::test_c4_universe_error_exactly_when_unread",
+    "test/spec/named-company-screen/test_ncs_c4_validator.py::test_c4_valid_member_lists",
+    "test/spec/named-company-screen/test_ncs_c5_screen.py::test_c5_member_list_rules_for_any_store",
+    "test/spec/named-company-screen/test_ncs_c5_screen.py::test_c5_top_one_among_the_named",
+    "test/spec/named-company-screen/test_ncs_c5_screen.py::test_c5_unranked_members_are_excluded",
+    "test/spec/named-company-screen/test_ncs_c5_screen.py::test_c5_unreadable_list_is_an_error",
+    "test/spec/named-company-screen/test_ncs_c6_planner.py::test_c6_always_wrong_fails_validation",
+    "test/spec/named-company-screen/test_ncs_c6_planner.py::test_c6_out_of_scope_intents_accept_the_covered_screen",
+    "test/spec/named-company-screen/test_ncs_c6_planner.py::test_c6_wrong_screen_is_retried",
+    "test/spec/named-company-screen/test_ncs_c6_planner.py::test_c6_wrong_then_right_for_any_named_set"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/named-company-screen.md",
+    "sha256": "49c4c63e0455607f5d710ccb1dc96efb3b945051e4af620fb21c9d7717b6e61a"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

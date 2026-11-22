@@ -1,0 +1,19 @@
+# The pinned ORIGINAL list of resolutions. Spec: docs/specs/key-statement-witness.md
+# (requirement 3); its role after docs/specs/reviewed-resolutions.md (requirement 2): entries
+# admitted before review records existed. An entry-for-entry copy of the spec's locked list
+# test/spec/key-statement-witness/fixtures/key_resolutions.yaml, kept here so the v2 build can
+# check at runtime (check_resolutions) that every live entry is original or reviewed, without
+# reading test/spec. A unit test (test/unit/test_v2_witness_wiring.py) fails when this copy and
+# the spec's list differ, so this file changes only with a re-lock of that spec.
+version: 1
+resolutions:
+  - family: DeferredRevenue
+    cik: '0001341439'
+    fiscal_year: 2024
+    concept: us-gaap:ContractWithCustomerLiability
+    value: 10546000000
+    reading: key
+    reason: >-
+      Total contract liability (current 9,313M plus non-current 1,233M in other non-current
+      liabilities, ORCL FY2025 10-K deferred revenue note). The balance sheet presents only
+      the current part.

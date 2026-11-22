@@ -1,0 +1,2243 @@
+{
+ "source": "xbrl_db.geography_normalization (read-only), 2026-11-07: the whole table, as loaded from src/ingest/util/generate_geography_normalization.py output",
+ "rows": [
+  {
+   "member_qname": "http://fasb.org/srt/2022:AfricaMember",
+   "iso_code": "AF",
+   "geo_name": "Africa",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:AmericasMember",
+   "iso_code": "AM",
+   "geo_name": "Americas",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:AsiaMember",
+   "iso_code": "AS",
+   "geo_name": "Asia",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:AsiaPacificMember",
+   "iso_code": "APAC",
+   "geo_name": "Asia Pacific",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:AustraliaAndNewZealandMember",
+   "iso_code": "ANZ",
+   "geo_name": "Australia and New Zealand",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:EuropeMember",
+   "iso_code": "EU",
+   "geo_name": "Europe",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:EuropeMiddleEastAndAfricaMember",
+   "iso_code": "EMEA",
+   "geo_name": "Europe, Middle East and Africa",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:InternationalMember",
+   "iso_code": "INTL",
+   "geo_name": "International",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:LatinAmericaMember",
+   "iso_code": "LATAM",
+   "geo_name": "Latin America",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:MiddleEastMember",
+   "iso_code": "ME",
+   "geo_name": "Middle East",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:NonUsMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:NorthAmericaMember",
+   "iso_code": "NA",
+   "geo_name": "North America",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:OutsideTheUnitedStatesMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:SegmentGeographicalGroupsOfCountriesGroupOneMember",
+   "iso_code": null,
+   "geo_name": "Geographic Group 1",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:SegmentGeographicalGroupsOfCountriesGroupThreeMember",
+   "iso_code": null,
+   "geo_name": "Geographic Group 3",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:SegmentGeographicalGroupsOfCountriesGroupTwoMember",
+   "iso_code": null,
+   "geo_name": "Geographic Group 2",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:SouthAmericaMember",
+   "iso_code": "SA",
+   "geo_name": "South America",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2022:UnitedStatesMember",
+   "iso_code": "US",
+   "geo_name": "United States",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:AfricaMember",
+   "iso_code": "AF",
+   "geo_name": "Africa",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:AmericasMember",
+   "iso_code": "AM",
+   "geo_name": "Americas",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:AsiaMember",
+   "iso_code": "AS",
+   "geo_name": "Asia",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:AsiaPacificMember",
+   "iso_code": "APAC",
+   "geo_name": "Asia Pacific",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:AustraliaAndNewZealandMember",
+   "iso_code": "ANZ",
+   "geo_name": "Australia and New Zealand",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:EuropeMember",
+   "iso_code": "EU",
+   "geo_name": "Europe",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:EuropeMiddleEastAndAfricaMember",
+   "iso_code": "EMEA",
+   "geo_name": "Europe, Middle East and Africa",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:InternationalMember",
+   "iso_code": "INTL",
+   "geo_name": "International",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:LatinAmericaMember",
+   "iso_code": "LATAM",
+   "geo_name": "Latin America",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:MiddleEastMember",
+   "iso_code": "ME",
+   "geo_name": "Middle East",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:NonUsMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:NorthAmericaMember",
+   "iso_code": "NA",
+   "geo_name": "North America",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:OutsideTheUnitedStatesMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:SegmentGeographicalGroupsOfCountriesGroupOneMember",
+   "iso_code": null,
+   "geo_name": "Geographic Group 1",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:SegmentGeographicalGroupsOfCountriesGroupThreeMember",
+   "iso_code": null,
+   "geo_name": "Geographic Group 3",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:SegmentGeographicalGroupsOfCountriesGroupTwoMember",
+   "iso_code": null,
+   "geo_name": "Geographic Group 2",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:SouthAmericaMember",
+   "iso_code": "SA",
+   "geo_name": "South America",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2023:UnitedStatesMember",
+   "iso_code": "US",
+   "geo_name": "United States",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:AfricaMember",
+   "iso_code": "AF",
+   "geo_name": "Africa",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:AmericasMember",
+   "iso_code": "AM",
+   "geo_name": "Americas",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:AsiaMember",
+   "iso_code": "AS",
+   "geo_name": "Asia",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:AsiaPacificMember",
+   "iso_code": "APAC",
+   "geo_name": "Asia Pacific",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:AustraliaAndNewZealandMember",
+   "iso_code": "ANZ",
+   "geo_name": "Australia and New Zealand",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:EuropeMember",
+   "iso_code": "EU",
+   "geo_name": "Europe",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:EuropeMiddleEastAndAfricaMember",
+   "iso_code": "EMEA",
+   "geo_name": "Europe, Middle East and Africa",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:InternationalMember",
+   "iso_code": "INTL",
+   "geo_name": "International",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:LatinAmericaMember",
+   "iso_code": "LATAM",
+   "geo_name": "Latin America",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:MiddleEastMember",
+   "iso_code": "ME",
+   "geo_name": "Middle East",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:NonUsMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:NorthAmericaMember",
+   "iso_code": "NA",
+   "geo_name": "North America",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:OutsideTheUnitedStatesMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:SegmentGeographicalGroupsOfCountriesGroupOneMember",
+   "iso_code": null,
+   "geo_name": "Geographic Group 1",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:SegmentGeographicalGroupsOfCountriesGroupThreeMember",
+   "iso_code": null,
+   "geo_name": "Geographic Group 3",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:SegmentGeographicalGroupsOfCountriesGroupTwoMember",
+   "iso_code": null,
+   "geo_name": "Geographic Group 2",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:SouthAmericaMember",
+   "iso_code": "SA",
+   "geo_name": "South America",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2024:UnitedStatesMember",
+   "iso_code": "US",
+   "geo_name": "United States",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:AfricaMember",
+   "iso_code": "AF",
+   "geo_name": "Africa",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:AmericasMember",
+   "iso_code": "AM",
+   "geo_name": "Americas",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:AsiaMember",
+   "iso_code": "AS",
+   "geo_name": "Asia",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:AsiaPacificMember",
+   "iso_code": "APAC",
+   "geo_name": "Asia Pacific",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:AustraliaAndNewZealandMember",
+   "iso_code": "ANZ",
+   "geo_name": "Australia and New Zealand",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:EuropeMember",
+   "iso_code": "EU",
+   "geo_name": "Europe",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:EuropeMiddleEastAndAfricaMember",
+   "iso_code": "EMEA",
+   "geo_name": "Europe, Middle East and Africa",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:InternationalMember",
+   "iso_code": "INTL",
+   "geo_name": "International",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:LatinAmericaMember",
+   "iso_code": "LATAM",
+   "geo_name": "Latin America",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:MiddleEastMember",
+   "iso_code": "ME",
+   "geo_name": "Middle East",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:NonUsMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:NorthAmericaMember",
+   "iso_code": "NA",
+   "geo_name": "North America",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:OutsideTheUnitedStatesMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:SegmentGeographicalGroupsOfCountriesGroupOneMember",
+   "iso_code": null,
+   "geo_name": "Geographic Group 1",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:SegmentGeographicalGroupsOfCountriesGroupThreeMember",
+   "iso_code": null,
+   "geo_name": "Geographic Group 3",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:SegmentGeographicalGroupsOfCountriesGroupTwoMember",
+   "iso_code": null,
+   "geo_name": "Geographic Group 2",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:SouthAmericaMember",
+   "iso_code": "SA",
+   "geo_name": "South America",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2025:UnitedStatesMember",
+   "iso_code": "US",
+   "geo_name": "United States",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:AfricaMember",
+   "iso_code": "AF",
+   "geo_name": "Africa",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:AmericasMember",
+   "iso_code": "AM",
+   "geo_name": "Americas",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:AsiaMember",
+   "iso_code": "AS",
+   "geo_name": "Asia",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:AsiaPacificMember",
+   "iso_code": "APAC",
+   "geo_name": "Asia Pacific",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:AustraliaAndNewZealandMember",
+   "iso_code": "ANZ",
+   "geo_name": "Australia and New Zealand",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:EuropeMember",
+   "iso_code": "EU",
+   "geo_name": "Europe",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:EuropeMiddleEastAndAfricaMember",
+   "iso_code": "EMEA",
+   "geo_name": "Europe, Middle East and Africa",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:InternationalMember",
+   "iso_code": "INTL",
+   "geo_name": "International",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:LatinAmericaMember",
+   "iso_code": "LATAM",
+   "geo_name": "Latin America",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:MiddleEastMember",
+   "iso_code": "ME",
+   "geo_name": "Middle East",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:NonUsMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:NorthAmericaMember",
+   "iso_code": "NA",
+   "geo_name": "North America",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:OutsideTheUnitedStatesMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:SegmentGeographicalGroupsOfCountriesGroupOneMember",
+   "iso_code": null,
+   "geo_name": "Geographic Group 1",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:SegmentGeographicalGroupsOfCountriesGroupThreeMember",
+   "iso_code": null,
+   "geo_name": "Geographic Group 3",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:SegmentGeographicalGroupsOfCountriesGroupTwoMember",
+   "iso_code": null,
+   "geo_name": "Geographic Group 2",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:SouthAmericaMember",
+   "iso_code": "SA",
+   "geo_name": "South America",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/srt/2026:UnitedStatesMember",
+   "iso_code": "US",
+   "geo_name": "United States",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2022:DomesticCountryMember",
+   "iso_code": "US",
+   "geo_name": "United States (domestic)",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2022:ForeignCountryMember",
+   "iso_code": "INTL",
+   "geo_name": "Foreign Countries",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2022:NonUsMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2022:OutsideTheUnitedStatesMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2023:DomesticCountryMember",
+   "iso_code": "US",
+   "geo_name": "United States (domestic)",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2023:ForeignCountryMember",
+   "iso_code": "INTL",
+   "geo_name": "Foreign Countries",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2023:NonUsMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2023:OutsideTheUnitedStatesMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2024:DomesticCountryMember",
+   "iso_code": "US",
+   "geo_name": "United States (domestic)",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2024:ForeignCountryMember",
+   "iso_code": "INTL",
+   "geo_name": "Foreign Countries",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2024:NonUsMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2024:OutsideTheUnitedStatesMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2025:DomesticCountryMember",
+   "iso_code": "US",
+   "geo_name": "United States (domestic)",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2025:ForeignCountryMember",
+   "iso_code": "INTL",
+   "geo_name": "Foreign Countries",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2025:NonUsMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2025:OutsideTheUnitedStatesMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2026:DomesticCountryMember",
+   "iso_code": "US",
+   "geo_name": "United States (domestic)",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2026:ForeignCountryMember",
+   "iso_code": "INTL",
+   "geo_name": "Foreign Countries",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2026:NonUsMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://fasb.org/us-gaap/2026:OutsideTheUnitedStatesMember",
+   "iso_code": "NON-US",
+   "geo_name": "Outside United States",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.amd.com/20221231:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (AMD)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.amd.com/20231230:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (AMD)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.amd.com/20241228:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (AMD)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.apple.com/20220924:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (AAPL)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.apple.com/20230930:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (AAPL)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.apple.com/20240928:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (AAPL)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.apple.com/20250927:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (AAPL)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.broadcom.com/20221030:AllOtherGeographiesMemberMember",
+   "iso_code": "ROW",
+   "geo_name": "AllOtherGeographiesMember (AVGO)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.broadcom.com/20221030:ChinaincludingHongKongMember",
+   "iso_code": "GCN",
+   "geo_name": "China (including Hong Kong) (AVGO)",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://www.broadcom.com/20231029:AllOtherGeographiesMemberMember",
+   "iso_code": "ROW",
+   "geo_name": "AllOtherGeographiesMember (AVGO)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.broadcom.com/20231029:ChinaincludingHongKongMember",
+   "iso_code": "GCN",
+   "geo_name": "China (including Hong Kong) (AVGO)",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://www.broadcom.com/20241103:AllOtherGeographiesMemberMember",
+   "iso_code": "ROW",
+   "geo_name": "AllOtherGeographiesMember (AVGO)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.broadcom.com/20241103:ChinaincludingHongKongMember",
+   "iso_code": "GCN",
+   "geo_name": "China (including Hong Kong) (AVGO)",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://www.broadcom.com/20251102:AllOtherGeographiesMemberMember",
+   "iso_code": "ROW",
+   "geo_name": "AllOtherGeographiesMember (AVGO)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.broadcom.com/20251102:ChinaincludingHongKongMember",
+   "iso_code": "GCN",
+   "geo_name": "China (including Hong Kong) (AVGO)",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://www.facebook.com/20221231:RestOfWorldMember",
+   "iso_code": "ROW",
+   "geo_name": "Rest Of World (META)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.facebook.com/20221231:USCanadaMember",
+   "iso_code": "US-CA",
+   "geo_name": "US & Canada (META)",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://www.facebook.com/20231231:RestOfWorldMember",
+   "iso_code": "ROW",
+   "geo_name": "Rest Of World (META)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.facebook.com/20231231:USCanadaMember",
+   "iso_code": "US-CA",
+   "geo_name": "US & Canada (META)",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://www.facebook.com/20241231:RestOfWorldMember",
+   "iso_code": "ROW",
+   "geo_name": "Rest Of World (META)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.facebook.com/20241231:USCanadaMember",
+   "iso_code": "US-CA",
+   "geo_name": "US & Canada (META)",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://www.facebook.com/20251231:RestOfWorldMember",
+   "iso_code": "ROW",
+   "geo_name": "Rest Of World (META)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.facebook.com/20251231:USCanadaMember",
+   "iso_code": "US-CA",
+   "geo_name": "US & Canada (META)",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://www.google.com/20221231:AmericasExcludingUnitedStatesMember",
+   "iso_code": "LATAM",
+   "geo_name": "Americas Excluding United States (GOOGL)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.google.com/20231231:AmericasExcludingUnitedStatesMember",
+   "iso_code": "LATAM",
+   "geo_name": "Americas Excluding United States (GOOGL)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.google.com/20241231:AmericasExcludingUnitedStatesMember",
+   "iso_code": "LATAM",
+   "geo_name": "Americas Excluding United States (GOOGL)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.google.com/20251231:AmericasExcludingUnitedStatesMember",
+   "iso_code": "LATAM",
+   "geo_name": "Americas Excluding United States (GOOGL)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.micron.com/20220901:OtherAsiaPacificMember",
+   "iso_code": "APAC",
+   "geo_name": "Other Asia Pacific (MU)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.micron.com/20220901:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (MU)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.micron.com/20230831:OtherAsiaPacificMember",
+   "iso_code": "APAC",
+   "geo_name": "Other Asia Pacific (MU)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.micron.com/20230831:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (MU)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.micron.com/20240829:OtherAsiaPacificMember",
+   "iso_code": "APAC",
+   "geo_name": "Other Asia Pacific (MU)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.micron.com/20240829:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (MU)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.micron.com/20250828:OtherAsiaPacificMember",
+   "iso_code": "APAC",
+   "geo_name": "Other Asia Pacific (MU)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.micron.com/20250828:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (MU)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.microsoft.com/20220630:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (MSFT)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.microsoft.com/20230630:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (MSFT)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.microsoft.com/20240630:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (MSFT)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.microsoft.com/20250630:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (MSFT)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.nvidia.com/20220130:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (NVDA)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.nvidia.com/20230129:ChinaIncludingHongKongMember",
+   "iso_code": "GCN",
+   "geo_name": "China Including Hong Kong (NVDA)",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://www.nvidia.com/20230129:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (NVDA)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.nvidia.com/20240128:ChinaIncludingHongKongMember",
+   "iso_code": "GCN",
+   "geo_name": "China Including Hong Kong (NVDA)",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://www.nvidia.com/20240128:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (NVDA)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.nvidia.com/20250126:ChinaIncludingHongKongMember",
+   "iso_code": "GCN",
+   "geo_name": "China Including Hong Kong (NVDA)",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://www.nvidia.com/20250126:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (NVDA)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.nvidia.com/20260125:ChinaIncludingHongKongMember",
+   "iso_code": "GCN",
+   "geo_name": "China Including Hong Kong (NVDA)",
+   "geo_type": "segment"
+  },
+  {
+   "member_qname": "http://www.nvidia.com/20260125:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (NVDA)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.oracle.com/20220531:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (ORCL)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.oracle.com/20230531:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (ORCL)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.oracle.com/20240531:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (ORCL)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.oracle.com/20250531:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (ORCL)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.oracle.com/20260531:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (ORCL)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tesla.com/20221231:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (TSLA)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tesla.com/20221231:OtherInternationalMember",
+   "iso_code": "ROW",
+   "geo_name": "Other International (TSLA)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tesla.com/20221231:ShanghaiChinaMember",
+   "iso_code": "CN",
+   "geo_name": "Shanghai, China (TSLA)",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://www.tesla.com/20231231:OtherInternationalMember",
+   "iso_code": "ROW",
+   "geo_name": "Other International (TSLA)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tesla.com/20231231:ShanghaiChinaMember",
+   "iso_code": "CN",
+   "geo_name": "Shanghai, China (TSLA)",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://www.tsmc.com/20221231:EmeaMember",
+   "iso_code": "EMEA",
+   "geo_name": "EMEA (TSM)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tsmc.com/20221231:EuropeMiddleEastAndAfricaMember",
+   "iso_code": "EMEA",
+   "geo_name": "Europe Middle East and Africa (TSM)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tsmc.com/20221231:OtherCountryMember",
+   "iso_code": "ROW",
+   "geo_name": "Other country (TSM)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tsmc.com/20221231:OthersMember",
+   "iso_code": "ROW",
+   "geo_name": "Others (TSM)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tsmc.com/20231231:EmeaMember",
+   "iso_code": "EMEA",
+   "geo_name": "EMEA (TSM)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tsmc.com/20231231:EuropeMiddleEastAndAfricaMember",
+   "iso_code": "EMEA",
+   "geo_name": "Europe Middle East and Africa (TSM)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tsmc.com/20231231:OtherCountryMember",
+   "iso_code": "ROW",
+   "geo_name": "Other country (TSM)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tsmc.com/20231231:OthersMember",
+   "iso_code": "ROW",
+   "geo_name": "Others (TSM)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tsmc.com/20241231:EmeaMember",
+   "iso_code": "EMEA",
+   "geo_name": "EMEA (TSM)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tsmc.com/20241231:EuropeMiddleEastAndAfricaMember",
+   "iso_code": "EMEA",
+   "geo_name": "Europe Middle East and Africa (TSM)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tsmc.com/20241231:OtherCountryMember",
+   "iso_code": "ROW",
+   "geo_name": "Other country (TSM)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tsmc.com/20241231:OthersMember",
+   "iso_code": "ROW",
+   "geo_name": "Others (TSM)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tsmc.com/20251231:EuropeMiddleEastAndAfricaMember",
+   "iso_code": "EMEA",
+   "geo_name": "Europe Middle East and Africa (TSM)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tsmc.com/20251231:OtherCountriesMember",
+   "iso_code": "ROW",
+   "geo_name": "Other Countries (TSM)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://www.tsmc.com/20251231:OthersMember",
+   "iso_code": "ROW",
+   "geo_name": "Others (TSM)",
+   "geo_type": "region"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:AE",
+   "iso_code": "AE",
+   "geo_name": "United Arab Emirates",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:AU",
+   "iso_code": "AU",
+   "geo_name": "Australia",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:BE",
+   "iso_code": "BE",
+   "geo_name": "Belgium",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:BR",
+   "iso_code": "BR",
+   "geo_name": "Brazil",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:CA",
+   "iso_code": "CA",
+   "geo_name": "Canada",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:CH",
+   "iso_code": "CH",
+   "geo_name": "Switzerland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:CN",
+   "iso_code": "CN",
+   "geo_name": "China",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:CZ",
+   "iso_code": "CZ",
+   "geo_name": "Czech Republic",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:DE",
+   "iso_code": "DE",
+   "geo_name": "Germany",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:DK",
+   "iso_code": "DK",
+   "geo_name": "Denmark",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:ES",
+   "iso_code": "ES",
+   "geo_name": "Spain",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:FI",
+   "iso_code": "FI",
+   "geo_name": "Finland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:FR",
+   "iso_code": "FR",
+   "geo_name": "France",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:GB",
+   "iso_code": "GB",
+   "geo_name": "United Kingdom",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:HK",
+   "iso_code": "HK",
+   "geo_name": "Hong Kong",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:HU",
+   "iso_code": "HU",
+   "geo_name": "Hungary",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:ID",
+   "iso_code": "ID",
+   "geo_name": "Indonesia",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:IE",
+   "iso_code": "IE",
+   "geo_name": "Ireland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:IL",
+   "iso_code": "IL",
+   "geo_name": "Israel",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:IN",
+   "iso_code": "IN",
+   "geo_name": "India",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:IT",
+   "iso_code": "IT",
+   "geo_name": "Italy",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:JP",
+   "iso_code": "JP",
+   "geo_name": "Japan",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:KR",
+   "iso_code": "KR",
+   "geo_name": "South Korea",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:MX",
+   "iso_code": "MX",
+   "geo_name": "Mexico",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:MY",
+   "iso_code": "MY",
+   "geo_name": "Malaysia",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:NL",
+   "iso_code": "NL",
+   "geo_name": "Netherlands",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:NO",
+   "iso_code": "NO",
+   "geo_name": "Norway",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:NZ",
+   "iso_code": "NZ",
+   "geo_name": "New Zealand",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:PH",
+   "iso_code": "PH",
+   "geo_name": "Philippines",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:PL",
+   "iso_code": "PL",
+   "geo_name": "Poland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:RO",
+   "iso_code": "RO",
+   "geo_name": "Romania",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:SE",
+   "iso_code": "SE",
+   "geo_name": "Sweden",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:SG",
+   "iso_code": "SG",
+   "geo_name": "Singapore",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:TH",
+   "iso_code": "TH",
+   "geo_name": "Thailand",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:TW",
+   "iso_code": "TW",
+   "geo_name": "Taiwan",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:US",
+   "iso_code": "US",
+   "geo_name": "United States",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:VN",
+   "iso_code": "VN",
+   "geo_name": "Vietnam",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2022:ZA",
+   "iso_code": "ZA",
+   "geo_name": "South Africa",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:AE",
+   "iso_code": "AE",
+   "geo_name": "United Arab Emirates",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:AU",
+   "iso_code": "AU",
+   "geo_name": "Australia",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:BE",
+   "iso_code": "BE",
+   "geo_name": "Belgium",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:BR",
+   "iso_code": "BR",
+   "geo_name": "Brazil",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:CA",
+   "iso_code": "CA",
+   "geo_name": "Canada",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:CH",
+   "iso_code": "CH",
+   "geo_name": "Switzerland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:CN",
+   "iso_code": "CN",
+   "geo_name": "China",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:CZ",
+   "iso_code": "CZ",
+   "geo_name": "Czech Republic",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:DE",
+   "iso_code": "DE",
+   "geo_name": "Germany",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:DK",
+   "iso_code": "DK",
+   "geo_name": "Denmark",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:ES",
+   "iso_code": "ES",
+   "geo_name": "Spain",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:FI",
+   "iso_code": "FI",
+   "geo_name": "Finland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:FR",
+   "iso_code": "FR",
+   "geo_name": "France",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:GB",
+   "iso_code": "GB",
+   "geo_name": "United Kingdom",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:HK",
+   "iso_code": "HK",
+   "geo_name": "Hong Kong",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:HU",
+   "iso_code": "HU",
+   "geo_name": "Hungary",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:ID",
+   "iso_code": "ID",
+   "geo_name": "Indonesia",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:IE",
+   "iso_code": "IE",
+   "geo_name": "Ireland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:IL",
+   "iso_code": "IL",
+   "geo_name": "Israel",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:IN",
+   "iso_code": "IN",
+   "geo_name": "India",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:IT",
+   "iso_code": "IT",
+   "geo_name": "Italy",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:JP",
+   "iso_code": "JP",
+   "geo_name": "Japan",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:KR",
+   "iso_code": "KR",
+   "geo_name": "South Korea",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:MX",
+   "iso_code": "MX",
+   "geo_name": "Mexico",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:MY",
+   "iso_code": "MY",
+   "geo_name": "Malaysia",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:NL",
+   "iso_code": "NL",
+   "geo_name": "Netherlands",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:NO",
+   "iso_code": "NO",
+   "geo_name": "Norway",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:NZ",
+   "iso_code": "NZ",
+   "geo_name": "New Zealand",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:PH",
+   "iso_code": "PH",
+   "geo_name": "Philippines",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:PL",
+   "iso_code": "PL",
+   "geo_name": "Poland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:RO",
+   "iso_code": "RO",
+   "geo_name": "Romania",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:SE",
+   "iso_code": "SE",
+   "geo_name": "Sweden",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:SG",
+   "iso_code": "SG",
+   "geo_name": "Singapore",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:TH",
+   "iso_code": "TH",
+   "geo_name": "Thailand",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:TW",
+   "iso_code": "TW",
+   "geo_name": "Taiwan",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:US",
+   "iso_code": "US",
+   "geo_name": "United States",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:VN",
+   "iso_code": "VN",
+   "geo_name": "Vietnam",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2023:ZA",
+   "iso_code": "ZA",
+   "geo_name": "South Africa",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:AE",
+   "iso_code": "AE",
+   "geo_name": "United Arab Emirates",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:AU",
+   "iso_code": "AU",
+   "geo_name": "Australia",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:BE",
+   "iso_code": "BE",
+   "geo_name": "Belgium",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:BR",
+   "iso_code": "BR",
+   "geo_name": "Brazil",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:CA",
+   "iso_code": "CA",
+   "geo_name": "Canada",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:CH",
+   "iso_code": "CH",
+   "geo_name": "Switzerland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:CN",
+   "iso_code": "CN",
+   "geo_name": "China",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:CZ",
+   "iso_code": "CZ",
+   "geo_name": "Czech Republic",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:DE",
+   "iso_code": "DE",
+   "geo_name": "Germany",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:DK",
+   "iso_code": "DK",
+   "geo_name": "Denmark",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:ES",
+   "iso_code": "ES",
+   "geo_name": "Spain",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:FI",
+   "iso_code": "FI",
+   "geo_name": "Finland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:FR",
+   "iso_code": "FR",
+   "geo_name": "France",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:GB",
+   "iso_code": "GB",
+   "geo_name": "United Kingdom",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:HK",
+   "iso_code": "HK",
+   "geo_name": "Hong Kong",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:HU",
+   "iso_code": "HU",
+   "geo_name": "Hungary",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:ID",
+   "iso_code": "ID",
+   "geo_name": "Indonesia",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:IE",
+   "iso_code": "IE",
+   "geo_name": "Ireland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:IL",
+   "iso_code": "IL",
+   "geo_name": "Israel",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:IN",
+   "iso_code": "IN",
+   "geo_name": "India",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:IT",
+   "iso_code": "IT",
+   "geo_name": "Italy",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:JP",
+   "iso_code": "JP",
+   "geo_name": "Japan",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:KR",
+   "iso_code": "KR",
+   "geo_name": "South Korea",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:MX",
+   "iso_code": "MX",
+   "geo_name": "Mexico",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:MY",
+   "iso_code": "MY",
+   "geo_name": "Malaysia",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:NL",
+   "iso_code": "NL",
+   "geo_name": "Netherlands",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:NO",
+   "iso_code": "NO",
+   "geo_name": "Norway",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:NZ",
+   "iso_code": "NZ",
+   "geo_name": "New Zealand",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:PH",
+   "iso_code": "PH",
+   "geo_name": "Philippines",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:PL",
+   "iso_code": "PL",
+   "geo_name": "Poland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:RO",
+   "iso_code": "RO",
+   "geo_name": "Romania",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:SE",
+   "iso_code": "SE",
+   "geo_name": "Sweden",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:SG",
+   "iso_code": "SG",
+   "geo_name": "Singapore",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:TH",
+   "iso_code": "TH",
+   "geo_name": "Thailand",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:TW",
+   "iso_code": "TW",
+   "geo_name": "Taiwan",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:US",
+   "iso_code": "US",
+   "geo_name": "United States",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:VN",
+   "iso_code": "VN",
+   "geo_name": "Vietnam",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2024:ZA",
+   "iso_code": "ZA",
+   "geo_name": "South Africa",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:AE",
+   "iso_code": "AE",
+   "geo_name": "United Arab Emirates",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:AU",
+   "iso_code": "AU",
+   "geo_name": "Australia",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:BE",
+   "iso_code": "BE",
+   "geo_name": "Belgium",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:BR",
+   "iso_code": "BR",
+   "geo_name": "Brazil",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:CA",
+   "iso_code": "CA",
+   "geo_name": "Canada",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:CH",
+   "iso_code": "CH",
+   "geo_name": "Switzerland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:CN",
+   "iso_code": "CN",
+   "geo_name": "China",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:CZ",
+   "iso_code": "CZ",
+   "geo_name": "Czech Republic",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:DE",
+   "iso_code": "DE",
+   "geo_name": "Germany",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:DK",
+   "iso_code": "DK",
+   "geo_name": "Denmark",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:ES",
+   "iso_code": "ES",
+   "geo_name": "Spain",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:FI",
+   "iso_code": "FI",
+   "geo_name": "Finland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:FR",
+   "iso_code": "FR",
+   "geo_name": "France",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:GB",
+   "iso_code": "GB",
+   "geo_name": "United Kingdom",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:HK",
+   "iso_code": "HK",
+   "geo_name": "Hong Kong",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:HU",
+   "iso_code": "HU",
+   "geo_name": "Hungary",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:ID",
+   "iso_code": "ID",
+   "geo_name": "Indonesia",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:IE",
+   "iso_code": "IE",
+   "geo_name": "Ireland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:IL",
+   "iso_code": "IL",
+   "geo_name": "Israel",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:IN",
+   "iso_code": "IN",
+   "geo_name": "India",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:IT",
+   "iso_code": "IT",
+   "geo_name": "Italy",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:JP",
+   "iso_code": "JP",
+   "geo_name": "Japan",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:KR",
+   "iso_code": "KR",
+   "geo_name": "South Korea",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:MX",
+   "iso_code": "MX",
+   "geo_name": "Mexico",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:MY",
+   "iso_code": "MY",
+   "geo_name": "Malaysia",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:NL",
+   "iso_code": "NL",
+   "geo_name": "Netherlands",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:NO",
+   "iso_code": "NO",
+   "geo_name": "Norway",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:NZ",
+   "iso_code": "NZ",
+   "geo_name": "New Zealand",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:PH",
+   "iso_code": "PH",
+   "geo_name": "Philippines",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:PL",
+   "iso_code": "PL",
+   "geo_name": "Poland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:RO",
+   "iso_code": "RO",
+   "geo_name": "Romania",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:SE",
+   "iso_code": "SE",
+   "geo_name": "Sweden",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:SG",
+   "iso_code": "SG",
+   "geo_name": "Singapore",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:TH",
+   "iso_code": "TH",
+   "geo_name": "Thailand",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:TW",
+   "iso_code": "TW",
+   "geo_name": "Taiwan",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:US",
+   "iso_code": "US",
+   "geo_name": "United States",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:VN",
+   "iso_code": "VN",
+   "geo_name": "Vietnam",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2025:ZA",
+   "iso_code": "ZA",
+   "geo_name": "South Africa",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:AE",
+   "iso_code": "AE",
+   "geo_name": "United Arab Emirates",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:AU",
+   "iso_code": "AU",
+   "geo_name": "Australia",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:BE",
+   "iso_code": "BE",
+   "geo_name": "Belgium",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:BR",
+   "iso_code": "BR",
+   "geo_name": "Brazil",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:CA",
+   "iso_code": "CA",
+   "geo_name": "Canada",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:CH",
+   "iso_code": "CH",
+   "geo_name": "Switzerland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:CN",
+   "iso_code": "CN",
+   "geo_name": "China",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:CZ",
+   "iso_code": "CZ",
+   "geo_name": "Czech Republic",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:DE",
+   "iso_code": "DE",
+   "geo_name": "Germany",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:DK",
+   "iso_code": "DK",
+   "geo_name": "Denmark",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:ES",
+   "iso_code": "ES",
+   "geo_name": "Spain",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:FI",
+   "iso_code": "FI",
+   "geo_name": "Finland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:FR",
+   "iso_code": "FR",
+   "geo_name": "France",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:GB",
+   "iso_code": "GB",
+   "geo_name": "United Kingdom",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:HK",
+   "iso_code": "HK",
+   "geo_name": "Hong Kong",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:HU",
+   "iso_code": "HU",
+   "geo_name": "Hungary",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:ID",
+   "iso_code": "ID",
+   "geo_name": "Indonesia",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:IE",
+   "iso_code": "IE",
+   "geo_name": "Ireland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:IL",
+   "iso_code": "IL",
+   "geo_name": "Israel",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:IN",
+   "iso_code": "IN",
+   "geo_name": "India",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:IT",
+   "iso_code": "IT",
+   "geo_name": "Italy",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:JP",
+   "iso_code": "JP",
+   "geo_name": "Japan",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:KR",
+   "iso_code": "KR",
+   "geo_name": "South Korea",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:MX",
+   "iso_code": "MX",
+   "geo_name": "Mexico",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:MY",
+   "iso_code": "MY",
+   "geo_name": "Malaysia",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:NL",
+   "iso_code": "NL",
+   "geo_name": "Netherlands",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:NO",
+   "iso_code": "NO",
+   "geo_name": "Norway",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:NZ",
+   "iso_code": "NZ",
+   "geo_name": "New Zealand",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:PH",
+   "iso_code": "PH",
+   "geo_name": "Philippines",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:PL",
+   "iso_code": "PL",
+   "geo_name": "Poland",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:RO",
+   "iso_code": "RO",
+   "geo_name": "Romania",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:SE",
+   "iso_code": "SE",
+   "geo_name": "Sweden",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:SG",
+   "iso_code": "SG",
+   "geo_name": "Singapore",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:TH",
+   "iso_code": "TH",
+   "geo_name": "Thailand",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:TW",
+   "iso_code": "TW",
+   "geo_name": "Taiwan",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:US",
+   "iso_code": "US",
+   "geo_name": "United States",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:VN",
+   "iso_code": "VN",
+   "geo_name": "Vietnam",
+   "geo_type": "country"
+  },
+  {
+   "member_qname": "http://xbrl.sec.gov/country/2026:ZA",
+   "iso_code": "ZA",
+   "geo_name": "South Africa",
+   "geo_type": "country"
+  }
+ ]
+}

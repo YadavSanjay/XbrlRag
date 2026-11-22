@@ -1,0 +1,93 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-12",
+  "criteria": {
+    "C1": [
+      "test/spec/yoy-growth-s1/test_yoy_growth_c1_both_legs.py::test_each_leg_is_the_latest_report_of_its_year[INTC-Revenue-FY2023]",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c1_both_legs.py::test_each_leg_is_the_latest_report_of_its_year[INTC-Revenue-FY2024]",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c1_both_legs.py::test_each_leg_is_the_latest_report_of_its_year[TSM-NetIncome-FY2023]",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c1_both_legs.py::test_each_leg_is_the_latest_report_of_its_year[INTC-CashFromFinancing-FY2023]",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c1_both_legs.py::test_each_leg_is_the_latest_report_of_its_year[META-Capex-FY2023]",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c1_both_legs.py::test_legs_hold_s1_and_ignore_row_order_and_unrelated_filings",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c1_both_legs.py::test_a_later_restating_report_becomes_that_leg"
+    ],
+    "C2": [
+      "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py::test_without_a_later_report_the_filing_s_own_comparison_answers[INTC-Revenue-FY2025]",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py::test_without_a_later_report_the_filing_s_own_comparison_answers[TSM-NetIncome-FY2025]",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py::test_a_year_without_its_own_filing_has_no_growth[INTC-Revenue-FY2022]",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py::test_a_year_without_its_own_filing_has_no_growth[TSM-NetIncome-FY2022]",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py::test_a_year_without_its_own_filing_has_no_growth[INTC-Revenue-FY2026]",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py::test_removing_the_prior_years_own_column_leaves_no_growth",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py::test_a_prior_leg_in_another_unit_leaves_no_growth",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py::test_a_non_positive_prior_is_not_meaningful"
+    ],
+    "C3": [
+      "test/spec/yoy-growth-s1/test_yoy_growth_c3_template.py::test_the_case_keys_both_s1_legs_and_their_growth[INTC-Revenue-FY2023]",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c3_template.py::test_the_case_keys_both_s1_legs_and_their_growth[TSM-NetIncome-FY2023]",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c3_template.py::test_the_case_keys_both_s1_legs_and_their_growth[INTC-Revenue-FY2025]",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c3_template.py::test_no_case_without_both_years",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c3_template.py::test_the_third_phrasing_names_the_prior_year",
+      "test/spec/yoy-growth-s1/test_yoy_growth_c3_template.py::test_every_case_holds_s1_and_row_order_never_matters"
+    ]
+  },
+  "files": {
+    "test/spec/yoy-growth-s1/conftest.py": "aa97d73e4aaa9f03ce50bb26defd5dc7c815dc7981da61e1746c362874677c5d",
+    "test/spec/yoy-growth-s1/fixtures/companyfacts.json": "3fd8d34dfd9656f878140367065c124279010fc36681be6366b12c7fc8487bac",
+    "test/spec/yoy-growth-s1/fixtures/dei.json": "4d2cc9b03d88e86cc0b7ed693dafbed52c458a26258124aca0f20038b202561b",
+    "test/spec/yoy-growth-s1/fixtures/fsds.json": "39c54f833a35af04750feb6b1c27b7d721c6f01262669ce3a0fef090171dbf7e",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c1_both_legs.py": "5a5dc3830f378902da0c4be3a210e3b8a4edc33cf75979be14735ed55765eb51",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py": "02f4420b8d937d624bdd374e6f5161c44dc670da58ad90f24056fcbfa188fdd8",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c3_template.py": "7c0c5bcd264253d55bc2d994f7a72f6644cee972959d1a187296ee3f5930981e"
+  },
+  "id": "yoy-growth-s1",
+  "interface": [
+    {
+      "file": "src/eval/suites/sql_derived.py",
+      "module": "eval.suites.sql_derived",
+      "qualname": "s1_yoy_pick",
+      "signature": "def s1_yoy_pick(rows: Sequence[collections.abc.Mapping[str, Any]], fy: int) -> dict | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/yoy-growth-s1/test_yoy_growth_c1_both_legs.py::test_a_later_restating_report_becomes_that_leg",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c1_both_legs.py::test_each_leg_is_the_latest_report_of_its_year[INTC-CashFromFinancing-FY2023]",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c1_both_legs.py::test_each_leg_is_the_latest_report_of_its_year[INTC-Revenue-FY2023]",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c1_both_legs.py::test_each_leg_is_the_latest_report_of_its_year[INTC-Revenue-FY2024]",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c1_both_legs.py::test_each_leg_is_the_latest_report_of_its_year[META-Capex-FY2023]",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c1_both_legs.py::test_each_leg_is_the_latest_report_of_its_year[TSM-NetIncome-FY2023]",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c1_both_legs.py::test_legs_hold_s1_and_ignore_row_order_and_unrelated_filings",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py::test_a_non_positive_prior_is_not_meaningful",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py::test_a_prior_leg_in_another_unit_leaves_no_growth",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py::test_a_year_without_its_own_filing_has_no_growth[INTC-Revenue-FY2022]",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py::test_a_year_without_its_own_filing_has_no_growth[INTC-Revenue-FY2026]",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py::test_a_year_without_its_own_filing_has_no_growth[TSM-NetIncome-FY2022]",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py::test_removing_the_prior_years_own_column_leaves_no_growth",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py::test_without_a_later_report_the_filing_s_own_comparison_answers[INTC-Revenue-FY2025]",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c2_own_comparison.py::test_without_a_later_report_the_filing_s_own_comparison_answers[TSM-NetIncome-FY2025]",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c3_template.py::test_every_case_holds_s1_and_row_order_never_matters",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c3_template.py::test_no_case_without_both_years",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c3_template.py::test_the_case_keys_both_s1_legs_and_their_growth[INTC-Revenue-FY2023]",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c3_template.py::test_the_case_keys_both_s1_legs_and_their_growth[INTC-Revenue-FY2025]",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c3_template.py::test_the_case_keys_both_s1_legs_and_their_growth[TSM-NetIncome-FY2023]",
+    "test/spec/yoy-growth-s1/test_yoy_growth_c3_template.py::test_the_third_phrasing_names_the_prior_year"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/yoy-growth-s1.md",
+    "sha256": "6faf4199a3ac7d07cc80d5d472d819dae271597bf9264fb7e3261c7bb9c8d776"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

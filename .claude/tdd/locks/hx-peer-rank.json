@@ -1,0 +1,69 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/hx-peer-rank/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-10",
+  "criteria": {
+    "C1": [
+      "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_stated_ordinal_rank_is_read",
+      "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_values_rule_without_rank_or_rows",
+      "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_complete_rows_decide_by_value[order0]",
+      "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_complete_rows_decide_by_value[order1]",
+      "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_partial_rows_imply_no_rank",
+      "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_silent_on_the_exclusion_is_partial",
+      "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_no_usable_subject_or_rank_is_incorrect[overrides0]",
+      "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_no_usable_subject_or_rank_is_incorrect[overrides1]",
+      "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_row_order_never_matters",
+      "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_renaming_tickers_never_changes_the_grade",
+      "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_correct_exactly_at_the_key_rank"
+    ],
+    "C2": [
+      "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_grounding_recorded_and_never_decides",
+      "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_grounding_counts_and_grade_unchanged"
+    ],
+    "C3": [
+      "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_peer_names_has_the_hx_keys",
+      "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_peer_names_keys_are_the_hx_union"
+    ]
+  },
+  "files": {
+    "test/spec/hx-peer-rank/test_hx_peer_rank.py": "ed05661b874e0d9c9fdd3437b177d5fdc760e477d802ff306ccc1860f618d7e8"
+  },
+  "id": "hx-peer-rank",
+  "interface": [],
+  "nodes": [
+    "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_complete_rows_decide_by_value[order0]",
+    "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_complete_rows_decide_by_value[order1]",
+    "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_correct_exactly_at_the_key_rank",
+    "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_grounding_counts_and_grade_unchanged",
+    "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_grounding_recorded_and_never_decides",
+    "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_no_usable_subject_or_rank_is_incorrect[overrides0]",
+    "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_no_usable_subject_or_rank_is_incorrect[overrides1]",
+    "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_partial_rows_imply_no_rank",
+    "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_peer_names_has_the_hx_keys",
+    "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_peer_names_keys_are_the_hx_union",
+    "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_renaming_tickers_never_changes_the_grade",
+    "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_row_order_never_matters",
+    "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_silent_on_the_exclusion_is_partial",
+    "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_stated_ordinal_rank_is_read",
+    "test/spec/hx-peer-rank/test_hx_peer_rank.py::test_values_rule_without_rank_or_rows"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/hx-peer-rank.md",
+    "sha256": "02801d21d34b11f2aa0fd836aa2ff979181542cf5122d237f98b11bfc56b1926"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

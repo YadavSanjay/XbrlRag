@@ -1,0 +1,103 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0000002488-26-000123	2	1	IS	0	H	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2026	Net revenue	0
+0000002488-26-000123	2	2	IS	0	H	CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortization	us-gaap/2026	Cost of sales	0
+0000002488-26-000123	2	3	IS	0	H	AmortizationOfAcquisitionRelatedIntangiblesCOGS	0000002488-26-000123	Amortization of acquisition-related intangibles	0
+0000002488-26-000123	2	4	IS	0	H	CostOfGoodsAndServicesSold	us-gaap/2026	Total cost of sales	0
+0000002488-26-000123	2	5	IS	0	H	GrossProfit	us-gaap/2026	Gross profit	0
+0000002488-26-000123	2	6	IS	0	H	ResearchAndDevelopmentExpense	us-gaap/2026	Research and development	0
+0000002488-26-000123	2	7	IS	0	H	SellingGeneralAndAdministrativeExpense	us-gaap/2026	Marketing, general and administrative	0
+0000002488-26-000123	2	8	IS	0	H	AmortizationOfAcquisitionRelatedIntangiblesOpex	0000002488-26-000123	Amortization of acquisition-related intangibles	0
+0000002488-26-000123	2	9	IS	0	H	OperatingExpenses	us-gaap/2026	Total operating expenses	0
+0000002488-26-000123	2	10	IS	0	H	OperatingIncomeLoss	us-gaap/2026	Operating Income (Loss), Total	0
+0000002488-26-000123	2	11	IS	0	H	InterestExpense	us-gaap/2026	Interest expense	1
+0000002488-26-000123	2	12	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2026	Other income (expense), net	0
+0000002488-26-000123	2	13	IS	0	H	IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments	us-gaap/2026	Income (loss) from continuing operations before income taxes and equity income	0
+0000002488-26-000123	2	14	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2026	Income tax provision (benefit)	0
+0000002488-26-000123	2	15	IS	0	H	IncomeLossFromEquityMethodInvestments	us-gaap/2026	Equity income in investee	0
+0000002488-26-000123	2	16	IS	0	H	IncomeLossFromContinuingOperations	us-gaap/2026	Income from continuing operations, net of tax	0
+0000002488-26-000123	2	17	IS	0	H	IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntity	us-gaap/2026	Income (loss) from discontinued operations, net of tax	0
+0000002488-26-000123	2	18	IS	0	H	NetIncomeLoss	us-gaap/2026	Net income	0
+0000002488-26-000123	2	20	IS	0	H	IncomeLossFromContinuingOperationsPerBasicShare	us-gaap/2026	Basic earnings from continuing operations	0
+0000002488-26-000123	2	21	IS	0	H	IncomeLossFromDiscontinuedOperationsNetOfTaxPerBasicShare	us-gaap/2026	Basic earnings (loss) from discontinued operations	0
+0000002488-26-000123	2	22	IS	0	H	EarningsPerShareBasic	us-gaap/2026	Basic earnings per share	0
+0000002488-26-000123	2	23	IS	0	H	IncomeLossFromContinuingOperationsPerDilutedShare	us-gaap/2026	Diluted earnings from continuing operations	0
+0000002488-26-000123	2	24	IS	0	H	IncomeLossFromDiscontinuedOperationsNetOfTaxPerDilutedShare	us-gaap/2026	Diluted earnings (loss) from discontinued operations	0
+0000002488-26-000123	2	25	IS	0	H	EarningsPerShareDiluted	us-gaap/2026	Diluted earnings per share	0
+0000002488-26-000123	2	27	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2026	Basic	0
+0000002488-26-000123	2	28	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2026	Diluted	0
+0000002488-26-000123	4	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2026	Cash and cash equivalents	0
+0000002488-26-000123	4	4	BS	0	H	ShortTermInvestments	us-gaap/2026	Short-term investments	0
+0000002488-26-000123	4	5	BS	0	H	AccountsReceivableNetCurrent	us-gaap/2026	Accounts receivable, net	0
+0000002488-26-000123	4	6	BS	0	H	InventoryNet	us-gaap/2026	Inventories	0
+0000002488-26-000123	4	7	BS	0	H	PrepaidExpenseAndOtherAssetsCurrent	us-gaap/2026	Prepaid expenses and other current assets	0
+0000002488-26-000123	4	8	BS	0	H	AssetsCurrent	us-gaap/2026	Total current assets	0
+0000002488-26-000123	4	9	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2026	Property and equipment, net	0
+0000002488-26-000123	4	10	BS	0	H	Goodwill	us-gaap/2026	Goodwill	0
+0000002488-26-000123	4	11	BS	0	H	IntangibleAssetsNetExcludingGoodwill	us-gaap/2026	Acquisition-related intangibles, net	0
+0000002488-26-000123	4	12	BS	0	H	DeferredIncomeTaxAssetsNet	us-gaap/2026	Deferred tax assets	0
+0000002488-26-000123	4	13	BS	0	H	OtherAssetsNoncurrent	us-gaap/2026	Other non-current assets	0
+0000002488-26-000123	4	14	BS	0	H	Assets	us-gaap/2026	Total assets	0
+0000002488-26-000123	4	17	BS	0	H	AccountsPayableCurrent	us-gaap/2026	Accounts payable	0
+0000002488-26-000123	4	18	BS	0	H	AccruedLiabilitiesCurrentAndNoncurrent	us-gaap/2026	Accrued liabilities	0
+0000002488-26-000123	4	19	BS	0	H	LongTermDebtCurrent	us-gaap/2026	Current portion of long-term debt, net	0
+0000002488-26-000123	4	20	BS	0	H	OtherLiabilitiesCurrent	us-gaap/2026	Other current liabilities	0
+0000002488-26-000123	4	21	BS	0	H	LiabilitiesCurrent	us-gaap/2026	Total current liabilities	0
+0000002488-26-000123	4	22	BS	0	H	LongTermDebtNoncurrent	us-gaap/2026	Long-term debt, net	0
+0000002488-26-000123	4	23	BS	0	H	OperatingLeaseLiabilityNoncurrent	us-gaap/2026	Long-term operating lease liabilities	0
+0000002488-26-000123	4	24	BS	0	H	DeferredIncomeTaxLiabilitiesNet	us-gaap/2026	Deferred tax liabilities	0
+0000002488-26-000123	4	25	BS	0	H	OtherLiabilitiesNoncurrent	us-gaap/2026	Other long-term liabilities	0
+0000002488-26-000123	4	26	BS	0	H	CommitmentsAndContingencies	us-gaap/2026	Commitments and contingencies (See Note 10)	0
+0000002488-26-000123	4	29	BS	0	H	CommonStockValue	us-gaap/2026	Common stock, par value $0.01; shares authorized: 4,000; shares issued: 1,632 and 1,695; shares outstanding: 1,632 and 1,630	0
+0000002488-26-000123	4	30	BS	0	H	AdditionalPaidInCapitalCommonStock	us-gaap/2026	Additional paid-in capital	0
+0000002488-26-000123	4	31	BS	0	H	TreasuryStockValue	us-gaap/2026	Treasury stock, at cost (shares held:  and 65)	1
+0000002488-26-000123	4	32	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2026	Retained earnings	0
+0000002488-26-000123	4	33	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2026	Accumulated other comprehensive loss	0
+0000002488-26-000123	4	34	BS	0	H	StockholdersEquity	us-gaap/2026	Total stockholders equity	0
+0000002488-26-000123	4	35	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2026	Total liabilities and stockholders equity	0
+0000002488-26-000123	4	36	BS	0	H	CommonStockSharesAuthorized	us-gaap/2026	Common stock, authorized (in shares)	0
+0000002488-26-000123	4	37	BS	0	H	CommonStockParOrStatedValuePerShare	us-gaap/2026	Common stock, par value (in dollars per share)	0
+0000002488-26-000123	6	2	CF	0	H	NetIncomeLoss	us-gaap/2026	Net income	0
+0000002488-26-000123	6	3	CF	0	H	OtherAdjustmentsToIncomeDiscontinuedOperations	us-gaap/2026	Income from discontinued operations, net of tax	1
+0000002488-26-000123	6	5	CF	0	H	OtherDepreciationAndAmortization	us-gaap/2026	Depreciation and amortization	0
+0000002488-26-000123	6	6	CF	0	H	AmortizationOfIntangibleAssets	us-gaap/2026	Amortization of acquisition-related intangibles	0
+0000002488-26-000123	6	7	CF	0	H	ShareBasedCompensation	us-gaap/2026	Stock-based compensation	0
+0000002488-26-000123	6	8	CF	0	H	DeferredIncomeTaxesAndTaxCredits	us-gaap/2026	Deferred Income Taxes and Tax Credits	0
+0000002488-26-000123	6	9	CF	0	H	GainsLossesOnLongTermInvestmetnsNet	0000002488-26-000123	(Gains) losses on long-term investmetns, net	1
+0000002488-26-000123	6	10	CF	0	H	OtherNoncashIncomeExpense	us-gaap/2026	Other	1
+0000002488-26-000123	6	12	CF	0	H	IncreaseDecreaseInAccountsReceivable	us-gaap/2026	Accounts receivable, net	1
+0000002488-26-000123	6	13	CF	0	H	IncreaseDecreaseInInventories	us-gaap/2026	Inventories	1
+0000002488-26-000123	6	14	CF	0	H	IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets	us-gaap/2026	Prepaid expenses and other assets	1
+0000002488-26-000123	6	15	CF	0	H	IncreaseDecreaseInAccountsPayable	us-gaap/2026	Accounts payable	0
+0000002488-26-000123	6	16	CF	0	H	IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities	us-gaap/2026	Accrued and other liabilities	0
+0000002488-26-000123	6	17	CF	0	H	NetCashProvidedByUsedInOperatingActivitiesContinuingOperations	us-gaap/2026	Cash Provided by (Used in) Operating Activity, Continuing Operation, Total	0
+0000002488-26-000123	6	18	CF	0	H	CashProvidedByUsedInOperatingActivitiesDiscontinuedOperations	us-gaap/2026	Cash Provided by (Used in) Operating Activity, Discontinued Operation	0
+0000002488-26-000123	6	19	CF	0	H	NetCashProvidedByUsedInOperatingActivities	us-gaap/2026	Net cash provided by operating activities of continuing operations	0
+0000002488-26-000123	6	21	CF	0	H	PaymentsToAcquirePropertyPlantAndEquipment	us-gaap/2026	Purchases of property and equipment	1
+0000002488-26-000123	6	22	CF	0	H	PaymentsToAcquireShortTermInvestments	us-gaap/2026	Purchases of short-term investments	1
+0000002488-26-000123	6	23	CF	0	H	ProceedsFromMaturitiesPrepaymentsAndCallsOfShorttermInvestments	us-gaap/2026	Proceeds from maturity of short-term investments	0
+0000002488-26-000123	6	24	CF	0	H	ProceedsFromSaleOfShortTermInvestments	us-gaap/2026	Proceeds from sale of short-term investments	0
+0000002488-26-000123	6	25	CF	0	H	PaymentsToAcquireOtherInvestments	us-gaap/2026	Purchases of long-term investments	1
+0000002488-26-000123	6	26	CF	0	H	PaymentsToAcquireBusinessesNetOfCashAcquired	us-gaap/2026	Acquisitions, net of cash acquired	1
+0000002488-26-000123	6	27	CF	0	H	NetCashProvidedByUsedInInvestingActivitiesContinuingOperations	us-gaap/2026	Net cash used in investing activities of continuing operations	0
+0000002488-26-000123	6	28	CF	0	H	PaymentsToAcquirePropertyPlantAndEquipmentFromDiscontinuedOperation	0000002488-26-000123	Purchases of property and equipment	1
+0000002488-26-000123	6	29	CF	0	H	PaymentsForProceedsFromBusinessesAndInterestInAffiliates	us-gaap/2026	Payment for working capital adjustment on divestiture	1
+0000002488-26-000123	6	30	CF	0	H	CashProvidedByUsedInInvestingActivitiesDiscontinuedOperations	us-gaap/2026	Net cash used in investing activities of discontinued operations	0
+0000002488-26-000123	6	31	CF	0	H	NetCashProvidedByUsedInInvestingActivities	us-gaap/2026	Net cash used in investing activities	0
+0000002488-26-000123	6	33	CF	0	H	ProceedsFromIssuanceOfLongTermDebt	us-gaap/2026	Proceeds from debt and commercial paper issuance, net of issuance costs	0
+0000002488-26-000123	6	34	CF	0	H	RepaymentsOfCommercialPaper	us-gaap/2026	Repayments of Commercial Paper	1
+0000002488-26-000123	6	35	CF	0	H	ProceedsFromIssuanceOfSharesUnderIncentiveAndShareBasedCompensationPlansIncludingStockOptions	us-gaap/2026	Proceeds from sales of common stock through employee equity plans	0
+0000002488-26-000123	6	36	CF	0	H	PaymentsForRepurchaseOfCommonStock	us-gaap/2026	Repurchases of common stock	1
+0000002488-26-000123	6	37	CF	0	H	PaymentsRelatedToTaxWithholdingForShareBasedCompensation	us-gaap/2026	Stock repurchases for tax withholding on employee equity plans	1
+0000002488-26-000123	6	38	CF	0	H	ProceedsFromPaymentsForOtherFinancingActivities	us-gaap/2026	Proceeds from (Payment for) Other Financing Activity	0
+0000002488-26-000123	6	39	CF	0	H	NetCashProvidedByUsedInFinancingActivities	us-gaap/2026	Net cash provided by (used in) financing activities of continuing operations	0
+0000002488-26-000123	6	40	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2026	Net increase (decrease) in cash, cash equivalents and restricted cash	0
+0000002488-26-000123	6	41	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsDisposalGroupIncludingDiscontinuedOperations	us-gaap/2026	Cash, cash equivalents and restricted cash at beginning of period	0
+0000002488-26-000123	6	42	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations	us-gaap/2026	Cash, cash equivalents and restricted cash at end of period	0
+0000002488-26-000123	6	44	CF	0	H	IncomeTaxesPaidNet	us-gaap/2026	Income Tax Paid, after Refund Received	0
+0000002488-26-000123	6	46	CF	0	H	CapitalExpendituresIncurredButNotYetPaid	us-gaap/2026	Purchases of property and equipment, accrued but not paid	0
+0000002488-26-000123	6	47	CF	0	H	StockIssuedDuringPeriodValueTreasuryStockReissued	us-gaap/2026	Stock Issued During Period, Value, Treasury Stock Reissued	0
+0000002488-26-000123	6	48	CF	0	H	AssetAcquisitionContingentConsiderationLiability	us-gaap/2026	Asset Acquisition, Contingent Consideration, Liability	0
+0000002488-26-000123	6	49	CF	0	H	RightOfUseAssetObtainedInExchangeForOperatingLeaseLiability	us-gaap/2026	Right-of-Use Asset Obtained in Exchange for Operating Lease Liability	0
+0000002488-26-000123	6	51	CF	0	H	CashAndCashEquivalentsAtCarryingValueIncludingDiscontinuedOperations	us-gaap/2026	Cash and cash equivalents	0
+0000002488-26-000123	6	52	CF	0	H	RestrictedCash	us-gaap/2026	Restricted cash included in Prepaid expenses and other current assets	0
+0000002488-26-000123	6	53	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations	us-gaap/2026	Cash, cash equivalents and restricted cash at end of period	0

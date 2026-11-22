@@ -1,0 +1,190 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-30",
+  "criteria": {
+    "C1": [
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_home_depot_keeps_its_start_year_labels",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_walmart_with_the_same_year_end_is_unchanged",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_strictly_increasing_dei_is_the_label"
+    ],
+    "C10": [
+      "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_crm_labels_by_filing",
+      "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_crm_revenue_each_year",
+      "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_crm_total_assets_each_year",
+      "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_no_year_past_the_last_filing",
+      "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_entry_order_does_not_matter",
+      "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_a_repeated_slip_takes_the_next_year"
+    ],
+    "C11": [
+      "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_a_cover_only_amendment_is_absent_and_moves_nothing",
+      "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_a_filing_with_only_stale_instants_moves_nothing",
+      "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_a_duration_ending_after_filing_sets_no_period",
+      "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_labels_equal_fy_without_a_collision"
+    ],
+    "C12": [
+      "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_lookup_of_fiscal_2026",
+      "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_point_in_time_reads_the_filing_labelled_f",
+      "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_a_recast_comparative_moves_the_right_readings"
+    ],
+    "C2": [
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_salesforce_later_filing_takes_the_next_label",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_three_in_a_row",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_dei_below_the_prior_label_is_a_collision",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_later_correct_tag_after_a_slip_needs_no_move",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_consecutive_years_follow_the_closed_form",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_later_filing_never_moves_an_earlier_label",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_input_order_does_not_matter"
+    ],
+    "C3": [
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_forward_jump_stands",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_collision_across_a_two_year_hole",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_short_year_still_moves_by_one",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_collision_moves_by_the_years_elapsed"
+    ],
+    "C4": [
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_an_amendment_shares_its_originals_label",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_the_earliest_filed_dei_decides",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_salesforce_january_2021_accessions",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_an_amendment_changes_no_other_label"
+    ],
+    "C5": [
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_missing_dei_takes_the_prior_label_plus_one",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_missing_dei_on_the_first_filing_takes_the_next_minus_one",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_missing_dei_with_no_neighbour_takes_the_calendar_year",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_an_amendments_dei_serves_an_untagged_original",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_removing_one_tag_from_a_clean_run_changes_nothing"
+    ],
+    "C6": [
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_10q_takes_its_dei_over_its_calendar_year",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_10q_without_dei_takes_its_calendar_year",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_transition_report_is_no_collision",
+      "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_quarterly_filings_and_annual_filings_are_independent"
+    ],
+    "C7": [
+      "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_hd_reads_its_dei_and_crm_keeps_2026",
+      "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_a_filers_10q_takes_its_dei",
+      "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_a_filing_with_no_dei_entry_keeps_its_calendar_year",
+      "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_supersession_groups_keep_their_shape",
+      "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_the_populator_applies_the_labels",
+      "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_nothing_else_changes_and_inputs_are_left_alone",
+      "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_filers_are_labelled_independently"
+    ],
+    "C8": [
+      "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_hd_leaves_one_stale_row",
+      "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_a_quarter_row_is_keyed_by_its_period",
+      "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_the_populator_deletes_stale_rows",
+      "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_stale_is_exactly_what_the_run_does_not_produce"
+    ],
+    "C9": [
+      "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_neither_fact_mv_reads_bare_dei",
+      "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_both_fact_mvs_select_one_filing_level_expression"
+    ]
+  },
+  "files": {
+    "test/spec/fiscal-label-alignment/conftest.py": "9a5253fe51b2d45de7a149cc611a4a3b4a0c6bc0676cef756e66071ab44504f6",
+    "test/spec/fiscal-label-alignment/test_c10_c12_keys.py": "6aa79c72b8a1188ee582bda481c33ff966bac78af59672b34d2d70870f3bbe28",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py": "dbd5045706cc91e5bee48173a5c8fca9313d7001fb0c83d03e0f2c7fabf53d1b",
+    "test/spec/fiscal-label-alignment/test_c7_c9_store.py": "5aadb7a38fea06a80a523987bbcd1ae32a817b8bac09fec35885da4f0836f0f9"
+  },
+  "id": "fiscal-label-alignment",
+  "interface": [
+    {
+      "file": "src/eval/keys/core.py",
+      "module": "eval.keys.core",
+      "qualname": "annual_filing_labels",
+      "signature": "def annual_filing_labels(company_facts: dict) -> dict[str, int]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/fiscal_labels.py",
+      "module": "ingest.sec_edgar.fiscal_labels",
+      "qualname": "assign_fiscal_labels",
+      "signature": "def assign_fiscal_labels(filings: Iterable[Mapping[str, Any]]) -> dict[str, int]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/ingest/layer0_populator.py",
+      "module": "ingest.sec_edgar.ingest.layer0_populator",
+      "qualname": "apply_fiscal_labels",
+      "signature": "def apply_fiscal_labels(records: collections.abc.Iterable[ManifestRecord], dei_fiscal_years: collections.abc.Mapping[str, int | None]) -> list[ManifestRecord]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/ingest/layer0_populator.py",
+      "module": "ingest.sec_edgar.ingest.layer0_populator",
+      "qualname": "stale_fiscal_calendar_keys",
+      "signature": "def stale_fiscal_calendar_keys(existing: collections.abc.Iterable[tuple[str, int, str]], records: collections.abc.Iterable[ManifestRecord]) -> set[tuple[str, int, str]]"
+    }
+  ],
+  "nodes": [
+    "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_a_cover_only_amendment_is_absent_and_moves_nothing",
+    "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_a_duration_ending_after_filing_sets_no_period",
+    "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_a_filing_with_only_stale_instants_moves_nothing",
+    "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_a_recast_comparative_moves_the_right_readings",
+    "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_a_repeated_slip_takes_the_next_year",
+    "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_crm_labels_by_filing",
+    "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_crm_revenue_each_year",
+    "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_crm_total_assets_each_year",
+    "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_entry_order_does_not_matter",
+    "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_labels_equal_fy_without_a_collision",
+    "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_lookup_of_fiscal_2026",
+    "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_no_year_past_the_last_filing",
+    "test/spec/fiscal-label-alignment/test_c10_c12_keys.py::test_point_in_time_reads_the_filing_labelled_f",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_10q_takes_its_dei_over_its_calendar_year",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_10q_without_dei_takes_its_calendar_year",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_collision_across_a_two_year_hole",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_collision_moves_by_the_years_elapsed",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_dei_below_the_prior_label_is_a_collision",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_forward_jump_stands",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_later_correct_tag_after_a_slip_needs_no_move",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_later_filing_never_moves_an_earlier_label",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_short_year_still_moves_by_one",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_strictly_increasing_dei_is_the_label",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_a_transition_report_is_no_collision",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_an_amendment_changes_no_other_label",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_an_amendment_shares_its_originals_label",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_an_amendments_dei_serves_an_untagged_original",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_consecutive_years_follow_the_closed_form",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_home_depot_keeps_its_start_year_labels",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_input_order_does_not_matter",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_missing_dei_on_the_first_filing_takes_the_next_minus_one",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_missing_dei_takes_the_prior_label_plus_one",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_missing_dei_with_no_neighbour_takes_the_calendar_year",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_quarterly_filings_and_annual_filings_are_independent",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_removing_one_tag_from_a_clean_run_changes_nothing",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_salesforce_january_2021_accessions",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_salesforce_later_filing_takes_the_next_label",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_the_earliest_filed_dei_decides",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_three_in_a_row",
+    "test/spec/fiscal-label-alignment/test_c1_c6_rule.py::test_walmart_with_the_same_year_end_is_unchanged",
+    "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_a_filers_10q_takes_its_dei",
+    "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_a_filing_with_no_dei_entry_keeps_its_calendar_year",
+    "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_a_quarter_row_is_keyed_by_its_period",
+    "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_both_fact_mvs_select_one_filing_level_expression",
+    "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_filers_are_labelled_independently",
+    "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_hd_leaves_one_stale_row",
+    "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_hd_reads_its_dei_and_crm_keeps_2026",
+    "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_neither_fact_mv_reads_bare_dei",
+    "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_nothing_else_changes_and_inputs_are_left_alone",
+    "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_stale_is_exactly_what_the_run_does_not_produce",
+    "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_supersession_groups_keep_their_shape",
+    "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_the_populator_applies_the_labels",
+    "test/spec/fiscal-label-alignment/test_c7_c9_store.py::test_the_populator_deletes_stale_rows"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/fiscal-label-alignment.md",
+    "sha256": "c9a86b4cb08fb32cb369270778b553967abfb2fe7a3ff61d3f0787739720d1f6"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

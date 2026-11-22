@@ -1,0 +1,62 @@
+# Synthetic phrasebook for the eval-intents spec tests (docs/specs/eval-intents.md).
+templates:
+  - id: lookup-terse
+    register: terse
+    shapes: [lookup]
+    text: "{company} {metric} {period}"
+  - id: lookup-conv
+    register: conversational
+    shapes: [lookup]
+    text: "What was {company}'s {metric} in {period}?"
+  - id: lookup-formal
+    register: formal
+    shapes: [lookup]
+    text: "Please state the {metric} reported by {company} for {period}."
+  - id: dimensional-conv
+    register: conversational
+    shapes: [dimensional]
+    text: "What was {company}'s {metric} from the {dimension} in {period}?"
+  - id: breakdown-formal
+    register: formal
+    shapes: [breakdown]
+    text: "Break down {company}'s {metric} by {dimension} for {period}."
+  - id: yoy-conv
+    register: conversational
+    shapes: [compute.yoy_growth]
+    text: "How much did {company}'s {metric} grow in {last_period}?"
+  - id: span-terse
+    register: terse
+    shapes: [compute.difference, compute.cagr, trend]
+    text: "{company} {metric}, {first_period} to {last_period}"
+  - id: cagr-formal
+    register: formal
+    shapes: [compute.cagr]
+    text: "What was the compound annual growth rate of {company}'s {metric} from {first_period} to {last_period}?"
+  - id: ratio-formal
+    register: formal
+    shapes: [compute.ratio]
+    text: "State {company}'s {metric} as a share of {metric_2} for {period}."
+  - id: pit-formal
+    register: formal
+    shapes: [point_in_time]
+    text: "As reported in its {filing_period} annual report, what was {company}'s {metric} for {period}?"
+  - id: screen-top-conv
+    register: conversational
+    shapes: [screen.top]
+    text: "Which {n} of {universe} had the highest {metric} in {period}?"
+  - id: screen-bottom-conv
+    register: conversational
+    shapes: [screen.bottom]
+    text: "Which {n} of {universe} had the lowest {metric} in {period}?"
+  - id: screen-sum-terse
+    register: terse
+    shapes: [screen.sum]
+    text: "total {metric} of {universe}, {period}"
+  - id: screen-median-formal
+    register: formal
+    shapes: [screen.median]
+    text: "What was the median {metric} across {universe} for {period}?"
+  - id: peer-conv
+    register: conversational
+    shapes: [peer_relative]
+    text: "How does {company}'s {metric} in {period} compare with {universe}?"

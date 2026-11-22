@@ -1,0 +1,23 @@
+# Eval judge models (docs/specs/eval-judge.md, v2 plan sections 3.5 and 7.3).
+#
+# Loaded and validated by src/eval/core/graders/judge.py (load_judge_settings): an unknown
+# key, a missing key or a wrong type fails loud, and every model must have a row in
+# configs/llm/llm.yaml, whose provider is its family. A judge is never from the family of
+# the generator it grades; ClaimJudge refuses such a pair.
+#
+# A judge's scores are reported only after its judge_version ("<prompt version>:<model>")
+# has passed calibration against human labels, so changing a model here needs a new
+# calibration.
+
+# The prompt version (prompts/templates/eval/<location>/eval_judge/<version>/).
+prompt_version: v2
+
+# The development judge: the cheapest configured model outside the DeepSeek family, which
+# generates during development.
+development_model: claude-haiku-5-5
+
+# Milestone judges: a second judge at milestones, for the arms its family doesn't generate
+# (here the Anthropic arms). gpt-6-luna replaced gpt-5.6-luna for the v2 looks
+# (docs/eval/heldout_v2/measurement_plan.md decision 10).
+milestone_models:
+  - gpt-6-luna

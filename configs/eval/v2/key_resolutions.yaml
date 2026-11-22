@@ -1,0 +1,422 @@
+# Reviewed resolutions of statement disagreements. Specs: docs/specs/key-statement-witness.md
+# (requirement 3) and docs/specs/reviewed-resolutions.md. This is the live list the v2 build
+# reads. Each entry is either an ORIGINAL entry (equal, field for field, to an entry of the
+# locked list test/spec/key-statement-witness/fixtures/key_resolutions.yaml) or a REVIEWED
+# entry carrying a `review` record {by, date, bucket, evidence} whose `by` is a name of the
+# reviewer allow-list configs/eval/v2/reviewers.yaml. An agent may draft an entry; only the
+# maintainer marks it reviewed. The build checks this at runtime (check_resolutions, against
+# the pinned original list key_resolutions.locked.yaml) and fails before any key is selected;
+# it also refuses an entry that covers no blocked key.
+#
+# An entry covers exactly one key: its family, CIK, fiscal year, concept and value. A key the
+# mapping later moves to another concept or value is not covered and blocks again.
+#   reading  key: the key stands, for the stated reason; drop: the intent is not keyed.
+version: 1
+resolutions:
+
+  # ---------------------------------------------------------------- rule_gap (22, all key)
+  # The presented line is the family's measure and equals the key; the rule cannot select
+  # it (label outside the include, or a second matching line makes it ambiguous).
+
+  - family: InterestExpense          # 1. CEG FY2023; why blocked: ambiguous with ext "Interest expense to affiliates" (0)
+    cik: '0001868275'
+    fiscal_year: 2023
+    concept: us-gaap:InterestExpense
+    value: 431000000
+    reading: key
+    reason: >-
+      The income statement's "Interest expense, net" line is the tagged interest expense
+      (431M); the second matching line, interest expense to affiliates, is 0 for FY2023.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0001868275-24-000014, report: 3, line: 21, plabel: 'Interest expense, net'}}
+
+  - family: ShortTermInvestments     # 3. CSCO FY2025; why blocked: label "Investments" is outside the include
+    cik: '0000858877'
+    fiscal_year: 2025
+    concept: us-gaap:ShortTermInvestments
+    value: 7764000000
+    reading: key
+    reason: >-
+      Cisco presents its current-asset short-term investments as "Investments" (7,764M),
+      tagged ShortTermInvestments.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0000858877-26-000132, report: 3, line: 4, plabel: Investments}}
+
+  - family: NetIncome                # 5. AVGO FY2022; why blocked: prefer picks "attributable to common stock" (11,223, after preferred dividends)
+    cik: '0001730168'
+    fiscal_year: 2022
+    concept: us-gaap:ProfitLoss
+    value: 11495000000
+    reading: key
+    reason: >-
+      Broadcom has no noncontrolling interests; its "Net income" (11,495M, ProfitLoss) is the
+      parent's (key-definitions N-A: consolidated stands in when no different parent figure).
+      The 11,223M line is after preferred dividends, i.e. net income to common.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0001730168-24-000139, report: 5, line: 27, plabel: Net income}}
+
+  - family: ResearchAndDevelopment   # 6. NFLX FY2023; why blocked: label lacks "research"
+    cik: '0001065280'
+    fiscal_year: 2023
+    concept: us-gaap:ResearchAndDevelopmentExpense
+    value: 2675758000
+    reading: key
+    reason: >-
+      Netflix presents R&D as "Technology and development" (2,675.758M), tagged
+      ResearchAndDevelopmentExpense.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0001065280-26-000034, report: 3, line: 4, plabel: Technology and development}}
+
+  - family: PropertyPlantAndEquipment  # 8. TXN FY2024; why blocked: ambiguous with gross line "... at cost" (gross exclude needs the word "gross")
+    cik: '0000097476'
+    fiscal_year: 2024
+    concept: us-gaap:PropertyPlantAndEquipmentNet
+    value: 11347000000
+    reading: key
+    reason: >-
+      The net line "Property, plant and equipment" (11,347M) is PP&E net; the line above it,
+      "Property, plant and equipment at cost" (15,254M), is the gross amount.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0000097476-26-000059, report: 5, line: 14, plabel: 'Property, plant and equipment'}}
+
+  - family: PropertyPlantAndEquipment  # 12. TXN FY2025; same as 8
+    cik: '0000097476'
+    fiscal_year: 2025
+    concept: us-gaap:PropertyPlantAndEquipmentNet
+    value: 12320000000
+    reading: key
+    reason: >-
+      The net line "Property, plant and equipment" (12,320M) is PP&E net; "Property, plant and
+      equipment at cost" (17,682M) is gross.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0000097476-26-000059, report: 5, line: 14, plabel: 'Property, plant and equipment'}}
+
+  - family: AccountsPayable          # 9. AMD FY2022; why blocked: ambiguous with "Accounts Payable, Other" (463)
+    cik: '0000002488'
+    fiscal_year: 2022
+    concept: us-gaap:AccountsPayableCurrent
+    value: 2493000000
+    reading: key
+    reason: >-
+      "Accounts payable" (2,493M, AccountsPayableCurrent) is trade payables; the separate
+      "Accounts Payable, Other" line (463M) is not.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0000002488-24-000012, report: 5, line: 21, plabel: Accounts payable}}
+
+  - family: NetIncome                # 10. WMT FY2025; why blocked: label starts "Consolidated net income ...", include is anchored at "^net"
+    cik: '0000104169'
+    fiscal_year: 2025
+    concept: us-gaap:NetIncomeLoss
+    value: 19436000000
+    reading: key
+    reason: >-
+      The parent's net income is "Consolidated net income attributable to Walmart" (19,436M,
+      NetIncomeLoss); "Consolidated net income" (20,157M) includes noncontrolling interests.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0000104169-26-000055, report: 3, line: 19, plabel: Consolidated net income attributable to Walmart}}
+
+  - family: TaxExpense               # 13. INTC FY2025; why blocked: "(benefit from)" breaks "provision for (income )?tax"
+    cik: '0000050863'
+    fiscal_year: 2025
+    concept: us-gaap:IncomeTaxExpenseBenefit
+    value: 1531000000
+    reading: key
+    reason: >-
+      Intel's income tax line is "Provision for (benefit from) taxes" (1,531M),
+      tagged IncomeTaxExpenseBenefit.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0000050863-26-000011, report: 3, line: 12, plabel: Provision for (benefit from) taxes}}
+
+  - family: DebtIssued               # 19. LMT FY2024; why blocked: "net of related costs" hits the costs exclude (only "net of issuance costs" is spared)
+    cik: '0000936468'
+    fiscal_year: 2024
+    concept: us-gaap:ProceedsFromIssuanceOfDebt
+    value: 2970000000
+    reading: key
+    reason: >-
+      "Issuance of long-term debt, net of related costs" (2,970M) is long-term debt proceeds net
+      of issuance costs.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0001628280-26-004195, report: 8, line: 25, plabel: 'Issuance of long-term debt, net of related costs'}}
+
+  - family: DebtIssued               # 20. MCD FY2024; why blocked: "financing issuances" names neither debt nor borrowings
+    cik: '0000063908'
+    fiscal_year: 2024
+    concept: us-gaap:ProceedsFromIssuanceOfLongTermDebt
+    value: 2380000000
+    reading: key
+    reason: >-
+      McDonald's presents long-term debt issued as "Long-term financing issuances" (2,380M),
+      tagged ProceedsFromIssuanceOfLongTermDebt.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0000063908-26-000035, report: 9, line: 27, plabel: Long-term financing issuances}}
+
+  - family: DebtIssued               # 22. UNP FY2024; why blocked: "issued" is not "issuance(s)"
+    cik: '0000100885'
+    fiscal_year: 2024
+    concept: us-gaap:ProceedsFromIssuanceOfLongTermDebt
+    value: 800000000
+    reading: key
+    reason: >-
+      Union Pacific presents long-term debt issued as "Debt issued (Note 14)" (800M), tagged
+      ProceedsFromIssuanceOfLongTermDebt.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0000100885-26-000037, report: 8, line: 27, plabel: Debt issued (Note 14)}}
+
+  - family: DebtIssued               # 23. VST FY2024; why blocked: ambiguous with "Borrowings under Commodity-Linked Facility" (short-term, 1,802)
+    cik: '0001692819'
+    fiscal_year: 2024
+    concept: us-gaap:ProceedsFromIssuanceOfDebt
+    value: 3817000000
+    reading: key
+    reason: >-
+      "Issuances of debt" (3,817M) is debt issued; the commodity-linked facility borrowings
+      (1,802M) are tagged ProceedsFromShortTermDebt and are not long-term debt.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0001692819-26-000006, report: 8, line: 52, plabel: Issuances of debt}}
+
+  - family: StockRepurchases         # 24. WMT FY2025; why blocked: "Company stock" is not common/treasury stock in the include
+    cik: '0000104169'
+    fiscal_year: 2025
+    concept: us-gaap:PaymentsForRepurchaseOfCommonStock
+    value: 4494000000
+    reading: key
+    reason: >-
+      Walmart presents buybacks as "Purchase of Company stock" (4,494M), tagged
+      PaymentsForRepurchaseOfCommonStock.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0000104169-26-000055, report: 8, line: 27, plabel: Purchase of Company stock}}
+
+  - family: Capex                    # 25. INTC FY2023; why blocked: ambiguous with a 0 ext line in financing and a non-cash supplemental line
+    cik: '0000050863'
+    fiscal_year: 2023
+    concept: us-gaap:PaymentsToAcquirePropertyPlantAndEquipment
+    value: 25750000000
+    reading: key
+    reason: >-
+      Investing-section "Additions to property, plant and equipment" (25,750M) is capex; the
+      same label in financing is 0 and "Acquisition of property, plant and equipment" is the
+      non-cash supplemental (capex incurred but not yet paid).
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0000050863-26-000011, report: 7, line: 24, plabel: 'Additions to property, plant and equipment'}}
+
+  - family: Capex                    # 28. INTC FY2022; same as 25
+    cik: '0000050863'
+    fiscal_year: 2022
+    concept: us-gaap:PaymentsToAcquirePropertyPlantAndEquipment
+    value: 24844000000
+    reading: key
+    reason: >-
+      Investing-section "Additions to property, plant, and equipment" (24,844M) is capex; the
+      financing line is 0 and the supplemental line is non-cash.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0000050863-25-000009, report: 7, line: 23, plabel: 'Additions to property, plant, and equipment'}}
+
+  - family: Capex                    # 26. MU FY2023; why blocked: ambiguous with financing "Payments on equipment purchase contracts" (138)
+    cik: '0000723125'
+    fiscal_year: 2023
+    concept: us-gaap:PaymentsToAcquirePropertyPlantAndEquipment
+    value: 7676000000
+    reading: key
+    reason: >-
+      "Expenditures for property, plant, and equipment" (7,676M) is investing capex; payments on
+      equipment purchase contracts (138M) are a financing outflow.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0000723125-25-000028, report: 8, line: 16, plabel: 'Expenditures for property, plant, and equipment'}}
+
+  - family: Capex                    # 29. MU FY2022; same as 26
+    cik: '0000723125'
+    fiscal_year: 2022
+    concept: us-gaap:PaymentsToAcquirePropertyPlantAndEquipment
+    value: 12067000000
+    reading: key
+    reason: >-
+      "Expenditures for property, plant, and equipment" (12,067M) is investing capex; payments on
+      equipment purchase contracts (141M) are a financing outflow.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0000723125-24-000027, report: 8, line: 16, plabel: 'Expenditures for property, plant, and equipment'}}
+
+  - family: CashFromInvesting        # 27. MSFT FY2024; why blocked: "Net cash used in investing" lacks "activities"
+    cik: '0000789019'
+    fiscal_year: 2024
+    concept: us-gaap:NetCashProvidedByUsedInInvestingActivities
+    value: -96970000000
+    reading: key
+    reason: >-
+      Microsoft's investing total reads "Net cash used in investing" (-96,970M), tagged
+      NetCashProvidedByUsedInInvestingActivities.
+    review: {by: Sanjay, date: 2026-11-09, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0001193125-26-323660, report: 6, line: 35, plabel: Net cash used in investing}}
+
+  # The next three were blocked after screen-candidate-order (PR 477) gave the families their
+  # presented lines (docs/specs/screen-candidate-order.md, "Frozen suites"); each value equals
+  # the one the key had before.
+
+  - family: PropertyPlantAndEquipment  # 31. UNP FY2024; why blocked: "Properties, net" is outside the include
+    cik: '0000100885'
+    fiscal_year: 2024
+    concept: us-gaap:PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization
+    value: 58343000000
+    reading: key
+    reason: >-
+      Union Pacific presents net PP&E, including finance-lease right-of-use assets, as
+      "Properties, net" (58,343M); it is the only PP&E line on the balance sheet.
+    review: {by: Sanjay, date: 2026-11-15, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0000100885-26-000037, report: 6, line: 10, plabel: 'Properties, net (Note 11)'}}
+
+  - family: PropertyPlantAndEquipment  # 32. UNP FY2025; same as 31
+    cik: '0000100885'
+    fiscal_year: 2025
+    concept: us-gaap:PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization
+    value: 59645000000
+    reading: key
+    reason: >-
+      "Properties, net" (59,645M) is Union Pacific's net PP&E, including finance-lease
+      right-of-use assets; the only PP&E line on the balance sheet.
+    review: {by: Sanjay, date: 2026-11-15, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0000100885-26-000037, report: 6, line: 10, plabel: 'Properties, net (Note 11)'}}
+
+  - family: CashAndEquivalents         # 33. INTC FY2023; why blocked: the latest filing holds the year-end balance only in the cash-flow statement
+    cik: '0000050863'
+    fiscal_year: 2023
+    concept: us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents
+    value: 7079000000
+    reading: key
+    reason: >-
+      The FY2025 10-K states the FY2023 year-end balance only in its cash-flow statement
+      (7,079M); the FY2024 10-K's balance sheet shows the same 7,079M for 2023-12-31, so
+      the key is the presented cash balance.
+    review: {by: Sanjay, date: 2026-11-15, bucket: rule_gap,
+             evidence: {kind: statement, adsh: 0000050863-26-000011, report: 7, line: 47, plabel: 'Cash, cash equivalents, and restricted cash, end of period'}}
+
+  # ------------------------------------------------------------ combined_line (4: 3 key, 1 drop)
+
+  - family: DebtIssued               # 14. AMD FY2023; why blocked: "commercial paper" exclude
+    cik: '0000002488'
+    fiscal_year: 2023
+    concept: us-gaap:ProceedsFromShortTermDebt
+    value: 0
+    reading: key
+    reason: >-
+      AMD presents debt and commercial paper issuance on one line, which is 0 for FY2023; with
+      the combined line at 0, no long-term debt was issued, so 0 is the answer.
+    review: {by: Sanjay, date: 2026-11-09, bucket: combined_line,
+             evidence: {kind: statement, adsh: 0000002488-26-000018, report: 8, line: 36, plabel: 'Proceeds from debt and commercial paper issuance, net of issuance costs'}}
+
+  - family: DebtIssued               # 17. AMD FY2024; same as 14
+    cik: '0000002488'
+    fiscal_year: 2024
+    concept: us-gaap:ProceedsFromShortTermDebt
+    value: 0
+    reading: key
+    reason: >-
+      The combined debt and commercial paper issuance line is 0 for FY2024; no long-term debt
+      was issued.
+    review: {by: Sanjay, date: 2026-11-09, bucket: combined_line,
+             evidence: {kind: statement, adsh: 0000002488-26-000018, report: 8, line: 36, plabel: 'Proceeds from debt and commercial paper issuance, net of issuance costs'}}
+
+  - family: DebtIssued               # 21. ORCL FY2024; why blocked: "credit agreement" exclude
+    cik: '0001341439'
+    fiscal_year: 2024
+    concept: us-gaap:ProceedsFromIssuanceOfSeniorLongTermDebt
+    value: 0
+    reading: key
+    reason: >-
+      Oracle presents senior notes, term loans and other borrowings on one line, which is 0 for
+      FY2024 (ended 2024-05-31); no long-term debt was issued.
+    review: {by: Sanjay, date: 2026-11-09, bucket: combined_line,
+             evidence: {kind: statement, adsh: 0001193125-26-277521, report: 8, line: 30, plabel: 'Proceeds from issuances of senior notes, term loan credit agreements and other borrowings, net of issuance costs'}}
+
+  - family: RestructuringCharges     # 7. AVGO FY2024; why blocked: ambiguous: "Restructuring charges" (COGS, 254 ext) vs "Restructuring and other charges" (1,533)
+    cik: '0001730168'
+    fiscal_year: 2024
+    concept: us-gaap:RestructuringSettlementAndImpairmentProvisions
+    value: 1533000000
+    reading: drop
+    reason: >-
+      Restructuring is split across a cost-of-products-sold line (254M) and an opex line that
+      combines restructuring with other charges (1,533M); the candidate total 1,787M
+      (RestructuringAndRelatedCostIncurredCost) is a note figure. No one presented figure is
+      "restructuring charges".
+    review: {by: Sanjay, date: 2026-11-09, bucket: combined_line,
+             evidence: {kind: statement, adsh: 0001730168-25-000121, report: 5, line: 18, plabel: Restructuring and other charges}}
+
+  # -------------------------------------------------------------- definition (5: 0 key, 5 drop)
+
+  - family: OtherNonOperatingIncome  # 2. ORCL FY2022; status disagree: key -86 vs face -522
+    cik: '0001341439'
+    fiscal_year: 2022
+    concept: us-gaap:OtherNonoperatingIncomeExpense
+    value: -86000000
+    reading: drop
+    reason: >-
+      The face line "Non-operating expenses, net" (-522M, an extension that also nets the
+      noncontrolling-interest elimination) is broader than the tagged other non-operating
+      amount (-86M); an analyst could give either.
+    review: {by: Sanjay, date: 2026-11-09, bucket: definition,
+             evidence: {kind: statement, adsh: 0000950170-24-075605, report: 4, line: 20, plabel: 'Non-operating expenses, net'}}
+
+  - family: InterestExpense          # 16. WMT FY2024; why blocked: label "Debt" (under an "Interest:" heading)
+    cik: '0000104169'
+    fiscal_year: 2024
+    concept: us-gaap:InterestExpenseDebt
+    value: 2259000000
+    reading: drop
+    reason: >-
+      Walmart presents interest on debt (2,259M) and on finance leases as separate lines under
+      "Interest"; the key is debt interest only, not total interest expense.
+    review: {by: Sanjay, date: 2026-11-09, bucket: definition,
+             evidence: {kind: statement, adsh: 0000104169-26-000055, report: 3, line: 10, plabel: Debt}}
+
+  - family: NetIncomeToCommon        # 15. TSLA FY2024; status disagree: key 7,130 vs face 7,091
+    cik: '0001318605'
+    fiscal_year: 2024
+    concept: us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic
+    value: 7130000000
+    reading: drop
+    reason: >-
+      The EPS-numerator figure (7,130M) differs from the face "Net income attributable to common
+      stockholders" (7,091M); the presented figure is not a candidate key.
+    review: {by: Sanjay, date: 2026-11-09, bucket: definition,
+             evidence: {kind: statement, adsh: 0001628280-26-003952, report: 5, line: 29, plabel: Net income attributable to common stockholders}}
+
+  - family: DebtIssued               # 18. GOOGL FY2024; why blocked: "net of costs" hits the costs exclude
+    cik: '0001652044'
+    fiscal_year: 2024
+    concept: us-gaap:ProceedsFromDebtNetOfIssuanceCosts
+    value: 13589000000
+    reading: drop
+    reason: >-
+      "Proceeds from issuance of debt, net of costs" (13,589M) is all debt issued, short-term
+      included (ProceedsFromDebtNetOfIssuanceCosts); DebtIssued is long-term debt, which this
+      line does not isolate.
+    review: {by: Sanjay, date: 2026-11-09, bucket: definition,
+             evidence: {kind: statement, adsh: 0001652044-26-000018, report: 10, line: 31, plabel: 'Proceeds from issuance of debt, net of costs'}}
+
+  - family: ComprehensiveIncome      # 31. VST FY2023; status disagree: consolidated 1,491 vs parent 1,492
+    cik: '0001692819'
+    fiscal_year: 2023
+    concept: us-gaap:ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest
+    value: 1491000000
+    reading: drop
+    reason: >-
+      The parent's figure, "Comprehensive income attributable to Vistra" (1,492M), differs from
+      the consolidated candidate (1,491M) and is mis-tagged
+      (OtherComprehensiveIncomeLossNetOfTaxPortionAttributableToParent), so no candidate is the
+      parent figure (key-definitions N-A).
+    review: {by: Sanjay, date: 2026-11-09, bucket: definition,
+             evidence: {kind: statement, adsh: 0001692819-26-000006, report: 4, line: 7, plabel: Comprehensive income attributable to Vistra}}
+
+  # ---------------------------------------------------------------- note_unlisted (1, key)
+
+  - family: InterestExpense          # 11. MSFT FY2026; the IS shows only "Other income (expense), net"
+    cik: '0000789019'
+    fiscal_year: 2026
+    concept: us-gaap:InterestExpenseNonoperating
+    value: 3051000000
+    reading: key
+    reason: >-
+      Microsoft discloses interest expense (3,051M) only in its other income (expense) note,
+      tagged InterestExpenseNonoperating, which the InterestExpense note list does not hold.
+    review: {by: Sanjay, date: 2026-11-09, bucket: note_unlisted,
+             evidence: {kind: note, adsh: 0001193125-26-323660, label: Interest expense}}

@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>H-X Filing Locator</title>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">H-X filing locator <span class="sub">local · read-only · development filers only</span></div>
+  <div class="status" id="status"></div>
+</header>
+
+<div class="layout">
+  <aside class="side">
+    <section class="box">
+      <h3>Concept family</h3>
+      <input id="famFilter" type="search" placeholder="Filter families…" autocomplete="off">
+      <div id="famTree" class="famtree"></div>
+      <div class="picked">Selected: <b id="famPicked">Revenue</b></div>
+    </section>
+    <section class="box">
+      <h3>Display</h3>
+      <label>Scale
+        <select id="scale">
+          <option value="auto">as filed</option>
+          <option value="units">units</option>
+          <option value="thousands">thousands</option>
+          <option value="millions">millions</option>
+          <option value="billions">billions</option>
+        </select>
+      </label>
+    </section>
+    <section class="box notes" id="labelNotes"></section>
+  </aside>
+
+  <main class="main">
+    <nav class="tabs" id="tabs">
+      <button data-tab="cf" class="on">Cross-filer</button>
+      <button data-tab="cp">Cross-period</button>
+      <button data-tab="co">Compound</button>
+      <button data-tab="ho">Honesty</button>
+      <button data-tab="tx">Text</button>
+      <button data-tab="ex">Explore filing</button>
+      <button data-tab="fs">Fact store &amp; SQL</button>
+    </nav>
+
+    <!-- Cross-filer -->
+    <section class="tab on" id="tab-cf">
+      <div class="row">
+        <label>Group <select id="cfGroup"></select></label>
+        <label>Fiscal year <select id="cfFy" class="fy"></select></label>
+        <label>Member contains <input id="cfMember" placeholder="optional, e.g. Americas"></label>
+        <button class="primary" id="cfGo">Look up</button>
+      </div>
+      <div class="tickers" id="cfTickers"></div>
+      <div id="cfOut"></div>
+      <div class="builder" id="cfBuild" hidden>
+        <h4>Build a cross-filer case</h4>
+        <div class="row">
+          <label>Subtype <select id="cfSub">
+            <option>screen_top</option><option>screen_bottom</option><option>count</option>
+            <option>sum</option><option>median</option><option>peer_relative</option></select></label>
+          <label class="cf-n">Rows (N) <input id="cfN" type="number" min="1" value="2"></label>
+          <label class="cf-count">Count rule <select id="cfCmp"><option value="gt">above</option><option value="lt">below</option></select>
+            <input id="cfThr" placeholder="threshold, e.g. 8,000"> in scale shown</label>
+          <label class="cf-sum">Sum over <input id="cfSumOf" placeholder="tickers, blank = all ranked"></label>
+          <label class="cf-peer">Subject <select id="cfSubject"></select></label>
+          <button class="primary" id="cfDraft">Draft case</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cross-period -->
+    <section class="tab" id="tab-cp">
+      <div class="row">
+        <label>Filer <select id="cpTicker" class="tk"></select></label>
+        <label>Member contains <input id="cpMember" placeholder="optional"></label>
+        <button class="primary" id="cpGo">Look up</button>
+      </div>
+      <div class="years" id="cpYears"></div>
+      <div id="cpOut"></div>
+      <div class="builder" id="cpBuild" hidden>
+        <h4>Build a cross-period case</h4>
+        <div class="row">
+          <label>Subtype <select id="cpSub"><option>trend</option><option>cagr</option><option>point_in_time</option></select></label>
+          <label class="cp-pit">Year (point in time) <select id="cpPitFy"></select></label>
+          <button class="primary" id="cpDraft">Draft case</button>
+        </div>
+        <p class="hint">Trend and CAGR use the checked years' <b>latest</b> values (S1). Point in time
+          uses the original and latest values of one year, with both accessions; pick a year marked
+          <span class="badge warn">restated</span> for a meaningful pair.</p>
+      </div>
+    </section>
+
+    <!-- Compound -->
+    <section class="tab" id="tab-co">
+      <p class="hint">Step 1 ranks filers (as on Cross-filer). Step 2 picks the dependent part about the ranked
+        filers. The dependent may only name filers in the ranking's rows.</p>
+      <h4>Step 1 · ranking</h4>
+      <div class="row">
+        <label>Group <select id="coGroup"></select></label>
+        <label>Fiscal year <select id="coFy" class="fy"></select></label>
+        <label>Order <select id="coSub"><option>screen_top</option><option>screen_bottom</option></select></label>
+        <label>Rows (N) <input id="coN" type="number" min="1" value="2"></label>
+        <button class="primary" id="coGo">Rank (family on the left)</button>
+      </div>
+      <div class="tickers" id="coTickers"></div>
+      <div id="coRankOut"></div>
+      <div id="coStep2" hidden>
+        <h4>Step 2 · dependent</h4>
+        <div class="row">
+          <label>Kind <select id="coDepKind">
+            <option value="cross_period">cross_period (a ranked filer over years)</option>
+            <option value="cross_filer">cross_filer (the ranked filers, another family)</option>
+            <option value="text">text (a ranked filer's filing)</option></select></label>
+          <label>Family <select id="coDepFam"></select></label>
+          <label class="co-dep-cp">Filer <select id="coDepTicker"></select></label>
+          <label class="co-dep-cp">Subtype <select id="coDepCpSub"><option>trend</option><option>cagr</option></select></label>
+          <label class="co-dep-cp">Years <input id="coDepYears" placeholder="e.g. 2023,2024,2025"></label>
+          <label class="co-dep-cf">Subtype <select id="coDepCfSub"><option>sum</option><option>median</option><option>peer_relative</option><option>screen_top</option><option>screen_bottom</option></select></label>
+          <label class="co-dep-cf">Fiscal year <select id="coDepFy" class="fy"></select></label>
+          <button class="primary" id="coDepGo">Look up dependent</button>
+        </div>
+        <div id="coDepOut"></div>
+        <div class="row"><button class="primary" id="coDraft" disabled>Draft compound case</button></div>
+      </div>
+    </section>
+
+    <!-- Honesty -->
+    <section class="tab" id="tab-ho">
+      <p class="hint">Evidence for honesty cases. <b>Decline</b>: what the corpus lacks (a filer, a year, an untagged
+        concept). <b>False premise</b>: the true value or direction to correct. <b>Ambiguous</b>: the readings a
+        vague question allows.</p>
+      <div class="row">
+        <button class="primary" id="hoCov">Coverage of the selected family</button>
+      </div>
+      <div id="hoCovOut"></div>
+      <h4>Readings of a vague metric (ambiguous)</h4>
+      <div class="row">
+        <label>Filer <select id="hoTicker" class="tk"></select></label>
+        <label>Fiscal year <select id="hoFy" class="fy"></select></label>
+        <label>Families <input id="hoFams" value="NetIncome,OperatingIncome,EarningsPerShareDiluted,PretaxIncome"></label>
+        <button id="hoAmbGo">Compare</button>
+      </div>
+      <div id="hoAmbOut"></div>
+      <div class="builder">
+        <h4>Build an honesty case</h4>
+        <div class="row">
+          <label>Subtype <select id="hoSub"><option>ambiguous</option><option>false_premise</option><option>decline</option></select></label>
+          <label>Tickers <input id="hoTickers" placeholder="e.g. AAPL or AAPL,MSFT"></label>
+          <label>Fiscal year <input id="hoCaseFy" placeholder="optional"></label>
+          <label class="ho-dec">Reason <select id="hoReason"><option>out_of_corpus</option><option>out_of_period</option><option>not_tagged</option><option>out_of_scope</option></select></label>
+        </div>
+        <label class="ho-amb block">Assumptions (one per line; alternatives separated by |)
+          <textarea id="hoAssume" rows="3" placeholder="net income|operating income&#10;fiscal 2025|fy2025"></textarea></label>
+        <label class="ho-fp block">Correction (the true fact)
+          <textarea id="hoCorr" rows="2"></textarea></label>
+        <button class="primary" id="hoDraft">Draft case</button>
+      </div>
+    </section>
+
+    <!-- Text -->
+    <section class="tab" id="tab-tx">
+      <div class="row">
+        <label>Filer <select id="txTicker" class="tk"></select></label>
+        <label>Fiscal year <select id="txFy" class="fy"></select></label>
+        <label>Section <select id="txSection"><option value="">all sections</option></select></label>
+        <label class="grow">Words <input id="txQ" placeholder='all must appear; "exact phrase" in quotes'></label>
+        <button class="primary" id="txGo">Search</button>
+      </div>
+      <div id="txFiling"></div>
+      <div id="txOut" class="hits"></div>
+      <div class="builder">
+        <h4>Build a text case</h4>
+        <p class="hint">Select words inside a hit and press <b>Quote selection</b>, or quote the whole paragraph.
+          Passages carry the filing's accession.</p>
+        <div id="txPassages"></div>
+        <label class="block">Reference answer <textarea id="txRef" rows="3"></textarea></label>
+        <label class="block">Key points (one per line) <textarea id="txKeys" rows="3"></textarea></label>
+        <button class="primary" id="txDraft">Draft case</button>
+      </div>
+    </section>
+
+    <!-- Explore filing -->
+    <section class="tab" id="tab-ex">
+      <div class="row">
+        <label>Filer <select id="exTicker" class="tk"></select></label>
+        <label>Fiscal year <select id="exFy" class="fy"></select></label>
+        <button id="exFiling">Filings of this filer</button>
+        <button class="primary" id="exFam">Family (all concepts, original vs latest)</button>
+        <button id="exMembers">Family members by axis</button>
+      </div>
+      <div class="row">
+        <label class="grow">Concept or label contains (bypasses our mapping)
+          <input id="exQ" placeholder="e.g. Research, Backlog, Employees"></label>
+        <label><input type="checkbox" id="exDims" checked> include dimensional</label>
+        <button id="exSearch">Search tagged facts</button>
+      </div>
+      <div id="exOut"></div>
+    </section>
+
+    <!-- Fact store & SQL -->
+    <section class="tab" id="tab-fs">
+      <div class="row">
+        <label>Filer <select id="fsTicker" class="tk"></select></label>
+        <label>Fiscal year <select id="fsFy" class="fy"></select></label>
+        <label>Accession <input id="fsAcc" placeholder="optional: one filing's column"></label>
+        <button class="primary" id="fsCands">What check-keys sees (family)</button>
+      </div>
+      <div id="fsCandOut"></div>
+      <h4>Check an amount exactly as <code>hx.py check-keys</code> will</h4>
+      <div class="row">
+        <label>Expected <input id="fsExp" placeholder='"391,035"'></label>
+        <label>Scale <select id="fsScale"><option>millions</option><option>thousands</option><option>billions</option><option>units</option></select></label>
+        <label>Unit <select id="fsUnit"><option>USD</option><option>USD/shares</option><option>shares</option><option>pure</option><option>TWD</option></select></label>
+        <label>Concept hint <input id="fsConcept" placeholder="family or local name"></label>
+        <label>Member hint <input id="fsMember" placeholder="optional"></label>
+        <button class="primary" id="fsCheck">Check</button>
+      </div>
+      <div id="fsCheckOut"></div>
+      <h4>SQL over the views (read-only, xbrl_db)</h4>
+      <div class="row">
+        <label class="grow">Tickers <input id="fsSqlTickers" placeholder="AAPL,MSFT"></label>
+        <label>Years <input id="fsSqlYears" placeholder="2024,2025"></label>
+        <button id="fsSql">Make SQL for the selected family</button>
+      </div>
+      <div id="fsSqlOut"></div>
+    </section>
+
+    <!-- Draft -->
+    <section class="draft" id="draft" hidden>
+      <div class="draft-head">
+        <h3>Case draft</h3>
+        <div class="row">
+          <label>id <input id="dId" placeholder="e.g. cf-rd-top-2024"></label>
+          <button id="dCopy">Copy YAML</button>
+          <button id="dClose">Close</button>
+        </div>
+      </div>
+      <label class="block">Question <span class="hint">(stays in this browser; nothing is logged or sent anywhere)</span>
+        <textarea id="dQ" rows="2" placeholder="Write your question in your own words"></textarea></label>
+      <div class="row"><button class="primary" id="dRender">Validate and check keys</button>
+        <span id="dSummary"></span></div>
+      <pre id="dYaml" class="yaml"></pre>
+      <div id="dReport"></div>
+    </section>
+  </main>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

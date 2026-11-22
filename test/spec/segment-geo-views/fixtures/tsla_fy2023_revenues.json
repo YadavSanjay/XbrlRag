@@ -1,0 +1,922 @@
+{
+ "case": "tsla_fy2023_revenues",
+ "ticker": "TSLA",
+ "cik": "0001318605",
+ "accession_no": "0001628280-24-002390",
+ "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024002390/",
+ "document_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024002390/tsla-20231231.htm",
+ "local_source": "data/storage/sec_edgar/TSLA/2023/10-K/tsla-20231231.htm",
+ "local_source_sha256": "c0cab01cf2dfe8600386002b678e48375b27ed6a6ab5ddab792a022e6a361df1",
+ "retrieved": "2026-11-07",
+ "extracted": "xbrl_db (read-only), 2026-11-07: every fact of the concept in the filing, all contexts; dimensions from context_dimension in the views' QName form (standard namespaces as prefix:local, extension namespaces as uri:local); `view` is the fact's mv_financial_facts row",
+ "dimensions": "explicit_dimensions are the context's is_default=FALSE rows as [axis, member, typed_value] (member null for a typed dimension); default_set names the context's is_default=TRUE rows, listed once in default_sets as [axis, member]",
+ "dates": "xbrl_db stores a duration end as the next day (end-of-day convention): 2025-01-01 ends fiscal 2024",
+ "default_sets": {
+  "d0": [
+   [
+    "srt:ConsolidatedEntitiesAxis",
+    "srt:ConsolidatedEntitiesDomain"
+   ],
+   [
+    "us-gaap:LongTermPurchaseCommitmentByCategoryOfItemPurchasedAxis",
+    "us-gaap:LongTermPurchaseCommitmentCategoryOfItemPurchasedDomain"
+   ],
+   [
+    "us-gaap:LeaseContractualTermAxis",
+    "us-gaap:LeaseContractualTermDomain"
+   ],
+   [
+    "srt:StatementGeographicalAxis",
+    "srt:SegmentGeographicalDomain"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "srt:ProductOrServiceAxis",
+    "srt:ProductsAndServicesDomain"
+   ],
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:RestatementAxis",
+    "srt:RestatementDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:DebtConversionByUniqueDescriptionAxis",
+    "us-gaap:DebtConversionNameDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentAxis",
+    "us-gaap:DebtInstrumentNameDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:FairValueByMeasurementBasisAxis",
+    "us-gaap:PortionAtFairValueFairValueDisclosureMember"
+   ],
+   [
+    "us-gaap:PledgedStatusAxis",
+    "us-gaap:PledgedStatusDomain"
+   ],
+   [
+    "us-gaap:BusinessAcquisitionAxis",
+    "us-gaap:BusinessAcquisitionAcquireeDomain"
+   ],
+   [
+    "us-gaap:CreditFacilityAxis",
+    "us-gaap:CreditFacilityDomain"
+   ],
+   [
+    "us-gaap:LineOfCreditFacilityAxis",
+    "us-gaap:LineOfCreditFacilityLenderDomain"
+   ],
+   [
+    "us-gaap:VariableRateAxis",
+    "us-gaap:VariableRateDomain"
+   ],
+   [
+    "us-gaap:ShortTermDebtTypeAxis",
+    "us-gaap:ShortTermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "us-gaap:PlanNameAxis",
+    "us-gaap:PlanNameDomain"
+   ],
+   [
+    "srt:TitleOfIndividualAxis",
+    "srt:TitleOfIndividualWithRelationshipToEntityDomain"
+   ],
+   [
+    "us-gaap:VestingAxis",
+    "us-gaap:VestingDomain"
+   ],
+   [
+    "us-gaap:SubsidiarySaleOfStockAxis",
+    "us-gaap:SaleOfStockNameOfTransactionDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementLocationAxis",
+    "us-gaap:IncomeStatementLocationDomain"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:BalanceSheetLocationAxis",
+    "us-gaap:BalanceSheetLocationDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "us-gaap:TaxCreditCarryforwardAxis",
+    "us-gaap:TaxCreditCarryforwardNameDomain"
+   ],
+   [
+    "us-gaap:AccountsNotesLoansAndFinancingReceivableByReceivableTypeAxis",
+    "us-gaap:ReceivableTypeDomain"
+   ],
+   [
+    "us-gaap:GuaranteeObligationsByNatureAxis",
+    "us-gaap:GuaranteeObligationsNatureDomain"
+   ],
+   [
+    "srt:CumulativeEffectPeriodOfAdoptionAxis",
+    "srt:CumulativeEffectPeriodOfAdoptionDomain"
+   ],
+   [
+    "us-gaap:FinancingReceivablePortfolioSegmentAxis",
+    "us-gaap:FinancingReceivablePortfolioSegmentDomain"
+   ],
+   [
+    "us-gaap:AdjustmentsForNewAccountingPronouncementsAxis",
+    "us-gaap:TypeOfAdoptionMember"
+   ],
+   [
+    "us-gaap:AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareByAntidilutiveSecuritiesAxis",
+    "us-gaap:AntidilutiveSecuritiesNameDomain"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ],
+  "d1": [
+   [
+    "srt:ConsolidatedEntitiesAxis",
+    "srt:ConsolidatedEntitiesDomain"
+   ],
+   [
+    "us-gaap:LongTermPurchaseCommitmentByCategoryOfItemPurchasedAxis",
+    "us-gaap:LongTermPurchaseCommitmentCategoryOfItemPurchasedDomain"
+   ],
+   [
+    "us-gaap:LeaseContractualTermAxis",
+    "us-gaap:LeaseContractualTermDomain"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "srt:ProductOrServiceAxis",
+    "srt:ProductsAndServicesDomain"
+   ],
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:RestatementAxis",
+    "srt:RestatementDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:DebtConversionByUniqueDescriptionAxis",
+    "us-gaap:DebtConversionNameDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentAxis",
+    "us-gaap:DebtInstrumentNameDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:FairValueByMeasurementBasisAxis",
+    "us-gaap:PortionAtFairValueFairValueDisclosureMember"
+   ],
+   [
+    "us-gaap:PledgedStatusAxis",
+    "us-gaap:PledgedStatusDomain"
+   ],
+   [
+    "us-gaap:BusinessAcquisitionAxis",
+    "us-gaap:BusinessAcquisitionAcquireeDomain"
+   ],
+   [
+    "us-gaap:CreditFacilityAxis",
+    "us-gaap:CreditFacilityDomain"
+   ],
+   [
+    "us-gaap:LineOfCreditFacilityAxis",
+    "us-gaap:LineOfCreditFacilityLenderDomain"
+   ],
+   [
+    "us-gaap:VariableRateAxis",
+    "us-gaap:VariableRateDomain"
+   ],
+   [
+    "us-gaap:ShortTermDebtTypeAxis",
+    "us-gaap:ShortTermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "us-gaap:PlanNameAxis",
+    "us-gaap:PlanNameDomain"
+   ],
+   [
+    "srt:TitleOfIndividualAxis",
+    "srt:TitleOfIndividualWithRelationshipToEntityDomain"
+   ],
+   [
+    "us-gaap:VestingAxis",
+    "us-gaap:VestingDomain"
+   ],
+   [
+    "us-gaap:SubsidiarySaleOfStockAxis",
+    "us-gaap:SaleOfStockNameOfTransactionDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementLocationAxis",
+    "us-gaap:IncomeStatementLocationDomain"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:BalanceSheetLocationAxis",
+    "us-gaap:BalanceSheetLocationDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "us-gaap:TaxCreditCarryforwardAxis",
+    "us-gaap:TaxCreditCarryforwardNameDomain"
+   ],
+   [
+    "us-gaap:StatementBusinessSegmentsAxis",
+    "us-gaap:SegmentDomain"
+   ],
+   [
+    "us-gaap:AccountsNotesLoansAndFinancingReceivableByReceivableTypeAxis",
+    "us-gaap:ReceivableTypeDomain"
+   ],
+   [
+    "us-gaap:GuaranteeObligationsByNatureAxis",
+    "us-gaap:GuaranteeObligationsNatureDomain"
+   ],
+   [
+    "srt:CumulativeEffectPeriodOfAdoptionAxis",
+    "srt:CumulativeEffectPeriodOfAdoptionDomain"
+   ],
+   [
+    "us-gaap:FinancingReceivablePortfolioSegmentAxis",
+    "us-gaap:FinancingReceivablePortfolioSegmentDomain"
+   ],
+   [
+    "us-gaap:AdjustmentsForNewAccountingPronouncementsAxis",
+    "us-gaap:TypeOfAdoptionMember"
+   ],
+   [
+    "us-gaap:AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareByAntidilutiveSecuritiesAxis",
+    "us-gaap:AntidilutiveSecuritiesNameDomain"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ],
+  "d2": [
+   [
+    "srt:ConsolidatedEntitiesAxis",
+    "srt:ConsolidatedEntitiesDomain"
+   ],
+   [
+    "us-gaap:LongTermPurchaseCommitmentByCategoryOfItemPurchasedAxis",
+    "us-gaap:LongTermPurchaseCommitmentCategoryOfItemPurchasedDomain"
+   ],
+   [
+    "us-gaap:LeaseContractualTermAxis",
+    "us-gaap:LeaseContractualTermDomain"
+   ],
+   [
+    "srt:StatementGeographicalAxis",
+    "srt:SegmentGeographicalDomain"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "srt:ProductOrServiceAxis",
+    "srt:ProductsAndServicesDomain"
+   ],
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:RestatementAxis",
+    "srt:RestatementDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:DebtConversionByUniqueDescriptionAxis",
+    "us-gaap:DebtConversionNameDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentAxis",
+    "us-gaap:DebtInstrumentNameDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:FairValueByMeasurementBasisAxis",
+    "us-gaap:PortionAtFairValueFairValueDisclosureMember"
+   ],
+   [
+    "us-gaap:PledgedStatusAxis",
+    "us-gaap:PledgedStatusDomain"
+   ],
+   [
+    "us-gaap:BusinessAcquisitionAxis",
+    "us-gaap:BusinessAcquisitionAcquireeDomain"
+   ],
+   [
+    "us-gaap:CreditFacilityAxis",
+    "us-gaap:CreditFacilityDomain"
+   ],
+   [
+    "us-gaap:LineOfCreditFacilityAxis",
+    "us-gaap:LineOfCreditFacilityLenderDomain"
+   ],
+   [
+    "us-gaap:VariableRateAxis",
+    "us-gaap:VariableRateDomain"
+   ],
+   [
+    "us-gaap:ShortTermDebtTypeAxis",
+    "us-gaap:ShortTermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "us-gaap:PlanNameAxis",
+    "us-gaap:PlanNameDomain"
+   ],
+   [
+    "srt:TitleOfIndividualAxis",
+    "srt:TitleOfIndividualWithRelationshipToEntityDomain"
+   ],
+   [
+    "us-gaap:VestingAxis",
+    "us-gaap:VestingDomain"
+   ],
+   [
+    "us-gaap:SubsidiarySaleOfStockAxis",
+    "us-gaap:SaleOfStockNameOfTransactionDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementLocationAxis",
+    "us-gaap:IncomeStatementLocationDomain"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:BalanceSheetLocationAxis",
+    "us-gaap:BalanceSheetLocationDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "us-gaap:TaxCreditCarryforwardAxis",
+    "us-gaap:TaxCreditCarryforwardNameDomain"
+   ],
+   [
+    "us-gaap:StatementBusinessSegmentsAxis",
+    "us-gaap:SegmentDomain"
+   ],
+   [
+    "us-gaap:AccountsNotesLoansAndFinancingReceivableByReceivableTypeAxis",
+    "us-gaap:ReceivableTypeDomain"
+   ],
+   [
+    "us-gaap:GuaranteeObligationsByNatureAxis",
+    "us-gaap:GuaranteeObligationsNatureDomain"
+   ],
+   [
+    "srt:CumulativeEffectPeriodOfAdoptionAxis",
+    "srt:CumulativeEffectPeriodOfAdoptionDomain"
+   ],
+   [
+    "us-gaap:FinancingReceivablePortfolioSegmentAxis",
+    "us-gaap:FinancingReceivablePortfolioSegmentDomain"
+   ],
+   [
+    "us-gaap:AdjustmentsForNewAccountingPronouncementsAxis",
+    "us-gaap:TypeOfAdoptionMember"
+   ],
+   [
+    "us-gaap:AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareByAntidilutiveSecuritiesAxis",
+    "us-gaap:AntidilutiveSecuritiesNameDomain"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ]
+ },
+ "facts": [
+  {
+   "fact_id": 78173,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "90738000000",
+   "decimals": 0,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.tesla.com/20231231:AutomotiveSegmentMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.tesla.com/20231231:AutomotiveSegmentMember",
+    "segment_label": "Automotive Segment [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 78174,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "77553000000",
+   "decimals": 0,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.tesla.com/20231231:AutomotiveSegmentMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.tesla.com/20231231:AutomotiveSegmentMember",
+    "segment_label": "Automotive Segment [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 78175,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "51034000000",
+   "decimals": 0,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.tesla.com/20231231:AutomotiveSegmentMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.tesla.com/20231231:AutomotiveSegmentMember",
+    "segment_label": "Automotive Segment [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 78179,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "6035000000",
+   "decimals": 0,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.tesla.com/20231231:EnergyGenerationAndStorageSegmentMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.tesla.com/20231231:EnergyGenerationAndStorageSegmentMember",
+    "segment_label": "Energy Generation And Storage Segment [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 78180,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "3909000000",
+   "decimals": 0,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.tesla.com/20231231:EnergyGenerationAndStorageSegmentMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.tesla.com/20231231:EnergyGenerationAndStorageSegmentMember",
+    "segment_label": "Energy Generation And Storage Segment [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 78181,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "2789000000",
+   "decimals": 0,
+   "explicit_dimensions": [
+    [
+     "us-gaap:StatementBusinessSegmentsAxis",
+     "http://www.tesla.com/20231231:EnergyGenerationAndStorageSegmentMember",
+     null
+    ]
+   ],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+    "segment_member": "http://www.tesla.com/20231231:EnergyGenerationAndStorageSegmentMember",
+    "segment_label": "Energy Generation And Storage Segment [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 78186,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "45235000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 78187,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "40553000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 78188,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "23973000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 78189,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "21745000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:CN",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:CN",
+    "segment_label": "CHINA",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 78190,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "18145000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:CN",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:CN",
+    "segment_label": "CHINA",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 78191,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "13844000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:CN",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:CN",
+    "segment_label": "CHINA",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 78192,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "29793000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "http://www.tesla.com/20231231:OtherInternationalMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "http://www.tesla.com/20231231:OtherInternationalMember",
+    "segment_label": "Other International [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 78193,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "22764000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "http://www.tesla.com/20231231:OtherInternationalMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "http://www.tesla.com/20231231:OtherInternationalMember",
+    "segment_label": "Other International [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 78194,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "16006000000",
+   "decimals": -6,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "http://www.tesla.com/20231231:OtherInternationalMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "http://www.tesla.com/20231231:OtherInternationalMember",
+    "segment_label": "Other International [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 78195,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "96773000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 78196,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "81462000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 78197,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "53823000000",
+   "decimals": -6,
+   "explicit_dimensions": [],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  }
+ ]
+}

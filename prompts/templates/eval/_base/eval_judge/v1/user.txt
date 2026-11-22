@@ -1,0 +1,5 @@
+Grade the answer in this JSON object:
+
+{payload}
+
+Reply with the single JSON object described in the system instructions.

@@ -1,0 +1,255 @@
+{
+  "case_ids": [
+    "aq-6a-cash-flow-lookup:concept=CashFromInvesting-fy=2026-ticker=NVDA",
+    "aq-5a-balance-sheet-lookup:concept=Goodwill-fy=2026-ticker=NVDA",
+    "aq-7a-derived-metric-lookup:fy=2026-metric=OperatingMarginPct-ticker=NVDA",
+    "aq-5a-balance-sheet-lookup:concept=RetainedEarnings-fy=2025-ticker=AAPL",
+    "aq-6a-cash-flow-lookup:concept=Capex-fy=2025-ticker=AAPL",
+    "aq-2c-yoy-growth:concept=NetIncome-fy=2025-ticker=AAPL",
+    "aq-1a-revenue-lookup:fy=2024-ticker=ORCL",
+    "aq-6a-cash-flow-lookup:concept=CashFromOperations-fy=2024-ticker=ORCL",
+    "aq-2c-yoy-growth:concept=NetIncome-fy=2024-ticker=ORCL",
+    "aq-5a-balance-sheet-lookup:concept=Goodwill-fy=2025-ticker=AMZN",
+    "aq-1a-revenue-lookup:fy=2025-ticker=AMZN",
+    "aq-7a-derived-metric-lookup:fy=2025-metric=EBITDA-ticker=AMZN",
+    "aq-6a-cash-flow-lookup:concept=ShareBasedCompensation-fy=2024-ticker=AVGO",
+    "aq-5a-balance-sheet-lookup:concept=CurrentAssets-fy=2024-ticker=AVGO",
+    "aq-2c-yoy-growth:concept=NetIncome-fy=2024-ticker=AVGO",
+    "aq-1a-revenue-lookup:fy=2024-ticker=AMD",
+    "aq-1c-pnl-line-lookup:concept=InterestExpense-fy=2024-ticker=AMD",
+    "aq-7a-derived-metric-lookup:fy=2024-metric=FreeCashFlow-ticker=AMD",
+    "aq-1a-revenue-lookup:fy=2024-ticker=TSLA",
+    "aq-1c-pnl-line-lookup:concept=GrossProfit-fy=2024-ticker=TSLA",
+    "aq-2c-yoy-growth:concept=NetIncome-fy=2024-ticker=TSLA",
+    "aq-1c-pnl-line-lookup:concept=OperatingIncome-fy=2026-ticker=MSFT",
+    "aq-5a-balance-sheet-lookup:concept=Inventory-fy=2026-ticker=MSFT",
+    "aq-2c-yoy-growth:concept=OperatingIncome-fy=2026-ticker=MSFT",
+    "aq-1c-pnl-line-lookup:concept=ResearchAndDevelopment-fy=2025-ticker=GOOGL",
+    "aq-5a-balance-sheet-lookup:concept=CurrentAssets-fy=2025-ticker=GOOGL",
+    "aq-2c-yoy-growth:concept=NetIncome-fy=2025-ticker=GOOGL",
+    "aq-1c-pnl-line-lookup:concept=GrossProfit-fy=2024-ticker=MU",
+    "aq-5a-balance-sheet-lookup:concept=CurrentAssets-fy=2024-ticker=MU",
+    "aq-7a-derived-metric-lookup:fy=2024-metric=RnDIntensityPct-ticker=MU",
+    "aq-5a-balance-sheet-lookup:concept=RetainedEarnings-fy=2024-ticker=TSM",
+    "aq-10a-tsm-twd-lookup:concept=NetIncome-fy=2024",
+    "aq-7a-derived-metric-lookup:fy=2024-metric=GrossMarginPct-ticker=TSM",
+    "aq-1a-revenue-lookup:fy=2024-ticker=META",
+    "aq-1c-pnl-line-lookup:concept=NetIncome-fy=2024-ticker=META",
+    "aq-2c-yoy-growth:concept=Revenue-fy=2024-ticker=META",
+    "aq-1a-revenue-lookup:fy=2024-ticker=NVDA",
+    "aq-5a-balance-sheet-lookup:concept=Inventory-fy=2024-ticker=NVDA",
+    "aq-2c-yoy-growth:concept=Revenue-fy=2024-ticker=NVDA",
+    "aq-5a-balance-sheet-lookup:concept=TotalLiabilities-fy=2024-ticker=AAPL",
+    "aq-1c-pnl-line-lookup:concept=TaxExpense-fy=2024-ticker=AAPL",
+    "aq-7a-derived-metric-lookup:fy=2024-metric=GrossMarginPct-ticker=AAPL",
+    "aq-1c-pnl-line-lookup:concept=InterestExpense-fy=2025-ticker=ORCL",
+    "aq-5a-balance-sheet-lookup:concept=CashAndEquivalents-fy=2025-ticker=ORCL",
+    "aq-7a-derived-metric-lookup:fy=2025-metric=FreeCashFlow-ticker=ORCL",
+    "aq-6a-cash-flow-lookup:concept=CashFromFinancing-fy=2024-ticker=AMZN",
+    "aq-5a-balance-sheet-lookup:concept=Goodwill-fy=2024-ticker=AMZN",
+    "aq-7a-derived-metric-lookup:fy=2024-metric=EBITDA-ticker=AMZN",
+    "aq-1a-revenue-lookup:fy=2025-ticker=AVGO",
+    "aq-1c-pnl-line-lookup:concept=PretaxIncome-fy=2025-ticker=AVGO",
+    "aq-2c-yoy-growth:concept=NetIncome-fy=2025-ticker=AVGO",
+    "aq-1c-pnl-line-lookup:concept=OperatingIncome-fy=2025-ticker=AMD",
+    "aq-5a-balance-sheet-lookup:concept=TotalAssets-fy=2025-ticker=AMD",
+    "aq-7a-derived-metric-lookup:fy=2025-metric=OperatingMarginPct-ticker=AMD",
+    "aq-1c-pnl-line-lookup:concept=CostOfRevenue-fy=2025-ticker=TSLA",
+    "aq-1c-pnl-line-lookup:concept=OperatingIncome-fy=2025-ticker=TSLA",
+    "aq-2c-yoy-growth:concept=OperatingIncome-fy=2025-ticker=TSLA",
+    "aq-5a-balance-sheet-lookup:concept=Goodwill-fy=2025-ticker=MSFT",
+    "aq-5a-balance-sheet-lookup:concept=CashAndEquivalents-fy=2025-ticker=MSFT",
+    "aq-2c-yoy-growth:concept=OperatingIncome-fy=2025-ticker=MSFT"
+  ],
+  "eligible_filings": 27,
+  "filings": [
+    {
+      "case_ids": [
+        "aq-6a-cash-flow-lookup:concept=CashFromInvesting-fy=2026-ticker=NVDA",
+        "aq-5a-balance-sheet-lookup:concept=Goodwill-fy=2026-ticker=NVDA",
+        "aq-7a-derived-metric-lookup:fy=2026-metric=OperatingMarginPct-ticker=NVDA"
+      ],
+      "fy": 2026,
+      "ticker": "NVDA"
+    },
+    {
+      "case_ids": [
+        "aq-5a-balance-sheet-lookup:concept=RetainedEarnings-fy=2025-ticker=AAPL",
+        "aq-6a-cash-flow-lookup:concept=Capex-fy=2025-ticker=AAPL",
+        "aq-2c-yoy-growth:concept=NetIncome-fy=2025-ticker=AAPL"
+      ],
+      "fy": 2025,
+      "ticker": "AAPL"
+    },
+    {
+      "case_ids": [
+        "aq-1a-revenue-lookup:fy=2024-ticker=ORCL",
+        "aq-6a-cash-flow-lookup:concept=CashFromOperations-fy=2024-ticker=ORCL",
+        "aq-2c-yoy-growth:concept=NetIncome-fy=2024-ticker=ORCL"
+      ],
+      "fy": 2024,
+      "ticker": "ORCL"
+    },
+    {
+      "case_ids": [
+        "aq-5a-balance-sheet-lookup:concept=Goodwill-fy=2025-ticker=AMZN",
+        "aq-1a-revenue-lookup:fy=2025-ticker=AMZN",
+        "aq-7a-derived-metric-lookup:fy=2025-metric=EBITDA-ticker=AMZN"
+      ],
+      "fy": 2025,
+      "ticker": "AMZN"
+    },
+    {
+      "case_ids": [
+        "aq-6a-cash-flow-lookup:concept=ShareBasedCompensation-fy=2024-ticker=AVGO",
+        "aq-5a-balance-sheet-lookup:concept=CurrentAssets-fy=2024-ticker=AVGO",
+        "aq-2c-yoy-growth:concept=NetIncome-fy=2024-ticker=AVGO"
+      ],
+      "fy": 2024,
+      "ticker": "AVGO"
+    },
+    {
+      "case_ids": [
+        "aq-1a-revenue-lookup:fy=2024-ticker=AMD",
+        "aq-1c-pnl-line-lookup:concept=InterestExpense-fy=2024-ticker=AMD",
+        "aq-7a-derived-metric-lookup:fy=2024-metric=FreeCashFlow-ticker=AMD"
+      ],
+      "fy": 2024,
+      "ticker": "AMD"
+    },
+    {
+      "case_ids": [
+        "aq-1a-revenue-lookup:fy=2024-ticker=TSLA",
+        "aq-1c-pnl-line-lookup:concept=GrossProfit-fy=2024-ticker=TSLA",
+        "aq-2c-yoy-growth:concept=NetIncome-fy=2024-ticker=TSLA"
+      ],
+      "fy": 2024,
+      "ticker": "TSLA"
+    },
+    {
+      "case_ids": [
+        "aq-1c-pnl-line-lookup:concept=OperatingIncome-fy=2026-ticker=MSFT",
+        "aq-5a-balance-sheet-lookup:concept=Inventory-fy=2026-ticker=MSFT",
+        "aq-2c-yoy-growth:concept=OperatingIncome-fy=2026-ticker=MSFT"
+      ],
+      "fy": 2026,
+      "ticker": "MSFT"
+    },
+    {
+      "case_ids": [
+        "aq-1c-pnl-line-lookup:concept=ResearchAndDevelopment-fy=2025-ticker=GOOGL",
+        "aq-5a-balance-sheet-lookup:concept=CurrentAssets-fy=2025-ticker=GOOGL",
+        "aq-2c-yoy-growth:concept=NetIncome-fy=2025-ticker=GOOGL"
+      ],
+      "fy": 2025,
+      "ticker": "GOOGL"
+    },
+    {
+      "case_ids": [
+        "aq-1c-pnl-line-lookup:concept=GrossProfit-fy=2024-ticker=MU",
+        "aq-5a-balance-sheet-lookup:concept=CurrentAssets-fy=2024-ticker=MU",
+        "aq-7a-derived-metric-lookup:fy=2024-metric=RnDIntensityPct-ticker=MU"
+      ],
+      "fy": 2024,
+      "ticker": "MU"
+    },
+    {
+      "case_ids": [
+        "aq-5a-balance-sheet-lookup:concept=RetainedEarnings-fy=2024-ticker=TSM",
+        "aq-10a-tsm-twd-lookup:concept=NetIncome-fy=2024",
+        "aq-7a-derived-metric-lookup:fy=2024-metric=GrossMarginPct-ticker=TSM"
+      ],
+      "fy": 2024,
+      "ticker": "TSM"
+    },
+    {
+      "case_ids": [
+        "aq-1a-revenue-lookup:fy=2024-ticker=META",
+        "aq-1c-pnl-line-lookup:concept=NetIncome-fy=2024-ticker=META",
+        "aq-2c-yoy-growth:concept=Revenue-fy=2024-ticker=META"
+      ],
+      "fy": 2024,
+      "ticker": "META"
+    },
+    {
+      "case_ids": [
+        "aq-1a-revenue-lookup:fy=2024-ticker=NVDA",
+        "aq-5a-balance-sheet-lookup:concept=Inventory-fy=2024-ticker=NVDA",
+        "aq-2c-yoy-growth:concept=Revenue-fy=2024-ticker=NVDA"
+      ],
+      "fy": 2024,
+      "ticker": "NVDA"
+    },
+    {
+      "case_ids": [
+        "aq-5a-balance-sheet-lookup:concept=TotalLiabilities-fy=2024-ticker=AAPL",
+        "aq-1c-pnl-line-lookup:concept=TaxExpense-fy=2024-ticker=AAPL",
+        "aq-7a-derived-metric-lookup:fy=2024-metric=GrossMarginPct-ticker=AAPL"
+      ],
+      "fy": 2024,
+      "ticker": "AAPL"
+    },
+    {
+      "case_ids": [
+        "aq-1c-pnl-line-lookup:concept=InterestExpense-fy=2025-ticker=ORCL",
+        "aq-5a-balance-sheet-lookup:concept=CashAndEquivalents-fy=2025-ticker=ORCL",
+        "aq-7a-derived-metric-lookup:fy=2025-metric=FreeCashFlow-ticker=ORCL"
+      ],
+      "fy": 2025,
+      "ticker": "ORCL"
+    },
+    {
+      "case_ids": [
+        "aq-6a-cash-flow-lookup:concept=CashFromFinancing-fy=2024-ticker=AMZN",
+        "aq-5a-balance-sheet-lookup:concept=Goodwill-fy=2024-ticker=AMZN",
+        "aq-7a-derived-metric-lookup:fy=2024-metric=EBITDA-ticker=AMZN"
+      ],
+      "fy": 2024,
+      "ticker": "AMZN"
+    },
+    {
+      "case_ids": [
+        "aq-1a-revenue-lookup:fy=2025-ticker=AVGO",
+        "aq-1c-pnl-line-lookup:concept=PretaxIncome-fy=2025-ticker=AVGO",
+        "aq-2c-yoy-growth:concept=NetIncome-fy=2025-ticker=AVGO"
+      ],
+      "fy": 2025,
+      "ticker": "AVGO"
+    },
+    {
+      "case_ids": [
+        "aq-1c-pnl-line-lookup:concept=OperatingIncome-fy=2025-ticker=AMD",
+        "aq-5a-balance-sheet-lookup:concept=TotalAssets-fy=2025-ticker=AMD",
+        "aq-7a-derived-metric-lookup:fy=2025-metric=OperatingMarginPct-ticker=AMD"
+      ],
+      "fy": 2025,
+      "ticker": "AMD"
+    },
+    {
+      "case_ids": [
+        "aq-1c-pnl-line-lookup:concept=CostOfRevenue-fy=2025-ticker=TSLA",
+        "aq-1c-pnl-line-lookup:concept=OperatingIncome-fy=2025-ticker=TSLA",
+        "aq-2c-yoy-growth:concept=OperatingIncome-fy=2025-ticker=TSLA"
+      ],
+      "fy": 2025,
+      "ticker": "TSLA"
+    },
+    {
+      "case_ids": [
+        "aq-5a-balance-sheet-lookup:concept=Goodwill-fy=2025-ticker=MSFT",
+        "aq-5a-balance-sheet-lookup:concept=CashAndEquivalents-fy=2025-ticker=MSFT",
+        "aq-2c-yoy-growth:concept=OperatingIncome-fy=2025-ticker=MSFT"
+      ],
+      "fy": 2025,
+      "ticker": "MSFT"
+    }
+  ],
+  "rule": "docs/eval/blog_v1/long_context_select.py",
+  "seed": "xbrlrag-longctx-v1",
+  "suite": {
+    "corpus_fingerprint": "pm:3bf0c14a2f4afad3",
+    "name": "sql_derived",
+    "sha256": "e3f61016b32a20df153d02d80b04a3c31bff90d77b2c89ff8e5a07408697aa3c",
+    "version": "v1"
+  }
+}

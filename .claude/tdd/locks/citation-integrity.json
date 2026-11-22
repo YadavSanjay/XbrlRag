@@ -1,0 +1,118 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-07",
+  "criteria": {
+    "C1": [
+      "test/spec/citation-integrity/test_c1_unresolved_ids.py::test_each_kind_of_id_resolves_or_is_named",
+      "test/spec/citation-integrity/test_c1_unresolved_ids.py::test_exactly_the_invented_ids_are_named_in_citation_order",
+      "test/spec/citation-integrity/test_c1_unresolved_ids.py::test_renaming_step_ids_consistently_keeps_the_answer"
+    ],
+    "C2": [
+      "test/spec/citation-integrity/test_c2_verifier_drops_unknown_ids.py::test_invented_ids_drop_their_statements_and_are_recorded",
+      "test/spec/citation-integrity/test_c2_verifier_drops_unknown_ids.py::test_no_llm_call_when_every_statement_cites_an_invented_id",
+      "test/spec/citation-integrity/test_c2_verifier_drops_unknown_ids.py::test_survivors_are_exactly_the_statements_without_invented_ids"
+    ],
+    "C3": [
+      "test/spec/citation-integrity/test_c3_stated_numbers.py::test_values_steps_and_percent_flags_read_by_hand",
+      "test/spec/citation-integrity/test_c3_stated_numbers.py::test_exempt_numbers_are_skipped",
+      "test/spec/citation-integrity/test_c3_stated_numbers.py::test_one_amount_in_two_scales_reads_the_same",
+      "test/spec/citation-integrity/test_c3_stated_numbers.py::test_inserting_exempt_numbers_changes_nothing"
+    ],
+    "C4": [
+      "test/spec/citation-integrity/test_c4_unmatched_numbers.py::test_matching_rules_on_real_values",
+      "test/spec/citation-integrity/test_c4_unmatched_numbers.py::test_a_value_matches_only_through_a_cited_step",
+      "test/spec/citation-integrity/test_c4_unmatched_numbers.py::test_restating_in_any_scale_matches_and_two_units_off_does_not",
+      "test/spec/citation-integrity/test_c4_unmatched_numbers.py::test_a_percent_matches_at_a_tenth_of_a_point"
+    ],
+    "C5": [
+      "test/spec/citation-integrity/test_c5_verifier_drops_unmatched_numbers.py::test_mismatched_numbers_drop_their_statements_and_are_recorded",
+      "test/spec/citation-integrity/test_c5_verifier_drops_unmatched_numbers.py::test_no_llm_call_when_every_statement_misstates_a_number",
+      "test/spec/citation-integrity/test_c5_verifier_drops_unmatched_numbers.py::test_a_restated_value_survives_and_a_misstated_one_is_dropped"
+    ],
+    "C6": [
+      "test/spec/citation-integrity/test_c6_compound_query.py::test_the_compound_answer_is_the_hand_built_one",
+      "test/spec/citation-integrity/test_c6_compound_query.py::test_sub_query_two_was_answered_for_the_screened_top_two",
+      "test/spec/citation-integrity/test_c6_compound_query.py::test_statement_order_never_changes_which_survive"
+    ],
+    "C7": [
+      "test/spec/citation-integrity/test_c7_serving_surfaces.py::test_the_v1_answer_route_returns_the_verified_citations",
+      "test/spec/citation-integrity/test_c7_serving_surfaces.py::test_the_mcp_answer_tool_returns_the_verified_citations",
+      "test/spec/citation-integrity/test_c7_serving_surfaces.py::test_renamed_fact_ids_come_back_renamed_on_both_surfaces"
+    ]
+  },
+  "files": {
+    "test/spec/citation-integrity/conftest.py": "46f587d0e7009f8add9419cbb04bfad455a1adc25d01c478ae3dcdd84476a2b2",
+    "test/spec/citation-integrity/test_c1_unresolved_ids.py": "8c4d115c6566fb281e899ef19c6098462732b87898bed30552c57279b661e587",
+    "test/spec/citation-integrity/test_c2_verifier_drops_unknown_ids.py": "4371208d713fb6043c3675c19b4d4380541646b70da8050be8aa79e6741d5d61",
+    "test/spec/citation-integrity/test_c3_stated_numbers.py": "8973a2f7ac6d0f154cb63cb1c457054c86f114e35eed0238e5dc1e598309d2f7",
+    "test/spec/citation-integrity/test_c4_unmatched_numbers.py": "b896069c42f9796c200ff410469273eb9d6c3a1a5de917382f96557d30a68a70",
+    "test/spec/citation-integrity/test_c5_verifier_drops_unmatched_numbers.py": "f42462a7eeeca7b0cc9480d2b0c610f5a9469644067cd56827c82e2706b2a507",
+    "test/spec/citation-integrity/test_c6_compound_query.py": "5f1cf048ef9f1b8d4ab737c257210a583bc8bf2659201a8139c779129ce31169",
+    "test/spec/citation-integrity/test_c7_serving_surfaces.py": "37791de0c4801caee3d4fac34dca1fade1aaa04b7c83520a43893420bd620d25"
+  },
+  "id": "citation-integrity",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/citation_integrity.py",
+      "module": "retriever.xbrl.citation_integrity",
+      "qualname": "unresolved_citation_ids",
+      "signature": "def unresolved_citation_ids(detail: dict, execution_result: dict, narrative_chunks: list[dict]) -> list[str]"
+    },
+    {
+      "file": "src/retriever/xbrl/citation_integrity.py",
+      "module": "retriever.xbrl.citation_integrity",
+      "qualname": "stated_numbers",
+      "signature": "def stated_numbers(statement: str) -> list[dict]"
+    },
+    {
+      "file": "src/retriever/xbrl/citation_integrity.py",
+      "module": "retriever.xbrl.citation_integrity",
+      "qualname": "unmatched_numbers",
+      "signature": "def unmatched_numbers(detail: dict, execution_result: dict, plan: dict, narrative_chunks: list[dict]) -> list[dict]"
+    }
+  ],
+  "nodes": [
+    "test/spec/citation-integrity/test_c1_unresolved_ids.py::test_each_kind_of_id_resolves_or_is_named",
+    "test/spec/citation-integrity/test_c1_unresolved_ids.py::test_exactly_the_invented_ids_are_named_in_citation_order",
+    "test/spec/citation-integrity/test_c1_unresolved_ids.py::test_renaming_step_ids_consistently_keeps_the_answer",
+    "test/spec/citation-integrity/test_c2_verifier_drops_unknown_ids.py::test_invented_ids_drop_their_statements_and_are_recorded",
+    "test/spec/citation-integrity/test_c2_verifier_drops_unknown_ids.py::test_no_llm_call_when_every_statement_cites_an_invented_id",
+    "test/spec/citation-integrity/test_c2_verifier_drops_unknown_ids.py::test_survivors_are_exactly_the_statements_without_invented_ids",
+    "test/spec/citation-integrity/test_c3_stated_numbers.py::test_exempt_numbers_are_skipped",
+    "test/spec/citation-integrity/test_c3_stated_numbers.py::test_inserting_exempt_numbers_changes_nothing",
+    "test/spec/citation-integrity/test_c3_stated_numbers.py::test_one_amount_in_two_scales_reads_the_same",
+    "test/spec/citation-integrity/test_c3_stated_numbers.py::test_values_steps_and_percent_flags_read_by_hand",
+    "test/spec/citation-integrity/test_c4_unmatched_numbers.py::test_a_percent_matches_at_a_tenth_of_a_point",
+    "test/spec/citation-integrity/test_c4_unmatched_numbers.py::test_a_value_matches_only_through_a_cited_step",
+    "test/spec/citation-integrity/test_c4_unmatched_numbers.py::test_matching_rules_on_real_values",
+    "test/spec/citation-integrity/test_c4_unmatched_numbers.py::test_restating_in_any_scale_matches_and_two_units_off_does_not",
+    "test/spec/citation-integrity/test_c5_verifier_drops_unmatched_numbers.py::test_a_restated_value_survives_and_a_misstated_one_is_dropped",
+    "test/spec/citation-integrity/test_c5_verifier_drops_unmatched_numbers.py::test_mismatched_numbers_drop_their_statements_and_are_recorded",
+    "test/spec/citation-integrity/test_c5_verifier_drops_unmatched_numbers.py::test_no_llm_call_when_every_statement_misstates_a_number",
+    "test/spec/citation-integrity/test_c6_compound_query.py::test_statement_order_never_changes_which_survive",
+    "test/spec/citation-integrity/test_c6_compound_query.py::test_sub_query_two_was_answered_for_the_screened_top_two",
+    "test/spec/citation-integrity/test_c6_compound_query.py::test_the_compound_answer_is_the_hand_built_one",
+    "test/spec/citation-integrity/test_c7_serving_surfaces.py::test_renamed_fact_ids_come_back_renamed_on_both_surfaces",
+    "test/spec/citation-integrity/test_c7_serving_surfaces.py::test_the_mcp_answer_tool_returns_the_verified_citations",
+    "test/spec/citation-integrity/test_c7_serving_surfaces.py::test_the_v1_answer_route_returns_the_verified_citations"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/citation-integrity.md",
+    "sha256": "6230a22b5c514519d8a5a08c018b0e11c99844644388f9091f411192353ebc83"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

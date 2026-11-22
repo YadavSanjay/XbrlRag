@@ -1,0 +1,4 @@
+USER QUERY:
+{user_query}
+
+Return ONLY the JSON object described in the system prompt.

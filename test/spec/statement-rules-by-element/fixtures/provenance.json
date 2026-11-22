@@ -1,0 +1,42 @@
+{
+ "built": "2026-11-10",
+ "cut": "the sub row; every pre row of the named statement (TSM BS, TSLA CF); the consolidated num rows (no segments, no coreg) of those lines' (tag, version); their tag rows",
+ "files": {
+  "fsds/2025q2/num.tsv": "889d7afbf6ecac79eb0526deafa1617bf12d6d4ed3380c95cb434a5a2ef836c9",
+  "fsds/2025q2/pre.tsv": "3363babf3f767a84d74edafc979f2e4b7b8ad408187af74577d35bb80cbb649c",
+  "fsds/2025q2/sub.tsv": "ffcee05df23c9d86b5fad1a322a57ed982018ec3fbf317bb27ee09b30c5509cb",
+  "fsds/2025q2/tag.tsv": "f6dfeda17dceaaa806be0b8a5a48518363ca2fb456fcd434baada5911c3f8e19",
+  "fsds/2026q1/num.tsv": "8cdd8e648f8343a32bca40f20742b45332ba820cfabb9a214c65f0293c2e844f",
+  "fsds/2026q1/pre.tsv": "c75e6b5c3ffe5975509cbf2be97cfc8f1ff57bd0fb78c209d3edbcbbc93e5386",
+  "fsds/2026q1/sub.tsv": "e4504c54855cac9277809d71e135a75de0aa1b78a1678c9a6496bcecee54009e",
+  "fsds/2026q1/tag.tsv": "e4b6bb74b7654062bc3bca52ca2d28a48daee06201b33974286e32c5aeacbd7c"
+ },
+ "filings": [
+  {
+   "accession": "0001193125-25-083423",
+   "cik": 1046179,
+   "edgar_url": "https://www.sec.gov/Archives/edgar/data/1046179/000119312525083423/d896993d20f.htm",
+   "form": "20-F",
+   "primary_document_sha256": "38fadd39498c28cab2ecbbd7443dca0d1f9a30e4498e21a73922b02c988db9f0",
+   "quarter": "2025q2",
+   "ticker": "TSM",
+   "zip_bytes": 78973768,
+   "zip_retrieved_at": "2026-11-07T17:11:40.464909+00:00",
+   "zip_sha256": "81bf19bdb5606d5ee0164a8de8b7e96d5546170e42e59bcbf95b652ca83ac5d7",
+   "zip_url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q2.zip"
+  },
+  {
+   "accession": "0001628280-26-003952",
+   "cik": 1318605,
+   "edgar_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+   "form": "10-K",
+   "primary_document_sha256": "b103bb57a27f219aacafa4fe479783f11727b774c61e6e522bfe0b0a75ab194d",
+   "quarter": "2026q1",
+   "ticker": "TSLA",
+   "zip_bytes": 85259424,
+   "zip_retrieved_at": "2026-11-07T17:11:48.301000+00:00",
+   "zip_sha256": "d18c01c615da8f5cd46273b0dacaeee5b1163f4089171da0f84153a5f3c362f6",
+   "zip_url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q1.zip"
+  }
+ ]
+}

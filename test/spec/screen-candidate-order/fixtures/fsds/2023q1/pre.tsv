@@ -1,0 +1,23 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0000002488-23-000047	3	12	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2022	Other income (expense), net	0
+0000002488-23-000047	5	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2022	Cash and cash equivalents	0
+0000002488-23-000047	5	4	BS	0	H	ShortTermInvestments	us-gaap/2022	Short-term investments	0
+0000002488-23-000047	5	10	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2022	Property and equipment, net	0
+0000002488-23-000047	8	30	CF	0	H	ProceedsFromShortTermDebt	us-gaap/2022	Proceeds from debt, net of issuance costs	0
+0000002488-23-000047	8	38	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2022	Cash and cash equivalents at beginning of year	0
+0000002488-23-000047	8	39	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2022	Cash and cash equivalents at end of year	0
+0000002488-23-000047	8	52	CF	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2022	Cash and cash equivalents	0
+0000002488-23-000047	8	53	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2022	Total cash, cash equivalents, and restricted cash	0
+0000050863-23-000006	3	10	IS	0	H	NonoperatingIncomeExpense	us-gaap/2022	Interest and other, net	0
+0000050863-23-000006	5	3	BS	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2022	Cash, Cash Equivalents, Restricted Cash and Restricted Cash Equivalents	0
+0000050863-23-000006	5	4	BS	0	H	AvailableForSaleSecuritiesDebtSecuritiesCurrent	us-gaap/2022	Short-term investments	0
+0000050863-23-000006	5	10	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2022	Property, plant and equipment, net	0
+0000050863-23-000006	7	1	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2022	Cash and cash equivalents, beginning of period	0
+0000050863-23-000006	7	36	CF	0	H	ProceedsFromIssuanceOfLongTermDebt	us-gaap/2022	Issuance of term debt, net of issuance costs	0
+0000050863-23-000006	7	44	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2022	Cash and cash equivalents, end of period	0
+0001692819-23-000005	7	45	CF	0	H	ProceedsFromIssuanceOfLongTermDebt	us-gaap/2022	Issuances of long-term debt	0
+0001692819-23-000005	7	53	CF	0	H	ProceedsFromShortTermDebt	us-gaap/2022	Borrowings under Commodity-Linked Facility	0
+0001692819-23-000005	7	62	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2022	Cash, cash equivalents and restricted cash  beginning balance	0
+0001692819-23-000005	7	63	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2022	Cash, cash equivalents and restricted cash  ending balance	0
+0001692819-23-000005	8	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2022	Cash and cash equivalents	0
+0001692819-23-000005	8	15	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2022	Property, plant and equipment  net	0

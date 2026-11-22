@@ -1,0 +1,2251 @@
+{
+ "snapshot": {
+  "database": "xbrl_db",
+  "taken": "2026-11-07",
+  "read_only": true
+ },
+ "sources": [
+  {
+   "ticker": "AMZN",
+   "accession_no": "0001018724-25-000004",
+   "form": "10-K",
+   "filing_date": "2025-02-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000004/amzn-20241231.htm",
+   "primary_document": "amzn-20241231.htm",
+   "sha256": "a985876672cb50ed3fcd5d9df0a9f697ea35995c5051bb340c264ba940dc7585",
+   "retrieved": "2026-07-10"
+  },
+  {
+   "ticker": "COST",
+   "accession_no": "0000909832-24-000049",
+   "form": "10-K",
+   "filing_date": "2024-10-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983224000049/cost-20240901.htm",
+   "primary_document": "cost-20240901.htm",
+   "sha256": "240c88bc0f908422370e6641634d28adb52b51705de56d2fcc3b736ac6025d68",
+   "retrieved": "2026-10-29"
+  },
+  {
+   "ticker": "CRM",
+   "accession_no": "0001108524-24-000005",
+   "form": "10-K",
+   "filing_date": "2024-03-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852424000005/crm-20240131.htm",
+   "primary_document": "crm-20240131.htm",
+   "sha256": "2e205ab7389f940b2b57b31637ef79f221c58d8cd549ff0f4a5077c6e56e4764",
+   "retrieved": "2026-10-29"
+  },
+  {
+   "ticker": "GOOGL",
+   "accession_no": "0001652044-25-000014",
+   "form": "10-K",
+   "filing_date": "2025-02-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm",
+   "primary_document": "goog-20241231.htm",
+   "sha256": "3b6df4d73f0a7fd53110460c99a90fe511416de19644919c11f69c5b25d2507c",
+   "retrieved": "2026-07-10"
+  },
+  {
+   "ticker": "KO",
+   "accession_no": "0000021344-25-000011",
+   "form": "10-K",
+   "filing_date": "2025-02-20",
+   "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134425000011/ko-20241231.htm",
+   "primary_document": "ko-20241231.htm",
+   "sha256": "5f407323a32830dac3d20b69fb75390512fbd26852db33cc23799baa216e0a35",
+   "retrieved": "2026-10-29"
+  },
+  {
+   "ticker": "LMT",
+   "accession_no": "0000936468-25-000009",
+   "form": "10-K",
+   "filing_date": "2025-01-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646825000009/lmt-20241231.htm",
+   "primary_document": "lmt-20241231.htm",
+   "sha256": "ed972124034c4dec3046d1079b2ab26e6be3c2245e8efdcc127b214499adecf8",
+   "retrieved": "2026-10-29"
+  },
+  {
+   "ticker": "MCD",
+   "accession_no": "0000063908-25-000012",
+   "form": "10-K",
+   "filing_date": "2025-02-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390825000012/mcd-20241231.htm",
+   "primary_document": "mcd-20241231.htm",
+   "sha256": "57c9b6029b03d10ee6d04c11c15611975a8707f8bcb034eaae44f229cebadd34",
+   "retrieved": "2026-10-29"
+  },
+  {
+   "ticker": "MSFT",
+   "accession_no": "0000950170-24-087843",
+   "form": "10-K",
+   "filing_date": "2024-07-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+   "primary_document": "msft-20240630.htm",
+   "sha256": "f0cd92e5a6eaaec9af96771e3b48176822436ae6ee654df015d6b3e55437d11d",
+   "retrieved": "2026-07-10"
+  },
+  {
+   "ticker": "NFLX",
+   "accession_no": "0001065280-25-000044",
+   "form": "10-K",
+   "filing_date": "2025-01-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000044/nflx-20241231.htm",
+   "primary_document": "nflx-20241231.htm",
+   "sha256": "163f12cd58bfbaa3f2de2363112d54db8b43cdd2acd1244d7fda20424f7ebe2b",
+   "retrieved": "2026-10-29"
+  },
+  {
+   "ticker": "ORCL",
+   "accession_no": "0000950170-24-075605",
+   "form": "10-K",
+   "filing_date": "2024-06-20",
+   "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024075605/orcl-20240531.htm",
+   "primary_document": "orcl-20240531.htm",
+   "sha256": "efaf3978bd7b81b202f6633f9e0d3833ad74586dfb49ec1a87b81d65ac4deebd",
+   "retrieved": "2026-07-10"
+  },
+  {
+   "ticker": "UPS",
+   "accession_no": "0001090727-25-000019",
+   "form": "10-K",
+   "filing_date": "2025-02-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/1090727/000109072725000019/ups-20241231.htm",
+   "primary_document": "ups-20241231.htm",
+   "sha256": "cd96ee970b585ce10d99a64156374653abe077763a877d6e118c395f7514e776",
+   "retrieved": "2026-10-29"
+  },
+  {
+   "ticker": "WMT",
+   "accession_no": "0000104169-24-000056",
+   "form": "10-K",
+   "filing_date": "2024-03-15",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416924000056/wmt-20240131.htm",
+   "primary_document": "wmt-20240131.htm",
+   "sha256": "5d49b3c263da1ed5c4360ffae94219d1987331849f3704ae9e53576038bbd122",
+   "retrieved": "2026-10-29"
+  }
+ ],
+ "fsds": [
+  {
+   "quarter": "2024q1",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q1.zip",
+   "zip_sha256": "94c7894b00903f8ff7186c4250ba1c1daa1bde8b3a0b26fae68f72608b2ffc9b",
+   "retrieved_at": "2026-11-07T17:11:24.917293+00:00",
+   "header": "adsh\ttag\tversion\tddate\tqtrs\tuom\tsegments\tcoreg\tvalue\tfootnote",
+   "lines": [
+    "0000104169-24-000056\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2023\t20240131\t4\tUSD\tBusinessSegments=WalmartInternational;\t\t114641000000.0000\t"
+   ]
+  },
+  {
+   "quarter": "2024q3",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q3.zip",
+   "zip_sha256": "b1823f2d65189f0d5ecbb1968d683c59df762129ae1b23bda0394093a69e0da9",
+   "retrieved_at": "2026-11-07T17:11:31.667649+00:00",
+   "header": "adsh\ttag\tversion\tddate\tqtrs\tuom\tsegments\tcoreg\tvalue\tfootnote",
+   "lines": [
+    "0000950170-24-087843\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2023\t20240630\t4\tUSD\tProductsOrServicesSecondaryCategorization=MicrosoftCloud;\t\t137400000000.0000\t"
+   ]
+  },
+  {
+   "quarter": "2024q4",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q4.zip",
+   "zip_sha256": "9a2cbbaf39c94aa642b33d512f4def92b198d3bfd12d2267bcd27abe55b9902d",
+   "retrieved_at": "2026-11-07T17:11:34.777861+00:00",
+   "header": "adsh\ttag\tversion\tddate\tqtrs\tuom\tsegments\tcoreg\tvalue\tfootnote",
+   "lines": [
+    "0000909832-24-000049\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2024\t20240831\t4\tUSD\tProductOrService=Other;\t\t49969000000.0000\t"
+   ]
+  },
+  {
+   "quarter": "2025q1",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q1.zip",
+   "zip_sha256": "4386e7057cc216b6fc729d8f957998acb831d29be7b16f6d8ed0f6b1ab74eba5",
+   "retrieved_at": "2026-11-07T17:11:38.157991+00:00",
+   "header": "adsh\ttag\tversion\tddate\tqtrs\tuom\tsegments\tcoreg\tvalue\tfootnote",
+   "lines": [
+    "0000021344-25-000011\tRevenues\tus-gaap/2024\t20241231\t4\tUSD\tEquityMethodInvestmentNonconsolidatedInvestee=EquityMethodInvestmentNonconsolidatedInvesteeOther;\t\t99043000000.0000\t",
+    "0001018724-25-000004\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2024\t20241231\t4\tUSD\tBusinessSegments=InternationalSegment;\t\t142906000000.0000\t",
+    "0001018724-25-000004\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2024\t20241231\t4\tUSD\tProductOrService=OtherServices;\t\t5425000000.0000\t",
+    "0001065280-25-000044\tRevenues\tus-gaap/2024\t20241231\t4\tUSD\tEquityComponents=AccumulatedGainLossNetCashFlowHedgeParent;ReclassificationOutOfAccumulatedOtherComprehensiveIncome=ReclassificationOutOfAccumulatedOtherComprehensiveIncome;\t\t124010000.0000\t",
+    "0001065280-25-000044\tRevenues\tus-gaap/2024\t20241231\t4\tUSD\tReclassificationOutOfAccumulatedOtherComprehensiveIncome=ReclassificationOutOfAccumulatedOtherComprehensiveIncome;\t\t124010000.0000\t",
+    "0001090727-25-000019\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2024\t20241231\t4\tUSD\tBusinessSegments=InternationalPackage;\t\t17960000000.0000\t",
+    "0001090727-25-000019\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2024\t20241231\t4\tUSD\tBusinessSegments=InternationalSegment;ConsolidationItems=OperatingSegments;\t\t17960000000.0000\t",
+    "0001652044-25-000014\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2024\t20241231\t4\tUSD\tBusinessSegments=AllOtherSegments;\t\t1648000000.0000\t",
+    "0001652044-25-000014\tRevenueFromContractWithCustomerExcludingAssessedTax\tus-gaap/2024\t20241231\t4\tUSD\tBusinessSegments=GoogleCloud;\t\t43229000000.0000\t"
+   ]
+  }
+ ],
+ "records": [
+  {
+   "fact_id": 7975,
+   "cik": "0001018724",
+   "ticker": "AMZN",
+   "accession_no": "0001018724-25-000004",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 142906000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+   "segment_member": "http://www.amazon.com/20241231:InternationalSegmentMember",
+   "segment_label": "International Segment [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.amazon.com/20241231:InternationalSegmentMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 8033,
+   "cik": "0001018724",
+   "ticker": "AMZN",
+   "accession_no": "0001018724-25-000004",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 5425000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.amazon.com/20241231:OtherServicesMember",
+   "segment_label": "Other Services [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Operations",
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:ProductOrServiceAxis",
+     "http://www.amazon.com/20241231:OtherServicesMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 32917,
+   "cik": "0001652044",
+   "ticker": "GOOGL",
+   "accession_no": "0001652044-25-000014",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 198084000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.google.com/20241231:GoogleSearchOtherMember",
+   "segment_label": "Google Search & Other [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF INCOME",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:ProductOrServiceAxis": "Google Search & Other [Member]",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "Google Services [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:ProductOrServiceAxis": "http://www.google.com/20241231:GoogleSearchOtherMember",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "http://www.google.com/20241231:GoogleServicesMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:ProductOrServiceAxis",
+     "http://www.google.com/20241231:GoogleSearchOtherMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.google.com/20241231:GoogleServicesMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 32935,
+   "cik": "0001652044",
+   "ticker": "GOOGL",
+   "accession_no": "0001652044-25-000014",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 43229000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+   "segment_member": "http://www.google.com/20241231:GoogleCloudMember",
+   "segment_label": "Google Cloud [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF INCOME",
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.google.com/20241231:GoogleCloudMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 32938,
+   "cik": "0001652044",
+   "ticker": "GOOGL",
+   "accession_no": "0001652044-25-000014",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 1648000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+   "segment_member": "us-gaap:AllOtherSegmentsMember",
+   "segment_label": "Other Operating Segment [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF INCOME",
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://fasb.org/us-gaap/2024:AllOtherSegmentsMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 34079,
+   "cik": "0001652044",
+   "ticker": "GOOGL",
+   "accession_no": "0001652044-25-000014",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 43229000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+   "segment_member": "http://www.google.com/20241231:GoogleCloudMember",
+   "segment_label": "Google Cloud [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF INCOME",
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.google.com/20241231:GoogleCloudMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 34082,
+   "cik": "0001652044",
+   "ticker": "GOOGL",
+   "accession_no": "0001652044-25-000014",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 1648000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+   "segment_member": "us-gaap:AllOtherSegmentsMember",
+   "segment_label": "Other Operating Segment [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF INCOME",
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://fasb.org/us-gaap/2024:AllOtherSegmentsMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 46954,
+   "cik": "0000789019",
+   "ticker": "MSFT",
+   "accession_no": "0000950170-24-087843",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 180349000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-07-01",
+   "period_end": "2024-07-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "us-gaap:ServiceOtherMember",
+   "segment_label": "Service, Other [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - Revenue Classified by Significant Product and Service Offerings (Parenthetical) (Detail)",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://fasb.org/us-gaap/2023:ServiceOtherMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 48656,
+   "cik": "0000789019",
+   "ticker": "MSFT",
+   "accession_no": "0000950170-24-087843",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 105362000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-07-01",
+   "period_end": "2024-07-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+   "segment_member": "http://www.microsoft.com/20240630:IntelligentCloudMember",
+   "segment_label": "Intelligent Cloud [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - Revenue Classified by Significant Product and Service Offerings (Parenthetical) (Detail)",
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2023:StatementBusinessSegmentsAxis",
+     "http://www.microsoft.com/20240630:IntelligentCloudMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 48689,
+   "cik": "0000789019",
+   "ticker": "MSFT",
+   "accession_no": "0000950170-24-087843",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 97726000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-07-01",
+   "period_end": "2024-07-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.microsoft.com/20240630:ServerProductsAndCloudServicesMember",
+   "segment_label": "Server Products And Cloud Services [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - Revenue Classified by Significant Product and Service Offerings (Parenthetical) (Detail)",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.microsoft.com/20240630:ServerProductsAndCloudServicesMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 48692,
+   "cik": "0000789019",
+   "ticker": "MSFT",
+   "accession_no": "0000950170-24-087843",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 54875000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-07-01",
+   "period_end": "2024-07-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.microsoft.com/20240630:OfficeProductsAndCloudServicesMember",
+   "segment_label": "Office Products And Cloud Services [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - Revenue Classified by Significant Product and Service Offerings (Parenthetical) (Detail)",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.microsoft.com/20240630:OfficeProductsAndCloudServicesMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 48710,
+   "cik": "0000789019",
+   "ticker": "MSFT",
+   "accession_no": "0000950170-24-087843",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 6481000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-07-01",
+   "period_end": "2024-07-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.microsoft.com/20240630:DynamicsProductsAndCloudServicesMember",
+   "segment_label": "Dynamics Products And Cloud Services [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - Revenue Classified by Significant Product and Service Offerings (Parenthetical) (Detail)",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.microsoft.com/20240630:DynamicsProductsAndCloudServicesMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 48716,
+   "cik": "0000789019",
+   "ticker": "MSFT",
+   "accession_no": "0000950170-24-087843",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 45000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-07-01",
+   "period_end": "2024-07-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.microsoft.com/20240630:OtherProductsAndServicesMember",
+   "segment_label": "Other Products And Services [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - Revenue Classified by Significant Product and Service Offerings (Parenthetical) (Detail)",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.microsoft.com/20240630:OtherProductsAndServicesMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 48722,
+   "cik": "0000789019",
+   "ticker": "MSFT",
+   "accession_no": "0000950170-24-087843",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 137400000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-07-01",
+   "period_end": "2024-07-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "http://www.microsoft.com/20240630:ProductsOrServicesSecondaryCategorizationAxis",
+   "segment_member": "http://www.microsoft.com/20240630:MicrosoftCloudMember",
+   "segment_label": "Microsoft Cloud [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - Revenue Classified by Significant Product and Service Offerings (Parenthetical) (Detail)",
+   "dims": [
+    [
+     "http://www.microsoft.com/20240630:ProductsOrServicesSecondaryCategorizationAxis",
+     "http://www.microsoft.com/20240630:MicrosoftCloudMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 71526,
+   "cik": "0001341439",
+   "ticker": "ORCL",
+   "accession_no": "0000950170-24-075605",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 19774000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-06-01",
+   "period_end": "2024-06-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.oracle.com/20240531:CloudServicesMember",
+   "segment_label": "Cloud Services [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF OPERATIONS",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.oracle.com/20240531:CloudServicesMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 71532,
+   "cik": "0001341439",
+   "ticker": "ORCL",
+   "accession_no": "0000950170-24-075605",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 39383000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-06-01",
+   "period_end": "2024-06-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.oracle.com/20240531:CloudServicesAndLicenseSupportMember",
+   "segment_label": "Cloud Services And License Support [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF OPERATIONS",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.oracle.com/20240531:CloudServicesAndLicenseSupportMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 71535,
+   "cik": "0001341439",
+   "ticker": "ORCL",
+   "accession_no": "0000950170-24-075605",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 18172000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-06-01",
+   "period_end": "2024-06-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.oracle.com/20240531:ApplicationsCloudServicesAndLicenseSupportMember",
+   "segment_label": "Applications Cloud Services And License Support [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF OPERATIONS",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.oracle.com/20240531:ApplicationsCloudServicesAndLicenseSupportMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 71538,
+   "cik": "0001341439",
+   "ticker": "ORCL",
+   "accession_no": "0000950170-24-075605",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 21211000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-06-01",
+   "period_end": "2024-06-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.oracle.com/20240531:InfrastructureCloudServicesAndLicenseSupportMember",
+   "segment_label": "Infrastructure Cloud Services And License Support [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF OPERATIONS",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.oracle.com/20240531:InfrastructureCloudServicesAndLicenseSupportMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 71541,
+   "cik": "0001341439",
+   "ticker": "ORCL",
+   "accession_no": "0000950170-24-075605",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 39383000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-06-01",
+   "period_end": "2024-06-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.oracle.com/20240531:CloudServicesAndLicenseSupportMember",
+   "segment_label": "Cloud Services And License Support [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF OPERATIONS",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.oracle.com/20240531:CloudServicesAndLicenseSupportMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 71569,
+   "cik": "0001341439",
+   "ticker": "ORCL",
+   "accession_no": "0000950170-24-075605",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 2,
+   "value": 18027000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-06-01",
+   "period_end": "2024-06-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.oracle.com/20240531:OtherCountriesMember",
+   "segment_label": "Other Countries [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - SEGMENT INFORMATION Continued (Details)",
+   "geo_code": "ROW",
+   "geo_name": "Other Countries (ORCL)",
+   "geo_type": "region",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://www.oracle.com/20240531:OtherCountriesMember"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "http://www.oracle.com/20240531:OtherCountriesMember"
+  },
+  {
+   "fact_id": 173868,
+   "cik": "0001108524",
+   "ticker": "CRM",
+   "accession_no": "0001108524-24-000005",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 2320000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-02-01",
+   "period_end": "2024-02-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://salesforce.com/20240131:ProfessionalServicesandOtherMember",
+   "segment_label": "Professional Services and Other [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - Revenues - Summary of Subscription and Support and Geographic Location Revenue (Details)",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://salesforce.com/20240131:ProfessionalServicesandOtherMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 174200,
+   "cik": "0001108524",
+   "ticker": "CRM",
+   "accession_no": "0001108524-24-000005",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 7580000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-02-01",
+   "period_end": "2024-02-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://salesforce.com/20240131:SalesCloudMember",
+   "segment_label": "Sales Cloud [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - Revenues - Summary of Subscription and Support and Geographic Location Revenue (Details)",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://salesforce.com/20240131:SalesCloudMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 174203,
+   "cik": "0001108524",
+   "ticker": "CRM",
+   "accession_no": "0001108524-24-000005",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 8245000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-02-01",
+   "period_end": "2024-02-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://salesforce.com/20240131:ServiceCloudMember",
+   "segment_label": "Service Cloud [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - Revenues - Summary of Subscription and Support and Geographic Location Revenue (Details)",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://salesforce.com/20240131:ServiceCloudMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 174206,
+   "cik": "0001108524",
+   "ticker": "CRM",
+   "accession_no": "0001108524-24-000005",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 6611000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-02-01",
+   "period_end": "2024-02-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://salesforce.com/20240131:SalesforcePlatformandOtherMember",
+   "segment_label": "Salesforce Platform and Other [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - Revenues - Summary of Subscription and Support and Geographic Location Revenue (Details)",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://salesforce.com/20240131:SalesforcePlatformandOtherMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 174209,
+   "cik": "0001108524",
+   "ticker": "CRM",
+   "accession_no": "0001108524-24-000005",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 4912000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-02-01",
+   "period_end": "2024-02-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://salesforce.com/20240131:MarketingandCommerceCloudMember",
+   "segment_label": "Marketing and Commerce Cloud [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - Revenues - Summary of Subscription and Support and Geographic Location Revenue (Details)",
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://salesforce.com/20240131:MarketingandCommerceCloudMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 187595,
+   "cik": "0001065280",
+   "ticker": "NFLX",
+   "accession_no": "0001065280-25-000044",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 124010000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:ReclassificationOutOfAccumulatedOtherComprehensiveIncomeAxis",
+   "segment_member": "us-gaap:ReclassificationOutOfAccumulatedOtherComprehensiveIncomeMember",
+   "segment_label": "Reclassification out of Accumulated Other Comprehensive Income [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF OPERATIONS",
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2024:ReclassificationOutOfAccumulatedOtherComprehensiveIncomeAxis",
+     "http://fasb.org/us-gaap/2024:ReclassificationOutOfAccumulatedOtherComprehensiveIncomeMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 193073,
+   "cik": "0000021344",
+   "ticker": "KO",
+   "accession_no": "0000021344-25-000011",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 18912000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.thecocacolacompany.com/20241231:InternationalMember",
+   "segment_label": "International [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF INCOME",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:ProductOrServiceAxis": "Concentrate operations [Member]",
+    "http://fasb.org/srt/2024:StatementGeographicalAxis": "International [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:ProductOrServiceAxis": "http://www.thecocacolacompany.com/20241231:ConcentrateOperationsMember",
+    "http://fasb.org/srt/2024:StatementGeographicalAxis": "http://www.thecocacolacompany.com/20241231:InternationalMember"
+   },
+   "geo_code": "//www.thecocacolacompany.com/20241231",
+   "geo_name": "International [Member]",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:StatementGeographicalAxis",
+     "http://www.thecocacolacompany.com/20241231:InternationalMember"
+    ],
+    [
+     "http://fasb.org/srt/2024:ProductOrServiceAxis",
+     "http://www.thecocacolacompany.com/20241231:ConcentrateOperationsMember"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "http://www.thecocacolacompany.com/20241231:InternationalMember"
+  },
+  {
+   "fact_id": 193076,
+   "cik": "0000021344",
+   "ticker": "KO",
+   "accession_no": "0000021344-25-000011",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 9787000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.thecocacolacompany.com/20241231:InternationalMember",
+   "segment_label": "International [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF INCOME",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:ProductOrServiceAxis": "Finished product operations [Member]",
+    "http://fasb.org/srt/2024:StatementGeographicalAxis": "International [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:ProductOrServiceAxis": "http://www.thecocacolacompany.com/20241231:FinishedProductOperationsMember",
+    "http://fasb.org/srt/2024:StatementGeographicalAxis": "http://www.thecocacolacompany.com/20241231:InternationalMember"
+   },
+   "geo_code": "//www.thecocacolacompany.com/20241231",
+   "geo_name": "International [Member]",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:StatementGeographicalAxis",
+     "http://www.thecocacolacompany.com/20241231:InternationalMember"
+    ],
+    [
+     "http://fasb.org/srt/2024:ProductOrServiceAxis",
+     "http://www.thecocacolacompany.com/20241231:FinishedProductOperationsMember"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "http://www.thecocacolacompany.com/20241231:InternationalMember"
+  },
+  {
+   "fact_id": 193079,
+   "cik": "0000021344",
+   "ticker": "KO",
+   "accession_no": "0000021344-25-000011",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 28699000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.thecocacolacompany.com/20241231:InternationalMember",
+   "segment_label": "International [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF INCOME",
+   "geo_code": "//www.thecocacolacompany.com/20241231",
+   "geo_name": "International [Member]",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:StatementGeographicalAxis",
+     "http://www.thecocacolacompany.com/20241231:InternationalMember"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "http://www.thecocacolacompany.com/20241231:InternationalMember"
+  },
+  {
+   "fact_id": 193349,
+   "cik": "0000021344",
+   "ticker": "KO",
+   "accession_no": "0000021344-25-000011",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 99043000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:EquityMethodInvestmentNonconsolidatedInvesteeAxis",
+   "segment_member": "us-gaap:EquityMethodInvestmentNonconsolidatedInvesteeOtherMember",
+   "segment_label": "Equity Method Investment, Nonconsolidated Investee, Other [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF INCOME",
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2024:EquityMethodInvestmentNonconsolidatedInvesteeAxis",
+     "http://fasb.org/us-gaap/2024:EquityMethodInvestmentNonconsolidatedInvesteeOtherMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 194882,
+   "cik": "0000021344",
+   "ticker": "KO",
+   "accession_no": "0000021344-25-000011",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 28699000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.thecocacolacompany.com/20241231:InternationalMember",
+   "segment_label": "International [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - CONSOLIDATED STATEMENTS OF INCOME",
+   "geo_code": "//www.thecocacolacompany.com/20241231",
+   "geo_name": "International [Member]",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:StatementGeographicalAxis",
+     "http://www.thecocacolacompany.com/20241231:InternationalMember"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "http://www.thecocacolacompany.com/20241231:InternationalMember"
+  },
+  {
+   "fact_id": 206156,
+   "cik": "0000104169",
+   "ticker": "WMT",
+   "accession_no": "0000104169-24-000056",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 2,
+   "value": 114641000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-02-01",
+   "period_end": "2024-02-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+   "segment_member": "http://www.walmart.com/20240131:WalmartInternationalMember",
+   "segment_label": "Walmart International [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Income",
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2023:StatementBusinessSegmentsAxis",
+     "http://www.walmart.com/20240131:WalmartInternationalMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 206244,
+   "cik": "0000104169",
+   "ticker": "WMT",
+   "accession_no": "0000104169-24-000056",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 116049000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-02-01",
+   "period_end": "2024-02-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.walmart.com/20240131:WalmartInternationalMember",
+   "segment_label": "Walmart International [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Income",
+   "geo_code": "//www.walmart.com/20240131",
+   "geo_name": "Walmart International [Member]",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://www.walmart.com/20240131:WalmartInternationalMember"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "http://www.walmart.com/20240131:WalmartInternationalMember"
+  },
+  {
+   "fact_id": 206269,
+   "cik": "0000104169",
+   "ticker": "WMT",
+   "accession_no": "0000104169-24-000056",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 2,
+   "value": 8724000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-02-01",
+   "period_end": "2024-02-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.walmart.com/20240131:OtherCategoriesMember",
+   "segment_label": "Other Categories [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - Consolidated Statements of Income",
+   "dimension_labels": {
+    "http://fasb.org/srt/2023:ProductOrServiceAxis": "Other Categories [Member]",
+    "http://fasb.org/us-gaap/2023:StatementBusinessSegmentsAxis": "Walmart US [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2023:ProductOrServiceAxis": "http://www.walmart.com/20240131:OtherCategoriesMember",
+    "http://fasb.org/us-gaap/2023:StatementBusinessSegmentsAxis": "http://www.walmart.com/20240131:WalmartUSMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2023:ProductOrServiceAxis",
+     "http://www.walmart.com/20240131:OtherCategoriesMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2023:StatementBusinessSegmentsAxis",
+     "http://www.walmart.com/20240131:WalmartUSMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 206282,
+   "cik": "0000104169",
+   "ticker": "WMT",
+   "accession_no": "0000104169-24-000056",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 2,
+   "value": 22639000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-02-01",
+   "period_end": "2024-02-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+   "segment_member": "http://www.walmart.com/20240131:WalmartInternationalMember",
+   "segment_label": "Walmart International [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - Consolidated Statements of Income",
+   "dimension_labels": {
+    "http://fasb.org/srt/2023:StatementGeographicalAxis": "CANADA",
+    "http://fasb.org/us-gaap/2023:StatementBusinessSegmentsAxis": "Walmart International [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2023:StatementGeographicalAxis": "http://xbrl.sec.gov/country/2023:CA",
+    "http://fasb.org/us-gaap/2023:StatementBusinessSegmentsAxis": "http://www.walmart.com/20240131:WalmartInternationalMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2023:StatementBusinessSegmentsAxis",
+     "http://www.walmart.com/20240131:WalmartInternationalMember"
+    ],
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://xbrl.sec.gov/country/2023:CA"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 206291,
+   "cik": "0000104169",
+   "ticker": "WMT",
+   "accession_no": "0000104169-24-000056",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 2,
+   "value": 25265000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-02-01",
+   "period_end": "2024-02-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+   "segment_member": "http://www.walmart.com/20240131:WalmartInternationalMember",
+   "segment_label": "Walmart International [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - Consolidated Statements of Income",
+   "dimension_labels": {
+    "http://fasb.org/srt/2023:StatementGeographicalAxis": "Other [Member]",
+    "http://fasb.org/us-gaap/2023:StatementBusinessSegmentsAxis": "Walmart International [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2023:StatementGeographicalAxis": "http://www.walmart.com/20240131:OtherMember",
+    "http://fasb.org/us-gaap/2023:StatementBusinessSegmentsAxis": "http://www.walmart.com/20240131:WalmartInternationalMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2023:StatementBusinessSegmentsAxis",
+     "http://www.walmart.com/20240131:WalmartInternationalMember"
+    ],
+    [
+     "http://fasb.org/srt/2023:StatementGeographicalAxis",
+     "http://www.walmart.com/20240131:OtherMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 206294,
+   "cik": "0000104169",
+   "ticker": "WMT",
+   "accession_no": "0000104169-24-000056",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2023:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 2,
+   "value": 114641000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-02-01",
+   "period_end": "2024-02-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+   "segment_member": "http://www.walmart.com/20240131:WalmartInternationalMember",
+   "segment_label": "Walmart International [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statements of Income",
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2023:StatementBusinessSegmentsAxis",
+     "http://www.walmart.com/20240131:WalmartInternationalMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 209600,
+   "cik": "0000909832",
+   "ticker": "COST",
+   "accession_no": "0000909832-24-000049",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 35436000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-09-04",
+   "period_end": "2024-09-02",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.costco.com/20240901:OtherInternationalMember",
+   "segment_label": "Other International [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Disclosure - Segment Reporting Information by Segment (Details)",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:ConsolidationItemsAxis": "Operating Segments [Member]",
+    "http://fasb.org/srt/2024:StatementGeographicalAxis": "Other International [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:ConsolidationItemsAxis": "http://fasb.org/us-gaap/2024:OperatingSegmentsMember",
+    "http://fasb.org/srt/2024:StatementGeographicalAxis": "http://www.costco.com/20240901:OtherInternationalMember"
+   },
+   "geo_code": "//www.costco.com/20240901",
+   "geo_name": "Other International [Member]",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:StatementGeographicalAxis",
+     "http://www.costco.com/20240901:OtherInternationalMember"
+    ],
+    [
+     "http://fasb.org/srt/2024:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2024:OperatingSegmentsMember"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "http://www.costco.com/20240901:OtherInternationalMember"
+  },
+  {
+   "fact_id": 209680,
+   "cik": "0000909832",
+   "ticker": "COST",
+   "accession_no": "0000909832-24-000049",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 2,
+   "value": 49969000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2023-09-04",
+   "period_end": "2024-09-02",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.costco.com/20240901:OtherMember",
+   "segment_label": "Other [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - Segment Reporting Information by Item Category (Details)",
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:ProductOrServiceAxis",
+     "http://www.costco.com/20240901:OtherMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 216827,
+   "cik": "0000063908",
+   "ticker": "MCD",
+   "accession_no": "0000063908-25-000012",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 12628000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+   "segment_member": "http://www.mcdonalds.com/20241231:InternationalOperatedMarketsMember",
+   "segment_label": "International Operated Markets [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statement of Income",
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.mcdonalds.com/20241231:InternationalOperatedMarketsMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 216830,
+   "cik": "0000063908",
+   "ticker": "MCD",
+   "accession_no": "0000063908-25-000012",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 2661000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+   "segment_member": "http://www.mcdonalds.com/20241231:InternationalDevelopmentalLicensedMarketsandCorporateMember",
+   "segment_label": "International Developmental Licensed Markets and Corporate [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - Consolidated Statement of Income",
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.mcdonalds.com/20241231:InternationalDevelopmentalLicensedMarketsandCorporateMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 247658,
+   "cik": "0000936468",
+   "ticker": "LMT",
+   "accession_no": "0000936468-25-000009",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 9182000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:MajorCustomersAxis",
+   "segment_member": "http://www.lockheedmartin.com/20241231:InternationalMember",
+   "segment_label": "International [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Disclosure - Information on Business Segments - Income Statement Information For Each Segment (Details)",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:MajorCustomersAxis": "International [Member]",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "Aeronautics [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:MajorCustomersAxis": "http://www.lockheedmartin.com/20241231:InternationalMember",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "http://www.lockheedmartin.com/20241231:AeronauticsMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:MajorCustomersAxis",
+     "http://www.lockheedmartin.com/20241231:InternationalMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.lockheedmartin.com/20241231:AeronauticsMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 247659,
+   "cik": "0000936468",
+   "ticker": "LMT",
+   "accession_no": "0000936468-25-000009",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 3629000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:MajorCustomersAxis",
+   "segment_member": "http://www.lockheedmartin.com/20241231:InternationalMember",
+   "segment_label": "International [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Disclosure - Information on Business Segments - Income Statement Information For Each Segment (Details)",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:MajorCustomersAxis": "International [Member]",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "Missiles And Fire Control [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:MajorCustomersAxis": "http://www.lockheedmartin.com/20241231:InternationalMember",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "http://www.lockheedmartin.com/20241231:MissilesAndFireControlMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:MajorCustomersAxis",
+     "http://www.lockheedmartin.com/20241231:InternationalMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.lockheedmartin.com/20241231:MissilesAndFireControlMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 247660,
+   "cik": "0000936468",
+   "ticker": "LMT",
+   "accession_no": "0000936468-25-000009",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 5463000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:MajorCustomersAxis",
+   "segment_member": "http://www.lockheedmartin.com/20241231:InternationalMember",
+   "segment_label": "International [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Disclosure - Information on Business Segments - Income Statement Information For Each Segment (Details)",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:MajorCustomersAxis": "International [Member]",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "Rotary and Mission Systems [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:MajorCustomersAxis": "http://www.lockheedmartin.com/20241231:InternationalMember",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "http://www.lockheedmartin.com/20241231:RotaryAndMissionSystemsMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:MajorCustomersAxis",
+     "http://www.lockheedmartin.com/20241231:InternationalMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.lockheedmartin.com/20241231:RotaryAndMissionSystemsMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 247661,
+   "cik": "0000936468",
+   "ticker": "LMT",
+   "accession_no": "0000936468-25-000009",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 241000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:MajorCustomersAxis",
+   "segment_member": "http://www.lockheedmartin.com/20241231:InternationalMember",
+   "segment_label": "International [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Disclosure - Information on Business Segments - Income Statement Information For Each Segment (Details)",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:MajorCustomersAxis": "International [Member]",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "Space [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:MajorCustomersAxis": "http://www.lockheedmartin.com/20241231:InternationalMember",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "http://www.lockheedmartin.com/20241231:SpaceMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:MajorCustomersAxis",
+     "http://www.lockheedmartin.com/20241231:InternationalMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.lockheedmartin.com/20241231:SpaceMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 247662,
+   "cik": "0000936468",
+   "ticker": "LMT",
+   "accession_no": "0000936468-25-000009",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 18515000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:MajorCustomersAxis",
+   "segment_member": "http://www.lockheedmartin.com/20241231:InternationalMember",
+   "segment_label": "International [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - Information on Business Segments - Income Statement Information For Each Segment (Details)",
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:MajorCustomersAxis",
+     "http://www.lockheedmartin.com/20241231:InternationalMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 247663,
+   "cik": "0000936468",
+   "ticker": "LMT",
+   "accession_no": "0000936468-25-000009",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 122000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:MajorCustomersAxis",
+   "segment_member": "http://www.lockheedmartin.com/20241231:UnitedStatesCommercialAndOtherMember",
+   "segment_label": "United States Commercial And Other [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Disclosure - Information on Business Segments - Income Statement Information For Each Segment (Details)",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:MajorCustomersAxis": "United States Commercial And Other [Member]",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "Aeronautics [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:MajorCustomersAxis": "http://www.lockheedmartin.com/20241231:UnitedStatesCommercialAndOtherMember",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "http://www.lockheedmartin.com/20241231:AeronauticsMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:MajorCustomersAxis",
+     "http://www.lockheedmartin.com/20241231:UnitedStatesCommercialAndOtherMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.lockheedmartin.com/20241231:AeronauticsMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 247664,
+   "cik": "0000936468",
+   "ticker": "LMT",
+   "accession_no": "0000936468-25-000009",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 10000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:MajorCustomersAxis",
+   "segment_member": "http://www.lockheedmartin.com/20241231:UnitedStatesCommercialAndOtherMember",
+   "segment_label": "United States Commercial And Other [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Disclosure - Information on Business Segments - Income Statement Information For Each Segment (Details)",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:MajorCustomersAxis": "United States Commercial And Other [Member]",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "Missiles And Fire Control [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:MajorCustomersAxis": "http://www.lockheedmartin.com/20241231:UnitedStatesCommercialAndOtherMember",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "http://www.lockheedmartin.com/20241231:MissilesAndFireControlMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:MajorCustomersAxis",
+     "http://www.lockheedmartin.com/20241231:UnitedStatesCommercialAndOtherMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.lockheedmartin.com/20241231:MissilesAndFireControlMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 247665,
+   "cik": "0000936468",
+   "ticker": "LMT",
+   "accession_no": "0000936468-25-000009",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 332000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:MajorCustomersAxis",
+   "segment_member": "http://www.lockheedmartin.com/20241231:UnitedStatesCommercialAndOtherMember",
+   "segment_label": "United States Commercial And Other [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Disclosure - Information on Business Segments - Income Statement Information For Each Segment (Details)",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:MajorCustomersAxis": "United States Commercial And Other [Member]",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "Rotary and Mission Systems [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:MajorCustomersAxis": "http://www.lockheedmartin.com/20241231:UnitedStatesCommercialAndOtherMember",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "http://www.lockheedmartin.com/20241231:RotaryAndMissionSystemsMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:MajorCustomersAxis",
+     "http://www.lockheedmartin.com/20241231:UnitedStatesCommercialAndOtherMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.lockheedmartin.com/20241231:RotaryAndMissionSystemsMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 247666,
+   "cik": "0000936468",
+   "ticker": "LMT",
+   "accession_no": "0000936468-25-000009",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 20000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:MajorCustomersAxis",
+   "segment_member": "http://www.lockheedmartin.com/20241231:UnitedStatesCommercialAndOtherMember",
+   "segment_label": "United States Commercial And Other [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Disclosure - Information on Business Segments - Income Statement Information For Each Segment (Details)",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:MajorCustomersAxis": "United States Commercial And Other [Member]",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "Space [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:MajorCustomersAxis": "http://www.lockheedmartin.com/20241231:UnitedStatesCommercialAndOtherMember",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "http://www.lockheedmartin.com/20241231:SpaceMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:MajorCustomersAxis",
+     "http://www.lockheedmartin.com/20241231:UnitedStatesCommercialAndOtherMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.lockheedmartin.com/20241231:SpaceMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 247667,
+   "cik": "0000936468",
+   "ticker": "LMT",
+   "accession_no": "0000936468-25-000009",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 484000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:MajorCustomersAxis",
+   "segment_member": "http://www.lockheedmartin.com/20241231:UnitedStatesCommercialAndOtherMember",
+   "segment_label": "United States Commercial And Other [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - Information on Business Segments - Income Statement Information For Each Segment (Details)",
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:MajorCustomersAxis",
+     "http://www.lockheedmartin.com/20241231:UnitedStatesCommercialAndOtherMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 247693,
+   "cik": "0000936468",
+   "ticker": "LMT",
+   "accession_no": "0000936468-25-000009",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 540000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.lockheedmartin.com/20241231:OtherRegionMember",
+   "segment_label": "Other Region [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Disclosure - Information on Business Segments - Income Statement Information For Each Segment (Details)",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:StatementGeographicalAxis": "Other Region [Member]",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "Aeronautics [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:StatementGeographicalAxis": "http://www.lockheedmartin.com/20241231:OtherRegionMember",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "http://www.lockheedmartin.com/20241231:AeronauticsMember"
+   },
+   "geo_code": "//www.lockheedmartin.com/20241231",
+   "geo_name": "Other Region [Member]",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:StatementGeographicalAxis",
+     "http://www.lockheedmartin.com/20241231:OtherRegionMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.lockheedmartin.com/20241231:AeronauticsMember"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "http://www.lockheedmartin.com/20241231:OtherRegionMember"
+  },
+  {
+   "fact_id": 247694,
+   "cik": "0000936468",
+   "ticker": "LMT",
+   "accession_no": "0000936468-25-000009",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 66000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.lockheedmartin.com/20241231:OtherRegionMember",
+   "segment_label": "Other Region [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Disclosure - Information on Business Segments - Income Statement Information For Each Segment (Details)",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:StatementGeographicalAxis": "Other Region [Member]",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "Missiles And Fire Control [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:StatementGeographicalAxis": "http://www.lockheedmartin.com/20241231:OtherRegionMember",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "http://www.lockheedmartin.com/20241231:MissilesAndFireControlMember"
+   },
+   "geo_code": "//www.lockheedmartin.com/20241231",
+   "geo_name": "Other Region [Member]",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:StatementGeographicalAxis",
+     "http://www.lockheedmartin.com/20241231:OtherRegionMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.lockheedmartin.com/20241231:MissilesAndFireControlMember"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "http://www.lockheedmartin.com/20241231:OtherRegionMember"
+  },
+  {
+   "fact_id": 247695,
+   "cik": "0000936468",
+   "ticker": "LMT",
+   "accession_no": "0000936468-25-000009",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 877000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.lockheedmartin.com/20241231:OtherRegionMember",
+   "segment_label": "Other Region [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Disclosure - Information on Business Segments - Income Statement Information For Each Segment (Details)",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:StatementGeographicalAxis": "Other Region [Member]",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "Rotary and Mission Systems [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:StatementGeographicalAxis": "http://www.lockheedmartin.com/20241231:OtherRegionMember",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "http://www.lockheedmartin.com/20241231:RotaryAndMissionSystemsMember"
+   },
+   "geo_code": "//www.lockheedmartin.com/20241231",
+   "geo_name": "Other Region [Member]",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:StatementGeographicalAxis",
+     "http://www.lockheedmartin.com/20241231:OtherRegionMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.lockheedmartin.com/20241231:RotaryAndMissionSystemsMember"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "http://www.lockheedmartin.com/20241231:OtherRegionMember"
+  },
+  {
+   "fact_id": 247696,
+   "cik": "0000936468",
+   "ticker": "LMT",
+   "accession_no": "0000936468-25-000009",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 0,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.lockheedmartin.com/20241231:OtherRegionMember",
+   "segment_label": "Other Region [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Disclosure - Information on Business Segments - Income Statement Information For Each Segment (Details)",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:StatementGeographicalAxis": "Other Region [Member]",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "Space [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:StatementGeographicalAxis": "http://www.lockheedmartin.com/20241231:OtherRegionMember",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "http://www.lockheedmartin.com/20241231:SpaceMember"
+   },
+   "geo_code": "//www.lockheedmartin.com/20241231",
+   "geo_name": "Other Region [Member]",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:StatementGeographicalAxis",
+     "http://www.lockheedmartin.com/20241231:OtherRegionMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.lockheedmartin.com/20241231:SpaceMember"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "http://www.lockheedmartin.com/20241231:OtherRegionMember"
+  },
+  {
+   "fact_id": 247697,
+   "cik": "0000936468",
+   "ticker": "LMT",
+   "accession_no": "0000936468-25-000009",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:Revenues",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 1483000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.lockheedmartin.com/20241231:OtherRegionMember",
+   "segment_label": "Other Region [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Disclosure - Information on Business Segments - Income Statement Information For Each Segment (Details)",
+   "geo_code": "//www.lockheedmartin.com/20241231",
+   "geo_name": "Other Region [Member]",
+   "geo_type": null,
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:StatementGeographicalAxis",
+     "http://www.lockheedmartin.com/20241231:OtherRegionMember"
+    ]
+   ],
+   "is_geographic_row": true,
+   "geo_member": "http://www.lockheedmartin.com/20241231:OtherRegionMember"
+  },
+  {
+   "fact_id": 254619,
+   "cik": "0001090727",
+   "ticker": "UPS",
+   "accession_no": "0001090727-25-000019",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 569000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "http://www.ups.com/20241231:CargoAndOtherMember",
+   "segment_label": "Cargo And Other [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - STATEMENTS OF CONSOLIDATED INCOME",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:ProductOrServiceAxis": "Cargo And Other [Member]",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "U.S. Domestic Package [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:ProductOrServiceAxis": "http://www.ups.com/20241231:CargoAndOtherMember",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "http://www.ups.com/20241231:USDomesticPackageMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:ProductOrServiceAxis",
+     "http://www.ups.com/20241231:CargoAndOtherMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.ups.com/20241231:USDomesticPackageMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 254634,
+   "cik": "0001090727",
+   "ticker": "UPS",
+   "accession_no": "0001090727-25-000019",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 17960000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "us-gaap:StatementBusinessSegmentsAxis",
+   "segment_member": "http://www.ups.com/20241231:InternationalPackageMember",
+   "segment_label": "International Package [Member]",
+   "has_multiple_dimensions": false,
+   "section_path": "Statement - STATEMENTS OF CONSOLIDATED INCOME",
+   "dims": [
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.ups.com/20241231:InternationalPackageMember"
+    ]
+   ],
+   "is_geographic_row": false
+  },
+  {
+   "fact_id": 254643,
+   "cik": "0001090727",
+   "ticker": "UPS",
+   "accession_no": "0001090727-25-000019",
+   "fiscal_year": 2024,
+   "fiscal_period": "FY",
+   "concept": "http://fasb.org/us-gaap/2024:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "concept_family": "Revenue",
+   "concept_pref_rank": 1,
+   "value": 1569000000,
+   "unit": "USD",
+   "period_type": "duration",
+   "period_start": "2024-01-01",
+   "period_end": "2025-01-01",
+   "duration_kind": "annual",
+   "is_current_period": true,
+   "segment_axis": "srt:ProductOrServiceAxis",
+   "segment_member": "us-gaap:ProductAndServiceOtherMember",
+   "segment_label": "Product and Service, Other [Member]",
+   "has_multiple_dimensions": true,
+   "section_path": "Statement - STATEMENTS OF CONSOLIDATED INCOME",
+   "dimension_labels": {
+    "http://fasb.org/srt/2024:ProductOrServiceAxis": "Product and Service, Other [Member]",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "Supply Chain Solutions [Member]"
+   },
+   "dimensions": {
+    "http://fasb.org/srt/2024:ProductOrServiceAxis": "http://fasb.org/us-gaap/2024:ProductAndServiceOtherMember",
+    "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis": "http://www.ups.com/20241231:SupplyChainSolutionsMember"
+   },
+   "dims": [
+    [
+     "http://fasb.org/srt/2024:ProductOrServiceAxis",
+     "http://fasb.org/us-gaap/2024:ProductAndServiceOtherMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2024:StatementBusinessSegmentsAxis",
+     "http://www.ups.com/20241231:SupplyChainSolutionsMember"
+    ]
+   ],
+   "is_geographic_row": false
+  }
+ ]
+}

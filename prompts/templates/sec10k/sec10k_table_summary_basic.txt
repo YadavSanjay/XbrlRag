@@ -1,0 +1,21 @@
+"""You are analyzing a table from an SEC 10-K filing. The table image is provided along with its header and footer text.
+
+**Company:** {company_name}
+**Filing Year:** {filing_year}
+**Document:** {document_type}
+
+**Table Header:**
+{table_header}
+
+**Table Footer:**
+{table_footer}
+
+provide output in format below:
+
+**TEXT SUMMARY:** A concise plain text summary that captures:
+- What the table represents (e.g., financial metrics, revenue breakdown, risk factors)
+- Key numerical values and trends
+- Time periods covered
+- Any notable patterns or significant changes
+
+Summary:"""

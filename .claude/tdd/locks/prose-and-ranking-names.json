@@ -1,0 +1,96 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-19",
+  "criteria": {
+    "C1": [
+      "test/spec/prose-and-ranking-names/test_parn_c1_prose.py::test_pick_is_read_from_the_prose",
+      "test/spec/prose-and-ranking-names/test_parn_c1_prose.py::test_disclosures_are_read_from_the_prose[rank_by_ratio]",
+      "test/spec/prose-and-ranking-names/test_parn_c1_prose.py::test_disclosures_are_read_from_the_prose[leader_growth]",
+      "test/spec/prose-and-ranking-names/test_parn_c1_prose.py::test_wrapping_the_prose_never_changes_the_grade"
+    ],
+    "C2": [
+      "test/spec/prose-and-ranking-names/test_parn_c2_names_right.py::test_rows_holding_the_second_steps_figures[rank_by_ratio]",
+      "test/spec/prose-and-ranking-names/test_parn_c2_names_right.py::test_rows_holding_the_second_steps_figures[leader_growth]",
+      "test/spec/prose-and-ranking-names/test_parn_c2_names_right.py::test_reordered_revenue_rows[rank_by_ratio]",
+      "test/spec/prose-and-ranking-names/test_parn_c2_names_right.py::test_reordered_revenue_rows[leader_growth]",
+      "test/spec/prose-and-ranking-names/test_parn_c2_names_right.py::test_any_order_and_any_figures"
+    ],
+    "C3": [
+      "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_wrong_sets_are_wrong[DEVD for DEVC-rank_by_ratio]",
+      "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_wrong_sets_are_wrong[DEVD for DEVC-leader_growth]",
+      "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_wrong_sets_are_wrong[excluded DEVE for DEVC-rank_by_ratio]",
+      "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_wrong_sets_are_wrong[excluded DEVE for DEVC-leader_growth]",
+      "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_wrong_sets_are_wrong[only two-rank_by_ratio]",
+      "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_wrong_sets_are_wrong[only two-leader_growth]",
+      "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_wrong_sets_are_wrong[the three after another-rank_by_ratio]",
+      "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_wrong_sets_are_wrong[the three after another-leader_growth]",
+      "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_value_correct_exactly_when_the_first_three_are_the_key_set"
+    ],
+    "C4": [
+      "test/spec/prose-and-ranking-names/test_parn_c4_scope.py::test_hx_compound_keeps_its_order",
+      "test/spec/prose-and-ranking-names/test_parn_c4_scope.py::test_disclosure_checks_still_apply[rank_by_ratio]",
+      "test/spec/prose-and-ranking-names/test_parn_c4_scope.py::test_disclosure_checks_still_apply[leader_growth]",
+      "test/spec/prose-and-ranking-names/test_parn_c4_scope.py::test_hx_reversed_never_right_generated_reordered_always"
+    ],
+    "C5": [
+      "test/spec/prose-and-ranking-names/test_parn_c5_grader_version.py::test_grader_version_is_at_least_14",
+      "test/spec/prose-and-ranking-names/test_parn_c5_grader_version.py::test_metrics_over_generated_results_carry_the_version"
+    ]
+  },
+  "files": {
+    "test/spec/prose-and-ranking-names/conftest.py": "a9a38465853d717dd1b2d7ca2514370dbf58b74c3070b0964c5332eca8d12c87",
+    "test/spec/prose-and-ranking-names/generated_cases.json": "719a7b19ea4bbe2a13990b8a9c938343f10bb23de49db2f8b5c84d91d431ff55",
+    "test/spec/prose-and-ranking-names/test_parn_c1_prose.py": "af269f7db8a0a503f13c5794f11e8d45f0485f32dfd399a978ab2742699c9b5d",
+    "test/spec/prose-and-ranking-names/test_parn_c2_names_right.py": "4a1c1b808d5180fc1bd1453c8e903a25db6b4aafdf82ea8a57864799f6752268",
+    "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py": "4a3c3a5a4a43d1edcb23a9704ac2eb276196e14af46f3225ec061fdebe1e9e02",
+    "test/spec/prose-and-ranking-names/test_parn_c4_scope.py": "618b1b4757f23f4d0bab25986a30d43b8884147a2fc3738d065960ad0171c0bf",
+    "test/spec/prose-and-ranking-names/test_parn_c5_grader_version.py": "539f6551100eb9726f1d5eb8b7894f7eaa9a3ad779ba771db4915b55e8419a9b"
+  },
+  "id": "prose-and-ranking-names",
+  "interface": [],
+  "nodes": [
+    "test/spec/prose-and-ranking-names/test_parn_c1_prose.py::test_disclosures_are_read_from_the_prose[leader_growth]",
+    "test/spec/prose-and-ranking-names/test_parn_c1_prose.py::test_disclosures_are_read_from_the_prose[rank_by_ratio]",
+    "test/spec/prose-and-ranking-names/test_parn_c1_prose.py::test_pick_is_read_from_the_prose",
+    "test/spec/prose-and-ranking-names/test_parn_c1_prose.py::test_wrapping_the_prose_never_changes_the_grade",
+    "test/spec/prose-and-ranking-names/test_parn_c2_names_right.py::test_any_order_and_any_figures",
+    "test/spec/prose-and-ranking-names/test_parn_c2_names_right.py::test_reordered_revenue_rows[leader_growth]",
+    "test/spec/prose-and-ranking-names/test_parn_c2_names_right.py::test_reordered_revenue_rows[rank_by_ratio]",
+    "test/spec/prose-and-ranking-names/test_parn_c2_names_right.py::test_rows_holding_the_second_steps_figures[leader_growth]",
+    "test/spec/prose-and-ranking-names/test_parn_c2_names_right.py::test_rows_holding_the_second_steps_figures[rank_by_ratio]",
+    "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_value_correct_exactly_when_the_first_three_are_the_key_set",
+    "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_wrong_sets_are_wrong[DEVD for DEVC-leader_growth]",
+    "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_wrong_sets_are_wrong[DEVD for DEVC-rank_by_ratio]",
+    "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_wrong_sets_are_wrong[excluded DEVE for DEVC-leader_growth]",
+    "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_wrong_sets_are_wrong[excluded DEVE for DEVC-rank_by_ratio]",
+    "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_wrong_sets_are_wrong[only two-leader_growth]",
+    "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_wrong_sets_are_wrong[only two-rank_by_ratio]",
+    "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_wrong_sets_are_wrong[the three after another-leader_growth]",
+    "test/spec/prose-and-ranking-names/test_parn_c3_names_wrong.py::test_wrong_sets_are_wrong[the three after another-rank_by_ratio]",
+    "test/spec/prose-and-ranking-names/test_parn_c4_scope.py::test_disclosure_checks_still_apply[leader_growth]",
+    "test/spec/prose-and-ranking-names/test_parn_c4_scope.py::test_disclosure_checks_still_apply[rank_by_ratio]",
+    "test/spec/prose-and-ranking-names/test_parn_c4_scope.py::test_hx_compound_keeps_its_order",
+    "test/spec/prose-and-ranking-names/test_parn_c4_scope.py::test_hx_reversed_never_right_generated_reordered_always",
+    "test/spec/prose-and-ranking-names/test_parn_c5_grader_version.py::test_grader_version_is_at_least_14",
+    "test/spec/prose-and-ranking-names/test_parn_c5_grader_version.py::test_metrics_over_generated_results_carry_the_version"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/prose-and-ranking-names.md",
+    "sha256": "562766c07d87e08b75a5da28fa0e793c5265dfbb94f6d5d575b91959124be41f"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

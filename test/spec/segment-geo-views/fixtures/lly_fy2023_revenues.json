@@ -1,0 +1,7208 @@
+{
+ "case": "lly_fy2023_revenues",
+ "ticker": "LLY",
+ "cik": "0000059478",
+ "accession_no": "0000059478-24-000065",
+ "filing_index_url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000065/",
+ "document_url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000065/lly-20231231.htm",
+ "local_source": "data/storage/sec_edgar/LLY/2023/10-K/lly-20231231.htm",
+ "local_source_sha256": "499b66eb8590ba2a6e419ced004c634596f66bdc358d035953b80894a8f01b78",
+ "retrieved": "2026-11-07",
+ "extracted": "xbrl_db (read-only), 2026-11-07: every fact of the concept in the filing, all contexts; dimensions from context_dimension in the views' QName form (standard namespaces as prefix:local, extension namespaces as uri:local); `view` is the fact's mv_financial_facts row",
+ "dimensions": "explicit_dimensions are the context's is_default=FALSE rows as [axis, member, typed_value] (member null for a typed dimension); default_set names the context's is_default=TRUE rows, listed once in default_sets as [axis, member]",
+ "dates": "xbrl_db stores a duration end as the next day (end-of-day convention): 2025-01-01 ends fiscal 2024",
+ "default_sets": {
+  "d0": [
+   [
+    "us-gaap:AssetAcquisitionAxis",
+    "us-gaap:AssetAcquisitionDomain"
+   ],
+   [
+    "us-gaap:BusinessAcquisitionAxis",
+    "us-gaap:BusinessAcquisitionAcquireeDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentRedemptionPeriodAxis",
+    "us-gaap:DebtInstrumentRedemptionPeriodDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentAxis",
+    "us-gaap:DebtInstrumentNameDomain"
+   ],
+   [
+    "us-gaap:SubsequentEventTypeAxis",
+    "us-gaap:SubsequentEventTypeDomain"
+   ],
+   [
+    "srt:ProductOrServiceAxis",
+    "srt:ProductsAndServicesDomain"
+   ],
+   [
+    "us-gaap:TypeOfArrangementAxis",
+    "us-gaap:ArrangementsAndNonarrangementTransactionsMember"
+   ],
+   [
+    "dei:LegalEntityAxis",
+    "dei:EntityDomain"
+   ],
+   [
+    "us-gaap:DisposalGroupClassificationAxis",
+    "us-gaap:DisposalGroupClassificationDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementBalanceSheetAndAdditionalDisclosuresByDisposalGroupsIncludingDiscontinuedOperationsAxis",
+    "us-gaap:DisposalGroupsIncludingDiscontinuedOperationsNameDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:LitigationCaseAxis",
+    "srt:LitigationCaseTypeDomain"
+   ],
+   [
+    "us-gaap:LossContingenciesByNatureOfContingencyAxis",
+    "us-gaap:LossContingencyNatureDomain"
+   ],
+   [
+    "srt:StatementGeographicalAxis",
+    "srt:SegmentGeographicalDomain"
+   ],
+   [
+    "us-gaap:StatementClassOfStockAxis",
+    "us-gaap:ClassOfStockDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentRiskAxis",
+    "us-gaap:DerivativeContractTypeDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentsGainLossByHedgingRelationshipAxis",
+    "us-gaap:HedgingRelationshipDomain"
+   ],
+   [
+    "us-gaap:HedgingDesignationAxis",
+    "us-gaap:HedgingDesignationDomain"
+   ],
+   [
+    "us-gaap:FairValueByMeasurementBasisAxis",
+    "us-gaap:PortionAtFairValueFairValueDisclosureMember"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:ShortTermDebtTypeAxis",
+    "us-gaap:ShortTermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:FiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:FiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:IndefiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:IndefiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:TaxCreditCarryforwardAxis",
+    "us-gaap:TaxCreditCarryforwardNameDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "us-gaap:ReclassificationOutOfAccumulatedOtherComprehensiveIncomeAxis",
+    "us-gaap:ReclassificationOutOfAccumulatedOtherComprehensiveIncomeDomain"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "us-gaap:DefinedBenefitPlanByPlanAssetCategoriesAxis",
+    "us-gaap:PlanAssetCategoriesDomain"
+   ],
+   [
+    "us-gaap:RetirementPlanTypeAxis",
+    "us-gaap:RetirementPlanTypeDomain"
+   ],
+   [
+    "srt:MajorCustomersAxis",
+    "srt:NameOfMajorCustomerDomain"
+   ],
+   [
+    "us-gaap:ConcentrationRiskByBenchmarkAxis",
+    "us-gaap:ConcentrationRiskBenchmarkDomain"
+   ],
+   [
+    "us-gaap:ChangeInAccountingEstimateByTypeAxis",
+    "us-gaap:ChangeInAccountingEstimateTypeDomain"
+   ],
+   [
+    "us-gaap:ConcentrationRiskByTypeAxis",
+    "us-gaap:ConcentrationRiskTypeDomain"
+   ],
+   [
+    "us-gaap:ShareRepurchaseProgramAxis",
+    "us-gaap:ShareRepurchaseProgramDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "srt:RestatementAxis",
+    "srt:RestatementDomain"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ],
+  "d1": [
+   [
+    "us-gaap:AssetAcquisitionAxis",
+    "us-gaap:AssetAcquisitionDomain"
+   ],
+   [
+    "us-gaap:BusinessAcquisitionAxis",
+    "us-gaap:BusinessAcquisitionAcquireeDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentRedemptionPeriodAxis",
+    "us-gaap:DebtInstrumentRedemptionPeriodDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentAxis",
+    "us-gaap:DebtInstrumentNameDomain"
+   ],
+   [
+    "us-gaap:SubsequentEventTypeAxis",
+    "us-gaap:SubsequentEventTypeDomain"
+   ],
+   [
+    "us-gaap:TypeOfArrangementAxis",
+    "us-gaap:ArrangementsAndNonarrangementTransactionsMember"
+   ],
+   [
+    "dei:LegalEntityAxis",
+    "dei:EntityDomain"
+   ],
+   [
+    "us-gaap:DisposalGroupClassificationAxis",
+    "us-gaap:DisposalGroupClassificationDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementBalanceSheetAndAdditionalDisclosuresByDisposalGroupsIncludingDiscontinuedOperationsAxis",
+    "us-gaap:DisposalGroupsIncludingDiscontinuedOperationsNameDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:LitigationCaseAxis",
+    "srt:LitigationCaseTypeDomain"
+   ],
+   [
+    "us-gaap:LossContingenciesByNatureOfContingencyAxis",
+    "us-gaap:LossContingencyNatureDomain"
+   ],
+   [
+    "srt:StatementGeographicalAxis",
+    "srt:SegmentGeographicalDomain"
+   ],
+   [
+    "us-gaap:StatementClassOfStockAxis",
+    "us-gaap:ClassOfStockDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentRiskAxis",
+    "us-gaap:DerivativeContractTypeDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentsGainLossByHedgingRelationshipAxis",
+    "us-gaap:HedgingRelationshipDomain"
+   ],
+   [
+    "us-gaap:HedgingDesignationAxis",
+    "us-gaap:HedgingDesignationDomain"
+   ],
+   [
+    "us-gaap:FairValueByMeasurementBasisAxis",
+    "us-gaap:PortionAtFairValueFairValueDisclosureMember"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:ShortTermDebtTypeAxis",
+    "us-gaap:ShortTermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:FiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:FiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:IndefiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:IndefiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:TaxCreditCarryforwardAxis",
+    "us-gaap:TaxCreditCarryforwardNameDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "us-gaap:ReclassificationOutOfAccumulatedOtherComprehensiveIncomeAxis",
+    "us-gaap:ReclassificationOutOfAccumulatedOtherComprehensiveIncomeDomain"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "us-gaap:DefinedBenefitPlanByPlanAssetCategoriesAxis",
+    "us-gaap:PlanAssetCategoriesDomain"
+   ],
+   [
+    "us-gaap:RetirementPlanTypeAxis",
+    "us-gaap:RetirementPlanTypeDomain"
+   ],
+   [
+    "srt:MajorCustomersAxis",
+    "srt:NameOfMajorCustomerDomain"
+   ],
+   [
+    "us-gaap:ConcentrationRiskByBenchmarkAxis",
+    "us-gaap:ConcentrationRiskBenchmarkDomain"
+   ],
+   [
+    "us-gaap:ChangeInAccountingEstimateByTypeAxis",
+    "us-gaap:ChangeInAccountingEstimateTypeDomain"
+   ],
+   [
+    "us-gaap:ConcentrationRiskByTypeAxis",
+    "us-gaap:ConcentrationRiskTypeDomain"
+   ],
+   [
+    "us-gaap:ShareRepurchaseProgramAxis",
+    "us-gaap:ShareRepurchaseProgramDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "srt:RestatementAxis",
+    "srt:RestatementDomain"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ],
+  "d2": [
+   [
+    "us-gaap:AssetAcquisitionAxis",
+    "us-gaap:AssetAcquisitionDomain"
+   ],
+   [
+    "us-gaap:BusinessAcquisitionAxis",
+    "us-gaap:BusinessAcquisitionAcquireeDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentRedemptionPeriodAxis",
+    "us-gaap:DebtInstrumentRedemptionPeriodDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentAxis",
+    "us-gaap:DebtInstrumentNameDomain"
+   ],
+   [
+    "us-gaap:SubsequentEventTypeAxis",
+    "us-gaap:SubsequentEventTypeDomain"
+   ],
+   [
+    "us-gaap:TypeOfArrangementAxis",
+    "us-gaap:ArrangementsAndNonarrangementTransactionsMember"
+   ],
+   [
+    "dei:LegalEntityAxis",
+    "dei:EntityDomain"
+   ],
+   [
+    "us-gaap:DisposalGroupClassificationAxis",
+    "us-gaap:DisposalGroupClassificationDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementBalanceSheetAndAdditionalDisclosuresByDisposalGroupsIncludingDiscontinuedOperationsAxis",
+    "us-gaap:DisposalGroupsIncludingDiscontinuedOperationsNameDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:LitigationCaseAxis",
+    "srt:LitigationCaseTypeDomain"
+   ],
+   [
+    "us-gaap:LossContingenciesByNatureOfContingencyAxis",
+    "us-gaap:LossContingencyNatureDomain"
+   ],
+   [
+    "us-gaap:StatementClassOfStockAxis",
+    "us-gaap:ClassOfStockDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentRiskAxis",
+    "us-gaap:DerivativeContractTypeDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentsGainLossByHedgingRelationshipAxis",
+    "us-gaap:HedgingRelationshipDomain"
+   ],
+   [
+    "us-gaap:HedgingDesignationAxis",
+    "us-gaap:HedgingDesignationDomain"
+   ],
+   [
+    "us-gaap:FairValueByMeasurementBasisAxis",
+    "us-gaap:PortionAtFairValueFairValueDisclosureMember"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:ShortTermDebtTypeAxis",
+    "us-gaap:ShortTermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:FiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:FiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:IndefiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:IndefiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:TaxCreditCarryforwardAxis",
+    "us-gaap:TaxCreditCarryforwardNameDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "us-gaap:ReclassificationOutOfAccumulatedOtherComprehensiveIncomeAxis",
+    "us-gaap:ReclassificationOutOfAccumulatedOtherComprehensiveIncomeDomain"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "us-gaap:DefinedBenefitPlanByPlanAssetCategoriesAxis",
+    "us-gaap:PlanAssetCategoriesDomain"
+   ],
+   [
+    "us-gaap:RetirementPlanTypeAxis",
+    "us-gaap:RetirementPlanTypeDomain"
+   ],
+   [
+    "srt:MajorCustomersAxis",
+    "srt:NameOfMajorCustomerDomain"
+   ],
+   [
+    "us-gaap:ConcentrationRiskByBenchmarkAxis",
+    "us-gaap:ConcentrationRiskBenchmarkDomain"
+   ],
+   [
+    "us-gaap:ChangeInAccountingEstimateByTypeAxis",
+    "us-gaap:ChangeInAccountingEstimateTypeDomain"
+   ],
+   [
+    "us-gaap:ConcentrationRiskByTypeAxis",
+    "us-gaap:ConcentrationRiskTypeDomain"
+   ],
+   [
+    "us-gaap:ShareRepurchaseProgramAxis",
+    "us-gaap:ShareRepurchaseProgramDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "srt:RestatementAxis",
+    "srt:RestatementDomain"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ],
+  "d3": [
+   [
+    "us-gaap:AssetAcquisitionAxis",
+    "us-gaap:AssetAcquisitionDomain"
+   ],
+   [
+    "us-gaap:BusinessAcquisitionAxis",
+    "us-gaap:BusinessAcquisitionAcquireeDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentRedemptionPeriodAxis",
+    "us-gaap:DebtInstrumentRedemptionPeriodDomain"
+   ],
+   [
+    "us-gaap:LongtermDebtTypeAxis",
+    "us-gaap:LongtermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:DebtInstrumentAxis",
+    "us-gaap:DebtInstrumentNameDomain"
+   ],
+   [
+    "us-gaap:SubsequentEventTypeAxis",
+    "us-gaap:SubsequentEventTypeDomain"
+   ],
+   [
+    "srt:ProductOrServiceAxis",
+    "srt:ProductsAndServicesDomain"
+   ],
+   [
+    "us-gaap:TypeOfArrangementAxis",
+    "us-gaap:ArrangementsAndNonarrangementTransactionsMember"
+   ],
+   [
+    "dei:LegalEntityAxis",
+    "dei:EntityDomain"
+   ],
+   [
+    "us-gaap:DisposalGroupClassificationAxis",
+    "us-gaap:DisposalGroupClassificationDomain"
+   ],
+   [
+    "us-gaap:IncomeStatementBalanceSheetAndAdditionalDisclosuresByDisposalGroupsIncludingDiscontinuedOperationsAxis",
+    "us-gaap:DisposalGroupsIncludingDiscontinuedOperationsNameDomain"
+   ],
+   [
+    "srt:RangeAxis",
+    "srt:RangeMember"
+   ],
+   [
+    "us-gaap:StatementEquityComponentsAxis",
+    "us-gaap:EquityComponentDomain"
+   ],
+   [
+    "srt:LitigationCaseAxis",
+    "srt:LitigationCaseTypeDomain"
+   ],
+   [
+    "us-gaap:LossContingenciesByNatureOfContingencyAxis",
+    "us-gaap:LossContingencyNatureDomain"
+   ],
+   [
+    "us-gaap:StatementClassOfStockAxis",
+    "us-gaap:ClassOfStockDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentRiskAxis",
+    "us-gaap:DerivativeContractTypeDomain"
+   ],
+   [
+    "us-gaap:DerivativeInstrumentsGainLossByHedgingRelationshipAxis",
+    "us-gaap:HedgingRelationshipDomain"
+   ],
+   [
+    "us-gaap:HedgingDesignationAxis",
+    "us-gaap:HedgingDesignationDomain"
+   ],
+   [
+    "us-gaap:FairValueByMeasurementBasisAxis",
+    "us-gaap:PortionAtFairValueFairValueDisclosureMember"
+   ],
+   [
+    "us-gaap:FairValueByFairValueHierarchyLevelAxis",
+    "us-gaap:FairValueMeasurementsFairValueHierarchyDomain"
+   ],
+   [
+    "us-gaap:FinancialInstrumentAxis",
+    "us-gaap:TransfersAndServicingOfFinancialInstrumentsTypesOfFinancialInstrumentsDomain"
+   ],
+   [
+    "us-gaap:ShortTermDebtTypeAxis",
+    "us-gaap:ShortTermDebtTypeDomain"
+   ],
+   [
+    "us-gaap:FiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:FiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:IndefiniteLivedIntangibleAssetsByMajorClassAxis",
+    "us-gaap:IndefiniteLivedIntangibleAssetsMajorClassNameDomain"
+   ],
+   [
+    "us-gaap:TaxCreditCarryforwardAxis",
+    "us-gaap:TaxCreditCarryforwardNameDomain"
+   ],
+   [
+    "us-gaap:IncomeTaxAuthorityAxis",
+    "us-gaap:IncomeTaxAuthorityDomain"
+   ],
+   [
+    "us-gaap:ReclassificationOutOfAccumulatedOtherComprehensiveIncomeAxis",
+    "us-gaap:ReclassificationOutOfAccumulatedOtherComprehensiveIncomeDomain"
+   ],
+   [
+    "us-gaap:PropertyPlantAndEquipmentByTypeAxis",
+    "us-gaap:PropertyPlantAndEquipmentTypeDomain"
+   ],
+   [
+    "us-gaap:DefinedBenefitPlanByPlanAssetCategoriesAxis",
+    "us-gaap:PlanAssetCategoriesDomain"
+   ],
+   [
+    "us-gaap:RetirementPlanTypeAxis",
+    "us-gaap:RetirementPlanTypeDomain"
+   ],
+   [
+    "srt:MajorCustomersAxis",
+    "srt:NameOfMajorCustomerDomain"
+   ],
+   [
+    "us-gaap:ConcentrationRiskByBenchmarkAxis",
+    "us-gaap:ConcentrationRiskBenchmarkDomain"
+   ],
+   [
+    "us-gaap:ChangeInAccountingEstimateByTypeAxis",
+    "us-gaap:ChangeInAccountingEstimateTypeDomain"
+   ],
+   [
+    "us-gaap:ConcentrationRiskByTypeAxis",
+    "us-gaap:ConcentrationRiskTypeDomain"
+   ],
+   [
+    "us-gaap:ShareRepurchaseProgramAxis",
+    "us-gaap:ShareRepurchaseProgramDomain"
+   ],
+   [
+    "us-gaap:AwardTypeAxis",
+    "us-gaap:ShareBasedCompensationArrangementsByShareBasedPaymentAwardAwardTypeAndPlanNameDomain"
+   ],
+   [
+    "srt:RestatementAxis",
+    "srt:RestatementDomain"
+   ],
+   [
+    "ecd:ExecutiveCategoryAxis",
+    "ecd:AllExecutiveCategoriesMember"
+   ],
+   [
+    "ecd:AdjToCompAxis",
+    "ecd:AllAdjToCompMember"
+   ],
+   [
+    "ecd:IndividualAxis",
+    "ecd:AllIndividualsMember"
+   ],
+   [
+    "ecd:TradingArrAxis",
+    "ecd:AllTradingArrangementsMember"
+   ]
+  ]
+ },
+ "facts": [
+  {
+   "fact_id": 218920,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "34124100000",
+   "decimals": -5,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 218921,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "28541400000",
+   "decimals": -5,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 218922,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "28318400000",
+   "decimals": -5,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219296,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "28813900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:ProductMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:ProductMember",
+    "segment_label": "Product [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219297,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "25462800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:ProductMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:ProductMember",
+    "segment_label": "Product [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219298,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "25957900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:ProductMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:ProductMember",
+    "segment_label": "Product [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219299,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "5310200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:CollaborationandOtherRevenueMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:CollaborationandOtherRevenueMember",
+    "segment_label": "Collaboration and Other Revenue [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219300,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "3078600000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:CollaborationandOtherRevenueMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:CollaborationandOtherRevenueMember",
+    "segment_label": "Collaboration and Other Revenue [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219301,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "2360500000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:CollaborationandOtherRevenueMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:CollaborationandOtherRevenueMember",
+    "segment_label": "Collaboration and Other Revenue [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219302,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "34124100000",
+   "decimals": -5,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219303,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "28541400000",
+   "decimals": -5,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219304,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "28318400000",
+   "decimals": -5,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219305,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "191600000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:RoyaltyMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:RoyaltyMember",
+    "segment_label": "Royalty [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219306,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "163400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:RoyaltyMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:RoyaltyMember",
+    "segment_label": "Royalty [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219307,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "175000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "us-gaap:RoyaltyMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "us-gaap:RoyaltyMember",
+    "segment_label": "Royalty [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219333,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "5433300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TrulicityMemberMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219334,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "5688800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TrulicityMemberMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219335,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "4914400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TrulicityMemberMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219336,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "1699200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TrulicityMemberMember",
+     null
+    ],
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:TrulicityMemberMember",
+    "segment_label": "Trulicity [Member] [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219337,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "1750900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TrulicityMemberMember",
+     null
+    ],
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:TrulicityMemberMember",
+    "segment_label": "Trulicity [Member] [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219338,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "1557600000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TrulicityMemberMember",
+     null
+    ],
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:TrulicityMemberMember",
+    "segment_label": "Trulicity [Member] [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219339,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "4834200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:MounjaroMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219340,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "366600000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:MounjaroMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219341,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "0",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:MounjaroMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219342,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "328900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:MounjaroMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219343,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "115900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:MounjaroMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219344,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "0",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:MounjaroMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219345,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "1600400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:JardianceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219346,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "1194500000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:JardianceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219347,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "807300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:JardianceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219348,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "1144200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:JardianceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219349,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "871500000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:JardianceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219350,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "683500000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:JardianceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219351,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "863200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:HumalogMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219352,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "1191900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:HumalogMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219353,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "1320700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:HumalogMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219354,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "800200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:HumalogMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219355,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "868700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:HumalogMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219356,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "1132300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:HumalogMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219357,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "610100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:HumulinMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219358,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "730200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:HumulinMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219359,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "832900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:HumulinMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219360,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "242000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:HumulinMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219361,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "289200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:HumulinMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219362,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "389600000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:HumulinMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219363,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "443100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:BasaglarMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219364,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "470700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:BasaglarMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219365,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "588300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:BasaglarMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219366,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "285200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:BasaglarMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219367,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "289700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:BasaglarMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219368,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "304200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:BasaglarMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219369,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "645700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:BaqsimiMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219370,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "110400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:BaqsimiMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219371,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "96400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:BaqsimiMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219372,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "31900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:BaqsimiMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219373,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "28900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:BaqsimiMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219374,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "16800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:BaqsimiMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219375,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "175800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ZepboundMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219376,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "0",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ZepboundMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219377,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "0",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ZepboundMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219378,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "0",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ZepboundMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219379,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "0",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ZepboundMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219380,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "0",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ZepboundMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219381,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "175000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherDiabetesAndObesityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219382,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "158000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherDiabetesAndObesityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219383,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "159300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherDiabetesAndObesityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219384,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "355200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherDiabetesAndObesityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219385,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "338900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherDiabetesAndObesityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219386,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "384800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherDiabetesAndObesityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219387,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "14780800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:DiabetesAndObesityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219388,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "9911100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:DiabetesAndObesityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219389,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "8719300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:DiabetesAndObesityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219390,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "4886800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:DiabetesAndObesityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219391,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "4553700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:DiabetesAndObesityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219392,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "4468800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:DiabetesAndObesityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219393,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "2509000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:VerzenioMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219394,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "1653200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:VerzenioMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219395,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "834900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:VerzenioMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219396,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "1354300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:VerzenioMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219397,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "830300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:VerzenioMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219398,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "515000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:VerzenioMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219399,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "402300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:CyramzaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219400,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "351400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:CyramzaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219401,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "358100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:CyramzaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219402,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "572400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:CyramzaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219403,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "620000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:CyramzaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219404,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "674800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:CyramzaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219405,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "528900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ErbituxMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219406,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "500100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ErbituxMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219407,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "481800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ErbituxMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219408,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "67600000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ErbituxMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219409,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "66400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ErbituxMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219410,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "66400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ErbituxMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219411,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "0",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TYVYTMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219412,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "0",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TYVYTMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219413,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "0",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TYVYTMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219414,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "393400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TYVYTMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219415,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "293300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TYVYTMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219416,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "418100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TYVYTMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219417,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "72900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:AlimtaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219418,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "543700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:AlimtaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219419,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "1233900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:AlimtaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219420,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "144600000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:AlimtaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219421,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "384000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:AlimtaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219422,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "827500000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:AlimtaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219423,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "283900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherOncologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219424,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "169700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherOncologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219425,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "120100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherOncologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219426,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "329000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherOncologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219427,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "254100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherOncologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219428,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "210700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherOncologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219429,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "3797000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OncologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219430,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "3218100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OncologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219431,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "3028800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OncologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219432,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "2861300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OncologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219433,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "2448100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OncologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219434,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "2712500000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OncologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219435,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "1831600000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TaltzMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219436,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "1724600000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TaltzMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219437,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "1542400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TaltzMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219438,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "928000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TaltzMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219439,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "757400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TaltzMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219440,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "670400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TaltzMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219441,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "225500000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OlumiantMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219442,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "148200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OlumiantMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219443,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "324100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OlumiantMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219444,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "697200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OlumiantMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219445,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "682300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OlumiantMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219446,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "791000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OlumiantMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219447,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherImmunologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219448,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "20000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherImmunologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219449,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "15300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherImmunologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219450,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "114400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherImmunologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219451,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "12100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherImmunologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219452,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "17600000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherImmunologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219453,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "2057900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ImmunologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219454,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "1892800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ImmunologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219455,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "1881800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ImmunologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219456,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "1739600000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ImmunologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219457,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "1451800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ImmunologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219458,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "1479000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ImmunologyMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219459,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "79400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ZyprexaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219460,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "30400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ZyprexaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219461,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "39600000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ZyprexaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219462,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "1615400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ZyprexaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219463,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "306500000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ZyprexaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219464,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "390700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ZyprexaMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219465,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "482200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:EmgalityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219466,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "462800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:EmgalityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219467,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "434500000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:EmgalityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219468,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "196000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:EmgalityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219469,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "188100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:EmgalityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219470,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "142700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:EmgalityMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219471,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "134400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherNeuroscienceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219472,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "119200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherNeuroscienceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219473,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "140700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherNeuroscienceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219474,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "371100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherNeuroscienceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219475,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "439200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherNeuroscienceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219476,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "750300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherNeuroscienceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219477,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "696000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:NeuroscienceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219478,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "612400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:NeuroscienceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219479,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "614800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:NeuroscienceMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219480,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "2182500000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:NeuroscienceMember",
+     null
+    ],
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:NeuroscienceMember",
+    "segment_label": "Neuroscience [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219481,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "933800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:NeuroscienceMember",
+     null
+    ],
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:NeuroscienceMember",
+    "segment_label": "Neuroscience [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219482,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "1283700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:NeuroscienceMember",
+     null
+    ],
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:NeuroscienceMember",
+    "segment_label": "Neuroscience [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219483,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "335500000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ForteoMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219484,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "367300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ForteoMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219485,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "441600000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ForteoMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219486,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "197700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ForteoMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219487,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "245800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ForteoMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219488,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "360300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:ForteoMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219489,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "26100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:CialisMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219490,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "35200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:CialisMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219491,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "10600000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:CialisMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219492,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "355300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:CialisMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219493,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "552100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:CialisMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219494,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "707900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:CialisMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219495,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "0",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:COVID19AntibodiesMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219496,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "2008900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:COVID19AntibodiesMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219497,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "1978000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:COVID19AntibodiesMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219498,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "0",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:COVID19AntibodiesMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219499,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "14700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:COVID19AntibodiesMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219500,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "261400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:COVID19AntibodiesMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219501,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "97700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherProductMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219502,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "144200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherProductMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219503,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "136100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherProductMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219504,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "109900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherProductMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219505,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "151300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherProductMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219506,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "233900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherProductMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219507,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "459300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherProductTotalMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219508,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "2555700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherProductTotalMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219509,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "2566400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherProductTotalMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219510,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "662900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherProductTotalMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219511,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "964000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherProductTotalMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219512,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "1563500000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ],
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OtherProductTotalMember",
+     null
+    ]
+   ],
+   "default_set": "d2",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": true,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219513,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "21791000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219514,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "18190000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219515,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "16811000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219516,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "12333100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219517,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "10351300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219518,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "11507400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "us-gaap:NonUsMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "us-gaap:NonUsMember",
+    "segment_label": "Non-US [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219519,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "21791000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219520,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "18190000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219521,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "16811000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:US",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:US",
+    "segment_label": "UNITED STATES",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219522,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "6174700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "srt:EuropeMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "srt:EuropeMember",
+    "segment_label": "Europe [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219523,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "4299200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "srt:EuropeMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "srt:EuropeMember",
+    "segment_label": "Europe [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219524,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "4776800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "srt:EuropeMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "srt:EuropeMember",
+    "segment_label": "Europe [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219525,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "1672600000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:JP",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:JP",
+    "segment_label": "JAPAN",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219526,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "1747300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:JP",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:JP",
+    "segment_label": "JAPAN",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219527,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "2367000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:JP",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:JP",
+    "segment_label": "JAPAN",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219528,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "1539700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:CN",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:CN",
+    "segment_label": "CHINA",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219529,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "1452800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:CN",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:CN",
+    "segment_label": "CHINA",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219530,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "1661400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "country:CN",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "country:CN",
+    "segment_label": "CHINA",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219531,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "2946200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "http://www.lilly.com/20231231:OtherForeignCountriesMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "http://www.lilly.com/20231231:OtherForeignCountriesMember",
+    "segment_label": "Other Foreign Countries [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219532,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "2852000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "http://www.lilly.com/20231231:OtherForeignCountriesMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "http://www.lilly.com/20231231:OtherForeignCountriesMember",
+    "segment_label": "Other Foreign Countries [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219533,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "2702200000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:StatementGeographicalAxis",
+     "http://www.lilly.com/20231231:OtherForeignCountriesMember",
+     null
+    ]
+   ],
+   "default_set": "d3",
+   "view": {
+    "segment_axis": "srt:StatementGeographicalAxis",
+    "segment_member": "http://www.lilly.com/20231231:OtherForeignCountriesMember",
+    "segment_label": "Other Foreign Countries [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219534,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "34124100000",
+   "decimals": -5,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219535,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "28541400000",
+   "decimals": -5,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219536,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "28318400000",
+   "decimals": -5,
+   "explicit_dimensions": [],
+   "default_set": "d0",
+   "view": {
+    "segment_axis": null,
+    "segment_member": null,
+    "segment_label": null,
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219594,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "2744700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:JardianceMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:JardianceMember",
+    "segment_label": "Jardiance [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219595,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "2066000000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:JardianceMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:JardianceMember",
+    "segment_label": "Jardiance [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219596,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "1490800000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:JardianceMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:JardianceMember",
+    "segment_label": "Jardiance [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219597,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "728300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:BasaglarMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:BasaglarMember",
+    "segment_label": "Basaglar [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219598,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "760400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:BasaglarMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:BasaglarMember",
+    "segment_label": "Basaglar [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219599,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "892500000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:BasaglarMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:BasaglarMember",
+    "segment_label": "Basaglar [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219600,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "386900000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TrajentaBIMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:TrajentaBIMember",
+    "segment_label": "Trajenta (BI) [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219601,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "383700000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TrajentaBIMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:TrajentaBIMember",
+    "segment_label": "Trajenta (BI) [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219602,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "372500000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TrajentaBIMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:TrajentaBIMember",
+    "segment_label": "Trajenta (BI) [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219605,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "922600000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OlumiantMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:OlumiantMember",
+    "segment_label": "Olumiant [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219606,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "830500000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OlumiantMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:OlumiantMember",
+    "segment_label": "Olumiant [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219607,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "1115100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:OlumiantMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:OlumiantMember",
+    "segment_label": "Olumiant [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219608,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2023-01-01",
+   "period_end": "2024-01-01",
+   "value": "393400000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TYVYTMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:TYVYTMember",
+    "segment_label": "TYVYT [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": true
+   }
+  },
+  {
+   "fact_id": 219609,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "293300000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TYVYTMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:TYVYTMember",
+    "segment_label": "TYVYT [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219610,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "418100000",
+   "decimals": -5,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:TYVYTMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:TYVYTMember",
+    "segment_label": "TYVYT [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219616,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2022-01-01",
+   "period_end": "2023-01-01",
+   "value": "2020000000",
+   "decimals": -7,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:COVID19AntibodiesMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:COVID19AntibodiesMember",
+    "segment_label": "COVID-19 Antibodies [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  },
+  {
+   "fact_id": 219617,
+   "concept": "http://fasb.org/us-gaap/2023:Revenues",
+   "unit": "USD",
+   "period_start": "2021-01-01",
+   "period_end": "2022-01-01",
+   "value": "2240000000",
+   "decimals": -7,
+   "explicit_dimensions": [
+    [
+     "srt:ProductOrServiceAxis",
+     "http://www.lilly.com/20231231:COVID19AntibodiesMember",
+     null
+    ]
+   ],
+   "default_set": "d1",
+   "view": {
+    "segment_axis": "srt:ProductOrServiceAxis",
+    "segment_member": "http://www.lilly.com/20231231:COVID19AntibodiesMember",
+    "segment_label": "COVID-19 Antibodies [Member]",
+    "has_multiple_dimensions": false,
+    "is_current_period": false
+   }
+  }
+ ]
+}

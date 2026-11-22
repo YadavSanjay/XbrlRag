@@ -1,0 +1,132 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-07",
+  "criteria": {
+    "C1": [
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_apple_2023_arcrole_tree_is_checked",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_nvda_arcs_fanned_out_by_reused_role_count_once",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_other_arcroles_are_ignored",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_repeating_arcs_changes_nothing"
+    ],
+    "C2": [
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_intel_quarter_never_mixes_with_year_to_date",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_context_and_unit_match_exactly",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_unrelated_context_changes_no_other_result"
+    ],
+    "C3": [
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_nvda_duplicate_facts_count_once",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistent_duplicates_make_the_check_inapplicable[child-same-decimals]",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistent_duplicates_make_the_check_inapplicable[parent-nil-mixed]",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistent_duplicates_make_the_check_inapplicable[excess-digits]",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistent_duplicates_make_the_check_inapplicable[intervals-disjoint]",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_nil_groups_and_conflicting_weights",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_an_exact_copy_of_a_fact_changes_nothing"
+    ],
+    "C4": [
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_mcd_assets_fails_by_decimals",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_closed_intervals_and_weights",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistencies_equal_arelle[nvda_assets]",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistencies_equal_arelle[mcd_assets]",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistencies_equal_arelle[amd_financing]",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistencies_equal_arelle[intel_10q_gross_profit]",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistencies_equal_arelle[apple_assets_2023_arcrole]",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_scaling_values_and_decimals_together_changes_nothing"
+    ],
+    "C5": [
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_amd_every_column_is_checked",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_partial_and_dimensional_are_recorded_apart",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_input_order_never_matters"
+    ],
+    "C6": [
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_mcd_gate_per_filing",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_non_strict_results_never_hold_back",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_gate_is_monotone"
+    ],
+    "C7": [
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_seed_and_committed_list",
+      "test/spec/calc-check-c11/test_calc_check_c11.py::test_any_subset_of_seed_rows_round_trips"
+    ]
+  },
+  "files": {
+    "test/spec/calc-check-c11/conftest.py": "dbfa7a51fea993a1700f8665ac3336d47ea2836bc8e0a763f6a745d5edae3eaf",
+    "test/spec/calc-check-c11/fixtures/amd_financing.json": "2e1bc2a99d0f023273035fb0e78f869fec6c00fecccef285babd6a9cb1323905",
+    "test/spec/calc-check-c11/fixtures/apple_assets_2023_arcrole.json": "5f3e332e7a3e19ca1166c000e41e8d3087a818d0815c99f844126db85b7b9770",
+    "test/spec/calc-check-c11/fixtures/intel_10q_gross_profit.json": "173d0eda092784ce8e84a50b9da7e93f60c14243962d4842d546bafbe533c9d3",
+    "test/spec/calc-check-c11/fixtures/mcd_assets.json": "91034baa742f895d0bc85a2c7b12c5fd8d1d61683a258c2adeafd3dd48bc5f49",
+    "test/spec/calc-check-c11/fixtures/nvda_assets.json": "d352148f4c8192b66bca82606bf96317810d35446ecf12a951020537165aa466",
+    "test/spec/calc-check-c11/fixtures/seed_exceptions.csv": "9c2a0699ec0241b4d0dd757364adf42714d53315e7e5417862f74f6ed154c04a",
+    "test/spec/calc-check-c11/test_calc_check_c11.py": "cbe6d2cb3fb699d5be4d3988ef36d90ec4d09955b3430f020f6ea845dbead211"
+  },
+  "id": "calc-check-c11",
+  "interface": [
+    {
+      "file": "src/ingest/sec_edgar/xbrl/calc_check.py",
+      "module": "ingest.sec_edgar.xbrl.calc_check",
+      "qualname": "check_calculations",
+      "signature": "def check_calculations(facts: Iterable[Mapping[str, Any]], arcs: Iterable[Mapping[str, Any]]) -> list[dict[str, Any]]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/xbrl/calc_check.py",
+      "module": "ingest.sec_edgar.xbrl.calc_check",
+      "qualname": "calc_gate_decision",
+      "signature": "def calc_gate_decision(accession_no: str, results: Iterable[Mapping[str, Any]], exceptions: Collection[tuple]) -> dict[str, Any]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/xbrl/calc_check.py",
+      "module": "ingest.sec_edgar.xbrl.calc_check",
+      "qualname": "load_calc_exceptions",
+      "signature": "def load_calc_exceptions(path: str | Path) -> frozenset[tuple]"
+    }
+  ],
+  "nodes": [
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_amd_every_column_is_checked",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_an_exact_copy_of_a_fact_changes_nothing",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_any_subset_of_seed_rows_round_trips",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_apple_2023_arcrole_tree_is_checked",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_closed_intervals_and_weights",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_context_and_unit_match_exactly",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_gate_is_monotone",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistencies_equal_arelle[amd_financing]",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistencies_equal_arelle[apple_assets_2023_arcrole]",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistencies_equal_arelle[intel_10q_gross_profit]",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistencies_equal_arelle[mcd_assets]",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistencies_equal_arelle[nvda_assets]",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistent_duplicates_make_the_check_inapplicable[child-same-decimals]",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistent_duplicates_make_the_check_inapplicable[excess-digits]",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistent_duplicates_make_the_check_inapplicable[intervals-disjoint]",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_inconsistent_duplicates_make_the_check_inapplicable[parent-nil-mixed]",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_input_order_never_matters",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_intel_quarter_never_mixes_with_year_to_date",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_mcd_assets_fails_by_decimals",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_mcd_gate_per_filing",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_nil_groups_and_conflicting_weights",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_non_strict_results_never_hold_back",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_nvda_arcs_fanned_out_by_reused_role_count_once",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_nvda_duplicate_facts_count_once",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_other_arcroles_are_ignored",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_partial_and_dimensional_are_recorded_apart",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_repeating_arcs_changes_nothing",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_scaling_values_and_decimals_together_changes_nothing",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_seed_and_committed_list",
+    "test/spec/calc-check-c11/test_calc_check_c11.py::test_unrelated_context_changes_no_other_result"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/calc-check-c11.md",
+    "sha256": "9dc8444b2b797a0e7fc0ff73821bd91b36bc9d83680370fe53612adfaa4355cf"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

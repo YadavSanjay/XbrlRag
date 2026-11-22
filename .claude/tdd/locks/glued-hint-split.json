@@ -1,0 +1,96 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/glued-hint-split/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-17",
+  "criteria": {
+    "C1": [
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_point_cases[dims0-expected0]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_point_cases[dims1-expected1]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_point_cases[dims2-expected2]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_point_cases[dims3-expected3]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_point_cases[dims4-expected4]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_nothing_to_split[dims0]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_nothing_to_split[dims1]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_nothing_to_split[dims2]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_nothing_to_split[dims3]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_nothing_to_split[dims4]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_nothing_to_split[NONE]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_nothing_to_split[dims6]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_nothing_to_split[None]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_variant_count_and_shape"
+    ],
+    "C2": [
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_meta_glued_hint_resolves_through_the_split",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_answer_rejected_unless_ok_and_one_to_one[split_answer0]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_answer_rejected_unless_ok_and_one_to_one[split_answer1]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_answer_rejected_unless_ok_and_one_to_one[split_answer2]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_answer_rejected_unless_ok_and_one_to_one[split_answer3]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_answer_rejected_unless_ok_and_one_to_one[split_answer4]",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_ok_exactly_when_accepted",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_first_accepted_variant_wins"
+    ],
+    "C3": [
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_calls_per_scope",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_at_most_four_retries",
+      "test/spec/glued-hint-split/test_glued_hint_split.py::test_adding_a_step_without_separator_adds_one_call"
+    ]
+  },
+  "files": {
+    "test/spec/glued-hint-split/test_glued_hint_split.py": "459b47f936e6bf8623044f3406b7adad66307d3c82f58d4dfc03d7bcd1a1a143"
+  },
+  "id": "glued-hint-split",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/plan_executor.py",
+      "module": "retriever.xbrl.plan_executor",
+      "qualname": "split_glued_hints",
+      "signature": "def split_glued_hints(dimensions: object) -> list[dict]"
+    }
+  ],
+  "nodes": [
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_adding_a_step_without_separator_adds_one_call",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_at_most_four_retries",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_calls_per_scope",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_first_accepted_variant_wins",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_meta_glued_hint_resolves_through_the_split",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_nothing_to_split[NONE]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_nothing_to_split[None]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_nothing_to_split[dims0]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_nothing_to_split[dims1]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_nothing_to_split[dims2]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_nothing_to_split[dims3]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_nothing_to_split[dims4]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_nothing_to_split[dims6]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_ok_exactly_when_accepted",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_answer_rejected_unless_ok_and_one_to_one[split_answer0]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_answer_rejected_unless_ok_and_one_to_one[split_answer1]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_answer_rejected_unless_ok_and_one_to_one[split_answer2]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_answer_rejected_unless_ok_and_one_to_one[split_answer3]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_answer_rejected_unless_ok_and_one_to_one[split_answer4]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_point_cases[dims0-expected0]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_point_cases[dims1-expected1]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_point_cases[dims2-expected2]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_point_cases[dims3-expected3]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_split_point_cases[dims4-expected4]",
+    "test/spec/glued-hint-split/test_glued_hint_split.py::test_variant_count_and_shape"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/glued-hint-split.md",
+    "sha256": "e4800f0eaab289c62b3124f6bfa65880ff92f9b36564b65d531e10c4ccb90802"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

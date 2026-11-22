@@ -1,0 +1,176 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-29",
+  "criteria": {
+    "C1": [
+      "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_symbols_normalized_in_input_order",
+      "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[not-a-dict]",
+      "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[none]",
+      "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[missing-wave2]",
+      "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[missing-left_out]",
+      "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[unknown-key]",
+      "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[value-not-list]",
+      "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[empty-list]",
+      "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[non-string-entry]",
+      "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[blank-entry]",
+      "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[duplicate-within-list]",
+      "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[duplicate-across-lists]",
+      "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_errors_name_the_key_and_the_symbol",
+      "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_result_is_normalized_input_and_parse_is_idempotent"
+    ],
+    "C2": [
+      "test/spec/heldout-draw-v2/test_c2_load_lists.py::test_committed_file_holds_the_plan_lists",
+      "test/spec/heldout-draw-v2/test_c2_load_lists.py::test_yaml_file_loads_to_parsed_lists",
+      "test/spec/heldout-draw-v2/test_c2_load_lists.py::test_invalid_file_raises[document-is-a-list]",
+      "test/spec/heldout-draw-v2/test_c2_load_lists.py::test_invalid_file_raises[unknown-key]",
+      "test/spec/heldout-draw-v2/test_c2_load_lists.py::test_invalid_file_raises[missing-key]",
+      "test/spec/heldout-draw-v2/test_c2_load_lists.py::test_block_flow_and_commented_styles_load_identically"
+    ],
+    "C3": [
+      "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_one_constituent_per_reason_full_result",
+      "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_counts_add_up",
+      "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_precedence",
+      "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_v0_p_filers_are_ordinary_candidates",
+      "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_strata_per_sector_with_utilities_excluded",
+      "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_unknown_sector_raises_naming_symbol[Tech]",
+      "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_unknown_sector_raises_naming_symbol[utilities]",
+      "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_unknown_sector_raises_naming_symbol[Healthcare]",
+      "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_unknown_sector_raises_naming_symbol[]",
+      "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_missing_ciks_raise_one_error_naming_each",
+      "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_unpadded_corpus_cik_still_matches",
+      "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_shuffled_constituents_give_identical_result"
+    ],
+    "C4": [
+      "test/spec/heldout-draw-v2/test_c4_rank.py::test_rank_key_v2_equals_hashlib_oracle",
+      "test/spec/heldout-draw-v2/test_c4_rank.py::test_rank_key_v2_differs_from_aprime_key",
+      "test/spec/heldout-draw-v2/test_c4_rank.py::test_rank_v2_orders_by_key_and_leaves_input_alone",
+      "test/spec/heldout-draw-v2/test_c4_rank.py::test_rank_key_v2_matches_oracle_for_random_inputs",
+      "test/spec/heldout-draw-v2/test_c4_rank.py::test_shuffle_and_added_candidate_keep_relative_order"
+    ],
+    "C5": [
+      "test/spec/heldout-draw-v2/test_c5_draw.py::test_default_sizes_give_expected_draw",
+      "test/spec/heldout-draw-v2/test_c5_draw.py::test_ineligible_skipped_but_checked",
+      "test/spec/heldout-draw-v2/test_c5_draw.py::test_filings_not_called_after_both_lists_full",
+      "test/spec/heldout-draw-v2/test_c5_draw.py::test_short_stratum_reports_shortfall_with_custom_sizes",
+      "test/spec/heldout-draw-v2/test_c5_draw.py::test_malformed_output_value_raises[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+      "test/spec/heldout-draw-v2/test_c5_draw.py::test_malformed_output_value_raises[gaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+      "test/spec/heldout-draw-v2/test_c5_draw.py::test_malformed_output_value_raises[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+      "test/spec/heldout-draw-v2/test_c5_draw.py::test_shuffled_candidates_give_identical_result",
+      "test/spec/heldout-draw-v2/test_c5_draw.py::test_drawn_then_alternates_are_first_eligible_in_v2_rank_order"
+    ]
+  },
+  "files": {
+    "test/spec/heldout-draw-v2/conftest.py": "fc995525f89450f5d12c8950aaad181a6cd831c73e3dfebb4e3d21f02309f20f",
+    "test/spec/heldout-draw-v2/test_c1_parse_lists.py": "2f2d34087f1655e776677355aa447bd9a39de621586d621e0ba993914fe73bd1",
+    "test/spec/heldout-draw-v2/test_c2_load_lists.py": "55eb29e5b715ea51a3cab0938d5c315527ce51478fd7b2d86741da40f6d0a001",
+    "test/spec/heldout-draw-v2/test_c3_build_pool.py": "50251f6cad3f2647dd8b0287f33a1316b4ddd219ef3f4e6e21953928b9fb356a",
+    "test/spec/heldout-draw-v2/test_c4_rank.py": "ecaf8ed11ac81b4bc929b94fca8616ab5c82a6f5aec5bb396c6bfea70f87be01",
+    "test/spec/heldout-draw-v2/test_c5_draw.py": "def5c79bbf74e3d3ddd0edbc8439723e7bb05f69466ad46fdfd462914fed3c86"
+  },
+  "id": "heldout-draw-v2",
+  "interface": [
+    {
+      "file": "src/eval/aprime/v2.py",
+      "module": "eval.aprime.v2",
+      "qualname": "parse_exclusion_lists",
+      "signature": "def parse_exclusion_lists(data: dict) -> dict"
+    },
+    {
+      "file": "src/eval/aprime/v2.py",
+      "module": "eval.aprime.v2",
+      "qualname": "load_exclusion_lists",
+      "signature": "def load_exclusion_lists(path: str) -> dict"
+    },
+    {
+      "file": "src/eval/aprime/v2.py",
+      "module": "eval.aprime.v2",
+      "qualname": "build_pool_v2",
+      "signature": "def build_pool_v2(constituents: list[dict], ciks: dict[str, str], corpus_ciks: set[str], lists: dict) -> dict"
+    },
+    {
+      "file": "src/eval/aprime/v2.py",
+      "module": "eval.aprime.v2",
+      "qualname": "rank_key_v2",
+      "signature": "def rank_key_v2(output_value: str, cik: str) -> str"
+    },
+    {
+      "file": "src/eval/aprime/v2.py",
+      "module": "eval.aprime.v2",
+      "qualname": "rank_v2",
+      "signature": "def rank_v2(candidates: list[dict], output_value: str) -> list[dict]"
+    },
+    {
+      "file": "src/eval/aprime/v2.py",
+      "module": "eval.aprime.v2",
+      "qualname": "draw_v2",
+      "signature": "def draw_v2(pool: dict, pulse: dict, source: FilingIndexSource, per_stratum: int=4, alternates: int=2) -> dict"
+    }
+  ],
+  "nodes": [
+    "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[blank-entry]",
+    "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[duplicate-across-lists]",
+    "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[duplicate-within-list]",
+    "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[empty-list]",
+    "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[missing-left_out]",
+    "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[missing-wave2]",
+    "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[non-string-entry]",
+    "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[none]",
+    "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[not-a-dict]",
+    "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[unknown-key]",
+    "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_each_error_raises[value-not-list]",
+    "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_errors_name_the_key_and_the_symbol",
+    "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_result_is_normalized_input_and_parse_is_idempotent",
+    "test/spec/heldout-draw-v2/test_c1_parse_lists.py::test_symbols_normalized_in_input_order",
+    "test/spec/heldout-draw-v2/test_c2_load_lists.py::test_block_flow_and_commented_styles_load_identically",
+    "test/spec/heldout-draw-v2/test_c2_load_lists.py::test_committed_file_holds_the_plan_lists",
+    "test/spec/heldout-draw-v2/test_c2_load_lists.py::test_invalid_file_raises[document-is-a-list]",
+    "test/spec/heldout-draw-v2/test_c2_load_lists.py::test_invalid_file_raises[missing-key]",
+    "test/spec/heldout-draw-v2/test_c2_load_lists.py::test_invalid_file_raises[unknown-key]",
+    "test/spec/heldout-draw-v2/test_c2_load_lists.py::test_yaml_file_loads_to_parsed_lists",
+    "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_counts_add_up",
+    "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_missing_ciks_raise_one_error_naming_each",
+    "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_one_constituent_per_reason_full_result",
+    "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_precedence",
+    "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_shuffled_constituents_give_identical_result",
+    "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_strata_per_sector_with_utilities_excluded",
+    "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_unknown_sector_raises_naming_symbol[Healthcare]",
+    "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_unknown_sector_raises_naming_symbol[Tech]",
+    "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_unknown_sector_raises_naming_symbol[]",
+    "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_unknown_sector_raises_naming_symbol[utilities]",
+    "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_unpadded_corpus_cik_still_matches",
+    "test/spec/heldout-draw-v2/test_c3_build_pool.py::test_v0_p_filers_are_ordinary_candidates",
+    "test/spec/heldout-draw-v2/test_c4_rank.py::test_rank_key_v2_differs_from_aprime_key",
+    "test/spec/heldout-draw-v2/test_c4_rank.py::test_rank_key_v2_equals_hashlib_oracle",
+    "test/spec/heldout-draw-v2/test_c4_rank.py::test_rank_key_v2_matches_oracle_for_random_inputs",
+    "test/spec/heldout-draw-v2/test_c4_rank.py::test_rank_v2_orders_by_key_and_leaves_input_alone",
+    "test/spec/heldout-draw-v2/test_c4_rank.py::test_shuffle_and_added_candidate_keep_relative_order",
+    "test/spec/heldout-draw-v2/test_c5_draw.py::test_default_sizes_give_expected_draw",
+    "test/spec/heldout-draw-v2/test_c5_draw.py::test_drawn_then_alternates_are_first_eligible_in_v2_rank_order",
+    "test/spec/heldout-draw-v2/test_c5_draw.py::test_filings_not_called_after_both_lists_full",
+    "test/spec/heldout-draw-v2/test_c5_draw.py::test_ineligible_skipped_but_checked",
+    "test/spec/heldout-draw-v2/test_c5_draw.py::test_malformed_output_value_raises[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+    "test/spec/heldout-draw-v2/test_c5_draw.py::test_malformed_output_value_raises[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+    "test/spec/heldout-draw-v2/test_c5_draw.py::test_malformed_output_value_raises[gaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+    "test/spec/heldout-draw-v2/test_c5_draw.py::test_short_stratum_reports_shortfall_with_custom_sizes",
+    "test/spec/heldout-draw-v2/test_c5_draw.py::test_shuffled_candidates_give_identical_result"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/heldout-draw-v2.md",
+    "sha256": "cd768afc0c85ce6268c28f40fb26fd2ae2d6a7108de24c37f47b72714e022d34"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

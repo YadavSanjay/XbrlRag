@@ -1,0 +1,104 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-12",
+  "criteria": {
+    "C1": [
+      "test/spec/verifier-derived-disclosures/test_c1_screen_summary.py::test_retailers_screen_summary",
+      "test/spec/verifier-derived-disclosures/test_c1_screen_summary.py::test_bottom_three_counts_every_ranked_member",
+      "test/spec/verifier-derived-disclosures/test_c1_screen_summary.py::test_screen_without_disclosure",
+      "test/spec/verifier-derived-disclosures/test_c1_screen_summary.py::test_other_steps_have_no_summary",
+      "test/spec/verifier-derived-disclosures/test_c1_screen_summary.py::test_summary_follows_any_disclosure_and_never_mutates",
+      "test/spec/verifier-derived-disclosures/test_c1_screen_summary.py::test_summary_never_aliases_the_step"
+    ],
+    "C2": [
+      "test/spec/verifier-derived-disclosures/test_c2_screen_counts.py::test_stored_screens_counts",
+      "test/spec/verifier-derived-disclosures/test_c2_screen_counts.py::test_counts_without_disclosure_and_for_other_steps",
+      "test/spec/verifier-derived-disclosures/test_c2_screen_counts.py::test_counts_are_the_four_counts"
+    ],
+    "C3": [
+      "test/spec/verifier-derived-disclosures/test_c3_number_check.py::test_rank_statement_count",
+      "test/spec/verifier-derived-disclosures/test_c3_number_check.py::test_ranked_count_before_top_n",
+      "test/spec/verifier-derived-disclosures/test_c3_number_check.py::test_cited_rows_rank_only",
+      "test/spec/verifier-derived-disclosures/test_c3_number_check.py::test_uncited_screen_and_percent",
+      "test/spec/verifier-derived-disclosures/test_c3_number_check.py::test_unmatched_exactly_when_not_a_count_or_cited_rank",
+      "test/spec/verifier-derived-disclosures/test_c3_number_check.py::test_citing_another_row_never_adds_an_unmatched_number"
+    ],
+    "C4": [
+      "test/spec/verifier-derived-disclosures/test_c4_verifier_keeps.py::test_true_rank_statement_is_kept",
+      "test/spec/verifier-derived-disclosures/test_c4_verifier_keeps.py::test_wrong_count_is_still_dropped",
+      "test/spec/verifier-derived-disclosures/test_c4_verifier_keeps.py::test_kept_exactly_when_the_count_is_the_screens"
+    ],
+    "C5": [
+      "test/spec/verifier-derived-disclosures/test_c5_llm_evidence.py::test_row_entries_carry_rank_and_period_end",
+      "test/spec/verifier-derived-disclosures/test_c5_llm_evidence.py::test_one_screen_entry_per_cited_screen",
+      "test/spec/verifier-derived-disclosures/test_c5_llm_evidence.py::test_step_id_citation_is_the_steps_own_entry",
+      "test/spec/verifier-derived-disclosures/test_c5_llm_evidence.py::test_screen_entries_follow_the_cited_screens_only"
+    ]
+  },
+  "files": {
+    "test/spec/verifier-derived-disclosures/conftest.py": "5c4b6709184fa6fbe6bc376545c21aa8e955f64b4337d5543fa058daa09f80d7",
+    "test/spec/verifier-derived-disclosures/test_c1_screen_summary.py": "ec5939cf6784722fc379cd8aad2b7bad79065cc2cc71d4d8a6b394af15d3b25f",
+    "test/spec/verifier-derived-disclosures/test_c2_screen_counts.py": "20f6ac8c181d7c67f7b70338806c83164f018edf6e29e4c41b336fe76f5d8301",
+    "test/spec/verifier-derived-disclosures/test_c3_number_check.py": "e5c5a04b38219bc62a8c959cc58ae64189328506a915d9f75955571b631df3e1",
+    "test/spec/verifier-derived-disclosures/test_c4_verifier_keeps.py": "6fd24e5eee9b5627732e247770212d22708e45d960e2928269f86ad8337cac68",
+    "test/spec/verifier-derived-disclosures/test_c5_llm_evidence.py": "7cd52c67866630168f91220277b6126b8133dffe76bd5c06c638f32b6c8666bd"
+  },
+  "id": "verifier-derived-disclosures",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/screen_evidence.py",
+      "module": "retriever.xbrl.screen_evidence",
+      "qualname": "screen_summary",
+      "signature": "def screen_summary(step: Mapping[str, Any]) -> dict[str, Any] | None"
+    },
+    {
+      "file": "src/retriever/xbrl/screen_evidence.py",
+      "module": "retriever.xbrl.screen_evidence",
+      "qualname": "screen_count_values",
+      "signature": "def screen_count_values(step: Mapping[str, Any]) -> list[int]"
+    }
+  ],
+  "nodes": [
+    "test/spec/verifier-derived-disclosures/test_c1_screen_summary.py::test_bottom_three_counts_every_ranked_member",
+    "test/spec/verifier-derived-disclosures/test_c1_screen_summary.py::test_other_steps_have_no_summary",
+    "test/spec/verifier-derived-disclosures/test_c1_screen_summary.py::test_retailers_screen_summary",
+    "test/spec/verifier-derived-disclosures/test_c1_screen_summary.py::test_screen_without_disclosure",
+    "test/spec/verifier-derived-disclosures/test_c1_screen_summary.py::test_summary_follows_any_disclosure_and_never_mutates",
+    "test/spec/verifier-derived-disclosures/test_c1_screen_summary.py::test_summary_never_aliases_the_step",
+    "test/spec/verifier-derived-disclosures/test_c2_screen_counts.py::test_counts_are_the_four_counts",
+    "test/spec/verifier-derived-disclosures/test_c2_screen_counts.py::test_counts_without_disclosure_and_for_other_steps",
+    "test/spec/verifier-derived-disclosures/test_c2_screen_counts.py::test_stored_screens_counts",
+    "test/spec/verifier-derived-disclosures/test_c3_number_check.py::test_cited_rows_rank_only",
+    "test/spec/verifier-derived-disclosures/test_c3_number_check.py::test_citing_another_row_never_adds_an_unmatched_number",
+    "test/spec/verifier-derived-disclosures/test_c3_number_check.py::test_rank_statement_count",
+    "test/spec/verifier-derived-disclosures/test_c3_number_check.py::test_ranked_count_before_top_n",
+    "test/spec/verifier-derived-disclosures/test_c3_number_check.py::test_uncited_screen_and_percent",
+    "test/spec/verifier-derived-disclosures/test_c3_number_check.py::test_unmatched_exactly_when_not_a_count_or_cited_rank",
+    "test/spec/verifier-derived-disclosures/test_c4_verifier_keeps.py::test_kept_exactly_when_the_count_is_the_screens",
+    "test/spec/verifier-derived-disclosures/test_c4_verifier_keeps.py::test_true_rank_statement_is_kept",
+    "test/spec/verifier-derived-disclosures/test_c4_verifier_keeps.py::test_wrong_count_is_still_dropped",
+    "test/spec/verifier-derived-disclosures/test_c5_llm_evidence.py::test_one_screen_entry_per_cited_screen",
+    "test/spec/verifier-derived-disclosures/test_c5_llm_evidence.py::test_row_entries_carry_rank_and_period_end",
+    "test/spec/verifier-derived-disclosures/test_c5_llm_evidence.py::test_screen_entries_follow_the_cited_screens_only",
+    "test/spec/verifier-derived-disclosures/test_c5_llm_evidence.py::test_step_id_citation_is_the_steps_own_entry"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/verifier-derived-disclosures.md",
+    "sha256": "a6dce92a61085debe7d60cb970a484ada65e8e413c6194d312867c2ef763bc60"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

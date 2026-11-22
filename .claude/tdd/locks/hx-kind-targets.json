@@ -1,0 +1,65 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-11",
+  "criteria": {
+    "C1": [
+      "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_the_amendment_mix_gives_no_warning",
+      "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[cross_filer--1]",
+      "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[cross_filer-1]",
+      "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[cross_period--1]",
+      "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[cross_period-1]",
+      "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[compound--1]",
+      "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[compound-1]",
+      "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[honesty--1]",
+      "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[honesty-1]",
+      "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[text--1]",
+      "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[text-1]",
+      "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_the_old_fifteen_each_mix_warns_for_four_kinds",
+      "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_a_kind_with_no_cases_warns_with_count_zero_and_its_target",
+      "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_no_warning_carries_a_case_value",
+      "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_random_counts_warn_exactly_for_kinds_off_target"
+    ]
+  },
+  "files": {
+    "test/spec/hx-kind-targets/conftest.py": "a9ee8dc7101fd1ca5b67b9833e4decce0da09732091056de9cdd9bbca2278e83",
+    "test/spec/hx-kind-targets/test_c1_kind_targets.py": "fda08a2f977b537a20d01c1c5ecfafe6231c0e56012bc3bac8e7c36fdc0af72a"
+  },
+  "id": "hx-kind-targets",
+  "interface": [],
+  "nodes": [
+    "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_a_kind_with_no_cases_warns_with_count_zero_and_its_target",
+    "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_no_warning_carries_a_case_value",
+    "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[compound--1]",
+    "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[compound-1]",
+    "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[cross_filer--1]",
+    "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[cross_filer-1]",
+    "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[cross_period--1]",
+    "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[cross_period-1]",
+    "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[honesty--1]",
+    "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[honesty-1]",
+    "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[text--1]",
+    "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_one_kind_off_its_target_gives_exactly_one_warning[text-1]",
+    "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_random_counts_warn_exactly_for_kinds_off_target",
+    "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_the_amendment_mix_gives_no_warning",
+    "test/spec/hx-kind-targets/test_c1_kind_targets.py::test_the_old_fifteen_each_mix_warns_for_four_kinds"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/hx-kind-targets.md",
+    "sha256": "320e5619806f505e4baf550f42788c10e01d1f742c35a70b4e78300269ceb4ba"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

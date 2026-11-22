@@ -1,0 +1,95 @@
+{
+ "documentation_sha256": "27f1d4ba06b0dcb0c91225db2ac746d5adefc167518fa3948abbdfb944dab019",
+ "elements": {
+  "us-gaap:CommercialPaper": {
+   "documentation": "Carrying value as of the balance sheet date of short-term borrowings using unsecured obligations issued by banks, corporations and other borrowers to investors. The maturities of these money market securities generally do not exceed 270 days.",
+   "label": "Commercial Paper"
+  },
+  "us-gaap:ComprehensiveIncomeNetOfTax": {
+   "documentation": "Amount after tax of increase (decrease) in equity from transactions and other events and circumstances from net income and other comprehensive income, attributable to parent entity. Excludes changes in equity resulting from investments by owners and distributions to owners.",
+   "label": "Comprehensive Income (Loss), Net of Tax, Attributable to Parent"
+  },
+  "us-gaap:ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest": {
+   "documentation": "Amount after tax of increase (decrease) in equity from transactions and other events and circumstances from net income and other comprehensive income. Excludes changes in equity resulting from investments by owners and distributions to owners.",
+   "label": "Comprehensive Income (Loss), Net of Tax, Including Portion Attributable to Noncontrolling Interest"
+  },
+  "us-gaap:ContractWithCustomerLiability": {
+   "documentation": "Amount of obligation to transfer good or service to customer for which consideration has been received or is receivable.",
+   "label": "Contract with Customer, Liability"
+  },
+  "us-gaap:ContractWithCustomerLiabilityCurrent": {
+   "documentation": "Amount of obligation to transfer good or service to customer for which consideration has been received or is receivable, classified as current.",
+   "label": "Contract with Customer, Liability, Current"
+  },
+  "us-gaap:ContractWithCustomerLiabilityNoncurrent": {
+   "documentation": "Amount of obligation to transfer good or service to customer for which consideration has been received or is receivable, classified as noncurrent.",
+   "label": "Contract with Customer, Liability, Noncurrent"
+  },
+  "us-gaap:DebtCurrent": {
+   "documentation": "Amount of debt and lease obligation, classified as current.",
+   "label": "Debt, Current"
+  },
+  "us-gaap:DebtLongtermAndShorttermCombinedAmount": {
+   "documentation": "Represents the aggregate of total long-term debt, including current maturities and short-term debt.",
+   "label": "Debt, Long-Term and Short-Term, Combined Amount"
+  },
+  "us-gaap:DeferredRevenue": {
+   "documentation": "Amount of deferred income and obligation to transfer product and service to customer for which consideration has been received or is receivable.",
+   "label": "Deferred Revenue"
+  },
+  "us-gaap:DeferredRevenueCurrent": {
+   "documentation": "Amount of deferred income and obligation to transfer product and service to customer for which consideration has been received or is receivable, classified as current.",
+   "label": "Deferred Revenue, Current"
+  },
+  "us-gaap:DeferredRevenueNoncurrent": {
+   "documentation": "Amount of deferred income and obligation to transfer product and service to customer for which consideration has been received or is receivable, classified as noncurrent.",
+   "label": "Deferred Revenue, Noncurrent"
+  },
+  "us-gaap:FinanceLeaseLiabilityCurrent": {
+   "documentation": "Present value of lessee's discounted obligation for lease payments from finance lease, classified as current.",
+   "label": "Finance Lease, Liability, Current"
+  },
+  "us-gaap:FinanceLeaseLiabilityNoncurrent": {
+   "documentation": "Present value of lessee's discounted obligation for lease payments from finance lease, classified as noncurrent.",
+   "label": "Finance Lease, Liability, Noncurrent"
+  },
+  "us-gaap:LongTermDebt": {
+   "documentation": "Amount, after deduction of unamortized premium (discount) and debt issuance cost, of long-term debt. Excludes lease obligation.",
+   "label": "Long-Term Debt"
+  },
+  "us-gaap:LongTermDebtAndCapitalLeaseObligations": {
+   "documentation": "Amount of long-term debt and lease obligation, classified as noncurrent.",
+   "label": "Long-Term Debt and Lease Obligation"
+  },
+  "us-gaap:LongTermDebtCurrent": {
+   "documentation": "Amount, after deduction of unamortized premium (discount) and debt issuance cost, of long-term debt classified as current. Excludes lease obligation.",
+   "label": "Long-Term Debt, Current Maturities"
+  },
+  "us-gaap:LongTermDebtNoncurrent": {
+   "documentation": "Amount, after deduction of unamortized premium (discount) and debt issuance cost, of long-term debt classified as noncurrent. Excludes lease obligation.",
+   "label": "Long-Term Debt, Excluding Current Maturities"
+  },
+  "us-gaap:NetIncomeLoss": {
+   "documentation": "The portion of profit or loss for the period, net of income taxes, which is attributable to the parent.",
+   "label": "Net Income (Loss) Attributable to Parent"
+  },
+  "us-gaap:OperatingLeaseLiabilityCurrent": {
+   "documentation": "Present value of lessee's discounted obligation for lease payments from operating lease, classified as current.",
+   "label": "Operating Lease, Liability, Current"
+  },
+  "us-gaap:OperatingLeaseLiabilityNoncurrent": {
+   "documentation": "Present value of lessee's discounted obligation for lease payments from operating lease, classified as noncurrent.",
+   "label": "Operating Lease, Liability, Noncurrent"
+  },
+  "us-gaap:ProfitLoss": {
+   "documentation": "The consolidated profit or loss for the period, net of income taxes, including the portion attributable to the noncontrolling interest.",
+   "label": "Net Income (Loss), Including Portion Attributable to Noncontrolling Interest"
+  },
+  "us-gaap:ShortTermBorrowings": {
+   "documentation": "Reflects the total carrying amount as of the balance sheet date of debt having initial terms less than one year or the normal operating cycle, if longer.",
+   "label": "Short-Term Debt"
+  }
+ },
+ "labels_sha256": "c10e9ec81f18676a2f047a5fd614baeec9a35b34a755d59d4b67bcd5349f69b0",
+ "source": "https://xbrl.fasb.org/us-gaap/2025/elts/ (Arelle cache)"
+}

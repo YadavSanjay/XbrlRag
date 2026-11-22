@@ -1,0 +1,4 @@
+# Vendored verbatim from Arelle — the md5 recorded in README.md is what lets us
+# assert this file is the one that built the live public schema. Git must not
+# normalize its CRLF line endings or the checksum stops matching on checkout.
+xbrlPublicPostgresDB.ddl -text

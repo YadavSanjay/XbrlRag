@@ -1,0 +1,368 @@
+{
+ "accession_no": "0001628280-25-003063",
+ "cik": "0001318605",
+ "ticker": "TSLA",
+ "extension_namespace": "http://www.tesla.com/20241231",
+ "source_file": "tsla-20241231_cal.xml",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231_cal.xml",
+ "source_sha256": "f6e67b6ae0b7b07ddf8c3d223b0752894c61058c75190af1bf48776c565c3630",
+ "retrieved": "local copy under data/storage/sec_edgar (downloaded at ingest); hashed 2026-11-07",
+ "cross_check": "arcs equal to xbrl_db mv_calculation_network by local name (203 arcs)",
+ "selection": "every summation-item arc of every tree (link role, parent) whose parent or a child is an extension presented on IS/BS/CF",
+ "arcs": [
+  {
+   "link_role": "http://www.tesla.com/role/AccruedLiabilitiesandOtherScheduleofAccruedLiabilitiesandOtherCurrentLiabilitiesDetail",
+   "parent": "http://www.tesla.com/20241231:AccruedAndOtherCurrentLiabilities",
+   "child": "http://fasb.org/us-gaap/2024:EmployeeRelatedLiabilitiesCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/AccruedLiabilitiesandOtherScheduleofAccruedLiabilitiesandOtherCurrentLiabilitiesDetail",
+   "parent": "http://www.tesla.com/20241231:AccruedAndOtherCurrentLiabilities",
+   "child": "http://fasb.org/us-gaap/2024:OperatingLeaseLiabilityCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/AccruedLiabilitiesandOtherScheduleofAccruedLiabilitiesandOtherCurrentLiabilitiesDetail",
+   "parent": "http://www.tesla.com/20241231:AccruedAndOtherCurrentLiabilities",
+   "child": "http://fasb.org/us-gaap/2024:OtherLiabilitiesCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/AccruedLiabilitiesandOtherScheduleofAccruedLiabilitiesandOtherCurrentLiabilitiesDetail",
+   "parent": "http://www.tesla.com/20241231:AccruedAndOtherCurrentLiabilities",
+   "child": "http://fasb.org/us-gaap/2024:TaxesPayableCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/AccruedLiabilitiesandOtherScheduleofAccruedLiabilitiesandOtherCurrentLiabilitiesDetail",
+   "parent": "http://www.tesla.com/20241231:AccruedAndOtherCurrentLiabilities",
+   "child": "http://www.tesla.com/20241231:AccruedPurchases",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/AccruedLiabilitiesandOtherScheduleofAccruedLiabilitiesandOtherCurrentLiabilitiesDetail",
+   "parent": "http://www.tesla.com/20241231:AccruedAndOtherCurrentLiabilities",
+   "child": "http://www.tesla.com/20241231:AccruedWarrantyReserveCurrentPortion",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/AccruedLiabilitiesandOtherScheduleofAccruedLiabilitiesandOtherCurrentLiabilitiesDetail",
+   "parent": "http://www.tesla.com/20241231:AccruedAndOtherCurrentLiabilities",
+   "child": "http://www.tesla.com/20241231:CustomerDepositsLiabilitiesCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/AccruedLiabilitiesandOtherScheduleofAccruedLiabilitiesandOtherCurrentLiabilitiesDetail",
+   "parent": "http://www.tesla.com/20241231:AccruedAndOtherCurrentLiabilities",
+   "child": "http://www.tesla.com/20241231:SalesReturnReserveCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:AssetsCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:DeferredCostsLeasingNetNoncurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:DeferredIncomeTaxAssetsNet",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:Goodwill",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:IntangibleAssetsNetExcludingGoodwill",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:OperatingLeaseRightOfUseAsset",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:OtherAssetsNoncurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:PropertyPlantAndEquipmentNet",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://www.tesla.com/20241231:DigitalAssetsNetNonCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://www.tesla.com/20241231:LeasedAssetsNet",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Liabilities",
+   "child": "http://fasb.org/us-gaap/2024:ContractWithCustomerLiabilityNoncurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Liabilities",
+   "child": "http://fasb.org/us-gaap/2024:LiabilitiesCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Liabilities",
+   "child": "http://fasb.org/us-gaap/2024:OtherLiabilitiesNoncurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Liabilities",
+   "child": "http://www.tesla.com/20241231:LongTermDebtAndFinanceLeasesNoncurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesCurrent",
+   "child": "http://fasb.org/us-gaap/2024:AccountsPayableCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesCurrent",
+   "child": "http://fasb.org/us-gaap/2024:ContractWithCustomerLiabilityCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesCurrent",
+   "child": "http://www.tesla.com/20241231:AccruedAndOtherCurrentLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:LiabilitiesCurrent",
+   "child": "http://www.tesla.com/20241231:LongTermDebtAndFinanceLeasesCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:FinanceLeasePrincipalPayments",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:PaymentsOfDebtIssuanceCosts",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:PaymentsToMinorityShareholders",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProceedsFromIssuanceOfDebt",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProceedsFromIssuanceOfSharesUnderIncentiveAndShareBasedCompensationPlansIncludingStockOptions",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:RepaymentsOfConvertibleDebt",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://www.tesla.com/20241231:PaymentsForBuyOutsOfNoncontrollingInterestsInSubsidiaries",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://fasb.org/us-gaap/2024:PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://fasb.org/us-gaap/2024:PaymentsToAcquireInvestments",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://fasb.org/us-gaap/2024:PaymentsToAcquirePropertyPlantAndEquipment",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProceedsFromSaleMaturityAndCollectionsOfInvestments",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProceedsFromSaleOfShortTermInvestments",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://www.tesla.com/20241231:GovernmentGrantReceipt",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://www.tesla.com/20241231:PaymentsForSolarEnergySystemsNetOfSales",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://www.tesla.com/20241231:PaymentsToAcquireOtherIndefiniteLivedIntangibleAssets",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://www.tesla.com/20241231:ProceedsFromSalesOfDigitalAssets",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:DeferredIncomeTaxExpenseBenefit",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ForeignCurrencyTransactionGainLossUnrealized",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInAccountsReceivable",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInContractWithCustomerLiability",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInInventories",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:InventoryWriteDown",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProfitLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ShareBasedCompensation",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://www.tesla.com/20241231:DepreciationAmortizationAndImpairment",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://www.tesla.com/20241231:GainLossOnDigitalAssets",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://www.tesla.com/20241231:IncreaseDecreaseInOperatingLeaseVehicles",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://www.tesla.com/20241231:NoncashInterestIncomeExpenseAndOtherOperatingActivities",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2024:OperatingExpenses",
+   "child": "http://fasb.org/us-gaap/2024:ResearchAndDevelopmentExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2024:OperatingExpenses",
+   "child": "http://fasb.org/us-gaap/2024:SellingGeneralAndAdministrativeExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.tesla.com/role/ConsolidatedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2024:OperatingExpenses",
+   "child": "http://www.tesla.com/20241231:RestructuringAndOtherExpenses",
+   "weight": "1"
+  }
+ ]
+}

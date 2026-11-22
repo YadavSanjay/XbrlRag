@@ -1,0 +1,104 @@
+{
+ "0000050863-23-000006": {
+  "cik": "0000050863",
+  "document_period_end": "2022-12-31",
+  "document_type": "10-K",
+  "filed": "2023-01-27",
+  "fiscal_period_focus": "FY",
+  "fiscal_year_focus": "2022",
+  "form": "10-K",
+  "source": {
+   "file": "intc-20221231_htm.xml",
+   "retrieved": "2026-10-17",
+   "sha256": "78bc868569657cb9f92c61e2a6944acb377109ed39d0ba36edd98f644dae6b73",
+   "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086323000006/intc-20221231.htm"
+  },
+  "ticker": "INTC",
+  "us_gaap_namespace": "http://fasb.org/us-gaap/2022"
+ },
+ "0000050863-24-000010": {
+  "cik": "0000050863",
+  "document_period_end": "2023-12-30",
+  "document_type": "10-K",
+  "filed": "2024-01-26",
+  "fiscal_period_focus": "FY",
+  "fiscal_year_focus": "2023",
+  "form": "10-K",
+  "source": {
+   "file": "intc-20231230_htm.xml",
+   "retrieved": "2026-10-17",
+   "sha256": "95d1672dc0828a833dec60e69d10a677675c08332e69f2110efc204c222a920a",
+   "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086324000010/intc-20231230.htm"
+  },
+  "ticker": "INTC",
+  "us_gaap_namespace": "http://fasb.org/us-gaap/2023"
+ },
+ "0000050863-25-000009": {
+  "cik": "0000050863",
+  "document_period_end": "2024-12-28",
+  "document_type": "10-K",
+  "filed": "2025-01-31",
+  "fiscal_period_focus": "FY",
+  "fiscal_year_focus": "2024",
+  "form": "10-K",
+  "source": {
+   "file": "intc-20241228_htm.xml",
+   "retrieved": "2026-10-17",
+   "sha256": "2fb147c50f39ba36e28e1eaf030ae1f097b673ba58498fa87f7b20994035607b",
+   "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086325000009/intc-20241228.htm"
+  },
+  "ticker": "INTC",
+  "us_gaap_namespace": "http://fasb.org/us-gaap/2024"
+ },
+ "0001045810-23-000017": {
+  "cik": "0001045810",
+  "document_period_end": "2023-01-29",
+  "document_type": "10-K",
+  "filed": "2023-02-24",
+  "fiscal_period_focus": "FY",
+  "fiscal_year_focus": "2023",
+  "form": "10-K",
+  "source": {
+   "file": "nvda-20230129_htm.xml",
+   "retrieved": "2026-07-10",
+   "sha256": "4f6ce196653b28a195697839b52b97318c2d373f2aeecfa8d384e4331401bcd6",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000017/nvda-20230129.htm"
+  },
+  "ticker": "NVDA",
+  "us_gaap_namespace": "http://fasb.org/us-gaap/2022"
+ },
+ "0001045810-24-000029": {
+  "cik": "0001045810",
+  "document_period_end": "2024-01-28",
+  "document_type": "10-K",
+  "filed": "2024-02-21",
+  "fiscal_period_focus": "FY",
+  "fiscal_year_focus": "2024",
+  "form": "10-K",
+  "source": {
+   "file": "nvda-20240128_htm.xml",
+   "retrieved": "2026-07-10",
+   "sha256": "d41baf5f98a69ad604648261e86fb4d66e90a52d744b2721af921cd1a6cfd517",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm"
+  },
+  "ticker": "NVDA",
+  "us_gaap_namespace": "http://fasb.org/us-gaap/2023"
+ },
+ "0001045810-25-000023": {
+  "cik": "0001045810",
+  "document_period_end": "2025-01-26",
+  "document_type": "10-K",
+  "filed": "2025-02-26",
+  "fiscal_period_focus": "FY",
+  "fiscal_year_focus": "2025",
+  "form": "10-K",
+  "source": {
+   "file": "nvda-20250126_htm.xml",
+   "retrieved": "2026-07-10",
+   "sha256": "8c2d1217864e8a0902359bef39e99625adc51901ce50f4b49fee606494ae2e97",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm"
+  },
+  "ticker": "NVDA",
+  "us_gaap_namespace": "http://fasb.org/us-gaap/2024"
+ }
+}

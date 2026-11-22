@@ -1,0 +1,10 @@
+# SHA-256 of each file as stored in git (LF line endings), pre-registration v1.
+# Verify:  git show <commit>:<path> | sha256sum
+# Set B is kept outside the repository; its hash is stated in preregistration_v1.md section 4.
+f393dee27c5889c5054e3c4502fba1bb48babe6dbf22e7eba6b7d1a26652f398  docs/eval/blog_v1/preregistration_v1.md
+60174e8a638d13ec2dadef2e95145a0ad957b6cbb9ceb9781a083155126497b2  docs/eval/blog_v1/freeze_record.json
+2eae5a77841d28745fde9b0e57a492fde675257e6961e2b3da43036cdf197547  docs/eval/blog_v1/freeze_record.py
+5e10a80506af3ead9f940b652aaa903ec21a505554e5d0540c69441d6367a6e7  docs/eval/blog_v1/long_context_cases.json
+141b76599b1ee72c37d73045a3819075b8c487509de2fced446931014b6a87ab  docs/eval/blog_v1/long_context_select.py
+5d5118d0bb8a1a88a7bb65989526dc70fbfc9da6291d014a20b69631ebcf80f3  docs/eval/blog_v1/aprime_pool.json
+04fc31a79811a141ebf48c9dcea3cddb9fbb31635ce485d8dc2f24a64a0fe127  docs/eval/blog_v1/aprime_constituents.csv

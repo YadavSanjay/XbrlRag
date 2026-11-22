@@ -1,0 +1,38 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0000080424-25-000076	6	9	BS	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	Cash and cash equivalents	0
+0000080424-25-000076	6	10	BS	0	H	AccountsReceivableNetCurrent	us-gaap/2025	Accounts receivable	0
+0000080424-25-000076	6	12	BS	0	H	InventoryRawMaterialsAndSuppliesNetOfReserves	us-gaap/2025	Materials and supplies	0
+0000080424-25-000076	6	13	BS	0	H	InventoryWorkInProcessNetOfReserves	us-gaap/2025	Work in process	0
+0000080424-25-000076	6	14	BS	0	H	InventoryFinishedGoodsNetOfReserves	us-gaap/2025	Finished goods	0
+0000080424-25-000076	6	15	BS	0	H	InventoryNet	us-gaap/2025	Total inventories	0
+0000080424-25-000076	6	16	BS	0	H	PrepaidExpenseAndOtherAssetsCurrent	us-gaap/2025	Prepaid expenses and other current assets	0
+0000080424-25-000076	6	17	BS	0	H	AssetsCurrent	us-gaap/2025	TOTAL CURRENT ASSETS	0
+0000080424-25-000076	6	18	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2025	PROPERTY, PLANT AND EQUIPMENT, NET	0
+0000080424-25-000076	6	19	BS	0	H	Goodwill	us-gaap/2025	GOODWILL	0
+0000080424-25-000076	6	20	BS	0	H	IntangibleAssetsNetExcludingGoodwill	us-gaap/2025	TRADEMARKS AND OTHER INTANGIBLE ASSETS, NET	0
+0000080424-25-000076	6	21	BS	0	H	OtherAssetsNoncurrent	us-gaap/2025	OTHER NONCURRENT ASSETS	0
+0000080424-25-000076	6	22	BS	0	H	Assets	us-gaap/2025	TOTAL ASSETS	0
+0000080424-25-000076	6	25	BS	0	H	AccountsPayableCurrent	us-gaap/2025	Accounts payable	0
+0000080424-25-000076	6	26	BS	0	H	AccruedLiabilitiesCurrent	us-gaap/2025	Accrued and other liabilities	0
+0000080424-25-000076	6	27	BS	0	H	DebtCurrent	us-gaap/2025	Debt due within one year	0
+0000080424-25-000076	6	28	BS	0	H	LiabilitiesCurrent	us-gaap/2025	TOTAL CURRENT LIABILITIES	0
+0000080424-25-000076	6	29	BS	0	H	LongTermDebtNoncurrent	us-gaap/2025	LONG-TERM DEBT	0
+0000080424-25-000076	6	30	BS	0	H	DeferredIncomeTaxLiabilitiesNet	us-gaap/2025	DEFERRED INCOME TAXES	0
+0000080424-25-000076	6	31	BS	0	H	OtherLiabilitiesNoncurrent	us-gaap/2025	OTHER NONCURRENT LIABILITIES	0
+0000080424-25-000076	6	32	BS	0	H	Liabilities	us-gaap/2025	TOTAL LIABILITIES	0
+0000080424-25-000076	6	34	BS	0	H	PreferredStockValue	us-gaap/2025	Preferred stock	0
+0000080424-25-000076	6	35	BS	0	H	CommonStockValue	us-gaap/2025	Common stock, stated value $1 per share (10,000 shares authorized; shares issued: 2025 - 4,009.2, 2024 - 4,009.2)	0
+0000080424-25-000076	6	36	BS	0	H	AdditionalPaidInCapital	us-gaap/2025	Additional paid-in capital	0
+0000080424-25-000076	6	37	BS	0	H	ReserveForEsopDebtRetirement	0000080424-25-000076	Reserve for ESOP debt retirement	1
+0000080424-25-000076	6	38	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Accumulated other comprehensive loss	0
+0000080424-25-000076	6	39	BS	0	H	TreasuryStockCommonValue	us-gaap/2025	Treasury stock (shares held: 2025 - 1,667.3; 2024 - 1,652.2)	1
+0000080424-25-000076	6	40	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2025	Retained earnings	0
+0000080424-25-000076	6	41	BS	0	H	MinorityInterest	us-gaap/2025	Noncontrolling interest	0
+0000080424-25-000076	6	42	BS	0	H	StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	TOTAL SHAREHOLDERS' EQUITY	0
+0000080424-25-000076	6	43	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2025	TOTAL LIABILITIES AND SHAREHOLDERS' EQUITY	0
+0000080424-25-000076	7	7	BS	1	H	PreferredStockParOrStatedValuePerShare	us-gaap/2025	Preferred stock, stated value (in dollars per share)	0
+0000080424-25-000076	7	8	BS	1	H	PreferredStockSharesAuthorized	us-gaap/2025	Preferred stock, authorized (in shares)	0
+0000080424-25-000076	7	9	BS	1	H	CommonStockParOrStatedValuePerShare	us-gaap/2025	Common stock, stated value (in dollars per share)	0
+0000080424-25-000076	7	10	BS	1	H	CommonStockSharesAuthorized	us-gaap/2025	Common stock, authorized (in shares)	0
+0000080424-25-000076	7	11	BS	1	H	CommonStockSharesIssued	us-gaap/2025	Common stock, issued (in shares)	0
+0000080424-25-000076	7	12	BS	1	H	TreasuryStockCommonShares	us-gaap/2025	Treasury stock (in shares)	0

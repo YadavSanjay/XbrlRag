@@ -1,0 +1,211 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-04",
+  "criteria": {
+    "C1": [
+      "test/spec/llm-flex-retry/test_c1_classify.py::test_resource_unavailable_code_is_flex_at_any_tier[None]",
+      "test/spec/llm-flex-retry/test_c1_classify.py::test_resource_unavailable_code_is_flex_at_any_tier[auto]",
+      "test/spec/llm-flex-retry/test_c1_classify.py::test_resource_unavailable_code_is_flex_at_any_tier[default]",
+      "test/spec/llm-flex-retry/test_c1_classify.py::test_resource_unavailable_code_is_flex_at_any_tier[flex]",
+      "test/spec/llm-flex-retry/test_c1_classify.py::test_resource_unavailable_code_is_flex_at_any_tier[priority]",
+      "test/spec/llm-flex-retry/test_c1_classify.py::test_resource_unavailable_message_is_flex",
+      "test/spec/llm-flex-retry/test_c1_classify.py::test_any_openai_429_is_flex_on_a_flex_run_except_quota",
+      "test/spec/llm-flex-retry/test_c1_classify.py::test_anthropic_429_and_timeouts",
+      "test/spec/llm-flex-retry/test_c1_classify.py::test_rule_property"
+    ],
+    "C2": [
+      "test/spec/llm-flex-retry/test_c2_retry_after.py::test_seconds_and_milliseconds",
+      "test/spec/llm-flex-retry/test_c2_retry_after.py::test_unusable_values_give_none",
+      "test/spec/llm-flex-retry/test_c2_retry_after.py::test_no_response_gives_none",
+      "test/spec/llm-flex-retry/test_c2_retry_after.py::test_property"
+    ],
+    "C3": [
+      "test/spec/llm-flex-retry/test_c3_policy.py::test_defaults",
+      "test/spec/llm-flex-retry/test_c3_policy.py::test_values_are_read",
+      "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env0]",
+      "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env1]",
+      "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env2]",
+      "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env3]",
+      "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env4]",
+      "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env5]",
+      "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env6]",
+      "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env7]",
+      "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env8]",
+      "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env9]",
+      "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env10]",
+      "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env11]",
+      "test/spec/llm-flex-retry/test_c3_policy.py::test_property"
+    ],
+    "C4": [
+      "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args0-0.5]",
+      "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args1-1.0]",
+      "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args2-2.0]",
+      "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args3-8.0]",
+      "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args4-8.0]",
+      "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args5-5.0]",
+      "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args6-160.0]",
+      "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args7-300.0]",
+      "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args8-300.0]",
+      "test/spec/llm-flex-retry/test_c4_wait.py::test_retry_after[args0-42.0]",
+      "test/spec/llm-flex-retry/test_c4_wait.py::test_retry_after[args1-300.0]",
+      "test/spec/llm-flex-retry/test_c4_wait.py::test_retry_after[args2-20.0]",
+      "test/spec/llm-flex-retry/test_c4_wait.py::test_retry_after[args3-3.0]",
+      "test/spec/llm-flex-retry/test_c4_wait.py::test_retry_after[args4-8.0]",
+      "test/spec/llm-flex-retry/test_c4_wait.py::test_closed_form",
+      "test/spec/llm-flex-retry/test_c4_wait.py::test_monotone_and_capped"
+    ],
+    "C5": [
+      "test/spec/llm-flex-retry/test_c5_gateway_flex.py::test_five_flex_429s_then_a_reply",
+      "test/spec/llm-flex-retry/test_c5_gateway_flex.py::test_default_policy_limits",
+      "test/spec/llm-flex-retry/test_c5_gateway_flex.py::test_policy_from_the_environment",
+      "test/spec/llm-flex-retry/test_c5_gateway_flex.py::test_separate_counts_for_flex_and_other_errors",
+      "test/spec/llm-flex-retry/test_c5_gateway_flex.py::test_flex_honours_retry_after_up_to_the_cap",
+      "test/spec/llm-flex-retry/test_c5_gateway_flex.py::test_which_429s_get_the_flex_policy",
+      "test/spec/llm-flex-retry/test_c5_gateway_flex.py::test_complete_tools_is_retried_the_same_way",
+      "test/spec/llm-flex-retry/test_c5_gateway_flex.py::test_property_k_flex_429s_then_a_reply"
+    ],
+    "C6": [
+      "test/spec/llm-flex-retry/test_c6_breaker.py::test_exhausted_flex_leaves_the_breaker",
+      "test/spec/llm-flex-retry/test_c6_breaker.py::test_flex_retries_then_success",
+      "test/spec/llm-flex-retry/test_c6_breaker.py::test_other_errors_still_trip_the_breaker",
+      "test/spec/llm-flex-retry/test_c6_breaker.py::test_property_count_is_the_start"
+    ],
+    "C7": [
+      "test/spec/llm-flex-retry/test_c7_frontier.py::test_flex_429s_at_turn_two_resume_the_same_step",
+      "test/spec/llm-flex-retry/test_c7_frontier.py::test_exhausted_storm_is_a_transport_error",
+      "test/spec/llm-flex-retry/test_c7_frontier.py::test_retries_do_not_change_the_case[3]",
+      "test/spec/llm-flex-retry/test_c7_frontier.py::test_retries_do_not_change_the_case[4]",
+      "test/spec/llm-flex-retry/test_c7_frontier.py::test_retries_do_not_change_the_case[6]",
+      "test/spec/llm-flex-retry/test_c7_frontier.py::test_retries_do_not_change_the_case[9]"
+    ],
+    "C8": [
+      "test/spec/llm-flex-retry/test_c8_other_errors.py::test_rate_limit_retry_after",
+      "test/spec/llm-flex-retry/test_c8_other_errors.py::test_server_errors_and_timeouts_unchanged",
+      "test/spec/llm-flex-retry/test_c8_other_errors.py::test_property_waits"
+    ]
+  },
+  "files": {
+    "test/spec/llm-flex-retry/conftest.py": "abc1207971af7eec0661c1b54a63a7b83583fc6fcbe1bf9142d171f45e18a1fb",
+    "test/spec/llm-flex-retry/test_c1_classify.py": "41daf2600645495c05f5cea6d036027fed6fd1030268ac219ddee8a38b7d41f2",
+    "test/spec/llm-flex-retry/test_c2_retry_after.py": "6e99fc697a72477d04cd71d4f7c5268e29c8e7bdbb27774b1db75a27088dcc4c",
+    "test/spec/llm-flex-retry/test_c3_policy.py": "7d8fdcdee3781edffb4b44b3c86a4a2a6467d875bb72dd54f498d469b5f7b087",
+    "test/spec/llm-flex-retry/test_c4_wait.py": "7016e50efeaef8fb3398f8ae6b35896104cfc3002771afc7b0723b5809259b6a",
+    "test/spec/llm-flex-retry/test_c5_gateway_flex.py": "bcc2ff45d1589a1acc089d9576463391169cc34657c6dc452060147f688f73a7",
+    "test/spec/llm-flex-retry/test_c6_breaker.py": "0e3518a52f05731c5f16991dd56efd28a4e2a47644e945f7520d53deb37db700",
+    "test/spec/llm-flex-retry/test_c7_frontier.py": "bfd5bf635fdea73051bb7ac04c05c7b824250b7e47d7a5aaa38b45fe439fd28b",
+    "test/spec/llm-flex-retry/test_c8_other_errors.py": "7dc62d1398fb1dfbd6c104c07ae4eebdeffa3f30093a3db0bdc4d7c887c4a618"
+  },
+  "id": "llm-flex-retry",
+  "interface": [
+    {
+      "file": "src/llm/gateway/adapters/base.py",
+      "module": "llm.gateway.adapters.base",
+      "qualname": "is_flex_unavailable",
+      "signature": "def is_flex_unavailable(exc: BaseException, *, service_tier: str | None=None) -> bool"
+    },
+    {
+      "file": "src/llm/gateway/adapters/base.py",
+      "module": "llm.gateway.adapters.base",
+      "qualname": "retry_after_s",
+      "signature": "def retry_after_s(exc: BaseException) -> float | None"
+    },
+    {
+      "file": "src/llm/gateway/gateway.py",
+      "module": "llm.gateway.gateway",
+      "qualname": "retry_wait_s",
+      "signature": "def retry_wait_s(attempt: int, base_backoff: float, max_backoff: float, retry_after: float | None=None) -> float"
+    },
+    {
+      "file": "src/llm/request_options.py",
+      "module": "llm.request_options",
+      "qualname": "flex_retry_policy",
+      "signature": "def flex_retry_policy(environ: Mapping[str, str] | None=None) -> tuple[int, float, float]"
+    }
+  ],
+  "nodes": [
+    "test/spec/llm-flex-retry/test_c1_classify.py::test_anthropic_429_and_timeouts",
+    "test/spec/llm-flex-retry/test_c1_classify.py::test_any_openai_429_is_flex_on_a_flex_run_except_quota",
+    "test/spec/llm-flex-retry/test_c1_classify.py::test_resource_unavailable_code_is_flex_at_any_tier[None]",
+    "test/spec/llm-flex-retry/test_c1_classify.py::test_resource_unavailable_code_is_flex_at_any_tier[auto]",
+    "test/spec/llm-flex-retry/test_c1_classify.py::test_resource_unavailable_code_is_flex_at_any_tier[default]",
+    "test/spec/llm-flex-retry/test_c1_classify.py::test_resource_unavailable_code_is_flex_at_any_tier[flex]",
+    "test/spec/llm-flex-retry/test_c1_classify.py::test_resource_unavailable_code_is_flex_at_any_tier[priority]",
+    "test/spec/llm-flex-retry/test_c1_classify.py::test_resource_unavailable_message_is_flex",
+    "test/spec/llm-flex-retry/test_c1_classify.py::test_rule_property",
+    "test/spec/llm-flex-retry/test_c2_retry_after.py::test_no_response_gives_none",
+    "test/spec/llm-flex-retry/test_c2_retry_after.py::test_property",
+    "test/spec/llm-flex-retry/test_c2_retry_after.py::test_seconds_and_milliseconds",
+    "test/spec/llm-flex-retry/test_c2_retry_after.py::test_unusable_values_give_none",
+    "test/spec/llm-flex-retry/test_c3_policy.py::test_defaults",
+    "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env0]",
+    "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env10]",
+    "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env11]",
+    "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env1]",
+    "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env2]",
+    "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env3]",
+    "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env4]",
+    "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env5]",
+    "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env6]",
+    "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env7]",
+    "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env8]",
+    "test/spec/llm-flex-retry/test_c3_policy.py::test_invalid_values_raise[env9]",
+    "test/spec/llm-flex-retry/test_c3_policy.py::test_property",
+    "test/spec/llm-flex-retry/test_c3_policy.py::test_values_are_read",
+    "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args0-0.5]",
+    "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args1-1.0]",
+    "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args2-2.0]",
+    "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args3-8.0]",
+    "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args4-8.0]",
+    "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args5-5.0]",
+    "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args6-160.0]",
+    "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args7-300.0]",
+    "test/spec/llm-flex-retry/test_c4_wait.py::test_backoff[args8-300.0]",
+    "test/spec/llm-flex-retry/test_c4_wait.py::test_closed_form",
+    "test/spec/llm-flex-retry/test_c4_wait.py::test_monotone_and_capped",
+    "test/spec/llm-flex-retry/test_c4_wait.py::test_retry_after[args0-42.0]",
+    "test/spec/llm-flex-retry/test_c4_wait.py::test_retry_after[args1-300.0]",
+    "test/spec/llm-flex-retry/test_c4_wait.py::test_retry_after[args2-20.0]",
+    "test/spec/llm-flex-retry/test_c4_wait.py::test_retry_after[args3-3.0]",
+    "test/spec/llm-flex-retry/test_c4_wait.py::test_retry_after[args4-8.0]",
+    "test/spec/llm-flex-retry/test_c5_gateway_flex.py::test_complete_tools_is_retried_the_same_way",
+    "test/spec/llm-flex-retry/test_c5_gateway_flex.py::test_default_policy_limits",
+    "test/spec/llm-flex-retry/test_c5_gateway_flex.py::test_five_flex_429s_then_a_reply",
+    "test/spec/llm-flex-retry/test_c5_gateway_flex.py::test_flex_honours_retry_after_up_to_the_cap",
+    "test/spec/llm-flex-retry/test_c5_gateway_flex.py::test_policy_from_the_environment",
+    "test/spec/llm-flex-retry/test_c5_gateway_flex.py::test_property_k_flex_429s_then_a_reply",
+    "test/spec/llm-flex-retry/test_c5_gateway_flex.py::test_separate_counts_for_flex_and_other_errors",
+    "test/spec/llm-flex-retry/test_c5_gateway_flex.py::test_which_429s_get_the_flex_policy",
+    "test/spec/llm-flex-retry/test_c6_breaker.py::test_exhausted_flex_leaves_the_breaker",
+    "test/spec/llm-flex-retry/test_c6_breaker.py::test_flex_retries_then_success",
+    "test/spec/llm-flex-retry/test_c6_breaker.py::test_other_errors_still_trip_the_breaker",
+    "test/spec/llm-flex-retry/test_c6_breaker.py::test_property_count_is_the_start",
+    "test/spec/llm-flex-retry/test_c7_frontier.py::test_exhausted_storm_is_a_transport_error",
+    "test/spec/llm-flex-retry/test_c7_frontier.py::test_flex_429s_at_turn_two_resume_the_same_step",
+    "test/spec/llm-flex-retry/test_c7_frontier.py::test_retries_do_not_change_the_case[3]",
+    "test/spec/llm-flex-retry/test_c7_frontier.py::test_retries_do_not_change_the_case[4]",
+    "test/spec/llm-flex-retry/test_c7_frontier.py::test_retries_do_not_change_the_case[6]",
+    "test/spec/llm-flex-retry/test_c7_frontier.py::test_retries_do_not_change_the_case[9]",
+    "test/spec/llm-flex-retry/test_c8_other_errors.py::test_property_waits",
+    "test/spec/llm-flex-retry/test_c8_other_errors.py::test_rate_limit_retry_after",
+    "test/spec/llm-flex-retry/test_c8_other_errors.py::test_server_errors_and_timeouts_unchanged"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/llm-flex-retry.md",
+    "sha256": "5aa1c85166ee94740425749072c72c805b4aa387c43b3e4a191d0c774fdacdb2"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

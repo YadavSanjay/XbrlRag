@@ -1,0 +1,65 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/empty-reply-cost/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-01",
+  "criteria": {
+    "C1": [
+      "test/spec/empty-reply-cost/test_erc_accounting.py::test_the_empty_reply_is_priced",
+      "test/spec/empty-reply-cost/test_erc_accounting.py::test_any_counts_follow_the_rates"
+    ],
+    "C2": [
+      "test/spec/empty-reply-cost/test_erc_accounting.py::test_the_event_holds_the_tokens",
+      "test/spec/empty-reply-cost/test_erc_accounting.py::test_a_reply_without_usage_counts_at_zero",
+      "test/spec/empty-reply-cost/test_erc_accounting.py::test_any_counts_reach_the_event_and_trace"
+    ],
+    "C3": [
+      "test/spec/empty-reply-cost/test_erc_accounting.py::test_the_other_shapes_are_recorded[claude-opus-5-5]",
+      "test/spec/empty-reply-cost/test_erc_accounting.py::test_the_other_shapes_are_recorded[gpt-5.6-terra]",
+      "test/spec/empty-reply-cost/test_erc_accounting.py::test_doubling_the_tokens_doubles_the_cost[deepseek-flash]",
+      "test/spec/empty-reply-cost/test_erc_accounting.py::test_doubling_the_tokens_doubles_the_cost[claude-opus-5-5]",
+      "test/spec/empty-reply-cost/test_erc_accounting.py::test_doubling_the_tokens_doubles_the_cost[gpt-5.6-terra]"
+    ],
+    "C4": [
+      "test/spec/empty-reply-cost/test_erc_accounting.py::test_the_next_call_sees_the_spend",
+      "test/spec/empty-reply-cost/test_erc_accounting.py::test_the_limit_decides_either_side_of_the_cost"
+    ]
+  },
+  "files": {
+    "test/spec/empty-reply-cost/test_erc_accounting.py": "b9445d783a09fd23ac5e60a49dcef767c4ea364f3ae33edcd87eafb2b532b553"
+  },
+  "id": "empty-reply-cost",
+  "interface": [],
+  "nodes": [
+    "test/spec/empty-reply-cost/test_erc_accounting.py::test_a_reply_without_usage_counts_at_zero",
+    "test/spec/empty-reply-cost/test_erc_accounting.py::test_any_counts_follow_the_rates",
+    "test/spec/empty-reply-cost/test_erc_accounting.py::test_any_counts_reach_the_event_and_trace",
+    "test/spec/empty-reply-cost/test_erc_accounting.py::test_doubling_the_tokens_doubles_the_cost[claude-opus-5-5]",
+    "test/spec/empty-reply-cost/test_erc_accounting.py::test_doubling_the_tokens_doubles_the_cost[deepseek-flash]",
+    "test/spec/empty-reply-cost/test_erc_accounting.py::test_doubling_the_tokens_doubles_the_cost[gpt-5.6-terra]",
+    "test/spec/empty-reply-cost/test_erc_accounting.py::test_the_empty_reply_is_priced",
+    "test/spec/empty-reply-cost/test_erc_accounting.py::test_the_event_holds_the_tokens",
+    "test/spec/empty-reply-cost/test_erc_accounting.py::test_the_limit_decides_either_side_of_the_cost",
+    "test/spec/empty-reply-cost/test_erc_accounting.py::test_the_next_call_sees_the_spend",
+    "test/spec/empty-reply-cost/test_erc_accounting.py::test_the_other_shapes_are_recorded[claude-opus-5-5]",
+    "test/spec/empty-reply-cost/test_erc_accounting.py::test_the_other_shapes_are_recorded[gpt-5.6-terra]"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/empty-reply-cost.md",
+    "sha256": "e19da53add5691aab1eb42bb5ca1759ecf81e01e784127f9ed87c51613f1098f"
+  },
+  "status": "retired",
+  "tool_version": "0.4.1"
+}

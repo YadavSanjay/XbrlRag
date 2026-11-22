@@ -1,0 +1,1426 @@
+[
+{
+	"question_id": "google_001",
+	"company": "Alphabet Inc.",
+	"company_name": "Alphabet Inc. (GOOGL)",
+	"gic_sector": "COMMUNICATIONSERVICES",
+	"doc_type": "10-k",
+	"doc_name": "Alphabet_2021-2023_10K",
+	"filing_years_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Using Alphabet’s SEC 10-K filings, what is the compound annual growth rate (CAGR) of total revenues from FY2021 to FY2023 (two-year CAGR)? Provide the CAGR as a percentage, rounded to two decimals.",
+	"answer": "9.23%",
+	"justification": "Total revenues were $257,637 million in FY2021 and $307,394 million in FY2023. Two-year CAGR = (307,394 / 257,637)^(1/2) − 1 = 0.0923 ≈ 9.23%.",
+	"evidence": [
+		{
+			"doc_name": "goog-20221231",
+			"evidence_page_num": 31,
+			"evidence_text": "The following table presents revenues by type (in millions)… Total revenues $257,637 (2021) $282,836 (2022).",
+			"evidence_text_full_page": "31\n\n* * *\n\nTable of Contents\n\nAlphabet Inc.\n\nFinancial Results\n\nRevenues\n\nThe following table presents revenues by type (in millions):\nYear Ended December 31,\n2021 2022\n...\nTotal revenues$257,637 $282,836\n"
+		},
+		{
+			"doc_name": "goog-20231231",
+			"evidence_page_num": 34,
+			"evidence_text": "The following table presents revenues by type (in millions)… Total revenues $282,836 (2022) $307,394 (2023).",
+			"evidence_text_full_page": "34.\n\n* * *\n\nTable of Contents\n\nAlphabet Inc.\n\nFinancial Results\n\nRevenues\n\nThe following table presents revenues by type (in millions):\nYear Ended December 31,\n2022 2023\n...\nTotal revenues$282,836 $307,394\n"
+		}
+	]
+},
+{
+	"question_id": "google_002",
+	"company": "Alphabet Inc.",
+	"company_name": "Alphabet Inc. (GOOGL)",
+	"gic_sector": "COMMUNICATIONSERVICES",
+	"doc_type": "10-k",
+	"filing_years_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Across FY2021, FY2022, and FY2023, in which year were Alphabet’s Class A & C share repurchases the largest as a percentage of net cash provided by operating activities? Show the percentages for all three years and identify the highest.",
+	"answer": "FY2022 (about 64.81%). FY2021: ~54.85%, FY2022: ~64.81%, FY2023: ~61.12%.",
+	"justification": "Repurchases: FY2021 $50,274m; FY2022 $59,296m; FY2023 $62,184m. Operating cash flow: FY2021 $91,652m; FY2022 $91,495m; FY2023 $101,746m. Ratios: 2021=50,274/91,652=54.85%; 2022=59,296/91,495=64.81%; 2023=62,184/101,746=61.12%. Highest is FY2022.",
+	"evidence": [
+		{
+			"doc_name": "goog-20221231",
+			"evidence_page_num": 75,
+			"evidence_text": "Total share repurchases… $50,274 (2021) and $59,296 (2022) (in millions).",
+			"evidence_text_full_page": "75\n\n* * *\n\nTable of Contents\n\nAlphabet Inc.\n\nNote 11. Stockholders' Equity\n...\nShare Repurchases\n...\nTotal share repurchases407$50,274 530$59,296\n"
+		},
+		{
+			"doc_name": "goog-20221231",
+			"evidence_page_num": 36,
+			"evidence_text": "The following table presents our cash flows (in millions)… Net cash provided by operating activities $91,652 (2021) $91,495 (2022).",
+			"evidence_text_full_page": "36\n\n* * *\n\nTable of Contents\n\nAlphabet Inc.\n\nThe following table presents our cash flows (in millions):\nYear Ended December 31,\n2021 2022\nNet cash provided by operating activities$91,652 $91,495\n..."
+		},
+		{
+			"doc_name": "goog-20231231",
+			"evidence_page_num": 42,
+			"evidence_text": "Total share repurchases… $59,296 (2022) and $62,184 (2023) (in millions).",
+			"evidence_text_full_page": "...\nThe following table presents Class A and Class C shares repurchased...\nYear Ended December 31, 2022 Year Ended December 31, 2023\n...\nTotal share repurchases 530$59,296 528$62,184\n...\n42.\n"
+		},
+		{
+			"doc_name": "goog-20231231",
+			"evidence_page_num": 40,
+			"evidence_text": "The following table presents our cash flows (in millions)… Net cash provided by operating activities $91,495 (2022) $101,746 (2023).",
+			"evidence_text_full_page": "40.\n\n* * *\n\nTable of Contents\n\nAlphabet Inc.\n\nThe following table presents our cash flows (in millions):\nYear Ended December 31,\n2022 2023\nNet cash provided by operating activities$91,495 $101,746\n..."
+		}
+	]
+},
+{
+	"question_id": "google_003",
+	"company": "Alphabet Inc.",
+	"company_name": "Alphabet Inc. (GOOGL)",
+	"gic_sector": "COMMUNICATIONSERVICES",
+	"doc_type": "10-k",
+	"filing_years_used": [
+		2021,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Numerical reasoning",
+	"question": "How many percentage points did Google Cloud’s share of Alphabet total revenues increase from FY2021 to FY2023? Show the FY2021 and FY2023 shares and the change (pp).",
+	"answer": "Increase of about 3.31 percentage points (FY2021: ~7.45% → FY2023: ~10.76%).",
+	"justification": "FY2021 Google Cloud revenue was $19,206m and total revenue $257,637m → 19,206/257,637=7.45%. FY2023 Google Cloud revenue was $33,088m and total revenue $307,394m → 33,088/307,394=10.76%. Change = 10.76% − 7.45% = 3.31 percentage points.",
+	"evidence": [
+		{
+			"doc_name": "goog-20221231",
+			"evidence_page_num": 31,
+			"evidence_text": "Revenues by type (in millions)… Google Cloud 19,206; Total revenues 257,637 (FY2021).",
+			"evidence_text_full_page": "31\n\n... The following table presents revenues by type (in millions):\nYear Ended December 31,\n2021 2022\n...\nGoogle Cloud 19,206 26,280\n...\nTotal revenues$257,637 $282,836\n"
+		},
+		{
+			"doc_name": "goog-20231231",
+			"evidence_page_num": 34,
+			"evidence_text": "Revenues by type (in millions)… Google Cloud 33,088; Total revenues 307,394 (FY2023).",
+			"evidence_text_full_page": "34.\n\n... The following table presents revenues by type (in millions):\nYear Ended December 31,\n2022 2023\n...\nGoogle Cloud 26,280 33,088\n...\nTotal revenues$282,836 $307,394\n"
+		}
+	]
+},
+{
+	"question_id": "google_004",
+	"company": "Alphabet Inc.",
+	"company_name": "Alphabet Inc. (GOOGL)",
+	"gic_sector": "COMMUNICATIONSERVICES",
+	"doc_type": "10-k",
+	"filing_years_used": [
+		2023
+	],
+	"question_type": "domain-relevant",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "For FY2023, what percentage of Alphabet’s total severance and office space exit charges was recorded in Research & Development (R&D) expense? Provide the R&D dollar amount and the percentage of total charges.",
+	"answer": "$1,718 million in R&D, which is about 43.68% of total charges.",
+	"justification": "The 2023 table shows total charges of $3,933m and R&D charges of $1,718m (both in millions). Percentage = 1,718 / 3,933 = 43.68%.",
+	"evidence": [
+		{
+			"doc_name": "goog-20231231",
+			"evidence_page_num": 76,
+			"evidence_text": "Severance and office space exit charges are included… Research and development 1,718; Total charges 3,933 (in millions).",
+			"evidence_text_full_page": "... Severance and office space exit charges are included within our consolidated statements of income as follows (in millions):\nYear Ended December 31, 2023\n...\nResearch and development 1,718\n...\nTotal charges$2,088 $1,845 $3,933\n...\n76.\n"
+		}
+	]
+},
+{
+	"question_id": "google_005",
+	"company": "Alphabet Inc.",
+	"company_name": "Alphabet Inc. (GOOGL)",
+	"gic_sector": "COMMUNICATIONSERVICES",
+	"doc_type": "10-k",
+	"filing_years_used": [
+		2021,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Using the Consolidated Statements of Cash Flows, by how much (in $ billions and as a percent) did Alphabet’s purchases of property and equipment (capex proxy) increase from FY2021 to FY2023? Also compute the average annual increase over the two-year span.",
+	"answer": "Increase of $7.611 billion (+30.89%), averaging about $3.806 billion per year.",
+	"justification": "Purchases of property and equipment were $24,640m in FY2021 and $32,251m in FY2023. Increase = 32,251−24,640=7,611m=$7.611b. Percent increase = 7,611/24,640=30.89%. Average annual increase (2 years) = 7.611/2 = $3.806b per year.",
+	"evidence": [
+		{
+			"doc_name": "goog-20211231",
+			"evidence_page_num": 39,
+			"evidence_text": "Consolidated cash flows show purchases of property and equipment (…)(24,640) for FY2021 (in millions).",
+			"evidence_text_full_page": "...\nNet cash provided by operating activities...\n...\nInvesting activities\nPurchases of property and equipment ... (23,548)(22,281)(24,640)\n...\n39\n"
+		},
+		{
+			"doc_name": "goog-20231231",
+			"evidence_page_num": 41,
+			"evidence_text": "Consolidated cash flows show purchases of property and equipment (…)(32,251) for FY2023 (in millions).",
+			"evidence_text_full_page": "...\nNet cash provided by operating activities...\nInvesting activities\nPurchases of property and equipment(24,640)(31,485)(32,251)\n...\n41.\n"
+		}
+	]
+},
+{
+	"question_id": "google_006",
+	"company": "Alphabet Inc.",
+	"company_name": "Alphabet Inc. (GOOGL)",
+	"gic_sector": "COMMUNICATIONSERVICES",
+	"doc_type": "10-k",
+	"filing_years_used": [
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Between FY2022 and FY2023, did the increase in YouTube ads revenue more than offset the decline in Google Network revenue? Quantify the net impact (in $ millions).",
+	"answer": "Yes. Net impact was +$799 million (YouTube +$2,267m; Network −$1,468m).",
+	"justification": "From the revenue table: YouTube ads rose from $29,243m to $31,510m (+$2,267m). Google Network fell from $32,780m to $31,312m (−$1,468m). Net = 2,267 − 1,468 = +$799m, so YouTube’s increase more than offset Network’s decline.",
+	"evidence": [
+		{
+			"doc_name": "goog-20231231",
+			"evidence_page_num": 34,
+			"evidence_text": "Revenues by type (in millions): YouTube ads 29,243 (2022) 31,510 (2023); Google Network 32,780 (2022) 31,312 (2023).",
+			"evidence_text_full_page": "34.\n\n... The following table presents revenues by type (in millions):\nYear Ended December 31,\n2022 2023\n...\nYouTube ads 29,243 31,510\nGoogle Network 32,780 31,312\n...\n"
+		}
+	]
+},
+{
+	"question_id": "google_007",
+	"company": "Alphabet Inc.",
+	"company_name": "Alphabet Inc. (GOOGL)",
+	"gic_sector": "COMMUNICATIONSERVICES",
+	"doc_type": "10-k",
+	"filing_years_used": [
+		2022,
+		2023
+	],
+	"question_type": "domain-relevant",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Alphabet’s effective tax rate fell from FY2022 to FY2023. Using FY2023 income before taxes, estimate how much higher FY2023 income tax provision would have been if the FY2022 effective tax rate had applied (in $ billions).",
+	"answer": "About $1.71 billion higher.",
+	"justification": "FY2023 income before taxes was $85,717m and FY2022 effective tax rate was 15.9% vs 13.9% in 2023. Hypothetical tax at 15.9% = 0.159×85,717 ≈ $13,629m. Actual FY2023 provision is $11,922m. Difference ≈ 13,629−11,922 = $1,707m ≈ $1.71b.",
+	"evidence": [
+		{
+			"doc_name": "goog-20231231",
+			"evidence_page_num": 39,
+			"evidence_text": "Provision for income taxes table (in millions): Income before provision for income taxes $85,717; Provision $11,922; Effective tax rate 15.9% (2022) and 13.9% (2023).",
+			"evidence_text_full_page": "...\nProvision for Income Taxes\nThe following table presents provision for income taxes (in millions, except for effective tax rate):\nYear Ended December 31,\n2022 2023\nIncome before provision for income taxes$71,328 $85,717\nProvision for income taxes$11,356 $11,922\nEffective tax rate 15.9% 13.9%\n...\n39.\n"
+		}
+	]
+},
+{
+	"question_id": "google_008",
+	"company": "Alphabet Inc.",
+	"company_name": "Alphabet Inc. (GOOGL)",
+	"gic_sector": "COMMUNICATIONSERVICES",
+	"doc_type": "10-k",
+	"filing_years_used": [
+		2022,
+		2023
+	],
+	"question_type": "metrics-generated",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "If Alphabet had held FY2023 R&D expense at the same percentage of revenues as FY2022 (14%), what would FY2023 R&D expense have been (in $ millions), and how much higher was actual FY2023 R&D than this level?",
+	"answer": "Target (14% of FY2023 revenue): about $43,035 million; actual FY2023 R&D was $2,392 million higher.",
+	"justification": "FY2023 total revenue = $307,394m. 14% of that is 0.14×307,394 ≈ $43,035m. Actual FY2023 R&D expense was $45,427m. Difference = 45,427 − 43,035 ≈ $2,392m.",
+	"evidence": [
+		{
+			"doc_name": "goog-20231231",
+			"evidence_page_num": 37,
+			"evidence_text": "R&D expenses (in millions): $39,500 (2022) and $45,427 (2023), with R&D as a % of revenues shown as 14% and 15% respectively.",
+			"evidence_text_full_page": "37.\n\n* * *\n\nTable of Contents\n\nAlphabet Inc.\n\nResearch and Development\nThe following table presents R&D expenses (in millions, except percentages):\nYear Ended December 31,\n2022 2023\nResearch and development expenses$39,500 $45,427\nResearch and development expenses as a percentage of revenues 14% 15%\n..."
+		},
+		{
+			"doc_name": "goog-20231231",
+			"evidence_page_num": 34,
+			"evidence_text": "Total revenues (in millions): $307,394 for FY2023.",
+			"evidence_text_full_page": "34.\n\n... Total revenues$282,836 $307,394\n..."
+		}
+	]
+},
+{
+	"question_id": "google_009",
+	"company": "Alphabet Inc.",
+	"company_name": "Alphabet Inc. (GOOGL)",
+	"gic_sector": "COMMUNICATIONSERVICES",
+	"doc_type": "10-k",
+	"filing_years_used": [
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Did Alphabet’s operating cash flow margin (net cash provided by operating activities divided by total revenues) improve from FY2022 to FY2023? Compute both margins and the change in percentage points.",
+	"answer": "Yes. FY2022: ~32.35%; FY2023: ~33.10%; improvement of ~0.75 percentage points.",
+	"justification": "FY2022 OCF $91,495m / revenue $282,836m = 32.35%. FY2023 OCF $101,746m / revenue $307,394m = 33.10%. Change = 33.10% − 32.35% = 0.75 percentage points (improvement).",
+	"evidence": [
+		{
+			"doc_name": "goog-20231231",
+			"evidence_page_num": 40,
+			"evidence_text": "Cash flows (in millions): Net cash provided by operating activities $91,495 (2022) and $101,746 (2023).",
+			"evidence_text_full_page": "40.\n\n... The following table presents our cash flows (in millions):\nYear Ended December 31,\n2022 2023\nNet cash provided by operating activities$91,495 $101,746\n..."
+		},
+		{
+			"doc_name": "goog-20231231",
+			"evidence_page_num": 34,
+			"evidence_text": "Total revenues (in millions): $282,836 (2022) and $307,394 (2023).",
+			"evidence_text_full_page": "34.\n\n... Total revenues$282,836 $307,394\n..."
+		}
+	]
+},
+{
+	"question_id": "google_010",
+	"company": "Alphabet Inc.",
+	"company_name": "Alphabet Inc. (GOOGL)",
+	"gic_sector": "COMMUNICATIONSERVICES",
+	"doc_type": "10-k",
+	"doc_name": "Alphabet_2023_10K",
+	"filing_years_used": [
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "For FY2023, compare operating cash flow to the combined outlay of (i) total share repurchases and (ii) purchases of property and equipment. What is the coverage ratio: Operating Cash Flow ÷ (Repurchases + Purchases of property & equipment)? State whether operating cash flow covered both uses.",
+	"answer": "Coverage ratio ≈ 1.08×; yes, operating cash flow covered both.",
+	"justification": "FY2023 operating cash flow was $101,746m. Total share repurchases were $62,184m and purchases of property and equipment were $32,251m. Combined = 62,184 + 32,251 = $94,435m. Coverage ratio = 101,746 / 94,435 ≈ 1.08×, so OCF covered both with a modest surplus.",
+	"evidence": [
+		{
+			"doc_name": "goog-20231231",
+			"evidence_page_num": 40,
+			"evidence_text": "Cash flows (in millions): Net cash provided by operating activities $101,746; purchases of property and equipment (32,251).",
+			"evidence_text_full_page": "40.\n\n... Net cash provided by operating activities$91,652 $91,495 $101,746\n...\nPurchases of property and equipment(24,640)(31,485)(32,251)\n..."
+		},
+		{
+			"doc_name": "goog-20231231",
+			"evidence_page_num": 42,
+			"evidence_text": "Total share repurchases (in millions): 528 shares for $62,184 (FY2023).",
+			"evidence_text_full_page": "...\nTotal share repurchases 530$59,296 528$62,184\n...\n42.\n"
+		}
+	]
+},
+{
+	"question_id": "amzn_001",
+	"filing_years_10k_used": [
+		2023
+	],
+	"question_type": "novel-generated",
+	"doc_type": "10-K",
+	"company": "Amazon",
+	"company_name": "Amazon.com, Inc.",
+	"gics_sector": "CONSUMERDISCRETIONARY",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Using Amazon’s 10-K net sales by product/service group, what percentage of Amazon’s total net sales dollar growth from 2021 to 2023 is attributable to the combined growth in (i) third-party seller services and (ii) advertising services?",
+	"answer": "About 50.0% (approximately $52.433B out of $104.963B).",
+	"justification": "From the 2023 10-K, consolidated net sales increased from $469.822B (2021) to $574.785B (2023), a $104.963B increase. Third-party seller services increased from $103.366B to $140.053B (+$36.687B) and advertising services increased from $31.160B to $46.906B (+$15.746B). Combined, these two lines increased by $52.433B. The share is $52.433B / $104.963B ≈ 49.95%, i.e., ~50.0%.",
+	"evidence": [
+		{
+			"evidence_text": "Net Sales (in millions), 2021/2022/2023: Third-party seller services $103,366 / $117,716 / $140,053; Advertising services $31,160 / $37,739 / $46,906; Consolidated $469,822 / $513,983 / $574,785.",
+			"evidence_page_num": 69,
+			"evidence_text_full_page": "Net sales by groups of similar products and services ... Third-party seller services ... Advertising services ... Consolidated."
+		}
+	]
+},
+{
+	"question_id": "amzn_002",
+	"filing_years_10k_used": [
+		2023
+	],
+	"question_type": "domain-relevant",
+	"doc_type": "10-K",
+	"company": "Amazon",
+	"company_name": "Amazon.com, Inc.",
+	"gics_sector": "CONSUMERDISCRETIONARY",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Amazon’s consolidated operating income rose sharply from 2022 to 2023. Decompose the 2022→2023 change in consolidated operating income into (i) North America, (ii) International, and (iii) AWS segment operating profit changes. Which segment contributed the majority of the improvement, and what percent of the total improvement did it represent?",
+	"answer": "North America contributed the majority: about 72.0% of the total improvement (North America +$17.724B out of consolidated +$24.604B).",
+	"justification": "From the 2023 10-K segment note, consolidated operating income increased from $12.248B (2022) to $36.852B (2023), a +$24.604B change. Over the same period, North America operating income moved from a $(2.847)B loss to $14.877B profit (+$17.724B). International operating loss improved from $(7.746)B to $(2.656)B (+$5.090B). AWS operating income increased from $22.841B to $24.631B (+$1.790B). These sum to $24.604B, matching the consolidated change. North America’s share is $17.724B / $24.604B ≈ 72.0%, the majority contributor.",
+	"evidence": [
+		{
+			"doc_name": "AMAZON_2023_10K",
+			"evidence_text": "Segment operating income (loss) (in millions), 2022/2023: North America $(2,847) / $14,877; International operating loss $(7,746) / $(2,656); AWS operating income $22,841 / $24,631; Consolidated operating income $12,248 / $36,852.",
+			"evidence_page_num": 68,
+			"evidence_text_full_page": "Note 10 — Segment Information ... reconciliation to consolidated ..."
+		}
+	]
+},
+{
+	"question_id": "amzn_003",
+	"filing_years_10k_used": [
+		2023
+	],
+	"question_type": "novel-generated",
+	"doc_type": "10-K",
+	"company": "Amazon",
+	"company_name": "Amazon.com, Inc.",
+	"gics_sector": "CONSUMERDISCRETIONARY",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Compute AWS operating margin for 2021 and 2023 (segment operating income divided by segment net sales). By how many percentage points did AWS margin change over that span, and how does that compare with the change in consolidated operating margin over the same years?",
+	"answer": "AWS operating margin fell by about 2.65 percentage points (from ~29.79% in 2021 to ~27.14% in 2023). Consolidated operating margin increased by about 1.12 percentage points (from ~5.30% to ~6.41%).",
+	"justification": "From the segment note: AWS 2021 operating income $18.532B on net sales $62.202B → 18.532/62.202 ≈ 29.79%. AWS 2023 operating income $24.631B on net sales $90.757B → 24.631/90.757 ≈ 27.14%. Change ≈ −2.65 pp. Consolidated operating margin: 2021 $24.879B / $469.822B ≈ 5.30% vs 2023 $36.852B / $574.785B ≈ 6.41%, change ≈ +1.12 pp.",
+	"evidence": [
+		{
+			"doc_name": "AMAZON_2023_10K",
+			"evidence_text": "AWS (in millions) 2021: net sales $62,202; operating income $18,532. 2023: net sales $90,757; operating income $24,631. Consolidated (in millions) 2021: net sales $469,822; operating income $24,879. 2023: net sales $574,785; operating income $36,852.",
+			"evidence_page_num": 68,
+			"evidence_text_full_page": "Note 10 — Segment Information ... AWS ... Consolidated ..."
+		}
+	]
+},
+{
+	"question_id": "amzn_004",
+	"filing_years_10k_used": [
+		2023
+	],
+	"question_type": "metrics-generated",
+	"doc_type": "10-K",
+	"company": "Amazon",
+	"company_name": "Amazon.com, Inc.",
+	"gics_sector": "CONSUMERDISCRETIONARY",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Using the net sales by product/service group table, calculate (i) the CAGR of advertising services net sales from 2021 to 2023 and (ii) Amazon’s consolidated net sales CAGR over the same period. How many percentage points higher was advertising CAGR than consolidated CAGR?",
+	"answer": "Advertising services CAGR was ~22.7% vs consolidated net sales CAGR ~10.6%, so advertising grew about 12.1 percentage points faster per year.",
+	"justification": "Advertising services rose from $31.160B (2021) to $46.906B (2023). CAGR = (46.906/31.160)^(1/2) − 1 ≈ 22.7%. Consolidated net sales rose from $469.822B to $574.785B. CAGR = (574.785/469.822)^(1/2) − 1 ≈ 10.6%. Difference ≈ 22.7% − 10.6% = 12.1 pp.",
+	"evidence": [
+		{
+			"doc_name": "AMAZON_2023_10K",
+			"evidence_text": "Net Sales (in millions), 2021/2023: Advertising services $31,160 / $46,906; Consolidated $469,822 / $574,785.",
+			"evidence_page_num": 69,
+			"evidence_text_full_page": "Net sales by groups of similar products and services ... Advertising services ... Consolidated."
+		}
+	]
+},
+{
+	"question_id": "amzn_005",
+	"filing_years_10k_used": [
+		2021,
+		2023
+	],
+	"question_type": "domain-relevant",
+	"doc_type": "10-K",
+	"company": "Amazon",
+	"company_name": "Amazon.com, Inc.",
+	"gics_sector": "CONSUMERDISCRETIONARY",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Amazon’s free cash flow (FCF) moved from negative in 2021 to strongly positive in 2023. Using Amazon’s own FCF reconciliation, quantify how much of the 2021→2023 FCF improvement is explained by (a) higher operating cash flow and (b) lower purchases of property and equipment (capex), assuming these are the only moving parts in the reconciliation.",
+	"answer": "FCF improved by $45.882B from 2021 to 2023. Of this, $38.619B (~84.2%) is explained by higher operating cash flow and $7.263B (~15.8%) by lower capex.",
+	"justification": "From the filings: 2021 operating cash flow was $46.327B and 2021 capex (purchases of PP&E, net of proceeds/incentives) was $55.396B, giving FCF of −$9.069B. In 2023, operating cash flow was $84.946B and capex was $48.133B, giving FCF of +$36.813B. Total FCF improvement: 36.813 − (−9.069) = $45.882B. Operating cash flow increased by 84.946 − 46.327 = $38.619B. Capex decreased by 55.396 − 48.133 = $7.263B. These two components sum to $45.882B, matching the reconciliation identity FCF = OCF − capex.",
+	"evidence": [
+		{
+			"doc_name": "AMAZON_2021_10K",
+			"evidence_text": "FCF reconciliation (in millions), 2020/2021: Net cash provided by operating activities $66,064 / $46,327; Purchases of property and equipment, net of proceeds from sales and incentives $(35,044) / $(55,396); Free cash flow $31,020 / $(9,069).",
+			"evidence_page_num": 28,
+			"evidence_text_full_page": "Free Cash Flow ... reconciliation to Net cash provided by (used in) operating activities ..."
+		},
+		{
+			"doc_name": "AMAZON_2023_10K",
+			"evidence_text": "FCF reconciliation (in millions), 2022/2023: Net cash provided by (used in) operating activities $46,752 / $84,946; Purchases of property and equipment, net of proceeds from sales and incentives $(58,321) / $(48,133); Free cash flow $(11,569) / $36,813.",
+			"evidence_page_num": 28,
+			"evidence_text_full_page": "Free Cash Flow ... reconciliation to Net cash provided by (used in) operating activities ..."
+		}
+	]
+},
+{
+	"question_id": "amzn_006",
+	"filing_years_10k_used": [
+		2023
+	],
+	"question_type": "novel-generated",
+	"doc_type": "10-K",
+	"company": "Amazon",
+	"company_name": "Amazon.com, Inc.",
+	"gics_sector": "CONSUMERDISCRETIONARY",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Using the lease liabilities table, quantify the change in the present value of total lease liabilities from December 31, 2022 to December 31, 2023. Decompose the change into operating lease liabilities vs finance lease liabilities (present value basis).",
+	"answer": "Total lease liabilities (present value) increased by $2.925B (from $84.823B to $87.748B). Operating lease liabilities increased by $6.599B (from $69.040B to $75.639B), while finance lease liabilities decreased by $3.674B (from $15.783B to $12.109B).",
+	"justification": "The 2023 10-K reports present value of lease liabilities at Dec. 31, 2022 as $69.040B operating + $15.783B finance = $84.823B total, and at Dec. 31, 2023 as $75.639B operating + $12.109B finance = $87.748B total. The total increase is 87.748 − 84.823 = $2.925B. The operating component increased 75.639 − 69.040 = $6.599B, while the finance component declined 12.109 − 15.783 = −$3.674B.",
+	"evidence": [
+		{
+			"doc_name": "AMAZON_2023_10K",
+			"evidence_text": "Lease liabilities (in millions), present value: Dec 31, 2022 operating $69,040 and finance $15,783 (total $84,823); Dec 31, 2023 operating $75,639 and finance $12,109 (total $87,748).",
+			"evidence_page_num": 55,
+			"evidence_text_full_page": "Our lease liabilities were as follows (in millions) ... Present value of lease liabilities ..."
+		}
+	]
+},
+{
+	"question_id": "amzn_007",
+	"filing_years_10k_used": [
+		2023
+	],
+	"question_type": "domain-relevant",
+	"doc_type": "10-K",
+	"company": "Amazon",
+	"company_name": "Amazon.com, Inc.",
+	"gics_sector": "CONSUMERDISCRETIONARY",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Using segment net sales (income statement measure) and segment assets (balance sheet measure), compute AWS segment asset turnover (net sales / segment assets) for 2021 and 2023 and compare it to North America’s asset turnover over the same years. Which segment’s asset turnover deteriorated, and by how much?",
+	"answer": "AWS asset turnover deteriorated by about 0.14x (from ~0.97x in 2021 to ~0.84x in 2023), while North America improved by about 0.06x (from ~1.74x to ~1.80x).",
+	"justification": "From the segment note: AWS net sales were $62.202B (2021) and $90.757B (2023); AWS segment assets were $63.835B (Dec. 31, 2021) and $108.533B (Dec. 31, 2023). AWS turnover ≈ 62.202/63.835 = 0.97x in 2021 and 90.757/108.533 = 0.84x in 2023, a decline of ~0.14x. North America net sales were $279.833B (2021) and $352.828B (2023); North America assets were $161.255B and $196.029B, giving turnover ≈ 1.74x and 1.80x, an increase of ~0.06x. Thus, AWS is the segment with deteriorating turnover.",
+	"evidence": [
+		{
+			"doc_name": "AMAZON_2023_10K",
+			"evidence_text": "Segment net sales (in millions), 2021/2023: North America $279,833 / $352,828; AWS $62,202 / $90,757.",
+			"evidence_page_num": 68,
+			"evidence_text_full_page": "Note 10 — Segment Information ... Net sales ..."
+		},
+		{
+			"doc_name": "AMAZON_2023_10K",
+			"evidence_text": "Segment assets (in millions), Dec 31, 2021/2023: North America $161,255 / $196,029; AWS $63,835 / $108,533.",
+			"evidence_page_num": 70,
+			"evidence_text_full_page": "Total segment assets reconciled to consolidated amounts ..."
+		}
+	]
+},
+{
+	"question_id": "amzn_008",
+	"filing_years_10k_used": [
+		2023
+	],
+	"question_type": "novel-generated",
+	"doc_type": "10-K",
+	"company": "Amazon",
+	"company_name": "Amazon.com, Inc.",
+	"gics_sector": "CONSUMERDISCRETIONARY",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Using the property and equipment (PP&E), net by segment table and segment net sales table, quantify how AWS’s share of consolidated PP&E, net changed from 2021 to 2023. Compare that to AWS’s share of consolidated net sales over the same years and state whether capital concentration in AWS increased faster than revenue concentration.",
+	"answer": "AWS’s share of consolidated PP&E, net rose from ~27.0% (2021) to ~35.6% (2023), an increase of ~8.6 percentage points. AWS’s share of consolidated net sales rose from ~13.2% to ~15.8%, an increase of ~2.5 percentage points. Yes—capital concentration in AWS increased faster than revenue concentration.",
+	"justification": "From the PP&E, net by segment table: AWS PP&E, net was $43.245B (2021) and $72.701B (2023) versus consolidated $160.281B (2021) and $204.177B (2023). Shares: 43.245/160.281 ≈ 27.0% and 72.701/204.177 ≈ 35.6%. From segment net sales: AWS net sales were $62.202B (2021) and $90.757B (2023) versus consolidated $469.822B and $574.785B, giving shares 62.202/469.822 ≈ 13.2% and 90.757/574.785 ≈ 15.8%. The PP&E share increase (~8.6 pp) materially exceeds the sales share increase (~2.5 pp).",
+	"evidence": [
+		{
+			"doc_name": "AMAZON_2023_10K",
+			"evidence_text": "PP&E, net by segment (in millions), Dec 31, 2021/2023: AWS $43,245 / $72,701; Consolidated $160,281 / $204,177.",
+			"evidence_page_num": 70,
+			"evidence_text_full_page": "Property and equipment, net by segment is as follows (in millions) ..."
+		},
+		{
+			"doc_name": "AMAZON_2023_10K",
+			"evidence_text": "Segment net sales (in millions), 2021/2023: AWS $62,202 / $90,757; Consolidated $469,822 / $574,785.",
+			"evidence_page_num": 68,
+			"evidence_text_full_page": "Note 10 — Segment Information ... Net sales ..."
+		}
+	]
+},
+{
+	"question_id": "amzn_009",
+	"filing_years_10k_used": [
+		2023
+	],
+	"question_type": "metrics-generated",
+	"doc_type": "10-K",
+	"company": "Amazon",
+	"company_name": "Amazon.com, Inc.",
+	"gics_sector": "CONSUMERDISCRETIONARY",
+	"question_reasoning": "Information extraction",
+	"question": "From Amazon’s net sales by product/service group table (2021–2023), which line item had the largest absolute dollar increase from 2021 to 2023, and what was the amount of that increase?",
+	"answer": "Third-party seller services increased the most, rising by $36.687B from 2021 to 2023.",
+	"justification": "The net sales table shows third-party seller services of $103.366B in 2021 and $140.053B in 2023. The increase is $140.053B − $103.366B = $36.687B, which exceeds the growth in other listed lines (e.g., AWS +$28.555B; advertising +$15.746B).",
+	"evidence": [
+		{
+			"doc_name": "AMAZON_2023_10K",
+			"evidence_text": "Net Sales (in millions), 2021/2023: Third-party seller services $103,366 / $140,053; AWS $62,202 / $90,757; Advertising services $31,160 / $46,906; Subscription services $31,768 / $40,209; Online stores $222,075 / $231,872.",
+			"evidence_page_num": 69,
+			"evidence_text_full_page": "Net sales by groups of similar products and services ... (in millions) ..."
+		}
+	]
+},
+{
+	"question_id": "amzn_010",
+	"filing_years_10k_used": [
+		2023
+	],
+	"question_type": "domain-relevant",
+	"doc_type": "10-K",
+	"company": "Amazon",
+	"company_name": "Amazon.com, Inc.",
+	"gics_sector": "CONSUMERDISCRETIONARY",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Using Amazon’s contractual commitments table, compute the share of total commitments due within one year attributable to (i) operating lease liabilities and (ii) long-term debt principal and interest. Which of the two is the larger near-term obligation and by how much (in dollars and percentage points of total due within one year)?",
+	"answer": "Operating lease liabilities are larger. Within one year, operating leases are $11.229B (~28.54% of $39.345B total) vs long-term debt principal and interest $10.616B (~26.98%). Operating leases exceed debt by $0.613B and ~1.56 percentage points of the total due within one year.",
+	"justification": "The 2023 10-K commitments table shows total commitments due within one year of $39.345B, including operating lease liabilities of $11.229B and long-term debt principal and interest of $10.616B. Shares: 11.229/39.345 ≈ 28.54% and 10.616/39.345 ≈ 26.98%. Difference: $11.229B − $10.616B = $0.613B, which is (28.54% − 26.98%) ≈ 1.56 percentage points of the one-year total.",
+	"evidence": [
+		{
+			"doc_name": "AMAZON_2023_10K",
+			"evidence_text": "Commitments due within one year (in millions): Long-term debt principal and interest $10,616; Operating lease liabilities $11,229; Total commitments $39,345.",
+			"evidence_page_num": 60,
+			"evidence_text_full_page": "Contractual commitments table ... Total commitments ..."
+		}
+	]
+},
+{
+	"question_id": "jpm_0001",
+	"company": "JPMorgan Chase",
+	"company_name": "JPMorgan Chase & Co.",
+	"doc_type": "10-K",
+	"gics_sector": "FINANCIALS",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Using JPMorgan Chase’s 2023 Form 10-K segment table (managed basis) and consolidated total, identify which segment contributed the largest share of the year-over-year increase in total net revenue from 2022 to 2023. Quantify (a) each segment’s dollar change in total net revenue and (b) the leading segment’s percentage contribution to the Firm-wide increase (using the segment table totals, including Corporate and Reconciling Items).",
+	"answer": "Consumer & Community Banking (CCB) contributed the largest share. From 2022 to 2023, total net revenue increased by: CCB +$15,334MM; Corporate +$7,958MM; Commercial Banking +$4,013MM; Asset & Wealth Management +$2,079MM; Corporate & Investment Bank +$705MM; Reconciling Items −$680MM. The Firm-wide increase was $29,409MM, so CCB’s contribution was about 52.1% (15,334 / 29,409).",
+	"justification": "The segment table reports total net revenue by segment for 2023 and 2022. Subtracting 2022 from 2023 yields each segment’s contribution to the total change. Summing all segment deltas including Corporate and Reconciling Items equals the consolidated total net revenue change (158,104 − 128,695 = 29,409). CCB’s +15,334 is the largest single segment delta, representing ~52% of the overall increase.",
+	"evidence": [
+		{
+			"doc_name": "JPM_2023_10K",
+			"evidence_page_num": 304,
+			"evidence_text": "Note 32 segment table shows total net revenue (managed basis) by segment: CCB $70,148 (2023) vs $54,814 (2022); CIB $48,807 vs $48,102; CB $15,546 vs $11,533; AWM $19,827 vs $17,748; Corporate $8,038 vs $80; Reconciling Items $(4,262) vs $(3,582).",
+			"evidence_text_full_page": "Segment results (managed basis) table listing noninterest revenue, net interest income, and total net revenue for each reportable segment for 2023/2022/2021."
+		},
+		{
+			"doc_name": "JPM_2023_10K",
+			"evidence_page_num": 305,
+			"evidence_text": "Same table shows consolidated total net revenue: $158,104 (2023) vs $128,695 (2022) vs $121,649 (2021).",
+			"evidence_text_full_page": "Continuation of segment table including Corporate, Reconciling Items, and consolidated totals."
+		}
+	]
+},
+{
+	"question_id": "jpm_0002",
+	"company": "JPMorgan Chase",
+	"company_name": "JPMorgan Chase & Co.",
+	"doc_type": "10-K",
+	"gics_sector": "FINANCIALS",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Compute the Firm’s efficiency ratio for 2023, 2022, and 2021 using the consolidated totals (defined here as total noninterest expense divided by total net revenue). Then determine whether the 2023 efficiency improvement versus 2022 is large enough to offset (in basis points of efficiency ratio) the deterioration that occurred from 2021 to 2022.",
+	"answer": "Efficiency ratio (noninterest expense / total net revenue) was about 55.1% in 2023 (87,172 / 158,104), 59.2% in 2022 (76,140 / 128,695), and 58.6% in 2021 (71,343 / 121,649). The ratio improved by ~4.0 percentage points (≈403 bps) from 2022 to 2023, which more than offsets the ~0.5 percentage point (≈52 bps) deterioration from 2021 to 2022.",
+	"justification": "The consolidated totals provide total net revenue and total noninterest expense for all three years. Dividing expense by revenue yields the efficiency ratio each year. Comparing year-to-year changes in the ratio shows a modest worsening from 2021 to 2022 and a much larger improvement from 2022 to 2023, so the 2023 improvement more than offsets the prior-year deterioration.",
+	"evidence": [
+		{
+			"doc_name": "JPM_2023_10K",
+			"evidence_page_num": 166,
+			"evidence_text": "Consolidated statements of income show 2023 total net revenue $158,104MM and total noninterest expense $87,172MM.",
+			"evidence_text_full_page": "Income statement totals for 2023/2022/2021 including total net revenue and total noninterest expense."
+		},
+		{
+			"doc_name": "JPM_2022_10K",
+			"evidence_page_num": 43,
+			"evidence_text": "Three-year summary shows 2022 total net revenue $128,695MM, 2021 total net revenue $121,649MM, 2022 total noninterest expense $76,140MM, and 2021 total noninterest expense $71,343MM.",
+			"evidence_text_full_page": "Three-year summary of consolidated financial highlights (unaudited) listing total net revenue and total noninterest expense for 2022/2021/2020."
+		}
+	]
+},
+{
+	"question_id": "jpm_0003",
+	"company": "JPMorgan Chase",
+	"company_name": "JPMorgan Chase & Co.",
+	"doc_type": "10-K",
+	"gics_sector": "FINANCIALS",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Using (i) the consolidated statements of income and (ii) the interest income/expense table, quantify how much of the 2022→2023 increase in total net revenue was explained by the increase in net interest income. Then compute net interest income as a percentage of total net revenue for 2021, 2022, and 2023, and state whether the revenue mix shifted meaningfully toward net interest income over the three-year period.",
+	"answer": "Net interest income rose from $66,710MM (2022) to $89,267MM (2023), an increase of $22,557MM. Total net revenue rose from $128,695MM to $158,104MM, an increase of $29,409MM. So about $22,557MM / $29,409MM ≈ 76.7% of the revenue increase was explained by higher net interest income. Net interest income as a share of total net revenue was ~56.8% in 2021 (52,311 / 121,649), ~51.8% in 2022 (66,710 / 128,695), and ~56.5% in 2023 (89,267 / 158,104). The mix shifted down in 2022 but shifted back up in 2023; across 2021→2023 it ended roughly where it started (mid-56%), so the three-year shift is not monotonic but 2023 marks a meaningful re-tilt toward net interest income versus 2022.",
+	"justification": "The interest income/expense table reports net interest income for 2021–2023, while the income statement/segment totals provide total net revenue for the same years. Comparing the changes from 2022 to 2023 isolates the portion of revenue growth attributable to net interest income. Computing NII divided by total net revenue for each year evaluates mix shift over time.",
+	"evidence": [
+		{
+			"doc_name": "JPM_2023_10K",
+			"evidence_page_num": 221,
+			"evidence_text": "Interest income/expense table reports net interest income: $89,267MM (2023), $66,710MM (2022), $52,311MM (2021).",
+			"evidence_text_full_page": "Note 7 table listing components of interest income and interest expense and net interest income for 2023/2022/2021."
+		},
+		{
+			"doc_name": "JPM_2023_10K",
+			"evidence_page_num": 166,
+			"evidence_text": "Consolidated totals show total net revenue: $158,104MM (2023), $128,695MM (2022), $121,649MM (2021).",
+			"evidence_text_full_page": "Income statement (or consolidated totals) providing total net revenue for 2023/2022/2021."
+		}
+	]
+},
+{
+	"question_id": "jpm_0004",
+	"company": "JPMorgan Chase",
+	"company_name": "JPMorgan Chase & Co.",
+	"doc_type": "10-K",
+	"gics_sector": "FINANCIALS",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Using the consolidated statements of comprehensive income, compute total other comprehensive income/(loss) (OCI) for 2023 and 2022, and decompose the swing by identifying which single OCI component contributed the largest absolute change between 2022 and 2023. Quantify that component’s contribution to the OCI swing.",
+	"answer": "OCI was $6,898MM in 2023 and $(17,257)MM in 2022, a positive swing of $24,155MM. The largest single driver of the swing was the change in unrealized gains/(losses) on investment securities (AFS), which moved from $(11,764)MM in 2022 to $5,381MM in 2023, a positive change of $17,145MM (the largest absolute component swing).",
+	"justification": "OCI totals are reported directly as other comprehensive income/(loss), net. The statement also itemizes OCI components. Subtracting 2022 component amounts from 2023 component amounts identifies the contributors to the $24,155MM total swing; the investment securities unrealized gains/losses line has the largest magnitude change.",
+	"evidence": [
+		{
+			"doc_name": "JPM_2023_10K",
+			"evidence_page_num": 167,
+			"evidence_text": "Statement of comprehensive income reports OCI: $6,898MM (2023) and $(17,257)MM (2022), and shows unrealized gains/(losses) on investment securities: $5,381MM (2023) vs $(11,764)MM (2022).",
+			"evidence_text_full_page": "Comprehensive income statement listing OCI total and OCI component lines for 2023/2022/2021."
+		}
+	]
+},
+{
+	"question_id": "jpm_0005",
+	"company": "JPMorgan Chase",
+	"company_name": "JPMorgan Chase & Co.",
+	"doc_type": "10-K",
+	"gics_sector": "FINANCIALS",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "From the consolidated balance sheets, compute the loans-to-deposits ratio (gross loans divided by deposits) for 2023 and 2022. Then extend the trend back to 2021 using the 2022 Form 10-K ‘Three-Year Summary of Consolidated Financial Highlights’ (which reports 2021 loans and deposits). Finally, explain whether the multi-year trend is driven more by loan growth, deposit changes, or both (quantify the cumulative 2021→2023 dollar change in loans and deposits).",
+	"answer": "Loans-to-deposits (gross loans / deposits) was ~55.1% in 2023 (1,323,706 / 2,400,688), ~48.5% in 2022 (1,135,647 / 2,340,179), and ~43.8% in 2021 (1,077,714 / 2,462,303). From 2021 to 2023, loans increased by about $245,992MM (1,323,706 − 1,077,714) while deposits decreased by about $61,615MM (2,400,688 − 2,462,303). The rising ratio is therefore driven primarily by loan growth, with deposit contraction providing a secondary lift.",
+	"justification": "The 2023 balance sheet provides 2023 and 2022 gross loans and deposits. The 2022 Form 10-K three-year summary provides 2021 gross loans and deposits. Computing loans divided by deposits for each year gives a consistent ratio trend. Comparing cumulative dollar changes shows loan growth dominates the ratio increase.",
+	"evidence": [
+		{
+			"doc_name": "JPM_2023_10K",
+			"evidence_page_num": 168,
+			"evidence_text": "Consolidated balance sheets show gross loans $1,323,706MM (2023) and $1,135,647MM (2022), and deposits $2,400,688MM (2023) and $2,340,179MM (2022).",
+			"evidence_text_full_page": "Balance sheet lines for loans and deposits for 2023 and 2022."
+		},
+		{
+			"doc_name": "JPM_2022_10K",
+			"evidence_page_num": 43,
+			"evidence_text": "Three-year summary reports loans $1,077,714MM (2021) and deposits $2,462,303MM (2021).",
+			"evidence_text_full_page": "Three-year summary table listing selected balance sheet data including loans and deposits for 2022/2021/2020."
+		}
+	]
+},
+{
+	"question_id": "jpm_0006",
+	"company": "JPMorgan Chase",
+	"company_name": "JPMorgan Chase & Co.",
+	"doc_type": "10-K",
+	"gics_sector": "FINANCIALS",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Using the allowance for loan losses table (by class of retained loans), compute the change in total allowance for loan losses from 2022 to 2023 and identify the two loan classes that explain the majority of the increase. Quantify each of those classes’ allowance change and the combined share of the total increase those two classes represent.",
+	"answer": "Total allowance for loan losses increased by $2,694MM from 2022 to 2023 ($22,420MM − $19,726MM). The two classes explaining most of the increase are Credit card (up $1,250MM: $12,450MM vs $11,200MM) and Secured by real estate (up $1,215MM: $2,997MM vs $1,782MM). Combined, these two account for $2,465MM of the $2,694MM increase, or about 91.5% of the total increase.",
+	"justification": "The allowance table reports allowance balances by loan class for 2023 and 2022 as well as the total. Subtracting 2022 from 2023 yields both the total change and the class-level changes. Summing the two largest positive class changes and dividing by the total increase quantifies the concentration of drivers.",
+	"evidence": [
+		{
+			"doc_name": "JPM_2023_10K",
+			"evidence_page_num": 133,
+			"evidence_text": "Allowance for loan losses table shows total allowance $22,420MM (2023) vs $19,726MM (2022); Credit card $12,450MM vs $11,200MM; Secured by real estate $2,997MM vs $1,782MM.",
+			"evidence_text_full_page": "Allowance for loan losses by class of retained loans table for 2023 and 2022."
+		}
+	]
+},
+{
+	"question_id": "jpm_0007",
+	"company": "JPMorgan Chase",
+	"company_name": "JPMorgan Chase & Co.",
+	"doc_type": "10-K",
+	"gics_sector": "FINANCIALS",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Using the consolidated statements of cash flows, explain the collapse in net cash provided by operating activities from 2022 to 2023 by quantifying the three largest negative year-over-year changes among the following lines: (i) accounts payable and other liabilities, (ii) net change in trading assets, and (iii) proceeds from sales/securitizations/paydowns of loans held-for-sale. Provide each line’s YoY change (2023 minus 2022) and identify which one contributed the most to the operating cash flow decline.",
+	"answer": "Net cash provided by operating activities fell by $94,145MM ($12,974MM in 2023 vs $107,119MM in 2022). The YoY changes for the specified lines were: (i) Accounts payable and other liabilities worsened by $84,002MM (−$25,388MM vs +$58,614MM); (ii) Net change in trading assets worsened by $42,642MM (−$74,091MM vs −$31,449MM); (iii) Proceeds from sales/securitizations/paydowns of loans held-for-sale decreased by $51,279MM ($116,430MM vs $167,709MM). The largest single negative contributor among these is accounts payable and other liabilities (−$84,002MM).",
+	"justification": "The cash flow statement reports operating cash flow and the specified working-capital/market activity lines for both 2023 and 2022. Computing 2023 minus 2022 for each line isolates each line’s contribution to the YoY operating cash flow change. Comparing magnitudes shows accounts payable and other liabilities had the largest negative swing.",
+	"evidence": [
+		{
+			"doc_name": "JPM_2023_10K",
+			"evidence_page_num": 170,
+			"evidence_text": "Consolidated statements of cash flows show net cash provided by operating activities $12,974MM (2023) vs $107,119MM (2022), and line items: accounts payable and other liabilities (−$25,388MM vs +$58,614MM), trading assets (−$74,091MM vs −$31,449MM), proceeds from sales/securitizations/paydowns of loans held-for-sale ($116,430MM vs $167,709MM).",
+			"evidence_text_full_page": "Cash flow statement (operating section) for 2023/2022/2021 including changes in assets and liabilities and net cash from operating activities."
+		}
+	]
+},
+{
+	"question_id": "jpm_0008",
+	"company": "JPMorgan Chase",
+	"company_name": "JPMorgan Chase & Co.",
+	"doc_type": "10-K",
+	"gics_sector": "FINANCIALS",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Compute the common dividend payout ratio for 2021, 2022, and 2023 using (a) net income applicable to common stockholders and (b) dividends declared on common stock from the consolidated statements of changes in stockholders’ equity. Then identify the peak payout year across 2021–2023 and quantify how many percentage points higher it was than the lowest payout year.",
+	"answer": "Common dividend payout ratios were ~24.6% in 2021 ($11,456MM / $46,503MM), ~33.1% in 2022 ($11,893MM / $35,892MM), and ~25.2% in 2023 ($12,055MM / $47,760MM). The peak payout year was 2022 at ~33.1%. The lowest was 2021 at ~24.6%, so the peak exceeded the low by about 8.5 percentage points.",
+	"justification": "The equity statement provides common dividends declared each year, and the income statement provides net income applicable to common stockholders. Dividing dividends by net income applicable to common yields the payout ratio. Comparing ratios across the three years identifies 2022 as the highest and 2021 as the lowest; the difference is computed as a simple percentage-point spread.",
+	"evidence": [
+		{
+			"doc_name": "JPM_2023_10K",
+			"evidence_page_num": 169,
+			"evidence_text": "Statement of changes in stockholders’ equity shows dividends declared on common stock: $12,055MM (2023), $11,893MM (2022), $11,456MM (2021).",
+			"evidence_text_full_page": "Equity rollforward including dividends declared by class and net income for 2023/2022/2021."
+		},
+		{
+			"doc_name": "JPM_2023_10K",
+			"evidence_page_num": 166,
+			"evidence_text": "Consolidated statements of income show net income applicable to common stockholders: $47,760MM (2023), $35,892MM (2022), $46,503MM (2021).",
+			"evidence_text_full_page": "Income statement showing net income and allocation to preferred and common for 2023/2022/2021."
+		}
+	]
+},
+{
+	"financebench_id": "financebench_generated_jpm_0009",
+	"question_id": "jpm_0009",
+	"company": "JPMorgan Chase",
+	"company_name": "JPMorgan Chase & Co.",
+	"doc_type": "10-K",
+	"gics_sector": "FINANCIALS",
+	"filing_years_10k_used": [
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Using the CET1 capital components/rollforward table, quantify how much of the 2023 increase in CET1 capital (ending minus beginning) is explained by net income applicable to common stockholders net of (i) common dividends and (ii) net purchases of treasury stock. Express the result as a percentage of the total CET1 capital increase in 2023.",
+	"answer": "CET1 capital increased by $31,651MM in 2023 (from $218,934MM to $250,585MM). Net income applicable to common was $48,051MM, common dividends were $12,055MM, and net purchases of treasury stock were $8,881MM. Net income after those two capital returns equals $27,115MM (48,051 − 12,055 − 8,881), which explains about 85.7% of the total CET1 increase ($27,115MM / $31,651MM).",
+	"justification": "The CET1 table reports beginning and ending CET1 capital and the key components affecting CET1 during the year, including net income, dividends, and net treasury stock purchases. Computing the net retained contribution (income less dividends and buybacks) and comparing it to the total CET1 change quantifies the proportion of the increase attributable to retained earnings after capital distributions.",
+	"evidence": [
+		{
+			"doc_name": "JPM_2023_10K",
+			"evidence_page_num": 96,
+			"evidence_text": "CET1 capital rollforward shows CET1 capital $218,934MM (beginning of 2023) to $250,585MM (end of 2023); net income applicable to common stockholders $48,051MM; dividends declared on common stock $(12,055)MM; net purchase of treasury stock $(8,881)MM.",
+			"evidence_text_full_page": "Capital Risk Management table listing components of CET1 capital and movements during 2023."
+		}
+	]
+},
+{
+	"question_id": "jpm_0010",
+	"company": "JPMorgan Chase",
+	"company_name": "JPMorgan Chase & Co.",
+	"doc_type": "10-K",
+	"gics_sector": "FINANCIALS",
+	"filing_years_10k_used": [
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Information extraction",
+	"question": "Reconcile the First Republic acquisition bargain purchase gain across the 2023 Form 10-K by identifying: (a) the after-tax estimated gain amount reported in the business combinations note, (b) where it appears in the cash flow statement as a noncash adjustment (include the amount), and (c) where it is presented as a component of “other income” (include the amount).",
+	"answer": "(a) The business combinations note reports an estimated gain on acquisition, after-tax, of $2,775MM. (b) The consolidated statement of cash flows includes “Bargain purchase gain associated with the First Republic acquisition” as a noncash adjustment of $(2,775)MM. (c) The “Other income” components table presents an “Estimated bargain purchase gain associated with the First Republic acquisition” of $2,775MM.",
+	"justification": "Financebench-style grounding requires cross-referencing the note disclosure to the financial statements. The business combinations note provides the acquisition accounting outcome (after-tax gain), the cash flow statement removes the noncash gain from operating cash flow via an adjustment, and the “Other income” table shows the gain as part of the period’s other income components.",
+	"evidence": [
+		{
+			"doc_name": "JPM_2023_10K",
+			"evidence_page_num": 307,
+			"evidence_text": "Note 34 purchase price allocation table shows “Estimated gain on acquisition, after-tax $2,775MM.”",
+			"evidence_text_full_page": "Business combinations note table summarizing assets acquired, liabilities assumed, and estimated gain on acquisition for First Republic."
+		},
+		{
+			"doc_name": "JPM_2023_10K",
+			"evidence_page_num": 170,
+			"evidence_text": "Cash flow statement includes “Bargain purchase gain associated with the First Republic acquisition (2,775)” as an operating cash flow adjustment.",
+			"evidence_text_full_page": "Operating section of cash flow statement showing adjustments to reconcile net income to net cash from operating activities."
+		},
+		{
+			"doc_name": "JPM_2023_10K",
+			"evidence_page_num": 219,
+			"evidence_text": "Other income components table includes “Estimated bargain purchase gain associated with the First Republic acquisition 2,775” for 2023.",
+			"evidence_text_full_page": "Other income component disclosure table listing operating lease income, losses on tax-oriented investments, and the First Republic bargain purchase gain."
+		}
+	]
+},
+{
+	"question_id": "nvda_001",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"doc_type": "10-K",
+	"gics_sector": "INFOTECH",
+	"company_name": "NVIDIA Corporation",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Using NVIDIA’s revenue by specialized markets for fiscal 2021–2023, quantify (a) total revenue growth from fiscal 2021 to fiscal 2023, (b) Data Center revenue growth over the same period, and (c) the percentage of NVIDIA’s total revenue growth attributable to Data Center. Then explain why total revenue was roughly flat from fiscal 2022 to fiscal 2023 even though Data Center revenue grew strongly.",
+	"answer": "(a) Total revenue increased by $10,299 million (from $16,675 million in FY2021 to $26,974 million in FY2023). (b) Data Center revenue increased by $8,309 million (from $6,696 million to $15,005 million). (c) Data Center accounted for about 80.7% of total revenue growth ($8,309 / $10,299). Total revenue was roughly flat from FY2022 to FY2023 (+$60 million) because Data Center growth (+$4,392 million) was largely offset by declines in Gaming (−$3,395 million), Professional Visualization (−$567 million), OEM & Other (−$707 million) plus only a partial offset from Automotive (+$337 million).",
+	"justification": "The segment footnote provides revenue by specialized market for FY2023, FY2022, and FY2021. Subtracting FY2021 from FY2023 gives total and Data Center growth. Comparing FY2022 to FY2023 shows large mix shifts: Data Center increased while several other markets declined, leaving total revenue nearly unchanged despite Data Center strength.",
+	"evidence": [
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 85,
+			"evidence_text": "Revenue by specialized markets (FY2023/FY2022/FY2021): Gaming $9,067 / $12,462 / $7,759; Data Center $15,005 / $10,613 / $6,696; Professional Visualization $1,544 / $2,111 / $1,053; Automotive $903 / $566 / $536; OEM & Other $455 / $1,162 / $631; Total revenue $26,974 / $26,914 / $16,675 (in millions).",
+			"evidence_text_full_page": "Notes to the consolidated financial statements include a table summarizing revenue by specialized markets and total revenue for fiscal years 2023, 2022, and 2021."
+		}
+	]
+},
+{
+	"question_id": "nvda_002",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "metrics-generated",
+	"doc_type": "10-K",
+	"gics_sector": "INFOTECH",
+	"company_name": "NVIDIA Corporation",
+	"question_reasoning": "Numerical reasoning",
+	"question": "NVIDIA reports an acquisition termination cost in fiscal 2023. Using the consolidated statements of income for fiscal 2021–2023, compute NVIDIA’s operating margin (income from operations / revenue) for each year, then compute an 'adjusted' fiscal 2023 operating margin excluding the acquisition termination cost (i.e., adding it back to income from operations). Finally, quantify how much of the FY2022→FY2023 operating-margin decline is mechanically explained by the acquisition termination cost versus other factors.",
+	"answer": "Operating margin was ~27.2% in FY2021 ($4,532 / $16,675), ~37.3% in FY2022 ($10,041 / $26,914), and ~15.7% in FY2023 ($4,224 / $26,974). Adjusted FY2023 operating margin excluding the $1,353 million acquisition termination cost is ~20.7% (($4,224+$1,353)/$26,974). The FY2022→FY2023 margin decline is ~21.6 percentage points (37.3%→15.7%). Excluding the termination cost, the decline would still be ~16.6 points (37.3%→20.7%), so ~5.0 points of the decline is mechanically attributable to the termination cost, and the remaining ~16.6 points reflects underlying changes in gross margin and other operating expenses.",
+	"justification": "Income from operations and revenue are disclosed for FY2023/FY2022/FY2021, along with the acquisition termination cost line item. Operating margins are computed by dividing income from operations by revenue for each year. Adjusted FY2023 margin adds back the termination cost to isolate the one-time effect and compare the residual decline to FY2022.",
+	"evidence": [
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 53,
+			"evidence_text": "Consolidated statements of income (in millions): cost of revenue 11,618 / 9,439 / 6,279; gross profit 15,356 / 17,475 / 10,396; operating expenses include R&D 7,339 / 5,268 / 3,924; SG&A 2,440 / 2,166 / 1,940; acquisition termination cost 1,353 / — / —; total operating expenses 11,132 / 7,434 / 5,864; income from operations 4,224 / 10,041 / 4,532 (FY2023/FY2022/FY2021).",
+			"evidence_text_full_page": "The consolidated statements of income present operating line items and income from operations for fiscal years 2023, 2022, and 2021, including the acquisition termination cost recorded in fiscal 2023."
+		},
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 85,
+			"evidence_text": "Total revenue (in millions): $26,974 (FY2023), $26,914 (FY2022), $16,675 (FY2021).",
+			"evidence_text_full_page": "A notes table reports total revenue for fiscal years 2023, 2022, and 2021."
+		}
+	]
+},
+{
+	"question_id": "nvda_003",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"doc_type": "10-K",
+	"gics_sector": "INFOTECH",
+	"company_name": "NVIDIA Corporation",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Using NVIDIA’s cash flow statement, estimate free cash flow (FCF) for fiscal 2021–2023 as net cash provided by operating activities minus purchases related to property and equipment and intangible assets. Then compare fiscal 2023 shareholder payouts (share repurchases plus dividends paid) to FCF and explain—using the cash flow and liquidity disclosures—how NVIDIA funded the difference.",
+	"answer": "Estimated FCF: FY2021 ≈ $4,694 million ($5,822 − $1,128); FY2022 ≈ $8,132 million ($9,108 − $976); FY2023 ≈ $3,808 million ($5,641 − $1,833). In FY2023, shareholder payouts were ~$10,437 million ($10,039 repurchases + $398 dividends), which is ~2.74× FY2023 FCF and exceeds it by about $6,629 million. NVIDIA funded this primarily by reducing marketable securities (cash & cash equivalents rose, but marketable securities fell sharply), consistent with the liquidity disclosure that cash, cash equivalents, and marketable securities decreased by $7.91 billion from FY2022 to FY2023.",
+	"justification": "The consolidated statements of cash flows disclose net cash provided by operating activities and purchases related to property and equipment and intangible assets for FY2023/FY2022/FY2021, enabling a standard FCF proxy. The same cash flow statement discloses repurchase payments and dividends paid. The balance sheet and liquidity MD&A quantify the decline in cash+marketable securities, supporting the funding explanation.",
+	"evidence": [
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 57,
+			"evidence_text": "Cash flows (in millions): net cash provided by operating activities 5,641 / 9,108 / 5,822; purchases related to property and equipment and intangible assets (1,833) / (976) / (1,128); payments related to repurchases of common stock (10,039) / — / —; dividends paid (398) / (399) / (395) (FY2023/FY2022/FY2021).",
+			"evidence_text_full_page": "The consolidated statements of cash flows show operating cash flow, capex/intangibles purchases, repurchase payments, and dividends for fiscal years 2023, 2022, and 2021."
+		},
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 55,
+			"evidence_text": "Balance sheet liquidity components (in millions): cash and cash equivalents $3,389 (FY2023) vs $1,990 (FY2022); marketable securities $9,907 (FY2023) vs $19,218 (FY2022).",
+			"evidence_text_full_page": "The consolidated balance sheets present cash and cash equivalents and marketable securities as of Jan 29, 2023 and Jan 30, 2022."
+		},
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 43,
+			"evidence_text": "Liquidity disclosure states: 'As of January 29, 2023, we had $13.30 billion in cash, cash equivalents and marketable securities, a decrease of $7.91 billion from the end of fiscal year 2022.'",
+			"evidence_text_full_page": "MD&A liquidity section quantifies the year-over-year change in cash, cash equivalents, and marketable securities."
+		}
+	]
+},
+{
+	"question_id": "nvda_004",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "metrics-generated",
+	"doc_type": "10-K",
+	"gics_sector": "INFOTECH",
+	"company_name": "NVIDIA Corporation",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Using NVIDIA’s cash flow statement, compute the net cash impact from working-capital line items (accounts receivable, inventories, prepaid expenses and other assets, accounts payable, and accrued and other current liabilities) in fiscal 2023 and fiscal 2022. Then determine which year had the larger working-capital drag on operating cash flow and by how much.",
+	"answer": "FY2023 net working-capital impact (in millions): +822 (A/R) − 2,554 (inventory) − 1,517 (prepaids/other) − 551 (A/P) + 1,341 (accrued/current liabilities) = −2,459. FY2022 net impact: −2,215 − 774 − 1,715 + 568 + 581 = −3,555. FY2022 therefore had the larger working-capital drag by about $1,096 million ($3,555 − $2,459).",
+	"justification": "The operating section of the cash flow statement explicitly reports year-over-year changes in key working-capital accounts. Summing these specified line items provides a focused estimate of the working-capital contribution (positive or negative) to operating cash flow for each year.",
+	"evidence": [
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 57,
+			"evidence_text": "Changes in operating assets and liabilities (in millions): accounts receivable 822 / (2,215) / (550); inventories (2,554) / (774) / (524); prepaid expenses and other assets (1,517) / (1,715) / (394); accounts payable (551) / 568 / 312; accrued and other current liabilities 1,341 / 581 / 290 (FY2023/FY2022/FY2021).",
+			"evidence_text_full_page": "The consolidated statements of cash flows list the year-over-year changes in major operating assets and liabilities that reconcile net income to operating cash flow."
+		}
+	]
+},
+{
+	"question_id": "nvda_005",
+	"filing_years_10k_used": [
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"doc_type": "10-K",
+	"gics_sector": "INFOTECH",
+	"company_name": "NVIDIA Corporation",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Using NVIDIA’s deferred revenue rollforward and balance sheet classifications, compute (a) total deferred revenue at the end of fiscal 2022 and fiscal 2023, (b) the year-over-year change, and (c) the implied 'realization rate' in each year defined as revenue recognized during the period divided by (beginning deferred revenue + deferred revenue added during the period + additions due to business combinations). Based on these, did the pace of deferred revenue recognition accelerate or decelerate in fiscal 2023 versus fiscal 2022?",
+	"answer": "(a) Total deferred revenue: FY2022 = $502 million; FY2023 = $572 million. (b) Deferred revenue increased by $70 million year-over-year. (c) Realization rate: FY2022 = 778 / (451 + 821 + 8) ≈ 60.8%; FY2023 = 760 / (502 + 830 + 0) ≈ 57.1%. The realization rate decelerated in FY2023 versus FY2022.",
+	"justification": "The filing provides (i) a rollforward of deferred revenue showing beginning balance, additions, revenue recognized, and ending balance, and (ii) the current vs long-term deferred revenue amounts on the balance sheet. Summing current + long-term gives total deferred revenue each year; the rollforward supports the realization-rate calculation by relating recognized revenue to the available deferred revenue 'pool' created by beginning balance plus additions.",
+	"evidence": [
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 75,
+			"evidence_text": "Deferred revenue rollforward (in millions): FY2023—beginning $502; added $830; revenue recognized (760); ending $572. FY2022—beginning $451; added $821; addition due to business combinations $8; revenue recognized (778); ending $502.",
+			"evidence_text_full_page": "A note presents the changes in deferred revenue for fiscal years 2023 and 2022, including additions and revenue recognized."
+		},
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 75,
+			"evidence_text": "Deferred revenue classification (in millions): current deferred revenue $354 (FY2023) vs $300 (FY2022); long-term deferred revenue $218 (FY2023) vs $202 (FY2022).",
+			"evidence_text_full_page": "The notes disclose deferred revenue amounts included in accrued/current liabilities and other long-term liabilities, enabling total deferred revenue to be computed."
+		}
+	]
+},
+{
+	"question_id": "nvda_006",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "metrics-generated",
+	"doc_type": "10-K",
+	"gics_sector": "INFOTECH",
+	"company_name": "NVIDIA Corporation",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "NVIDIA discloses segment revenue and segment operating income for 'Graphics' and 'Compute & Networking.' Compute each segment’s operating margin for fiscal 2022 and fiscal 2023 (segment operating income / segment revenue). Which segment experienced the larger operating-margin compression from fiscal 2022 to fiscal 2023, and by how many percentage points more than the other segment?",
+	"answer": "Compute & Networking operating margin: FY2022 ≈ 41.6% (4,598 / 11,046) and FY2023 ≈ 33.7% (5,083 / 15,068), a decline of ~7.9 pts. Graphics operating margin: FY2022 ≈ 53.5% (8,492 / 15,868) and FY2023 ≈ 38.2% (4,552 / 11,906), a decline of ~15.3 pts. Graphics had the larger compression, by about 7.4 percentage points more than Compute & Networking (15.3 − 7.9).",
+	"justification": "The segment note provides segment revenues and segment operating income for FY2023/FY2022/FY2021. Dividing operating income by revenue yields segment operating margins. Comparing FY2022 to FY2023 quantifies margin compression and allows a relative comparison across segments.",
+	"evidence": [
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 84,
+			"evidence_text": "Segment data (in millions): Compute & Networking revenue 15,068 / 11,046 / 6,841 and operating income 5,083 / 4,598 / 2,548 (FY2023/FY2022/FY2021). Graphics revenue 11,906 / 15,868 / 9,834 and operating income 4,552 / 8,492 / 4,612 (FY2023/FY2022/FY2021).",
+			"evidence_text_full_page": "The segment information note provides revenues and operating income by reportable segment for fiscal years 2023, 2022, and 2021."
+		}
+	]
+},
+{
+	"question_id": "nvda_007",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "domain-relevant",
+	"doc_type": "10-K",
+	"gics_sector": "INFOTECH",
+	"company_name": "NVIDIA Corporation",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Using NVIDIA’s cash flow statement and revenue figures, compute stock-based compensation expense as (a) a percentage of revenue and (b) a percentage of net cash provided by operating activities for fiscal 2021–2023. Based on these results, in which year did stock-based compensation represent the highest 'non-cash addback intensity' relative to operating cash flow, and what changed versus fiscal 2022?",
+	"answer": "(a) Stock-based compensation as % of revenue: FY2021 ≈ 8.4% (1,397 / 16,675), FY2022 ≈ 7.4% (2,004 / 26,914), FY2023 ≈ 10.0% (2,709 / 26,974). (b) As % of operating cash flow: FY2021 ≈ 24.0% (1,397 / 5,822), FY2022 ≈ 22.0% (2,004 / 9,108), FY2023 ≈ 48.0% (2,709 / 5,641). The highest non-cash addback intensity occurred in FY2023. Versus FY2022, operating cash flow fell sharply (from $9,108 million to $5,641 million) while stock-based compensation increased, causing the ratio to jump materially.",
+	"justification": "Stock-based compensation expense and operating cash flow are disclosed in the CFO reconciliation in the cash flow statement, and total revenue is disclosed in the revenue tables. Computing ratios across years shows how much reported operating cash flow is supported by non-cash addbacks, which is especially relevant when operating cash flow declines.",
+	"evidence": [
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 57,
+			"evidence_text": "Cash flows from operating activities (in millions): stock-based compensation expense 2,709 / 2,004 / 1,397; net cash provided by operating activities 5,641 / 9,108 / 5,822 (FY2023/FY2022/FY2021).",
+			"evidence_text_full_page": "The consolidated statements of cash flows include stock-based compensation expense and net cash provided by operating activities for fiscal years 2023, 2022, and 2021."
+		},
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 85,
+			"evidence_text": "Total revenue (in millions): $26,974 (FY2023), $26,914 (FY2022), $16,675 (FY2021).",
+			"evidence_text_full_page": "A notes table reports total revenue for fiscal years 2023, 2022, and 2021."
+		}
+	]
+},
+{
+	"question_id": "nvda_008",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"doc_type": "10-K",
+	"gics_sector": "INFOTECH",
+	"company_name": "NVIDIA Corporation",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Using the inventory balances (FY2021–FY2023) and annual cost of revenue (FY2021–FY2023), estimate days of inventory on hand (DIO) for fiscal 2022 and fiscal 2023 using average inventory for the year (average of ending inventory and prior-year ending inventory) divided by cost of revenue, multiplied by 365. How much did DIO change from FY2022 to FY2023, and how does this relate to the inventory cash outflow shown in the FY2023 operating cash flow reconciliation?",
+	"answer": "Estimated DIO: FY2022 ≈ 85.7 days (average inventory (2,605+1,826)/2 = 2,216; 2,216 / 9,439 × 365 ≈ 85.7). FY2023 ≈ 122.0 days (average inventory (5,159+2,605)/2 = 3,882; 3,882 / 11,618 × 365 ≈ 122.0). DIO increased by ~36.3 days from FY2022 to FY2023. This aligns with the FY2023 operating cash flow reconciliation showing inventories as a large use of cash (−$2,554 million), consistent with a significant build in inventory and/or slower inventory turnover.",
+	"justification": "Ending inventories are disclosed on the balance sheet; FY2021 ending inventory is obtained from the FY2022 10-K balance sheet (comparative year). Cost of revenue is disclosed on the income statement. DIO is computed using average inventory over the year and cost of revenue. The cash flow reconciliation provides the cash impact from inventory changes, connecting operational efficiency metrics to cash generation.",
+	"evidence": [
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 55,
+			"evidence_text": "Consolidated balance sheets (in millions): inventories $5,159 (FY2023) and $2,605 (FY2022).",
+			"evidence_text_full_page": "The consolidated balance sheets present inventories as of Jan 29, 2023 and Jan 30, 2022."
+		},
+		{
+			"doc_name": "NVIDIA_FY2022_10K",
+			"evidence_page_num": 48,
+			"evidence_text": "Consolidated balance sheets (in millions): inventories $2,605 (Jan 30, 2022) and $1,826 (Jan 31, 2021).",
+			"evidence_text_full_page": "The FY2022 10-K balance sheets provide comparative inventories for Jan 30, 2022 and Jan 31, 2021."
+		},
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 53,
+			"evidence_text": "Cost of revenue (in millions): 11,618 (FY2023), 9,439 (FY2022), 6,279 (FY2021).",
+			"evidence_text_full_page": "The consolidated statements of income disclose cost of revenue for fiscal years 2023, 2022, and 2021."
+		},
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 57,
+			"evidence_text": "Cash flow reconciliation (in millions): inventories change (2,554) (FY2023) and (774) (FY2022).",
+			"evidence_text_full_page": "The consolidated statements of cash flows show inventories as a use of cash in the reconciliation from net income to operating cash flow."
+		}
+	]
+},
+{
+	"question_id": "nvda_009",
+	"filing_years_10k_used": [
+		2022,
+		2023
+	],
+	"question_type": "metrics-generated",
+	"doc_type": "10-K",
+	"gics_sector": "INFOTECH",
+	"company_name": "NVIDIA Corporation",
+	"question_reasoning": "Numerical reasoning",
+	"question": "NVIDIA discloses inventory reserve expense amounts in cost of revenue for fiscal 2022 and fiscal 2023. Compute inventory reserve expense as a percentage of cost of revenue for each of those two years, and quantify the year-over-year increase in both dollars and percentage points.",
+	"answer": "Inventory reserve expense was approximately $1.04 billion in FY2023 and $173 million in FY2022. As a percentage of cost of revenue, this is ~9.0% in FY2023 ($1,040 / $11,618) versus ~1.8% in FY2022 ($173 / $9,439). The reserve expense increased by about $867 million year-over-year and rose by roughly 7.1 percentage points (about 9.0% − 1.8%).",
+	"justification": "The notes disclose inventory reserve expense recorded in cost of revenue for FY2023 and FY2022. Cost of revenue amounts are disclosed in the consolidated statements of income. Dividing reserve expense by cost of revenue yields the implied reserve burden on gross margin for each year and allows a clean year-over-year comparison.",
+	"evidence": [
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 73,
+			"evidence_text": "Inventory note states: 'In fiscal years 2023 and 2022, we recorded an inventory reserve expense of approximately $1.04 billion and $173 million in cost of revenue, respectively.'",
+			"evidence_text_full_page": "Note on balance sheet components provides inventory composition and discloses inventory reserve expense amounts recorded in cost of revenue for fiscal years 2023 and 2022."
+		},
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 53,
+			"evidence_text": "Cost of revenue (in millions): 11,618 (FY2023) and 9,439 (FY2022).",
+			"evidence_text_full_page": "The consolidated statements of income disclose cost of revenue for fiscal years 2023 and 2022."
+		}
+	]
+},
+{
+	"question_id": "nvda_010",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"doc_type": "10-K",
+	"gics_sector": "INFOTECH",
+	"company_name": "NVIDIA Corporation",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Using NVIDIA’s revenue by geographic invoicing address for fiscal 2021–2023, reconcile the near-flat total revenue from fiscal 2022 to fiscal 2023 by attributing the $60 million net change to each geography. Then determine (a) which geography contributed the most to revenue growth, (b) which two geographies together contributed the largest offsetting decline, and (c) whether the U.S. became a majority or minority of revenue in fiscal 2023.",
+	"answer": "FY2022→FY2023 changes (in millions): United States +$3,943 (8,292 − 4,349); Taiwan −$1,558 (6,986 − 8,544); China −$1,326 (5,785 − 7,111); Other countries −$999 (5,911 − 6,910). These sum to +$60, matching total revenue’s net change. (a) The United States contributed the most to growth (+$3,943). (b) Taiwan + China together contributed the largest offsetting decline (−$2,884). (c) The U.S. remained a minority of revenue in FY2023: $8,292 out of $26,974 is ~30.7%, so revenue outside the U.S. (~69.3%) was still the majority.",
+	"justification": "The geographic revenue table provides revenues for the United States, Taiwan, China (including Hong Kong), and other countries for FY2023/FY2022/FY2021 along with the total. Subtracting FY2022 from FY2023 for each line item reconciles the net total change and reveals which geographies drove growth versus decline. The U.S. share is computed by dividing U.S. revenue by total revenue for FY2023.",
+	"evidence": [
+		{
+			"doc_name": "NVIDIA_FY2023_10K",
+			"evidence_page_num": 84,
+			"evidence_text": "Geographic revenue table (in millions) for FY2023/FY2022/FY2021: United States $8,292 / $4,349 / $3,214; Taiwan 6,986 / 8,544 / 4,531; China (including Hong Kong) 5,785 / 7,111 / 3,886; Other countries 5,911 / 6,910 / 5,044; Total revenue $26,974 / $26,914 / $16,675.",
+			"evidence_text_full_page": "Notes to the consolidated financial statements include a table summarizing revenue from customers based on invoicing address by geographic region for fiscal years 2023, 2022, and 2021."
+		}
+	]
+},
+{
+	"question_id": "xom_001",
+	"company": "Exxon Mobil",
+	"company_name": "Exxon Mobil Corporation",
+	"gics_sector": "ENERGY",
+	"doc_type": "10-K",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "metrics-generated",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Using Exxon Mobil’s consolidated statement of income for 2021–2023, compute the effective income tax rate for each year (income tax expense divided by income before income taxes). Then determine (a) which year had the highest effective tax rate and (b) by how many percentage points the effective tax rate changed from 2021 to 2023.",
+	"answer": "Effective tax rates were approximately 29.2% (2023), 25.9% (2022), and 24.4% (2021). (a) 2023 had the highest effective tax rate. (b) The effective tax rate increased by about 4.8 percentage points from 2021 (~24.4%) to 2023 (~29.2%).",
+	"justification": "From the consolidated statement of income: 2023 income before income taxes was $52,783 million and income tax expense was $15,429 million, giving ~15,429/52,783 = 29.2%. For 2022, $20,176 million tax on $77,753 million pretax income gives ~25.9%. For 2021, $7,636 million tax on $31,234 million pretax income gives ~24.4%. Comparing years shows the effective rate peaks in 2023 and rises by ~29.2% − 24.4% ≈ 4.8 percentage points from 2021 to 2023.",
+	"evidence": [
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 87,
+			"evidence_text": "Consolidated statement of income reports income (loss) before income taxes and income tax expense (benefit) for 2023, 2022, and 2021.",
+			"evidence_text_full_page": "CONSOLIDATED STATEMENT OF INCOME (millions of dollars) includes: Income (loss) before income taxes: 2023 52,783; 2022 77,753; 2021 31,234. Income tax expense (benefit): 2023 15,429; 2022 20,176; 2021 7,636."
+		}
+	]
+},
+{
+	"question_id": "xom_002",
+	"company": "Exxon Mobil",
+	"company_name": "Exxon Mobil Corporation",
+	"gics_sector": "ENERGY",
+	"doc_type": "10-K",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "metrics-generated",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Using the consolidated statement of cash flows and consolidated statement of income for 2021–2023, compute ExxonMobil’s operating cash-flow conversion ratio for each year, defined as net cash provided by operating activities divided by net income attributable to ExxonMobil. Then explain which year shows the strongest conversion and why that matters for interpreting earnings quality over the period.",
+	"answer": "Operating cash-flow conversion ratios were approximately 1.54x (2023), 1.38x (2022), and 2.09x (2021). The strongest conversion was in 2021 (~2.09x), indicating operating cash generation exceeded accounting earnings by the widest margin that year, which can signal stronger non-cash addbacks and/or more favorable working-capital movements relative to reported earnings.",
+	"justification": "Net cash provided by operating activities was $55,369 million (2023), $76,797 million (2022), and $48,129 million (2021). Net income attributable to ExxonMobil was $36,010 million (2023), $55,740 million (2022), and $23,040 million (2021). Dividing yields ~1.54x, ~1.38x, and ~2.09x respectively. The interpretation matters because higher conversion indicates more cash backing each dollar of earnings; over multi-year comparisons, it helps distinguish margin-driven earnings from cash-backed performance.",
+	"evidence": [
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 90,
+			"evidence_text": "Consolidated statement of cash flows reports net cash provided by operating activities for 2023, 2022, and 2021.",
+			"evidence_text_full_page": "CONSOLIDATED STATEMENT OF CASH FLOWS shows Net cash provided by operating activities: 2023 55,369; 2022 76,797; 2021 48,129 (millions of dollars)."
+		},
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 87,
+			"evidence_text": "Consolidated statement of income reports net income attributable to ExxonMobil for 2023, 2022, and 2021.",
+			"evidence_text_full_page": "CONSOLIDATED STATEMENT OF INCOME shows Net income (loss) attributable to ExxonMobil: 2023 36,010; 2022 55,740; 2021 23,040 (millions of dollars)."
+		}
+	]
+},
+{
+	"question_id": "xom_003",
+	"company": "Exxon Mobil",
+	"company_name": "Exxon Mobil Corporation",
+	"gics_sector": "ENERGY",
+	"doc_type": "10-K",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "ExxonMobil presents a non-GAAP metric, \"cash flow from operations and asset sales,\" and separately reports shareholder distributions through cash dividends to ExxonMobil shareholders and common stock acquired. For each of 2021–2023, compute shareholder distributions as a percentage of cash flow from operations and asset sales. Then identify the year with the highest payout intensity and quantify how much higher it was than the lowest year (in percentage points).",
+	"answer": "Shareholder distributions as a percentage of cash flow from operations and asset sales were approximately 55.0% (2023), 36.7% (2022), and 29.4% (2021). The highest payout intensity was 2023 (~55.0%), which was about 25.6 percentage points higher than the lowest year, 2021 (~29.4%).",
+	"justification": "Cash flow from operations and asset sales was $59,447 million (2023), $82,044 million (2022), and $51,305 million (2021). Shareholder distributions are cash dividends to ExxonMobil shareholders plus common stock acquired: 2023 $14,941 + $17,748 = $32,689 million; 2022 $14,939 + $15,155 = $30,094 million; 2021 $14,924 + $155 = $15,079 million. Ratios are ~32,689/59,447 = 55.0%, ~30,094/82,044 = 36.7%, and ~15,079/51,305 = 29.4%. The spread between the highest (2023) and lowest (2021) is ~55.0% − 29.4% ≈ 25.6 percentage points.",
+	"evidence": [
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 46,
+			"evidence_text": "Non-GAAP table reports cash flow from operations and asset sales for 2023, 2022, and 2021.",
+			"evidence_text_full_page": "Cash Flow From Operations and Asset Sales (Non-GAAP): Net cash provided by operating activities 55,369 (2023), 76,797 (2022), 48,129 (2021); Proceeds associated with asset sales/returns of investments 4,078 (2023), 5,247 (2022), 3,176 (2021); Cash flow from operations and asset sales 59,447 (2023), 82,044 (2022), 51,305 (2021)."
+		},
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 90,
+			"evidence_text": "Consolidated statement of cash flows reports cash dividends to ExxonMobil shareholders and common stock acquired for 2023, 2022, and 2021.",
+			"evidence_text_full_page": "CONSOLIDATED STATEMENT OF CASH FLOWS (Financing Activities) shows: Cash dividends to ExxonMobil shareholders 14,941 (2023), 14,939 (2022), 14,924 (2021); Common stock acquired 17,748 (2023), 15,155 (2022), 155 (2021)."
+		}
+	]
+},
+{
+	"question_id": "xom_004",
+	"company": "Exxon Mobil",
+	"company_name": "Exxon Mobil Corporation",
+	"gics_sector": "ENERGY",
+	"doc_type": "10-K",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "domain-relevant",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning) OR Logical reasoning",
+	"question": "ExxonMobil’s operating cash flow changed materially from 2022 to 2023. Using the working-capital line items in the 2021–2023 consolidated statement of cash flows, compute the net working-capital contribution (sum of: notes and accounts receivable; inventories; other current assets; and accounts and other payables) for each year. Then quantify how much the working-capital swing contributed to the change in net cash provided by operating activities from 2022 to 2023 (in $ billions).",
+	"answer": "Net working-capital contribution was approximately −$4.3B (2023), −$0.2B (2022), and +$4.2B (2021). The swing from 2022 to 2023 was about −$4.1B, meaning working capital contributed roughly $4.1B less to operating cash flow in 2023 than in 2022 (a larger use of cash).",
+	"justification": "Working-capital lines (in $ millions) are: Receivables (2023 +4,370; 2022 −11,019; 2021 −12,098), Inventories (2023 −3,472; 2022 −6,947; 2021 −489), Other current assets (2023 −426; 2022 −688; 2021 −71), and Accounts/other payables (2023 −4,727; 2022 +18,460; 2021 +16,820). Summing yields: 2023 = 4,370 − 3,472 − 426 − 4,727 = −4,255 (~−$4.3B); 2022 = −11,019 − 6,947 − 688 + 18,460 = −194 (~−$0.2B); 2021 = −12,098 − 489 − 71 + 16,820 = +4,162 (~+$4.2B). The change from 2022 to 2023 is −4,255 − (−194) = −4,061 (~−$4.1B), explaining a meaningful portion of the 2022→2023 operating cash flow decline.",
+	"evidence": [
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 90,
+			"evidence_text": "Consolidated statement of cash flows lists working-capital changes for receivables, inventories, other current assets, and accounts/other payables for 2023, 2022, and 2021.",
+			"evidence_text_full_page": "CASH FLOWS FROM OPERATING ACTIVITIES includes: Notes and accounts receivable reduction/(increase) 4,370 (2023), (11,019) (2022), (12,098) (2021); Inventories reduction/(increase) (3,472), (6,947), (489); Other current assets reduction/(increase) (426), (688), (71); Accounts and other payables increase/(reduction) (4,727), 18,460, 16,820."
+		},
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 90,
+			"evidence_text": "Consolidated statement of cash flows reports net cash provided by operating activities for 2023 and 2022, which the working-capital swing helps explain.",
+			"evidence_text_full_page": "Net cash provided by operating activities: 55,369 (2023) vs 76,797 (2022) (millions of dollars)."
+		}
+	]
+},
+{
+	"question_id": "xom_005",
+	"dataset_subset_label": "OPEN_SOURCE",
+	"company": "Exxon Mobil",
+	"company_name": "Exxon Mobil Corporation",
+	"gics_sector": "ENERGY",
+	"doc_type": "10-K",
+	"filing_years_10k_used": [
+		2022,
+		2023
+	],
+	"question_type": "metrics-generated",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Using ExxonMobil’s consolidated balance sheet, compute net debt at December 31, 2023 and December 31, 2022, defined as (notes and loans payable + long-term debt) minus (cash and cash equivalents + restricted cash and cash equivalents). Then quantify the year-over-year change in net debt and state whether ExxonMobil delevered or relevered in 2023.",
+	"answer": "Net debt was approximately $10.0B at December 31, 2023 and $11.5B at December 31, 2022, a decrease of about $1.5B year-over-year. ExxonMobil therefore delevered in 2023 on this net-debt definition.",
+	"justification": "Balance sheet amounts (in $ millions): 2023 notes and loans payable $4,090 and long-term debt $37,483 (total debt $41,573); cash and cash equivalents $31,539 and restricted cash $29 (total cash $31,568). Net debt 2023 = 41,573 − 31,568 = 10,005 (~$10.0B). For 2022, notes and loans payable $634 plus long-term debt $40,559 (total debt $41,193); cash $29,640 plus restricted cash $25 (total cash $29,665). Net debt 2022 = 41,193 − 29,665 = 11,528 (~$11.5B). Net debt fell by 11,528 − 10,005 = 1,523 (~$1.5B), indicating deleveraging.",
+	"evidence": [
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 89,
+			"evidence_text": "Consolidated balance sheet lists notes and loans payable, long-term debt, cash and cash equivalents, and restricted cash for 12/31/2023 and 12/31/2022.",
+			"evidence_text_full_page": "CONSOLIDATED BALANCE SHEET shows: Cash and cash equivalents 31,539 (2023), 29,640 (2022); Cash and cash equivalents – restricted 29, 25; Notes and loans payable 4,090, 634; Long-term debt 37,483, 40,559 (millions of dollars)."
+		}
+	]
+},
+{
+	"question_id": "xom_006",
+	"company": "Exxon Mobil",
+	"company_name": "Exxon Mobil Corporation",
+	"gics_sector": "ENERGY",
+	"doc_type": "10-K",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "domain-relevant",
+	"question_reasoning": "Numerical reasoning",
+	"question": "ExxonMobil reports ROCE (non-GAAP) as earnings excluding financing costs divided by average capital employed. Using the ROCE table for 2021–2023, (a) compute ROCE for each year using the reported earnings excluding financing costs and average capital employed, and (b) determine how much of the ROCE decline from 2022 to 2023 is explained by the change in the numerator (earnings excluding financing costs) versus the change in the denominator (average capital employed), holding the other variable constant (use a simple bridge: first change numerator at 2022 denominator, then change denominator).",
+	"answer": "(a) ROCE is approximately 15.0% (2023), 24.9% (2022), and 10.9% (2021). (b) From 2022 to 2023, ROCE fell ~9.9 percentage points (24.9% to 15.0%). Holding the 2022 denominator constant, the numerator drop alone would reduce ROCE from ~24.9% to ~16.0% (about −8.9 pp). The denominator increase then reduces it further from ~16.0% to ~15.0% (about −1.0 pp). So most of the decline is driven by lower earnings excluding financing costs, with a smaller contribution from higher average capital employed.",
+	"justification": "The ROCE table provides earnings excluding financing costs of $56,875 million (2022) and $36,561 million (2023) and average capital employed of $228,404 million (2022) and $243,440 million (2023). ROCE computed: 2022 = 56,875/228,404 ≈ 24.9%; 2023 = 36,561/243,440 ≈ 15.0%; 2021 = 24,395/222,890 ≈ 10.9%. Bridge: Replace numerator first: 36,561/228,404 ≈ 16.0% (a drop of ~8.9 pp vs 24.9%). Then replace denominator: 36,561/243,440 ≈ 15.0% (a further ~1.0 pp drop).",
+	"evidence": [
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 47,
+			"evidence_text": "ROCE (non-GAAP) table lists earnings excluding financing costs, average capital employed, and the reported ROCE for 2023, 2022, and 2021.",
+			"evidence_text_full_page": "Return on Average Capital Employed (millions of dollars): Earnings (loss) excluding financing costs 36,561 (2023), 56,875 (2022), 24,395 (2021); Average capital employed 243,440 (2023), 228,404 (2022), 222,890 (2021); Return on average capital employed – corporate total 15.0%, 24.9%, 10.9%."
+		}
+	]
+},
+{
+	"question_id": "xom_007",
+	"company": "Exxon Mobil",
+	"company_name": "Exxon Mobil Corporation",
+	"gics_sector": "ENERGY",
+	"doc_type": "10-K",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "ExxonMobil provides \"earnings (loss) excluding identified items\" (non-GAAP) alongside GAAP net income attributable to ExxonMobil. Using the corporate total reconciliation for 2021–2023, compute the identified-items impact in each year as (non-GAAP earnings excluding identified items minus GAAP net income). Then determine which year had the largest negative identified-items impact and by how much it differed from 2023 (in $ billions).",
+	"answer": "Identified-items impacts were approximately +$2.6B (2023), +$3.4B (2022), and about −$0.0B (2021; roughly +$0.0B given a small net +$0.03B identified-items total). The largest negative identified-items total (i.e., largest drag embedded in GAAP vs non-GAAP) occurred in 2022 at about $3.4B, which was about $0.8B larger than 2023’s ~$2.6B impact.",
+	"justification": "Corporate total GAAP net income attributable to ExxonMobil is $36,010 million (2023), $55,740 million (2022), and $23,040 million (2021). Earnings excluding identified items are $38,572 million (2023), $59,101 million (2022), and $23,013 million (2021). Differences are 38,572 − 36,010 = 2,562 million (~$2.6B) in 2023; 59,101 − 55,740 = 3,361 million (~$3.4B) in 2022; and 23,013 − 23,040 = −27 million (~−$0.0B) in 2021. Thus 2022 shows the largest gap between GAAP and the underlying earnings measure, exceeding 2023 by about 3.361 − 2.562 = 0.799 billion dollars (~$0.8B).",
+	"evidence": [
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 50,
+			"evidence_text": "Corporate total table shows GAAP net income attributable to ExxonMobil and earnings excluding identified items for 2023, 2022, and 2021, along with identified items totals.",
+			"evidence_text_full_page": "Corporate Total (millions of dollars): Net income (loss) attributable to ExxonMobil (U.S. GAAP) 36,010 (2023), 55,740 (2022), 23,040 (2021). Identified Items (2,562) (2023), (3,361) (2022), 27 (2021). Earnings (loss) excluding Identified Items (Non-GAAP) 38,572 (2023), 59,101 (2022), 23,013 (2021)."
+		}
+	]
+},
+{
+	"question_id": "xom_008",
+	"company": "Exxon Mobil",
+	"company_name": "Exxon Mobil Corporation",
+	"gics_sector": "ENERGY",
+	"doc_type": "10-K",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "domain-relevant",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Using the segment earnings table (GAAP) and the corporate total GAAP net income attributable to ExxonMobil for 2021–2023, compute (a) Upstream’s share of corporate net income and (b) Energy Products’ share of corporate net income for each year. Then explain, based on those computed shares, how the earnings mix shifted from 2021 to 2023.",
+	"answer": "Upstream’s share of corporate net income was ~68.5% (2021), ~65.4% (2022), and ~59.2% (2023). Energy Products’ share was about −1.5% (2021), ~26.8% (2022), and ~33.7% (2023). The mix shifted toward Energy Products and away from Upstream between 2021 and 2023, with Energy Products moving from a loss in 2021 to a large positive contributor by 2022–2023 while Upstream’s dominance moderated by 2023.",
+	"justification": "Segment earnings (GAAP) are: Upstream 15,775 (2021), 36,479 (2022), 21,308 (2023); Energy Products (347) (2021), 14,966 (2022), 12,142 (2023). Corporate GAAP net income attributable to ExxonMobil is 23,040 (2021), 55,740 (2022), 36,010 (2023). Dividing gives Upstream shares: 15,775/23,040 ≈ 68.5%; 36,479/55,740 ≈ 65.4%; 21,308/36,010 ≈ 59.2%. Energy Products shares: −347/23,040 ≈ −1.5%; 14,966/55,740 ≈ 26.8%; 12,142/36,010 ≈ 33.7%. This indicates a clear shift toward downstream Energy Products earnings contribution post-2021, while Upstream contribution declines in relative terms by 2023.",
+	"evidence": [
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 49,
+			"evidence_text": "Segment earnings (GAAP) table reports Upstream and Energy Products earnings for 2023, 2022, and 2021.",
+			"evidence_text_full_page": "Segment earnings (U.S. GAAP): Upstream total 21,308 (2023), 36,479 (2022), 15,775 (2021). Energy Products total 12,142 (2023), 14,966 (2022), (347) (2021) (millions of dollars)."
+		},
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 50,
+			"evidence_text": "Corporate total net income attributable to ExxonMobil (GAAP) for 2023, 2022, and 2021.",
+			"evidence_text_full_page": "Corporate Total: Net income (loss) attributable to ExxonMobil (U.S. GAAP) 36,010 (2023), 55,740 (2022), 23,040 (2021) (millions of dollars)."
+		}
+	]
+},
+{
+	"question_id": "xom_009",
+	"company": "Exxon Mobil",
+	"company_name": "Exxon Mobil Corporation",
+	"gics_sector": "ENERGY",
+	"doc_type": "10-K",
+	"filing_years_10k_used": [
+		2021,
+		2022,
+		2023
+	],
+	"question_type": "novel-generated",
+	"question_reasoning": "Logical reasoning (based on numerical reasoning)",
+	"question": "Using the \"Production Prices and Production Costs\" table for 2021–2023, estimate a simplified upstream unit margin proxy each year as (total average crude oil price per barrel minus total average production costs per oil-equivalent barrel). Then compare the change in this proxy from 2022 to 2023 with the change in Upstream GAAP earnings over the same period and explain what the comparison suggests about the role of commodity pricing versus other drivers.",
+	"answer": "Simplified unit-margin proxies are approximately $56.0 (2021), $84.5 (2022), and $67.3 (2023) per unit (price minus cost). From 2022 to 2023, the proxy fell by about $17.2 (from ~$84.5 to ~$67.3), while Upstream GAAP earnings fell by $15.2B (from $36.479B to $21.308B). The broad alignment suggests commodity price/cost dynamics were a major headwind in 2023 versus 2022, though the magnitude difference indicates other factors (e.g., volumes, mix, non-price effects, or identified items within Upstream) also influenced earnings.",
+	"justification": "Total average crude oil prices were $66.96 (2021), $95.88 (2022), and $77.92 (2023) per barrel. Total average production costs were $10.92 (2021), $11.43 (2022), and $10.63 (2023) per oil-equivalent barrel. Subtracting yields proxies: 2021 ~66.96 − 10.92 = 56.04; 2022 ~95.88 − 11.43 = 84.45; 2023 ~77.92 − 10.63 = 67.29. The 2022→2023 decline is ~17.16. Upstream GAAP earnings declined from $36,479 million (2022) to $21,308 million (2023), a drop of $15,171 million. This supports the interpretation that pricing normalization from 2022’s elevated levels drove much of the earnings decline, with additional operational/portfolio factors contributing.",
+	"evidence": [
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 22,
+			"evidence_text": "Production prices and costs table provides total average crude oil prices and total average production costs for 2023 and 2022.",
+			"evidence_text_full_page": "Production Prices and Production Costs (Total): Average production prices - Crude oil, per barrel 77.92 (2023) and 95.88 (2022). Average production costs, per oil-equivalent barrel - total 10.63 (2023) and 11.43 (2022)."
+		},
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 23,
+			"evidence_text": "Production prices and costs table provides total average crude oil prices and total average production costs for 2021.",
+			"evidence_text_full_page": "Production Prices and Production Costs (Total) for 2021: Average production prices - Crude oil, per barrel 66.96. Average production costs, per oil-equivalent barrel - total 10.92."
+		},
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 49,
+			"evidence_text": "Segment earnings (GAAP) table provides Upstream earnings for 2023 and 2022.",
+			"evidence_text_full_page": "Upstream segment earnings (U.S. GAAP) total: 21,308 (2023) and 36,479 (2022) (millions of dollars)."
+		}
+	]
+},
+{
+	"question_id": "xom_010",
+	"company": "Exxon Mobil",
+	"company_name": "Exxon Mobil Corporation",
+	"gics_sector": "ENERGY",
+	"doc_type": "10-K",
+	"filing_years_10k_used": [
+		2021,
+		2023
+	],
+	"question_type": "domain-relevant",
+	"question_reasoning": "Numerical reasoning",
+	"question": "Using (i) ExxonMobil’s total oil-equivalent proved reserves and (ii) oil-equivalent production, estimate a proved reserve life index (RLI) for 2023 and 2021, defined as total proved reserves (million boe) divided by annual oil-equivalent production (million boe, computed from thousands of boe per day × 365). Then compute how many years the RLI changed from 2021 to 2023 and interpret what that implies about reserve replacement relative to production over the period.",
+	"answer": "Estimated proved RLI was about 12.4 years in 2023 and about 13.7 years in 2021, a decline of roughly 1.3 years. This implies that, over 2021–2023, proved reserves fell relative to production pace, indicating reserve replacement (net of revisions, acquisitions/dispositions, and extensions) did not fully keep up with produced volumes on this simplified metric.",
+	"justification": "Total proved reserves (oil-equivalent, all products) were 16,928 million boe at December 31, 2023 and 18,536 million boe at December 31, 2021. Oil-equivalent production was 3,738 thousand boe/day in 2023 and 3,712 thousand boe/day in 2021. Annual production is ~3,738×365/1,000 = 1,364 million boe (2023) and ~3,712×365/1,000 = 1,355 million boe (2021). RLI is ~16,928/1,364 = 12.4 years (2023) and ~18,536/1,355 = 13.7 years (2021). The change is ~12.4 − 13.7 = −1.3 years.",
+	"evidence": [
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 21,
+			"evidence_text": "Oil-equivalent production for 2023 and 2021 is reported in the oil and gas production table.",
+			"evidence_text_full_page": "Oil and Gas Production table reports oil-equivalent production (thousands of oil-equivalent barrels daily): 3,738 (2023) and 3,712 (2021)."
+		},
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 139,
+			"evidence_text": "Total proved reserves at December 31, 2021 are reported as 18,536 million oil-equivalent barrels.",
+			"evidence_text_full_page": "Natural Gas and Oil-Equivalent Proved Reserves table shows: Total proved reserves at December 31, 2021 = 18,536 (millions of oil-equivalent barrels)."
+		},
+		{
+			"doc_name": "XOM_2023_10K",
+			"evidence_page_num": 138,
+			"evidence_text": "Total proved reserves at December 31, 2023 are reported as 16,928 million oil-equivalent barrels.",
+			"evidence_text_full_page": "Natural Gas and Oil-Equivalent Proved Reserves table shows: Total proved reserves at December 31, 2023 = 16,928 (millions of oil-equivalent barrels)."
+		}
+	]
+}
+]

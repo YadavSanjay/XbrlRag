@@ -1,0 +1,131 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-11",
+  "criteria": {
+    "C1": [
+      "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_tsmc_cash_answers_in_twd",
+      "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_tsmc_per_share_answers_in_twd_per_share",
+      "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_single_unit_ties_and_foreign_reporting_currency",
+      "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_tsmc_cash_answer_survives_reordering_and_repeats"
+    ],
+    "C2": [
+      "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_tsmc_cash_one_definition_point",
+      "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_agrees_with_the_rule",
+      "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_reporting_currency_is_chosen_whatever_the_order",
+      "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_an_earlier_period_for_the_reporting_currency_changes_nothing",
+      "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_no_currency_is_special",
+      "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_one_definition_with_the_screen"
+    ],
+    "C3": [
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[CashAndEquivalents-FY2022]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[RetainedEarnings-FY2022]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[PropertyPlantAndEquipment-FY2024]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[GrossProfit-FY2022]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[GrossProfit-FY2023]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[GrossProfit-FY2024]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[ResearchAndDevelopment-FY2022]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[ResearchAndDevelopment-FY2023]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[Revenue-FY2022]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[Revenue-FY2023]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[CashAndEquivalents-FY2022]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[RetainedEarnings-FY2022]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[PropertyPlantAndEquipment-FY2024]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[GrossProfit-FY2022]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[GrossProfit-FY2023]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[GrossProfit-FY2024]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[ResearchAndDevelopment-FY2022]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[ResearchAndDevelopment-FY2023]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[Revenue-FY2022]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[Revenue-FY2023]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_a_requested_usd_still_gets_the_translation[CashAndEquivalents-FY2022]",
+      "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_a_requested_usd_still_gets_the_translation[GrossProfit-FY2022]"
+    ],
+    "C4": [
+      "test/spec/lookup-reporting-currency/test_c4_c5_ratio_trend_generality.py::test_rd_intensity_is_a_pure_ratio_of_twd_amounts[FY2023]",
+      "test/spec/lookup-reporting-currency/test_c4_c5_ratio_trend_generality.py::test_rd_intensity_is_a_pure_ratio_of_twd_amounts[FY2022]",
+      "test/spec/lookup-reporting-currency/test_c4_c5_ratio_trend_generality.py::test_a_usd_input_against_a_twd_input_refuses",
+      "test/spec/lookup-reporting-currency/test_c4_c5_ratio_trend_generality.py::test_the_gross_profit_trend_is_three_twd_lookups"
+    ],
+    "C5": [
+      "test/spec/lookup-reporting-currency/test_c4_c5_ratio_trend_generality.py::test_a_usd_filer_with_a_stray_euro_row_answers_in_usd",
+      "test/spec/lookup-reporting-currency/test_c4_c5_ratio_trend_generality.py::test_another_filer_in_another_currency_answers_alike[CashAndEquivalents-2022-1342814100000]",
+      "test/spec/lookup-reporting-currency/test_c4_c5_ratio_trend_generality.py::test_another_filer_in_another_currency_answers_alike[GrossProfit-2024-1624353600000]"
+    ]
+  },
+  "files": {
+    "test/spec/lookup-reporting-currency/conftest.py": "bed3102f6e8d265d9c97d513dc44a56b5c7d775fc53401a6b1981589fd17966f",
+    "test/spec/lookup-reporting-currency/fixtures/tsm_rows.json": "52a08626605f8ce80338eeaa77a144c58cece107dac0d898da625f03712930f3",
+    "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py": "d8e08f54f9bf6d66d56a600e38e7dc0d74b169f09574c6a9af19ebe0d7ebd306",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py": "1d1e65a9bf69901789d348eecd36680004ab7ea8dd80910c8e995a4dfb9110da",
+    "test/spec/lookup-reporting-currency/test_c4_c5_ratio_trend_generality.py": "c5d88fbee6fa00f8e60f50135cd19471ffda90cd1d880cd96c9a60e3cf3f427d"
+  },
+  "id": "lookup-reporting-currency",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/reporting_currency.py",
+      "module": "retriever.xbrl.reporting_currency",
+      "qualname": "answer_unit",
+      "signature": "def answer_unit(candidate_units: Sequence[str | None], observations: Sequence[tuple[str | None, str | None]]) -> str | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_agrees_with_the_rule",
+    "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_an_earlier_period_for_the_reporting_currency_changes_nothing",
+    "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_no_currency_is_special",
+    "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_one_definition_with_the_screen",
+    "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_reporting_currency_is_chosen_whatever_the_order",
+    "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_single_unit_ties_and_foreign_reporting_currency",
+    "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_tsmc_cash_answer_survives_reordering_and_repeats",
+    "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_tsmc_cash_answers_in_twd",
+    "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_tsmc_cash_one_definition_point",
+    "test/spec/lookup-reporting-currency/test_c1_c2_answer_unit.py::test_tsmc_per_share_answers_in_twd_per_share",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_a_requested_usd_still_gets_the_translation[CashAndEquivalents-FY2022]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_a_requested_usd_still_gets_the_translation[GrossProfit-FY2022]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[CashAndEquivalents-FY2022]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[GrossProfit-FY2022]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[GrossProfit-FY2023]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[GrossProfit-FY2024]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[PropertyPlantAndEquipment-FY2024]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[ResearchAndDevelopment-FY2022]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[ResearchAndDevelopment-FY2023]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[RetainedEarnings-FY2022]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[Revenue-FY2022]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_lookup_answers_the_key_in_twd[Revenue-FY2023]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[CashAndEquivalents-FY2022]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[GrossProfit-FY2022]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[GrossProfit-FY2023]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[GrossProfit-FY2024]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[PropertyPlantAndEquipment-FY2024]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[ResearchAndDevelopment-FY2022]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[ResearchAndDevelopment-FY2023]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[RetainedEarnings-FY2022]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[Revenue-FY2022]",
+    "test/spec/lookup-reporting-currency/test_c3_lookup.py::test_the_convenience_rows_never_change_the_answer[Revenue-FY2023]",
+    "test/spec/lookup-reporting-currency/test_c4_c5_ratio_trend_generality.py::test_a_usd_filer_with_a_stray_euro_row_answers_in_usd",
+    "test/spec/lookup-reporting-currency/test_c4_c5_ratio_trend_generality.py::test_a_usd_input_against_a_twd_input_refuses",
+    "test/spec/lookup-reporting-currency/test_c4_c5_ratio_trend_generality.py::test_another_filer_in_another_currency_answers_alike[CashAndEquivalents-2022-1342814100000]",
+    "test/spec/lookup-reporting-currency/test_c4_c5_ratio_trend_generality.py::test_another_filer_in_another_currency_answers_alike[GrossProfit-2024-1624353600000]",
+    "test/spec/lookup-reporting-currency/test_c4_c5_ratio_trend_generality.py::test_rd_intensity_is_a_pure_ratio_of_twd_amounts[FY2022]",
+    "test/spec/lookup-reporting-currency/test_c4_c5_ratio_trend_generality.py::test_rd_intensity_is_a_pure_ratio_of_twd_amounts[FY2023]",
+    "test/spec/lookup-reporting-currency/test_c4_c5_ratio_trend_generality.py::test_the_gross_profit_trend_is_three_twd_lookups"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/lookup-reporting-currency.md",
+    "sha256": "a44959e5f9a8d4213402025a31f9abf3caabfedc956ad735f35a84396608bafe"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

@@ -1,0 +1,143 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-07",
+  "criteria": {
+    "C1": [
+      "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_point_cases_from_stored_units",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_refusals[aapl - tsm-units0]",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_refusals[aapl / tsm-units1]",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_refusals[ni + sh-units2]",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_refusals[eps + ni-units3]",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_refusals[x + 1-units4]",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_refusals[a / b-units5]",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_refusals[a / zz-units6]",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_refusals[a ** 2-units7]",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_agrees_with_the_exponent_algebra",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_relabelling_currencies_relabels_the_result",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_dimensionless_units_are_unitless",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_dimensionless_refusals[oi + etr-units0]",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_dimensionless_refusals[n - 1-units1]",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_dimensionless_refusals[n - etr-units2]",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_dimensionless_refusals[etr - r-units3]",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_pure_and_rate_are_interchangeable"
+    ],
+    "C2": [
+      "test/spec/units-currency-integrity/test_compute_units.py::test_aapl_minus_tsmc_revenue_is_refused",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_aapl_minus_tsmc_usd_convenience_is_computed",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_aapl_fy2025_per_share_margin_and_eps_units",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_money_and_shares_do_not_add[ni25 + sh25-units0]",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_money_and_shares_do_not_add[eps25 + ni25-units1]",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_money_and_shares_do_not_add[fcf - sh25-units2]",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_scale_invariance",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_two_currencies_refused_and_swapping_labels_changes_nothing",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_amd_fy2025_roic_over_a_rate_tax_rate",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_avgo_fy2024_tax_from_a_rate_matches_the_filed_expense",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_a_rate_input_computes_like_a_pure_one"
+    ],
+    "C3": [
+      "test/spec/units-currency-integrity/test_compute_units.py::test_ceg_ambiguous_profit_never_enters_the_margin",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_ceg_net_income_control_is_computed",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_ambiguous_base_is_error_not_n_m_and_refusal_propagates",
+      "test/spec/units-currency-integrity/test_compute_units.py::test_any_non_ok_input_refuses_the_compute"
+    ],
+    "C4": [
+      "test/spec/units-currency-integrity/test_derived_screen_units.py::test_derived_metric_unit_point_cases",
+      "test/spec/units-currency-integrity/test_derived_screen_units.py::test_derived_metric_unit_matches_the_rule",
+      "test/spec/units-currency-integrity/test_derived_screen_units.py::test_order_and_currency_label_do_not_matter",
+      "test/spec/units-currency-integrity/test_derived_screen_units.py::test_pure_and_rate_are_interchangeable"
+    ],
+    "C5": [
+      "test/spec/units-currency-integrity/test_derived_screen_units.py::test_fy2025_free_cash_flow_screen_leaves_tsm_out",
+      "test/spec/units-currency-integrity/test_derived_screen_units.py::test_fy2024_fcf_margin_ranks_tsm_as_a_ratio",
+      "test/spec/units-currency-integrity/test_derived_screen_units.py::test_tsm_row_mixing_twd_and_usd_is_not_ranked",
+      "test/spec/units-currency-integrity/test_derived_screen_units.py::test_ticker_permutation_permutes_the_ranking",
+      "test/spec/units-currency-integrity/test_derived_screen_units.py::test_tsm_currency_label_only_changes_the_exclusion",
+      "test/spec/units-currency-integrity/test_derived_screen_units.py::test_scaling_usd_filers_keeps_the_order",
+      "test/spec/units-currency-integrity/test_derived_screen_units.py::test_point_case_permutation_with_a_fixed_seed"
+    ]
+  },
+  "files": {
+    "test/spec/units-currency-integrity/conftest.py": "a24b0bab8b620a1eaae0d5f080c0302fc7a5dd7d81952e0beaa8b3a2da11f9a5",
+    "test/spec/units-currency-integrity/test_compute_units.py": "98fe0481c862d3a580ee2311b521bad734a3230c912b919434d4ae3c4f1d5c2f",
+    "test/spec/units-currency-integrity/test_derived_screen_units.py": "3e73da92bef8984f4bcab4156f363676c1561e3058f9ab4e449eefdc9d04d76e"
+  },
+  "id": "units-currency-integrity",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/xbrl_calculator_tool.py",
+      "module": "retriever.xbrl.xbrl_calculator_tool",
+      "qualname": "expr_unit",
+      "signature": "def expr_unit(expr: str, units: Mapping[str, str | None]) -> str"
+    },
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_screen.py",
+      "module": "retriever.xbrl.xbrl_factstore_screen",
+      "qualname": "derived_metric_unit",
+      "signature": "def derived_metric_unit(metric_name: str, component_units: Sequence[str | None]) -> str | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/units-currency-integrity/test_compute_units.py::test_a_rate_input_computes_like_a_pure_one",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_aapl_fy2025_per_share_margin_and_eps_units",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_aapl_minus_tsmc_revenue_is_refused",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_aapl_minus_tsmc_usd_convenience_is_computed",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_ambiguous_base_is_error_not_n_m_and_refusal_propagates",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_amd_fy2025_roic_over_a_rate_tax_rate",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_any_non_ok_input_refuses_the_compute",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_avgo_fy2024_tax_from_a_rate_matches_the_filed_expense",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_ceg_ambiguous_profit_never_enters_the_margin",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_ceg_net_income_control_is_computed",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_dimensionless_refusals[etr - r-units3]",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_dimensionless_refusals[n - 1-units1]",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_dimensionless_refusals[n - etr-units2]",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_dimensionless_refusals[oi + etr-units0]",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_dimensionless_units_are_unitless",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_agrees_with_the_exponent_algebra",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_point_cases_from_stored_units",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_refusals[a ** 2-units7]",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_refusals[a / b-units5]",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_refusals[a / zz-units6]",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_refusals[aapl - tsm-units0]",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_refusals[aapl / tsm-units1]",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_refusals[eps + ni-units3]",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_refusals[ni + sh-units2]",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_expr_unit_refusals[x + 1-units4]",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_money_and_shares_do_not_add[eps25 + ni25-units1]",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_money_and_shares_do_not_add[fcf - sh25-units2]",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_money_and_shares_do_not_add[ni25 + sh25-units0]",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_pure_and_rate_are_interchangeable",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_relabelling_currencies_relabels_the_result",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_scale_invariance",
+    "test/spec/units-currency-integrity/test_compute_units.py::test_two_currencies_refused_and_swapping_labels_changes_nothing",
+    "test/spec/units-currency-integrity/test_derived_screen_units.py::test_derived_metric_unit_matches_the_rule",
+    "test/spec/units-currency-integrity/test_derived_screen_units.py::test_derived_metric_unit_point_cases",
+    "test/spec/units-currency-integrity/test_derived_screen_units.py::test_fy2024_fcf_margin_ranks_tsm_as_a_ratio",
+    "test/spec/units-currency-integrity/test_derived_screen_units.py::test_fy2025_free_cash_flow_screen_leaves_tsm_out",
+    "test/spec/units-currency-integrity/test_derived_screen_units.py::test_order_and_currency_label_do_not_matter",
+    "test/spec/units-currency-integrity/test_derived_screen_units.py::test_point_case_permutation_with_a_fixed_seed",
+    "test/spec/units-currency-integrity/test_derived_screen_units.py::test_pure_and_rate_are_interchangeable",
+    "test/spec/units-currency-integrity/test_derived_screen_units.py::test_scaling_usd_filers_keeps_the_order",
+    "test/spec/units-currency-integrity/test_derived_screen_units.py::test_ticker_permutation_permutes_the_ranking",
+    "test/spec/units-currency-integrity/test_derived_screen_units.py::test_tsm_currency_label_only_changes_the_exclusion",
+    "test/spec/units-currency-integrity/test_derived_screen_units.py::test_tsm_row_mixing_twd_and_usd_is_not_ranked"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/units-currency-integrity.md",
+    "sha256": "b6c5e8bd87443642c909f497e37a66be92c6427f55abc677bac593a431a6670f"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

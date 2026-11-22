@@ -1,0 +1,82 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/company-aliases/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-13",
+  "criteria": {
+    "C1": [
+      "test/spec/company-aliases/test_company_aliases.py::test_normalization_and_matching_point_cases",
+      "test/spec/company-aliases/test_company_aliases.py::test_any_decoration_of_an_alias_resolves_to_its_cik"
+    ],
+    "C2": [
+      "test/spec/company-aliases/test_company_aliases.py::test_no_partial_prefix_or_fuzzy_matching",
+      "test/spec/company-aliases/test_company_aliases.py::test_extending_an_alias_with_letters_breaks_the_match"
+    ],
+    "C3": [
+      "test/spec/company-aliases/test_company_aliases.py::test_valid_file_loads_and_bad_files_raise",
+      "test/spec/company-aliases/test_company_aliases.py::test_any_malformed_cik_is_rejected"
+    ],
+    "C4": [
+      "test/spec/company-aliases/test_company_aliases.py::test_committed_table_maps_the_known_aliases",
+      "test/spec/company-aliases/test_company_aliases.py::test_every_committed_alias_is_normalized_and_resolves_in_any_case"
+    ],
+    "C5": [
+      "test/spec/company-aliases/test_company_aliases.py::test_normalization_is_idempotent_point_cases",
+      "test/spec/company-aliases/test_company_aliases.py::test_idempotent_and_case_insensitive_for_any_ascii_mention"
+    ]
+  },
+  "files": {
+    "test/spec/company-aliases/test_company_aliases.py": "f367019f47ea7510839c53b7f3c599b13bf3d99a7d8e2d614f1038270d5b9904"
+  },
+  "id": "company-aliases",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/entity_aliases.py",
+      "module": "retriever.xbrl.entity_aliases",
+      "qualname": "normalize_company_mention",
+      "signature": "def normalize_company_mention(mention: str) -> str"
+    },
+    {
+      "file": "src/retriever/xbrl/entity_aliases.py",
+      "module": "retriever.xbrl.entity_aliases",
+      "qualname": "match_company_alias",
+      "signature": "def match_company_alias(mention: str, aliases: dict[str, str]) -> str | None"
+    },
+    {
+      "file": "src/retriever/xbrl/entity_aliases.py",
+      "module": "retriever.xbrl.entity_aliases",
+      "qualname": "load_company_aliases",
+      "signature": "def load_company_aliases(path: Path | None=None) -> dict[str, str]"
+    }
+  ],
+  "nodes": [
+    "test/spec/company-aliases/test_company_aliases.py::test_any_decoration_of_an_alias_resolves_to_its_cik",
+    "test/spec/company-aliases/test_company_aliases.py::test_any_malformed_cik_is_rejected",
+    "test/spec/company-aliases/test_company_aliases.py::test_committed_table_maps_the_known_aliases",
+    "test/spec/company-aliases/test_company_aliases.py::test_every_committed_alias_is_normalized_and_resolves_in_any_case",
+    "test/spec/company-aliases/test_company_aliases.py::test_extending_an_alias_with_letters_breaks_the_match",
+    "test/spec/company-aliases/test_company_aliases.py::test_idempotent_and_case_insensitive_for_any_ascii_mention",
+    "test/spec/company-aliases/test_company_aliases.py::test_no_partial_prefix_or_fuzzy_matching",
+    "test/spec/company-aliases/test_company_aliases.py::test_normalization_and_matching_point_cases",
+    "test/spec/company-aliases/test_company_aliases.py::test_normalization_is_idempotent_point_cases",
+    "test/spec/company-aliases/test_company_aliases.py::test_valid_file_loads_and_bad_files_raise"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/company-aliases.md",
+    "sha256": "12b5529428a9c9034f16779fd6558e6f394645cbd0da2f556e2eedc0f01dbb8a"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

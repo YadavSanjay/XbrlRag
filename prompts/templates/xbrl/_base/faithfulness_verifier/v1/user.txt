@@ -1,0 +1,15 @@
+
+Check each of the following STATEMENTS against ITS OWN evidence ("fact_evidence" +
+"chunk_evidence") only.
+
+STATEMENTS:
+{statements_json}
+
+Now produce ONLY the JSON object described in the system prompt, making sure that:
+- Ensure the JSON is strictly valid:
+  - Use double quotes for all keys and string values.
+  - Do NOT include trailing commas.
+- Do NOT wrap the JSON in Markdown code fences.
+- ONLY VALID JSON is returned that can be parsed without any issues on client side.
+- "verdicts" contains exactly one entry per statement above, with matching "index" values.
+

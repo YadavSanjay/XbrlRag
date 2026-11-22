@@ -1,0 +1,272 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-30",
+  "criteria": {
+    "C1": [
+      "test/spec/html10k-chunks/test_hc_prose.py::test_prose_closes_when_the_size_is_reached",
+      "test/spec/html10k-chunks/test_hc_prose.py::test_a_size_exactly_reached_closes_and_the_join_space_does_not_count",
+      "test/spec/html10k-chunks/test_hc_prose.py::test_a_long_block_is_never_split",
+      "test/spec/html10k-chunks/test_hc_prose.py::test_a_section_change_closes_the_chunk",
+      "test/spec/html10k-chunks/test_hc_prose.py::test_a_data_table_closes_the_chunk_and_prose_resumes_after_it",
+      "test/spec/html10k-chunks/test_hc_prose.py::test_a_block_is_a_leaf_and_inline_runs_join_by_a_space",
+      "test/spec/html10k-chunks/test_hc_prose.py::test_prose_equals_the_rule_for_any_block_lengths"
+    ],
+    "C10": [
+      "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_ranges_and_links_of_a_small_filing",
+      "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_offsets_count_utf8_bytes",
+      "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_a_document_with_nothing_in_it_has_no_chunks",
+      "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_a_prose_chunk_range_holds_all_its_blocks",
+      "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_chunks_cover_the_document_contiguously"
+    ],
+    "C11": [
+      "test/spec/html10k-chunks/test_hc_index.py::test_the_payload_of_a_prose_chunk",
+      "test/spec/html10k-chunks/test_hc_index.py::test_the_payload_of_a_table_chunk",
+      "test/spec/html10k-chunks/test_hc_index.py::test_the_label_is_the_one_passed_in_not_the_period_end_year",
+      "test/spec/html10k-chunks/test_hc_index.py::test_a_bad_filing_is_refused[missing]",
+      "test/spec/html10k-chunks/test_hc_index.py::test_a_bad_filing_is_refused[unknown]",
+      "test/spec/html10k-chunks/test_hc_index.py::test_a_bad_filing_is_refused[none]",
+      "test/spec/html10k-chunks/test_hc_index.py::test_a_bad_filing_is_refused[text]",
+      "test/spec/html10k-chunks/test_hc_index.py::test_a_bad_filing_is_refused[bool]",
+      "test/spec/html10k-chunks/test_hc_index.py::test_a_bad_filing_is_refused[other-filing]",
+      "test/spec/html10k-chunks/test_hc_index.py::test_the_embedding_input_mirrors_the_xbrl_flow",
+      "test/spec/html10k-chunks/test_hc_index.py::test_the_embedding_input_with_no_section_and_no_ticker",
+      "test/spec/html10k-chunks/test_hc_index.py::test_the_label_changes_only_the_label",
+      "test/spec/html10k-chunks/test_hc_index.py::test_no_new_module_reads_a_database"
+    ],
+    "C12": [
+      "test/spec/html10k-chunks/test_hc_index.py::test_ensure_collection_creates_the_vectors_and_indexes",
+      "test/spec/html10k-chunks/test_hc_index.py::test_an_existing_collection_is_not_created_again",
+      "test/spec/html10k-chunks/test_hc_index.py::test_upload_writes_one_point_per_payload",
+      "test/spec/html10k-chunks/test_hc_index.py::test_a_mismatch_between_payloads_and_vectors_writes_nothing",
+      "test/spec/html10k-chunks/test_hc_index.py::test_the_order_of_the_vectors_does_not_change_the_points"
+    ],
+    "C13": [
+      "test/spec/html10k-chunks/test_hc_index.py::test_no_xbrl_reaches_the_index",
+      "test/spec/html10k-chunks/test_hc_index.py::test_no_payload_key_names_xbrl_or_facts",
+      "test/spec/html10k-chunks/test_hc_index.py::test_no_index_field_names_xbrl_or_facts",
+      "test/spec/html10k-chunks/test_hc_index.py::test_the_new_modules_import_no_xbrl_code",
+      "test/spec/html10k-chunks/test_hc_index.py::test_any_fact_id_stays_out_of_the_index",
+      "test/spec/html10k-chunks/test_hc_index.py::test_a_tagged_document_and_its_tag_free_twin_give_equal_payloads"
+    ],
+    "C2": [
+      "test/spec/html10k-chunks/test_hc_tables.py::test_table_text_with_stacked_headers_and_a_group_row",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_the_label_header_is_the_printed_stub_text",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_footnote_markers_follow_in_brackets",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_a_pipe_in_text_is_escaped",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_each_row_is_one_line_with_its_numbers_as_printed"
+    ],
+    "C3": [
+      "test/spec/html10k-chunks/test_hc_tables.py::test_a_note_in_the_stub_cell_is_printed_there_and_nowhere_else",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_a_caption_that_is_only_a_note_goes_on_the_note_line",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_a_sentence_caption_stating_the_scale_needs_no_note_line",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_a_standing_note_is_printed_on_the_note_line",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_a_stub_note_silences_a_stale_standing_note",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_no_scale_anywhere_gives_no_note_line",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_a_long_caption_keeps_its_end",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_no_module_of_the_chunker_reads_a_computed_value",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_a_different_scale_word_changes_no_row_line"
+    ],
+    "C4": [
+      "test/spec/html10k-chunks/test_hc_tables.py::test_a_table_that_fits_is_one_chunk",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_one_character_less_splits_at_the_row_group",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_a_group_too_large_splits_between_rows_and_repeats_its_group_row",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_consecutive_group_rows_stay_together",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_a_row_too_long_is_a_part_of_its_own_and_whole",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_the_default_limit_is_two_thousand_characters",
+      "test/spec/html10k-chunks/test_hc_tables.py::test_parts_keep_every_row_in_order_with_the_same_prelude"
+    ],
+    "C5": [
+      "test/spec/html10k-chunks/test_hc_prose.py::test_a_bullet_table_joins_the_prose_stream",
+      "test/spec/html10k-chunks/test_hc_prose.py::test_a_one_row_text_table_is_prose_and_shows_no_markdown",
+      "test/spec/html10k-chunks/test_hc_prose.py::test_a_heading_table_keeps_its_text",
+      "test/spec/html10k-chunks/test_hc_prose.py::test_an_empty_table_adds_nothing",
+      "test/spec/html10k-chunks/test_hc_prose.py::test_a_headed_text_table_and_an_unheaded_number_table_are_data",
+      "test/spec/html10k-chunks/test_hc_prose.py::test_a_table_is_numbered_as_parse_tables_numbers_it",
+      "test/spec/html10k-chunks/test_hc_prose.py::test_every_layout_table_token_is_in_exactly_one_prose_chunk"
+    ],
+    "C6": [
+      "test/spec/html10k-chunks/test_hc_sections.py::test_statements_inside_item_15",
+      "test/spec/html10k-chunks/test_hc_sections.py::test_statements_after_item_16_and_the_signatures",
+      "test/spec/html10k-chunks/test_hc_sections.py::test_notes_in_item_8_leave_item_15_as_the_exhibit_list",
+      "test/spec/html10k-chunks/test_hc_sections.py::test_an_unnumbered_exhibits_entry_of_a_topic_ordered_filing",
+      "test/spec/html10k-chunks/test_hc_sections.py::test_a_numbered_toc_entry_is_preferred",
+      "test/spec/html10k-chunks/test_hc_sections.py::test_no_item_15_adds_nothing",
+      "test/spec/html10k-chunks/test_hc_sections.py::test_every_other_section_is_what_detect_sections_gives"
+    ],
+    "C7": [
+      "test/spec/html10k-chunks/test_hc_sections.py::test_tags_with_statements_inside_item_15",
+      "test/spec/html10k-chunks/test_hc_sections.py::test_tags_with_statements_after_the_signatures",
+      "test/spec/html10k-chunks/test_hc_sections.py::test_tags_with_notes_in_item_8",
+      "test/spec/html10k-chunks/test_hc_sections.py::test_a_heading_printed_as_a_table_row_starts_its_section",
+      "test/spec/html10k-chunks/test_hc_sections.py::test_statements_and_notes_of_a_stub_filer_always_have_a_section"
+    ],
+    "C8": [
+      "test/spec/html10k-chunks/test_hc_sections.py::test_a_filing_with_no_sections_is_indexed_with_the_marker",
+      "test/spec/html10k-chunks/test_hc_sections.py::test_a_topic_ordered_filing_keeps_what_falls_outside_its_sections",
+      "test/spec/html10k-chunks/test_hc_sections.py::test_any_subset_of_sections_loses_no_token"
+    ],
+    "C9": [
+      "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_each_id_is_the_formula_over_the_range_and_part",
+      "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_the_accession_seeds_the_id_and_is_kept",
+      "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_text_of_the_same_byte_length_keeps_the_ids",
+      "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_ids_are_unique_valid_and_stable"
+    ]
+  },
+  "files": {
+    "test/spec/html10k-chunks/conftest.py": "26fbe160014ce737fe914eb2dd952eae9695b04abb31f6dbcb60e134fecdb968",
+    "test/spec/html10k-chunks/test_hc_ids_ranges.py": "4eb35d5a18e9377295b8c532a213af047d3f5133fd48d25eec63cca8f31d78d9",
+    "test/spec/html10k-chunks/test_hc_index.py": "09c28f5a2b07fdfe27ae5fd1a2d0b465a76a8bdb9c7ab0c8b638d3b2f2fc5e54",
+    "test/spec/html10k-chunks/test_hc_prose.py": "66710cbbf2d7cea61b64a7476d3a2a7452bac68f8e028ceefb971f83afa893b0",
+    "test/spec/html10k-chunks/test_hc_sections.py": "dcaca13ddd0b99c1ac142df267aca73e97c1208543c90b5b2c2098cef69ab3c1",
+    "test/spec/html10k-chunks/test_hc_tables.py": "cc740b3706fef043a92c73b234a1ecff5ed258de802e03d65cd9bceb55eb568c"
+  },
+  "id": "html10k-chunks",
+  "interface": [
+    {
+      "file": "src/chunking/html10k_chunking.py",
+      "module": "chunking.html10k_chunking",
+      "qualname": "chunk_filing",
+      "signature": "def chunk_filing(stripped_html: bytes, accession_no: str, *, chunk_size_chars: int=CHUNK_SIZE_IN_CHARS, table_max_chars: int=2000) -> list[Html10kChunk]"
+    },
+    {
+      "file": "src/ingest/html10k/sections.py",
+      "module": "ingest.html10k.sections",
+      "qualname": "detect_chunk_sections",
+      "signature": "def detect_chunk_sections(stripped_html: bytes) -> list[Html10kSection]"
+    },
+    {
+      "file": "src/vectorstores/html10k_qdrant_vectordb_client.py",
+      "module": "vectorstores.html10k_qdrant_vectordb_client",
+      "qualname": "build_payload",
+      "signature": "def build_payload(chunk: Html10kChunk, filing: Mapping[str, object]) -> dict[str, object]"
+    },
+    {
+      "file": "src/vectorstores/html10k_qdrant_vectordb_client.py",
+      "module": "vectorstores.html10k_qdrant_vectordb_client",
+      "qualname": "embedding_input",
+      "signature": "def embedding_input(payload: Mapping[str, object]) -> str"
+    },
+    {
+      "file": "src/vectorstores/html10k_qdrant_vectordb_client.py",
+      "module": "vectorstores.html10k_qdrant_vectordb_client",
+      "qualname": "Html10kQdrantVectorDBClient.__init__",
+      "signature": "def __init__(self, client: QdrantClient) -> None"
+    },
+    {
+      "file": "src/vectorstores/html10k_qdrant_vectordb_client.py",
+      "module": "vectorstores.html10k_qdrant_vectordb_client",
+      "qualname": "Html10kQdrantVectorDBClient.ensure_collection",
+      "signature": "def ensure_collection(self) -> None"
+    },
+    {
+      "file": "src/vectorstores/html10k_qdrant_vectordb_client.py",
+      "module": "vectorstores.html10k_qdrant_vectordb_client",
+      "qualname": "Html10kQdrantVectorDBClient.upload_chunks",
+      "signature": "def upload_chunks(self, payloads: Sequence[Mapping[str, object]], vectors: Mapping[str, tuple[DenseEmbedding, SparseEmbedding]]) -> None"
+    }
+  ],
+  "nodes": [
+    "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_a_document_with_nothing_in_it_has_no_chunks",
+    "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_a_prose_chunk_range_holds_all_its_blocks",
+    "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_chunks_cover_the_document_contiguously",
+    "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_each_id_is_the_formula_over_the_range_and_part",
+    "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_ids_are_unique_valid_and_stable",
+    "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_offsets_count_utf8_bytes",
+    "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_ranges_and_links_of_a_small_filing",
+    "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_text_of_the_same_byte_length_keeps_the_ids",
+    "test/spec/html10k-chunks/test_hc_ids_ranges.py::test_the_accession_seeds_the_id_and_is_kept",
+    "test/spec/html10k-chunks/test_hc_index.py::test_a_bad_filing_is_refused[bool]",
+    "test/spec/html10k-chunks/test_hc_index.py::test_a_bad_filing_is_refused[missing]",
+    "test/spec/html10k-chunks/test_hc_index.py::test_a_bad_filing_is_refused[none]",
+    "test/spec/html10k-chunks/test_hc_index.py::test_a_bad_filing_is_refused[other-filing]",
+    "test/spec/html10k-chunks/test_hc_index.py::test_a_bad_filing_is_refused[text]",
+    "test/spec/html10k-chunks/test_hc_index.py::test_a_bad_filing_is_refused[unknown]",
+    "test/spec/html10k-chunks/test_hc_index.py::test_a_mismatch_between_payloads_and_vectors_writes_nothing",
+    "test/spec/html10k-chunks/test_hc_index.py::test_a_tagged_document_and_its_tag_free_twin_give_equal_payloads",
+    "test/spec/html10k-chunks/test_hc_index.py::test_an_existing_collection_is_not_created_again",
+    "test/spec/html10k-chunks/test_hc_index.py::test_any_fact_id_stays_out_of_the_index",
+    "test/spec/html10k-chunks/test_hc_index.py::test_ensure_collection_creates_the_vectors_and_indexes",
+    "test/spec/html10k-chunks/test_hc_index.py::test_no_index_field_names_xbrl_or_facts",
+    "test/spec/html10k-chunks/test_hc_index.py::test_no_new_module_reads_a_database",
+    "test/spec/html10k-chunks/test_hc_index.py::test_no_payload_key_names_xbrl_or_facts",
+    "test/spec/html10k-chunks/test_hc_index.py::test_no_xbrl_reaches_the_index",
+    "test/spec/html10k-chunks/test_hc_index.py::test_the_embedding_input_mirrors_the_xbrl_flow",
+    "test/spec/html10k-chunks/test_hc_index.py::test_the_embedding_input_with_no_section_and_no_ticker",
+    "test/spec/html10k-chunks/test_hc_index.py::test_the_label_changes_only_the_label",
+    "test/spec/html10k-chunks/test_hc_index.py::test_the_label_is_the_one_passed_in_not_the_period_end_year",
+    "test/spec/html10k-chunks/test_hc_index.py::test_the_new_modules_import_no_xbrl_code",
+    "test/spec/html10k-chunks/test_hc_index.py::test_the_order_of_the_vectors_does_not_change_the_points",
+    "test/spec/html10k-chunks/test_hc_index.py::test_the_payload_of_a_prose_chunk",
+    "test/spec/html10k-chunks/test_hc_index.py::test_the_payload_of_a_table_chunk",
+    "test/spec/html10k-chunks/test_hc_index.py::test_upload_writes_one_point_per_payload",
+    "test/spec/html10k-chunks/test_hc_prose.py::test_a_block_is_a_leaf_and_inline_runs_join_by_a_space",
+    "test/spec/html10k-chunks/test_hc_prose.py::test_a_bullet_table_joins_the_prose_stream",
+    "test/spec/html10k-chunks/test_hc_prose.py::test_a_data_table_closes_the_chunk_and_prose_resumes_after_it",
+    "test/spec/html10k-chunks/test_hc_prose.py::test_a_headed_text_table_and_an_unheaded_number_table_are_data",
+    "test/spec/html10k-chunks/test_hc_prose.py::test_a_heading_table_keeps_its_text",
+    "test/spec/html10k-chunks/test_hc_prose.py::test_a_long_block_is_never_split",
+    "test/spec/html10k-chunks/test_hc_prose.py::test_a_one_row_text_table_is_prose_and_shows_no_markdown",
+    "test/spec/html10k-chunks/test_hc_prose.py::test_a_section_change_closes_the_chunk",
+    "test/spec/html10k-chunks/test_hc_prose.py::test_a_size_exactly_reached_closes_and_the_join_space_does_not_count",
+    "test/spec/html10k-chunks/test_hc_prose.py::test_a_table_is_numbered_as_parse_tables_numbers_it",
+    "test/spec/html10k-chunks/test_hc_prose.py::test_an_empty_table_adds_nothing",
+    "test/spec/html10k-chunks/test_hc_prose.py::test_every_layout_table_token_is_in_exactly_one_prose_chunk",
+    "test/spec/html10k-chunks/test_hc_prose.py::test_prose_closes_when_the_size_is_reached",
+    "test/spec/html10k-chunks/test_hc_prose.py::test_prose_equals_the_rule_for_any_block_lengths",
+    "test/spec/html10k-chunks/test_hc_sections.py::test_a_filing_with_no_sections_is_indexed_with_the_marker",
+    "test/spec/html10k-chunks/test_hc_sections.py::test_a_heading_printed_as_a_table_row_starts_its_section",
+    "test/spec/html10k-chunks/test_hc_sections.py::test_a_numbered_toc_entry_is_preferred",
+    "test/spec/html10k-chunks/test_hc_sections.py::test_a_topic_ordered_filing_keeps_what_falls_outside_its_sections",
+    "test/spec/html10k-chunks/test_hc_sections.py::test_an_unnumbered_exhibits_entry_of_a_topic_ordered_filing",
+    "test/spec/html10k-chunks/test_hc_sections.py::test_any_subset_of_sections_loses_no_token",
+    "test/spec/html10k-chunks/test_hc_sections.py::test_every_other_section_is_what_detect_sections_gives",
+    "test/spec/html10k-chunks/test_hc_sections.py::test_no_item_15_adds_nothing",
+    "test/spec/html10k-chunks/test_hc_sections.py::test_notes_in_item_8_leave_item_15_as_the_exhibit_list",
+    "test/spec/html10k-chunks/test_hc_sections.py::test_statements_after_item_16_and_the_signatures",
+    "test/spec/html10k-chunks/test_hc_sections.py::test_statements_and_notes_of_a_stub_filer_always_have_a_section",
+    "test/spec/html10k-chunks/test_hc_sections.py::test_statements_inside_item_15",
+    "test/spec/html10k-chunks/test_hc_sections.py::test_tags_with_notes_in_item_8",
+    "test/spec/html10k-chunks/test_hc_sections.py::test_tags_with_statements_after_the_signatures",
+    "test/spec/html10k-chunks/test_hc_sections.py::test_tags_with_statements_inside_item_15",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_a_caption_that_is_only_a_note_goes_on_the_note_line",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_a_different_scale_word_changes_no_row_line",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_a_group_too_large_splits_between_rows_and_repeats_its_group_row",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_a_long_caption_keeps_its_end",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_a_note_in_the_stub_cell_is_printed_there_and_nowhere_else",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_a_pipe_in_text_is_escaped",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_a_row_too_long_is_a_part_of_its_own_and_whole",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_a_sentence_caption_stating_the_scale_needs_no_note_line",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_a_standing_note_is_printed_on_the_note_line",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_a_stub_note_silences_a_stale_standing_note",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_a_table_that_fits_is_one_chunk",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_consecutive_group_rows_stay_together",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_each_row_is_one_line_with_its_numbers_as_printed",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_footnote_markers_follow_in_brackets",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_no_module_of_the_chunker_reads_a_computed_value",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_no_scale_anywhere_gives_no_note_line",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_one_character_less_splits_at_the_row_group",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_parts_keep_every_row_in_order_with_the_same_prelude",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_table_text_with_stacked_headers_and_a_group_row",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_the_default_limit_is_two_thousand_characters",
+    "test/spec/html10k-chunks/test_hc_tables.py::test_the_label_header_is_the_printed_stub_text"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/html10k-chunks.md",
+    "sha256": "7fe640c89a1aa250014d11a8e60b2fbc7f64568ace17e8a3007268c7594ed71f"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

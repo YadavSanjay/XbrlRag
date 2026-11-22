@@ -1,0 +1,46 @@
+# v2 held-out draw: the pool's list exclusions (docs/specs/heldout-draw-v2.md, requirement 2).
+# Loaded and validated by src.eval.aprime.v2.load_exclusion_lists. Sector (Financials,
+# Real Estate, Utilities) and corpus exclusions are rules in build_pool_v2, not lists here.
+
+# Development wave 1 (v2 plan section 4.2), 18 filers.
+wave1:
+  - CSCO
+  - ADBE
+  - CRM
+  - QCOM
+  - TXN
+  - NFLX
+  - KO
+  - PG
+  - WMT
+  - COST
+  - HD
+  - MCD
+  - LLY
+  - MRK
+  - ABT
+  - UNP
+  - LMT
+  - UPS
+
+# Development wave 2 (v2 plan section 4.2), 8 filers.
+wave2:
+  - XOM
+  - V
+  - TMUS
+  - JNJ
+  - PEP
+  - BA
+  - CAT
+  - DIS
+
+# Left-outs no excluded sector covers (v2 plan section 4.4), 6 filers: the insurers outside
+# Financials (UNH, CVS) and spin-offs with recast history (GE, GEV, MMM, SNDK). A listed
+# symbol absent from the saved constituents is a pool warning, not an error.
+left_out:
+  - UNH
+  - CVS
+  - GE
+  - GEV
+  - MMM
+  - SNDK

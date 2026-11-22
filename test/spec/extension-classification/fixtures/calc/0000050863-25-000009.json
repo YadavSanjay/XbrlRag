@@ -1,0 +1,308 @@
+{
+ "accession_no": "0000050863-25-000009",
+ "cik": "0000050863",
+ "ticker": "INTC",
+ "extension_namespace": "http://www.intel.com/20241228",
+ "source_file": "intc-20241228_cal.xml",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086325000009/intc-20241228_cal.xml",
+ "source_sha256": "7084961cec5ef561f07669c47b7860796ce2d4f87142805a69a9af28270b4b0a",
+ "retrieved": "local copy under data/storage/sec_edgar (downloaded at ingest); hashed 2026-11-07",
+ "cross_check": "arcs equal to xbrl_db mv_calculation_network by local name (221 arcs)",
+ "selection": "every summation-item arc of every tree (link role, parent) whose parent or a child is an extension presented on IS/BS/CF",
+ "arcs": [
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:AssetsCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:Goodwill",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:IntangibleAssetsNetExcludingGoodwill",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:OtherAssetsNoncurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://fasb.org/us-gaap/2024:PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2024:Assets",
+   "child": "http://www.intel.com/20241228:EquityInvestments",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:AmortizationOfIntangibleAssets",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:DeferredIncomeTaxesAndTaxCredits",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:Depreciation",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:DisposalGroupNotDiscontinuedOperationGainLossOnDisposal",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInAccountsPayable",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInAccountsReceivable",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInEmployeeRelatedLiabilities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInEquitySecuritiesFvNi",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInIncomeTaxesPayableNetOfIncomeTaxesReceivable",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInInventories",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInOtherOperatingCapitalNet",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:RestructuringCharges",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ShareBasedCompensation",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivities",
+   "child": "http://www.intel.com/20241228:AssetImpairmentChargesAndGainLossOnDisposalOfPropertyPlantAndEquipment",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:FinanceLeasePrincipalPayments",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:PaymentsForRepurchaseOfCommonStock",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:PaymentsOfDividendsCommonStock",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProceedsFromIssuanceInitialPublicOffering",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProceedsFromIssuanceOfCommercialPaper",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProceedsFromIssuanceOfLongTermDebt",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProceedsFromMinorityShareholders",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProceedsFromPaymentsForOtherFinancingActivities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProceedsFromStockPlans",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:RepaymentsOfCommercialPaper",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2024:RepaymentsOfLongTermDebt",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://www.intel.com/20241228:PaymentsToAcquirePropertyPlantAndEquipmentFinancingActivities",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://fasb.org/us-gaap/2024:PaymentsForProceedsFromOtherInvestingActivities",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://fasb.org/us-gaap/2024:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://fasb.org/us-gaap/2024:PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://fasb.org/us-gaap/2024:PaymentsToAcquireOtherInvestments",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://fasb.org/us-gaap/2024:PaymentsToAcquirePropertyPlantAndEquipment",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProceedsFromDivestitureOfBusinesses",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProceedsFromEquityMethodInvestmentDividendsOrDistributionsReturnOfCapital",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ProceedsFromSaleOfAvailableForSaleSecuritiesDebt",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInInvestingActivities",
+   "child": "http://www.intel.com/20241228:ProceedsFromCapitalGrants",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "child": "http://fasb.org/us-gaap/2024:NonoperatingIncomeExpense",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "child": "http://fasb.org/us-gaap/2024:OperatingIncomeLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/ConsolidatedStatementsofIncome",
+   "parent": "http://fasb.org/us-gaap/2024:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "child": "http://www.intel.com/20241228:GainsLossesOnEquityInvestments",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/InvestmentsComponentsofEquityInvestmentsDetails",
+   "parent": "http://www.intel.com/20241228:EquityInvestments",
+   "child": "http://fasb.org/us-gaap/2024:EquitySecuritiesWithoutReadilyDeterminableFairValueAmount",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/InvestmentsComponentsofEquityInvestmentsDetails",
+   "parent": "http://www.intel.com/20241228:EquityInvestments",
+   "child": "http://fasb.org/us-gaap/2024:MarketableSecurities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/InvestmentsGainsLossesonEquityInvestmentsDetails",
+   "parent": "http://www.intel.com/20241228:GainsLossesOnEquityInvestments",
+   "child": "http://www.intel.com/20241228:RealizedGainsLossesOnEquityInvestments",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.intel.com/role/InvestmentsGainsLossesonEquityInvestmentsDetails",
+   "parent": "http://www.intel.com/20241228:GainsLossesOnEquityInvestments",
+   "child": "http://www.intel.com/20241228:UnrealizedGainsLossesOnEquityInvestments",
+   "weight": "1"
+  }
+ ]
+}

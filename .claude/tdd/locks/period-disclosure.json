@@ -1,0 +1,171 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-07",
+  "criteria": {
+    "C1": [
+      "test/spec/period-disclosure/test_duration_class.py::test_stored_durations_match_fsds_qtrs[94704-0001730168-26-000054-RevenueFromContractWithCustomerExcludingAssessedTax-20260430-1-Geographical=Americas;]",
+      "test/spec/period-disclosure/test_duration_class.py::test_stored_durations_match_fsds_qtrs[94728-0001730168-26-000054-RevenueFromContractWithCustomerExcludingAssessedTax-20260430-2-Geographical=Americas;]",
+      "test/spec/period-disclosure/test_duration_class.py::test_stored_durations_match_fsds_qtrs[52104-0001193125-26-191507-RevenueFromContractWithCustomerExcludingAssessedTax-20260331-3-]",
+      "test/spec/period-disclosure/test_duration_class.py::test_stored_durations_match_fsds_qtrs[50640-0001193125-26-191507-RevenueFromContractWithCustomerExcludingAssessedTax-20260331-1-]",
+      "test/spec/period-disclosure/test_duration_class.py::test_stored_durations_match_fsds_qtrs[105742-0001193125-26-323660-RevenueFromContractWithCustomerExcludingAssessedTax-20260630-4-]",
+      "test/spec/period-disclosure/test_duration_class.py::test_stored_durations_match_fsds_qtrs[12096-0000320193-23-000106-RevenueFromContractWithCustomerExcludingAssessedTax-20230930-4-]",
+      "test/spec/period-disclosure/test_duration_class.py::test_mcd_restructuring_member_is_a_quarter",
+      "test/spec/period-disclosure/test_duration_class.py::test_stubs_multi_year_and_monthly_periods_are_other[116516-0001868275-23-000014-us-gaap:ProfitLoss]",
+      "test/spec/period-disclosure/test_duration_class.py::test_stubs_multi_year_and_monthly_periods_are_other[217103-0000063908-25-000012-us-gaap:RestructuringAndRelatedCostIncurredCost]",
+      "test/spec/period-disclosure/test_duration_class.py::test_stubs_multi_year_and_monthly_periods_are_other[218467-0000063908-26-000035-us-gaap:RestructuringAndRelatedCostIncurredCost]",
+      "test/spec/period-disclosure/test_duration_class.py::test_stubs_multi_year_and_monthly_periods_are_other[135373-0001692819-23-000005-us-gaap:CommonStockDividendsPerShareCashPaid]",
+      "test/spec/period-disclosure/test_duration_class.py::test_ceg_stub_is_not_the_year_but_the_full_year_is",
+      "test/spec/period-disclosure/test_duration_class.py::test_an_instant_is_instant",
+      "test/spec/period-disclosure/test_duration_class.py::test_class_is_the_band_of_the_day_count",
+      "test/spec/period-disclosure/test_duration_class.py::test_inside_a_band_the_class_is_fsds_rounded_quarters",
+      "test/spec/period-disclosure/test_duration_class.py::test_shifting_both_dates_keeps_the_class"
+    ],
+    "C2": [
+      "test/spec/period-disclosure/test_screen_duration.py::test_q2_geographic_screen_ranks_the_quarter",
+      "test/spec/period-disclosure/test_screen_duration.py::test_q3_geographic_screen_pins_quarter_or_nine_months",
+      "test/spec/period-disclosure/test_screen_duration.py::test_fy_segment_screen_never_ranks_a_quarter",
+      "test/spec/period-disclosure/test_screen_duration.py::test_other_durations_never_change_the_ranking"
+    ],
+    "C3": [
+      "test/spec/period-disclosure/test_year_length.py::test_aapl_fy2024_against_53_week_fy2023",
+      "test/spec/period-disclosure/test_year_length.py::test_aapl_fy2023_against_fy2022_differs",
+      "test/spec/period-disclosure/test_year_length.py::test_msft_equal_years_need_no_note",
+      "test/spec/period-disclosure/test_year_length.py::test_differs_exactly_when_six_or_more_days_apart",
+      "test/spec/period-disclosure/test_year_length.py::test_swap_and_shift"
+    ],
+    "C4": [
+      "test/spec/period-disclosure/test_average_ratio.py::test_aapl_fy2022_opening_balance_is_the_comparative_column",
+      "test/spec/period-disclosure/test_average_ratio.py::test_aapl_fy2022_asset_turnover_on_the_average",
+      "test/spec/period-disclosure/test_average_ratio.py::test_no_opening_balance_falls_back_and_says_so",
+      "test/spec/period-disclosure/test_average_ratio.py::test_zero_denominator_has_no_value",
+      "test/spec/period-disclosure/test_average_ratio.py::test_average_ratio_properties",
+      "test/spec/period-disclosure/test_average_ratio.py::test_only_the_instant_at_the_period_start_opens"
+    ],
+    "C5": [
+      "test/spec/period-disclosure/test_q4.py::test_msft_fy2026_q4_revenue",
+      "test/spec/period-disclosure/test_q4.py::test_discrete_q3_quarter_is_not_a_nine_month_basis",
+      "test/spec/period-disclosure/test_q4.py::test_mixed_bases_are_refused[start]",
+      "test/spec/period-disclosure/test_q4.py::test_mixed_bases_are_refused[unit]",
+      "test/spec/period-disclosure/test_q4.py::test_mixed_bases_are_refused[concept]",
+      "test/spec/period-disclosure/test_q4.py::test_mixed_bases_are_refused[nil_annual]",
+      "test/spec/period-disclosure/test_q4.py::test_mixed_bases_are_refused[nil_nine]",
+      "test/spec/period-disclosure/test_q4.py::test_derived_q4_adds_back_to_the_year",
+      "test/spec/period-disclosure/test_q4.py::test_only_annual_and_nine_month_lengths_derive"
+    ],
+    "C6": [
+      "test/spec/period-disclosure/test_stated_dates.py::test_aapl_fy2024_stored_end_is_stated_one_day_earlier",
+      "test/spec/period-disclosure/test_stated_dates.py::test_msft_q4_dates_are_stated",
+      "test/spec/period-disclosure/test_stated_dates.py::test_emitted_dates_are_stored_minus_one_day"
+    ]
+  },
+  "files": {
+    "test/spec/period-disclosure/conftest.py": "d4fd540259ab0a57813f7c588efb0f0b5675447a67b2b889d8ed2a905f765c4b",
+    "test/spec/period-disclosure/fixtures/companyfacts_excerpts.json": "85aa196a3d842233cedd2e118b08507fc22e667e33353c2942232997e5fe5246",
+    "test/spec/period-disclosure/fixtures/fsds_num.json": "3d751e5dbdaa13e9a19665733bb3cdd22a6ec81a37f683c05f97e84becba9769",
+    "test/spec/period-disclosure/fixtures/ixbrl_excerpts.json": "a7e859ea6cdcf3537ca3b450fc079d593faffbe489602217b8cd5ba8e6b1dff6",
+    "test/spec/period-disclosure/fixtures/store_rows.json": "e90a0e597644f8d3923fd5bf0a71832fa9c2ad2b93fed441a1ea7875e6f534b2",
+    "test/spec/period-disclosure/test_average_ratio.py": "11aa237c6ffb33ed91f45bd585e859388d9617555cb117865c3c351f74747a09",
+    "test/spec/period-disclosure/test_duration_class.py": "141cb89d5bfcf5712334c391ce7d0bbdb6cd204a46ec7fe891a8602fc1af94ec",
+    "test/spec/period-disclosure/test_q4.py": "43d65fddcaffde5678d37457e3aef4079bf16e3d0109a8eb57e7e49b4b30d72b",
+    "test/spec/period-disclosure/test_screen_duration.py": "efdeba335b8bfd87529bfbc013e131f047e38ffc6fbcdded2d61e0a2dfa31506",
+    "test/spec/period-disclosure/test_stated_dates.py": "583c1923d5acf18a89201342a218f81d7b67fe1edc5acd1657d21fa1a5ae0d4b",
+    "test/spec/period-disclosure/test_year_length.py": "bb09246c17a94dca38fd047b3d10e474163dfe5fde3664fe101c7bfcac50ab4d"
+  },
+  "id": "period-disclosure",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/period_disclosure.py",
+      "module": "retriever.xbrl.period_disclosure",
+      "qualname": "duration_class",
+      "signature": "def duration_class(period_start: dt.date | str | None, period_end: dt.date | str) -> str"
+    },
+    {
+      "file": "src/retriever/xbrl/period_disclosure.py",
+      "module": "retriever.xbrl.period_disclosure",
+      "qualname": "year_length_disclosure",
+      "signature": "def year_length_disclosure(current: Mapping[str, Any], prior: Mapping[str, Any]) -> dict[str, Any]"
+    },
+    {
+      "file": "src/retriever/xbrl/period_disclosure.py",
+      "module": "retriever.xbrl.period_disclosure",
+      "qualname": "opening_balance",
+      "signature": "def opening_balance(instants: Iterable[Mapping[str, Any]], period_start: dt.date | str) -> dict[str, Any] | None"
+    },
+    {
+      "file": "src/retriever/xbrl/period_disclosure.py",
+      "module": "retriever.xbrl.period_disclosure",
+      "qualname": "average_based_ratio",
+      "signature": "def average_based_ratio(numerator: float, closing: float, opening: float | None) -> dict[str, Any]"
+    },
+    {
+      "file": "src/retriever/xbrl/period_disclosure.py",
+      "module": "retriever.xbrl.period_disclosure",
+      "qualname": "derive_q4",
+      "signature": "def derive_q4(annual: Mapping[str, Any], nine_month: Mapping[str, Any]) -> dict[str, Any]"
+    }
+  ],
+  "nodes": [
+    "test/spec/period-disclosure/test_average_ratio.py::test_aapl_fy2022_asset_turnover_on_the_average",
+    "test/spec/period-disclosure/test_average_ratio.py::test_aapl_fy2022_opening_balance_is_the_comparative_column",
+    "test/spec/period-disclosure/test_average_ratio.py::test_average_ratio_properties",
+    "test/spec/period-disclosure/test_average_ratio.py::test_no_opening_balance_falls_back_and_says_so",
+    "test/spec/period-disclosure/test_average_ratio.py::test_only_the_instant_at_the_period_start_opens",
+    "test/spec/period-disclosure/test_average_ratio.py::test_zero_denominator_has_no_value",
+    "test/spec/period-disclosure/test_duration_class.py::test_an_instant_is_instant",
+    "test/spec/period-disclosure/test_duration_class.py::test_ceg_stub_is_not_the_year_but_the_full_year_is",
+    "test/spec/period-disclosure/test_duration_class.py::test_class_is_the_band_of_the_day_count",
+    "test/spec/period-disclosure/test_duration_class.py::test_inside_a_band_the_class_is_fsds_rounded_quarters",
+    "test/spec/period-disclosure/test_duration_class.py::test_mcd_restructuring_member_is_a_quarter",
+    "test/spec/period-disclosure/test_duration_class.py::test_shifting_both_dates_keeps_the_class",
+    "test/spec/period-disclosure/test_duration_class.py::test_stored_durations_match_fsds_qtrs[105742-0001193125-26-323660-RevenueFromContractWithCustomerExcludingAssessedTax-20260630-4-]",
+    "test/spec/period-disclosure/test_duration_class.py::test_stored_durations_match_fsds_qtrs[12096-0000320193-23-000106-RevenueFromContractWithCustomerExcludingAssessedTax-20230930-4-]",
+    "test/spec/period-disclosure/test_duration_class.py::test_stored_durations_match_fsds_qtrs[50640-0001193125-26-191507-RevenueFromContractWithCustomerExcludingAssessedTax-20260331-1-]",
+    "test/spec/period-disclosure/test_duration_class.py::test_stored_durations_match_fsds_qtrs[52104-0001193125-26-191507-RevenueFromContractWithCustomerExcludingAssessedTax-20260331-3-]",
+    "test/spec/period-disclosure/test_duration_class.py::test_stored_durations_match_fsds_qtrs[94704-0001730168-26-000054-RevenueFromContractWithCustomerExcludingAssessedTax-20260430-1-Geographical=Americas;]",
+    "test/spec/period-disclosure/test_duration_class.py::test_stored_durations_match_fsds_qtrs[94728-0001730168-26-000054-RevenueFromContractWithCustomerExcludingAssessedTax-20260430-2-Geographical=Americas;]",
+    "test/spec/period-disclosure/test_duration_class.py::test_stubs_multi_year_and_monthly_periods_are_other[116516-0001868275-23-000014-us-gaap:ProfitLoss]",
+    "test/spec/period-disclosure/test_duration_class.py::test_stubs_multi_year_and_monthly_periods_are_other[135373-0001692819-23-000005-us-gaap:CommonStockDividendsPerShareCashPaid]",
+    "test/spec/period-disclosure/test_duration_class.py::test_stubs_multi_year_and_monthly_periods_are_other[217103-0000063908-25-000012-us-gaap:RestructuringAndRelatedCostIncurredCost]",
+    "test/spec/period-disclosure/test_duration_class.py::test_stubs_multi_year_and_monthly_periods_are_other[218467-0000063908-26-000035-us-gaap:RestructuringAndRelatedCostIncurredCost]",
+    "test/spec/period-disclosure/test_q4.py::test_derived_q4_adds_back_to_the_year",
+    "test/spec/period-disclosure/test_q4.py::test_discrete_q3_quarter_is_not_a_nine_month_basis",
+    "test/spec/period-disclosure/test_q4.py::test_mixed_bases_are_refused[concept]",
+    "test/spec/period-disclosure/test_q4.py::test_mixed_bases_are_refused[nil_annual]",
+    "test/spec/period-disclosure/test_q4.py::test_mixed_bases_are_refused[nil_nine]",
+    "test/spec/period-disclosure/test_q4.py::test_mixed_bases_are_refused[start]",
+    "test/spec/period-disclosure/test_q4.py::test_mixed_bases_are_refused[unit]",
+    "test/spec/period-disclosure/test_q4.py::test_msft_fy2026_q4_revenue",
+    "test/spec/period-disclosure/test_q4.py::test_only_annual_and_nine_month_lengths_derive",
+    "test/spec/period-disclosure/test_screen_duration.py::test_fy_segment_screen_never_ranks_a_quarter",
+    "test/spec/period-disclosure/test_screen_duration.py::test_other_durations_never_change_the_ranking",
+    "test/spec/period-disclosure/test_screen_duration.py::test_q2_geographic_screen_ranks_the_quarter",
+    "test/spec/period-disclosure/test_screen_duration.py::test_q3_geographic_screen_pins_quarter_or_nine_months",
+    "test/spec/period-disclosure/test_stated_dates.py::test_aapl_fy2024_stored_end_is_stated_one_day_earlier",
+    "test/spec/period-disclosure/test_stated_dates.py::test_emitted_dates_are_stored_minus_one_day",
+    "test/spec/period-disclosure/test_stated_dates.py::test_msft_q4_dates_are_stated",
+    "test/spec/period-disclosure/test_year_length.py::test_aapl_fy2023_against_fy2022_differs",
+    "test/spec/period-disclosure/test_year_length.py::test_aapl_fy2024_against_53_week_fy2023",
+    "test/spec/period-disclosure/test_year_length.py::test_differs_exactly_when_six_or_more_days_apart",
+    "test/spec/period-disclosure/test_year_length.py::test_msft_equal_years_need_no_note",
+    "test/spec/period-disclosure/test_year_length.py::test_swap_and_shift"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/period-disclosure.md",
+    "sha256": "5bb8a4891db37984b601cee5348f18452468b1c561a942ec9094ebea6bc24c43"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

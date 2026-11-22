@@ -1,0 +1,53 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/family-measure-equivalence/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-05",
+  "criteria": {
+    "C1": [
+      "test/spec/family-measure-equivalence/test_family_measure_equivalence.py::test_operating_expenses_ranks_only_operating_expenses_as_primary",
+      "test/spec/family-measure-equivalence/test_family_measure_equivalence.py::test_operating_expenses_ranking_holds_for_any_depth_and_cap"
+    ],
+    "C2": [
+      "test/spec/family-measure-equivalence/test_family_measure_equivalence.py::test_debt_ranks_long_term_debt_including_current_maturities_only",
+      "test/spec/family-measure-equivalence/test_family_measure_equivalence.py::test_debt_ranking_holds_for_any_depth_and_cap"
+    ],
+    "C3": [
+      "test/spec/family-measure-equivalence/test_family_measure_equivalence.py::test_a_filer_tagging_only_another_measure_gets_no_override",
+      "test/spec/family-measure-equivalence/test_family_measure_equivalence.py::test_no_reported_set_puts_another_measure_first",
+      "test/spec/family-measure-equivalence/test_family_measure_equivalence.py::test_adding_other_measures_never_changes_a_filer_ranking"
+    ]
+  },
+  "files": {
+    "test/spec/family-measure-equivalence/test_family_measure_equivalence.py": "95c59cf65f9091c9e8fda479a1f63a91203ea4f54fa595c2c90d9c093442aeab"
+  },
+  "id": "family-measure-equivalence",
+  "interface": [],
+  "nodes": [
+    "test/spec/family-measure-equivalence/test_family_measure_equivalence.py::test_a_filer_tagging_only_another_measure_gets_no_override",
+    "test/spec/family-measure-equivalence/test_family_measure_equivalence.py::test_adding_other_measures_never_changes_a_filer_ranking",
+    "test/spec/family-measure-equivalence/test_family_measure_equivalence.py::test_debt_ranking_holds_for_any_depth_and_cap",
+    "test/spec/family-measure-equivalence/test_family_measure_equivalence.py::test_debt_ranks_long_term_debt_including_current_maturities_only",
+    "test/spec/family-measure-equivalence/test_family_measure_equivalence.py::test_no_reported_set_puts_another_measure_first",
+    "test/spec/family-measure-equivalence/test_family_measure_equivalence.py::test_operating_expenses_ranking_holds_for_any_depth_and_cap",
+    "test/spec/family-measure-equivalence/test_family_measure_equivalence.py::test_operating_expenses_ranks_only_operating_expenses_as_primary"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/family-measure-equivalence.md",
+    "sha256": "73e3a9c553837e27bb70e9cab9d6825e633943d9f2a32b1907fad1ea87181233"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

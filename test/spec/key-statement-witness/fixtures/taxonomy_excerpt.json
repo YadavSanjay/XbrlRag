@@ -1,0 +1,158 @@
+{
+ "elements": {
+  "us-gaap:AccountsPayableAndAccruedLiabilitiesCurrent": {
+   "documentation": "Sum of the carrying values as of the balance sheet date of obligations incurred through that date and due within one year (or the operating cycle, if longer), including liabilities incurred (and for which invoices have typically been received) and payable to vendors for goods and services received, taxes, interest, rent and utilities, accrued salaries and bonuses, payroll taxes and fringe benefits.",
+   "label": "Accounts Payable and Accrued Liabilities, Current"
+  },
+  "us-gaap:AccountsPayableAndOtherAccruedLiabilitiesCurrent": {
+   "documentation": "Amount of liabilities incurred to vendors for goods and services received, and accrued liabilities classified as other, payable within one year or the normal operating cycle, if longer.",
+   "label": "Accounts Payable and Other Accrued Liabilities, Current"
+  },
+  "us-gaap:AccountsPayableCurrent": {
+   "documentation": "Carrying value as of the balance sheet date of liabilities incurred (and for which invoices have typically been received) and payable to vendors for goods and services received that are used in an entity's business. Used to reflect the current portion of the liabilities (due within one year or within the normal operating cycle if longer).",
+   "label": "Accounts Payable, Current"
+  },
+  "us-gaap:AccountsPayableTradeCurrent": {
+   "documentation": "Carrying value as of the balance sheet date of obligations incurred (and for which invoices have typically been received) and payable to vendors for goods and services received that are used in an entity's business. Used to reflect the current portion of the liabilities (due within one year or within the normal operating cycle if longer).",
+   "label": "Accounts Payable, Trade, Current"
+  },
+  "us-gaap:CommonStockSharesIssued": {
+   "documentation": "Total number of common shares of an entity that have been sold or granted to shareholders (includes common shares that were issued, repurchased and remain in the treasury). These shares represent capital invested by the firm's shareholders and owners, and may be all or only a portion of the number of shares authorized. Shares issued include shares outstanding and shares held in the treasury.",
+   "label": "Common Stock, Shares, Issued"
+  },
+  "us-gaap:CommonStockSharesOutstanding": {
+   "documentation": "Number of shares of common stock outstanding. Common stock represent the ownership interest in a corporation.",
+   "label": "Common Stock, Shares, Outstanding"
+  },
+  "us-gaap:ContractWithCustomerLiability": {
+   "documentation": "Amount of obligation to transfer good or service to customer for which consideration has been received or is receivable.",
+   "label": "Contract with Customer, Liability"
+  },
+  "us-gaap:ContractWithCustomerLiabilityCurrent": {
+   "documentation": "Amount of obligation to transfer good or service to customer for which consideration has been received or is receivable, classified as current.",
+   "label": "Contract with Customer, Liability, Current"
+  },
+  "us-gaap:CostsAndExpenses": {
+   "documentation": "Total costs of sales and operating expenses for the period.",
+   "label": "Costs and Expenses"
+  },
+  "us-gaap:DeferredRevenue": {
+   "documentation": "Amount of deferred income and obligation to transfer product and service to customer for which consideration has been received or is receivable.",
+   "label": "Deferred Revenue"
+  },
+  "us-gaap:DeferredRevenueCurrent": {
+   "documentation": "Amount of deferred income and obligation to transfer product and service to customer for which consideration has been received or is receivable, classified as current.",
+   "label": "Deferred Revenue, Current"
+  },
+  "us-gaap:Depreciation": {
+   "documentation": "The amount of expense recognized in the current period that reflects the allocation of the cost of tangible assets over the assets' useful lives. Includes production and non-production related depreciation.",
+   "label": "Depreciation"
+  },
+  "us-gaap:DepreciationAmortizationAndAccretionNet": {
+   "documentation": "The aggregate net amount of depreciation, amortization, and accretion recognized during an accounting period. As a noncash item, the net amount is added back to net income when calculating cash provided by or used in operations using the indirect method.",
+   "label": "Depreciation, Amortization and Accretion, Net"
+  },
+  "us-gaap:EffectiveIncomeTaxRateContinuingOperations": {
+   "documentation": "Percentage of current income tax expense (benefit) and deferred income tax expense (benefit) pertaining to continuing operations.",
+   "label": "Effective Income Tax Rate Reconciliation, Percent"
+  },
+  "us-gaap:EffectiveIncomeTaxRateReconciliationAtFederalStatutoryIncomeTaxRate": {
+   "documentation": "Percentage of domestic federal statutory tax rate applicable to pretax income (loss).",
+   "label": "Effective Income Tax Rate Reconciliation, at Federal Statutory Income Tax Rate, Percent"
+  },
+  "us-gaap:IntangibleAssetsNetExcludingGoodwill": {
+   "documentation": "Sum of the carrying amounts of all intangible assets, excluding goodwill, as of the balance sheet date, net of accumulated amortization and impairment charges.",
+   "label": "Intangible Assets, Net (Excluding Goodwill)"
+  },
+  "us-gaap:InventoryNet": {
+   "documentation": "Amount after valuation and LIFO reserves of inventory expected to be sold, or consumed within one year or operating cycle, if longer.",
+   "label": "Inventory, Net"
+  },
+  "us-gaap:InvestmentIncomeInterest": {
+   "documentation": "Amount before accretion (amortization) of purchase discount (premium) of interest income on nonoperating securities.",
+   "label": "Investment Income, Interest"
+  },
+  "us-gaap:InvestmentIncomeInterestAndDividend": {
+   "documentation": "Amount before accretion (amortization) of purchase discount (premium) of interest income and dividend income on nonoperating securities.",
+   "label": "Investment Income, Interest and Dividend"
+  },
+  "us-gaap:InvestmentIncomeNet": {
+   "documentation": "Amount after accretion (amortization) of discount (premium), and investment expense, of interest income and dividend income on nonoperating securities.",
+   "label": "Investment Income, Net"
+  },
+  "us-gaap:LongTermDebt": {
+   "documentation": "Amount, after deduction of unamortized premium (discount) and debt issuance cost, of long-term debt. Excludes lease obligation.",
+   "label": "Long-Term Debt"
+  },
+  "us-gaap:LongTermDebtAndCapitalLeaseObligations": {
+   "documentation": "Amount of long-term debt and lease obligation, classified as noncurrent.",
+   "label": "Long-Term Debt and Lease Obligation"
+  },
+  "us-gaap:LongTermDebtCurrent": {
+   "documentation": "Amount, after deduction of unamortized premium (discount) and debt issuance cost, of long-term debt classified as current. Excludes lease obligation.",
+   "label": "Long-Term Debt, Current Maturities"
+  },
+  "us-gaap:LongTermDebtNoncurrent": {
+   "documentation": "Amount, after deduction of unamortized premium (discount) and debt issuance cost, of long-term debt classified as noncurrent. Excludes lease obligation.",
+   "label": "Long-Term Debt, Excluding Current Maturities"
+  },
+  "us-gaap:NetCashProvidedByUsedInFinancingActivitiesContinuingOperations": {
+   "documentation": "Amount of cash inflow (outflow) from financing activity attributable to continuing operation. Financing activity includes, but is not limited to, obtaining resource from owner and providing return on, and return of, their investment; borrowing money and repaying amount borrowed, or settling obligation; and obtaining and paying for other resource obtained from creditor on long-term credit.",
+   "label": "Cash Provided by (Used in) Financing Activity, Continuing Operation"
+  },
+  "us-gaap:NetCashProvidedByUsedInInvestingActivitiesContinuingOperations": {
+   "documentation": "Amount of cash inflow (outflow) from investing activity attributable to continuing operation. Investing activity includes, but is not limited to, making and collecting loan, acquiring and disposing of debt and equity instruments, property, plant, and equipment, and other productive assets.",
+   "label": "Cash Provided by (Used in) Investing Activity, Continuing Operation"
+  },
+  "us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations": {
+   "documentation": "Amount of cash inflow (outflow) from operating activity attributable to continuing operation. Operating activity includes, but is not limited to, transaction, adjustment, and change in value not defined as investing or financing activity.",
+   "label": "Cash Provided by (Used in) Operating Activity, Continuing Operation"
+  },
+  "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic": {
+   "documentation": "Amount, after deduction of tax, noncontrolling interests, dividends on preferred stock and participating securities; of income (loss) available to common shareholders.",
+   "label": "Net Income (Loss) Available to Common Stockholders, Basic"
+  },
+  "us-gaap:NonoperatingIncomeExpense": {
+   "documentation": "The aggregate amount of income or expense from ancillary business-related activities (that is to say, excluding major activities considered part of the normal operations of the business).",
+   "label": "Nonoperating Income (Expense)"
+  },
+  "us-gaap:OperatingExpenses": {
+   "documentation": "Generally recurring costs associated with normal operations except for the portion of these expenses which can be clearly related to production and included in cost of sales or services. Includes selling, general and administrative expense.",
+   "label": "Operating Expenses"
+  },
+  "us-gaap:ResearchAndDevelopmentExpense": {
+   "documentation": "Amount of expense for research and development. Includes, but is not limited to, cost for computer software product to be sold, leased, or otherwise marketed and writeoff of research and development assets acquired in transaction other than business combination or joint venture formation or both. Excludes write-down of intangible asset acquired in business combination or from joint venture formation or both, used in research and development activity.",
+   "label": "Research and Development Expense"
+  },
+  "us-gaap:ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost": {
+   "documentation": "Amount of expense for research and development. Excludes cost for computer software product to be sold, leased, or otherwise marketed, writeoff of research and development assets acquired in transaction other than business combination or joint venture formation or both, and write-down of intangible asset acquired in business combination or from joint venture formation or both, used in research and development activity.",
+   "label": "Research and Development Expense (Excluding Acquired in Process Cost)"
+  },
+  "us-gaap:RestructuringCharges": {
+   "documentation": "Amount of expenses associated with exit or disposal activities pursuant to an authorized plan. Excludes expenses related to a discontinued operation or an asset retirement obligation.",
+   "label": "Restructuring Charges"
+  },
+  "us-gaap:RestructuringCostsAndAssetImpairmentCharges": {
+   "documentation": "Amount, after cash payment, of expenses associated with exit or disposal activities pursuant to an authorized plan and expenses resulting from the write-down of assets. Excludes expenses related to a business combination, a discontinued operation or an asset retirement obligation.",
+   "label": "Restructuring Costs and Asset Impairment Charges"
+  },
+  "us-gaap:RestructuringSettlementAndImpairmentProvisions": {
+   "documentation": "Amount of restructuring charges, remediation cost, and asset impairment loss.",
+   "label": "Restructuring, Settlement and Impairment Provisions"
+  },
+  "us-gaap:SellingAndMarketingExpense": {
+   "documentation": "The aggregate total amount of expenses directly related to the marketing or selling of products or services.",
+   "label": "Selling and Marketing Expense"
+  },
+  "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic": {
+   "documentation": "Number of [basic] shares or units, after adjustment for contingently issuable shares or units and other shares or units not deemed outstanding, determined by relating the portion of time within a reporting period that common shares or units have been outstanding to the total time in that period.",
+   "label": "Weighted Average Number of Shares Outstanding, Basic"
+  }
+ },
+ "source": {
+  "documentation": "https://xbrl.fasb.org/us-gaap/2025/elts/us-gaap-doc-2025.xml",
+  "documentation_sha256": "27f1d4ba06b0dcb0c91225db2ac746d5adefc167518fa3948abbdfb944dab019",
+  "labels": "https://xbrl.fasb.org/us-gaap/2025/elts/us-gaap-lab-2025.xml",
+  "labels_sha256": "c10e9ec81f18676a2f047a5fd614baeec9a35b34a755d59d4b67bcd5349f69b0"
+ }
+}

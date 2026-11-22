@@ -1,0 +1,55 @@
+# The main-shape phrasebook of the compound-shape spec fixture (one or two templates per
+# generated shape), copied for the key-currency-and-definition build and rendering tests.
+templates:
+  - id: lk-terse
+    register: terse
+    shapes: [lookup]
+    text: "{company} {metric} {period}"
+  - id: lk-conv
+    register: conversational
+    shapes: [lookup]
+    text: "What was {company}'s {metric} in {period}?"
+  - id: ratio-formal
+    register: formal
+    shapes: [compute.ratio]
+    text: "State the ratio of {company}'s {metric} to its {metric_2} for {period}."
+  - id: yoy-conv
+    register: conversational
+    shapes: [compute.yoy_growth]
+    text: "How much did {company}'s {metric} grow in {last_period}?"
+  - id: diff-formal
+    register: formal
+    shapes: [compute.difference]
+    text: "By how much did {company}'s {metric} change from {first_period} to {last_period}?"
+  - id: cagr-terse
+    register: terse
+    shapes: [compute.cagr]
+    text: "{company} {metric} CAGR {first_period} to {last_period}"
+  - id: trend-conv
+    register: conversational
+    shapes: [trend]
+    text: "How did {company}'s {metric} move from {first_period} to {last_period}?"
+  - id: pit-formal
+    register: formal
+    shapes: [point_in_time]
+    text: "What {metric} for {period} did {company} report in its {filing_period} annual report?"
+  - id: top-terse
+    register: terse
+    shapes: [screen.top]
+    text: "top {n} {universe} by {metric} {period}"
+  - id: bottom-conv
+    register: conversational
+    shapes: [screen.bottom]
+    text: "Which {n} of {universe} had the lowest {metric} in {period}?"
+  - id: sum-formal
+    register: formal
+    shapes: [screen.sum]
+    text: "What was the combined {metric} of {universe} in {period}?"
+  - id: median-terse
+    register: terse
+    shapes: [screen.median]
+    text: "median {metric} {universe} {period}"
+  - id: peer-conv
+    register: conversational
+    shapes: [peer_relative]
+    text: "Where does {company}'s {metric} in {period} rank among {universe}?"

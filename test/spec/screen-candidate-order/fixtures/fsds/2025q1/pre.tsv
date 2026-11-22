@@ -1,0 +1,36 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0000002488-25-000012	3	13	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2024	Other income (expense), net	0
+0000002488-25-000012	5	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2024	Cash and cash equivalents	0
+0000002488-25-000012	5	4	BS	0	H	ShortTermInvestments	us-gaap/2024	Short-term investments	0
+0000002488-25-000012	5	10	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2024	Property and equipment, net	0
+0000002488-25-000012	8	33	CF	0	H	ProceedsFromShortTermDebt	us-gaap/2024	Proceeds from debt, net of issuance costs	0
+0000002488-25-000012	8	41	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2024	Cash, cash equivalents and restricted cash at beginning of year	0
+0000002488-25-000012	8	42	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2024	Cash, cash equivalents and restricted cash at end of year	0
+0000002488-25-000012	8	54	CF	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2024	Cash and cash equivalents	0
+0000002488-25-000012	8	56	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2024	Total cash, cash equivalents, and restricted cash	0
+0000050863-25-000009	3	10	IS	0	H	NonoperatingIncomeExpense	us-gaap/2024	Interest and other, net	0
+0000050863-25-000009	5	3	BS	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2024	Cash, Cash Equivalents, Restricted Cash and Restricted Cash Equivalents	0
+0000050863-25-000009	5	4	BS	0	H	AvailableForSaleSecuritiesDebtSecuritiesCurrent	us-gaap/2024	Short-term investments	0
+0000050863-25-000009	5	9	BS	0	H	PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization	us-gaap/2024	Property, plant, and equipment, net	0
+0000050863-25-000009	7	1	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2024	Cash and cash equivalents, beginning of period	0
+0000050863-25-000009	7	38	CF	0	H	ProceedsFromIssuanceOfLongTermDebt	us-gaap/2024	Issuance of long-term debt, net of issuance costs	0
+0000050863-25-000009	7	46	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2024	Cash and cash equivalents, end of period	0
+0001045810-25-000023	3	12	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2024	Other, net	0
+0001045810-25-000023	3	13	IS	0	H	NonoperatingIncomeExpense	us-gaap/2024	Other income (expense), net	0
+0001045810-25-000023	5	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2024	Cash and cash equivalents	0
+0001045810-25-000023	5	4	BS	0	H	MarketableSecuritiesCurrent	us-gaap/2024	Marketable securities	0
+0001045810-25-000023	5	9	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2024	Property and equipment, net	0
+0001045810-25-000023	9	38	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2024	Cash and cash equivalents at beginning of period	0
+0001045810-25-000023	9	39	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2024	Cash and cash equivalents at end of period	0
+0001108524-25-000006	3	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2024	Cash and cash equivalents	0
+0001108524-25-000006	3	4	BS	0	H	AvailableForSaleSecuritiesDebtSecuritiesCurrent	us-gaap/2024	Marketable securities	0
+0001108524-25-000006	3	9	BS	0	H	PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization	us-gaap/2024	Property and equipment, net	0
+0001108524-25-000006	5	20	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2024	Other income (expense)	0
+0001108524-25-000006	9	34	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2024	Cash and cash equivalents, beginning of period	0
+0001108524-25-000006	9	35	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2024	Cash and cash equivalents, end of period	0
+0001692819-25-000013	6	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2024	Cash and cash equivalents	0
+0001692819-25-000013	6	15	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2024	Property, plant, and equipment  net	0
+0001692819-25-000013	8	45	CF	0	H	ProceedsFromIssuanceOfDebt	us-gaap/2024	Issuances of long-term debt	0
+0001692819-25-000013	8	50	CF	0	H	ProceedsFromShortTermDebt	us-gaap/2024	Borrowings under Commodity-Linked Facility	0
+0001692819-25-000013	8	62	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2024	Cash, cash equivalents and restricted cash  beginning balance	0
+0001692819-25-000013	8	63	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2024	Cash, cash equivalents and restricted cash  ending balance	0

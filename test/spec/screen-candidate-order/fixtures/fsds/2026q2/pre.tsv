@@ -1,0 +1,5 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0001193125-26-277521	2	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001193125-26-277521	2	4	BS	0	H	AvailableForSaleSecuritiesDebtSecuritiesCurrent	us-gaap/2025	Marketable securities	0
+0001193125-26-277521	2	9	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2025	Property, plant and equipment, net	0
+0001193125-26-277521	8	30	CF	0	H	ProceedsFromIssuanceOfSeniorLongTermDebt	us-gaap/2025	Proceeds from issuances of senior notes, term loan credit agreements and other borrowings, net of issuance costs	0

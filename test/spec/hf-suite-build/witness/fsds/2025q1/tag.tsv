@@ -1,0 +1,4 @@
+tag	version	custom	abstract	datatype	iord	crdr	tlabel	doc
+Revenues	us-gaap/2024	0	0	monetary	D	C	Revenues	
+OperatingIncomeLoss	us-gaap/2024	0	0	monetary	D	C	Operating income	
+NetIncomeLoss	us-gaap/2024	0	0	monetary	D	C	Net income	

@@ -1,0 +1,106 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-11",
+  "criteria": {
+    "C1": [
+      "test/spec/q4-lookup/test_c1_derived.py::test_msft_fy2026_q4_revenue_is_derived[None]",
+      "test/spec/q4-lookup/test_c1_derived.py::test_msft_fy2026_q4_revenue_is_derived[USD]",
+      "test/spec/q4-lookup/test_c1_derived.py::test_row_order_and_unrelated_rows_change_nothing",
+      "test/spec/q4-lookup/test_c1_derived.py::test_derived_q4_plus_nine_months_is_the_year"
+    ],
+    "C2": [
+      "test/spec/q4-lookup/test_c2_filed.py::test_msft_fy2026_filed_q4_dividends_answer",
+      "test/spec/q4-lookup/test_c2_filed.py::test_msft_fy2026_filed_q4_dividends_per_share",
+      "test/spec/q4-lookup/test_c2_filed.py::test_a_quarter_equal_to_its_year_is_set_aside",
+      "test/spec/q4-lookup/test_c2_filed.py::test_a_filed_quarter_wins_whatever_the_nine_months"
+    ],
+    "C3": [
+      "test/spec/q4-lookup/test_c3_refusals.py::test_refusals_name_their_reason[no_10q]",
+      "test/spec/q4-lookup/test_c3_refusals.py::test_refusals_name_their_reason[discrete_q3_only]",
+      "test/spec/q4-lookup/test_c3_refusals.py::test_refusals_name_their_reason[label_without_rows]",
+      "test/spec/q4-lookup/test_c3_refusals.py::test_refusals_name_their_reason[nine_months_other_start]",
+      "test/spec/q4-lookup/test_c3_refusals.py::test_refusals_name_their_reason[instants_only]",
+      "test/spec/q4-lookup/test_c3_refusals.py::test_refusals_name_their_reason[dimensional_only]",
+      "test/spec/q4-lookup/test_c3_refusals.py::test_refusals_name_their_reason[absent_unit]",
+      "test/spec/q4-lookup/test_c3_refusals.py::test_any_subset_gives_the_answer_or_a_refusal"
+    ],
+    "C4": [
+      "test/spec/q4-lookup/test_c4_basis.py::test_year_restated_alone_derives_on_the_as_filed_basis",
+      "test/spec/q4-lookup/test_c4_basis.py::test_both_restated_derives_on_the_latest_basis",
+      "test/spec/q4-lookup/test_c4_basis.py::test_repeated_values_are_not_restatements",
+      "test/spec/q4-lookup/test_c4_basis.py::test_as_originally_reported_reads_the_original_filings",
+      "test/spec/q4-lookup/test_c4_basis.py::test_basis_follows_the_table"
+    ],
+    "C5": [
+      "test/spec/q4-lookup/test_c5_units.py::test_two_units_without_a_unit_are_refused",
+      "test/spec/q4-lookup/test_c5_units.py::test_the_resolved_unit_answers",
+      "test/spec/q4-lookup/test_c5_units.py::test_per_share_unit_matches_its_stored_form",
+      "test/spec/q4-lookup/test_c5_units.py::test_renaming_the_unit_changes_nothing_but_the_unit"
+    ]
+  },
+  "files": {
+    "test/spec/q4-lookup/conftest.py": "ea2218faac345ba74f7de47ba51c5e8b365209acdd69988ec70847da4be3e6e7",
+    "test/spec/q4-lookup/fixtures/fsds_num.json": "b269d72bceff5ce13719c4479a656201a12b8fd5c92c963c612ef54321aa344c",
+    "test/spec/q4-lookup/fixtures/store_rows.json": "875145e01ae22788044b7adbc34b4800de8745fae318081bde45736708e312a8",
+    "test/spec/q4-lookup/test_c1_derived.py": "e73c32c74d975e38ba717fc6d93f32a834fb5be97df5bd9a0637d6086f4d1ccc",
+    "test/spec/q4-lookup/test_c2_filed.py": "57bcbdb842858986d245c2132a57580c0ea7fd89ec3d91ac88baaea040c1977d",
+    "test/spec/q4-lookup/test_c3_refusals.py": "f246d870867752e015b2933c192dc234d4f034e1ff7e6ccf65ce36b75f269d2d",
+    "test/spec/q4-lookup/test_c4_basis.py": "716e606b08511f0580ca3ee121d38f7ef3a0e5f484e26cf272b16a0bdd8ec209",
+    "test/spec/q4-lookup/test_c5_units.py": "d5a3bad9ab25422b670c65a2c3b671201f83d59bf6151536b3aa2fbf30382919"
+  },
+  "id": "q4-lookup",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/q4_lookup.py",
+      "module": "retriever.xbrl.q4_lookup",
+      "qualname": "select_q4",
+      "signature": "def select_q4(rows: Sequence[Mapping[str, Any]], fy: int, unit: str | None=None, as_originally_reported: bool=False) -> dict[str, Any]"
+    }
+  ],
+  "nodes": [
+    "test/spec/q4-lookup/test_c1_derived.py::test_derived_q4_plus_nine_months_is_the_year",
+    "test/spec/q4-lookup/test_c1_derived.py::test_msft_fy2026_q4_revenue_is_derived[None]",
+    "test/spec/q4-lookup/test_c1_derived.py::test_msft_fy2026_q4_revenue_is_derived[USD]",
+    "test/spec/q4-lookup/test_c1_derived.py::test_row_order_and_unrelated_rows_change_nothing",
+    "test/spec/q4-lookup/test_c2_filed.py::test_a_filed_quarter_wins_whatever_the_nine_months",
+    "test/spec/q4-lookup/test_c2_filed.py::test_a_quarter_equal_to_its_year_is_set_aside",
+    "test/spec/q4-lookup/test_c2_filed.py::test_msft_fy2026_filed_q4_dividends_answer",
+    "test/spec/q4-lookup/test_c2_filed.py::test_msft_fy2026_filed_q4_dividends_per_share",
+    "test/spec/q4-lookup/test_c3_refusals.py::test_any_subset_gives_the_answer_or_a_refusal",
+    "test/spec/q4-lookup/test_c3_refusals.py::test_refusals_name_their_reason[absent_unit]",
+    "test/spec/q4-lookup/test_c3_refusals.py::test_refusals_name_their_reason[dimensional_only]",
+    "test/spec/q4-lookup/test_c3_refusals.py::test_refusals_name_their_reason[discrete_q3_only]",
+    "test/spec/q4-lookup/test_c3_refusals.py::test_refusals_name_their_reason[instants_only]",
+    "test/spec/q4-lookup/test_c3_refusals.py::test_refusals_name_their_reason[label_without_rows]",
+    "test/spec/q4-lookup/test_c3_refusals.py::test_refusals_name_their_reason[nine_months_other_start]",
+    "test/spec/q4-lookup/test_c3_refusals.py::test_refusals_name_their_reason[no_10q]",
+    "test/spec/q4-lookup/test_c4_basis.py::test_as_originally_reported_reads_the_original_filings",
+    "test/spec/q4-lookup/test_c4_basis.py::test_basis_follows_the_table",
+    "test/spec/q4-lookup/test_c4_basis.py::test_both_restated_derives_on_the_latest_basis",
+    "test/spec/q4-lookup/test_c4_basis.py::test_repeated_values_are_not_restatements",
+    "test/spec/q4-lookup/test_c4_basis.py::test_year_restated_alone_derives_on_the_as_filed_basis",
+    "test/spec/q4-lookup/test_c5_units.py::test_per_share_unit_matches_its_stored_form",
+    "test/spec/q4-lookup/test_c5_units.py::test_renaming_the_unit_changes_nothing_but_the_unit",
+    "test/spec/q4-lookup/test_c5_units.py::test_the_resolved_unit_answers",
+    "test/spec/q4-lookup/test_c5_units.py::test_two_units_without_a_unit_are_refused"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/q4-lookup.md",
+    "sha256": "2a092d8a659abf082e1dc4efb9020cfcf3e24a6fc0b502d195f2778c1222befa"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

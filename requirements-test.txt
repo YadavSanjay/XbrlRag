@@ -1,0 +1,21 @@
+# Slim TEST dependencies for CI (unit-tests job and the tdd-spec workflow).
+#
+# The unit and spec tests use no heavy models and no real services (fakes sit at the I/O
+# boundaries), so they need the torch-free serving set plus the dev tools and the few
+# test-only/ingest-side libraries they import — not torch / transformers /
+# sentence-transformers / FlagEmbedding / faiss / datasets. Installing the full
+# requirements.txt pulls CUDA torch and its NVIDIA wheels (several GB) and ran the
+# GitHub runner out of disk. Verified in a clean py3.12 venv: ~370 MB installed, and
+# `pytest test/unit test/spec` collects and runs with none of those packages present.
+#
+# Keep it that way: a test that needs a heavy library must importorskip it, and src
+# modules on a tested path import heavy libraries lazily (see src/embeddings/
+# bge_embedding.py). For local dev and ingest use the full requirements.txt.
+
+-r requirements-serve.txt
+-r requirements-dev.txt
+
+edgartools>=2.0.0  # `edgar` — the EDGAR downloader the ingest unit tests import (torch-free)
+boto3>=1.34.0      # S3 FilingStore (src/ingest/sec_edgar/storage.py) — exercised via moto
+moto[s3]>=5.0.0    # mock AWS S3 for the FilingStore S3-backend tests
+lxml==6.1.3        # canonical-HTML / iXBRL DOM parsing in the ingest unit tests

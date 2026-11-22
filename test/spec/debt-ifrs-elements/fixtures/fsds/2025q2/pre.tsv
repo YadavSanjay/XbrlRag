@@ -1,0 +1,56 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0001193125-25-083423	2	3	BS	0	H	CashAndCashEquivalents	ifrs/2024	Cash and cash equivalents	0
+0001193125-25-083423	2	4	BS	0	H	CurrentFinancialAssetsAtFairValueThroughProfitOrLoss	ifrs/2024	Financial assets at fair value through profit or loss	0
+0001193125-25-083423	2	5	BS	0	H	CurrentFinancialAssetsAtFairValueThroughOtherComprehensiveIncome	ifrs/2024	Financial assets at fair value through other comprehensive income	0
+0001193125-25-083423	2	6	BS	0	H	CurrentFinancialAssetsAtAmortisedCost	ifrs/2024	Financial assets at amortized cost	0
+0001193125-25-083423	2	7	BS	0	H	FinancialAssetsHeldForHedging	0001193125-25-083423	Hedging financial assets	0
+0001193125-25-083423	2	8	BS	0	H	CurrentTradeReceivables	ifrs/2024	Notes and accounts receivable, net	0
+0001193125-25-083423	2	9	BS	0	H	CurrentReceivablesFromRelatedPartiesRelatedToCoreBusiness	0001193125-25-083423	Receivables from related parties	0
+0001193125-25-083423	2	10	BS	0	H	OtherCurrentReceivablesFromRelatedParties	0001193125-25-083423	Other receivables from related parties	0
+0001193125-25-083423	2	11	BS	0	H	Inventories	ifrs/2024	Inventories	0
+0001193125-25-083423	2	12	BS	0	H	OtherCurrentFinancialAssets	ifrs/2024	Other financial assets	0
+0001193125-25-083423	2	13	BS	0	H	OtherCurrentAssets	ifrs/2024	Other current assets	0
+0001193125-25-083423	2	14	BS	0	H	CurrentAssets	ifrs/2024	Total current assets	0
+0001193125-25-083423	2	16	BS	0	H	NoncurrentFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue	ifrs/2024	Financial assets at fair value through profit or loss	0
+0001193125-25-083423	2	17	BS	0	H	NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome	ifrs/2024	Financial assets at fair value through other comprehensive income	0
+0001193125-25-083423	2	18	BS	0	H	NoncurrentFinancialAssetsAtAmortisedCost	ifrs/2024	Financial assets at amortized cost	0
+0001193125-25-083423	2	19	BS	0	H	InvestmentAccountedForUsingEquityMethod	ifrs/2024	Investments accounted for using equity method	0
+0001193125-25-083423	2	20	BS	0	H	PropertyPlantAndEquipment	ifrs/2024	Property, plant and equipment	0
+0001193125-25-083423	2	21	BS	0	H	RightofuseAssets	ifrs/2024	Right-of-use assets	0
+0001193125-25-083423	2	22	BS	0	H	IntangibleAssetsAndGoodwill	ifrs/2024	Intangible assets	0
+0001193125-25-083423	2	23	BS	0	H	DeferredTaxAssets	ifrs/2024	Deferred income tax assets	0
+0001193125-25-083423	2	24	BS	0	H	LongtermDeposits	ifrs/2024	Refundable deposits	0
+0001193125-25-083423	2	25	BS	0	H	OtherNoncurrentAssets	ifrs/2024	Other noncurrent assets	0
+0001193125-25-083423	2	26	BS	0	H	NoncurrentAssets	ifrs/2024	Total noncurrent assets	0
+0001193125-25-083423	2	27	BS	0	H	Assets	ifrs/2024	TOTAL	0
+0001193125-25-083423	2	29	BS	0	H	CurrentFinancialLiabilitiesAtFairValueThroughProfitOrLoss	ifrs/2024	Financial liabilities at fair value through profit or loss	0
+0001193125-25-083423	2	30	BS	0	H	FinancialLiabilitiesHeldForHedging	0001193125-25-083423	Hedging financial liabilities	0
+0001193125-25-083423	2	31	BS	0	H	TradeAndOtherCurrentPayablesToTradeSuppliers	ifrs/2024	Accounts payable	0
+0001193125-25-083423	2	32	BS	0	H	TradeAndOtherCurrentPayablesToRelatedParties	ifrs/2024	Payables to related parties	0
+0001193125-25-083423	2	33	BS	0	H	SalaryAndBonusPayableEmployeeBenefitsAccruals	0001193125-25-083423	Salary and bonus payable	0
+0001193125-25-083423	2	34	BS	0	H	AccruedProfitSharingBonusToEmployeesAndCompensationToDirectorsAndSupervisors	0001193125-25-083423	Accrued profit sharing bonus to employees and compensation to directors	0
+0001193125-25-083423	2	35	BS	0	H	CurrentPayablesForPurchaseOfNoncurrentAssets	ifrs/2024	Payables to contractors and equipment suppliers	0
+0001193125-25-083423	2	36	BS	0	H	CurrentDividendPayables	ifrs/2024	Cash dividends payable	0
+0001193125-25-083423	2	37	BS	0	H	CurrentTaxLiabilitiesCurrent	ifrs/2024	Income tax payable	0
+0001193125-25-083423	2	38	BS	0	H	CurrentPortionOfLongtermBorrowings	ifrs/2024	Long-term liabilities - current portion	0
+0001193125-25-083423	2	39	BS	0	H	CurrentAccruedExpensesAndOtherCurrentLiabilities	ifrs/2024	Accrued expenses and other current liabilities	0
+0001193125-25-083423	2	40	BS	0	H	CurrentLiabilities	ifrs/2024	Total current liabilities	0
+0001193125-25-083423	2	42	BS	0	H	NoncurrentPortionOfNoncurrentBondsIssued	ifrs/2024	Bonds payable	0
+0001193125-25-083423	2	43	BS	0	H	LongtermBorrowings	ifrs/2024	Long-term bank loans	0
+0001193125-25-083423	2	44	BS	0	H	DeferredTaxLiabilities	ifrs/2024	Deferred income tax liabilities	0
+0001193125-25-083423	2	45	BS	0	H	NoncurrentLeaseLiabilities	ifrs/2024	Lease liabilities	0
+0001193125-25-083423	2	46	BS	0	H	NoncurrentRecognisedLiabilitiesDefinedBenefitPlan	ifrs/2024	Net defined benefit liability	0
+0001193125-25-083423	2	47	BS	0	H	NoncurrentGuaranteeDeposits	0001193125-25-083423	Guarantee deposits	0
+0001193125-25-083423	2	48	BS	0	H	OtherNoncurrentLiabilities	ifrs/2024	Others	0
+0001193125-25-083423	2	49	BS	0	H	NoncurrentLiabilities	ifrs/2024	Total noncurrent liabilities	0
+0001193125-25-083423	2	50	BS	0	H	Liabilities	ifrs/2024	Total liabilities	0
+0001193125-25-083423	2	52	BS	0	H	IssuedCapital	ifrs/2024	Capital stock	0
+0001193125-25-083423	2	53	BS	0	H	CapitalSurplus	0001193125-25-083423	Capital surplus	0
+0001193125-25-083423	2	55	BS	0	H	CapitalReserve	ifrs/2024	Appropriated as legal capital reserve	0
+0001193125-25-083423	2	56	BS	0	H	UnappropriatedEarnings	0001193125-25-083423	Unappropriated earnings	0
+0001193125-25-083423	2	57	BS	0	H	RetainedEarnings	ifrs/2024	Total retained earnings	0
+0001193125-25-083423	2	58	BS	0	H	OtherReserves	ifrs/2024	Others	0
+0001193125-25-083423	2	59	BS	0	H	EquityAttributableToOwnersOfParent	ifrs/2024	Equity attributable to shareholders of the parent	0
+0001193125-25-083423	2	60	BS	0	H	NoncontrollingInterests	ifrs/2024	NON - CONTROLLING INTERESTS	0
+0001193125-25-083423	2	61	BS	0	H	Equity	ifrs/2024	Total equity	0
+0001193125-25-083423	2	62	BS	0	H	EquityAndLiabilities	ifrs/2024	TOTAL	0

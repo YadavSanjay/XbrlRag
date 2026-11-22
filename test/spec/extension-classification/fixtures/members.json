@@ -1,0 +1,959 @@
+{
+ "source": "src.ingest.util.generate_concept_mapping.committed_mapping_rows() at origin/main d5efac8753cf0cd560f0530795c158cf1c55432f",
+ "selection": "rows whose QName is a standard element named in the fixtures' statement lines or calc arcs; generic rows and rows scoped to a fixture filer; ext: rows and the dimension-sliced families ProductRevenue and ServiceRevenue left out",
+ "built": "2026-11-07",
+ "members": [
+  {
+   "family": "AccountsPayable",
+   "qname": "ifrs-full:TradeAndOtherCurrentPayablesToTradeSuppliers",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "AccountsPayable",
+   "qname": "us-gaap:AccountsPayableCurrent",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "AccountsReceivable",
+   "qname": "ifrs-full:CurrentTradeReceivables",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "AccountsReceivable",
+   "qname": "us-gaap:AccountsReceivableNetCurrent",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "AccountsReceivable",
+   "qname": "us-gaap:ReceivablesNetCurrent",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "Capex",
+   "qname": "ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "Capex",
+   "qname": "us-gaap:PaymentsToAcquireOtherPropertyPlantAndEquipment",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "Capex",
+   "qname": "us-gaap:PaymentsToAcquireProductiveAssets",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "Capex",
+   "qname": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "CashAndEquivalents",
+   "qname": "ifrs-full:CashAndCashEquivalents",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "CashAndEquivalents",
+   "qname": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "CashFromFinancing",
+   "qname": "ifrs-full:CashFlowsFromUsedInFinancingActivities",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "CashFromFinancing",
+   "qname": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "CashFromInvesting",
+   "qname": "ifrs-full:CashFlowsFromUsedInInvestingActivities",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "CashFromInvesting",
+   "qname": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "CashFromInvesting",
+   "qname": "us-gaap:NetCashProvidedByUsedInInvestingActivitiesContinuingOperations",
+   "role": "substitute",
+   "substitution_code": "continuing_operations_only",
+   "cik": null
+  },
+  {
+   "family": "CashFromOperations",
+   "qname": "ifrs-full:CashFlowsFromUsedInOperatingActivities",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "CashFromOperations",
+   "qname": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "CashFromOperations",
+   "qname": "us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+   "role": "substitute",
+   "substitution_code": "continuing_operations_only",
+   "cik": null
+  },
+  {
+   "family": "ComprehensiveIncome",
+   "qname": "ifrs-full:ComprehensiveIncome",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "ComprehensiveIncome",
+   "qname": "ifrs-full:ComprehensiveIncomeAttributableToOwnersOfParent",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "CostOfRevenue",
+   "qname": "ifrs-full:CostOfSales",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "CostOfRevenue",
+   "qname": "us-gaap:CostOfGoodsAndServicesSold",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "CostOfRevenue",
+   "qname": "us-gaap:CostOfRevenue",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "CurrentAssets",
+   "qname": "ifrs-full:CurrentAssets",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "CurrentAssets",
+   "qname": "us-gaap:AssetsCurrent",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "CurrentLiabilities",
+   "qname": "ifrs-full:CurrentLiabilities",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "CurrentLiabilities",
+   "qname": "us-gaap:LiabilitiesCurrent",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "Debt",
+   "qname": "us-gaap:DebtCurrent",
+   "role": "component",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "Debt",
+   "qname": "us-gaap:LongTermDebtAndCapitalLeaseObligations",
+   "role": "substitute",
+   "substitution_code": "excludes_current_portion",
+   "cik": null
+  },
+  {
+   "family": "Debt",
+   "qname": "us-gaap:LongTermDebtNoncurrent",
+   "role": "substitute",
+   "substitution_code": "excludes_current_portion",
+   "cik": null
+  },
+  {
+   "family": "DebtIssued",
+   "qname": "ifrs-full:ProceedsFromIssueOfBondsNotesAndDebentures",
+   "role": "substitute",
+   "substitution_code": "one_of_several_lines",
+   "cik": null
+  },
+  {
+   "family": "DebtIssued",
+   "qname": "us-gaap:ProceedsFromDebtNetOfIssuanceCosts",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "DebtIssued",
+   "qname": "us-gaap:ProceedsFromIssuanceOfDebt",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "DebtIssued",
+   "qname": "us-gaap:ProceedsFromIssuanceOfLongTermDebt",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "DebtRepaid",
+   "qname": "ifrs-full:RepaymentsOfBondsNotesAndDebentures",
+   "role": "substitute",
+   "substitution_code": "one_of_several_lines",
+   "cik": null
+  },
+  {
+   "family": "DebtRepaid",
+   "qname": "ifrs-full:RepaymentsOfNoncurrentBorrowings",
+   "role": "substitute",
+   "substitution_code": "one_of_several_lines",
+   "cik": null
+  },
+  {
+   "family": "DebtRepaid",
+   "qname": "us-gaap:RepaymentsOfConvertibleDebt",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "DebtRepaid",
+   "qname": "us-gaap:RepaymentsOfDebt",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "DebtRepaid",
+   "qname": "us-gaap:RepaymentsOfLongTermDebt",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "DeferredRevenue",
+   "qname": "us-gaap:ContractWithCustomerLiabilityCurrent",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "DeferredRevenue",
+   "qname": "us-gaap:ContractWithCustomerLiabilityNoncurrent",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "DeferredRevenue",
+   "qname": "us-gaap:DeferredRevenueNoncurrent",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "DepreciationAndAmortization",
+   "qname": "ifrs-full:DepreciationExpense",
+   "role": "substitute",
+   "substitution_code": "depreciation_only",
+   "cik": null
+  },
+  {
+   "family": "DepreciationAndAmortization",
+   "qname": "ifrs-full:DepreciationExpense",
+   "role": "substitute",
+   "substitution_code": "depreciation_only",
+   "cik": "0000063908"
+  },
+  {
+   "family": "DepreciationAndAmortization",
+   "qname": "us-gaap:AmortizationOfIntangibleAssets",
+   "role": "component",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "DepreciationAndAmortization",
+   "qname": "us-gaap:AmortizationOfIntangibleAssets",
+   "role": "component",
+   "substitution_code": null,
+   "cik": "0000063908"
+  },
+  {
+   "family": "DepreciationAndAmortization",
+   "qname": "us-gaap:Depreciation",
+   "role": "substitute",
+   "substitution_code": "depreciation_only",
+   "cik": null
+  },
+  {
+   "family": "DepreciationAndAmortization",
+   "qname": "us-gaap:Depreciation",
+   "role": "substitute",
+   "substitution_code": "depreciation_only",
+   "cik": "0000063908"
+  },
+  {
+   "family": "DepreciationAndAmortization",
+   "qname": "us-gaap:DepreciationAmortizationAndAccretionNet",
+   "role": "substitute",
+   "substitution_code": "includes_accretion",
+   "cik": null
+  },
+  {
+   "family": "DepreciationAndAmortization",
+   "qname": "us-gaap:DepreciationAmortizationAndAccretionNet",
+   "role": "substitute",
+   "substitution_code": "includes_accretion",
+   "cik": "0000063908"
+  },
+  {
+   "family": "DepreciationAndAmortization",
+   "qname": "us-gaap:DepreciationAndAmortization",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "DepreciationAndAmortization",
+   "qname": "us-gaap:DepreciationAndAmortization",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": "0000063908"
+  },
+  {
+   "family": "DepreciationAndAmortization",
+   "qname": "us-gaap:DepreciationDepletionAndAmortization",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "DepreciationAndAmortization",
+   "qname": "us-gaap:DepreciationDepletionAndAmortization",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": "0000063908"
+  },
+  {
+   "family": "DepreciationAndAmortization",
+   "qname": "us-gaap:OtherDepreciationAndAmortization",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": "0000002488"
+  },
+  {
+   "family": "DividendsPaid",
+   "qname": "ifrs-full:DividendsPaidClassifiedAsFinancingActivities",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "DividendsPaid",
+   "qname": "us-gaap:PaymentsOfDividends",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "DividendsPaid",
+   "qname": "us-gaap:PaymentsOfDividendsCommonStock",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "DividendsPerShare",
+   "qname": "us-gaap:CommonStockDividendsPerShareDeclared",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "EarningsPerShareBasic",
+   "qname": "ifrs-full:BasicEarningsLossPerShare",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "EarningsPerShareBasic",
+   "qname": "us-gaap:EarningsPerShareBasic",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "EarningsPerShareDiluted",
+   "qname": "ifrs-full:DilutedEarningsLossPerShare",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "EarningsPerShareDiluted",
+   "qname": "us-gaap:EarningsPerShareDiluted",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "GeneralAndAdministrative",
+   "qname": "ifrs-full:GeneralAndAdministrativeExpense",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "GeneralAndAdministrative",
+   "qname": "us-gaap:GeneralAndAdministrativeExpense",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "Goodwill",
+   "qname": "ifrs-full:Goodwill",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "Goodwill",
+   "qname": "us-gaap:Goodwill",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "GrossProfit",
+   "qname": "ifrs-full:GrossProfit",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "GrossProfit",
+   "qname": "us-gaap:GrossProfit",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "IncomeFromContinuingOperations",
+   "qname": "us-gaap:IncomeLossFromContinuingOperations",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "IncomeFromContinuingOperations",
+   "qname": "us-gaap:IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "IncomeFromDiscontinuedOperations",
+   "qname": "us-gaap:IncomeLossFromDiscontinuedOperationsNetOfTax",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "IncomeFromDiscontinuedOperations",
+   "qname": "us-gaap:IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntity",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "IntangibleAssets",
+   "qname": "ifrs-full:IntangibleAssetsAndGoodwill",
+   "role": "substitute",
+   "substitution_code": "includes_goodwill",
+   "cik": null
+  },
+  {
+   "family": "IntangibleAssets",
+   "qname": "us-gaap:IntangibleAssetsNetExcludingGoodwill",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "InterestExpense",
+   "qname": "ifrs-full:FinanceCosts",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "InterestExpense",
+   "qname": "us-gaap:InterestExpense",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "InterestExpense",
+   "qname": "us-gaap:InterestExpenseNonoperating",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "InterestIncome",
+   "qname": "ifrs-full:FinanceIncome",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "InterestIncome",
+   "qname": "ifrs-full:RevenueFromInterest",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "InterestIncome",
+   "qname": "us-gaap:InvestmentIncomeInterest",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "Inventory",
+   "qname": "ifrs-full:Inventories",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "Inventory",
+   "qname": "us-gaap:InventoryNet",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "NetIncome",
+   "qname": "ifrs-full:ProfitLoss",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "NetIncome",
+   "qname": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "NetIncome",
+   "qname": "us-gaap:NetIncomeLoss",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "NetIncome",
+   "qname": "us-gaap:ProfitLoss",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "NetIncomeToCommon",
+   "qname": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "NetIncomeToCommon",
+   "qname": "us-gaap:NetIncomeLossAvailableToCommonStockholdersDiluted",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "OperatingExpenses",
+   "qname": "us-gaap:CostsAndExpenses",
+   "role": "substitute",
+   "substitution_code": "includes_cost_of_revenue",
+   "cik": null
+  },
+  {
+   "family": "OperatingExpenses",
+   "qname": "us-gaap:OperatingExpenses",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "OperatingIncome",
+   "qname": "ifrs-full:ProfitLossFromOperatingActivities",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "OperatingIncome",
+   "qname": "us-gaap:OperatingIncomeLoss",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "OtherNonOperatingIncome",
+   "qname": "us-gaap:NonoperatingIncomeExpense",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "OtherNonOperatingIncome",
+   "qname": "us-gaap:OtherNonoperatingIncomeExpense",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "PretaxIncome",
+   "qname": "ifrs-full:ProfitLossBeforeTax",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "PretaxIncome",
+   "qname": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "PretaxIncome",
+   "qname": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "PropertyPlantAndEquipment",
+   "qname": "ifrs-full:PropertyPlantAndEquipment",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "PropertyPlantAndEquipment",
+   "qname": "us-gaap:PropertyPlantAndEquipmentGross",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "PropertyPlantAndEquipment",
+   "qname": "us-gaap:PropertyPlantAndEquipmentNet",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "ResearchAndDevelopment",
+   "qname": "ifrs-full:ResearchAndDevelopmentExpense",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "ResearchAndDevelopment",
+   "qname": "us-gaap:ResearchAndDevelopmentExpense",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "ResearchAndDevelopment",
+   "qname": "us-gaap:ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "RestructuringCharges",
+   "qname": "us-gaap:RestructuringCharges",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "RestructuringCharges",
+   "qname": "us-gaap:RestructuringCostsAndAssetImpairmentCharges",
+   "role": "substitute",
+   "substitution_code": "includes_impairment_or_other",
+   "cik": null
+  },
+  {
+   "family": "RestructuringCharges",
+   "qname": "us-gaap:RestructuringSettlementAndImpairmentProvisions",
+   "role": "substitute",
+   "substitution_code": "includes_impairment_or_other",
+   "cik": null
+  },
+  {
+   "family": "RetainedEarnings",
+   "qname": "ifrs-full:RetainedEarnings",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "RetainedEarnings",
+   "qname": "us-gaap:RetainedEarningsAccumulatedDeficit",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "Revenue",
+   "qname": "ifrs-full:Revenue",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "Revenue",
+   "qname": "ifrs-full:RevenueFromContractsWithCustomers",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "Revenue",
+   "qname": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "Revenue",
+   "qname": "us-gaap:Revenues",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "SellingAndMarketing",
+   "qname": "us-gaap:SellingAndMarketingExpense",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "SellingGeneralAndAdministrative",
+   "qname": "ifrs-full:SalesAndMarketingExpense",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "SellingGeneralAndAdministrative",
+   "qname": "us-gaap:SellingGeneralAndAdministrativeExpense",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "ShareBasedCompensation",
+   "qname": "ifrs-full:AdjustmentsForSharebasedPayments",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "ShareBasedCompensation",
+   "qname": "us-gaap:ShareBasedCompensation",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "SharesOutstanding",
+   "qname": "us-gaap:CommonStockSharesIssued",
+   "role": "component",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "ShortTermInvestments",
+   "qname": "us-gaap:MarketableSecuritiesCurrent",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "ShortTermInvestments",
+   "qname": "us-gaap:ShortTermInvestments",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "StockRepurchases",
+   "qname": "ifrs-full:PaymentsToAcquireOrRedeemEntitysShares",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "StockRepurchases",
+   "qname": "us-gaap:PaymentsForRepurchaseOfCommonStock",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "StockholdersEquity",
+   "qname": "ifrs-full:Equity",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "StockholdersEquity",
+   "qname": "ifrs-full:EquityAttributableToOwnersOfParent",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "StockholdersEquity",
+   "qname": "us-gaap:StockholdersEquity",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "StockholdersEquity",
+   "qname": "us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "TaxExpense",
+   "qname": "ifrs-full:IncomeTaxExpenseContinuingOperations",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "TaxExpense",
+   "qname": "us-gaap:IncomeTaxExpenseBenefit",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "TotalAssets",
+   "qname": "ifrs-full:Assets",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "TotalAssets",
+   "qname": "us-gaap:Assets",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "TotalLiabilities",
+   "qname": "ifrs-full:Liabilities",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "TotalLiabilities",
+   "qname": "us-gaap:Liabilities",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "WeightedAverageSharesBasic",
+   "qname": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  },
+  {
+   "family": "WeightedAverageSharesDiluted",
+   "qname": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+   "role": "primary",
+   "substitution_code": null,
+   "cik": null
+  }
+ ]
+}

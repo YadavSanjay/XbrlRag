@@ -1,0 +1,44 @@
+**RAG for financial Q&A		 	- https://arxiv.org/pdf/2506.20821	  => generate text explain from charts & tables using LLM. Validate with Q&A
+**FinSage						- https://arxiv.org/pdf/2504.14493    => Optimizations on Ingestion/Retrieval/Re-Ranking
+**MarketSenseAI		   		 	- https://arxiv.org/pdf/2502.00415    => All the features you are looking for
+**10K/Q Filing 				 	- https://arxiv.org/pdf/2309.03079    => try it with newer models [RAG|Langchain|GPT4/x|XGBoost|Ragas]
+
+*FinWorld					  	- https://arxiv.org/pdf/2508.02292    => LLM App flow outlined with Github code
+*DeepFund 						- https://arxiv.org/pdf/2505.11065    => Investment Management Application
+*Chunking for Fin Q&A 			- https://arxiv.org/pdf/2402.05131v3  => goes over chunking approach taken by unstructured.io
+
+*Finance LLM Eval QA 		 	- https://arxiv.org/pdf/2406.14394	  => List of Datasets used in Finance LLM eval
+*FinSaber					  	- https://arxiv.org/pdf/2505.07078    => Good Framework for backtesting LLM predictions
+*FinLoRA 					 	- https://arxiv.org/pdf/2505.19819    => Finance specific LoRA based fine tuning benchmark 
+*RAG Architecture overview      - https://arxiv.org/pdf/2501.09136 
+
+====== LLM 10 Essential Papers =======
+1. Transfomer Paper  - https://arxiv.org/pdf/1706.03762
+2. GPT-3 Paper		 - https://arxiv.org/pdf/2005.14165
+3. InstructGPT Paper - https://arxiv.org/pdf/2203.02155
+4. LoRA Paper        - https://arxiv.org/pdf/2106.09685
+5. RAG Paper         - https://arxiv.org/pdf/2005.11401
+6. LLM Agents		 - https://arxiv.org/pdf/2309.07864
+7. MixOfExp Paper    - https://arxiv.org/pdf/2101.03961
+8. DistilBERT Paper  - https://arxiv.org/pdf/1910.01108
+9. LLM Quantization  - https://arxiv.org/pdf/2208.07339
+10. MCP 			 - https://www.anthropic.com/news/model-context-protocol
+
+
+
+Vanguard Mixture of Agents  	- https://arxiv.org/pdf/2409.07487   => Workflow based on MoA working with SLM
+Analysis Agent based 		 	- https://arxiv.org/pdf/2406.06379	 => Planning/Reflexion when large number of tools/api to select from
+RAG Vulnerability 			 	- https://arxiv.org/pdf/2409.17275	 => How to protect RAG pipeline safety
+Finance Regulatory Analysis  	- https://arxiv.org/pdf/2405.06808	 => elementary FRTB/SBA impl from Basel-III specs
+Fine Tuning for Finance 		- https://arxiv.org/pdf/2504.13125   => SFT, DPO, RL based Fine Tuning of LLM
+Synthetic Tabular Datagen 	  	- https://arxiv.org/pdf/2504.16506
+------
+*Open-FinLLM				 	- https://arxiv.org/pdf/2408.11878	=> Training Finance LLM [with Q&A on charts and tables approach outlined]
+*FinBloom					  	- https://arxiv.org/pdf/2502.18471  => E2E 7B param model with Dataset on huggingface
+*FinGPT 					 	- https://arxiv.org/pdf/2306.06031  => Training Finance LLM [outlines possible application areas]
+*FinRobot					  	- https://arxiv.org/pdf/2405.14767  => E2E flow outlined with Github code
+*BloombergGPT 				 	- https://arxiv.org/pdf/2303.17564	=> Collect list of Validation approaches and datasets used
+*Evaluation metrics for LLM  	- https://arxiv.org/pdf/2412.12148	=> How to choose threashold for Eval metrics for LLM
+*Agent Predict live benchmark 	- https://arxiv.org/pdf/2508.11987  => Interesting array of use cases listed
+*LLM in Finance Survey 	  		- https://arxiv.org/pdf/2311.10723  => Outlines Finance usecases
+*LLM in Economic Forecast		- https://arxiv.org/pdf/2504.14765  => 

@@ -1,0 +1,6 @@
+# Settings for tools/standards/check_standards.py (Stop hook and CI). XbrlRag has no
+# pyproject.toml, so the [tool.standards] table lives here.
+[tool.standards]
+# No mypy config yet, so mypy runs neither at Stop nor in CI.
+mypy_at_stop = false
+protected = ["test/spec/*", ".claude/tdd/*"]

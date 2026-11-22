@@ -1,0 +1,18 @@
+# Synthetic statement-line rules for the key-fallback-witness spec tests: one plain rule per
+# family, written for the conftest's synthetic filings only.
+version: 1
+families:
+  FinancingCashFlow:
+    statements: [CF]
+    include: ['\bfinancing activities\b']
+  DepreciationAndAmortization:
+    statements: [CF]
+    include: ['^depreciation\b']
+  Capex:
+    statements: [CF]
+    include: ['^purchases?\b.*\bproperty\b']
+    exclude: ['\bbusinesses\b']
+  InterestIncome:
+    statements: [IS]
+    include: ['^interest income\b']
+    exclude: ['\bother\b']

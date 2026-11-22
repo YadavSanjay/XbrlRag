@@ -1,0 +1,9 @@
+#model:mistral-large-2
+# date : 2026-10-21
+# prompt: v1
+{"case_id": "int-aaaaaaaaaaaa-11111111", "persona": "typo_prone", "paraphrase": "  Apple’s net sales in FY 24, pls  "}
+{"case_id": "int-bbbbbbbbbbbb-33333333", "persona": "conversational_retail", "paraphrase": "So how did Microsoft's revenue move between fiscal 2022 and fiscal 2024?"}
+{"case_id": "int-cccccccccccc-44444444", "persona": "sell_side_shorthand", "paraphrase": "Top 3 big tech names by revenue — FY2024!"}
+{"case_id": "int-aaaaaaaaaaaa-11111111", "persona": "buried_ask", "paraphrase": "Before I rebalance: what did Apple book in revenue for FY2024?"}
+{"case_id": "int-bbbbbbbbbbbb-33333333", "persona": "buried_ask", "paraphrase": "How did Microsoft's revenue change from fiscal 2022 to fiscal 2024?"}
+{"case_id": "int-aaaaaaaaaaaa-22222222", "persona": "sell_side_shorthand", "paraphrase": "AAPL FY24 top line?"}

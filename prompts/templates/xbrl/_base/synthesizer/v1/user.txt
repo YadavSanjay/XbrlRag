@@ -1,0 +1,35 @@
+
+You will be given:
+1) A user query.
+2) EXECUTION_PLAN — the typed plan whose steps produced the evidence below.
+3) FACT_RESULTS — deterministic numeric results for the plan's "lookup"/"compute" steps.
+4) CONTEXT_CHUNKS — narrative/table chunks retrieved for the plan's "narrative" step(s).
+
+Use ONLY FACT_RESULTS and CONTEXT_CHUNKS to answer the user query, following the JSON output
+format described in the system instructions.
+
+USER QUERY:
+{user_query}
+
+EXECUTION_PLAN:
+{plan_json}
+
+FACT_RESULTS:
+{fact_results}
+
+CONTEXT_CHUNKS:
+{context_chunks}
+
+Now produce ONLY the JSON object described in the system prompt, making sure that:
+- Ensure the JSON is strictly valid:
+  - Use double quotes for all keys and string values.
+  - Do NOT include trailing commas.
+- Do NOT wrap the JSON in Markdown code fences.
+- ONLY VALID JSON is returned that can be parsed without any issues on client side.
+- Every numeric value you mention matches a "value"/"unit" in FACT_RESULTS exactly (no
+  recomputation, no rounding changes).
+- Every factual statement in "answer_details" is backed by "fact_ids" and/or "chunk_ids" that
+  literally appear in FACT_RESULTS / CONTEXT_CHUNKS.
+- You clearly list any parts of the user query that cannot be answered from the evidence in
+  "unanswered_parts", including any FACT_RESULTS entry whose status is not "OK".
+

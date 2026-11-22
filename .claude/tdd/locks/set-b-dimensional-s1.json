@@ -1,0 +1,112 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-12",
+  "criteria": {
+    "C1": [
+      "test/spec/set-b-dimensional-s1/test_c1_lone_member.py::test_fy2025_members_are_answered_by_the_fy2026_10k",
+      "test/spec/set-b-dimensional-s1/test_c1_lone_member.py::test_fy2024_split_members_only_later_filings_report_are_not_candidates",
+      "test/spec/set-b-dimensional-s1/test_c1_lone_member.py::test_a_cell_restates_by_its_full_dimension_set",
+      "test/spec/set-b-dimensional-s1/test_c1_lone_member.py::test_any_later_filings_any_order_give_the_hand_rule",
+      "test/spec/set-b-dimensional-s1/test_c1_lone_member.py::test_earlier_and_non_canonical_filings_change_nothing"
+    ],
+    "C2": [
+      "test/spec/set-b-dimensional-s1/test_c2_breakdown.py::test_fy2024_breakdown_is_the_fy2026_10ks_recast_split",
+      "test/spec/set-b-dimensional-s1/test_c2_breakdown.py::test_fy2025_breakdown_drops_the_member_the_recast_dropped",
+      "test/spec/set-b-dimensional-s1/test_c2_breakdown.py::test_fy2023_breakdown_is_the_fy2025_10ks_split",
+      "test/spec/set-b-dimensional-s1/test_c2_breakdown.py::test_intel_fy2022_takes_the_latest_splitting_filing",
+      "test/spec/set-b-dimensional-s1/test_c2_breakdown.py::test_no_own_column_no_breakdown",
+      "test/spec/set-b-dimensional-s1/test_c2_breakdown.py::test_any_later_filings_any_order_give_the_hand_rule",
+      "test/spec/set-b-dimensional-s1/test_c2_breakdown.py::test_other_periods_and_non_canonical_rows_change_nothing"
+    ],
+    "C3": [
+      "test/spec/set-b-dimensional-s1/test_c3_resolution.py::test_a_breakdown_from_the_recast_split_verifies",
+      "test/spec/set-b-dimensional-s1/test_c3_resolution.py::test_a_breakdown_from_the_superseded_split_does_not_verify",
+      "test/spec/set-b-dimensional-s1/test_c3_resolution.py::test_a_lone_member_key_reads_the_lone_member_rule",
+      "test/spec/set-b-dimensional-s1/test_c3_resolution.py::test_an_hx_member_trend_reads_the_latest_reports",
+      "test/spec/set-b-dimensional-s1/test_c3_resolution.py::test_a_breakdown_written_from_the_latest_splitting_filing_verifies",
+      "test/spec/set-b-dimensional-s1/test_c3_resolution.py::test_resolutions_do_not_depend_on_row_order"
+    ],
+    "C4": [
+      "test/spec/set-b-dimensional-s1/test_sbd_c4_stores.py::test_the_stores_read_both_rules_from_every_filing[set_b]",
+      "test/spec/set-b-dimensional-s1/test_sbd_c4_stores.py::test_the_stores_read_both_rules_from_every_filing[hx]",
+      "test/spec/set-b-dimensional-s1/test_sbd_c4_stores.py::test_the_seams_default_is_facts_for",
+      "test/spec/set-b-dimensional-s1/test_sbd_c4_stores.py::test_the_build_records_the_breakdown_members_labels",
+      "test/spec/set-b-dimensional-s1/test_sbd_c4_stores.py::test_row_order_and_other_filers_never_change_the_stores"
+    ]
+  },
+  "files": {
+    "test/spec/set-b-dimensional-s1/conftest.py": "46af6baf3c0d255521a0bb85b73981acc2440dce484353a88a8721bae3ee193e",
+    "test/spec/set-b-dimensional-s1/fixtures/dei.json": "2e261b57dd0843f2b4999df274ad4691bfd2d495972721f6c91a6552a8436a1f",
+    "test/spec/set-b-dimensional-s1/fixtures/fsds_nvda_recast.json": "9a24b4045c3efcff2a0ef826e6aec4aea576ef7bf685cd9db79462c200f88ca5",
+    "test/spec/set-b-dimensional-s1/fixtures/fsds_segments.json": "5652a018bf3f4c4987e1b1b396a76be9f2aea80b4b0e40a7d9607da096d519dd",
+    "test/spec/set-b-dimensional-s1/test_c1_lone_member.py": "671e167d2bcd36cf89f5189b4badd38baba6d1126f4d305054ed380323debd05",
+    "test/spec/set-b-dimensional-s1/test_c2_breakdown.py": "b8cf92961d8d85303b8596b56f747b78226eae781ac1adc401a453f4762b4204",
+    "test/spec/set-b-dimensional-s1/test_c3_resolution.py": "8861a2a838f6282e5dba97cd2628e0277eee1f175e20fa4680eaab6bb1efc73f",
+    "test/spec/set-b-dimensional-s1/test_sbd_c4_stores.py": "2038938eba91a761ff5df8229648579e1af54f13302cab5b9528a5d387a3e86b"
+  },
+  "id": "set-b-dimensional-s1",
+  "interface": [
+    {
+      "file": "src/eval/set_b/base.py",
+      "module": "eval.set_b.base",
+      "qualname": "KeyFactStore.breakdown_facts_for",
+      "signature": "def breakdown_facts_for(self, ticker: str, fiscal_year: int) -> list[dict]"
+    },
+    {
+      "file": "src/eval/set_b/pg_store.py",
+      "module": "eval.set_b.pg_store",
+      "qualname": "breakdown_candidates",
+      "signature": "def breakdown_candidates(rows: Sequence[dict[str, Any]], fiscal_year: int) -> list[dict]"
+    },
+    {
+      "file": "src/eval/set_b/pg_store.py",
+      "module": "eval.set_b.pg_store",
+      "qualname": "PostgresKeyFactStore.breakdown_facts_for",
+      "signature": "def breakdown_facts_for(self, ticker: str, fiscal_year: int) -> list[dict]"
+    }
+  ],
+  "nodes": [
+    "test/spec/set-b-dimensional-s1/test_c1_lone_member.py::test_a_cell_restates_by_its_full_dimension_set",
+    "test/spec/set-b-dimensional-s1/test_c1_lone_member.py::test_any_later_filings_any_order_give_the_hand_rule",
+    "test/spec/set-b-dimensional-s1/test_c1_lone_member.py::test_earlier_and_non_canonical_filings_change_nothing",
+    "test/spec/set-b-dimensional-s1/test_c1_lone_member.py::test_fy2024_split_members_only_later_filings_report_are_not_candidates",
+    "test/spec/set-b-dimensional-s1/test_c1_lone_member.py::test_fy2025_members_are_answered_by_the_fy2026_10k",
+    "test/spec/set-b-dimensional-s1/test_c2_breakdown.py::test_any_later_filings_any_order_give_the_hand_rule",
+    "test/spec/set-b-dimensional-s1/test_c2_breakdown.py::test_fy2023_breakdown_is_the_fy2025_10ks_split",
+    "test/spec/set-b-dimensional-s1/test_c2_breakdown.py::test_fy2024_breakdown_is_the_fy2026_10ks_recast_split",
+    "test/spec/set-b-dimensional-s1/test_c2_breakdown.py::test_fy2025_breakdown_drops_the_member_the_recast_dropped",
+    "test/spec/set-b-dimensional-s1/test_c2_breakdown.py::test_intel_fy2022_takes_the_latest_splitting_filing",
+    "test/spec/set-b-dimensional-s1/test_c2_breakdown.py::test_no_own_column_no_breakdown",
+    "test/spec/set-b-dimensional-s1/test_c2_breakdown.py::test_other_periods_and_non_canonical_rows_change_nothing",
+    "test/spec/set-b-dimensional-s1/test_c3_resolution.py::test_a_breakdown_from_the_recast_split_verifies",
+    "test/spec/set-b-dimensional-s1/test_c3_resolution.py::test_a_breakdown_from_the_superseded_split_does_not_verify",
+    "test/spec/set-b-dimensional-s1/test_c3_resolution.py::test_a_breakdown_written_from_the_latest_splitting_filing_verifies",
+    "test/spec/set-b-dimensional-s1/test_c3_resolution.py::test_a_lone_member_key_reads_the_lone_member_rule",
+    "test/spec/set-b-dimensional-s1/test_c3_resolution.py::test_an_hx_member_trend_reads_the_latest_reports",
+    "test/spec/set-b-dimensional-s1/test_c3_resolution.py::test_resolutions_do_not_depend_on_row_order",
+    "test/spec/set-b-dimensional-s1/test_sbd_c4_stores.py::test_row_order_and_other_filers_never_change_the_stores",
+    "test/spec/set-b-dimensional-s1/test_sbd_c4_stores.py::test_the_build_records_the_breakdown_members_labels",
+    "test/spec/set-b-dimensional-s1/test_sbd_c4_stores.py::test_the_seams_default_is_facts_for",
+    "test/spec/set-b-dimensional-s1/test_sbd_c4_stores.py::test_the_stores_read_both_rules_from_every_filing[hx]",
+    "test/spec/set-b-dimensional-s1/test_sbd_c4_stores.py::test_the_stores_read_both_rules_from_every_filing[set_b]"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/set-b-dimensional-s1.md",
+    "sha256": "f46f9cac7014d927064e97fb336bbdd6a14c4da376bd0b3c306e34e8cc7961fe"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

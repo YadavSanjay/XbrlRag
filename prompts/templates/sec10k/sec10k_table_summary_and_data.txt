@@ -1,0 +1,112 @@
+""" You are given an image containing a SEC-10K table for Company {company_name}'s {document_type} for {filing_year}.
+
+**Context:**
+Company: {company_name}
+Filing Year: {filing_year}
+Document: {document_type}
+
+**Table Header:**
+{table_header}
+
+**Table Footer:**
+{table_footer}
+    
+Your required to analyse with focus on numerical accuracy and completeness. 
+Output is a single JSON object with this shape:
+
+{{
+  "table_summary": {{
+    "TITLE": "...",
+    "TABLE_TYPE": "...",
+    "COLUMNS": "...",
+    "ROWS": "..."
+  }},
+  "table_json": {{
+    "metadata": {{ ... }},
+    "table": {{
+      "title": "...",
+      "subtitle": "...",
+      "statement_type": "...",
+      "units": {{ ... }},
+      "column_headers": {{ ... }},
+      "rows": [ ... ],
+      "footnotes": [ ... ]
+    }}
+  }}
+}}
+
+Follow these rules:
+
+1) `metadata`:
+   - reporting_entity = "{company_name}"
+   - source_document_type = "{document_type}"
+   - fiscal_year = "{filing_year}"
+   - currency (if visible, e.g., "USD")
+   - amount_base_unit (e.g., "millions" if the table says "in millions")
+   - source_caption: any caption/description above/below the table.
+
+2) `table.title`, `table.subtitle`, `statement_type`:
+   - title: exact table title.
+   - subtitle: any date/unit line (e.g., "December 31, 2024 (in millions)").
+   - statement_type: classify as one of:
+     "balance_sheet", "income_statement", "cash_flow", "segment_reporting",
+     "credit_exposure", "fair_value", "risk_measures", "capital_structure",
+     "debt_maturity", "equity", "footnote_table", "other".
+
+3) `units`:
+   - default_amount, percentage, per_share, etc. Capture units at table and column level.
+
+4) `column_headers` (multi-level header support):
+   - Use:
+     "column_headers": {{
+       "axes": [
+         {{
+           "axis_name": "columns",
+           "levels": [
+             [... first header row ...],
+             [... second header row ...]
+           ]
+         }}
+       ],
+       "canonical_columns": [
+         {{
+           "id": "unique_column_id",
+           "header_path": ["<top>", "<middle>", "<leaf>"],
+           "unit": "<unit if known>"
+         }}
+       ]
+     }}
+   - Preserve exact header text (including footnote markers) in the levels.
+   - Every leaf header column should have a `canonical_columns` entry with `id`, `header_path`, `unit`.
+
+5) `rows`:
+   - Each visual row in the body becomes an object:
+     {{
+       "row_label": "<clean label>",
+       "row_label_raw": "<exact label as printed>",
+       "row_level": 0,
+       "row_type": "data" | "subtotal" | "total" | "section" | "header",
+       "footnote_refs": ["(a)", "1"],
+       "values": {{
+         "<column_id_from_canonical_columns>": <number or null>
+       }}
+     }}
+   - row_label_raw must include prefix like "Less:" and any footnote markers.
+   - row_level is inferred indentation (0 = top-level, 1 = one indent, etc.).
+   - Convert parentheses negatives to negative numbers.
+   - Use null for blanks, dashes, or N/A.
+
+6) `footnotes`:
+   - If and only if present, include. Do not fabricate.:
+     "footnotes": [
+       {{ "ref": "(a)", "text": "Full footnote text" }}
+     ].
+
+7) `table_summary.TITLE`,`table_summary.TABLE_TYPE`, `table_summary.COLUMNS`, `table_summary.ROWS`:
+    - TITLE: If present then exact table title otherwise generate a concise title based on content.
+    - TABLE_TYPE: the inferred statement_type in words (e.g., "Income Statement", "Segment Revenue Table")
+    - COLUMNS: list all column headers or categories (grouped logically)
+    - ROWS: list all major line items/rows in order
+
+Return ONLY the JSON object with keys "table_summary" and "table_json", no extra commentary.
+"""

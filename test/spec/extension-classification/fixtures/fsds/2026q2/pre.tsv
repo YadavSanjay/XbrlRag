@@ -1,0 +1,270 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0001193125-26-277521	2	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	Cash and cash equivalents	0
+0001193125-26-277521	2	4	BS	0	H	AvailableForSaleSecuritiesDebtSecuritiesCurrent	us-gaap/2025	Marketable securities	0
+0001193125-26-277521	2	5	BS	0	H	AccountsReceivableNetCurrent	us-gaap/2025	Trade receivables, net of allowances for credit losses of $542 and $557 as of May 31, 2026 and May 31, 2025, respectively	0
+0001193125-26-277521	2	6	BS	0	H	PrepaidExpenseAndOtherAssetsCurrent	us-gaap/2025	Prepaid expenses and other current assets	0
+0001193125-26-277521	2	7	BS	0	H	AssetsCurrent	us-gaap/2025	Total current assets	0
+0001193125-26-277521	2	9	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2025	Property, plant and equipment, net	0
+0001193125-26-277521	2	10	BS	0	H	OperatingLeaseRightOfUseAsset	us-gaap/2025	Operating lease right-of-use assets	0
+0001193125-26-277521	2	11	BS	0	H	Goodwill	us-gaap/2025	Goodwill	0
+0001193125-26-277521	2	12	BS	0	H	DeferredIncomeTaxAssetsNet	us-gaap/2025	Deferred tax assets	0
+0001193125-26-277521	2	13	BS	0	H	OtherAssetsNoncurrent	us-gaap/2025	Other non-current assets	0
+0001193125-26-277521	2	14	BS	0	H	AssetsNoncurrent	us-gaap/2025	Total non-current assets	0
+0001193125-26-277521	2	15	BS	0	H	Assets	us-gaap/2025	Total assets	0
+0001193125-26-277521	2	18	BS	0	H	NotesPayableCurrent	us-gaap/2025	Notes payable and other borrowings, current	0
+0001193125-26-277521	2	19	BS	0	H	AccountsPayableCurrent	us-gaap/2025	Accounts payable	0
+0001193125-26-277521	2	20	BS	0	H	EmployeeRelatedLiabilitiesCurrent	us-gaap/2025	Accrued compensation and related benefits	0
+0001193125-26-277521	2	21	BS	0	H	ContractWithCustomerLiabilityCurrent	us-gaap/2025	Deferred revenues	0
+0001193125-26-277521	2	22	BS	0	H	OtherLiabilitiesCurrent	us-gaap/2025	Other current liabilities	0
+0001193125-26-277521	2	23	BS	0	H	LiabilitiesCurrent	us-gaap/2025	Total current liabilities	0
+0001193125-26-277521	2	25	BS	0	H	LongTermNotesAndLoans	us-gaap/2025	Notes payable and other borrowings, non-current	0
+0001193125-26-277521	2	26	BS	0	H	AccruedIncomeTaxesNoncurrent	us-gaap/2025	Income taxes payable	0
+0001193125-26-277521	2	27	BS	0	H	OperatingLeaseLiabilityNoncurrent	us-gaap/2025	Operating lease liabilities	0
+0001193125-26-277521	2	28	BS	0	H	OtherLiabilitiesNoncurrent	us-gaap/2025	Other non-current liabilities	0
+0001193125-26-277521	2	29	BS	0	H	LiabilitiesNoncurrent	us-gaap/2025	Total non-current liabilities	0
+0001193125-26-277521	2	30	BS	0	H	CommitmentsAndContingencies	us-gaap/2025	Commitments and contingencies	0
+0001193125-26-277521	2	32	BS	0	H	PreferredStockValue	us-gaap/2025	Preferred stock, $0.01 par value and additional paid in capital-authorized: 1.0 shares; outstanding: 0.05 shares as of May 31, 2026 of 6.50% Series D Mandatory Convertible Preferred Stock (none as of May 31, 2025)	0
+0001193125-26-277521	2	33	BS	0	H	CommonStocksIncludingAdditionalPaidInCapital	us-gaap/2025	Common stock, $0.01 par value and additional paid in capital-authorized: 11,000 shares; outstanding: 2,880 shares and 2,807 shares as of May 31, 2026 and 2025, respectively	0
+0001193125-26-277521	2	34	BS	0	H	RetainedEarningsAccumulatedDeficit	us-gaap/2025	Accumulated deficit	0
+0001193125-26-277521	2	35	BS	0	H	AccumulatedOtherComprehensiveIncomeLossNetOfTax	us-gaap/2025	Accumulated other comprehensive loss	0
+0001193125-26-277521	2	36	BS	0	H	StockholdersEquity	us-gaap/2025	Total Oracle Corporation stockholders' equity	0
+0001193125-26-277521	2	37	BS	0	H	MinorityInterest	us-gaap/2025	Noncontrolling interests	0
+0001193125-26-277521	2	38	BS	0	H	StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest	us-gaap/2025	Total stockholders' equity	0
+0001193125-26-277521	2	39	BS	0	H	LiabilitiesAndStockholdersEquity	us-gaap/2025	Total liabilities and stockholders' equity	0
+0001193125-26-277521	4	2	IS	0	H	CloudRevenues	0001193125-26-277521	Cloud	0
+0001193125-26-277521	4	3	IS	0	H	SoftwareRevenues	0001193125-26-277521	Software	0
+0001193125-26-277521	4	4	IS	0	H	HardwareRevenues	0001193125-26-277521	Hardware	0
+0001193125-26-277521	4	5	IS	0	H	SalesRevenueServicesNet1	0001193125-26-277521	Services	0
+0001193125-26-277521	4	6	IS	0	H	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2025	Total revenues	0
+0001193125-26-277521	4	8	IS	0	H	CloudAndSoftwareExpenses	0001193125-26-277521	Cloud and software	0
+0001193125-26-277521	4	9	IS	0	H	HardwareExpenses	0001193125-26-277521	Hardware	0
+0001193125-26-277521	4	10	IS	0	H	ServicesExpense	0001193125-26-277521	Services	0
+0001193125-26-277521	4	11	IS	0	H	SellingAndMarketingExpense	us-gaap/2025	Sales and marketing	0
+0001193125-26-277521	4	12	IS	0	H	ResearchAndDevelopmentExpense	us-gaap/2025	Research and development	0
+0001193125-26-277521	4	13	IS	0	H	GeneralAndAdministrativeExpense	us-gaap/2025	General and administrative	0
+0001193125-26-277521	4	14	IS	0	H	AmortizationOfIntangibleAssets	us-gaap/2025	Amortization of intangible assets	0
+0001193125-26-277521	4	15	IS	0	H	RestructuringAndOtherExpenses	0001193125-26-277521	Restructuring and other	0
+0001193125-26-277521	4	16	IS	0	H	CostsAndExpenses	us-gaap/2025	Total operating expenses	0
+0001193125-26-277521	4	17	IS	0	H	OperatingIncomeLoss	us-gaap/2025	Operating income	0
+0001193125-26-277521	4	18	IS	0	H	InterestExpense	us-gaap/2025	Interest expense	1
+0001193125-26-277521	4	19	IS	0	H	NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests	0001193125-26-277521	Non-operating income (expenses), net	0
+0001193125-26-277521	4	20	IS	0	H	IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems	0001193125-26-277521	Income before income taxes	0
+0001193125-26-277521	4	21	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2025	Provision for income taxes	0
+0001193125-26-277521	4	22	IS	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0001193125-26-277521	4	23	IS	0	H	PreferredStockDividendsIncomeStatementImpact	us-gaap/2025	Preferred stock dividends	0
+0001193125-26-277521	4	24	IS	0	H	NetIncomeLossAvailableToCommonStockholdersBasic	us-gaap/2025	Net income available to common shareholders, Basic	0
+0001193125-26-277521	4	25	IS	0	H	NetIncomeLossAvailableToCommonStockholdersDiluted	us-gaap/2025	Net income available to common shareholders, Diluted	0
+0001193125-26-277521	4	27	IS	0	H	EarningsPerShareBasic	us-gaap/2025	Basic	0
+0001193125-26-277521	4	28	IS	0	H	EarningsPerShareDiluted	us-gaap/2025	Diluted	0
+0001193125-26-277521	4	30	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2025	Basic	0
+0001193125-26-277521	4	31	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2025	Diluted	0
+0001193125-26-277521	8	2	CF	0	H	NetIncomeLoss	us-gaap/2025	Net income	0
+0001193125-26-277521	8	4	CF	0	H	Depreciation	us-gaap/2025	Depreciation	0
+0001193125-26-277521	8	5	CF	0	H	AmortizationOfIntangibleAssets	us-gaap/2025	Amortization of intangible assets	0
+0001193125-26-277521	8	6	CF	0	H	DeferredIncomeTaxExpenseBenefit	us-gaap/2025	Deferred income taxes	0
+0001193125-26-277521	8	7	CF	0	H	ShareBasedCompensation	us-gaap/2025	Stock-based compensation	0
+0001193125-26-277521	8	8	CF	0	H	GainsFromInvestmentsAndOtherNet	0001193125-26-277521	Gains from investments and other, net	1
+0001193125-26-277521	8	10	CF	0	H	IncreaseDecreaseInAccountsReceivable	us-gaap/2025	Increase in trade receivables, net	1
+0001193125-26-277521	8	11	CF	0	H	IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets	us-gaap/2025	Decrease in prepaid expenses and other assets	1
+0001193125-26-277521	8	12	CF	0	H	IncreaseDecreaseInAccountsPayableAndOtherOperatingLiabilities	us-gaap/2025	Decrease in accounts payable and other liabilities	0
+0001193125-26-277521	8	13	CF	0	H	IncreaseDecreaseInAccruedIncomeTaxesPayable	us-gaap/2025	Decrease in income taxes payable	0
+0001193125-26-277521	8	14	CF	0	H	IncreaseDecreaseInDeferredRevenuesFromCustomerPrepaymentsWithSignificantFinancingComponent	0001193125-26-277521	Increase in deferred revenues from customer prepayments with significant financing component	0
+0001193125-26-277521	8	15	CF	0	H	IncreaseDecreaseInOtherDeferredRevenues	0001193125-26-277521	Increase in other deferred revenues	0
+0001193125-26-277521	8	16	CF	0	H	NetCashProvidedByUsedInOperatingActivities	us-gaap/2025	Net cash provided by operating activities	0
+0001193125-26-277521	8	18	CF	0	H	PaymentsToAcquireInvestments	us-gaap/2025	Purchases of marketable securities and other investments and acquisitions	1
+0001193125-26-277521	8	19	CF	0	H	ProceedsFromSaleAndMaturityOfAvailableForSaleSecurities	us-gaap/2025	Proceeds from sales and maturities of marketable securities and other investments	0
+0001193125-26-277521	8	20	CF	0	H	PaymentsToAcquirePropertyPlantAndEquipment	us-gaap/2025	Capital expenditures	1
+0001193125-26-277521	8	21	CF	0	H	NetCashProvidedByUsedInInvestingActivities	us-gaap/2025	Net cash used for investing activities	0
+0001193125-26-277521	8	23	CF	0	H	ProceedsFromIssuanceOfCommonStock	us-gaap/2025	Proceeds from issuances of common stock	0
+0001193125-26-277521	8	24	CF	0	H	PaymentsForRepurchaseOfCommonStock	us-gaap/2025	Payments for repurchases of common stock	1
+0001193125-26-277521	8	25	CF	0	H	PaymentsRelatedToTaxWithholdingForShareBasedCompensation	us-gaap/2025	Shares repurchased for tax withholdings upon vesting of restricted stock-based awards	1
+0001193125-26-277521	8	26	CF	0	H	ProceedsFromIssuanceOfConvertiblePreferredStock	us-gaap/2025	Proceeds from issuances of mandatory convertible preferred stock, net of issuance costs	0
+0001193125-26-277521	8	27	CF	0	H	PaymentsOfDividendsCommonStock	us-gaap/2025	Payments of dividends to stockholders	1
+0001193125-26-277521	8	28	CF	0	H	ProceedsFromRepaymentsOfCommercialPaper	us-gaap/2025	(Repayments of) proceeds from issuances of commercial paper, net	0
+0001193125-26-277521	8	29	CF	0	H	ProceedsFromShort-TermFinancingRelatedToCapitalExpendituresNet	0001193125-26-277521	Proceeds from short-term financing related to capital expenditures, net	0
+0001193125-26-277521	8	30	CF	0	H	ProceedsFromIssuanceOfSeniorLongTermDebt	us-gaap/2025	Proceeds from issuances of senior notes, term loan credit agreements and other borrowings, net of issuance costs	0
+0001193125-26-277521	8	31	CF	0	H	RepaymentsOfDebt	us-gaap/2025	Repayments of senior notes, term loan credit agreements and other borrowings	1
+0001193125-26-277521	8	32	CF	0	H	ProceedsFromPaymentsForOtherFinancingActivities	us-gaap/2025	Other financing activities, net	0
+0001193125-26-277521	8	33	CF	0	H	NetCashProvidedByUsedInFinancingActivities	us-gaap/2025	Net cash provided by (used for) financing activities	0
+0001193125-26-277521	8	34	CF	0	H	EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations	us-gaap/2025	Effect of exchange rate changes on cash and cash equivalents	0
+0001193125-26-277521	8	35	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	Net increase in cash and cash equivalents	0
+0001193125-26-277521	8	36	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations	us-gaap/2025	Cash and cash equivalents at beginning of period	0
+0001193125-26-277521	8	37	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations	us-gaap/2025	Cash and cash equivalents at end of period	0
+0001193125-26-277521	8	39	CF	0	H	CapitalExpendituresIncurredButNotYetPaid	us-gaap/2025	Unpaid capital expenditures	0
+0001193125-26-277521	8	41	CF	0	H	IncomeTaxesPaid	us-gaap/2025	Cash paid for income taxes	0
+0001193125-26-277521	8	42	CF	0	H	InterestPaidNet	us-gaap/2025	Cash paid for interest	0
+0001628280-26-025362	3	3	BS	0	H	CashAndCashEquivalents	ifrs/2025	Cash and cash equivalents	0
+0001628280-26-025362	3	4	BS	0	H	CurrentFinancialAssetsAtFairValueThroughProfitOrLoss	ifrs/2025	Financial assets at fair value through profit or loss	0
+0001628280-26-025362	3	5	BS	0	H	CurrentFinancialAssetsAtFairValueThroughOtherComprehensiveIncome	ifrs/2025	Financial assets at fair value through other comprehensive income	0
+0001628280-26-025362	3	6	BS	0	H	CurrentFinancialAssetsAtAmortisedCost	ifrs/2025	Financial assets at amortized cost	0
+0001628280-26-025362	3	7	BS	0	H	CurrentDerivativeFinancialAssetsHeldForHedging	0001628280-26-025362	Hedging financial assets	0
+0001628280-26-025362	3	8	BS	0	H	CurrentTradeReceivables	ifrs/2025	Notes and accounts receivable, net	0
+0001628280-26-025362	3	9	BS	0	H	TradeAndOtherCurrentReceivablesDueFromRelatedParties	ifrs/2025	Receivables from related parties	0
+0001628280-26-025362	3	10	BS	0	H	CurrentOtherReceivablesDueFromRelatedParties	0001628280-26-025362	Other receivables from related parties	0
+0001628280-26-025362	3	11	BS	0	H	Inventories	ifrs/2025	Inventories	0
+0001628280-26-025362	3	12	BS	0	H	OtherCurrentFinancialAssets	ifrs/2025	Other financial assets	0
+0001628280-26-025362	3	13	BS	0	H	OtherCurrentAssets	ifrs/2025	Other current assets	0
+0001628280-26-025362	3	14	BS	0	H	CurrentAssets	ifrs/2025	Total current assets	0
+0001628280-26-025362	3	16	BS	0	H	NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss	ifrs/2025	Financial assets at fair value through profit or loss	0
+0001628280-26-025362	3	17	BS	0	H	NoncurrentFinancialAssetsAtFairValueThroughOtherComprehensiveIncome	ifrs/2025	Financial assets at fair value through other comprehensive income	0
+0001628280-26-025362	3	18	BS	0	H	NoncurrentFinancialAssetsAtAmortisedCost	ifrs/2025	Financial assets at amortized cost	0
+0001628280-26-025362	3	19	BS	0	H	InvestmentAccountedForUsingEquityMethod	ifrs/2025	Investments accounted for using equity method	0
+0001628280-26-025362	3	20	BS	0	H	PropertyPlantAndEquipment	ifrs/2025	Property, plant and equipment	0
+0001628280-26-025362	3	21	BS	0	H	RightofuseAssets	ifrs/2025	Right-of-use assets	0
+0001628280-26-025362	3	22	BS	0	H	IntangibleAssetsAndGoodwill	ifrs/2025	Intangible assets	0
+0001628280-26-025362	3	23	BS	0	H	DeferredTaxAssets	ifrs/2025	Deferred income tax assets	0
+0001628280-26-025362	3	24	BS	0	H	LongtermDeposits	ifrs/2025	Refundable deposits	0
+0001628280-26-025362	3	25	BS	0	H	OtherNoncurrentAssets	ifrs/2025	Other noncurrent assets	0
+0001628280-26-025362	3	26	BS	0	H	NoncurrentAssets	ifrs/2025	Total noncurrent assets	0
+0001628280-26-025362	3	27	BS	0	H	Assets	ifrs/2025	TOTAL	0
+0001628280-26-025362	3	30	BS	0	H	CurrentFinancialLiabilitiesAtFairValueThroughProfitOrLoss	ifrs/2025	Financial liabilities at fair value through profit or loss	0
+0001628280-26-025362	3	31	BS	0	H	CurrentDerivativeFinancialLiabilitiesHeldForHedging	0001628280-26-025362	Hedging financial liabilities	0
+0001628280-26-025362	3	32	BS	0	H	TradeAndOtherCurrentPayablesToTradeSuppliers	ifrs/2025	Accounts payable	0
+0001628280-26-025362	3	33	BS	0	H	TradeAndOtherCurrentPayablesToRelatedParties	ifrs/2025	Payables to related parties	0
+0001628280-26-025362	3	34	BS	0	H	ShorttermEmployeeBenefitsAccruals	ifrs/2025	Salary and bonus payable	0
+0001628280-26-025362	3	35	BS	0	H	AccruedProfitSharingBonusToEmployeesAndCompensationToDirectors	0001628280-26-025362	Accrued profit sharing bonus to employees and compensation to directors	0
+0001628280-26-025362	3	36	BS	0	H	CurrentPayablesForPurchaseOfNoncurrentAssets	ifrs/2025	Payables to contractors and equipment suppliers	0
+0001628280-26-025362	3	37	BS	0	H	CurrentDividendPayables	ifrs/2025	Cash dividends payable	0
+0001628280-26-025362	3	38	BS	0	H	CurrentTaxLiabilitiesCurrent	ifrs/2025	Income tax payable	0
+0001628280-26-025362	3	39	BS	0	H	CurrentPortionOfLongtermBorrowings	ifrs/2025	Long-term liabilities - current portion	0
+0001628280-26-025362	3	40	BS	0	H	CurrentAccruedExpensesAndOtherCurrentLiabilities	ifrs/2025	Accrued expenses and other current liabilities	0
+0001628280-26-025362	3	41	BS	0	H	CurrentLiabilities	ifrs/2025	Total current liabilities	0
+0001628280-26-025362	3	43	BS	0	H	NoncurrentPortionOfNoncurrentBondsIssued	ifrs/2025	Bonds payable	0
+0001628280-26-025362	3	44	BS	0	H	LongtermBorrowings	ifrs/2025	Long-term bank loans	0
+0001628280-26-025362	3	45	BS	0	H	DeferredTaxLiabilities	ifrs/2025	Deferred income tax liabilities	0
+0001628280-26-025362	3	46	BS	0	H	NoncurrentLeaseLiabilities	ifrs/2025	Lease liabilities	0
+0001628280-26-025362	3	47	BS	0	H	NoncurrentRecognisedLiabilitiesDefinedBenefitPlan	ifrs/2025	Net defined benefit liability	0
+0001628280-26-025362	3	48	BS	0	H	NoncurrentWarrantLiability	ifrs/2025	Guarantee deposits	0
+0001628280-26-025362	3	49	BS	0	H	OtherNoncurrentLiabilities	ifrs/2025	Others	0
+0001628280-26-025362	3	50	BS	0	H	NoncurrentLiabilities	ifrs/2025	Total noncurrent liabilities	0
+0001628280-26-025362	3	51	BS	0	H	Liabilities	ifrs/2025	Total liabilities	0
+0001628280-26-025362	3	53	BS	0	H	IssuedCapital	ifrs/2025	Capital stock	0
+0001628280-26-025362	3	54	BS	0	H	SharePremium	ifrs/2025	Capital surplus	0
+0001628280-26-025362	3	56	BS	0	H	CapitalReserve	ifrs/2025	Appropriated as legal capital reserve	0
+0001628280-26-025362	3	57	BS	0	H	SpecialCapitalReserve	0001628280-26-025362	Appropriated as special capital reserve	0
+0001628280-26-025362	3	58	BS	0	H	UnappropriatedRetainedEarnings	0001628280-26-025362	Unappropriated earnings	0
+0001628280-26-025362	3	59	BS	0	H	RetainedEarnings	ifrs/2025	Total retained earnings	0
+0001628280-26-025362	3	60	BS	0	H	OtherReserves	ifrs/2025	Others	0
+0001628280-26-025362	3	61	BS	0	H	EquityAttributableToOwnersOfParent	ifrs/2025	Equity attributable to shareholders of the parent	0
+0001628280-26-025362	3	62	BS	0	H	NoncontrollingInterests	ifrs/2025	NON - CONTROLLING INTERESTS	0
+0001628280-26-025362	3	63	BS	0	H	Equity	ifrs/2025	Total equity	0
+0001628280-26-025362	3	64	BS	0	H	EquityAndLiabilities	ifrs/2025	TOTAL	0
+0001628280-26-025362	4	6	IS	0	H	RevenueFromContractsWithCustomers	ifrs/2025	NET REVENUE	0
+0001628280-26-025362	4	7	IS	0	H	CostOfSales	ifrs/2025	COST OF REVENUE	0
+0001628280-26-025362	4	8	IS	0	H	GrossProfit	ifrs/2025	GROSS PROFIT	0
+0001628280-26-025362	4	10	IS	0	H	ResearchAndDevelopmentExpense	ifrs/2025	Research and development	0
+0001628280-26-025362	4	11	IS	0	H	GeneralAndAdministrativeExpense	ifrs/2025	General and administrative	0
+0001628280-26-025362	4	12	IS	0	H	SalesAndMarketingExpense	ifrs/2025	Marketing	0
+0001628280-26-025362	4	13	IS	0	H	OperatingExpenseExcludingCostOfSales	ifrs/2025	Total operating expenses	0
+0001628280-26-025362	4	14	IS	0	H	OtherOperatingIncomeExpense	ifrs/2025	OTHER OPERATING INCOME AND EXPENSES, NET	0
+0001628280-26-025362	4	15	IS	0	H	ProfitLossFromOperatingActivities	ifrs/2025	INCOME FROM OPERATIONS	0
+0001628280-26-025362	4	17	IS	0	H	ShareOfProfitLossOfAssociatesAccountedForUsingEquityMethod	ifrs/2025	Share of profits of associates	0
+0001628280-26-025362	4	18	IS	0	H	RevenueFromInterest	ifrs/2025	Interest Income	0
+0001628280-26-025362	4	19	IS	0	H	OtherIncome	ifrs/2025	Other income	0
+0001628280-26-025362	4	20	IS	0	H	GainsLossesOnExchangeDifferencesOnTranslationRecognisedInProfitOrLoss	ifrs/2025	Foreign exchange gain (loss), net	0
+0001628280-26-025362	4	21	IS	0	H	FinanceCosts	ifrs/2025	Finance costs	1
+0001628280-26-025362	4	22	IS	0	H	OtherGainsLosses	ifrs/2025	Other gains and losses, net	0
+0001628280-26-025362	4	23	IS	0	H	NonOperatingIncomeExpenseNet	0001628280-26-025362	Total non-operating income and expenses	0
+0001628280-26-025362	4	24	IS	0	H	ProfitLossBeforeTax	ifrs/2025	INCOME BEFORE INCOME TAX	0
+0001628280-26-025362	4	25	IS	0	H	IncomeTaxExpenseContinuingOperations	ifrs/2025	INCOME TAX EXPENSE	0
+0001628280-26-025362	4	26	IS	0	H	ProfitLoss	ifrs/2025	NET INCOME	0
+0001628280-26-025362	4	29	IS	0	H	OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans	ifrs/2025	Remeasurement of defined benefit obligation	0
+0001628280-26-025362	4	30	IS	0	H	OtherComprehensiveIncomeBeforeTaxGainsLossesFromInvestmentsInEquityInstruments	ifrs/2025	Unrealized gain on investments in equity instruments at fair value through other comprehensive income	0
+0001628280-26-025362	4	31	IS	0	H	OtherComprehensiveIncomeBeforeTaxGainsLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstruments	ifrs/2025	Gain (loss) on hedging instruments	0
+0001628280-26-025362	4	32	IS	0	H	ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossBeforeTax	ifrs/2025	Share of other comprehensive income (loss) of associates	0
+0001628280-26-025362	4	33	IS	0	H	IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss	ifrs/2025	Income tax benefit (expense) related to items that will not be reclassified subsequently	1
+0001628280-26-025362	4	34	IS	0	H	OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax	ifrs/2025	Items that will not be reclassified subsequently to profit or loss:	0
+0001628280-26-025362	4	36	IS	0	H	OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation	ifrs/2025	Exchange differences arising on translation of foreign operations	0
+0001628280-26-025362	4	37	IS	0	H	OtherComprehensiveIncomeNetOfTaxUnrealizedGainsLossesOnInvestmentsInDebtInstrumentsAtFairValueThroughOtherComprehensiveIncome	0001628280-26-025362	Unrealized gain on investments in debt instruments at fair value through other comprehensive income	0
+0001628280-26-025362	4	38	IS	0	H	OtherComprehensiveIncomeNetOfTaxHedgesOfNetInvestmentsInForeignOperations	ifrs/2025	Loss on hedging instruments	0
+0001628280-26-025362	4	39	IS	0	H	ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax	ifrs/2025	Share of other comprehensive income (loss) of associates	0
+0001628280-26-025362	4	40	IS	0	H	OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax	ifrs/2025	Items that may be reclassified subsequently to profit or loss:	0
+0001628280-26-025362	4	41	IS	0	H	OtherComprehensiveIncome	ifrs/2025	Other comprehensive income (loss), net of income tax	0
+0001628280-26-025362	4	42	IS	0	H	ComprehensiveIncome	ifrs/2025	Total comprehensive income (loss)	0
+0001628280-26-025362	4	44	IS	0	H	ProfitLossAttributableToOwnersOfParent	ifrs/2025	Shareholders of the parent	0
+0001628280-26-025362	4	45	IS	0	H	ProfitLossAttributableToNoncontrollingInterests	ifrs/2025	Non-controlling interests	0
+0001628280-26-025362	4	46	IS	0	H	ProfitLoss	ifrs/2025	NET INCOME	0
+0001628280-26-025362	4	48	IS	0	H	ComprehensiveIncomeAttributableToOwnersOfParent	ifrs/2025	Shareholders of the parent	0
+0001628280-26-025362	4	49	IS	0	H	ComprehensiveIncomeAttributableToNoncontrollingInterests	ifrs/2025	Non-controlling interests	0
+0001628280-26-025362	4	50	IS	0	H	ComprehensiveIncome	ifrs/2025	Total comprehensive income (loss)	0
+0001628280-26-025362	4	52	IS	0	H	BasicEarningsLossPerShare	ifrs/2025	Basic earnings per share (in NT$/USD per share)	0
+0001628280-26-025362	4	53	IS	0	H	DilutedEarningsLossPerShare	ifrs/2025	Diluted earnings per share (in NT$/USD per share)	0
+0001628280-26-025362	6	2	CF	0	H	ProfitLossBeforeTax	ifrs/2025	Income before income tax	0
+0001628280-26-025362	6	4	CF	0	H	AdjustmentsForDepreciationExpense	ifrs/2025	Depreciation expense	0
+0001628280-26-025362	6	5	CF	0	H	AdjustmentsForAmortisationExpense	ifrs/2025	Amortization expense	0
+0001628280-26-025362	6	6	CF	0	H	AdjustmentsForImpairmentLossesReversalOfImpairmentLossesRecognisedInProfitOrLossFinancialAssets	ifrs/2025	Expected credit losses recognized (reversal) on investments in debt instruments	0
+0001628280-26-025362	6	7	CF	0	H	AdjustmentsForFinanceCosts	ifrs/2025	Finance costs	0
+0001628280-26-025362	6	8	CF	0	H	AdjustmentsForUndistributedProfitsOfAssociates	ifrs/2025	Share of profits of associates	1
+0001628280-26-025362	6	9	CF	0	H	AdjustmentsForInterestIncome	ifrs/2025	Interest income	1
+0001628280-26-025362	6	10	CF	0	H	AdjustmentsForSharebasedPayments	ifrs/2025	Share-based compensation	0
+0001628280-26-025362	6	11	CF	0	H	AdjustmentsForGainLossOnDisposalsPropertyPlantAndEquipment	ifrs/2025	Loss on disposal or retirement of property, plant and equipment, net	1
+0001628280-26-025362	6	12	CF	0	H	AdjustmentsForGainLossOnDisposalsIntangibleAssets	0001628280-26-025362	Loss (gain) on disposal or retirement of intangible assets, net	1
+0001628280-26-025362	6	13	CF	0	H	AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLossPropertyPlantAndEquipment	ifrs/2025	Impairment loss on property, plant and equipment	0
+0001628280-26-025362	6	14	CF	0	H	AdjustmentsForGainLossInFinancialInstrumentsMeasuredAtFairValueThroughProfitOrLossNet	0001628280-26-025362	Loss (gain) on financial instruments at fair value through profit or loss, net	1
+0001628280-26-025362	6	15	CF	0	H	AdjustmentsForGainLossOnDisposalOfInvestmentsInDebtInstrumentsAtFairValueThroughOtherComprehensiveIncomeNet	0001628280-26-025362	Loss on disposal of investments in debt instruments at fair value through other comprehensive income, net	1
+0001628280-26-025362	6	16	CF	0	H	AdjustmentsForGainLossOnDisposalOfInvestmentsAccountedForUsingEquityMethod	0001628280-26-025362	Gain on disposal of investments accounted for using equity method, net	1
+0001628280-26-025362	6	17	CF	0	H	AdjustmentsForGainLossOnDisposalOfInvestmentsInSubsidiaries	0001628280-26-025362	Loss from disposal of subsidiaries	1
+0001628280-26-025362	6	18	CF	0	H	AdjustmentsForUnrealisedForeignExchangeLossesGains	ifrs/2025	Loss (gain) on foreign exchange, net	0
+0001628280-26-025362	6	19	CF	0	H	AdjustmentsForDividendIncome	ifrs/2025	Dividend income	1
+0001628280-26-025362	6	20	CF	0	H	OtherAdjustmentsToReconcileProfitLoss	ifrs/2025	Others	0
+0001628280-26-025362	6	22	CF	0	H	AdjustmentsForDecreaseIncreaseInFinancialInstrumentsAtFairValueThroughProfitOrLoss	0001628280-26-025362	Financial instruments at fair value through profit or loss	0
+0001628280-26-025362	6	23	CF	0	H	AdjustmentsForDecreaseIncreaseInTradeAndOtherReceivables	ifrs/2025	Notes and accounts receivable, net	0
+0001628280-26-025362	6	24	CF	0	H	AdjustmentsForDecreaseIncreaseInReceivablesDueFromRelatedParties	0001628280-26-025362	Receivables from related parties	0
+0001628280-26-025362	6	25	CF	0	H	AdjustmentsForDecreaseIncreaseInOtherReceivablesDueFromRelatedParties	0001628280-26-025362	Other receivables from related parties	0
+0001628280-26-025362	6	26	CF	0	H	AdjustmentsForDecreaseIncreaseInInventories	ifrs/2025	Inventories	0
+0001628280-26-025362	6	27	CF	0	H	AdjustmentsForDecreaseIncreaseInOtherFinancialAssets	ifrs/2025	Other financial assets	0
+0001628280-26-025362	6	28	CF	0	H	AdjustmentsForDecreaseIncreaseInOtherCurrentAssets	ifrs/2025	Other current assets	0
+0001628280-26-025362	6	29	CF	0	H	AdjustmentsForDecreaseIncreaseInOtherNoncurrentAssets	0001628280-26-025362	Other noncurrent assets	0
+0001628280-26-025362	6	30	CF	0	H	AdjustmentsForIncreaseDecreaseInTradeAccountPayable	ifrs/2025	Accounts payable	0
+0001628280-26-025362	6	31	CF	0	H	AdjustmentsForIncreaseDecreaseInPayablesDueToRelatedParties	0001628280-26-025362	Payables to related parties	0
+0001628280-26-025362	6	32	CF	0	H	AdjustmentsForIncreaseDecreaseInSalaryAndBonusPayable	0001628280-26-025362	Salary and bonus payable	0
+0001628280-26-025362	6	33	CF	0	H	AdjustmentsForIncreaseDecreaseInAccruedProfitSharingBonusToEmployeesAndCompensationToDirectors	0001628280-26-025362	Accrued profit sharing bonus to employees and compensation to directors	0
+0001628280-26-025362	6	34	CF	0	H	AdjustmentsForIncreaseDecreaseInAccruedExpensesAndOtherCurrentLiabilities	0001628280-26-025362	Accrued expenses and other current liabilities	0
+0001628280-26-025362	6	35	CF	0	H	AdjustmentsForIncreaseDecreaseInOtherNoncurrentLiabilities	0001628280-26-025362	Other noncurrent liabilities	0
+0001628280-26-025362	6	36	CF	0	H	AdjustmentsForIncreaseDecreaseInNetDefinedBenefitLiability	0001628280-26-025362	Net defined benefit liability	0
+0001628280-26-025362	6	37	CF	0	H	CashFlowsFromUsedInOperations	ifrs/2025	Cash generated from operations	0
+0001628280-26-025362	6	38	CF	0	H	IncomeTaxesPaidRefundClassifiedAsOperatingActivities	ifrs/2025	Income taxes paid	1
+0001628280-26-025362	6	39	CF	0	H	CashFlowsFromUsedInOperatingActivities	ifrs/2025	Net cash generated by operating activities	0
+0001628280-26-025362	6	42	CF	0	H	PurchaseOfFinancialAssetsMeasuredAtFairValueThroughProfitOrLossClassifiedAsInvestingActivities	ifrs/2025	Financial instruments at fair value through profit or loss	1
+0001628280-26-025362	6	43	CF	0	H	PurchaseOfFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeClassifiedAsInvestingActivities	ifrs/2025	Financial assets at fair value through other comprehensive income	1
+0001628280-26-025362	6	44	CF	0	H	PurchaseOfFinancialAssetsMeasuredAtAmortisedCostClassifiedAsInvestingActivities	ifrs/2025	Financial assets at amortized cost	1
+0001628280-26-025362	6	45	CF	0	H	PurchaseOfHedgingFinancialInstrumentsClassifiedAsInvestingActivities	0001628280-26-025362	Hedging financial instruments	1
+0001628280-26-025362	6	46	CF	0	H	PurchaseOfInterestsInInvestmentsAccountedForUsingEquityMethod	ifrs/2025	Investments accounted for using equity method	1
+0001628280-26-025362	6	47	CF	0	H	PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities	ifrs/2025	Property, plant and equipment	1
+0001628280-26-025362	6	48	CF	0	H	PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities	ifrs/2025	Intangible assets	1
+0001628280-26-025362	6	50	CF	0	H	ProceedsFromSalesOrMaturityOfFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeClassifiedAsInvestingActivities	ifrs/2025	Financial assets at fair value through other comprehensive income	0
+0001628280-26-025362	6	51	CF	0	H	ProceedsFromSalesOrMaturityOfFinancialAssetsMeasuredAtAmortisedCostClassifiedAsInvestingActivities	ifrs/2025	Financial assets at amortized cost	0
+0001628280-26-025362	6	52	CF	0	H	ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities	ifrs/2025	Property, plant and equipment	0
+0001628280-26-025362	6	53	CF	0	H	ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities	ifrs/2025	Intangible assets	0
+0001628280-26-025362	6	54	CF	0	H	PaymentsFromDerecognitionOfHedgingFinancialInstrumentsClassifiedAsInvestingActivities	0001628280-26-025362	Derecognition of derivative financial instruments	1
+0001628280-26-025362	6	55	CF	0	H	ProceedsFromReturnOfCapitalOfInvestmentsInEquityInstrumentsAtFairValueThroughOtherComprehensiveIncome	0001628280-26-025362	Proceeds from return of capital of investments in equity instruments at fair value through other comprehensive income	0
+0001628280-26-025362	6	56	CF	0	H	ProceedsFromDerecognitionOfHedgingFinancialInstrumentsClassifiedAsOperatingActivities	0001628280-26-025362	Derecognition of hedging financial instruments	0
+0001628280-26-025362	6	57	CF	0	H	InterestReceivedClassifiedAsInvestingActivities	ifrs/2025	Interest received	0
+0001628280-26-025362	6	58	CF	0	H	ProceedsFromGovernmentGrantsPropertyPlantAndEquipment	0001628280-26-025362	Proceeds from government grants - property, plant and equipment	0
+0001628280-26-025362	6	59	CF	0	H	ProceedsFromGovernmentGrantsOthers	0001628280-26-025362	Proceeds from government grants - others	0
+0001628280-26-025362	6	60	CF	0	H	DividendsReceivedClassifiedAsInvestingActivities	ifrs/2025	Other dividends received	0
+0001628280-26-025362	6	61	CF	0	H	DividendsReceivedFromInvestmentsAccountedForUsingEquityMethodClassifiedAsInvestingActivities	ifrs/2025	Dividends received from investments accounted for using equity method	0
+0001628280-26-025362	6	62	CF	0	H	DecreaseIncreaseInPrepaymentsForLeases	0001628280-26-025362	Increase in prepayments for leases	0
+0001628280-26-025362	6	63	CF	0	H	PurchaseOfDeposits	0001628280-26-025362	Refundable deposits paid	1
+0001628280-26-025362	6	64	CF	0	H	ProceedsFromRefundableDeposits	0001628280-26-025362	Refundable deposits refunded	0
+0001628280-26-025362	6	65	CF	0	H	CashFlowsFromUsedInInvestingActivities	ifrs/2025	Net cash used in investing activities	0
+0001628280-26-025362	6	67	CF	0	H	PaymentsProceedsFromHedgingFinancialLiabilitiesBankLoans	0001628280-26-025362	Increase (decrease) in hedging financial liabilities - bank loans	1
+0001628280-26-025362	6	68	CF	0	H	ProceedsFromIssueOfBondsNotesAndDebentures	ifrs/2025	Proceeds from issuance of bonds	0
+0001628280-26-025362	6	69	CF	0	H	RepaymentsOfBondsNotesAndDebentures	ifrs/2025	Repayment of bonds	1
+0001628280-26-025362	6	70	CF	0	H	ProceedsFromNoncurrentBorrowings	ifrs/2025	Proceeds from long-term bank loans	0
+0001628280-26-025362	6	71	CF	0	H	RepaymentsOfNoncurrentBorrowings	ifrs/2025	Repayment of long-term bank loans	1
+0001628280-26-025362	6	72	CF	0	H	PaymentsForDebtIssueCosts	ifrs/2025	Payments for transaction costs attributable to the issuance of bonds	1
+0001628280-26-025362	6	73	CF	0	H	PaymentsToAcquireOrRedeemEntitysShares	ifrs/2025	Treasury stock acquired	1
+0001628280-26-025362	6	74	CF	0	H	PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities	ifrs/2025	Repayment of the principal portion of lease liabilities	1
+0001628280-26-025362	6	75	CF	0	H	InterestPaidClassifiedAsFinancingActivities	ifrs/2025	Interest paid	1
+0001628280-26-025362	6	76	CF	0	H	ProceedsFromGuaranteeDepositsClassifiedAsFinancingActivities	0001628280-26-025362	Guarantee deposits received	0
+0001628280-26-025362	6	77	CF	0	H	PurchaseOfGuaranteeDepositsClassifiedAsFinancingActivities	0001628280-26-025362	Guarantee deposits refunded	1
+0001628280-26-025362	6	78	CF	0	H	DividendsPaidClassifiedAsFinancingActivities	ifrs/2025	Cash dividends	1
+0001628280-26-025362	6	79	CF	0	H	ProceedsFromChangesInOwnershipInterestsInSubsidiaries	ifrs/2025	Disposal of ownership interests in subsidiaries (without losing control)	0
+0001628280-26-025362	6	80	CF	0	H	ProceedsFromDonationFromShareholderClassifiedAsFinancingActivities	0001628280-26-025362	Donation from shareholders	0
+0001628280-26-025362	6	81	CF	0	H	ProceedsFromContributionsOfNoncontrollingInterests	ifrs/2025	Increase in non-controlling interests	0
+0001628280-26-025362	6	82	CF	0	H	CashFlowsFromUsedInFinancingActivities	ifrs/2025	Net cash used in financing activities	0
+0001628280-26-025362	6	83	CF	0	H	EffectOfExchangeRateChangesOnCashAndCashEquivalents	ifrs/2025	EFFECT OF EXCHANGE RATE CHANGES ON CASH AND CASH EQUIVALENTS	0
+0001628280-26-025362	6	84	CF	0	H	IncreaseDecreaseInCashAndCashEquivalents	ifrs/2025	NET INCREASE IN CASH AND CASH EQUIVALENTS	0
+0001628280-26-025362	6	85	CF	0	H	CashAndCashEquivalents	ifrs/2025	CASH AND CASH EQUIVALENTS, BEGINNING OF YEAR	0
+0001628280-26-025362	6	86	CF	0	H	CashAndCashEquivalents	ifrs/2025	CASH AND CASH EQUIVALENTS, END OF YEAR	0

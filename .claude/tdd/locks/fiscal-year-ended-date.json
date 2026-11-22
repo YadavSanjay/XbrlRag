@@ -1,0 +1,189 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-10",
+  "criteria": {
+    "C1": [
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[February 2, 2025-expected0]",
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[february 2 2025-expected1]",
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[Feb. 2, 2025-expected2]",
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[Feb 2, 2025-expected3]",
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[Sept. 28, 2024-expected4]",
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[Sep 28 2024-expected5]",
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[May 4, 2025-expected6]",
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[February 2nd, 2025-expected7]",
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[DECEMBER 31, 2024-expected8]",
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[2 February 2025-expected9]",
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[1st Feb. 2026-expected10]",
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[28 January, 2024-expected11]",
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[2025-02-02-expected12]",
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_dates_inside_a_sentence_in_order",
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_non_forms_are_not_dates",
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_any_real_date_in_any_form_is_found_with_its_span",
+      "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_a_day_past_the_month_end_is_no_date"
+    ],
+    "C2": [
+      "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_home_depot_end_dates_take_its_own_labels",
+      "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_seven_days_either_side_match_and_eight_do_not",
+      "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_a_filer_labelled_by_end_year_keeps_the_end_year",
+      "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_generated_calendars_every_end_and_shift"
+    ],
+    "C3": [
+      "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_no_calendar",
+      "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_two_annual_rows_within_tolerance",
+      "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_quarter_and_annual",
+      "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_a_quarter_row_on_the_year_end_is_preferred_for_a_quarter",
+      "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_order_duplicates_and_far_rows_change_nothing"
+    ],
+    "C4": [
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the fiscal year ended February 2, 2025-expected0]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[FY2025-expected1]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the year ended Feb. 2, 2025-expected2]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the twelve months ended January 31, 2025-expected3]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the 53-week year ending 2025-02-02-expected4]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[its 10-K for 2 February 2025-expected5]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the annual period to February 2, 2025-expected6]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[as of February 2, 2025-expected7]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[on 2025-02-02-expected8]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the quarter ended May 4, 2025-expected9]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the three months ended May 4, 2025-expected10]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the 13 weeks ended May 4, 2025-expected11]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[year-to-date through August 3, 2025-expected12]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the first quarter of the fiscal year ended February 1, 2026-expected13]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[Q3 of fiscal 2025-expected14]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the 2nd quarter ended August 3, 2025-expected15]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the six months ended August 3, 2025-expected16]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the first half of fiscal 2025-expected17]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the nine months ended November 2, 2025-expected18]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the fourth quarter of the fiscal year ended February 1, 2026-expected19]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the first quarter and the six months ended August 3, 2025-expected20]",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_are_whole_words",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_a_quarter_cue_wins_and_plain_words_change_nothing",
+      "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_an_annual_cue_without_a_quarter_cue_is_fy"
+    ],
+    "C5": [
+      "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py::test_the_c9_dev_mentions",
+      "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py::test_mixed_quarter_and_other_forms",
+      "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py::test_no_full_date_is_none",
+      "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py::test_end_year_labels_read_as_today",
+      "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py::test_offset_labels_shift_the_years_and_forms_do_not_matter"
+    ],
+    "C6": [
+      "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py::test_no_calendar_and_unmatched",
+      "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py::test_quarter_lists_overlong_ranges_and_out_of_range_labels",
+      "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py::test_an_unmatched_date_makes_any_mention_ambiguous"
+    ]
+  },
+  "files": {
+    "test/spec/fiscal-year-ended-date/conftest.py": "e89fa3c2711638fab93c581b3623790acfbe9305a361569941185a2fbc501807",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py": "440302128e5ac861894abdaecf6513e28968a9e5ec205b44df67a49e03db55a7",
+    "test/spec/fiscal-year-ended-date/test_c2_c3_match.py": "0cbe30fc964703b57a97d552dd727fd2f26e71df5a7e499940c41b290684a69f",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py": "14e500674d162b879d80d781ad570d9e29009d1b7856dabe1c05e68fc70653aa",
+    "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py": "194d44b1701dd2b4a4e047dd872258e51ef1461d362f72d633ffaf174f389c23"
+  },
+  "id": "fiscal-year-ended-date",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/fiscal_date.py",
+      "module": "retriever.xbrl.fiscal_date",
+      "qualname": "find_written_dates",
+      "signature": "def find_written_dates(text: str) -> list[tuple[datetime.date, int, int]]"
+    },
+    {
+      "file": "src/retriever/xbrl/fiscal_date.py",
+      "module": "retriever.xbrl.fiscal_date",
+      "qualname": "match_period_end",
+      "signature": "def match_period_end(end: datetime.date, calendar: Sequence[Mapping[str, Any]], period: str, quarter: str | None=None, tolerance_days: int=7) -> dict[str, Any]"
+    },
+    {
+      "file": "src/retriever/xbrl/fiscal_date.py",
+      "module": "retriever.xbrl.fiscal_date",
+      "qualname": "mention_period_kind",
+      "signature": "def mention_period_kind(mention: str) -> tuple[str, str | None]"
+    },
+    {
+      "file": "src/retriever/xbrl/fiscal_date.py",
+      "module": "retriever.xbrl.fiscal_date",
+      "qualname": "resolve_dated_mention",
+      "signature": "def resolve_dated_mention(mention: str, calendar: Sequence[Mapping[str, Any]], tolerance_days: int=7, year_range: tuple[int, int]=(2018, 2035)) -> dict[str, Any] | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_a_day_past_the_month_end_is_no_date",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_any_real_date_in_any_form_is_found_with_its_span",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_dates_inside_a_sentence_in_order",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[1st Feb. 2026-expected10]",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[2 February 2025-expected9]",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[2025-02-02-expected12]",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[28 January, 2024-expected11]",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[DECEMBER 31, 2024-expected8]",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[Feb 2, 2025-expected3]",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[Feb. 2, 2025-expected2]",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[February 2, 2025-expected0]",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[February 2nd, 2025-expected7]",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[May 4, 2025-expected6]",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[Sep 28 2024-expected5]",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[Sept. 28, 2024-expected4]",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_each_form_alone[february 2 2025-expected1]",
+    "test/spec/fiscal-year-ended-date/test_c1_written_dates.py::test_non_forms_are_not_dates",
+    "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_a_filer_labelled_by_end_year_keeps_the_end_year",
+    "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_a_quarter_row_on_the_year_end_is_preferred_for_a_quarter",
+    "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_generated_calendars_every_end_and_shift",
+    "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_home_depot_end_dates_take_its_own_labels",
+    "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_no_calendar",
+    "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_order_duplicates_and_far_rows_change_nothing",
+    "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_quarter_and_annual",
+    "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_seven_days_either_side_match_and_eight_do_not",
+    "test/spec/fiscal-year-ended-date/test_c2_c3_match.py::test_two_annual_rows_within_tolerance",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_a_quarter_cue_wins_and_plain_words_change_nothing",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_an_annual_cue_without_a_quarter_cue_is_fy",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_are_whole_words",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[FY2025-expected1]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[Q3 of fiscal 2025-expected14]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[as of February 2, 2025-expected7]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[its 10-K for 2 February 2025-expected5]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[on 2025-02-02-expected8]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the 13 weeks ended May 4, 2025-expected11]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the 2nd quarter ended August 3, 2025-expected15]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the 53-week year ending 2025-02-02-expected4]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the annual period to February 2, 2025-expected6]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the first half of fiscal 2025-expected17]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the first quarter and the six months ended August 3, 2025-expected20]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the first quarter of the fiscal year ended February 1, 2026-expected13]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the fiscal year ended February 2, 2025-expected0]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the fourth quarter of the fiscal year ended February 1, 2026-expected19]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the nine months ended November 2, 2025-expected18]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the quarter ended May 4, 2025-expected9]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the six months ended August 3, 2025-expected16]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the three months ended May 4, 2025-expected10]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the twelve months ended January 31, 2025-expected3]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[the year ended Feb. 2, 2025-expected2]",
+    "test/spec/fiscal-year-ended-date/test_c4_period_kind.py::test_cues_by_hand[year-to-date through August 3, 2025-expected12]",
+    "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py::test_an_unmatched_date_makes_any_mention_ambiguous",
+    "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py::test_end_year_labels_read_as_today",
+    "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py::test_mixed_quarter_and_other_forms",
+    "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py::test_no_calendar_and_unmatched",
+    "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py::test_no_full_date_is_none",
+    "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py::test_offset_labels_shift_the_years_and_forms_do_not_matter",
+    "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py::test_quarter_lists_overlong_ranges_and_out_of_range_labels",
+    "test/spec/fiscal-year-ended-date/test_c5_c6_mentions.py::test_the_c9_dev_mentions"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/fiscal-year-ended-date.md",
+    "sha256": "d5bf5ebdb9e7bc99b48ecc4410418406c637dffd1b663356cb0850ff27077b48"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

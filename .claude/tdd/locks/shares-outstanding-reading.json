@@ -1,0 +1,122 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-05",
+  "criteria": {
+    "C1": [
+      "test/spec/shares-outstanding-reading/test_c1_cover_key.py::test_fy2025_cover_key_field_for_field",
+      "test/spec/shares-outstanding-reading/test_c1_cover_key.py::test_each_year_reads_its_own_10k",
+      "test/spec/shares-outstanding-reading/test_c1_cover_key.py::test_later_amendment_cover_is_ignored",
+      "test/spec/shares-outstanding-reading/test_c1_cover_key.py::test_cover_dates_outside_the_window_are_never_chosen",
+      "test/spec/shares-outstanding-reading/test_c1_cover_key.py::test_two_values_in_the_original_filing_are_ambiguous",
+      "test/spec/shares-outstanding-reading/test_c1_cover_key.py::test_missing_concept_or_unit_gives_none",
+      "test/spec/shares-outstanding-reading/test_c1_cover_key.py::test_result_ignores_other_years_and_later_amendments",
+      "test/spec/shares-outstanding-reading/test_c1_cover_key.py::test_value_is_one_of_the_original_filings_candidates"
+    ],
+    "C2": [
+      "test/spec/shares-outstanding-reading/test_c2_match_reading.py::test_key_and_cover_each_match_their_own_reading",
+      "test/spec/shares-outstanding-reading/test_c2_match_reading.py::test_midpoint_matches_nothing",
+      "test/spec/shares-outstanding-reading/test_c2_match_reading.py::test_key_wins_when_both_match",
+      "test/spec/shares-outstanding-reading/test_c2_match_reading.py::test_first_matching_reading_in_order_and_none_values_skipped",
+      "test/spec/shares-outstanding-reading/test_c2_match_reading.py::test_result_follows_the_separate_tolerances",
+      "test/spec/shares-outstanding-reading/test_c2_match_reading.py::test_appending_readings_never_changes_an_earlier_match"
+    ],
+    "C3": [
+      "test/spec/shares-outstanding-reading/test_c3_scalar_grading.py::test_cover_value_is_correct_and_marked",
+      "test/spec/shares-outstanding-reading/test_c3_scalar_grading.py::test_key_value_is_correct_and_marked_key",
+      "test/spec/shares-outstanding-reading/test_c3_scalar_grading.py::test_issued_minus_treasury_counts_only_when_it_equals_a_reading",
+      "test/spec/shares-outstanding-reading/test_c3_scalar_grading.py::test_uncited_cover_is_partial_but_value_correct",
+      "test/spec/shares-outstanding-reading/test_c3_scalar_grading.py::test_readings_round_trip_through_the_case_dict",
+      "test/spec/shares-outstanding-reading/test_c3_scalar_grading.py::test_correct_exactly_within_tolerance_of_key_or_reading",
+      "test/spec/shares-outstanding-reading/test_c3_scalar_grading.py::test_removing_readings_never_changes_a_key_match"
+    ],
+    "C4": [
+      "test/spec/shares-outstanding-reading/test_c4_trend_grading.py::test_three_covers_grade_correct_each_row_marked",
+      "test/spec/shares-outstanding-reading/test_c4_trend_grading.py::test_mixed_readings_grade_correct",
+      "test/spec/shares-outstanding-reading/test_c4_trend_grading.py::test_a_row_never_takes_another_years_reading",
+      "test/spec/shares-outstanding-reading/test_c4_trend_grading.py::test_marks_name_a_reading_within_tolerance"
+    ],
+    "C5": [
+      "test/spec/shares-outstanding-reading/test_c5_suite_build.py::test_lookup_case_carries_its_years_cover_reading",
+      "test/spec/shares-outstanding-reading/test_c5_suite_build.py::test_trend_rows_each_read_their_own_10k",
+      "test/spec/shares-outstanding-reading/test_c5_suite_build.py::test_other_metrics_are_emitted_unchanged",
+      "test/spec/shares-outstanding-reading/test_c5_suite_build.py::test_issued_shares_never_key_shares_outstanding",
+      "test/spec/shares-outstanding-reading/test_c5_suite_build.py::test_readings_do_not_depend_on_the_split"
+    ]
+  },
+  "files": {
+    "test/spec/shares-outstanding-reading/conftest.py": "6e3909b0219a50407df3dcff1562744042ee8194e4aae24990c132b47114d68b",
+    "test/spec/shares-outstanding-reading/lexicon.yaml": "a47a5eb942eda79c780ef47ee85679dd369183018737cbbd4fe04b500970e006",
+    "test/spec/shares-outstanding-reading/phrasebook.yaml": "8cdb0017711e5d9c4b4f2b164ac1037229f76773b6bc345e3550b010ab9fdffb",
+    "test/spec/shares-outstanding-reading/test_c1_cover_key.py": "2cc9c2ef66afac072d019de87fa7c06dab19226592cff1e8e86ec2a0530564ec",
+    "test/spec/shares-outstanding-reading/test_c2_match_reading.py": "aac357727f931b4112ed9aa4166b476bacf07d929839ba2eea7f0ee89fa493c1",
+    "test/spec/shares-outstanding-reading/test_c3_scalar_grading.py": "8ac9eb082b3fa8554e85a3337175683d526ce284e8d93122c89629d8a76fbf28",
+    "test/spec/shares-outstanding-reading/test_c4_trend_grading.py": "650e1cd47dc58145619ae07ef85037d729cd6ee98806828078feb6a0103aa4b5",
+    "test/spec/shares-outstanding-reading/test_c5_suite_build.py": "904891cf4a3252c9ec10f9b166ca4e0fdcafdcbdcff345d262de7a83a501973a"
+  },
+  "id": "shares-outstanding-reading",
+  "interface": [
+    {
+      "file": "src/eval/core/graders/numeric.py",
+      "module": "eval.core.graders.numeric",
+      "qualname": "match_reading",
+      "signature": "def match_reading(value: float, targets: Sequence[float], readings: Sequence[Mapping[str, Any]], rel_tol: float) -> str | None"
+    },
+    {
+      "file": "src/eval/keys/core.py",
+      "module": "eval.keys.core",
+      "qualname": "cover_shares_key",
+      "signature": "def cover_shares_key(company_facts: dict, labels: dict[str, int], fiscal_year: int, period_end: str) -> AnswerKey | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/shares-outstanding-reading/test_c1_cover_key.py::test_cover_dates_outside_the_window_are_never_chosen",
+    "test/spec/shares-outstanding-reading/test_c1_cover_key.py::test_each_year_reads_its_own_10k",
+    "test/spec/shares-outstanding-reading/test_c1_cover_key.py::test_fy2025_cover_key_field_for_field",
+    "test/spec/shares-outstanding-reading/test_c1_cover_key.py::test_later_amendment_cover_is_ignored",
+    "test/spec/shares-outstanding-reading/test_c1_cover_key.py::test_missing_concept_or_unit_gives_none",
+    "test/spec/shares-outstanding-reading/test_c1_cover_key.py::test_result_ignores_other_years_and_later_amendments",
+    "test/spec/shares-outstanding-reading/test_c1_cover_key.py::test_two_values_in_the_original_filing_are_ambiguous",
+    "test/spec/shares-outstanding-reading/test_c1_cover_key.py::test_value_is_one_of_the_original_filings_candidates",
+    "test/spec/shares-outstanding-reading/test_c2_match_reading.py::test_appending_readings_never_changes_an_earlier_match",
+    "test/spec/shares-outstanding-reading/test_c2_match_reading.py::test_first_matching_reading_in_order_and_none_values_skipped",
+    "test/spec/shares-outstanding-reading/test_c2_match_reading.py::test_key_and_cover_each_match_their_own_reading",
+    "test/spec/shares-outstanding-reading/test_c2_match_reading.py::test_key_wins_when_both_match",
+    "test/spec/shares-outstanding-reading/test_c2_match_reading.py::test_midpoint_matches_nothing",
+    "test/spec/shares-outstanding-reading/test_c2_match_reading.py::test_result_follows_the_separate_tolerances",
+    "test/spec/shares-outstanding-reading/test_c3_scalar_grading.py::test_correct_exactly_within_tolerance_of_key_or_reading",
+    "test/spec/shares-outstanding-reading/test_c3_scalar_grading.py::test_cover_value_is_correct_and_marked",
+    "test/spec/shares-outstanding-reading/test_c3_scalar_grading.py::test_issued_minus_treasury_counts_only_when_it_equals_a_reading",
+    "test/spec/shares-outstanding-reading/test_c3_scalar_grading.py::test_key_value_is_correct_and_marked_key",
+    "test/spec/shares-outstanding-reading/test_c3_scalar_grading.py::test_readings_round_trip_through_the_case_dict",
+    "test/spec/shares-outstanding-reading/test_c3_scalar_grading.py::test_removing_readings_never_changes_a_key_match",
+    "test/spec/shares-outstanding-reading/test_c3_scalar_grading.py::test_uncited_cover_is_partial_but_value_correct",
+    "test/spec/shares-outstanding-reading/test_c4_trend_grading.py::test_a_row_never_takes_another_years_reading",
+    "test/spec/shares-outstanding-reading/test_c4_trend_grading.py::test_marks_name_a_reading_within_tolerance",
+    "test/spec/shares-outstanding-reading/test_c4_trend_grading.py::test_mixed_readings_grade_correct",
+    "test/spec/shares-outstanding-reading/test_c4_trend_grading.py::test_three_covers_grade_correct_each_row_marked",
+    "test/spec/shares-outstanding-reading/test_c5_suite_build.py::test_issued_shares_never_key_shares_outstanding",
+    "test/spec/shares-outstanding-reading/test_c5_suite_build.py::test_lookup_case_carries_its_years_cover_reading",
+    "test/spec/shares-outstanding-reading/test_c5_suite_build.py::test_other_metrics_are_emitted_unchanged",
+    "test/spec/shares-outstanding-reading/test_c5_suite_build.py::test_readings_do_not_depend_on_the_split",
+    "test/spec/shares-outstanding-reading/test_c5_suite_build.py::test_trend_rows_each_read_their_own_10k"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/shares-outstanding-reading.md",
+    "sha256": "3e2f5056b35778498c019b8e4134a677e1d12f572244b3f0a841ec0e3c0712b9"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

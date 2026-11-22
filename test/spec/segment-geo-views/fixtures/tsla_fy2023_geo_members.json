@@ -1,0 +1,49 @@
+{
+ "case": "tsla_fy2023_geo_members",
+ "ticker": "TSLA",
+ "cik": "0001318605",
+ "accession_no": "0001628280-24-002390",
+ "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024002390/",
+ "document_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024002390/tsla-20231231.htm",
+ "local_source": "data/storage/sec_edgar/TSLA/2023/10-K/tsla-20231231.htm",
+ "local_source_sha256": "c0cab01cf2dfe8600386002b678e48375b27ed6a6ab5ddab792a022e6a361df1",
+ "retrieved": "2026-11-07",
+ "extracted": "xbrl_db (read-only), 2026-11-07: every distinct member on a geographic axis (srt:StatementGeographicalAxis, ifrs-full:GeographicalAreasAxis) of the filing in mv_financial_facts, with its label and one example fact",
+ "members": [
+  {
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:CN",
+   "segment_label": "CHINA",
+   "n_facts": 7,
+   "example_fact_id": 78121
+  },
+  {
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:DE",
+   "segment_label": "GERMANY",
+   "n_facts": 2,
+   "example_fact_id": 78201
+  },
+  {
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "country:US",
+   "segment_label": "UNITED STATES",
+   "n_facts": 5,
+   "example_fact_id": 78186
+  },
+  {
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.tesla.com/20231231:OtherInternationalMember",
+   "segment_label": "Other International [Member]",
+   "n_facts": 5,
+   "example_fact_id": 78192
+  },
+  {
+   "segment_axis": "srt:StatementGeographicalAxis",
+   "segment_member": "http://www.tesla.com/20231231:ShanghaiChinaMember",
+   "segment_label": "Shanghai, China [Member]",
+   "n_facts": 4,
+   "example_fact_id": 78087
+  }
+ ]
+}

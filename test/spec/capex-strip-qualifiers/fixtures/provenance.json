@@ -1,0 +1,25 @@
+{
+ "built": "2026-11-11",
+ "files": {
+  "fsds/2026q1/num.tsv": "8cdd8e648f8343a32bca40f20742b45332ba820cfabb9a214c65f0293c2e844f",
+  "fsds/2026q1/pre.tsv": "c75e6b5c3ffe5975509cbf2be97cfc8f1ff57bd0fb78c209d3edbcbbc93e5386",
+  "fsds/2026q1/sub.tsv": "e4504c54855cac9277809d71e135a75de0aa1b78a1678c9a6496bcecee54009e",
+  "fsds/2026q1/tag.tsv": "e4b6bb74b7654062bc3bca52ca2d28a48daee06201b33974286e32c5aeacbd7c"
+ },
+ "fsds": "fsds/2026q1/*.tsv are byte copies of test/spec/statement-rules-by-element/fixtures/fsds/2026q1 (TSLA CF rows only)",
+ "filings": [
+  {
+   "accession": "0001628280-26-003952",
+   "cik": 1318605,
+   "edgar_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+   "form": "10-K",
+   "primary_document_sha256": "b103bb57a27f219aacafa4fe479783f11727b774c61e6e522bfe0b0a75ab194d",
+   "quarter": "2026q1",
+   "ticker": "TSLA",
+   "zip_bytes": 85259424,
+   "zip_retrieved_at": "2026-11-07T17:11:48.301000+00:00",
+   "zip_sha256": "d18c01c615da8f5cd46273b0dacaeee5b1163f4089171da0f84153a5f3c362f6",
+   "zip_url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q1.zip"
+  }
+ ]
+}

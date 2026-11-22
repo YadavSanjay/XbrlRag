@@ -1,0 +1,137 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-20",
+  "criteria": {
+    "C1": [
+      "test/spec/arm-neutral-grading/test_ang_c1_confident_wrong.py::test_wrong_scalar_is_confident_wrong_cited_or_not",
+      "test/spec/arm-neutral-grading/test_ang_c1_confident_wrong.py::test_declines_and_right_answers_are_not_confident_wrong",
+      "test/spec/arm-neutral-grading/test_ang_c1_confident_wrong.py::test_breakdown_relevance_miss_exempt_but_unexplained_amount_counts",
+      "test/spec/arm-neutral-grading/test_ang_c1_confident_wrong.py::test_wrong_screen_ranking_is_confident_wrong",
+      "test/spec/arm-neutral-grading/test_ang_c1_confident_wrong.py::test_confident_wrong_matches_its_definition",
+      "test/spec/arm-neutral-grading/test_ang_c1_confident_wrong.py::test_removing_citations_never_changes_confident_wrong"
+    ],
+    "C2": [
+      "test/spec/arm-neutral-grading/test_ang_c2_value_correct.py::test_scalar_right_number_is_value_correct_with_or_without_citation",
+      "test/spec/arm-neutral-grading/test_ang_c2_value_correct.py::test_wrong_grounding_still_value_correct",
+      "test/spec/arm-neutral-grading/test_ang_c2_value_correct.py::test_not_value_correct_when_numbers_are_wrong_or_absent",
+      "test/spec/arm-neutral-grading/test_ang_c2_value_correct.py::test_screen_and_breakdown_value_correct_without_citations",
+      "test/spec/arm-neutral-grading/test_ang_c2_value_correct.py::test_value_correct_is_whether_the_number_matches",
+      "test/spec/arm-neutral-grading/test_ang_c2_value_correct.py::test_stripping_citations_never_changes_value_correct"
+    ],
+    "C3": [
+      "test/spec/arm-neutral-grading/test_ang_c3_metrics.py::test_metrics_count_confident_wrong_and_value_accuracy",
+      "test/spec/arm-neutral-grading/test_ang_c3_metrics.py::test_empty_results_report_zero_rates",
+      "test/spec/arm-neutral-grading/test_ang_c3_metrics.py::test_metrics_invariants_hold_for_any_mix"
+    ],
+    "C4": [
+      "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[Revenue was $391B.-expected0]",
+      "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[Revenue was $391.035 billion in FY2024.-expected1]",
+      "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[391,035 million-expected2]",
+      "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[Net loss of (1,234) thousand-expected3]",
+      "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[Operating margin was 12.5%-expected4]",
+      "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[margin of 31.2 percent-expected5]",
+      "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[NT$2,894.31 billion-expected6]",
+      "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[US$ 1.2bn and -3.5 million-expected7]",
+      "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[\\u22127.5%-expected8]",
+      "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[In fiscal 2025, per the 10-K filed 2025-10-31, Q3 sales were 94.9 billion-expected9]",
+      "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[FY2023 revenue: 383,285-expected10]",
+      "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_text_without_amounts_yields_nothing",
+      "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_formatted_integer_round_trips",
+      "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_parentheses_negate",
+      "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_surrounding_words_do_not_change_the_result"
+    ],
+    "C5": [
+      "test/spec/arm-neutral-grading/test_ang_c5_structured_answer.py::test_bare_object_maps_every_field",
+      "test/spec/arm-neutral-grading/test_ang_c5_structured_answer.py::test_numeric_string_value_and_rows",
+      "test/spec/arm-neutral-grading/test_ang_c5_structured_answer.py::test_unparseable_reply_falls_back_to_free_text",
+      "test/spec/arm-neutral-grading/test_ang_c5_structured_answer.py::test_round_trip_of_any_object",
+      "test/spec/arm-neutral-grading/test_ang_c5_structured_answer.py::test_fencing_or_prose_does_not_change_the_result"
+    ],
+    "C6": [
+      "test/spec/arm-neutral-grading/test_ang_c6_grader_version.py::test_grader_version_is_3",
+      "test/spec/arm-neutral-grading/test_ang_c6_grader_version.py::test_every_scorecard_carries_version_3"
+    ]
+  },
+  "files": {
+    "test/spec/arm-neutral-grading/conftest.py": "d7c4643216ed87d1581e18165abffe920b24c910bbcbd909301426f5ff0fd9de",
+    "test/spec/arm-neutral-grading/test_ang_c1_confident_wrong.py": "7d89944a33e8f840a1d95604d3929aececa4c3b6972e8f4ee72cce6e639654b2",
+    "test/spec/arm-neutral-grading/test_ang_c2_value_correct.py": "cfd6dcfc633b79b3b8fe06844ea9159964930b7fe39d027645ce38cf9efe2566",
+    "test/spec/arm-neutral-grading/test_ang_c3_metrics.py": "c305f48afda9b10f77e6cc38751afc99b4a2376fc31b9527a4953f41915dc865",
+    "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py": "d6ae9e95476f762d5cd653fe0f7905a7f8babe5c1d52a990058ef484bf1127a9",
+    "test/spec/arm-neutral-grading/test_ang_c5_structured_answer.py": "7833153b291e4486f46128153f90904fd534f1b445bf7c01f3b25bd2734cba2f",
+    "test/spec/arm-neutral-grading/test_ang_c6_grader_version.py": "abdd83817137223b7c30329102f30d8c03ba88a455d29105b197ff9bba308d08"
+  },
+  "id": "arm-neutral-grading",
+  "interface": [
+    {
+      "file": "src/eval/core/answer_parsing.py",
+      "module": "eval.core.answer_parsing",
+      "qualname": "extract_numbers",
+      "signature": "def extract_numbers(text: str) -> list[float]"
+    },
+    {
+      "file": "src/eval/core/answer_parsing.py",
+      "module": "eval.core.answer_parsing",
+      "qualname": "parse_structured_answer",
+      "signature": "def parse_structured_answer(text: str) -> SystemAnswer"
+    }
+  ],
+  "nodes": [
+    "test/spec/arm-neutral-grading/test_ang_c1_confident_wrong.py::test_breakdown_relevance_miss_exempt_but_unexplained_amount_counts",
+    "test/spec/arm-neutral-grading/test_ang_c1_confident_wrong.py::test_confident_wrong_matches_its_definition",
+    "test/spec/arm-neutral-grading/test_ang_c1_confident_wrong.py::test_declines_and_right_answers_are_not_confident_wrong",
+    "test/spec/arm-neutral-grading/test_ang_c1_confident_wrong.py::test_removing_citations_never_changes_confident_wrong",
+    "test/spec/arm-neutral-grading/test_ang_c1_confident_wrong.py::test_wrong_scalar_is_confident_wrong_cited_or_not",
+    "test/spec/arm-neutral-grading/test_ang_c1_confident_wrong.py::test_wrong_screen_ranking_is_confident_wrong",
+    "test/spec/arm-neutral-grading/test_ang_c2_value_correct.py::test_not_value_correct_when_numbers_are_wrong_or_absent",
+    "test/spec/arm-neutral-grading/test_ang_c2_value_correct.py::test_scalar_right_number_is_value_correct_with_or_without_citation",
+    "test/spec/arm-neutral-grading/test_ang_c2_value_correct.py::test_screen_and_breakdown_value_correct_without_citations",
+    "test/spec/arm-neutral-grading/test_ang_c2_value_correct.py::test_stripping_citations_never_changes_value_correct",
+    "test/spec/arm-neutral-grading/test_ang_c2_value_correct.py::test_value_correct_is_whether_the_number_matches",
+    "test/spec/arm-neutral-grading/test_ang_c2_value_correct.py::test_wrong_grounding_still_value_correct",
+    "test/spec/arm-neutral-grading/test_ang_c3_metrics.py::test_empty_results_report_zero_rates",
+    "test/spec/arm-neutral-grading/test_ang_c3_metrics.py::test_metrics_count_confident_wrong_and_value_accuracy",
+    "test/spec/arm-neutral-grading/test_ang_c3_metrics.py::test_metrics_invariants_hold_for_any_mix",
+    "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[391,035 million-expected2]",
+    "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[FY2023 revenue: 383,285-expected10]",
+    "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[In fiscal 2025, per the 10-K filed 2025-10-31, Q3 sales were 94.9 billion-expected9]",
+    "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[NT$2,894.31 billion-expected6]",
+    "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[Net loss of (1,234) thousand-expected3]",
+    "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[Operating margin was 12.5%-expected4]",
+    "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[Revenue was $391.035 billion in FY2024.-expected1]",
+    "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[Revenue was $391B.-expected0]",
+    "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[US$ 1.2bn and -3.5 million-expected7]",
+    "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[\\u22127.5%-expected8]",
+    "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_example_table[margin of 31.2 percent-expected5]",
+    "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_formatted_integer_round_trips",
+    "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_parentheses_negate",
+    "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_surrounding_words_do_not_change_the_result",
+    "test/spec/arm-neutral-grading/test_ang_c4_extract_numbers.py::test_text_without_amounts_yields_nothing",
+    "test/spec/arm-neutral-grading/test_ang_c5_structured_answer.py::test_bare_object_maps_every_field",
+    "test/spec/arm-neutral-grading/test_ang_c5_structured_answer.py::test_fencing_or_prose_does_not_change_the_result",
+    "test/spec/arm-neutral-grading/test_ang_c5_structured_answer.py::test_numeric_string_value_and_rows",
+    "test/spec/arm-neutral-grading/test_ang_c5_structured_answer.py::test_round_trip_of_any_object",
+    "test/spec/arm-neutral-grading/test_ang_c5_structured_answer.py::test_unparseable_reply_falls_back_to_free_text",
+    "test/spec/arm-neutral-grading/test_ang_c6_grader_version.py::test_every_scorecard_carries_version_3",
+    "test/spec/arm-neutral-grading/test_ang_c6_grader_version.py::test_grader_version_is_3"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/arm-neutral-grading.md",
+    "sha256": "485f6c7c02ba626a9ce3a1bc7f777cb5897423c7b1e6fd3be8624695b84359ee"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

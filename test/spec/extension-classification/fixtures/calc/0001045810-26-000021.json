@@ -1,0 +1,116 @@
+{
+ "accession_no": "0001045810-26-000021",
+ "cik": "0001045810",
+ "ticker": "NVDA",
+ "extension_namespace": "http://www.nvidia.com/20260125",
+ "source_file": "nvda-20260125_cal.xml",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125_cal.xml",
+ "source_sha256": "53b05ddc90a881c4a6db62c28e9dbc4ca51c484b44cab2e664595999db9b8ad9",
+ "retrieved": "local copy under data/storage/sec_edgar (downloaded at ingest); hashed 2026-11-07",
+ "cross_check": "arcs equal to xbrl_db mv_calculation_network by local name (201 arcs)",
+ "selection": "every summation-item arc of every tree (link role, parent) whose parent or a child is an extension presented on IS/BS/CF",
+ "arcs": [
+  {
+   "link_role": "http://www.nvidia.com/role/CashEquivalentsandMarketableSecuritiesCashEquivalentsandMarketableSecuritiesDetails",
+   "parent": "http://www.nvidia.com/20260125:MarketableSecuritiesAndEquitySecuritiesFVNI",
+   "child": "http://fasb.org/us-gaap/2025:EquitySecuritiesFvNiCurrentAndNoncurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/CashEquivalentsandMarketableSecuritiesCashEquivalentsandMarketableSecuritiesDetails",
+   "parent": "http://www.nvidia.com/20260125:MarketableSecuritiesAndEquitySecuritiesFVNI",
+   "child": "http://fasb.org/us-gaap/2025:MarketableSecurities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/CashEquivalentsandMarketableSecuritiesCashEquivalentsandMarketableSecuritiesDetails_1",
+   "parent": "http://www.nvidia.com/20260125:DebtSecuritiesAvailableForSaleAndEquitySecuritiesFVNI",
+   "child": "http://fasb.org/us-gaap/2025:CashEquivalentsAtCarryingValue",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/CashEquivalentsandMarketableSecuritiesCashEquivalentsandMarketableSecuritiesDetails_1",
+   "parent": "http://www.nvidia.com/20260125:DebtSecuritiesAvailableForSaleAndEquitySecuritiesFVNI",
+   "child": "http://www.nvidia.com/20260125:MarketableSecuritiesAndEquitySecuritiesFVNI",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/CashEquivalentsandMarketableSecuritiesCashEquivalentsandMarketableSecuritiesDetails_1",
+   "parent": "http://www.nvidia.com/20260125:DebtSecuritiesAvailableForSaleAndEquitySecuritiesFVNI",
+   "child": "http://www.nvidia.com/20260125:OtherAssetsAndEquitySecuritiesFVNI",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:AssetsCurrent",
+   "child": "http://fasb.org/us-gaap/2025:AccountsReceivableNetCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:AssetsCurrent",
+   "child": "http://fasb.org/us-gaap/2025:CashAndCashEquivalentsAtCarryingValue",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:AssetsCurrent",
+   "child": "http://fasb.org/us-gaap/2025:InventoryNet",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:AssetsCurrent",
+   "child": "http://fasb.org/us-gaap/2025:PrepaidExpenseAndOtherAssetsCurrent",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedBalanceSheets",
+   "parent": "http://fasb.org/us-gaap/2025:AssetsCurrent",
+   "child": "http://www.nvidia.com/20260125:MarketableSecuritiesAndEquitySecuritiesFVNI",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2025:PaymentsForRepurchaseOfCommonStock",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2025:PaymentsOfDividends",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2025:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2025:ProceedsFromPaymentsForOtherFinancingActivities",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2025:ProceedsFromStockPlans",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://fasb.org/us-gaap/2025:RepaymentsOfDebt",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.nvidia.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2025:NetCashProvidedByUsedInFinancingActivities",
+   "child": "http://www.nvidia.com/20260125:PaymentsForFinancedPropertyPlantAndEquipmentAndIntangibleAssetsFinancingActivities",
+   "weight": "-1"
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/revenue-subfamily-fallback/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-17",
+  "criteria": {
+    "C1": [
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_qualifying_steps_are_retried_as_revenue[ServiceRevenue-dims0]",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_qualifying_steps_are_retried_as_revenue[ServiceRevenue-dims1]",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_qualifying_steps_are_retried_as_revenue[ProductRevenue-dims2]",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_qualifying_steps_are_retried_as_revenue[ServiceRevenue-dims3]",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_non_qualifying_steps_are_not_retried[step0]",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_non_qualifying_steps_are_not_retried[step1]",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_non_qualifying_steps_are_not_retried[step2]",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_non_qualifying_steps_are_not_retried[step3]",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_non_qualifying_steps_are_not_retried[step4]",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_non_qualifying_steps_are_not_retried[step5]",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_retry_iff_a_hint_names_the_subfamily",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_other_families_are_never_retried"
+    ],
+    "C2": [
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_meta_service_other_resolves_through_revenue",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_step_is_ok_exactly_when_the_retry_is_ok"
+    ],
+    "C3": [
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_one_retry_with_the_same_hints_and_id",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_no_retry_outside_scope[facts0-step0-expected0]",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_no_retry_outside_scope[facts1-step1-expected1]",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_no_retry_outside_scope[facts2-step2-expected2]",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_no_retry_outside_scope[facts3-step3-expected3]",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_no_retry_outside_scope[facts4-step4-expected4]",
+      "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_adding_a_non_qualifying_step_adds_one_call"
+    ]
+  },
+  "files": {
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py": "14b2b9deff4112a4b3c73907334169583cf0dbfe1d68eddda9cf9fe815d61bd9"
+  },
+  "id": "revenue-subfamily-fallback",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/plan_executor.py",
+      "module": "retriever.xbrl.plan_executor",
+      "qualname": "subfamily_fallback_step",
+      "signature": "def subfamily_fallback_step(step: dict) -> dict | None"
+    }
+  ],
+  "nodes": [
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_adding_a_non_qualifying_step_adds_one_call",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_meta_service_other_resolves_through_revenue",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_no_retry_outside_scope[facts0-step0-expected0]",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_no_retry_outside_scope[facts1-step1-expected1]",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_no_retry_outside_scope[facts2-step2-expected2]",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_no_retry_outside_scope[facts3-step3-expected3]",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_no_retry_outside_scope[facts4-step4-expected4]",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_non_qualifying_steps_are_not_retried[step0]",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_non_qualifying_steps_are_not_retried[step1]",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_non_qualifying_steps_are_not_retried[step2]",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_non_qualifying_steps_are_not_retried[step3]",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_non_qualifying_steps_are_not_retried[step4]",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_non_qualifying_steps_are_not_retried[step5]",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_one_retry_with_the_same_hints_and_id",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_other_families_are_never_retried",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_qualifying_steps_are_retried_as_revenue[ProductRevenue-dims2]",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_qualifying_steps_are_retried_as_revenue[ServiceRevenue-dims0]",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_qualifying_steps_are_retried_as_revenue[ServiceRevenue-dims1]",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_qualifying_steps_are_retried_as_revenue[ServiceRevenue-dims3]",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_retry_iff_a_hint_names_the_subfamily",
+    "test/spec/revenue-subfamily-fallback/test_revenue_subfamily_fallback.py::test_step_is_ok_exactly_when_the_retry_is_ok"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/revenue-subfamily-fallback.md",
+    "sha256": "6f23aed9bdf840a12e5d6d3cee4f2a941b9876a6809f4acbb3feb6d64e3ff269"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

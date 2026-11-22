@@ -1,0 +1,7 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0000909832-23-000042	5	3	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2023	Cash and cash equivalents	0
+0000909832-23-000042	5	4	BS	0	H	ShortTermInvestments	us-gaap/2023	Short-term investments	0
+0000909832-23-000042	5	10	BS	0	H	PropertyPlantAndEquipmentNet	us-gaap/2023	Property and equipment, net	0
+0000909832-23-000042	8	21	CF	0	H	ProceedsFromShortTermDebt	us-gaap/2023	Proceeds from short-term borrowings	0
+0000909832-23-000042	8	33	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2023	CASH AND CASH EQUIVALENTS BEGINNING OF YEAR	0
+0000909832-23-000042	8	34	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2023	CASH AND CASH EQUIVALENTS END OF YEAR	0

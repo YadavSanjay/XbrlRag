@@ -1,0 +1,72 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/alternative-inputs-grounding/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-15",
+  "criteria": {
+    "C1": [
+      "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_groups_point_cases",
+      "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_groups_match_the_rule"
+    ],
+    "C2": [
+      "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_classes_point_case",
+      "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_classes_match_the_rule"
+    ],
+    "C3": [
+      "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_either_route_satisfies_grounding",
+      "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_any_alternative_plus_equivalents_satisfies"
+    ],
+    "C4": [
+      "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_properties",
+      "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_properties_point_case",
+      "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_scalar_objects_keep_the_old_behaviour"
+    ]
+  },
+  "files": {
+    "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py": "0aa378d42df4488d3b96c287f40c21c5abae5d49def3fdf73c4f644f2f378cb2"
+  },
+  "id": "alternative-inputs-grounding",
+  "interface": [
+    {
+      "file": "src/eval/suites/sql_derived.py",
+      "module": "eval.suites.sql_derived",
+      "qualname": "fact_id_groups_from_json",
+      "signature": "def fact_id_groups_from_json(value: Any) -> list[list[int]]"
+    },
+    {
+      "file": "src/eval/suites/sql_derived.py",
+      "module": "eval.suites.sql_derived",
+      "qualname": "group_classes",
+      "signature": "def group_classes(groups: Sequence[Sequence[int]], classes: collections.abc.Mapping[int, Sequence[int]]) -> list[list[int]]"
+    }
+  ],
+  "nodes": [
+    "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_any_alternative_plus_equivalents_satisfies",
+    "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_classes_match_the_rule",
+    "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_classes_point_case",
+    "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_either_route_satisfies_grounding",
+    "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_groups_match_the_rule",
+    "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_groups_point_cases",
+    "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_properties",
+    "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_properties_point_case",
+    "test/spec/alternative-inputs-grounding/test_alternative_inputs_grounding.py::test_scalar_objects_keep_the_old_behaviour"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/alternative-inputs-grounding.md",
+    "sha256": "b2fae4f91308cbc9c1aea8264497955a5fbaffabd6da0b23c00d0609f5fa1e3e"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

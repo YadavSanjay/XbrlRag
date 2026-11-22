@@ -1,0 +1,166 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/concept-families-wave1/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-29",
+  "criteria": {
+    "C1": [
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_valid_file_normalizes",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_band_boundaries_are_valid",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v1_top_key]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v1_version]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v1_family_key]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v1_filer_extra_key]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v1_filer_missing_family]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v2_custom_prefix]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v2_no_prefix]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v2_bad_local_name]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v3_family_reason_missing]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v3_family_reason_empty]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v3_filer_reason_empty]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v4_new_family_no_label]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v4_new_family_empty_label]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v4_new_family_no_primary]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v4_new_family_bad_name]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v4_label_on_existing]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v5_empty_entry]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v5_empty_lists]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v6_base_primary_again]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v6_twice_in_file]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v6_base_component_again]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v6_base_component_as_primary]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v7_same_rank_two_families]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v8_pretax_as_operating_income]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v9_primaries_reach_band]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v9_components_reach_ifrs]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v10_short_cik]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v10_int_cik]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v10_unknown_family]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v10_empty_preferred]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v10_repeated_preferred]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v10_component_promoted]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v10_not_in_family]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v10_duplicate_entry]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_filer_order_and_repetition_do_not_matter",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_generated_valid_files_normalize",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_generated_files_with_one_broken_rule_raise"
+    ],
+    "C2": [
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_merge_point_case",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_merge_never_moves_a_base_qname"
+    ],
+    "C3": [
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_reviewed_filer_ranking_point_cases",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_reviewed_filer_ranking_refuses[empty]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_reviewed_filer_ranking_refuses[repeated]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_reviewed_filer_ranking_refuses[not-in-family]",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_reviewed_filer_ranking_never_promotes_a_component",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_reviewed_filer_ranking_properties"
+    ],
+    "C4": [
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_committed_file_has_the_retail_overrides",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_load_parses_and_validates_a_file",
+      "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_committed_file_leaves_existing_rankings_alone"
+    ]
+  },
+  "files": {
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py": "b8b4c867bf85f99cfa957aad0a48cfeb29764c4d4efb3c90fc7ed355993e301a"
+  },
+  "id": "concept-families-wave1",
+  "interface": [
+    {
+      "file": "src/ingest/util/generate_concept_mapping.py",
+      "module": "ingest.util.generate_concept_mapping",
+      "qualname": "validate_family_overrides",
+      "signature": "def validate_family_overrides(raw: collections.abc.Mapping[str, Any], primaries: collections.abc.Mapping[str, Sequence[str]], components: collections.abc.Mapping[str, Sequence[str]]) -> dict[str, Any]"
+    },
+    {
+      "file": "src/ingest/util/generate_concept_mapping.py",
+      "module": "ingest.util.generate_concept_mapping",
+      "qualname": "merge_family_overrides",
+      "signature": "def merge_family_overrides(primaries: collections.abc.Mapping[str, Sequence[str]], components: collections.abc.Mapping[str, Sequence[str]], overrides: collections.abc.Mapping[str, Any]) -> tuple[dict[str, list[str]], dict[str, list[str]]]"
+    },
+    {
+      "file": "src/ingest/util/generate_concept_mapping.py",
+      "module": "ingest.util.generate_concept_mapping",
+      "qualname": "reviewed_filer_ranking",
+      "signature": "def reviewed_filer_ranking(global_ranking: Sequence[tuple[str, int]], preferred: Sequence[str]) -> list[tuple[str, int]]"
+    },
+    {
+      "file": "src/ingest/util/generate_concept_mapping.py",
+      "module": "ingest.util.generate_concept_mapping",
+      "qualname": "load_family_overrides",
+      "signature": "def load_family_overrides(path: Path | None=None) -> dict[str, Any]"
+    }
+  ],
+  "nodes": [
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_band_boundaries_are_valid",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_committed_file_has_the_retail_overrides",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_committed_file_leaves_existing_rankings_alone",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v10_component_promoted]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v10_duplicate_entry]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v10_empty_preferred]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v10_int_cik]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v10_not_in_family]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v10_repeated_preferred]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v10_short_cik]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v10_unknown_family]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v1_family_key]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v1_filer_extra_key]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v1_filer_missing_family]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v1_top_key]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v1_version]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v2_bad_local_name]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v2_custom_prefix]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v2_no_prefix]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v3_family_reason_empty]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v3_family_reason_missing]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v3_filer_reason_empty]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v4_label_on_existing]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v4_new_family_bad_name]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v4_new_family_empty_label]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v4_new_family_no_label]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v4_new_family_no_primary]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v5_empty_entry]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v5_empty_lists]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v6_base_component_again]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v6_base_component_as_primary]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v6_base_primary_again]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v6_twice_in_file]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v7_same_rank_two_families]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v8_pretax_as_operating_income]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v9_components_reach_ifrs]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_each_broken_rule_raises[_v9_primaries_reach_band]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_filer_order_and_repetition_do_not_matter",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_generated_files_with_one_broken_rule_raise",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_generated_valid_files_normalize",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_load_parses_and_validates_a_file",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_merge_never_moves_a_base_qname",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_merge_point_case",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_reviewed_filer_ranking_never_promotes_a_component",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_reviewed_filer_ranking_point_cases",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_reviewed_filer_ranking_properties",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_reviewed_filer_ranking_refuses[empty]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_reviewed_filer_ranking_refuses[not-in-family]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_reviewed_filer_ranking_refuses[repeated]",
+    "test/spec/concept-families-wave1/test_concept_families_wave1.py::test_valid_file_normalizes"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/concept-families-wave1.md",
+    "sha256": "9c1941f4c6e991d5a315cc5937a791cf27c3f07ff7317420e23d209ab65466ee"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

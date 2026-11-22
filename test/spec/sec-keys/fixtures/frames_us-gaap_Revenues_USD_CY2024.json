@@ -1,0 +1,14 @@
+{
+  "taxonomy": "us-gaap",
+  "tag": "Revenues",
+  "ccp": "CY2024",
+  "uom": "USD",
+  "label": "Revenues",
+  "description": "Synthetic CY2024 revenue frame.",
+  "pts": 3,
+  "data": [
+    {"accn": "0000900002-25-000050", "cik": 900002, "entityName": "Synthetic Jun Corp", "loc": "US-WA", "start": "2024-07-01", "end": "2025-06-30", "val": 281724000000},
+    {"accn": "0000900001-24-000030", "cik": 900001, "entityName": "Synthetic Sep Corp", "loc": "US-CA", "start": "2023-10-01", "end": "2024-09-28", "val": 360000000000},
+    {"accn": "0000900004-25-000007", "cik": 900004, "entityName": "Synthetic Cal Corp", "loc": "US-NY", "start": "2024-01-01", "end": "2024-12-31", "val": 50000000000}
+  ]
+}

@@ -1,0 +1,8 @@
+# Synthetic held-out lexicon overlay for the hf-suite-build spec tests: the made-up filers
+# DEVB and DEVD, with their period ends (docs/specs/hf-suite-build.md requirement 2).
+companies:
+  DEVB: {short: Devb, legal: Devb Corporation}
+  DEVD: {short: Devd, legal: Devd Ltd.}
+period_ends:
+  DEVB: {2023: "2023-12-31", 2024: "2024-12-31"}
+  DEVD: {2023: "2023-12-30", 2024: "2024-12-28"}

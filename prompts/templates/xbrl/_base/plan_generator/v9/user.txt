@@ -1,0 +1,24 @@
+RESOLVED_ENTITIES (from the deterministic resolver - use these exact cik/ticker
+values; do not substitute your own):
+{resolved_entities_block}
+
+FISCAL_YEARS_IN_SCOPE (years already resolved from the query's period mentions -
+prefer these over inferring your own, but you may add adjacent years a compute
+step needs, e.g. a prior year for a YoY comparison):
+{fiscal_years_in_scope_json}
+
+CONCEPT_PHRASES (raw, unmapped phrases lifted from the query - for context only;
+map these to CONCEPT_FAMILIES yourself):
+{concept_phrases_json}
+
+DIMENSION_HINT_PRESENT: {dimension_hint_present}
+
+GROUP (resolved by rule from the question's words; copy, never override - see rule 11):
+UNIVERSE: {universe_json}
+AGGREGATE: {aggregate_json}
+
+OPERATION (resolved by rule from the question's words; follow it - see rule 12):
+OPERATION: {operation_json}
+
+USER_QUERY: {user_query}
+{validation_feedback}

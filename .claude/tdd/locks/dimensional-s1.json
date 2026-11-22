@@ -1,0 +1,121 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-10",
+  "criteria": {
+    "C1": [
+      "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_identity_of_each_row_shape",
+      "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_the_latest_report_with_the_same_dimensions_answers[INTC-CCG-opinc]",
+      "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_the_latest_report_with_the_same_dimensions_answers[INTC-AllOther-not-the-cell]",
+      "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_the_latest_report_with_the_same_dimensions_answers[INTC-AXG-own]",
+      "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_the_latest_report_with_the_same_dimensions_answers[INTC-Notebook-3dim]",
+      "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_the_latest_report_with_the_same_dimensions_answers[INTC-CCG-revenue-2dim]",
+      "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_the_latest_report_with_the_same_dimensions_answers[NVDA-Graphics-renamed-later]",
+      "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_the_latest_report_with_the_same_dimensions_answers[NVDA-TW]",
+      "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_the_latest_report_with_the_same_dimensions_answers[NVDA-Other]",
+      "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_a_cell_of_the_flat_view_never_restates_a_member",
+      "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_a_member_only_a_later_filing_reports_is_not_added",
+      "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_any_later_filings_and_order",
+      "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_undimensioned_and_single_rows_match_latest_restatement",
+      "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_a_recasting_later_filing_wins_and_one_without_the_member_does_not"
+    ],
+    "C2": [
+      "test/spec/dimensional-s1/test_c2_lookup.py::test_multidimensional_lookup_answers_the_latest_report[INTC-3-dimensions]",
+      "test/spec/dimensional-s1/test_c2_lookup.py::test_multidimensional_lookup_answers_the_latest_report[NVDA-one-hint-neutral-member]",
+      "test/spec/dimensional-s1/test_c2_lookup.py::test_one_dimension_lookup_is_never_restated_by_a_cell",
+      "test/spec/dimensional-s1/test_c2_lookup.py::test_any_set_of_later_reports",
+      "test/spec/dimensional-s1/test_c2_lookup.py::test_a_later_recast_moves_the_answer_and_an_unrelated_later_filing_does_not"
+    ],
+    "C3": [
+      "test/spec/dimensional-s1/test_c3_member_screens.py::test_segment_screen_ranks_the_restated_member",
+      "test/spec/dimensional-s1/test_c3_member_screens.py::test_geographic_screen_ranks_the_restated_country_and_never_a_recast_only_member",
+      "test/spec/dimensional-s1/test_c3_member_screens.py::test_segment_screen_for_any_later_reports_agrees_with_the_lookup",
+      "test/spec/dimensional-s1/test_c3_member_screens.py::test_a_later_recast_moves_the_rank_and_its_share_uses_that_filing"
+    ],
+    "C4": [
+      "test/spec/dimensional-s1/test_c4_breakdown.py::test_breakdown_filings_point_cases",
+      "test/spec/dimensional-s1/test_c4_breakdown.py::test_breakdown_filings_for_any_later_reports",
+      "test/spec/dimensional-s1/test_c4_breakdown.py::test_breakdown_is_the_latest_filings_split",
+      "test/spec/dimensional-s1/test_c4_breakdown.py::test_breakdown_skips_a_later_filing_without_a_split",
+      "test/spec/dimensional-s1/test_c4_breakdown.py::test_breakdown_follows_the_stored_filings_in_any_order"
+    ]
+  },
+  "files": {
+    "test/spec/dimensional-s1/conftest.py": "fd0963a05e856ab431ec3d275571ce7344697c2a0c5569b1ee77be25946ea2a3",
+    "test/spec/dimensional-s1/fixtures/dei.json": "d79c07c49942c86a258a2a749691cdbded5a9967e19d022628c07ad76d5638bf",
+    "test/spec/dimensional-s1/fixtures/fsds_segments.json": "5652a018bf3f4c4987e1b1b396a76be9f2aea80b4b0e40a7d9607da096d519dd",
+    "test/spec/dimensional-s1/test_c1_dimension_rule.py": "3ca9ba41f36d1dd31ee5799139b431b68f8eb65068953fb7b791b2f5271854f1",
+    "test/spec/dimensional-s1/test_c2_lookup.py": "60842f870f1f9377b819285f5d69232fd6695c42fac16cfc304fe302b884adfc",
+    "test/spec/dimensional-s1/test_c3_member_screens.py": "9981c2d154da588667d7981cd364e8598545803452d7e558c279175b51a7eeda",
+    "test/spec/dimensional-s1/test_c4_breakdown.py": "a555fa365608f3a5c0139f2ca008acc2b3c74d92c34aa1625af7c89fb8e800db"
+  },
+  "id": "dimensional-s1",
+  "interface": [
+    {
+      "file": "src/numerics/restatement.py",
+      "module": "numerics.restatement",
+      "qualname": "dimension_identity",
+      "signature": "def dimension_identity(row: Mapping[str, Any]) -> tuple[tuple[str, str], ...] | None"
+    },
+    {
+      "file": "src/numerics/restatement.py",
+      "module": "numerics.restatement",
+      "qualname": "latest_dimensional_restatement",
+      "signature": "def latest_dimensional_restatement(current: Sequence[Mapping[str, Any]], rows: Sequence[Mapping[str, Any]]) -> list[dict]"
+    },
+    {
+      "file": "src/numerics/restatement.py",
+      "module": "numerics.restatement",
+      "qualname": "breakdown_filings",
+      "signature": "def breakdown_filings(rows: Sequence[Mapping[str, Any]], fy: int, axes: Sequence[str], fiscal_period: str='FY', as_originally_reported: bool=False) -> list[str]"
+    }
+  ],
+  "nodes": [
+    "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_a_cell_of_the_flat_view_never_restates_a_member",
+    "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_a_member_only_a_later_filing_reports_is_not_added",
+    "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_a_recasting_later_filing_wins_and_one_without_the_member_does_not",
+    "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_any_later_filings_and_order",
+    "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_identity_of_each_row_shape",
+    "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_the_latest_report_with_the_same_dimensions_answers[INTC-AXG-own]",
+    "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_the_latest_report_with_the_same_dimensions_answers[INTC-AllOther-not-the-cell]",
+    "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_the_latest_report_with_the_same_dimensions_answers[INTC-CCG-opinc]",
+    "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_the_latest_report_with_the_same_dimensions_answers[INTC-CCG-revenue-2dim]",
+    "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_the_latest_report_with_the_same_dimensions_answers[INTC-Notebook-3dim]",
+    "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_the_latest_report_with_the_same_dimensions_answers[NVDA-Graphics-renamed-later]",
+    "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_the_latest_report_with_the_same_dimensions_answers[NVDA-Other]",
+    "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_the_latest_report_with_the_same_dimensions_answers[NVDA-TW]",
+    "test/spec/dimensional-s1/test_c1_dimension_rule.py::test_undimensioned_and_single_rows_match_latest_restatement",
+    "test/spec/dimensional-s1/test_c2_lookup.py::test_a_later_recast_moves_the_answer_and_an_unrelated_later_filing_does_not",
+    "test/spec/dimensional-s1/test_c2_lookup.py::test_any_set_of_later_reports",
+    "test/spec/dimensional-s1/test_c2_lookup.py::test_multidimensional_lookup_answers_the_latest_report[INTC-3-dimensions]",
+    "test/spec/dimensional-s1/test_c2_lookup.py::test_multidimensional_lookup_answers_the_latest_report[NVDA-one-hint-neutral-member]",
+    "test/spec/dimensional-s1/test_c2_lookup.py::test_one_dimension_lookup_is_never_restated_by_a_cell",
+    "test/spec/dimensional-s1/test_c3_member_screens.py::test_a_later_recast_moves_the_rank_and_its_share_uses_that_filing",
+    "test/spec/dimensional-s1/test_c3_member_screens.py::test_geographic_screen_ranks_the_restated_country_and_never_a_recast_only_member",
+    "test/spec/dimensional-s1/test_c3_member_screens.py::test_segment_screen_for_any_later_reports_agrees_with_the_lookup",
+    "test/spec/dimensional-s1/test_c3_member_screens.py::test_segment_screen_ranks_the_restated_member",
+    "test/spec/dimensional-s1/test_c4_breakdown.py::test_breakdown_filings_for_any_later_reports",
+    "test/spec/dimensional-s1/test_c4_breakdown.py::test_breakdown_filings_point_cases",
+    "test/spec/dimensional-s1/test_c4_breakdown.py::test_breakdown_follows_the_stored_filings_in_any_order",
+    "test/spec/dimensional-s1/test_c4_breakdown.py::test_breakdown_is_the_latest_filings_split",
+    "test/spec/dimensional-s1/test_c4_breakdown.py::test_breakdown_skips_a_later_filing_without_a_split"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/dimensional-s1.md",
+    "sha256": "a61cd0c20bbf356a768ded9c6654ff1c9518a0368054d7ad1e9c127310c2a363"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

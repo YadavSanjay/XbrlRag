@@ -1,0 +1,80 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/repeat-spread/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-16",
+  "criteria": {
+    "C1": [
+      "test/spec/repeat-spread/test_repeat_spread.py::test_point_case_counts_and_accuracies",
+      "test/spec/repeat-spread/test_repeat_spread.py::test_point_case_mean_and_sample_std",
+      "test/spec/repeat-spread/test_repeat_spread.py::test_point_case_floor_ceiling_and_flaky",
+      "test/spec/repeat-spread/test_repeat_spread.py::test_fields_match_definitions"
+    ],
+    "C2": [
+      "test/spec/repeat-spread/test_repeat_spread.py::test_point_case_ordering_and_flip_rate",
+      "test/spec/repeat-spread/test_repeat_spread.py::test_point_case_identical_runs",
+      "test/spec/repeat-spread/test_repeat_spread.py::test_ordering_and_flip_rate_invariants",
+      "test/spec/repeat-spread/test_repeat_spread.py::test_identical_runs_have_no_spread",
+      "test/spec/repeat-spread/test_repeat_spread.py::test_reordering_runs_changes_only_accuracy_order",
+      "test/spec/repeat-spread/test_repeat_spread.py::test_non_common_cases_change_nothing"
+    ],
+    "C3": [
+      "test/spec/repeat-spread/test_repeat_spread.py::test_point_case_by_kind",
+      "test/spec/repeat-spread/test_repeat_spread.py::test_no_kinds_gives_empty_by_kind",
+      "test/spec/repeat-spread/test_repeat_spread.py::test_by_kind_equals_restricted_summary"
+    ],
+    "C4": [
+      "test/spec/repeat-spread/test_repeat_spread.py::test_fewer_than_two_runs_raises",
+      "test/spec/repeat-spread/test_repeat_spread.py::test_no_common_case_raises",
+      "test/spec/repeat-spread/test_repeat_spread.py::test_disjoint_runs_raise"
+    ]
+  },
+  "files": {
+    "test/spec/repeat-spread/test_repeat_spread.py": "6f70c67d295bafb1d9d96f88f811f9a57ee683b496511a72baae1bbc6699dc3d"
+  },
+  "id": "repeat-spread",
+  "interface": [
+    {
+      "file": "src/eval/core/repeats.py",
+      "module": "eval.core.repeats",
+      "qualname": "summarize_repeats",
+      "signature": "def summarize_repeats(runs: Sequence[Mapping[str, bool]], kinds: Mapping[str, str] | None=None) -> dict[str, Any]"
+    }
+  ],
+  "nodes": [
+    "test/spec/repeat-spread/test_repeat_spread.py::test_by_kind_equals_restricted_summary",
+    "test/spec/repeat-spread/test_repeat_spread.py::test_disjoint_runs_raise",
+    "test/spec/repeat-spread/test_repeat_spread.py::test_fewer_than_two_runs_raises",
+    "test/spec/repeat-spread/test_repeat_spread.py::test_fields_match_definitions",
+    "test/spec/repeat-spread/test_repeat_spread.py::test_identical_runs_have_no_spread",
+    "test/spec/repeat-spread/test_repeat_spread.py::test_no_common_case_raises",
+    "test/spec/repeat-spread/test_repeat_spread.py::test_no_kinds_gives_empty_by_kind",
+    "test/spec/repeat-spread/test_repeat_spread.py::test_non_common_cases_change_nothing",
+    "test/spec/repeat-spread/test_repeat_spread.py::test_ordering_and_flip_rate_invariants",
+    "test/spec/repeat-spread/test_repeat_spread.py::test_point_case_by_kind",
+    "test/spec/repeat-spread/test_repeat_spread.py::test_point_case_counts_and_accuracies",
+    "test/spec/repeat-spread/test_repeat_spread.py::test_point_case_floor_ceiling_and_flaky",
+    "test/spec/repeat-spread/test_repeat_spread.py::test_point_case_identical_runs",
+    "test/spec/repeat-spread/test_repeat_spread.py::test_point_case_mean_and_sample_std",
+    "test/spec/repeat-spread/test_repeat_spread.py::test_point_case_ordering_and_flip_rate",
+    "test/spec/repeat-spread/test_repeat_spread.py::test_reordering_runs_changes_only_accuracy_order"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/repeat-spread.md",
+    "sha256": "8552a7fbdee5e14e96298ff72ec7d6d288ac7ecbab5e3e4bee2714940778c881"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

@@ -1,0 +1,206 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-29",
+  "criteria": {
+    "C1": [
+      "test/spec/judge-runner-wiring/test_jrw_c1_key_points.py::test_key_points_read_and_round_trip",
+      "test/spec/judge-runner-wiring/test_jrw_c1_key_points.py::test_no_key_points",
+      "test/spec/judge-runner-wiring/test_jrw_c1_key_points.py::test_text_graded_table",
+      "test/spec/judge-runner-wiring/test_jrw_c1_key_points.py::test_round_trip_and_closed_form"
+    ],
+    "C2": [
+      "test/spec/judge-runner-wiring/test_jrw_c2_claims.py::test_claims_from_a_response_dict",
+      "test/spec/judge-runner-wiring/test_jrw_c2_claims.py::test_claims_from_an_xbrlrag_response",
+      "test/spec/judge-runner-wiring/test_jrw_c2_claims.py::test_unstructured_answers",
+      "test/spec/judge-runner-wiring/test_jrw_c2_claims.py::test_uncited_and_unknown_ids_give_no_passages",
+      "test/spec/judge-runner-wiring/test_jrw_c2_claims.py::test_unknown_citations_change_nothing"
+    ],
+    "C3": [
+      "test/spec/judge-runner-wiring/test_jrw_c3_judge_case.py::test_one_call_with_the_case_inputs",
+      "test/spec/judge-runner-wiring/test_jrw_c3_judge_case.py::test_not_judged_without_key_points_or_on_error",
+      "test/spec/judge-runner-wiring/test_jrw_c3_judge_case.py::test_judge_error_gives_four_nones",
+      "test/spec/judge-runner-wiring/test_jrw_c3_judge_case.py::test_run_halt_propagates",
+      "test/spec/judge-runner-wiring/test_jrw_c3_judge_case.py::test_scores_follow_the_formulas"
+    ],
+    "C4": [
+      "test/spec/judge-runner-wiring/test_jrw_c4_family.py::test_point_cases",
+      "test/spec/judge-runner-wiring/test_jrw_c4_family.py::test_run_refused_before_any_call",
+      "test/spec/judge-runner-wiring/test_jrw_c4_family.py::test_refused_exactly_on_a_shared_family"
+    ],
+    "C5": [
+      "test/spec/judge-runner-wiring/test_jrw_c5_run_judging.py::test_text_cases_are_judged_once",
+      "test/spec/judge-runner-wiring/test_jrw_c5_run_judging.py::test_judge_error_and_errored_answer",
+      "test/spec/judge-runner-wiring/test_jrw_c5_run_judging.py::test_judge_cost_counts_against_the_cap",
+      "test/spec/judge-runner-wiring/test_jrw_c5_run_judging.py::test_run_halt_propagates",
+      "test/spec/judge-runner-wiring/test_jrw_c5_run_judging.py::test_without_a_judge",
+      "test/spec/judge-runner-wiring/test_jrw_c5_run_judging.py::test_scores_do_not_depend_on_case_order"
+    ],
+    "C6": [
+      "test/spec/judge-runner-wiring/test_jrw_c6_summary.py::test_calibrated_summary",
+      "test/spec/judge-runner-wiring/test_jrw_c6_summary.py::test_uncalibrated_withholds_means",
+      "test/spec/judge-runner-wiring/test_jrw_c6_summary.py::test_no_judge",
+      "test/spec/judge-runner-wiring/test_jrw_c6_summary.py::test_means_follow_the_closed_form"
+    ],
+    "C7": [
+      "test/spec/judge-runner-wiring/test_jrw_c7_metamorphic_pass.py::test_hand_built_run",
+      "test/spec/judge-runner-wiring/test_jrw_c7_metamorphic_pass.py::test_empty_run_has_every_check_with_zero_counts",
+      "test/spec/judge-runner-wiring/test_jrw_c7_metamorphic_pass.py::test_run_graded_records_the_pass",
+      "test/spec/judge-runner-wiring/test_jrw_c7_metamorphic_pass.py::test_pair_order_does_not_matter"
+    ],
+    "C8": [
+      "test/spec/judge-runner-wiring/test_jrw_c8_twins.py::test_twins_for_seed_7",
+      "test/spec/judge-runner-wiring/test_jrw_c8_twins.py::test_bound",
+      "test/spec/judge-runner-wiring/test_jrw_c8_twins.py::test_a_function_of_the_seed"
+    ],
+    "C9": [
+      "test/spec/judge-runner-wiring/test_jrw_c9_perturbation_runner.py::test_hand_built_pairs",
+      "test/spec/judge-runner-wiring/test_jrw_c9_perturbation_runner.py::test_lookups_equal_flips_the_answer_check",
+      "test/spec/judge-runner-wiring/test_jrw_c9_perturbation_runner.py::test_run_halt_propagates",
+      "test/spec/judge-runner-wiring/test_jrw_c9_perturbation_runner.py::test_cost_cap_skips_later_pairs",
+      "test/spec/judge-runner-wiring/test_jrw_c9_perturbation_runner.py::test_bad_worker_count",
+      "test/spec/judge-runner-wiring/test_jrw_c9_perturbation_runner.py::test_counts_do_not_depend_on_workers"
+    ]
+  },
+  "files": {
+    "test/spec/judge-runner-wiring/conftest.py": "646b69f181fc64108ac7c92c42c4f8030c0b37574dcc1738faeca39fd6a336c5",
+    "test/spec/judge-runner-wiring/test_jrw_c1_key_points.py": "74d71fd16e73b8d74b8c8dd5b89d4d010220e72bf00510e92f8da946e007fe9c",
+    "test/spec/judge-runner-wiring/test_jrw_c2_claims.py": "1fcb87dde5ec4aa749f8545245ab88c9c57402968e4afa2a23dc6c86db8741bd",
+    "test/spec/judge-runner-wiring/test_jrw_c3_judge_case.py": "796ba06950f8771a6df2af38a45e1208b588f46f117e0f2fc4d1812d07545247",
+    "test/spec/judge-runner-wiring/test_jrw_c4_family.py": "6a354d7d5e86d8518199dd58f3deea3374fd24ccf24298d6d20e2f3e148314f2",
+    "test/spec/judge-runner-wiring/test_jrw_c5_run_judging.py": "34f4115bf7439809c0dd5254e8a23709b86ca5c98e6c5b7015fd1b2309e6ecdc",
+    "test/spec/judge-runner-wiring/test_jrw_c6_summary.py": "5e7e8ded9b80b5fc31d17650ff3bbd4d0e270cb7a684f43c738eb181c8020926",
+    "test/spec/judge-runner-wiring/test_jrw_c7_metamorphic_pass.py": "904facb6331dbdbd2e7b3418bf00c89bb2b20fb27f07acfa1e01e6290aeb2908",
+    "test/spec/judge-runner-wiring/test_jrw_c8_twins.py": "f1e76789440bd0be4e99cd98376ed2f5389fb1f259145310cea3c4a08267f6b6",
+    "test/spec/judge-runner-wiring/test_jrw_c9_perturbation_runner.py": "402e87ae55285e3481d5dd08a2fa084a8dd3dbe80f43a7d805c34b12678f19b3"
+  },
+  "id": "judge-runner-wiring",
+  "interface": [
+    {
+      "file": "src/eval/core/judge_wiring.py",
+      "module": "eval.core.judge_wiring",
+      "qualname": "case_key_points",
+      "signature": "def case_key_points(case: EvalCase) -> list[str]"
+    },
+    {
+      "file": "src/eval/core/judge_wiring.py",
+      "module": "eval.core.judge_wiring",
+      "qualname": "is_text_graded",
+      "signature": "def is_text_graded(case: EvalCase) -> bool"
+    },
+    {
+      "file": "src/eval/core/judge_wiring.py",
+      "module": "eval.core.judge_wiring",
+      "qualname": "answer_claims",
+      "signature": "def answer_claims(answer: SystemAnswer) -> list[Claim]"
+    },
+    {
+      "file": "src/eval/core/judge_wiring.py",
+      "module": "eval.core.judge_wiring",
+      "qualname": "judge_case",
+      "signature": "def judge_case(judge: ClaimJudge, case: EvalCase, answer: SystemAnswer) -> JudgeResult | None"
+    },
+    {
+      "file": "src/eval/core/judge_wiring.py",
+      "module": "eval.core.judge_wiring",
+      "qualname": "judge_scores",
+      "signature": "def judge_scores(result: JudgeResult) -> dict[str, float | int | None]"
+    },
+    {
+      "file": "src/eval/core/judge_wiring.py",
+      "module": "eval.core.judge_wiring",
+      "qualname": "check_judge_family",
+      "signature": "def check_judge_family(judge_model: str, generator_profile: str) -> None"
+    },
+    {
+      "file": "src/eval/core/judge_wiring.py",
+      "module": "eval.core.judge_wiring",
+      "qualname": "judge_summary",
+      "signature": "def judge_summary(report: RunReport, calibration: Sequence[CalibrationReport]) -> dict"
+    },
+    {
+      "file": "src/eval/core/judge_wiring.py",
+      "module": "eval.core.judge_wiring",
+      "qualname": "run_graded",
+      "signature": "def run_graded(cases: Sequence[EvalCase], system: SystemUnderTest, *, judge: ClaimJudge | None=None, generator_profile: str | None=None, calibration: Sequence[CalibrationReport]=(), metamorphic: bool=True, config: RunnerConfig | None=None, **run_kwargs: Any) -> RunReport"
+    },
+    {
+      "file": "src/eval/keyfree/runner.py",
+      "module": "eval.keyfree.runner",
+      "qualname": "metamorphic_pass",
+      "signature": "def metamorphic_pass(pairs: Sequence[tuple[EvalCase, SystemAnswer]]) -> dict"
+    },
+    {
+      "file": "src/eval/keyfree/runner.py",
+      "module": "eval.keyfree.runner",
+      "qualname": "perturbation_twins",
+      "signature": "def perturbation_twins(cases: Sequence[EvalCase], *, seed: int, names: Mapping[str, list[str]], max_twins: int) -> list[dict]"
+    },
+    {
+      "file": "src/eval/keyfree/runner.py",
+      "module": "eval.keyfree.runner",
+      "qualname": "run_perturbation_checks",
+      "signature": "def run_perturbation_checks(twins: Sequence[dict], system: SystemUnderTest, *, lookups_equal: Callable[[EvalCase, EvalCase], bool], max_workers: int=4, max_cost_usd: float | None=None) -> dict"
+    }
+  ],
+  "nodes": [
+    "test/spec/judge-runner-wiring/test_jrw_c1_key_points.py::test_key_points_read_and_round_trip",
+    "test/spec/judge-runner-wiring/test_jrw_c1_key_points.py::test_no_key_points",
+    "test/spec/judge-runner-wiring/test_jrw_c1_key_points.py::test_round_trip_and_closed_form",
+    "test/spec/judge-runner-wiring/test_jrw_c1_key_points.py::test_text_graded_table",
+    "test/spec/judge-runner-wiring/test_jrw_c2_claims.py::test_claims_from_a_response_dict",
+    "test/spec/judge-runner-wiring/test_jrw_c2_claims.py::test_claims_from_an_xbrlrag_response",
+    "test/spec/judge-runner-wiring/test_jrw_c2_claims.py::test_uncited_and_unknown_ids_give_no_passages",
+    "test/spec/judge-runner-wiring/test_jrw_c2_claims.py::test_unknown_citations_change_nothing",
+    "test/spec/judge-runner-wiring/test_jrw_c2_claims.py::test_unstructured_answers",
+    "test/spec/judge-runner-wiring/test_jrw_c3_judge_case.py::test_judge_error_gives_four_nones",
+    "test/spec/judge-runner-wiring/test_jrw_c3_judge_case.py::test_not_judged_without_key_points_or_on_error",
+    "test/spec/judge-runner-wiring/test_jrw_c3_judge_case.py::test_one_call_with_the_case_inputs",
+    "test/spec/judge-runner-wiring/test_jrw_c3_judge_case.py::test_run_halt_propagates",
+    "test/spec/judge-runner-wiring/test_jrw_c3_judge_case.py::test_scores_follow_the_formulas",
+    "test/spec/judge-runner-wiring/test_jrw_c4_family.py::test_point_cases",
+    "test/spec/judge-runner-wiring/test_jrw_c4_family.py::test_refused_exactly_on_a_shared_family",
+    "test/spec/judge-runner-wiring/test_jrw_c4_family.py::test_run_refused_before_any_call",
+    "test/spec/judge-runner-wiring/test_jrw_c5_run_judging.py::test_judge_cost_counts_against_the_cap",
+    "test/spec/judge-runner-wiring/test_jrw_c5_run_judging.py::test_judge_error_and_errored_answer",
+    "test/spec/judge-runner-wiring/test_jrw_c5_run_judging.py::test_run_halt_propagates",
+    "test/spec/judge-runner-wiring/test_jrw_c5_run_judging.py::test_scores_do_not_depend_on_case_order",
+    "test/spec/judge-runner-wiring/test_jrw_c5_run_judging.py::test_text_cases_are_judged_once",
+    "test/spec/judge-runner-wiring/test_jrw_c5_run_judging.py::test_without_a_judge",
+    "test/spec/judge-runner-wiring/test_jrw_c6_summary.py::test_calibrated_summary",
+    "test/spec/judge-runner-wiring/test_jrw_c6_summary.py::test_means_follow_the_closed_form",
+    "test/spec/judge-runner-wiring/test_jrw_c6_summary.py::test_no_judge",
+    "test/spec/judge-runner-wiring/test_jrw_c6_summary.py::test_uncalibrated_withholds_means",
+    "test/spec/judge-runner-wiring/test_jrw_c7_metamorphic_pass.py::test_empty_run_has_every_check_with_zero_counts",
+    "test/spec/judge-runner-wiring/test_jrw_c7_metamorphic_pass.py::test_hand_built_run",
+    "test/spec/judge-runner-wiring/test_jrw_c7_metamorphic_pass.py::test_pair_order_does_not_matter",
+    "test/spec/judge-runner-wiring/test_jrw_c7_metamorphic_pass.py::test_run_graded_records_the_pass",
+    "test/spec/judge-runner-wiring/test_jrw_c8_twins.py::test_a_function_of_the_seed",
+    "test/spec/judge-runner-wiring/test_jrw_c8_twins.py::test_bound",
+    "test/spec/judge-runner-wiring/test_jrw_c8_twins.py::test_twins_for_seed_7",
+    "test/spec/judge-runner-wiring/test_jrw_c9_perturbation_runner.py::test_bad_worker_count",
+    "test/spec/judge-runner-wiring/test_jrw_c9_perturbation_runner.py::test_cost_cap_skips_later_pairs",
+    "test/spec/judge-runner-wiring/test_jrw_c9_perturbation_runner.py::test_counts_do_not_depend_on_workers",
+    "test/spec/judge-runner-wiring/test_jrw_c9_perturbation_runner.py::test_hand_built_pairs",
+    "test/spec/judge-runner-wiring/test_jrw_c9_perturbation_runner.py::test_lookups_equal_flips_the_answer_check",
+    "test/spec/judge-runner-wiring/test_jrw_c9_perturbation_runner.py::test_run_halt_propagates"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/judge-runner-wiring.md",
+    "sha256": "c8ebf0e55ab5612337deb76bae6f6d01a5bf71ae97dbf727286308fd28d5c355"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

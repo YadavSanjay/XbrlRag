@@ -1,0 +1,60 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/screen-exact-fiscal-year/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-14",
+  "criteria": {
+    "C1": [
+      "test/spec/screen-exact-fiscal-year/test_screen_exact_fiscal_year.py::test_select_fiscal_year_point_case",
+      "test/spec/screen-exact-fiscal-year/test_screen_exact_fiscal_year.py::test_select_fiscal_year_rule_for_any_rows"
+    ],
+    "C2": [
+      "test/spec/screen-exact-fiscal-year/test_screen_exact_fiscal_year.py::test_fy2026_total_assets_screen",
+      "test/spec/screen-exact-fiscal-year/test_screen_exact_fiscal_year.py::test_no_filer_has_the_year_is_not_found",
+      "test/spec/screen-exact-fiscal-year/test_screen_exact_fiscal_year.py::test_every_view_ranks_only_the_requested_year"
+    ],
+    "C3": [
+      "test/spec/screen-exact-fiscal-year/test_screen_exact_fiscal_year.py::test_adding_an_older_filer_only_grows_excluded",
+      "test/spec/screen-exact-fiscal-year/test_screen_exact_fiscal_year.py::test_older_filer_and_removed_year_for_any_store"
+    ]
+  },
+  "files": {
+    "test/spec/screen-exact-fiscal-year/test_screen_exact_fiscal_year.py": "87475b2e2fedd08df49b32060c753d81181d5349da6d0572bd297496c67fd1f5"
+  },
+  "id": "screen-exact-fiscal-year",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_screen.py",
+      "module": "retriever.xbrl.xbrl_factstore_screen",
+      "qualname": "select_fiscal_year",
+      "signature": "def select_fiscal_year(rows: collections.abc.Sequence[dict], fy: int) -> tuple[list[dict], list[dict]]"
+    }
+  ],
+  "nodes": [
+    "test/spec/screen-exact-fiscal-year/test_screen_exact_fiscal_year.py::test_adding_an_older_filer_only_grows_excluded",
+    "test/spec/screen-exact-fiscal-year/test_screen_exact_fiscal_year.py::test_every_view_ranks_only_the_requested_year",
+    "test/spec/screen-exact-fiscal-year/test_screen_exact_fiscal_year.py::test_fy2026_total_assets_screen",
+    "test/spec/screen-exact-fiscal-year/test_screen_exact_fiscal_year.py::test_no_filer_has_the_year_is_not_found",
+    "test/spec/screen-exact-fiscal-year/test_screen_exact_fiscal_year.py::test_older_filer_and_removed_year_for_any_store",
+    "test/spec/screen-exact-fiscal-year/test_screen_exact_fiscal_year.py::test_select_fiscal_year_point_case",
+    "test/spec/screen-exact-fiscal-year/test_screen_exact_fiscal_year.py::test_select_fiscal_year_rule_for_any_rows"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/screen-exact-fiscal-year.md",
+    "sha256": "09db1755523dbaeb3dcd23259b5f0749a6f105fa41d0af377eba72c9a63f1025"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

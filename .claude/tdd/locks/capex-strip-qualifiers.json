@@ -1,0 +1,95 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-11",
+  "criteria": {
+    "C1": [
+      "test/spec/capex-strip-qualifiers/test_c1_rule.py::test_live_capex_is_the_accepted_rule_plus_strip_qualifiers",
+      "test/spec/capex-strip-qualifiers/test_c1_rule.py::test_qualified_capex_labels_point",
+      "test/spec/capex-strip-qualifiers/test_c1_rule.py::test_a_qualifier_never_decides_a_capex_line"
+    ],
+    "C2": [
+      "test/spec/capex-strip-qualifiers/test_c2_tsla.py::test_live_capex_selects_tsla_line_every_year",
+      "test/spec/capex-strip-qualifiers/test_c2_tsla.py::test_the_accepted_rule_misses_it_and_the_head_alone_is_taken_by_both",
+      "test/spec/capex-strip-qualifiers/test_c2_tsla.py::test_any_qualifier_on_the_tsla_line_keeps_it"
+    ],
+    "C3": [
+      "test/spec/capex-strip-qualifiers/test_c3_invariant.py::test_qualifier_terms_do_not_violate_a_stripping_rule",
+      "test/spec/capex-strip-qualifiers/test_c3_invariant.py::test_stripping_rule_violations_are_those_of_the_head",
+      "test/spec/capex-strip-qualifiers/test_c3_invariant.py::test_live_rules_keep_both_invariants"
+    ],
+    "C4": [
+      "test/spec/capex-strip-qualifiers/test_c4_record_fn.py::test_synthetic_record_with_no_qualified_label",
+      "test/spec/capex-strip-qualifiers/test_c4_record_fn.py::test_a_qualifier_that_hides_a_component_is_caught",
+      "test/spec/capex-strip-qualifiers/test_c4_record_fn.py::test_the_draw_is_checked[wrong_hash]",
+      "test/spec/capex-strip-qualifiers/test_c4_record_fn.py::test_the_draw_is_checked[missing_key]",
+      "test/spec/capex-strip-qualifiers/test_c4_record_fn.py::test_the_draw_is_checked[extra_key]",
+      "test/spec/capex-strip-qualifiers/test_c4_record_fn.py::test_the_draw_is_checked[missing_file]"
+    ],
+    "C5": [
+      "test/spec/capex-strip-qualifiers/test_c5_record.py::test_record_pins_judge3_the_oracle_and_both_rules_files",
+      "test/spec/capex-strip-qualifiers/test_c5_record.py::test_judged_copy_is_the_live_rules",
+      "test/spec/capex-strip-qualifiers/test_c5_record.py::test_record_is_consistent_and_accepts"
+    ]
+  },
+  "files": {
+    "test/spec/capex-strip-qualifiers/conftest.py": "898199b0cb074af3d39f847257c238c9b632760f3285800d9f6f6724460296e9",
+    "test/spec/capex-strip-qualifiers/fixtures/fsds/2026q1/num.tsv": "8cdd8e648f8343a32bca40f20742b45332ba820cfabb9a214c65f0293c2e844f",
+    "test/spec/capex-strip-qualifiers/fixtures/fsds/2026q1/pre.tsv": "c75e6b5c3ffe5975509cbf2be97cfc8f1ff57bd0fb78c209d3edbcbbc93e5386",
+    "test/spec/capex-strip-qualifiers/fixtures/fsds/2026q1/sub.tsv": "e4504c54855cac9277809d71e135a75de0aa1b78a1678c9a6496bcecee54009e",
+    "test/spec/capex-strip-qualifiers/fixtures/fsds/2026q1/tag.tsv": "e4b6bb74b7654062bc3bca52ca2d28a48daee06201b33974286e32c5aeacbd7c",
+    "test/spec/capex-strip-qualifiers/fixtures/provenance.json": "91eed394244fd46f0d8ab7523eef00b95059f0c3a1505d2222ea5a7b3a824667",
+    "test/spec/capex-strip-qualifiers/test_c1_rule.py": "ac0c0a51efb48da467638948b8bfdffef2af1a1d3c714dbde56f680ddb0eb2b8",
+    "test/spec/capex-strip-qualifiers/test_c2_tsla.py": "1e1a68bb1525f3f1c995f62e62a919c352c60ccb6acf83f8d4950f56ef61c656",
+    "test/spec/capex-strip-qualifiers/test_c3_invariant.py": "a00b8cac6cc658ee1f138af9b5f9f90ee0881d9d2c4703ee80cb71b13822973b",
+    "test/spec/capex-strip-qualifiers/test_c4_record_fn.py": "93255a68dbe985203b4ce3866b6b902f866aea4f9c43fbf2234eeaafe69b992e",
+    "test/spec/capex-strip-qualifiers/test_c5_record.py": "f578dfb93c72971723b3a6c09d97c940df5613a8deeecc3883495548dabdbc37"
+  },
+  "id": "capex-strip-qualifiers",
+  "interface": [
+    {
+      "file": "src/eval/keys/witness_measure.py",
+      "module": "eval.keys.witness_measure",
+      "qualname": "judge_record_strip",
+      "signature": "def judge_record_strip(sample_dir: str | os.PathLike[str], rules_path: str | os.PathLike[str], base_rules_path: str | os.PathLike[str], oracle_path: str | os.PathLike[str], draw_sha256: Mapping[str, str]) -> dict[str, Any]"
+    }
+  ],
+  "nodes": [
+    "test/spec/capex-strip-qualifiers/test_c1_rule.py::test_a_qualifier_never_decides_a_capex_line",
+    "test/spec/capex-strip-qualifiers/test_c1_rule.py::test_live_capex_is_the_accepted_rule_plus_strip_qualifiers",
+    "test/spec/capex-strip-qualifiers/test_c1_rule.py::test_qualified_capex_labels_point",
+    "test/spec/capex-strip-qualifiers/test_c2_tsla.py::test_any_qualifier_on_the_tsla_line_keeps_it",
+    "test/spec/capex-strip-qualifiers/test_c2_tsla.py::test_live_capex_selects_tsla_line_every_year",
+    "test/spec/capex-strip-qualifiers/test_c2_tsla.py::test_the_accepted_rule_misses_it_and_the_head_alone_is_taken_by_both",
+    "test/spec/capex-strip-qualifiers/test_c3_invariant.py::test_live_rules_keep_both_invariants",
+    "test/spec/capex-strip-qualifiers/test_c3_invariant.py::test_qualifier_terms_do_not_violate_a_stripping_rule",
+    "test/spec/capex-strip-qualifiers/test_c3_invariant.py::test_stripping_rule_violations_are_those_of_the_head",
+    "test/spec/capex-strip-qualifiers/test_c4_record_fn.py::test_a_qualifier_that_hides_a_component_is_caught",
+    "test/spec/capex-strip-qualifiers/test_c4_record_fn.py::test_synthetic_record_with_no_qualified_label",
+    "test/spec/capex-strip-qualifiers/test_c4_record_fn.py::test_the_draw_is_checked[extra_key]",
+    "test/spec/capex-strip-qualifiers/test_c4_record_fn.py::test_the_draw_is_checked[missing_file]",
+    "test/spec/capex-strip-qualifiers/test_c4_record_fn.py::test_the_draw_is_checked[missing_key]",
+    "test/spec/capex-strip-qualifiers/test_c4_record_fn.py::test_the_draw_is_checked[wrong_hash]",
+    "test/spec/capex-strip-qualifiers/test_c5_record.py::test_judged_copy_is_the_live_rules",
+    "test/spec/capex-strip-qualifiers/test_c5_record.py::test_record_is_consistent_and_accepts",
+    "test/spec/capex-strip-qualifiers/test_c5_record.py::test_record_pins_judge3_the_oracle_and_both_rules_files"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/capex-strip-qualifiers.md",
+    "sha256": "934f6971d4e49381af9220387c6fe4bf6be2985929f32722a34d5a1cc1ce2e24"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

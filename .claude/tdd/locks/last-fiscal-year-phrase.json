@@ -1,0 +1,73 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-11",
+  "criteria": {
+    "C1": [
+      "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c1_phrase_resolves_to_the_year_before_the_anchor[last fiscal year]",
+      "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c1_phrase_resolves_to_the_year_before_the_anchor[the last fiscal year]",
+      "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c1_phrase_resolves_to_the_year_before_the_anchor[previous fiscal year]",
+      "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c1_phrase_resolves_to_the_year_before_the_anchor[preceding fiscal year]",
+      "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c1_phrase_resolves_to_the_year_before_the_anchor[LAST FISCAL YEAR]",
+      "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c1_phrase_resolves_to_the_year_before_the_anchor[Apple's last fiscal year]",
+      "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c1_any_anchor_case_and_neutral_words_give_anchor_minus_one"
+    ],
+    "C2": [
+      "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c2_a_quarter_of_the_phrase_keeps_the_quarter[Q3 of the last fiscal year-expected0]",
+      "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c2_a_quarter_of_the_phrase_keeps_the_quarter[fourth quarter of the previous fiscal year-expected1]",
+      "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c2_any_quarter_of_any_phrase"
+    ],
+    "C3": [
+      "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c3_no_anchor_is_ambiguous_and_still_degrades[last fiscal year]",
+      "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c3_no_anchor_is_ambiguous_and_still_degrades[previous fiscal year]",
+      "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c3_no_anchor_is_ambiguous_and_still_degrades[preceding fiscal year]",
+      "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c3_removing_the_anchor_never_moves_the_year"
+    ],
+    "C4": [
+      "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c4_only_the_whole_phrases_and_the_neighbours_keep_their_year",
+      "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c4_year_to_quarter_never_gives_the_full_year"
+    ]
+  },
+  "files": {
+    "test/spec/last-fiscal-year-phrase/conftest.py": "9cda627cfcc674c6794a5295ca560202320acf4bd253194fcd922a5e489647e4",
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py": "d4cb035ef26616f59085c541fffb6dd042b279c789f217e6ff87bcb2d387e6b5"
+  },
+  "id": "last-fiscal-year-phrase",
+  "interface": [],
+  "nodes": [
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c1_any_anchor_case_and_neutral_words_give_anchor_minus_one",
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c1_phrase_resolves_to_the_year_before_the_anchor[Apple's last fiscal year]",
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c1_phrase_resolves_to_the_year_before_the_anchor[LAST FISCAL YEAR]",
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c1_phrase_resolves_to_the_year_before_the_anchor[last fiscal year]",
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c1_phrase_resolves_to_the_year_before_the_anchor[preceding fiscal year]",
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c1_phrase_resolves_to_the_year_before_the_anchor[previous fiscal year]",
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c1_phrase_resolves_to_the_year_before_the_anchor[the last fiscal year]",
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c2_a_quarter_of_the_phrase_keeps_the_quarter[Q3 of the last fiscal year-expected0]",
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c2_a_quarter_of_the_phrase_keeps_the_quarter[fourth quarter of the previous fiscal year-expected1]",
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c2_any_quarter_of_any_phrase",
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c3_no_anchor_is_ambiguous_and_still_degrades[last fiscal year]",
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c3_no_anchor_is_ambiguous_and_still_degrades[preceding fiscal year]",
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c3_no_anchor_is_ambiguous_and_still_degrades[previous fiscal year]",
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c3_removing_the_anchor_never_moves_the_year",
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c4_only_the_whole_phrases_and_the_neighbours_keep_their_year",
+    "test/spec/last-fiscal-year-phrase/test_last_fiscal_year_phrase.py::test_c4_year_to_quarter_never_gives_the_full_year"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/last-fiscal-year-phrase.md",
+    "sha256": "d143325d6c5ce21904457bc170d21be2c42b26968688688b594b1d005ea8d68e"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

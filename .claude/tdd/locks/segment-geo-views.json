@@ -1,0 +1,117 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-07",
+  "criteria": {
+    "C1": [
+      "test/spec/segment-geo-views/test_c1_consolidated.py::test_lly_default_only_contexts_are_the_consolidated_total",
+      "test/spec/segment-geo-views/test_c1_consolidated.py::test_typed_dimension_is_never_consolidated_nor_a_total",
+      "test/spec/segment-geo-views/test_c1_consolidated.py::test_view_segment_axis_is_null_exactly_when_consolidated[adbe_fy2025_revenues]",
+      "test/spec/segment-geo-views/test_c1_consolidated.py::test_view_segment_axis_is_null_exactly_when_consolidated[unp_fy2024_revenue]",
+      "test/spec/segment-geo-views/test_c1_consolidated.py::test_view_segment_axis_is_null_exactly_when_consolidated[meta_fy2024_revenue]",
+      "test/spec/segment-geo-views/test_c1_consolidated.py::test_view_segment_axis_is_null_exactly_when_consolidated[tsla_fy2023_revenues]",
+      "test/spec/segment-geo-views/test_c1_consolidated.py::test_view_segment_axis_is_null_exactly_when_consolidated[lly_fy2023_revenues]",
+      "test/spec/segment-geo-views/test_c1_consolidated.py::test_default_entries_never_matter_and_any_part_breaks_consolidation"
+    ],
+    "C2": [
+      "test/spec/segment-geo-views/test_c2_geo_codes.py::test_every_geographic_member_gets_its_exact_code[meta_fy2024_geo_members]",
+      "test/spec/segment-geo-views/test_c2_geo_codes.py::test_every_geographic_member_gets_its_exact_code[tsla_fy2023_geo_members]",
+      "test/spec/segment-geo-views/test_c2_geo_codes.py::test_every_geographic_member_gets_its_exact_code[tsm_fy2024_geo_members]",
+      "test/spec/segment-geo-views/test_c2_geo_codes.py::test_country_members_get_iso_3166_codes_and_names",
+      "test/spec/segment-geo-views/test_c2_geo_codes.py::test_tesla_china_screen_member_is_china_not_other_international",
+      "test/spec/segment-geo-views/test_c2_geo_codes.py::test_unmapped_member_gets_no_code_never_a_uri_fragment",
+      "test/spec/segment-geo-views/test_c2_geo_codes.py::test_matching_rows_that_disagree_leave_the_member_unmapped",
+      "test/spec/segment-geo-views/test_c2_geo_codes.py::test_order_and_unrelated_rows_never_change_a_result",
+      "test/spec/segment-geo-views/test_c2_geo_codes.py::test_a_member_without_a_row_never_gets_a_code"
+    ],
+    "C3": [
+      "test/spec/segment-geo-views/test_c3_share_of_total.py::test_adobe_subscription_share_is_of_total_revenue",
+      "test/spec/segment-geo-views/test_c3_share_of_total.py::test_union_pacific_mexico_is_an_eighth_not_all",
+      "test/spec/segment-geo-views/test_c3_share_of_total.py::test_meta_overlapping_geographies_each_keep_their_own_share",
+      "test/spec/segment-geo-views/test_c3_share_of_total.py::test_missing_zero_nil_and_conflicting_totals",
+      "test/spec/segment-geo-views/test_c3_share_of_total.py::test_other_parts_order_repeats_and_scale_never_change_a_share",
+      "test/spec/segment-geo-views/test_c3_share_of_total.py::test_share_is_value_over_same_unit_total"
+    ]
+  },
+  "files": {
+    "test/spec/segment-geo-views/conftest.py": "3bee5df10bfb5c1c2bb35d02ca11e0df2ab4d01ce7a492dac3e56aaa2423d313",
+    "test/spec/segment-geo-views/fixtures/adbe_fy2025_revenues.json": "201c1203478704b263804507b7780c8e99f0c1e4c886e58ca46b0925f7282eb4",
+    "test/spec/segment-geo-views/fixtures/fsds_excerpt.json": "733124e294816ebdc64b058e84adb92f2b7ac77860b02e0bad8fb40b867d9f2f",
+    "test/spec/segment-geo-views/fixtures/geography_normalization.json": "04990287c9eb4f740f0a143a11171df80a4bec25851bd2bab295836e8d073baa",
+    "test/spec/segment-geo-views/fixtures/lly_fy2023_revenues.json": "53117d4163beb5ff0e861c0f6000c047438b06844d873e08508c09f7aa401e24",
+    "test/spec/segment-geo-views/fixtures/meta_fy2024_geo_members.json": "5c06c3f120e100e27d969b685f8f60a636a3f8cc30272f9f274adf081da8310a",
+    "test/spec/segment-geo-views/fixtures/meta_fy2024_revenue.json": "05b964e74b1b8dc2cbe732d3c61e7ba63e687717b93f95ac8dc036039ad993d0",
+    "test/spec/segment-geo-views/fixtures/tsla_fy2023_filing_excerpt.json": "39288d645a4dc92870d5d06d7b8403e7e40916842343524f8dd3d53a96672fa0",
+    "test/spec/segment-geo-views/fixtures/tsla_fy2023_geo_members.json": "02837d4d73422214f79a0a6b6a14b21975c1cc94c7010f1cd1d348f3fb5bee14",
+    "test/spec/segment-geo-views/fixtures/tsla_fy2023_revenues.json": "4e3ab75b2e9c8deb11f258b9f0ccb4077498ed2c13202d8224b7ee44156cab6e",
+    "test/spec/segment-geo-views/fixtures/tsm_fy2024_geo_members.json": "55943c3e624ab05e2e3e2caa6d0d0679cdd243aa4a6d4261aa2c6ac0679fe73a",
+    "test/spec/segment-geo-views/fixtures/unp_fy2024_revenue.json": "19b77b636669bb9c1abfa328cbdb16f1a8e521999c6ce15408fb5030ba61d0ed",
+    "test/spec/segment-geo-views/test_c1_consolidated.py": "c9979d25faf7f84179ac6295a75e153b1869dece52f3cba5d1dd31ffd4cb77b9",
+    "test/spec/segment-geo-views/test_c2_geo_codes.py": "cf3eac65ccfa00f90f9620b9ea59b2c881a0f4b5a177f4f32633c53c9f47f1dc",
+    "test/spec/segment-geo-views/test_c3_share_of_total.py": "64566f3108dcb45b29ef840aaef4c96d342a008bc54a01f63a68e6d6e8b4871d"
+  },
+  "id": "segment-geo-views",
+  "interface": [
+    {
+      "file": "src/ingest/sec_edgar/xbrl/segment_geo.py",
+      "module": "ingest.sec_edgar.xbrl.segment_geo",
+      "qualname": "is_consolidated",
+      "signature": "def is_consolidated(dimensions: Iterable[Mapping[str, Any]]) -> bool"
+    },
+    {
+      "file": "src/ingest/sec_edgar/xbrl/segment_geo.py",
+      "module": "ingest.sec_edgar.xbrl.segment_geo",
+      "qualname": "resolve_geography",
+      "signature": "def resolve_geography(segment_member: str, segment_label: str | None, normalization: Iterable[Mapping[str, Any]]) -> dict[str, str | None]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/xbrl/segment_geo.py",
+      "module": "ingest.sec_edgar.xbrl.segment_geo",
+      "qualname": "shares_of_total",
+      "signature": "def shares_of_total(facts: Iterable[Mapping[str, Any]]) -> dict[int, float | None]"
+    }
+  ],
+  "nodes": [
+    "test/spec/segment-geo-views/test_c1_consolidated.py::test_default_entries_never_matter_and_any_part_breaks_consolidation",
+    "test/spec/segment-geo-views/test_c1_consolidated.py::test_lly_default_only_contexts_are_the_consolidated_total",
+    "test/spec/segment-geo-views/test_c1_consolidated.py::test_typed_dimension_is_never_consolidated_nor_a_total",
+    "test/spec/segment-geo-views/test_c1_consolidated.py::test_view_segment_axis_is_null_exactly_when_consolidated[adbe_fy2025_revenues]",
+    "test/spec/segment-geo-views/test_c1_consolidated.py::test_view_segment_axis_is_null_exactly_when_consolidated[lly_fy2023_revenues]",
+    "test/spec/segment-geo-views/test_c1_consolidated.py::test_view_segment_axis_is_null_exactly_when_consolidated[meta_fy2024_revenue]",
+    "test/spec/segment-geo-views/test_c1_consolidated.py::test_view_segment_axis_is_null_exactly_when_consolidated[tsla_fy2023_revenues]",
+    "test/spec/segment-geo-views/test_c1_consolidated.py::test_view_segment_axis_is_null_exactly_when_consolidated[unp_fy2024_revenue]",
+    "test/spec/segment-geo-views/test_c2_geo_codes.py::test_a_member_without_a_row_never_gets_a_code",
+    "test/spec/segment-geo-views/test_c2_geo_codes.py::test_country_members_get_iso_3166_codes_and_names",
+    "test/spec/segment-geo-views/test_c2_geo_codes.py::test_every_geographic_member_gets_its_exact_code[meta_fy2024_geo_members]",
+    "test/spec/segment-geo-views/test_c2_geo_codes.py::test_every_geographic_member_gets_its_exact_code[tsla_fy2023_geo_members]",
+    "test/spec/segment-geo-views/test_c2_geo_codes.py::test_every_geographic_member_gets_its_exact_code[tsm_fy2024_geo_members]",
+    "test/spec/segment-geo-views/test_c2_geo_codes.py::test_matching_rows_that_disagree_leave_the_member_unmapped",
+    "test/spec/segment-geo-views/test_c2_geo_codes.py::test_order_and_unrelated_rows_never_change_a_result",
+    "test/spec/segment-geo-views/test_c2_geo_codes.py::test_tesla_china_screen_member_is_china_not_other_international",
+    "test/spec/segment-geo-views/test_c2_geo_codes.py::test_unmapped_member_gets_no_code_never_a_uri_fragment",
+    "test/spec/segment-geo-views/test_c3_share_of_total.py::test_adobe_subscription_share_is_of_total_revenue",
+    "test/spec/segment-geo-views/test_c3_share_of_total.py::test_meta_overlapping_geographies_each_keep_their_own_share",
+    "test/spec/segment-geo-views/test_c3_share_of_total.py::test_missing_zero_nil_and_conflicting_totals",
+    "test/spec/segment-geo-views/test_c3_share_of_total.py::test_other_parts_order_repeats_and_scale_never_change_a_share",
+    "test/spec/segment-geo-views/test_c3_share_of_total.py::test_share_is_value_over_same_unit_total",
+    "test/spec/segment-geo-views/test_c3_share_of_total.py::test_union_pacific_mexico_is_an_eighth_not_all"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/segment-geo-views.md",
+    "sha256": "1cbfeb092b213a7d8c690ed07144e25f90012fcb1e1f4b068268126308721d41"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

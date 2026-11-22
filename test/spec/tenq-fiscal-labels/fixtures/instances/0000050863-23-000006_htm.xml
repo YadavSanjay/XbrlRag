@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xbrl
+  xml:lang="en-US"
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:country="http://xbrl.sec.gov/country/2022"
+  xmlns:dei="http://xbrl.sec.gov/dei/2022"
+  xmlns:intc="http://www.intel.com/20221231"
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:srt="http://fasb.org/srt/2022"
+  xmlns:us-gaap="http://fasb.org/us-gaap/2022"
+  xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <link:schemaRef xlink:href="intc-20221231.xsd" xlink:type="simple"/>
+    <context id="i62d01ac524414bc6817507f65831f4e4_D20211226-20221231">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0000050863</identifier>
+        </entity>
+        <period>
+            <startDate>2021-12-26</startDate>
+            <endDate>2022-12-31</endDate>
+        </period>
+    </context>
+    <context id="ib967c692af8d42f3b91b3e3c6f3b9c0a_D20201227-20211225">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0000050863</identifier>
+        </entity>
+        <period>
+            <startDate>2020-12-27</startDate>
+            <endDate>2021-12-25</endDate>
+        </period>
+    </context>
+    <context id="i459d13f08a0941bd98599911c71790bc_D20211226-20221231">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0000050863</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:RetainedEarningsMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2021-12-26</startDate>
+            <endDate>2022-12-31</endDate>
+        </period>
+    </context>
+    <context id="i9da7dca507844dcabe39068fb7e42ebe_D20211226-20221231">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0000050863</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:NoncontrollingInterestMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2021-12-26</startDate>
+            <endDate>2022-12-31</endDate>
+        </period>
+    </context>
+    <context id="i7a5ab724dde84db69ebc86a5545734c4_D20211226-20221231">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0000050863</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:AccumulatedOtherComprehensiveIncomeMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2021-12-26</startDate>
+            <endDate>2022-12-31</endDate>
+        </period>
+    </context>
+    <context id="i1ed8620946404a639f19f86fb3c9b72b_D20210926-20211225">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0000050863</identifier>
+        </entity>
+        <period>
+            <startDate>2021-09-26</startDate>
+            <endDate>2021-12-25</endDate>
+        </period>
+    </context>
+    <dei:CurrentFiscalYearEndDate
+      contextRef="i62d01ac524414bc6817507f65831f4e4_D20211226-20221231"
+      id="id3VybDovL2RvY3MudjEvZG9jOjhhYWE3YjRkYmQyZTQxOWNhMGY1YzMwYWY4NWExMWFhL3NlYzo4YWFhN2I0ZGJkMmU0MTljYTBmNWMzMGFmODVhMTFhYV8xMy9mcmFnOmUwNTljMTI2NDJjYzRlNGM4NTEzZmY5ZmIyMTViNThjL3RhYmxlOjUxNDg4YTA1MGI0YTQ1OGY4MDFlMjc1YzFiMWQ4MDVlL3RhYmxlcmFuZ2U6NTE0ODhhMDUwYjRhNDU4ZjgwMWUyNzVjMWIxZDgwNWVfNS0xLTEtMS01MzIwMzU_7078b87a-8ba8-421d-b3ac-d04867902bf0">--12-31</dei:CurrentFiscalYearEndDate>
+    <dei:DocumentType
+      contextRef="i62d01ac524414bc6817507f65831f4e4_D20211226-20221231"
+      id="id3VybDovL2RvY3MudjEvZG9jOjhhYWE3YjRkYmQyZTQxOWNhMGY1YzMwYWY4NWExMWFhL3NlYzo4YWFhN2I0ZGJkMmU0MTljYTBmNWMzMGFmODVhMTFhYV8xMy9mcmFnOmUwNTljMTI2NDJjYzRlNGM4NTEzZmY5ZmIyMTViNThjL3RhYmxlOjUxNDg4YTA1MGI0YTQ1OGY4MDFlMjc1YzFiMWQ4MDVlL3RhYmxlcmFuZ2U6NTE0ODhhMDUwYjRhNDU4ZjgwMWUyNzVjMWIxZDgwNWVfNy0xLTEtMS01MzIwMzU_def6b975-c90a-4685-aa88-8c3f5e8e4a66">10-K</dei:DocumentType>
+    <dei:DocumentPeriodEndDate
+      contextRef="i62d01ac524414bc6817507f65831f4e4_D20211226-20221231"
+      id="id3VybDovL2RvY3MudjEvZG9jOjhhYWE3YjRkYmQyZTQxOWNhMGY1YzMwYWY4NWExMWFhL3NlYzo4YWFhN2I0ZGJkMmU0MTljYTBmNWMzMGFmODVhMTFhYV8xMy9mcmFnOmUwNTljMTI2NDJjYzRlNGM4NTEzZmY5ZmIyMTViNThjL3RhYmxlOjUxNDg4YTA1MGI0YTQ1OGY4MDFlMjc1YzFiMWQ4MDVlL3RhYmxlcmFuZ2U6NTE0ODhhMDUwYjRhNDU4ZjgwMWUyNzVjMWIxZDgwNWVfOC0xLTEtMS01MzIwMzU_aabe3cc4-30df-4207-9361-65fb9074938e">2022-12-31</dei:DocumentPeriodEndDate>
+    <dei:DocumentFiscalYearFocus
+      contextRef="i62d01ac524414bc6817507f65831f4e4_D20211226-20221231"
+      id="id3VybDovL2RvY3MudjEvZG9jOjhhYWE3YjRkYmQyZTQxOWNhMGY1YzMwYWY4NWExMWFhL3NlYzo4YWFhN2I0ZGJkMmU0MTljYTBmNWMzMGFmODVhMTFhYV8xMy9mcmFnOmUwNTljMTI2NDJjYzRlNGM4NTEzZmY5ZmIyMTViNThjL3RhYmxlOjUxNDg4YTA1MGI0YTQ1OGY4MDFlMjc1YzFiMWQ4MDVlL3RhYmxlcmFuZ2U6NTE0ODhhMDUwYjRhNDU4ZjgwMWUyNzVjMWIxZDgwNWVfOS0xLTEtMS01MzIwMzU_0bb63918-f07f-4cad-8509-c65d74f41dfb">2022</dei:DocumentFiscalYearFocus>
+    <dei:DocumentFiscalPeriodFocus
+      contextRef="i62d01ac524414bc6817507f65831f4e4_D20211226-20221231"
+      id="id3VybDovL2RvY3MudjEvZG9jOjhhYWE3YjRkYmQyZTQxOWNhMGY1YzMwYWY4NWExMWFhL3NlYzo4YWFhN2I0ZGJkMmU0MTljYTBmNWMzMGFmODVhMTFhYV8xMy9mcmFnOmUwNTljMTI2NDJjYzRlNGM4NTEzZmY5ZmIyMTViNThjL3RhYmxlOjUxNDg4YTA1MGI0YTQ1OGY4MDFlMjc1YzFiMWQ4MDVlL3RhYmxlcmFuZ2U6NTE0ODhhMDUwYjRhNDU4ZjgwMWUyNzVjMWIxZDgwNWVfMTAtMS0xLTEtNTMyMDM1_02361588-b8e6-4f58-97e3-11d6186e2b18">FY</dei:DocumentFiscalPeriodFocus>
+    <dei:AmendmentFlag
+      contextRef="i62d01ac524414bc6817507f65831f4e4_D20211226-20221231"
+      id="id3VybDovL2RvY3MudjEvZG9jOjhhYWE3YjRkYmQyZTQxOWNhMGY1YzMwYWY4NWExMWFhL3NlYzo4YWFhN2I0ZGJkMmU0MTljYTBmNWMzMGFmODVhMTFhYV8xMy9mcmFnOmUwNTljMTI2NDJjYzRlNGM4NTEzZmY5ZmIyMTViNThjL3RhYmxlOjUxNDg4YTA1MGI0YTQ1OGY4MDFlMjc1YzFiMWQ4MDVlL3RhYmxlcmFuZ2U6NTE0ODhhMDUwYjRhNDU4ZjgwMWUyNzVjMWIxZDgwNWVfMTEtMS0xLTEtNTMyMDM1_e1300c0d-ffd0-4fb4-a244-bbd2ee343a7c">false</dei:AmendmentFlag>
+    <dei:DocumentType
+      contextRef="i62d01ac524414bc6817507f65831f4e4_D20211226-20221231"
+      id="id3VybDovL2RvY3MudjEvZG9jOjhhYWE3YjRkYmQyZTQxOWNhMGY1YzMwYWY4NWExMWFhL3NlYzo4YWFhN2I0ZGJkMmU0MTljYTBmNWMzMGFmODVhMTFhYV8xMC9mcmFnOmRlNmJkZGE3ODA0ODQ3NzliOWIyNDRiYzMwYzI2Nzc2L3RleHRyZWdpb246ZGU2YmRkYTc4MDQ4NDc3OWI5YjI0NGJjMzBjMjY3NzZfMzA3Mg_ade8ff4d-9af3-4fc1-9b87-de901c1916cf">10-K</dei:DocumentType>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="i62d01ac524414bc6817507f65831f4e4_D20211226-20221231"
+      decimals="-6"
+      id="id3VybDovL2RvY3MudjEvZG9jOjhhYWE3YjRkYmQyZTQxOWNhMGY1YzMwYWY4NWExMWFhL3NlYzo4YWFhN2I0ZGJkMmU0MTljYTBmNWMzMGFmODVhMTFhYV8yNTMvZnJhZzo2ZmU2MTU2YjJkNjE0MTkzYjU1OTlmYzRjZjY1NTM4NS90YWJsZTo2OWI1M2M4ZTY4Njc0OTBkOWQ1MzBhYzI1MWFhNTAyZC90YWJsZXJhbmdlOjY5YjUzYzhlNjg2NzQ5MGQ5ZDUzMGFjMjUxYWE1MDJkXzEtMi0xLTEtNTMyMDM1_8f9c15bc-9f30-4964-b8c3-201759438e68"
+      unitRef="usd">63054000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="ib967c692af8d42f3b91b3e3c6f3b9c0a_D20201227-20211225"
+      decimals="-6"
+      id="id3VybDovL2RvY3MudjEvZG9jOjhhYWE3YjRkYmQyZTQxOWNhMGY1YzMwYWY4NWExMWFhL3NlYzo4YWFhN2I0ZGJkMmU0MTljYTBmNWMzMGFmODVhMTFhYV8yNTMvZnJhZzo2ZmU2MTU2YjJkNjE0MTkzYjU1OTlmYzRjZjY1NTM4NS90YWJsZTo2OWI1M2M4ZTY4Njc0OTBkOWQ1MzBhYzI1MWFhNTAyZC90YWJsZXJhbmdlOjY5YjUzYzhlNjg2NzQ5MGQ5ZDUzMGFjMjUxYWE1MDJkXzEtNC0xLTEtNTMyMDM1_9afc42ec-763a-4eb5-a464-ab999497449b"
+      unitRef="usd">79024000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="i62d01ac524414bc6817507f65831f4e4_D20211226-20221231"
+      decimals="-6"
+      id="id3VybDovL2RvY3MudjEvZG9jOjhhYWE3YjRkYmQyZTQxOWNhMGY1YzMwYWY4NWExMWFhL3NlYzo4YWFhN2I0ZGJkMmU0MTljYTBmNWMzMGFmODVhMTFhYV8zNTUvZnJhZzo4MmQ2MTQ1MzAyNjk0NjZiYjUwZWM5MmQ0MDQ1YzE1NS90YWJsZTpjZDQxOWNkMzY2NzU0NDU0YjE3Y2UxOWQ0OWI2ZmVhOS90YWJsZXJhbmdlOmNkNDE5Y2QzNjY3NTQ0NTRiMTdjZTE5ZDQ5YjZmZWE5XzItMi0xLTEtNTUwOTA3_5b6a7d87-62b9-49d5-94ad-dd46856ffd69"
+      unitRef="usd">63054000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="ib967c692af8d42f3b91b3e3c6f3b9c0a_D20201227-20211225"
+      decimals="-6"
+      id="id3VybDovL2RvY3MudjEvZG9jOjhhYWE3YjRkYmQyZTQxOWNhMGY1YzMwYWY4NWExMWFhL3NlYzo4YWFhN2I0ZGJkMmU0MTljYTBmNWMzMGFmODVhMTFhYV8zNTUvZnJhZzo4MmQ2MTQ1MzAyNjk0NjZiYjUwZWM5MmQ0MDQ1YzE1NS90YWJsZTpjZDQxOWNkMzY2NzU0NDU0YjE3Y2UxOWQ0OWI2ZmVhOS90YWJsZXJhbmdlOmNkNDE5Y2QzNjY3NTQ0NTRiMTdjZTE5ZDQ5YjZmZWE5XzItNC0xLTEtNTQ4NzA5_eef38407-63d4-448e-9bf5-7945db83e9a5"
+      unitRef="usd">79024000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="i62d01ac524414bc6817507f65831f4e4_D20211226-20221231"
+      decimals="-6"
+      id="id3VybDovL2RvY3MudjEvZG9jOjhhYWE3YjRkYmQyZTQxOWNhMGY1YzMwYWY4NWExMWFhL3NlYzo4YWFhN2I0ZGJkMmU0MTljYTBmNWMzMGFmODVhMTFhYV8zNjQvZnJhZzpiY2QzZDliMTc2ODM0MTk2OTExNzNhMjUxNDVjNzZkOS90YWJsZToyNDE5NDVjODMzZDI0YmJjYjk5MWMzOTBhZDE5MTUyOC90YWJsZXJhbmdlOjI0MTk0NWM4MzNkMjRiYmNiOTkxYzM5MGFkMTkxNTI4XzYtMi0xLTEtNTMyMDM1_8f9c15bc-9f30-4964-b8c3-201759438e68"
+      unitRef="usd">63054000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+    <us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+      contextRef="ib967c692af8d42f3b91b3e3c6f3b9c0a_D20201227-20211225"
+      decimals="-6"
+      id="id3VybDovL2RvY3MudjEvZG9jOjhhYWE3YjRkYmQyZTQxOWNhMGY1YzMwYWY4NWExMWFhL3NlYzo4YWFhN2I0ZGJkMmU0MTljYTBmNWMzMGFmODVhMTFhYV8zNjQvZnJhZzpiY2QzZDliMTc2ODM0MTk2OTExNzNhMjUxNDVjNzZkOS90YWJsZToyNDE5NDVjODMzZDI0YmJjYjk5MWMzOTBhZDE5MTUyOC90YWJsZXJhbmdlOjI0MTk0NWM4MzNkMjRiYmNiOTkxYzM5MGFkMTkxNTI4XzYtNC0xLTEtNTMyMDM1_eef38407-63d4-448e-9bf5-7945db83e9a5"
+      unitRef="usd">79024000000</us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax>
+</xbrl>

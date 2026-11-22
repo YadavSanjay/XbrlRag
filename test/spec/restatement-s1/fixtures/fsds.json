@@ -1,0 +1,2078 @@
+{
+ "num": [
+  {
+   "adsh": "0001730168-22-000118",
+   "ddate": "20221031",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "73249000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001730168-22-000118",
+   "ddate": "20201031",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "6.3300",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001730168-22-000118",
+   "ddate": "20211031",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "75570000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001730168-22-000118",
+   "ddate": "20221031",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "26.5300",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001730168-22-000118",
+   "ddate": "20211031",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "15.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20211231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "168406000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20201231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "-12669000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001045810-23-000017",
+   "ddate": "20230131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "41182000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001045810-23-000017",
+   "ddate": "20210131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "1.7300",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000104169-23-000020",
+   "ddate": "20220131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "4.8700",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001045810-23-000017",
+   "ddate": "20210131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "4332000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001045810-23-000017",
+   "ddate": "20220131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "3.8500",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "8014000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000104169-23-000020",
+   "ddate": "20210131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "13510000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20201231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "20899000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000104169-23-000020",
+   "ddate": "20210131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "252496000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000104169-23-000020",
+   "ddate": "20230131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "4.2700",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20211231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "-6045000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "1361000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001045810-23-000017",
+   "ddate": "20230131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "1.7400",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000104169-23-000020",
+   "ddate": "20220131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "244860000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20221231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "182103000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000104169-23-000020",
+   "ddate": "20230131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "243197000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "ddate": "20211231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "19868000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000104169-23-000020",
+   "ddate": "20230131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "11680000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001045810-23-000017",
+   "ddate": "20220131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "9752000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000104169-23-000020",
+   "ddate": "20210131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "4.7500",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001045810-23-000017",
+   "ddate": "20220131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "44187000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0000104169-23-000020",
+   "ddate": "20220131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "13673000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001045810-23-000017",
+   "ddate": "20230131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "4368000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001730168-23-000096",
+   "ddate": "20221031",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "26.5300",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001730168-23-000096",
+   "ddate": "20231031",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "32.9800",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001730168-23-000096",
+   "ddate": "20221031",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "73249000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001730168-23-000096",
+   "ddate": "20231031",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "72861000000.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001730168-23-000096",
+   "ddate": "20211031",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "15.0000",
+   "version": "us-gaap/2022"
+  },
+  {
+   "adsh": "0001628280-24-006850",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "365000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "1115000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001628280-24-006850",
+   "ddate": "20231231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "106675000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000354950-24-000062",
+   "ddate": "20230131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "76445000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000002488-24-000012",
+   "ddate": "20231231",
+   "qtrs": "0",
+   "tag": "AccountsReceivableNetCurrent",
+   "uom": "USD",
+   "value": "5376000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000002488-24-000012",
+   "ddate": "20221231",
+   "qtrs": "0",
+   "tag": "AccountsReceivableNetCurrent",
+   "uom": "USD",
+   "value": "4126000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20221231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "182103000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001628280-24-006850",
+   "ddate": "20211231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "13049000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "8505000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001628280-24-006850",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "14519000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20211231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "-6211000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "29760000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "1689000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000354950-24-000062",
+   "ddate": "20240131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "76530000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000104169-24-000056",
+   "ddate": "20220131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "244860000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000002488-24-000012",
+   "ddate": "20221231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "67580000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20230131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "1.7400",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000002488-24-000012",
+   "ddate": "20231231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "67885000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000104169-24-000056",
+   "ddate": "20230131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "243197000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000354950-24-000062",
+   "ddate": "20230131",
+   "qtrs": "4",
+   "tag": "DepreciationDepletionAndAmortization",
+   "uom": "USD",
+   "value": "2975000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000104169-24-000056",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "1.9100",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20230131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "4368000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20220131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "9752000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20230131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "41182000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000002488-24-000012",
+   "ddate": "20211231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "3162000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000104169-24-000056",
+   "ddate": "20230131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "11680000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000002488-24-000012",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "854000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20211231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "19868000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000354950-24-000062",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "tag": "DepreciationDepletionAndAmortization",
+   "uom": "USD",
+   "value": "3247000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000104169-24-000056",
+   "ddate": "20230131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "1.4200",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "8014000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "11.9300",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000354950-24-000062",
+   "ddate": "20220131",
+   "qtrs": "4",
+   "tag": "DepreciationDepletionAndAmortization",
+   "uom": "USD",
+   "value": "2862000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20240131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "65728000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000354950-24-000062",
+   "ddate": "20220131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "16433000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000104169-24-000056",
+   "ddate": "20220131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "1.6200",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000354950-24-000062",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "15143000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000002488-24-000012",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "1320000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000104169-24-000056",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "15511000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "ddate": "20220131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "3.8500",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000104169-24-000056",
+   "ddate": "20240131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "252399000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "ddate": "20231231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "191572000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000104169-24-000056",
+   "ddate": "20220131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "13673000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0001628280-24-006850",
+   "ddate": "20221231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "109160000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000354950-24-000062",
+   "ddate": "20230131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "17105000000.0000",
+   "version": "us-gaap/2023"
+  },
+  {
+   "adsh": "0000804328-24-000075",
+   "ddate": "20220930",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "12936000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001730168-24-000139",
+   "ddate": "20231031",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "3.3000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001730168-24-000139",
+   "ddate": "20241031",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "165645000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001730168-24-000139",
+   "ddate": "20231031",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "72861000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000804328-24-000075",
+   "ddate": "20230930",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "7232000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000804328-24-000075",
+   "ddate": "20240930",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "55154000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000804328-24-000075",
+   "ddate": "20240930",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "10142000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000804328-24-000075",
+   "ddate": "20230930",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "51040000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001730168-24-000139",
+   "ddate": "20221031",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "2.6500",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001730168-24-000139",
+   "ddate": "20241031",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "1.2300",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000002488-25-000012",
+   "ddate": "20231231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "67885000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000104169-25-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "2.4100",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "CommonStockDividendsPerShareDeclared",
+   "uom": "USD",
+   "value": "0.3800",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20230131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "4368000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000002488-25-000012",
+   "ddate": "20231231",
+   "qtrs": "0",
+   "tag": "AccountsReceivableNetCurrent",
+   "uom": "USD",
+   "value": "4323000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001628280-25-003063",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "12556000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000354950-25-000085",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "14806000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000104169-25-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "1.9100",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "CommonStockDividendsPerShareDeclared",
+   "uom": "USD",
+   "value": "1.4600",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000354950-25-000085",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "15143000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000002488-25-000012",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "1320000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001628280-25-003063",
+   "ddate": "20240331",
+   "qtrs": "1",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "1129000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "2.9400",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "CommonStockDividendsPerShareDeclared",
+   "uom": "USD",
+   "value": "0.7400",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000104169-25-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "19436000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000104169-25-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "15511000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000002488-25-000012",
+   "ddate": "20241231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "69226000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000002488-25-000012",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "854000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000002488-25-000012",
+   "ddate": "20241231",
+   "qtrs": "0",
+   "tag": "AccountsReceivableNetCurrent",
+   "uom": "USD",
+   "value": "6192000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000354950-25-000085",
+   "ddate": "20230131",
+   "qtrs": "4",
+   "tag": "DepreciationDepletionAndAmortization",
+   "uom": "USD",
+   "value": "2796000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001628280-25-003063",
+   "ddate": "20240930",
+   "qtrs": "1",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "2167000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000104169-25-000021",
+   "ddate": "20250131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "260823000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "1115000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001628280-25-003063",
+   "ddate": "20240630",
+   "qtrs": "1",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "1478000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000354950-25-000085",
+   "ddate": "20250131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "96119000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "1689000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000104169-25-000021",
+   "ddate": "20230131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "243197000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20241231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "196485000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001628280-25-003063",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "14997000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "111601000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20221231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "8014000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "8505000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "-18756000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001628280-25-003063",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "7091000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000104169-25-000021",
+   "ddate": "20240131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "252399000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000104169-25-000021",
+   "ddate": "20230131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "1.4200",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001628280-25-003063",
+   "ddate": "20241231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "122070000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000002488-25-000012",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "1641000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "1.1900",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000354950-25-000085",
+   "ddate": "20230131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "17105000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "11138000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "ddate": "20231231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "191572000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000354950-25-000085",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "tag": "DepreciationDepletionAndAmortization",
+   "uom": "USD",
+   "value": "3061000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000354950-25-000085",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "tag": "DepreciationDepletionAndAmortization",
+   "uom": "USD",
+   "value": "3336000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "72880000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "29760000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000104169-25-000021",
+   "ddate": "20230131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "11680000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001628280-25-003063",
+   "ddate": "20231231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "106618000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20230131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "0.1700",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000354950-25-000085",
+   "ddate": "20240131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "76530000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "ddate": "20240131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "65728000000.0000",
+   "version": "us-gaap/2024"
+  },
+  {
+   "adsh": "0000909832-25-000101",
+   "ddate": "20230831",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "68994000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000909832-25-000101",
+   "ddate": "20240831",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "69831000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000909832-25-000101",
+   "ddate": "20250831",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "77099000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000909832-25-000101",
+   "ddate": "20230831",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "6292000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000909832-25-000101",
+   "ddate": "20240831",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "7367000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000909832-25-000101",
+   "ddate": "20250831",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "8099000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000002488-26-000018",
+   "ddate": "20251231",
+   "qtrs": "0",
+   "tag": "AccountsReceivableNetCurrent",
+   "uom": "USD",
+   "value": "6315000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000002488-26-000018",
+   "ddate": "20251231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "4335000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000002488-26-000018",
+   "ddate": "20241231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "69226000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000002488-26-000018",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "1641000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000002488-26-000018",
+   "ddate": "20241231",
+   "qtrs": "0",
+   "tag": "AccountsReceivableNetCurrent",
+   "uom": "USD",
+   "value": "6192000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000002488-26-000018",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "854000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000002488-26-000018",
+   "ddate": "20251231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "76926000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20251231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "11587000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "11138000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20251231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "211429000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "CommonStockDividendsPerShareDeclared",
+   "uom": "USD",
+   "value": "0.7400",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetCashProvidedByUsedInFinancingActivities",
+   "uom": "USD",
+   "value": "8505000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20241231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "196485000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "CommonStockDividendsPerShareDeclared",
+   "uom": "USD",
+   "value": "0.3800",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20251231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "-267000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "29760000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "72880000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20260131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "206803000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "1689000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20260131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "4.9000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "2.9400",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "-18756000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20250131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "111601000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "tag": "EarningsPerShareDiluted",
+   "uom": "USD",
+   "value": "1.1900",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-003952",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "7091000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-010047",
+   "ddate": "20241231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "10631000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-010047",
+   "ddate": "20251231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "104816000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-010047",
+   "ddate": "20251231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "13107000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-003952",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "14997000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-019436",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "tag": "DepreciationDepletionAndAmortization",
+   "uom": "USD",
+   "value": "3336000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-019436",
+   "ddate": "20250131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "14806000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-010047",
+   "ddate": "20241231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "100549000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-019436",
+   "ddate": "20260131",
+   "qtrs": "4",
+   "tag": "DepreciationDepletionAndAmortization",
+   "uom": "USD",
+   "value": "3514000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-003952",
+   "ddate": "20241231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "122070000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-003952",
+   "ddate": "20251231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "3794000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-019436",
+   "ddate": "20260131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "105095000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-019436",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "tag": "DepreciationDepletionAndAmortization",
+   "uom": "USD",
+   "value": "3061000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-003952",
+   "ddate": "20251231",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "137806000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-010047",
+   "ddate": "20231231",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "10714000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "ddate": "20260131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "120067000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-019436",
+   "ddate": "20240131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "15143000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-019436",
+   "ddate": "20250131",
+   "qtrs": "0",
+   "tag": "Assets",
+   "uom": "USD",
+   "value": "96119000000.0000",
+   "version": "us-gaap/2025"
+  },
+  {
+   "adsh": "0001628280-26-019436",
+   "ddate": "20260131",
+   "qtrs": "4",
+   "tag": "NetIncomeLoss",
+   "uom": "USD",
+   "value": "14156000000.0000",
+   "version": "us-gaap/2025"
+  }
+ ],
+ "sources": {
+  "2022q4": {
+   "bytes": 111091525,
+   "retrieved": "2026-11-07",
+   "sha256": "83bdc7a9545479eb64d118688c888ba8e7554ebc774f3ab8a8b0cc1decb87f28",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2022q4.zip"
+  },
+  "2023q1": {
+   "bytes": 113974946,
+   "retrieved": "2026-11-07",
+   "sha256": "479638c1be4088fa2ae42d2947468913eaff5ad0f093c412ba4340af8a8f791e",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2023q1.zip"
+  },
+  "2023q4": {
+   "bytes": 120272357,
+   "retrieved": "2026-11-07",
+   "sha256": "ad23c5505e59b7305e16bfebb8bb839476689330b85a3e1ce216f809b18d1521",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2023q4.zip"
+  },
+  "2024q1": {
+   "bytes": 124336804,
+   "retrieved": "2026-11-07",
+   "sha256": "94c7894b00903f8ff7186c4250ba1c1daa1bde8b3a0b26fae68f72608b2ffc9b",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q1.zip"
+  },
+  "2024q4": {
+   "bytes": 122932548,
+   "retrieved": "2026-11-07",
+   "sha256": "9a2cbbaf39c94aa642b33d512f4def92b198d3bfd12d2267bcd27abe55b9902d",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q4.zip"
+  },
+  "2025q1": {
+   "bytes": 127765057,
+   "retrieved": "2026-11-07",
+   "sha256": "4386e7057cc216b6fc729d8f957998acb831d29be7b16f6d8ed0f6b1ab74eba5",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q1.zip"
+  },
+  "2025q4": {
+   "bytes": 65830170,
+   "retrieved": "2026-11-07",
+   "sha256": "2b36ac3850c022cf19edd882e31c3c453c7666677b9fdd2e1f7748fdb5768c6e",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q4.zip"
+  },
+  "2026q1": {
+   "bytes": 85259424,
+   "retrieved": "2026-11-07",
+   "sha256": "d18c01c615da8f5cd46273b0dacaeee5b1163f4089171da0f84153a5f3c362f6",
+   "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q1.zip"
+  }
+ },
+ "sub": [
+  {
+   "adsh": "0001730168-22-000118",
+   "cik": "1730168",
+   "filed": "20221216",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2022",
+   "fye": "1031",
+   "name": "BROADCOM INC.",
+   "period": "20221031",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000050863-23-000006",
+   "cik": "50863",
+   "filed": "20230127",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2022",
+   "fye": "1231",
+   "name": "INTEL CORP",
+   "period": "20221231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000104169-23-000020",
+   "cik": "104169",
+   "filed": "20230317",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2022",
+   "fye": "0131",
+   "name": "WALMART INC.",
+   "period": "20230131",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001045810-23-000017",
+   "cik": "1045810",
+   "filed": "20230224",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2022",
+   "fye": "0131",
+   "name": "NVIDIA CORP",
+   "period": "20230131",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001730168-23-000096",
+   "cik": "1730168",
+   "filed": "20231214",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2023",
+   "fye": "1031",
+   "name": "BROADCOM INC.",
+   "period": "20231031",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000104169-24-000056",
+   "cik": "104169",
+   "filed": "20240315",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2023",
+   "fye": "0131",
+   "name": "WALMART INC.",
+   "period": "20240131",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000050863-24-000010",
+   "cik": "50863",
+   "filed": "20240126",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2023",
+   "fye": "1231",
+   "name": "INTEL CORP",
+   "period": "20231231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001628280-24-006850",
+   "cik": "310158",
+   "filed": "20240226",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2023",
+   "fye": "1231",
+   "name": "MERCK & CO., INC.",
+   "period": "20231231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000002488-24-000012",
+   "cik": "2488",
+   "filed": "20240131",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2023",
+   "fye": "1231",
+   "name": "ADVANCED MICRO DEVICES INC",
+   "period": "20231231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001045810-24-000029",
+   "cik": "1045810",
+   "filed": "20240221",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2023",
+   "fye": "0131",
+   "name": "NVIDIA CORP",
+   "period": "20240131",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000354950-24-000062",
+   "cik": "354950",
+   "filed": "20240313",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2023",
+   "fye": "0131",
+   "name": "HOME DEPOT, INC.",
+   "period": "20240131",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001730168-24-000139",
+   "cik": "1730168",
+   "filed": "20241220",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2024",
+   "fye": "1031",
+   "name": "BROADCOM INC.",
+   "period": "20241031",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000804328-24-000075",
+   "cik": "804328",
+   "filed": "20241106",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2024",
+   "fye": "0930",
+   "name": "QUALCOMM INC/DE",
+   "period": "20240930",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000002488-25-000012",
+   "cik": "2488",
+   "filed": "20250205",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2024",
+   "fye": "1231",
+   "name": "ADVANCED MICRO DEVICES INC",
+   "period": "20241231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000050863-25-000009",
+   "cik": "50863",
+   "filed": "20250131",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2024",
+   "fye": "1231",
+   "name": "INTEL CORP",
+   "period": "20241231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000104169-25-000021",
+   "cik": "104169",
+   "filed": "20250314",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2024",
+   "fye": "0131",
+   "name": "WALMART INC.",
+   "period": "20250131",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000354950-25-000085",
+   "cik": "354950",
+   "filed": "20250321",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2024",
+   "fye": "0131",
+   "name": "HOME DEPOT, INC.",
+   "period": "20250131",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001045810-25-000023",
+   "cik": "1045810",
+   "filed": "20250226",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2024",
+   "fye": "0131",
+   "name": "NVIDIA CORP",
+   "period": "20250131",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001628280-25-003063",
+   "cik": "1318605",
+   "filed": "20250130",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2024",
+   "fye": "1231",
+   "name": "TESLA, INC.",
+   "period": "20241231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000909832-25-000101",
+   "cik": "909832",
+   "filed": "20251008",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2025",
+   "fye": "0831",
+   "name": "COSTCO WHOLESALE CORP /NEW",
+   "period": "20250831",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001628280-26-019436",
+   "cik": "354950",
+   "filed": "20260318",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2025",
+   "fye": "0131",
+   "name": "HOME DEPOT, INC.",
+   "period": "20260131",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000002488-26-000018",
+   "cik": "2488",
+   "filed": "20260204",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2025",
+   "fye": "1231",
+   "name": "ADVANCED MICRO DEVICES INC",
+   "period": "20251231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0000050863-26-000011",
+   "cik": "50863",
+   "filed": "20260123",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2025",
+   "fye": "1231",
+   "name": "INTEL CORP",
+   "period": "20251231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001045810-26-000021",
+   "cik": "1045810",
+   "filed": "20260225",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2026",
+   "fye": "0131",
+   "name": "NVIDIA CORP",
+   "period": "20260131",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001628280-26-003952",
+   "cik": "1318605",
+   "filed": "20260129",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2025",
+   "fye": "1231",
+   "name": "TESLA, INC.",
+   "period": "20251231",
+   "prevrpt": "0"
+  },
+  {
+   "adsh": "0001628280-26-010047",
+   "cik": "21344",
+   "filed": "20260220",
+   "form": "10-K",
+   "fp": "FY",
+   "fy": "2025",
+   "fye": "1231",
+   "name": "COCA COLA CO",
+   "period": "20251231",
+   "prevrpt": "0"
+  }
+ ]
+}

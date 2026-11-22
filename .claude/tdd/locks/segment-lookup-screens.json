@@ -1,0 +1,78 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-07",
+  "criteria": {
+    "C1": [
+      "test/spec/segment-lookup-screens/test_c1_lookup_cells.py::test_lly_trulicity_is_the_full_member_or_refused",
+      "test/spec/segment-lookup-screens/test_c1_lookup_cells.py::test_cells_answer_the_full_member_or_refuse"
+    ],
+    "C2": [
+      "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py::test_segment_screen_ranks_the_named_member[other]",
+      "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py::test_segment_screen_ranks_the_named_member[cloud]",
+      "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py::test_segment_screen_ranks_the_named_member[international]",
+      "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py::test_excluded_rows_never_move_the_ranking"
+    ],
+    "C3": [
+      "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py::test_segment_screen_exclusions_carry_the_reason[cloud]",
+      "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py::test_segment_screen_exclusions_carry_the_reason[other]",
+      "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py::test_segment_screen_exclusions_carry_the_reason[international]",
+      "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py::test_every_unranked_filer_has_its_reason"
+    ],
+    "C4": [
+      "test/spec/segment-lookup-screens/test_c4_c5_geographic_screen.py::test_china_exclusions_carry_the_true_reason",
+      "test/spec/segment-lookup-screens/test_c4_c5_geographic_screen.py::test_country_screen_reasons_follow_the_order"
+    ],
+    "C5": [
+      "test/spec/segment-lookup-screens/test_c4_c5_geographic_screen.py::test_europe_and_emea_resolve_by_member_label",
+      "test/spec/segment-lookup-screens/test_c4_c5_geographic_screen.py::test_regions_ignore_geo_codes_and_spelling"
+    ]
+  },
+  "files": {
+    "test/spec/segment-lookup-screens/conftest.py": "8cffea93c9fc07f173fbe006210a7bcdc71bde2aa667335bbd3e12c2c9372016",
+    "test/spec/segment-lookup-screens/fixtures/lookup_lly_hd.json": "e162374a1edd18f6970cdc03a233afc62b05528164a7b12e1ae359d3c79edac5",
+    "test/spec/segment-lookup-screens/fixtures/screen_geographic_fy2024.json": "745f539beec0b01bd8f1e10075027d2c626c61bc79e0174b56faff3c25e464eb",
+    "test/spec/segment-lookup-screens/fixtures/screen_segment_fy2024.json": "2ff4de5cabc080c59e7169b99d9001cd62a48bf00ba4453c09e3315326ed2a2b",
+    "test/spec/segment-lookup-screens/sls_rules.py": "2b0aafef141a429fcd4b6c3829aa0b49b946fef4bb29db95640f09ee19f01d84",
+    "test/spec/segment-lookup-screens/sls_store.py": "d2d26f5389b071a7a1106a389a4742a57c09e7b362be3c29d97edf8fc28e05b6",
+    "test/spec/segment-lookup-screens/test_c1_lookup_cells.py": "17b2c21d1bd11333d083b2c27cf329fd7b0ad463afd95777eaf2f303b2ca2389",
+    "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py": "0d7c6558dcb1551ee16fd649eb028d8a8aa8fc6c54481893845c04b21a64b302",
+    "test/spec/segment-lookup-screens/test_c4_c5_geographic_screen.py": "7a3b87a108258a7318e557ce042208678e20d9f1cf9fb67045034c17b3e486fd"
+  },
+  "id": "segment-lookup-screens",
+  "interface": [],
+  "nodes": [
+    "test/spec/segment-lookup-screens/test_c1_lookup_cells.py::test_cells_answer_the_full_member_or_refuse",
+    "test/spec/segment-lookup-screens/test_c1_lookup_cells.py::test_lly_trulicity_is_the_full_member_or_refused",
+    "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py::test_every_unranked_filer_has_its_reason",
+    "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py::test_excluded_rows_never_move_the_ranking",
+    "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py::test_segment_screen_exclusions_carry_the_reason[cloud]",
+    "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py::test_segment_screen_exclusions_carry_the_reason[international]",
+    "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py::test_segment_screen_exclusions_carry_the_reason[other]",
+    "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py::test_segment_screen_ranks_the_named_member[cloud]",
+    "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py::test_segment_screen_ranks_the_named_member[international]",
+    "test/spec/segment-lookup-screens/test_c2_c3_segment_screen.py::test_segment_screen_ranks_the_named_member[other]",
+    "test/spec/segment-lookup-screens/test_c4_c5_geographic_screen.py::test_china_exclusions_carry_the_true_reason",
+    "test/spec/segment-lookup-screens/test_c4_c5_geographic_screen.py::test_country_screen_reasons_follow_the_order",
+    "test/spec/segment-lookup-screens/test_c4_c5_geographic_screen.py::test_europe_and_emea_resolve_by_member_label",
+    "test/spec/segment-lookup-screens/test_c4_c5_geographic_screen.py::test_regions_ignore_geo_codes_and_spelling"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/segment-lookup-screens.md",
+    "sha256": "7be0a8e433f0ee0315bc20f9ecfa213a6823aa253cf928728d26b79116a7820b"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

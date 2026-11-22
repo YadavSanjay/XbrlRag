@@ -1,0 +1,122 @@
+{
+ "accession_no": "0000936468-25-000009",
+ "cik": "0000936468",
+ "ticker": "LMT",
+ "extension_namespace": "http://www.lockheedmartin.com/20241231",
+ "source_file": "lmt-20241231_cal.xml",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/936468/000093646825000009/lmt-20241231_cal.xml",
+ "source_sha256": "59a7720c864717268ebcb1ebb1a55e26682bcaa093cfd89403096577ea2db896",
+ "retrieved": "local copy under data/storage/sec_edgar (downloaded at ingest); hashed 2026-11-07",
+ "cross_check": "arcs equal to xbrl_db mv_calculation_network by local name (151 arcs)",
+ "selection": "every summation-item arc of every tree (link role, parent) whose parent or a child is an extension presented on IS/BS/CF",
+ "arcs": [
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:DeferredIncomeTaxExpenseBenefit",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:DefinedBenefitPlanRecognizedNetGainLossDueToSettlements1",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInAccountsPayable",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInAccruedIncomeTaxesPayable",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInContractWithCustomerAsset",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInContractWithCustomerLiability",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInInventories",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInOtherOperatingCapitalNet",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInPensionAndPostretirementObligations",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:IncreaseDecreaseInReceivables",
+   "weight": "-1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:NetIncomeLoss",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:RestructuringCostsAndAssetImpairmentCharges",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://fasb.org/us-gaap/2024:ShareBasedCompensation",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://www.lockheedmartin.com/20241231:ClassifiedProgramsGainsLosses",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofCashFlows",
+   "parent": "http://fasb.org/us-gaap/2024:NetCashProvidedByUsedInOperatingActivities",
+   "child": "http://www.lockheedmartin.com/20241231:DepreciationAndAmortizationIncludingDiscontinuedOperations",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofEarnings",
+   "parent": "http://fasb.org/us-gaap/2024:CostOfRevenue",
+   "child": "http://fasb.org/us-gaap/2024:CostOfGoodsAndServicesSold",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofEarnings",
+   "parent": "http://fasb.org/us-gaap/2024:CostOfRevenue",
+   "child": "http://fasb.org/us-gaap/2024:RestructuringCostsAndAssetImpairmentCharges",
+   "weight": "1"
+  },
+  {
+   "link_role": "http://www.lockheedmartin.com/role/ConsolidatedStatementsofEarnings",
+   "parent": "http://fasb.org/us-gaap/2024:CostOfRevenue",
+   "child": "http://www.lockheedmartin.com/20241231:OtherUnallocatedIncomeExpense",
+   "weight": "1"
+  }
+ ]
+}

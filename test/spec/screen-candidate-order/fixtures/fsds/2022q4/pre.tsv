@@ -1,0 +1,8 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0000723125-22-000048	3	11	IS	0	H	OtherNonoperatingIncomeExpense	us-gaap/2022	Other non-operating income (expense), net	0
+0000723125-22-000048	5	2	BS	0	H	CashAndCashEquivalentsAtCarryingValue	us-gaap/2022	Cash and equivalents	0
+0000723125-22-000048	5	3	BS	0	H	AvailableForSaleSecuritiesDebtSecuritiesCurrent	us-gaap/2022	Short-term investments	0
+0000723125-22-000048	5	10	BS	0	H	PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization	us-gaap/2022	Property, plant, and equipment	0
+0000723125-22-000048	8	30	CF	0	H	ProceedsFromIssuanceOfLongTermDebt	us-gaap/2022	Proceeds from issuance of debt	0
+0000723125-22-000048	8	35	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2022	Cash, cash equivalents, and restricted cash at beginning of period	0
+0000723125-22-000048	8	36	CF	0	H	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2022	Cash, cash equivalents, and restricted cash at end of period	0

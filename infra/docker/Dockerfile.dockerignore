@@ -1,0 +1,39 @@
+# Keep the build context tiny (WS-6 / B7). The serving image needs only
+# src/ prompts/ configs/ — everything else is noise or must not ship.
+#
+# Named for infra/docker/Dockerfile so BuildKit honours it while the build context
+# stays the repo root (paths below are context-root relative, not relative to this file).
+.git
+.github
+.claude
+.venv
+venv
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/.mypy_cache
+.ruff_cache
+
+# Data, models, vector store, logs — external services / volumes, never baked in
+data
+logs
+*.log
+models
+data/vectordb
+
+# Frontend (built by ui/Dockerfile, not this image)
+ui/node_modules
+ui/dist
+
+# Dev-only
+test
+docs
+scripts
+notebooks
+*.md
+!requirements-serve.txt
+.env
+.env.*
+!.env.example
+deploy
+infra

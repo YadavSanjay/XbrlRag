@@ -1,0 +1,36 @@
+# Slim INGEST dependencies for the on-demand AWS ingest runner (Dockerfile.ingest).
+#
+# Like the serving image, ingest is torch-free: the vector-load stage embeds over
+# HTTP via RAGINFER_URL (RemoteEmbedder) instead of loading BGE-M3 in-process, so
+# this set deliberately omits torch / transformers / sentence-transformers / faiss.
+# It is the serving subset PLUS the ingest-only pieces: EDGAR download, Arelle,
+# lxml (canonicalization / DOM parsing), and boto3 (S3 filing store).
+#
+# For local dev / in-process embedding, use the full requirements.txt.
+# Keep this in sync with requirements-serve.txt + the ingest extras below.
+
+# --- serving subset (shared query/ingest deps) ---
+langchain>=1.0.0
+langchain-core>=0.1.0
+langchain-openai>=0.0.5
+langchain-anthropic>=0.3.0
+openai==2.14.0
+# Anthropic SDK, used directly by the gateway's AnthropicAdapter (pinned exactly)
+anthropic==0.109.1
+tenacity>=8.2.0
+pyyaml>=6.0
+python-dotenv>=1.0.0
+psycopg2-binary>=2.9.0
+qdrant-client>=1.17,<2
+httpx>=0.25
+
+# --- ingest-only ---
+edgartools>=2.0.0        # EDGAR download
+arelle-release==2.41.0   # iXBRL -> Postgres facts (matches the local frozen build)
+pg8000>=1.29,<2          # REQUIRED by Arelle's xbrlDB plugin — it talks to Postgres
+                         # via pg8000, NOT psycopg2 (arelle/plugin/xbrlDB/SqlDb.py
+                         # raises xpgDB:MissingPostgresInterface without it). The
+                         # frozen Windows Arelle build bundles it, so this gap only
+                         # shows up on Linux/pip installs.
+lxml==6.1.3              # HTML canonicalization + iXBRL DOM parsing
+boto3>=1.34.0            # S3 filing store (XBRLRAG_STORAGE_BACKEND=s3)

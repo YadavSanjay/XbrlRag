@@ -1,0 +1,874 @@
+{
+ "case": "intel_10q_gross_profit",
+ "accession_no": "0000050863-26-000157",
+ "filing": "Intel 10-Q Q2 2026 (quarter ending 2026-06-27)",
+ "local_source": "data/storage/sec_edgar/INTC/2026/10-Q/Q2/intc-20260627.htm",
+ "extracted": "xbrl_db (read-only), 2026-11-07: network/relationship arcs of one link role and parent; every fact of those concepts in the filing (all contexts)",
+ "dates": "xbrl_db stores an instant and a duration end as the next day (end-of-day convention): 2025-01-01 is the 2024-12-31 balance sheet date",
+ "arelle_c11r": {
+  "version": "Arelle 2.41.0, arelleCmdLine --calc c11r --internetConnectivity offline, run 2026-11-07 on local_source",
+  "inconsistent_in_this_tree": []
+ },
+ "arcs": [
+  {
+   "arcrole": "https://xbrl.org/2023/arcrole/summation-item",
+   "link_role": "http://www.intel.com/role/ConsolidatedCondensedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2026:GrossProfit",
+   "child": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "weight": "1.0"
+  },
+  {
+   "arcrole": "https://xbrl.org/2023/arcrole/summation-item",
+   "link_role": "http://www.intel.com/role/ConsolidatedCondensedStatementsofOperations",
+   "parent": "http://fasb.org/us-gaap/2026:GrossProfit",
+   "child": "http://fasb.org/us-gaap/2026:CostOfGoodsAndServicesSold",
+   "weight": "-1.0"
+  }
+ ],
+ "facts": [
+  {
+   "fact_id": 159878,
+   "concept": "http://fasb.org/us-gaap/2026:CostOfGoodsAndServicesSold",
+   "entity": "0000050863",
+   "period_start": "2024-12-29",
+   "period_end": "2025-06-29",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "17312000000",
+   "decimals": -6,
+   "xml_id": "f-37",
+   "context": "c-5"
+  },
+  {
+   "fact_id": 159876,
+   "concept": "http://fasb.org/us-gaap/2026:CostOfGoodsAndServicesSold",
+   "entity": "0000050863",
+   "period_start": "2025-03-30",
+   "period_end": "2025-06-29",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "9317000000",
+   "decimals": -6,
+   "xml_id": "f-35",
+   "context": "c-4"
+  },
+  {
+   "fact_id": 159877,
+   "concept": "http://fasb.org/us-gaap/2026:CostOfGoodsAndServicesSold",
+   "entity": "0000050863",
+   "period_start": "2025-12-28",
+   "period_end": "2026-06-28",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "17849000000",
+   "decimals": -6,
+   "xml_id": "f-36",
+   "context": "c-1"
+  },
+  {
+   "fact_id": 159875,
+   "concept": "http://fasb.org/us-gaap/2026:CostOfGoodsAndServicesSold",
+   "entity": "0000050863",
+   "period_start": "2026-03-29",
+   "period_end": "2026-06-28",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "9619000000",
+   "decimals": -6,
+   "xml_id": "f-34",
+   "context": "c-3"
+  },
+  {
+   "fact_id": 159882,
+   "concept": "http://fasb.org/us-gaap/2026:GrossProfit",
+   "entity": "0000050863",
+   "period_start": "2024-12-29",
+   "period_end": "2025-06-29",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "8214000000",
+   "decimals": -6,
+   "xml_id": "f-41",
+   "context": "c-5"
+  },
+  {
+   "fact_id": 159880,
+   "concept": "http://fasb.org/us-gaap/2026:GrossProfit",
+   "entity": "0000050863",
+   "period_start": "2025-03-30",
+   "period_end": "2025-06-29",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "3542000000",
+   "decimals": -6,
+   "xml_id": "f-39",
+   "context": "c-4"
+  },
+  {
+   "fact_id": 159881,
+   "concept": "http://fasb.org/us-gaap/2026:GrossProfit",
+   "entity": "0000050863",
+   "period_start": "2025-12-28",
+   "period_end": "2026-06-28",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "11856000000",
+   "decimals": -6,
+   "xml_id": "f-40",
+   "context": "c-1"
+  },
+  {
+   "fact_id": 159879,
+   "concept": "http://fasb.org/us-gaap/2026:GrossProfit",
+   "entity": "0000050863",
+   "period_start": "2026-03-29",
+   "period_end": "2026-06-28",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "6509000000",
+   "decimals": -6,
+   "xml_id": "f-38",
+   "context": "c-3"
+  },
+  {
+   "fact_id": 159874,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2024-12-29",
+   "period_end": "2025-06-29",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "25526000000",
+   "decimals": -6,
+   "xml_id": "f-33",
+   "context": "c-5"
+  },
+  {
+   "fact_id": 160269,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2024-12-29",
+   "period_end": "2025-06-29",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ProductOrServiceAxis",
+     "http://www.intel.com/20260627:AssemblyAndTestMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:IntelFoundryMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "53000000",
+   "decimals": -6,
+   "xml_id": "f-429",
+   "context": "c-58"
+  },
+  {
+   "fact_id": 160341,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2024-12-29",
+   "period_end": "2025-06-29",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:ClientComputingAndPhysicalAIGroupMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "15500000000",
+   "decimals": -6,
+   "xml_id": "f-502",
+   "context": "c-87"
+  },
+  {
+   "fact_id": 160342,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2024-12-29",
+   "period_end": "2025-06-29",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:DatacenterAndAIMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "8065000000",
+   "decimals": -6,
+   "xml_id": "f-503",
+   "context": "c-88"
+  },
+  {
+   "fact_id": 160343,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2024-12-29",
+   "period_end": "2025-06-29",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:ClientComputingGroupDatacenterAndAIAndNetworkAndEdgeMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "23565000000",
+   "decimals": -6,
+   "xml_id": "f-504",
+   "context": "c-89"
+  },
+  {
+   "fact_id": 160344,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2024-12-29",
+   "period_end": "2025-06-29",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:IntelFoundryMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "9084000000",
+   "decimals": -6,
+   "xml_id": "f-505",
+   "context": "c-90"
+  },
+  {
+   "fact_id": 160345,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2024-12-29",
+   "period_end": "2025-06-29",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://fasb.org/us-gaap/2026:AllOtherSegmentsMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "1996000000",
+   "decimals": -6,
+   "xml_id": "f-506",
+   "context": "c-91"
+  },
+  {
+   "fact_id": 160346,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2024-12-29",
+   "period_end": "2025-06-29",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:IntersegmentEliminationMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "-9119000000",
+   "decimals": -6,
+   "xml_id": "f-507",
+   "context": "c-92"
+  },
+  {
+   "fact_id": 160347,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2024-12-29",
+   "period_end": "2025-06-29",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "25526000000",
+   "decimals": -6,
+   "xml_id": "f-508",
+   "context": "c-5"
+  },
+  {
+   "fact_id": 159872,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-03-30",
+   "period_end": "2025-06-29",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "12859000000",
+   "decimals": -6,
+   "xml_id": "f-31",
+   "context": "c-4"
+  },
+  {
+   "fact_id": 160268,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-03-30",
+   "period_end": "2025-06-29",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ProductOrServiceAxis",
+     "http://www.intel.com/20260627:AssemblyAndTestMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:IntelFoundryMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "22000000",
+   "decimals": -6,
+   "xml_id": "f-428",
+   "context": "c-57"
+  },
+  {
+   "fact_id": 160295,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-03-30",
+   "period_end": "2025-06-29",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:ClientComputingAndPhysicalAIGroupMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "7871000000",
+   "decimals": -6,
+   "xml_id": "f-456",
+   "context": "c-69"
+  },
+  {
+   "fact_id": 160296,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-03-30",
+   "period_end": "2025-06-29",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:DatacenterAndAIMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "3939000000",
+   "decimals": -6,
+   "xml_id": "f-457",
+   "context": "c-70"
+  },
+  {
+   "fact_id": 160297,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-03-30",
+   "period_end": "2025-06-29",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:ClientComputingGroupDatacenterAndAIAndNetworkAndEdgeMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "11810000000",
+   "decimals": -6,
+   "xml_id": "f-458",
+   "context": "c-71"
+  },
+  {
+   "fact_id": 160298,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-03-30",
+   "period_end": "2025-06-29",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:IntelFoundryMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "4417000000",
+   "decimals": -6,
+   "xml_id": "f-459",
+   "context": "c-72"
+  },
+  {
+   "fact_id": 160299,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-03-30",
+   "period_end": "2025-06-29",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://fasb.org/us-gaap/2026:AllOtherSegmentsMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "1053000000",
+   "decimals": -6,
+   "xml_id": "f-460",
+   "context": "c-73"
+  },
+  {
+   "fact_id": 160300,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-03-30",
+   "period_end": "2025-06-29",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:IntersegmentEliminationMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "-4421000000",
+   "decimals": -6,
+   "xml_id": "f-461",
+   "context": "c-74"
+  },
+  {
+   "fact_id": 160301,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-03-30",
+   "period_end": "2025-06-29",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "12859000000",
+   "decimals": -6,
+   "xml_id": "f-462",
+   "context": "c-4"
+  },
+  {
+   "fact_id": 159873,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-12-28",
+   "period_end": "2026-06-28",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "29705000000",
+   "decimals": -6,
+   "xml_id": "f-32",
+   "context": "c-1"
+  },
+  {
+   "fact_id": 160267,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-12-28",
+   "period_end": "2026-06-28",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ProductOrServiceAxis",
+     "http://www.intel.com/20260627:AssemblyAndTestMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:IntelFoundryMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "467000000",
+   "decimals": -6,
+   "xml_id": "f-427",
+   "context": "c-56"
+  },
+  {
+   "fact_id": 160318,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-12-28",
+   "period_end": "2026-06-28",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:ClientComputingAndPhysicalAIGroupMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "16604000000",
+   "decimals": -6,
+   "xml_id": "f-479",
+   "context": "c-78"
+  },
+  {
+   "fact_id": 160319,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-12-28",
+   "period_end": "2026-06-28",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:DatacenterAndAIMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "11314000000",
+   "decimals": -6,
+   "xml_id": "f-480",
+   "context": "c-79"
+  },
+  {
+   "fact_id": 160320,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-12-28",
+   "period_end": "2026-06-28",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:ClientComputingGroupDatacenterAndAIAndNetworkAndEdgeMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "27918000000",
+   "decimals": -6,
+   "xml_id": "f-481",
+   "context": "c-80"
+  },
+  {
+   "fact_id": 160321,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-12-28",
+   "period_end": "2026-06-28",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:IntelFoundryMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "11186000000",
+   "decimals": -6,
+   "xml_id": "f-482",
+   "context": "c-81"
+  },
+  {
+   "fact_id": 160322,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-12-28",
+   "period_end": "2026-06-28",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://fasb.org/us-gaap/2026:AllOtherSegmentsMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "1329000000",
+   "decimals": -6,
+   "xml_id": "f-483",
+   "context": "c-82"
+  },
+  {
+   "fact_id": 160323,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-12-28",
+   "period_end": "2026-06-28",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:IntersegmentEliminationMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "-10728000000",
+   "decimals": -6,
+   "xml_id": "f-484",
+   "context": "c-83"
+  },
+  {
+   "fact_id": 160324,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-12-28",
+   "period_end": "2026-06-28",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "29705000000",
+   "decimals": -6,
+   "xml_id": "f-485",
+   "context": "c-1"
+  },
+  {
+   "fact_id": 160673,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2025-12-28",
+   "period_end": "2026-06-28",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2026:RelatedPartyTransactionsByRelatedPartyAxis",
+     "http://fasb.org/us-gaap/2026:EquityMethodInvesteeMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "320000000",
+   "decimals": -6,
+   "xml_id": "f-835",
+   "context": "c-168"
+  },
+  {
+   "fact_id": 159871,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2026-03-29",
+   "period_end": "2026-06-28",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "16128000000",
+   "decimals": -6,
+   "xml_id": "f-30",
+   "context": "c-3"
+  },
+  {
+   "fact_id": 160266,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2026-03-29",
+   "period_end": "2026-06-28",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ProductOrServiceAxis",
+     "http://www.intel.com/20260627:AssemblyAndTestMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:IntelFoundryMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "293000000",
+   "decimals": -6,
+   "xml_id": "f-426",
+   "context": "c-55"
+  },
+  {
+   "fact_id": 160272,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2026-03-29",
+   "period_end": "2026-06-28",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:ClientComputingAndPhysicalAIGroupMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "8877000000",
+   "decimals": -6,
+   "xml_id": "f-433",
+   "context": "c-60"
+  },
+  {
+   "fact_id": 160273,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2026-03-29",
+   "period_end": "2026-06-28",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:DatacenterAndAIMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "6262000000",
+   "decimals": -6,
+   "xml_id": "f-434",
+   "context": "c-61"
+  },
+  {
+   "fact_id": 160274,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2026-03-29",
+   "period_end": "2026-06-28",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:ClientComputingGroupDatacenterAndAIAndNetworkAndEdgeMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "15139000000",
+   "decimals": -6,
+   "xml_id": "f-435",
+   "context": "c-62"
+  },
+  {
+   "fact_id": 160275,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2026-03-29",
+   "period_end": "2026-06-28",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://www.intel.com/20260627:IntelFoundryMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "5765000000",
+   "decimals": -6,
+   "xml_id": "f-436",
+   "context": "c-63"
+  },
+  {
+   "fact_id": 160276,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2026-03-29",
+   "period_end": "2026-06-28",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:OperatingSegmentsMember"
+    ],
+    [
+     "http://fasb.org/us-gaap/2026:StatementBusinessSegmentsAxis",
+     "http://fasb.org/us-gaap/2026:AllOtherSegmentsMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "701000000",
+   "decimals": -6,
+   "xml_id": "f-437",
+   "context": "c-64"
+  },
+  {
+   "fact_id": 160277,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2026-03-29",
+   "period_end": "2026-06-28",
+   "dimensions": [
+    [
+     "http://fasb.org/srt/2026:ConsolidationItemsAxis",
+     "http://fasb.org/us-gaap/2026:IntersegmentEliminationMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "-5477000000",
+   "decimals": -6,
+   "xml_id": "f-438",
+   "context": "c-65"
+  },
+  {
+   "fact_id": 160278,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2026-03-29",
+   "period_end": "2026-06-28",
+   "dimensions": [],
+   "unit": "USD",
+   "value": "16128000000",
+   "decimals": -6,
+   "xml_id": "f-439",
+   "context": "c-3"
+  },
+  {
+   "fact_id": 160672,
+   "concept": "http://fasb.org/us-gaap/2026:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "entity": "0000050863",
+   "period_start": "2026-03-29",
+   "period_end": "2026-06-28",
+   "dimensions": [
+    [
+     "http://fasb.org/us-gaap/2026:RelatedPartyTransactionsByRelatedPartyAxis",
+     "http://fasb.org/us-gaap/2026:EquityMethodInvesteeMember"
+    ]
+   ],
+   "unit": "USD",
+   "value": "181000000",
+   "decimals": -6,
+   "xml_id": "f-834",
+   "context": "c-167"
+  }
+ ]
+}

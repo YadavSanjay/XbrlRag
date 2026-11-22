@@ -1,0 +1,13 @@
+# Hashed benchmark artifacts are published by SHA-256: keep their bytes exact on every checkout.
+docs/eval/external_test_v1/** -text
+docs/eval/heldout_v2/** -text
+# Byte copies of locked spec fixtures (SHA-256 pinned in docs/specs/key-statement-witness.md).
+configs/eval/v2/statement_lines.yaml -text
+configs/eval/v2/note_concepts.yaml -text
+# Judged rules and their judging records (SHA-256 pinned in docs/specs/witness-rules-r2*.md).
+configs/eval/v2/statement_lines.accepted_r2_1.yaml -text
+configs/eval/v2/statement_lines.accepted_strip.yaml -text
+configs/eval/v2/statement_lines.acceptance*.json -text
+# Spec fixtures are pinned by the SHA-256 of their committed (LF) bytes, the bytes Linux CI
+# checks out: keep them on every checkout, whatever core.autocrlf says.
+test/spec/**/fixtures/** -text

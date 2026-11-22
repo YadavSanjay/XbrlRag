@@ -1,0 +1,92 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/multidim-recovery/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-10-14",
+  "criteria": {
+    "C1": [
+      "test/spec/multidim-recovery/test_multidim_recovery.py::test_neutral_point_cases",
+      "test/spec/multidim-recovery/test_multidim_recovery.py::test_neutral_depends_only_on_axis_local_name_and_label"
+    ],
+    "C2": [
+      "test/spec/multidim-recovery/test_multidim_recovery.py::test_match_point_cases",
+      "test/spec/multidim-recovery/test_multidim_recovery.py::test_rule_for_any_labels_and_hints"
+    ],
+    "C3": [
+      "test/spec/multidim-recovery/test_multidim_recovery.py::test_one_hint_against_neutral_fact_resolves",
+      "test/spec/multidim-recovery/test_multidim_recovery.py::test_wording_does_not_matter_but_the_consolidation_member_does"
+    ],
+    "C4": [
+      "test/spec/multidim-recovery/test_multidim_recovery.py::test_intersection_steps_point_cases",
+      "test/spec/multidim-recovery/test_multidim_recovery.py::test_unrelated_steps_do_not_change_the_merge"
+    ],
+    "C5": [
+      "test/spec/multidim-recovery/test_multidim_recovery.py::test_executor_appends_an_accepted_intersection",
+      "test/spec/multidim-recovery/test_multidim_recovery.py::test_executor_rejects_or_skips",
+      "test/spec/multidim-recovery/test_multidim_recovery.py::test_executor_result_independent_of_sibling_order"
+    ],
+    "C6": [
+      "test/spec/multidim-recovery/test_multidim_recovery.py::test_matcher_metamorphic",
+      "test/spec/multidim-recovery/test_multidim_recovery.py::test_superset_of_full_match",
+      "test/spec/multidim-recovery/test_multidim_recovery.py::test_metamorphic_point_case"
+    ]
+  },
+  "files": {
+    "test/spec/multidim-recovery/test_multidim_recovery.py": "fce84fdbc8696104ed604a257410a9745fab819266db139d638c9bb685ed2b70"
+  },
+  "id": "multidim-recovery",
+  "interface": [
+    {
+      "file": "src/retriever/xbrl/plan_executor.py",
+      "module": "retriever.xbrl.plan_executor",
+      "qualname": "intersection_steps",
+      "signature": "def intersection_steps(steps: collections.abc.Sequence[dict], results: collections.abc.Sequence[StepResult]) -> list[dict]"
+    },
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_lookup.py",
+      "module": "retriever.xbrl.xbrl_factstore_lookup",
+      "qualname": "is_neutral_dimension",
+      "signature": "def is_neutral_dimension(axis: str, member_label: str) -> bool"
+    },
+    {
+      "file": "src/retriever/xbrl/xbrl_factstore_lookup.py",
+      "module": "retriever.xbrl.xbrl_factstore_lookup",
+      "qualname": "dimensions_match_ignoring_neutral",
+      "signature": "def dimensions_match_ignoring_neutral(dimension_labels: collections.abc.Mapping[str, str] | None, member_hints: Sequence[str]) -> bool"
+    }
+  ],
+  "nodes": [
+    "test/spec/multidim-recovery/test_multidim_recovery.py::test_executor_appends_an_accepted_intersection",
+    "test/spec/multidim-recovery/test_multidim_recovery.py::test_executor_rejects_or_skips",
+    "test/spec/multidim-recovery/test_multidim_recovery.py::test_executor_result_independent_of_sibling_order",
+    "test/spec/multidim-recovery/test_multidim_recovery.py::test_intersection_steps_point_cases",
+    "test/spec/multidim-recovery/test_multidim_recovery.py::test_match_point_cases",
+    "test/spec/multidim-recovery/test_multidim_recovery.py::test_matcher_metamorphic",
+    "test/spec/multidim-recovery/test_multidim_recovery.py::test_metamorphic_point_case",
+    "test/spec/multidim-recovery/test_multidim_recovery.py::test_neutral_depends_only_on_axis_local_name_and_label",
+    "test/spec/multidim-recovery/test_multidim_recovery.py::test_neutral_point_cases",
+    "test/spec/multidim-recovery/test_multidim_recovery.py::test_one_hint_against_neutral_fact_resolves",
+    "test/spec/multidim-recovery/test_multidim_recovery.py::test_rule_for_any_labels_and_hints",
+    "test/spec/multidim-recovery/test_multidim_recovery.py::test_superset_of_full_match",
+    "test/spec/multidim-recovery/test_multidim_recovery.py::test_unrelated_steps_do_not_change_the_merge",
+    "test/spec/multidim-recovery/test_multidim_recovery.py::test_wording_does_not_matter_but_the_consolidation_member_does"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/multidim-recovery.md",
+    "sha256": "44f692fd8044a8fadfc5a9d0ba7f0fb41d20271afc4780abb93369d42846b1c9"
+  },
+  "status": "retired",
+  "tool_version": "0.4.0"
+}

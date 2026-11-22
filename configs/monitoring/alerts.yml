@@ -1,0 +1,99 @@
+# Prometheus alerting rules for the XbrlRag XBRL exporter (WS-7 / B8).
+#
+# Thresholds are starting points tuned for the local/dev deployment (small query
+# volume, CPU reranking) — retune for production traffic. All metrics come from
+# src/observability/metrics_exporter.py over the audit.v_* views.
+#
+# Validate with:  promtool check rules configs/monitoring/alerts.yml
+
+groups:
+  - name: arag-xbrl-availability
+    rules:
+      - alert: AragAuditDBDown
+        expr: arag_audit_db_up == 0
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "XbrlRag audit DB unreachable"
+          description: "The metrics exporter could not probe the audit DB for >5m; latency/cost/error telemetry is blind."
+
+      - alert: AragMetricsCollectorErrors
+        expr: arag_metrics_collector_failures > 0
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "XbrlRag metrics collectors failing"
+          description: "{{ $value }} metric collector(s) raised on scrape for >10m — some audit.v_* views may be missing or malformed."
+
+  - name: arag-xbrl-latency
+    rules:
+      - alert: AragHighP95Latency
+        expr: arag_query_latency_milliseconds{quantile="0.95"} > 30000
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "XbrlRag p95 query latency > 30s"
+          description: "End-to-end p95 latency is {{ $value | humanize }}ms (all-time window)."
+
+      - alert: AragStageP95Latency
+        expr: arag_stage_latency_milliseconds{quantile="0.95"} > 60000
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "XbrlRag stage {{ $labels.stage }} p95 latency > 60s"
+          description: "Stage {{ $labels.stage }} p95 latency is {{ $value | humanize }}ms."
+
+  - name: arag-xbrl-quality
+    rules:
+      - alert: AragHighErrorRate
+        expr: arag_query_error_rate > 0.10
+        for: 10m
+        labels:
+          severity: critical
+        annotations:
+          summary: "XbrlRag query error rate > 10%"
+          description: "{{ $value | humanizePercentage }} of queries errored in the most recent audited day."
+
+      - alert: AragHighDegradationRate
+        expr: arag_query_degradation_rate > 0.25
+        for: 15m
+        labels:
+          severity: warning
+        annotations:
+          summary: "XbrlRag query degradation rate > 25%"
+          description: "{{ $value | humanizePercentage }} of queries degraded (e.g. numeric → narrative fallback) in the most recent day."
+
+      - alert: AragVerifierFailures
+        expr: arag_verifier_failures_total > 0
+        for: 15m
+        labels:
+          severity: warning
+        annotations:
+          summary: "XbrlRag faithfulness verifier failing"
+          description: "{{ $value }} queries had a verifier that could not complete — hallucination guard is not running end-to-end."
+
+  - name: arag-xbrl-cost
+    rules:
+      - alert: AragDailyCostBudget
+        expr: arag_query_daily_cost_usd > 5
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "XbrlRag daily query LLM cost over budget"
+          description: "Most-recent-day query LLM cost is ${{ $value | humanize }} (soft budget $5). Retune XBRL_QUERY_MODEL_TIERS / cache if sustained."
+
+  - name: arag-xbrl-ingestion
+    rules:
+      - alert: AragIngestionFailures
+        expr: sum(arag_ingestion_failed) > 0
+        for: 30m
+        labels:
+          severity: warning
+        annotations:
+          summary: "XbrlRag ingestion failures on the most recent day"
+          description: "{{ $value }} ingestion item(s) failed in the most recent ingestion day; check audit.v_ingestion_failures for the class split."

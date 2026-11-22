@@ -1,0 +1,162 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-10",
+  "criteria": {
+    "C1": [
+      "test/spec/key-fallback-witness/test_c1_own_report_fallback.py::test_a_key_from_an_unpublished_10k_is_witnessed_on_the_own_report",
+      "test/spec/key-fallback-witness/test_c1_own_report_fallback.py::test_a_restated_value_on_a_fallback_is_value_recast",
+      "test/spec/key-fallback-witness/test_c1_own_report_fallback.py::test_own_accession_present_is_read_and_absent_everywhere_is_no_fsds",
+      "test/spec/key-fallback-witness/test_c1_own_report_fallback.py::test_filing_read_status_and_marker_follow_the_decision_table"
+    ],
+    "C2": [
+      "test/spec/key-fallback-witness/test_c2_blocked_fallback_held.py::test_an_unresolved_blocked_fallback_drops_as_held_without_a_block",
+      "test/spec/key-fallback-witness/test_c2_blocked_fallback_held.py::test_a_reviewed_resolution_decides_a_blocked_fallback",
+      "test/spec/key-fallback-witness/test_c2_blocked_fallback_held.py::test_the_manifest_holds_a_blocked_fallback_and_still_refuses_a_plain_block",
+      "test/spec/key-fallback-witness/test_c2_blocked_fallback_held.py::test_select_key_prefers_the_presented_candidate_over_a_held_first_concept",
+      "test/spec/key-fallback-witness/test_c2_blocked_fallback_held.py::test_fallback_counts_of_any_selection_are_the_hand_counts"
+    ],
+    "C3": [
+      "test/spec/key-fallback-witness/test_c3_later_standard_line.py::test_the_later_standard_line_is_found_in_any_order",
+      "test/spec/key-fallback-witness/test_c3_later_standard_line.py::test_a_different_value_a_rejected_line_or_no_standard_line_gives_none",
+      "test/spec/key-fallback-witness/test_c3_later_standard_line.py::test_the_first_single_standard_line_decides"
+    ],
+    "C4": [
+      "test/spec/key-fallback-witness/test_c4_later_annual_reports.py::test_fext_reports_after_each_year",
+      "test/spec/key-fallback-witness/test_c4_later_annual_reports.py::test_a_later_amendment_does_not_replace_the_original",
+      "test/spec/key-fallback-witness/test_c4_later_annual_reports.py::test_originals_above_the_year_latest_first"
+    ],
+    "C5": [
+      "test/spec/key-fallback-witness/test_c5_extension_member.py::test_fext_fy2022_capex_is_keyed_from_the_fy2024_10k",
+      "test/spec/key-fallback-witness/test_c5_extension_member.py::test_other_years_and_filers_follow_the_value_guard_and_the_rule",
+      "test/spec/key-fallback-witness/test_c5_extension_member.py::test_without_the_later_quarter_the_member_stays_unkeyed"
+    ],
+    "C6": [
+      "test/spec/key-fallback-witness/test_c6_fsds_not_published.py::test_keys_without_any_fsds_filing_drop_as_fsds_not_published",
+      "test/spec/key-fallback-witness/test_c6_fsds_not_published.py::test_an_unkeyed_member_without_its_own_report_is_fsds_not_published",
+      "test/spec/key-fallback-witness/test_c6_fsds_not_published.py::test_a_build_records_the_drops_and_never_raises",
+      "test/spec/key-fallback-witness/test_c6_fsds_not_published.py::test_publishing_the_missing_quarter_keys_the_input_and_closes_its_gap"
+    ],
+    "C7": [
+      "test/spec/key-fallback-witness/test_c7_fsds_coverage.py::test_fixture_quarters_and_the_empty_set",
+      "test/spec/key-fallback-witness/test_c7_fsds_coverage.py::test_a_bad_or_repeated_name_raises[bad0]",
+      "test/spec/key-fallback-witness/test_c7_fsds_coverage.py::test_a_bad_or_repeated_name_raises[bad1]",
+      "test/spec/key-fallback-witness/test_c7_fsds_coverage.py::test_a_bad_or_repeated_name_raises[bad2]",
+      "test/spec/key-fallback-witness/test_c7_fsds_coverage.py::test_a_bad_or_repeated_name_raises[bad3]",
+      "test/spec/key-fallback-witness/test_c7_fsds_coverage.py::test_a_bad_or_repeated_name_raises[bad4]",
+      "test/spec/key-fallback-witness/test_c7_fsds_coverage.py::test_a_bad_or_repeated_name_raises[bad5]",
+      "test/spec/key-fallback-witness/test_c7_fsds_coverage.py::test_order_free_and_first_to_last_is_n_plus_missing"
+    ],
+    "C8": [
+      "test/spec/key-fallback-witness/test_c8_fsds_manifest.py::test_gap_manifest_deduplicates_counts_and_sorts",
+      "test/spec/key-fallback-witness/test_c8_fsds_manifest.py::test_a_malformed_gap_raises[bad0]",
+      "test/spec/key-fallback-witness/test_c8_fsds_manifest.py::test_a_malformed_gap_raises[bad1]",
+      "test/spec/key-fallback-witness/test_c8_fsds_manifest.py::test_the_witness_and_the_build_report_the_gaps_and_coverage",
+      "test/spec/key-fallback-witness/test_c8_fsds_manifest.py::test_drops_and_gaps_count_the_inventory"
+    ]
+  },
+  "files": {
+    "test/spec/key-fallback-witness/conftest.py": "2fe87ee1fc26d59d1eeca30d74227414bcd46e3cd25f17ab8821473830af37dc",
+    "test/spec/key-fallback-witness/fixtures/key_resolutions_drop.yaml": "619c087f2a61454c0bff5c12c363031b2c13bda993bf558f9d62c4e109232bf3",
+    "test/spec/key-fallback-witness/fixtures/key_resolutions_key.yaml": "9909d6f399ccb765a5b4293229061895430554520da2c1ed41128c4554ac6a54",
+    "test/spec/key-fallback-witness/fixtures/key_resolutions_none.yaml": "4b17a326d8e718b0da2bbe34273f635bf704aab55d0cae35f9b9effeaf01ebaf",
+    "test/spec/key-fallback-witness/fixtures/note_concepts.yaml": "9a690e4a718ba4e975bf2addc1a5e4dac95b06351fe909e47b63c58af5e00ef7",
+    "test/spec/key-fallback-witness/fixtures/statement_lines.yaml": "6b67d981c6f8f7422a371a3d45e151e408f13c40c544ebfe84d92106b2361902",
+    "test/spec/key-fallback-witness/test_c1_own_report_fallback.py": "a9fe08e1d16ceb192890ef16fe850b905ffecdb24c4ee3066d8eb5b7b5db328e",
+    "test/spec/key-fallback-witness/test_c2_blocked_fallback_held.py": "7fbcc10df17c449e75831c1bc9eff6ac00eb8c2e2aea59c12868e2ad6a7d1004",
+    "test/spec/key-fallback-witness/test_c3_later_standard_line.py": "fd478833673ddb6ef2a78e54b6e89ba054bd812a777c1a5cdf08bf11178f5c31",
+    "test/spec/key-fallback-witness/test_c4_later_annual_reports.py": "7d68479e3770709a18cd28e27a8cd0bb78d48960274a1977f15deffdb0f16c45",
+    "test/spec/key-fallback-witness/test_c5_extension_member.py": "6cd1d77e398aa1a7f2257bf3a817bed18f0cd0a56303b42d6c3b7b07e9458e03",
+    "test/spec/key-fallback-witness/test_c6_fsds_not_published.py": "ab42ea8b9f326dcecc160f5ba905612b6510c4e45a6b16f61c78e5afad5101e0",
+    "test/spec/key-fallback-witness/test_c7_fsds_coverage.py": "4a5f3ad4ff0d58c6ca8939a8c164c9fb5d9202c25a3b578fdbf415e399e22be9",
+    "test/spec/key-fallback-witness/test_c8_fsds_manifest.py": "d1188ac759c998262461e8f57e6b8adca3e17194a916a31df411e4b1c4940f24"
+  },
+  "id": "key-fallback-witness",
+  "interface": [
+    {
+      "file": "src/eval/keys/statement_witness.py",
+      "module": "eval.keys.statement_witness",
+      "qualname": "later_standard_line",
+      "signature": "def later_standard_line(tables: FsdsTables, rule: StatementRule, adshs: Sequence[str], period_start: str | None, period_end: str, unit: str, own_value: float) -> dict[str, Any] | None"
+    },
+    {
+      "file": "src/eval/suites/v2_witness.py",
+      "module": "eval.suites.v2_witness",
+      "qualname": "later_annual_reports",
+      "signature": "def later_annual_reports(cf: dict, labels: Mapping[str, int], year: int) -> list[str]"
+    },
+    {
+      "file": "src/eval/suites/v2_witness.py",
+      "module": "eval.suites.v2_witness",
+      "qualname": "fsds_coverage",
+      "signature": "def fsds_coverage(quarters: Sequence[str]) -> dict[str, Any]"
+    },
+    {
+      "file": "src/eval/suites/v2_witness.py",
+      "module": "eval.suites.v2_witness",
+      "qualname": "fsds_gap_manifest",
+      "signature": "def fsds_gap_manifest(coverage: Mapping[str, Any], gaps: Iterable[Mapping[str, Any]]) -> dict[str, Any]"
+    },
+    {
+      "file": "src/eval/suites/v2_witness.py",
+      "module": "eval.suites.v2_witness",
+      "qualname": "KeyWitness.fsds_manifest",
+      "signature": "def fsds_manifest(self) -> dict[str, Any]"
+    }
+  ],
+  "nodes": [
+    "test/spec/key-fallback-witness/test_c1_own_report_fallback.py::test_a_key_from_an_unpublished_10k_is_witnessed_on_the_own_report",
+    "test/spec/key-fallback-witness/test_c1_own_report_fallback.py::test_a_restated_value_on_a_fallback_is_value_recast",
+    "test/spec/key-fallback-witness/test_c1_own_report_fallback.py::test_filing_read_status_and_marker_follow_the_decision_table",
+    "test/spec/key-fallback-witness/test_c1_own_report_fallback.py::test_own_accession_present_is_read_and_absent_everywhere_is_no_fsds",
+    "test/spec/key-fallback-witness/test_c2_blocked_fallback_held.py::test_a_reviewed_resolution_decides_a_blocked_fallback",
+    "test/spec/key-fallback-witness/test_c2_blocked_fallback_held.py::test_an_unresolved_blocked_fallback_drops_as_held_without_a_block",
+    "test/spec/key-fallback-witness/test_c2_blocked_fallback_held.py::test_fallback_counts_of_any_selection_are_the_hand_counts",
+    "test/spec/key-fallback-witness/test_c2_blocked_fallback_held.py::test_select_key_prefers_the_presented_candidate_over_a_held_first_concept",
+    "test/spec/key-fallback-witness/test_c2_blocked_fallback_held.py::test_the_manifest_holds_a_blocked_fallback_and_still_refuses_a_plain_block",
+    "test/spec/key-fallback-witness/test_c3_later_standard_line.py::test_a_different_value_a_rejected_line_or_no_standard_line_gives_none",
+    "test/spec/key-fallback-witness/test_c3_later_standard_line.py::test_the_first_single_standard_line_decides",
+    "test/spec/key-fallback-witness/test_c3_later_standard_line.py::test_the_later_standard_line_is_found_in_any_order",
+    "test/spec/key-fallback-witness/test_c4_later_annual_reports.py::test_a_later_amendment_does_not_replace_the_original",
+    "test/spec/key-fallback-witness/test_c4_later_annual_reports.py::test_fext_reports_after_each_year",
+    "test/spec/key-fallback-witness/test_c4_later_annual_reports.py::test_originals_above_the_year_latest_first",
+    "test/spec/key-fallback-witness/test_c5_extension_member.py::test_fext_fy2022_capex_is_keyed_from_the_fy2024_10k",
+    "test/spec/key-fallback-witness/test_c5_extension_member.py::test_other_years_and_filers_follow_the_value_guard_and_the_rule",
+    "test/spec/key-fallback-witness/test_c5_extension_member.py::test_without_the_later_quarter_the_member_stays_unkeyed",
+    "test/spec/key-fallback-witness/test_c6_fsds_not_published.py::test_a_build_records_the_drops_and_never_raises",
+    "test/spec/key-fallback-witness/test_c6_fsds_not_published.py::test_an_unkeyed_member_without_its_own_report_is_fsds_not_published",
+    "test/spec/key-fallback-witness/test_c6_fsds_not_published.py::test_keys_without_any_fsds_filing_drop_as_fsds_not_published",
+    "test/spec/key-fallback-witness/test_c6_fsds_not_published.py::test_publishing_the_missing_quarter_keys_the_input_and_closes_its_gap",
+    "test/spec/key-fallback-witness/test_c7_fsds_coverage.py::test_a_bad_or_repeated_name_raises[bad0]",
+    "test/spec/key-fallback-witness/test_c7_fsds_coverage.py::test_a_bad_or_repeated_name_raises[bad1]",
+    "test/spec/key-fallback-witness/test_c7_fsds_coverage.py::test_a_bad_or_repeated_name_raises[bad2]",
+    "test/spec/key-fallback-witness/test_c7_fsds_coverage.py::test_a_bad_or_repeated_name_raises[bad3]",
+    "test/spec/key-fallback-witness/test_c7_fsds_coverage.py::test_a_bad_or_repeated_name_raises[bad4]",
+    "test/spec/key-fallback-witness/test_c7_fsds_coverage.py::test_a_bad_or_repeated_name_raises[bad5]",
+    "test/spec/key-fallback-witness/test_c7_fsds_coverage.py::test_fixture_quarters_and_the_empty_set",
+    "test/spec/key-fallback-witness/test_c7_fsds_coverage.py::test_order_free_and_first_to_last_is_n_plus_missing",
+    "test/spec/key-fallback-witness/test_c8_fsds_manifest.py::test_a_malformed_gap_raises[bad0]",
+    "test/spec/key-fallback-witness/test_c8_fsds_manifest.py::test_a_malformed_gap_raises[bad1]",
+    "test/spec/key-fallback-witness/test_c8_fsds_manifest.py::test_drops_and_gaps_count_the_inventory",
+    "test/spec/key-fallback-witness/test_c8_fsds_manifest.py::test_gap_manifest_deduplicates_counts_and_sorts",
+    "test/spec/key-fallback-witness/test_c8_fsds_manifest.py::test_the_witness_and_the_build_report_the_gaps_and_coverage"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/key-fallback-witness.md",
+    "sha256": "d633fdc529f58b5e8c89394e4175394074efc35c3ce4b6a266673b0741765158"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

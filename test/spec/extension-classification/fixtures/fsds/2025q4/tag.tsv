@@ -1,0 +1,8 @@
+tag	version	custom	abstract	datatype	iord	crdr	tlabel	doc
+Amortizationofacquisitionrelatedintangibleassetsoperatingexpenses	0001730168-25-000121	1	0	monetary	D	D	Amortization of acquisition-related intangible assets - operating expenses	Amortization of acquisition-related intangible assets - operating expenses
+Amortizationofintangibleandrightofuseassets	0001730168-25-000121	1	0	monetary	D	D	Amortization of intangible and right-of-use assets	Amortization of intangible and right-of-use assets
+RestructuringChargesCostOfProductsSold	0001730168-25-000121	1	0	monetary	D	D	Restructuring Charges, Cost of Products Sold	Amount related to cost of products sold charged against earnings in the period for incurred and estimated costs associated with exit from or disposal of business activities or restructurings pursuant to a duly authorized plan, excluding asset retirement obligations.
+CostofProductsSold	0001730168-25-000121	1	0	monetary	D	D	Cost of Products Sold	Costs related to goods produced and sold during the reporting period excluding amortization of intangible assets and restructuring charges.
+Amortizationofacquisitionrelatedintangibleassetscostofproductssold	0001730168-25-000121	1	0	monetary	D	D	Amortization of acquisition-related intangible assets - cost of products sold	Amortization of acquisition-related intangible assets - cost of products sold
+DeferredIncomeTaxesandOtherNoncashTaxExpense	0001730168-25-000121	1	0	monetary	D	D	Deferred Income Taxes and Other Noncash Tax Expense	Deferred Income Taxes and Other Noncash Tax Expense
+CostofSubscriptionsandServices	0001730168-25-000121	1	0	monetary	D	D	Cost of Subscriptions and Services	Cost of subscriptions and services.

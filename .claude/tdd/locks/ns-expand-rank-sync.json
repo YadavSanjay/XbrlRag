@@ -1,0 +1,98 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "test/spec/ns-expand-rank-sync/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-05",
+  "criteria": {
+    "C1": [
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_the_four_drifted_rows_expand_at_their_base_ranks",
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_profit_loss_copies_take_their_own_taxonomy_and_filer_rank",
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_only_matching_taxonomies_and_known_qnames_expand",
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_a_deprecated_base_row_gives_deprecated_copies",
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_stale_copies_of_any_rank_do_not_change_the_expansion"
+    ],
+    "C2": [
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_expanding_the_found_state_again_gives_the_synced_copies",
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_every_copy_carries_its_base_row",
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_expansion_is_idempotent_and_ignores_stale_copies",
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_expansion_does_not_depend_on_input_order"
+    ],
+    "C3": [
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_drift_on_the_found_state_is_the_24_stale_copies",
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_drift_matches_on_filer_and_taxonomy_and_flags_orphans",
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_drift_does_not_depend_on_row_order"
+    ],
+    "C4": [
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_removing_a_base_row_orphans_exactly_its_copies",
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_changing_copy_ranks_flags_exactly_those_copies",
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_removing_a_base_row_orphans_its_copies_and_extra_rows_change_nothing"
+    ],
+    "C5": [
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_the_found_state_fails_loud_naming_each_drifted_row",
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_the_synced_state_passes_and_counts_its_copies",
+      "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_the_check_raises_iff_there_is_drift"
+    ]
+  },
+  "files": {
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py": "a25a23ed928d746a0ae8ce745748cd55c7778db8b7fcd78cc17a0bddc4277ade"
+  },
+  "id": "ns-expand-rank-sync",
+  "interface": [
+    {
+      "file": "src/ingest/sec_edgar/ingest/layer0_populator.py",
+      "module": "ingest.sec_edgar.ingest.layer0_populator",
+      "qualname": "expand_concept_mapping",
+      "signature": "def expand_concept_mapping(rows: collections.abc.Iterable[ConceptMappingRecord], known_qnames: collections.abc.Iterable[tuple[str, str]]) -> list[ConceptMappingRecord]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/ingest/layer0_populator.py",
+      "module": "ingest.sec_edgar.ingest.layer0_populator",
+      "qualname": "ns_expanded_drift",
+      "signature": "def ns_expanded_drift(rows: collections.abc.Iterable[ConceptMappingRecord]) -> list[tuple[ConceptMappingRecord, ConceptMappingRecord | None]]"
+    },
+    {
+      "file": "src/ingest/sec_edgar/ingest/layer0_populator.py",
+      "module": "ingest.sec_edgar.ingest.layer0_populator",
+      "qualname": "assert_ns_expanded_in_sync",
+      "signature": "def assert_ns_expanded_in_sync(rows: collections.abc.Iterable[ConceptMappingRecord]) -> int"
+    }
+  ],
+  "nodes": [
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_a_deprecated_base_row_gives_deprecated_copies",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_changing_copy_ranks_flags_exactly_those_copies",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_drift_does_not_depend_on_row_order",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_drift_matches_on_filer_and_taxonomy_and_flags_orphans",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_drift_on_the_found_state_is_the_24_stale_copies",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_every_copy_carries_its_base_row",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_expanding_the_found_state_again_gives_the_synced_copies",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_expansion_does_not_depend_on_input_order",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_expansion_is_idempotent_and_ignores_stale_copies",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_only_matching_taxonomies_and_known_qnames_expand",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_profit_loss_copies_take_their_own_taxonomy_and_filer_rank",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_removing_a_base_row_orphans_exactly_its_copies",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_removing_a_base_row_orphans_its_copies_and_extra_rows_change_nothing",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_stale_copies_of_any_rank_do_not_change_the_expansion",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_the_check_raises_iff_there_is_drift",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_the_found_state_fails_loud_naming_each_drifted_row",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_the_four_drifted_rows_expand_at_their_base_ranks",
+    "test/spec/ns-expand-rank-sync/test_ns_expand_rank_sync.py::test_the_synced_state_passes_and_counts_its_copies"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/ns-expand-rank-sync.md",
+    "sha256": "f5ace345f22d2292f0b9ad0441753a51a709f23d35a43b4fd3a63478daaf1f66"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

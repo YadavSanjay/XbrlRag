@@ -1,0 +1,18 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0000950170-24-087843	2	7	IS	0	H	RevenueFromContractWithCustomerExcludingAssessedTax	us-gaap/2023	Revenue	0
+0000950170-24-087843	2	8	IS	0	H	CostOfGoodsAndServicesSold	us-gaap/2023	Cost of revenue	0
+0000950170-24-087843	2	9	IS	0	H	GrossProfit	us-gaap/2023	Gross margin	0
+0000950170-24-087843	2	10	IS	0	H	ResearchAndDevelopmentExpense	us-gaap/2023	Research and development	0
+0000950170-24-087843	2	11	IS	0	H	SellingAndMarketingExpense	us-gaap/2023	Sales and marketing	0
+0000950170-24-087843	2	12	IS	0	H	GeneralAndAdministrativeExpense	us-gaap/2023	General and administrative	0
+0000950170-24-087843	2	13	IS	0	H	OperatingIncomeLoss	us-gaap/2023	Operating income	0
+0000950170-24-087843	2	14	IS	0	H	NonoperatingIncomeExpense	us-gaap/2023	Other income (expense), net	0
+0000950170-24-087843	2	15	IS	0	H	IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest	us-gaap/2023	Income before income taxes	0
+0000950170-24-087843	2	16	IS	0	H	IncomeTaxExpenseBenefit	us-gaap/2023	Provision for income taxes	0
+0000950170-24-087843	2	17	IS	0	H	NetIncomeLoss	us-gaap/2023	Net income	0
+0000950170-24-087843	2	19	IS	0	H	EarningsPerShareBasic	us-gaap/2023	Basic	0
+0000950170-24-087843	2	20	IS	0	H	EarningsPerShareDiluted	us-gaap/2023	Diluted	0
+0000950170-24-087843	2	22	IS	0	H	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2023	Basic	0
+0000950170-24-087843	2	23	IS	0	H	WeightedAverageNumberOfDilutedSharesOutstanding	us-gaap/2023	Diluted	0
+0000950170-24-087843	6	4	CF	0	H	DepreciationAmortizationAndOther	0000950170-24-087843	Depreciation, amortization, and other	0
+0000950170-24-087843	6	6	CF	0	H	GainLossOnInvestmentsAndDerivativeInstruments	0000950170-24-087843	Net recognized losses (gains) on investments and derivatives	1

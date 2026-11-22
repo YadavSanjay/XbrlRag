@@ -1,0 +1,174 @@
+adsh	report	line	stmt	inpth	rfile	tag	version	plabel	negating
+0001193125-24-099840	2	3	BS	0	H	CashAndCashEquivalents	ifrs/2023	Cash and cash equivalents	0
+0001193125-24-099840	2	4	BS	0	H	CurrentFinancialAssetsAtFairValueThroughProfitOrLoss	ifrs/2023	Financial assets at fair value through profit or loss	0
+0001193125-24-099840	2	5	BS	0	H	CurrentFinancialAssetsAtFairValueThroughOtherComprehensiveIncome	ifrs/2023	Financial assets at fair value through other comprehensive income	0
+0001193125-24-099840	2	6	BS	0	H	CurrentFinancialAssetsAtAmortisedCost	ifrs/2023	Financial assets at amortized cost	0
+0001193125-24-099840	2	7	BS	0	H	FinancialAssetsHeldForHedging	0001193125-24-099840	Hedging financial assets	0
+0001193125-24-099840	2	8	BS	0	H	CurrentTradeReceivables	ifrs/2023	Notes and accounts receivable, net	0
+0001193125-24-099840	2	9	BS	0	H	CurrentReceivablesFromRelatedPartiesRelatedToCoreBusiness	0001193125-24-099840	Receivables from related parties	0
+0001193125-24-099840	2	10	BS	0	H	OtherCurrentReceivablesFromRelatedParties	0001193125-24-099840	Other receivables from related parties	0
+0001193125-24-099840	2	11	BS	0	H	Inventories	ifrs/2023	Inventories	0
+0001193125-24-099840	2	12	BS	0	H	OtherCurrentFinancialAssets	ifrs/2023	Other financial assets	0
+0001193125-24-099840	2	13	BS	0	H	OtherCurrentAssets	ifrs/2023	Other current assets	0
+0001193125-24-099840	2	14	BS	0	H	CurrentAssets	ifrs/2023	Total current assets	0
+0001193125-24-099840	2	16	BS	0	H	NoncurrentFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue	ifrs/2023	Financial assets at fair value through profit or loss	0
+0001193125-24-099840	2	17	BS	0	H	NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome	ifrs/2023	Financial assets at fair value through other comprehensive income	0
+0001193125-24-099840	2	18	BS	0	H	NoncurrentFinancialAssetsAtAmortisedCost	ifrs/2023	Financial assets at amortized cost	0
+0001193125-24-099840	2	19	BS	0	H	InvestmentAccountedForUsingEquityMethod	ifrs/2023	Investments accounted for using equity method	0
+0001193125-24-099840	2	20	BS	0	H	PropertyPlantAndEquipment	ifrs/2023	Property, plant and equipment	0
+0001193125-24-099840	2	21	BS	0	H	RightofuseAssets	ifrs/2023	Right-of-use assets	0
+0001193125-24-099840	2	22	BS	0	H	IntangibleAssetsAndGoodwill	ifrs/2023	Intangible assets	0
+0001193125-24-099840	2	23	BS	0	H	DeferredTaxAssets	ifrs/2023	Deferred income tax assets	0
+0001193125-24-099840	2	24	BS	0	H	LongtermDeposits	ifrs/2023	Refundable deposits	0
+0001193125-24-099840	2	25	BS	0	H	OtherNoncurrentAssets	ifrs/2023	Other noncurrent assets	0
+0001193125-24-099840	2	26	BS	0	H	NoncurrentAssets	ifrs/2023	Total noncurrent assets	0
+0001193125-24-099840	2	27	BS	0	H	Assets	ifrs/2023	TOTAL	0
+0001193125-24-099840	2	29	BS	0	H	CurrentFinancialLiabilitiesAtFairValueThroughProfitOrLoss	ifrs/2023	Financial liabilities at fair value through profit or loss	0
+0001193125-24-099840	2	30	BS	0	H	FinancialLiabilitiesHeldForHedging	0001193125-24-099840	Hedging financial liabilities	0
+0001193125-24-099840	2	31	BS	0	H	TradeAndOtherCurrentPayablesToTradeSuppliers	ifrs/2023	Accounts payable	0
+0001193125-24-099840	2	32	BS	0	H	TradeAndOtherCurrentPayablesToRelatedParties	ifrs/2023	Payables to related parties	0
+0001193125-24-099840	2	33	BS	0	H	SalaryAndBonusPayableEmployeeBenefitsAccruals	0001193125-24-099840	Salary and bonus payable	0
+0001193125-24-099840	2	34	BS	0	H	AccruedProfitSharingBonusToEmployeesAndCompensationToDirectorsAndSupervisors	0001193125-24-099840	Accrued profit sharing bonus to employees and compensation to directors	0
+0001193125-24-099840	2	35	BS	0	H	CurrentPayablesForPurchaseOfNoncurrentAssets	ifrs/2023	Payables to contractors and equipment suppliers	0
+0001193125-24-099840	2	36	BS	0	H	CurrentDividendPayables	ifrs/2023	Cash dividends payable	0
+0001193125-24-099840	2	37	BS	0	H	CurrentTaxLiabilitiesCurrent	ifrs/2023	Income tax payable	0
+0001193125-24-099840	2	38	BS	0	H	CurrentPortionOfLongtermBorrowings	ifrs/2023	Long-term liabilities - current portion	0
+0001193125-24-099840	2	39	BS	0	H	CurrentAccruedExpensesAndOtherCurrentLiabilities	ifrs/2023	Accrued expenses and other current liabilities	0
+0001193125-24-099840	2	40	BS	0	H	CurrentLiabilities	ifrs/2023	Total current liabilities	0
+0001193125-24-099840	2	42	BS	0	H	NoncurrentPortionOfNoncurrentBondsIssued	ifrs/2023	Bonds payable	0
+0001193125-24-099840	2	43	BS	0	H	LongtermBorrowings	ifrs/2023	Long-term bank loans	0
+0001193125-24-099840	2	44	BS	0	H	DeferredTaxLiabilities	ifrs/2023	Deferred income tax liabilities	0
+0001193125-24-099840	2	45	BS	0	H	NoncurrentLeaseLiabilities	ifrs/2023	Lease liabilities	0
+0001193125-24-099840	2	46	BS	0	H	NoncurrentRecognisedLiabilitiesDefinedBenefitPlan	ifrs/2023	Net defined benefit liability	0
+0001193125-24-099840	2	47	BS	0	H	NoncurrentGuaranteeDeposits	0001193125-24-099840	Guarantee deposits	0
+0001193125-24-099840	2	48	BS	0	H	OtherNoncurrentLiabilities	ifrs/2023	Others	0
+0001193125-24-099840	2	49	BS	0	H	NoncurrentLiabilities	ifrs/2023	Total noncurrent liabilities	0
+0001193125-24-099840	2	50	BS	0	H	Liabilities	ifrs/2023	Total liabilities	0
+0001193125-24-099840	2	52	BS	0	H	IssuedCapital	ifrs/2023	Capital stock	0
+0001193125-24-099840	2	53	BS	0	H	CapitalSurplus	0001193125-24-099840	Capital surplus	0
+0001193125-24-099840	2	55	BS	0	H	CapitalReserve	ifrs/2023	Appropriated as legal capital reserve	0
+0001193125-24-099840	2	56	BS	0	H	SpecialCapitalReserve	0001193125-24-099840	Appropriated as special capital reserve	0
+0001193125-24-099840	2	57	BS	0	H	UnappropriatedEarnings	0001193125-24-099840	Unappropriated earnings	0
+0001193125-24-099840	2	58	BS	0	H	RetainedEarnings	ifrs/2023	Total retained earnings	0
+0001193125-24-099840	2	59	BS	0	H	OtherReserves	ifrs/2023	Others	0
+0001193125-24-099840	2	60	BS	0	H	EquityAttributableToOwnersOfParent	ifrs/2023	Equity attributable to shareholders of the parent	0
+0001193125-24-099840	2	61	BS	0	H	NoncontrollingInterests	ifrs/2023	NON - CONTROLLING INTERESTS	0
+0001193125-24-099840	2	62	BS	0	H	Equity	ifrs/2023	Total equity	0
+0001193125-24-099840	2	63	BS	0	H	EquityAndLiabilities	ifrs/2023	TOTAL	0
+0001193125-24-099840	3	6	IS	0	H	Revenue	ifrs/2023	NET REVENUE	0
+0001193125-24-099840	3	7	IS	0	H	CostOfSales	ifrs/2023	COST OF REVENUE	0
+0001193125-24-099840	3	8	IS	0	H	GrossProfit	ifrs/2023	GROSS PROFIT	0
+0001193125-24-099840	3	10	IS	0	H	ResearchAndDevelopmentExpense	ifrs/2023	Research and development	0
+0001193125-24-099840	3	11	IS	0	H	GeneralAndAdministrativeExpense	ifrs/2023	General and administrative	0
+0001193125-24-099840	3	12	IS	0	H	SalesAndMarketingExpense	ifrs/2023	Marketing	0
+0001193125-24-099840	3	13	IS	0	H	OperatingExpenseExcludingCostOfSales	ifrs/2023	Total operating expenses	0
+0001193125-24-099840	3	14	IS	0	H	OtherOperatingIncomeExpense	ifrs/2023	OTHER OPERATING INCOME AND EXPENSES, NET	0
+0001193125-24-099840	3	15	IS	0	H	ProfitLossFromOperatingActivities	ifrs/2023	INCOME FROM OPERATIONS	0
+0001193125-24-099840	3	17	IS	0	H	ShareOfProfitLossOfAssociatesAccountedForUsingEquityMethod	ifrs/2023	Share of profits of associates	0
+0001193125-24-099840	3	18	IS	0	H	InvestmentIncomeInterest	0001193125-24-099840	Interest Income	0
+0001193125-24-099840	3	19	IS	0	H	FinanceIncome	ifrs/2023	Other income	0
+0001193125-24-099840	3	20	IS	0	H	NetForeignExchangeGainLoss	0001193125-24-099840	Foreign exchange gain (loss), net	0
+0001193125-24-099840	3	21	IS	0	H	FinanceCosts	ifrs/2023	Finance costs	1
+0001193125-24-099840	3	22	IS	0	H	OtherGainsLosses	ifrs/2023	Other gains and losses, net	0
+0001193125-24-099840	3	23	IS	0	H	NonOperatingIncomeExpense1	0001193125-24-099840	Total non-operating income and expenses	0
+0001193125-24-099840	3	24	IS	0	H	ProfitLossBeforeTax	ifrs/2023	INCOME BEFORE INCOME TAX	0
+0001193125-24-099840	3	25	IS	0	H	IncomeTaxExpenseContinuingOperations	ifrs/2023	INCOME TAX EXPENSE	0
+0001193125-24-099840	3	26	IS	0	H	ProfitLoss	ifrs/2023	NET INCOME	0
+0001193125-24-099840	3	28	IS	0	H	OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans	ifrs/2023	Remeasurement of defined benefit obligation	0
+0001193125-24-099840	3	29	IS	0	H	UnrealizedGainsOrLossesOnInvestmentsInEquityInstrumentsAtFairValueThroughOtherComprehensiveIncomeWillNotBeReclassifiedToProfitOrLossBeforeTax	0001193125-24-099840	Unrealized gain/(loss) on investments in equity instruments at fair value through other comprehensive income	0
+0001193125-24-099840	3	30	IS	0	H	GainLossOnHedgeIneffectivenessRecognisedInOtherComprehensiveIncome	ifrs/2023	Gain (loss) on hedging instruments	0
+0001193125-24-099840	3	31	IS	0	H	ShareOfOtherComprehensiveIncomeOfAssociatesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossBeforeTax	0001193125-24-099840	Share of other comprehensive income (loss) of associates	0
+0001193125-24-099840	3	32	IS	0	H	IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss	ifrs/2023	Income tax benefit (expense) related to items that will not be reclassified subsequently	1
+0001193125-24-099840	3	33	IS	0	H	OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax	ifrs/2023	Total items that will not be reclassified subsequently to profit or loss	0
+0001193125-24-099840	3	35	IS	0	H	OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation	ifrs/2023	Exchange differences arising on translation of foreign operations	0
+0001193125-24-099840	3	36	IS	0	H	UnrealizedGainsOrLossesOnInvestmentsInDebtInstrumentsAtFairValueThroughOtherComprehensiveIncomeWillBeReclassifiedToProfitOrLossBeforeTax	0001193125-24-099840	Unrealized gain/(loss) on investments in debt instruments at fair value through other comprehensive income	0
+0001193125-24-099840	3	37	IS	0	H	GainOnHedgingInstrumentsThatWillBeReclassifiedToProfitOrLossBeforeTax	0001193125-24-099840	Gain (loss) on hedging instruments	0
+0001193125-24-099840	3	38	IS	0	H	ShareOfOtherComprehensiveIncomeOfAssociatesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossBeforeTax	0001193125-24-099840	Share of other comprehensive income (loss) of associates	0
+0001193125-24-099840	3	39	IS	0	H	IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss	ifrs/2023	Income tax benefit (expense) related to items that may be reclassified subsequently	1
+0001193125-24-099840	3	40	IS	0	H	OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax	ifrs/2023	Total items that may be reclassified subsequently to profit or loss	0
+0001193125-24-099840	3	41	IS	0	H	OtherComprehensiveIncome	ifrs/2023	Other comprehensive income (loss) , net of income tax	0
+0001193125-24-099840	3	42	IS	0	H	ComprehensiveIncome	ifrs/2023	Total comprehensive income (loss)	0
+0001193125-24-099840	3	44	IS	0	H	ProfitLossAttributableToOwnersOfParent	ifrs/2023	Shareholders of the parent	0
+0001193125-24-099840	3	45	IS	0	H	ProfitLossAttributableToNoncontrollingInterests	ifrs/2023	Non-controlling interests	0
+0001193125-24-099840	3	46	IS	0	H	ProfitLoss	ifrs/2023	NET INCOME	0
+0001193125-24-099840	3	48	IS	0	H	ComprehensiveIncomeAttributableToOwnersOfParent	ifrs/2023	Shareholders of the parent	0
+0001193125-24-099840	3	49	IS	0	H	ComprehensiveIncomeAttributableToNoncontrollingInterests	ifrs/2023	Non-controlling interests	0
+0001193125-24-099840	3	50	IS	0	H	ComprehensiveIncome	ifrs/2023	Total comprehensive income (loss)	0
+0001193125-24-099840	3	52	IS	0	H	BasicEarningsLossPerShare	ifrs/2023	Basic earnings per share	0
+0001193125-24-099840	3	53	IS	0	H	DilutedEarningsLossPerShare	ifrs/2023	Diluted earnings per share	0
+0001193125-24-099840	5	8	CF	0	H	ProfitLossBeforeTax	ifrs/2023	Income before income tax	0
+0001193125-24-099840	5	10	CF	0	H	DepreciationExpense	ifrs/2023	Depreciation expense	0
+0001193125-24-099840	5	11	CF	0	H	AmortisationExpense	ifrs/2023	Amortization expense	0
+0001193125-24-099840	5	12	CF	0	H	AdjustmentsForRecognitionOfExpectedCreditLossAndReversalOnInvestmentsInDebtInstruments	0001193125-24-099840	Expected credit losses recognized (reversal) on investments in debt instruments	1
+0001193125-24-099840	5	13	CF	0	H	FinanceCosts	ifrs/2023	Finance costs	0
+0001193125-24-099840	5	14	CF	0	H	ShareOfProfitLossOfAssociatesAccountedForUsingEquityMethod	ifrs/2023	Share of profits of associates	1
+0001193125-24-099840	5	15	CF	0	H	RevenueFromInterest	ifrs/2023	Interest income	1
+0001193125-24-099840	5	16	CF	0	H	AdjustmentsForSharebasedPayments	ifrs/2023	Share-based compensation	0
+0001193125-24-099840	5	17	CF	0	H	GainsLossesOnDisposalsOfPropertyPlantAndEquipment	ifrs/2023	Loss (gain) on disposal or retirement of property, plant and equipment, net	1
+0001193125-24-099840	5	18	CF	0	H	AdjustmentsForGainOnDisposalOfIntangibleAssetsNet	0001193125-24-099840	Loss (gain) on disposal or retirement of intangible assets, net	1
+0001193125-24-099840	5	19	CF	0	H	WritedownsReversalsOfPropertyPlantAndEquipment	ifrs/2023	Impairment loss on property, plant and equipment	0
+0001193125-24-099840	5	20	CF	0	H	AdjustmentsForGainsLossesOnfinancialInstrumentsAtFairValueThroughProfitOrLossNet	0001193125-24-099840	Gain on financial instruments at fair value through profit or loss, net	1
+0001193125-24-099840	5	21	CF	0	H	AdjustmentsForGainsLossesOndisposalOfInvestmentsInDebtInstrumentsAtFairValueThroughOtherComprehensiveIncomeNet	0001193125-24-099840	Loss (gain) on disposal of investments in debt instruments at fair value through other comprehensive income, net	1
+0001193125-24-099840	5	22	CF	0	H	AdjustmentsForGainLossOnDisposalOfInvestmentsInSubsidiariesJointVenturesAndAssociates	ifrs/2023	Gain on disposal of investments accounted for using equity method, net	1
+0001193125-24-099840	5	23	CF	0	H	GainsLossesOnExchangeDifferencesOnTranslationRecognisedInProfitOrLoss	ifrs/2023	Loss (gain) on foreign exchange, net	1
+0001193125-24-099840	5	24	CF	0	H	RevenueFromDividends	ifrs/2023	Dividend income	1
+0001193125-24-099840	5	25	CF	0	H	OtherAdjustmentsToReconcileProfitLoss	ifrs/2023	Others	0
+0001193125-24-099840	5	27	CF	0	H	AdjustmentsForDecreaseIncreaseInFinancialAssetsAndLiabilitiesAtFairValueThroughProfitOrLoss	0001193125-24-099840	Financial instruments at fair value through profit or loss	0
+0001193125-24-099840	5	28	CF	0	H	AdjustmentsForDecreaseIncreaseInTradeAccountReceivable	ifrs/2023	Notes and accounts receivable, net	0
+0001193125-24-099840	5	29	CF	0	H	AdjustmentsForDecreaseIncreaseInReceivablesFromRelatedParties	0001193125-24-099840	Receivables from related parties	0
+0001193125-24-099840	5	30	CF	0	H	AdjustmentsForDecreaseIncreaseInOtherReceivablesRelatedParties	0001193125-24-099840	Other receivables from related parties	0
+0001193125-24-099840	5	31	CF	0	H	AdjustmentsForDecreaseIncreaseInInventories	ifrs/2023	Inventories	0
+0001193125-24-099840	5	32	CF	0	H	AdjustmentsForDecreaseIncreaseInOtherFinancialAssets	0001193125-24-099840	Other financial assets	0
+0001193125-24-099840	5	33	CF	0	H	AdjustmentsForDecreaseIncreaseInOtherCurrentAssets	ifrs/2023	Other current assets	0
+0001193125-24-099840	5	34	CF	0	H	AdjustmentsForDecreaseIncreaseInOtherNonCurrentAssets	0001193125-24-099840	Other noncurrent assets	0
+0001193125-24-099840	5	35	CF	0	H	AdjustmentsForIncreaseDecreaseInTradeAccountPayable	ifrs/2023	Accounts payable	0
+0001193125-24-099840	5	36	CF	0	H	AdjustmentsForIncreaseDecreaseInPayablesToRelatedParties	0001193125-24-099840	Payables to related parties	0
+0001193125-24-099840	5	37	CF	0	H	AdjustmentsForIncreaseDecreaseInSalaryAndBonusPayables	0001193125-24-099840	Salary and bonus payable	0
+0001193125-24-099840	5	38	CF	0	H	AdjustmentsForIncreaseDecreaseInAccruedProfitSharingBonusToEmployeesAndCompensationToDirectorsAndSupervisors	0001193125-24-099840	Accrued profit sharing bonus to employees and compensation to directors	0
+0001193125-24-099840	5	39	CF	0	H	AdjustmentsForIncreaseDecreaseInAccruedExpensesAndOtherCurrentLiabilities	0001193125-24-099840	Accrued expenses and other current liabilities	0
+0001193125-24-099840	5	40	CF	0	H	AdjustmentsForIncreaseDecreaseInOtherLiabilitiesNoncurrent	0001193125-24-099840	Other noncurrent liabilities	0
+0001193125-24-099840	5	41	CF	0	H	AdjustmentsForIncreaseDecreaseInEmployeeBenefitLiabilities	ifrs/2023	Net defined benefit liability	0
+0001193125-24-099840	5	42	CF	0	H	CashFlowsFromUsedInOperations	ifrs/2023	Cash generated from operations	0
+0001193125-24-099840	5	43	CF	0	H	IncomeTaxesPaidClassifiedAsOperatingActivities	ifrs/2023	Income taxes paid	1
+0001193125-24-099840	5	44	CF	0	H	CashFlowsFromUsedInOperatingActivities	ifrs/2023	Net cash generated by operating activities	0
+0001193125-24-099840	5	46	CF	0	H	PurchaseOfFinancialAssetsAtFairValueThroughProfitOrLossDebtInstruments	0001193125-24-099840	Acquisitions of financial instruments at fair value through profit or loss - debt instruments	1
+0001193125-24-099840	5	47	CF	0	H	PurchaseOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome	0001193125-24-099840	Acquisitions of financial assets at fair value through other comprehensive income	1
+0001193125-24-099840	5	48	CF	0	H	PurchaseOfFinancialAssetsAtAmortisedCost	0001193125-24-099840	Acquisitions of financial assets at amortized cost	1
+0001193125-24-099840	5	49	CF	0	H	PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities	ifrs/2023	Acquisitions of property, plant and equipment	1
+0001193125-24-099840	5	50	CF	0	H	PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities	ifrs/2023	Acquisitions of intangible assets	1
+0001193125-24-099840	5	51	CF	0	H	ProceedsFromFinancialAssetsAtFairValueThroughOtherComprehensiveIncomeClassifiedAsInvestingActivities	0001193125-24-099840	Proceeds from disposal or redemption of financial assets at fair value through other comprehensive income	1
+0001193125-24-099840	5	52	CF	0	H	ProceedsFromFinancialAssetsAtAmortizedCostsClassifiedAsInvestingActivities	0001193125-24-099840	Proceeds from disposal or redemption of financial assets at amortized cost	1
+0001193125-24-099840	5	53	CF	0	H	ProceedsFromSalesOfInvestmentsAccountedForUsingEquityMethod	ifrs/2023	Proceeds from disposal or redemption of investments accounted for using equity method	0
+0001193125-24-099840	5	54	CF	0	H	ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities	ifrs/2023	Proceeds from disposal or redemption of property, plant and equipment	0
+0001193125-24-099840	5	55	CF	0	H	ProceedsFromIntangibleAssets	0001193125-24-099840	Proceeds from disposal or redemption of intangible assets	0
+0001193125-24-099840	5	56	CF	0	H	ProceedsFromReturnOfCapitalOfInvestmentsInEquityInstrumentsAtFairValueThroughOtherComprehensiveIncome	0001193125-24-099840	Proceeds from return of capital of investments in equity instruments at fair value through other comprehensive income	0
+0001193125-24-099840	5	57	CF	0	H	DerecognitionOfHedgingFinancialInstruments	0001193125-24-099840	Derecognition of hedging financial instruments	0
+0001193125-24-099840	5	58	CF	0	H	InterestReceivedClassifiedAsInvestingActivities	ifrs/2023	Interest received	0
+0001193125-24-099840	5	59	CF	0	H	ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities	ifrs/2023	Proceeds from government grants	0
+0001193125-24-099840	5	60	CF	0	H	DividendsReceivedClassifiedAsInvestingActivities	ifrs/2023	Other dividends received	0
+0001193125-24-099840	5	61	CF	0	H	DividendsReceivedFromInvestmentsAccountedForUsingEquityMethodClassifiedAsInvestingActivities	ifrs/2023	Dividends received from investments accounted for using equity method	0
+0001193125-24-099840	5	62	CF	0	H	AdjustmentsForPrepaymentsOfLeases	0001193125-24-099840	Increase in prepayments for leases	1
+0001193125-24-099840	5	63	CF	0	H	CashAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities	ifrs/2023	Refundable deposits paid	1
+0001193125-24-099840	5	64	CF	0	H	CashReceiptsFromRepaymentOfAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities	ifrs/2023	Refundable deposits refunded	0
+0001193125-24-099840	5	65	CF	0	H	CashFlowsFromUsedInInvestingActivities	ifrs/2023	Net cash used in investing activities	0
+0001193125-24-099840	5	67	CF	0	H	CashFlowsFromUsedInIncreaseDecreaseInCurrentBorrowings	ifrs/2023	Increase (decrease) in short-term loans	0
+0001193125-24-099840	5	68	CF	0	H	ProceedsFromHedgingFinancialLiabilities	0001193125-24-099840	Increase in hedging financial liabilities - bank loans	0
+0001193125-24-099840	5	69	CF	0	H	ProceedsFromIssueOfBondsNotesAndDebentures	ifrs/2023	Proceeds from issuance of bonds	0
+0001193125-24-099840	5	70	CF	0	H	RepaymentsOfBondsNotesAndDebentures	ifrs/2023	Repayment of bonds	1
+0001193125-24-099840	5	71	CF	0	H	ProceedsFromNoncurrentBorrowings	ifrs/2023	Proceeds from long-term bank loans	0
+0001193125-24-099840	5	72	CF	0	H	RepaymentsOfNoncurrentBorrowings	ifrs/2023	Repayment of long-term bank loans	1
+0001193125-24-099840	5	73	CF	0	H	PaymentsForDebtIssueCosts	ifrs/2023	Payments for transaction costs attributable to the issuance of bonds	1
+0001193125-24-099840	5	74	CF	0	H	PaymentForAcquireOfTreasuryShares	0001193125-24-099840	Treasury stock acquired	1
+0001193125-24-099840	5	75	CF	0	H	PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities	ifrs/2023	Repayment of the principal portion of lease liabilities	1
+0001193125-24-099840	5	76	CF	0	H	InterestPaidClassifiedAsFinancingActivities	ifrs/2023	Interest paid	1
+0001193125-24-099840	5	77	CF	0	H	GuaranteeDepositsReceivedClassifiedAsFinancingActivities	0001193125-24-099840	Guarantee deposits received	0
+0001193125-24-099840	5	78	CF	0	H	GuaranteeDepositsRefundedClassifiedAsFinancingActivities	0001193125-24-099840	Guarantee deposits refunded	1
+0001193125-24-099840	5	79	CF	0	H	DividendsPaidClassifiedAsFinancingActivities	ifrs/2023	Cash dividends	1
+0001193125-24-099840	5	80	CF	0	H	ProceedsFromChangesInOwnershipInterestsInSubsidiaries	ifrs/2023	Disposal of ownership interests in subsidiaries (without losing control)	0
+0001193125-24-099840	5	81	CF	0	H	DonationFromShareholderClassifiedAsFinancingActivities	0001193125-24-099840	Donation from shareholders	0
+0001193125-24-099840	5	82	CF	0	H	PaymentsProceedsFromChangesInNoncontrollingInterests	0001193125-24-099840	Increase (decrease) in non-controlling interests	1
+0001193125-24-099840	5	83	CF	0	H	CashFlowsFromUsedInFinancingActivities	ifrs/2023	Net cash generated by (used in) financing activities	0
+0001193125-24-099840	5	84	CF	0	H	EffectOfExchangeRateChangesOnCashAndCashEquivalents	ifrs/2023	EFFECT OF EXCHANGE RATE CHANGES ON CASH AND CASH EQUIVALENTS	0
+0001193125-24-099840	5	85	CF	0	H	IncreaseDecreaseInCashAndCashEquivalents	ifrs/2023	NET INCREASE IN CASH AND CASH EQUIVALENTS	0
+0001193125-24-099840	5	86	CF	0	H	CashAndCashEquivalents	ifrs/2023	CASH AND CASH EQUIVALENTS, BEGINNING OF YEAR	0
+0001193125-24-099840	5	87	CF	0	H	CashAndCashEquivalents	ifrs/2023	CASH AND CASH EQUIVALENTS, END OF YEAR	0

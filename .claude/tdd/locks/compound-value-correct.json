@@ -1,0 +1,82 @@
+{
+  "absent": [
+    "conftest.py",
+    "sitecustomize.py",
+    "src/sitecustomize.py",
+    "src/usercustomize.py",
+    "test/conftest.py",
+    "usercustomize.py"
+  ],
+  "created": "2026-11-19",
+  "criteria": {
+    "C1": [
+      "test/spec/compound-value-correct/test_cvc_c1_uncited_right.py::test_hx_ranking_and_trend",
+      "test/spec/compound-value-correct/test_cvc_c1_uncited_right.py::test_hx_ranking_with_a_judged_text_part",
+      "test/spec/compound-value-correct/test_cvc_c1_uncited_right.py::test_generated_shapes[rank_by_ratio]",
+      "test/spec/compound-value-correct/test_cvc_c1_uncited_right.py::test_generated_shapes[leader_growth]",
+      "test/spec/compound-value-correct/test_cvc_c1_uncited_right.py::test_generated_right_answers_are_value_correct_under_any_citation"
+    ],
+    "C2": [
+      "test/spec/compound-value-correct/test_cvc_c2_citation_invariance.py::test_silent_ranking_is_value_correct_cited_or_not",
+      "test/spec/compound-value-correct/test_cvc_c2_citation_invariance.py::test_value_correct_is_the_parts_and_ignores_citations"
+    ],
+    "C3": [
+      "test/spec/compound-value-correct/test_cvc_c3_wrong_stays_wrong.py::test_reversed_ranking_is_wrong_and_confident_wrong",
+      "test/spec/compound-value-correct/test_cvc_c3_wrong_stays_wrong.py::test_wrong_trend_value",
+      "test/spec/compound-value-correct/test_cvc_c3_wrong_stays_wrong.py::test_wrong_generated_dependent[rank_by_ratio]",
+      "test/spec/compound-value-correct/test_cvc_c3_wrong_stays_wrong.py::test_wrong_generated_dependent[leader_growth]",
+      "test/spec/compound-value-correct/test_cvc_c3_wrong_stays_wrong.py::test_refusal_and_text_only",
+      "test/spec/compound-value-correct/test_cvc_c3_wrong_stays_wrong.py::test_citations_never_make_a_wrong_answer_right"
+    ],
+    "C4": [
+      "test/spec/compound-value-correct/test_cvc_c4_checkpoint.py::test_uncited_right_compound_round_trips_value_correct",
+      "test/spec/compound-value-correct/test_cvc_c4_checkpoint.py::test_round_trip_is_identity_on_value_correct"
+    ],
+    "C5": [
+      "test/spec/compound-value-correct/test_cvc_c5_grader_version.py::test_grader_version_is_at_least_13",
+      "test/spec/compound-value-correct/test_cvc_c5_grader_version.py::test_metrics_over_compound_results_carry_the_version"
+    ]
+  },
+  "files": {
+    "test/spec/compound-value-correct/conftest.py": "6a92e0b2bb7c00b9456fc86c17b40d727b8aecf796ea4b3bce5f2878a484ac1c",
+    "test/spec/compound-value-correct/generated_cases.json": "719a7b19ea4bbe2a13990b8a9c938343f10bb23de49db2f8b5c84d91d431ff55",
+    "test/spec/compound-value-correct/test_cvc_c1_uncited_right.py": "390c3a0c508c16867204db500754337c10620b11c0cd58d56d9a212646e792dc",
+    "test/spec/compound-value-correct/test_cvc_c2_citation_invariance.py": "55613558c9ca57ccb1fd56f51263f1e35ea757222e91b104d1a571b9a8dba4e6",
+    "test/spec/compound-value-correct/test_cvc_c3_wrong_stays_wrong.py": "9b48331467983272cac2ae4b46e7302b83f08779c669dc330992869dd5aada65",
+    "test/spec/compound-value-correct/test_cvc_c4_checkpoint.py": "497bcc0113c5a326024e664cdb682e36a400318c48bc213fc6224ccaf67858a1",
+    "test/spec/compound-value-correct/test_cvc_c5_grader_version.py": "e2478b403976a80c24c7814bb418d6771153eda6bf2e032e11d7a0451fdbe625"
+  },
+  "id": "compound-value-correct",
+  "interface": [],
+  "nodes": [
+    "test/spec/compound-value-correct/test_cvc_c1_uncited_right.py::test_generated_right_answers_are_value_correct_under_any_citation",
+    "test/spec/compound-value-correct/test_cvc_c1_uncited_right.py::test_generated_shapes[leader_growth]",
+    "test/spec/compound-value-correct/test_cvc_c1_uncited_right.py::test_generated_shapes[rank_by_ratio]",
+    "test/spec/compound-value-correct/test_cvc_c1_uncited_right.py::test_hx_ranking_and_trend",
+    "test/spec/compound-value-correct/test_cvc_c1_uncited_right.py::test_hx_ranking_with_a_judged_text_part",
+    "test/spec/compound-value-correct/test_cvc_c2_citation_invariance.py::test_silent_ranking_is_value_correct_cited_or_not",
+    "test/spec/compound-value-correct/test_cvc_c2_citation_invariance.py::test_value_correct_is_the_parts_and_ignores_citations",
+    "test/spec/compound-value-correct/test_cvc_c3_wrong_stays_wrong.py::test_citations_never_make_a_wrong_answer_right",
+    "test/spec/compound-value-correct/test_cvc_c3_wrong_stays_wrong.py::test_refusal_and_text_only",
+    "test/spec/compound-value-correct/test_cvc_c3_wrong_stays_wrong.py::test_reversed_ranking_is_wrong_and_confident_wrong",
+    "test/spec/compound-value-correct/test_cvc_c3_wrong_stays_wrong.py::test_wrong_generated_dependent[leader_growth]",
+    "test/spec/compound-value-correct/test_cvc_c3_wrong_stays_wrong.py::test_wrong_generated_dependent[rank_by_ratio]",
+    "test/spec/compound-value-correct/test_cvc_c3_wrong_stays_wrong.py::test_wrong_trend_value",
+    "test/spec/compound-value-correct/test_cvc_c4_checkpoint.py::test_round_trip_is_identity_on_value_correct",
+    "test/spec/compound-value-correct/test_cvc_c4_checkpoint.py::test_uncited_right_compound_round_trips_value_correct",
+    "test/spec/compound-value-correct/test_cvc_c5_grader_version.py::test_grader_version_is_at_least_13",
+    "test/spec/compound-value-correct/test_cvc_c5_grader_version.py::test_metrics_over_compound_results_carry_the_version"
+  ],
+  "red_exempt": [],
+  "retired": {
+    "date": "2026-11-22",
+    "record": "legacy: completed in the private development repository"
+  },
+  "schema": "tdd-lock/1",
+  "spec": {
+    "path": "docs/specs/compound-value-correct.md",
+    "sha256": "2aaaaf9b854f4bd91414b5a368b7eb72e0e0b8452cb68f76929e08869115c34a"
+  },
+  "status": "retired",
+  "tool_version": "0.4.2"
+}

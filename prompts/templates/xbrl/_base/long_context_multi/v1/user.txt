@@ -1,0 +1,7 @@
+FILINGS (SEC annual reports, as a JSON list of objects with "ticker", "fiscal_year" and "text"):
+{filing}
+<<cache point>>
+QUESTION:
+{question}
+
+Reply with the single JSON object described in the system instructions.

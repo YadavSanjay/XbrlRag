@@ -1,0 +1,13 @@
+# Synthetic element-fit list for the key-currency-and-definition spec tests (requirement 4).
+# It states the K2b reading under the family's OLD "long-term debt" meaning, so the mechanism
+# can be tested; the live list does not carry this entry (D3: "debt issued", any term).
+version: 1
+families:
+  DebtIssued:
+    us-gaap:ProceedsFromShortTermDebt:
+      definition: >-
+        The cash inflow from a borrowing having initial term of repayment within one year or
+        the normal operating cycle, if longer.
+      review: {by: Reviewer A, date: 2026-11-11, bucket: definition,
+               evidence: {kind: statement, adsh: 0000830006-24-000060, report: 4, line: 1,
+                          plabel: 'Proceeds from debt, net of issuance costs'}}
